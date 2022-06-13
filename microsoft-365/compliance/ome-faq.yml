@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: Masz pytanie dotyczące sposobu działania szyfrowania komunikatów usługi Microsoft Purview? Sprawdź odpowiedź tutaj.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 92311ec82b7c9e5507cba5b0bd1feb457f9f729f
-  ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+  ms.openlocfilehash: 4d365174ff7fa7db71939a10de0a57e50dbd4d46
+  ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 06/10/2022
-  ms.locfileid: "66013073"
+  ms.lasthandoff: 06/13/2022
+  ms.locfileid: "66043049"
 title: Szyfrowanie komunikatów — często zadawane pytania
 summary: >
   [!include[Purview banner](../includes/purview-rebrand-banner.md)]
@@ -45,7 +45,7 @@ sections:
       - Usługa Microsoft Purview Message Encryption jest oferowana w ramach Office 365 Enterprise E3 i E5, Microsoft 365 Enterprise E3 i E5, Microsoft 365 Business Premium, Office 365 A1, A3 i A5 oraz Office 365 dla instytucji rządowych G3 i G5. Nie potrzebujesz dodatkowych licencji, aby otrzymywać nowe możliwości ochrony obsługiwane przez usługę Azure Information Protection.
 
 
-      - Możesz również dodać usługę Azure Information Protection Plan 1 do następujących planów, aby otrzymywać szyfrowanie komunikatów usługi Microsoft Purview: Exchange Online plan 1, Exchange Online plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard lub Office 365 Enterprise E1.
+      - Możesz również dodać usługę Azure Information Protection Plan 1 do następujących planów, aby otrzymywać szyfrowanie komunikatów usługi Microsoft Purview: Exchange Online plan 1, Exchange Online plan 2, Office 365 F3, Microsoft 365 Business Basic, Microsoft 365 Business Standard lub Office 365 Enterprise E1.
 
 
       - Każdy użytkownik korzystający z szyfrowania komunikatów usługi Microsoft Purview musi mieć licencję, aby był objęty funkcją.
@@ -151,7 +151,7 @@ sections:
       Tak! Reguły przepływu poczty można skonfigurować w Exchange Online lub przy użyciu protokołu DLP w portalu zgodności usługi Microsoft Purview.
   - question: >
       Czy mogę dostosować zaszyfrowane wiadomości za pomocą znakowania firmowego?
-    answer: "Tak! Aby uzyskać informacje na temat dostosowywania wiadomości e-mail i portalu OME, zobacz Dodawanie marki organizacji do zaszyfrowanych wiadomości. Zobacz [Dodawanie marki organizacji do zaszyfrowanych komunikatów](add-your-organization-brand-to-encrypted-messages.md).\n  \n"
+    answer: "Tak, w przypadku poczty wysłanej ze skrzynki pocztowej Exchange Online w organizacji! Aby uzyskać informacje na temat dostosowywania wiadomości e-mail i portalu OME, zobacz [Dodawanie marki organizacji do zaszyfrowanych wiadomości](add-your-organization-brand-to-encrypted-messages.md).\n  \n"
   - question: >
       Czy istnieją możliwości raportowania lub szczegółowe informacje dotyczące zaszyfrowanych wiadomości e-mail?
     answer: "W Centrum zabezpieczeń i zgodności znajduje się raport szyfrowania. Zobacz [Wyświetlanie raportów zabezpieczeń poczty e-mail w Centrum zgodności & zabezpieczeń](../security/office-365-security/view-email-security-reports.md).\n  \n"

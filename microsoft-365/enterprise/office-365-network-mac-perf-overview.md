@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Omówienie łączności sieciowej w centrum Administracja Microsoft 365
-ms.openlocfilehash: 4d23990253b96e57df04411a2207d089c90711ca
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 19aa6beaf299a80b76753357e4cbe4f8f0966362
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621825"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043870"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Łączność sieciowa w centrum Administracja Microsoft 365
 
@@ -34,8 +34,8 @@ Centrum Administracja Microsoft 365 zawiera teraz zagregowane metryki łącznoś
 > [!div class="mx-imgBorder"]
 > ![Strona wydajności sieci.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
->[!NOTE]
->Łączność sieciowa w Centrum administracyjnym obsługuje dzierżawy WW Commercial i Niemczech, ale nie GCC Moderate, GCC High, DoD lub China.
+> [!NOTE]
+> Łączność sieciowa w Centrum administracyjnym obsługuje dzierżawy WW Commercial i Niemczech, ale nie GCC Moderate, GCC High, DoD lub China.
 
 Po pierwszym przejściu na stronę wydajności sieci należy skonfigurować lokalizacje, aby wyświetlić mapę globalnej wydajności sieci, ocenę sieci w zakresie całej dzierżawy, odsetek użytkowników pracujących zdalnie a lokację oraz listę bieżących problemów do podjęcia działań i/lub dalszych badań. W okienku przeglądu możesz przejść do szczegółów, aby wyświetlić konkretne metryki wydajności sieci i problemy według lokalizacji. Aby uzyskać więcej informacji, zobacz [Omówienie wydajności sieci w centrum Administracja Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
@@ -202,14 +202,46 @@ W pliku CSV odnaleziona lokalizacja miasta jest wyświetlana w kolumnie userEnte
    > [!div class="mx-imgBorder"]
    > ![Gotowy komunikat dotyczący importowania pliku CSV.](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
+## <a name="cqd-tsv-import-for-lan-subnet-office-locations"></a>CQD TSV Import for LAN subnet office locations (Importowanie TSV CQD dla lokalizacji biura podsieci LAN)
+
+Jeśli dane kompilowania zostały przekazane do pulpitu nawigacyjnego jakości połączeń, możesz dodać te lokalizacje tutaj, aby rozpocząć ocenę łączności sieciowej. Nie wpłynie to na istniejące lokalizacje.
+
+[Przejdź do obszaru Przekazywanie danych dzierżawy](https://cqd.teams.microsoft.com/spd/#/TenantDataUpload) na pulpicie nawigacyjnym jakości wywołań. Jeśli przekazano dane budynku, zostanie wyświetlona opcja pobrania ich do pliku tsv. Pobierz plik tsv z pulpitu nawigacyjnego call quality, a następnie przekaż go w wysuwie CQD, wykonując poniższe kroki. Jeśli chcesz ręcznie utworzyć plik tsv, wyrównaj schemat do schematu w sekcji Przekazywanie pliku danych kompilacji lub spróbuj zamiast tego wypróbować lokalizacje biura csv import for LAN.
+
+1. W głównym oknie Łączność z Microsoft 365 kliknij kartę **Lokalizacje**.
+
+2. Kliknij przycisk **Zarządzaj wieloma lokalizacjami** tuż nad listą lokalizacji.
+
+   > [!div class="mx-imgBorder"]
+   > ![Menu Zarządzanie wieloma lokalizacjami.](../media/m365-mac-perf/m365-mac-perf-import-cqd-manage-multiple.png)
+
+3. Kliknij pozycję **Dodaj lokalizacje z pulpitu nawigacyjnego jakości połączeń**. Zostanie wyświetlone okno wysuwane **Dodawanie lokalizacji z pulpitu nawigacyjnego jakości wywołań** .
+
+   > [!div class="mx-imgBorder"]
+   > ![Dodaj lokalizacje z wysuwanego pulpitu nawigacyjnego jakości wywołań.](../media/m365-mac-perf/m365-mac-perf-import-cqd-add-locations.png)
+
+4. Kliknij przycisk **Przeglądaj** obok pola **Wybierz plik tsv do przekazania** i wybierz zapisany plik TSV. Upewnij się, że wartość w pliku jest oddzielona kartą.
+
+5. Plik zostanie automatycznie zweryfikowany i przeanalizowany na liście lokalizacji biura. Jeśli występują błędy walidacji, zostanie wyświetlone okno wysuwane Nie **można przekazać pliku** , aby wyświetlić listę błędów.
+
+   > [!div class="mx-imgBorder"]
+   > ![Nie można przekazać wysuwanego pliku.](../media/m365-mac-perf/m365-mac-perf-import-cqd-couldnt-upload.png)
+
+6. Jeśli w pliku nie ma żadnych błędów, zostanie wyświetlony komunikat: _Plik test.tsv został przekazany i gotowy. Wybierz pozycję Importuj, aby przekazać informacje._
+
+   > [!div class="mx-imgBorder"]
+   > ![Wybierz plik tsc do przekazania.](../media/m365-mac-perf/m365-mac-perf-import-cqd-select-tsv.png)
+
+7. Kliknij przycisk **Przekaż** w dolnej części panelu, aby przekazać lokalizacje biura.
+
 ## <a name="faq"></a>Często zadawane pytania
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>Co to jest brama Microsoft 365 usługi?
 
 Brama frontowa usługi Microsoft 365 jest punktem wejścia w globalnej sieci firmy Microsoft, gdzie Office klienci i usługi przerywają połączenie sieciowe. W celu uzyskania optymalnego połączenia sieciowego z Microsoft 365 zaleca się zakończenie połączenia sieciowego w najbliższej Microsoft 365 drzwiach wejściowych.
 
->[!NOTE]
->Microsoft 365 usługa front door nie ma bezpośredniej relacji z produktem usługi Azure Front Door Service dostępnym na platformie Azure Marketplace.
+> [!NOTE]
+> Microsoft 365 usługa front door nie ma bezpośredniej relacji z produktem usługi Azure Front Door Service dostępnym na platformie Azure Marketplace.
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Co to jest optymalna Microsoft 365 usługi front door?
 

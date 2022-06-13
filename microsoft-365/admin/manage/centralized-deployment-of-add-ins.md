@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Określ, czy dzierżawa i użytkownicy spełniają wymagania, aby można było wdrożyć Office dodatków za pomocą scentralizowanego wdrożenia.
-ms.openlocfilehash: 4d135e76034880e1419e296f2c201536be98b4bc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b6517724a89572f971710b8c455866ac44f587e
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093773"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043313"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Określanie, czy scentralizowane wdrażanie dodatków działa dla Twojej organizacji
 
@@ -39,7 +39,7 @@ Scentralizowane wdrażanie zapewnia następujące korzyści:
 - Po uruchomieniu odpowiedniej aplikacji Office dodatek zostanie automatycznie pobrany. Jeśli dodatek obsługuje polecenia dodatków, dodatek zostanie automatycznie wyświetlony na wstążce w aplikacji Office.
 - Dodatki nie są już wyświetlane dla użytkowników, jeśli administrator wyłączy lub usunie dodatek lub jeśli użytkownik zostanie usunięty z Azure Active Directory lub z grupy przypisanej do dodatku.
 
-Wdrożenie scentralizowane obsługuje trzy platformy klasyczne Windows, mac i aplikacje online Office. Wdrożenie scentralizowane obsługuje również dodatki dla systemów iOS i Android (tylko dodatki Outlook Mobile).
+Wdrożenie scentralizowane obsługuje trzy platformy klasyczne Windows, mac i aplikacje online Office. Wdrożenie scentralizowane obsługuje również iOS i Android (tylko dodatki Outlook Mobile).
 
 Może upłynąć do 24 godzin, aż dodatek będzie widoczny u klienta dla wszystkich użytkowników.
 
@@ -55,7 +55,7 @@ W ramach funkcji scentralizowanego wdrażania nie są obsługiwane następujące
 - Wdrożenie dodatku do skrzynki pocztowej Exchange on-Prem
 - Wdrażanie dodatków do programu SharePoint
 - aplikacje Teams
-- Wdrażanie dodatków modelu obiektów składnika (COM) lub Visual Studio Tools dla pakietu Office (VSTO).
+- Wdrażanie dodatków modelu obiektów składników (COM) lub Visual Studio Tools dla pakietu Office (VSTO).
 - Wdrożenia Microsoft 365, które nie obejmują Exchange Online, takich jak jednostki SKU: Aplikacje Microsoft 365 dla firm i Aplikacje Microsoft 365 dla Enterprise.
 
 ### <a name="office-requirements"></a>wymagania Office
@@ -70,8 +70,8 @@ W ramach funkcji scentralizowanego wdrażania nie są obsługiwane następujące
   - Wersja 16.0.4494.1000 lub nowsza Office Professional Plus 2016 (MSI) lub Office Standard 2016 (MSI)\*
   - Wersja 15.0.4937.1000 lub nowsza z Office Professional Plus 2013 r. (MSI) lub Office Standard 2013 r. (MSI)\*
   - Wersja 16.0.9318.1000 lub nowsza Office 2016 dla komputerów Mac
-- Wersja 2.75.0 lub nowsza Outlook mobile dla systemu iOS
-- Wersja 2.2.145 lub nowsza Outlook mobile dla systemu Android
+- Wersja 2.75.0 lub nowsza Outlook mobile dla iOS
+- Wersja 2.2.145 lub nowsza Outlook mobile dla Android
 
     *Wersje msi Outlook pokazują dodatki zainstalowane przez administratora na odpowiedniej wstążce Outlook, a nie w sekcji "Moje dodatki".
 
@@ -123,6 +123,8 @@ Gdy narzędzie zakończy pracę, utworzy plik wyjściowy w formacie CSV. Plik je
 - plan Office — plan Office są licencjonowane
 - Aktywowany pakiet Office  jeśli pakiet Office został aktywowany
 - Obsługiwana skrzynka pocztowa  jeśli skrzynka pocztowa obsługuje protokół OAuth
+
+Jeśli raporty Microsoft 365 zawierają anonimowe nazwy użytkowników zamiast rzeczywistych nazw użytkowników, rozwiąż ten problem, zmieniając ustawienie raportów w Centrum administracyjne platformy Microsoft 365. Aby uzyskać szczegółowe instrukcje, zobacz [Microsoft 365 raporty zawierają anonimowe nazwy użytkowników zamiast rzeczywistych nazw użytkowników](/office365/troubleshoot/miscellaneous/reports-show-anonymous-user-name).
 
 > [!NOTE]
 > Uwierzytelnianie wieloskładnikowe nie jest obsługiwane w przypadku korzystania z modułu PowerShell wdrażania centralnego. Moduł działa tylko z uwierzytelnianiem podstawowym.

@@ -22,16 +22,16 @@ ms.custom:
 search.appverid: MET150
 description: Otrzymane aplikacje i usługi zależą od zakupionego produktu Microsoft 365, takiego jak Aplikacje Microsoft 365 dla firm.
 ms.date: 05/12/2022
-ms.openlocfilehash: 48186847368af2bc43831c6e27ef7d347981f1b3
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 56b650a4690151c913855d0007a34d2e2ddcba89
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403233"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043420"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Omówienie subskrypcji i licencji w Microsoft 365 dla firm
 
-Gdy kupujesz subskrypcję, aby Microsoft 365 dla firm, tworzysz konto w celu utworzenia zestawu aplikacji i usług, za które płacisz co miesiąc lub co rok. Aplikacje i usługi, które otrzymujesz w ramach subskrypcji, zależą od zakupionego produktu, takiego jak Aplikacje Microsoft 365 dla firm lub Microsoft 365 Business Standard. Możesz zobaczyć, co jest dostarczane z każdym produktem na stronie [Microsoft 365 dla małych i średnich firm](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1).
+Gdy kupujesz subskrypcję, aby Microsoft 365 dla firm, tworzysz konto w celu utworzenia zestawu aplikacji i usług, za które płacisz co miesiąc lub co rok. Aplikacje i usługi, które otrzymujesz w ramach subskrypcji, zależą od zakupionego produktu, takiego jak Aplikacje Microsoft 365 dla firm lub Microsoft 365 Business Standard. Możesz zobaczyć, co jest dostarczane z każdym produktem na stronie [Microsoft 365 dla małych i średnich firm](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
 Kupując subskrypcję, określasz liczbę potrzebnych licencji, która zależy od liczby osób w organizacji. Po zakupie subskrypcji utworzysz konta dla osób w organizacji, a następnie przypiszesz licencję każdej osobie. W miarę zmian potrzeb organizacji możesz kupić więcej licencji, aby pomieścić nowe osoby, lub ponownie przypisać licencje innym użytkownikom, gdy ktoś opuści Organizację.
 
@@ -55,10 +55,10 @@ Jeśli Subskrypcja zawiera dowolny z następujących produktów, każda osoba mo
 W poniższej tabeli wymieniono czynności, które są wykonywane automatycznie, gdy przypiszesz licencję do osoby:
   
 |Jeśli subskrypcja zawiera tę usługę|Automatycznie są wykonywane następujące czynności|
-|:-----|:-----|
-|Exchange Online|Dla tej osoby tworzona jest skrzynka pocztowa. <br/> Aby dowiedzieć się więcej o umowie SLA na potrzeby ukończenia tego zadania, zobacz ["Konfigurowanie..." komunikatów w Centrum administracyjne platformy Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
+|---|---|
+|Exchange Online|Dla tej osoby tworzona jest skrzynka pocztowa. <br/> Aby dowiedzieć się więcej o umowie SLA na potrzeby ukończenia tego zadania, zobacz ["Konfigurowanie..." komunikatów w Centrum administracyjne platformy Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center).|
 |SharePoint Online|Ta osoba otrzymuje uprawnienia do edytowania dotyczące domyślnej witryny zespołu usługi SharePoint Online.|
-|Skype dla firm Online|Osoba ma dostęp do funkcji skojarzonych z licencją.|
+|Microsoft Teams|Osoba ma dostęp do funkcji skojarzonych z licencją.|
 |Aplikacje Microsoft 365 dla przedsiębiorstw i Aplikacje Microsoft 365 dla firm|Osoba ta może pobierać aplikacje Office na maksymalnie pięć komputerów Mac lub KOMPUTERÓW PC, pięć tabletów i pięć smartfonów.|
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Informacje o licencjach dla skrzynek pocztowych nienależących do użytkowników
@@ -74,7 +74,7 @@ Nie trzeba przypisywać licencji do skrzynek pocztowych zasobów, skrzynek poczt
 Administratorzy różnych typów mogą pracować z licencjami na różne sposoby w zależności od roli. Podsumowanie typowych opcji znajduje się w poniższej tabeli. Pełna lista ról i uprawnień administratorów znajduje się w artykule [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
   
 |Rola administratora|Przypisywanie licencji|Anulowanie przypisania licencji|Kupowanie dodatkowych licencji|Usuwanie konta|
-|:-----|:-----|:-----|:-----|:-----|
+|---|:---:|:---:|:---:|:---:|
 |Administrator rozliczeń|Nie|Nie|Tak|Nie|
 |Administrator globalny|Tak|Tak|Tak|Tak|
 |Administrator licencji|Tak|Tak|Nie|Nie|

@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Dodaj magazyn plików w subskrypcji Microsoft 365. Dodatkowy magazyn plików umożliwia przechowywanie większej ilości zawartości w SharePoint.
 ms.date: 05/24/2022
-ms.openlocfilehash: a4a86966ccee1632f60b687696b9062ca3446778
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: bd0edd85718acc51559f5e409de4661a756cd787
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65678882"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043977"
 ---
 # <a name="add-more-sharepoint-storage-to-your-subscription"></a>Dodawanie większej ilości magazynu SharePoint do subskrypcji
 
@@ -41,7 +41,7 @@ Jeśli zacznie brakować miejsca w SharePoint witrynach, możesz dodać magazyn 
 > Aby uzyskać informacje na temat magazynu OneDrive, zobacz [Ustawianie domyślnego miejsca do magazynowania dla OneDrive użytkowników](/onedrive/set-default-storage-space).
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą firmy Microsoft ds. małych firm](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -70,7 +70,7 @@ Jeśli nie zakupiono jeszcze dodatkowego magazynu dla subskrypcji, możesz to zr
 4. W razie potrzeby wybierz subskrypcję podstawową, a następnie wprowadź liczbę gigabajtów magazynu, którą chcesz dodać.
 5. Wybierz pozycję **Wyewidencjonuj teraz**.
 6. Na stronie **Jak to wygląda?** sprawdź wybraną liczbę gigabajtów magazynu, przejrzyj informacje o cenach, a następnie wybierz pozycję **Dalej**.
-7. Na stronie **Kompletne zamówienie** zweryfikuj sumę. Jeśli chcesz wprowadzić jakiekolwiek zmiany, wybierz pozycję **Edytuj kolejność**. Jeśli zamówienie wymaga zaznaczenia środków, zaznacz pole wyboru. Po zakończeniu wybierz pozycję **Umieść zamówienie** \> **Przejdź do Administracja Strona główna**.
+7. Na stronie **Kompletne zamówienie** zweryfikuj sumę. Jeśli chcesz wprowadzić jakiekolwiek zmiany, wybierz pozycję **Edytuj kolejność**. Jeśli zamówienie wymaga zaznaczenia środków, zaznacz pole wyboru. Po zakończeniu wybierz pozycję **Umieść zamówienie** \> **Przejdź do strony głównej administratora**.
 
 ## <a name="increase-or-decrease-your-extra-storage"></a>Zwiększanie lub zmniejszanie dodatkowego magazynu
 
@@ -104,6 +104,7 @@ Dodatkowe miejsce do magazynowania plików w usłudze Office 365 jest dostępne 
 - Microsoft 365 E3
 - Microsoft 365 E5
 - Microsoft 365 F1
+- Microsoft 365 F3
 
 > [!NOTE]
 > Office 365 dodatkowe Storage plików są również dostępne dla planów GCC, GCC High i DOD.

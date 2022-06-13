@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Znajdź, przetestuj i wdróż aplikacje partnerskie firmy Microsoft i firmy Microsoft dla użytkowników i grup w organizacji w portalu Zintegrowane aplikacje w Centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: 491315b36a7698399bcd22c60173db8cec482148
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7d28f541c319622a4c15ac4eb4619b805cd0f13b
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094665"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043171"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Testowanie i wdrażanie Aplikacje Microsoft 365 przez partnerów w portalu zintegrowanych aplikacji
 
@@ -60,7 +60,7 @@ Możesz zarządzać testowaniem i wdrażaniem zakupionych i licencjonowanych Apl
 
 Możesz znaleźć, przetestować i w pełni wdrożyć opublikowane aplikacje, które nie są jeszcze wyświetlane na liście na stronie Aplikacje zintegrowane. Kupując i licencjonując aplikacje z centrum administracyjnego, możesz dodać aplikacje partnerskie firmy Microsoft i firmy Microsoft do swojej listy z jednej lokalizacji.
 
-1. W centrum administracyjnym w lewej nawigacji wybierz **pozycję Ustawienia**, a następnie wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**Zintegrowane aplikacje**</a>.
+1. W centrum administracyjnym w lewej nawigacji wybierz **pozycję Ustawienia**, a następnie wybierz pozycję <a href="https://admin.microsoft.com/adminportal/home?#/Settings/IntegratedApps" target="_blank">**Zintegrowane aplikacje**</a>.
 
 2. Wybierz pozycję **Pobierz aplikacje** , aby uzyskać widok aplikacji.
 
@@ -86,16 +86,16 @@ Możesz znaleźć, przetestować i w pełni wdrożyć opublikowane aplikacje, kt
 Nie będzie można wdrożyć aplikacji z jednego sklepu ani Aplikacje Microsoft 365 przez partnera z portalu zintegrowanych aplikacji w następujących scenariuszach.
 
 - Ten sam dodatek jest połączony z więcej niż jedną ofertą SaaS.
-- Oferta SaaS jest połączona z dodatkami, ale nie jest zintegrowana z usługą Microsoft Graph i nie podano identyfikatora aplikacji AAD.
-- Oferta SaaS jest połączona z dodatkami, ale identyfikator aplikacji AAD udostępniony dla usługi Microsoft Graph integracji jest udostępniany w wielu ofertach SaaS.
+- Oferta SaaS jest połączona z dodatkami, ale nie jest zintegrowana z usługą Microsoft Graph i nie podano identyfikatora aplikacji usługi AAD.
+- Oferta SaaS jest połączona z dodatkami, ale identyfikator aplikacji usługi AAD udostępniany na potrzeby integracji z usługą Microsoft Graph jest udostępniany w wielu ofertach SaaS.
 
-## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>Upload niestandardowych aplikacji biznesowych do testowania i pełnego wdrażania
+## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>Przekazywanie niestandardowych aplikacji biznesowych na potrzeby testowania i pełnego wdrażania
 
 1. W centrum administracyjnym w lewym pasku nawigacyjnym wybierz **pozycję Ustawienia**, a następnie pozycję **Zintegrowane aplikacje**.
 
-2. Wybierz **pozycję Upload aplikacje niestandardowe**. Obsługiwane są tylko niestandardowe aplikacje dla programu Word, PowerPoint, Excel i Outlook.
+2. Wybierz pozycję **Przekaż aplikacje niestandardowe**. Obsługiwane są tylko niestandardowe aplikacje dla programu Word, PowerPoint, Excel i Outlook.
 
-3. Upload pliku manifestu z urządzenia lub dodaj link adresu URL. Niektóre aplikacje wymagają dodania użytkowników przed wybraniem pozycji Wdróż.
+3. Przekaż plik manifestu z urządzenia lub dodaj link adresu URL. Niektóre aplikacje wymagają dodania użytkowników przed wybraniem pozycji Wdróż.
 
 4. Wybierz pozycję **Dodaj użytkowników**, wybierz **pozycję Czy jest to wdrożenie testowe**, a następnie wybierz pozycję **Cała organizacja** , **Określoni użytkownicy/grupy** lub **Po prostu ja**.
 
@@ -115,7 +115,7 @@ Dodatki zapewniają następujące korzyści:
 
 - Dodatki nie są już wyświetlane dla użytkowników, jeśli administrator wyłączy lub usunie dodatek lub jeśli użytkownik zostanie usunięty z Azure Active Directory lub z grupy przypisanej do dodatku. 
 
-Dodatki są obsługiwane na trzech platformach klasycznych Windows, mac i aplikacje online Office. Jest ona również obsługiwana w systemach iOS i Android (tylko dodatki Outlook Mobile). 
+Dodatki są obsługiwane na trzech platformach klasycznych Windows, mac i aplikacje online Office. Jest ona również obsługiwana w iOS i Android (tylko dodatki Outlook Mobile). 
 
 Może upłynąć do 24 godzin, aż dodatek będzie widoczny u klienta dla wszystkich użytkowników. 
 
@@ -130,7 +130,7 @@ Wdrożenie nie obsługuje następujących elementów:
 - Dodatki do programów Word, Excel lub PowerPoint w pakiecie Office 2013 
 - Lokalna usługa katalogowa 
 - Wdrożenie dodatku do skrzynki pocztowej Exchange lokalnej 
-- Wdrażanie dodatków modelu obiektów składnika (COM) lub Visual Studio Tools dla pakietu Office (VSTO). 
+- Wdrażanie dodatków modelu obiektów składników (COM) lub Visual Studio Tools dla pakietu Office (VSTO). 
 - Wdrożenia Microsoft 365, które nie obejmują Exchange Online, takich jak Aplikacje Microsoft 365 dla firm i Aplikacje Microsoft 365 dla Enterprise.  
 
 ### <a name="office-requirements"></a>wymagania Office 
@@ -147,8 +147,8 @@ W przypadku Outlook użytkownicy muszą korzystać z jednego z następujących e
     > Wersje msi Outlook pokazują dodatki zainstalowane przez administratora na odpowiedniej wstążce Outlook, a nie w sekcji "Moje dodatki".  
 - Wersja 15.0.4937.1000 lub nowsza z Office Professional Plus 2013 r. (MSI) lub Office Standard 2013 r. (MSI).
 - Wersja 16.0.9318.1000 lub nowsza Office 2016 dla komputerów Mac. 
-- Wersja 2.75.0 lub nowsza Outlook mobile dla systemu iOS. 
-- Wersja 2.2.145 lub nowsza Outlook mobile dla systemu Android. 
+- Wersja 2.75.0 lub nowsza Outlook mobile dla iOS. 
+- Wersja 2.2.145 lub nowsza Outlook mobile dla Android. 
 
 
 
@@ -314,8 +314,8 @@ Tak. Administratorzy globalni mogą usuwać lub usuwać aplikacje.
 
 ### <a name="is-integrated-apps-available-in-sovereign-cloud"></a>Czy zintegrowane aplikacje są dostępne w suwerennej chmurze?
 
-L.p. Zintegrowane aplikacje nie są dostępne dla klientów suwerennej chmury.
+Nie. Zintegrowane aplikacje nie są dostępne dla klientów suwerennej chmury.
 
 ### <a name="is-integrated-apps-available-in-government-clouds"></a>Czy zintegrowane aplikacje są dostępne w chmurach rządowych?
 
-L.p. Zintegrowane aplikacje nie są dostępne dla klientów chmury dla instytucji rządowych.
+Nie. Zintegrowane aplikacje nie są dostępne dla klientów chmury dla instytucji rządowych.

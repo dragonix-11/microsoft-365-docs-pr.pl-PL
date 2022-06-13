@@ -15,21 +15,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: dcb40c0abd619291da2f05fdfa362c03f853181e
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 765eaffd2f57687c0ee16ace30aff97ddd91462c
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842546"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042164"
 ---
 # <a name="optimize-and-correct-security-policies-with-configuration-analyzer"></a>Optymalizowanie i poprawianie zasad zabezpieczeń za pomocą analizatora konfiguracji
 
 Analizator konfiguracji to centralna lokalizacja i pojedyncze okienko szkła do administrowania i wyświetlania zasad zabezpieczeń poczty e-mail skonfigurowanych w dzierżawie. Możesz przeprowadzić bezpośrednie porównanie ustawień z naszymi zalecanymi ustawieniami standardowymi i ścisłymi, zastosować zalecenia i wyświetlić historyczne zmiany, które wpłynęły na Twoją postawę.
 
 ## <a name="what-youll-need"></a>Co będzie potrzebne
-- Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1
+- Exchange Online Protection
 - Wystarczające uprawnienia (rola administratora zabezpieczeń)
 - 5 minut na wykonanie poniższych kroków.
 

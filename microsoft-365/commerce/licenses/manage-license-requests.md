@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Dowiedz się, jak przeglądać i zatwierdzać lub odrzucać żądania licencji od użytkowników dotyczące subskrypcji Microsoft 365 dla firm.
 ms.date: 04/22/2022
-ms.openlocfilehash: 802b84445c83c2831e5fd88598cc00fb8b0ab867
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: dfe8410ce894e19489664396866917e4c5bb3dd4
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098697"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044252"
 ---
 # <a name="manage-license-requests"></a>Zarządzanie żądaniami licencji
 
@@ -50,7 +50,7 @@ Jeśli Twoja organizacja ma własny proces żądania, możesz go zamiast tego u�
 > [!IMPORTANT]
 > Jeśli używasz własnego procesu żądania, żadne żądania nie są wyświetlane na karcie **Żądania** . Istniejące żądania przed dodaniem wiadomości będą nadal wyświetlane do momentu ich zatwierdzenia lub odrzucenia.
 
-1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">RozliczeniaLicenses</a> > , a następnie wybierz kartę **Żądania**.
+1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencje rozliczeniowe</a> > , a następnie wybierz kartę **Żądania**.
 2. Zamiast tego wybierz pozycję **Użyj istniejącego procesu żądania**.
 3. W okienku po prawej stronie w polu **Komunikat** wpisz komunikat, który użytkownicy mają zobaczyć podczas żądania licencji. Jeśli chcesz również dołączyć link do zasad organizacji lub innej dokumentacji, wprowadź adres URL w polu tekstowym **Link do dokumentacji (opcjonalnie** ).
 4. Wybierz **Zapisz**.
@@ -59,14 +59,14 @@ Po powrocie do listy **Żądania zostanie wyświetlony** komunikat **Używasz w�
 
 ## <a name="stop-using-your-own-request-process"></a>Przestań korzystać z własnego procesu żądania
 
-1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">RozliczeniaLicenses</a> > , a następnie wybierz kartę **Żądania**.
+1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencje rozliczeniowe</a> > , a następnie wybierz kartę **Żądania**.
 2. Zamiast tego wybierz pozycję **Użyj istniejącego procesu żądania**.
 3. W okienku po prawej stronie wyczyść pole wyboru **Użyj procesu żądania mojej organizacji** .
 4. Wybierz **Zapisz**.
 
 ## <a name="approve-or-deny-a-license-request"></a>Zatwierdzanie lub odrzucanie żądania licencji
 
-1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">RozliczeniaLicenses</a> > , a następnie wybierz kartę **Żądania**.
+1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencje rozliczeniowe</a> > , a następnie wybierz kartę **Żądania**.
 2. Wybierz wiersz zawierający żądanie, które chcesz przejrzeć. W okienku po prawej stronie są wyświetlane szczegółowe informacje o tym, którzy użytkownicy chcą mieć licencje na produkt.
 3. Aby odrzucić całe żądanie, wybierz pozycję **Nie zatwierdzaj**, a następnie w oknie dialogowym wybierz pozycję **Nie zatwierdzaj**.
 4. Aby odmówić niektórym użytkownikom żądania, ale zatwierdzić innych, wybierz znak X według nazwy użytkowników, których chcesz usunąć. Ich nazwy są przenoszone w obszarze **Nie przypisuj do tych użytkowników**.
@@ -81,4 +81,5 @@ Po powrocie do listy **Żądania zostanie wyświetlony** komunikat **Używasz w�
 
 [Przypisywanie licencji do użytkowników](../../admin/manage/assign-licenses-to-users.md) (artykuł)\
 [Przenoszenie użytkowników do innej subskrypcji](../subscriptions/move-users-different-subscription.md) (artykuł)\
-[Kupowanie lub usuwanie licencji subskrypcji](buy-licenses.md) (artykuł)
+[Kupowanie lub usuwanie licencji subskrypcji](buy-licenses.md) (artykuł)\
+[Samoobsługowy zakup — często zadawane pytania](../subscriptions/self-service-purchase-faq.yml)

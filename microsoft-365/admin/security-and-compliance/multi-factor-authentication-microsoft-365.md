@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Uwierzytelnianie wieloskładnikowe (MFA) używa zarówno hasła, które powinno być silne, jak i dodatkowej metody weryfikacji.
-ms.openlocfilehash: f939b187fc81381dae4959fdf14280bc839dadb0
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: cabb7d3efc6d99c69e7e125c9170ac7367fc3929
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739876"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044065"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Uwierzytelnianie wieloskładnikowe dla Microsoft 365
 
@@ -170,7 +170,7 @@ W Azure Portal możesz:
 - Włączanie i wyłączanie ustawień domyślnych zabezpieczeń
 - Konfigurowanie zasad dostępu warunkowego
 
-W Centrum administracyjne platformy Microsoft 365 można skonfigurować <a href="https://go.microsoft.com/fwlink/p/?linkid=2169174" target="_blank">ustawienia uwierzytelniania</a> wieloskładnikowego dla poszczególnych użytkowników i usługi.
+W Centrum administracyjne platformy Microsoft 365 można skonfigurować <a href="https://go.microsoft.com/fwlink/?LinkId=279980" target="_blank">ustawienia uwierzytelniania</a> wieloskładnikowego dla poszczególnych użytkowników i usługi.
 
 ## <a name="next-steps"></a>Następne kroki
 

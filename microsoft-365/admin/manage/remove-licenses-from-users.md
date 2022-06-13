@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Metoda używana do cofania przypisania licencji produktów zależy od tego, czy nie przypisano licencji od określonych użytkowników, czy od określonego produktu.
 ms.date: 04/22/2022
-ms.openlocfilehash: 29d46ac745487328ecfe49bf658fdaa79fa346d9
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 23fc9ea04f45cdeb50acb0ec2d62d584974d6499
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465805"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043247"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>Anulowanie przypisywania licencji Microsoft 365 od użytkowników
 
@@ -112,13 +112,13 @@ W przypadku korzystania ze strony **Aktywni użytkownicy** do cofania przypisani
 
 3. U góry wybierz pozycję **Zarządzaj licencjami produktów**.
 
-4. W okienku **Zarządzanie licencjami produktów** wybierz pozycję **Usuń przypisanie** **wszystkichZapisz** >  zmiany.
+4. W okienku **Zarządzanie licencjami produktów** wybierz pozycję **Usuń przypisanie wszystkich zapisanych** > **zmian**.
 
 5. W dolnej części okienka wybierz pozycję **Gotowe**.  
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Co się stanie z danymi użytkownika po usunięciu licencji?
 
-- Gdy licencja zostanie usunięta z użytkownika, Exchange dane online skojarzone z tym kontem są przechowywane przez 30 dni. Po upływie 30-dniowego okresu prolongaty dane są usuwane i nie można ich odzyskać.
+- Po usunięciu licencji z użytkownika Exchange Online dane skojarzone z tym kontem są przechowywane przez 30 dni. Po upływie 30-dniowego okresu prolongaty dane są usuwane i nie można ich odzyskać. Jest ona jednak połączona z zasadami przechowywania, a zawartość zgodna z etykietami przechowywania jest zachowywana na potrzeby odnajdywania.
 - Pliki zapisane w OneDrive dla Firm nie są usuwane, chyba że użytkownik zostanie usunięty z Centrum administracyjne platformy Microsoft 365 lub zostanie usunięty w ramach synchronizacji usługi Active Directory. Aby uzyskać więcej informacji, zobacz [przechowywanie i usuwanie OneDrive](/onedrive/retention-and-deletion).
 - Gdy licencja zostanie usunięta, skrzynka pocztowa użytkownika nie będzie już przeszukiwana przy użyciu narzędzia zbierania elektronicznych materiałów dowodowych, takiego jak wyszukiwanie zawartości lub zbierania elektronicznych materiałów dowodowych (Premium). Aby uzyskać więcej informacji, zobacz "Wyszukiwanie rozłączonych lub nielicenacjonowanych skrzynek pocztowych" w [wyszukiwaniu zawartości w Microsoft 365](../../compliance/content-search.md).
 - Jeśli masz subskrypcję Enterprise, taką jak Office 365 Enterprise E3, Exchange Online umożliwia zachowanie danych skrzynki pocztowej usuniętego konta użytkownika przy użyciu [nieaktywnych skrzynek pocztowych](../../compliance/inactive-mailboxes-in-office-365.md). Aby uzyskać więcej informacji, zobacz [Tworzenie nieaktywnych skrzynek pocztowych i zarządzanie nimi w Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).

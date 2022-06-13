@@ -16,16 +16,16 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak stosować standardowe i ścisłe ustawienia zasad w funkcjach ochrony Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Microsoft Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01fd969461b47b0208dcfd20ff608e829b6a3336
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 06db733b50de51750d6c9f7b3dcf14f28cdff414
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915978"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044395"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Wstępne ustawienie zasad zabezpieczeń w usłudze EOP i ochronie usługi Office 365 w usłudze Microsoft Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -85,18 +85,25 @@ Wstępnie ustawione zasady zabezpieczeń używają odpowiednich zasad z różnyc
   > Zasady dotyczące wychodzącego spamu nie są częścią wstępnie ustawionych zasad zabezpieczeń. Domyślne zasady spamu wychodzącego automatycznie chronią elementy członkowskie wstępnie ustawionych zasad zabezpieczeń. Możesz też utworzyć niestandardowe zasady spamu wychodzącego, aby dostosować ochronę dla członków wstępnie ustawionych zasad zabezpieczeń. Aby uzyskać więcej informacji, zobacz [Konfigurowanie filtrowania spamu wychodzącego w ramach operacji EOP](configure-the-outbound-spam-policy.md).
 
 - **zasady Ochrona usługi Office 365 w usłudze Microsoft Defender**: obejmuje to organizacje z subskrypcjami dodatków Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Defender:
-  - Zasady ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń** i **ścisłe zasady zabezpieczeń wstępnie ustawione**, które obejmują:
+  - Zasady ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń** i **ścisłe zasady zabezpieczeń wstępnie ustawione**, które obejmują:
     - Te same [ustawienia fałszowania](set-up-anti-phishing-policies.md#spoof-settings) , które są dostępne w zasadach ochrony przed wyłudzaniem informacji w ramach EOP.
     - [Ustawienia personifikacji](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Zaawansowane progi wyłudzania informacji](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
   - [Sejf Łączy zasady](set-up-safe-links-policies.md) o nazwie **Standardowa wstępnie ustawiona zasada zabezpieczeń**, **ścisłe zasady zabezpieczeń wstępnie ustawione** i **wbudowane zasady ochrony**.
   - [Sejf zasady załączników](set-up-safe-attachments-policies.md) o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń**, **Ścisłe wstępnie ustawione zasady zabezpieczeń** i **Wbudowane zasady ochrony**.
 
-Zabezpieczenia EOP można stosować do innych użytkowników niż Ochrona usługi Office 365 w usłudze Microsoft Defender ochrony.
+Ochronę EOP można stosować do innych użytkowników niż Ochrona usługi Office 365 w usłudze Defender ochrony lub zastosować operacje EOP i Ochrona usługi Office 365 w usłudze Defender do tych samych adresatów.
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Ustawienia zasad w wstępnie ustawionych zasadach zabezpieczeń
 
 Nie można modyfikować ustawień zasad w profilach ochrony. Wartości ustawień zasad ochrony **standardowej**, **ścisłej** i **wbudowanej** są opisane w artykule [Zalecane ustawienia dotyczące EOP i zabezpieczeń Ochrona usługi Office 365 w usłudze Microsoft Defender](recommended-settings-for-eop-and-office365.md).
+
+> [!NOTE]
+> W Ochrona usługi Office 365 w usłudze Defender ochrony należy zidentyfikować nadawców w celu [ochrony przed personifikacją użytkowników](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) oraz domeny wewnętrzne lub zewnętrzne w celu [ochrony przed personifikacją domeny](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+>
+> Wszystkie domeny, których jesteś właścicielem ([akceptowane domeny](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)), automatycznie otrzymują ochronę przed personifikacją domeny w wstępnie ustawionych zasadach zabezpieczeń.
+>
+> Wszyscy adresaci automatycznie otrzymują ochronę przed personifikacją z [analizy skrzynki pocztowej](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) w wstępnie ustawionych zasadach zabezpieczeń.
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Kolejność pierwszeństwa dla wstępnie ustawionych zasad zabezpieczeń i innych zasad
 
@@ -135,26 +142,75 @@ Jeśli na przykład ustawienie zabezpieczeń istnieje w usłudze Ochrona w warst
 
 2. Na stronie **Ustawienia wstępne zasad zabezpieczeń** kliknij pozycję **Zarządzaj** w sekcjach **Ochrona** standardowa lub **Ścisła ochrona** .
 
-3. Kreator **zastosuj ochronę w warstwie Standardowa** lub **Zastosuj ścisłą ochronę** rozpoczyna się w wysuwnym oknie. Na stronie **Ochrona EOP zidentyfikuj** wewnętrznych adresatów, do których mają zastosowanie [zabezpieczenia EOP](#policies-in-preset-security-policies) (warunki adresatów):
-   - **Użytkownicy**
-   - **Grupy**
-   - **Domeny**
+3. Kreator **zastosuj ochronę w warstwie Standardowa** lub **Zastosuj ścisłą ochronę** rozpoczyna się w wysuwnym oknie.
 
-   Kliknij odpowiednie pole, zacznij wpisywać wartość i wybierz żądaną wartość z wyników. Powtórz ten proces tyle razy, ile jest to konieczne. Aby usunąć istniejącą wartość, kliknij przycisk usuń ![Usuń ikonę.](../../media/m365-cc-sc-remove-selection-icon.png) obok wartości.
+   Na stronie **Zastosuj Exchange Online Protection** zidentyfikuj wewnętrznych adresatów, do których mają zastosowanie [zabezpieczenia EOP](#policies-in-preset-security-policies) (warunki adresatów):
+   - **Wszyscy adresaci**
+   - **Konkretni adresaci**:
+     - **Użytkownicy**
+     - **Grupy**
+     - **Domeny**
 
-   W przypadku użytkowników lub grup można użyć większości identyfikatorów (nazwa, nazwa wyświetlana, alias, adres e-mail, nazwa konta itp.), ale w wynikach jest wyświetlana odpowiednia nazwa wyświetlana. W przypadku użytkowników wprowadź gwiazdkę (\*), aby wyświetlić wszystkie dostępne wartości.
+     Kliknij odpowiednie pole, zacznij wpisywać wartość i wybierz żądaną wartość z wyników. Powtórz ten proces tyle razy, ile jest to konieczne. Aby usunąć istniejącą wartość, kliknij przycisk usuń ![Usuń ikonę.](../../media/m365-cc-sc-remove-selection-icon.png) obok wartości.
 
-   - **Wyklucz tych użytkowników, grupy i domeny**: aby dodać wyjątki dla wewnętrznych adresatów, których dotyczą zasady (wyjątki adresatów), wybierz tę opcję i skonfiguruj wyjątki. Ustawienia i zachowanie są dokładnie takie same jak warunki.
+     W przypadku użytkowników lub grup można użyć większości identyfikatorów (nazwa, nazwa wyświetlana, alias, adres e-mail, nazwa konta itp.), ale w wynikach jest wyświetlana odpowiednia nazwa wyświetlana. W przypadku użytkowników wprowadź gwiazdkę (\*), aby wyświetlić wszystkie dostępne wartości.
+
+   - **Brak**
+
+   - **Wyklucz tych adresatów**: aby dodać wyjątki dla adresatów wewnętrznych, których dotyczą zasady (wyjątki adresatów), wybierz tę opcję i skonfiguruj wyjątki. Ustawienia i zachowanie są dokładnie takie same jak warunki.
 
    Po zakończeniu kliknij przycisk **Dalej**.
 
-4. W Ochrona usługi Office 365 w usłudze Microsoft Defender organizacjach zostaniesz przekierowany do **Ochrona usługi Office 365 w usłudze Defender ochrony ma zastosowanie do** strony w celu zidentyfikowania adresatów wewnętrznych, których [dotyczy Ochrona usługi Office 365 w usłudze Microsoft Defender ochrony](#policies-in-preset-security-policies) mają zastosowanie do (warunków adresatów).
+   > [!NOTE]
+   > W organizacjach bez Ochrona usługi Office 365 w usłudze Defender kliknięcie przycisku **Dalej** spowoduje przejście do strony **Przegląd**. Pozostałe kroki/strony przed stroną **Przeglądanie** są dostępne tylko w organizacjach z Ochrona usługi Office 365 w usłudze Defender.
+
+4. Na stronie **Zastosuj ochronę Ochrona usługi Office 365 w usłudze Defender** zidentyfikuj wewnętrznych adresatów, do których mają zastosowanie [zabezpieczenia Ochrona usługi Office 365 w usłudze Defender](#policies-in-preset-security-policies) (warunki adresatów).
 
    Ustawienia i zachowanie są dokładnie takie same, jak **zabezpieczenia EOP stosowane do** strony w poprzednim kroku.
 
+   Możesz również wybrać wcześniej **wybranych adresatów** , aby używać tych samych adresatów, którzy wybrali ochronę EOP na poprzedniej stronie.
+
    Po zakończeniu kliknij przycisk **Dalej**.
 
-5. Na stronie **Przejrzyj i potwierdź zmiany** sprawdź wybrane opcje, a następnie kliknij przycisk **Potwierdź**.
+5. Na stronie **Ochrona przed personifikacją** kliknij przycisk **Dalej**.
+
+6. Na **stronie Dodawanie adresów e-mail do flagi podczas personifikacji przez osoby atakujące** dodaj wewnętrznych i zewnętrznych nadawców chronionych przez [ochronę przed personifikacją użytkowników](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+   > [!NOTE]
+   > Wszyscy adresaci automatycznie otrzymują ochronę przed personifikacją z [analizy skrzynki pocztowej](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) w wstępnie ustawionych zasadach zabezpieczeń.
+
+   Każdy wpis składa się z nazwy wyświetlanej i adresu e-mail. Wprowadź każdą wartość w polach, a następnie kliknij przycisk **Dodaj**. Powtórz ten krok tyle razy, ile jest to konieczne.
+
+   Można określić maksymalnie 350 użytkowników i nie można określić tego samego użytkownika w ustawieniach ochrony przed personifikacją użytkowników w wielu zasadach.
+
+   Aby usunąć istniejący wpis z listy, kliknij przycisk ![Usuń użytkownika z ikony ochrony przed personifikacją.](../../media/m365-cc-sc-remove.png).
+
+   Po zakończeniu kliknij przycisk **Dalej**.
+
+7. Na stronie **Dodawanie domen do flagi podczas personifikacji przez osoby atakujące** dodaj domeny wewnętrzne i zewnętrzne chronione przez [ochronę przed personifikacją domeny](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+   > [!NOTE]
+   > Wszystkie domeny, których jesteś właścicielem ([akceptowane domeny](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)), automatycznie otrzymują ochronę przed personifikacją domeny w wstępnie ustawionych zasadach zabezpieczeń.
+
+   Wszyscy nadawcy w określonych domenach są chronieni przez ochronę przed personifikacją domeny.
+
+   Wprowadź domenę w polu, a następnie kliknij przycisk **Dodaj**. Powtórz ten krok tyle razy, ile jest to konieczne.
+
+   Aby usunąć istniejący wpis z listy, wybierz wpis, a następnie kliknij przycisk ![Usuń domenę z ikony ochrony przed personifikacją.](../../media/m365-cc-sc-remove.png).
+
+   Maksymalna liczba domen, które można określić na potrzeby ochrony przed personifikacją domeny we wszystkich zasadach ochrony przed wyłudzaniem informacji, wynosi 50.
+
+   Po zakończeniu kliknij przycisk **Dalej**.
+
+8. Na stronie **Dodawanie zaufanych adresów e-mail i domen, aby nie były oznaczane jako personifikacja** , wprowadź adresy e-mail i domeny nadawcy, które mają zostać wykluczone z ochrony przed personifikacją. Komunikaty od tych nadawców nigdy nie zostaną oflagowane jako atak personifikacji, ale nadawcy nadal podlegają skanowaniu za pomocą innych filtrów w ramach operacji EOP i Ochrona usługi Office 365 w usłudze Defender.
+
+   Wprowadź adres e-mail lub domenę w polu, a następnie kliknij przycisk **Dodaj**. Powtórz ten krok tyle razy, ile jest to konieczne.
+
+   Aby usunąć istniejący wpis z listy, wybierz wpis, a następnie kliknij przycisk ![Usuń wyjątki ikony ochrony przed personifikacją.](../../media/m365-cc-sc-remove.png).
+
+   Po zakończeniu kliknij przycisk **Dalej**.
+
+9. Na stronie **Przejrzyj i potwierdź te zasady** sprawdź wybrane opcje, a następnie kliknij przycisk **Potwierdź**.
 
 ### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies"></a>Użyj portalu Microsoft 365 Defender, aby zmodyfikować przypisania standardowych i ścisłych wstępnie ustawionych zasad zabezpieczeń
 
@@ -177,7 +233,7 @@ W związku z tym zazwyczaj nie zalecamy wyjątków od **wbudowanych zasad zabezp
    - **Grupy**
    - **Domeny**
 
-   Kliknij odpowiednie pole, zacznij wpisywać wartość i wybierz żądaną wartość z wyników. Powtórz ten proces tyle razy, ile jest to konieczne. Aby usunąć istniejącą wartość, kliknij przycisk usuń ![Usuń ikonę.](../../media/m365-cc-sc-remove-selection-icon.png) obok wartości.
+   Kliknij odpowiednie pole, zacznij wpisywać wartość i wybierz żądaną wartość z wyników. Powtórz ten proces tyle razy, ile jest to konieczne. Aby usunąć istniejącą wartość, kliknij przycisk usuń ![Usuń wykluczenia z wbudowanej ikony ochrony.](../../media/m365-cc-sc-remove-selection-icon.png) obok wartości.
 
    W przypadku użytkowników lub grup można użyć większości identyfikatorów (nazwa, nazwa wyświetlana, alias, adres e-mail, nazwa konta itp.), ale w wynikach jest wyświetlana odpowiednia nazwa wyświetlana. W przypadku użytkowników wprowadź gwiazdkę (\*), aby wyświetlić wszystkie dostępne wartości.
 

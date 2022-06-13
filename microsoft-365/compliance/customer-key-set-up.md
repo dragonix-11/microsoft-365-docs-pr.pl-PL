@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Dowiedz się, jak skonfigurować klucz klienta.
-ms.openlocfilehash: 42c89c23f823f5f4297f31308516888633a1c06c
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 93cf56ba30f333697ccb1ef6f4064918e73d4fcf
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363175"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042445"
 ---
 # <a name="set-up-customer-key"></a>Konfigurowanie klucza klienta
 
@@ -25,7 +25,7 @@ ms.locfileid: "65363175"
 
 Klucz klienta umożliwia kontrolowanie kluczy szyfrowania organizacji, a następnie konfigurowanie Microsoft 365 do szyfrowania danych magazynowanych w centrach danych firmy Microsoft. Innymi słowy, klucz klienta umożliwia klientom dodawanie warstwy szyfrowania, która należy do nich wraz z kluczami.
 
-Skonfiguruj platformę Azure przed użyciem klucza klienta. W tym artykule opisano kroki, które należy wykonać, aby utworzyć i skonfigurować wymagane zasoby platformy Azure, a następnie przedstawiono kroki konfigurowania klucza klienta. Po skonfigurowaniu platformy Azure należy określić, które zasady, a w związku z tym, które klucze należy przypisać do szyfrowania danych w różnych obciążeniach Microsoft 365 w organizacji. Aby uzyskać więcej informacji na temat klucza klienta lub ogólne omówienie, zobacz [Szyfrowanie usługi za pomocą Microsoft Purview Klucz klienta](customer-key-overview.md).
+Skonfiguruj platformę Azure przed użyciem klucza klienta. W tym artykule opisano kroki, które należy wykonać, aby utworzyć i skonfigurować wymagane zasoby platformy Azure, a następnie przedstawiono kroki konfigurowania klucza klienta. Po skonfigurowaniu platformy Azure należy określić, które zasady, a w związku z tym, które klucze należy przypisać do szyfrowania danych w różnych obciążeniach Microsoft 365 w organizacji. Aby uzyskać więcej informacji na temat klucza klienta lub ogólnego przeglądu, zobacz [Szyfrowanie usługi za pomocą klucza klienta usługi Microsoft Purview](customer-key-overview.md).
   
 > [!IMPORTANT]
 > Zdecydowanie zalecamy stosowanie najlepszych rozwiązań w tym artykule. Są one wywoływane jako **PORADA** i **WAŻNE**. Klucz klienta zapewnia kontrolę nad głównymi kluczami szyfrowania, których zakres może być tak duży, jak cała organizacja. Oznacza to, że błędy popełniane przy użyciu tych kluczy mogą mieć duży wpływ i mogą powodować przerwy w świadczeniu usług lub nieodwołalną utratę danych.
@@ -107,7 +107,7 @@ Aby przesłać ofertę aktywowania klucza klienta, wykonaj następujące kroki:
 
 2. Po zalogowaniu wybierz odpowiednią domenę.
 
-3. W przypadku wybranej domeny wybierz pozycję **Żądaj usług** na górnym pasku nawigacyjnym i przejrzyj listę dostępnych ofert.
+3. W przypadku wybranej domeny wybierz pozycję **Wdróż** na górnym pasku nawigacyjnym i przejrzyj listę dostępnych ofert.
 
 4. Wybierz kartę informacyjną dla oferty, która ma zastosowanie do Ciebie:
 
@@ -360,7 +360,7 @@ W Azure PowerShell:
 
 Po wykonaniu kroków opisanych w tym artykule możesz przystąpić do tworzenia i przypisywania adresów IP. Aby uzyskać instrukcje, zobacz [Zarządzanie kluczem klienta](customer-key-manage.md).
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
 - [Szyfrowanie usługi przy użyciu klucza klienta](customer-key-overview.md)
 

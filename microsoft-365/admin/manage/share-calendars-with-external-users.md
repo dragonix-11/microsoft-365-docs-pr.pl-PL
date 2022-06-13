@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Włącz udostępnianie kalendarza w Centrum administracyjne platformy Microsoft 365, aby użytkownicy mogli udostępniać swoje kalendarze wszystkim osobom w organizacji lub poza nią.
-ms.openlocfilehash: 9179e79e27320df2b943a9342ee0c2a91c866448
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: b3ca1d4f2a6ef24a6958b4fe805ccf617c0984e7
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468563"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043149"
 ---
 # <a name="share-microsoft-365-calendars-with-external-users"></a>Udostępnianie kalendarzy Microsoft 365 użytkownikom zewnętrznym
 
@@ -41,7 +41,7 @@ Udostępnianie kalendarza można włączyć dla wszystkich użytkowników w orga
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Włączanie udostępniania kalendarza przy użyciu Centrum administracyjne platformy Microsoft 365
 
-1. W centrum administracyjnym przejdź do **pozycji Ustawienia** \> **Ustawienia organizacji**, a następnie na <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">karcie **Usługi**</a> wybierz pozycję **Kalendarz**.
+1. Zaloguj się jako **administrator globalny** w centrum administracyjnym, przejdź do **Ustawienia** \> **ustawień organizacji**, a następnie na <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">karcie **Usługi**</a> wybierz pozycję **Kalendarz**.
   
 3. Na stronie **Kalendarz** wybierz, czy chcesz zezwolić użytkownikom na udostępnianie kalendarzy osobom spoza organizacji, które mają Microsoft 365, czy Exchange. Określ, czy chcesz zezwolić anonimowym użytkownikom (użytkownikom bez poświadczeń) na dostęp do kalendarzy za pośrednictwem zaproszenia e-mail.
 
@@ -57,7 +57,25 @@ Obecnie nie jest obsługiwane natychmiastowe synchronizowanie udostępniania poz
 
 ## <a name="invite-people-to-access-calendars"></a>Zapraszanie osób do uzyskiwania dostępu do kalendarzy
 
-Po włączeniu udostępniania właściciele kalendarzy mogą rozszerzyć zaproszenia do określonych użytkowników. Aby uzyskać instrukcje, zobacz [Udostępnianie kalendarza w Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5).
+Po włączeniu udostępniania właściciele kalendarzy mogą rozszerzyć zaproszenia do określonych użytkowników.
+
+1. Otwórz [Outlook w sieci Web](https://outlook.office365.com).
+
+2. W górnej części strony wybierz narzędzie do uruchamiania aplikacji i wybierz pozycję **Kalendarz**. Domyślnie kalendarz podstawowy nosi nazwę "Calendar". Jeśli utworzono inne kalendarze, możesz wybrać jeden z nich do udostępnienia. Nie można udostępniać kalendarzy należących do innych osób.
+
+3. Wprowadź imię i nazwisko lub adres e-mail osoby, której chcesz udostępnić kalendarz, w polu **Wyślij zaproszenie do udostępniania w wiadomości e-mail** .
+
+4. Wybierz, ile informacji chcesz wyświetlić dla tej osoby:
+
+     - **Może wyświetlać, kiedy jestem zajęty** , pozwala osobie zobaczyć, kiedy jesteś zajęty, ale nie zawiera szczegółów, takich jak lokalizacja zdarzenia.
+
+     - **Możliwość wyświetlania tytułów i lokalizacji** pozwala osobie zobaczyć, kiedy jesteś zajęty, a także tytuł i lokalizację zdarzeń.
+
+     - **Możliwość wyświetlenia wszystkich szczegółów** umożliwia osobie wyświetlenie wszystkich szczegółów zdarzeń.
+
+     - **Możliwość edycji** umożliwia osobie wyświetlenie wszystkich szczegółów zdarzeń i edytowanie kalendarza (dostępnego tylko podczas udostępniania osobom w organizacji).
+
+5. Wybierz pozycję **Udostępnij**. 
 
 ## <a name="related-content"></a>Zawartość pokrewna
 

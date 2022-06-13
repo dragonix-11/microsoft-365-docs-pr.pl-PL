@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Zwiększenie bezpieczeństwa organizacji przed atakami haseł oraz blokowanie typowych haseł i włączanie uwierzytelniania wieloskładnikowego opartego na ryzyku.
-ms.openlocfilehash: 006e537c2e2d77a19b27f1c2d537269d69d07c1e
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: bd33d98a33d136f06bfe8e7741bb14c79f0a6160
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469013"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043215"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Zalecenia dotyczące zasad haseł dla haseł Microsoft 365
 
@@ -61,7 +61,7 @@ Dobre praktyki dotyczące haseł można podzielić na kilka ogólnych kategorii:
 
 Aby system był bezpieczniejszy, hasła powinny być przede wszystkim bardziej zróżnicowane. Warto dążyć do tego, aby Twoje zasady dotyczące haseł zawierały wiele różnych i trudnych do odgadnięcia haseł. Oto kilka zaleceń dotyczących utrzymania jak najwyższego poziomu zabezpieczeń w organizacji.
   
-- Utrzymywanie wymagania dotyczącego minimalnej długości 8 znaków
+- Utrzymywanie wymagania dotyczącego minimalnej długości 14 znaków
 
 - Nie wprowadzaj wymogów dotyczących wymaganych znaków. Na przykład \*&amp;(^%$.
 

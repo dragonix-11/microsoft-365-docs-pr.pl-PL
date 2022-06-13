@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2bc051baa8d2ac6df9e29f1679402e63c2774cac
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 6c39db3cceec62ef80cf19f34bbf3d89a219a4f3
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679313"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042983"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux
 
@@ -37,7 +37,7 @@ ms.locfileid: "65679313"
 > [!IMPORTANT]
 > Ten temat zawiera instrukcje dotyczące ustawiania preferencji dla usługi Defender dla punktu końcowego w systemie Linux w środowiskach przedsiębiorstwa. Jeśli chcesz skonfigurować produkt na urządzeniu z poziomu wiersza polecenia, zobacz [Zasoby](linux-resources.md#configure-from-the-command-line).
 
-W środowiskach przedsiębiorstwa usługą Defender for Endpoint w systemie Linux można zarządzać za pośrednictwem profilu konfiguracji. Ten profil jest wdrażany z wybranego narzędzia do zarządzania. Preferencje zarządzane przez przedsiębiorstwo mają pierwszeństwo przed preferencjami ustawionymi lokalnie na urządzeniu. Innymi słowy, użytkownicy w przedsiębiorstwie nie mogą zmieniać preferencji ustawionych za pomocą tego profilu konfiguracji.
+W środowiskach przedsiębiorstwa usługą Defender for Endpoint w systemie Linux można zarządzać za pośrednictwem profilu konfiguracji. Ten profil jest wdrażany z wybranego narzędzia do zarządzania. Preferencje zarządzane przez przedsiębiorstwo mają pierwszeństwo przed preferencjami ustawionymi lokalnie na urządzeniu. Innymi słowy, użytkownicy w przedsiębiorstwie nie mogą zmieniać preferencji ustawionych za pomocą tego profilu konfiguracji. Jeśli wykluczenia zostały dodane za pośrednictwem profilu konfiguracji zarządzanej, można je usunąć tylko za pośrednictwem profilu konfiguracji zarządzanej. Wiersz polecenia działa w przypadku wykluczeń, które zostały dodane lokalnie.
 
 W tym artykule opisano strukturę tego profilu (w tym zalecany profil, którego można użyć do rozpoczęcia pracy) oraz instrukcje dotyczące sposobu wdrażania profilu.
 
@@ -53,16 +53,11 @@ Najwyższy poziom profilu konfiguracji zawiera preferencje dla całego produktu 
 
 Sekcja *antivirusEngine* profilu konfiguracji służy do zarządzania preferencjami składnika antywirusowego produktu.
 
-<br>
-
-****
-
 |Opis|Value|
 |---|---|
 |**Klucz**|antivirusEngine|
 |**Typ danych**|Słownik (preferencja zagnieżdżona)|
 |**Komentarze**|Opis zawartości słownika można znaleźć w poniższych sekcjach.|
-|
 
 #### <a name="enforcement-level-for-antivirus-engine"></a>Poziom wymuszania dla aparatu antywirusowego
 
@@ -77,18 +72,12 @@ Określa preferencje wymuszania aparatu antywirusowego. Istnieją trzy wartości
   - Automatyczne korygowanie zagrożeń jest wyłączone.
   - Aktualizacje analizy zabezpieczeń są włączone.
 
-<br>
-
-****
-
 |Opis|Value|
 |---|---|
 |**Klucz**|enforcementLevel|
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|real_time (wartość domyślna) <p> on_demand <p> Pasywne|
 |**Komentarze**|Dostępne w usłudze Defender for Endpoint w wersji 101.10.72 lub nowszej.|
-|
-
 
 #### <a name="enabledisable-behavior-monitoring"></a>Włączanie/wyłączanie monitorowania zachowania 
 
@@ -102,16 +91,12 @@ Określa, czy funkcja monitorowania i blokowania zachowania jest włączona na u
 |---|---|
 |**Klucz**|behaviorMonitoring|
 |**Typ danych**|Ciąg|
-|**Dopuszczalne wartości**|wyłączone (ustawienie domyślne) <p> Włączone |
+|**Dopuszczalne wartości**|wyłączone (ustawienie domyślne) <p> Włączone|
 |**Komentarze**|Dostępne w usłudze Defender for Endpoint w wersji 101.45.00 lub nowszej.|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Uruchamianie skanowania po zaktualizowaniu definicji
 
 Określa, czy należy rozpocząć skanowanie procesu po pobraniu nowych aktualizacji analizy zabezpieczeń na urządzeniu. Włączenie tego ustawienia spowoduje wyzwolenie skanowania antywirusowego w uruchomionych procesach urządzenia.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
@@ -119,15 +104,10 @@ Określa, czy należy rozpocząć skanowanie procesu po pobraniu nowych aktualiz
 |**Typ danych**|Wartość logiczna|
 |**Dopuszczalne wartości**|true (wartość domyślna) <p> False|
 |**Komentarze**|Dostępne w usłudze Defender for Endpoint w wersji 101.45.00 lub nowszej.|
-|
 
 #### <a name="scan-archives-on-demand-antivirus-scans-only"></a>Skanuj archiwa (tylko skanowanie antywirusowe na żądanie)
 
 Określa, czy skanować archiwa podczas skanowania antywirusowego na żądanie.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
@@ -135,15 +115,10 @@ Określa, czy skanować archiwa podczas skanowania antywirusowego na żądanie.
 |**Typ danych**|Wartość logiczna|
 |**Dopuszczalne wartości**|true (wartość domyślna) <p> False|
 |**Komentarze**|Dostępne w Ochrona punktu końcowego w usłudze Microsoft Defender wersji 101.45.00 lub nowszej.|
-|||
 
 #### <a name="degree-of-parallelism-for-on-demand-scans"></a>Stopień równoległości skanowania na żądanie
 
 Określa stopień równoległości skanowania na żądanie. Odpowiada to liczbie wątków używanych do skanowania i wpływa na użycie procesora CPU, a także czas trwania skanowania na żądanie.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
@@ -151,16 +126,10 @@ Określa stopień równoległości skanowania na żądanie. Odpowiada to liczbie
 |**Typ danych**|Liczba całkowita|
 |**Dopuszczalne wartości**|2 (wartość domyślna). Dozwolone wartości to liczby całkowite z zakresu od 1 do 64.|
 |**Komentarze**|Dostępne w Ochrona punktu końcowego w usłudze Microsoft Defender wersji 101.45.00 lub nowszej.|
-|||
-  
 
 #### <a name="exclusion-merge-policy"></a>Zasady scalania wykluczeń
 
 Określa zasady scalania dla wykluczeń. Może to być kombinacja wykluczeń zdefiniowanych przez administratora i zdefiniowanych przez użytkownika (`merge`) lub tylko wykluczeń zdefiniowanych przez administratora (`admin_only`). To ustawienie może służyć do ograniczania użytkownikom lokalnym definiowania własnych wykluczeń.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
@@ -168,46 +137,31 @@ Określa zasady scalania dla wykluczeń. Może to być kombinacja wykluczeń zde
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|scalanie (domyślne) <p> admin_only|
 |**Komentarze**|Dostępne w usłudze Defender for Endpoint w wersji 100.83.73 lub nowszej.|
-|
 
 #### <a name="scan-exclusions"></a>Wykluczeń skanowania
 
 Jednostki, które zostały wykluczone ze skanowania. Wykluczenia można określić za pomocą pełnych ścieżek, rozszerzeń lub nazw plików.
 (Wykluczenia są określane jako tablica elementów, administrator może określić dowolną liczbę elementów w dowolnej kolejności).
 
-<br>
-
-****
-
 |Opis|Value|
 |---|---|
 |**Klucz**|Wykluczenia|
 |**Typ danych**|Słownik (preferencja zagnieżdżona)|
 |**Komentarze**|Opis zawartości słownika można znaleźć w poniższych sekcjach.|
-|
 
 ##### <a name="type-of-exclusion"></a>Typ wykluczenia
 
 Określa typ zawartości wykluczonej ze skanowania.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
 |**Klucz**|$type|
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|excludedPath <p> excludedFileExtension <p> excludedFileName|
-|
 
 ##### <a name="path-to-excluded-content"></a>Ścieżka do wykluczonej zawartości
 
 Służy do wykluczania zawartości ze skanowania za pomocą pełnej ścieżki pliku.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
@@ -215,15 +169,10 @@ Służy do wykluczania zawartości ze skanowania za pomocą pełnej ścieżki pl
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|prawidłowe ścieżki|
 |**Komentarze**|Dotyczy tylko wtedy, gdy *$type* jest *excludedPath*|
-|
 
 ##### <a name="path-type-file--directory"></a>Typ ścieżki (plik/katalog)
 
 Wskazuje, czy właściwość *path* odwołuje się do pliku lub katalogu.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
@@ -231,15 +180,10 @@ Wskazuje, czy właściwość *path* odwołuje się do pliku lub katalogu.
 |**Typ danych**|Wartość logiczna|
 |**Dopuszczalne wartości**|false (wartość domyślna) <p> True|
 |**Komentarze**|Dotyczy tylko wtedy, gdy *$type* jest *excludedPath*|
-|
 
 ##### <a name="file-extension-excluded-from-the-scan"></a>Rozszerzenie pliku wykluczone ze skanowania
 
 Służy do wykluczania zawartości ze skanowania według rozszerzenia pliku.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
@@ -247,15 +191,10 @@ Służy do wykluczania zawartości ze skanowania według rozszerzenia pliku.
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|prawidłowe rozszerzenia plików|
 |**Komentarze**|Dotyczy tylko wtedy, *gdy $type* jest *wykluczoneFileExtension*|
-|
 
 ##### <a name="process-excluded-from-the-scan"></a>Proces wykluczony ze skanowania*
 
 Określa proces, dla którego wszystkie działania plików są wykluczone ze skanowania. Proces można określić za pomocą jego nazwy (na przykład `cat`) lub pełnej ścieżki (na przykład `/bin/cat`).
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
@@ -263,29 +202,19 @@ Określa proces, dla którego wszystkie działania plików są wykluczone ze ska
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|dowolny ciąg|
 |**Komentarze**|Dotyczy tylko wtedy, *gdy $type* jest *wykluczoneFileName*|
-|
 
 #### <a name="allowed-threats"></a>Dozwolone zagrożenia
 
 Lista zagrożeń (identyfikowanych według ich nazwy), które nie są blokowane przez produkt i zamiast tego mogą być uruchamiane.
 
-<br>
-
-****
-
 |Opis|Value|
 |---|---|
 |**Klucz**|allowedThreats|
 |**Typ danych**|Tablica ciągów|
-|
 
 #### <a name="disallowed-threat-actions"></a>Niedozwolone akcje zagrożeń
 
 Ogranicza akcje, które może wykonać lokalny użytkownik urządzenia po wykryciu zagrożeń. Akcje zawarte na tej liście nie są wyświetlane w interfejsie użytkownika.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
@@ -293,37 +222,26 @@ Ogranicza akcje, które może wykonać lokalny użytkownik urządzenia po wykryc
 |**Typ danych**|Tablica ciągów|
 |**Dopuszczalne wartości**|zezwalaj (ogranicza użytkownikom możliwość zezwalania na zagrożenia) <p> przywracanie (ogranicza użytkownikom możliwość przywracania zagrożeń z kwarantanny)|
 |**Komentarze**|Dostępne w usłudze Defender for Endpoint w wersji 100.83.73 lub nowszej.|
-|
 
 #### <a name="threat-type-settings"></a>Ustawienia typu zagrożenia
 
 Preferencja *threatTypeSettings* w aparacie antywirusowym służy do kontrolowania sposobu obsługi określonych typów zagrożeń przez produkt.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
 |**Klucz**|threatTypeSettings|
 |**Typ danych**|Słownik (preferencja zagnieżdżona)|
 |**Komentarze**|Opis zawartości słownika można znaleźć w poniższych sekcjach.|
-|
 
 ##### <a name="threat-type"></a>Typ zagrożenia
 
 Typ zagrożenia, dla którego skonfigurowano zachowanie.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
 |**Klucz**|Klucz|
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|potentially_unwanted_application <p> archive_bomb|
-|
 
 ##### <a name="action-to-take"></a>Akcja do wykonania
 
@@ -333,24 +251,15 @@ Akcja do wykonania w przypadku wystąpienia zagrożenia typu określonego w popr
 - **Blokuj**: urządzenie jest chronione przed tego typu zagrożeniem i otrzymujesz powiadomienie w konsoli zabezpieczeń.
 - **Wyłączone**: urządzenie nie jest chronione przed tego typu zagrożeniem i nic nie jest rejestrowane.
 
-<br>
-
-****
-
 |Opis|Value|
 |---|---|
 |**Klucz**|Wartość|
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|audit (wartość domyślna) <p> Bloku <p> wyłączone|
-|
 
 #### <a name="threat-type-settings-merge-policy"></a>Zasady scalania ustawień typu zagrożenia
 
 Określa zasady scalania dla ustawień typu zagrożenia. Może to być kombinacja ustawień zdefiniowanych przez administratora i zdefiniowanych przez użytkownika (`merge`) lub tylko ustawień zdefiniowanych przez administratora (`admin_only`). To ustawienie może służyć do ograniczania użytkownikom lokalnym możliwości definiowania własnych ustawień dla różnych typów zagrożeń.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
@@ -358,15 +267,10 @@ Określa zasady scalania dla ustawień typu zagrożenia. Może to być kombinacj
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|scalanie (domyślne) <p> admin_only|
 |**Komentarze**|Dostępne w usłudze Defender for Endpoint w wersji 100.83.73 lub nowszej.|
-|
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Przechowywanie historii skanowania antywirusowego (w dniach)
 
 Określ liczbę dni przechowywania wyników w historii skanowania na urządzeniu. Stare wyniki skanowania są usuwane z historii. Stare pliki poddane kwarantannie, które również są usuwane z dysku.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
@@ -374,15 +278,10 @@ Określ liczbę dni przechowywania wyników w historii skanowania na urządzeniu
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|90 (wartość domyślna). Dozwolone wartości to od 1 dnia do 180 dni.|
 |**Komentarze**|Dostępne w usłudze Defender for Endpoint w wersji 101.04.76 lub nowszej.|
-|
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Maksymalna liczba elementów w historii skanowania antywirusowego
 
 Określ maksymalną liczbę wpisów do zachowania w historii skanowania. Wpisy obejmują wszystkie skany na żądanie wykonywane w przeszłości i wszystkie wykrycia antywirusowe.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
@@ -390,52 +289,36 @@ Określ maksymalną liczbę wpisów do zachowania w historii skanowania. Wpisy o
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|10000 (wartość domyślna). Dozwolone wartości to od 5000 do 15000 elementów.|
 |**Komentarze**|Dostępne w usłudze Defender for Endpoint w wersji 101.04.76 lub nowszej.|
-|
 
 ### <a name="cloud-delivered-protection-preferences"></a>Preferencje ochrony dostarczanej w chmurze
 
 Wpis *cloudService* w profilu konfiguracji służy do konfigurowania funkcji ochrony opartej na chmurze produktu.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
 |**Klucz**|cloudService|
 |**Typ danych**|Słownik (preferencja zagnieżdżona)|
 |**Komentarze**|Opis zawartości słownika można znaleźć w poniższych sekcjach.|
-|
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Włączanie/wyłączanie ochrony dostarczanej w chmurze
 
 Określa, czy ochrona dostarczana w chmurze jest włączona na urządzeniu, czy nie. Aby zwiększyć bezpieczeństwo usług, zalecamy włączenie tej funkcji.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
 |**Klucz**|Włączone|
 |**Typ danych**|Wartość logiczna|
 |**Dopuszczalne wartości**|true (wartość domyślna) <p> False|
-|
 
 #### <a name="diagnostic-collection-level"></a>Poziom kolekcji diagnostycznej
 
 Dane diagnostyczne służą do zapewnienia bezpieczeństwa i aktualności usługi Defender for Endpoint, wykrywania, diagnozowania i rozwiązywania problemów, a także wprowadzania ulepszeń produktu. To ustawienie określa poziom diagnostyki wysyłanej przez produkt do firmy Microsoft.
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
 |**Klucz**|diagnosticLevel|
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|opcjonalne (domyślne) <p> Wymagane|
-|
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>Włączanie/wyłączanie automatycznych przesyłania przykładów
 
@@ -445,31 +328,21 @@ Określa, czy podejrzane próbki (które mogą zawierać zagrożenia) są wysył
 - **Sejf**: automatycznie przesyłane są tylko podejrzane przykłady, które nie zawierają danych osobowych. Jest to wartość domyślna dla tego ustawienia.
 - **Wszystkie**: wszystkie podejrzane przykłady są przesyłane do firmy Microsoft.
 
-<br>
-
-****
-
 |Opis|Value|
 |---|---|
 |**Klucz**|automaticSampleSubmissionConsent|
 |**Typ danych**|Ciąg|
 |**Dopuszczalne wartości**|brak <p> safe (wartość domyślna) <p> Wszystkie|
-|
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>Włączanie/wyłączanie automatycznych aktualizacji analizy zabezpieczeń
 
 Określa, czy aktualizacje analizy zabezpieczeń są instalowane automatycznie:
-
-<br>
-
-****
 
 |Opis|Value|
 |---|---|
 |**Klucz**|automaticDefinitionUpdateEnabled|
 |**Typ danych**|Wartość logiczna|
 |**Dopuszczalne wartości**|true (wartość domyślna) <p> False|
-|
 
 ## <a name="recommended-configuration-profile"></a>Zalecany profil konfiguracji
 

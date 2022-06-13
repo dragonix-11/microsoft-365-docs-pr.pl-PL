@@ -15,14 +15,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 3a26f20946be39074a18df1b09d392464193599c
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 234ce1ecb486c01b95c91aa51a0c5fd6b46e7a3c
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842526"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043531"
 ---
 # <a name="prioritize-and-manage-automated-investigations-and-response-air"></a>Określanie priorytetów i zarządzanie zautomatyzowanymi badaniami i odpowiedziami (AIR)
 
@@ -41,7 +41,7 @@ Ponieważ automatyczne badania dotyczące zawartości *funkcji współpracy & po
 
 ## <a name="what-youll-need"></a>Co będzie potrzebne
 
-- Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2 lub nowszy
+- Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2 lub nowszy (dołączony do wersji E5)
 - Wystarczające uprawnienia (czytelnik zabezpieczeń, operacje zabezpieczeń lub administrator zabezpieczeń oraz rola [wyszukiwania i przeczyszczania](../permissions-microsoft-365-security-center.md) )
 
 ## <a name="steps-to-analyze-and-approve-air-actions-directly-from-the-action-center"></a>Kroki analizowania i zatwierdzania akcji AIR bezpośrednio z Centrum akcji

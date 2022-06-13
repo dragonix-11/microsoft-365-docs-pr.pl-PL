@@ -15,14 +15,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 3670d4c1c55cbaaab739a8de2df359f06b53ae80
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 99bfcd9003d55ced96364f033080992fa4447188
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842484"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042932"
 ---
 # <a name="protect-your-c-suite-with-priority-account-protection"></a>Ochrona pakietu C z priorytetową ochroną konta
 
@@ -49,7 +49,7 @@ Aby dowiedzieć się, jakie są priorytetowe tagi kont, zobacz [Zarządzanie kon
 [Przejrzyj zróżnicowaną ochronę użytkowników oznaczonych jako konta priorytetowe](../../office-365-security/configure-review-priority-account.md).
 
 ## <a name="powershell-configuration"></a>Konfiguracja programu PowerShell
-Jeśli chcesz wykonać te kroki za pośrednictwem programu PowerShell, możesz to zrobić przy użyciu następujących poleceń cmdlet:
+Jeśli chcesz wykonać te kroki za pośrednictwem programu [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), możesz to zrobić przy użyciu następujących poleceń cmdlet:
 1. Wyświetl listę kont priorytetów: **Get-User -IsVIP | wybierz pozycję Tożsamość**
 1. Dodawanie użytkownika do listy kont priorytetów: **Set-User -VIP:$true -Identity \<Identity\>**
 1. Usuwanie użytkownika z listy kont priorytetów: **Set-User -VIP:$false -Identity \<Identity\>**

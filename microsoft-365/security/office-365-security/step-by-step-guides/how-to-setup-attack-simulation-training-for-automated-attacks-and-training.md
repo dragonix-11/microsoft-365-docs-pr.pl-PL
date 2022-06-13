@@ -1,5 +1,5 @@
 ---
-title: Jak skonfigurować zautomatyzowane ataki i trenowanie w ramach trenowania symulacji ataków
+title: Jak skonfigurować zautomatyzowane ataki i szkolenia w ramach szkolenia z symulacji ataków
 description: Kroki automatyzowania trenowania symulacji ataków i wysyłania ładunku do użytkowników docelowych. Korzystając z tego przewodnika, dowiesz się, jak tworzyć zautomatyzowane przepływy ataków z określonymi technikami i ładunkami.
 search.product: ''
 search.appverid: ''
@@ -15,16 +15,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 008d4fd4aeb4725a4c96c917e077c900af1741e2
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: ccf4222878777789fb7f89b6382c858eaad9f0c2
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842481"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042144"
 ---
-# <a name="how-to-setup-automated-attacks-and-training-within-attack-simulation-training"></a>Jak skonfigurować zautomatyzowane ataki i trenowanie w ramach trenowania symulacji ataków
+# <a name="how-to-setup-automated-attacks-and-training-within-attack-simulation-training"></a>Jak skonfigurować zautomatyzowane ataki i szkolenia w ramach szkolenia z symulacji ataków
 
 Trenowanie symulacji ataków umożliwia uruchamianie niegroźnych symulacji ataków w organizacji w celu oceny ryzyka wyłudzania informacji i naucz użytkownikom, jak lepiej uniknąć ataków phish. Postępując zgodnie z tym przewodnikiem, skonfigurujesz zautomatyzowane przepływy z określonymi technikami i ładunkami uruchamianymi po spełnieniu określonych warunków, uruchamiając symulacje przeciwko twojej organizacji.
 

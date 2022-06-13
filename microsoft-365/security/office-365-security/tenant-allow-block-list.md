@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak zarządzać zezwoleniami i blokami na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1832f641c5efc582bee7837dcf8e5b67a9256f6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 8b99f4f9805f34485457a0f376f4bfea04d96192
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772096"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043736"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Zarządzanie listą dozwolonych/zablokowanych dzierżaw
 
@@ -74,16 +74,13 @@ W tym artykule opisano sposób konfigurowania wpisów na liście dozwolonych/zab
 - Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Połączenie to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Aby nawiązać połączenie z autonomicznym programem PowerShell EOP, zobacz [Połączenie do Exchange Online Protection programu PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia w Exchange Online:
-  - **Nadawcy, adresy URL i pliki**:
     - Aby dodać i usunąć wartości z listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem
       - **Zarządzanie organizacją** lub grupa ról **administratora zabezpieczeń** (**rola administratora zabezpieczeń**)
       - Grupa ról **operatora zabezpieczeń** (**Menedżer AllowBlockList dzierżawy**).
     - Aby uzyskać dostęp tylko do odczytu do listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem
       - **Globalna grupa ról czytelnika**
       - Grupa ról **czytelnika zabezpieczeń**
-  - **Fałszowanie**: jedna z następujących kombinacji:
-    - **Zarządzanie organizacją**
-    - **Administrator zabezpieczeń** <u>i</u> **konfiguracja tylko do wyświetlania** lub **zarządzanie organizacją tylko do wyświetlania**.
+      - **Grupa ról konfiguracji tylko do wyświetlania* .
 
   Aby uzyskać więcej informacji, zobacz [Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -468,7 +465,6 @@ Para domeny dla sfałszowanego nadawcy na liście dozwolonych/blokowych dzierża
 - **Wysyłanie infrastruktury**: ta wartość wskazuje źródło komunikatów od sfałszowanego użytkownika. Prawidłowe wartości obejmują:
   - Domena znaleziona w odwrotnym wyszukiwaniu DNS (rekord PTR) adresu IP źródłowego serwera poczty e-mail (na przykład fabrikam.com).
   - Jeśli źródłowy adres IP nie ma rekordu PTR, infrastruktura wysyłania jest identyfikowana jako \<source IP\>/24 (na przykład 192.168.100.100/24).
-  - Zweryfikowana domena DKIM.
 
 Oto kilka przykładów prawidłowych par domen do identyfikowania sfałszowanych nadawców:
 

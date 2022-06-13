@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak za pomocą programu PowerShell tworzyć i publikować etykiety przechowywania z poziomu wiersza polecenia niezależnie od portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: f2a01024f6c2a05eb5d584112f9a828ac2c3058c
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: fb39e3dee9f1bd0492c443e4a3c5f5c878808990
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011765"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043508"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Tworzenie i publikowanie etykiet przechowywania przy użyciu programu PowerShell
 
@@ -33,41 +33,40 @@ ms.locfileid: "66011765"
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po podjęciu decyzji o użyciu [etykiet przechowywania](retention.md), które ułatwiają przechowywanie lub usuwanie dokumentów i wiadomości e-mail w Microsoft 365, być może wiesz, że istnieje wiele i prawdopodobnie setki etykiet przechowywania do tworzenia i publikowania. Zalecaną metodą tworzenia etykiet przechowywania na dużą skalę jest użycie [planu plików](file-plan-manager.md) z portalu zgodności usługi Microsoft Purview. Można jednak również użyć programu [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
-  
+
 Skorzystaj z informacji, plików szablonów i przykładów oraz skryptu w tym artykule, aby ułatwić zbiorcze tworzenie etykiet przechowywania i publikowanie ich w zasadach etykiet przechowywania. Następnie etykiety przechowywania mogą być [stosowane przez administratorów i użytkowników](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
 
 Podane instrukcje nie obsługują etykiet przechowywania, które są automatycznie stosowane.
 
-Przegląd: 
+Przegląd:
 
 1. W Excel utwórz listę etykiet przechowywania i listę ich zasad etykiet przechowywania.
 
 2. Użyj programu PowerShell, aby utworzyć etykiety przechowywania i zasady etykiet przechowywania na tych listach.
-  
+
 ## <a name="disclaimer"></a>Zastrzeżenie
 
 Przykładowe skrypty podane w tym artykule nie są obsługiwane w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowe skrypty są dostarczane jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowych skryptów i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
-  
+
 ## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>Krok 1. Tworzenie pliku .csv dla etykiet przechowywania
 
-1. Skopiuj następujący przykładowy plik .csv dla szablonu i przykładowe wpisy dla czterech różnych etykiet przechowywania i wklej je do Excel. 
+1. Skopiuj następujący przykładowy plik .csv dla szablonu i przykładowe wpisy dla czterech różnych etykiet przechowywania i wklej je do Excel.
 
 2. Konwertowanie tekstu na kolumny: Karta \> **Dane** **Tekst na kolumny** \> **rozdzielane** \> **przecinkami** \> **ogólne**
 
-2. Zastąp przykłady wpisami dla własnych etykiet przechowywania i ustawień. Aby uzyskać więcej informacji na temat wartości parametrów, zobacz [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
+3. Zastąp przykłady wpisami dla własnych etykiet przechowywania i ustawień. Aby uzyskać więcej informacji na temat wartości parametrów, zobacz [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
 
-3. Zapisz arkusz jako plik .csv w lokalizacji, którą można łatwo znaleźć w późniejszym kroku. Na przykład: C:\>Scripts\Labels.csv
+4. Zapisz arkusz jako plik .csv w lokalizacji, którą można łatwo znaleźć w późniejszym kroku. Na przykład: C:\>Scripts\Labels.csv
 
-  
 Uwagi:
 
 - Jeśli plik .csv zawiera etykietę przechowywania o takiej samej nazwie jak ta, która już istnieje, skrypt pomija tworzenie tej etykiety przechowywania. Nie są tworzone zduplikowane etykiety przechowywania.
-    
+
 - Nie zmieniaj ani nie zmieniaj nazw nagłówków kolumn z udostępnionego przykładowego pliku .csv lub skrypt zakończy się niepowodzeniem.
-    
+
 ### <a name="sample-csv-file-for-retention-labels"></a>Przykładowy plik .csv etykiet przechowywania
 
-```
+```text
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
 LabelName_t_1,Record - keep and delete - 2 years,$true,KeepAndDelete,730,CreationAgeInDays,
 LabelName_t_2,Keep and delete tag - 7 years,$false,KeepAndDelete,2555,ModificationAgeInDays,
@@ -77,24 +76,23 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 ## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>Krok 2. Tworzenie pliku .csv dla zasad etykiet przechowywania
 
-1. Skopiuj następujący przykładowy plik .csv szablonu i przykładowe wpisy dla trzech różnych zasad etykiet przechowywania i wklej je do Excel. 
+1. Skopiuj następujący przykładowy plik .csv szablonu i przykładowe wpisy dla trzech różnych zasad etykiet przechowywania i wklej je do Excel.
 
 2. Konwertowanie tekstu na kolumny: Karta \> **Dane** **Tekst na kolumny** \> **rozdzielane** \> **przecinkami** \> **ogólne**
 
-2. Zastąp przykłady wpisami dla własnych zasad etykiet przechowywania i ich ustawień. Aby uzyskać więcej informacji na temat wartości parametrów dla tego polecenia cmdlet, zobacz [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).
+3. Zastąp przykłady wpisami dla własnych zasad etykiet przechowywania i ich ustawień. Aby uzyskać więcej informacji na temat wartości parametrów dla tego polecenia cmdlet, zobacz [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).
 
-3. Zapisz arkusz jako plik .csv w lokalizacji, którą można łatwo znaleźć w późniejszym kroku. Przykład: `<path>Policies.csv`
-
+4. Zapisz arkusz jako plik .csv w lokalizacji, którą można łatwo znaleźć w późniejszym kroku. Przykład: `<path>Policies.csv`
 
 Uwagi:
-  
+
 - Jeśli plik .csv zawiera zasady etykiet przechowywania o takiej samej nazwie jak ta, która już istnieje, skrypt pomija tworzenie tych zasad etykiet przechowywania. Nie są tworzone zduplikowane zasady etykiet przechowywania.
-    
+
 - Nie zmieniaj ani nie zmieniaj nazw nagłówków kolumn z udostępnionego przykładowego pliku .csv lub skrypt zakończy się niepowodzeniem.
-    
+
 ### <a name="sample-csv-file-for-retention-policies"></a>Przykładowy plik .csv zasad przechowywania
 
-```
+```text
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
 Publishing Policy Red1,"LabelName_t_1, LabelName_t_2, LabelName_t_3, LabelName_t_4",N/A,$true,All,,All,,All,,,All,,,
 Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
@@ -110,8 +108,8 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 Uwagi:
 
 - Skrypt monituje o podanie dwóch plików źródłowych utworzonych w dwóch poprzednich krokach:
-    - Jeśli nie określisz pliku źródłowego do utworzenia etykiet przechowywania, skrypt przejdzie dalej, aby utworzyć zasady etykiet przechowywania. 
-    - Jeśli nie określisz pliku źródłowego w celu utworzenia zasad etykiet przechowywania, skrypt utworzy tylko etykiety przechowywania.
+  - Jeśli nie określisz pliku źródłowego do utworzenia etykiet przechowywania, skrypt przejdzie dalej, aby utworzyć zasady etykiet przechowywania.
+  - Jeśli nie określisz pliku źródłowego w celu utworzenia zasad etykiet przechowywania, skrypt utworzy tylko etykiety przechowywania.
 
 - Skrypt generuje plik dziennika, który rejestruje każdą wykonywaną akcję i określa, czy akcja zakończyła się powodzeniem, czy niepowodzeniem. Zobacz ostatni krok, aby uzyskać instrukcje dotyczące znajdowania tego pliku dziennika.
 
@@ -120,15 +118,15 @@ Uwagi:
 ```Powershell
 <#
 . Steps: Import and publish retention labels
-    ○ Load retention labels csv file 
-    ○ Validate csv file input
-    ○ Create retention labels
-    ○ Create retention policies
-    ○ Publish retention labels for the policies
-    ○ Generate the log for retention labels and policies creation
-    ○ Generate the csv result for the labels and policies created
+    - Load retention labels csv file
+    - Validate csv file input
+    - Create retention labels
+    - Create retention policies
+    - Publish retention labels for the policies
+    - Generate the log for retention labels and policies creation
+    - Generate the csv result for the labels and policies created
 . Syntax
-    .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
+    .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>]
 . Detailed Description
     1) [-LabelListCSV <string>]
     -LabelListCSV ".\SampleInputFile_LabelList.csv"
@@ -158,13 +156,13 @@ Function FileExist
     $inputFileExist = Test-Path $FilePath
     if (!$inputFileExist)
     {
-        if ($Warning -eq $false) 
-        { 
+        if ($Warning -eq $false)
+        {
             WriteToLog -Type "Failed" -Message "[File: $FilePath] The file doesn't exist"
-            throw 
+            throw
         }
-        else 
-        { 
+        else
+        {
             WriteToLog -Type "Warning" -Message "[File: $FilePath] The file doesn't exist"
         }
     }
@@ -259,7 +257,7 @@ Function InvokePowerShellCmdlet
     )
     try
     {
-        WriteToLog -Type "Start" -Message "Execute Cmdlet : '$CmdLet'" 
+        WriteToLog -Type "Start" -Message "Execute Cmdlet : '$CmdLet'"
         return Invoke-Expression $CmdLet -ErrorAction SilentlyContinue
     }
     catch
@@ -279,10 +277,10 @@ Function CreateComplianceTag
         [Parameter(Mandatory = $true)]
         [String]$FilePath
     )
-    
+
     WriteToLog -Type "Start" "Start to create Compliance Tag"
     FileExist $FilePath
-    
+
     # TODO Validate CSV file for the Header
     try
     {
@@ -319,7 +317,7 @@ Function CreateComplianceTag
             if (![String]::IsNullOrEmpty($lab.'RetentionAction (Optional)'))
             {
                 $para = $lab.'RetentionAction (Optional)'
-                $cmdlet += " -RetentionAction " + $para 
+                $cmdlet += " -RetentionAction " + $para
             }
             if (![String]::IsNullOrEmpty($lab.'RetentionDuration (Optional)'))
             {
@@ -342,7 +340,7 @@ Function CreateComplianceTag
                         $eml += "'{0}'," -f $email
                     }
                     $eml = $eml.Substring(0, $eml.Length - 1) + ')'
-                    
+
                     $cmdlet += " -ReviewerEmail " + $eml
                 }
             }
@@ -351,9 +349,9 @@ Function CreateComplianceTag
             {
                 # Create compliance tag
                 $msg = "Execute Cmdlet : {0}" -f $cmdlet
-                
+
                 $ret = InvokePowerShellCmdlet $cmdlet
-            
+
                 if ($ret -eq $null)
                 {
                     WriteToLog -Type "Failed" $error[0]
@@ -381,7 +379,7 @@ Function CreateRetentionCompliancePolicy
         [Parameter(Mandatory = $true)]
         [String]$FilePath
     )
-    
+
     WriteToLog -Type "Start" "Start to Create Retention Policy"
     FileExist $FilePath
     try
@@ -422,7 +420,7 @@ Function CreateRetentionCompliancePolicy
                 $para = $rp.'ExchangeLocation (Optional)'
                 $cmdlet += " -ExchangeLocation " + $para
             }
-         
+
             if (![String]::IsNullOrEmpty($rp.'ExchangeLocationException (Optional)'))
             {
                 $para = $rp.'ExchangeLocationException (Optional)'
@@ -478,9 +476,9 @@ Function CreateRetentionCompliancePolicy
             {
                 # Create retention compliance policy
                 $msg = "Execute Cmdlet : {0}" -f $cmdlet
-            
+
                 $ret = invokepowershellcmdlet $cmdlet
-            
+
                 if ($ret -eq $null)
                 {
                     WriteToLog -Type "Failed" $error[0]
@@ -493,13 +491,13 @@ Function CreateRetentionCompliancePolicy
                 WriteToLog -Type "Warning" -Message "The policy '$name' already exists! Skip for creation!"
                 $rpid = ($policies | ? { $_.Name.ToLower() -eq $name.ToLower() }).Guid
             }
-                        
+
             # Retrieve tag name for publishing
             $ts = $rp.'PublishComplianceTag (Required)'
             $tagList = $ts.Split(",") | ForEach-Object { $_.Trim() }
-            
-            WriteToLog -Type "Message" -Message "Publish Tags : '$ts'" 
-            
+
+            WriteToLog -Type "Message" -Message "Publish Tags : '$ts'"
+
             PublishComplianceTag -PolicyGuid $rpid -TagName $tagList
         }
     }
@@ -519,14 +517,14 @@ Function PublishComplianceTag
         [Parameter(Mandatory = $true)]
         [String[]]$TagNames
     )
-    
+
     WriteToLog -Type "Start" "Start to Publish Compliance Tag"
     try
     {
         # Retrieve existing rule related to the given compliance policy
         $rule = InvokePowerShellCmdlet ("Get-RetentionComplianceRule -Policy {0}" -f $PolicyGuid)
         $tagGuids = New-Object System.Collections.ArrayList
-        
+
         foreach ($tn in $TagNames)
         {
             $t = InvokePowerShellCmdlet ("Get-ComplianceTag {0}" -f $tn)
@@ -550,13 +548,13 @@ Function PublishComplianceTag
                 }
             }
         }
-        
+
         foreach($t in $tagGuids)
         {
             # Publish compliance tag
             $cmdlet = "New-RetentionComplianceRule -Policy {0} -PublishComplianceTag {1}" -f $PolicyGuid, $t
             $ret = InvokePowerShellCmdlet $cmdlet
-            
+
             if ($ret -eq $null)
             {
                 WriteToLog -Type "Failed" $error[0]
@@ -578,7 +576,7 @@ Function ExportCreatedComplianceTag
         [Parameter(Mandatory = $true)]
         [String]$LabelFilePath
     )
-    
+
     WriteToLog -Type "Start" "Start to Export Compliance Tag Created"
     try
     {
@@ -594,7 +592,7 @@ Function ExportCreatedComplianceTag
         $col5 = New-Object system.Data.DataColumn RetentionDuration,([string])
         $col6 = New-Object system.Data.DataColumn RetentionType,([string])
         $col7 = New-Object system.Data.DataColumn ReviewerEmail,([string])
-        
+
         # Add the Columns
         $table.columns.add($col1)
         $table.columns.add($col2)
@@ -606,7 +604,7 @@ Function ExportCreatedComplianceTag
         foreach($lab in $labels)
         {
             $t = InvokePowerShellCmdlet ("Get-ComplianceTag '{0}' " -f $lab.'Name (Required)')
-            
+
             # Create a result row
             $row = $table.NewRow()
             $row['Name'] = $t.Name
@@ -616,7 +614,7 @@ Function ExportCreatedComplianceTag
             $row['RetentionDuration'] = $t.RetentionDuration
             $row['RetentionType'] = $t.RetentionType
             $row['ReviewerEmail'] = $t.ReviewerEmail
-            
+
             # Add the row to the table
             $table.Rows.Add($row)
         }
@@ -636,7 +634,7 @@ Function ExportPublishedComplianceTagAndPolicy
         [Parameter(Mandatory = $true)]
         [String[]]$PolicyFilePath
     )
-    
+
     WriteToLog -Type "Start" "Start to Export Published Compliance Tag and Policy"
     try
     {
@@ -660,7 +658,7 @@ Function ExportPublishedComplianceTagAndPolicy
         $col13 = New-Object system.Data.DataColumn SharePointLocationException,([string])
         $col14 = New-Object system.Data.DataColumn SkypeLocation,([string])
         $col15 = New-Object system.Data.DataColumn SkypeLocationException,([string])
-        
+
         # Add the Columns
         $table.columns.add($col1)
         $table.columns.add($col2)
@@ -680,11 +678,11 @@ Function ExportPublishedComplianceTagAndPolicy
         foreach($policy in $policies)
         {
             $t = InvokePowerShellCmdlet ("Get-RetentionCompliancePolicy '{0}' -DistributionDetail" -f $policy.'Policy Name (Required)')
-            
+
             # Create a result row
             $row = $table.NewRow()
             $row['Policy Name'] = $t.Name
-            
+
             $rules = InvokePowerShellCmdlet ("Get-RetentionComplianceRule -Policy {0}" -f $t.Guid)
             $tagList = [String]::Empty
             foreach($rule in $rules)
@@ -713,7 +711,7 @@ Function ExportPublishedComplianceTagAndPolicy
             $row['SharePointLocationException'] = $t.SharePointLocationException
             $row['SkypeLocation'] = $t.SkypeLocation
             $row['SkypeLocationException'] = $t.SkypeLocationException
-            
+
             # Add the row to the table
             $table.Rows.Add($row)
         }
@@ -732,9 +730,8 @@ CreateRetentionCompliancePolicy -FilePath $PolicyListCSV
 if ($ResultCSV)
 {
     ExportCreatedComplianceTag -LabelFilePath $LabelListCSV
-    ExportPublishedComplianceTagAndPolicy -PolicyFilePath $PolicyListCSV 
+    ExportPublishedComplianceTagAndPolicy -PolicyFilePath $PolicyListCSV
 }
-
 ```
 
 ## <a name="step-4-run-the-powershell-script"></a>Krok 4. Uruchamianie skryptu programu PowerShell
@@ -742,15 +739,15 @@ if ($ResultCSV)
 Najpierw [Połączenie do programu PowerShell & zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell).
 
 Następnie uruchom skrypt, który tworzy i publikuje etykiety przechowywania:
-  
+
 1. W sesji programu PowerShell security & Compliance wprowadź ścieżkę, a następnie znaki `.\` i nazwę pliku skryptu, a następnie naciśnij klawisz ENTER, aby uruchomić skrypt. Przykład:
-    
+
     ```powershell
     <path>.\CreateRetentionSchedule.ps1
     ```
 
 2. Skrypt wyświetla monit o lokalizacje plików .csv utworzonych w poprzednich krokach. Wprowadź ścieżkę, a następnie znaki `.\` i nazwę pliku .csv, a następnie naciśnij klawisz ENTER. Na przykład w pierwszym wierszu polecenia:
-    
+
     ```powershell
     <path>.\Labels.csv
     ```
@@ -760,7 +757,7 @@ Następnie uruchom skrypt, który tworzy i publikuje etykiety przechowywania:
 Użyj pliku dziennika utworzonego przez skrypt, aby sprawdzić wyniki i zidentyfikować wszelkie błędy, które wymagają rozwiązania.
 
 Plik dziennika można znaleźć w następującej lokalizacji, chociaż cyfry w przykładowej nazwie pliku różnią się.
-  
-```
+
+```DOS
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
 ```

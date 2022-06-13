@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Nadaj użytkownikowi Microsoft 365 prawo dostępu do skrzynki pocztowej innego użytkownika, co umożliwia użytkownikowi odczytywanie i wysyłanie wiadomości e-mail ze skrzynki pocztowej innego użytkownika.
-ms.openlocfilehash: 80c316f0615c13d5f46410582abe2ec3516c8a8a
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5b770b2967072ab6cc8b8abfec8176a7b6aac2c9
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436718"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042379"
 ---
 # <a name="give-mailbox-permissions-to-another-microsoft-365-user---admin-help"></a>Nadaj uprawnienia skrzynki pocztowej innemu użytkownikowi Microsoft 365 — Pomoc dla administratorów
 
@@ -39,7 +39,7 @@ Jako administrator możesz podlegać wymaganiom firmowym, aby umożliwić niekt�
 Jeśli szukasz informacji na temat tworzenia udostępnionych skrzynek pocztowych i zarządzania nimi, zobacz [Tworzenie udostępnionej skrzynki pocztowej](../email/create-a-shared-mailbox.md).
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy uzyskujecie całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm w miarę rozwoju firmy — od dołączania do codziennego użytku.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą firmy Microsoft ds. małych firm](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>Chcesz skonfigurować uprawnienia do skrzynki pocztowej?
 
@@ -167,6 +167,8 @@ Istnieje kilka różnych sposobów uzyskiwania dostępu do skrzynki pocztowej po
 
 ::: moniker-end
 
+> [!NOTE]
+> Uprawnienia **Wyślij jako** i **Wyślij w imieniu** nie działają w kliencie Outlook Desktop z *parametrem HiddenFromAddressListsEnabled* w skrzynce pocztowej ustawionej na **wartość True**, ponieważ wymagają one, aby skrzynka pocztowa była widoczna w Outlook za pośrednictwem globalnej listy adresów.
 
 ## <a name="related-content"></a>Zawartość pokrewna
   

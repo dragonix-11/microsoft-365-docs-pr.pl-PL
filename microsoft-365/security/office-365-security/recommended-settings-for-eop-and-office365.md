@@ -19,16 +19,16 @@ ms.collection:
 description: Jakie są najlepsze rozwiązania dotyczące ustawień zabezpieczeń Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Defender? Jakie są bieżące zalecenia dotyczące standardowej ochrony? Co powinno być używane, jeśli chcesz być bardziej rygorystyczne? A jakie dodatki otrzymujesz, jeśli również używasz Ochrona usługi Office 365 w usłudze Defender?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 921523ea3c1d73dc83c148cc2e61aab416ed9302
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: bd30be87a277d271fece74a9700a60992a562399
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599304"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043034"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Zalecane ustawienia zabezpieczeń EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -90,7 +90,7 @@ Aby utworzyć i skonfigurować zasady ochrony przed spamem, zobacz [Konfigurowan
 
 #### <a name="asf-settings-in-anti-spam-policies"></a>Ustawienia usługi ASF w zasadach ochrony przed spamem
 
-W tabeli w tej sekcji opisano ustawienia zaawansowanego filtru spamu (ASF), które są dostępne w zasadach ochrony przed spamem. Wszystkie te ustawienia są **wyłączone** dla poziomów **standardowych** i **ścisłych**. Aby uzyskać więcej informacji na temat ustawień asf, zobacz [Ustawienia zaawansowanego filtru spamu (ASF) w EOP](advanced-spam-filtering-asf-options.md).
+W tabeli w tej sekcji opisano ustawienia zaawansowanego filtru spamu (ASF), które są dostępne w zasadach ochrony przed spamem. Wszystkie te ustawienia są **wyłączone** dla poziomów **standardowych** i **ścisłych** . Aby uzyskać więcej informacji na temat ustawień asf, zobacz [Ustawienia zaawansowanego filtru spamu (ASF) w EOP](advanced-spam-filtering-asf-options.md).
 
 |Nazwa funkcji zabezpieczeń|Komentowanie|
 |---|---|
@@ -208,10 +208,10 @@ Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Temat Impersona
 |Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|---|
 |**Ochrona & progu wyłudzania informacji**|||||
-|**Umożliwianie użytkownikom ochrony** (ochrona użytkowników personifikowanych) <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Nie zaznaczono <br/><br/> `$false` <br/><br/> brak|Wybrane <br/><br/> `$true` <br/><br/> \<list of users\>|Wybrane <br/><br/> `$true` <br/><br/> \<list of users\>|Zalecamy dodanie użytkowników (nadawców komunikatów) do kluczowych ról. Wewnętrznie chronionymi nadawcami mogą być Dyrektor Generalny, Dyrektor Finansowy i inni starsi liderzy. Zewnętrznie chronieni nadawcy mogą obejmować członków rady lub zarząd. <br/><br/> W ustawieniach wstępnych zasad zabezpieczeń nie można określić użytkowników do ochrony. Należy wyłączyć wstępnie ustawione zasady zabezpieczeń i użyć niestandardowych zasad ochrony przed wyłudzaniem informacji, aby dodać użytkowników w kluczowych rolach zgodnie z sugestią.|
+|**Umożliwianie użytkownikom ochrony** (ochrona użytkowników personifikowanych) <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Nie zaznaczono <br/><br/> `$false` <br/><br/> brak|Wybrane <br/><br/> `$true` <br/><br/> \<list of users\>|Wybrane <br/><br/> `$true` <br/><br/> \<list of users\>|Zalecamy dodanie użytkowników (nadawców komunikatów) do kluczowych ról. Wewnętrznie chronionymi nadawcami mogą być Dyrektor Generalny, Dyrektor Finansowy i inni starsi liderzy. Zewnętrznie chronieni nadawcy mogą obejmować członków rady lub zarząd.|
 |**Włączanie ochrony domen** (personifikowana ochrona domeny)|Nie zaznaczono|Wybrane|Wybrane||
 |**Uwzględnij domeny, których jestem właścicielem** <br/><br/> _EnableOrganizationDomainsProtection_|Wył. <br/><br/> `$false`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`||
-|**Dołączanie domen niestandardowych** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Wył. <br/><br/> `$false` <br/><br/> brak|Wybrane <br/><br/> `$true` <br/><br/> \<list of domains\>|Wybrane <br/><br/> `$true` <br/><br/> \<list of domains\>|Zalecamy dodanie domen (domen nadawcy), których nie jesteś właścicielem, ale często wchodzisz w interakcje. <br/><br/> W ustawieniach wstępnych zasad zabezpieczeń nie można określić domen custm do ochrony. Należy wyłączyć wstępnie ustawione zasady zabezpieczeń i użyć niestandardowych zasad ochrony przed wyłudzaniem informacji w celu dodania domen niestandardowych w celu ochrony zgodnie z sugestią.|
+|**Dołączanie domen niestandardowych** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Wył. <br/><br/> `$false` <br/><br/> brak|Wybrane <br/><br/> `$true` <br/><br/> \<list of domains\>|Wybrane <br/><br/> `$true` <br/><br/> \<list of domains\>|Zalecamy dodanie domen (domen nadawcy), których nie jesteś właścicielem, ale często wchodzisz w interakcje.|
 |**Dodawanie zaufanych nadawców i domen** <br/><br/> _Wykluczeni nadawcy_ <br/><br/> _Wykluczonedomeny_|Brak|Brak|Brak|W zależności od organizacji zalecamy dodanie nadawców lub domen, które są niepoprawnie identyfikowane jako próby personifikacji.|
 |**Włączanie analizy skrzynki pocztowej** <br/><br/> _EnableMailboxIntelligence_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`||
 |**Włączanie analizy w celu ochrony przed personifikacją** <br/><br/> _EnableMailboxIntelligenceProtection_|Wył. <br/><br/> `$false`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|To ustawienie umożliwia określoną akcję wykrywania personifikacji za pomocą analizy skrzynki pocztowej.|
@@ -265,7 +265,7 @@ W programie PowerShell dla tych ustawień są używane polecenia cmdlet [New-Saf
 |---|:---:|:---:|:---:|:---:|---|
 |**Sejf Załączniki — nieznana odpowiedź na złośliwe oprogramowanie** <br/><br/> _Włączanie_ i _działanie_|**Wył.** <br/><br/> `-Enable $false` I `-Action Block`|**Blokuj** <br/><br/> `-Enable $true` I `-Action Block`|**Blokuj** <br/><br/> `-Enable $true` I `-Action Block`|**Blokuj** <br/><br/> `-Enable $true` I `-Action Block`|Gdy parametr _Enable_ jest $false, wartość parametru _Action_ nie ma znaczenia.|
 |**Zasady kwarantanny** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy| <br/><br/> Standardowe i ścisłe wstępnie ustawione zasady zabezpieczeń używają domyślnych zasad kwarantanny (AdminOnlyAccessPolicy bez powiadomień o kwarantannie) zgodnie z opisem w tabeli [tutaj](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br/><br/> Podczas tworzenia nowych zasad Sejf Załączniki wartość pusta oznacza, że domyślne zasady kwarantanny są używane do definiowania historycznych możliwości komunikatów, które zostały poddane kwarantannie przez załączniki Sejf (AdminOnlyAccessPolicy bez powiadomień kwarantanny). <br/><br/> Administratorzy mogą tworzyć i wybierać niestandardowe zasady kwarantanny, które definiują więcej możliwości dla użytkowników. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).|
-|**Przekierowanie załącznika z wykrytymi załącznikami** : **Włącz przekierowanie** <br/><br/> _Przekierowanie_ <br/><br/> _RedirectAddress_|Nie wybrano i nie określono adresu e-mail. <br/><br/> `-Redirect $false` <br/><br/> _RedirectAddress_ jest pusty (`$null`)|Nie wybrano i nie określono adresu e-mail. <br/><br/> `-Redirect $false` <br/><br/> _RedirectAddress_ jest pusty (`$null`)|Wybrano i określ adres e-mail. <br/><br/> `$true` <br/><br/> adres e-mail|Wybrano i określ adres e-mail. <br/><br/> `$true` <br/><br/> adres e-mail|Przekieruj komunikaty do administratora zabezpieczeń w celu sprawdzenia. <br/><br/> **Uwaga**: to ustawienie nie jest skonfigurowane w zasadach zabezpieczeń wstępnie ustawionych w **warstwie Standardowa**, **Ścisła** ani **Wbudowana ochrona**. Wartości **Standardowe** i **Ścisłe** wskazują **zalecane** wartości w nowych zasadach Sejf Załączniki, które tworzysz.|
+|**Przekierowanie załącznika z wykrytymi załącznikami** : **Włącz przekierowanie** <br/><br/> _Przekierowanie_ <br/><br/> _RedirectAddress_|Nie wybrano i nie określono adresu e-mail. <br/><br/> `-Redirect $false` <br/><br/> _RedirectAddress_ jest pusty (`$null`)|Nie wybrano i nie określono adresu e-mail. <br/><br/> `-Redirect $false` <br/><br/> _RedirectAddress_ jest pusty (`$null`)|Wybrano i określ adres e-mail. <br/><br/> `$true` <br/><br/> adres e-mail|Wybrano i określ adres e-mail. <br/><br/> `$true` <br/><br/> adres e-mail|Przekieruj komunikaty do administratora zabezpieczeń w celu sprawdzenia. <br/><br/> **Uwaga**: to ustawienie nie jest skonfigurowane w zasadach zabezpieczeń wstępnie ustawionych w **warstwie Standardowa**, **Ścisła** ani **Wbudowana ochrona** . Wartości **Standardowe** i **Ścisłe** wskazują **zalecane** wartości w nowych zasadach Sejf Załączniki, które tworzysz.|
 |**Zastosuj odpowiedź wykrywania załączników Sejf, jeśli skanowanie nie może zakończyć się (przekroczenie limitu czasu lub błędy)** <br/><br/> _ActionOnError_|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`|Wybrane <br/><br/> `$true`||
 
 ### <a name="safe-links-settings"></a>ustawienia linków Sejf

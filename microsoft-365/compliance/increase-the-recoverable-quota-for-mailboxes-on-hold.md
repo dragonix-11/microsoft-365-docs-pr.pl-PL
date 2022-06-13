@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Włącz skrzynkę pocztową archiwum i włącz automatyczne rozszerzanie archiwizacji, aby zwiększyć rozmiar folderu Elementy możliwe do odzyskania dla skrzynki pocztowej w Microsoft 365.
-ms.openlocfilehash: bbeb72c6a055be42e06c450afccb35965d149dce
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d426afffb1002e1187adafc794d5340d730cc7e7
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015021"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044143"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Zwiększ limit przydziału elementów odzyskiwalnych dla archiwum skrzynek pocztowych
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Domyślne zasady przechowywania Exchange o nazwie *Domyślne zasady MRM*, które są automatycznie stosowane do nowych skrzynek pocztowych w Exchange Online zawiera tag przechowywania o nazwie Elementy do odzyskania 14 dni przenieść do archiwum. Ten tag przechowywania przenosi elementy z folderu Elementy możliwe do odzyskania w podstawowej skrzynce pocztowej użytkownika do folderu Elementy możliwe do odzyskania w skrzynce pocztowej archiwum użytkownika po upływie 14-dniowego okresu przechowywania elementu. Aby tak się stało, należy włączyć archiwum skrzynki pocztowej użytkownika. Jeśli skrzynka pocztowa archiwum nie jest włączona, nie jest podejmowana żadna akcja, co oznacza, że elementy w folderze Elementy możliwe do odzyskania dla skrzynki pocztowej wstrzymanej nie są przenoszone do skrzynki pocztowej archiwum po upływie 14-dniowego okresu przechowywania. Ponieważ nic nie jest usuwane ze skrzynki pocztowej wstrzymanej, możliwe jest przekroczenie limitu przydziału magazynu dla folderu Elementy możliwe do odzyskania, zwłaszcza jeśli skrzynka pocztowa archiwum użytkownika nie jest włączona.
+Domyślne zasady przechowywania Exchange o nazwie *Domyślne zasady MRM*, które są automatycznie stosowane do nowych skrzynek pocztowych w Exchange Online zawiera tag przechowywania o nazwie Elementy do odzyskania 14 dni przenieść do archiwum. Ten tag przechowywania przenosi elementy z folderu Elementy możliwe do odzyskania w podstawowej skrzynce pocztowej użytkownika do folderu Elementy możliwe do odzyskania w skrzynce pocztowej archiwum użytkownika po upływie 14-dniowego okresu przechowywania elementu. Wiadomości e-mail w folderze Usuwania będą zachowywane na podstawie parametru **RetainDeletedItemsFor** i zostaną przeniesione do innych folderów w możliwych do odzyskania usuniętych elementach, a następnie do archiwizacji skrzynki pocztowej. Aby tak się stało, należy włączyć archiwum skrzynki pocztowej użytkownika. Jeśli skrzynka pocztowa archiwum nie jest włączona, nie jest podejmowana żadna akcja, co oznacza, że elementy w folderze Elementy możliwe do odzyskania dla skrzynki pocztowej wstrzymanej nie są przenoszone do skrzynki pocztowej archiwum po upływie 14-dniowego okresu przechowywania. Ponieważ nic nie jest usuwane ze skrzynki pocztowej wstrzymanej, możliwe jest przekroczenie limitu przydziału magazynu dla folderu Elementy możliwe do odzyskania, zwłaszcza jeśli skrzynka pocztowa archiwum użytkownika nie jest włączona.
 
 Aby zmniejszyć prawdopodobieństwo przekroczenia tego limitu, limit przydziału magazynu dla folderu Elementy możliwe do odzyskania zostanie automatycznie zwiększony z 30 GB do 100 GB po umieszczeniu blokady w skrzynce pocztowej w Exchange Online. Jeśli skrzynka pocztowa archiwum jest włączona, limit przydziału magazynu dla folderu Elementy możliwe do odzyskania w skrzynce pocztowej archiwum również zostanie zwiększony z 30 GB do 100 GB. Jeśli funkcja automatycznego rozszerzania archiwizacji w Exchange Online jest włączona, łączny limit przydziału magazynu dla skrzynki pocztowej archiwum użytkownika, w tym folderu Elementy możliwe do odzyskania, wynosi 1,5 TB.
 

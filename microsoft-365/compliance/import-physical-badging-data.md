@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Administratorzy mogą skonfigurować łącznik danych do importowania danych z fizycznego systemu rozwiązywania problemów organizacji w celu Microsoft 365. Dzięki temu można użyć tych danych w zasadach zarządzania ryzykiem wewnętrznym, aby ułatwić wykrywanie dostępu do budynków fizycznych przez określonych użytkowników, które mogą wskazywać na możliwe wewnętrzne zagrożenie dla organizacji.
-ms.openlocfilehash: 96017d6477f914c799fecbe834abdac22917bfaa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 41fd7f1214b231668b56e9326055ad736dcd387e
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077959"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044021"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Konfigurowanie łącznika w celu importowania fizycznych danych powodujących błędy (wersja zapoznawcza)
 
@@ -30,7 +30,7 @@ ms.locfileid: "65077959"
 
 Konfigurowanie fizycznego łącznika powodującego błędy składa się z następujących zadań:
 
-- Tworzenie aplikacji w usłudze Azure Active Directory (Azure AD) w celu uzyskania dostępu do punktu końcowego interfejsu API, który akceptuje ładunek JSON zawierający fizyczne dane powodujące błędy.
+- Tworzenie aplikacji w Azure Active Directory (Azure AD) w celu uzyskania dostępu do punktu końcowego interfejsu API, który akceptuje ładunek JSON zawierający fizyczne dane powodujące nieprawidłowe kondycję.
 
 - Tworzenie ładunku JSON przy użyciu schematu zdefiniowanego przez fizyczny łącznik danych nieprawidłowego tworzenia.
 
@@ -55,15 +55,15 @@ Konfigurowanie fizycznego łącznika powodującego błędy składa się z nastę
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Krok 1. Tworzenie aplikacji w Azure Active Directory
 
-Pierwszym krokiem jest utworzenie i zarejestrowanie nowej aplikacji w usłudze Azure Active Directory (Azure AD). Aplikacja będzie odpowiadać fizycznemu łącznikowi, który zostanie utworzony w kroku 3. Utworzenie tej aplikacji umożliwi usłudze Azure AD uwierzytelnienie żądania wypychania ładunku JSON zawierającego fizyczne dane powodujące nieprawidłowe zabezpieczenia. Podczas tworzenia tej aplikacji usługi Azure AD zapisz następujące informacje. Te wartości będą używane w kolejnych krokach.
+Pierwszym krokiem jest utworzenie i zarejestrowanie nowej aplikacji w Azure Active Directory (Azure AD). Aplikacja będzie odpowiadać fizycznemu łącznikowi, który zostanie utworzony w kroku 3. Utworzenie tej aplikacji umożliwi Azure AD uwierzytelnienie żądania wypychania ładunku JSON zawierającego fizyczne dane powodujące nieprawidłowe zabezpieczenia. Podczas tworzenia tej aplikacji Azure AD zapisz następujące informacje. Te wartości będą używane w kolejnych krokach.
 
-- Identyfikator aplikacji usługi Azure AD (nazywany również *identyfikatorem aplikacji* lub *identyfikatorem klienta*)
+- Azure AD identyfikator aplikacji (nazywany również *identyfikatorem aplikacji* lub *identyfikatorem klienta*)
 
-- Wpis tajny aplikacji usługi Azure AD (nazywany również *kluczem tajnym klienta*)
+- Azure AD wpis tajny aplikacji (nazywany również *kluczem tajnym klienta*)
 
 - Identyfikator dzierżawy (nazywany również *identyfikatorem katalogu*)
 
-Aby uzyskać instrukcje krok po kroku dotyczące tworzenia aplikacji w usłudze Azure AD, zobacz [Rejestrowanie aplikacji przy użyciu Platforma tożsamości Microsoft](/azure/active-directory/develop/quickstart-register-app).
+Aby uzyskać instrukcje krok po kroku dotyczące tworzenia aplikacji w Azure AD, zobacz [Rejestrowanie aplikacji przy użyciu Platforma tożsamości Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>Krok 2. Przygotowywanie pliku JSON z fizycznymi danymi powodującymi błędy
 
@@ -73,7 +73,7 @@ Plik JSON musi być zgodny z definicją schematu wymaganą przez łącznik. Poni
 
 |Właściwość|Opis|Typ danych|
 |---|---|---|
-|Userid|Pracownik może mieć wiele tożsamości cyfrowych w różnych systemach. Dane wejściowe muszą mieć identyfikator usługi Azure AD już rozpoznany przez system źródłowy.|Nazwa UPN lub adres e-mail|
+|Userid|Pracownik może mieć wiele tożsamości cyfrowych w różnych systemach. Dane wejściowe muszą mieć identyfikator Azure AD już rozpoznany przez system źródłowy.|Nazwa UPN lub adres e-mail|
 |Identyfikator zasobu|Identyfikator referencyjny zasobu fizycznego lub fizycznego punktu dostępu.|Ciąg alfanumeryczny|
 |AssetName|Przyjazna nazwa zasobu fizycznego lub fizycznego punktu dostępu.|Ciąg alfanumeryczny|
 |Eventtime|Sygnatura czasowa dostępu.|Data i godzina w formacie UTC|
@@ -150,7 +150,7 @@ Następnym krokiem jest utworzenie fizycznego łącznika powodującego niezgodno
 
 4. Na stronie **Poświadczenia uwierzytelniania** wykonaj następujące czynności, a następnie kliknij przycisk **Dalej**:
 
-   1. Wpisz lub wklej identyfikator aplikacji usługi Azure AD dla aplikacji platformy Azure utworzonej w kroku 1.
+   1. Wpisz lub wklej identyfikator aplikacji Azure AD dla aplikacji platformy Azure utworzonej w kroku 1.
 
    2. Pobierz przykładowy schemat dla odwołania, aby utworzyć plik JSON.
 
@@ -199,9 +199,9 @@ Po uruchomieniu skryptu plik JSON zawierający fizyczne dane powodujące niepraw
 
    |Parametr|Opis|
    |---|---|
-   |tenantId|Jest to identyfikator organizacji Microsoft 365 uzyskany w kroku 1. Identyfikator tenantId organizacji można również uzyskać w bloku **Przegląd** w centrum administracyjnym usługi Azure AD. Służy to do identyfikowania organizacji.|
-   |Appid|Jest to identyfikator aplikacji usługi Azure AD dla aplikacji utworzonej w usłudze Azure AD w kroku 1. Jest ona używana przez usługę Azure AD do uwierzytelniania, gdy skrypt próbuje uzyskać dostęp do organizacji Microsoft 365.|
-   |appSecret|Jest to wpis tajny aplikacji usługi Azure AD dla aplikacji utworzonej w usłudze Azure AD w kroku 1. Jest to również używane do uwierzytelniania.|
+   |tenantId|Jest to identyfikator organizacji Microsoft 365 uzyskany w kroku 1. Identyfikator tenantId organizacji można również uzyskać w bloku **Przegląd** w centrum administracyjnym Azure AD. Służy to do identyfikowania organizacji.|
+   |Appid|Jest to identyfikator aplikacji Azure AD dla aplikacji utworzonej w Azure AD w kroku 1. Jest to używane przez Azure AD do uwierzytelniania, gdy skrypt próbuje uzyskać dostęp do organizacji Microsoft 365.|
+   |appSecret|Jest to Azure AD wpis tajny aplikacji dla aplikacji utworzonej w Azure AD w kroku 1. Jest to również używane do uwierzytelniania.|
    |Jobid|Jest to identyfikator zadania fizycznego łącznika powodującego błędy, który został utworzony w kroku 3. Służy to do kojarzenia fizycznych danych, które są wypychane do chmury firmy Microsoft, z fizycznym łącznikiem powodującym błędy.|
    |JsonFilePath|Jest to ścieżka pliku na komputerze lokalnym (ta, której używasz do uruchamiania skryptu) dla pliku JSON utworzonego w kroku 2. Ten plik musi być zgodny ze schematem przykładowym opisanym w kroku 3.|
    |||
@@ -212,7 +212,7 @@ Po uruchomieniu skryptu plik JSON zawierający fizyczne dane powodujące niepraw
    .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -jsonFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
-   Jeśli przekazywanie zakończy się pomyślnie, skrypt wyświetli **komunikat Upload Pomyślne**.
+   Jeśli przekazywanie zakończy się pomyślnie, skrypt wyświetli komunikat **Przekaż pomyślnie** .
 
    Jeśli masz wiele plików JSON, musisz uruchomić skrypt dla każdego pliku.
 
@@ -233,7 +233,7 @@ Po utworzeniu fizycznego łącznika powodującego niezgodność i wypchnięciu f
 
    ![Plik dziennika łącznika błędów fizycznych wyświetla liczbę obiektów z przekazanego pliku JSON.](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   Pole **RecordsSaved** wskazuje liczbę obiektów w przekazanym pliku JSON. Jeśli na przykład plik JSON zawiera cztery obiekty, wartość pól **RecordsSaved** wynosi 4, jeśli skrypt pomyślnie przekazał wszystkie obiekty w pliku JSON.
+   Pole **RecordsSaved** wskazuje liczbę rekordów w przekazanym pliku JSON. Jeśli na przykład plik JSON zawiera cztery rekordy, wartość pól **Rekordynapisane** wynosi 4, jeśli skrypt pomyślnie przekazał wszystkie rekordy w pliku JSON. Pole **RecordsSkipped** wskazuje liczbę rekordów w pliku JSON, które zostały pominięte. Przed przekazaniem rekordów w pliku JSON zostaną zweryfikowane identyfikatory poczty e-mail rekordów. Każdy rekord o nieprawidłowym identyfikatorze poczty e-mail zostanie pominięty, a odpowiedni identyfikator wiadomości e-mail zostanie wyświetlony w polu **EmailIdsNotSaved**
 
 Jeśli skrypt nie został uruchomiony w kroku 4, w obszarze **Ostatni import** zostanie wyświetlony link umożliwiający pobranie skryptu. Możesz pobrać skrypt, a następnie wykonać kroki opisane w kroku 4, aby go uruchomić.
 

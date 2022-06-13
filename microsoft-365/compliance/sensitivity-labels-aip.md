@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Jeśli używasz klienta ujednoliconego etykietowania usługi Azure Information Protection (AIP), zapoznaj się z zaletami używania wbudowanego etykietowania dla aplikacji Office, a nie dodatku AIP.
-ms.openlocfilehash: c790ee691e6a72228c865b8cdf9911ee83f4dfd4
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0540f3b1b78b728a7c49e0851696d20a04137bb7
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011597"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043071"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Dlaczego warto wybrać wbudowane etykietowanie w dodatku AIP dla aplikacji Office
 
@@ -76,7 +76,7 @@ Niektóre funkcje są obsługiwane tylko przez wbudowane etykietowanie dla aplik
     - Dostęp do inteligentnych usług klasyfikacji, które obejmują [klasyfikatory z możliwością trenowania](classifier-learn-about.md), [dokładne dopasowanie danych (EDM)](sit-learn-about-exact-data-match-based-sits.md) i [nazwane jednostki](named-entities-learn.md)
     - Wykrywanie informacji poufnych jako typ użytkowników
     - W programie Word użytkownicy mogą przeglądać i usuwać zidentyfikowaną zawartość poufną
-- [Obsługa plików PDF](sensitivity-labels-office-apps.md#pdf-support)
+- [Obsługa plików PDF](sensitivity-labels-office-apps.md#pdf-support) (w wersji zapoznawczej)
 - W przypadku etykiet, które umożliwiają użytkownikom przypisywanie uprawnień, użytkownicy lub grupy mogą przyznawać różne uprawnienia (odczyt lub zmiana)
 - Encrypt-Only wiadomości e-mail
 - Widoczność etykiet na pasku stanu

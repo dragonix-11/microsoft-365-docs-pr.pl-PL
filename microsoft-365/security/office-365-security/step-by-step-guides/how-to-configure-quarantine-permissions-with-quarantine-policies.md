@@ -15,14 +15,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: d2a3de0af3e824fcc8276bd339469253d1e3588c
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: c8f739a82223a9315e5082377b4951a88b1ea1df
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842476"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043673"
 ---
 # <a name="how-to-configure-quarantine-permissions-and-policies"></a>Jak skonfigurować uprawnienia i zasady kwarantanny
 
@@ -37,7 +37,7 @@ Zapewnienie administratorom zabezpieczeń i użytkownikom bardzo prostego sposob
 
 ## <a name="creating-custom-quarantine-policies-with-request-release-flow"></a>Tworzenie niestandardowych zasad kwarantanny przy użyciu przepływu żądania wydania
 
-Nasze zasady niestandardowe dają administratorom możliwość decydowania, jakie elementy użytkownicy mogą klasyfikować w folderze ***Fałszywie dodatni** _ z rozszerzoną możliwością umożliwienia użytkownikowi żądania _release* tych elementów z folderu.
+Nasze zasady niestandardowe dają administratorom możliwość decydowania, jakie elementy użytkownicy mogą sklasyfikować w folderze ***Fałszywie dodatni** _ z rozszerzoną możliwością umożliwienia użytkownikowi żądania _release* tych elementów z folderu.
 
 1. Zdecyduj, jaką kategorię werdyktów (zbiorczo, spam, phish, phish o wysokiej pewności lub złośliwego oprogramowania) elementów, które chcesz sklasyfikować, a nie klasyfikować.
 1. W przypadku tych kategorii, które nie mają być klasyfikowane przez użytkowników, przypisz elementy do **elementu AdminOnlyPolicy**. Jeśli chodzi o kategorię, którą użytkownicy mają klasyfikować z ograniczonym dostępem, możesz *utworzyć zasady niestandardowe* z dostępem do wersji żądania i przypisać użytkowników do tej kategorii.
@@ -46,11 +46,11 @@ Nasze zasady niestandardowe dają administratorom możliwość decydowania, jaki
 > [!IMPORTANT]
 > Aby uzyskać więcej informacji na temat sposobu tworzenia szczegółowych zasad niestandardowych, zobacz [Zasady kwarantanny — Office 365 | Microsoft Docs](../../office-365-security/quarantine-policies.md).
 
-## <a name="assigning-quarantine-polices-and-enabling-notification-with-organization-branding"></a>Przypisywanie policji kwarantanny i włączanie powiadomień za pomocą znakowania organizacji
+## <a name="assigning-quarantine-policies-and-enabling-notification-with-organization-branding"></a>Przypisywanie zasad kwarantanny i włączanie powiadomień za pomocą znakowania organizacji
 
 Po podjęciu decyzji o kategoriach elementów, które użytkownicy mogą klasyfikować lub nie klasyfikować, i utworzeniu odpowiednich zasad kwarantanny administratorzy powinni przypisać te zasady do odpowiednich użytkowników i włączyć powiadomienia.
 
-1. Zidentyfikuj użytkowników, grupy lub domeny, które chcesz uwzględnić w kategorii *pełnego dostępu* w porównaniu z kategorią *ograniczony dostęp* w porównaniu z kategorią *tylko Administracja*.
+1. Zidentyfikuj użytkowników, grupy lub domeny, które chcesz uwzględnić w kategorii *pełnego dostępu* w porównaniu z kategorią *ograniczony dostęp* w porównaniu z *kategorią Tylko administrator* .
 1. Zaloguj się do [portalu zabezpieczeń firmy Microsoft](https://security.microsoft.com).
 1. Wybierz pozycję Zasady współpracy  > **& poczty e-mail****& reguły**.
 1. Wybierz pozycję **Zasady zagrożeń**.

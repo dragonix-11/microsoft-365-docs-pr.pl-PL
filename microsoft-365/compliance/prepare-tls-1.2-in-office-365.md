@@ -13,14 +13,16 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 8e5664149ef571a8fed3a1aee433fa97c9ed8ca4
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 584bf2b27be9c33399a9158038853dac195e3146
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760432"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044230"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Przygotowanie do protokołu TLS 1.2 w usłudze Office 365 i usłudze Office 365 GCC
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="summary"></a>Podsumowanie
 
@@ -30,7 +32,7 @@ W celu zapewnienia najwyższej klasy szyfrowania naszym klientom, firma Microsof
 
 Aby uzyskać informacje dotyczące usuwania zależności TLS 1.0 i 1.1, zobacz następujący oficjalny dokument: [Rozwiązywanie problemu TLS 1.0](https://www.microsoft.com/download/details.aspx?id=55266).
 
-Po uaktualnieniu do protokołu TLS 1.2 upewnij się, że używane zestawy szyfrowania są obsługiwane przez usługę Azure Front Door. Microsoft 365 i Azure Front Door mają niewielkie różnice w obsłudze zestawu szyfrowania. Aby uzyskać szczegółowe informacje, zobacz [Jakie są bieżące zestawy szyfrowania obsługiwane przez usługę Azure Front Door?](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-).
+Po uaktualnieniu do protokołu TLS 1.2 upewnij się, że używane zestawy szyfrowania są obsługiwane przez usługę Azure Front Door. Microsoft 365 i Azure Front Door mają niewielkie różnice w obsłudze zestawu szyfrowania. Aby uzyskać szczegółowe informacje, zobacz [Jakie są bieżące zestawy szyfrowania obsługiwane przez usługę Azure Front Door?](/azure/frontdoor/concept-end-to-end-tls#supported-cipher-suites).
 
 ## <a name="more-information"></a>Więcej informacji
 

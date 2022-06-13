@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Zarządzaj urządzeniami przenośnymi połączonymi z organizacją Microsoft 365 i zabezpieczaj je, konfigurując i korzystając z pakietu Basic Mobility and Security.
-ms.openlocfilehash: 9a9b3d433408d4ce5225f1a74351d01150744132
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 15f9c1f64f43c57de41082962bfc1741b40aa0dd
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863211"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042237"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Omówienie pakietu Basic Mobility and Security dla Microsoft 365
 
@@ -34,7 +34,7 @@ Urządzeniami przenośnymi można zarządzać i zabezpieczać je po nawiązaniu 
 
 ## <a name="what-types-of-devices-can-you-manage"></a>Jakimi typami urządzeń można zarządzać?
 
-Usługa Basic Mobility and Security umożliwia zarządzanie wieloma typami urządzeń przenośnych, takimi jak Windows Phone, Android, iPhone i iPad. Aby zarządzać urządzeniami przenośnymi używanymi przez osoby w organizacji, każda osoba musi mieć odpowiednią licencję Microsoft 365, a jej urządzenie musi być zarejestrowane w usłudze Basic Mobility and Security.
+Usługa Basic Mobility and Security umożliwia zarządzanie wieloma typami urządzeń przenośnych, takimi jak Android, iPhone i iPad. Aby zarządzać urządzeniami przenośnymi używanymi przez osoby w organizacji, każda osoba musi mieć odpowiednią licencję Microsoft 365, a jej urządzenie musi być zarejestrowane w usłudze Basic Mobility and Security.
 
 Aby zobaczyć, co usługa Basic Mobility and Security obsługuje dla każdego typu urządzenia, zobacz [Możliwości usługi Basic Mobility and Security](capabilities.md).
 
@@ -46,7 +46,7 @@ Oto podsumowanie kroków:
 
 **Krok 1:** Aktywuj pakiet Basic Mobility and Security, wykonując kroki opisane w [temacie Konfigurowanie pakietu Basic Mobility and Security](set-up.md).
 
-**Krok 2:** Skonfiguruj usługę Basic Mobility and Security, na przykład tworząc certyfikat usługi APNs do zarządzania urządzeniami iOS i dodając rekord DNS (Domain Name System) dla domeny w celu obsługi Windows telefonów.
+**Krok 2:** Skonfiguruj usługę Basic Mobility and Security, na przykład tworząc certyfikat usługi APNs do zarządzania urządzeniami iOS i dodając rekord DNS (Domain Name System) dla domeny.
 
 **Krok 3.** Utwórz zasady urządzeń i zastosuj je do grup użytkowników. Gdy to zrobisz, użytkownicy otrzymają komunikat o rejestracji na swoim urządzeniu, a po zakończeniu rejestracji ich urządzenia będą ograniczone przez skonfigurowane dla nich zasady. Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzenia przenośnego przy użyciu pakietu Basic Mobility and Security](enroll-your-mobile-device.md). 
 

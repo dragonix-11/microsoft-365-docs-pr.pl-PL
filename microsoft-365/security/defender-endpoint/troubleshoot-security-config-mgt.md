@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4f309c98b7278dbeb062deacf49553b7e73f58da
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: fbfb20b233f1f942faaddd2a235a55beeb48d2c6
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873793"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043127"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Rozwiązywanie problemów z dołączaniem związanych z usługą Security Management dla Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -75,16 +75,17 @@ Aby pomyślnie zarejestrować urządzenia w Azure Active Directory, należy upew
 
 Za pośrednictwem portalu Ochrona punktu końcowego w usłudze Microsoft Defender administratorzy zabezpieczeń mogą teraz rozwiązywać problemy z usługą Security Management na potrzeby dołączania Ochrona punktu końcowego w usłudze Microsoft Defender.
 
-W obszarze **Spis urządzeń** **punktów końcowych** \> kolumna **Zarządzane przez została dodana** do filtrowania według kanału zarządzania (na przykład MEM).
+W **obszarze Zarządzanie konfiguracją** dodano widżet **zarządzania zabezpieczeniami dołączony za pośrednictwem rozwiązania MDE**, aby przedstawić podział stanu rejestracji urządzeń zarządzanych Ochrona punktu końcowego w usłudze Microsoft Defender.
 
-:::image type="content" source="./images/device-inventory-mde-error.png" alt-text="Strona spisu urządzeń" lightbox="./images/device-inventory-mde-error.png":::
+Aby wyświetlić listę wszystkich urządzeń zarządzanych przez Ochrona punktu końcowego w usłudze Microsoft Defender, wybierz pozycję **Wyświetl wszystkie urządzenia zarządzane przez usługę MDE**.
 
-Aby wyświetlić listę wszystkich urządzeń, które nie powiodły się w procesie dołączania usługi Security Management dla Ochrona punktu końcowego w usłudze Microsoft Defender, przefiltruj tabelę według wartości **MDE-Error**.
-
-Na liście wybierz określone urządzenie, aby wyświetlić szczegóły rozwiązywania problemów w panelu bocznym, wskazując główną przyczynę błędu i odpowiednią dokumentację.
+Jeśli na liście stan rejestracji urządzenia nie jest "Powodzenie", wybierz urządzenie, aby wyświetlić szczegóły rozwiązywania problemów w panelu bocznym, wskazując główną przyczynę błędu i odpowiednią dokumentację.
 
 
 :::image type="content" source="./images/secconfig-mde-error.png" alt-text="Kryteria filtru zastosowane na stronie spisu urządzeń" lightbox="./images/secconfig-mde-error.png":::
+
+> [!NOTE] 
+> Zdajemy sobie sprawę z problemu wpływającego na dokładne wykrywanie maszyn MDM innych firm podczas próby korzystania z funkcji zarządzania zabezpieczeniami i pracujemy nad poprawką. 
 
 ## <a name="run-microsoft-defender-for-endpoint-client-analyzer-on-windows"></a>Uruchamianie analizatora klienta Ochrona punktu końcowego w usłudze Microsoft Defender na Windows
 
@@ -121,7 +122,7 @@ W poniższej tabeli wymieniono błędy i wskazówki dotyczące tego, co należy 
 |Kod błędu|Stan rejestracji|Akcje administratora|
 |---|---|---|
 |`5-7`, `9`, `11-12`, `26-33`|Błąd ogólny|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń. Może to być spowodowane tym, że urządzenie nie spełnia [wymagań wstępnych dotyczących kanału zarządzania Ochrona punktu końcowego w usłudze Microsoft Defender](security-config-management.md). Uruchomienie [analizatora klienta](https://aka.ms/BetaMDEAnalyzer) na urządzeniu może pomóc w zidentyfikowaniu głównej przyczyny problemu. Jeśli to nie pomoże, skontaktuj się z pomocą techniczną.|
-| `8`, `44` | problem z konfiguracją Microsoft Endpoint Manager | Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Jednak Microsoft Endpoint Manager nie został skonfigurowany za pośrednictwem centrum Administracja, aby umożliwić Ochrona punktu końcowego w usłudze Microsoft Defender Konfiguracja zabezpieczeń. Upewnij się, że [dzierżawa Microsoft Endpoint Manager jest skonfigurowana, a funkcja jest włączona](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
+| `8`, `44` | problem z konfiguracją Microsoft Endpoint Manager | Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Jednak Microsoft Endpoint Manager nie został skonfigurowany za pośrednictwem Centrum administracyjnego, aby umożliwić Ochrona punktu końcowego w usłudze Microsoft Defender konfiguracji zabezpieczeń. Upewnij się, że [dzierżawa Microsoft Endpoint Manager jest skonfigurowana, a funkcja jest włączona](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
 |`13-14`,`20`,`24`,`25`|Problem z łącznością|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń, który może być spowodowany problemem z łącznością. Sprawdź, czy [punkty końcowe Azure Active Directory i Microsoft Endpoint Manager](security-config-management.md#connectivity-requirements) są otwierane w zaporze.|
 |`10`,`42`|Ogólny błąd sprzężenia hybrydowego|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń i system operacyjny nie mógł wykonać sprzężenia hybrydowego. [Rozwiązywanie problemów z hybrydowymi urządzeniami przyłączonymi do Azure Active Directory](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) w celu rozwiązywania problemów z błędami przyłączania hybrydowego na poziomie systemu operacyjnego.|
 |`15`|Niezgodność dzierżawy|Urządzenie zostało pomyślnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender. Wystąpił jednak błąd w przepływie zarządzania konfiguracją zabezpieczeń, ponieważ identyfikator dzierżawy Ochrona punktu końcowego w usłudze Microsoft Defender jest niezgodny z identyfikatorem dzierżawy Azure Active Directory. Upewnij się, że identyfikator dzierżawy Azure Active Directory z dzierżawy usługi Defender for Endpoint jest zgodny z identyfikatorem dzierżawy we wpisie SCP domeny. Aby uzyskać więcej informacji, [rozwiąż problemy z dołączaniem związane z usługą Security Management dla Ochrona punktu końcowego w usłudze Microsoft Defender](troubleshoot-security-config-mgt.md).|

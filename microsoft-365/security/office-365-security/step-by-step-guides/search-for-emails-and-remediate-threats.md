@@ -1,5 +1,5 @@
 ---
-title: Wyszukiwanie wiadomości e-mail i korygowanie zagrożeń przy użyciu Eksploratora zagrożeń w Microsoft 365 Defender
+title: Wyszukiwanie wiadomości e-mail i korygowanie zagrożeń przy użyciu eksploratora zagrożeń w usłudze Microsoft 365 Defender
 description: Kroki ręcznego korygowania w Eksploratorze zagrożeń w Microsoft 365 Defender, w tym jak uzyskać najlepszą wydajność i scenariusze, które wymagają korygowania.
 search.product: ''
 search.appverid: ''
@@ -15,21 +15,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 6bce250add79d4119f82730c05f3042f3e3dbafe
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: acc3f81c789722a460a43df56a3e2794855dad0c
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842489"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043521"
 ---
 # <a name="steps-to-use-manual-email-remediation-in-threat-explorer"></a>Kroki korzystania z ręcznego korygowania poczty e-mail w Eksploratorze zagrożeń
 
 Korygowanie poczty e-mail to już istniejąca funkcja, która ułatwia administratorom działanie na wiadomościach e-mail, które są zagrożeniami.
 
 ## <a name="what-youll-need"></a>Co będzie potrzebne
-- Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2
+- Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2 (uwzględniony w planach E5)
 - Wystarczające uprawnienia (pamiętaj o przyznaniu roli [Wyszukiwanie i przeczyszczanie](https://sip.security.microsoft.com/securitypermissions) konta)
 
 ## <a name="create-and-track-the-remediation"></a>Tworzenie i śledzenie korygowania
@@ -38,8 +38,8 @@ Korygowanie poczty e-mail to już istniejąca funkcja, która ułatwia administr
 1. Okienko boczne zostanie otwarte i poprosi o podanie szczegółów, takich jak nazwa korygowania, ważności i opisu. Po przejrzeniu informacji naciśnij przycisk **Prześlij**.
 1. Gdy tylko administrator zatwierdzi tę akcję, zobaczy [tutaj](https://security.microsoft.com/action-center/history) identyfikator zatwierdzenia i link do centrum akcji Microsoft 365 Defender. Na tej stronie **można śledzić akcje**.
 
-    1. **alert akcji Administracja** — alert systemowy jest wyświetlany w kolejce alertów o nazwie "Akcja administracyjna przesłana przez administratora". Oznacza to, że administrator podjął akcję korygowania jednostki. Zawiera szczegółowe informacje, takie jak nazwa administratora, który podjął akcję, oraz link do badania i czas. Dzięki temu administratorzy są świadomi każdej ważnej akcji, takiej jak korygowanie, wykonywanych względem jednostek.
-    1. **Administracja badanie akcji** — ponieważ analiza jednostek została już przeprowadzona przez administratora i to właśnie doprowadziło do podjęcia akcji, system nie przeprowadza żadnej dodatkowej analizy. Zawiera szczegółowe informacje, takie jak alert pokrewny, jednostka wybrana do korygowania, podjęta akcja, stan korygowania, liczba jednostek i osoba zatwierdzająca akcję. Dzięki temu administratorzy mogą *śledzić* badanie i akcje wykonywane ręcznie — badanie działania administratora.
+    1. **Alert dotyczący akcji administratora** — alert systemowy jest wyświetlany w kolejce alertów o nazwie "Akcja administracyjna przesłana przez administratora". Oznacza to, że administrator podjął akcję korygowania jednostki. Zawiera szczegółowe informacje, takie jak nazwa administratora, który podjął akcję, oraz link do badania i czas. Dzięki temu administratorzy są świadomi każdej ważnej akcji, takiej jak korygowanie, wykonywanych względem jednostek.
+    1. **Badanie akcji administratora** — ponieważ analiza jednostek została już przeprowadzona przez administratora i to właśnie doprowadziło do podjęcia akcji, system nie wykonuje żadnej dodatkowej analizy. Zawiera szczegółowe informacje, takie jak alert pokrewny, jednostka wybrana do korygowania, podjęta akcja, stan korygowania, liczba jednostek i osoba zatwierdzająca akcję. Dzięki temu administratorzy mogą *śledzić* badanie i akcje wykonywane ręcznie — badanie działania administratora.
 1. **Dzienniki akcji w ujednoliconym centrum akcji** — dzienniki historii i akcji dla akcji poczty e-mail, takich jak usuwanie nietrwałe i przenoszenie do folderu usuniętych elementów, są *dostępne w scentralizowanym widoku* na **karcie Historia** ujednoliconego **centrum** >  akcji. 
 1. **Filtry w ujednoliconym centrum akcji** — istnieje wiele filtrów, takich jak nazwa korygowania, identyfikator zatwierdzenia, identyfikator badania, stan, źródło akcji i typ akcji. Są one przydatne do znajdowania i śledzenia akcji poczty e-mail w ujednoliconym centrum akcji.
 

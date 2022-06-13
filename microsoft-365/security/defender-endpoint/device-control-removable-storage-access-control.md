@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/06/2022
-ms.openlocfilehash: 335dd72bcbdee469f1e0b1c396c934c94d0339fd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 503740e6dc16aea98fd44b71d9693d2b4a5844a8
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013871"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043638"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Ochrona punktu końcowego w usłudze Microsoft Defender Storage Access Control wymienna kontrolki urządzenia
 
@@ -125,7 +125,7 @@ Aby ułatwić zapoznanie się z Ochrona punktu końcowego w usłudze Microsoft D
 
     1. Grupa 1. Dowolny magazyn wymienny i dysk CD/DVD. Przykładem tego przypadku użycia jest grupa **9b28fae8-72f7-4267-a1a5-685f747a7146** w przykładowym pliku [Storage wymiennym i cd-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples).
 
-    2. Grupa 2: Niezatwierdzone obiekty USB oparte na właściwościach urządzenia, na przykład identyfikator dostawcy / identyfikator produktu, przyjazna nazwa — grupa **65fa649a-a111-4912-9294-fb6337a25038** w przykładowym pliku [Group.xmlniezatwierdzone obiekty USBs](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
+    2. Grupa 2: Niezatwierdzone bazy danych USB na podstawie właściwości urządzenia, na przykład identyfikator dostawcy / identyfikator produktu, przyjazna nazwa — grupa **65fa649a-a111-4912-9294-fb6337a25038** w przykładowym pliku [Group.xmlniezatwierdzone obiekty USBs](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
     > [!TIP]
     > Zastąp `&` element `&amp;` wartością .
@@ -149,116 +149,144 @@ Przed rozpoczęciem pracy z usługą Removable Storage Access Control musisz pot
 W przypadku wdrażania zasad w Intune konto musi mieć uprawnienia do tworzenia, edytowania, aktualizowania lub usuwania profilów konfiguracji urządzeń. Możesz utworzyć role niestandardowe lub użyć dowolnej z wbudowanych ról z tymi uprawnieniami.
 
 - Rola Menedżera zasad i profilu
-
 - Rola niestandardowa z włączonymi uprawnieniami Utwórz/Edytuj/Aktualizuj/Odczyt/Usuń/Wyświetl raporty dla profilów konfiguracji urządzenia
-
 - Administrator globalny
 
 ### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>Wdrażanie wymiennych Storage Access Control przy użyciu identyfikatora OMA-URI Intune
 
 Przejdź do centrum administracyjnego Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>) **> Urządzenia > Tworzenie profilu > Platform: Windows 10 i nowszych, Typ profilu: Szablony > Niestandardowe**
 
-1. Włącz lub wyłącz wymienne Storage Access Control (RSAC):<br> Można włączyć Storage Access Control wymienne w następujący sposób: 
-    - W obszarze **Ustawienia konfiguracji > niestandardowej** kliknij pozycję **Dodaj**.
-    - W okienku **Dodawanie wiersza** wprowadź:
-        - **Nazwa** jako **Włącz funkcję RSAC** 
+1. Włącz lub wyłącz wymienne Storage Access Control (RSAC):
 
-        - **Identyfikator OMA-URI** jako `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
+   Można włączyć Storage Access Control wymienne w następujący sposób:
 
-        - **Typ danych** jako **liczba całkowita**
-       
-        - **Wartość** **1**
-        
-           `Disable: 0` `Enable: 1`
+   - W obszarze **Ustawienia konfiguracji > niestandardowej** kliknij pozycję **Dodaj**.
+   - W okienku **Dodawanie wiersza** wprowadź:
+     - **Nazwa** jako **Włącz funkcję RSAC**
+     - **Identyfikator OMA-URI** jako `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
+     - **Typ danych** jako **liczba całkowita**
+     - **Wartość** **1**
 
-        - Kliknij **Zapisz**.
-    
-    :::image type="content" source="images/enable-rsac.png" alt-text="Zrzut ekranu przedstawiający włączanie zasad Storage Access Control wymiennych" lightbox="images/enable-rsac.png":::
-      
-2. Ustaw domyślne wymuszanie:<br> 
-    Możesz ustawić domyślny dostęp (Odmów lub Zezwalaj) na nośnik wymienny, jeśli nie ma żadnych zasad. <br> 
-    Na przykład masz zasady Odmów lub Zezwalaj dla urządzeń RemovableMediaDevices, ale nie masz żadnych zasad dla urządzeń CdRomDevices lub WpdDevices. Za pomocą tych zasad ustawiono opcję Odmów domyślny, a następnie dostęp odczytu/zapisu/wykonywania do urządzeń CdRomDevices lub WpdDevices zostanie zablokowany. 
+       `Disable: 0`
+       `Enable: 1`
 
-    - W okienku **Dodawanie wiersza** wprowadź:
-        - **Nazwa** jako **domyślna odmowa**
-        - **Identyfikator OMA-URI** jako `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
+     - Kliknij **Zapisz**.
 
-        - **Typ danych** jako **liczba całkowita**
-        
-        - **Wartość** **1** lub **2**
-        
-          `DefaultEnforcementAllow = 1`
-          `DefaultEnforcementDeny = 2`
-        - Kliknij **Zapisz**.
-    
-    :::image type="content" source="images/default-deny.png" alt-text="Zrzut ekranu przedstawiający ustawienie domyślnego wymuszania jako odmowy" lightbox="images/default-deny.png":::    
+   :::image type="content" source="images/enable-rsac.png" alt-text="Zrzut ekranu przedstawiający włączanie zasad Storage Access Control wymiennych" lightbox="images/enable-rsac.png":::
 
-3. Domyślna odmowa inspekcji:<br> Zasady inspekcji dla domyślnego odmów można utworzyć w następujący sposób:
-    - W okienku **Dodawanie wiersza** wprowadź:
-        - **Nazwa** jako **Domyślna odmowa inspekcji**
-        - **Identyfikator OMA-URI** jako     
-          `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
-         :::image type="content" source="images/audit-default-deny-1.png" alt-text="Zrzut ekranu przedstawiający tworzenie domyślnych zasad odmowy inspekcji" lightbox="images/audit-default-deny-1.png":::
-        - **Typ danych** jako **ciąg (plik XML)**
-        - **Niestandardowy plik XML** jako domyślny plik **Deny.xmlinspekcji** . <br>
-            Ścieżka pliku XML: [mdatp-devicecontrol/Audit Default Deny.xml main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml)
-            <br>Użyj następujących danych XML, aby utworzyć zasady inspekcji dla domyślnego odmów:
+2. Ustaw domyślne wymuszanie:
 
-            :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Zrzut ekranu przedstawiający domyślny plik XML odmowy inspekcji":::
-        
-   
-4. ReadOnly — grupa: możesz utworzyć grupę magazynu wymiennego z dostępem ReadOnly w następujący sposób:
-    - W okienku **Dodawanie wiersza** wprowadź:
-        - **Nazwa** **dowolnej grupy Storage wymiennych**
-        - **Identyfikator OMA-URI** jako   
-         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
-        :::image type="content" source="images/any-removable-storage-group.png" alt-text="Zrzut ekranu przedstawiający tworzenie dowolnej grupy Storage wymiennych" lightbox="images/any-removable-storage-group.png":::
-        - **Typ danych** jako **ciąg (plik XML)**
-        - **Niestandardowy plik XML** jako **dowolny plik Storage wymienny i CD-DVD i WPD Group.xml** <br>
-            Ścieżka pliku XML: [mdatp-devicecontrol/Any Removable Storage and CD-DVD and WPD Group.xml at main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml)<br>
-            Użyj następujących danych XML, aby utworzyć "Dowolny wymienny Storage i CD-DVD i grupa WPD" z dostępem ReadOnly:
-       
-           :::image type="content" source="images/read-only-group-xml-file.png" alt-text="Zrzut ekranu przedstawiający plik XML grupy tylko do odczytu":::
-      
-    
-5. ReadOnly — zasady: możesz utworzyć zasady ReadOnly i zastosować je do grupy magazynów wymiennych ReadOnly, aby zezwolić na działanie odczytu w następujący sposób:
-    - W okienku **Dodawanie wiersza** wprowadź:
-        - **Nazwa** jako **Zezwalaj na działanie odczytu**
-        - **Identyfikator OMA-URI** jako   `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
-          :::image type="content" source="images/allow-read-activity.png" alt-text="zrzut ekranu zasad zezwalania na działanie odczytu" lightbox= "images/allow-read-activity.png":::
-        - **Typ danych** jako **ciąg (plik XML)**
-        - **Niestandardowy plik XML** jako **zezwalaj na plik Read.xml** <br>
-            Ścieżka pliku XML: [mdatp-devicecontrol/Allow Read.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml)<br>
-            Użyj następujących danych XML, aby utworzyć zasady ReadOnly i zastosować je do grupy :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="magazynów wymiennych ReadOnly: Zrzut ekranu przedstawiający plik XML zasad tylko do odczytu":::
-     
+   Możesz ustawić domyślny dostęp (Odmów lub Zezwalaj) na nośnik wymienny, jeśli nie ma żadnych zasad.
+
+   Na przykład masz zasady Odmów lub Zezwalaj dla urządzeń RemovableMediaDevices, ale nie masz żadnych zasad dla urządzeń CdRomDevices lub WpdDevices. Za pomocą tych zasad ustawiono opcję Odmów domyślny, a następnie dostęp odczytu/zapisu/wykonywania do urządzeń CdRomDevices lub WpdDevices zostanie zablokowany.
+
+   - W okienku **Dodawanie wiersza** wprowadź:
+     - **Nazwa** jako **domyślna odmowa**
+     - **Identyfikator OMA-URI** jako `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
+     - **Typ danych** jako **liczba całkowita**
+     - **Wartość** **1** lub **2**
+
+       `DefaultEnforcementAllow = 1`
+       `DefaultEnforcementDeny = 2`
+
+     - Kliknij **Zapisz**.
+
+   :::image type="content" source="images/default-deny.png" alt-text="Zrzut ekranu przedstawiający ustawienie domyślnego wymuszania jako odmowy" lightbox="images/default-deny.png":::
+
+3. Domyślna odmowa inspekcji:
+
+   Zasady inspekcji dla domyślnego odmów można utworzyć w następujący sposób:
+
+   - W okienku **Dodawanie wiersza** wprowadź:
+     - **Nazwa** jako **Domyślna odmowa inspekcji**
+     - **Identyfikator OMA-URI** jako `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
+
+       :::image type="content" source="images/audit-default-deny-1.png" alt-text="Zrzut ekranu przedstawiający tworzenie domyślnych zasad odmowy inspekcji" lightbox="images/audit-default-deny-1.png":::
+
+     - **Typ danych** jako **ciąg (plik XML)**
+     - **Niestandardowy plik XML** jako domyślny plik **Deny.xmlinspekcji** .
+
+       Ścieżka pliku XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml>
+
+       Użyj następujących danych XML, aby utworzyć zasady inspekcji dla domyślnego odmów:
+
+       :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Zrzut ekranu przedstawiający domyślny plik XML odmowy inspekcji":::
+
+4. ReadOnly — grupa:
+
+   Grupę magazynu wymiennego można utworzyć z dostępem ReadOnly w następujący sposób:
+
+   - W okienku **Dodawanie wiersza** wprowadź:
+     - **Nazwa** **dowolnej grupy Storage wymiennych**
+     - **Identyfikator OMA-URI** jako `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
+
+       :::image type="content" source="images/any-removable-storage-group.png" alt-text="Zrzut ekranu przedstawiający tworzenie dowolnej grupy Storage wymiennych" lightbox="images/any-removable-storage-group.png":::
+
+     - **Typ danych** jako **ciąg (plik XML)**
+       - **Niestandardowy plik XML** jako **dowolny plik Storage wymienny i CD-DVD i WPD Group.xml**
+
+         Ścieżka pliku XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml>
+
+         Użyj następujących danych XML, aby utworzyć "Dowolny wymienny Storage i CD-DVD i grupa WPD" z dostępem ReadOnly:
+
+         :::image type="content" source="images/read-only-group-xml-file.png" alt-text="Zrzut ekranu przedstawiający plik XML grupy tylko do odczytu":::
+
+5. ReadOnly — zasady:
+
+   Możesz utworzyć zasady ReadOnly i zastosować je do grupy magazynów wymiennych ReadOnly, aby zezwolić na działanie odczytu w następujący sposób:
+
+   - W okienku **Dodawanie wiersza** wprowadź:
+     - **Nazwa** jako **Zezwalaj na działanie odczytu**
+     - **Identyfikator OMA-URI** jako `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
+
+       :::image type="content" source="images/allow-read-activity.png" alt-text="Zrzut ekranu przedstawiający zasady zezwalania na działanie odczytu" lightbox= "images/allow-read-activity.png":::
+
+     - **Typ danych** jako **ciąg (plik XML)**
+     - **Niestandardowy plik XML** jako **zezwalaj na plik Read.xml**
+
+       Ścieżka pliku XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml>
+
+       Użyj następujących danych XML, aby utworzyć zasady ReadOnly i zastosować je do grupy magazynów wymiennych ReadOnly:
+
+       :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="Zrzut ekranu przedstawiający plik XML zasad tylko do odczytu":::
+
 6. Utwórz grupę dla dozwolonych nośników: możesz utworzyć dozwoloną grupę multimediów w następujący sposób:
-    - W okienku **Dodawanie wiersza** wprowadź:
-        - **Nazwa** grupy **zatwierdzonych baz danych USB**
-        - **Identyfikator OMA-URI** jako     
-         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
-    :::image type="content" source="images/create-group-allowed-medias.png" alt-text="Zrzut ekranu przedstawiający tworzenie zatwierdzonej grupy usb" lightbox="images/create-group-allowed-medias.png"::: 
-        - **Typ danych** jako **ciąg (plik XML)** 
-        - **Niestandardowy kod XML** jako **zatwierdzony plik Group.xmlusb** <br>
-            Ścieżka pliku XML: [mdatp-devicecontrol/Approved USBs Group.xml main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml)<br>
-            Użyj następujących danych XML, aby utworzyć dozwoloną grupę multimediów: :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="zrzut ekranu przedstawiający tworzenie grupy dla pliku XML dozwolonych multimediów":::
-      
-   
+   - W okienku **Dodawanie wiersza** wprowadź:
+     - **Nazwa** grupy **zatwierdzonych baz danych USB**
+     - **Identyfikator OMA-URI** jako `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
+
+       :::image type="content" source="images/create-group-allowed-medias.png" alt-text="Zrzut ekranu przedstawiający tworzenie zatwierdzonej grupy usb" lightbox="images/create-group-allowed-medias.png":::
+
+     - **Typ danych** jako **ciąg (plik XML)**
+     - **Niestandardowy kod XML** jako **zatwierdzony plik Group.xmlusb**
+
+       Ścieżka pliku XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml>
+
+       Użyj następujących danych XML, aby utworzyć dozwoloną grupę multimediów:
+
+       :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="Zrzut ekranu przedstawiający tworzenie grupy dla pliku XML dozwolonych multimediów":::
+
 7. Utwórz zasady zezwalające na zatwierdzoną grupę USB: możesz utworzyć zasady zezwalające na zatwierdzoną grupę USB w następujący sposób:
-    - W okienku **Dodawanie wiersza** wprowadź:
-        - **Nazwa** jako **Zezwalaj na dostęp i Informacje o pliku inspekcji**
-        - **Identyfikator OMA-URI** jako     
-         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
-    :::image type="content" source="images/allow-access-audit-file-information-1.png" alt-text="Zrzut ekranu przedstawiający informacje o pliku zezwalania na dostęp i inspekcji" lightbox= "images/allow-access-audit-file-information-1.png":::
-        - **Typ danych** jako **ciąg (plik XML)** 
-        - **Niestandardowy kod XML** jako **Zezwalaj na pełny dostęp i inspekcję pliku file.xml** <br>
-            Ścieżka pliku XML: [mdatp-devicecontrol/Allow full access and audit file.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml)<br>
-            Użyj następujących danych XML, aby utworzyć zasady zezwalające na zatwierdzoną grupę USB: :::image type="content" source="images/create-policy-allow-approved-usb-group-xml-intune.png" alt-text="Zrzut ekranu przedstawiający tworzenie zasad zezwalania na zatwierdzony plik XML grupy USB":::
-      
-           Co oznacza "47" w zasadach? <br> 
-           Jest to 9 + 2 + 36 = 47: <br>
-           Dostęp do odczytu: 1+8 = 9 <br>
-           Dostęp do zapisu: poziom dysku 2 <br>
-           Wykonanie: 4 + 32 = 36
+   - W okienku **Dodawanie wiersza** wprowadź:
+     - **Nazwa** jako **Zezwalaj na dostęp i Informacje o pliku inspekcji**
+     - **Identyfikator OMA-URI** jako `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
+
+       :::image type="content" source="images/allow-access-audit-file-information-1.png" alt-text="Zrzut ekranu przedstawiający informacje o pliku zezwalania na dostęp i inspekcji" lightbox= "images/allow-access-audit-file-information-1.png":::
+
+     - **Typ danych** jako **ciąg (plik XML)**
+     - **Niestandardowy kod XML** jako **Zezwalaj na pełny dostęp i inspekcję pliku file.xml**
+
+       Ścieżka pliku XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml>
+
+       Użyj następujących danych XML, aby utworzyć zasady zezwalające na zatwierdzoną grupę USB:
+
+       :::image type="content" source="images/create-policy-allow-approved-usb-group-xml-intune.png" alt-text="Zrzut ekranu przedstawiający tworzenie zasad zezwalania na zatwierdzony plik XML grupy USB":::
+
+       Co oznacza "47" w zasadach? Jest to 9 + 2 + 36 = 47:
+
+       - Dostęp do odczytu: 1 + 8 = 9.
+       - Dostęp do zapisu: poziom dysku 2.
+       - Wykonaj: 4 + 32 = 36.
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Wdrażanie zasad i zarządzanie nimi przy użyciu interfejsu użytkownika Intune
 
@@ -274,68 +302,102 @@ Przed rozpoczęciem pracy z usługą Removable Storage Access Control musisz pot
 
 ### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>Wdrażanie Storage Access Control wymiennych przy użyciu zasady grupy
 
-1. Włącz lub wyłącz Storage Access Control wymienne: <br> Funkcję Wymienne Storage Access Control (RSAC) można włączyć w następujący sposób:<br> 
-    - Przejdź do pozycji **Konfiguracja komputera > szablony administracyjne > Windows składniki > Program antywirusowy Microsoft Defender > funkcje > kontrolki urządzenia**
-    - W oknie **Kontrola urządzenia** wybierz pozycję **Włączone**.
-      
-    :::image type="content" source="images/enable-rsac-gp.png" alt-text="Zrzut ekranu przedstawiający włączanie funkcji RSAC przy użyciu zasady grupy " lightbox="images/enable-rsac-gp.png":::
-      
-2. Ustaw domyślne wymuszanie: <br> 
-    Możesz ustawić domyślny dostęp (Odmów lub Zezwalaj) na nośnik wymienny, jeśli nie ma żadnych zasad w następujący sposób: 
-    - Przejdź do pozycji **Konfiguracja komputera > Szablony administracyjne > Windows składniki > Program antywirusowy Microsoft Defender > funkcje > kontrolce urządzenia > wybierz domyślne wymuszanie kontroli urządzenia**
+1. Włącz lub wyłącz Storage Access Control wymienne:
 
-    - W oknie **Wybieranie domyślnego wymuszania kontrolki urządzenia** wybierz opcję **Odmów domyślny**:
-    
-     :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Zrzut ekranu przedstawiający ustawienie domyślne wymuszanie = odmowa przy użyciu zasady grupy" lightbox="images/set-default-enforcement-deny-gp.png":::    
+   Funkcję Wymienne Storage Access Control (RSAC) można włączyć w następujący sposób:
 
-3. Domyślna odmowa inspekcji: <br> Użyj następujących danych XML, aby utworzyć zasady inspekcji dla domyślnego odmów:
-    
-    :::image type="content" source="images/audit-default-deny-gp.png" alt-text="Zrzut ekranu przedstawiający domyślne dane xml odmowy inspekcji":::
-      
-  
-4. ReadOnly — grupa: <br>
+   - Przejdź do pozycji **Konfiguracja komputera > szablony administracyjne > Windows składniki > Program antywirusowy Microsoft Defender > funkcje > kontrolki urządzenia**
+   - W oknie **Kontrola urządzenia** wybierz pozycję **Włączone**.
+
+   :::image type="content" source="images/enable-rsac-gp.png" alt-text="Zrzut ekranu przedstawiający włączanie funkcji RSAC przy użyciu zasady grupy " lightbox="images/enable-rsac-gp.png":::
+
+2. Ustaw domyślne wymuszanie:
+
+   Możesz ustawić domyślny dostęp (Odmów lub Zezwalaj) na nośnik wymienny, jeśli nie ma żadnych zasad w następujący sposób:
+
+   - Przejdź do pozycji **Konfiguracja komputera > Szablony administracyjne > Windows składniki > Program antywirusowy Microsoft Defender > funkcje > kontrolce urządzenia > wybierz domyślne wymuszanie kontroli urządzenia**
+
+   - W oknie **Wybieranie domyślnego wymuszania kontrolki urządzenia** wybierz opcję **Odmów domyślny**:
+
+   :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Zrzut ekranu przedstawiający ustawienie domyślne wymuszanie = odmowa przy użyciu zasady grupy" lightbox="images/set-default-enforcement-deny-gp.png":::
+
+3. Domyślna odmowa inspekcji:
+
+   Użyj następujących danych XML, aby utworzyć zasady inspekcji dla domyślnego odmów:
+
+   :::image type="content" source="images/audit-default-deny-gp.png" alt-text="Zrzut ekranu przedstawiający domyślne dane xml odmowy inspekcji":::
+
+4. ReadOnly — grupa:
+
    Użyj następujących danych XML, aby utworzyć grupę magazynu wymiennego z dostępem ReadOnly:
- 
+
    :::image type="content" source="images/read-only-group-gp.png" alt-text="Zrzut ekranu przedstawiający dane XML grupy magazynów wymiennych tylko do odczytu":::
-      
-    
-5. ReadOnly — zasady: <br> Użyj następujących danych XML, aby utworzyć zasady ReadOnly i zastosować je do grupy magazynów wymiennych ReadOnly, aby zezwolić na działanie odczytu:
-  
+
+5. ReadOnly — zasady:
+
+   Użyj następujących danych XML, aby utworzyć zasady ReadOnly i zastosować je do grupy magazynów wymiennych ReadOnly, aby zezwolić na działanie odczytu:
+
     :::image type="content" source="images/read-only-policy-gp.png" alt-text="Zrzut ekranu przedstawiający dane XML zasad tylko do odczytu" lightbox="images/read-only-policy-gp.png":::
-        
-   
-6. Utwórz grupę dla dozwolonych nośników: <br> Użyj następujących danych XML, aby utworzyć grupę nośników dozwolonych dla magazynu wymiennego:
-    
+
+6. Utwórz grupę dla dozwolonych nośników:
+
+   Użyj następujących danych XML, aby utworzyć grupę nośników dozwolonych dla magazynu wymiennego:
+
    :::image type="content" source="images/create-group-allowed-medias-gp.png" alt-text="Zrzut ekranu przedstawiający dane XML służące do tworzenia grupy dla dozwolonych nośników" lightbox="images/create-group-allowed-medias-gp.png":::
-      
-    
-7. Utwórz zasady zezwalające na zatwierdzoną grupę USB: <br> Użyj następujących danych XML, aby utworzyć zasady zezwalające na zatwierdzoną grupę USB:
-    
-    :::image type="content" source="images/create-policy-allow-approved-usb-group-xml.png" alt-text="Zrzut ekranu przedstawiający dane XML umożliwiające utworzenie zasad zezwalania zatwierdzonej grupie USB przy użyciu zasady grupy" lightbox="images/create-policy-allow-approved-usb-group-xml.png":::
-      
-   Co oznacza "47" w zasadach? <br> Jest to 9 + 2 + 36 = 47: <br>
-   Dostęp do odczytu: 1+8 = 9 <br>
-   Dostęp do zapisu: poziom dysku 2 <br>
-   Wykonanie: 4 + 32 = 36
 
-8. Połącz grupy w jeden plik XML: <br> Grupy zasad sterowania urządzeniami można połączyć w jeden plik XML w następujący sposób:<br> 
-    - Przejdź do pozycji **Konfiguracja komputera > Szablony administracyjne > Windows Składniki > Program antywirusowy Microsoft Defender > Kontrolka urządzenia > Definiowanie grup**
-     zasad sterowania :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="urządzeniami Zrzut ekranu przedstawiający definiowanie grup zasad sterowania urządzeniami" lightbox="images/define-device-control-policy-grps-gp.png":::
-    - W oknie **Definiowanie grup zasad sterowania urządzeniami** wprowadź ścieżkę pliku zawierającą dane grup XML. <br>
-    Ścieżka pliku XML: [mdatp-devicecontrol/Demo_Groups.xml main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)<br>
-    Poniżej przedstawiono schemat xml grup zasad sterowania urządzeniami: :::image type="content" source="images/combine-grps-xml-file-gp.png" alt-text="Zrzut ekranu przedstawiający łączenie grup w jeden plik XML":::
+7. Utwórz zasady zezwalające na zatwierdzoną grupę USB:
 
-9. Połącz zasady w jeden plik XML: <br> Reguły zasad sterowania urządzeniami można połączyć w jeden plik XML w następujący sposób:<br> 
-    - Przejdź do pozycji **Konfiguracja komputera > Szablony administracyjne > Windows Składniki > Program antywirusowy Microsoft Defender > Kontrolka urządzenia > Definiowanie reguł**
-     zasad sterowania urządzeniami :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="Zrzut ekranu przedstawiający definiowanie reguł zasad sterowania urządzeniami" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
-    - W oknie **Definiowanie reguł zasad sterowania urządzeniami** wybierz pozycję **Włączone** i wprowadź ścieżkę pliku zawierającą dane reguł XML. <br>
-    Ścieżka pliku XML: [mdatp-devicecontrol/Demo_Policies.xml main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml)<br>
-    Poniżej przedstawiono schemat xml reguł zasad sterowania urządzeniami: :::image type="content" source="images/combine-policies-xml-gp.png" alt-text="zrzut ekranu przedstawiający łączenie zasad w jeden plik XML":::
+   Użyj następujących danych XML, aby utworzyć zasady zezwalające na zatwierdzoną grupę USB:
 
-10. Ustaw lokalizację kopii pliku (dowód): <br>Jeśli chcesz mieć kopię pliku (dowody) podczas dostępu do zapisu, musisz ustawić lokalizację, w której system może zapisać kopię.<br>
+   :::image type="content" source="images/create-policy-allow-approved-usb-group-xml.png" alt-text="Zrzut ekranu przedstawiający dane XML umożliwiające utworzenie zasad zezwalania zatwierdzonej grupie USB przy użyciu zasady grupy" lightbox="images/create-policy-allow-approved-usb-group-xml.png":::
+
+   Co oznacza "47" w zasadach? Jest to 9 + 2 + 36 = 47:
+
+   - Dostęp do odczytu: 1+8 = 9.
+   - Dostęp do zapisu: poziom dysku 2.
+   - Wykonaj: 4 + 32 = 36.
+
+8. Połącz grupy w jeden plik XML:
+
+   Grupy zasad sterowania urządzeniami można połączyć w jeden plik XML w następujący sposób:
+
+   - Przejdź do pozycji **Konfiguracja** \> komputera **Szablony** \> administracyjne **Windows Składniki** \> **Program antywirusowy Microsoft Defender** \> **Kontrolka** \> **urządzenia Zdefiniuj grupy zasad sterowania urządzeniami**.
+
+    :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="Zrzut ekranu przedstawiający definiowanie grup zasad sterowania urządzeniami" lightbox="images/define-device-control-policy-grps-gp.png":::
+
+   - W oknie **Definiowanie grup zasad sterowania urządzeniami** wprowadź ścieżkę pliku zawierającą dane grup XML.
+
+     Ścieżka pliku XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml>
+
+     Poniżej przedstawiono schemat xml grup zasad sterowania urządzeniami:
+
+     :::image type="content" source="images/combine-grps-xml-file-gp.png" alt-text="Zrzut ekranu przedstawiający łączenie grup w jeden plik XML":::
+
+9. Połącz zasady w jeden plik XML:
+
+   Reguły zasad sterowania urządzeniami można połączyć w jeden plik XML w następujący sposób:
+
+   - Przejdź do pozycji **Konfiguracja komputera > Szablony administracyjne > Windows Składniki > Program antywirusowy Microsoft Defender > Kontrolka urządzenia > Definiowanie reguł zasad sterowania urządzeniami**
+
+     :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="Zrzut ekranu przedstawiający definiowanie reguł zasad sterowania urządzeniami" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
+
+   - W oknie **Definiowanie reguł zasad sterowania urządzeniami** wybierz pozycję **Włączone** i wprowadź ścieżkę pliku zawierającą dane reguł XML.
+
+     Ścieżka pliku XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml>
+
+     Poniżej przedstawiono schemat xml reguł zasad sterowania urządzeniami:
+
+    :::image type="content" source="images/combine-policies-xml-gp.png" alt-text="Zrzut ekranu przedstawiający łączenie zasad w jeden plik XML":::
+
+10. Ustaw lokalizację kopii pliku (dowód):
+
+    Jeśli chcesz mieć kopię pliku (dowody) podczas dostępu do zapisu, musisz ustawić lokalizację, w której system może zapisać kopię.
+
     - Przejdź do **obszaru Konfiguracja komputera > Szablony administracyjne > Windows Składniki > Program antywirusowy Microsoft Defender > Kontrolka urządzenia > Zdefiniuj zdalną lokalizację danych dowodowych kontrolki urządzenia**.
-    - W oknie **Definiowanie zdalnej lokalizacji danych dowodowych kontrolki urządzenia** wybierz pozycję **Włączone** i wprowadź ścieżkę folderu udziału lokalnego lub sieciowego. <br>
-    :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="Zrzut ekranu przedstawiający zdalną lokalizację danych dowodowych definiowania kontrolki urządzenia" lightbox="images/evidence-data-remote-location-gp.png":::
+
+    - W oknie **Definiowanie zdalnej lokalizacji danych dowodowych kontrolki urządzenia** wybierz pozycję **Włączone** i wprowadź ścieżkę folderu udziału lokalnego lub sieciowego.
+
+      :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="Zrzut ekranu przedstawiający zdalną lokalizację danych dowodowych definiowania kontrolki urządzenia" lightbox="images/evidence-data-remote-location-gp.png":::
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Wyświetlanie danych Storage Access Control wymiennych kontrolek urządzenia w Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -365,20 +427,20 @@ DeviceEvents
 ```
 
 ```kusto
-//information of file written to removable storage 
+//information of file written to removable storage
 DeviceEvents
 | where ActionType contains "RemovableStorageFileEvent"
 | extend parsed=parse_json(AdditionalFields)
-| extend Policy = tostring(parsed.Policy) 
-| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
+| extend Policy = tostring(parsed.Policy)
+| extend PolicyRuleId = tostring(parsed.PolicyRuleId)
 | extend MediaClassName = tostring(parsed.ClassName)
 | extend MediaInstanceId = tostring(parsed.InstanceId)
 | extend MediaName = tostring(parsed.MediaName)
-| extend MediaProductId = tostring(parsed.ProductId) 
-| extend MediaVendorId = tostring(parsed.VendorId) 
-| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend MediaProductId = tostring(parsed.ProductId)
+| extend MediaVendorId = tostring(parsed.VendorId)
+| extend MediaSerialNumber = tostring(parsed.SerialNumber)
 | extend FileInformationOperation = tostring(parsed.DuplicatedOperation)
-| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
+| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation)
 | project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, Policy, PolicyRuleId, FileInformationOperation, MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber, FileName, FolderPath, FileSize, FileEvidenceLocation, AdditionalFields
 | order by Timestamp desc
 ```
@@ -395,9 +457,9 @@ Identyfikator GUID można wygenerować za pośrednictwem open source online lub 
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>Jakie są ograniczenia dotyczące wymiennych nośników magazynu i zasad?
 
-W centrum administracyjnym Microsoft Endpoint Manager (Intune) lub za pośrednictwem interfejs Graph API firmy Microsoft wywołanie zaplecza odbywa się za pośrednictwem identyfikatora OMA-URI (pobierz do odczytu lub poprawki w celu zaktualizowania), a zatem ograniczenie jest takie samo jak dowolny niestandardowy profil konfiguracji OMA-URI w firmie Microsoft, który oficjalnie zawiera 350 000 znaków dla plików XML. 
-    
-Na przykład jeśli potrzebujesz dwóch bloków wpisów na identyfikator SID użytkownika do "Zezwalaj"/"Inspekcja dozwolonych" określonych użytkowników i dwóch bloków wpisów na końcu "Odmów" wszystkim, będziesz mógł zarządzać 2276 użytkownikami. 
+W centrum administracyjnym Microsoft Endpoint Manager (Intune) lub za pośrednictwem interfejs Graph API firmy Microsoft wywołanie zaplecza odbywa się za pośrednictwem identyfikatora OMA-URI (pobierz do odczytu lub poprawki w celu zaktualizowania), a zatem ograniczenie jest takie samo jak dowolny niestandardowy profil konfiguracji OMA-URI w firmie Microsoft, który oficjalnie zawiera 350 000 znaków dla plików XML.
+
+Na przykład jeśli potrzebujesz dwóch bloków wpisów na identyfikator SID użytkownika do "Zezwalaj"/"Inspekcja dozwolonych" określonych użytkowników i dwóch bloków wpisów na końcu "Odmów" wszystkim, będziesz mógł zarządzać 2276 użytkownikami.
 
 ### <a name="why-does-the-policy-not-work"></a>Dlaczego zasady nie działają?
 

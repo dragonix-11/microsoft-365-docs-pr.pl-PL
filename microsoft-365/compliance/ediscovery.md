@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usługa Microsoft Purview oferuje trzy narzędzia zbierania elektronicznych materiałów dowodowych, których można użyć do wyszukiwania i eksportowania zawartości znajdującej się w różnych lokalizacjach, takich jak skrzynki pocztowe Exchange, witryny SharePoint i OneDrive dla Firm, Grupy Microsoft 365, Microsoft Teams i Skype dla firm konwersacje. eDiscovery (Standard) i eDiscovery (Premium) udostępniają wiele dodatkowych funkcji ułatwiających zarządzanie badaniami.
-ms.openlocfilehash: f5660b8a31cad45b110e6e32450dc03b75d5f533
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9262f2773d17f19bd5adaea3eed9e747e343e625
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095867"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043398"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Rozwiązania zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview
 
@@ -145,6 +145,8 @@ W poniższych sekcjach przedstawiono minimalne wymagania dotyczące subskrypcji 
 
 ### <a name="ediscovery-standard"></a>Zbieranie elektronicznych materiałów dowodowych (wersja standardowa)
 
+- Exchange online plan 2
+- Plan 2 usługi Sharepoint Online
 - subskrypcja Microsoft 365 E3
 - subskrypcja Microsoft 365 G3
 - subskrypcja Microsoft 365 Business Premium

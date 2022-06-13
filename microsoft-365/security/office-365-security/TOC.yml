@@ -406,6 +406,8 @@
           href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
         - name: 'Zapewnianie, że zawsze masz optymalne mechanizmy kontroli zabezpieczeń ze wstępnie ustawionymi zasadami zabezpieczeń'
           href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+        - name: 'Jak ustalać priorytety, zarządzać, badać i reagować na zdarzenia w usłudze Microsoft 365 Defender'
+          href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
         - name: Jak uruchamiać symulacje ataków dla swojego zespołu
           href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
         - name: Jak skonfigurować zautomatyzowane ataki i szkolenia w ramach szkolenia z symulacji ataków

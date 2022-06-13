@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: W tym artykule dowiesz się więcej na temat usługi Azure ExpressRoute dla Office 365 i sposobu wykorzystania jej do planowania sieci.
-ms.openlocfilehash: a284472ad84139a5e76eeab38121d62cf3757829
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 59fa69a58bedf6babf2cf277a627d42293487ab1
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095647"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042919"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planowanie sieci za pomocą usługi ExpressRoute dla usługi Office 365
 
@@ -46,7 +46,7 @@ W poniższej tabeli przedstawiono kilka różnic między połączeniem interneto
 |Bezpośrednie połączenie z przewidywalnym profilem sieciowym.  <br/> |Nie  <br/> |Tak  <br/> |
 |Łączność IPv6.  <br/> |Tak  <br/> |Tak  <br/> |
 
-Rozwiń poniższe tytuły, aby uzyskać więcej wskazówek dotyczących planowania sieci. Zarejestrowaliśmy również 10-częściową serię [usługi Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer), która bardziej szczegółowo się zagłębia.
+Rozwiń poniższe tytuły, aby uzyskać więcej wskazówek dotyczących planowania sieci.
 
 ## <a name="existing-azure-expressroute-customers"></a>Istniejący klienci usługi Azure ExpressRoute
 
@@ -62,7 +62,7 @@ W tej tabeli przedstawiono dwa typy relacji komunikacji równorzędnej, które m
 |:-----|:-----|:-----|
 |**Usług** <br/> |IaaS: Azure Virtual Machines  <br/> |PaaS: usługi publiczne platformy Azure  <br/> SaaS: Office 365  <br/> SaaS: Dynamics 365  <br/> |
 |Inicjowanie połączenia**** <br/> |Klient-firma Microsoft  <br/> Microsoft-to-Customer  <br/> |Klient-firma Microsoft  <br/> Microsoft-to-Customer  <br/> |
-|**Obsługa QoS** <br/> |Brak QoS  <br/> |<sup>QoS1</sup> <br/> |
+|**Obsługa QoS** <br/> |Brak QoS  <br/> |QoS<sup>1</sup> <br/> |
 
 <sup>1 </sup> Usługa QoS obsługuje Skype dla firm tylko w tej chwili.
   
@@ -104,15 +104,15 @@ Rozważając rozmieszczenie topologii opcji obwodowych sieci/zabezpieczeń używ
 
 - Zachęcamy klientów do projektowania topologii zabezpieczeń/obwodu do użytku z usługą ExpressRoute na potrzeby Office 365 zgodnie z najlepszymi rozwiązaniami dotyczącymi nadmiarowości, wysokiej dostępności i odzyskiwania po awarii.
 
-Oto przykład banku Woodgrove Bank, który porównuje różne opcje łączności usługi Azure ExpressRoute z modelami zabezpieczeń obwodowych omówionymi powyżej.
+Oto przykład firmy Contoso, który porównuje różne opcje łączności usługi Azure ExpressRoute z modelami zabezpieczeń obwodowych omówionymi powyżej.
   
 ### <a name="example-1-securing-azure-expressroute"></a>Przykład 1: Zabezpieczanie usługi Azure ExpressRoute
   
-Firma Woodgrove Bank rozważa wdrożenie usługi Azure ExpressRoute i po zaplanowaniu optymalnej architektury [routingu z usługą ExpressRoute dla Office 365](routing-with-expressroute.md) i po zastosowaniu powyższych wskazówek w celu zrozumienia wymagań dotyczących przepustowości określa najlepszą metodę zabezpieczania obwodu.
+Firma Contoso rozważa wdrożenie usługi Azure ExpressRoute i po zaplanowaniu optymalnej architektury [routingu z usługą ExpressRoute dla Office 365](routing-with-expressroute.md) i po zastosowaniu powyższych wskazówek w celu zrozumienia wymagań dotyczących przepustowości określa najlepszą metodę zabezpieczania obwodu.
   
-W przypadku Woodgrove, organizacji wielonarodowej z lokalizacjami na wielu kontynentach, zabezpieczenia muszą obejmować wszystkie obwody. Optymalną opcją łączności dla woodgrove jest połączenie wielopunktowe z wieloma lokalizacjami komunikacji równorzędnej na całym świecie w celu zaspokojenia potrzeb pracowników na każdym kontynencie. Każdy kontynent obejmuje nadmiarowe obwody usługi Azure ExpressRoute na kontynencie, a zabezpieczenia muszą obejmować wszystkie te elementy.
+W przypadku firmy Contoso, organizacji wielonarodowej z lokalizacjami na wielu kontynentach, zabezpieczenia muszą obejmować wszystkie obwody. Optymalną opcją łączności dla firmy Contoso jest połączenie wielopunktowe z wieloma lokalizacjami komunikacji równorzędnej na całym świecie w celu zaspokojenia potrzeb pracowników na każdym kontynencie. Każdy kontynent obejmuje nadmiarowe obwody usługi Azure ExpressRoute na kontynencie, a zabezpieczenia muszą obejmować wszystkie te elementy.
   
-Istniejąca infrastruktura Woodgrove jest niezawodna i może obsłużyć dodatkową pracę, w związku z tym Woodgrove Bank może korzystać z infrastruktury na potrzeby zabezpieczeń obwodowych usługi Azure ExpressRoute i Internetu. Gdyby tak nie było, Woodgrove mógłby zdecydować się na zakup większej ilości sprzętu w celu uzupełnienia istniejącego sprzętu lub obsługi innego typu połączenia.
+Istniejąca infrastruktura firmy Contoso jest niezawodna i może obsłużyć dodatkową pracę, w związku z tym firma Contoso może korzystać z infrastruktury dla swoich usług Azure ExpressRoute i zabezpieczeń obwodowych internetu. Gdyby tak nie było, firma Contoso mogłaby zdecydować się na zakup większej liczby urządzeń w celu uzupełnienia istniejącego sprzętu lub obsługi innego typu połączenia.
   
 ## <a name="high-availability-and-failover-with-azure-expressroute"></a>Wysoka dostępność i tryb failover w usłudze Azure ExpressRoute
 <a name="BKMK_high-availability"> </a>
@@ -158,13 +158,13 @@ Nie zalecamy używania jednego obwodu usługi ExpressRoute z Internetem jako kop
   
 ### <a name="example-2-failover-and-high-availability"></a>Przykład 2: tryb failover i wysoka dostępność
   
-Projekt wielo geograficzny banku Woodgrove Bank został poddany przeglądowi routingu, przepustowości, zabezpieczeń, a teraz musi przejść przez przegląd wysokiej dostępności. Woodgrove uważa wysoką dostępność za obejmującą trzy kategorie; odporność, niezawodność i nadmiarowość.
+Projekt wielo geograficzny firmy Contoso został poddany przeglądowi routingu, przepustowości, zabezpieczeń, a teraz musi przejść przez przegląd wysokiej dostępności. Firma Contoso uważa wysoką dostępność za obejmującą trzy kategorie; odporność, niezawodność i nadmiarowość.
   
-Odporność umożliwia firmie Woodgrove szybkie odzyskiwanie po awariach. Niezawodność umożliwia woodgrove oferowanie spójnego wyniku w systemie. Nadmiarowość umożliwia woodgrove przejście między co najmniej jednym dublowanym wystąpieniem infrastruktury.
+Odporność umożliwia firmie Contoso szybkie odzyskiwanie po awariach. Niezawodność umożliwia firmie Contoso zapewnienie spójnego wyniku w systemie. Nadmiarowość umożliwia firmie Contoso przejście między co najmniej jednym dublowanym wystąpieniem infrastruktury.
   
-W każdej konfiguracji krawędzi woodgrove ma nadmiarowe zapory, serwery proxy i identyfikatory. W przypadku Ameryka Północna woodgrove ma jedną konfigurację krawędzi w centrum danych Dallas i inną konfigurację krawędzi w centrum danych w Wirginii. Nadmiarowy sprzęt w każdej lokalizacji zapewnia odporność na tę lokalizację.
+W ramach każdej konfiguracji krawędzi firma Contoso ma nadmiarowe zapory, serwery proxy i identyfikatory. W przypadku Ameryka Północna firma Contoso ma jedną konfigurację krawędzi w centrum danych Dallas i inną konfigurację krawędzi w centrum danych w Wirginii. Nadmiarowy sprzęt w każdej lokalizacji zapewnia odporność na tę lokalizację.
   
-Konfiguracja sieci w banku Woodgrove Bank jest oparta na kilku kluczowych zasadach:
+Konfiguracja sieci w firmie Contoso jest oparta na kilku kluczowych zasadach:
   
 - W każdym regionie geograficznym istnieje wiele obwodów usługi Azure ExpressRoute.
 
@@ -172,15 +172,15 @@ Konfiguracja sieci w banku Woodgrove Bank jest oparta na kilku kluczowych zasada
 
 - Routing wyraźnie preferuje jedną lub drugą ścieżkę w zależności od dostępności, lokalizacji itd.
 
-- Przełączanie w tryb failover między obwodami usługi Azure ExpressRoute odbywa się automatycznie bez dodatkowej konfiguracji lub akcji wymaganej przez firmę Woodgrove.
+- Przełączanie w tryb failover między obwodami usługi Azure ExpressRoute odbywa się automatycznie bez dodatkowej konfiguracji lub akcji wymaganej przez firmę Contoso.
 
-- Tryb failover między obwodami internetowymi odbywa się automatycznie bez dodatkowej konfiguracji lub akcji wymaganej przez woodgrove.
+- Tryb failover między obwodami internetowymi odbywa się automatycznie bez dodatkowej konfiguracji lub akcji wymaganej przez firmę Contoso.
 
-W tej konfiguracji, dzięki nadmiarowości na poziomie fizycznym i wirtualnym, Woodgrove Bank jest w stanie zapewnić lokalną odporność, odporność regionalną i globalną odporność w niezawodny sposób. Firma Woodgrove wybrała tę konfigurację po ocenie pojedynczego obwodu usługi Azure ExpressRoute na region, a także możliwości przełączenia w tryb failover do Internetu.
+W tej konfiguracji dzięki nadmiarowości na poziomie fizycznym i wirtualnym firma Contoso może w niezawodny sposób zaoferować lokalną odporność, odporność regionalną i globalną odporność. Firma Contoso wybrała tę konfigurację po dokonaniu oceny pojedynczego obwodu usługi Azure ExpressRoute na region, a także możliwości przełączenia w tryb failover do Internetu.
   
-Jeśli woodgrove nie może mieć wielu obwodów usługi Azure ExpressRoute na region, routing ruchu pochodzącego z Ameryka Północna do obwodu usługi Azure ExpressRoute w regionie Azji i Pacyfiku doda niedopuszczalny poziom opóźnienia, a wymagana konfiguracja usługi przesyłania dalej DNS zwiększa złożoność.
+Jeśli firma Contoso nie może mieć wielu obwodów usługi Azure ExpressRoute na region, kierowanie ruchu pochodzącego z Ameryka Północna do obwodu usługi Azure ExpressRoute w regionie Azji i Pacyfiku spowoduje dodanie niedopuszczalnego poziomu opóźnienia, a wymagana konfiguracja usługi przesyłania dalej DNS zwiększa złożoność.
   
-Korzystanie z Internetu jako konfiguracji kopii zapasowej nie jest zalecane. Powoduje to przerwanie zasady niezawodności woodgrove, co powoduje niespójne środowisko korzystania z połączenia. Ponadto ręczna konfiguracja byłaby wymagana do przełączenia w tryb failover, biorąc pod uwagę skonfigurowane anonse protokołu BGP, konfigurację translatora adresów sieciowych, konfigurację DNS i konfigurację serwera proxy. Ta dodatkowa złożoność trybu failover wydłuża czas odzyskiwania i zmniejsza ich zdolność do diagnozowania i rozwiązywania związanych z tym kroków.
+Korzystanie z Internetu jako konfiguracji kopii zapasowej nie jest zalecane. Powoduje to przerwanie zasady niezawodności firmy Contoso, co powoduje niespójne środowisko korzystania z połączenia. Ponadto ręczna konfiguracja byłaby wymagana do przełączenia w tryb failover, biorąc pod uwagę skonfigurowane anonse protokołu BGP, konfigurację translatora adresów sieciowych, konfigurację DNS i konfigurację serwera proxy. Ta dodatkowa złożoność trybu failover wydłuża czas odzyskiwania i zmniejsza ich zdolność do diagnozowania i rozwiązywania związanych z tym kroków.
   
 Nadal masz pytania dotyczące planowania i implementowania zarządzania ruchem lub usługi Azure ExpressRoute? Przeczytaj pozostałe [wskazówki dotyczące sieci i wydajności](./network-planning-and-performance.md) lub często [zadawane pytania dotyczące usługi Azure ExpressRoute](/azure/expressroute/expressroute-faqs).
   

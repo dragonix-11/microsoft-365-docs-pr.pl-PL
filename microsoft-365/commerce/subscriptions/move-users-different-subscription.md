@@ -20,16 +20,16 @@ ms.custom:
 search.appverid: MET150
 description: Dowiedz się, jak przenosić użytkowników między subskrypcjami.
 ms.date: 05/12/2022
-ms.openlocfilehash: b790b708ba9095b40ab9f79a27f531a5267c9c08
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 06d9c6f2ef76ed317705c1e519822db3a8706062
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403299"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044328"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Przenoszenie użytkowników do innej subskrypcji
 
-Jeśli masz więcej niż jedną subskrypcję, masz użytkowników z licencją na jedną subskrypcję, ale chcesz przenieść ich do innej subskrypcji, możesz zamienić istniejącą licencję na inną.
+Jeśli masz więcej niż jeden produkt, masz użytkowników z licencją na jeden produkt, ale chcesz przenieść ich do innego produktu, możesz zamienić istniejącą licencję na inną.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -49,7 +49,7 @@ Aby przypisać licencje, musisz być administratorem globalnym, licencji lub uż
 
 ::: moniker-end
 
-2. Wybierz okręgi obok nazw użytkowników, dla których chcesz zastąpić istniejące licencje.
+2. Zaznacz pola wyboru obok nazw użytkowników, dla których chcesz zastąpić istniejące licencje.
 
 3. U góry wybierz pozycję **Zarządzaj licencjami produktów**.
 

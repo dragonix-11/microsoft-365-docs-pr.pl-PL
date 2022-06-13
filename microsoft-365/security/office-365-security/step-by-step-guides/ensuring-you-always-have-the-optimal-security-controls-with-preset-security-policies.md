@@ -1,5 +1,5 @@
 ---
-title: Zapewnienie, że zawsze masz optymalne mechanizmy kontroli zabezpieczeń przy użyciu wstępnie ustawionych zasad zabezpieczeń
+title: Zapewnianie, że zawsze masz optymalne mechanizmy kontroli zabezpieczeń ze wstępnie ustawionymi zasadami zabezpieczeń
 description: Kroki zapewniające, że zawsze masz najlepsze mechanizmy kontroli zabezpieczeń ze wstępnie ustawionymi zasadami zabezpieczeń. Wstępnie ustawione zasady umożliwiają wybranie profilu zabezpieczeń standardowego lub ścisłego. Firma Microsoft będzie zarządzać mechanizmami kontroli zabezpieczeń w Ochrona usługi Office 365 w usłudze Microsoft Defender i obsługiwać za Ciebie.
 search.product: ''
 search.appverid: ''
@@ -15,23 +15,23 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 029f3503c1b93b17efc9ec5a89f29a0c40a3703f
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: e768635d3bb804dbf586ce652203689942901e4f
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842541"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042955"
 ---
-# <a name="ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies"></a>Zapewnienie, że zawsze masz optymalne mechanizmy kontroli zabezpieczeń przy użyciu wstępnie ustawionych zasad zabezpieczeń
+# <a name="ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies"></a>Zapewnianie, że zawsze masz optymalne mechanizmy kontroli zabezpieczeń ze wstępnie ustawionymi zasadami zabezpieczeń
 
 Wstępnie skonfigurowane zasady zabezpieczeń umożliwiają wybranie profilu zabezpieczeń standardowego lub ścisłego oraz zarządzanie kontrolami zabezpieczeń przez firmę Microsoft i utrzymywanie ich w Ochrona usługi Office 365 w usłudze Microsoft Defender dla Ciebie.
 
 Po dodaniu nowych kontrolek lub jeśli ustawienie najlepszych rozwiązań dla kontroli zabezpieczeń zmieni się wraz ze zmieniającym się poziomem zagrożeń, firma Microsoft automatycznie zaktualizuje ustawienia kontroli zabezpieczeń dla użytkowników przypisanych do standardowych lub ścisłych wstępnie ustawionych zasad zabezpieczeń. Korzystając z zasad ustawień wstępnych zabezpieczeń, zawsze będziesz mieć zalecaną przez firmę Microsoft konfigurację najlepszych rozwiązań dla użytkowników.
 
 ## <a name="what-you-will-need"></a>Co będzie potrzebne
-- Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1
+- Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 lub nowszy (uwzględniony w wersji E5)
 - Wystarczające uprawnienia (rola administratora zabezpieczeń)
 - 5 minut na wykonanie poniższych kroków.
 

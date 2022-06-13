@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: ''
 description: Dowiedz się więcej na temat współdziałania narzędzi edukacyjnych (LTI) aplikacji firmy Microsoft i o tym, jak będą one pomagać nauczycielom podczas integrowania aplikacji firmy Microsoft z ich systemem LMS (Learning Management System).
-ms.openlocfilehash: 99ae862890989b0422cb819f65781a0a99340135
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 994abf0351a3694e1eeb534a328745691cb6a379
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414771"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044296"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Integrowanie produktów firmy Microsoft z systemem LMS (Learning Management System)
 
@@ -81,6 +81,7 @@ Aby uzyskać instrukcje konfiguracji, zobacz:
 
 - [Spotkania w aplikacji Microsoft Teams z kanwą](teams-meetings-with-canvas.md).
 - [Spotkania w aplikacji Microsoft Teams ze środowiskiem Moodle](teams-classes-meetings-with-moodle.md).
+- [Spotkania w aplikacji Microsoft Teams za pomocą usługi Open LMS](open-lms-teams-classes-and-meetings.md).
 
 ### <a name="teams-classes-lti"></a>Zajęcia w aplikacji Teams LTI
 
@@ -88,6 +89,7 @@ Aplikacja LTI zajęć w aplikacji Microsoft Teams ułatwia nauczycielom i ucznio
 
 Aby uzyskać instrukcje konfiguracji, zobacz:
 
-- [Zajęcia w aplikacji Teams LTI z kanwą](teams-classes-with-canvas.md).
-- [Zajęcia w aplikacji Teams LTI z czarną tablicą](teams-classes-with-blackboard.md).
-- [Zajęcia w aplikacji Teams ze środowiskiem Moodle](teams-classes-meetings-with-moodle.md).
+- [Zajęcia w aplikacji Microsoft Teams LTI za pomocą aplikacji Canvas](teams-classes-with-canvas.md).
+- [Zajęcia w aplikacji Microsoft Teams LTI za pomocą platformy Blackboard](teams-classes-with-blackboard.md).
+- [Zajęcia w aplikacji Microsoft Teams LTI za pomocą platformy Moodle](teams-classes-meetings-with-moodle.md).
+- [Zajęcia w aplikacji Microsoft Teams LTI za pomocą usługi Open LMS](open-lms-teams-classes-and-meetings.md).

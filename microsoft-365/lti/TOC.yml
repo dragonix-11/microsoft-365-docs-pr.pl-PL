@@ -24,3 +24,9 @@
       href: moodle-plugin-configuration.md
     - name: Korzystanie z zajęć i spotkań w aplikacji Microsoft Teams ze środowiskiem Moodle
       href: teams-classes-meetings-with-moodle.md
+- name: Integracje usługi Open LMS
+  items:
+    - name: Konfiguruj wtyczki Moodle dla usługi Open LMS
+      href: open-lms-plugin-configuration.md
+    - name: Korzystanie z klas i spotkań usługi Microsoft Teams z usługą Open LMS
+      href: open-lms-teams-classes-and-meetings.md

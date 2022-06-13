@@ -1,5 +1,5 @@
 ---
-title: Jak uruchamiać symulacje ataków dla zespołu
+title: Jak uruchamiać symulacje ataków dla swojego zespołu
 description: Kroki wysyłania ładunku symulacji ataku do użytkowników docelowych dla zespołu lub organizacji na potrzeby szkolenia. Symulowane ataki mogą pomóc w zidentyfikowaniu i znalezieniu narażonych użytkowników, zasad i praktyk, zanim rzeczywisty atak wpłynie na Organizację.
 search.product: ''
 search.appverid: ''
@@ -15,16 +15,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 96b1d512f89cafb782b348a0692fbf5c19902ebf
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: c67c709a36c07b947cd1b92abefcc7548acf8f3a
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842516"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044309"
 ---
-# <a name="how-to-run-attack-simulations-for-your-team"></a>Jak uruchamiać symulacje ataków dla zespołu
+# <a name="how-to-run-attack-simulations-for-your-team"></a>Jak uruchamiać symulacje ataków dla swojego zespołu
 
 Trenowanie symulacji ataków umożliwia uruchamianie realistycznych, ale niegroźnych scenariuszy cyberataków w organizacji. Symulowane ataki mogą pomóc w identyfikowaniu i znajdowaniu narażonych użytkowników, zasad i praktyk, zanim rzeczywisty atak wpłynie na organizację, wykorzystując wbudowane lub niestandardowe szkolenia, aby zmniejszyć ryzyko i lepiej edukować użytkowników końcowych na temat zagrożeń.
 

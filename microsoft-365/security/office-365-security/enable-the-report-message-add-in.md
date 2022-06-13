@@ -17,16 +17,16 @@ ms.collection:
 description: Dowiedz się, jak włączyć dodatki Report Message lub Report Phishing dla Outlook i Outlook w sieci Web, dla poszczególnych użytkowników lub dla całej organizacji.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a4166b36888c96b12a8aa410848c392c2afdaeb5
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: b0882a37161989248b8c970a5dbe01efc0bcff65
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144844"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043768"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Włączanie komunikatu raportu lub dodatków wyłudzania informacji o raportach
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -57,9 +57,9 @@ Jeśli jesteś administratorem globalnym lub administratorem Exchange Online, a 
   - Outlook 2013 z dodatkiem SP1 lub nowszym
   - Outlook 2016 dla komputerów Mac
   - Outlook dołączone do aplikacji Microsoft 365 dla Enterprise
-  - aplikacja Outlook dla systemów iOS i Android
+  - aplikacja Outlook dla iOS i Android
 
-- Oba dodatki nie są dostępne dla udostępnionych skrzynek pocztowych.
+- Oba dodatki nie są dostępne dla udostępnionych, grupowych lub delegowanych skrzynek pocztowych (dodatki zostaną wyszarzone).
 
 - Oba dodatki nie są dostępne dla lokalnych Exchange skrzynek pocztowych.
 

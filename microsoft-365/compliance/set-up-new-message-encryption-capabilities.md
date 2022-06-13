@@ -1,11 +1,11 @@
 ---
-title: Konfigurowanie nowych funkcji szyfrowania wiadomości
+title: Konfigurowanie szyfrowania wiadomości w usłudze Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/30/2019
+ms.date: 4/16/2022
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,64 +16,66 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Poznaj nowe funkcje obsługi Szyfrowanie wiadomości usługi Office 365 wiadomości e-mail umożliwiające chronioną komunikację z osobami w organizacji i poza nią.
+description: Dowiedz się więcej o usłudze Microsoft Purview Message Encryption, która umożliwia chronioną komunikację poczty e-mail z osobami w organizacji i poza nią.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 006bef8a78a50e3cc47bfcfe7910621a3fa9ef85
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 48a5ca3bad7c0fb0d7120cb4e35bc5f24902a46e
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017777"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043345"
 ---
-# <a name="set-up-new-message-encryption-capabilities"></a>Konfigurowanie nowych funkcji szyfrowania wiadomości
+# <a name="set-up-message-encryption"></a>Konfigurowanie szyfrowania komunikatów
 
-Nowe funkcje Szyfrowanie wiadomości usługi Office 365 (OME) umożliwiają organizacjom udostępnianie chronionych wiadomości e-mail dowolnym osobom na dowolnym urządzeniu. Użytkownicy mogą wymieniać się chronionymi wiadomościami z Microsoft 365 firmami, a także innymi użytkownikami, którzy nie są klientami, za pomocą Outlook.com, Gmail i innych usług poczty e-mail.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Wykonaj poniższe czynności, aby upewnić się, że w Twojej organizacji są dostępne nowe funkcje OME.
+Usługa Microsoft Purview Message Encryption umożliwia organizacjom udostępnianie chronionej poczty e-mail wszystkim osobom na dowolnym urządzeniu. Użytkownicy mogą wymieniać chronione wiadomości z innymi organizacjami Microsoft 365, a także z innymi firmami przy użyciu Outlook.com, Gmail i innych usług poczty e-mail.
 
-## <a name="verify-that-azure-rights-management-is-active"></a>Sprawdzanie, czy usługa Azure Rights Management jest aktywna
+Wykonaj poniższe kroki, aby upewnić się, że usługa Microsoft Purview Message Encryption jest dostępna w Twojej organizacji.
 
-Nowe funkcje OME wykorzystują funkcje ochrony w usługach [Azure Rights Management Services (Azure RMS) ,](/azure/information-protection/what-is-information-protection) technologii używanej przez usługę [Azure Information Protection](/azure/information-protection/what-is-azure-rms) do ochrony wiadomości e-mail i dokumentów za pomocą kontrolek szyfrowania i dostępu.
+## <a name="verify-that-azure-rights-management-is-active"></a>Sprawdź, czy usługa Azure Rights Management jest aktywna
 
-Jedynym wymaganiem wstępnym do korzystania z nowych funkcji OME jest aktywowanie usługi [Azure Rights Management](/azure/information-protection/what-is-azure-rms) w dzierżawie organizacji. Jeśli tak, Microsoft 365 automatycznie aktywuje nowe funkcje OME i nie musisz nic robić.
+Usługa Microsoft Purview Message Encryption korzysta z funkcji ochrony w usługach [Azure Rights Management Services (Azure RMS),](/azure/information-protection/what-is-information-protection) technologii używanej przez usługę [Azure Information Protection](/azure/information-protection/what-is-azure-rms) do ochrony wiadomości e-mail i dokumentów za pośrednictwem szyfrowania i kontroli dostępu.
 
-Usługa Azure RMS jest również aktywowana automatycznie dla większości uprawnionych planów, więc prawdopodobnie nie musisz też nic robić w tym zakresie. Aby [uzyskać więcej informacji, zobacz Aktywowanie usługi Azure Rights Management](/azure/information-protection/activate-service) .
+Jedynym wymaganiami wstępnymi dotyczącymi korzystania z usługi Microsoft Purview Message Encryption jest to, że usługa [Azure Rights Management](/azure/information-protection/what-is-azure-rms) musi zostać aktywowana w dzierżawie organizacji. Jeśli tak jest, Microsoft 365 automatycznie aktywuje szyfrowanie komunikatów i nie musisz nic robić.
+
+Usługa Azure RMS jest również aktywowana automatycznie w przypadku większości kwalifikujących się planów, więc prawdopodobnie nie musisz nic robić w tym zakresie. Aby uzyskać więcej informacji, zobacz [Aktywowanie usługi Azure Rights Management](/azure/information-protection/activate-service).
 
 > [!IMPORTANT]
-> Jeśli korzystasz z usługi zarządzania prawami dostępu w usłudze Active Directory (AD RMS) z usługą Exchange Online, musisz przeprowadzić migrację do usługi [Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms), aby można było korzystać z nowych funkcji usługi OME. Program OME nie jest zgodny z usługami AD RMS.
+> Jeśli używasz usługi active directory Rights Management (AD RMS) z Exchange Online, musisz [przeprowadzić migrację do usługi Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms), zanim będzie można użyć szyfrowania komunikatów. Szyfrowanie komunikatów usługi Microsoft Purview nie jest zgodne z usługą AD RMS.
 
 Więcej informacji można znaleźć w następujących artykułach:
 
-- [Jakich subskrypcji potrzebuję, aby korzystać z nowych funkcji OME?](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-) aby sprawdzić, czy Twój plan subskrypcji obejmuje usługę Azure Information Protection (która zawiera funkcję usługi Azure RMS).
-- [Azure Information Protection](https://azure.microsoft.com/services/information-protection/) , aby uzyskać informacje na temat kupowania uprawniających subskrypcji.
+- [Często zadawane pytania dotyczące szyfrowania komunikatów](ome-faq.yml), aby sprawdzić, czy plan subskrypcji obejmuje usługę Azure Information Protection (która obejmuje funkcje usługi Azure RMS).
+- [Usługa Azure Information Protection](https://azure.microsoft.com/services/information-protection/), aby uzyskać informacje o zakupie kwalifikującej się subskrypcji.
 
 ### <a name="manually-activating-azure-rights-management"></a>Ręczne aktywowanie usługi Azure Rights Management
 
-Jeśli usługa Azure RMS została wyłączona lub z jakiegoś powodu nie została aktywowana automatycznie, możesz aktywować ją ręcznie w:
+Jeśli usługa Azure RMS została wyłączona lub nie została ona automatycznie aktywowana z jakiegokolwiek powodu, możesz aktywować ją ręcznie w następujących elementach:
 
-- **centrum administracyjne platformy Microsoft 365**: Aby uzyskać instrukcje [, zobacz Jak aktywować usługę Azure Rights Management z centrum](/azure/information-protection/activate-office365) administracyjnego.
-- **Azure Portal**: Aby uzyskać [instrukcje, zobacz Jak aktywować usługę Azure Rights Management z portalu Azure Portal](/azure/information-protection/activate-azure) .
+- **Centrum administracyjne platformy Microsoft 365**: aby uzyskać instrukcje, zobacz [Jak aktywować usługę Azure Rights Management z centrum administracyjnego](/azure/information-protection/activate-office365).
+- **Azure Portal**: instrukcje można znaleźć w temacie [How to activate Azure Rights Management from the Azure Portal (Jak aktywować usługę Azure Rights Management z Azure Portal](/azure/information-protection/activate-azure)).
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Konfigurowanie zarządzania kluczem dzierżawy usługi Azure Information Protection
 
-Jest to krok opcjonalny. Zezwolenie firmie Microsoft na zarządzanie kluczem głównym usługi Azure Information Protection to domyślne ustawienie i zalecane najlepsze rozwiązanie dla większości organizacji. W takim przypadku nie trzeba nic robić.
+Jest to krok opcjonalny. Umożliwienie firmie Microsoft zarządzania kluczem głównym platformy Azure Information Protection jest ustawieniem domyślnym i zalecanym najlepszym rozwiązaniem dla większości organizacji. Jeśli tak jest, nie musisz nic robić.
 
-Istnieje wiele powodów, na przykład wymagań dotyczących zgodności, które mogą doprowadzić do konieczności generowania i zarządzania własnym kluczem głównym (nazywanym też "bring your own key" (BYOK)). W takim przypadku zalecamy, aby wykonać wymagane czynności przed skonfigurowaniem nowych funkcji OME. Aby [uzyskać więcej informacji, zobacz Planowanie i implementowanie klucza dzierżawy usługi Azure Information Protection](/information-protection/plan-design/plan-implement-tenant-key) .
+Istnieje wiele powodów, na przykład wymagania dotyczące zgodności, które mogą wymagać wygenerowania własnego klucza głównego i zarządzania nim (znanego również jako bring your own key (BYOK)). W takim przypadku zalecamy wykonanie wymaganych kroków przed skonfigurowaniem szyfrowania komunikatów usługi Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Planowanie i implementowanie klucza dzierżawy usługi Azure Information Protection](/information-protection/plan-design/plan-implement-tenant-key).
 
-## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Weryfikowanie nowej konfiguracji OME w programie Exchange Online PowerShell
+## <a name="verify-microsoft-purview-message-encryption-configuration-in-exchange-online-powershell"></a>Weryfikowanie konfiguracji szyfrowania komunikatów usługi Microsoft Purview w programie Exchange Online programu PowerShell
 
-Możesz sprawdzić, czy dzierżawa usługi Microsoft 365 jest prawidłowo skonfigurowana do korzystania z nowych funkcji OME w [programie Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
+Możesz sprawdzić, czy dzierżawa Microsoft 365 jest prawidłowo skonfigurowana do używania szyfrowania komunikatów usługi Microsoft Purview w [programie Exchange Online programu PowerShell](/powershell/exchange/exchange-online-powershell).
 
-1. [Połączenie użyć Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) przy użyciu konta z uprawnieniami administratora globalnego w Twojej Microsoft 365 dzierżawie.
+1. [Połączenie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) przy użyciu konta z uprawnieniami administratora globalnego w dzierżawie Microsoft 365.
 
-2. Uruchom Get-IRMConfiguration cmdlet.
+2. Uruchom polecenie cmdlet Get-IRMConfiguration.
 
-     Dla parametru AzureRMSLicensingEnabled powinna być $True wartość parametru OME, która wskazuje, że w dzierżawie skonfigurowano usługę OME. Jeśli tak nie jest, użyj programu Set-IRMConfiguration, aby ustawić wartość właściwości AzureRMSLicensingEnabled tak, $True włączyć funkcję OME.
+     Powinna zostać wyświetlona wartość $True dla parametru AzureRMSLicensingEnabled, co oznacza, że szyfrowanie komunikatów usługi Microsoft Purview jest skonfigurowane w dzierżawie. Jeśli tak nie jest, użyj Set-IRMConfiguration, aby ustawić wartość elementu AzureRMSLicensingEnabled na $True w celu włączenia szyfrowania komunikatów usługi Microsoft Purview.
 
-3. Uruchom Test-IRMConfiguration cmdlet programu Test-IRMConfiguration przy użyciu następującej składni:
+3. Uruchom polecenie cmdlet Test-IRMConfiguration przy użyciu następującej składni:
 
    ```powershell
    Test-IRMConfiguration [-Sender <email address> -Recipient <email address>]
@@ -85,9 +87,9 @@ Możesz sprawdzić, czy dzierżawa usługi Microsoft 365 jest prawidłowo skonfi
    Test-IRMConfiguration -Sender securityadmin@contoso.com -Recipient securityadmin@contoso.com
    ```
 
-   - W przypadku nadawcy i adresata użyj adresu e-mail dowolnego użytkownika w twojej Microsoft 365 dzierżawie.
+   - W przypadku nadawcy i adresata użyj adresu e-mail dowolnego użytkownika w dzierżawie Microsoft 365.
 
-     Wyniki powinny przypominać:
+     Wyniki powinny być podobne do następujących:
 
      ```console
      Results : Acquiring RMS Templates ...
@@ -103,34 +105,42 @@ Możesz sprawdzić, czy dzierżawa usługi Microsoft 365 jest prawidłowo skonfi
             OVERALL RESULT: PASS
      ```
 
-   - Nazwa Twojej organizacji zastąpi *contoso.*
+   - Nazwa organizacji zastąpi nazwę *Contoso*.
 
-   - Domyślne nazwy szablonów mogą być inne niż te wyświetlane powyżej. Aby [uzyskać więcej informacji, zobacz Konfigurowanie szablonów usługi Azure Information Protection](/azure/information-protection/configure-policy-templates) i zarządzanie nimi.
+   - Domyślne nazwy szablonów mogą różnić się od tych wyświetlanych powyżej. Aby uzyskać więcej informacji, zobacz [Konfigurowanie szablonów platformy Azure Information Protection i zarządzanie nimi](/azure/information-protection/configure-policy-templates).
 
-4. Uruchom Remove-PSSession cmdlet, aby odłączyć się od usługi zarządzania prawami.
+4. Jeśli test zakończy się niepowodzeniem z komunikatem o błędzie **Nie można uzyskać szablonów usługi RMS**, wykonaj następujące polecenia i uruchom polecenie cmdlet Test-IRMConfiguration, aby sprawdzić, czy jest ono wykonywane.
+
+   ```powershell
+   $RMSConfig = Get-AadrmConfiguration
+   $LicenseUri = $RMSConfig.LicensingIntranetDistributionPointUrl
+   Set-IRMConfiguration -LicensingLocation $LicenseUri
+   Set-IRMConfiguration -InternalLicensingEnabled $true
+   ```
+5. Uruchom polecenie cmdlet Remove-PSSession, aby odłączyć się od usługi Rights Management.
 
      ```powershell
      Remove-PSSession $session
      ```
 
-## <a name="next-steps-define-mail-flow-rules-to-use-new-ome-capabilities"></a>Następne kroki: Definiowanie reguł przepływu poczty e-mail w celu używania nowych funkcji OME
+## <a name="next-steps-define-mail-flow-rules-to-use-microsoft-purview-message-encryption"></a>Następne kroki: Definiowanie reguł przepływu poczty w celu używania szyfrowania komunikatów usługi Microsoft Purview
 
-Jeśli w organizacji skonfigurowano wcześniej reguły przepływu poczty e-mail do szyfrowania wiadomości e-mail, musisz zaktualizować istniejące reguły, aby używać nowych funkcji OME. W przypadku nowych wdrożeń musisz utworzyć nowe reguły przepływu poczty e-mail.
+Jeśli istnieją wcześniej skonfigurowane reguły przepływu poczty do szyfrowania poczty e-mail w organizacji, musisz zaktualizować istniejące reguły, aby używać szyfrowania komunikatów usługi Microsoft Purview. W przypadku nowych wdrożeń należy utworzyć nowe reguły przepływu poczty.
 
 > [!IMPORTANT]
-> Jeśli nie zaktualizujemy istniejących reguł przepływu poczty e-mail, użytkownicy nadal będą otrzymywać zaszyfrowaną pocztę z poprzednim formatem załącznika HTML, zamiast nowego bezproblemowego obsługi edytora OME.
+> Jeśli nie zaktualizujesz istniejących reguł przepływu poczty, użytkownicy będą nadal otrzymywać zaszyfrowaną pocztę, która korzysta z poprzedniego formatu załącznika HTML, zamiast nowego bezproblemowego środowiska.
 
-Reguły przepływu poczty e-mail określają, jakie warunki powinny być szyfrowane wiadomości e-mail, a także warunki usuwania tego szyfrowania. Po skonfigurowaniu akcji reguły wszystkie wiadomości zgodne z warunkami reguły są szyfrowane podczas ich wysłania.
+Reguły przepływu poczty określają, w jakich warunkach wiadomości e-mail powinny być szyfrowane, a także warunki usuwania tego szyfrowania. Po ustawieniu akcji dla reguły wszystkie komunikaty zgodne z warunkami reguły są szyfrowane po ich wysłaniu.
 
-Aby uzyskać instrukcje dotyczące tworzenia reguł przepływu poczty e-mail dla usługi OME, zobacz Definiowanie reguł przepływu poczty e-mail [w celu szyfrowania wiadomości e-mail w Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Aby uzyskać instrukcje dotyczące tworzenia szyfrowania komunikatów reguł przepływu poczty, zobacz [Definiowanie reguł przepływu poczty w celu szyfrowania wiadomości e-mail w Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
-Aby zaktualizować istniejące reguły w celu używania nowych funkcji OME:
+Aby zaktualizować istniejące reguły w celu używania szyfrowania komunikatów usługi Microsoft Purview:
 
-1. W centrum centrum administracyjne platformy Microsoft 365 przejdź do pozycji **Centra administracyjne** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
-2. W centrum Exchange przejdź do pozycji Przepływ poczty **e-mail > Reguły**.
-3. Dla każdej reguły w **te czynnościach wykonaj następujące czynności**:
-    - Wybierz **pozycję Modyfikuj zabezpieczenia wiadomości**.
-    - Wybierz **pozycję Zastosuj Szyfrowanie wiadomości usługi Office 365 i ochronę praw**.
-    - Wybierz szablon RMS z listy.
+1. W Centrum administracyjne platformy Microsoft 365 przejdź do **obszaru Centra** >  administracyjne <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+2. W centrum administracyjnym Exchange przejdź do pozycji **Przepływ poczty > Reguły**.
+3. Dla każdej reguły w **obszarze Wykonaj następujące czynności**:
+    - Wybierz **pozycję Modyfikuj zabezpieczenia komunikatów**.
+    - Wybierz pozycję **Zastosuj Office 365 szyfrowanie komunikatów i ochronę praw**.
+    - Wybierz szablon usługi RMS z listy.
     - Wybierz **Zapisz**.
     - Wybierz przycisk **OK**.

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 516b74eb8d1e62194718e0ad3234b3269e07fb83
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: ec3002a30e9b5f20636a272574dcc3d6d00e4389
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731378"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044415"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -58,14 +58,14 @@ Aby uzyskać informacje na temat innych tabel w zaawansowanym schemacie wyszukiw
 | `IsLocalAdmin` | `boolean` | Wskaźnik logiczny określający, czy użytkownik jest administratorem lokalnym na maszynie |
 | `LogonId` | `string` | Identyfikator sesji logowania. Ten identyfikator jest unikatowy na tej samej maszynie tylko między ponownymi uruchomieniami |
 | `RemoteDeviceName` | `string` | Nazwa maszyny, która wykonała zdalną operację na komputerze, którego dotyczy problem. W zależności od zgłoszonego zdarzenia ta nazwa może być w pełni kwalifikowaną nazwą domeny (FQDN), nazwą NetBIOS lub nazwą hosta bez informacji o domenie |
-| `RemoteIP` | `string` | Adres IP, z który był połączony |
+| `RemoteIP` | `string` | Adres IP urządzenia, z którego wykonano próbę logowania |
 | `RemoteIPType` | `string` | Typ adresu IP, na przykład Publiczny, Prywatny, Zarezerwowany, Loopback, Teredo, FourToSixMapping i Broadcast |
 | `RemotePort` | `int` | Port TCP na urządzeniu zdalnym, z |
 | `InitiatingProcessAccountDomain` | `string` | Domena konta, które uruchomiło proces odpowiedzialny za zdarzenie |
 | `InitiatingProcessAccountName` | `string` | Nazwa użytkownika konta, które uruchomiło proces odpowiedzialny za zdarzenie |
 | `InitiatingProcessAccountSid` | `string` | Identyfikator zabezpieczeń (SID) konta, które uruchomiło proces odpowiedzialny za zdarzenie |
 | `InitiatingProcessAccountUpn` | `string` | Główna nazwa użytkownika (UPN) konta, które uruchomiło proces odpowiedzialny za zdarzenie |
-| ` InitiatingProcessAccountObjectId` | `string` | Identyfikator obiektu usługi Azure AD konta użytkownika, które uruchomiło proces odpowiedzialny za zdarzenie |
+| ` InitiatingProcessAccountObjectId` | `string` | Azure AD identyfikatora obiektu konta użytkownika, które uruchomiło proces odpowiedzialny za zdarzenie |
 | `InitiatingProcessIntegrityLevel` | `string` | Poziom integralności procesu, który zainicjował zdarzenie. Windows przypisuje poziomy integralności do procesów opartych na pewnych cechach, takich jak uruchamianie z pobierania z Internetu. Te poziomy integralności wpływają na uprawnienia do zasobów |
 | `InitiatingProcessTokenElevation` | `string` | Typ tokenu wskazujący obecność lub brak podniesienia uprawnień użytkownika Access Control (UAC) zastosowaną do procesu, który zainicjował zdarzenie |
 | `InitiatingProcessSHA1` | `string` | SHA-1 procesu (pliku obrazu), który zainicjował zdarzenie |

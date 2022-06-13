@@ -21,16 +21,16 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej o powiadomieniach o spamie użytkowników końcowych dotyczących komunikatów objętych kwarantanną w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1688e4a56787c9593aae7006a05d52b16558647
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 44ed83a95fe8f588369f0a1bbae4809f32581f87
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393485"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043488"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Używanie powiadomień kwarantanny do wydawania i zgłaszania komunikatów poddanych kwarantannie
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -52,7 +52,9 @@ W przypadku udostępnionych skrzynek pocztowych powiadomienia o kwarantannie są
 > [!NOTE]
 > Domyślnie wiadomości poddane kwarantannie jako wyłudzanie informacji o wysokim poziomie ufności, złośliwe oprogramowanie, reguły przepływu poczty (nazywane również regułami transportu) lub zasady załączników Sejf w Ochrona usługi Office 365 w usłudze Defender są dostępne tylko dla administratorów (domyślnie są używane zasady kwarantanny AdminOnlyAccessPolicy). Aby uzyskać więcej informacji, zobacz [Manage quarantined messages and files as an admin in EOP (Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator w ramach EOP](manage-quarantined-messages-and-files.md)).
 >
-> Obecnie powiadomienia o kwarantannie nie są obsługiwane dla grup.
+> Powiadomienia kwarantanny dotyczące wiadomości wysyłanych do grup dystrybucyjnych lub grup zabezpieczeń z obsługą poczty są wysyłane do wszystkich członków grupy.
+>
+> Powiadomienia o kwarantannie dotyczące komunikatów wysyłanych do Grupy Microsoft 365 są wysyłane do wszystkich członków grupy tylko wtedy, gdy ustawienie **Wyślij kopie konwersacji grup i zdarzeń do członków grupy** jest włączone.
 
 Po otrzymaniu powiadomienia o kwarantannie dla każdego komunikatu poddanej kwarantannie są zawsze dostępne następujące informacje:
 

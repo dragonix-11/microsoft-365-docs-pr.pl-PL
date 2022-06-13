@@ -1,5 +1,5 @@
 ---
-title: Połączenie Ochrona usługi Office 365 w usłudze Microsoft Defender do usługi Microsoft Sentinel
+title: Łączenie usługi Microsoft Defender dla Office 365 z usługą Microsoft Sentinel
 description: Kroki nawiązywania połączenia Ochrona usługi Office 365 w usłudze Microsoft Defender z usługą Sentinel. Dodaj dane Ochrona usługi Office 365 w usłudze Microsoft Defender (*i* dane z pozostałej części pakietu Microsoft 365 Defender), w tym zdarzenia, do usługi Microsoft Sentinel w celu utworzenia jednego okienka szkła w zabezpieczeniach.
 search.product: ''
 search.appverid: ''
@@ -15,16 +15,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: ffd954e3bffb7d1781db5b7d0b4819f47aeede39
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: dbdb4c93ea010959c8f2eae61f9add8ea853d2b1
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842511"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043749"
 ---
-# <a name="connect-microsoft-defender-for-office-365-to-microsoft-sentinel"></a>Połączenie Ochrona usługi Office 365 w usłudze Microsoft Defender do usługi Microsoft Sentinel
+# <a name="connect-microsoft-defender-for-office-365-to-microsoft-sentinel"></a>Łączenie usługi Microsoft Defender dla Office 365 z usługą Microsoft Sentinel
 
 Możesz pozyskiwać dane Ochrona usługi Office 365 w usłudze Microsoft Defender (*i* dane z pozostałej części pakietu Microsoft 365 Defender), w tym zdarzenia, do usługi Microsoft Sentinel.
 
@@ -34,7 +34,7 @@ Korzystaj z zaawansowanego zarządzania zdarzeniami informacji o zabezpieczeniac
 > Łącznik Microsoft 365 Defender jest obecnie w **wersji zapoznawczej**. Zobacz Dodatkowe warunki użytkowania dla wersji zapoznawczej Microsoft Azure, aby zapoznać się z dodatkowymi warunkami prawnymi dotyczącymi funkcji platformy Azure, które są w wersji beta, wersji zapoznawczej lub w inny sposób nie zostały jeszcze udostępnione do ogólnej dostępności.>
 
 ## <a name="what-you-will-need"></a>Co będzie potrzebne
-- Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2 lub nowszy.
+- Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2 lub nowszy. (Uwzględnione w planach E5)
 - [Przewodnik Szybki start](/azure/sentinel/quickstart-onboard) dotyczący usługi Microsoft Sentinel.
 - Wystarczające uprawnienia (administrator zabezpieczeń w usłudze M365 & uprawnienia do odczytu/zapisu w usłudze Sentinel).
 

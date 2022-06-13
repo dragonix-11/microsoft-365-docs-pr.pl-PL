@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: narzędzie do testowania łączności sieciowej Microsoft 365
-ms.openlocfilehash: 047a1ad10efa20f2c47491a20855a92bf141eb15
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: ac2ec12ac0da2309e1d5ac0c35bbd0462cc68a62
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705586"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043714"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>narzędzie do testowania łączności sieciowej Microsoft 365
 
@@ -261,10 +261,17 @@ Można go uruchomić, klikając dwukrotnie plik wykonywalny w Windows Eksplorato
 
 Po pierwszym uruchomieniu pliku wykonywalnego zostanie wyświetlony monit o zaakceptowanie umowy licencyjnej użytkownika końcowego (EULA) przed przeprowadzeniem testowania. Jeśli umowa EULA została już przeczytana i zaakceptowana, możesz utworzyć pusty plik o nazwie Microsoft-365-Network-Connectivity-Test-EULA-accepted.txt w bieżącym katalogu roboczym dla procesu wykonywalnego po jego uruchomieniu. Aby zaakceptować umowę EULA, możesz wpisać ciąg "y" i nacisnąć klawisz Enter w oknie wiersza polecenia po wyświetleniu monitu.
 
-Plik wykonywalny akceptuje parametr wiersza polecenia /h, aby wyświetlić link do tej dokumentacji pomocy.
+Plik wykonywalny akceptuje następujące parametry wiersza polecenia:
+- -h, aby wyświetlić link do tej dokumentacji pomocy
+- -testlist &lt;test&gt; określa testy do uruchomienia. Domyślnie uruchamiane są tylko testy podstawowe. Prawidłowe nazwy testów obejmują: wszystkie, dnsConnectivityPerf, dnsResolverIdentification, bufferBloat, traceroute, proxy, vpn, skype, connectivity, networkInterface
+- -filepath &lt;filedir&gt; ścieżka katalogu plików wyników testu. Dozwolona wartość to ścieżka bezwzględna lub względna dostępnego katalogu
+- -city &lt;city&gt; Dla pola miasta, stanu i kraju określona wartość będzie używana, jeśli zostanie podana. Jeśli nie zostanie podany, zostanie wyświetlone zapytanie Windows Usługi lokalizacyjne (WLS). Jeśli zabezpieczenia na poziomie WLS nie powiedzie się, lokalizacja zostanie wykryta z ruchu wychodzącego sieci maszyn 
+- -state, &lt;stan&gt;
+- -country country &lt;&gt; 
+- -proxy &lt;account&gt; &lt;password&gt; Nazwa konta serwera proxy i hasło można podać, jeśli potrzebujesz serwera proxy, aby uzyskać dostęp do Internetu
 
 ### <a name="results"></a>Wyniki
-Dane wyjściowe wyników są zapisywane w pliku JSON w folderze o nazwie TestResults, który jest tworzony w bieżącym katalogu roboczym procesu, chyba że już istnieje. Format nazwy pliku dla danych wyjściowych to connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. Wyniki są w węzłach JSON, które są zgodne z danymi wyjściowymi wyświetlanymi na stronie internetowej witryny internetowej narzędzia do testowania łączności sieciowej Microsoft 365. Przy każdym uruchomieniu jest tworzony nowy plik wyników, a autonomiczny plik wykonywalny nie przekazuje wyników do dzierżawy firmy Microsoft na potrzeby wyświetlania na stronach Łączność sieciowa centrum administracyjnego.
+Dane wyjściowe wyników są zapisywane w pliku JSON w folderze o nazwie TestResults, który jest tworzony w bieżącym katalogu roboczym procesu, chyba że już istnieje. Format nazwy pliku dla danych wyjściowych to connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. Wyniki są w węzłach JSON, które są zgodne z danymi wyjściowymi wyświetlanymi na stronie internetowej witryny internetowej narzędzia do testowania łączności sieciowej Microsoft 365. Przy każdym uruchomieniu jest tworzony nowy plik wyników, a autonomiczny plik wykonywalny nie przekazuje wyników do dzierżawy firmy Microsoft na potrzeby wyświetlania na stronach Łączność sieciowa centrum administracyjnego. Kody drzwi wejściowych, długości geograficzne i szerokości geograficzne nie są uwzględniane w pliku wyników.
 
 ### <a name="launching-from-windows-file-explorer"></a>Uruchamianie z Windows Eksplorator plików
 Możesz po prostu kliknąć dwukrotnie plik wykonywalny, aby rozpocząć testowanie i zostanie wyświetlone okno wiersza polecenia.
