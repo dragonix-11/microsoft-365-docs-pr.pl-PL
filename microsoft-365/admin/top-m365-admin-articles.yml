@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: 20 najczęściej wyświetlanych artykułów pomocy dla administratorów w tym miesiącu
-summary: Ostatnia aktualizacja 24.05.2022. Masz ciekawy temat, które artykuły pomocy są najbardziej popularne wśród administratorów? Zapoznaj się z tą kolekcją 20 najczęściej oglądanych artykułów pomocy, aktualizowanych co miesiąc.
+summary: 'Ostatnia aktualizacja: 9 czerwca 2022 r. Masz ciekawy temat, które artykuły pomocy są najbardziej popularne wśród administratorów? Zapoznaj się z tą kolekcją 20 najczęściej oglądanych artykułów pomocy, aktualizowanych co miesiąc.'
 metadata:
   title: 20 najczęściej wyświetlanych artykułów pomocy dla administratorów w tym miesiącu
   description: Zapoznaj się z tą kolekcją 20 najpopularniejszych artykułów pomocy, które są najpopularniejsze wśród administratorów, aktualizowane co miesiąc.
@@ -8,16 +8,16 @@ metadata:
   ms.topic: landing-page
   author: SKjerland
   ms.author: sharik
-  ms.date: 05/24/2022
+  ms.date: 06/09/2022
   ms.localizationpriority: high
   ms.custom: AdminSurgePortfolio
   ms.collection: Adm_TOC
-  ms.openlocfilehash: d27424db329d3d5b42dfea2ab6b98a0340f75b6f
-  ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+  ms.openlocfilehash: 5697a2c7e3edbe7669859e4a01c45c99ed4b13b2
+  ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 05/25/2022
-  ms.locfileid: "65670085"
+  ms.lasthandoff: 06/10/2022
+  ms.locfileid: "66013315"
 landingContent:
 - title: Zarządzanie danymi i usługami
   linkLists:
@@ -25,6 +25,8 @@ landingContent:
     links:
     - text: Role administratora — informacje
       url: add-users/about-admin-roles.md
+    - text: Omówienie centrum administracyjnego platformy Microsoft 365
+      url: admin-overview/admin-center-overview.md
     - text: Microsoft 365 raporty użycia
       url: activity-reports/activity-reports.md
     - text: Uzyskiwanie pomocy technicznej dla platformy Microsoft 365 dla firm
@@ -45,10 +47,6 @@ landingContent:
       url: security-and-compliance/set-up-multi-factor-authentication.md
 - title: Rachunki i subskrypcje
   linkLists:
-  - linkListType: overview
-    links:
-    - text: Informacje o numerach rejestracyjnych i powiadomieniach o niedocenieniu
-      url: ../commerce/about-registration-numbers.md
   - linkListType: how-to-guide
     links:
     - text: Anuluj subskrypcję biznesową
@@ -59,6 +57,8 @@ landingContent:
       url: ../commerce/billing-and-payments/manage-payment-methods.md
     - text: Wyświetlanie rachunku lub faktury
       url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
+    - text: Wypróbuj lub kup Microsoft 365 dla firm
+      url: ../commerce/try-or-buy-microsoft-365.md
 - title: Poczta e-mail
   linkLists:
   - linkListType: overview
@@ -75,8 +75,6 @@ landingContent:
       url: add-users/give-mailbox-permissions-to-another-user.md
     - text: Zmienianie nazwy użytkownika i adresu e-mail
       url: add-users/change-a-user-name-and-email-address.md
-    - text: Konwertowanie skrzynki pocztowej użytkownika na udostępnioną skrzynkę pocztową
-      url: email/convert-user-mailbox-to-shared-mailbox.md
 - title: Użytkownicy, grupy i hasła
   linkLists:
   - linkListType: how-to-guide

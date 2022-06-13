@@ -1,7 +1,7 @@
 ---
-title: Rozwiązywanie problemów i znajdowanie odpowiedzi na często zadawane pytania dotyczące aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender systemie iOS
-description: Rozwiązywanie problemów i często zadawane pytania — informacje Ochrona punktu końcowego w usłudze Microsoft Defender w systemie iOS
-keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, ios, rozwiązywanie problemów, często zadawane pytania,  how to
+title: Rozwiązywanie problemów i znajdowanie odpowiedzi na często zadawane pytania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender na iOS
+description: Rozwiązywanie problemów i często zadawane pytania — Ochrona punktu końcowego w usłudze Microsoft Defender na iOS
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, ios, troubleshoot, faq, how to
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,113 +15,111 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bc8cda3fb61ec9338b95eed58f5f0a70e1deb3e1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: ae6e65d99a82bdf4a9c0adbb740c6e5b969f4b68
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469366"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016333"
 ---
-# <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Rozwiązywanie problemów i znajdowanie odpowiedzi na często zadawane pytania dotyczące aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender systemie iOS
+# <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Rozwiązywanie problemów i znajdowanie odpowiedzi na często zadawane pytania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender na iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą się pojawić podczas korzystania Ochrona punktu końcowego w usłudze Microsoft Defender systemie iOS.
-
-
+Ten temat zawiera informacje dotyczące rozwiązywania problemów, które ułatwiają rozwiązywanie problemów, które mogą wystąpić podczas korzystania z Ochrona punktu końcowego w usłudze Microsoft Defender na iOS.
 
 > [!NOTE]
-> Usługa Defender for Endpoint w systemie iOS korzysta z połączenia VPN w celu zapewnienia funkcji ochrony sieci Web. Nie jest to zwykły sieci VPN i jest to lokalny/samopętny vpn, który nie przejmuje ruchu poza urządzenie.
+> Usługa Defender for Endpoint w iOS będzie używać sieci VPN w celu zapewnienia funkcji ochrony sieci Web. Nie jest to zwykła sieć VPN i jest lokalną/samopętlaną siecią VPN, która nie przyjmuje ruchu poza urządzeniem.
 
-## <a name="apps-dont-work-when-vpn-is-turned-on"></a>Aplikacje nie działają, gdy jest włączona sieć VPN
-Niektóre aplikacje przestają działać po wykryciu aktywnego połączenia VPN. W czasie korzystania z takich aplikacji możesz wyłączyć sieć VPN. 
+## <a name="apps-dont-work-when-vpn-is-turned-on"></a>Aplikacje nie działają po włączeniu sieci VPN
+Niektóre aplikacje przestają działać po wykryciu aktywnej sieci VPN. Sieć VPN można wyłączyć podczas korzystania z takich aplikacji.
 
-Domyślnie program Defender for Endpoint w systemie iOS zawiera i włącza funkcję ochrony sieci Web. [Ochrona sieci Web](web-protection-overview.md) pomaga zabezpieczyć urządzenia przed zagrożeniami internetowymi i chronić użytkowników przed atakami wyłudzających informacje. W celu zapewnienia tej ochrony usługa Defender for Endpoint w systemie iOS używa połączenia VPN. Zwróć uwagę, że jest to lokalny interfejs VPN i w przeciwieństwie do tradycyjnych sieci VPN ruch sieciowy nie jest wysyłany poza urządzenie.
+Domyślnie usługa Defender for Endpoint na iOS obejmuje i włącza funkcję ochrony w Internecie. [Ochrona w Internecie](web-protection-overview.md) pomaga zabezpieczyć urządzenia przed zagrożeniami internetowymi i chronić użytkowników przed atakami wyłudzania informacji. Usługa Defender for Endpoint w iOS używa sieci VPN w celu zapewnienia tej ochrony. Należy pamiętać, że jest to lokalna sieć VPN, w przeciwieństwie do tradycyjnej sieci VPN, ruch sieciowy nie jest wysyłany poza urządzenie.
 
-Gdy ta funkcja jest domyślnie włączona, może być konieczne wyłączenie połączenia VPN w niektórych przypadkach. Na przykład chcesz uruchomić niektóre aplikacje, które nie działają po skonfigurowaniu połączenia VPN. W takich przypadkach możesz wyłączyć sieć VPN bezpośrednio z aplikacji Defender for Endpoint lub wykonać następujące czynności:
+Mimo że jest domyślnie włączona, mogą wystąpić pewne przypadki, które wymagają wyłączenia sieci VPN. Na przykład chcesz uruchomić niektóre aplikacje, które nie działają po skonfigurowaniu sieci VPN. W takich przypadkach można wyłączyć sieć VPN bezpośrednio z aplikacji Defender for Endpoint lub wykonać następujące kroki:
 
-1. Na urządzeniu z systemem iOS otwórz aplikację sieci **Ustawienia**, kliknij lub naciśnij pozycję **Ogólne**, a następnie pozycję **VPN**.
-1. Kliknij lub naciśnij przycisk "i", aby Ochrona punktu końcowego w usłudze Microsoft Defender.
-1. Aby wyłączyć sieć **VPN Połączenie na** żądanie.
+1. Na urządzeniu iOS otwórz aplikację **Ustawienia**, kliknij lub naciśnij pozycję **Ogólne**, a następnie sieć **VPN**.
+1. Kliknij lub naciśnij przycisk "i" dla Ochrona punktu końcowego w usłudze Microsoft Defender.
+1. Wyłącz **Połączenie na żądanie**, aby wyłączyć sieć VPN.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-vpn-config.png" alt-text="Opcja Połączenie na żądanie" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
-> Ochrona sieci Web nie będzie dostępna po wyłączeniu połączenia VPN. Aby ponownie włączyć ochronę sieci Web, otwórz aplikację Ochrona punktu końcowego w usłudze Microsoft Defender na urządzeniu i włącz ochronę sieci Web.
+> Usługa Web Protection nie będzie dostępna po wyłączeniu sieci VPN. Aby ponownie włączyć usługę Web Protection, otwórz aplikację Ochrona punktu końcowego w usłudze Microsoft Defender na urządzeniu i włącz usługę Web Protection.
 
-## <a name="coexistence-with-multiple-vpn-profiles"></a>Współistnienie z wieloma profilami VPN
+## <a name="coexistence-with-multiple-vpn-profiles"></a>Współistnienie z wieloma profilami sieci VPN
 
-System Apple iOS nie **obsługuje jednoczesnego** działania wielu sieci VPN dla całego urządzenia. Na urządzeniu może istnieć wiele profilów VPN, ale tylko jeden z nich może być aktywny jednocześnie. Jeśli chcesz korzystać z innego połączenia VPN na urządzeniu, możesz wyłączyć usługę Defender for Endpoint VPN podczas korzystania z innego połączenia VPN.
+Firma Apple iOS nie obsługuje wielu sieci VPN **na całym urządzeniu**, które mają być aktywne jednocześnie. Chociaż na urządzeniu może istnieć wiele profilów sieci VPN, tylko jedna sieć VPN może być aktywna jednocześnie. Jeśli chcesz użyć innej sieci VPN na urządzeniu, możesz wyłączyć usługę Defender for Endpoint VPN podczas korzystania z drugiej sieci VPN.
 
 ## <a name="battery-consumption"></a>Zużycie baterii
 
-Aby zapewnić ochronę przez cały czas przed zagrożeniami internetowymi, Ochrona punktu końcowego w usłudze Microsoft Defender musi przez cały czas działać w tle. Może to powodować niewielkie zwiększenie ogólnego zużycia baterii w Twoim urządzeniu. W przypadku znacznej wymiany baterii prześlij nam opinię[](ios-troubleshoot.md#send-in-app-feedback), a my przejdę do badania.
+Aby zapewnić ochronę przez cały czas przed zagrożeniami internetowymi, Ochrona punktu końcowego w usłudze Microsoft Defender musi działać w tle przez cały czas. Może to prowadzić do niewielkiego wzrostu ogólnego zużycia baterii urządzenia. Jeśli widzisz znaczne zużycie baterii, [prześlij nam opinię](ios-troubleshoot.md#send-in-app-feedback) , a my zbadamy sprawę.
 
-Ponadto w aplikacji Ustawienia system iOS pokazuje zużycie baterii tylko w przypadku aplikacji widocznych dla użytkownika przez określony czas. Zużycie baterii przez aplikacje wyświetlane na ekranie dotyczy tylko tego czasu i jest obliczane przez system iOS na podstawie różnych czynników, takich jak procesor i użycie sieci. Ochrona punktu końcowego w usłudze Microsoft Defender sieci VPN w tle używa sieci vpn w pętli lokalnej w celu sprawdzenia ruchu w sieci Web pod każdym złośliwymi witrynami sieci Web lub połączeniami. Pakiety sieciowe z dowolnej aplikacji przejść przez ten proces sprawdzania, co powoduje, że zużycie baterii Ochrona punktu końcowego w usłudze Microsoft Defender zostać obliczone nieprawidłowo. Rzeczywiste zużycie baterii w Ochrona punktu końcowego w usłudze Microsoft Defender jest mniejsze niż to, co jest widoczne na stronie baterii Ustawienia na urządzeniu.
+Ponadto w aplikacji Ustawienia iOS pokazuje tylko użycie baterii aplikacji, które są widoczne dla użytkownika przez określony czas. Użycie baterii przez aplikacje wyświetlane na ekranie jest tylko przez ten czas i jest obliczane przez iOS na podstawie wielu czynników, w tym użycia procesora CPU i sieci. Ochrona punktu końcowego w usłudze Microsoft Defender używa lokalnej/sprzężonej sieci VPN w tle do sprawdzania ruchu internetowego pod kątem złośliwych witryn sieci Web lub połączeń. Pakiety sieciowe z dowolnej aplikacji przechodzą przez tę kontrolę, co powoduje niedokładne obliczenie użycia baterii Ochrona punktu końcowego w usłudze Microsoft Defender. Rzeczywiste zużycie baterii Ochrona punktu końcowego w usłudze Microsoft Defender jest mniejsze niż to, co jest wyświetlane na stronie Ustawienia baterii na urządzeniu.
 
-Pamiętaj, że używany interfejs VPN to lokalny vpn, a w przeciwieństwie do tradycyjnego połączenia VPN ruch sieciowy nie jest wysyłany poza urządzenie.
+Należy pamiętać, że używana sieć VPN jest lokalną siecią VPN i w przeciwieństwie do tradycyjnej sieci VPN ruch sieciowy nie jest wysyłany poza urządzenie.
 
-## <a name="data-usage"></a>Zużycie danych
+## <a name="data-usage"></a>Użycie danych
 
-Ochrona punktu końcowego w usłudze Microsoft Defender sieci VPN w celu sprawdzenia ruchu sieci Web pod czyjąś złośliwą witryną internetową lub połączeniami używa sieci VPN w sieci lokalnej. Z tego powodu użycie Ochrona punktu końcowego w usłudze Microsoft Defender danych może być niedokładnie uwzględnione. Zauważyliśmy również, że jeśli urządzenie działa tylko w sieci komórkowej, użycie danych zgłoszonych przez usługę usługodawca jest bardzo zbliżone do rzeczywistego zużycia, natomiast w aplikacji Ustawienia firma Apple pokazuje od 1,5 do 2x rzeczywistych zużywanych danych.
+Ochrona punktu końcowego w usłudze Microsoft Defender używa lokalnej/sprzężonej sieci VPN do sprawdzania ruchu internetowego pod kątem złośliwych witryn internetowych lub połączeń. Z tego powodu Ochrona punktu końcowego w usłudze Microsoft Defender użycie danych może być niedokładnie rozliczane. Zaobserwowaliśmy również, że jeśli urządzenie jest tylko w sieci komórkowej, użycie danych zgłoszone przez dostawcę usług jest bardzo zbliżone do rzeczywistego zużycia, podczas gdy w aplikacji Ustawienia liczby mogą być niedokładne.
 
-Mamy podobne spostrzeżenia również w przypadku innych usług VPN i zgłaszaliśmy to do firmy Apple.
+Podobne obserwacje mamy również w przypadku innych usług sieci VPN.
 
-Ponadto bardzo ważne jest, Ochrona punktu końcowego w usłudze Microsoft Defender na bieżąco z naszymi usługami zaplecza, aby zapewnić lepszą ochronę.
+Ponadto ważne jest, aby Ochrona punktu końcowego w usłudze Microsoft Defender była aktualna z naszymi usługami zaplecza w celu zapewnienia lepszej ochrony.
 
-## <a name="report-unsafe-site"></a>Zgłoś niebezpieczną witrynę
+## <a name="report-unsafe-site"></a>Zgłaszanie niebezpiecznej witryny
 
-Witryny internetowe wyłudzujące informacje spersonifikują zaufane witryny internetowe w celu uzyskania informacji osobistych lub finansowych. Odwiedź stronę [Podaj opinię na temat ochrony sieci](https://www.microsoft.com/wdsi/support/report-unsafe-site) , aby zgłosić witrynę internetową, która może być witryną wyłudzającą informacje.
+Witryny wyłudzające informacje podszywają się pod zaufane witryny internetowe w celu uzyskania informacji osobistych lub finansowych. Odwiedź stronę [Przekaż opinię na temat ochrony sieci](https://www.microsoft.com/wdsi/support/report-unsafe-site) , aby zgłosić witrynę internetową, która może być witryną wyłudzającą informacje.
 
 ## <a name="malicious-site-detected"></a>Wykryto złośliwą witrynę
 
-Ochrona punktu końcowego w usłudze Microsoft Defender zapewnia ochronę przed wyłudzaniem informacji i innymi atakami internetowymi. W przypadku wykrycia złośliwej witryny połączenie zostanie zablokowane i do portalu sieci Microsoft 365 Defender organizacji zostanie wysłany alert. Alert zawiera nazwę domeny połączenia, zdalny adres IP i szczegóły urządzenia.
+Ochrona punktu końcowego w usłudze Microsoft Defender chroni przed wyłudzaniem informacji lub innymi atakami internetowymi. Jeśli zostanie wykryta złośliwa witryna, połączenie zostanie zablokowane, a alert zostanie wysłany do portalu Microsoft 365 Defender organizacji. Alert zawiera nazwę domeny połączenia, zdalny adres IP i szczegóły urządzenia.
 
-Ponadto powiadomienie jest wyświetlane na urządzeniu z systemem iOS. Naciśnięcie powiadomienia spowoduje otwarcie następującego ekranu, na który użytkownik może przejrzeć szczegóły.
+Ponadto powiadomienie jest wyświetlane na urządzeniu iOS. Naciśnięcie powiadomienia powoduje otwarcie następującego ekranu, aby użytkownik przejrzał szczegóły.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/ios-phish-alert.png" alt-text="Witryna zgłoszona jako niebezpieczna" lightbox="images/ios-phish-alert.png":::
+> :::image type="content" source="images/ios-phish-alert.png" alt-text="Witryna zgłoszona jako niebezpieczne powiadomienie" lightbox="images/ios-phish-alert.png":::
 
-## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>Urządzenie nie jest widoczne w programie Defender dla konsoli końcowej po włoce.
+## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>Urządzenie nie jest widoczne w konsoli usługi Defender for Endpoint po dołączeniu
 
-Po dojechanie urządzenia do spisu urządzeń w konsoli zabezpieczeń Programu Defender for Endpoint może mi potrwać kilka godzin. Upewnij się też, że urządzenie zostało poprawnie zarejestrowane w u Azure Active Directory i ma łączność z Internetem. Aby można było pomyślnie wboardować urządzenie, musi zostać zarejestrowane za pośrednictwem programu Microsoft Authenticator lub Intune — Portal firmy i użytkownik musi zalogować się przy użyciu tego samego konta, na którym jest zarejestrowane urządzenie w usłudze Azure AD.
+Po dołączeniu urządzenie może zostać wyświetlone w spisie urządzeń w konsoli zabezpieczeń usługi Defender for Endpoint. Upewnij się również, że urządzenie jest poprawnie zarejestrowane w Azure Active Directory, a urządzenie ma łączność z Internetem. W celu pomyślnego dołączenia urządzenie musi zostać zarejestrowane za pośrednictwem Microsoft Authenticator lub Intune — Portal firmy, a użytkownik musi zalogować się przy użyciu tego samego konta, za pomocą którego urządzenie jest zarejestrowane w Azure AD.
 
 > [!NOTE]
-> Czasami nazwa urządzenia jest z nim spójna w Microsoft Endpoint Manager (Intune). Nazwa urządzenia w programie Defender dla konsoli końcowej ma format <username_iPhone/iPad i>. Za pomocą identyfikatora urządzenia usługi Azure AD możesz także zidentyfikować urządzenie w programie Defender for Endpoint console.
+> Czasami nazwa urządzenia nie jest zgodna z nazwą w konsoli Microsoft Endpoint Manager (Intune). Nazwa urządzenia w konsoli usługi Defender for Endpoint ma format> modelu <username_iPhone/iPad. Możesz również użyć Azure AD identyfikatora urządzenia, aby zidentyfikować urządzenie w konsoli usługi Defender for Endpoint.
 
 ## <a name="data-and-privacy"></a>Dane i prywatność
 
-Aby uzyskać szczegółowe informacje na temat zbieranych danych i prywatności, zobacz [Informacje o prywatności — informacje Ochrona punktu końcowego w usłudze Microsoft Defender w systemie iOS](ios-privacy.md).
+Aby uzyskać szczegółowe informacje o zbieranych danych i ochronie prywatności, zobacz [Informacje o ochronie prywatności — Ochrona punktu końcowego w usłudze Microsoft Defender na iOS](ios-privacy.md).
 
 ## <a name="connectivity-issue-on-cellular-network"></a>Problem z łącznością w sieci komórkowej
 
-Jeśli masz problemy z łącznością z Internetem w sieci komórkowej, sprawdź, czy usługa Ochrona punktu końcowego w usłudze Microsoft Defender ma włączoną obsługę danych komórkowych: Otwórz aplikację Ustawienia app > MS Defender > upewnij się, że dla programu MS Defender włączono obsługę danych komórkowych.
+Jeśli masz problemy z łącznością z Internetem w sieci komórkowej, sprawdź, czy Ochrona punktu końcowego w usłudze Microsoft Defender ma włączone dane komórkowe: Otwórz aplikację Ustawienia > ms defender > upewnij się, że dla usługi MS Defender włączono "dane komórkowe".
 
-Jeśli nadal masz problemy z łącznością, sprawdź, czy włączenie/wyłączenie trybu samolotowego pomaga rozwiązać ten problem. Jeśli problem będzie nadal występował, [wyślij nam dzienniki](ios-troubleshoot.md#send-in-app-feedback).
+Jeśli nadal występują problemy z łącznością, sprawdź, czy włączenie/wyłączenie trybu samolotowego pomaga rozwiązać ten problem. Jeśli problem będzie się powtarzać, [wyślij do nas dzienniki](ios-troubleshoot.md#send-in-app-feedback).
 
 ## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>Problemy na urządzeniach nadzorowanych z zainstalowanym profilem filtru zawartości
 
-Występuje problem na urządzeniach nadzorowanych z zainstalowanym filtrem zawartości programu Defender for Endpoint. Jeśli obserwujesz opóźnienie lub opóźnienie łączności internetowej na takich urządzeniach, odinstaluj lub usuń profil filtru zawartości z urządzenia. Pracujemy nad rozwiązaniem tego problemu i zaktualizujemy to miejsce, gdy będziemy mieć rozwiązanie. 
+Wystąpił problem na urządzeniach nadzorowanych z zainstalowanym filtrem zawartości usługi Defender for Endpoint. Jeśli zauważysz spowolnienie lub opóźnienie łączności internetowej na takich urządzeniach, odinstaluj lub usuń profil filtru zawartości z urządzenia. Pracujemy nad rozwiązaniem tego problemu i zaktualizujemy to miejsce po rozwiązaniu problemu. 
 
 ## <a name="issues-during-app-updates-from-the-app-store"></a>Problemy podczas aktualizacji aplikacji ze sklepu z aplikacjami
 
-Jeśli obserwujesz problemy, gdy aplikacja jest aktualizowana za pośrednictwem sklepu z aplikacjami (automatyczne lub ręczne aktualizacje), może być konieczne ponowne uruchomienie urządzenia. Jeśli to nie rozwiąże problemu, możesz wyłączyć sieć VPN programu Defender i przeprowadzić aktualizację aplikacji. Możesz również przekazać opinię w aplikacji, aby zgłosić ten problem.
+Jeśli zauważysz problemy podczas aktualizowania aplikacji za pośrednictwem sklepu z aplikacjami (automatyczne aktualizacje lub aktualizacje ręczne), może być konieczne ponowne uruchomienie urządzenia. Jeśli to nie rozwiąże problemu, możesz wyłączyć sieć VPN usługi Defender i wykonać aktualizację aplikacji. Możesz również przekazać opinię w aplikacji, aby zgłosić ten problem.
 
 ## <a name="send-in-app-feedback"></a>Wysyłanie opinii w aplikacji
 
-Jeśli użytkownik napotyka problem, który nie został jeszcze rozwiązany w powyższych sekcjach lub nie może rozwiązać problemu przy użyciu wymienionych czynności, może przekazać opinię w aplikacji wraz z danymi diagnostycznmi. Nasz zespół przeszuka dzienniki w celu podania odpowiedniego rozwiązania. Użytkownicy mogą przesyłać opinie, wykonać następujące czynności:
+Jeśli użytkownik napotka problem, który nie został jeszcze rozwiązany w powyższych sekcjach lub nie może rozwiązać problemu przy użyciu wymienionych kroków, użytkownik może przekazać opinię w aplikacji wraz z danymi diagnostycznymi. Następnie nasz zespół zbada dzienniki, aby zapewnić odpowiednie rozwiązanie. Użytkownicy mogą użyć następujących kroków, aby wysłać opinię:
 
-  - Otwórz aplikację MSDefender na urządzeniu z systemem iOS/iPadOS.
-  - Naciśnij pozycję Menu (ikona profilu) w lewym górnym rogu.
-  - Naciśnij **pozycję Wyślij opinię**.
-  - Wybierz jedną z dostępnych opcji. Aby zgłosić problem, wybierz **pozycję Coś mi się nie podoba**.
-  - Podaj szczegóły problemu, z którym masz do czynienia, i zaznacz pole **wyboru Wyślij dane diagnostyczne**. Zalecamy, aby dołączyć swój adres e-mail, aby zespół skontaktował się z Tobą w celu rozwiązania lub rozwiązania problemu.
-  - Naciśnij **pozycję Prześlij** , aby pomyślnie wysłać opinię.
+- Otwórz aplikację MSDefender na urządzeniu z systemem iOS/iPadOS.
+- Naciśnij pozycję Menu (ikona profilu) w lewym górnym rogu.
+- Naciśnij **pozycję Wyślij opinię**.
+- Wybierz jedną z podanych opcji. Aby zgłosić problem, wybierz **pozycję Nie podoba mi się coś**.
+- Podaj szczegóły problemu, z którym się borykasz, i zaznacz opcję **Wyślij dane diagnostyczne**. Zalecamy uwzględnienie adresu e-mail, aby zespół mógł skontaktować się z Tobą w celu uzyskania rozwiązania lub dalszych czynności.
+- Naciśnij pozycję **Prześlij** , aby pomyślnie wysłać opinię.

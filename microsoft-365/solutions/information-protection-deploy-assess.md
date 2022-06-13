@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Określ przepisy dotyczące prywatności danych, odpowiednie scenariusze, gotowość i typy informacji poufnych, które znajdują się w środowisku Microsoft 365.
-ms.openlocfilehash: e2d87599315e7bb43b289d74b5f192b29aecd965
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 73cf1f3a51806fb53d5f04eb835a2fbcc7cd7b3b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973479"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015043"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Ocena ryzyka związanego z prywatnością danych i identyfikowanie poufnych elementów przy użyciu Microsoft 365
 
@@ -200,9 +200,9 @@ Portal zgodności usługi Microsoft Purview zawiera wstępnie załadowanych pona
 
 Jeśli musisz zidentyfikować i chronić specyficzny dla organizacji lub regionalny typ poufnych elementów, na przykład niestandardowy format identyfikatorów pracowników lub inne dane osobowe, które nie są jeszcze objęte wbudowanym typem informacji poufnych, możesz utworzyć niestandardowy typ informacji poufnych przy użyciu następujących metod:
 
-- PowerShell
+- Zgodność & zabezpieczeń w programie PowerShell
 - Reguły niestandardowe z dokładnym dopasowaniem danych (EDM)
-- Za pośrednictwem interfejsu użytkownika administratora Centrum zgodności, co zostało wyróżnione w [artykule Use Compliance Score and Compliance Manager (Używanie wskaźnika zgodności i menedżera zgodności](information-protection-deploy-compliance.md))
+- Za pośrednictwem portalu zgodności usługi Microsoft 365 Purview, co zostało wyróżnione w [artykule Use Compliance Score and Compliance Manager (Używanie wskaźnika zgodności i menedżera zgodności](information-protection-deploy-compliance.md))
 
 Możesz również dostosować istniejący, wbudowany typ informacji poufnych.
 
@@ -210,8 +210,8 @@ Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
 - [Dostosuj wbudowany typ informacji poufnych](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [Dowiedz się więcej o typach informacji poufnych](../compliance/sensitive-information-type-learn-about.md)
-- [Tworzenie niestandardowego typu informacji poufnych w Centrum zgodności & zabezpieczeń](../compliance/create-a-custom-sensitive-information-type.md)
-- [Tworzenie niestandardowego typu informacji poufnych w programie PowerShell Centrum zgodności & zabezpieczeń](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Tworzenie niestandardowego typu informacji poufnych w portalu zgodności usługi Microsoft 365 Purview](../compliance/create-a-custom-sensitive-information-type.md)
+- [Tworzenie niestandardowego typu informacji poufnych w programie PowerShell security & Compliance](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Tworzenie niestandardowych typów informacji poufnych przy użyciu klasyfikacji opartej na dokładnym dopasowaniu danych](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Eksplorator zawartości

@@ -1,6 +1,6 @@
 ---
-title: Zastrzeżenie dotyczące wersji wstępnej programu Microsoft Defender for Endpoint
-description: Zastrzeżenie dotyczące wersji wstępnej programu Microsoft Defender dla punktu końcowego.
+title: Ochrona punktu końcowego w usłudze Microsoft Defender Zastrzeżenie dotyczące wersji wstępnej
+description: Zastrzeżenie dotyczące wersji wstępnej Ochrona punktu końcowego w usłudze Microsoft Defender.
 ms.date: 08/28/2017
 ms.reviewer: ''
 manager: dansimp
@@ -15,4 +15,4 @@ ms.lasthandoff: 08/05/2021
 ms.locfileid: "62959274"
 ---
 > [!IMPORTANT]
-> Niektóre informacje odnoszą się do wstępnie wypuszczonych produktów, które mogą zostać znacząco zmodyfikowane przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
+> Niektóre informacje odnoszą się do wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.

@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: W tym artykule dowiesz się, jak tworzyć, testować i dostrajać zasady DLP zgodnie z potrzebami organizacji.
-ms.openlocfilehash: 605288d5ee2839cc2f3ec225e551f0ba3e65bfcc
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 8e4c96a1625e3e11995aed66fff4a289da5d059d
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753997"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016971"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Twórz, testuj i dostrajaj zasady DLP
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Ochrona przed utratą danych w Microsoft Purview (DLP) pomaga zapobiegać przypadkowemu lub przypadkowemu udostępnianiu informacji poufnych.
+Rozwiązanie Microsoft Purview Data Loss Prevention (DLP) pomaga zapobiegać przypadkowemu lub przypadkowemu udostępnianiu informacji poufnych.
 
 DLP sprawdza wiadomości e-mail i pliki pod kątem informacji poufnych, takich jak numer karty kredytowej. Przy użyciu DLP można wykrywać poufne informacje i podejmować działania, takie jak:
 
@@ -44,7 +44,7 @@ Członkowie zespołu ds. zgodności, którzy będą tworzyć zasady DLP, potrzeb
   
 1. Utwórz grupę w Microsoft 365 i dodaj do niej funkcjonariuszy zgodności.
     
-2. Utwórz grupę ról na stronie **Uprawnienia** portal zgodności Microsoft Purview. 
+2. Utwórz grupę ról na stronie **Uprawnienia** w portalu zgodności usługi Microsoft Purview. 
 
 3. Podczas tworzenia grupy ról użyj sekcji **Wybierz role** , aby dodać następującą rolę do grupy ról: **Zarządzanie zgodnością DLP**.
     
@@ -62,7 +62,7 @@ W wersji zapoznawczej dostępne są role i grupy ról, które można przetestowa
 
 Oto lista odpowiednich ról w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Role w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Information Protection Administracja
+- administrator Information Protection
 - analityk Information Protection
 - badacz Information Protection
 - czytelnik Information Protection
@@ -94,7 +94,7 @@ Zobacz [Definicje jednostek typów informacji poufnych](sensitive-information-ty
 
 Gdy ryzyko wycieku danych nie jest do końca oczywiste, trudno jest ustalić, gdzie dokładnie należy zacząć od zaimplementowania DLP. Na szczęście zasady DLP można uruchamiać w "trybie testowym", co pozwala ocenić ich skuteczność i dokładność przed ich włączeniem.
 
-Zasady DLP dla Exchange Online można zarządzać za pośrednictwem centrum administracyjnego Exchange. Można jednak skonfigurować zasady DLP dla wszystkich obciążeń za pośrednictwem portal zgodności Microsoft Purview, więc tego właśnie użyję na potrzeby pokazów w tym artykule. W portal zgodności Microsoft Purview zasady DLP znajdziesz w obszarze **Zasady** **ochrony przed utratą** >  danych. Wybierz **pozycję Utwórz zasady,** aby rozpocząć.
+Zasady DLP dla Exchange Online można zarządzać za pośrednictwem centrum administracyjnego Exchange. Można jednak skonfigurować zasady DLP dla wszystkich obciążeń za pośrednictwem portalu zgodności usługi Microsoft Purview, więc tego właśnie użyję na potrzeby pokazów w tym artykule. W portalu zgodności usługi Microsoft Purview zasady DLP znajdziesz w obszarze **Zasady** **ochrony przed utratą** >  danych. Wybierz **pozycję Utwórz zasady,** aby rozpocząć.
 
 Microsoft 365 udostępnia szereg [szablonów zasad DLP, których](what-the-dlp-policy-templates-include.md) można użyć do tworzenia zasad. Załóżmy, że jesteś australijską firmą. Szablony można filtrować w Australii, a następnie wybierać pozycje Finansowe, Medyczne i Zdrowotne oraz Prywatność.
 
@@ -235,7 +235,7 @@ Jeśli zasady DLP są dokładne i efektywnie wykrywają typy informacji poufnych
 
 ![Opcja włączenia zasad.](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Jeśli czekasz, aby zobaczyć, kiedy zasady zostaną zastosowane, [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell) i uruchom [polecenie cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy), aby wyświetlić element DistributionStatus.
+Jeśli czekasz, aby zobaczyć, kiedy zasady zostaną zastosowane, [Połączenie do programu PowerShell Security & Compliance](/powershell/exchange/connect-to-scc-powershell) i uruchom [polecenie cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy), aby wyświetlić element DistributionStatus.
 
  ```powershell
  Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus

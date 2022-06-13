@@ -1,5 +1,5 @@
 ---
-title: Włącz załączniki Sejf załączników wiadomości SharePoint, OneDrive i Microsoft Teams
+title: Włączanie bezpiecznych załączników dla programu SharePoint, usługi OneDrive i aplikacji Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,71 +16,71 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: Administratorzy mogą dowiedzieć się, jak włączyć załączniki wiadomości Sejf dla plików SharePoint, OneDrive i Microsoft Teams, w tym jak ustawiać alerty dotyczące wykrytych plików.
+description: Administratorzy mogą dowiedzieć się, jak włączyć Sejf Załączniki dla SharePoint, OneDrive i Microsoft Teams, w tym jak ustawić alerty dla wykrytych plików.
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6501097251f4001c58a651db7ddb34bc623e9b0a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 55923b13cf47e0309a7246ba43dcb9adaf3c58ff
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021248"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016015"
 ---
-# <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Włącz załączniki Sejf załączników wiadomości SharePoint, OneDrive i Microsoft Teams
+# <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Włączanie bezpiecznych załączników dla programu SharePoint, usługi OneDrive i aplikacji Microsoft Teams
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Program Microsoft Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams chroni twoją organizację przed nieumyślnie udostępnieniem złośliwych plików. Aby uzyskać więcej informacji, [zobacz Sejf załączniki wiadomości SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+Ochrona usługi Office 365 w usłudze Microsoft Defender SharePoint, OneDrive i Microsoft Teams chroni organizację przed nieumyślnym udostępnianiem złośliwych plików. Aby uzyskać więcej informacji, zobacz [Sejf Załączniki dla SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
-Ten artykuł zawiera instrukcje dotyczące włączania i konfigurowania załączników Sejf załączników wiadomości SharePoint, OneDrive i Microsoft Teams.
+Ten artykuł zawiera kroki włączania i konfigurowania załączników Sejf dla SharePoint, OneDrive i Microsoft Teams.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
-- Otwierasz portal Microsoft 365 Defender w witrynie <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **Sejf załączników**, użyj .<https://security.microsoft.com/safeattachmentv2>
+- Otwórz portal Microsoft 365 Defender pod adresem <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **załączników Sejf**, użyj polecenia <https://security.microsoft.com/safeattachmentv2>.
 
-- Aby włączyć załączniki Sejf dla systemów SharePoint, OneDrive i Microsoft Teams, musisz być członkiem grup ról Zarządzanie organizacją lub **Administrator** zabezpieczeń w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, [zobacz Uprawnienia w portalu Microsoft 365 Defender użytkowników](permissions-microsoft-365-security-center.md).
+- Aby włączyć Sejf Załączniki dla SharePoint, OneDrive i Microsoft Teams, musisz być członkiem grup ról **Zarządzanie organizacją** lub **Administrator zabezpieczeń** w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, zobacz [Uprawnienia w portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-- Aby zapobiec pobieraniu złośliwych plików za pomocą programu SharePoint Online PowerShell, musisz być członkiem roli [administratora](/azure/active-directory/roles/permissions-reference#global-administrator) globalnego lub administratora SharePoint [w](/azure/active-directory/roles/permissions-reference#sharepoint-administrator) usłudze Azure AD.
+- Aby uniemożliwić użytkownikom pobieranie złośliwych plików za pomocą programu PowerShell SharePoint Online, musisz być członkiem ról [administratora globalnego](/azure/active-directory/roles/permissions-reference#global-administrator) lub [administratora SharePoint](/azure/active-directory/roles/permissions-reference#sharepoint-administrator) w Azure AD.
 
-- Sprawdź, czy dla organizacji włączono rejestrowanie inspekcji. Aby uzyskać więcej informacji, zobacz [Włączanie lub wyłączanie wyszukiwania w dzienniku inspekcji](../../compliance/turn-audit-log-search-on-or-off.md).
+- Sprawdź, czy rejestrowanie inspekcji jest włączone dla Twojej organizacji. Aby uzyskać więcej informacji, zobacz [Włączanie lub wyłączanie wyszukiwania dzienników inspekcji](../../compliance/turn-audit-log-search-on-or-off.md).
 
-- Może upłynieć do 30 minut, aby ustawienia obowiązywały.
+- Zaczekaj do 30 minut na zastosowanie ustawień.
 
-## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Krok 1. Użyj portalu Microsoft 365 Defender, aby włączyć Sejf załączniki wiadomości SharePoint, OneDrive i Microsoft Teams
+## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Krok 1. Używanie portalu Microsoft 365 Defender do włączania załączników Sejf dla SharePoint, OneDrive i Microsoft Teams
 
-1. W portalu Microsoft 365 Defender przejdź <https://security.microsoft.com>do **artykułu Zasady i & zasady** \>  \> zagrożeń **Sejf załączników** w **sekcji** Zasady. Aby przejść bezpośrednio do strony **Sejf załączników**, użyj .<https://security.microsoft.com/safeattachmentv2>
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do sekcji **Zasady & reguły** \> **zagrożeń** \> **Sejf załączniki** w sekcji **Zasady**. Aby przejść bezpośrednio do strony **załączników Sejf**, użyj polecenia <https://security.microsoft.com/safeattachmentv2>.
 
-2. Na stronie **Sejf załączników** kliknij pozycję **Ustawienia globalne**.
+2. Na stronie **Sejf Załączniki** kliknij pozycję **Ustawienia globalne**.
 
-3. W **wyświetlonym wysuwam** menu Ustawienia globalne przejdź do sekcji Ochrona plików w folderach **SharePoint, OneDrive i Microsoft Teams** plikach.
+3. W wyświetlonym **obszarze Ustawienia globalne** przejdź do sekcji **Ochrona plików w sekcji SharePoint, OneDrive i Microsoft Teams**.
 
-   Przesuń przełącznik **Turn on Defender for Office 365 for SharePoint, OneDrive i Microsoft Teams** w ![prawo, aby włączyć przełącznik.](../../media/scc-toggle-on.png) , aby włączyć Sejf załączniki do SharePoint, OneDrive i Microsoft Teams.
+   Przenieś przełącznik **Włącz Ochrona usługi Office 365 w usłudze Defender dla SharePoint, OneDrive i Microsoft Teams** do prawego ![przełącznika.](../../media/scc-toggle-on.png) aby włączyć załączniki Sejf dla SharePoint, OneDrive i Microsoft Teams.
 
    Po zakończeniu kliknij przycisk **Zapisz**.
 
-### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Włączanie Exchange Online PowerShell w celu Sejf załączników załączników wiadomości SharePoint, OneDrive i Microsoft Teams
+### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Użyj programu Exchange Online PowerShell, aby włączyć załączniki Sejf dla SharePoint, OneDrive i Microsoft Teams
 
-Jeśli wolisz włączyć załączniki programu Sejf dla dodatków SharePoint, OneDrive i Microsoft Teams za pomocą programu PowerShell, połącz się z programem [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) i uruchom następujące polecenie:
+Jeśli wolisz użyć programu PowerShell, aby włączyć Sejf Załączniki dla SharePoint, OneDrive i Microsoft Teams, [połącz się z Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) i uruchom następujące polecenie:
 
 ```powershell
 Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 ```
 
-Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365).
+Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365).
 
-## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>Krok 2. (Zalecane) Użyj programu SharePoint Online PowerShell, aby uniemożliwić użytkownikom pobieranie złośliwych plików
+## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>Krok 2. (Zalecane) Używanie programu PowerShell SharePoint Online, aby uniemożliwić użytkownikom pobieranie złośliwych plików
 
-Domyślnie użytkownicy nie mogą otwierać, przenosić,<sup>\*</sup> kopiować ani udostępniać złośliwych plików wykrytych przez załączniki usługi Sejf dla komputerów SharePoint, OneDrive i Microsoft Teams. Mogą jednak usuwać i pobierać złośliwe pliki.
+Domyślnie użytkownicy nie mogą otwierać, przenosić, kopiować ani udostępniać<sup>\*</sup> złośliwych plików wykrytych przez Sejf Załączniki dla SharePoint, OneDrive i Microsoft Teams. Mogą jednak usuwać i pobierać złośliwe pliki.
 
-<sup>\*</sup> Jeśli użytkownicy przejdźą do **opcji Zarządzaj dostępem**, opcja **Udostępnij** będzie nadal dostępna.
+<sup>\*</sup> Jeśli użytkownicy przejdą do pozycji **Zarządzaj dostępem**, opcja **Udostępnij** jest nadal dostępna.
 
-Aby uniemożliwić użytkownikom pobieranie złośliwych plików, połącz się z [usługą SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) i uruchom następujące polecenie:
+Aby uniemożliwić użytkownikom pobieranie złośliwych plików, [połącz się z programem SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) i uruchom następujące polecenie:
 
 ```powershell
 Set-SPOTenant -DisallowInfectedFileDownload $true
@@ -89,86 +89,86 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 **Uwagi**:
 
 - To ustawienie dotyczy zarówno użytkowników, jak i administratorów.
-- Osoby te mogą nadal usuwać złośliwe pliki.
+- Użytkownicy nadal mogą usuwać złośliwe pliki.
 
-Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
+Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
-## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>Krok 3 (zalecane) Tworzenie zasad alertów Microsoft 365 Defender dla wykrytych plików za pomocą portalu alertów
+## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>Krok 3 (Zalecane) Tworzenie zasad alertów dla wykrytych plików za pomocą portalu Microsoft 365 Defender
 
-Możesz utworzyć zasady alertów, które powiadomią Ciebie i innych administratorów, gdy Sejf załączniki dla aplikacji SharePoint, OneDrive i Microsoft Teams wykryje złośliwy plik. Aby dowiedzieć się więcej o alertach, zobacz [Zasady alertów](../../compliance/alert-policies.md).
+Możesz utworzyć zasady alertów, które powiadamiają Ciebie i innych administratorów, gdy Sejf załączniki dla SharePoint, OneDrive i Microsoft Teams wykrywa złośliwy plik. Aby dowiedzieć się więcej o alertach, zobacz [Zasady alertów](../../compliance/alert-policies.md).
 
-1. W portalu Microsoft 365 Defender przejdź <https://security.microsoft.com>do **tematu Zasady i & Zasady** \> **alertów**. Aby przejść bezpośrednio do strony **zasady alertu**, użyj .<https://security.microsoft.com/alertpolicies>
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do pozycji **Zasady & reguł alertów**\>. Aby przejść bezpośrednio do strony **zasad alertów** , użyj polecenia <https://security.microsoft.com/alertpolicies>.
 
 2. Na stronie **Zasady alertów** kliknij pozycję **Nowe zasady alertów**.
 
-3. Zostanie **otwarty wysuwny** kreator nowych zasad alertów. Na stronie **Nadaj nazwę alertowi** skonfiguruj następujące ustawienia:
-   - **Nazwa**: Wpisz unikatową i opisową nazwę. Na przykład złośliwe pliki w bibliotekach.
-   - **Opis**. Wpisz opcjonalny opis. Na przykład powiadamia administratorów o wykryciu złośliwych plików w SharePoint Online, OneDrive lub Microsoft Teams.
-   - **Ważność**: **Wybierz pozycję Niski**, **Średni** **lub Wysoki** z listy rozwijanej.
-   - **Kategoria**: Wybierz **pozycję Zarządzanie zagrożeniami** z listy rozwijanej.
+3. Kreator **nowych zasad alertów** zostanie otwarty w oknie wysuwanym. Na stronie **Nazwa alertu** skonfiguruj następujące ustawienia:
+   - **Nazwa**: wpisz unikatową i opisową nazwę. Na przykład złośliwe pliki w bibliotekach.
+   - **Opis**: wpisz opcjonalny opis. Na przykład powiadamia administratorów o wykryciu złośliwych plików w usłudze SharePoint Online, OneDrive lub Microsoft Teams.
+   - **Ważność**: wybierz pozycję **Niski**, **Średni** lub **Wysoki** z listy rozwijanej.
+   - **Kategoria**: wybierz pozycję **Zarządzanie zagrożeniami** z listy rozwijanej.
 
    Po zakończeniu kliknij przycisk **Dalej**.
 
-4. Na stronie **Tworzenie ustawień alertów** skonfiguruj następujące ustawienia:
-   - **Czego chcesz ostrzegać?** sekcja \> **Aktywność to Wybierz** \> **wykryte złośliwe oprogramowanie w pliku** z listy rozwijanej.
-   - **Jak chcesz wyzwolić alert?** section: Pozostaw wartość domyślną **Za każdym razem, gdy działanie będzie odpowiadać wybranej regułie** .
+4. Na stronie **Tworzenie ustawień alertu** skonfiguruj następujące ustawienia:
+   - **Na czym chcesz otrzymywać alerty?** Działanie sekcji \> **to** \> Wybierz **wykryte złośliwe oprogramowanie w pliku** z listy rozwijanej.
+   - **Jak chcesz wyzwolić alert?** sekcja: Pozostaw wartość **domyślną Za każdym razem, gdy działanie jest zgodne z wybraną regułą** .
 
    Po zakończeniu kliknij przycisk **Dalej**.
 
 5. Na stronie **Ustawianie adresatów** skonfiguruj następujące ustawienia:
-   - Sprawdź, **czy jest zaznaczona opcja Wyślij powiadomienia e-mail** . W polu **Adresaci wiadomości** e-mail wybierz co najmniej jednego administratora globalnego, administratora zabezpieczeń lub czytnika zabezpieczeń, który powinien otrzymać powiadomienie po wykryciu złośliwego pliku.
-   - **Dzienny limit powiadomień**: pozostaw wybraną wartość **domyślną Bez limitu** .
+   - Sprawdź **, czy wybrano opcję Wyślij powiadomienia e-mail** . W polu **Adresaci poczty e-mail** wybierz co najmniej jednego administratora globalnego, administratora zabezpieczeń lub czytelników zabezpieczeń, którzy powinni otrzymywać powiadomienia po wykryciu złośliwego pliku.
+   - **Dzienny limit powiadomień**: pozostaw wartość domyślną **Nie wybrano limitu** .
 
    Po zakończeniu kliknij przycisk **Dalej**.
 
-6. Na **stronie Przeglądanie ustawień** przejrzyj ustawienia. Możesz wybrać pozycję **Edytuj** w każdej sekcji, aby zmodyfikować ustawienia w sekcji. Możesz też kliknąć przycisk **Wstecz** lub wybrać określoną stronę w kreatorze.
+6. Na stronie **Przeglądanie ustawień** przejrzyj ustawienia. W każdej sekcji możesz wybrać pozycję **Edytuj** , aby zmodyfikować ustawienia w sekcji. Możesz też kliknąć przycisk **Wstecz** lub wybrać określoną stronę w kreatorze.
 
-   W **sekcji Czy chcesz włączyć zasady od razu?** pozostaw wartość domyślną **Tak, włącz ją od razu.**
+   W sekcji **Czy chcesz od razu włączyć zasady?** pozostaw wartość domyślną **Tak, włącz ją od razu** .
 
    Po zakończeniu kliknij przycisk **Zakończ**.
 
-### <a name="use-security--compliance-powershell-to-create-an-alert-policy-for-detected-files"></a>Tworzenie zasad & zabezpieczeń i zgodności w programie PowerShell w celu utworzenia zasad alertów dotyczących wykrytych plików
+### <a name="use-security--compliance-powershell-to-create-an-alert-policy-for-detected-files"></a>Tworzenie zasad alertów dla wykrytych plików przy użyciu programu PowerShell zgodności & zabezpieczeń
 
-Jeśli wolisz użyć programu PowerShell do utworzenia tych samych zasad alertów, które opisano w poprzedniej sekcji, połącz się z programem [PowerShell](/powershell/exchange/connect-to-scc-powershell) w Centrum zabezpieczeń & zgodności i uruchom następujące polecenie:
+Jeśli wolisz użyć programu PowerShell do utworzenia tych samych zasad alertów, co opisano w poprzedniej sekcji, [połącz się z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell) i uruchom następujące polecenie:
 
 ```powershell
 New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
 ```
 
-**Uwaga**: Domyślna wartość _ważności_ to Niska. Aby określić średni lub wysoki, uwzględnij parametr _ważności_ i wartość w poleceniu.
+**Uwaga**: domyślna wartość _ważności_ to Niska. Aby określić wartość średnią lub wysoką, dołącz parametr _ważności_ i wartość w poleceniu .
 
 Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [New-ActivityAlert](/powershell/module/exchange/new-activityalert).
 
-### <a name="how-do-you-know-these-procedures-worked"></a>Skąd wiadomo, że te procedury działały?
+### <a name="how-do-you-know-these-procedures-worked"></a>Skąd wiesz, że te procedury zadziałają?
 
-- Aby sprawdzić, czy załączniki do załączników wiadomości Sejf SharePoint, OneDrive i Microsoft Teams zostały pomyślnie włączone, należy wykonać jedną z następujących czynności:
+- Aby sprawdzić, czy pomyślnie włączono Sejf Załączniki dla SharePoint, OneDrive i Microsoft Teams, wykonaj jedną z następujących czynności:
 
-  - W portalu Microsoft 365 Defender przejdź do sekcji Zasady **&** \>  \>  \> zasady zagrożeń sekcja **Sejf** Załączniki, wybierz ustawienia globalne i sprawdź wartość włącz defender dla usługi Office 365 dla usługi **SharePoint, OneDrive i Microsoft Teams** ustawienia.
+  - W portalu Microsoft 365 Defender przejdź **do sekcji** \> **Zasady & reguły** \> zasad \> **zagrożeń** **Sejf Załączniki**, wybierz pozycję **Ustawienia globalne** i sprawdź wartość **Ochrona usługi Office 365 w usłudze Defender Włączanie dla ustawienie SharePoint, OneDrive i Microsoft Teams**.
 
-  - W Exchange Online programu PowerShell uruchom następujące polecenie, aby sprawdzić ustawienie właściwości:
+  - W Exchange Online programu PowerShell uruchom następujące polecenie, aby zweryfikować ustawienie właściwości:
 
     ```powershell
     Get-AtpPolicyForO365 | Format-List EnableATPForSPOTeamsODB
     ```
 
-    Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Get-AtpPolicyForO365](/powershell/module/exchange/get-atppolicyforo365).
+    Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Get-AtpPolicyForO365](/powershell/module/exchange/get-atppolicyforo365).
 
-- Aby sprawdzić, czy pobieranie złośliwych plików zostało pomyślnie zablokowane przez inne osoby, otwórz program SharePoint Online PowerShell i uruchom następujące polecenie w celu zweryfikowania wartości właściwości:
+- Aby sprawdzić, czy pomyślnie zablokowano użytkownikom możliwość pobierania złośliwych plików, otwórz SharePoint Programu PowerShell online i uruchom następujące polecenie, aby zweryfikować wartość właściwości:
 
   ```powershell
   Get-SPOTenant | Format-List DisallowInfectedFileDownload
   ```
 
-  Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
+  Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
-- Aby sprawdzić, czy zasady alertów dotyczące wykrytych plików zostały pomyślnie skonfigurowane, należy wykonać dowolną z następujących czynności:
-  - W portalu Microsoft 365 Defender przejdź do **zasad i reguł &** \> **Wybierz** \> zasady alertów i sprawdź ustawienia.
-  - W Microsoft 365 Defender PowerShell \<AlertPolicyName\> portalu zamień na nazwę zasad alertów, uruchom następujące polecenie i sprawdź wartości właściwości:
+- Aby sprawdzić, czy zasady alertów dla wykrytych plików zostały pomyślnie skonfigurowane, wykonaj dowolne z następujących kroków:
+  - W portalu Microsoft 365 Defender przejdź do obszaru **Zasady & reguły** \> **alertów** \> Wybierz zasady alertów i sprawdź ustawienia.
+  - W Microsoft 365 Defender portalu programu PowerShell zastąp \<AlertPolicyName\> ciąg nazwą zasad alertu, uruchom następujące polecenie i sprawdź wartości właściwości:
 
     ```powershell
     Get-ActivityAlert -Identity "<AlertPolicyName>"
     ```
 
-    Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Get-ActivityAlert](/powershell/module/exchange/get-activityalert).
+    Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Get-ActivityAlert](/powershell/module/exchange/get-activityalert).
 
-- Raport o [stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report) umożliwia wyświetlanie informacji o wykrytych plikach w SharePoint, OneDrive i Microsoft Teams. W szczególności możesz użyć widoku **Wyświetl dane według: Złośliwe oprogramowanie dotyczące \>** zawartości.
+- Raport o [stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report) umożliwia wyświetlanie informacji o wykrytych plikach w SharePoint, OneDrive i Microsoft Teams. W szczególności możesz użyć widoku **Wyświetl dane według: Widok złośliwego oprogramowania zawartości\>**.

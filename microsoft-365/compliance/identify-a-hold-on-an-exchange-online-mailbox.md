@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak zidentyfikować różne typy blokad, które można umieścić w Exchange Online skrzynce pocztowej w Microsoft 365.
-ms.openlocfilehash: 4b4ff5064f59285412c4c20108df9dbbae992f7e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f38376fe3d7517b877239a9bb6add5fbf9952d59
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097761"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017903"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Jak zidentyfikować typ blokady umieszczonej w skrzynce pocztowej Exchange Online
 
@@ -130,9 +130,9 @@ Po uzyskaniu identyfikatora GUID blokady, który jest stosowany do skrzynki pocz
 
 ### <a name="ediscovery-holds"></a>Blokady zbierania elektronicznych materiałów dowodowych
 
-Uruchom następujące polecenia w programie PowerShell Security & Compliance Center, aby zidentyfikować blokadę zbierania elektronicznych materiałów dowodowych, która jest stosowana do skrzynki pocztowej. Użyj identyfikatora GUID (bez prefiksu UniH) dla blokady zbierania elektronicznych materiałów dowodowych, która została zidentyfikowana w kroku 1. 
+Uruchom następujące polecenia w programie PowerShell security & Compliance, aby zidentyfikować blokadę zbierania elektronicznych materiałów dowodowych, która jest stosowana do skrzynki pocztowej. Użyj identyfikatora GUID (bez prefiksu UniH) dla blokady zbierania elektronicznych materiałów dowodowych, która została zidentyfikowana w kroku 1. 
 
-Aby nawiązać połączenie z programem PowerShell Centrum zgodności usługi Security &, zobacz [Połączenie z programem PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+Aby nawiązać połączenie z programem PowerShell zgodności & zabezpieczeń, zobacz [Połączenie z programem PowerShell & zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell).
 
 Pierwsze polecenie tworzy zmienną zawierającą informacje o blokadzie. Ta zmienna jest używana w innych poleceniach. Drugie polecenie wyświetla nazwę przypadku zbierania elektronicznych materiałów dowodowych, z którego jest skojarzona blokada. Trzecie polecenie wyświetla nazwę blokady i listę skrzynek pocztowych, do których ma zastosowanie blokada.
 
@@ -163,7 +163,7 @@ Jeśli identyfikator GUID blokady In-Place rozpoczyna się od prefiksu `cld` , p
 
 ### <a name="microsoft-365-retention-policies"></a>zasady przechowywania Microsoft 365
 
-[Połączenie do programu PowerShell Centrum zgodności usługi Security &](/powershell/exchange/connect-to-scc-powershell) i uruchom następujące polecenie, aby tożsamości zasad przechowywania Microsoft 365 (w całej organizacji lub określonej lokalizacji), które są stosowane do skrzynki pocztowej. Użyj identyfikatora GUID (bez prefiksu mbx, skp lub grp lub sufiksu akcji), który został zidentyfikowany w kroku 1.
+[Połączenie do programu PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell) i uruchom następujące polecenie, aby tożsamości zasady przechowywania Microsoft 365 (w całej organizacji lub określonej lokalizacji), które są stosowane do skrzynki pocztowej. Użyj identyfikatora GUID (bez prefiksu mbx, skp lub grp lub sufiksu akcji), który został zidentyfikowany w kroku 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
@@ -292,7 +292,7 @@ Gdy zasady przechowywania nie są już stosowane do skrzynki pocztowej, użytkow
 
 Po zidentyfikowaniu blokad zastosowanych do skrzynki pocztowej można wykonywać zadania, takie jak zmiana czasu przechowywania, tymczasowe lub trwałe usunięcie blokady lub wykluczenie nieaktywnej skrzynki pocztowej z zasad przechowywania Microsoft 365. Aby uzyskać więcej informacji na temat wykonywania zadań związanych z blokadami, zobacz jeden z następujących tematów:
 
-- Uruchom polecenie [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) w programie [PowerShell Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell), aby wykluczyć skrzynkę pocztową z zasad przechowywania Microsoft 365 w całej organizacji. To polecenie może być używane tylko w przypadku zasad przechowywania, w których wartość właściwości *ExchangeLocation* jest równa `All`.
+- Uruchom polecenie [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) w programie [PowerShell Security & Compliance](/powershell/exchange/connect-to-scc-powershell), aby wykluczyć skrzynkę pocztową z zasad przechowywania Microsoft 365 całej organizacji. To polecenie może być używane tylko w przypadku zasad przechowywania, w których wartość właściwości *ExchangeLocation* jest równa `All`.
 
 - [Zmień czas trwania archiwizacji dla nieaktywnej skrzynki pocztowej](change-the-hold-duration-for-an-inactive-mailbox.md)
 

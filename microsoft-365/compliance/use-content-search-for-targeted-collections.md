@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Użyj wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, aby wykonać docelową kolekcję, która wyszukuje elementy w określonej skrzynce pocztowej lub folderze witryny.
-ms.openlocfilehash: 396c42183667e59e738779f618ca077d909db419
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 224da8e651599d1d007684a069b0dbb9d30a6119
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094929"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015545"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Używanie wyszukiwania zawartości dla kolekcji docelowych
 
@@ -41,12 +41,12 @@ Narzędzie do wyszukiwania zawartości w portalu zgodności usługi Microsoft Pu
 
 - Musisz również mieć przypisaną rolę Adresaci poczty w organizacji Exchange Online. Jest to wymagane do uruchomienia polecenia cmdlet **Get-MailboxFolderStatistics** , które jest zawarte w skryptze. Domyślnie rola Adresaci poczty jest przypisywana do grup ról Zarządzanie organizacjami i zarządzanie adresatami w Exchange Online. Aby uzyskać więcej informacji na temat przypisywania uprawnień w Exchange Online, zobacz [Zarządzanie członkami grupy ról](/exchange/manage-role-group-members-exchange-2013-help). Można również utworzyć niestandardową grupę ról, przypisać do niej rolę Adresaci poczty, a następnie dodać członków, którzy muszą uruchomić skrypt w kroku 1. Aby uzyskać więcej informacji, zobacz [Zarządzanie grupami ról](/Exchange/permissions-exo/role-groups).
 
-- Skrypt w tym artykule obsługuje nowoczesne uwierzytelnianie. Możesz użyć skryptu w taki sam jak jest, jeśli jesteś Microsoft 365 lub organizacją Microsoft 365 GCC. Jeśli jesteś organizacją Office 365 Niemczech, organizacją Microsoft 365 GCC High lub organizacją Microsoft 365 DoD, musisz edytować skrypt, aby pomyślnie go uruchomić. W szczególności musisz edytować wiersz `Connect-ExchangeOnline` i użyć parametru *ExchangeEnvironmentName* (i odpowiedniej wartości dla typu organizacji), aby nawiązać połączenie z programem Exchange Online programu PowerShell.  Ponadto musisz edytować wiersz `Connect-IPPSSession` i użyć parametrów *ConnectionUri* i *AzureADAuthorizationEndpointUri* (i odpowiednich wartości dla typu organizacji), aby nawiązać połączenie z programem PowerShell Centrum zgodności usługi Security &. Aby uzyskać więcej informacji, zobacz przykłady w [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) i [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- Skrypt w tym artykule obsługuje nowoczesne uwierzytelnianie. Możesz użyć skryptu w taki sam jak jest, jeśli jesteś Microsoft 365 lub organizacją Microsoft 365 GCC. Jeśli jesteś organizacją Office 365 Niemczech, organizacją Microsoft 365 GCC High lub organizacją Microsoft 365 DoD, musisz edytować skrypt, aby pomyślnie go uruchomić. W szczególności musisz edytować wiersz `Connect-ExchangeOnline` i użyć parametru *ExchangeEnvironmentName* (i odpowiedniej wartości dla typu organizacji), aby nawiązać połączenie z programem Exchange Online programu PowerShell.  Ponadto musisz edytować wiersz `Connect-IPPSSession` i używać parametrów *ConnectionUri* i *AzureADAuthorizationEndpointUri* (i odpowiednich wartości dla typu organizacji), aby nawiązać połączenie z programem PowerShell security & Compliance. Aby uzyskać więcej informacji, zobacz przykłady w [Połączenie, aby Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) i [Połączenie do programu PowerShell & Zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
-- Za każdym razem, gdy uruchamiasz skrypt, tworzona jest nowa zdalna sesja programu PowerShell. Oznacza to, że możesz użyć wszystkich dostępnych zdalnych sesji programu PowerShell. Aby temu zapobiec, uruchom następujące polecenie, aby rozłączyć aktywne zdalne sesje programu PowerShell.
+- Za każdym razem, gdy uruchamiasz skrypt, tworzona jest nowa zdalna sesja programu PowerShell. Oznacza to, że możesz użyć wszystkich dostępnych zdalnych sesji programu PowerShell. Aby temu zapobiec, uruchom następujące polecenia, aby rozłączyć aktywne zdalne sesje programu PowerShell.
 
   ```powershell
-  Get-PSSession | Remove-PSSession
+  Get-PSSession | Remove-PSSession; Disconnect-ExchangeOnline
   ```
 
     Aby uzyskać więcej informacji, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
@@ -67,7 +67,7 @@ Skrypt uruchomiony w tym pierwszym kroku zwróci listę folderów skrzynki poczt
 
   - **OneDrive dla Firm**:`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
-- **Poświadczenia użytkownika**: skrypt będzie używać poświadczeń w celu nawiązania połączenia z programem Exchange Online programu PowerShell lub programu PowerShell & Security & Compliance Center przy użyciu nowoczesnego uwierzytelniania. Jak wyjaśniono wcześniej, musisz mieć przypisane odpowiednie uprawnienia, aby pomyślnie uruchomić ten skrypt.
+- **Poświadczenia użytkownika**: skrypt będzie używać poświadczeń w celu nawiązania połączenia z programem Exchange Online programu PowerShell lub programu PowerShell & zgodności z zabezpieczeniami przy użyciu nowoczesnego uwierzytelniania. Jak wyjaśniono wcześniej, musisz mieć przypisane odpowiednie uprawnienia, aby pomyślnie uruchomić ten skrypt.
 
 Aby wyświetlić listę folderów skrzynki pocztowej lub nazw linku dokumentu witryny (ścieżki):
 
@@ -132,7 +132,7 @@ Aby wyświetlić listę folderów skrzynki pocztowej lub nazw linku dokumentu wi
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
       $siteUrl = $addressOrSite
-      # Connect to Security & Compliance Center PowerShell
+      # Connect to Security & Compliance PowerShell
       if (!$SccSession)
       {
           Import-Module ExchangeOnlineManagement
@@ -222,7 +222,7 @@ Po uruchomieniu skryptu w celu zebrania listy identyfikatorów folderów lub lin
 
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu konta i poświadczeń użytych do uruchomienia skryptu w kroku 1.
 
-2. W lewym okienku centrum zgodności kliknij pozycję **Pokaż** **wszystkieKontenerowanie** > , a następnie kliknij pozycję **Nowe wyszukiwanie**.
+2. W lewym okienku centrum zgodności kliknij pozycję **Pokaż wszystkie** > **wyszukiwanie zawartości**, a następnie kliknij pozycję **Nowe wyszukiwanie**.
 
 3. W polu **Słowa kluczowe** wklej `folderid:<folderid>` wartość lub  `documentlink:<path>/*` zwróconą przez skrypt w kroku 1.
 

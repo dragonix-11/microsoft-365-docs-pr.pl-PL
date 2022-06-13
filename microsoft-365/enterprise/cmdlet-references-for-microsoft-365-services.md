@@ -15,13 +15,13 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: Znajdź Microsoft 365 odwołania do poleceń cmdlet programu PowerShell dla usług Azure AD, Exchange Online, SharePoint Online, Skype dla firm Online i Security & Compliance.
-ms.openlocfilehash: 96c03bed9275d3e48164ac5ac5ba57d78b36c634
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Znajdź Microsoft 365 odwołania do poleceń cmdlet programu PowerShell dla Azure AD, Exchange Online, SharePoint Online, Skype dla firm Online i zgodności & zabezpieczeń.
+ms.openlocfilehash: 97372031f928e7862145945c72e522510f7cd30e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101386"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015445"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Odwołania do polecenia cmdlet dla usług Microsoft 365
 
@@ -61,11 +61,11 @@ Aby zapoznać się z tematami dotyczącymi poleceń cmdlet usługi Skype dla fir
 
 Aby uzyskać instrukcje dotyczące połączeń dla programu PowerShell usługi Skype dla firm Online, zobacz [Zarządzanie Skype dla firm Online za pomocą programu PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).
 
-## <a name="security--compliance-center-powershell-cmdlets"></a>Polecenia cmdlet programu PowerShell centrum zgodności & zabezpieczeń
+## <a name="security--compliance-powershell-cmdlets"></a>Polecenia cmdlet programu PowerShell dotyczące zgodności & zabezpieczeń
 
 Odwołania do poleceń cmdlet Usługi Security & Compliance Center znajdują się w sekcji Dokumentacja [dokumentacji programu PowerShell dotyczącego zgodności & zabezpieczeń](/powershell/exchange/scc-powershell).
 
-Aby uzyskać instrukcje dotyczące połączeń dla programu PowerShell Centrum zgodności & zabezpieczeń, zobacz [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+Aby uzyskać instrukcje dotyczące połączenia programu PowerShell & zgodności z zabezpieczeniami, zobacz [Połączenie do programu PowerShell & Zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="see-also"></a>Zobacz też
 

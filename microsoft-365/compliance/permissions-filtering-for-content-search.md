@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Filtrowanie uprawnień wyszukiwania umożliwia menedżerom zbierania elektronicznych materiałów dowodowych wyszukiwanie tylko podzestawu skrzynek pocztowych i witryn w organizacji.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba8cfaaec45ceefff89b17b561a5e80bebbdade6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 067e1a3c785d624579af80f92476d2641266f4dc
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098807"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018058"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Konfigurowanie filtrowania uprawnień dla zbierania elektronicznych materiałów dowodowych
 
@@ -59,7 +59,7 @@ Następujące cztery polecenia cmdlet w programie PowerShell security & Complian
 
 - Aby uruchomić polecenia cmdlet filtru zabezpieczeń zgodności, musisz być członkiem grupy ról Zarządzanie organizacją w portalu zgodności. Aby uzyskać więcej informacji, zobacz [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
-- Aby użyć poleceń cmdlet filtru zabezpieczeń zgodności, musisz nawiązać połączenie z programem PowerShell Exchange Online i Security & Compliance Center. Jest to konieczne, ponieważ te polecenia cmdlet wymagają dostępu do właściwości skrzynki pocztowej, dlatego należy nawiązać połączenie z programem Exchange Online programu PowerShell. Zobacz kroki opisane w następnej sekcji.
+- Aby użyć poleceń cmdlet filtru zabezpieczeń zgodności, musisz nawiązać połączenie z programem PowerShell Exchange Online i security & Compliance. Jest to konieczne, ponieważ te polecenia cmdlet wymagają dostępu do właściwości skrzynki pocztowej, dlatego należy nawiązać połączenie z programem Exchange Online programu PowerShell. Zobacz kroki opisane w następnej sekcji.
 
 - Aby uzyskać dodatkowe informacje na temat filtrów uprawnień wyszukiwania, zobacz sekcję [Więcej informacji](#more-information) .
 
@@ -69,7 +69,7 @@ Następujące cztery polecenia cmdlet w programie PowerShell security & Complian
 
 - Nie ma limitu liczby filtrów uprawnień wyszukiwania, które można utworzyć w organizacji. Jednak zapytanie wyszukiwania może mieć maksymalnie 100 warunków. W takim przypadku warunek jest definiowany jako coś, co jest połączone z zapytaniem przez operator logiczny (na przykład **AND**, **OR** i **NEAR**). Limit liczby warunków obejmuje samo zapytanie wyszukiwania oraz wszystkie filtry uprawnień wyszukiwania, które są stosowane do użytkownika, który uruchamia wyszukiwanie. W związku z tym, tym więcej filtrów uprawnień wyszukiwania masz (zwłaszcza jeśli te filtry są stosowane do tego samego użytkownika lub grupy użytkowników), tym większe prawdopodobieństwo przekroczenia maksymalnej liczby warunków wyszukiwania. Aby uniemożliwić organizacji osiągnięcie limitu warunków, zachowaj maksymalną liczbę filtrów uprawnień do wyszukiwania w organizacji, aby spełnić wymagania biznesowe. Aby uzyskać więcej informacji, zobacz [Konfigurowanie granic zgodności dla badań zbierania elektronicznych materiałów dowodowych](set-up-compliance-boundaries.md#frequently-asked-questions).
 
-## <a name="connect-to-exchange-online-and-security--compliance-center-powershell-in-a-single-session"></a>Połączenie do programu PowerShell Exchange Online i Security & Compliance Center w jednej sesji
+## <a name="connect-to-exchange-online-and-security--compliance-powershell-in-a-single-session"></a>Połączenie do programu PowerShell Exchange Online i security & Compliance w jednej sesji
 
 Przed pomyślnym uruchomieniem skryptu w tej sekcji należy pobrać i zainstalować moduł Exchange Online programu PowerShell w wersji 2. Aby uzyskać informacje, zobacz [Informacje o module Exchange Online programu PowerShell w wersji 2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
@@ -89,13 +89,13 @@ Przed pomyślnym uruchomieniem skryptu w tej sekcji należy pobrać i zainstalow
     .\ConnectEXO-SCC.ps1
     ```
 
-Skąd wiesz, czy to zadziałało? Po uruchomieniu skryptu polecenia cmdlet z programu Exchange Online i programu PowerShell & Security & Compliance są importowane do lokalnej sesji Windows PowerShell. Jeśli nie otrzymasz żadnych błędów, połączenie zostało nawiązane pomyślnie. Szybki test polega na uruchomieniu poleceń cmdlet programu PowerShell Exchange Online i Security & Compliance Center. Można na przykład uruchamiać polecenia **Get-Mailbox** i **Get-ComplianceSearch**.
+Skąd wiesz, czy to zadziałało? Po uruchomieniu skryptu dostępne są polecenia cmdlet programu Exchange Online programu PowerShell i programu PowerShell & zgodności zabezpieczeń. Jeśli nie otrzymasz żadnych błędów, połączenie zostało nawiązane pomyślnie. Szybki test polega na uruchomieniu Exchange Online poleceń cmdlet programu PowerShell i security & Compliance programu PowerShell. Można na przykład uruchamiać polecenia **Get-Mailbox** i **Get-ComplianceSearch**.
 
 Aby rozwiązać problemy z błędami połączenia programu PowerShell, zobacz:
 
 - [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
 
-- [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+- [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
 
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
 
@@ -353,9 +353,9 @@ Filtr **Remove-ComplianceSecurityFilter** służy do usuwania filtru wyszukiwani
 
 - **Czy filtrowanie uprawnień wyszukiwania działa w przypadku nieaktywnych skrzynek pocztowych?** Tak, możesz użyć filtrów zawartości skrzynki pocztowej i skrzynki pocztowej, aby ograniczyć liczbę osób, które mogą wyszukiwać nieaktywne skrzynki pocztowe w organizacji. Podobnie jak w przypadku zwykłej skrzynki pocztowej, nieaktywną skrzynkę pocztową należy skonfigurować przy użyciu właściwości adresata, która jest używana do tworzenia filtru uprawnień. W razie potrzeby możesz użyć polecenia **Get-Mailbox -InactiveMailboxOnly** , aby wyświetlić właściwości nieaktywnych skrzynek pocztowych. Aby uzyskać więcej informacji, zobacz [Tworzenie nieaktywnych skrzynek pocztowych i zarządzanie nimi](create-and-manage-inactive-mailboxes.md).
   
-- **Czy filtrowanie uprawnień wyszukiwania działa w przypadku folderów publicznych?** L.p. Jak wyjaśniono wcześniej, filtrowanie uprawnień wyszukiwania nie może służyć do ograniczania tego, kto może przeszukiwać foldery publiczne w Exchange. Na przykład elementów w lokalizacjach folderów publicznych nie można wykluczyć z wyników wyszukiwania za pomocą filtru uprawnień.
+- **Czy filtrowanie uprawnień wyszukiwania działa w przypadku folderów publicznych?** Nie. Jak wyjaśniono wcześniej, filtrowanie uprawnień wyszukiwania nie może służyć do ograniczania tego, kto może przeszukiwać foldery publiczne w Exchange. Na przykład elementów w lokalizacjach folderów publicznych nie można wykluczyć z wyników wyszukiwania za pomocą filtru uprawnień.
 
-- **Czy zezwolenie użytkownikowi na przeszukiwanie wszystkich lokalizacji zawartości w określonej usłudze uniemożliwia również wyszukiwanie lokalizacji zawartości w innej usłudze?** L.p. Jak wyjaśniono wcześniej, należy utworzyć filtr uprawnień wyszukiwania, aby jawnie uniemożliwić użytkownikom wyszukiwanie lokalizacji zawartości w określonej usłudze (na przykład uniemożliwienie użytkownikom przeszukiwania dowolnej Exchange skrzynki pocztowej lub witryny SharePoint). Innymi słowy, utworzenie filtru uprawnień wyszukiwania, który umożliwia użytkownikowi przeszukiwanie wszystkich witryn SharePoint w organizacji, nie uniemożliwia temu użytkownikowi przeszukiwania skrzynek pocztowych. Aby na przykład umożliwić administratorom SharePoint przeszukiwanie tylko SharePoint witryn, należy utworzyć filtr uniemożliwiający przeszukiwanie skrzynek pocztowych. Podobnie, aby umożliwić administratorom Exchange przeszukiwanie tylko skrzynek pocztowych, należy utworzyć filtr uniemożliwiający im wyszukiwanie witryn.
+- **Czy zezwolenie użytkownikowi na przeszukiwanie wszystkich lokalizacji zawartości w określonej usłudze uniemożliwia również wyszukiwanie lokalizacji zawartości w innej usłudze?** Nie. Jak wyjaśniono wcześniej, należy utworzyć filtr uprawnień wyszukiwania, aby jawnie uniemożliwić użytkownikom wyszukiwanie lokalizacji zawartości w określonej usłudze (na przykład uniemożliwienie użytkownikom przeszukiwania dowolnej Exchange skrzynki pocztowej lub witryny SharePoint). Innymi słowy, utworzenie filtru uprawnień wyszukiwania, który umożliwia użytkownikowi przeszukiwanie wszystkich witryn SharePoint w organizacji, nie uniemożliwia temu użytkownikowi przeszukiwania skrzynek pocztowych. Aby na przykład umożliwić administratorom SharePoint przeszukiwanie tylko SharePoint witryn, należy utworzyć filtr uniemożliwiający przeszukiwanie skrzynek pocztowych. Podobnie, aby umożliwić administratorom Exchange przeszukiwanie tylko skrzynek pocztowych, należy utworzyć filtr uniemożliwiający im wyszukiwanie witryn.
 
 - **Czy filtry uprawnień wyszukiwania są liczone względem limitów znaków zapytania wyszukiwania?** Tak. Filtry uprawnień wyszukiwania są liczone względem limitu znaków dla zapytań wyszukiwania. Aby uzyskać więcej informacji, zobacz [Limity w zakresie zbierania elektronicznych materiałów dowodowych (Premium)](limits-ediscovery20.md).
 

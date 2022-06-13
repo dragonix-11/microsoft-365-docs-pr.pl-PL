@@ -20,12 +20,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej na temat analizy fałszowania w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc09bb008586b26649e31f409fa3be8114c6d2b6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 9455ddf17d26e33ed5b2669a27ee93cf5f56b8f9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772111"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016059"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Fałszowanie szczegółowych informacji wywiadowczych w ramach EOP
 
@@ -115,7 +115,6 @@ Na stronie **Szczegółowe informacje o fałszowaniu analizy** wyświetlanej po 
 - **Wysyłanie infrastruktury**: znana również jako _infrastruktura_. Infrastruktura wysyłania będzie jedną z następujących wartości:
   - Domena znaleziona w odwrotnym wyszukiwaniu DNS (rekord PTR) adresu IP źródłowego serwera poczty e-mail.
   - Jeśli źródłowy adres IP nie ma rekordu PTR, infrastruktura wysyłania jest identyfikowana jako \<source IP\>/24 (na przykład 192.168.100.100/24).
-  - Zweryfikowana domena DKIM.
 - **Liczba komunikatów**: liczba komunikatów z kombinacji sfałszowanej domeny _i_ infrastruktury wysyłania do organizacji w ciągu ostatnich 7 dni.
 - **Ostatnio widziano**: ostatnia data odebrania komunikatu z infrastruktury wysyłania zawierającej sfałszowaną domenę.
 - **Typ fałszowania**: Jedna z następujących wartości:

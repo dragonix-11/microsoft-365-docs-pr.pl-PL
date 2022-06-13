@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a355ed4c31cf2355ee6166987651da092c7afb33
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 592b5733844dc6a3df1a1d207e3a2c3deda7d7b7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945478"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015219"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Zalecenia dotyczące zasad dotyczące zabezpieczania poczty e-mail
 
@@ -33,7 +33,7 @@ W tym artykule opisano sposób implementowania zalecanych zasad Zero Trust tożs
 
 Te zalecenia są oparte na trzech różnych warstwach zabezpieczeń i ochrony, które mogą być stosowane w oparciu o stopień szczegółowości twoich potrzeb: **punkt początkowy**, **przedsiębiorstwo** i **wyspecjalizowane zabezpieczenia**. Więcej informacji na temat tych warstw zabezpieczeń i zalecanych systemów operacyjnych klienta, do których odnoszą się te zalecenia, można znaleźć we [wstępie do zalecanych zasad zabezpieczeń i konfiguracji](microsoft-365-policies-configurations.md).
 
-Te zalecenia wymagają od użytkowników korzystania z nowoczesnych klientów poczty e-mail, w tym Outlook dla systemów iOS i Android na urządzeniach przenośnych. Outlook dla systemów iOS i Android zapewniają obsługę najlepszych funkcji Office 365. Te aplikacje Outlook mobilne są również wyposażone w funkcje zabezpieczeń, które obsługują korzystanie z urządzeń przenośnych i współpracują z innymi funkcjami zabezpieczeń w chmurze firmy Microsoft. Aby uzyskać więcej informacji, zobacz [Outlook dla systemów iOS i Android — często zadawane pytania](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
+Te zalecenia wymagają od użytkowników korzystania z nowoczesnych klientów poczty e-mail, w tym Outlook dla iOS i Android na urządzeniach przenośnych. Outlook dla iOS i Android zapewniają obsługę najlepszych funkcji Office 365. Te aplikacje Outlook mobilne są również wyposażone w funkcje zabezpieczeń, które obsługują korzystanie z urządzeń przenośnych i współpracują z innymi funkcjami zabezpieczeń w chmurze firmy Microsoft. Aby uzyskać więcej informacji, zobacz [Outlook iOS i często zadawane pytania dotyczące Android](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
 
 ## <a name="update-common-policies-to-include-email"></a>Aktualizowanie typowych zasad w celu uwzględnienia poczty e-mail
 
@@ -72,7 +72,7 @@ Możesz ograniczyć użytkownikom możliwość pobierania załączników z Outlo
 
 W tym celu należy wykonać następujące czynności:
 
-1. [Połączenie do Exchange Online sesji zdalnego programu PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 2. Jeśli nie masz jeszcze zasad skrzynki pocztowej OWA, utwórz je za pomocą polecenia cmdlet [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy) .
 3. Jeśli chcesz zezwolić na wyświetlanie załączników, ale nie chcesz pobierać, użyj tego polecenia:
 
@@ -94,11 +94,11 @@ W tym celu należy wykonać następujące czynności:
 
    **Mechanizmy kontroli** \> dostępu **Sesja**: wybierz pozycję **Użyj ograniczeń wymuszonych przez aplikację**
 
-## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Wymagaj, aby urządzenia z systemami iOS i Android używały Outlook
+## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Wymagaj, aby urządzenia iOS i Android używały Outlook
 
-Aby zapewnić użytkownikom urządzeń z systemami iOS i Android dostęp tylko do zawartości służbowej przy użyciu Outlook dla systemów iOS i Android, potrzebne są zasady dostępu warunkowego przeznaczone dla tych potencjalnych użytkowników.
+Aby zapewnić użytkownikom urządzeń iOS i Android dostęp tylko do zawartości służbowej przy użyciu Outlook dla iOS i Android, potrzebne są zasady dostępu warunkowego przeznaczone dla tych potencjalnych użytkowników.
 
-Aby skonfigurować te zasady, zobacz [Zarządzanie dostępem do współpracy obsługi komunikatów przy użyciu Outlook dla systemów iOS i Android](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
+Aby skonfigurować te zasady, zobacz [Zarządzanie dostępem do współpracy obsługi komunikatów przy użyciu Outlook dla iOS i Android](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
 
 ## <a name="set-up-message-encryption"></a>Konfigurowanie szyfrowania komunikatów
 

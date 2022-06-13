@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse zobacz listę znanych problemów z usługą Lighthouse według obszaru funkcji.
-ms.openlocfilehash: aa3b5980b60e966b4edfbac4a6e8d706c399e943
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 7a175d6c14e9b434240ff1a85f901a919ea79dcc
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022784"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016729"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Znane problemy z Microsoft 365 Lighthouse
 
@@ -73,10 +74,7 @@ W tym artykule wymieniono znane problemy dotyczące Microsoft 365 Lighthouse wed
 
 ## <a name="granular-delegated-admin-privileges-gdap"></a>Szczegółowe uprawnienia administratora delegowanego (GDAP)
 
-> [!NOTE]
-> Protokół GDAP jest obecnie w [wersji technical preview](/partner-center/announcements/2022-february#6) (publiczna wersja zapoznawcza), aby umożliwić partnerom przypisywanie szczegółowych uprawnień przed ogólnym udostępnieniem protokołu GDAP.
-
-Obecnie dap jest wymagany do dołączenia klientów do lighthouse. Zalecamy również ustanowienie protokołu GDAP z klientami, aby umożliwić bezpieczniejszy dostęp delegowany. Chociaż dap i GDAP współistnieją, GDAP będzie mieć pierwszeństwo dla klientów, gdzie oba modele są w miejscu. Wkrótce klienci z zaledwie GDAP (i bez dap) będą mogli dołączyć do lighthouse.<br><br>
+Aby dołączyć klientów do usługi Lighthouse, wymagane są szczegółowe uprawnienia administratora delegowanego (GDAP) oraz relacja pośredniego odsprzedawcy lub relacja delegowane uprawnienia administratora (DAP). Jeśli dap i GDAP współistnieją w dzierżawie klienta, uprawnienia GDAP mają pierwszeństwo dla techników MSP w grupach zabezpieczeń z obsługą protokołu GDAP. Wkrótce klienci z relacjami tylko Z GDAP (bez pośrednich relacji odsprzedawców) będą mogli dołączyć do usługi Lighthouse.<br><br>
 
 | Problem | Opis | Rozwiązanie |
 | ---------------- | ---------------- | ---------------- |

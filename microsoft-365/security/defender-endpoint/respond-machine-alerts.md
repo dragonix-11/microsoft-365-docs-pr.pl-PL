@@ -1,5 +1,5 @@
 ---
-title: Akcje reagowania na urządzeniu w usłudze Microsoft Defender for Endpoint
+title: Wykonaj akcje odpowiedzi na urządzeniu w Ochrona punktu końcowego w usłudze Microsoft Defender
 description: Wykonaj akcje reagowania na urządzeniu, takie jak izolowanie urządzeń, zbieranie pakietu badania, zarządzanie tagami, uruchamianie skanowania av i ograniczanie wykonywania aplikacji.
 keywords: odpowiadanie, izolowanie, izolowanie urządzenia, zbieranie pakietu badania, centrum akcji, ograniczanie, zarządzanie tagami, skanowanie av, ograniczanie aplikacji
 ms.prod: m365-security
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4982f0576038840cb78541c14f3ee6039b4e6cd1
-ms.sourcegitcommit: 23fd850272f39c4202e2320e56d11fb6707b3e2e
+ms.openlocfilehash: c104b7fefae6ad02c9fb46b7d21522c21a2f6895
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65925179"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014609"
 ---
 # <a name="take-response-actions-on-a-device"></a>Wykonaj akcje odpowiedzi na urządzeniu
 
@@ -50,7 +50,7 @@ Akcje odpowiedzi są uruchamiane w górnej części określonej strony urządzen
 [![Obraz akcji odpowiedzi.](images/response-actions.png)](images/response-actions.png#lightbox)
 
 > [!IMPORTANT]
-> [Usługi Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) i [Microsoft Defender dla Firm](../defender-business/mdb-overview.md) obejmują tylko następujące ręczne akcje reagowania:
+> [Usługa Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) i [Microsoft Defender dla Firm](../defender-business/mdb-overview.md) obejmują tylko następujące ręczne akcje odpowiedzi:
 > - Uruchomiono skanowanie antywirusowe
 > - Izolowanie urządzenia
 > - Zatrzymywanie i kwarantanna pliku
@@ -64,7 +64,7 @@ Akcje odpowiedzi są uruchamiane w górnej części określonej strony urządzen
 - **Pole wyszukiwania** - wybierz pozycję Urządzenie z menu rozwijanego i wprowadź nazwę urządzenia.
 
 > [!IMPORTANT]
-> - Te akcje odpowiedzi są dostępne tylko dla urządzeń z systemem Windows 10 w wersji 1703 lub nowszej, Windows 11, Windows Server 2019 i Windows Server 2022.
+> - Te akcje odpowiedzi są dostępne tylko dla urządzeń w Windows 10 w wersji 1703 lub nowszej, Windows 11, Windows Server 2019 i Windows Server 2022.
 > - W przypadku platform innych niż Windows możliwości reagowania (takie jak izolacja urządzeń) są zależne od możliwości innych firm.
 > - W przypadku agentów pierwszej firmy Microsoft zapoznaj się z linkiem "więcej informacji" w ramach każdej funkcji, aby uzyskać minimalne wymagania dotyczące systemu operacyjnego.
 
@@ -93,8 +93,7 @@ Aby uzyskać więcej informacji na temat odpowiedzi na żywo, zobacz [Badanie je
 W ramach procesu badania lub odpowiedzi można zebrać pakiet badania z urządzenia. Zbierając pakiet badania, możesz zidentyfikować bieżący stan urządzenia i dokładniej zrozumieć narzędzia i techniki używane przez osobę atakującą.
 
 > [!IMPORTANT]
->
->Te akcje nie są obecnie obsługiwane w systemach macOS i Linux. Użyj odpowiedzi na żywo, aby uruchomić akcję. Aby uzyskać więcej informacji na temat odpowiedzi na żywo, zobacz [Badanie jednostek na urządzeniach przy użyciu odpowiedzi na żywo](live-response.md)
+> Te akcje nie są obecnie obsługiwane w przypadku urządzeń z systemem macOS lub Linux. Użyj odpowiedzi na żywo, aby uruchomić akcję. Aby uzyskać więcej informacji na temat odpowiedzi na żywo, zobacz [Badanie jednostek na urządzeniach przy użyciu odpowiedzi na żywo](live-response.md)
 
 Aby pobrać pakiet (plik Zip) i zbadać zdarzenia, które wystąpiły na urządzeniu
 
@@ -120,27 +119,27 @@ Pakiet zawiera następujące foldery:
 |---|---|
 |Autoruns|Zawiera zestaw plików, z których każdy reprezentuje zawartość rejestru znanego punktu wejścia automatycznego (ASEP), aby ułatwić identyfikację trwałości osoby atakującej na urządzeniu. <p> <div class="alert"><b>UWAGA:</b> Jeśli klucz rejestru nie zostanie znaleziony, plik będzie zawierać następujący komunikat: "BŁĄD: System nie mógł odnaleźć określonego klucza lub wartości rejestru".<div>|
 |Zainstalowane programy|Ten plik .CSV zawiera listę zainstalowanych programów, które mogą pomóc w określeniu, co jest obecnie zainstalowane na urządzeniu. Aby uzyskać więcej informacji, zobacz [klasa Win32_Product](https://go.microsoft.com/fwlink/?linkid=841509).|
-|Połączenia sieciowe|Ten folder zawiera zestaw punktów danych związanych z informacjami o łączności, które mogą pomóc w identyfikowaniu łączności z podejrzanymi adresami URL, infrastruktury poleceń i kontroli osoby atakującej (C&C), wszelkich ruchów bocznych lub połączeń zdalnych. <ul><li>ActiveNetConnections.txt: wyświetla statystyki protokołu i bieżące połączenia sieciowe TCP/IP. Umożliwia wyszukiwanie podejrzanych połączeń wykonanych przez proces.</li><li>Arp.txt: wyświetla bieżące tabele pamięci podręcznej protokołu rozpoznawania adresów (ARP) dla wszystkich interfejsów. Pamięć podręczna ARP może ujawnić inne hosty w sieci, które zostały naruszone lub podejrzane systemy w sieci, które mogły zostać użyte do uruchomienia ataku wewnętrznego.</il><li>DnsCache.txt: wyświetla zawartość pamięci podręcznej programu rozpoznawania nazw klienta DNS, która obejmuje zarówno wpisy wstępnie załadowane z lokalnego pliku hostów, jak i wszystkie ostatnio uzyskane rekordy zasobów dla zapytań nazw rozpoznawanych przez komputer. Może to pomóc w identyfikowaniu podejrzanych połączeń.</li><li>IpConfig.txt: wyświetla pełną konfigurację protokołu TCP/IP dla wszystkich kart. Karty mogą reprezentować interfejsy fizyczne, takie jak zainstalowane karty sieciowe lub interfejsy logiczne, takie jak połączenia telefoniczne.</li><li>FirewallExecutionLog.txt i pfirewall.log</li></ul><p><div class="alert"><b>UWAGA:</b> Plik pfirewall.log musi istnieć w pliku %windir%\system32\logfiles\firewall\pfirewall.log, więc zostanie uwzględniony w pakiecie badania. Aby uzyskać więcej informacji na temat tworzenia pliku dziennika zapory, zobacz [Konfigurowanie zapory usługi Windows Defender z zaawansowanym dziennikiem zabezpieczeń](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
-|Pliki wstępne|Pliki prefetch systemu Windows zostały zaprojektowane w celu przyspieszenia procesu uruchamiania aplikacji. Może służyć do śledzenia wszystkich plików ostatnio używanych w systemie i znajdowania śladów dla aplikacji, które mogły zostać usunięte, ale nadal można je znaleźć na wstępnej liście plików. <ul><li>Folder prefetch: zawiera kopię plików prefetch z `%SystemRoot%\Prefetch`programu . UWAGA: Zaleca się pobranie podglądu plików wstępnych w celu wyświetlenia plików wstępnych.</li><li>PrefetchFilesList.txt: zawiera listę wszystkich skopiowanych plików, których można użyć do śledzenia, jeśli wystąpiły błędy kopiowania do folderu wstępnego.</li></ul>|
+|Połączenia sieciowe|Ten folder zawiera zestaw punktów danych związanych z informacjami o łączności, które mogą pomóc w identyfikowaniu łączności z podejrzanymi adresami URL, infrastruktury poleceń i kontroli osoby atakującej (C&C), wszelkich ruchów bocznych lub połączeń zdalnych. <ul><li>ActiveNetConnections.txt: wyświetla statystyki protokołu i bieżące połączenia sieciowe TCP/IP. Umożliwia wyszukiwanie podejrzanych połączeń wykonanych przez proces.</li><li>Arp.txt: wyświetla bieżące tabele pamięci podręcznej protokołu rozpoznawania adresów (ARP) dla wszystkich interfejsów. Pamięć podręczna ARP może ujawnić inne hosty w sieci, które zostały naruszone lub podejrzane systemy w sieci, które mogły zostać użyte do uruchomienia ataku wewnętrznego.</il><li>DnsCache.txt: wyświetla zawartość pamięci podręcznej programu rozpoznawania nazw klienta DNS, która obejmuje zarówno wpisy wstępnie załadowane z lokalnego pliku hostów, jak i wszystkie ostatnio uzyskane rekordy zasobów dla zapytań nazw rozpoznawanych przez komputer. Może to pomóc w identyfikowaniu podejrzanych połączeń.</li><li>IpConfig.txt: wyświetla pełną konfigurację protokołu TCP/IP dla wszystkich kart. Karty mogą reprezentować interfejsy fizyczne, takie jak zainstalowane karty sieciowe lub interfejsy logiczne, takie jak połączenia telefoniczne.</li><li>FirewallExecutionLog.txt i pfirewall.log</li></ul><p><div class="alert"><b>UWAGA:</b> Plik pfirewall.log musi istnieć w pliku %windir%\system32\logfiles\firewall\pfirewall.log, więc zostanie uwzględniony w pakiecie badania. Aby uzyskać więcej informacji na temat tworzenia pliku dziennika zapory, zobacz [Konfigurowanie Zapora Windows Defender za pomocą zaawansowanego dziennika zabezpieczeń](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
+|Pliki wstępne|Windows pliki wstępne zostały zaprojektowane w celu przyspieszenia procesu uruchamiania aplikacji. Może służyć do śledzenia wszystkich plików ostatnio używanych w systemie i znajdowania śladów dla aplikacji, które mogły zostać usunięte, ale nadal można je znaleźć na wstępnej liście plików. <ul><li>Folder prefetch: zawiera kopię plików prefetch z `%SystemRoot%\Prefetch`programu . UWAGA: Zaleca się pobranie podglądu plików wstępnych w celu wyświetlenia plików wstępnych.</li><li>PrefetchFilesList.txt: zawiera listę wszystkich skopiowanych plików, których można użyć do śledzenia, jeśli wystąpiły błędy kopiowania do folderu wstępnego.</li></ul>|
 |Procesów|Zawiera plik .CSV zawierający listę uruchomionych procesów i umożliwia identyfikowanie bieżących procesów uruchomionych na urządzeniu. Może to być przydatne podczas identyfikowania podejrzanego procesu i jego stanu.|
 |Zaplanowane zadania|Zawiera plik .CSV zawierający listę zaplanowanych zadań, które mogą służyć do identyfikowania procedur wykonywanych automatycznie na wybranym urządzeniu w celu wyszukiwania podejrzanego kodu, który został skonfigurowany do automatycznego uruchamiania.|
 |Dziennik zdarzeń zabezpieczeń|Zawiera dziennik zdarzeń zabezpieczeń, który zawiera rekordy aktywności logowania lub wylogowania lub inne zdarzenia związane z zabezpieczeniami określone przez zasady inspekcji systemu. <p><div class="alert"><b>UWAGA:</b> Otwórz plik dziennika zdarzeń przy użyciu przeglądarki zdarzeń.</div>|
 |Usług|Zawiera plik .CSV, który zawiera listę usług i ich stanów.|
-|Sesje bloku komunikatów systemu Windows Server (SMB)|Wyświetla udostępniony dostęp do plików, drukarek i portów szeregowych oraz różne komunikacje między węzłami w sieci. Może to pomóc w identyfikacji eksfiltracji danych lub przenoszenia bocznego. <p> Zawiera pliki dla SMBInboundSessions i SMBOutboundSession. <p> <div class="alert"><b>UWAGA:</b> Jeśli nie ma żadnych sesji (przychodzących lub wychodzących), otrzymasz plik tekstowy z informacją, że nie znaleziono żadnych sesji SMB.</div>|
+|sesje bloku komunikatów serwera Windows (SMB)|Wyświetla udostępniony dostęp do plików, drukarek i portów szeregowych oraz różne komunikacje między węzłami w sieci. Może to pomóc w identyfikacji eksfiltracji danych lub przenoszenia bocznego. <p> Zawiera pliki dla SMBInboundSessions i SMBOutboundSession. <p> <div class="alert"><b>UWAGA:</b> Jeśli nie ma żadnych sesji (przychodzących lub wychodzących), otrzymasz plik tekstowy z informacją, że nie znaleziono żadnych sesji SMB.</div>|
 |Informacje o systemie|Zawiera plik SystemInformation.txt zawierający informacje o systemie, takie jak wersja systemu operacyjnego i karty sieciowe.|
 |Katalogi tymczasowe|Zawiera zestaw plików tekstowych zawierający listę plików znajdujących się w %Temp% dla każdego użytkownika w systemie. <p> Może to pomóc w śledzeniu podejrzanych plików, które osoba atakująca mogła porzucić w systemie. <p> <div class="alert"><b>UWAGA:</b> Jeśli plik zawiera następujący komunikat: "System nie może odnaleźć określonej ścieżki", oznacza to, że nie ma katalogu tymczasowego dla tego użytkownika i może to być spowodowane tym, że użytkownik nie zalogował się do systemu.</div>|
 |Użytkownicy i grupy|Zawiera listę plików, z których każdy reprezentuje grupę i jej członków.|
-|Dzienniki WdSupportLogs|Udostępnia MpCmdRunLog.txt i MPSupportFiles.cab  <p> <div class="alert"><b>UWAGA:</b> Ten folder zostanie utworzony tylko w systemie Windows 10 w wersji 1709 lub nowszej z pakietem zbiorczym aktualizacji z lutego 2020 r. lub nowszym zainstalowanym: <ul><li>Kompilacja Win10 1709 (RS3) 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) Kompilacja 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Kompilacja Win10 1809 (RS5) 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) Kompilacje 18362.693 i 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
+|Dzienniki WdSupportLogs|Udostępnia MpCmdRunLog.txt i MPSupportFiles.cab  <p> <div class="alert"><b>UWAGA:</b> Ten folder zostanie utworzony tylko w Windows 10 w wersji 1709 lub nowszej z pakietem zbiorczym aktualizacji z lutego 2020 r. lub nowszym zainstalowanym: <ul><li>Kompilacja Win10 1709 (RS3) 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) Kompilacja 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Kompilacja Win10 1809 (RS5) 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) Kompilacje 18362.693 i 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
 |CollectionSummaryReport.xls|Ten plik jest podsumowaniem kolekcji pakietów badania, zawiera listę punktów danych, polecenie używane do wyodrębniania danych, stan wykonywania i kod błędu w przypadku niepowodzenia. Ten raport służy do śledzenia, czy pakiet zawiera wszystkie oczekiwane dane i określenia, czy wystąpiły błędy.|
 |
 
-## <a name="run-microsoft-defender-antivirus-scan-on-devices"></a>Uruchamianie skanowania programu antywirusowego Microsoft Defender na urządzeniach
+## <a name="run-microsoft-defender-antivirus-scan-on-devices"></a>Uruchamianie skanowania Program antywirusowy Microsoft Defender na urządzeniach
 
 W ramach procesu badania lub reagowania można zdalnie zainicjować skanowanie antywirusowe, aby ułatwić identyfikowanie i korygowanie złośliwego oprogramowania, które może znajdować się na urządzeniu, których zabezpieczenia zostały naruszone.
 
 > [!IMPORTANT]
-> - Ta akcja nie jest obecnie obsługiwana w systemach macOS i Linux. Użyj odpowiedzi na żywo, aby uruchomić akcję. Aby uzyskać więcej informacji na temat odpowiedzi na żywo, zobacz [Badanie jednostek na urządzeniach przy użyciu odpowiedzi na żywo](live-response.md)
-> - Skanowanie programu antywirusowego Microsoft Defender (Microsoft Defender AV) może być uruchamiane wraz z innymi rozwiązaniami antywirusowymi, niezależnie od tego, czy usługa Microsoft Defender AV jest aktywnym rozwiązaniem antywirusowym. Usługa Microsoft Defender AV może być w trybie pasywnym. Aby uzyskać więcej informacji, zobacz [Zgodność programu antywirusowego Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Ta akcja nie jest obecnie obsługiwana w przypadku macOS i Linux. Użyj odpowiedzi na żywo, aby uruchomić akcję. Aby uzyskać więcej informacji na temat odpowiedzi na żywo, zobacz [Badanie jednostek na urządzeniach przy użyciu odpowiedzi na żywo](live-response.md)
+> - Skanowanie Program antywirusowy Microsoft Defender (Microsoft Defender AV) może być uruchamiane wraz z innymi rozwiązaniami antywirusowymi, niezależnie od tego, czy usługa Microsoft Defender AV jest aktywnym rozwiązaniem antywirusowym, czy nie. Usługa Microsoft Defender AV może być w trybie pasywnym. Aby uzyskać więcej informacji, zobacz [Program antywirusowy Microsoft Defender zgodność](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 Wybierz opcję **Uruchom skanowanie antywirusowe**, wybierz typ skanowania, który chcesz uruchomić (szybkie lub pełne), a następnie dodaj komentarz przed potwierdzeniem skanowania.
 
@@ -157,10 +156,10 @@ Centrum akcji wyświetli informacje o skanowaniu, a oś czasu urządzenia będzi
 
 Oprócz powstrzymania ataku przez zatrzymanie złośliwych procesów można również zablokować urządzenie i zapobiec kolejnym próbom uruchomienia potencjalnie złośliwych programów.
 
->[!IMPORTANT]
-> - Ta akcja jest dostępna dla urządzeń z systemem Windows 10 w wersji 1709 lub nowszej, Windows 11 i Windows Server 2016. 
-> - Ta funkcja jest dostępna, jeśli Organizacja używa programu antywirusowego Microsoft Defender.
-> - Ta akcja musi spełniać wymagania dotyczące zasad integralności kodu i podpisywania w usłudze Windows Defender Application Control. Aby uzyskać więcej informacji, zobacz [Formaty zasad integralności kodu i podpisywanie](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
+> [!IMPORTANT]
+> - Ta akcja jest dostępna dla urządzeń w Windows 10, wersji 1709 lub nowszej, Windows 11 i Windows Server 2019 lub nowszym. 
+> - Ta funkcja jest dostępna, jeśli organizacja używa Program antywirusowy Microsoft Defender.
+> - Ta akcja musi spełniać Windows Defender formaty zasad integralności kodu kontroli aplikacji i wymagania dotyczące podpisywania. Aby uzyskać więcej informacji, zobacz [Formaty zasad integralności kodu i podpisywanie](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
 Aby ograniczyć uruchamianie aplikacji, stosowane są zasady integralności kodu, które zezwalają na uruchamianie plików tylko wtedy, gdy są podpisane przez certyfikat wystawiony przez firmę Microsoft. Ta metoda ograniczenia może pomóc uniemożliwić atakującemu kontrolowanie naruszeń urządzeń i wykonywanie dalszych złośliwych działań.
 
@@ -177,22 +176,22 @@ Gdy aplikacja jest ograniczona, zostanie wyświetlone następujące powiadomieni
 
 :::image type="content" source="images/atp-app-restriction.png" alt-text="Komunikat o ograniczeniu aplikacji" lightbox="images/atp-app-restriction.png":::
 
->[!NOTE]
->Powiadomienie nie jest dostępne w systemach Windows Server 2016 i Windows Server 2012 R2.
+> [!NOTE]
+> Powiadomienie nie jest dostępne w Windows Server 2016 i Windows Server 2012 R2.
 
 ## <a name="isolate-devices-from-the-network"></a>Izoluj urządzenia z sieci
 
 W zależności od ważności ataku i poufności urządzenia możesz chcieć odizolować urządzenie od sieci. Ta akcja może uniemożliwić atakującemu kontrolowanie urządzenia, które zostało naruszone, i wykonywanie dalszych działań, takich jak eksfiltracja danych i przenoszenie boczne.
 
 > [!IMPORTANT]
-> - Izolowanie urządzeń od sieci nie jest obecnie obsługiwane w systemach macOS i Linux. Użyj odpowiedzi na żywo, aby uruchomić akcję. Aby uzyskać więcej informacji na temat odpowiedzi na żywo, zobacz [Badanie jednostek na urządzeniach przy użyciu odpowiedzi na żywo](live-response.md).
-> - Pełna izolacja jest dostępna dla urządzeń z systemem Windows 10 w wersji 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 i Windows Server 2022.
-> - Selektywna izolacja jest dostępna dla urządzeń z systemem Windows 10 w wersji 1709 lub nowszej oraz w systemie Windows 11.
-> - Podczas izolowania urządzenia dozwolone są tylko niektóre procesy i miejsca docelowe. W związku z tym urządzenia znajdujące się za pełnym tunelem VPN nie będą mogły nawiązać połączenia z usługą Microsoft Defender for Endpoint w chmurze po odizolowaniu urządzenia. Zalecamy użycie sieci VPN z tunelowaniem podzielonym dla usługi Microsoft Defender dla punktu końcowego i ruchu związanego z ochroną opartą na chmurze w programie antywirusowym Microsoft Defender.
+> - Izolowanie urządzeń od sieci nie jest obecnie obsługiwane w przypadku urządzeń z systemem macOS lub Linux. Użyj odpowiedzi na żywo, aby uruchomić akcję. Aby uzyskać więcej informacji na temat odpowiedzi na żywo, zobacz [Badanie jednostek na urządzeniach przy użyciu odpowiedzi na żywo](live-response.md).
+> - Pełna izolacja jest dostępna dla urządzeń z systemem Windows 11, Windows 10 w wersji 1703 lub nowszej, Windows Server 2022, Windows Server 2019 i Windows Server 2016.
+> - Selektywna izolacja jest dostępna dla urządzeń z systemem Windows 10 w wersji 1709 lub nowszej i Windows 11.
+> - Podczas izolowania urządzenia dozwolone są tylko niektóre procesy i miejsca docelowe. W związku z tym urządzenia, które znajdują się za pełnym tunelem SIECI VPN, nie będą mogły uzyskać dostępu do Ochrona punktu końcowego w usłudze Microsoft Defender usługi w chmurze po odizolowaniu urządzenia. Zalecamy używanie sieci VPN z tunelowaniem podzielonym na Ochrona punktu końcowego w usłudze Microsoft Defender i Program antywirusowy Microsoft Defender ruchu związanego z ochroną opartą na chmurze.
 
 Ta funkcja izolacji urządzenia odłącza urządzenie, którego zabezpieczenia zostały naruszone, z siecią, zachowując jednocześnie łączność z usługą Defender for Endpoint, która nadal monitoruje urządzenie.
 
-W systemie Windows 10 w wersji 1709 lub nowszej będziesz mieć większą kontrolę nad poziomem izolacji sieci. Możesz również włączyć łączność z programami Outlook, Microsoft Teams i Skype dla firm (np. "Izolacja selektywna").
+W Windows 10 wersji 1709 lub nowszej będziesz mieć większą kontrolę nad poziomem izolacji sieci. Możesz również włączyć łączność Outlook, Microsoft Teams i Skype dla firm (np. "Izolacja selektywna").
 
 > [!NOTE]
 > W dowolnym momencie będzie można ponownie połączyć urządzenie z siecią. Przycisk na stronie urządzenia zmieni się na **Zwolnij z izolacji**, a następnie wykonasz te same kroki, co izolowanie urządzenia.
@@ -202,7 +201,7 @@ Po wybraniu pozycji **Wyizoluj urządzenie** na stronie urządzenia wpisz koment
 :::image type="content" source="images/isolate-device.png" alt-text="Strona szczegółów izolowanego urządzenia" lightbox="images/isolate-device.png":::
 
 > [!NOTE]
-> Urządzenie pozostanie połączone z usługą Defender for Endpoint, nawet jeśli jest odizolowane od sieci. Jeśli wybrano opcję włączenia komunikacji z programami Outlook i Skype dla firm, będziesz mieć możliwość komunikowania się z użytkownikiem, gdy urządzenie jest izolowane.
+> Urządzenie pozostanie połączone z usługą Defender for Endpoint, nawet jeśli jest odizolowane od sieci. Jeśli wybrano opcję włączenia komunikacji Outlook i Skype dla firm, będzie można komunikować się z użytkownikiem, gdy urządzenie jest izolowane.
 
 ### <a name="notification-on-device-user"></a>Powiadomienie użytkownika urządzenia
 
@@ -212,15 +211,16 @@ Gdy urządzenie jest izolowane, zostanie wyświetlone następujące powiadomieni
 
 ## <a name="contain-devices-from-the-network"></a>Zawiera urządzenia z sieci
 
-Po zidentyfikowaniu niezarządzanego urządzenia, które zostało naruszone lub potencjalnie naruszone, możesz chcieć zawierać to urządzenie z sieci. Jeśli zawierasz urządzenie, każde dołączone urządzenie z usługą Microsoft Defender for Endpoint zablokuje komunikację przychodzącą i wychodzącą z tym urządzeniem. Ta akcja może zapobiec zagrożeniu na sąsiednich urządzeniach, gdy analityk operacji zabezpieczeń lokalizuje, identyfikuje i koryguje zagrożenie na zagrożonym urządzeniu.
+Po zidentyfikowaniu niezarządzanego urządzenia, które zostało naruszone lub potencjalnie naruszone, możesz chcieć zawierać to urządzenie z sieci. Jeśli zawierasz urządzenie, wszelkie Ochrona punktu końcowego w usłudze Microsoft Defender dołączone urządzenie zablokuje komunikację przychodzącą i wychodzącą z tym urządzeniem. Ta akcja może zapobiec zagrożeniu na sąsiednich urządzeniach, gdy analityk operacji zabezpieczeń lokalizuje, identyfikuje i koryguje zagrożenie na zagrożonym urządzeniu.
 
 > [!NOTE]
-> Blokowanie komunikacji przychodzącej i wychodzącej z "zawartym" urządzeniem jest obsługiwane na dołączonych urządzeniach z usługą Microsoft Defender for Endpoint Windows 10 i Windows Server 2019+.
+> Blokowanie komunikacji przychodzącej i wychodzącej za pomocą "zawartego" urządzenia jest obsługiwane na dołączonych urządzeniach Ochrona punktu końcowego w usłudze Microsoft Defender Windows 10 i Windows Server 2019+.
 
 ### <a name="how-to-contain-a-device"></a>Jak zawierać urządzenie
 
-1. Przejdź do strony **Spis urządzeń** i wybierz urządzenie, które ma być zawarte
-2. Wybierz pozycję **Zawiera urządzenie** z menu akcji w wysuwanym urządzeniu
+1. Przejdź do strony **Spis urządzeń** i wybierz urządzenie, które ma zostać zawarte.
+
+2. Wybierz pozycję **Zawiera urządzenie** z menu akcji w wysuwanym urządzeniu.
 
 :::image type="content" alt-text="Zrzut ekranu przedstawiający komunikat podręczny zawierający urządzenie." source="../../media/defender-endpoint/contain_device.png" lightbox="../../media/defender-endpoint/contain_device.png":::
 
@@ -235,30 +235,26 @@ Urządzenie może być również zawarte na stronie urządzenia, wybierając poz
 :::image type="content" alt-text="Zrzut ekranu przedstawiający element menu zawiera urządzenie na stronie urządzenia." source="../../media/defender-endpoint/contain_device_page.png" lightbox="../../media/defender-endpoint/contain_device_page.png":::
 
 > [!NOTE]
->Może upłynąć do 5 minut, aż szczegóły dotyczące nowo zawartego urządzenia dotrą do urządzeń dołączonych do usługi Microsoft Defender for Endpoint.
+> Dotarcie do Ochrona punktu końcowego w usłudze Microsoft Defender dołączonych urządzeń może potrwać do 5 minut.
 
-> [!Important]
->
-> - Jeśli zawarte urządzenie zmieni swój adres IP, wszystkie urządzenia dołączone do usługi Microsoft Defender for Endpoint rozpoznają to i zaczną blokować komunikację z nowym adresem IP. Oryginalny adres IP nie będzie już blokowany (wyświetlenie tych zmian może potrwać do 5 minut).  
->
+> [!IMPORTANT]
+> - Jeśli zawarte urządzenie zmieni swój adres IP, wszystkie Ochrona punktu końcowego w usłudze Microsoft Defender dołączone urządzenia rozpoznają to i zaczną blokować komunikację z nowym adresem IP. Oryginalny adres IP nie będzie już blokowany (wyświetlenie tych zmian może potrwać do 5 minut).  
 > - W przypadkach, gdy adres IP zawartego urządzenia jest używany przez inne urządzenie w sieci, podczas przechowywania urządzenia zostanie wyświetlone ostrzeżenie z linkiem do zaawansowanego wyszukiwania zagrożeń (z wstępnie wypełnionym zapytaniem). Zapewni to widoczność innym urządzeniom korzystającym z tego samego adresu IP, aby ułatwić podjęcie świadomej decyzji, jeśli chcesz nadal zawierać urządzenie.
->
 > - W przypadkach, gdy zawarte urządzenie jest urządzeniem sieciowym, zostanie wyświetlone ostrzeżenie z komunikatem, że może to spowodować problemy z łącznością sieciową (na przykład zawierające router, który działa jako brama domyślna). W tym momencie będzie można wybrać, czy ma zawierać urządzenie, czy nie.
 
-Jeśli po utworzeniu urządzenia zachowanie nie jest zgodne z oczekiwaniami, sprawdź, czy usługa Aparat filtrowania podstawowego (BFE) jest włączona na urządzeniach dołączonych do usługi Defender for Endpoint.
+Jeśli po utworzeniu urządzenia zachowanie nie jest zgodne z oczekiwaniami, sprawdź, czy usługa Podstawowa aparat filtrowania (BFE) jest włączona na urządzeniach dołączonych do usługi Defender for Endpoint.
 
 ### <a name="stop-containing-a-device"></a>Przestań zawierać urządzenie
 
 W dowolnym momencie będzie można przestać zawierać urządzenie.
 
-1. Wybierz urządzenie ze **spisu urządzeń** lub otwórz stronę urządzenia
-2. Wybierz pozycję **Release from containment (Zwolnij z zawartych** ) z menu akcji
+1. Wybierz urządzenie ze **spisu urządzeń** lub otwórz stronę urządzenia.
 
-Ta akcja spowoduje przywrócenie połączenia tego urządzenia z siecią.
+2. Z menu akcji wybierz pozycję **Zwolnij z zawartego** elementu. Ta akcja spowoduje przywrócenie połączenia tego urządzenia z siecią.
 
 ## <a name="consult-a-threat-expert"></a>Konsultuj się z ekspertem ds. zagrożeń
 
-Możesz skontaktować się z ekspertem ds. zagrożeń firmy Microsoft, aby uzyskać więcej szczegółowych informacji na temat urządzenia, które zostało potencjalnie naruszone lub które zostało już naruszone. Eksperci ds. zagrożeń firmy Microsoft mogą być zaangażowani bezpośrednio z poziomu usługi Microsoft 365 Defender w celu terminowego i dokładnego reagowania. Eksperci udostępniają szczegółowe informacje nie tylko dotyczące potencjalnie zagrożonego urządzenia, ale także w celu lepszego zrozumienia złożonych zagrożeń, otrzymywanych powiadomień o ukierunkowanych atakach lub jeśli potrzebujesz więcej informacji na temat alertów lub kontekstu analizy zagrożeń widocznego na pulpicie nawigacyjnym portalu.
+Możesz skontaktować się z ekspertem ds. zagrożeń firmy Microsoft, aby uzyskać więcej szczegółowych informacji na temat urządzenia, które zostało potencjalnie naruszone lub które zostało już naruszone. Microsoft Threat Experts można zaangażować bezpośrednio z poziomu Microsoft 365 Defender w celu terminowego i dokładnego reagowania. Eksperci udostępniają szczegółowe informacje nie tylko dotyczące potencjalnie zagrożonego urządzenia, ale także w celu lepszego zrozumienia złożonych zagrożeń, otrzymywanych powiadomień o ukierunkowanych atakach lub jeśli potrzebujesz więcej informacji na temat alertów lub kontekstu analizy zagrożeń widocznego na pulpicie nawigacyjnym portalu.
 
 Szczegółowe informacje [można znaleźć w temacie Consult a Microsoft Threat Expert (Zapoznaj się z ekspertem ds. zagrożeń firmy Microsoft](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) ).
 
@@ -279,5 +275,5 @@ Wyświetlane są również wszystkie inne powiązane szczegóły, na przykład d
 ## <a name="see-also"></a>Zobacz też
 
 - [Wykonaj akcje odpowiedzi na pliku](respond-file-alerts.md)
-- [Ręczne akcje reagowania w usłudze Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
+- [Ręczne akcje reagowania w planie Ochrona punktu końcowego w usłudze Microsoft Defender 1](defender-endpoint-plan-1.md#manual-response-actions)
 - [Niedokładność raportu](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

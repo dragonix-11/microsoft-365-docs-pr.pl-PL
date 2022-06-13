@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Deklarowanie rekordów przy użyciu etykiet przechowywania.
-ms.openlocfilehash: 75445d1cd61bd86dd41d6325efc6e71fac20ddc0
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0e8453bee843131a5781318f7adde8d19bb04d92
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286061"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016817"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Deklaruj rekordy przy użyciu etykiet przechowywania
 
@@ -43,7 +43,7 @@ Następnie można opublikować te etykiety w zasadach etykiet przechowywania, ab
 
 Domyślnie opcja etykiety przechowywania oznaczania zawartości jako rekordu regulacyjnego nie jest wyświetlana w kreatorze etykiet przechowywania. Aby wyświetlić tę opcję, należy najpierw uruchomić polecenie programu PowerShell:
 
-1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell Office 365 Security & Compliance](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Uruchom następujące polecenie cmdlet:
 
@@ -75,7 +75,7 @@ Aby uzyskać pełne instrukcje:
 
 Jeśli użyjesz etykiet przechowywania do deklarowania elementów jako rekordów (zamiast rekordów regulacyjnych) w SharePoint i OneDrive, rozważ, czy musisz zmienić domyślne ustawienie dzierżawy, które umożliwia użytkownikom edytowanie właściwości [zablokowanego rekordu](record-versioning.md), gdy pliki są większe niż 0 bajtów.
 
-Aby zmienić to ustawienie domyślne, przejdź do portalu  > [zgodności usługi Microsoft PurviewZarządzanie](https://compliance.microsoft.com/) >  **rekordamiUstawienia** >  **zarządzania rekordami** **Etykiety** >  **ponownej konfiguracjiUzwalaj na edytowanie właściwości rekordu**, a następnie wyłącz ustawienie **Zezwalaj użytkownikom na edytowanie właściwości rekordu**.
+Aby zmienić to ustawienie domyślne, przejdź do portalu  > [zgodności usługi Microsoft Purview](https://compliance.microsoft.com/)**Ustawienia zarządzania rekordami Ustawienia** >  zarządzania **rekordami** > **Etykiety** >  przechowywania **Zezwalaj na edytowanie właściwości rekordów**, a następnie wyłącz ustawienie **Zezwalaj użytkownikom na edytowanie właściwości rekordów**.
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>Stosowanie skonfigurowanej etykiety przechowywania do zawartości
 

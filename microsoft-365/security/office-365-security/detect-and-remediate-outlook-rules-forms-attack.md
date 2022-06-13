@@ -18,12 +18,12 @@ description: Dowiedz się, jak rozpoznawać i korygować Outlook reguły i niest
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 268e50059ad1b128e583a5be383788b545fa6190
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 370fa7cf6e8003954044290b7c19c3d839b0a145
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874101"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016037"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Wykrywanie i korygowanie ataków na reguły Outlook i iniekcje formularzy niestandardowych
 
@@ -155,7 +155,7 @@ Aby uruchomić skrypt, musisz mieć uprawnienia administratora globalnego, ponie
 
 ## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Jak zatrzymać i skorygować atak na reguły Outlook i formularze
 
-Jeśli znajdziesz jakiekolwiek dowody na jeden z tych ataków, korygowanie jest proste, wystarczy usunąć regułę lub formularz ze skrzynki pocztowej. Można to zrobić za pomocą klienta Outlook lub zdalnego programu PowerShell w celu usunięcia reguł.
+Jeśli znajdziesz jakiekolwiek dowody na jeden z tych ataków, korygowanie jest proste, wystarczy usunąć regułę lub formularz ze skrzynki pocztowej. Można to zrobić za pomocą klienta Outlook lub przy użyciu Exchange programu PowerShell w celu usunięcia reguł.
 
 ### <a name="using-outlook"></a>Korzystanie z Outlook
 
@@ -171,11 +171,11 @@ Jeśli znajdziesz jakiekolwiek dowody na jeden z tych ataków, korygowanie jest 
 
 ### <a name="using-powershell"></a>Korzystanie z programu PowerShell
 
-Istnieją dwa zdalne polecenia cmdlet programu PowerShell, których można użyć do usuwania lub wyłączania niebezpiecznych reguł. Po prostu wykonaj kroki.
+Istnieją dwa Exchange poleceń cmdlet programu PowerShell, których można użyć do usuwania lub wyłączania niebezpiecznych reguł. Po prostu wykonaj kroki.
 
 #### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Kroki dotyczące skrzynek pocztowych znajdujących się na serwerze Exchange
 
-1. Połączenie do serwera Exchange przy użyciu zdalnego programu PowerShell. Wykonaj kroki opisane w [Połączenie, aby Exchange serwerów przy użyciu zdalnego programu PowerShell](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
+1. Połączenie do serwera Exchange przy użyciu zdalnego programu PowerShell lub powłoki zarządzania Exchange. Wykonaj kroki opisane w [Połączenie, aby Exchange serwery przy użyciu zdalnego programu PowerShell](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell) lub [otwórz powłokę zarządzania Exchange](/powershell/exchange/open-the-exchange-management-shell).
 
 2. Jeśli chcesz całkowicie usunąć pojedynczą regułę, wiele reguł lub wszystkie reguły ze skrzynki pocztowej, użyj polecenia cmdlet [Remove-InboxRule](/powershell/module/exchange/Remove-InboxRule) .
 
@@ -183,7 +183,7 @@ Istnieją dwa zdalne polecenia cmdlet programu PowerShell, których można uży�
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Kroki dotyczące skrzynek pocztowych w Exchange Online
 
-1. Wykonaj kroki opisane w [Połączenie, aby Exchange Online przy użyciu programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Wykonaj kroki opisane w [Połączenie, aby Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Jeśli chcesz całkowicie usunąć pojedynczą regułę, wiele reguł lub wszystkie reguły ze skrzynki pocztowej, użyj polecenia cmdlet [Remove-Inbox Rule](/powershell/module/exchange/Remove-InboxRule) .
 

@@ -12,22 +12,22 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 description: Pracownicy ds. informacji w organizacji obsługują wiele rodzajów poufnych informacji w typowy dzień. Odciski palców dokumentów ułatwiają ochronę tych informacji przez identyfikowanie standardowych formularzy używanych w całej organizacji. W tym temacie opisano pojęcia związane z odciskiem palca dokumentu i sposobem jego tworzenia przy użyciu programu PowerShell.
-ms.openlocfilehash: 744b96f693676cf94357034a4404f63f0fbd2c45
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 3df4b7cf6f9fa09e81cf326cc58cc8114c025be9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754483"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014481"
 ---
 # <a name="document-fingerprinting"></a>Tworzenie odcisków cyfrowych dokumentów
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Pracownicy ds. informacji w organizacji obsługują wiele rodzajów poufnych informacji w typowy dzień. W portal zgodności Microsoft Purview odciski palców dokumentów ułatwiają ochronę tych informacji przez zidentyfikowanie standardowych formularzy używanych w całej organizacji. W tym temacie opisano pojęcia związane z odciskiem palca dokumentu i sposobem jego tworzenia przy użyciu programu PowerShell.
+Pracownicy ds. informacji w organizacji obsługują wiele rodzajów poufnych informacji w typowy dzień. W portalu zgodności usługi Microsoft Purview odciski palców dokumentów ułatwiają ochronę tych informacji przez zidentyfikowanie standardowych formularzy używanych w całej organizacji. W tym temacie opisano pojęcia związane z odciskiem palca dokumentu i sposobem jego tworzenia przy użyciu programu PowerShell.
 
 ## <a name="basic-scenario-for-document-fingerprinting"></a>Podstawowy scenariusz pobierania odcisków palców dokumentu
 
-Odcisk palca dokumentu to funkcja Ochrona przed utratą danych w Microsoft Purview (DLP), która konwertuje formularz standardowy na typ informacji poufnych, którego można użyć w regułach zasad DLP. Można na przykład utworzyć odcisk palca dokumentu na podstawie pustego szablonu patentu, a następnie utworzyć zasady DLP, które wykrywają i blokują wszystkie wychodzące szablony patentów z wypełnioną zawartością poufną. Opcjonalnie możesz skonfigurować [porady dotyczące zasad](use-notifications-and-policy-tips.md) , aby powiadamiać nadawców, że mogą wysyłać poufne informacje, a nadawca powinien sprawdzić, czy adresaci mają kwalifikacje do otrzymywania patentów. Ten proces współpracuje z dowolnymi formularzami tekstowymi używanymi w organizacji. Dodatkowe przykłady formularzy, które można przekazać, obejmują:
+Odciski palców dokumentu to funkcja ochrony przed utratą danych (DLP) usługi Microsoft Purview, która konwertuje formularz standardowy na typ informacji poufnych, którego można użyć w regułach zasad DLP. Można na przykład utworzyć odcisk palca dokumentu na podstawie pustego szablonu patentu, a następnie utworzyć zasady DLP, które wykrywają i blokują wszystkie wychodzące szablony patentów z wypełnioną zawartością poufną. Opcjonalnie możesz skonfigurować [porady dotyczące zasad](use-notifications-and-policy-tips.md) , aby powiadamiać nadawców, że mogą wysyłać poufne informacje, a nadawca powinien sprawdzić, czy adresaci mają kwalifikacje do otrzymywania patentów. Ten proces współpracuje z dowolnymi formularzami tekstowymi używanymi w organizacji. Dodatkowe przykłady formularzy, które można przekazać, obejmują:
 
 - Formularze rządowe
 - Formularze zgodności ustawy HIPAA (Health Insurance Portability and Accountability Act)
@@ -68,7 +68,7 @@ Odcisk palca dokumentu nie wykrywa poufnych informacji w następujących przypad
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Tworzenie pakietu reguł klasyfikacji na podstawie odcisku palca dokumentu przy użyciu programu PowerShell
 
-Obecnie można utworzyć odcisk palca dokumentu tylko w programie [PowerShell Usługi Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell).
+Obecnie można utworzyć odcisk palca dokumentu tylko w programie [PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 DLP używa pakietów reguł klasyfikacji do wykrywania poufnej zawartości. Aby utworzyć pakiet reguł klasyfikacji na podstawie odcisku palca dokumentu, użyj poleceń cmdlet **New-DlpFingerprint** i **New-DlpSensitiveInformationType** . Ponieważ wyniki polecenia **New-DlpFingerprint** nie są przechowywane poza regułą klasyfikacji danych, zawsze uruchamiane są polecenia **New-DlpFingerprint** i **New-DlpSensitiveInformationType** lub **Set-DlpSensitiveInformationType** w tej samej sesji programu PowerShell. Poniższy przykład tworzy nowy odcisk palca dokumentu na podstawie pliku C:\My Documents\Contoso Employee Template.docx. Nowy odcisk palca jest przechowywany jako zmienna, dzięki czemu można go używać z poleceniem cmdlet **New-DlpSensitiveInformationType** w tej samej sesji programu PowerShell.
 
@@ -87,13 +87,13 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 
 Teraz możesz użyć polecenia cmdlet **Get-DlpSensitiveInformationType** , aby znaleźć wszystkie pakiety reguł klasyfikacji danych DLP, a w tym przykładzie "Poufne dla klienta firmy Contoso" jest częścią listy pakietów reguł klasyfikacji danych.
 
-Na koniec dodaj pakiet reguł klasyfikacji danych "Poufne dla klienta firmy Contoso" do zasad DLP w portal zgodności Microsoft Purview. Ten przykład dodaje regułę do istniejących zasad DLP o nazwie "ConfidentialPolicy".
+Na koniec dodaj pakiet reguł klasyfikacji danych "Poufne dla klienta firmy Contoso" do zasad DLP w portalu zgodności usługi Microsoft Purview. Ten przykład dodaje regułę do istniejących zasad DLP o nazwie "ConfidentialPolicy".
 
 ```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-Możesz również użyć pakietu reguł klasyfikacji danych w regułach przepływu poczty w Exchange Online, jak pokazano w poniższym przykładzie. Aby uruchomić to polecenie, należy najpierw [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Należy również pamiętać, że synchronizacja pakietu reguł z portal zgodności Microsoft Purview do centrum administracyjnego Exchange zajmuje trochę czasu.
+Możesz również użyć pakietu reguł klasyfikacji danych w regułach przepływu poczty w Exchange Online, jak pokazano w poniższym przykładzie. Aby uruchomić to polecenie, należy najpierw [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Należy również pamiętać, że synchronizacja pakietu reguł z portalu zgodności usługi Microsoft Purview do centrum administracyjnego Exchange zajmuje trochę czasu.
 
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}

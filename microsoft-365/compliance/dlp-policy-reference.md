@@ -19,18 +19,18 @@ ms.collection:
 recommendations: false
 description: Informacje o składniku zasad DLP i konfiguracji
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 1ad00a36f48849ca110a598f92c5536ef7b21843
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: b62289cfe4d18b4c6e2e79bb9a308f8b88978451
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648619"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015797"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Dokumentacja zasad ochrony przed utratą danych
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-zasady Ochrona przed utratą danych w Microsoft Purview (DLP) mają wiele składników do skonfigurowania. Aby utworzyć skuteczne zasady, musisz zrozumieć, jaki jest cel poszczególnych składników i jak jego konfiguracja zmienia zachowanie zasad. Ten artykuł zawiera szczegółową anatomię zasad DLP.
+Zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview mają wiele składników do skonfigurowania. Aby utworzyć skuteczne zasady, musisz zrozumieć, jaki jest cel poszczególnych składników i jak jego konfiguracja zmienia zachowanie zasad. Ten artykuł zawiera szczegółową anatomię zasad DLP.
 
 ## <a name="policy-templates"></a>Szablony zasad 
 
@@ -525,8 +525,9 @@ Na przykład zawartość, taka jak skoroszyt Excel w witrynie OneDrive dla Firm,
 
 ![Pasek komunikatów zawiera poradę dotyczącą zasad w Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-> [!NOTE]
-> Wiadomości e-mail z powiadomieniami są wysyłane bez ochrony.
+> [!IMPORTANT]
+> - Wiadomości e-mail z powiadomieniami są wysyłane bez ochrony.
+> - Powiadomienia e-mail są obsługiwane tylko dla usług Microsoft 365.
 
 Możesz również dać użytkownikom możliwość [zastąpienia zasad](#user-overrides), aby nie były blokowane, jeśli mają prawidłową potrzebę biznesową lub jeśli zasady wykrywają wynik fałszywie dodatni.
 
@@ -648,7 +649,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 Po dopasowaniu reguły możesz wysłać raport o zdarzeniu do oficera zgodności (lub dowolnych wybranych osób) ze szczegółami zdarzenia. Raport zawiera informacje o dopasowanym elemencie, rzeczywistej zawartości zgodnej z regułą oraz o nazwie osoby, która ostatnio zmodyfikowała zawartość. W przypadku wiadomości e-mail raport zawiera również jako załącznik oryginalną wiadomość zgodną z zasadami DLP.
 
-DLP przesyła informacje o zdarzeniach do innych Microsoft Purview usług ochrony informacji, takich jak [zarządzanie ryzykiem wewnętrznym](insider-risk-management.md). Aby uzyskać informacje o zdarzeniach do zarządzania ryzykiem wewnętrznym, należy ustawić poziom ważności **raportów o zdarzeniach** na **wysoki**.
+DLP przesyła informacje o zdarzeniach do innych usług ochrony informacji w usłudze Microsoft Purview, takich jak [zarządzanie ryzykiem wewnętrznym](insider-risk-management.md). Aby uzyskać informacje o zdarzeniach do zarządzania ryzykiem wewnętrznym, należy ustawić poziom ważności **raportów o zdarzeniach** na **wysoki**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 

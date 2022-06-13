@@ -13,4 +13,4 @@ ms.lasthandoff: 04/08/2022
 ms.locfileid: "64731025"
 ---
 > [!NOTE]
-> Chcesz doświadczyć Microsoft 365 Defender? Dowiedz się więcej o tym, jak można [oceniać i pilotować Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview?ocid=cx-docs-MTPtriallab).
+> Chcesz skorzystać z usługi Microsoft 365 Defender? Dowiedz się więcej o tym, jak można [oceniać i pilotować Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview?ocid=cx-docs-MTPtriallab).

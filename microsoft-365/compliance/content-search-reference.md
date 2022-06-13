@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Ten artykuł zawiera informacje referencyjne dotyczące narzędzia do zbierania elektronicznych materiałów dowodowych wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, które ułatwiają zapoznanie się z wieloma szczegółami dotyczącymi wyszukiwania zawartości.
-ms.openlocfilehash: 8d7f1497a0dbd400536dd74c5abd4b9e3be7e29f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ec80cd12efc3c314f891972b1ac48232f02c072f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097123"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018124"
 ---
 # <a name="feature-reference-for-content-search"></a>Dokumentacja dotycząca funkcji wyszukiwania zawartości
 
@@ -62,7 +62,7 @@ Podczas tworzenia zapytania wyszukiwania należy pamiętać o następujących kw
 
 - Po uruchomieniu wyszukiwania zawartości Microsoft 365 automatycznie sprawdza zapytanie wyszukiwania pod kątem nieobsługiwanych znaków i operatorów logicznych, które mogą nie być wielką literą. Nieobsługiwane znaki są często ukryte i zazwyczaj powodują błąd wyszukiwania lub zwracają niezamierzone wyniki. Aby uzyskać więcej informacji o zaznaczonych nieobsługiwanych znakach, zobacz [Sprawdzanie zapytania wyszukiwania zawartości pod kątem błędów](check-your-content-search-query-for-errors.md).
 
-- Jeśli masz zapytanie wyszukiwania zawierające słowa kluczowe dla znaków innych niż angielski (takich jak znaki chińskie), możesz kliknąć pozycję **Zapytanie o język-kraj/** regionWypowiadaj ![ikonę języka-kraju/regionu w wyszukiwaniu zawartości.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) i wybierz wartość kodu kultury język-kraj dla wyszukiwania. Domyślny język/region jest neutralny. Jak sprawdzić, czy chcesz zmienić ustawienie języka dla wyszukiwania zawartości? Jeśli niektóre lokalizacje zawartości zawierają wyszukiwane znaki inne niż angielskie, ale wyszukiwanie nie zwraca żadnych wyników, przyczyną może być ustawienie języka.
+- Jeśli masz zapytanie wyszukiwania zawierające słowa kluczowe dla znaków innych niż angielski (np. znaki chińskie), możesz kliknąć pozycję **Zapytanie języka kraju/regionu**![Ikona języka zapytań-kraju/regionu w wyszukiwaniu zawartości.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) i wybierz wartość kodu kultury język-kraj dla wyszukiwania. Domyślny język/region jest neutralny. Jak sprawdzić, czy chcesz zmienić ustawienie języka dla wyszukiwania zawartości? Jeśli niektóre lokalizacje zawartości zawierają wyszukiwane znaki inne niż angielskie, ale wyszukiwanie nie zwraca żadnych wyników, przyczyną może być ustawienie języka.
 
 ## <a name="partially-indexed-items"></a>Częściowo indeksowane elementy
 
@@ -192,7 +192,7 @@ Możesz użyć właściwości e-mail **ItemClass** lub warunku wyszukiwania **ty
 
 ## <a name="searching-inactive-mailboxes"></a>Wyszukiwanie nieaktywnych skrzynek pocztowych
 
-Nieaktywne skrzynki pocztowe można wyszukiwać w wyszukiwaniu zawartości. Aby uzyskać listę nieaktywnych skrzynek pocztowych w organizacji, uruchom polecenie `Get-Mailbox -InactiveMailboxOnly` w Exchange Online programu PowerShell. Alternatywnie możesz przejść do obszaru **Przechowywanie** **zarządzania cyklem** \> życia danych w portalu zgodności usługi Microsoft Purview, a następnie kliknąć wielokropek **MoreNavigation**![ Bar.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>**Nieaktywne skrzynki pocztowe**.
+Nieaktywne skrzynki pocztowe można wyszukiwać w wyszukiwaniu zawartości. Aby uzyskać listę nieaktywnych skrzynek pocztowych w organizacji, uruchom polecenie `Get-Mailbox -InactiveMailboxOnly` w Exchange Online programu PowerShell. Alternatywnie możesz przejść do pozycji **Przechowywanie** **zarządzania cyklem** \> życia danych w portalu zgodności usługi Microsoft Purview, a następnie kliknąć pozycję **Więcej**![wielokropka paska nawigacji.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>**Nieaktywne skrzynki pocztowe**.
 
 Oto kilka kwestii, o których należy pamiętać podczas wyszukiwania nieaktywnych skrzynek pocztowych.
 
@@ -200,7 +200,7 @@ Oto kilka kwestii, o których należy pamiętać podczas wyszukiwania nieaktywny
 
 - Czasami użytkownik może mieć aktywną skrzynkę pocztową i nieaktywną skrzynkę pocztową z tym samym adresem SMTP. W takim przypadku przeszukiwana jest tylko określona skrzynka pocztowa wybrana jako lokalizacja wyszukiwania zawartości. Innymi słowy, jeśli dodasz skrzynkę pocztową użytkownika do wyszukiwania, nie można zakładać, że przeszukiwane są zarówno aktywne, jak i nieaktywne skrzynki pocztowe. Przeszukiwana jest tylko skrzynka pocztowa jawnie dodana do wyszukiwania.
 
-- Za pomocą programu PowerShell Centrum zgodności & zabezpieczeń można utworzyć wyszukiwanie zawartości w celu wyszukania nieaktywnej skrzynki pocztowej. W tym celu należy wstępnie dołączyć okres ( . ) na adres e-mail nieaktywnej skrzynki pocztowej. Na przykład następujące polecenie tworzy wyszukiwanie zawartości, które wyszukuje nieaktywną skrzynkę pocztową z adresem e-mail pavelb@contoso.onmicrosoft.com:
+- Program PowerShell & Zgodności zabezpieczeń umożliwia utworzenie wyszukiwania zawartości w celu wyszukania nieaktywnej skrzynki pocztowej. W tym celu należy wstępnie dołączyć okres ( . ) na adres e-mail nieaktywnej skrzynki pocztowej. Na przykład następujące polecenie tworzy wyszukiwanie zawartości, które wyszukuje nieaktywną skrzynkę pocztową z adresem e-mail pavelb@contoso.onmicrosoft.com:
 
    ```powershell
    New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true

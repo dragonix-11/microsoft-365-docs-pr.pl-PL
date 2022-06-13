@@ -17,13 +17,13 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: 'Wymaganie dotyczące wszystkich rozwiązań Microsoft Purview Information Protection: tworzenie, konfigurowanie i publikowanie etykiet poufności w celu klasyfikowania i ochrony danych organizacji.'
-ms.openlocfilehash: 99b2b50ed00f470443956ff30ebb4940bbe1024d
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+description: 'Wymaganie dotyczące wszystkich rozwiązań usługi Microsoft Purview Information Protection: tworzenie, konfigurowanie i publikowanie etykiet poufności w celu klasyfikowania i ochrony danych organizacji.'
+ms.openlocfilehash: 8b25fa9864bcbef92f509f7251a15bf24cc3da2d
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622382"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017037"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Tworzenie i konfigurowanie etykiet poufności i ich zasad
 
@@ -31,7 +31,7 @@ ms.locfileid: "65622382"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Wszystkie rozwiązania Microsoft Purview Information Protection są implementowane przy użyciu [etykiet poufności](sensitivity-labels.md). Aby utworzyć i opublikować te etykiety, przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>.
+Wszystkie rozwiązania Information Protection Microsoft Purview są implementowane przy użyciu [etykiet poufności](sensitivity-labels.md). Aby utworzyć i opublikować te etykiety, przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a>.
 
 Najpierw utwórz i skonfiguruj etykiety poufności, które chcesz udostępnić aplikacjom i innym usługom. Na przykład etykiety, które użytkownicy mają wyświetlać i stosować z Office aplikacji.
 
@@ -43,7 +43,7 @@ Administrator globalny organizacji ma pełne uprawnienia do tworzenia wszystkich
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Tworzenie i konfigurowanie etykiet poufności
 
-1. Z [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **SolutionsInformation** >  **protectionLabels** > 
+1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Rozwiązania Etykiety** > **ochrony** >  informacji
 
 2. Na stronie **Etykiety** wybierz pozycję **+ Utwórz etykietę** , aby rozpocząć nową konfigurację etykiet poufności: 
     
@@ -60,7 +60,7 @@ Administrator globalny organizacji ma pełne uprawnienia do tworzenia wszystkich
 
     - Jeśli wybrano **opcję Grupy & lokacje**, można skonfigurować ustawienia dotyczące grup Microsoft 365 i witryn dla Teams i SharePoint. Jeśli ta opcja nie zostanie wybrana, zobaczysz pierwszą stronę tych ustawień, ale nie możesz ich skonfigurować, a etykiety nie będą dostępne dla użytkowników do wybrania dla grup i witryny.
 
-    Aby uzyskać informacje o zakresie **schematyzowanych zasobów danych**, zobacz [Automatyczne etykietowanie zawartości w Microsoft Purview Mapowanie danych](/azure/purview/create-sensitivity-label).
+    Aby uzyskać informacje o zakresie **schematyzowanych zasobów danych** , zobacz [Automatyczne etykietowanie zawartości w usłudze Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 4. Postępuj zgodnie z monitami o konfigurację ustawień etykiety.
 
@@ -86,9 +86,9 @@ Dopóki nie opublikujesz etykiet, nie będą one dostępne do wybrania w aplikac
 > [!IMPORTANT]
 > Na tej **karcie Etykiety** nie wybieraj karty **Publikuj etykiety** (ani **przycisku Publikuj etykietę** podczas edytowania etykiety), chyba że musisz utworzyć nowe zasady etykiet. Wiele zasad etykiet jest potrzebnych tylko wtedy, gdy użytkownicy potrzebują różnych etykiet lub różnych ustawień zasad. Dążyć do posiadania jak najmniejszej liczby zasad etykiet — nierzadko należy mieć tylko jedną zasadę etykiet dla organizacji.
 
-### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>Dodatkowe ustawienia etykiet za pomocą programu PowerShell Centrum zgodności usługi Security &
+### <a name="additional-label-settings-with-security--compliance-powershell"></a>Dodatkowe ustawienia etykiet za pomocą programu PowerShell security & Compliance
 
-Dodatkowe ustawienia etykiety są dostępne za pomocą polecenia cmdlet [Set-Label](/powershell/module/exchange/set-label) z programu [PowerShell Centrum zgodności usługi Security &](/powershell/exchange/scc-powershell).
+Dodatkowe ustawienia etykiety są dostępne za pomocą polecenia cmdlet [Set-Label](/powershell/module/exchange/set-label) z programu [PowerShell Security & Compliance](/powershell/exchange/scc-powershell).
 
 Przykład:
 
@@ -104,7 +104,7 @@ W wyniku tej konfiguracji użytkownicy, którzy mają Office aplikacje korzystaj
 
 W przypadku języków, które należy obsługiwać, użyj [identyfikatorów języka](/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) Office (znanych również jako tagi języka) i określ własne tłumaczenie nazwy etykiety i etykietki narzędzia.
 
-Przed uruchomieniem poleceń w programie PowerShell należy najpierw [nawiązać połączenie z programem PowerShell & Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell).
+Przed uruchomieniem poleceń w programie PowerShell należy najpierw [nawiązać połączenie z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 ```powershell
 $Languages = @("fr-fr","it-it","de-de")
@@ -126,7 +126,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publikowanie etykiet poufności przez utworzenie zasad etykiet
 
-1. Z [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **RozwiązaniaZasadyinformacjiZasady** >  >  **etykiet**
+1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Rozwiązania** > **Zasady** **etykiet ochrony informacji** > 
 
 2. Na stronie **Zasady etykiet** wybierz pozycję **Publikuj etykietę** , aby rozpocząć konfigurację **tworzenia zasad** :
     
@@ -148,7 +148,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Jakie zasady etykiet można zrobić](sensitivity-labels.md#what-label-policies-can-do) z informacji przeglądowych i skorzystaj z pomocy w interfejsie użytkownika dla poszczególnych ustawień.
 
-    W przypadku etykiet skonfigurowanych dla **zasobów Microsoft Purview Data Map (wersja zapoznawcza)**: etykiety te nie mają żadnych skojarzonych ustawień zasad.
+    W przypadku etykiet skonfigurowanych dla **zasobów mapy danych usługi Microsoft Purview (wersja zapoznawcza)**: etykiety te nie mają żadnych skojarzonych ustawień zasad.
 
 6. Powtórz te kroki, jeśli potrzebujesz różnych ustawień zasad dla różnych użytkowników lub zakresów. Na przykład chcesz mieć dodatkowe etykiety dla grupy użytkowników lub inną etykietę domyślną dla podzestawu użytkowników. Lub jeśli skonfigurowano etykiety tak, aby miały różne zakresy.
 
@@ -162,9 +162,9 @@ Aby edytować istniejące zasady etykiet, wybierz je, a następnie wybierz przyc
 
 Ten przycisk uruchamia konfigurację **tworzenia zasad** , która umożliwia edytowanie etykiet, które są dołączone, oraz ustawień etykiet. Po zakończeniu konfiguracji wszelkie zmiany są automatycznie replikowane do wybranych użytkowników i usług.
 
-### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Dodatkowe ustawienia zasad etykiet za pomocą programu PowerShell Centrum zgodności & zabezpieczeń
+### <a name="additional-label-policy-settings-with-security--compliance-powershell"></a>Dodatkowe ustawienia zasad etykiet za pomocą programu PowerShell & zgodności z zabezpieczeniami
 
-Dodatkowe ustawienia zasad etykiet są dostępne za pomocą polecenia cmdlet [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) z programu [PowerShell Security & Compliance Center](/powershell/exchange/scc-powershell).
+Dodatkowe ustawienia zasad etykiet są dostępne za pomocą polecenia cmdlet [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) z programu [PowerShell Security & Compliance](/powershell/exchange/scc-powershell).
 
 Klient ujednoliconego etykietowania platformy Azure Information Protection obsługuje wiele [zaawansowanych ustawień](/azure/information-protection/rms-client/clientv2-admin-guide-customizations), które obejmują migrowanie z innych rozwiązań do etykietowania oraz wyskakujące komunikaty w Outlook, które ostrzegają, uzasadniają lub blokują wysyłanie wiadomości e-mail. Aby uzyskać pełną listę, zobacz [Dostępne ustawienia zaawansowane dla zasad etykiet](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) w przewodniku administratora tego klienta.
 
@@ -176,7 +176,7 @@ Istnieją jednak pewne scenariusze, w których zmiany zasad etykiet i etykiet mo
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Używanie programu PowerShell na potrzeby etykiet poufności i ich zasad
 
-Teraz możesz użyć programu [PowerShell Security & Compliance Center](/powershell/exchange/scc-powershell) , aby utworzyć i skonfigurować wszystkie ustawienia widoczne w centrum administracyjnym etykietowania. Oznacza to, że oprócz używania programu PowerShell do ustawień, które nie są dostępne w centrach administracyjnych etykietowania, można teraz w pełni utworzyć skrypt tworzenia i konserwacji etykiet poufności i zasad etykiet poufności. 
+Teraz możesz użyć programu [PowerShell security & Compliance](/powershell/exchange/scc-powershell) , aby utworzyć i skonfigurować wszystkie ustawienia widoczne w centrum administracyjnym etykietowania. Oznacza to, że oprócz używania programu PowerShell do ustawień, które nie są dostępne w centrach administracyjnych etykietowania, można teraz w pełni utworzyć skrypt tworzenia i konserwacji etykiet poufności i zasad etykiet poufności. 
 
 Zapoznaj się z następującą dokumentacją dotyczącą obsługiwanych parametrów i wartości:
 

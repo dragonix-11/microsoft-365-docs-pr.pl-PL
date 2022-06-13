@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Dowiedz się, jak zbierać informacje diagnostyczne zbierania elektronicznych materiałów dowodowych dla pomoc techniczna firmy Microsoft przypadku.
-ms.openlocfilehash: 2759156a3948339629ea7d988eaaa5464da197fa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f5dba88a598a73441c67e3eaa08a59b7258ea712
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095889"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014437"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Zbieraj informacje diagnostyczne dotyczące zbierania elektronicznych materiałów dowodowych
 
@@ -35,9 +35,9 @@ Czasami inżynierowie pomoc techniczna firmy Microsoft wymagają konkretnych inf
 
 ## <a name="collect-diagnostic-information-for-ediscovery-standard"></a>Zbieranie informacji diagnostycznych dotyczących zbierania elektronicznych materiałów dowodowych (standard)
 
-Zbieranie informacji diagnostycznych dotyczących zbierania elektronicznych materiałów dowodowych (Standardowa) jest oparte na poleceniach cmdlet, dlatego należy użyć programu PowerShell & Security & Compliance Center. W poniższych przykładach programu PowerShell zostaną uruchomione polecenia cmdlet, a następnie zapiszą dane wyjściowe w określonym pliku tekstowym. W większości przypadków pomocy technicznej należy uruchomić tylko jedno z tych poleceń.
+Zbieranie informacji diagnostycznych dotyczących zbierania elektronicznych materiałów dowodowych (Standard) jest oparte na poleceniach cmdlet, dlatego należy użyć programu PowerShell security & Compliance. W poniższych przykładach programu PowerShell zostaną uruchomione polecenia cmdlet, a następnie zapiszą dane wyjściowe w określonym pliku tekstowym. W większości przypadków pomocy technicznej należy uruchomić tylko jedno z tych poleceń.
 
-Aby uruchomić następujące polecenia cmdlet, [połącz się z programem PowerShell</span> Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell). Po nawiązaniu połączenia uruchom co najmniej jedno z następujących poleceń i zastąp symbole zastępcze rzeczywistymi nazwami obiektów.
+Aby uruchomić następujące polecenia cmdlet, [połącz się z programem PowerShell</span> Security & Compliance](/powershell/exchange/connect-to-scc-powershell). Po nawiązaniu połączenia uruchom co najmniej jedno z następujących poleceń i zastąp symbole zastępcze rzeczywistymi nazwami obiektów.
 
 Po przejrzeniu wygenerowanego pliku tekstowego i zredagowaniu poufnych informacji wyślij go do inżyniera pomoc techniczna firmy Microsoft pracującego nad Twoją sprawą.
 
@@ -80,13 +80,13 @@ Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches=="
 
 Karta **Ustawienia** w przypadku zbierania elektronicznych materiałów dowodowych (Premium) umożliwia szybkie skopiowanie informacji diagnostycznych dla sprawy. Informacje diagnostyczne są zapisywane w schowku, dzięki czemu można je wkleić do pliku tekstowego i wysłać do pomoc techniczna firmy Microsoft.
 
-1. Przejdź do portalu zgodności i wybierz pozycję **eDiscoveryAdvanced** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank"></a>
+1. Przejdź do portalu zgodności i wybierz pozycję **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
 
 2. Wybierz przypadek, a następnie kliknij kartę **Ustawienia**.
 
 3. W obszarze **Informacje o wielkości liter** kliknij **pozycję Wybierz**.
 
-4. Na stronie wysuwanej kliknij pozycję ActionsCopy support information ( **Akcje** > **) Informacje o pomocy technicznej** , aby skopiować informacje do schowka.
+4. Na stronie wysuwanej kliknij pozycję **Akcje** > **Kopiuj informacje o pomocy technicznej** , aby skopiować informacje do schowka.
 
 5. Otwórz plik tekstowy (w Notatnik), a następnie wklej informacje w pliku tekstowym.
 

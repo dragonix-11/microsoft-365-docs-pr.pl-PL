@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Zaawansowane szyfrowanie wiadomości usługi Microsoft Purview umożliwia rozszerzenie zabezpieczeń poczty e-mail przez ustawienie daty wygaśnięcia wiadomości e-mail za pośrednictwem niestandardowego szablonu markowego.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8689820adc3158ae2a36a4d52ebad0959097b49
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 78855ae8906367293b69406ba74246619b5af465
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188399"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015567"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>Ustaw datę wygaśnięcia wiadomości e-mail zaszyfrowanych przy użyciu zaawansowanego szyfrowania wiadomości usługi Microsoft Purview
 
@@ -32,7 +32,7 @@ Zaawansowane szyfrowanie komunikatów w usłudze Microsoft Purview jest zawarte 
 
 Jeśli Twoja organizacja ma subskrypcję, która nie obejmuje zaawansowanego szyfrowania komunikatów w usłudze Microsoft Purview, możesz ją kupić za pomocą dodatku Zgodność platformy Microsoft 365 E5 SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik personelu organizacji non-profit) lub dodatek Office 365 Advanced Compliance jednostki SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik pracowników organizacji non-profit) lub jednostek SKU Office 365.
 
-Możesz użyć wygaśnięcia wiadomości w wiadomościach e-mail wysyłanych przez użytkowników do adresatów zewnętrznych, którzy korzystają z portalu OME, aby uzyskać dostęp do zaszyfrowanych wiadomości e-mail. Wymuszasz, aby adresaci używali portalu OME do wyświetlania zaszyfrowanych wiadomości e-mail wysyłanych przez organizację i odpowiadania na nie przy użyciu niestandardowego szablonu oznaczonego marką, który określa datę wygaśnięcia w Windows PowerShell.
+Możesz użyć wygaśnięcia wiadomości w wiadomościach e-mail wysyłanych przez użytkowników do adresatów zewnętrznych, którzy korzystają z portalu OME, aby uzyskać dostęp do zaszyfrowanych wiadomości e-mail. Wymuszasz, aby adresaci używali portalu OME do wyświetlania zaszyfrowanych wiadomości e-mail wysyłanych przez organizację i odpowiadania na nie przy użyciu niestandardowego szablonu oznaczonego marką, który określa datę wygaśnięcia w programie PowerShell.
 
 Jako administrator globalny Office 365, gdy zastosujesz firmową markę w celu dostosowania wyglądu wiadomości e-mail organizacji, możesz również określić wygaśnięcie tych wiadomości e-mail. Zaawansowane szyfrowanie komunikatów w usłudze Microsoft Purview umożliwia tworzenie wielu szablonów dla zaszyfrowanych wiadomości e-mail pochodzących z Organizacji. Za pomocą szablonu możesz kontrolować, jak długo adresaci mają dostęp do poczty wysyłanej przez użytkowników.
 

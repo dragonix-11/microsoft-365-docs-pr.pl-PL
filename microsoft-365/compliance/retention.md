@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania, które ułatwiają zachowanie potrzebnych elementów i usuwanie tego, czego nie potrzebujesz.
-ms.openlocfilehash: 95d79bd95aa816b82e69399b9bde99500fcc8b6b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 7124d97c56e414a7c5a47488805bb4134426f073
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419533"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018035"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania
 
@@ -177,7 +177,7 @@ Na przykład można utworzyć i zastosować etykietę przechowywania o nazwie "P
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Używanie etykiety przechowywania jako warunku w zasadach DLP
 
-Etykietę przechowywania można określić jako warunek w zasadach Ochrona przed utratą danych w Microsoft Purview (DLP) dla dokumentów w SharePoint. Na przykład skonfiguruj zasady DLP, aby zapobiec udostępnianiu dokumentów poza organizacją, jeśli zastosowano do nich określoną etykietę przechowywania.
+Etykietę przechowywania można określić jako warunek w zasadach ochrony przed utratą danych (DLP) usługi Microsoft Purview dla dokumentów w SharePoint. Na przykład skonfiguruj zasady DLP, aby zapobiec udostępnianiu dokumentów poza organizacją, jeśli zastosowano do nich określoną etykietę przechowywania.
 
 Aby uzyskać więcej informacji, zobacz [Używanie etykiety przechowywania jako warunku w zasadach DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
@@ -237,7 +237,7 @@ Gdy etykiety przechowywania oznaczają elementy jako rekord lub rekord regulacyj
 
 #### <a name="monitoring-retention-labels"></a>Monitorowanie etykiet przechowywania
 
-Na portal zgodności Microsoft Purview wybierz pozycję **Klasyfikacja danych** i stronę **Przegląd**, aby monitorować sposób użycia etykiet przechowywania w dzierżawie i identyfikować lokalizację elementów oznaczonych etykietami. Aby uzyskać więcej informacji, w tym ważne wymagania wstępne, zobacz [Informacje o klasyfikacji danych](data-classification-overview.md).
+W portalu zgodności usługi Microsoft Purview wybierz pozycję **Klasyfikacja danych** i stronę **Przegląd** , aby monitorować sposób użycia etykiet przechowywania w dzierżawie i identyfikować lokalizację elementów oznaczonych etykietami. Aby uzyskać więcej informacji, w tym ważne wymagania wstępne, zobacz [Informacje o klasyfikacji danych](data-classification-overview.md).
 
 Następnie możesz przejść do szczegółów przy użyciu [Eksploratora zawartości](data-classification-content-explorer.md) i [Eksploratora działań](data-classification-activity-explorer.md).
 
@@ -369,7 +369,7 @@ Aby obejrzeć zarejestrowane seminarium internetowe (wymaga rejestracji), odwied
 
 ## <a name="policy-lookup"></a>Wyszukiwanie zasad
 
-Można skonfigurować wiele zasad przechowywania dla lokalizacji Microsoft 365, a także wiele zasad etykiet przechowywania publikowanych lub automatycznie stosowanych. Aby znaleźć zasady przechowywania przypisane do określonych użytkowników, witryn i grup Microsoft 365, użyj wyszukiwania **zasad** z rozwiązań do **zarządzania cyklem życia danych** lub **zarządzania rekordami** w portal zgodności Microsoft Purview.
+Można skonfigurować wiele zasad przechowywania dla lokalizacji Microsoft 365, a także wiele zasad etykiet przechowywania publikowanych lub automatycznie stosowanych. Aby znaleźć zasady przechowywania przypisane do określonych użytkowników, witryn i grup Microsoft 365, użyj wyszukiwania **zasad** z rozwiązań do **zarządzania cyklem życia danych** lub **zarządzania rekordami** w portalu zgodności usługi Microsoft Purview.
 
 Przykład:
 
@@ -550,7 +550,7 @@ Akcje przechowywania rejestrowane jako zdarzenia inspekcji są dostępne tylko d
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Polecenia cmdlet programu PowerShell dla zasad przechowywania i etykiet przechowywania
 
-Aby użyć poleceń cmdlet przechowywania, należy najpierw [nawiązać połączenie z programem PowerShell Office 365 Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell). Następnie użyj dowolnego z następujących poleceń cmdlet:
+Aby użyć poleceń cmdlet przechowywania, należy najpierw [nawiązać połączenie z programem PowerShell Office 365 Security & Compliance](/powershell/exchange/connect-to-scc-powershell). Następnie użyj dowolnego z następujących poleceń cmdlet:
 
 - [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 

@@ -20,18 +20,18 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak wygenerować raport zawierający informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: 25e201e1b8bef0a4ccc3724a6adab6c095f34d54
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 9db08335ff023172092e7bf8bada7a3976956d29
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318033"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017015"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Tworzenie raportu dotyczącego blokad w przypadkach zbierania elektronicznych materiałów dowodowych przy użyciu skryptu
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Skrypt w tym artykule umożliwia administratorom zbierania elektronicznych materiałów dowodowych i menedżerom zbierania elektronicznych materiałów dowodowych generowanie raportu zawierającego informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych (Standard) i eDiscovery (Premium) w portal zgodności Microsoft Purview. Raport zawiera informacje, takie jak nazwa przypadku, z którym jest skojarzona blokada, lokalizacje zawartości, które są wstrzymane, oraz to, czy blokada jest oparta na zapytaniach. Jeśli istnieją przypadki, które nie mają żadnych blokad, skrypt utworzy dodatkowy raport z listą spraw bez blokady.
+Skrypt w tym artykule umożliwia administratorom zbierania elektronicznych materiałów dowodowych i menedżerom zbierania elektronicznych materiałów dowodowych generowanie raportu zawierającego informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych (Standard) i eDiscovery (Premium) w portalu zgodności usługi Microsoft Purview. Raport zawiera informacje, takie jak nazwa przypadku, z którym jest skojarzona blokada, lokalizacje zawartości, które są wstrzymane, oraz to, czy blokada jest oparta na zapytaniach. Jeśli istnieją przypadki, które nie mają żadnych blokad, skrypt utworzy dodatkowy raport z listą spraw bez blokady.
 
 Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać szczegółowy opis informacji zawartych w raporcie.
 
@@ -43,13 +43,13 @@ Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać szczegół
 
 - Przykładowe skrypty podane w tym temacie nie są obsługiwane w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowe skrypty są dostarczane jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowych skryptów i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
-## <a name="step-1-connect-to-security--compliance-center-powershell"></a>Krok 1. Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń
+## <a name="step-1-connect-to-security--compliance-powershell"></a>Krok 1. Połączenie do programu PowerShell zgodności & zabezpieczeń
 
-Pierwszym krokiem jest nawiązanie połączenia z programem PowerShell Centrum zgodności usługi Security & dla Twojej organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+Pierwszym krokiem jest nawiązanie połączenia z programem PowerShell security & Compliance dla twojej organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do programu PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Krok 2. Uruchamianie skryptu w celu raportowania blokad skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych
 
-Po nawiązaniu połączenia z programem PowerShell Security & Compliance Center następnym krokiem jest utworzenie i uruchomienie skryptu zbierającego informacje o przypadkach zbierania elektronicznych materiałów dowodowych w organizacji.
+Po nawiązaniu połączenia z programem PowerShell security & Compliance następnym krokiem jest utworzenie i uruchomienie skryptu zbierającego informacje o przypadkach zbierania elektronicznych materiałów dowodowych w organizacji.
 
 1. Zapisz następujący tekst w pliku skryptu Windows PowerShell przy użyciu sufiksu nazwy pliku .ps1, na przykład CaseHoldsReport.ps1.
 

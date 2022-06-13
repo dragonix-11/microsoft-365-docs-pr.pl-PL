@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Dowiedz się więcej o limitach dotyczących funkcji wyszukiwania zawartości i zbierania elektronicznych materiałów dowodowych (Standard) w portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: 030e4dd16e2b24504632947a336b244a945813ff
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f20c33781b8dd9f92091e1b0c459137a4edd33ed
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091726"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014877"
 ---
 # <a name="limits-for-ediscovery-search"></a>Limity wyszukiwania zbierania elektronicznych materiałów dowodowych
 
@@ -45,7 +45,7 @@ W poniższej tabeli wymieniono limity wyszukiwania podczas korzystania z narzęd
 |Maksymalna liczba skrzynek pocztowych lub witryn, które można przeszukiwać w jednym wyszukiwaniu|Brak limitu <sup>1</sup>|
 |Maksymalna liczba wyszukiwań, które mogą być uruchamiane w tym samym czasie w organizacji.|30|
 |Maksymalna liczba wyszukiwań w całej organizacji, które mogą być uruchamiane w tym samym czasie.|3|
-|Maksymalna liczba wyszukiwań, które pojedynczy użytkownik może rozpocząć w tym samym czasie. Ten limit jest najprawdopodobniej osiągnięty, gdy użytkownik próbuje uruchomić wiele wyszukiwań za pomocą polecenia **Get-ComplianceSearch \|Start-ComplianceSearch** w programie PowerShell Centrum zgodności & zabezpieczeń.|10|
+|Maksymalna liczba wyszukiwań, które pojedynczy użytkownik może rozpocząć w tym samym czasie. Ten limit jest najprawdopodobniej osiągnięty, gdy użytkownik próbuje uruchomić wiele wyszukiwań za pomocą polecenia **Get-ComplianceSearch \|Start-ComplianceSearch** w programie PowerShell Security & Compliance.|10|
 |Maksymalna liczba elementów na skrzynkę pocztową użytkownika wyświetlana na stronie podglądu podczas wyświetlania podglądu wyników wyszukiwania zawartości.|100|
 |Maksymalna liczba elementów znalezionych we wszystkich skrzynkach pocztowych użytkownika, które mogą być wyświetlane na stronie w wersji zapoznawczej podczas wyświetlania podglądu wyników wyszukiwania. Zostaną wyświetlone najnowsze elementy.|1000 <sup>2</sup>|
 |Maksymalna liczba skrzynek pocztowych użytkownika, które można wyświetlić w wersji zapoznawczej wyników wyszukiwania. Jeśli istnieje ponad 1000 skrzynek pocztowych zawierających zawartość zgodną z zapytaniem wyszukiwania, co najwyżej tylko 1000 pierwszych skrzynek pocztowych z największą ilością wyników wyszukiwania będzie dostępnych w wersji zapoznawczej.|1,000|

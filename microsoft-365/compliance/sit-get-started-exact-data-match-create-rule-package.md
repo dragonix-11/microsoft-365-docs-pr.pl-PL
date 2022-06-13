@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Twórz dokładny typ/pakiet reguł informacji poufnych opartych na dopasowaniu danych
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d18147e576db356a5fb7904c3901003bbf48855e
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: ff493f7af88d377bcf008d13752969107cfd65e7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435264"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017191"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Twórz dokładny typ/pakiet reguł informacji poufnych opartych na dopasowaniu danych
 
@@ -60,7 +60,7 @@ Zobacz [Definicje jednostek typów informacji poufnych](sensitive-information-ty
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Użyj kreatora dokładnego schematu dopasowania danych i wzorca typów informacji poufnych
 
-1. W portal zgodności Microsoft Purview dla dzierżawy przejdź do pozycji **Klasyfikacja** >  **danychDopasowania danych**.
+1. W portalu zgodności usługi Microsoft Purview dla dzierżawy przejdź do pozycji **Klasyfikacja** > **danych Dokładne dopasowania danych**.
 
 2. Wybierz **typy informacji poufnych EDM** i **Utwórz typ informacji poufnych EDM** , aby otworzyć kreatora konfiguracji typów informacji poufnych.
 
@@ -89,7 +89,7 @@ Zobacz [Definicje jednostek typów informacji poufnych](sensitive-information-ty
 
 ### <a name="edit-or-delete-the-sensitive-information-type-pattern"></a>Edytowanie lub usuwanie wzorca typów informacji poufnych
 
-1. Otwórz **centrum** >  zgodności **Klasyfikacja danychAktualizaj** >  **dopasowania danych**.
+1. Otwórz **centrum** >  zgodności **Klasyfikacja** > **danych Dokładne dopasowania danych**.
 
 2. Wybierz **typy informacji poufnych EDM**.
 
@@ -138,7 +138,7 @@ W niektórych przypadkach może być konieczne zidentyfikowanie pewnych numerów
 
 ## <a name="create-a-rule-package-manually"></a>Ręczne tworzenie pakietu reguł
 
-W tej procedurze pokazano, jak utworzyć plik w formacie XML nazywanym pakietem reguł (z kodowaniem Unicode), a następnie przekazać go do Microsoft Purview przy użyciu poleceń cmdlet programu PowerShell centrum zgodności.
+Ta procedura pokazuje, jak utworzyć plik w formacie XML nazywanym pakietem reguł (z kodowaniem Unicode), a następnie przekazać go do usługi Microsoft Purview przy użyciu poleceń cmdlet programu PowerShell security & Compliance.
 
 > [!NOTE]
 > Jeśli mapowany interfejs SIT może wykrywać wielowyrazowe dowody potwierdzające, elementy pomocnicze zdefiniowane w ręcznie utworzonym pakiecie reguł mogą zostać zamapowane na sit. Na przykład nazwa `John Smith` nie byłaby zgodna z elementem pomocniczym, ponieważ porównalibyśmy `John` zawartość i `Smith` znaleźliśmy ją oddzielnie z terminem `John Smith` przekazanym w jednym z pól, jeśli to pole dowodu potwierdzającego nie zostało zamapowane na funkcję SIT, która może wykryć ten wzorzec.

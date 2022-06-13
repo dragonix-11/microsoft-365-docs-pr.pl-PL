@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj zasad przechowywania, aby efektywnie kontrolować zawartość generowaną przez użytkowników za pomocą poczty e-mail, dokumentów i konwersacji. Zachowaj to, czego chcesz, i pozbądź się tego, czego nie chcesz.
-ms.openlocfilehash: abb18142517ceb6c5442ccd372c4f392db706bc1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 6243db961e9c7789ea1a43f41d848d3d9cbda9e2
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65284957"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016465"
 ---
 # <a name="create-and-configure-retention-policies"></a>Tworzenie i konfigurowanie zasad przechowywania
 
@@ -78,7 +78,7 @@ Jeśli masz więcej niż jedną zasadę przechowywania, a także używasz etykie
 > [!NOTE]
 > Zasady przechowywania obsługują teraz [kanały udostępnione](/MicrosoftTeams/shared-channels) w wersji zapoznawczej. Po skonfigurowaniu ustawień przechowywania dla lokalizacji **komunikatów kanału Teams**, jeśli zespół ma jakiekolwiek kanały udostępnione, dziedziczy ustawienia przechowywania po swoim zespole nadrzędnym.
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Zarządzanie cyklem** >  życia **danychZasady ponownego wdrażania**.
+1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Zasady przechowywania** **zarządzania cyklem** >  życia danych.
 
 2. Wybierz pozycję **Nowe zasady przechowywania** , aby rozpocząć **konfigurowanie zasad przechowywania** i nadać nazwę nowym zasadom przechowywania.
 
@@ -134,7 +134,7 @@ Istnieje możliwość, że zasady przechowywania stosowane do grup Microsoft 365
 >
 > Aby korzystać z tej funkcji, sieć Yammer musi być [trybem natywnym](/yammer/configure-your-yammer-network/overview-native-mode), a nie trybem hybrydowym.
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Zarządzanie cyklem** >  życia **danychZasady ponownego wdrażania**.
+1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Zasady przechowywania** **zarządzania cyklem** >  życia danych.
 
 2. Wybierz pozycję **Nowe zasady przechowywania** , aby utworzyć nowe zasady przechowywania.
 
@@ -182,7 +182,7 @@ Użyj następujących instrukcji dotyczących zasad przechowywania, które mają
 - Grupy platformy Microsoft 365
 - Skype dla firm
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Zarządzanie cyklem** >  życia **danychZasady ponownego wdrażania**.
+1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Zasady przechowywania** **zarządzania cyklem** >  życia danych.
 
 2. Wybierz pozycję **Nowe zasady przechowywania** , aby rozpocząć **konfigurowanie zasad przechowywania** i nadać nazwę nowym zasadom przechowywania.
 
@@ -214,7 +214,7 @@ Po utworzeniu i przesłaniu zasad przechowywania zastosowanie zasad przechowywan
 
 Najpierw zasady przechowywania muszą być dystrybuowane do wybranych lokalizacji, a następnie stosowane do zawartości. Zawsze możesz sprawdzić stan dystrybucji zasad przechowywania, wybierając je na stronie **Zasady przechowywania** w portalu zgodności usługi Microsoft Purview. Jeśli w okienku wysuwanym zostanie wyświetlony komunikat **(Błąd)** uwzględniony w stanie, a w szczegółach lokalizacji zostanie wyświetlony komunikat, że wdrażanie zasad trwa dłużej niż oczekiwano lub spróbuj ponownie wdrożyć zasady, spróbuj uruchomić polecenie [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) lub [Set-RetentionCompliancePolicy,](/powershell/module/exchange/set-retentioncompliancepolicy) aby ponowić próbę dystrybucji zasad:
 
-1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Uruchom jedno z następujących poleceń:
     

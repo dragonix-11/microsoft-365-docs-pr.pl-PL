@@ -17,18 +17,18 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 30764562ebe60842f2824d7e313bec73e03f2ffa
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 2d003ce76db677b22b3873f6f19df05b34f06b96
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65838874"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016201"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Dokumentacja reguł zmniejszania obszaru podatnego na ataki
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Microsoft 365 Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Program antywirusowy Microsoft Defender
@@ -42,17 +42,15 @@ Ten artykuł zawiera informacje o regułach zmniejszania ataków:
 - [Obsługiwane wersje systemu operacyjnego](#supported-operating-systems)
 - [Obsługiwane systemy zarządzania konfiguracją](#supported-configuration-management-systems)
 - [Szczegóły alertu i powiadomienia dla reguły](#per-rule-alert-and-notification-details)
-- [Macierz reguł i identyfikatorów GUID usługi ASR](#asr-rules-and-guids-matrix)
+- [Reguła usługi ASR do macierzy GUID](#asr-rule-to-guid-matrix)
 - [Tryby reguł usługi ASR](#asr-rule-modes)
 - [Opisy reguł](#per-rule-descriptions)
-  - Opisy reguł
-  - Nazwy reguł systemu zarządzania konfiguracją
 
 ## <a name="supported-operating-systems"></a>Obsługiwane systemy operacyjne
 
 Poniższa tabela zawiera listę obsługiwanych systemów operacyjnych dla reguł, które są obecnie udostępniane do ogólnej dostępności. Reguły są wymienione w kolejności alfabetycznej w tej tabeli.
 
-> [!Note]
+> [!NOTE]
 >
 > O ile nie wskazano inaczej, minimalna kompilacja&nbsp; Windows 10 to wersja 1709 (RS3, kompilacja 16299) lub nowsza; minimalna kompilacja&nbsp; Windows Server to wersja 1809 lub nowsza.
 >
@@ -60,7 +58,7 @@ Poniższa tabela zawiera listę obsługiwanych systemów operacyjnych dla reguł
 
 | Nazwa reguły| &nbsp;Windows 11 <br>i<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>i<br>  &nbsp;Windows Server <br> 2019 | Serwer z systemem Windows | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| [Blokowanie nadużyć wobec wykorzystywanych, narażonych na zagrożenia podpisanych kierowców](#block-abuse-of-exploited-vulnerable-signed-drivers) | T | T | T <br> wersja 1803 (półroczny kanał) lub nowszy | T | T |
+| [Blokowanie nadużyć wobec wykorzystywanych, narażonych na zagrożenia podpisanych kierowców](#block-abuse-of-exploited-vulnerable-signed-drivers) | T | T | T <br> wersja 1803 (półroczny kanał Enterprise) lub nowszy | T | T |
 | [Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych](#block-adobe-reader-from-creating-child-processes) | T <br> wersja 1809 lub nowsza <sup>[[3](#fn1)]<sup></sup> | T | T | T | T |
 | [Blokowanie tworzenia procesów podrzędnych przez wszystkie aplikacje Office](#block-all-office-applications-from-creating-child-processes) | T | T | T | T | T |
 | [Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | T <br> wersja 1803 lub nowsza <sup>[[3](#fn1)]<sup></sup> | T | T | T | T |
@@ -115,7 +113,7 @@ Poniżej tej tabeli znajdują się linki do informacji o wersjach systemu zarzą
 
 ## <a name="per-rule-alert-and-notification-details"></a>Szczegóły alertu i powiadomienia dla reguły
 
-Powiadomienia wyskakujące są generowane dla wszystkich reguł w trybie bloku. Reguły w żadnym innym trybie nie będą generować wyskakujących powiadomień
+Powiadomienia wyskakujące są generowane dla wszystkich reguł w trybie bloku. Reguły w innym trybie nie będą generować wyskakujących powiadomień
 
 W przypadku reguł z określonym stanem reguły:
 
@@ -142,7 +140,7 @@ W przypadku reguł z określonym stanem reguły:
 |[Blokuj wywołania interfejsu API Win32 z makr Office](#block-win32-api-calls-from-office-macros) |   | N | T |
 |[Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | Blok inspekcji&nbsp;\|&nbsp; | Y \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze  | N \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze |
   
-## <a name="asr-rules-and-guids-matrix"></a>Macierz reguł i identyfikatorów GUID usługi ASR
+## <a name="asr-rule-to-guid-matrix"></a>Reguła usługi ASR do macierzy GUID
 
 | Nazwa reguły | Identyfikator GUID reguły |
 |:-----|:-----|
@@ -165,16 +163,16 @@ W przypadku reguł z określonym stanem reguły:
 
 ## <a name="asr-rule-modes"></a>Tryby reguł usługi ASR
 
-- **Nie skonfigurowano** lub **wyłącz**: jest to stan, w którym reguła usługi ASR nie została włączona lub została wyłączona. Kod dla tego stanu = 0.
-- **Blokuj**: jest to stan, w którym jest włączona reguła usługi ASR. Kod dla tego stanu to 1.
-- **Inspekcja**: jest to stan, w którym reguła usługi ASR jest oceniana pod kątem jej wpływu na organizację lub środowisko, w którym została wdrożona. Kod dla tego stanu to 2.
-- **Ostrzec** Jest to stan, w którym reguła usługi ASR jest włączona i wyświetla powiadomienie użytkownikowi końcowemu, ale umożliwia użytkownikowi końcowemu obejście bloku. Kod dla tego stanu to 6.
+- **Nie skonfigurowano** lub **wyłącz**: stan, w którym reguła usługi ASR nie została włączona lub została wyłączona. Kod dla tego stanu = 0.
+- **Blokuj**: stan, w którym jest włączona reguła usługi ASR. Kod dla tego stanu to 1.
+- **Inspekcja**: stan, w którym reguła usługi ASR jest oceniana pod kątem wpływu, jaki miałaby na organizację lub środowisko, jeśli zostałaby włączona (ustawiona na wartość bloku lub ostrzeżenia). Kod dla tego stanu to 2.
+- **Ostrzec** Stan, w którym reguła usługi ASR jest włączona i wyświetla użytkownikowi końcowemu powiadomienie, ale umożliwia użytkownikowi końcowemu obejście bloku. Kod dla tego stanu to 6.
 
 _Tryb ostrzeżenia_ to typ trybu bloku, który ostrzega użytkowników o potencjalnie ryzykownych akcjach. Użytkownicy mogą pominąć komunikat ostrzegawczy bloku i zezwolić na akcję bazową. Użytkownicy mogą wybrać przycisk **OK** , aby wymusić blok, lub wybrać opcję obejścia — **Odblokuj** — za pośrednictwem wyskakujących powiadomień wyskakujących użytkownika końcowego, które jest generowane w czasie blokowania. Po odblokowaniu ostrzeżenia operacja jest dozwolona do czasu następnego wystąpienia komunikatu ostrzegawczego, w którym to czasie użytkownik końcowy będzie musiał ponownie sformułować akcję.
 
-Jeśli przycisk zezwalania zostanie kliknięty, blok zostanie pominięty przez 24 godziny. Po 24 godzinach użytkownik końcowy będzie musiał ponownie zezwolić na blok. Tryb ostrzegania dla reguł usługi ASR jest obsługiwany tylko dla urządzeń RS5+ (1809+). Jeśli obejście zostanie przypisane do reguł usługi ASR na urządzeniach ze starszymi wersjami, reguła będzie w trybie zablokowanym.
+Po kliknięciu przycisku zezwalania blok zostanie pominięty przez 24 godziny. Po 24 godzinach użytkownik końcowy będzie musiał ponownie zezwolić na blok. Tryb ostrzegania dla reguł usługi ASR jest obsługiwany tylko dla urządzeń RS5+ (1809+). Jeśli obejście zostanie przypisane do reguł usługi ASR na urządzeniach ze starszymi wersjami, reguła będzie w trybie zablokowanym.
 
-Możesz również ustawić regułę w trybie ostrzeżenia za pośrednictwem programu PowerShell, określając AttackSurfaceReductionRules_Actions jako "Ostrzegaj". Przykład:
+Regułę można również ustawić w trybie ostrzeżenia za pośrednictwem programu PowerShell, określając AttackSurfaceReductionRules_Actions jako "Ostrzegaj". Przykład:
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -217,7 +215,7 @@ Dependencies: none provided by engineering
 
 Ta reguła zapobiega atakom, blokując programowi Adobe Reader tworzenie procesów.
 
-Poprzez inżynierię społeczną lub luki w zabezpieczeniach złośliwe oprogramowanie może pobierać i uruchamiać ładunki oraz wyrwać się z programu Adobe Reader. Blokując generowanie procesów podrzędnych przez program Adobe Reader, złośliwe oprogramowanie próbujące użyć go jako wektora nie może się rozprzestrzeniać.
+Złośliwe oprogramowanie może pobierać i uruchamiać ładunki oraz wyrwać się z programu Adobe Reader za pośrednictwem inżynierii społecznej lub exploitów. Blokując generowanie procesów podrzędnych przez program Adobe Reader, złośliwe oprogramowanie próbujące użyć programu Adobe Reader jako wektora ataku nie może się rozprzestrzeniać.
 
 nazwa Intune:`Process creation from Adobe Reader (beta)`
 
@@ -255,7 +253,7 @@ Zależności: MDAV
 
 Ta reguła pomaga zapobiegać kradzieży poświadczeń przez zablokowanie usługi podsystemu lokalnego urzędu zabezpieczeń (LSASS).
 
-Usługa LSASS uwierzytelnia użytkowników, którzy logują się na komputerze Windows. Funkcja Microsoft Defender Credential Guard w Windows zwykle uniemożliwia próby wyodrębnienia poświadczeń z usługi LSASS. Jednak niektóre organizacje nie mogą włączyć funkcji Credential Guard na wszystkich swoich komputerach z powodu problemów ze zgodnością z niestandardowymi sterownikami kart inteligentnych lub innymi programami, które ładują się do lokalnego urzędu zabezpieczeń (LSA). W takich przypadkach osoby atakujące mogą używać narzędzi hack, takich jak Mimikatz, aby zeskrobać hasła zwykłego tekstu i skróty NTLM z LSASS.
+Usługa LSASS uwierzytelnia użytkowników, którzy logują się na komputerze Windows. Funkcja Microsoft Defender Credential Guard w Windows zwykle uniemożliwia próby wyodrębnienia poświadczeń z usługi LSASS. Niektóre organizacje nie mogą włączyć funkcji Credential Guard na wszystkich swoich komputerach z powodu problemów ze zgodnością z niestandardowymi sterownikami kart inteligentnych lub innymi programami, które ładują się do lokalnego urzędu zabezpieczeń (LSA). W takich przypadkach osoby atakujące mogą używać narzędzi takich jak Mimikatz, aby zeskrobać hasła zwykłego tekstu i skróty NTLM z usługi LSASS.
 
 > [!NOTE]
 > W niektórych aplikacjach kod wylicza wszystkie uruchomione procesy i próbuje je otworzyć z wyczerpującymi uprawnieniami. Ta reguła nie zezwala na akcję otwierania procesu aplikacji i rejestruje szczegóły w dzienniku zdarzeń zabezpieczeń. Ta reguła może generować dużo szumu. Jeśli masz aplikację, która po prostu wylicza usługę LSASS, ale nie ma rzeczywistego wpływu na funkcjonalność, nie ma potrzeby dodawania jej do listy wykluczeń. Sam wpis dziennika zdarzeń nie musi wskazywać na złośliwe zagrożenie.
@@ -334,7 +332,7 @@ Ta reguła wykrywa podejrzane właściwości w zaciemnionym skryptze.
 > [!IMPORTANT]
 > Skrypty programu PowerShell zostały tymczasowo wykluczone z reguły "Blokuj wykonywanie potencjalnie zaciemnionych skryptów" ze względu na problemy z fp na dużą skalę występujące w przeszłości.
 
-Zaciemnianie skryptów jest powszechną techniką używaną zarówno przez autorów złośliwego oprogramowania, jak i uzasadnione aplikacje w celu ukrycia własności intelektualnej lub skrócenia czasu ładowania skryptów. Autorzy złośliwego oprogramowania używają również zaciemniania, aby utrudnić odczytywanie złośliwego kodu, co uniemożliwia ścisłą kontrolę przez ludzi i oprogramowanie zabezpieczające.
+Zaciemnianie skryptów jest powszechną techniką używaną zarówno przez autorów złośliwego oprogramowania, jak i uzasadnione aplikacje w celu ukrycia własności intelektualnej lub skrócenia czasu ładowania skryptów. Autorzy złośliwego oprogramowania używają również zaciemniania, aby utrudnić odczytywanie złośliwego kodu, co utrudnia ścisłą kontrolę ludzi i oprogramowania zabezpieczającego.
 
 > [!IMPORTANT]
 > Ze względu na dużą liczbę wyników fałszywie dodatnich ta reguła nie wykrywa obecnie skryptów programu PowerShell; Jest to rozwiązanie tymczasowe. Reguła zostanie zaktualizowana i wkrótce rozpocznie ponowne odnajdywanie skryptów programu PowerShell.
@@ -459,7 +457,7 @@ Zależności: MDAV, RPC
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI
 
-Ta reguła blokuje uruchamianie procesów utworzonych za pośrednictwem programu [PsExec](/sysinternals/downloads/psexec) i [usługi WMI](/windows/win32/wmisdk/about-wmi) . Zarówno program PsExec, jak i usługa WMI mogą zdalnie wykonywać kod, więc istnieje ryzyko, że złośliwe oprogramowanie nadużywa tej funkcji do celów dowodzenia i kontroli lub rozprzestrzeniania infekcji w sieci organizacji.
+Ta reguła blokuje uruchamianie procesów utworzonych za pośrednictwem programu [PsExec](/sysinternals/downloads/psexec) i [usługi WMI](/windows/win32/wmisdk/about-wmi) . Zarówno program PsExec, jak i usługa WMI mogą zdalnie wykonywać kod. Istnieje ryzyko, że złośliwe oprogramowanie nadużywa funkcji programu PsExec i WMI do celów dowodzenia i kontroli lub rozprzestrzeniania infekcji w sieci organizacji.
 
 > [!WARNING]
 > Tej reguły należy używać tylko wtedy, gdy zarządzasz urządzeniami za pomocą [Intune](/intune) lub innego rozwiązania MDM. Ta reguła jest niezgodna z zarządzaniem za pośrednictwem [Microsoft Endpoint Configuration Manager](/configmgr), ponieważ ta reguła blokuje polecenia usługi WMI, których klient Configuration Manager używa do poprawnego działania.
@@ -480,6 +478,9 @@ Zależności: MDAV
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB
 
 Dzięki tej regule administratorzy mogą uniemożliwić uruchamianie niezapisanych lub niezaufanych plików wykonywalnych z dysków wymiennych USB, w tym kart SD. Zablokowane typy plików obejmują pliki wykonywalne (takie jak .exe, .dll lub scr)
+
+> [!IMPORTANT]
+> Pliki skopiowane z dysku USB na dysk zostaną zablokowane przez tę regułę, jeśli i kiedy ma zostać wykonane na dysku.
 
 nazwa Intune:`Untrusted and unsigned processes that run from USB`
 

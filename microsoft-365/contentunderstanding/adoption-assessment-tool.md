@@ -17,17 +17,14 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: Dowiedz się, jak używać narzędzia do oceny wdrażania, aby zobaczyć, jak twoja organizacja może korzystać z SharePoint Syntex.
-ms.openlocfilehash: dbe9ebe47526f15216e4366bf98f086d86bed5e4
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 8b4ffc6358487ec6cb66830fd56541bfc0b3df4f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772716"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015734"
 ---
 # <a name="discover-opportunities-in-sharepoint-syntex-by-using-the-microsoft-365-assessment-tool"></a>Odnajdywanie możliwości w SharePoint Syntex przy użyciu narzędzia Microsoft 365 Assessment
-
-> [!IMPORTANT]
-> Narzędzie Microsoft 365 Assessment i wszystkie inne składniki PnP to narzędzia typu open source wspierane przez aktywną społeczność, która zapewnia im wsparcie. Nie ma umowy SLA dla obsługi narzędzi typu open source z oficjalnych kanałów pomocy technicznej firmy Microsoft. 
 
 > [!NOTE]
 > Narzędzie do oceny Microsoft 365 można uruchamiać tylko w usłudze SharePoint Online. 

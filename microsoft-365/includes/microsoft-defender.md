@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender ważnych wskazówek
-description: Uwaga dotycząca ważnych Microsoft 365 Defender wskazówek.
+title: Microsoft 365 Defender ważne wskazówki
+description: Uwaga dotycząca ważnych wskazówek Microsoft 365 Defender.
 ms.date: 09/21/2020
 ms.reviewer: ''
 manager: dansimp

@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: vivkuma
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak przeglądać dzienniki inspekcji.
-ms.openlocfilehash: 59e45f33b1c6708b4743605bda6ac4c93499bf59
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: a357d6d4383fb967b09d1ce3dc1be68d7fd2ca4f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188773"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017515"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>Przeglądanie dzienników inspekcji w Microsoft 365 Lighthouse
 
@@ -60,14 +61,14 @@ W poniższej tabeli wymieniono działania przechwycone w dziennikach inspekcji u
 | Nazwa działania | Obszar w latarni morskiej | Zainicjowano akcję | Wpływ na usługę |
 |--|--|--|--|
 | **zastosuj** lub **wdróż** | Najemców | Stosowanie planu wdrożenia | Azure AD, Microsoft Endpoint Manager (MEM) |
-| **assignTag** | Najemców | Stosowanie tagu od klienta | Latarnia morska |
-| **changeDeploymentStatus** lub **przypisz** | Najemców | Aktualizowanie stanu planu akcji dla planu wdrożenia | Latarnia morska |
+| **assignTag** | Najemców | Stosowanie tagu od klienta | Lighthouse |
+| **changeDeploymentStatus** lub **przypisz** | Najemców | Aktualizowanie stanu planu akcji dla planu wdrożenia | Lighthouse |
 | **managedTenantOperations** | Najemców | Wyświetlanie informacji o planie wdrożenia | Azure AD |
-| **offboardTenant** | Najemców | Inaktywowanie klienta | Latarnia morska |
-| **resetTenantOnboardingStatus** | Najemców | Reaktywny klient | Latarnia morska |
-| **tenantTags** | Najemców | Tworzenie lub usuwanie tagu | Latarnia morska |
-| **tenantCustomizedInformation** | Najemców | Tworzenie, aktualizowanie lub usuwanie witryny internetowej klienta lub informacji kontaktowych | Latarnia morska |
-| **unassignTag** | Najemców | Usuwanie tagu z klienta | Latarnia morska |
+| **offboardTenant** | Najemców | Inaktywowanie klienta | Lighthouse |
+| **resetTenantOnboardingStatus** | Najemców | Reaktywny klient | Lighthouse |
+| **tenantTags** | Najemców | Tworzenie lub usuwanie tagu | Lighthouse |
+| **tenantCustomizedInformation** | Najemców | Tworzenie, aktualizowanie lub usuwanie witryny internetowej klienta lub informacji kontaktowych | Lighthouse |
+| **unassignTag** | Najemców | Usuwanie tagu z klienta | Lighthouse |
 | **Sprawdzania poprawności** | Najemców | Testowanie planu wdrożenia | Azure AD |
 | **blockUserSignin** | Użytkownicy | Blokuj logowanie | Azure AD |
 | **confirmUsersCompromised** | Użytkownicy | Potwierdzanie naruszenia zabezpieczeń użytkownika | Azure AD |

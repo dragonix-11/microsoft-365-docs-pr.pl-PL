@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: katmartin
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse zapoznaj się ze stroną Windows 365 (komputery w chmurze).
-ms.openlocfilehash: 325fe39c144227052c966b81a8a2109a07fb0cf2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b96660f2666d7edce383a1d2e222e23d9b17a5b3
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100286"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017471"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Omówienie strony Windows 365 (komputery w chmurze) w Microsoft 365 Lighthouse  
   
@@ -32,7 +33,7 @@ Aby uzyskać więcej informacji na temat Windows 365, zobacz [Co to jest Windows
 > [!IMPORTANT]
 > Przed rozpoczęciem zarządzania nimi w usłudze Lighthouse musisz przejść do usługi [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) , aby aprowizować komputery w chmurze dla każdej dzierżawy klienta. Nie można aprowizować z poziomu usługi Lighthouse.
 
-Po zainicjowaniu obsługi administracyjnej komputerów w chmurze dla dzierżawy klienta karta Windows 365 na stronie głównej Microsoft 365 zawiera krótki alert dotyczący komputerów w chmurze wymagających akcji, takich jak liczba komputerów w chmurze, których nie można aprowizować, i błędy połączeń sieciowych platformy Azure. Aby uzyskać szczegółowy stan, wybierz przycisk na karcie Windows 365 (lub wybierz **pozycję Windows 365** w okienku nawigacji po lewej stronie), aby otworzyć stronę Windows 365. Na tej stronie można uzyskać przegląd stanu komputerów w chmurze przypisanych do dzierżaw klientów, wyświetlić listę wszystkich zarządzanych komputerów w chmurze i dzierżaw, do których są przypisani, oraz wyświetlić połączenia sieciowe platformy Azure między dzierżawami klientów i Azure Active Directory (Azure AD) oraz ich stan.
+Po zainicjowaniu obsługi administracyjnej komputerów w chmurze dla dzierżawy klienta karta Windows 365 na stronie głównej Microsoft 365 zawiera krótki alert dotyczący komputerów w chmurze wymagających akcji, takich jak liczba komputerów w chmurze, których nie można aprowizować, i błędy połączeń sieciowych platformy Azure. Aby uzyskać szczegółowy stan, wybierz przycisk na karcie Windows 365 (lub wybierz **pozycję Windows 365** w okienku nawigacji po lewej stronie), aby otworzyć stronę Windows 365. Na tej stronie możesz uzyskać przegląd stanu komputerów w chmurze przypisanych do dzierżaw klientów, wyświetlić listę wszystkich zarządzanych komputerów w chmurze oraz dzierżaw, do których są przypisani, oraz wyświetlić połączenia sieciowe platformy Azure między dzierżawami klientów i Azure Active Directory (Azure AD) i ich stanem.
 
 ## <a name="overview-tab"></a>Karta Przegląd
 

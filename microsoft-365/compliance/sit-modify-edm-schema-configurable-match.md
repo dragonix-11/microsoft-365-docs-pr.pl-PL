@@ -1,5 +1,5 @@
 ---
-title: Modyfikowanie schematu dokładnego dopasowania danych w celu używania konfigurowalnego dopasowania
+title: Modyfikowanie schematu dokładnego dopasowania danych w celu użycia konfigurowalnego dopasowania
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,47 +15,49 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak zmodyfikować schemat edm w celu używania konfigurowalnego dopasowania.
+description: Dowiedz się, jak zmodyfikować schemat edm w celu użycia konfigurowalnego dopasowania.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf11e60f3fce46926d297c97a44c7d494942d556
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: f5eb282bd004956d6ca98a9347ef8d832784b55f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63009705"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014789"
 ---
-# <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modyfikowanie schematu dokładnego dopasowania danych w celu używania konfigurowalnego dopasowania
+# <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modyfikowanie schematu dokładnego dopasowania danych w celu użycia konfigurowalnego dopasowania
 
-Klasyfikacja oparta na danych (EDM, Exact Data Match) umożliwia tworzenie niestandardowych typów informacji poufnych, które odwołują się do dokładnych wartości w bazie danych informacji poufnych. Jeśli chcesz zezwolić na warianty dokładnego ciągu znaków, możesz użyć konfigurowalnego dopasowania, aby określić, Microsoft 365 ignorować literę, a niektóre ograniczniki.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Klasyfikacja oparta na dokładnym dopasowaniu danych (EDM) umożliwia tworzenie niestandardowych typów informacji poufnych odwołujących się do dokładnych wartości w bazie danych informacji poufnych. Jeśli chcesz zezwolić na warianty dokładnego ciągu, możesz użyć *konfigurowalnego dopasowania* , aby poinformować usługę Microsoft Purview o ignorowaniu wielkości liter i niektórych ograniczników.
 
 > [!IMPORTANT]
 > Ta procedura służy do modyfikowania istniejącego schematu i pliku danych EDM.
 
-1. **OdinstalujEdmUploadAgent.exe** z komputera, z Microsoft 365 na potrzeby przekazywania plików danych i schematu EDM.
+1. Odinstaluj **EdmUploadAgent.exe** z komputera używanego do nawiązywania połączenia z Microsoft 365 na potrzeby przekazywania schematu EDM i pliku danych.
 
-2. Pobierz odpowiedni **plikEdmUploadAgent.exe** twojej subskrypcji, korzystając z poniższych linków:
-    - [Komercyjna + GCC](https://go.microsoft.com/fwlink/?linkid=2088639) — większość klientów komercyjnych powinna używać tej
-    - [GCC-wysoka —](https://go.microsoft.com/fwlink/?linkid=2137521) ta rozwiązanie jest przeznaczone specjalnie dla subskrybentów chmury o wysokim poziomie zabezpieczeń
-    - [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) — jest to przeznaczone specjalnie dla klientów w chmurze Działu Obrony Stanów Zjednoczonych
+2. Pobierz odpowiedni plik **EdmUploadAgent.exe** dla subskrypcji, korzystając z poniższych linków:
+    - [Komercyjne i GCC](https://go.microsoft.com/fwlink/?linkid=2088639) — większość klientów komercyjnych powinna z tego korzystać
+    - [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521) — jest to przeznaczone specjalnie dla subskrybentów chmury dla instytucji rządowych o wysokim poziomie zabezpieczeń
+    - [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) — jest to przeznaczone specjalnie dla klientów w chmurze departamentu obrony Stany Zjednoczone
 
-3. Autoryzuj agenta Upload usługi EDM, otwórz okno wiersza polecenia (jako administrator) i uruchom następujące polecenie:
+3. Autoryzuj agenta przekazywania EDM, otwórz okno wiersza polecenia (jako administrator) i uruchom następujące polecenie:
 
    ```dos
    EdmUploadAgent.exe /Authorize
    ```
 
-4. Jeśli nie masz bieżącej kopii istniejącego schematu, musisz pobrać kopię istniejącego schematu. Uruchom to polecenie:
+4. Jeśli nie masz bieżącej kopii istniejącego schematu, musisz pobrać kopię istniejącego schematu, uruchom następujące polecenie:
 
    ```dos
    EdmUploadAgent.exe /SaveSchema /DataStoreName <dataStoreName> [/OutputDir [Output dir location]]
    ```
 
-5. Dostosuj schemat, aby w każdej kolumnie używane są "caseInsensitive" i / lub "ignorowaneDelimiters".  Wartość domyślna dla ciągu "caseInsensitive" to "false", a dla "ignorowanychDelimiters" jest to pusty ciąg.
+5. Dostosuj schemat tak, aby każda kolumna wykorzystywała "caseInsensitive" i /lub "ignoredDelimiters".  Wartość domyślna "caseInsensitive" to "false", a dla "ignoredDelimiters" jest pustym ciągiem.
 
     > [!NOTE]
-    > Źródłowy niestandardowy typ informacji poufnych lub wbudowany typ informacji poufnych używany do wykrywania ogólnego wzorca regex musi obsługiwać wykrywanie odmian danych wejściowych wymienionych zignorowanychDelimiters. Na przykład wbudowany amerykański numer PESEL (SSN) o typie informacji poufnych może wykrywać odmiany danych, które zawierają kreski, spacje lub brak odstępów między pogrupowanych numerami, które zawierają nazwę SSN. W efekcie jedynymi ogranicznikami, które należy uwzględnić w ignorowanych plikach EDM dla danych SSN, są: kreska i spacja.
+    > Podstawowy niestandardowy typ informacji poufnych lub wbudowany typ informacji poufnych używany do wykrywania ogólnego wzorca regex musi obsługiwać wykrywanie danych wejściowych odmian wymienionych z ignorowanymiDelimiterami. Na przykład wbudowany typ informacji poufnych numeru ubezpieczenia społecznego (SSN) w SSN może wykrywać odmiany danych, które obejmują kreski, spacje lub brak spacji między zgrupowanymi numerami, które tworzą nazwę SSN. W związku z tym jedynymi ogranicznikami, które są istotne do uwzględnienia w ignorowanychdelimiterach EDM dla danych SSN, są: kreska i spacja.
 
-    Oto przykładowy schemat, który symulowa dopasowanie bez uwzględniania wielkości liter przez utworzenie dodatkowych kolumn potrzebnych do rozpoznawania odmian wielkości liter w poufnych danych.
+    Oto przykładowy schemat, który symuluje dopasowanie bez uwzględniania wielkości liter, tworząc dodatkowe kolumny potrzebne do rozpoznawania odmian wielkości liter w danych poufnych.
 
     ```xml
     <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -68,9 +70,9 @@ Klasyfikacja oparta na danych (EDM, Exact Data Match) umożliwia tworzenie niest
     </EdmSchema>
     ```
 
-    W powyższym przykładzie odmiany `PolicyNumber` oryginalnej kolumny nie będą już potrzebne, jeśli obie `caseInsensitive` zostaną `ignoredDelimiters` dodane.
+    W powyższym przykładzie odmiany oryginalnej `PolicyNumber` kolumny nie będą już potrzebne, jeśli oba `caseInsensitive` `ignoredDelimiters` i zostaną dodane.
 
-    Aby zaktualizować ten schemat w celu używania flag i przez program EDM `caseInsensitive` `ignoredDelimiters` , można je skonfigurować jako zgodne.  Wygląda to następująco:
+    Aby zaktualizować ten schemat tak, aby program EDM używał konfigurowalnego dopasowania, `caseInsensitive` użyj flag i `ignoredDelimiters` .  Oto jak to wygląda:
 
     ```xml
     <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -80,7 +82,7 @@ Klasyfikacja oparta na danych (EDM, Exact Data Match) umożliwia tworzenie niest
     </EdmSchema>
     ```
 
-    Flaga `ignoredDelimiters` obsługuje dowolny znak niealalnumeryczny. Oto kilka przykładów:
+    Flaga `ignoredDelimiters` obsługuje dowolny znak inny niż alfanumeryczny. Oto kilka przykładów:
     - \.
     - \-
     - \/
@@ -99,16 +101,16 @@ Klasyfikacja oparta na danych (EDM, Exact Data Match) umożliwia tworzenie niest
     - \;
 
     Flaga `ignoredDelimiters` nie obsługuje:
-    - znaki 0-9
-    - A–Z
+    - znaki 0–9
+    - A-Z
     - a-z
     - \"
     - \,
 
-6. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+6. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
     > [!NOTE]
-    > Jeśli w Twojej organizacji klucz klienta został Microsoft 365 na poziomie dzierżawy (publiczna wersja [Zapoznawcza),](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview) funkcja dokładnego dopasowania danych automatycznie użyje funkcji szyfrowania. Ta usługa jest dostępna tylko dla licencjonowanych dzierżawców usługi E5 w chmurze komercyjnej.
+    > Jeśli Twoja organizacja skonfigurowała [klucz klienta dla Microsoft 365 na poziomie dzierżawy (publiczna wersja zapoznawcza),](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview) dokładne dopasowanie danych automatycznie użyje jej funkcji szyfrowania. Jest to dostępne tylko dla dzierżaw licencjonowanych E5 w chmurze komercyjnej.
 
 7. Zaktualizuj schemat, uruchamiając następujące polecenie:
 
@@ -116,28 +118,28 @@ Klasyfikacja oparta na danych (EDM, Exact Data Match) umożliwia tworzenie niest
    Set-DlpEdmSchema -FileData ([System.IO.File]::ReadAllBytes('.\\edm.xml')) -Confirm:$true
    ```
 
-8. W razie potrzeby zaktualizuj plik danych, aby dopasować go do nowej wersji schematu.
+8. W razie potrzeby zaktualizuj plik danych, aby był zgodny z nową wersją schematu.
 
     > [!TIP]
-    > Opcjonalnie można uruchomić sprawdzanie poprawności pliku csv przed jego przekazaniem, uruchamiając program:
+    > Opcjonalnie możesz uruchomić walidację pliku csv przed przekazaniem, uruchamiając polecenie:
     >
     > `EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
     >
-    > Aby uzyskać więcej informacji na temat EdmUploadAgent.exe parametrów, uruchom
+    > Aby uzyskać więcej informacji na temat wszystkich EdmUploadAgent.exe obsługiwanych parametrów, uruchom polecenie
     >
     > `EdmUploadAgent.exe /?`
 
-9. Otwórz okno wiersza polecenia (jako administrator) i uruchom następujące polecenie, aby skrótować i przekazać poufne dane:
+9. Otwórz okno wiersza polecenia (jako administrator) i uruchom następujące polecenie, aby utworzyć skrót i przekazać poufne dane:
 
    ```dos
    EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Salt [custom salt] /Schema [Schema file]
    ```
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
-- [Informacje o dokładnie tych typach informacji poufnych na podstawie danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
-- [Definicje typu jednostki informacji poufnych](sensitive-information-type-entity-definitions.md)
+- [Dowiedz się więcej o dokładnych typach informacji poufnych opartych na dopasowaniu danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Definicje jednostek typu informacji poufnych](sensitive-information-type-entity-definitions.md)
 - [Niestandardowe typy informacji poufnych](./sensitive-information-type-learn-about.md)
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md)
-- [Usługa Microsoft Defender dla aplikacji w chmurze](/cloud-app-security)
+- [Dowiedz się więcej o zapobieganiu utracie danych w usłudze Microsoft Purview](dlp-learn-about-dlp.md)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

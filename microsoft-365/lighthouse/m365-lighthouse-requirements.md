@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych uzyskaj listę wymagań dotyczących używania Microsoft 365 Lighthouse.
-ms.openlocfilehash: 79084edf573f90ee4d977528c45fdfbfcedff36f
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+ms.openlocfilehash: 4dae28206ba06b8e942290da29ba6a86b49ca7fd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692721"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017549"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Wymagania dotyczące portalu Microsoft 365 Lighthouse
 
@@ -35,7 +36,7 @@ Ponadto każda dzierżawa klienta MSP musi kwalifikować się do aplikacji Light
 - Musi mieć co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business lub Microsoft Defender dla Firm
 - Nie może mieć więcej niż 1000 licencjonowanych użytkowników
 
-*Delegowane uprawnienia Administracja (DAP) są wymagane do dołączenia klientów do usługi Lighthouse. Zalecamy również ustanowienie szczegółowych uprawnień delegowania Administracja (GDAP) z klientami, aby umożliwić bezpieczniejszy dostęp delegowany. Chociaż dap i GDAP współistnieją, GDAP będzie mieć pierwszeństwo dla klientów, gdzie oba modele są w miejscu. Wkrótce klienci z zaledwie GDAP (i bez dap) będą mogli dołączyć do lighthouse.
+Aby dołączyć klientów do usługi Lighthouse, wymagane są szczegółowe uprawnienia administratora delegowanego (GDAP) oraz relacja pośredniego odsprzedawcy lub relacja delegowane uprawnienia administratora (DAP). Jeśli dap i GDAP współistnieją w dzierżawie klienta, uprawnienia GDAP mają pierwszeństwo dla techników MSP w grupach zabezpieczeń z obsługą protokołu GDAP. Wkrótce klienci z relacjami tylko Z GDAP (bez pośrednich relacji odsprzedawców) będą mogli dołączyć do usługi Lighthouse.
 
 ## <a name="requirements-for-enabling-device-management"></a>Wymagania dotyczące włączania zarządzania urządzeniami
 

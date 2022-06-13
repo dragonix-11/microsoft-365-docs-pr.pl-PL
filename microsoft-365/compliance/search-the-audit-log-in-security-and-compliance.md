@@ -1,5 +1,5 @@
 ---
-title: Przeszukaj dziennik inspekcji w portal zgodności Microsoft Purview
+title: Przeszukiwanie dziennika inspekcji w portalu zgodności usługi Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Użyj portal zgodności Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji.
+description: Użyj portalu zgodności usługi Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 9d556facba3fa1a9c1dbafbfe2b2cb519f1b362d
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 80ddd03eb37bd1b8984585a3e6d38b25a3a2b983
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810971"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014283"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Przeszukiwanie dziennika inspekcji w portalu zgodności
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Jeśli tak, możesz użyć narzędzia do wyszukiwania dzienników inspekcji w portal zgodności Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Użytkownicy w organizacji mogą używać narzędzia do wyszukiwania dzienników inspekcji, aby wyszukiwać, wyświetlać i eksportować (do pliku CSV) rekordy inspekcji dla tych operacji.
+Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Jeśli tak, możesz użyć narzędzia do wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Użytkownicy w organizacji mogą używać narzędzia do wyszukiwania dzienników inspekcji, aby wyszukiwać, wyświetlać i eksportować (do pliku CSV) rekordy inspekcji dla tych operacji.
 
 ## <a name="microsoft-365-services-that-support-auditing"></a>usługi Microsoft 365 obsługujące inspekcję
 
@@ -107,7 +107,7 @@ Przed rozpoczęciem przeszukiwania dziennika inspekcji przeczytaj następujące 
     > [!NOTE]
     > Nawet jeśli domyślnie włączono inspekcję skrzynek pocztowych, można zauważyć, że zdarzenia inspekcji skrzynki pocztowej dla niektórych użytkowników nie są odnalezione podczas przeszukiwania dzienników inspekcji w portalu zgodności lub za pośrednictwem interfejsu API działania zarządzania Office 365. Aby uzyskać więcej informacji, zobacz [Więcej informacji na temat rejestrowania inspekcji skrzynki pocztowej](enable-mailbox-auditing.md#more-information).
 
-- Jeśli chcesz wyłączyć wyszukiwanie dzienników inspekcji w organizacji, możesz uruchomić następujące polecenie w zdalnym programie PowerShell połączonym z organizacją Exchange Online:
+- Jeśli chcesz wyłączyć wyszukiwanie dzienników inspekcji w organizacji, możesz uruchomić następujące polecenie w programie Exchange Online programu PowerShell:
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
@@ -573,8 +573,8 @@ W poniższej tabeli wymieniono działania synchronizacji plików w usłudze Shar
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
-|Zezwalanie komputerowi na synchronizowanie plików|ManagedSyncClientAllowed|Użytkownik pomyślnie ustanawia relację synchronizacji z witryną. Relacja synchronizacji powiodła się, ponieważ komputer użytkownika jest członkiem domeny, która została dodana do listy domen (nazywanych *listą bezpiecznych adresatów*), które mogą uzyskiwać dostęp do bibliotek dokumentów w organizacji. <br/><br/> Aby uzyskać więcej informacji na temat tej funkcji, zobacz [Używanie poleceń cmdlet Windows PowerShell do włączania synchronizacja usługi OneDrive dla domen znajdujących się na liście bezpiecznych adresatów](/powershell/module/sharepoint-online/).|
-|Zablokowane synchronizowanie plików przez komputer|UnmanagedSyncClientBlocked|Użytkownik próbuje ustanowić relację synchronizacji z lokacją z komputera, który nie jest członkiem domeny organizacji lub jest członkiem domeny, która nie została dodana do listy domen (nazywanych  *listą bezpiecznych adresatów),*  która może uzyskiwać dostęp do bibliotek dokumentów w organizacji. Relacja synchronizacji jest niedozwolona, a komputer użytkownika nie może synchronizować, pobierać ani przekazywać plików w bibliotece dokumentów. <br/><br/> Aby uzyskać informacje o tej funkcji, zobacz [Używanie poleceń cmdlet Windows PowerShell do włączania synchronizacja usługi OneDrive dla domen znajdujących się na liście bezpiecznych adresatów](/powershell/module/sharepoint-online/).|
+|Zezwalanie komputerowi na synchronizowanie plików|ManagedSyncClientAllowed|Użytkownik pomyślnie ustanawia relację synchronizacji z witryną. Relacja synchronizacji powiodła się, ponieważ komputer użytkownika jest członkiem domeny, która została dodana do listy domen (nazywanych *listą bezpiecznych adresatów*), które mogą uzyskiwać dostęp do bibliotek dokumentów w organizacji. <br/><br/> Aby uzyskać więcej informacji na temat tej funkcji, zobacz [Używanie poleceń cmdlet programu PowerShell do włączania synchronizacja usługi OneDrive dla domen znajdujących się na liście bezpiecznych adresatów](/powershell/module/sharepoint-online/).|
+|Zablokowane synchronizowanie plików przez komputer|UnmanagedSyncClientBlocked|Użytkownik próbuje ustanowić relację synchronizacji z lokacją z komputera, który nie jest członkiem domeny organizacji lub jest członkiem domeny, która nie została dodana do listy domen (nazywanych  *listą bezpiecznych adresatów),*  która może uzyskiwać dostęp do bibliotek dokumentów w organizacji. Relacja synchronizacji jest niedozwolona, a komputer użytkownika nie może synchronizować, pobierać ani przekazywać plików w bibliotece dokumentów. <br/><br/> Aby uzyskać informacje o tej funkcji, zobacz [Używanie poleceń cmdlet programu PowerShell do włączania synchronizacja usługi OneDrive dla domen znajdujących się na liście bezpiecznych adresatów](/powershell/module/sharepoint-online/).|
 |Pobrane pliki na komputer|FileSyncDownloadedFull|Użytkownik pobiera plik na swój komputer z biblioteki dokumentów SharePoint lub OneDrive dla Firm przy użyciu aplikacji synchronizacja usługi OneDrive (OneDrive.exe).|
 |Pobrane zmiany pliku na komputerze|FileSyncDownloadedPartial|To zdarzenie zostało przestarzałe wraz ze starą aplikacją synchronizacji OneDrive dla Firm (Groove.exe).|
 |Przekazane pliki do biblioteki dokumentów|FileSyncUploadedFull|Użytkownik przekazuje nowy plik lub zmiany do pliku w bibliotece dokumentów SharePoint lub OneDrive dla Firm przy użyciu aplikacji synchronizacja usługi OneDrive (OneDrive.exe).|
@@ -645,7 +645,7 @@ W poniższej tabeli wymieniono zdarzenia wynikające z zadań administracji loka
 
 W poniższej tabeli wymieniono działania, które mogą być rejestrowane przez rejestrowanie inspekcji skrzynki pocztowej. Działania skrzynki pocztowej wykonywane przez właściciela skrzynki pocztowej, delegowanego użytkownika lub administratora są automatycznie rejestrowane w dzienniku inspekcji przez maksymalnie 90 dni. Administrator może wyłączyć rejestrowanie inspekcji skrzynki pocztowej dla wszystkich użytkowników w organizacji. W takim przypadku żadne akcje skrzynki pocztowej dla żadnego użytkownika nie są rejestrowane. Aby uzyskać więcej informacji, zobacz [Zarządzanie inspekcją skrzynek pocztowych](enable-mailbox-auditing.md).
 
- Działania skrzynki pocztowej można również wyszukać za pomocą polecenia cmdlet [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) w programie Exchange Online programu PowerShell.
+ Działania skrzynki pocztowej można również wyszukiwać za pomocą polecenia cmdlet [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) w [programie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
@@ -785,7 +785,7 @@ Aby uzyskać listę i szczegółowy opis zarejestrowanych działań zbierania el
 
 ### <a name="ediscovery-premium-activities"></a>Działania zbierania elektronicznych materiałów dowodowych (Premium)
 
-Możesz również wyszukać w dzienniku inspekcji działania w Microsoft Purview eDiscovery (Premium). Opis tych działań można znaleźć w sekcji "Działania zbierania elektronicznych materiałów dowodowych (Premium) w [temacie Wyszukiwanie działań zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-premium-activities).
+Możesz również wyszukać w dzienniku inspekcji działania w usłudze Microsoft Purview eDiscovery (Premium). Opis tych działań można znaleźć w sekcji "Działania zbierania elektronicznych materiałów dowodowych (Premium) w [temacie Wyszukiwanie działań zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-premium-activities).
 
 ### <a name="power-bi-activities"></a>działania Power BI
 
@@ -805,9 +805,9 @@ Usługa Workplace Analytics zapewnia wgląd w sposób współpracy grup w całej
 |Usunięty wynik|DeletedResult|Analityk usunął wynik zapytania.|
 |Pobrany raport|Pobranyraport|Analityk pobrał plik wyników zapytania.|
 |Wykonane zapytanie|ExecutedQuery|Analityk uruchomił zapytanie.|
-|Zaktualizowane ustawienie dostępu do danych|UpdatedDataAccessSetting|Administracja zaktualizowane ustawienia dostępu do danych.|
-|Zaktualizowane ustawienie prywatności|AktualizacjaPrivacySetting|Administracja zaktualizowane ustawienia prywatności, na przykład minimalny rozmiar grupy.|
-|Przekazane dane organizacji|UploadedOrgData|Administracja przekazany plik danych organizacji.|
+|Zaktualizowane ustawienie dostępu do danych|UpdatedDataAccessSetting|Administrator zaktualizował ustawienia dostępu do danych.|
+|Zaktualizowane ustawienie prywatności|AktualizacjaPrivacySetting|Administrator zaktualizował ustawienia prywatności; na przykład minimalny rozmiar grupy.|
+|Przekazane dane organizacji|UploadedOrgData|Administrator przekazał plik danych organizacji.|
 |Zalogowany użytkownik<sup>*</sup>| UserLoggedIn |Użytkownik zalogował się do swojego konta użytkownika Microsoft 365.|
 |Użytkownik wylogowany<sup>*</sup>| UserLoggedOff |Użytkownik wylogowył się ze swojego konta użytkownika Microsoft 365.
 |Wyświetlone eksplorowanie|ViewedExplore|Wizualizacje przeglądane przez analityków na co najmniej jednej karcie Eksploruj stronę.|
@@ -930,7 +930,7 @@ Jeśli działanie formularzy jest wykonywane przez współautora lub anonimowego
 |Wyświetlona odpowiedź|ViewResponse|Właściciel formularza wyświetla określoną odpowiedź. <br><br>Właściwość ResponseId:string i Właściwość ResponderId:string wskazuje, który wynik jest wyświetlany. <br><br>W przypadku odpowiedzi anonimowej właściwość ResponderId będzie mieć wartość null.|
 |Link do podsumowania utworzonego|GetSummaryLink|Właściciel formularza tworzy link do wyników podsumowania w celu udostępniania wyników.|
 |Link do usuniętego podsumowania|DeleteSummaryLink|Właściciel formularza usuwa link wyników podsumowania.|
-|Zaktualizowany stan wyłudzania informacji o formularzu|UpdatePhishingStatus|To zdarzenie jest rejestrowane za każdym razem, gdy została zmieniona szczegółowa wartość stanu zabezpieczeń wewnętrznych, niezależnie od tego, czy zmieniono ostateczny stan zabezpieczeń (na przykład formularz jest teraz zamknięty, czy otwarty). Oznacza to, że mogą zostać wyświetlone zduplikowane zdarzenia bez ostatecznej zmiany stanu zabezpieczeń. Możliwe wartości stanu dla tego zdarzenia to:<br/>- Zdjąć <br/>- Take Down by Administracja <br/>- odblokowane Administracja <br/>— Automatyczne blokowanie <br/>— Automatyczne odblokowywanie <br/>- Zgłoszone przez klienta <br/>- Resetowanie zgłoszonego klienta|
+|Zaktualizowany stan wyłudzania informacji o formularzu|UpdatePhishingStatus|To zdarzenie jest rejestrowane za każdym razem, gdy została zmieniona szczegółowa wartość stanu zabezpieczeń wewnętrznych, niezależnie od tego, czy zmieniono ostateczny stan zabezpieczeń (na przykład formularz jest teraz zamknięty, czy otwarty). Oznacza to, że mogą zostać wyświetlone zduplikowane zdarzenia bez ostatecznej zmiany stanu zabezpieczeń. Możliwe wartości stanu dla tego zdarzenia to:<br/>- Zdjąć <br/>- Take Down by Admin (Wyłączanie przez administratora) <br/>— Odblokowano administratora <br/>— Automatyczne blokowanie <br/>— Automatyczne odblokowywanie <br/>- Zgłoszone przez klienta <br/>- Resetowanie zgłoszonego klienta|
 |Zaktualizowany stan wyłudzania informacji przez użytkownika|UpdateUserPhishingStatus|To zdarzenie jest rejestrowane za każdym razem, gdy wartość stanu zabezpieczeń użytkownika została zmieniona. Wartość stanu użytkownika w rekordzie inspekcji jest **potwierdzona jako Phisher** , gdy użytkownik utworzył formularz wyłudzania informacji, który został zdjęty przez zespół ds. bezpieczeństwa usługi Microsoft Online. Jeśli administrator odblokuje użytkownika, wartość stanu użytkownika jest ustawiona na **wartość Resetuj jako normalny użytkownik**.|
 |Wysłane formularze Pro zaproszenia|ProInvitation|Użytkownik klika, aby aktywować Pro wersji próbnej.|
 |Zaktualizowane ustawienie formularza<sup>*</sup> |UpdateFormSetting|Właściciel formularza aktualizuje jedno lub wiele ustawień formularza. <br><br>Właściwość FormSettingName:string wskazuje zaktualizowaną nazwę ustawień poufnych. Właściwość NewFormSettings:string wskazuje nazwę zaktualizowanych ustawień i nową wartość. Właściwość thankYouMessageContainsLink:boolean wskazuje zaktualizowany komunikat podziękowania zawiera link url.|
@@ -1015,8 +1015,8 @@ W poniższej tabeli wymieniono działania w wiadomości e-mail z informacją, kt
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:----|:-----|:-----|
-|Zaktualizowane ustawienia prywatności organizacji|UpdatedOrganizationBriefingSettings|Administracja aktualizuje ustawienia prywatności organizacji dla wiadomości e-mail z briefingiem. |
-|Zaktualizowane ustawienia prywatności użytkowników|UpdatedUserBriefingSettings|Administracja aktualizuje ustawienia prywatności użytkownika dla wiadomości e-mail z briefingiem.
+|Zaktualizowane ustawienia prywatności organizacji|UpdatedOrganizationBriefingSettings|Administrator aktualizuje ustawienia prywatności organizacji dla wiadomości e-mail z briefingiem. |
+|Zaktualizowane ustawienia prywatności użytkowników|UpdatedUserBriefingSettings|Administrator aktualizuje ustawienia prywatności użytkownika dla wiadomości e-mail z briefingiem.
 
 ### <a name="myanalytics-activities"></a>Działania myAnalytics
 
@@ -1024,8 +1024,8 @@ W poniższej tabeli wymieniono działania w usłudze MyAnalytics, które są rej
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:-----|:-----|:-----|
-|Zaktualizowano ustawienia myanalytics organizacji|UpdatedOrganizationMyAnalyticsSettings|Administracja aktualizuje ustawienia na poziomie organizacji dla usługi MyAnalytics. |
-|Zaktualizowano ustawienia myanalytics użytkownika|UpdatedUserMyAnalyticsSettings|Administracja aktualizuje ustawienia użytkownika dla usługi MyAnalytics.|
+|Zaktualizowano ustawienia myanalytics organizacji|UpdatedOrganizationMyAnalyticsSettings|Administrator aktualizuje ustawienia na poziomie organizacji dla usługi MyAnalytics. |
+|Zaktualizowano ustawienia myanalytics użytkownika|UpdatedUserMyAnalyticsSettings|Administrator aktualizuje ustawienia użytkownika dla usługi MyAnalytics.|
 
 ### <a name="information-barriers-activities"></a>Działania związane z barierami informacyjnymi
 
@@ -1064,7 +1064,7 @@ W poniższej tabeli wymieniono działania dotyczące raportów użycia, które s
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:-----|:-----|:-----|
-|Zaktualizowane ustawienia prywatności raportu użycia|UpdateUsageReportsPrivacySetting|Administracja zaktualizowane ustawienia prywatności dla raportów użycia. |
+|Zaktualizowane ustawienia prywatności raportu użycia|UpdateUsageReportsPrivacySetting|Administrator zaktualizował ustawienia prywatności raportów użycia. |
 
 ### <a name="exchange-admin-audit-log"></a>dziennik inspekcji administratora Exchange
 
@@ -1134,7 +1134,7 @@ Tak, dzienniki inspekcji można pobrać przy użyciu następujących metod:
 
 - [Interfejs API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- [Narzędzie do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w portal zgodności Microsoft Purview.
+- [Narzędzie do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w portalu zgodności usługi Microsoft Purview.
 
 - Polecenie cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) w programie Exchange Online programu PowerShell.
 

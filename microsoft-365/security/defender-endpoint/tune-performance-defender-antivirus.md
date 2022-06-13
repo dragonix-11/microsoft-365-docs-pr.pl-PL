@@ -14,17 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 43b39cac260f5bda773af6a428304dc898444771
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 558358cca679d9600f9a95c13c4fac6147764b75
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419599"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013359"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizator wydajności dla Program antywirusowy Microsoft Defender
 
 **Dotyczy**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - Program antywirusowy Microsoft Defender
 
@@ -150,7 +150,7 @@ New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
 
 Powyższe polecenie zbiera nagranie wydajności i zapisuje je w określonej ścieżce: **.\Defender-scans.etl**.
 
-##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>Przykład 2. Zbieranie nagrania wydajności dla sesji zdalnego programu PowerShell
+##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>Przykład 2: Zbieranie nagrania wydajności dla zdalnej sesji programu PowerShell
 
 ```powershell
 $s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
@@ -160,9 +160,11 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 Powyższe polecenie zbiera rejestrowanie wydajności na serwerze Server02 (zgodnie z argumentem $s sesji parametru) i zapisuje je w określonej ścieżce: **C:\LocalPathOnServer02\trace.etl** na serwerze Server02.
 
 ##### <a name="example-3-collect-a-performance-recording-in-non-interactive-mode"></a>Przykład 3. Zbieranie nagrania wydajności w trybie nieinterakcyjnym
+
 ```powershell
-New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60 
+New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60
 ```
+
 Powyższe polecenie zbiera rejestrowanie wydajności dla czasu trwania w sekundach określonego przez parametr -Seconds. Jest to zalecane dla użytkowników prowadzących kolekcje wsadowe, które nie wymagają interakcji ani monitu.
 
 #### <a name="parameters-new-mpperformancerecording"></a>Parametry: New-MpPerformanceRecording
@@ -192,6 +194,7 @@ Accept wildcard characters: False
 ```
 
 ##### <a name="-seconds"></a>-Seconds
+
 Określa czas trwania rejestrowania wydajności w sekundach. Jest to zalecane dla użytkowników prowadzących kolekcje wsadowe, które nie wymagają interakcji ani monitu.
 
 ```yaml
@@ -280,11 +283,13 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensio
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
 ```
+
 ##### <a name="example-5-using--raw-parameter"></a>Przykład 5. Używanie parametru -Raw
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
 ```
+
 Użycie polecenia -Raw w powyższym poleceniu określa, że dane wyjściowe powinny być czytelne dla maszyny i łatwo można je konwertować na formaty serializacji, takie jak JSON
 
 #### <a name="parameters-get-mpperformancereport"></a>Parametry: Get-MpPerformanceReport
@@ -312,9 +317,10 @@ Default value: None
 Accept pipeline input: True
 Accept wildcard characters: False
 ```
+
 ##### <a name="-raw"></a>-Nieprzetworzone
 
-Określa, że dane wyjściowe rejestrowania wydajności powinny być czytelne dla komputera i łatwo można je konwertować na formaty serializacji, takie jak JSON (na przykład za pomocą polecenia Convert-to-JSON). Jest to zalecane dla użytkowników zainteresowanych przetwarzaniem wsadowym z innymi systemami przetwarzania danych. 
+Określa, że dane wyjściowe rejestrowania wydajności powinny być czytelne dla komputera i łatwo można je konwertować na formaty serializacji, takie jak JSON (na przykład za pomocą polecenia Convert-to-JSON). Jest to zalecane dla użytkowników zainteresowanych przetwarzaniem wsadowym z innymi systemami przetwarzania danych.
 
 ```yaml
 Type: <SwitchParameter>
@@ -537,4 +543,4 @@ Jeśli szukasz informacji związanych z programem antywirusowym dla innych platf
 - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-- [Konfigurowanie usługi Defender for Endpoint w funkcjach](android-configure.md)-  Android [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender na funkcjach iOS](ios-configure-features.md)
+- [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach](android-configure.md)-  Android[Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender na funkcjach iOS](ios-configure-features.md)

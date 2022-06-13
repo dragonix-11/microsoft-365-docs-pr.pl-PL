@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Po skonfigurowaniu klucza klienta dowiedz się, jak nim zarządzać, przywracając klucze akv oraz zarządzając uprawnieniami oraz tworząc i przypisując zasady szyfrowania danych.
-ms.openlocfilehash: a1fab2694be866acd6035af90929b5ab690da031
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 08fae19a5f0f27ff530c734c46453f885ea9043e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663475"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015753"
 ---
 # <a name="manage-customer-key"></a>Zarządzanie kluczem klienta
 
@@ -30,8 +30,8 @@ Po skonfigurowaniu klucza klienta należy utworzyć i przypisać co najmniej jed
 Przed rozpoczęciem upewnij się, że wykonano zadania wymagane do skonfigurowania klucza klienta. Aby uzyskać informacje, zobacz [Konfigurowanie klucza klienta](customer-key-set-up.md). Aby utworzyć program DEP, potrzebne są identyfikatory URI Key Vault uzyskane podczas instalacji. Aby uzyskać informacje, zobacz [Uzyskiwanie identyfikatora URI dla każdego klucza Key Vault platformy Azure](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 Aby utworzyć wielozadaniowy program DEP, wykonaj następujące kroki:
-  
-1. Na komputerze lokalnym przy użyciu konta służbowego z uprawnieniami administratora globalnego lub administratora zgodności w organizacji [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) w oknie Windows PowerShell.
+
+1. Na komputerze lokalnym, używając konta służbowego z uprawnieniami administratora globalnego lub administratora zgodności w organizacji, [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Aby utworzyć program DEP, użyj polecenia cmdlet New-M365DataAtRestEncryptionPolicy.
 
@@ -73,15 +73,15 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Contoso_Glob
 
 ## <a name="create-a-dep-for-use-with-exchange-online-mailboxes"></a>Tworzenie programu DEP do użycia ze skrzynkami pocztowymi Exchange Online
 
-Przed rozpoczęciem upewnij się, że wykonano zadania wymagane do skonfigurowania usługi Azure Key Vault. Aby uzyskać informacje, zobacz [Konfigurowanie klucza klienta](customer-key-set-up.md). Wykonaj te kroki, zdalnie nawiązując połączenie z Exchange Online za pomocą Windows PowerShell.
+Przed rozpoczęciem upewnij się, że wykonano zadania wymagane do skonfigurowania usługi Azure Key Vault. Aby uzyskać informacje, zobacz [Konfigurowanie klucza klienta](customer-key-set-up.md). Te kroki zostaną ukończone w programie Exchange Online programu PowerShell.
 
 Program DEP jest skojarzony z zestawem kluczy przechowywanych w usłudze Azure Key Vault. Program DEP jest przypisywany do skrzynki pocztowej w Microsoft 365. Microsoft 365 będzie następnie używać kluczy zidentyfikowanych w zasadach do szyfrowania skrzynki pocztowej. Aby utworzyć program DEP, potrzebne są identyfikatory URI Key Vault uzyskane podczas instalacji. Aby uzyskać informacje, zobacz [Uzyskiwanie identyfikatora URI dla każdego klucza Key Vault platformy Azure](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 Pamiętaj! Podczas tworzenia programu DEP należy określić dwa klucze w dwóch różnych usługach Azure Key Vault. Utwórz te klucze w dwóch oddzielnych regionach platformy Azure, aby zapewnić nadmiarowość geograficzną.
 
 Aby utworzyć program DEP do użycia ze skrzynką pocztową, wykonaj następujące kroki:
-  
-1. Na komputerze lokalnym przy użyciu konta służbowego z uprawnieniami administratora globalnego lub administratora Exchange Online w organizacji [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) w oknie Windows PowerShell.
+
+1. Na komputerze lokalnym przy użyciu konta służbowego, które ma uprawnienia administratora globalnego lub administratora Exchange Online w organizacji, [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Aby utworzyć program DEP, użyj polecenia cmdlet New-DataEncryptionPolicy, wpisując następujące polecenie.
 
@@ -100,7 +100,7 @@ Aby utworzyć program DEP do użycia ze skrzynką pocztową, wykonaj następują
    - *KeyVaultURI2* to identyfikator URI drugiego klucza w zasadach. Na przykład <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Rozdziel dwa identyfikatory URI przecinkiem i spacji.
 
    Przykład:
-  
+
    ```powershell
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault02.vault.azure.net/keys/USA_key_01, https://contoso_CentralUSvault02.vault.azure.net/keys/USA_Key_02
    ```
@@ -110,7 +110,7 @@ Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [New-Data
 ### <a name="assign-a-dep-to-a-mailbox"></a>Przypisywanie programu DEP do skrzynki pocztowej
 
 Przypisz program DEP do skrzynki pocztowej przy użyciu polecenia cmdlet Set-Mailbox. Po przypisaniu zasad Microsoft 365 może zaszyfrować skrzynkę pocztową przy użyciu klucza zidentyfikowanego w programie DEP.
-  
+
 ```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
@@ -128,16 +128,16 @@ Gdzie *MailUserIdParameter* określa użytkownika poczty (znanego również jako
 ## <a name="create-a-dep-for-use-with-sharepoint-online-onedrive-for-business-and-teams-files"></a>Tworzenie programu DEP do użycia z plikami SharePoint Online, OneDrive dla Firm i Teams
 
 Przed rozpoczęciem upewnij się, że wykonano zadania wymagane do skonfigurowania usługi Azure Key Vault. Aby uzyskać informacje, zobacz [Konfigurowanie klucza klienta](customer-key-set-up.md).
-  
-Aby skonfigurować klucz klienta dla plików SharePoint Online, OneDrive dla Firm i Teams, wykonaj te kroki, zdalnie nawiązując połączenie z usługą SharePoint Online za pomocą usługi Windows PowerShell.
-  
+
+Aby skonfigurować klucz klienta dla plików SharePoint Online, OneDrive dla Firm i Teams, wykonaj te kroki w programie PowerShell SharePoint Online.
+
 Program DEP można skojarzyć z zestawem kluczy przechowywanych w usłudze Azure Key Vault. Program DEP jest stosowany do wszystkich danych w jednej lokalizacji geograficznej, nazywanej również obszarem geograficznym. Jeśli używasz funkcji wielu obszarów geograficznych Office 365, możesz utworzyć jeden program DEP na obszar geograficzny z możliwością używania różnych kluczy na dane geograficzne. Jeśli nie używasz wielu obszarów geograficznych, możesz utworzyć jeden program DEP w organizacji do użycia z plikami SharePoint Online, OneDrive dla Firm i Teams. Microsoft 365 używa kluczy zidentyfikowanych w programie DEP do szyfrowania danych w tym obszarze geograficznym. Aby utworzyć program DEP, potrzebne są identyfikatory URI Key Vault uzyskane podczas instalacji. Aby uzyskać informacje, zobacz [Uzyskiwanie identyfikatora URI dla każdego klucza Key Vault platformy Azure](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
-  
+
 Pamiętaj! Podczas tworzenia programu DEP należy określić dwa klucze w dwóch różnych usługach Azure Key Vault. Utwórz te klucze w dwóch oddzielnych regionach platformy Azure, aby zapewnić nadmiarowość geograficzną.
-  
-Aby utworzyć program DEP, musisz zdalnie nawiązać połączenie z usługą SharePoint Online przy użyciu Windows PowerShell.
-  
-1. Na komputerze lokalnym przy użyciu konta służbowego z uprawnieniami administratora globalnego w organizacji [Połączenie SharePoint programu PowerShell online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps).
+
+Aby utworzyć program DEP, należy użyć programu PowerShell SharePoint Online.
+
+1. Na komputerze lokalnym, używając konta służbowego z uprawnieniami administratora globalnego w organizacji, [połącz się z programem PowerShell SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps).
 
 2. W powłoce zarządzania Microsoft Office SharePoint Online uruchom polecenie cmdlet Register-SPODataEncryptionPolicy w następujący sposób:
 
@@ -146,7 +146,7 @@ Aby utworzyć program DEP, musisz zdalnie nawiązać połączenie z usługą Sha
    ```
 
    Przykład:
-  
+
    ```powershell
    Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a'
    ```
@@ -186,7 +186,7 @@ Aby przypisać program DEP do skrzynki pocztowej przed migracją do Office 365, 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>Określanie programu DEP przypisanego do skrzynki pocztowej
 
 Aby określić program DEP przypisany do skrzynki pocztowej, użyj polecenia cmdlet Get-MailboxStatistics. Polecenie cmdlet zwraca unikatowy identyfikator (GUID).
-  
+
 1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
    ```powershell
@@ -194,9 +194,9 @@ Aby określić program DEP przypisany do skrzynki pocztowej, użyj polecenia cmd
    ```
 
    Gdzie *GeneralMailboxOrMailUserIdParameter* określa skrzynkę pocztową i DataEncryptionPolicyID zwraca identyfikator GUID programu DEP. Aby uzyskać więcej informacji na temat polecenia cmdlet Get-MailboxStatistics, zobacz [Get-MailboxStatistics](/powershell/module/exchange/get-mailboxstatistics).
-  
+
 2. Uruchom polecenie cmdlet Get-DataEncryptionPolicy, aby dowiedzieć się przyjaznej nazwy programu DEP, do której jest przypisana skrzynka pocztowa.
-  
+
    ```powershell
    Get-DataEncryptionPolicy <GUID>
    ```
@@ -210,9 +210,9 @@ Niezależnie od tego, czy masz wdrożony klucz klienta, przypisano nowy program 
 ### <a name="verify-encryption-completes-for-exchange-online-mailboxes"></a>Weryfikowanie zakończenia szyfrowania dla skrzynek pocztowych Exchange Online
 
 Szyfrowanie skrzynki pocztowej może zająć trochę czasu. W przypadku szyfrowania po raz pierwszy skrzynka pocztowa musi również całkowicie przenieść się z jednej bazy danych do innej, aby usługa mogła zaszyfrować skrzynkę pocztową.
-  
+
 Użyj polecenia cmdlet Get-MailboxStatistics, aby określić, czy skrzynka pocztowa jest szyfrowana.
-  
+
 ```powershell
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEncrypted
 ```
@@ -230,7 +230,7 @@ Sprawdź stan szyfrowania, uruchamiając polecenie cmdlet Get-SPODataEncryptionP
 ```
 
 Dane wyjściowe z tego polecenia cmdlet obejmują:
-  
+
 - Identyfikator URI klucza podstawowego.
 
 - Identyfikator URI klucza pomocniczego.
@@ -251,40 +251,40 @@ Dane wyjściowe z tego polecenia cmdlet obejmują:
 
 Aby uzyskać szczegółowe informacje na temat wszystkich adresów IP utworzonych do użycia z wieloma obciążeniami, wykonaj następujące kroki:
 
-1. Na komputerze lokalnym przy użyciu konta służbowego z uprawnieniami administratora globalnego lub administratora zgodności w organizacji [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) w oknie Windows PowerShell.
+1. Na komputerze lokalnym, używając konta służbowego z uprawnieniami administratora globalnego lub administratora zgodności w organizacji, [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
    - Aby zwrócić listę wszystkich adresów IP z wieloma obciążeniami w organizacji, uruchom to polecenie.
 
      ```powershell
-        Get-M365DataAtRestEncryptionPolicy
+     Get-M365DataAtRestEncryptionPolicy
      ```
 
    - Aby zwrócić szczegółowe informacje o określonym programie DEP, uruchom to polecenie. Ten przykład zwraca szczegółowe informacje dotyczące programu DEP o nazwie "Contoso_Global".
 
      ```powershell
-        Get-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global"
+     Get-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global"
      ```
 
 ## <a name="get-multi-workload-dep-assignment-information"></a>Uzyskiwanie informacji o przypisywaniu programu DEP dla wielu obciążeń
 
-Aby dowiedzieć się, który program DEP jest obecnie przypisany do dzierżawy, wykonaj następujące kroki. 
+Aby dowiedzieć się, który program DEP jest obecnie przypisany do dzierżawy, wykonaj następujące kroki.
 
-1. Na komputerze lokalnym przy użyciu konta służbowego z uprawnieniami administratora globalnego lub administratora zgodności w organizacji [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) w oknie Windows PowerShell.
+1. Na komputerze lokalnym, używając konta służbowego z uprawnieniami administratora globalnego lub administratora zgodności w organizacji, [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Wpisz to polecenie.
 
    ```powershell
-      Get-M365DataAtRestEncryptionPolicyAssignment
+   Get-M365DataAtRestEncryptionPolicyAssignment
    ```
 
 ## <a name="disable-a-multi-workload-dep"></a>Wyłączanie programu DEP z wieloma obciążeniami
 
 Przed wyłączeniem programu DEP z wieloma obciążeniami usuń przypisanie programu DEP z obciążeń w dzierżawie. Aby wyłączyć program DEP używany z wieloma obciążeniami, wykonaj następujące kroki:
 
-1. Na komputerze lokalnym przy użyciu konta służbowego z uprawnieniami administratora globalnego lub administratora zgodności w organizacji [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) w oknie Windows PowerShell.
+1. Na komputerze lokalnym, używając konta służbowego z uprawnieniami administratora globalnego lub administratora zgodności w organizacji, [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Uruchom polecenie cmdlet Set-M365DataAtRestEncryptionPolicy.
-  
+
    ```powershell
    Set-M365DataAtRestEncryptionPolicy -[Identity] "PolicyName" -Enabled $false
    ```
@@ -300,19 +300,19 @@ Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Enabled $false
 ## <a name="restore-azure-key-vault-keys"></a>Przywracanie kluczy Key Vault platformy Azure
 
 Przed wykonaniem przywracania użyj funkcji odzyskiwania udostępnianych przez usuwanie nietrwałe. Wszystkie klucze używane z kluczem klienta muszą mieć włączone usuwanie nietrwałe. Usuwanie nietrwałe działa jak kosz i umożliwia odzyskiwanie przez maksymalnie 90 dni bez konieczności przywracania. Przywracanie powinno być wymagane tylko w ekstremalnych lub nietypowych okolicznościach, na przykład w przypadku utraty klucza lub magazynu kluczy. Jeśli musisz przywrócić klucz do użycia z kluczem klienta, w Azure PowerShell uruchom polecenie cmdlet Restore-AzureKeyVaultKey w następujący sposób:
-  
+
 ```powershell
 Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
 ```
 
 Przykład:
-  
+
 ```powershell
 Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
 ```
 
 Jeśli magazyn kluczy zawiera już klucz o tej samej nazwie, operacja przywracania kończy się niepowodzeniem. Restore-AzKeyVaultKey przywraca wszystkie wersje klucza i wszystkie metadane klucza, w tym nazwę klucza.
-  
+
 ## <a name="manage-key-vault-permissions"></a>Zarządzanie uprawnieniami magazynu kluczy
 
 Dostępnych jest kilka poleceń cmdlet, które umożliwiają wyświetlanie i, w razie potrzeby, usuwanie uprawnień magazynu kluczy. Może być konieczne usunięcie uprawnień, na przykład po opuszczeniu zespołu przez pracownika. W przypadku każdego z tych zadań użyjesz Azure PowerShell. Aby uzyskać informacje o Azure PowerShell, zobacz [Omówienie Azure PowerShell](/powershell/azure/).
@@ -330,7 +330,7 @@ Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 ```
 
 Aby usunąć uprawnienia administratora, uruchom polecenie cmdlet Remove-AzKeyVaultAccessPolicy:
-  
+
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
@@ -348,7 +348,7 @@ Jeśli musisz wrócić do kluczy zarządzanych przez firmę Microsoft, możesz t
 > [!IMPORTANT]
 > Odłączanie nie jest tym samym, co przeczyszczanie danych. Przeczyszczanie danych trwale usuwa dane organizacji z Microsoft 365, a odłączanie nie. Nie można przeprowadzić przeczyszczania danych dla zasad wielu obciążeń.
 
-Jeśli zdecydujesz się już nie używać klucza klienta do przypisywania adresów DEPs z wieloma obciążeniami, musisz skontaktować się z pomocą techniczną firmy Microsoft z prośbą o "odłączenie" od klucza klienta. Poproś zespół pomocy technicznej o zgłoszenie żądania obsługi do zespołu Microsoft Purview Customer Key. Jeśli masz jakiekolwiek pytania, skontaktuj się z m365-ck@service.microsoft.com.
+Jeśli zdecydujesz się już nie używać klucza klienta do przypisywania adresów DEPs z wieloma obciążeniami, musisz skontaktować się z pomocą techniczną firmy Microsoft z prośbą o "odłączenie" od klucza klienta. Poproś zespół pomocy technicznej o zgłoszenie żądania obsługi do zespołu kluczy klienta usługi Microsoft Purview. Jeśli masz jakiekolwiek pytania, skontaktuj się z m365-ck@service.microsoft.com.
 
 Jeśli nie chcesz już szyfrować poszczególnych skrzynek pocztowych przy użyciu adresów DEPs na poziomie skrzynki pocztowej, możesz anulować przypisanie adresów DEPs na poziomie skrzynki pocztowej ze wszystkich skrzynek pocztowych.
 
@@ -359,13 +359,13 @@ Aby anulować przypisanie adresów DEPs skrzynki pocztowej, użyj polecenia cmdl
 2. Uruchom polecenie cmdlet Set-Mailbox.
 
    ```powershell
-   Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
+   Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $null
    ```
 
 Uruchomienie tego polecenia cmdlet powoduje anulowanie przypisania aktualnie przypisanego programu DEP i ponowne odszyfrowanie skrzynki pocztowej przy użyciu programu DEP skojarzonego z domyślnymi kluczami zarządzanymi przez firmę Microsoft. Nie można cofnąć przypisania programu DEP używanego przez klucze zarządzane firmy Microsoft. Jeśli nie chcesz używać kluczy zarządzanych przez firmę Microsoft, możesz przypisać do skrzynki pocztowej inny program DEP klucza klienta.
 
 > [!IMPORTANT]
-> Wycofywanie klucza klienta do kluczy zarządzanych przez firmę Microsoft nie jest obsługiwane w przypadku plików SharePoint Online, OneDrive dla Firm i Teams. 
+> Wycofywanie klucza klienta do kluczy zarządzanych przez firmę Microsoft nie jest obsługiwane w przypadku plików SharePoint Online, OneDrive dla Firm i Teams.
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>Odwoływanie kluczy i uruchamianie procesu ścieżki przeczyszczania danych
 
@@ -412,7 +412,7 @@ Aby zainicjować ścieżkę przeczyszczania danych, wykonaj następujące kroki:
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Odwoływanie kluczy klienta i klucza dostępności dla plików SharePoint Online, OneDrive dla Firm i Teams
 
-Przeczyszczanie SharePoint, OneDrive do celów służbowych i Teams plików DEPs nie jest obsługiwane w kluczu klienta. Te wielozadaniowe adresy IP są używane do szyfrowania danych w wielu obciążeniach dla wszystkich użytkowników dzierżawy. Przeczyszczanie takiego programu DEP spowodowałoby, że dane z wielu obciążeń staną się niedostępne. Jeśli zdecydujesz się całkowicie zakończyć Microsoft 365 usług, możesz kontynuować ścieżkę usuwania dzierżawy zgodnie z udokumentowanym procesem. Zobacz, jak [usunąć dzierżawę w Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).  
+Przeczyszczanie SharePoint, OneDrive do celów służbowych i Teams plików DEPs nie jest obsługiwane w kluczu klienta. Te wielozadaniowe adresy IP są używane do szyfrowania danych w wielu obciążeniach dla wszystkich użytkowników dzierżawy. Przeczyszczanie takiego programu DEP spowodowałoby, że dane z wielu obciążeń staną się niedostępne. Jeśli zdecydujesz się całkowicie zakończyć Microsoft 365 usług, możesz kontynuować ścieżkę usuwania dzierżawy zgodnie z udokumentowanym procesem. Zobacz, jak [usunąć dzierżawę w Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ## <a name="related-articles"></a>Powiązane artykuły:
 

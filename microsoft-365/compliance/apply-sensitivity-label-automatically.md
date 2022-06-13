@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Podczas tworzenia etykiety poufności możesz automatycznie przypisywać etykietę do plików i wiadomości e-mail lub monitować użytkowników o wybranie zalecanej etykiety.
-ms.openlocfilehash: 9998f71d275d28f10fc950b978cc13ce7fd3c335
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 3124427ff556cd08a56ee83cf8f83bc4dbf8eb72
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840436"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017969"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatyczne stosowanie etykiety poufności do zawartości
 
@@ -31,7 +31,7 @@ ms.locfileid: "65840436"
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!TIP]
-> Aby uzyskać informacje na temat automatycznego stosowania etykiety poufności na mapie danych, zobacz [Etykietowanie w Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
+> Aby uzyskać informacje na temat automatycznego stosowania etykiety poufności na mapie danych, zobacz [Etykietowanie w usłudze Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 Podczas tworzenia etykiety poufności można automatycznie przypisywać tę etykietę do plików i wiadomości e-mail, gdy jest ona zgodna z określonymi warunkami.
 
@@ -74,7 +74,7 @@ Istnieją dwie różne metody automatycznego stosowania etykiety poufności do z
     - W przeciwieństwie do ręcznego etykietowania lub automatycznego etykietowania za pomocą aplikacji Office, załączniki PDF oraz załączniki Office są również skanowane pod kątem warunków określonych w zasadach automatycznego etykietowania. W przypadku dopasowania wiadomość e-mail jest oznaczona etykietą, ale nie załącznikiem.
         - W przypadku plików PDF, jeśli etykieta stosuje szyfrowanie, te pliki są szyfrowane przy użyciu [szyfrowania komunikatów](ome.md) , gdy dzierżawa jest [włączona dla załączników PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
         - W przypadku tych plików Office obsługiwane są programy Word, PowerPoint i Excel. Jeśli etykieta stosuje szyfrowanie, są one szyfrowane przy użyciu [szyfrowania komunikatów](ome.md).
-    - Jeśli masz Exchange reguły przepływu poczty lub zasady Ochrona przed utratą danych w Microsoft Purview (DLP), które stosują szyfrowanie IRM: Gdy zawartość jest identyfikowana przez te reguły lub zasady i zasady automatycznego etykietowania, zostanie zastosowana etykieta. Jeśli ta etykieta stosuje szyfrowanie, ustawienia usługi IRM z Exchange reguł przepływu poczty lub zasad DLP są ignorowane. Jeśli jednak ta etykieta nie stosuje szyfrowania, oprócz etykiety zostaną zastosowane ustawienia usługi IRM z reguł przepływu poczty lub zasad DLP.
+    - Jeśli masz Exchange reguły przepływu poczty lub zasady ochrony przed utratą danych (DLP) usługi Microsoft Purview, które stosują szyfrowanie IRM: Gdy zawartość jest identyfikowana przez te reguły lub zasady i zasady automatycznego etykietowania, zostanie zastosowana etykieta. Jeśli ta etykieta stosuje szyfrowanie, ustawienia usługi IRM z Exchange reguł przepływu poczty lub zasad DLP są ignorowane. Jeśli jednak ta etykieta nie stosuje szyfrowania, oprócz etykiety zostaną zastosowane ustawienia usługi IRM z reguł przepływu poczty lub zasad DLP.
     - Wiadomość e-mail z szyfrowaniem IRM bez etykiety zostanie zastąpiona etykietą dowolnymi ustawieniami szyfrowania w przypadku dopasowania przy użyciu automatycznego etykietowania.
     - Przychodząca wiadomość e-mail jest oznaczona etykietą w przypadku dopasowania do warunków automatycznego etykietowania. Jeśli ta etykieta jest skonfigurowana pod kątem [szyfrowania](encryption-sensitivity-labels.md), to szyfrowanie jest zawsze stosowane, gdy nadawca pochodzi z organizacji. Domyślnie szyfrowanie nie jest stosowane, gdy nadawca znajduje się poza organizacją, ale można je zastosować, konfigurując **dodatkowe ustawienia poczty e-mail** i określając właściciela Rights Management.
     - Gdy etykieta stosuje szyfrowanie, [wystawca Rights Management i właściciel Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) to osoba, która wysyła wiadomość e-mail, gdy nadawca pochodzi z własnej organizacji. Gdy nadawca znajduje się poza organizacją, możesz określić właściciela Rights Management dla przychodzącej wiadomości e-mail, która jest oznaczona etykietą i zaszyfrowana przez zasady.
@@ -100,7 +100,7 @@ Poniższa tabela ułatwia zidentyfikowanie różnic w zachowaniu dwóch uzupełn
 |Przypisywanie właściciela Rights Management dla wiadomości e-mail wysyłanych z innej organizacji |Nie |Tak|
 |W przypadku wiadomości e-mail zastąp istniejącą etykietę o tym samym lub niższym priorytecie |Nie |Tak (konfigurowalne)|
 
-\* Automatyczne etykietowanie nie jest obecnie dostępne we wszystkich regionach ze względu na zależność zaplecza platformy Azure. Jeśli dzierżawa nie może obsługiwać tej funkcji, karta **Automatyczne etykietowanie** nie jest widoczna w portal zgodności Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Dostępność zależności platformy Azure według kraju](/troubleshoot/azure/general/dependency-availability-by-country).
+\* Automatyczne etykietowanie nie jest obecnie dostępne we wszystkich regionach ze względu na zależność zaplecza platformy Azure. Jeśli dzierżawa nie może obsługiwać tej funkcji, karta **Automatyczne etykietowanie** nie jest widoczna w portalu zgodności usługi Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Dostępność zależności platformy Azure według kraju](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Jak wiele warunków jest ocenianych w przypadku zastosowania do więcej niż jednej etykiety
 
@@ -126,7 +126,7 @@ Domyślne zachowanie polegające na tym, że automatyczne etykietowanie zastąpi
 - Automatyczne etykietowanie zastąpi [etykietę poufności o niższym priorytecie](sensitivity-labels.md#label-priority-order-matters) , która została automatycznie zastosowana, ale nie etykietę o wyższym priorytecie.
     
     > [!TIP]
-    > Na przykład etykieta poufności w górnej części listy w portal zgodności Microsoft Purview ma nazwę **Public** z numerem zamówienia (priorytetem) 0, a etykieta poufności w dolnej części listy ma nazwę **Wysoce poufne** z numerem zamówienia (priorytet 4). Etykieta **Wysoce poufne** może zastąpić etykietę **Publiczna** , ale nie odwrotnie.
+    > Na przykład etykieta poufności w górnej części listy w portalu zgodności usługi Microsoft Purview ma nazwę **Public** z numerem zamówienia (priorytetem) 0, a etykieta poufności w dolnej części listy nosi nazwę **Wysoce poufne** z numerem zamówienia (priorytet 4). Etykieta **Wysoce poufne** może zastąpić etykietę **Publiczna** , ale nie odwrotnie.
 
 Tylko w przypadku zasad automatycznego etykietowania wiadomości e-mail można wybrać ustawienie, aby zawsze przesłaniać istniejącą etykietę poufności, niezależnie od sposobu jej stosowania.
 
@@ -297,7 +297,7 @@ Na koniec możesz użyć trybu symulacji, aby zapewnić przybliżenie czasu potr
 
 ### <a name="creating-an-auto-labeling-policy"></a>Tworzenie zasad automatycznego etykietowania
 
-1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a> przejdź do etykiet poufności:
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> przejdź do etykiet poufności:
 
     - **Rozwiązania** >  **Ochrona informacji**
 
@@ -409,9 +409,9 @@ Wyniki zasad automatycznego etykietowania można również wyświetlić za pomoc
 
 ### <a name="use-powershell-for-auto-labeling-policies"></a>Używanie programu PowerShell do automatycznego etykietowania zasad
 
-Program [PowerShell Security & Compliance Center](/powershell/exchange/scc-powershell) umożliwia tworzenie i konfigurowanie zasad automatycznego etykietowania. Oznacza to, że można w pełni wykonywać skrypty tworzenia i konserwacji zasad automatycznego etykietowania, co zapewnia również bardziej wydajną metodę określania wielu adresów URL dla lokalizacji OneDrive i SharePoint.
+Do tworzenia i konfigurowania zasad automatycznego etykietowania można użyć programu [PowerShell security & Compliance](/powershell/exchange/scc-powershell) . Oznacza to, że można w pełni wykonywać skrypty tworzenia i konserwacji zasad automatycznego etykietowania, co zapewnia również bardziej wydajną metodę określania wielu adresów URL dla lokalizacji OneDrive i SharePoint.
 
-Przed uruchomieniem poleceń w programie PowerShell należy najpierw [nawiązać połączenie z programem PowerShell & Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell).
+Przed uruchomieniem poleceń w programie PowerShell należy najpierw [nawiązać połączenie z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 Aby utworzyć nowe zasady automatycznego etykietowania:
 

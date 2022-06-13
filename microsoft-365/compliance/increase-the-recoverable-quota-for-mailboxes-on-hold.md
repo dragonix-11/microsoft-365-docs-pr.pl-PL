@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Włącz skrzynkę pocztową archiwum i włącz automatyczne rozszerzanie archiwizacji, aby zwiększyć rozmiar folderu Elementy możliwe do odzyskania dla skrzynki pocztowej w Microsoft 365.
-ms.openlocfilehash: a05851f1019405a495a7b909bf4a8d096227163d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bbeb72c6a055be42e06c450afccb35965d149dce
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100814"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015021"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Zwiększ limit przydziału elementów odzyskiwalnych dla archiwum skrzynek pocztowych
 
@@ -64,7 +64,7 @@ W pozostałej części tego tematu opisano procedury krok po kroku umożliwiają
 
 Pierwszym krokiem jest utworzenie niestandardowego tagu przechowywania (nazywanego tagiem zasad przechowywania lub RPT) dla folderu Elementy możliwe do odzyskania. Jak wyjaśniono wcześniej, ten RPT przenosi elementy z folderu Elementy do odzyskania w podstawowej skrzynce pocztowej użytkownika do folderu Elementy możliwe do odzyskania w skrzynce pocztowej archiwum użytkownika. Aby utworzyć RPT dla folderu Elementy do odzyskania, należy użyć programu PowerShell. Nie można użyć centrum administracyjnego Exchange (EAC).
 
-1. [Łączenie się z usługą Exchange Online przy użyciu zdalnej obsługi programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Uruchom następujące polecenie, aby utworzyć nowy RPT dla folderu Elementy możliwe do odzyskania:
 
@@ -137,7 +137,7 @@ Ostatnim krokiem jest zastosowanie nowych zasad przechowywania utworzonych w kro
 
 ### <a name="use-the-eac-to-apply-the-new-retention-policy"></a>Stosowanie nowych zasad przechowywania przy użyciu umowy EAC
 
-1. Przejdź do **pozycji AdresaciMailboxes** > .
+1. Przejdź do **obszaru Skrzynki pocztowe adresatów** > .
 
 2. W widoku listy wybierz skrzynkę pocztową, do którą chcesz zastosować zasady przechowywania, a następnie kliknij pozycję **Edytuj ikonę Edytuj**![.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
@@ -147,7 +147,7 @@ Ostatnim krokiem jest zastosowanie nowych zasad przechowywania utworzonych w kro
 
 Możesz również użyć umowy EAC, aby zastosować zasady przechowywania do wielu skrzynek pocztowych.
 
-1. Przejdź do **pozycji AdresaciMailboxes** > .
+1. Przejdź do **obszaru Skrzynki pocztowe adresatów** > .
 
 2. W widoku listy użyj klawiszy Shift lub Ctrl, aby wybrać wiele skrzynek pocztowych.
 

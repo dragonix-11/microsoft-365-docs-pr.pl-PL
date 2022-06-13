@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Dodawanie alertów dotyczących działań i zarządzanie nimi w portalu zgodności usługi Microsoft Purview, dzięki czemu Microsoft 365 będzie wysyłać powiadomienia e-mail, gdy użytkownicy wykonują określone działania
-ms.openlocfilehash: 99cbbe4a03047b5cf8ef366a228fc78fe9dfbda1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b08c23ec80562418112266d03c58f4b764a128ba
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097013"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018102"
 ---
 # <a name="create-activity-alerts"></a>Tworzenie alertów aktywności
 
@@ -128,7 +128,7 @@ Aby ponownie włączyć alert aktywności, po prostu powtórz te kroki i kliknij
     |Trwale usuwa (przeczyszcza) wiadomość e-mail ze skrzynki pocztowej.  |Przeczyszczane wiadomości ze skrzynki pocztowej  | działania Exchange skrzynki pocztowej  |
     |Wysyła wiadomość e-mail z udostępnionej skrzynki pocztowej.  |Wysłano wiadomość przy użyciu uprawnień Wyślij jako  <br/> I  <br/> Wysłano wiadomość przy użyciu uprawnień Wyślij w imieniu  | działania Exchange skrzynki pocztowej  |
 
-- Możesz również użyć poleceń cmdlet **New-ActivityAlert** i **Set-ActivityAlert** w programie PowerShell Security & Compliance Center, aby tworzyć i edytować alerty dotyczące działań. Jeśli używasz tych poleceń cmdlet do tworzenia lub edytowania alertów aktywności, pamiętaj o następujących kwestiach:
+- Możesz również użyć poleceń cmdlet **New-ActivityAlert** i **Set-ActivityAlert** w programie PowerShell Security & Compliance do tworzenia i edytowania alertów dotyczących działań. Jeśli używasz tych poleceń cmdlet do tworzenia lub edytowania alertów aktywności, pamiętaj o następujących kwestiach:
 
   - Jeśli użyjesz polecenia cmdlet, aby dodać działanie do alertu, którego nie ma na liście rozwijanej **Działania** , zostanie wyświetlony komunikat na stronie właściwości alertu z komunikatem "Ten alert ma niestandardowe operacje niewymienione w selektorze".
 

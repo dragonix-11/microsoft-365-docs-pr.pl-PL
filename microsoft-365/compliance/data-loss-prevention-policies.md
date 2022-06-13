@@ -25,19 +25,19 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: materiały referencyjne dotyczące zapobiegania utracie danych
-ms.openlocfilehash: 55e8e5bd16b850ecce84cc87d43e7269746a7999
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: b7546d41310942a0e6eab99511a78c594822ee2a
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754825"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017291"
 ---
 # <a name="data-loss-prevention-reference"></a>Dokumentacja zapobiegania utracie danych
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
-> Jest to temat referencyjny, który nie jest już głównym zasobem informacji Ochrona przed utratą danych w Microsoft Purview (DLP). Zestaw zawartości DLP jest aktualizowany i zmieniany w strukturze. Tematy omówione w tym artykule zostaną przeniesione do nowych, zaktualizowanych artykułów. Aby uzyskać więcej informacji na temat ochrony przed [utratą danych, zobacz Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md).
+> Ten temat referencyjny nie jest już głównym zasobem informacji o zapobieganiu utracie danych (DLP) w usłudze Microsoft Purview. Zestaw zawartości DLP jest aktualizowany i zmieniany w strukturze. Tematy omówione w tym artykule zostaną przeniesione do nowych, zaktualizowanych artykułów. Aby uzyskać więcej informacji na temat ochrony przed [utratą danych, zobacz Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -73,9 +73,9 @@ With a DLP policy, you can:
 -->
 ## <a name="create-and-manage-dlp-policies"></a>Tworzenie zasad DLP i zarządzanie nimi
 
-Zasady DLP można tworzyć i zarządzać nimi na stronie zapobiegania utracie danych w portal zgodności Microsoft Purview.
+Zasady DLP można tworzyć i zarządzać nimi na stronie zapobiegania utracie danych w portalu zgodności usługi Microsoft Purview.
 
-![Strona zapobiegania utracie danych w portal zgodności Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Strona zapobiegania utracie danych w portalu zgodności usługi Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -493,7 +493,7 @@ DLP wykrywa poufne informacje przy użyciu głębokiej analizy zawartości (nie 
 
 ### <a name="policies-are-synced"></a>Zasady są synchronizowane
 
-Po utworzeniu zasad DLP w portal zgodności Microsoft Purview są one przechowywane w centralnym magazynie zasad, a następnie synchronizowane z różnymi źródłami zawartości, w tym:
+Po utworzeniu zasad DLP w portalu zgodności usługi Microsoft Purview są one przechowywane w centralnym magazynie zasad, a następnie synchronizowane z różnymi źródłami zawartości, w tym:
 
 - Exchange Online, a stamtąd do Outlook w sieci Web i Outlook.
 
@@ -531,7 +531,7 @@ DLP ocenia dowolną zawartość, która może być indeksowana. Aby uzyskać wi�
 
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Ocena zasad w Exchange Online, Outlook i Outlook w sieci Web
 
-Podczas tworzenia zasad DLP, które obejmują Exchange Online jako lokalizację, zasady są synchronizowane z portal zgodności Microsoft Purview do Exchange Online, a następnie z Exchange Online do Outlook w sieci Web i Outlook.
+Podczas tworzenia zasad DLP, które obejmują Exchange Online jako lokalizację, zasady są synchronizowane z portalu zgodności usługi Microsoft Purview z Exchange Online, a następnie z Exchange Online do Outlook w sieci Web i Outlook.
 
 Gdy komunikat jest tworzony w Outlook, użytkownik może zobaczyć wskazówki dotyczące zasad, ponieważ tworzone treści są oceniane pod kątem zasad DLP. Po wysłaniu wiadomości jest ona oceniana pod kątem zasad DLP jako normalna część przepływu poczty, a także reguły przepływu poczty Exchange (nazywane również regułami transportu) i zasady DLP utworzone w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. Zasady DLP skanują zarówno komunikat, jak i wszelkie załączniki.
 
@@ -545,15 +545,15 @@ Ocena zasad DLP w Office ma na celu niewpływanie na wydajność programów ani 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Ocena zasad w Microsoft Teams
  <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
 
-Podczas tworzenia zasad DLP, które obejmują Microsoft Teams jako lokalizację, zasady są synchronizowane z portal zgodności Microsoft Purview do kont użytkowników oraz Microsoft Teams kanałów i wiadomości czatów. W zależności od sposobu konfigurowania zasad DLP, gdy ktoś próbuje udostępnić poufne informacje w Microsoft Teams wiadomości czatu lub kanału, wiadomość może zostać zablokowana lub odwołana. Ponadto dokumenty zawierające poufne informacje i udostępniane gościom (użytkownikom zewnętrznym) nie będą otwierane dla tych użytkowników. Aby dowiedzieć się więcej, zobacz [Zapobieganie utracie danych i Microsoft Teams](dlp-microsoft-teams.md).
+Podczas tworzenia zasad DLP, które obejmują Microsoft Teams jako lokalizację, zasady są synchronizowane z portalu zgodności usługi Microsoft Purview z kontami użytkowników oraz Microsoft Teams kanałami i wiadomościami rozmów. W zależności od sposobu konfigurowania zasad DLP, gdy ktoś próbuje udostępnić poufne informacje w Microsoft Teams wiadomości czatu lub kanału, wiadomość może zostać zablokowana lub odwołana. Ponadto dokumenty zawierające poufne informacje i udostępniane gościom (użytkownikom zewnętrznym) nie będą otwierane dla tych użytkowników. Aby dowiedzieć się więcej, zobacz [Zapobieganie utracie danych i Microsoft Teams](dlp-microsoft-teams.md).
 
 ## <a name="permissions"></a>Uprawnienia
 
-Domyślnie administratorzy globalni, administratorzy zabezpieczeń i administratorzy zgodności będą mieli dostęp do tworzenia i stosowania zasad DLP. Inni członkowie zespołu ds. zgodności, którzy będą tworzyć zasady DLP, potrzebują uprawnień do portal zgodności Microsoft Purview. Domyślnie administrator dzierżawy będzie miał dostęp do tej lokalizacji i może udzielić funkcjonariuszom ds. zgodności i innym osobom dostępu do portal zgodności Microsoft Purview bez udzielania im wszystkich uprawnień administratora dzierżawy. W tym celu zalecamy wykonanie następujących czynności:
+Domyślnie administratorzy globalni, administratorzy zabezpieczeń i administratorzy zgodności będą mieli dostęp do tworzenia i stosowania zasad DLP. Inni członkowie zespołu ds. zgodności, którzy będą tworzyć zasady DLP, potrzebują uprawnień do portalu zgodności usługi Microsoft Purview. Domyślnie administrator dzierżawy będzie miał dostęp do tej lokalizacji i może udzielić urzędnikom ds. zgodności i innym osobom dostępu do portalu zgodności usługi Microsoft Purview bez udzielania im wszystkich uprawnień administratora dzierżawy. W tym celu zalecamy wykonanie następujących czynności:
 
 1. Utwórz grupę w Microsoft 365 i dodaj do niej funkcjonariuszy zgodności.
 
-2. Utwórz grupę ról na stronie **Uprawnienia** portal zgodności Microsoft Purview.
+2. Utwórz grupę ról na stronie **Uprawnienia** w portalu zgodności usługi Microsoft Purview.
 
 3. Podczas tworzenia grupy ról użyj sekcji **Wybierz role** , aby dodać następującą rolę do grupy ról: **Zarządzanie zgodnością DLP**.
 
@@ -567,15 +567,15 @@ Te uprawnienia są wymagane tylko do utworzenia i zastosowania zasad DLP. Wymusz
 
 ## <a name="find-the-dlp-cmdlets"></a>Znajdowanie poleceń cmdlet DLP
 
-Aby użyć większości poleceń cmdlet dla portal zgodności Microsoft Purview, musisz:
+Aby użyć większości poleceń cmdlet dla portalu zgodności usługi Microsoft Purview, należy wykonać następujące czynności:
 
-1. [Połączenie do Office 365 portal zgodności Microsoft Purview przy użyciu zdalnego programu PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Użyj dowolnego z tych [poleceń cmdlet policy-and-compliance-dlp](/powershell/module/exchange/export-dlppolicycollection).
 
-Jednak raporty DLP wymagają ściągania danych z różnych Microsoft 365, w tym Exchange Online. Z tego powodu ***polecenia cmdlet raportów DLP są dostępne w Exchange Online programie PowerShell — nie w programie portal zgodności Microsoft Purview programu PowerShell***. W związku z tym, aby używać poleceń cmdlet dla raportów DLP, należy:
+Jednak raporty DLP wymagają ściągania danych z różnych Microsoft 365, w tym Exchange Online. Z tego powodu ***polecenia cmdlet raportów DLP są dostępne w Exchange Online programie PowerShell — a nie w portalu zgodności usługi Microsoft Purview programu PowerShell***. W związku z tym, aby używać poleceń cmdlet dla raportów DLP, należy:
 
-1. [Połączenie do Exchange Online przy użyciu zdalnego programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Użyj dowolnego z tych poleceń cmdlet dla raportów DLP:
 

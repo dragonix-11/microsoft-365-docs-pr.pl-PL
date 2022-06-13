@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Twórz schemat dla dokładnych typów informacji poufnych opartych na dopasowaniu danych
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9eb4e69aa833e8a355115115e1c965e57d65716c
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 080bdff37893bcf0d41414c066b51727d2650f7a
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435286"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017169"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Twórz schemat dla dokładnych typów informacji poufnych opartych na dopasowaniu danych
 
@@ -50,7 +50,7 @@ Za pomocą tego kreatora można uprościć proces tworzenia pliku schematu.
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Użyj kreatora dokładnego schematu dopasowania danych i wzorca typów informacji poufnych
 
-1. W portal zgodności Microsoft Purview dzierżawy przejdź do pozycji **Klasyfikacja** >  **danychAktuacje zgodne ze** >  **schematamiEDM**.
+1. W portalu zgodności usługi Microsoft Purview dla dzierżawy przejdź do pozycji **Klasyfikacja** > **danych Dokładne dane są zgodne** > **ze schematami EDM**.
 
 2. Wybierz **pozycję Utwórz schemat EDM,** aby otworzyć wysuwaną konfigurację kreatora schematu.
 
@@ -80,7 +80,7 @@ Za pomocą tego kreatora można uprościć proces tworzenia pliku schematu.
 
 Jeśli schemat EDM został utworzony w kreatorze schematu EDM, musisz wyeksportować plik schematu EDM w formacie XML. Będzie ona potrzebna w [tabeli skrótów i przekażesz tabelę źródła informacji poufnych, aby dokładnie dopasować dane do fazy typów informacji poufnych](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) .
 
-1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Aby wyeksportować plik schematu EDM, użyj tej składni:
 
@@ -175,7 +175,7 @@ Flaga `ignoredDelimiters` nie obsługuje:
 
    Po utworzeniu pliku schematu EDM w formacie XML musisz przekazać go do usługi w chmurze.
 
-2. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+2. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 3. Aby przekazać schemat bazy danych, uruchom następujące polecenie:
 

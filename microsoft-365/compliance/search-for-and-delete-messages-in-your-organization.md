@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Użyj funkcji wyszukiwania i przeczyszczania w portalu zgodności usługi Microsoft Purview, aby wyszukać i usunąć wiadomość e-mail ze wszystkich skrzynek pocztowych w organizacji.
-ms.openlocfilehash: 9e6159bcd6cdd8a06a310c5de9f07b105dbb4122
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f4cf7b3f6aeefc3af71739f91322736354c1b68e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094907"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017247"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Wyszukaj i usuń wiadomości e-mail
 
@@ -50,7 +50,7 @@ Funkcja wyszukiwania zawartości umożliwia wyszukiwanie i usuwanie wiadomości 
   > [!NOTE]
   > Grupa ról **Zarządzanie organizacją** istnieje zarówno w Exchange Online, jak i w portalu zgodności. Są to oddzielne grupy ról, które dają różne uprawnienia. Bycie członkiem **zarządzania organizacją** w Exchange Online nie udziela wymaganych uprawnień do usuwania wiadomości e-mail. Jeśli nie masz przypisanej roli **Wyszukaj i przeczyszczanie** w centrum zgodności (bezpośrednio lub za pośrednictwem grupy ról, takiej jak **Zarządzanie organizacją**), po uruchomieniu polecenia cmdlet **New-ComplianceSearchAction** w kroku 3 zostanie wyświetlony komunikat "Nie można odnaleźć parametru zgodnego z nazwą parametru "Przeczyszczanie".
 
-- Aby usunąć komunikaty, musisz użyć programu PowerShell Centrum zgodności & zabezpieczeń. Aby uzyskać instrukcje dotyczące nawiązywania połączenia, zobacz [Krok 1](#step-1-connect-to-security--compliance-center-powershell) .
+- Aby usunąć komunikaty, musisz użyć programu PowerShell security & Compliance. Aby uzyskać instrukcje dotyczące nawiązywania połączenia, zobacz [Krok 1: Połączenie do programu PowerShell & Zgodności](#step-1-connect-to-security--compliance-powershell) z zabezpieczeniami.
 
 - Jednocześnie można usunąć maksymalnie 10 elementów na skrzynkę pocztową. Ponieważ możliwość wyszukiwania i usuwania wiadomości ma być narzędziem reagowania na zdarzenia, ten limit pomaga zapewnić szybkie usunięcie wiadomości ze skrzynek pocztowych. Ta funkcja nie jest przeznaczona do czyszczenia skrzynek pocztowych użytkowników.
 
@@ -60,9 +60,9 @@ Funkcja wyszukiwania zawartości umożliwia wyszukiwanie i usuwanie wiadomości 
 
 - Nie można usunąć elementów wiadomości e-mail w zestawie przeglądów w przypadku zbierania elektronicznych materiałów dowodowych (Premium), korzystając z procedur opisanych w tym artykule. Dzieje się tak dlatego, że elementy w zestawie przeglądów są przechowywane w lokalizacji Storage platformy Azure, a nie w usłudze na żywo. Oznacza to, że nie zostaną one zwrócone przez wyszukiwanie zawartości utworzone w kroku 1. Aby usunąć elementy w zestawie przeglądów, należy usunąć przypadek zbierania elektronicznych materiałów dowodowych (Premium), który zawiera zestaw przeglądów. Aby uzyskać więcej informacji, zobacz [Zamykanie lub usuwanie sprawy zbierania elektronicznych materiałów dowodowych (Premium](close-or-delete-case.md)).
 
-## <a name="step-1-connect-to-security--compliance-center-powershell"></a>Krok 1. Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń
+## <a name="step-1-connect-to-security--compliance-powershell"></a>Krok 1. Połączenie do programu PowerShell zgodności & zabezpieczeń
 
-Pierwszym krokiem jest nawiązanie połączenia z programem PowerShell Centrum zgodności usługi Security & dla Twojej organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+Pierwszym krokiem jest nawiązanie połączenia z programem PowerShell security & Compliance dla twojej organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do programu PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>Krok 2. Tworzenie wyszukiwania zawartości w celu znalezienia komunikatu do usunięcia
 
@@ -121,7 +121,7 @@ Po utworzeniu i uściśleniu wyszukiwania zawartości w celu zwrócenia komunika
 > [!NOTE]
 > Jak wspomniano wcześniej, elementy z Microsoft Teams zwracane przez wyszukiwanie zawartości nie są usuwane po uruchomieniu polecenia **New-ComplianceSearchAction -Purge**.
 
-Aby uruchomić następujące polecenia w celu usunięcia komunikatów, upewnij się, że masz [połączenie z programem PowerShell & Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell).
+Aby uruchomić następujące polecenia w celu usunięcia komunikatów, upewnij się, że masz [połączenie z programem PowerShell Security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 ### <a name="soft-delete-messages"></a>Komunikaty usuwania nietrwałego
 

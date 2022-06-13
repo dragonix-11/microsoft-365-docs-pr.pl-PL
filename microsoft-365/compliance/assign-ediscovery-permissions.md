@@ -1,5 +1,5 @@
 ---
-title: Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview
+title: Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,29 +16,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Przypisz uprawnienia wymagane do wykonywania zadań związanych zbierania elektronicznych materiałów dowodowych przy użyciu portal zgodności Microsoft Purview.
+description: Przypisz uprawnienia wymagane do wykonywania zadań związanych zbierania elektronicznych materiałów dowodowych przy użyciu portalu zgodności usługi Microsoft Purview.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 112109d50f0f7e1f11687a325f8756cf2b355e5c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: facd219019aa7ad2bd6325da25a2e4da3db660b1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419445"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013381"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portalu zgodności
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Jeśli chcesz, aby użytkownicy korzystali z dowolnego narzędzia [związanego zbierania elektronicznych materiałów dowodowych](ediscovery.md) w portal zgodności Microsoft Purview, musisz przypisać im odpowiednie uprawnienia. Najprostszym sposobem na to jest dodanie odpowiedniej grupy ról na stronie **Uprawnienia** w portalu zgodności. W tym temacie opisano uprawnienia wymagane do wykonywania zadań zbierania elektronicznych materiałów dowodowych.
+Jeśli chcesz, aby użytkownicy korzystali z dowolnego [narzędzia związanego zbierania elektronicznych materiałów dowodowych](ediscovery.md) w portalu zgodności usługi Microsoft Purview, musisz przypisać im odpowiednie uprawnienia. Najprostszym sposobem na to jest dodanie odpowiedniej grupy ról na stronie **Uprawnienia** w portalu zgodności. W tym temacie opisano uprawnienia wymagane do wykonywania zadań zbierania elektronicznych materiałów dowodowych.
 
 > [!TIP]
 > Możesz wyświetlić własne uprawnienia na stronie przeglądu zbierania elektronicznych materiałów dowodowych (Premium) w portalu zgodności. Aby uprawnienia były wyświetlane, musisz mieć przypisaną co najmniej jedną rolę.
 
 Podstawowa grupa ról związana zbierania elektronicznych materiałów dowodowych w portalu zgodności nosi nazwę **eDiscovery Manager**. W tej grupie ról znajdują się dwie podgrupy.
   
-- **eDiscovery Manager** — menedżer zbierania elektronicznych materiałów dowodowych może używać narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych do wyszukiwania lokalizacji zawartości w organizacji i wykonywania różnych akcji związanych z wyszukiwaniem, takich jak podgląd i eksport wyników wyszukiwania. Członkowie mogą również tworzyć przypadki i zarządzać nimi w Microsoft Purview eDiscovery (Standard) i Microsoft Purview eDiscovery (Premium), dodawać i usuwać elementy członkowskie do sprawy, tworzyć blokady spraw, uruchamiać wyszukiwania skojarzone ze sprawą i dane przypadków dostępu. Menedżerowie zbierania elektronicznych materiałów dowodowych mogą uzyskiwać dostęp tylko do utworzonych przypadków i zarządzać nimi. Nie mogą uzyskiwać dostępu do spraw utworzonych przez innych menedżerów zbierania elektronicznych materiałów dowodowych ani zarządzać nimi.
+- **eDiscovery Manager** — menedżer zbierania elektronicznych materiałów dowodowych może używać narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych do wyszukiwania lokalizacji zawartości w organizacji i wykonywania różnych akcji związanych z wyszukiwaniem, takich jak podgląd i eksport wyników wyszukiwania. Członkowie mogą również tworzyć przypadki i zarządzać nimi w usługach Microsoft Purview eDiscovery (Standard) i Microsoft Purview eDiscovery (Premium), dodawać i usuwać członków do sprawy, tworzyć blokady spraw, uruchamiać wyszukiwania skojarzone ze sprawą i uzyskiwać dostęp do danych przypadków. Menedżerowie zbierania elektronicznych materiałów dowodowych mogą uzyskiwać dostęp tylko do utworzonych przypadków i zarządzać nimi. Nie mogą uzyskiwać dostępu do spraw utworzonych przez innych menedżerów zbierania elektronicznych materiałów dowodowych ani zarządzać nimi.
   
 - **Administrator zbierania** elektronicznych materiałów dowodowych — administrator zbierania elektronicznych materiałów dowodowych jest członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych i może wykonywać te same zadania związane z wyszukiwaniem zawartości i zarządzaniem sprawami, które może wykonywać menedżer zbierania elektronicznych materiałów dowodowych. Ponadto administrator zbierania elektronicznych materiałów dowodowych może:
   
@@ -59,7 +59,7 @@ Podstawowa grupa ról związana zbierania elektronicznych materiałów dowodowyc
 
 - Musisz być członkiem grupy ról Zarządzanie organizacją lub mieć przypisaną rolę Zarządzanie rolami, aby przypisać uprawnienia zbierania elektronicznych materiałów dowodowych w portalu zgodności.
 
-- Aby dodać grupę zabezpieczeń z obsługą poczty eDiscovery Manager, możesz użyć polecenia cmdlet [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) w programie PowerShell Security & Compliance Center. Nie można jednak dodać grupy zabezpieczeń z obsługą poczty do podgrupy Administratorzy zbierania elektronicznych materiałów dowodowych. Aby uzyskać szczegółowe informacje, zobacz [Więcej informacji](#more-information).
+- Aby dodać grupę zabezpieczeń z obsługą poczty eDiscovery Manager, możesz użyć polecenia cmdlet [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) w programie PowerShell security & Compliance. Nie można jednak dodać grupy zabezpieczeń z obsługą poczty do podgrupy Administratorzy zbierania elektronicznych materiałów dowodowych. Aby uzyskać szczegółowe informacje, zobacz [Więcej informacji](#more-information).
   
 ## <a name="assign-ediscovery-permissions"></a>Przypisz uprawnienia zbierania elektronicznych materiałów dowodowych
 
@@ -67,9 +67,11 @@ Podstawowa grupa ról związana zbierania elektronicznych materiałów dowodowyc
   
 2. W okienku po lewej stronie wybierz pozycję **Uprawnienia**.
 
-3. Na stronie **Uprawnienia & role** w **obszarze Centrum zgodności** kliknij pozycję **Role**.
+3. Na stronie **Uprawnienia & role** w obszarze **Rozwiązania usługi Microsoft Purview** kliknij pozycję **Role**.
 
-4. Na stronie **Role Centrum zgodności** wybierz pozycję **Menedżer zbierania elektronicznych materiałów dowodowych**.
+   Aby przejść bezpośrednio do tej strony, użyj polecenia <https://compliance.microsoft.com/compliancecenterpermissions>.
+
+4. Na stronie **Grupy ról dla rozwiązań Microsoft Purview** wybierz pozycję **Menedżer zbierania elektronicznych materiałów dowodowych**.
   
 5. Na stronie wysuwanego **Menedżera zbierania** elektronicznych materiałów dowodowych wykonaj jedną z następujących czynności na podstawie uprawnień zbierania elektronicznych materiałów dowodowych, które chcesz przypisać.
   
@@ -88,17 +90,16 @@ Poniższa tabela zawiera listę ról RBAC związanych zbierania elektronicznych 
   
 | Rola | Administrator zgodności | eDiscovery Manager & Administrator | Zarządzanie organizacją | Recenzent |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Zarządzanie przypadkami <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> | <br/> |
-|Komunikacja <br/> | <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Wyszukiwanie zgodności <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> | <br/> |
-|Opiekun <br/> | <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Eksportowanie <br/> | <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Przytrzymaj <br/>  |![Znacznik wyboru.](../media/checkmark.png) <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> | <br/> |
-|Wersja zapoznawcza <br/>  | <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Przegląd <br/>  | <br/> |![Znacznik wyboru.](../media/checkmark.png) <br/> | <br/> |![Znacznik wyboru](../media/checkmark.png) <br/> |
-|Odszyfrowywanie usługi RMS <br/>  ||![Znacznik wyboru](../media/checkmark.png) <br/> |||
-|Wyszukiwanie i przeczyszczanie <br/> | <br/> | <br/> |![Znacznik wyboru](../media/checkmark.png)<br/> | <br/> |
-||||||
+|Zarządzanie przypadkami|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru.](../media/checkmark.png)||
+|Komunikacja||![Znacznik wyboru.](../media/checkmark.png)|||
+|Wyszukiwanie zgodności|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru.](../media/checkmark.png)||
+|Opiekun||![Znacznik wyboru.](../media/checkmark.png)|||
+|Eksportowanie||![Znacznik wyboru.](../media/checkmark.png)|||
+|Przytrzymaj|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru.](../media/checkmark.png)||
+|Wersja zapoznawcza||![Znacznik wyboru.](../media/checkmark.png)|||
+|Przegląd||![Znacznik wyboru.](../media/checkmark.png)||![Znacznik wyboru](../media/checkmark.png)|
+|Odszyfrowywanie usługi RMS||![Znacznik wyboru](../media/checkmark.png)|||
+|Wyszukiwanie i przeczyszczanie|||![Znacznik wyboru](../media/checkmark.png)||
   
 W poniższych sekcjach opisano każdą z ról RBAC związanych zbierania elektronicznych materiałów dowodowych wymienionych w poprzedniej tabeli.
 
@@ -138,7 +139,7 @@ Aby uzyskać więcej informacji, zobacz [Praca z opiekunami w zakresie zbierania
 
 Rola umożliwia użytkownikom eksportowanie wyników wyszukiwania zawartości na komputer lokalny. Umożliwia również przygotowanie wyników wyszukiwania do analizy w obszarze zbierania elektronicznych materiałów dowodowych (Premium).
 
-Aby uzyskać więcej informacji na temat eksportowania wyników wyszukiwania, zobacz [Eksportowanie wyników wyszukiwania z portal zgodności Microsoft Purview](export-search-results.md).
+Aby uzyskać więcej informacji na temat eksportowania wyników wyszukiwania, zobacz [Eksportowanie wyników wyszukiwania z portalu zgodności usługi Microsoft Purview](export-search-results.md).
 
 ### <a name="hold"></a>Przytrzymaj
 
@@ -198,7 +199,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
   - Ponieważ administrator zbierania elektronicznych materiałów dowodowych może wyświetlać i uzyskiwać dostęp do wszystkich przypadków zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) i zbierania elektronicznych materiałów dowodowych (Premium), może przeprowadzać inspekcję i nadzorować wszystkie przypadki oraz skojarzone wyszukiwania zgodności. Może to pomóc w zapobieganiu wszelkim niewłaściwym użyciu wyszukiwań zgodności lub przypadków zbierania elektronicznych materiałów dowodowych. Ponieważ administratorzy zbierania elektronicznych materiałów dowodowych mogą uzyskiwać dostęp do potencjalnie poufnych informacji w wynikach wyszukiwania zgodności, należy ograniczyć liczbę osób, które są administratorami zbierania elektronicznych materiałów dowodowych.
 
-- **Czy mogę dodać grupę jako członka grupy ról menedżera zbierania elektronicznych materiałów dowodowych?** Jak wyjaśniono wcześniej, można dodać grupę zabezpieczeń z obsługą poczty jako członka podgrupy menedżerów zbierania elektronicznych materiałów dowodowych w grupie ról menedżera zbierania elektronicznych materiałów dowodowych przy użyciu polecenia cmdlet **Add-RoleGroupMember** w programie PowerShell Centrum zgodności & zabezpieczeń. Na przykład możesz uruchomić następujące polecenie, aby dodać grupę zabezpieczeń obsługującą pocztę do grupy ról menedżera zbierania elektronicznych materiałów dowodowych. 
+- **Czy mogę dodać grupę jako członka grupy ról menedżera zbierania elektronicznych materiałów dowodowych?** Jak wyjaśniono wcześniej, można dodać grupę zabezpieczeń z obsługą poczty jako członka podgrupy menedżerów zbierania elektronicznych materiałów dowodowych w grupie ról Menedżera zbierania elektronicznych materiałów dowodowych przy użyciu polecenia cmdlet **Add-RoleGroupMember** w programie PowerShell security & Compliance. Na przykład możesz uruchomić następujące polecenie, aby dodać grupę zabezpieczeń obsługującą pocztę do grupy ról menedżera zbierania elektronicznych materiałów dowodowych. 
 
   ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
@@ -206,6 +207,6 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
     Exchange grupy dystrybucyjne i Grupy Microsoft 365 nie są obsługiwane. Należy użyć grupy zabezpieczeń z obsługą poczty, którą można utworzyć w programie Exchange Online programie PowerShell, uruchamiając polecenie `New-DistributionGroup -Type Security`. Możesz również utworzyć grupę zabezpieczeń obsługującą pocztę (i dodać członków) w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> lub w [Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Po utworzeniu nowej grupy zabezpieczeń z obsługą poczty może upłynąć do 60 minut, aby dodać ją do grupy ról Menedżerowie zbierania elektronicznych materiałów dowodowych.
 
-    Ponadto, jak wspomniano wcześniej, nie można utworzyć grupy zabezpieczeń obsługującej pocztę jako administratora zbierania elektronicznych materiałów dowodowych przy użyciu polecenia cmdlet **Add-eDiscoveryCaseAdmin** w programie PowerShell Security & Compliance Center. Jako administratorów zbierania elektronicznych materiałów dowodowych można dodawać tylko poszczególnych użytkowników.
+    Ponadto, jak wspomniano wcześniej, nie można utworzyć grupy zabezpieczeń z obsługą poczty elektronicznej jako administratora zbierania elektronicznych materiałów dowodowych przy użyciu polecenia cmdlet **Add-eDiscoveryCaseAdmin** w programie PowerShell Security & Compliance. Jako administratorów zbierania elektronicznych materiałów dowodowych można dodawać tylko poszczególnych użytkowników.
 
     Nie można również dodać grupy zabezpieczeń z obsługą poczty jako członka sprawy.
