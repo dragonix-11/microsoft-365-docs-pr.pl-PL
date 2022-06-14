@@ -170,8 +170,6 @@
               href: use-arc-exceptions-to-mark-trusted-arc-senders.md
         - name: Przepływ poczty e-mail w usłudze EOP
           href: mail-flow-in-eop.md
-        - name: Zasady przesyłania dotyczące użytkowników
-          href: user-submission.md
         - name: 'Dodawanie obsługi anonimowych, przychodzących wiadomości e-mail za pośrednictwem protokołu IPv6'
           href: support-for-anonymous-inbound-email-messages-over-ipv6.md
         - name: Instalowanie funkcji Application Guard dla pakietu Office
@@ -328,6 +326,8 @@
               href: enable-the-report-message-add-in.md
             - name: Zgłaszanie wyników fałszywie dodatnich i fałszywie ujemnych w programie Outlook
               href: report-false-positives-and-false-negatives.md
+            - name: Ustawienia wiadomości zgłoszonych przez użytkownika
+              href: user-submission.md
             - name: 'Używanie reguł przepływu poczty, aby zobaczyć, co użytkownicy zgłaszają firmie Microsoft'
               href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
             - name: Przesyłanie złośliwego oprogramowania i innych oprogramowań niż złośliwe do firmy Microsoft
