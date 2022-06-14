@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak zarządzać zezwoleniami i blokami na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a25d1b7ad11c57bc63035086d9a043bcac504c16
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: ea60746554c9ad52c3e8b6d23989b2b7659cd0ad
+ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057610"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66060943"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Zarządzanie listą dozwolonych/zablokowanych dzierżaw
 
@@ -73,14 +73,16 @@ W tym artykule opisano sposób konfigurowania wpisów na liście dozwolonych/zab
 
 - Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Połączenie to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Aby nawiązać połączenie z autonomicznym programem PowerShell EOP, zobacz [Połączenie do Exchange Online Protection programu PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia w Exchange Online:
-    - Aby dodać i usunąć wartości z listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem
-      - **Zarządzanie organizacją** lub grupa ról **administratora zabezpieczeń** (**rola administratora zabezpieczeń**)
-      - Grupa ról **operatora zabezpieczeń** (**Menedżer AllowBlockList dzierżawy**).
-    - Aby uzyskać dostęp tylko do odczytu do listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem
-      - **Globalna grupa ról czytelnika**
-      - Grupa ról **czytelnika zabezpieczeń**
-      - **Grupa ról konfiguracji tylko do wyświetlania** .
+- Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia w **Exchange Online**:
+  - Aby dodać i usunąć wpisy z listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem jednej z następujących grup ról:
+    - **Zarządzanie organizacją** (rola **administratora zabezpieczeń** ).
+    - **Administrator zabezpieczeń** (rola **administratora zabezpieczeń** ).
+    - **Operator zabezpieczeń** (rola **Menedżera AllowBlockList dzierżawy** ).
+
+  - Aby uzyskać dostęp tylko do odczytu do listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem jednej z następujących grup ról:
+    - **Globalna grupa ról czytelnika** .
+    - Grupa ról **Czytelnik zabezpieczeń**.
+    - **Grupa ról konfiguracji tylko do wyświetlania** .
 
   Aby uzyskać więcej informacji, zobacz [Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -482,7 +484,6 @@ Możesz na przykład dodać wpis zezwalania dla następującej pary domen:
 - **Infrastruktura**: tms.mx.com
 
 Tylko komunikaty z tej domeny *i* wysyłanie pary infrastruktury mogą się fałszować. Inni nadawcy próbujący podszywać się pod gmail.com nie są dozwolone. Komunikaty od nadawców w innych domenach pochodzących z tms.mx.com są sprawdzane przez analizę fałszowania.
-
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>Czego można oczekiwać po dodaniu wpisu zezwalania lub blokowania
 
