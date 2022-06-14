@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 40e0285f185d112fa508d871e0ccd70c2a09120e
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: b80bbb747ab9a0aefebaa4dd5721370ba56a3890
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739422"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057720"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Badanie alertów w Microsoft 365 Defender
 
@@ -218,3 +218,4 @@ W razie potrzeby w przypadku zdarzeń w procesie kontynuuj [badanie](investigate
 - [Omówienie zdarzeń](incidents-overview.md)
 - [Zarządzanie zdarzeniami](manage-incidents.md)
 - [Badanie zdarzeń](investigate-incidents.md)
+- [Badanie zdarzeń utraty danych](investigate-dlp.md)

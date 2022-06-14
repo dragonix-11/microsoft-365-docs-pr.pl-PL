@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak zarządzać zezwoleniami i blokami na liście dozwolonych/zablokowanych dzierżaw w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b99f4f9805f34485457a0f376f4bfea04d96192
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: a25d1b7ad11c57bc63035086d9a043bcac504c16
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043736"
+ms.locfileid: "66057610"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Zarządzanie listą dozwolonych/zablokowanych dzierżaw
 
@@ -80,7 +80,7 @@ W tym artykule opisano sposób konfigurowania wpisów na liście dozwolonych/zab
     - Aby uzyskać dostęp tylko do odczytu do listy dozwolonych/zablokowanych dzierżaw, musisz być członkiem
       - **Globalna grupa ról czytelnika**
       - Grupa ról **czytelnika zabezpieczeń**
-      - **Grupa ról konfiguracji tylko do wyświetlania* .
+      - **Grupa ról konfiguracji tylko do wyświetlania** .
 
   Aby uzyskać więcej informacji, zobacz [Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo).
 

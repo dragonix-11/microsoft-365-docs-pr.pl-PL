@@ -17,16 +17,16 @@ ms.custom: seo-marvel-apr2020
 description: Administratorzy mogą dowiedzieć się, jak używać portalu Przesyłania w portalu Microsoft 365 Defender do przesyłania podejrzanych wiadomości e-mail, podejrzanych wiadomości phishingowych, spamu i innych potencjalnie szkodliwych wiadomości, adresów URL i załączników wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8e9faf6114551725dc1fc3b8b6af173bbe1e21b4
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 09c0e80c8e8632c088aa42af558c90cbf0f0fc71
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417957"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057674"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Przesyłanie do firmy Microsoft podejrzanych wiadomości spamowych, adresów URL i plików przy użyciu portalu Przesyłania
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -180,7 +180,7 @@ Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywi
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="Opcje nowej kolumny Dostosowywanie dla przesyłania przez administratora" lightbox="../../media/admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Opcje nowej kolumny Dostosowywanie dla przesyłania przez administratora" lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - Aby filtrować wpisy, kliknij pozycję **Filtruj**. Dostępne filtry to:
      - **Przesłana data**: **data rozpoczęcia** i **data zakończenia**.
@@ -197,7 +197,7 @@ Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywi
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="Opcje nowego filtru dla przesłanych przez administratorów" lightbox="../../media/admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Opcje nowego filtru dla przesłanych przez administratorów" lightbox="../../media/email-admin-submission-filters.png":::
 
    - Aby pogrupować wpisy, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
      - **Brak**
@@ -287,7 +287,7 @@ Jeśli wdrożono [dodatek Komunikat raportu](enable-the-report-message-add-in.md
 
 Gdy użytkownik prześle podejrzaną wiadomość e-mail do niestandardowej skrzynki pocztowej, użytkownik i administrator nie będą mogli cofnąć przesyłania. Jeśli użytkownik chce odzyskać wiadomość e-mail, będzie on dostępny do odzyskania w folderach Elementy usunięte lub Wiadomości-śmieci.
 
-### <a name="converting-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Konwertowanie wiadomości zgłoszonych przez użytkownika z niestandardowej skrzynki pocztowej na przesyłanie przez administratora
+### <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Konwertowanie wiadomości zgłoszonych przez użytkownika z niestandardowej skrzynki pocztowej na przesyłanie przez administratora
 
 Jeśli niestandardowa skrzynka pocztowa została skonfigurowana do przechwytywania wiadomości zgłoszonych przez użytkowników bez wysyłania wiadomości do firmy Microsoft, możesz znaleźć i wysłać określone wiadomości do firmy Microsoft w celu analizy.
 

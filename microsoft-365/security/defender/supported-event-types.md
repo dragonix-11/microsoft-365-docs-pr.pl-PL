@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender strumieniowego przesyłania strumieniowego obsługiwane w interfejsie API przesyłania strumieniowego zdarzeń
+title: Microsoft 365 Defender typy zdarzeń przesyłania strumieniowego obsługiwane w interfejsie API przesyłania strumieniowego zdarzeń
 description: Dowiedz się, które typy zdarzeń przesyłania strumieniowego (tabele) są obsługiwane przez interfejs API przesyłania strumieniowego
-keywords: nieprzetworzone eksportowanie danych, interfejs API przesyłania strumieniowego, interfejs API, centra wydarzeń, magazyn platformy Azure, konto magazynu, czas pracy, pierwotne udostępnianie danych
+keywords: eksport danych pierwotnych, interfejs API przesyłania strumieniowego, interfejs API, centra zdarzeń, magazyn platformy Azure, konto magazynu, wyszukiwanie zagrożeń, udostępnianie danych pierwotnych
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e8264ccb9e3181f6b58a6206417eb2b842bec6e7
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 4f6f098c9d2ec09a777110955b8acb1663e102ed
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "62988662"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057856"
 ---
-# <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>Obsługiwane Microsoft 365 Defender zdarzeń przesyłania strumieniowego w interfejsie API przesyłania strumieniowego zdarzeń
+# <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>Obsługiwane typy zdarzeń przesyłania strumieniowego Microsoft 365 Defender w interfejsie API przesyłania strumieniowego zdarzeń
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,31 +33,32 @@ ms.locfileid: "62988662"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 
-Interfejs API strumieniowego przesyłania zdarzeń jest stale rozszerzany w celu obsługi większej liczby typów zdarzeń. Dowiedz się, które tabele z programem Hunting są ogólnie dostępne, obecnie w podglądzie publicznym, lub nie są jeszcze obsługiwane. 
-**Nowe — typy/tabele zdarzeń poczty e-mail są teraz ga**
+Interfejs API przesyłania strumieniowego zdarzeń jest stale rozwijany w celu obsługi większej liczby typów zdarzeń. Dowiedz się, które tabele wyszukiwania zagrożeń są ogólnie dostępne, obecnie w publicznej wersji zapoznawczej lub nie są jeszcze obsługiwane. 
+**Nowe — typy/tabele zdarzeń poczty e-mail są teraz ogólnie dostępne**
 
-## <a name="hunting-tables-support-status-in-event-streaming-api"></a>Informacje o stanie obsługi tabel w interfejsie API przesyłania strumieniowego wydarzeń
+## <a name="hunting-tables-support-status-in-event-streaming-api"></a>Tabele wyszukiwania zagrożeń obsługują stan w interfejsie API przesyłania strumieniowego zdarzeń
 
-W poniższej tabeli znajduje się tylko lista tabel obsługiwanych w interfejsie API przesyłania strumieniowego i nie zawiera wszystkich schematów AH. Aby uzyskać pełną listę interfejsu API, zobacz [Informacje o tabelach schematów](advanced-hunting-schema-tables.md#learn-the-schema-tables).
+Poniższa tabela zawiera tylko listę tabel obsługiwanych w interfejsie API przesyłania strumieniowego i nie obejmuje całego schematu AH. Aby uzyskać pełną listę interfejsu API, zobacz [Informacje o tabelach schematów](advanced-hunting-schema-tables.md#learn-the-schema-tables).
 
-
-| Nazwa tabeli | Stan |
-|------------|-------------|
-| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | GA |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | GA  |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** |GA |
-| **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** |GA |
-| **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | GA |
-| **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | GA |
-| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | GA |
-| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | GA |
-| **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** |GA |
-| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | GA |
-| **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | GA |
-| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | GA |
-| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | GA |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |
-
-
+| Nazwa tabeli | Stan<br>(Komercyjne) | GCC | GCC wysoki | DoD |
+|----|----|----|----|----|
+| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | GA | GA | GA | GA |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | GA | GA | GA | GA |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** |GA | GA | GA | GA |
+| **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** |GA | GA | GA | GA |
+| **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | GA | GA | GA | GA |
+| **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | GA | GA | GA | GA |
+| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | GA | GA | GA | GA |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | GA | GA | GA | GA |
+| **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** |GA | GA | GA | GA |
+| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | GA | GA | GA | GA |
+| **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | GA | GA | GA | GA |
+| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | GA | GA | GA | GA |
+| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | GA |![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)**|GA|![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|
+| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)**|GA|![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)**|GA|![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)**|GA|![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|![Nie](../defender-endpoint/images/svg/check-no.svg)|
