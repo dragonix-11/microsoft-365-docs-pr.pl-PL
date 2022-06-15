@@ -16,18 +16,18 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8da099332ffbe2cc3d860faef504e4c5d9663614
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0365f8a9d2f267d7ebc0cfeddd5b7d1d5c16a72a
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418637"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078793"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Skonfiguruj i zweryfikuj połączenia sieciowe programu antywirusowego Microsoft Defender
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - Program antywirusowy Microsoft Defender
 
@@ -90,7 +90,7 @@ Aby uzyskać więcej informacji, zobacz [Zarządzanie Program antywirusowy Micro
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Próba pobrania fałszywego pliku złośliwego oprogramowania od firmy Microsoft
 
-Możesz pobrać przykładowy plik, który Program antywirusowy Microsoft Defender wykryje i zablokuje połączenie z chmurą. Odwiedź stronę [https://aka.ms/ioavtest](https://aka.ms/ioavtest) , aby pobrać plik.
+Możesz pobrać przykładowy plik, który Program antywirusowy Microsoft Defender wykryje i zablokuje połączenie z chmurą. Odwiedź stronę [https://aka.ms/ioavtest1](https://aka.ms/ioavtest1) , aby pobrać plik.
 
 > [!NOTE]
 > Pobrany plik nie jest dokładnie złośliwym oprogramowaniem. Jest to fałszywy plik przeznaczony do testowania, czy masz prawidłowe połączenie z chmurą.
@@ -119,7 +119,7 @@ Podobny komunikat występuje, jeśli używasz programu Internet Explorer:
    W dzienniku zdarzeń Windows zostanie również wyświetlony [identyfikator zdarzenia klienta Windows Defender 1116](troubleshoot-microsoft-defender-antivirus.md).
 
     > [!TIP]
-    > Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+    > Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
     > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
     > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
     > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

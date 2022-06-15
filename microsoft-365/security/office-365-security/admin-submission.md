@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Administratorzy mogą dowiedzieć się, jak używać portalu Przesyłania w portalu Microsoft 365 Defender do przesyłania podejrzanych wiadomości e-mail, podejrzanych wiadomości phishingowych, spamu i innych potencjalnie szkodliwych wiadomości, adresów URL i załączników wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 09c0e80c8e8632c088aa42af558c90cbf0f0fc71
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: 125e151873e45717a4621bf2798e3587671c6b8d
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057674"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078968"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Przesyłanie do firmy Microsoft podejrzanych wiadomości spamowych, adresów URL i plików przy użyciu portalu Przesyłania
 
@@ -60,7 +60,7 @@ Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak używać przesłanych
 
 - Administratorzy mogą przesyłać wiadomości w ciągu 30 dni, jeśli są nadal dostępne w skrzynce pocztowej i nie są usuwane przez użytkownika lub innego administratora.
 
-- Przesyłanie przez administratora jest ograniczane według następujących stawek:
+- Administracja przesyłanie jest ograniczane według następujących stawek:
   - Maksymalna liczba przesłanych zgłoszeń w dowolnym okresie 15 minut: 150 przesłanych
   - Te same zgłoszenia w 24-godzinnym okresie: 3 przesłania
   - Te same zgłoszenia w okresie 15 minut: 1 przesyłanie
@@ -149,13 +149,13 @@ Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywi
 > [!NOTE]
 > Jeśli filtrowanie złośliwego oprogramowania zastąpiło załączniki wiadomości plikiem alertu o złośliwym oprogramowaniu Text.txt, należy przesłać oryginalny komunikat z kwarantanny zawierającej oryginalne załączniki. Aby uzyskać więcej informacji na temat kwarantanny i sposobu wydawania komunikatów ze złośliwym oprogramowaniem fałszywie dodatnim, zobacz [Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator](manage-quarantined-messages-and-files.md).
 
-## <a name="view-admin-submissions-to-microsoft"></a>Wyświetlanie przesyłania przez administratora do firmy Microsoft
+## <a name="view-email-admin-submissions-to-microsoft"></a>Wyświetlanie przesłanych wiadomości e-mail do firmy Microsoft przez administratora poczty e-mail
 
 1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do strony **Przesłane** w **akcji & przesłanych.** \> Aby przejść bezpośrednio do strony **Przesłane** , użyj polecenia <https://security.microsoft.com/reportsubmission>.
 
-2. Na stronie **Przesłane** sprawdź, czy wybrano kartę **Wiadomości e-mail**, **Adres URL** lub **Załącznik wiadomości e-mail** .
+2. Na stronie **Przesłane** sprawdź, czy wybrano kartę **Wiadomości e-mail** .
 
-   - Wpisy można sortować, klikając dostępny nagłówek kolumny. Kliknij **pozycję Dostosuj kolumny** , aby wyświetlić maksymalnie siedem kolumn. Wartości domyślne są oznaczone gwiazdką (<sup>\*</sup>):
+   - Wpisy można sortować, klikając dostępny nagłówek kolumny. Kliknij **pozycję Dostosuj kolumny** , aby wybrać potrzebne kolumny. Wszystkie kolumny można wybrać i wyświetlić w siatce przesyłania. Wartości domyślne są oznaczone gwiazdką (<sup>\*</sup>):
      - **Nazwa przesyłania**<sup>\*</sup>
      - **Nadawcy**<sup>\*</sup>
      - **Odbiorcy**
@@ -201,7 +201,6 @@ Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywi
 
    - Aby pogrupować wpisy, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
      - **Brak**
-     - **Type**
      - **Powodu**
      - **Stan**
      - **Result (Wynik)**
@@ -209,7 +208,105 @@ Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywi
 
    - Aby wyeksportować wpisy, kliknij pozycję **Eksportuj**. W wyświetlonym oknie dialogowym zapisz plik .csv.
 
-### <a name="admin-submission-result-details"></a>Szczegóły wyników przesyłania przez administratora
+## <a name="view-email-attachment-admin-submissions-to-microsoft"></a>Wyświetlanie przesłanych przez administratora załączników wiadomości e-mail do firmy Microsoft
+
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do strony **Przesłane** w **akcji & przesłanych.** \> Aby przejść bezpośrednio do strony **Przesłane** , użyj polecenia <https://security.microsoft.com/reportsubmission>.
+
+2. Na stronie **Przesłane** sprawdź, czy wybrano kartę **Załączniki wiadomości e-mail** .
+
+   - Wpisy można sortować, klikając dostępny nagłówek kolumny. Kliknij **pozycję Dostosuj kolumny** , aby wybrać potrzebne kolumny. Wszystkie kolumny można wybrać i wyświetlić w siatce przesyłania. Wartości domyślne są oznaczone gwiazdką (<sup>\*</sup>):
+     - **Nazwa załącznika**<sup>\*</sup>
+     - **Data przesłania**<sup>\*</sup>
+     - **Powód przesłania**<sup>\*</sup>
+     - **Stan**<sup>\*</sup>
+     - **Wynik**<sup>\*</sup>
+     - **Filtrowanie werdyktu**
+     - **Przyczyna dostarczania/blokowania**
+     - **Identyfikator przesyłania**
+     - **Identyfikator obiektu**
+     - **Akcja zasad**
+     - **Przesłane przez**
+     - **Tagi**<sup>\*</sup>
+     - **Zezwalaj**
+
+     Po zakończeniu kliknij przycisk **Zastosuj**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Opcje nowej kolumny Dostosowywanie dla przesyłania przez administratora" lightbox="../../media/email-attachment-admin-submission-customize-columns.png":::
+
+   - Aby filtrować wpisy, kliknij pozycję **Filtruj**. Dostępne filtry to:
+     - **Przesłana data**: **data rozpoczęcia** i **data zakończenia**.
+     - **Identyfikator przesyłania**: wartość identyfikatora GUID przypisana do każdego przesłania.
+     - **Nazwa pliku załącznika**
+     - **Przesłane przez**
+     - **Powód przesłania**
+     - **Stan**
+     - **Tagi**
+
+     Po zakończeniu kliknij przycisk **Zastosuj**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Opcje nowego filtru dla przesłanych przez administratorów" lightbox="../../media/email-attachment-admin-submission-filters.png":::
+
+   - Aby pogrupować wpisy, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
+     - **Brak**
+     - **Powodu**
+     - **Stan**
+     - **Result (Wynik)**
+     - **Tagi**
+
+   - Aby wyeksportować wpisy, kliknij pozycję **Eksportuj**. W wyświetlonym oknie dialogowym zapisz plik .csv.
+
+## <a name="view-urls-admin-submissions-to-microsoft"></a>Wyświetlanie przesłanych adresów URL administratora do firmy Microsoft
+
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do strony **Przesłane** w **akcji & przesłanych.** \> Aby przejść bezpośrednio do strony **Przesłane** , użyj polecenia <https://security.microsoft.com/reportsubmission>.
+
+2. Na stronie **Przesłane** sprawdź, czy wybrano kartę **Adresy URL** .
+
+   - Wpisy można sortować, klikając dostępny nagłówek kolumny. Kliknij **pozycję Dostosuj kolumny** , aby wybrać potrzebne kolumny. Wszystkie kolumny można wybrać i wyświetlić w siatce przesyłania. Wartości domyślne są oznaczone gwiazdką (<sup>\*</sup>):
+     - **ADRES URL**<sup>\*</sup>
+     - **Data przesłania**<sup>\*</sup>
+     - **Powód przesłania**<sup>\*</sup>
+     - **Stan**<sup>\*</sup>
+     - **Wynik**<sup>\*</sup>
+     - **Filtrowanie werdyktu**
+     - **Przyczyna dostarczania/blokowania**
+     - **Identyfikator przesyłania**
+     - **Identyfikator obiektu**
+     - **Akcja zasad**
+     - **Przesłane przez**
+     - **Tagi**<sup>\*</sup>
+     - **Zezwalaj**
+
+     Po zakończeniu kliknij przycisk **Zastosuj**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Opcje nowej kolumny Dostosowywanie dla przesyłania przez administratora" lightbox="../../media/url-admin-submission-customize-columns.png":::
+
+   - Aby filtrować wpisy, kliknij pozycję **Filtruj**. Dostępne filtry to:
+     - **Przesłana data**: **data rozpoczęcia** i **data zakończenia**.
+     - **Identyfikator przesyłania**: wartość identyfikatora GUID przypisana do każdego przesłania.
+     - **ADRES URL**
+     - **Przesłane przez**
+     - **Powód przesłania**
+     - **Stan**
+     - **Tagi**
+
+     Po zakończeniu kliknij przycisk **Zastosuj**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Opcje nowego filtru dla przesłanych przez administratorów" lightbox="../../media/url-admin-submission-filters.png":::
+
+   - Aby pogrupować wpisy, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
+     - **Brak**
+     - **Powodu**
+     - **Stan**
+     - **Result (Wynik)**
+     - **Tagi**
+
+   - Aby wyeksportować wpisy, kliknij pozycję **Eksportuj**. W wyświetlonym oknie dialogowym zapisz plik .csv.
+
+### <a name="admin-submission-result-details"></a>szczegóły wyników przesyłania Administracja
 
 Komunikaty przesyłane w przesłanych przez administratorów plikach są przeglądane, a wyniki wyświetlane w wysuwnym oknie wysuwnym szczegółów przesyłania:
 

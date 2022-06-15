@@ -1,5 +1,5 @@
 ---
-title: Przeszukiwanie dziennika inspekcji w portalu zgodności usługi Microsoft Purview
+title: Przeszukaj dziennik inspekcji w portal zgodności Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Użyj portalu zgodności usługi Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji.
+description: Użyj portal zgodności Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 80ddd03eb37bd1b8984585a3e6d38b25a3a2b983
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0e8ac4e3a8705960f307314717127c969a26c2f6
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014283"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078507"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Przeszukiwanie dziennika inspekcji w portalu zgodności
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Jeśli tak, możesz użyć narzędzia do wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Użytkownicy w organizacji mogą używać narzędzia do wyszukiwania dzienników inspekcji, aby wyszukiwać, wyświetlać i eksportować (do pliku CSV) rekordy inspekcji dla tych operacji.
+Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Jeśli tak, możesz użyć narzędzia do wyszukiwania dzienników inspekcji w portal zgodności Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Użytkownicy w organizacji mogą używać narzędzia do wyszukiwania dzienników inspekcji, aby wyszukiwać, wyświetlać i eksportować (do pliku CSV) rekordy inspekcji dla tych operacji.
 
 ## <a name="microsoft-365-services-that-support-auditing"></a>usługi Microsoft 365 obsługujące inspekcję
 
@@ -68,6 +68,7 @@ Dlaczego ujednolicony dziennik inspekcji? Ponieważ można przeszukiwać dzienni
 | Analiza zagrożeń|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
 | Workplace Analytics|WorkplaceAnalytics|
 | Yammer|Yammer|
+| SystemSync| DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData |
 
 Aby uzyskać więcej informacji na temat operacji, które są poddawane inspekcji w każdej z usług wymienionych w poprzedniej tabeli, zobacz sekcję [Inspekcja działań](#audited-activities) w tym artykule.
 
@@ -408,7 +409,7 @@ Kliknij jeden z poniższych linków, aby przejść do określonej tabeli.
         [Działania zaszyfrowanego portalu wiadomości](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
-        
+        [Działania narzędzia SystemSync] (działania #systemsync)
     :::column-end:::
     :::column:::
         
@@ -447,7 +448,7 @@ W poniższej tabeli opisano działania dotyczące plików i stron w usłudze Sha
 |Odtworzono wszystkie wersje pomocnicze pliku|FileVersionsAllMinorsRecycled|Użytkownik usuwa wszystkie wersje pomocnicze z historii wersji pliku. Usunięte wersje są przenoszone do kosza witryny.|
 |Odtworzono wszystkie wersje pliku|FileVersionsAllRecycled|Użytkownik usuwa wszystkie wersje z historii wersji pliku. Usunięte wersje są przenoszone do kosza witryny.|
 |Odtworzona wersja pliku|FileVersionRecycled|Użytkownik usuwa wersję z historii wersji pliku. Usunięta wersja zostanie przeniesiona do kosza witryny.|
-|Zmieniono nazwę pliku|FileRenamed|Użytkownik zmienia nazwę dokumentu w witrynie.|
+|Zmieniono nazwę pliku|FileRenamed|Użytkownik zmienia nazwę dokumentu.|
 |Przywrócony plik|FileRestored|Użytkownik przywraca dokument z kosza witryny.|
 |Przekazany plik|FileUploaded|Użytkownik przekazuje dokument do folderu w witrynie.|
 |Wyświetlona strona|PageViewed|Użytkownik wyświetla stronę w witrynie. Nie obejmuje to używania przeglądarki sieci Web do wyświetlania plików znajdujących się w bibliotece dokumentów. Gdy użytkownik wyświetli stronę, zdarzenie PageViewed nie zostanie ponownie zarejestrowane dla tego samego użytkownika dla tej samej strony przez następne pięć minut.|
@@ -785,7 +786,7 @@ Aby uzyskać listę i szczegółowy opis zarejestrowanych działań zbierania el
 
 ### <a name="ediscovery-premium-activities"></a>Działania zbierania elektronicznych materiałów dowodowych (Premium)
 
-Możesz również wyszukać w dzienniku inspekcji działania w usłudze Microsoft Purview eDiscovery (Premium). Opis tych działań można znaleźć w sekcji "Działania zbierania elektronicznych materiałów dowodowych (Premium) w [temacie Wyszukiwanie działań zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-premium-activities).
+Możesz również wyszukać w dzienniku inspekcji działania w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium). Opis tych działań można znaleźć w sekcji "Działania zbierania elektronicznych materiałów dowodowych (Premium) w [temacie Wyszukiwanie działań zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-premium-activities).
 
 ### <a name="power-bi-activities"></a>działania Power BI
 
@@ -805,9 +806,9 @@ Usługa Workplace Analytics zapewnia wgląd w sposób współpracy grup w całej
 |Usunięty wynik|DeletedResult|Analityk usunął wynik zapytania.|
 |Pobrany raport|Pobranyraport|Analityk pobrał plik wyników zapytania.|
 |Wykonane zapytanie|ExecutedQuery|Analityk uruchomił zapytanie.|
-|Zaktualizowane ustawienie dostępu do danych|UpdatedDataAccessSetting|Administrator zaktualizował ustawienia dostępu do danych.|
-|Zaktualizowane ustawienie prywatności|AktualizacjaPrivacySetting|Administrator zaktualizował ustawienia prywatności; na przykład minimalny rozmiar grupy.|
-|Przekazane dane organizacji|UploadedOrgData|Administrator przekazał plik danych organizacji.|
+|Zaktualizowane ustawienie dostępu do danych|UpdatedDataAccessSetting|Administracja zaktualizowane ustawienia dostępu do danych.|
+|Zaktualizowane ustawienie prywatności|AktualizacjaPrivacySetting|Administracja zaktualizowane ustawienia prywatności, na przykład minimalny rozmiar grupy.|
+|Przekazane dane organizacji|UploadedOrgData|Administracja przekazany plik danych organizacji.|
 |Zalogowany użytkownik<sup>*</sup>| UserLoggedIn |Użytkownik zalogował się do swojego konta użytkownika Microsoft 365.|
 |Użytkownik wylogowany<sup>*</sup>| UserLoggedOff |Użytkownik wylogowył się ze swojego konta użytkownika Microsoft 365.
 |Wyświetlone eksplorowanie|ViewedExplore|Wizualizacje przeglądane przez analityków na co najmniej jednej karcie Eksploruj stronę.|
@@ -930,7 +931,7 @@ Jeśli działanie formularzy jest wykonywane przez współautora lub anonimowego
 |Wyświetlona odpowiedź|ViewResponse|Właściciel formularza wyświetla określoną odpowiedź. <br><br>Właściwość ResponseId:string i Właściwość ResponderId:string wskazuje, który wynik jest wyświetlany. <br><br>W przypadku odpowiedzi anonimowej właściwość ResponderId będzie mieć wartość null.|
 |Link do podsumowania utworzonego|GetSummaryLink|Właściciel formularza tworzy link do wyników podsumowania w celu udostępniania wyników.|
 |Link do usuniętego podsumowania|DeleteSummaryLink|Właściciel formularza usuwa link wyników podsumowania.|
-|Zaktualizowany stan wyłudzania informacji o formularzu|UpdatePhishingStatus|To zdarzenie jest rejestrowane za każdym razem, gdy została zmieniona szczegółowa wartość stanu zabezpieczeń wewnętrznych, niezależnie od tego, czy zmieniono ostateczny stan zabezpieczeń (na przykład formularz jest teraz zamknięty, czy otwarty). Oznacza to, że mogą zostać wyświetlone zduplikowane zdarzenia bez ostatecznej zmiany stanu zabezpieczeń. Możliwe wartości stanu dla tego zdarzenia to:<br/>- Zdjąć <br/>- Take Down by Admin (Wyłączanie przez administratora) <br/>— Odblokowano administratora <br/>— Automatyczne blokowanie <br/>— Automatyczne odblokowywanie <br/>- Zgłoszone przez klienta <br/>- Resetowanie zgłoszonego klienta|
+|Zaktualizowany stan wyłudzania informacji o formularzu|UpdatePhishingStatus|To zdarzenie jest rejestrowane za każdym razem, gdy została zmieniona szczegółowa wartość stanu zabezpieczeń wewnętrznych, niezależnie od tego, czy zmieniono ostateczny stan zabezpieczeń (na przykład formularz jest teraz zamknięty, czy otwarty). Oznacza to, że mogą zostać wyświetlone zduplikowane zdarzenia bez ostatecznej zmiany stanu zabezpieczeń. Możliwe wartości stanu dla tego zdarzenia to:<br/>- Zdjąć <br/>- Take Down by Administracja <br/>- odblokowane Administracja <br/>— Automatyczne blokowanie <br/>— Automatyczne odblokowywanie <br/>- Zgłoszone przez klienta <br/>- Resetowanie zgłoszonego klienta|
 |Zaktualizowany stan wyłudzania informacji przez użytkownika|UpdateUserPhishingStatus|To zdarzenie jest rejestrowane za każdym razem, gdy wartość stanu zabezpieczeń użytkownika została zmieniona. Wartość stanu użytkownika w rekordzie inspekcji jest **potwierdzona jako Phisher** , gdy użytkownik utworzył formularz wyłudzania informacji, który został zdjęty przez zespół ds. bezpieczeństwa usługi Microsoft Online. Jeśli administrator odblokuje użytkownika, wartość stanu użytkownika jest ustawiona na **wartość Resetuj jako normalny użytkownik**.|
 |Wysłane formularze Pro zaproszenia|ProInvitation|Użytkownik klika, aby aktywować Pro wersji próbnej.|
 |Zaktualizowane ustawienie formularza<sup>*</sup> |UpdateFormSetting|Właściciel formularza aktualizuje jedno lub wiele ustawień formularza. <br><br>Właściwość FormSettingName:string wskazuje zaktualizowaną nazwę ustawień poufnych. Właściwość NewFormSettings:string wskazuje nazwę zaktualizowanych ustawień i nową wartość. Właściwość thankYouMessageContainsLink:boolean wskazuje zaktualizowany komunikat podziękowania zawiera link url.|
@@ -1015,8 +1016,8 @@ W poniższej tabeli wymieniono działania w wiadomości e-mail z informacją, kt
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:----|:-----|:-----|
-|Zaktualizowane ustawienia prywatności organizacji|UpdatedOrganizationBriefingSettings|Administrator aktualizuje ustawienia prywatności organizacji dla wiadomości e-mail z briefingiem. |
-|Zaktualizowane ustawienia prywatności użytkowników|UpdatedUserBriefingSettings|Administrator aktualizuje ustawienia prywatności użytkownika dla wiadomości e-mail z briefingiem.
+|Zaktualizowane ustawienia prywatności organizacji|UpdatedOrganizationBriefingSettings|Administracja aktualizuje ustawienia prywatności organizacji dla wiadomości e-mail z briefingiem. |
+|Zaktualizowane ustawienia prywatności użytkowników|UpdatedUserBriefingSettings|Administracja aktualizuje ustawienia prywatności użytkownika dla wiadomości e-mail z briefingiem.
 
 ### <a name="myanalytics-activities"></a>Działania myAnalytics
 
@@ -1024,8 +1025,8 @@ W poniższej tabeli wymieniono działania w usłudze MyAnalytics, które są rej
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:-----|:-----|:-----|
-|Zaktualizowano ustawienia myanalytics organizacji|UpdatedOrganizationMyAnalyticsSettings|Administrator aktualizuje ustawienia na poziomie organizacji dla usługi MyAnalytics. |
-|Zaktualizowano ustawienia myanalytics użytkownika|UpdatedUserMyAnalyticsSettings|Administrator aktualizuje ustawienia użytkownika dla usługi MyAnalytics.|
+|Zaktualizowano ustawienia myanalytics organizacji|UpdatedOrganizationMyAnalyticsSettings|Administracja aktualizuje ustawienia na poziomie organizacji dla usługi MyAnalytics. |
+|Zaktualizowano ustawienia myanalytics użytkownika|UpdatedUserMyAnalyticsSettings|Administracja aktualizuje ustawienia użytkownika dla usługi MyAnalytics.|
 
 ### <a name="information-barriers-activities"></a>Działania związane z barierami informacyjnymi
 
@@ -1064,7 +1065,7 @@ W poniższej tabeli wymieniono działania dotyczące raportów użycia, które s
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:-----|:-----|:-----|
-|Zaktualizowane ustawienia prywatności raportu użycia|UpdateUsageReportsPrivacySetting|Administrator zaktualizował ustawienia prywatności raportów użycia. |
+|Zaktualizowane ustawienia prywatności raportu użycia|UpdateUsageReportsPrivacySetting|Administracja zaktualizowane ustawienia prywatności dla raportów użycia. |
 
 ### <a name="exchange-admin-audit-log"></a>dziennik inspekcji administratora Exchange
 
@@ -1106,6 +1107,18 @@ Każdy wpis inspekcji dla śledzonego komunikatu będzie zawierać następujące
 - AttachmentName — nazwa załącznika.
 - OperationProperties — lista opcjonalnych właściwości, na przykład liczba wysłanych kodów dostępu OTP lub temat wiadomości e-mail.
 
+### <a name="systemsync-activities"></a>Działania narzędzia SystemSync
+
+W poniższej tabeli wymieniono działania programu SystemSync, które są rejestrowane w dzienniku inspekcji Microsoft 365.
+
+|**Przyjazna nazwa**|**Operacja**|**Opis**|
+|:-----|:-----|:-----|
+|utworzono Data Share|DataShareCreated|Po utworzeniu eksportu danych przez użytkownika.|
+|Data Share usunięto|DataShareDeleted|Gdy eksport danych zostanie usunięty przez użytkownika.|
+|Generowanie kopii danych usługi Lake|GenerateCopyOfLakeData|Po wygenerowaniu kopii danych usługi Lake Data.|
+|Pobieranie kopii danych usługi Lake|DownloadCopyOfLakeData|Po pobraniu kopii usługi Lake Data.|
+
+
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
 **Czym różnią się usługi Microsoft 365, które są obecnie poddawane inspekcji?**
@@ -1134,7 +1147,7 @@ Tak, dzienniki inspekcji można pobrać przy użyciu następujących metod:
 
 - [Interfejs API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- [Narzędzie do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w portalu zgodności usługi Microsoft Purview.
+- [Narzędzie do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w portal zgodności Microsoft Purview.
 
 - Polecenie cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) w programie Exchange Online programu PowerShell.
 

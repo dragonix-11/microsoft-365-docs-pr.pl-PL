@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Cloud Apps w Microsoft 365 Defender
+title: Microsoft Defender for Cloud Apps w Microsoft 365 Defender (wersja zapoznawcza)
 description: Dowiedz się więcej o zmianach z Microsoft Defender for Cloud Apps na Microsoft 365 Defender
 keywords: Wprowadzenie do Microsoft 365 Defender, Microsoft Defender for Cloud Apps
 ms.prod: microsoft-365-enterprise
@@ -19,14 +19,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 28ad4e490e1347c3e17d9e99d1bc9d0f8ea5b60f
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: 2cd146cfb0fe9b6af10f562bbf6eb00bc5bf9a3d
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057905"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078401"
 ---
-# <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender"></a>Microsoft Defender for Cloud Apps w Microsoft 365 Defender
+# <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft Defender for Cloud Apps w Microsoft 365 Defender (wersja zapoznawcza)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -68,9 +68,12 @@ Obraz i poniższa tabela zawierają listę zmian w nawigacji między Microsoft D
 | Pliki | pozostanie w portalu aplikacji Defender dla Chmury |
 | Użytkownicy i konta | Tożsamości > zasobów |
 | Konfiguracja zabezpieczeń | pozostanie w portalu aplikacji Defender dla Chmury |
-| Stan zabezpieczeń tożsamości | pozostanie w portalu aplikacji Defender dla Chmury |
+| Stan zabezpieczeń tożsamości | [Oceny stanu zabezpieczeń tożsamości Microsoft Defender for Identity](/defender-for-identity/isp-overview) |
 | Aplikacje OAuth | Aplikacje w chmurze — > aplikacje OAuth |
 | Połączone aplikacje | pozostanie w portalu aplikacji Defender dla Chmury |
+
+> [!NOTE]
+> Nowe środowisko aplikacji Defender dla Chmury w portalu Microsoft 365 Defender jest obecnie dostępne dla wszystkich użytkowników szczegółowo w [temacie Zarządzanie dostępem administratora](/defender-cloud-apps/manage-admins), z wyjątkiem tych z rolami zdefiniowanymi [w wbudowanych rolach administracyjnych w usłudze Defender dla Chmury Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
 
 ## <a name="whats-changed"></a>Co się zmieniło
 

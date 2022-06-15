@@ -19,30 +19,30 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Ochrona przed utratą danych punktu końcowego rozszerza monitorowanie działań plików i akcji ochronnych dla tych plików na punkty końcowe. Pliki są widoczne w rozwiązaniach zgodności '
-ms.openlocfilehash: 76649559b1110c02f29584afdfb7e48f57a41f1e
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 54f2605e815c98242a66b4d2be844ee59a2699e8
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023376"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078837"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Dowiedz się więcej o ochronie przed utratą danych punktu końcowego
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Za pomocą usługi Microsoft Purview Data Loss Prevention (DLP) można monitorować akcje podejmowane w przypadku elementów, które zostały uznane za wrażliwe, i zapobiec przypadkowej wymianie tych elementów. Aby uzyskać więcej informacji na temat ochrony przed [utratą danych, zobacz Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md).
+Możesz użyć Ochrona przed utratą danych w Microsoft Purview (DLP) do monitorowania akcji wykonywanych na elementach, które zostały uznane za wrażliwe, i aby zapobiec niezamierzonemu udostępnianiu tych elementów. Aby uzyskać więcej informacji na temat ochrony przed [utratą danych, zobacz Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md).
 
-**Ochrona przed utratą danych punktu końcowego** (Endpoint DLP) rozszerza możliwości monitorowania aktywności i ochrony DLP na poufne elementy, które są fizycznie przechowywane na urządzeniach Windows 10, Windows 11 i macOS (Catalina 10.15 lub nowszych). Po dołączeniu urządzeń do rozwiązań Usługi Microsoft Purview informacje o tym, co użytkownicy robią z poufnymi elementami, są widoczne w [Eksploratorze aktywności](data-classification-activity-explorer.md) i można wymuszać akcje ochronne na tych elementach za pośrednictwem [zasad DLP](create-test-tune-dlp-policy.md).
+**Ochrona przed utratą danych punktu końcowego** (Endpoint DLP) rozszerza możliwości monitorowania aktywności i ochrony DLP na poufne elementy, które są fizycznie przechowywane na urządzeniach Windows 10, Windows 11 i macOS (Catalina 10.15 i nowszych). Po dołączeniu urządzeń do rozwiązań Microsoft Purview informacje o tym, co użytkownicy robią z poufnymi elementami, są widoczne w [Eksploratorze aktywności](data-classification-activity-explorer.md) i można wymuszać akcje ochronne na tych elementach za pośrednictwem [zasad DLP](create-test-tune-dlp-policy.md).
 
 > [!TIP]
 > Jeśli szukasz kontroli urządzenia dla magazynu wymiennego, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender Device Control Removable Storage Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 > [!NOTE]
-> W usłudze Microsoft Purview ocena zasad DLP elementów poufnych odbywa się centralnie, więc nie ma opóźnienia czasowego dystrybucji zasad i aktualizacji zasad do poszczególnych urządzeń. Aktualizacja zasad w Centrum zgodności zwykle trwa około godziny, zanim te aktualizacje zostaną zsynchronizowane w całej usłudze. Po zsynchronizowania aktualizacji zasad elementy na urządzeniach docelowych są automatycznie ponownie oceniane przy następnym uzyskaniu dostępu lub modyfikacji.
+> W Microsoft Purview ocena zasad DLP elementów poufnych odbywa się centralnie, więc nie ma opóźnienia czasowego dystrybucji zasad i aktualizacji zasad do poszczególnych urządzeń. Aktualizacja zasad w Centrum zgodności zwykle trwa około godziny, zanim te aktualizacje zostaną zsynchronizowane w całej usłudze. Po zsynchronizowania aktualizacji zasad elementy na urządzeniach docelowych są automatycznie ponownie oceniane przy następnym uzyskaniu dostępu lub modyfikacji.
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Działania punktu końcowego, które można monitorować i podejmować
 
-Protokół DLP punktu końcowego umożliwia przeprowadzanie inspekcji następujących typów działań, które użytkownicy przyjmują na poufnych elementach, które są fizycznie przechowywane Windows 10, Windows 11 lub urządzeniach z systemem macOS.
+Protokół DLP punktu końcowego umożliwia przeprowadzanie inspekcji następujących typów działań, które użytkownicy przyjmują na poufnych elementach, które są fizycznie przechowywane Windows 10, Windows 11 lub macOS urządzeniach.
 
 |Działanie |Opis  |Windows 10 1809 i nowsze/Windows 11| macOS Catalina 10.15| Możliwość inspekcji/ograniczenia|
 |---------|---------|---------|---------|---------|
@@ -53,8 +53,8 @@ Protokół DLP punktu końcowego umożliwia przeprowadzanie inspekcji następuj�
 |drukowanie dokumentu    |Wykrywa, kiedy użytkownik próbuje wydrukować chroniony element na drukarce lokalnej lub sieciowej.|Obsługiwane|Obsługiwane|możliwość przeprowadzania inspekcji i ograniczania         |
 |kopiowanie do sesji zdalnej|Wykrywa, kiedy użytkownik próbuje skopiować element do sesji pulpitu zdalnego |Obsługiwane|nieobsługiwane|  możliwość przeprowadzania inspekcji i ograniczania|
 |kopiowanie na urządzenie Bluetooth|Wykrywa, kiedy użytkownik próbuje skopiować element do niedozwolonej aplikacji Bluetooth (zgodnie z definicją na liście niedozwolonych Bluetooth aps w ustawieniach DLP punktu końcowego).|Obsługiwane|nieobsługiwane| możliwość przeprowadzania inspekcji i ograniczania|
-|tworzenie elementu|Wykrywa, kiedy użytkownik tworzy element|Obsługiwane | |z możliwością inspekcji|
-|zmienianie nazwy elementu|Wykrywa, kiedy użytkownik zmienia nazwę elementu|Obsługiwane | |z możliwością inspekcji|
+|tworzenie elementu|Wykrywa, kiedy użytkownik tworzy element|Obsługiwane |Obsługiwane |z możliwością inspekcji|
+|zmienianie nazwy elementu|Wykrywa, kiedy użytkownik zmienia nazwę elementu|Obsługiwane |Obsługiwane |z możliwością inspekcji|
 
 ## <a name="best-practice-for-endpoint-dlp-policies"></a>Najlepsze rozwiązanie dotyczące zasad DLP punktu końcowego
 
@@ -127,7 +127,7 @@ Istnieje kilka dodatkowych pojęć, o których należy pamiętać przed rozpocz�
 
 ### <a name="enabling-device-management"></a>Włączanie zarządzania urządzeniami
 
-Zarządzanie urządzeniami to funkcja, która umożliwia zbieranie danych telemetrycznych z urządzeń i wprowadza ją do rozwiązań usługi Microsoft Purview, takich jak endpoint DLP i [zarządzanie ryzykiem wewnętrznym](insider-risk-management.md). Musisz dołączyć wszystkie urządzenia, których chcesz użyć jako lokalizacji w zasadach DLP.
+Zarządzanie urządzeniami to funkcja, która umożliwia zbieranie danych telemetrycznych z urządzeń i wprowadza ją do Microsoft Purview rozwiązań, takich jak endpoint DLP i [zarządzanie ryzykiem wewnętrznym](insider-risk-management.md). Musisz dołączyć wszystkie urządzenia, których chcesz użyć jako lokalizacji w zasadach DLP.
 
 > [!div class="mx-imgBorder"]
 > ![włączanie zarządzania urządzeniami.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -203,8 +203,8 @@ Jeśli na przykład plik zostanie skopiowany na wymienny nośnik USB, te atrybut
 
 Po zapoznaniu się z punktem końcowym DLP wykonaj następujące czynności:
 
-1. [Dołączanie urządzeń Windows 10 lub Windows 11 do usługi Microsoft Purview — omówienie](device-onboarding-overview.md)
-1. [Dołączanie urządzeń z systemem macOS do usługi Microsoft Purview — omówienie](device-onboarding-macos-overview.md)
+1. [Dołączanie urządzeń Windows 10 lub Windows 11 do Microsoft Purview omówienie](device-onboarding-overview.md)
+1. [Dołączanie urządzeń macOS do Microsoft Purview omówienie](device-onboarding-macos-overview.md)
 1. [Konfigurowanie ustawień ochrony przed utratą danych punktu końcowego](dlp-configure-endpoint-settings.md)
 1. [Korzystanie z ochrony przed utratą danych punktu końcowego](endpoint-dlp-using.md)
 

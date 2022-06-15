@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Dowiedz się, jak skonfigurować centralne ustawienia ochrony przed utratą danych punktu końcowego (DLP).
-ms.openlocfilehash: f76f6ec18464229fa50ad54a06fc7969abb3dd23
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: edf5d42421aa9fb0c54d0121655e3a31d4a729f6
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952825"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078771"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Konfigurowanie ustawień ochrony przed utratą danych punktu końcowego
 
@@ -37,7 +37,7 @@ Te ustawienia należy skonfigurować, jeśli zamierzasz kontrolować:
 
 - Ograniczenia ruchu wychodzącego w chmurze
 - Różne typy restrykcyjnych akcji dotyczących działań użytkowników na aplikację.
-- Wykluczenia ścieżki pliku dla urządzeń z systemem Windows i macOS.
+- Wykluczenia ścieżek plików dla urządzeń Windows i macOS.
 - Ograniczenia przeglądarki i domeny.
 - W jaki sposób uzasadnienia biznesowe dotyczące zastępowania zasad są wyświetlane w poradach dotyczących zasad.
 - Jeśli działania dotyczące plików Office, PDF i CSV są automatycznie poddawane inspekcji.
@@ -46,16 +46,16 @@ Te ustawienia należy skonfigurować, jeśli zamierzasz kontrolować:
 
 Przed rozpoczęciem należy skonfigurować ustawienia DLP. 
 
-### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Ustawienia protokołu DLP punktu końcowego Windows 10/11 i systemu macOS
+### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Ustawienia Windows 10/11 i macOS punktu końcowego DLP
 
-|Ustawienie |Windows 10, 1809 i nowsze, Windows 11  |macOS Catalina 10.15 lub nowszy |Uwagi  |
+|Ustawienie |Windows 10, 1809 i nowsze, Windows 11  |macOS Catalina 10.15 lub nowsza |Uwagi  |
 |---------|---------|---------|---------|
-|Wykluczenia ścieżki pliku     |Obsługiwane         |Obsługiwane         |System macOS zawiera zalecaną listę wykluczeń, która jest domyślnie włączona          |
+|Wykluczenia ścieżki pliku     |Obsługiwane         |Obsługiwane         |macOS zawiera zalecaną listę wykluczeń, które są domyślnie włączone          |
 |Aplikacje z ograniczeniami     |Obsługiwane         |Obsługiwane         |         |
 |Grupy aplikacji z ograniczeniami |Obsługiwane |Nieobsługiwane
 |Niedozwolone aplikacje Bluetooth    |Obsługiwane         |Nieobsługiwane         |         |
 |Ograniczenia przeglądarki i domeny dotyczące elementów poufnych      |Obsługiwane         |Obsługiwane         |         |
-|Dodatkowe ustawienia protokołu DLP punktu końcowego     |Obsługiwane         |Obsługiwane         |Tylko domyślne uzasadnienia biznesowe są obsługiwane dla urządzeń z systemem macOS         |
+|Dodatkowe ustawienia protokołu DLP punktu końcowego     |Obsługiwane         |Obsługiwane         |Tylko domyślne uzasadnienia biznesowe są obsługiwane w przypadku urządzeń macOS         |
 |Zawsze przeprowadzaj inspekcję działania plików dla urządzeń     |Obsługiwane         |Obsługiwane         |         |
 |Plik automatycznej kwarantanny z niezauważalnych aplikacji | Obsługiwane | Nieobsługiwane| |
 |Klasyfikacja zaawansowana | Obsługiwane | Nieobsługiwane| |
@@ -63,7 +63,7 @@ Przed rozpoczęciem należy skonfigurować ustawienia DLP.
 
 ### <a name="advanced-classification-scanning-and-protection"></a>Zaawansowane skanowanie i ochrona klasyfikacji
 
-Zaawansowane skanowanie i ochrona klasyfikacji umożliwiają bardziej zaawansowanej usłudze klasyfikacji danych opartej na chmurze microsoft Purview skanowanie elementów, klasyfikowanie ich i zwracanie wyników na komputerze lokalnym. Oznacza to, że można korzystać z technik klasyfikacji, takich jak [dokładna klasyfikacja dopasowania danych](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) , [nazwane jednostki](named-entities-learn.md) i [klasyfikatory z możliwością trenowania](classifier-learn-about.md) w zasadach DLP.
+Zaawansowane skanowanie i ochrona klasyfikacji umożliwiają bardziej zaawansowanej Microsoft Purview usługi klasyfikacji danych opartej na chmurze na skanowanie elementów, klasyfikowanie ich i zwracanie wyników do maszyny lokalnej. Oznacza to, że można korzystać z technik klasyfikacji, takich jak [dokładna klasyfikacja dopasowania danych](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) , [nazwane jednostki](named-entities-learn.md) i [klasyfikatory z możliwością trenowania](classifier-learn-about.md) w zasadach DLP.
 
 Po włączeniu zaawansowanej klasyfikacji zawartość jest wysyłana z urządzenia lokalnego do usług w chmurze w celu skanowania i klasyfikacji. Jeśli wykorzystanie przepustowości jest problemem, możesz ustawić limit ilości, która może być używana w okresie 24-godzinnym. Limit jest skonfigurowany w ustawieniach DLP punktu końcowego i jest stosowany na urządzenie. Jeśli ustawisz limit wykorzystania przepustowości i zostanie przekroczony, usługa DLP przestanie wysyłać zawartość użytkownika do chmury. W tym momencie klasyfikacja danych jest kontynuowana lokalnie na urządzeniu, ale klasyfikacja przy użyciu dokładnego dopasowania danych, nazwanych jednostek i klasyfikatorów z możliwością trenowania nie jest dostępna. Gdy skumulowane wykorzystanie przepustowości spadnie poniżej limitu 24 godzin, komunikacja z usługami w chmurze zostanie wznowiona.
 
@@ -83,7 +83,7 @@ Te wersje Windows obsługują zaawansowane skanowanie klasyfikacji i ochronę:
 
 ### <a name="file-path-exclusions"></a>Wykluczenia ścieżki pliku
 
-Otwórz [portal zgodności usługi Microsoft](https://compliance.microsoft.com) PurviewZasadanie **przed utratąUstawienia** >  >  **DLP punktu** **końcowegoWyklucze** >  ścieżki pliku.
+Otwórz [portal zgodności Microsoft Purview](https://compliance.microsoft.com) >  **Zastaw ustawienia****DLP** >  punktu końcowego zapobiegania  > **utracie danych Wykluczeń ścieżki pliku**.
 
 Możesz wykluczyć niektóre ścieżki z monitorowania DLP, alertów DLP i wymuszania zasad DLP na urządzeniach, ponieważ są one zbyt hałaśliwe lub nie zawierają plików, które Cię interesują. Pliki w tych lokalizacjach nie będą poddawane inspekcji, a wszystkie pliki utworzone lub zmodyfikowane w tych lokalizacjach nie będą podlegać wymuszania zasad DLP. Wykluczenia ścieżek można skonfigurować w ustawieniach DLP.
 
@@ -91,31 +91,31 @@ Możesz wykluczyć niektóre ścieżki z monitorowania DLP, alertów DLP i wymus
 
 Ta logika służy do tworzenia ścieżek wykluczeń dla urządzeń Windows 10:
 
-- Prawidłowa ścieżka pliku kończąca się ciągiem `\`, co oznacza tylko pliki bezpośrednio w folderze. <br/>Na przykład: `C:\Temp\`
+- Prawidłowa ścieżka pliku kończąca się ciągiem `\`, co oznacza tylko pliki bezpośrednio w folderze. <br/>Przykład: `C:\Temp\`
 
-- Prawidłowa ścieżka pliku, która kończy się ciągiem `\*`, co oznacza tylko pliki w podfolderach, oprócz plików bezpośrednio w folderze. <br/>Na przykład: `C:\Temp\*`
+- Prawidłowa ścieżka pliku, która kończy się ciągiem `\*`, co oznacza tylko pliki w podfolderach, oprócz plików bezpośrednio w folderze. <br/>Przykład: `C:\Temp\*`
 
-- Prawidłowa ścieżka pliku, która kończy się bez `\` lub `\*`, co oznacza wszystkie pliki bezpośrednio w folderze i wszystkich podfolderach. <br/>Na przykład: `C:\Temp`
+- Prawidłowa ścieżka pliku, która kończy się bez `\` lub `\*`, co oznacza wszystkie pliki bezpośrednio w folderze i wszystkich podfolderach. <br/>Przykład: `C:\Temp`
 
-- Ścieżka z symbolem wieloznacznym między poszczególnymi stronami `\` . <br/>Na przykład: `C:\Users\*\Desktop\`
+- Ścieżka z symbolem wieloznacznym między poszczególnymi stronami `\` . <br/>Przykład: `C:\Users\*\Desktop\`
 
-- Ścieżka z symbolem wieloznacznym między `\` z każdej strony i z `(number)` , aby podać dokładną liczbę podfolderów. <br/>Na przykład: `C:\Users\*(1)\Downloads\`
+- Ścieżka z symbolem wieloznacznym między `\` z każdej strony i z `(number)` , aby podać dokładną liczbę podfolderów. <br/>Przykład: `C:\Users\*(1)\Downloads\`
 
-- Ścieżka ze zmiennymi środowiskowymi SYSTEM. <br/>Na przykład: `%SystemDrive%\Test\*`
+- Ścieżka ze zmiennymi środowiskowymi SYSTEM. <br/>Przykład: `%SystemDrive%\Test\*`
 
-- Mieszanka wszystkich powyższych. <br/>Na przykład: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
+- Mieszanka wszystkich powyższych. <br/>Przykład: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
-#### <a name="macos-devices"></a>Urządzenia z systemem macOS
+#### <a name="macos-devices"></a>urządzenia macOS
 
-Podobnie jak w przypadku urządzeń z systemem Windows 10 można dodać własne wykluczenia dla urządzeń z systemem macOS.
+Podobnie jak w przypadku urządzeń Windows 10 można dodać własne wykluczenia dla urządzeń macOS.
 
 - Definicje ścieżek plików nie uwzględniają wielkości liter, więc `User` są takie same jak `user`.
 
-- Obsługiwane są wartości symboli wieloznacznych. Dlatego definicja ścieżki może zawierać `*` element w środku ścieżki lub na końcu ścieżki. Na przykład: `/Users/*/Library/Application Support/Microsoft/Teams/*`
+- Obsługiwane są wartości symboli wieloznacznych. Dlatego definicja ścieżki może zawierać `*` element w środku ścieżki lub na końcu ścieżki. Przykład: `/Users/*/Library/Application Support/Microsoft/Teams/*`
 
 #####  <a name="recommended-file-path-exclusions-preview"></a>Zalecane wykluczenia ścieżki pliku (wersja zapoznawcza)
 
-Ze względu na wydajność protokół DLP punktu końcowego zawiera listę zalecanych wykluczeń ścieżki pliku dla urządzeń z systemem macOS. Te wykluczenia są domyślnie włączone. Możesz je wyłączyć, jeśli chcesz, przełączając przełącznik **Dołącz zalecane wykluczenia ścieżki pliku dla komputerów Mac** . Lista zawiera następujące elementy:
+Ze względu na wydajność program Endpoint DLP zawiera listę zalecanych wykluczeń ścieżki pliku dla macOS urządzeń. Te wykluczenia są domyślnie włączone. Możesz je wyłączyć, jeśli chcesz, przełączając przełącznik **Dołącz zalecane wykluczenia ścieżki pliku dla komputerów Mac** . Lista zawiera następujące elementy:
 
 - /Applications/*
 - /System/*
@@ -129,7 +129,7 @@ Ze względu na wydajność protokół DLP punktu końcowego zawiera listę zalec
 
 #### <a name="restricted-apps"></a>Aplikacje z ograniczeniami
 
-**Aplikacje z ograniczeniami** (wcześniej nazywane **aplikacjami nieobsługiwanych**) to lista utworzonych aplikacji. Można skonfigurować akcje, które DLP będzie podejmować, gdy użytkownik korzysta z aplikacji na liście w celu **_uzyskania dostępu do_** pliku chronionego przez protokół DLP na urządzeniu. Jest ona dostępna dla urządzeń z systemem Windows 10 i macOS.
+**Aplikacje z ograniczeniami** (wcześniej nazywane **aplikacjami nieobsługiwanych**) to lista utworzonych aplikacji. Można skonfigurować akcje, które DLP będzie podejmować, gdy użytkownik korzysta z aplikacji na liście w celu **_uzyskania dostępu do_** pliku chronionego przez protokół DLP na urządzeniu. Jest ona dostępna dla urządzeń Windows 10 i macOS.
 
 Gdy w zasadach wybrano opcję **Dostęp przez aplikacje z ograniczeniami** , a użytkownik używa aplikacji, która znajduje się na liście aplikacji z ograniczeniami, aby uzyskać dostęp do chronionego pliku, działanie będzie mieć `audited`wartość , `blocked`lub `blocked with override` w zależności od sposobu jego skonfigurowania. Dzieje się tak, chyba że ta sama aplikacja jest członkiem **grupy aplikacji z ograniczeniami**, a następnie akcje skonfigurowane dla działań w **grupie aplikacji z ograniczeniami** zastępują akcje skonfigurowane dla działania dostępu dla listy **Aplikacje z ograniczeniami** . Wszystkie działania są poddawane inspekcji i dostępne do przeglądania w Eksploratorze działań.
 
@@ -139,7 +139,7 @@ Gdy w zasadach wybrano opcję **Dostęp przez aplikacje z ograniczeniami** , a u
 > [!IMPORTANT]
 > Akcja (`audit`, lub `block`) zdefiniowana dla aplikacji znajdujących się na liście aplikacji z ograniczeniami ma zastosowanie tylko wtedy, `block with override`gdy użytkownik próbuje ***uzyskać dostęp*** do chronionego elementu. 
 
-#### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>Działania dotyczące plików dla aplikacji w grupach aplikacji z ograniczeniami (wersja zapoznawcza)
+#### <a name="file-activities-for-apps-in-restricted-app-groups"></a>Działania dotyczące plików dla aplikacji w grupach aplikacji z ograniczeniami
 
 Grupy aplikacji z ograniczeniami to kolekcje aplikacji tworzone w ustawieniach DLP, a następnie dodawane do reguły w zasadach. Po dodaniu grupy aplikacji z ograniczeniami do zasad możesz wykonać akcje zdefiniowane w tej tabeli.
 
@@ -154,11 +154,11 @@ Grupy aplikacji z ograniczeniami to kolekcje aplikacji tworzone w ustawieniach D
 
 #### <a name="how-dlp-applies-restrictions-to-activities"></a>Jak DLP stosuje ograniczenia do działań
 
-Interakcje między **działaniami plików dla aplikacji w ograniczonych grupach aplikacji (wersja zapoznawcza),** **działaniami plików dla wszystkich aplikacji** i listą **działań aplikacji z ograniczeniami** są ograniczone do tej samej reguły.
+Interakcje między **działaniami plików dla aplikacji w ograniczonych grupach aplikacji**, **działaniami plików dla wszystkich aplikacji** i listą **działań aplikacji z ograniczeniami** są ograniczone do tej samej reguły.
 
 ##### <a name="restricted-app-groups-overrides"></a>Przesłonięcia grup aplikacji z ograniczeniami
 
-Konfiguracje zdefiniowane w **obszarze Działania plików dla aplikacji w ograniczonych grupach aplikacji (wersja zapoznawcza)** zastępują konfiguracje na liście **Działań aplikacji z ograniczeniami** i **Działania plików dla wszystkich aplikacji** w tej samej regule.
+Konfiguracje zdefiniowane w **działaniach plików dla aplikacji w ograniczonych grupach aplikacji** zastępują konfiguracje na liście **Działań aplikacji z ograniczeniami** i **Działania plików dla wszystkich aplikacji** w tej samej regule.
 
 ##### <a name="restricted-app-activities-and-file-activities-for-all-apps"></a>Działania aplikacji z ograniczeniami i działania dotyczące plików dla wszystkich aplikacji
 
@@ -185,22 +185,22 @@ Użytkownik A otwiera chroniony plik DLP przy użyciu Notatnik. DLP zezwala na d
    
 ##### <a name="file-activities-for-all-apps-only"></a>Działania dotyczące plików tylko dla wszystkich aplikacji
 
-Jeśli aplikacja nie znajduje się w **obszarze Działania plików dla aplikacji w ograniczonych grupach aplikacji (wersja zapoznawcza)** lub nie znajduje się na liście **Działań aplikacji z ograniczeniami** lub znajduje się na liście **Działań aplikacji z ograniczeniami** z akcją `Audit only`lub "Blokuj z zastąpieniem", wszystkie ograniczenia zdefiniowane w **działaniach plików dla wszystkich aplikacji** są stosowane w tej samej regule.  
+Jeśli aplikacja nie znajduje się w **działaniach plików dla aplikacji w ograniczonych grupach aplikacji** lub nie znajduje się na liście **Działań aplikacji z ograniczeniami** lub znajduje się na liście **Działań aplikacji z ograniczeniami** z akcją `Audit only`, lub "Blokuj z przesłonięciami", wszelkie ograniczenia zdefiniowane w **działaniach plików dla wszystkich aplikacji** są stosowane w tej samej regule.  
 
-#### <a name="macos-devices"></a>Urządzenia z systemem macOS
+#### <a name="macos-devices"></a>urządzenia macOS
 
-Podobnie jak na urządzeniach Windows, możesz teraz uniemożliwić aplikacjom systemu macOS dostęp do poufnych danych, definiując je na liście **Działań aplikacji z ograniczeniami**. 
+Podobnie jak na urządzeniach Windows, możesz teraz uniemożliwić aplikacjom macOS uzyskiwanie dostępu do poufnych danych, definiując je na liście **działań aplikacji z ograniczeniami**. 
 
 > [!NOTE]
 > Należy pamiętać, że aplikacje międzyplatformowe muszą być wprowadzane z unikatowymi ścieżkami odpowiednimi dla systemu operacyjnego, na których są uruchomione.
 
 Aby znaleźć pełną ścieżkę aplikacji dla komputerów Mac:
 
-1. Na urządzeniu z systemem macOS otwórz **monitor aktywności**. Znajdź i kliknij dwukrotnie proces, który chcesz ograniczyć
+1. Na urządzeniu macOS otwórz monitor **aktywności**. Znajdź i kliknij dwukrotnie proces, który chcesz ograniczyć
 
 2. Wybierz kartę **Otwórz pliki i porty** .
   
-3. W przypadku aplikacji systemu macOS potrzebna jest pełna nazwa ścieżki, w tym nazwa aplikacji.
+3. W przypadku macOS aplikacji potrzebna jest pełna nazwa ścieżki, w tym nazwa aplikacji.
 
 #### <a name="protect-sensitive-data-from-cloud-synchronization-apps"></a>Ochrona poufnych danych przed aplikacjami synchronizacji w chmurze
 
@@ -227,18 +227,18 @@ Ograniczanie udostępniania poufnych plików zgodnych z zasadami nieograniczonym
 
 W przypadku Windows urządzeń, które dodają przeglądarki identyfikowane przez ich nazwy wykonywalne, dostęp do plików zgodnych z warunkami wymuszonych zasad DLP, w których ograniczenie przekazywania do usług w chmurze jest ustawione na blokowanie lub blokowanie przesłonięcia. Gdy te przeglądarki nie będą mogły uzyskać dostępu do pliku, użytkownicy końcowi zobaczą wyskakujące powiadomienie z prośbą o otwarcie pliku za pośrednictwem Microsoft Edge.
 
-W przypadku urządzeń z systemem macOS należy dodać pełną ścieżkę pliku. Aby znaleźć pełną ścieżkę aplikacji dla komputerów Mac:
+W przypadku urządzeń macOS należy dodać pełną ścieżkę pliku. Aby znaleźć pełną ścieżkę aplikacji dla komputerów Mac:
 
-1. Na urządzeniu z systemem macOS otwórz **monitor aktywności**. Znajdź i kliknij dwukrotnie proces, który chcesz ograniczyć
+1. Na urządzeniu macOS otwórz monitor **aktywności**. Znajdź i kliknij dwukrotnie proces, który chcesz ograniczyć
 
 2. Wybierz kartę **Otwórz pliki i porty** .
   
-3. W przypadku aplikacji systemu macOS potrzebna jest pełna nazwa ścieżki, w tym nazwa aplikacji.
+3. W przypadku macOS aplikacji potrzebna jest pełna nazwa ścieżki, w tym nazwa aplikacji.
 
 #### <a name="service-domains"></a>Domeny usług
 
 > [!NOTE]
-> Ustawienie **Domeny usługi** dotyczy tylko plików przekazanych przy użyciu Microsoft Edge lub Google Chrome z [zainstalowanym rozszerzeniem Microsoft Purview](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension).
+> Ustawienie **Domeny usług** dotyczy tylko plików przekazanych przy użyciu Microsoft Edge lub Google Chrome z [zainstalowanym rozszerzeniem Microsoft Purview](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension).
 
 Możesz kontrolować, czy pliki poufne chronione przez zasady mogą być przekazywane do określonych domen usług z Microsoft Edge.
 
@@ -294,7 +294,7 @@ Działanie plików będzie zawsze poddawane inspekcji dla dołączonych urządze
 - [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md)
 - [Wprowadzenie za pomocą Eksploratora działań](data-classification-activity-explorer.md)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/)
-- [Dołączanie urządzeń Windows 10 i Windows 11 do usługi Microsoft Purview — omówienie](/microsoft-365/compliance/device-onboarding-overview)
+- [Dołączanie urządzeń Windows 10 i Windows 11 do Microsoft Purview omówienie](/microsoft-365/compliance/device-onboarding-overview)
 - [subskrypcja Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [przyłączone Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join)
 - [Pobierz nową Microsoft Edge na podstawie Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

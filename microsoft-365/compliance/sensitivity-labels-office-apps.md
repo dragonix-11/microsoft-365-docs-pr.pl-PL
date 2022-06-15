@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informacje dla administratorów IT dotyczące zarządzania etykietami poufności w aplikacjach Office dla komputerów stacjonarnych, urządzeń przenośnych i sieci Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff0a64ed04aecff83634172ecf57263482f90dc6
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 21420958d063969a588a4413ba5ee4629e2eb027
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014191"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078420"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Zarządzanie etykietami poufności w aplikacjach Office
 
@@ -29,7 +29,7 @@ ms.locfileid: "66014191"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Po [opublikowaniu](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) etykiet poufności z portalu zgodności usługi Microsoft Purview zaczynają one pojawiać się w aplikacjach Office, aby użytkownicy mogli klasyfikować i chronić dane podczas ich tworzenia lub edytowania.
+Po [opublikowaniu](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) etykiet poufności z portal zgodności Microsoft Purview zaczynają one pojawiać się w aplikacjach Office, aby użytkownicy mogli klasyfikować i chronić dane podczas ich tworzenia lub edytowania.
 
 Informacje zawarte w tym artykule ułatwiają pomyślne zarządzanie etykietami poufności w aplikacjach Office. Na przykład zidentyfikuj minimalne wersje aplikacji, które są potrzebne dla funkcji specyficznych dla wbudowanego etykietowania, wszelkie dodatkowe informacje o konfiguracji tych funkcji oraz zapoznaj się z interakcjami z klientem Information Protection ujednoliconego etykietowania oraz innymi aplikacjami i usługami.
 
@@ -45,7 +45,7 @@ W poniższych tabelach wymieniono minimalną wersję Office, która wprowadziła
 
 Nowe wersje aplikacji Office są udostępniane w różnym czasie dla różnych kanałów aktualizacji. W przypadku Windows nowe możliwości będą dostępne wcześniej, gdy korzystasz z bieżącego kanału lub kanału Enterprise miesięcznego, a nie kanału Semi-Annual Enterprise. Minimalne numery wersji mogą również różnić się od jednego kanału aktualizacji do następnego. Aby uzyskać więcej informacji, zobacz [Omówienie kanałów aktualizacji dla Aplikacje Microsoft 365](/deployoffice/overview-update-channels) i [Historia aktualizacji dla Aplikacje Microsoft 365](/officeupdates/update-history-microsoft365-apps-by-date).
 
-Nowe możliwości dostępne w prywatnej wersji zapoznawczej nie są uwzględnione w tabeli, ale możesz dołączyć do tych wersji zapoznawczych, nominując swoją organizację do [programu microsoft Information Protection prywatnej wersji zapoznawczej](https://aka.ms/mip-preview).
+Nowe możliwości w prywatnej wersji zapoznawczej nie są uwzględnione w tabeli, ale możesz dołączyć do tych wersji zapoznawczych, nominując organizację do [programu Microsoft Information Protection prywatnej wersji zapoznawczej](https://aka.ms/mip-preview).
 
 Office dla iOS i Office dla systemu Android: etykiety poufności są wbudowane w [aplikacja pakietu Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
@@ -121,9 +121,9 @@ Aby dowiedzieć się więcej na temat obsługi etykietowania za pomocą klienta 
 
 ## <a name="if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows"></a>Jeśli musisz wyłączyć wbudowane etykietowanie w aplikacjach Office na Windows
 
-Klient Office wbudowanego etykietowania pobiera etykiety poufności i ustawienia zasad etykiet poufności z portalu zgodności usługi Microsoft Purview.
+Klient Office wbudowanego etykietowania pobiera etykiety poufności i ustawienia zasad etykiet poufności z portal zgodności Microsoft Purview.
 
-Aby korzystać z Office wbudowanego klienta etykietowania, musisz mieć co najmniej jedną [zasadę etykiety opublikowaną](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) dla użytkowników z portalu zgodności usługi Microsoft Purview oraz [obsługiwaną wersję Office](#support-for-sensitivity-label-capabilities-in-apps).
+Aby korzystać z Office wbudowanego klienta etykietowania, musisz mieć co najmniej jedną [zasadę etykiety opublikowaną](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) dla użytkowników z portal zgodności Microsoft Purview i [obsługiwaną wersję Office](#support-for-sensitivity-label-capabilities-in-apps).
 
 Jeśli oba te warunki zostały spełnione, ale musisz wyłączyć wbudowane etykiety w aplikacjach Windows Office, użyj następującego ustawienia zasady grupy:
 
@@ -389,20 +389,20 @@ W przypadku wbudowanego etykietowania zidentyfikuj minimalne wersje Outlook, kt�
 
 Gdy aplikacja Outlook obsługuje domyślne ustawienie etykiety, które różni się od domyślnego ustawienia etykiety dla dokumentów:
 
-- W konfiguracji zasad etykiet z portalu zgodności usługi Microsoft Purview na stronie **Zastosuj etykietę domyślną do wiadomości e-mail** : możesz określić wybór etykiety poufności, która będzie stosowana do wszystkich nieoznakowanych wiadomości e-mail lub bez etykiety domyślnej. To ustawienie jest niezależne od ustawienia **Zastosuj tę etykietę domyślnie do dokumentów** na poprzedniej stronie **Ustawienia zasad dla dokumentów** konfiguracji.
+- W konfiguracji zasad etykiet z portal zgodności Microsoft Purview na stronie **Zastosuj etykietę domyślną do wiadomości e-mail**: możesz określić wybór etykiety poufności, która będzie stosowana do wszystkich nieoznakowanych wiadomości e-mail lub bez etykiety domyślnej. To ustawienie jest niezależne od ustawienia **Zastosuj tę etykietę domyślnie do dokumentów** na poprzedniej stronie **Ustawienia zasad dla dokumentów** konfiguracji.
 
 Gdy aplikacja Outlook nie obsługuje domyślnego ustawienia etykiety, które różni się od domyślnego ustawienia etykiety dla dokumentów: Outlook zawsze będzie używać wartości określonej **dla opcji Zastosuj tę etykietę domyślnie do dokumentów** na stronie **Ustawienia zasad dla dokumentów** konfiguracji zasad etykiety.
 
 Gdy aplikacja Outlook obsługuje wyłączanie obowiązkowego etykietowania:
 
-- W konfiguracji zasad etykiet w portalu zgodności usługi Microsoft Purview na stronie **Ustawienia zasad** wybierz pozycję **Wymagaj od użytkowników zastosowania etykiety do poczty e-mail lub dokumentów**. Następnie wybierz pozycję **Dalej** > **i** wyczyść pole wyboru **Wymagaj od użytkowników zastosowania etykiety do swoich wiadomości e-mail**. Zaznacz pole wyboru, jeśli chcesz, aby obowiązkowe etykietowanie było stosowane do wiadomości e-mail i dokumentów.
+- W konfiguracji zasad etykiet z portal zgodności Microsoft Purview na stronie **Ustawienia zasad**: wybierz pozycję **Wymagaj od użytkowników zastosowania etykiety do poczty e-mail lub dokumentów**. Następnie wybierz pozycję **Dalej** > **i** wyczyść pole wyboru **Wymagaj od użytkowników zastosowania etykiety do swoich wiadomości e-mail**. Zaznacz pole wyboru, jeśli chcesz, aby obowiązkowe etykietowanie było stosowane do wiadomości e-mail i dokumentów.
 
 Gdy aplikacja Outlook nie obsługuje wyłączania obowiązkowego etykietowania: jeśli wybierzesz opcję **Wymagaj od użytkowników zastosowania etykiety do poczty e-mail lub dokumentów** jako ustawienia zasad, Outlook zawsze będzie monitować użytkowników o wybranie etykiety dla wiadomości e-mail bez etykiet.
 
 > [!NOTE]
 > Jeśli skonfigurowano ustawienia zaawansowane programu **PowerShell OutlookDefaultLabel** i **DisableMandatoryInOutlook** przy użyciu poleceń cmdlet [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) lub [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) :
 > 
-> Wybrane wartości tych ustawień programu PowerShell są odzwierciedlane w konfiguracji zasad etykiet w portalu zgodności usługi Microsoft Purview i automatycznie działają w przypadku aplikacji Outlook obsługujące te ustawienia. Inne zaawansowane ustawienia programu PowerShell pozostają obsługiwane tylko dla klienta usługi Azure Information Protection ujednoliconego etykietowania.
+> Wybrane wartości tych ustawień programu PowerShell są odzwierciedlane w konfiguracji zasad etykiet w portal zgodności Microsoft Purview i automatycznie działają w przypadku aplikacji Outlook, które obsługują te ustawienia. Inne zaawansowane ustawienia programu PowerShell pozostają obsługiwane tylko dla klienta usługi Azure Information Protection ujednoliconego etykietowania.
 
 ## <a name="pdf-support"></a>Obsługa plików PDF
 
@@ -414,8 +414,9 @@ Program Word, Excel i PowerPoint obsługują następujące metody konwertowania 
 - Eksport > plików w formacie PDF >
 - Udostępnianie > wysyłanie kopii > PDF
 
-Po utworzeniu pliku PDF dziedziczy etykietę za pomocą wszelkich oznaczeń zawartości i szyfrowania. Zaszyfrowane pliki PDF można otwierać przy użyciu Microsoft Edge na Windows lub Mac. Aby uzyskać więcej informacji i alternatywnych czytelników, zobacz [Które czytniki PDF są obsługiwane dla chronionych plików PDF?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+Ta akcja jest rejestrowana przy użyciu zdarzenia inspekcji **Zmieniono nazwę pliku** z grupy inspekcji [Działania plików i stron](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities) . W wynikach wyszukiwania inspekcji w portalu zgodności zostaną wyświetlone szczegóły tego zdarzenia inspekcji **zawierające wartość SensitivityLabeledFileRenamed** dla pola **Działanie** .
 
+Po utworzeniu pliku PDF dziedziczy etykietę za pomocą wszelkich oznaczeń zawartości i szyfrowania. Zaszyfrowane pliki PDF można otwierać przy użyciu Microsoft Edge na Windows lub Mac. Aby uzyskać więcej informacji i alternatywnych czytelników, zobacz [Które czytniki PDF są obsługiwane dla chronionych plików PDF?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
 Scenariusze pdf nie są obsługiwane:
 
@@ -438,7 +439,7 @@ Aby uzyskać więcej informacji na temat tej funkcji, zobacz ogłoszenie [Stosow
 
 ## <a name="auditing-labeling-activities"></a>Inspekcja działań etykietowania
 
-Aby uzyskać informacje o zdarzeniach inspekcji generowanych przez działania etykiet poufności, zobacz sekcję [Działania etykiet poufności](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) w sekcji [Wyszukaj dziennik inspekcji w portalu zgodności usługi Microsoft Purview](search-the-audit-log-in-security-and-compliance.md).
+Aby uzyskać informacje o zdarzeniach inspekcji generowanych przez działania etykiet poufności, zobacz sekcję [Działania etykiet poufności](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) w sekcji [Wyszukaj dziennik inspekcji w portal zgodności Microsoft Purview](search-the-audit-log-in-security-and-compliance.md).
 
 Te informacje inspekcji są wizualnie reprezentowane w [eksploratorze zawartości](data-classification-content-explorer.md) i [eksploratorze działań](data-classification-activity-explorer.md) , aby ułatwić zrozumienie sposobu użycia etykiet poufności i lokalizacji tej zawartości oznaczonej etykietą. 
 
@@ -446,8 +447,8 @@ Możesz również tworzyć raporty niestandardowe z wybranym oprogramowaniem do 
 
 > [!TIP]
 > Aby ułatwić tworzenie raportów niestandardowych, zobacz następujące wpisy w blogu:
-> - [Działania dziennika inspekcji usługi Microsoft Purview za pośrednictwem interfejsu API zarządzania usługi O365 — część 1](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
-> - [Działania dziennika inspekcji usługi Microsoft Purview za pośrednictwem interfejsu API zarządzania O365 — część 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
+> - [Microsoft Purview działania dziennika inspekcji za pośrednictwem interfejsu API zarządzania usługi O365 — część 1](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
+> - [Microsoft Purview działania dziennika inspekcji za pośrednictwem interfejsu API zarządzania usługi O365 — część 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
 
 ## <a name="end-user-documentation"></a>Dokumentacja użytkownika końcowego
 

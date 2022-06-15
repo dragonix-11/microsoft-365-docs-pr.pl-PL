@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie z przypadkami zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w usłudze Microsoft Purview
+title: Wprowadzenie z przypadkami zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -17,19 +17,19 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: W tym artykule opisano, jak rozpocząć korzystanie z eDiscovery (Standard) w usłudze Microsoft Purview. Po przypisaniu uprawnień do zbierania elektronicznych materiałów dowodowych i utworzeniu sprawy można dodać członków, utworzyć blokady zbierania elektronicznych materiałów dowodowych, a następnie wyszukać i wyeksportować zawartość, która jest odpowiednia dla badania.
-ms.openlocfilehash: e224bf22741d0e1599d099802470e231b11fd785
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: W tym artykule opisano, jak rozpocząć korzystanie z eDiscovery (Standard) w Microsoft Purview. Po przypisaniu uprawnień do zbierania elektronicznych materiałów dowodowych i utworzeniu sprawy można dodać członków, utworzyć blokady zbierania elektronicznych materiałów dowodowych, a następnie wyszukać i wyeksportować zawartość, która jest odpowiednia dla badania.
+ms.openlocfilehash: 38e4d24405810293c9261c1c7f728ece0714cd66
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094951"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078485"
 ---
-# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Wprowadzenie zbierania elektronicznych materiałów dowodowych (Standard) w usłudze Microsoft Purview
+# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Wprowadzenie zbierania elektronicznych materiałów dowodowych (standard) w Microsoft Purview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Usługa Microsoft Purview eDiscovery (Standard) w usłudze Microsoft Purview udostępnia podstawowe narzędzie zbierania elektronicznych materiałów dowodowych, którego organizacje mogą używać do wyszukiwania i eksportowania zawartości w Microsoft 365 i Office 365. Możesz również użyć funkcji zbierania elektronicznych materiałów dowodowych (Standardowa), aby umieścić blokadę zbierania elektronicznych materiałów dowodowych w lokalizacjach zawartości, takich jak skrzynki pocztowe Exchange, witryny SharePoint, konta OneDrive i Microsoft Teams. Do wdrożenia zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) nie jest wymagane żadne zadanie, ale istnieją pewne zadania wstępne, które musi wykonać administrator IT i menedżer zbierania elektronicznych elektronicznych materiałów dowodowych, zanim organizacja będzie mogła rozpocząć wyszukiwanie, eksportowanie i zachowywanie zawartości przy użyciu zbierania elektronicznych materiałów dowodowych (Standard).
+Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Standard) w Microsoft Purview udostępnia podstawowe narzędzie zbierania elektronicznych materiałów dowodowych, którego organizacje mogą używać do wyszukiwania i eksportowania zawartości w Microsoft 365 i Office 365. Możesz również użyć funkcji zbierania elektronicznych materiałów dowodowych (Standardowa), aby umieścić blokadę zbierania elektronicznych materiałów dowodowych w lokalizacjach zawartości, takich jak skrzynki pocztowe Exchange, witryny SharePoint, konta OneDrive i Microsoft Teams. Do wdrożenia zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) nie jest wymagane żadne zadanie, ale istnieją pewne zadania wstępne, które musi wykonać administrator IT i menedżer zbierania elektronicznych elektronicznych materiałów dowodowych, zanim organizacja będzie mogła rozpocząć wyszukiwanie, eksportowanie i zachowywanie zawartości przy użyciu zbierania elektronicznych materiałów dowodowych (Standard).
 
 W tym artykule omówiono kroki niezbędne do skonfigurowania zbierania elektronicznych materiałów dowodowych (Standard). Obejmuje to zapewnienie właściwego licencjonowania wymaganego do uzyskania dostępu do zbierania elektronicznych materiałów dowodowych (Standard) i wstrzymanie zbierania elektronicznych materiałów dowodowych w lokalizacjach zawartości, a także przypisanie uprawnień do zespołu IT, prawnego i dochodzeniowego w celu uzyskania dostępu do spraw i zarządzania nimi. Ten artykuł zawiera również ogólne omówienie przypadków użycia do wyszukiwania i eksportowania zawartości.
 
@@ -37,7 +37,7 @@ W tym artykule omówiono kroki niezbędne do skonfigurowania zbierania elektroni
 
 Licencjonowanie zbierania elektronicznych materiałów dowodowych (Standardowa) wymaga odpowiedniej subskrypcji organizacji i licencjonowania dla poszczególnych użytkowników.
 
-- **Subskrypcja organizacji:** Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (Standard) w portalu zgodności usługi Microsoft Purview i korzystać z funkcji przechowywania i eksportowania, organizacja musi mieć subskrypcję Microsoft 365 E3 lub Office 365 E3 lub nowszą. Microsoft 365 organizacje linii frontu muszą mieć subskrypcję F5.
+- **Subskrypcja organizacji:** Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (Standard) w portal zgodności Microsoft Purview i korzystać z funkcji blokady i eksportu, organizacja musi mieć Exchange subskrypcję online plan 2 lub Microsoft 365 E3 lub Office 365 E3 lub nowszą. Microsoft 365 organizacje linii frontu muszą mieć subskrypcję F5.
 
 - **Licencjonowanie na użytkownika:** Aby umieścić blokadę zbierania elektronicznych materiałów dowodowych w skrzynkach pocztowych i witrynach, użytkownicy muszą mieć przypisaną jedną z następujących licencji, w zależności od subskrypcji organizacji:
 
@@ -109,7 +109,7 @@ Następnym krokiem jest utworzenie sprawy i rozpoczęcie korzystania z eDiscover
 
 1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności</a> i zaloguj się przy użyciu poświadczeń dla konta użytkownika, do których przypisano odpowiednie uprawnienia zbierania elektronicznych materiałów dowodowych. Członkowie grupy ról Zarządzanie organizacją mogą również tworzyć przypadki zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa).
 
-2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Pokaż wszystko**, a następnie kliknij pozycję **eDiscoveryCore** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
+2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Pokaż wszystko**, a następnie kliknij pozycję **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
 
 3. Na stronie **eDiscovery (Standard)** kliknij **pozycję Utwórz przypadek**.
 
