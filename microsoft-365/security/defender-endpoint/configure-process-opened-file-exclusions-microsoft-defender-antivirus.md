@@ -15,19 +15,19 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6faca5dde477908010f4426ff9009f383b63c58c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0dd59d2196ebb2c2af80fb53d43a009ff3a367d0
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418615"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102329"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Konfigurowanie wykluczeń dla plików otwieranych przez procesy
 
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - Program antywirusowy Microsoft Defender
 
@@ -40,8 +40,6 @@ W tym artykule opisano sposób konfigurowania list wykluczeń.
 
 ## <a name="examples-of-exclusions"></a>Przykłady wykluczeń
 
-<br/><br/>
-
 |Wykluczenia|Przykład|
 |---|---|
 |Dowolny plik na komputerze, który jest otwierany przez dowolny proces o określonej nazwie pliku|Określenie spowoduje wykluczenie `test.exe` plików otwartych przez: <p>`c:\sample\test.exe` <p> `d:\internal\files\test.exe`|
@@ -52,13 +50,13 @@ Po dodaniu procesu do listy wykluczeń procesu Program antywirusowy Microsoft De
 
 Wykluczenia mają zastosowanie tylko do [zawsze włączonej ochrony i monitorowania w czasie rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md). Nie mają one zastosowania do skanowania zaplanowanego lub na żądanie.
 
-Zmiany wprowadzone za pomocą zasady grupy list wykluczeń **będą wyświetlane** na listach w [aplikacji Zabezpieczenia Windows](microsoft-defender-security-center-antivirus.md). Jednak zmiany wprowadzone w aplikacji Zabezpieczenia Windows **nie będą wyświetlane** na listach zasady grupy.
+Zmiany wprowadzone za pomocą نهج المجموعة list wykluczeń **będą wyświetlane** na listach w [aplikacji Zabezpieczenia Windows](microsoft-defender-security-center-antivirus.md). Jednak zmiany wprowadzone w aplikacji Zabezpieczenia Windows **nie będą wyświetlane** na listach نهج المجموعة.
 
-Możesz dodawać, usuwać i przeglądać listy wykluczeń w zasady grupy, Microsoft Endpoint Configuration Manager, Microsoft Intune i za pomocą aplikacji Zabezpieczenia Windows, a także używać symboli wieloznacznych do dalszego dostosowywania list.
+Możesz dodawać, usuwać i przeglądać listy wykluczeń w نهج المجموعة, Microsoft Endpoint Configuration Manager, Microsoft Intune i za pomocą aplikacji Zabezpieczenia Windows, a także używać symboli wieloznacznych do dalszego dostosowywania list.
 
 Możesz również użyć poleceń cmdlet programu PowerShell i usługi WMI, aby skonfigurować listy wykluczeń, w tym przejrzeć listy.
 
-Domyślnie lokalne zmiany wprowadzone na listach (przez użytkowników z uprawnieniami administratora; zmiany wprowadzone za pomocą programu PowerShell i WMI) zostaną scalone z listami zgodnie z definicją (i wdrożonymi) przez zasady grupy, Configuration Manager lub Intune. Listy zasady grupy będą mieć pierwszeństwo w przypadku konfliktów.
+Domyślnie lokalne zmiany wprowadzone na listach (przez użytkowników z uprawnieniami administratora; zmiany wprowadzone za pomocą programu PowerShell i WMI) zostaną scalone z listami zdefiniowanymi (i wdrożonymi) przez نهج المجموعة, Configuration Manager lub Intune. W przypadku konfliktów pierwszeństwo będą mieć listy نهج المجموعة.
 
 Można [skonfigurować sposób scalania list wykluczeń zdefiniowanych lokalnie i globalnie](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) , aby umożliwić zmianę lokalną zastąpienia ustawień wdrożenia zarządzanego.
 
@@ -72,11 +70,11 @@ Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień ograniczeń ur
 
 Zobacz [Jak tworzyć i wdrażać zasady ochrony przed złośliwym kodem: ustawienia wykluczeń, aby](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) uzyskać szczegółowe informacje na temat konfigurowania Microsoft Endpoint Manager (bieżącej gałęzi).
 
-### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Użyj zasady grupy, aby wykluczyć pliki, które zostały otwarte przez określone procesy ze skanowania
+### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Użyj نهج المجموعة, aby wykluczyć pliki, które zostały otwarte przez określone procesy ze skanowania
 
-1. Na komputerze zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, i kliknij przycisk **Edytuj**.
+1. Na komputerze zarządzania نهج المجموعة otwórz [konsolę zarządzania نهج المجموعة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), kliknij prawym przyciskiem myszy obiekt نهج المجموعة, który chcesz skonfigurować, i kliknij przycisk **Edytuj**.
 
-2. W **edytorze zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera** i kliknij pozycję **Szablony administracyjne**.
+2. W **edytorze zarządzania نهج المجموعة** przejdź do pozycji **Konfiguracja komputera** i kliknij pozycję **Szablony administracyjne**.
 
 3. Rozwiń drzewo, aby **Windows składniki \> Program antywirusowy Microsoft Defender \> Wykluczenia**.
 
@@ -98,8 +96,6 @@ Format poleceń cmdlet to:
 ```
 
 Następujące elementy są dozwolone jako \<cmdlet\>:
-
-<br/><br/>
 
 |Akcja konfiguracji|Polecenie cmdlet programu PowerShell|
 |---|---|
@@ -141,8 +137,6 @@ Użycie symboli wieloznacznych na liście wykluczeń procesu różni się od ich
 W szczególności nie można użyć symbolu wieloznacznego znaku zapytania (`?`), a symbol wieloznaczny gwiazdki (`*`) może być używany tylko na końcu pełnej ścieżki. Nadal można używać zmiennych środowiskowych (takich jak `%ALLUSERSPROFILE%`) jako symboli wieloznacznych podczas definiowania elementów na liście wykluczeń procesu.
 
 W poniższej tabeli opisano sposób użycia symboli wieloznacznych na liście wykluczeń procesu:
-
-<br/><br/>
 
 |Symbol wieloznaczny|Przykładowe użycie|Przykładowe dopasowania|
 |---|---|---|
@@ -191,7 +185,7 @@ $WDAVprefs.ExclusionProcess
 Zobacz [Używanie poleceń cmdlet programu PowerShell do konfigurowania i uruchamiania poleceń cmdlet Program antywirusowy Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) i [Program antywirusowy Microsoft Defender](/powershell/module/defender), aby uzyskać więcej informacji na temat używania programu PowerShell z programem Program antywirusowy Microsoft Defender.
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -200,7 +194,7 @@ Zobacz [Używanie poleceń cmdlet programu PowerShell do konfigurowania i urucha
 > - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
 > - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
 - [Konfigurowanie i weryfikowanie wykluczeń w skanowaniach Program antywirusowy Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
 - [Konfigurowanie i weryfikowanie wykluczeń na podstawie nazwy pliku, rozszerzenia i lokalizacji folderu](configure-extension-file-exclusions-microsoft-defender-antivirus.md)

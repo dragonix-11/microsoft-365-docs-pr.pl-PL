@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5bce1fc2e9aa149da2bb3ddc28e56fc826ad1768
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 4a0387eac18152599cfd08ba75893f3eae248431
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268881"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102619"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Tworzenie aplikacji w celu uzyskania dostępu do Ochrona punktu końcowego w usłudze Microsoft Defender bez użytkownika
 
@@ -36,13 +36,13 @@ ms.locfileid: "65268881"
 > Zaawansowane możliwości wyszukiwania zagrożeń nie są uwzględniane w usłudze Defender dla firm. Zobacz [Porównanie Microsoft Defender dla Firm z planami Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 
-> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Na tej stronie opisano sposób tworzenia aplikacji w celu uzyskania dostępu programowego do usługi Defender for Endpoint bez użytkownika. Jeśli potrzebujesz dostępu programowego do usługi Defender for Endpoint w imieniu użytkownika, zobacz [Uzyskiwanie dostępu za pomocą kontekstu użytkownika](exposed-apis-create-app-nativeapp.md). Jeśli nie masz pewności, jakiego dostępu potrzebujesz, zobacz [Wprowadzenie](apis-intro.md).
+Na tej stronie opisano sposób tworzenia aplikacji w celu uzyskania dostępu programowego do usługi Defender for Endpoint bez użytkownika. Jeśli potrzebujesz dostępu programowego do usługi Defender for Endpoint w imieniu użytkownika, zobacz [Uzyskiwanie dostępu za pomocą kontekstu użytkownika](exposed-apis-create-app-nativeapp.md). Jeśli nie masz pewności, jakiego dostępu potrzebujesz, zobacz [Első lépések](apis-intro.md).
 
 Ochrona punktu końcowego w usłudze Microsoft Defender uwidacznia wiele swoich danych i akcji za pośrednictwem zestawu programowych interfejsów API. Te interfejsy API pomogą Ci zautomatyzować przepływy robocze i wprowadzać innowacje w oparciu o możliwości usługi Defender for Endpoint. Dostęp do interfejsu API wymaga uwierzytelniania OAuth2.0. Aby uzyskać więcej informacji, zobacz [Kod autoryzacji OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
@@ -57,7 +57,7 @@ W tym artykule wyjaśniono, jak utworzyć aplikację Azure AD, uzyskać token do
 
 1. Zaloguj się na [platformie Azure](https://portal.azure.com) przy użyciu użytkownika z rolą **administratora globalnego** .
 
-2. Przejdź do **Azure Active Directory** \> **Rejestracje aplikacji** \> **Nowa rejestracja**. 
+2. Przejdź do **Azure Active Directory** \> **App-registraties** \> **Nowa rejestracja**. 
 
     :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Okienko rejestracji aplikacji" lightbox="images/atp-azure-new-app2.png":::
 
@@ -148,17 +148,17 @@ $token
 
 ### <a name="use-c"></a>Użyj języka C#:
 
-Poniższy kod został przetestowany przy użyciu NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+Poniższy kod został przetestowany za pomocą NuGet Microsoft.Identity.Client 3.19.8.
 
 > [!IMPORTANT]
 > Pakiet [microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet i biblioteka uwierzytelniania Azure AD (ADAL) zostały przestarzałe. Od 30 czerwca 2020 r. nie dodano żadnych nowych funkcji.   Zdecydowanie zachęcamy do uaktualnienia. Aby uzyskać więcej informacji, zobacz [przewodnik migracji](/azure/active-directory/develop/msal-migration) .
 
 1. Utwórz nową aplikację konsolową.
-1. Zainstaluj NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. Zainstaluj NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/).
 1. Dodaj następujące elementy:
 
     ```csharp
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 1. Skopiuj i wklej następujący kod w aplikacji (nie zapomnij zaktualizować trzech zmiennych: ```tenantId, appId, appSecret```):
@@ -167,18 +167,17 @@ Poniższy kod został przetestowany przy użyciu NuGet Microsoft.IdentityModel.C
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.microsoftonline.com";
-    const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
-    console.write(token)
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
-
-
 ### <a name="use-python"></a>Korzystanie z języka Python
 
 Zobacz [Pobieranie tokenu przy użyciu języka Python](run-advanced-query-sample-python.md#get-token).

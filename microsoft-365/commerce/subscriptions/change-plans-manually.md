@@ -1,11 +1,11 @@
 ---
-title: Ręczne zmienianie planów platformy Microsoft 365 dla firm
+title: Ręczne zmienianie Microsoft 365 dla planów biznesowych
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,103 +17,103 @@ ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 search.appverid: MET150
-description: Możesz zmienić subskrypcję ręcznie, kupując nową subskrypcję i upewniając się, że obie subskrypcje są wymienione i aktywne.
+description: Ręcznie zmień subskrypcje, kupując nową subskrypcję i upewniając się, że obie subskrypcje są wyświetlane i aktywne.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: adc76ff3fbfa5fd81893f0b260e76018288350f1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d7969821cceb0864ac2ee20674e7aa67d8a12e39
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328431"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101603"
 ---
 # <a name="change-plans-manually"></a>Ręczne zmienianie planów
 
-## <a name="step-1-decide-how-to-change-plans"></a>Krok 1. Podjęcie decyzji o tym, jak zmienić plany
+## <a name="step-1-decide-how-to-change-plans"></a>Krok 1. Podejmowanie decyzji o zmianie planów
 
-Najlepszym sposobem na zmianę wszystkich użytkowników z jednego planu do drugiego jest użycie [karty Uaktualnianie](upgrade-to-different-plan.md). Czasami nie jest to możliwe. Zamiast tego zmień plany ręcznie:
+Najlepszym sposobem zmiany wszystkich użytkowników z jednego planu na inny jest [użycie karty Uaktualnij](upgrade-to-different-plan.md). Czasami nie jest to możliwe. Zamiast tego zmień plany ręcznie:
 
-- Jeśli karta **Uaktualnianie** wskazuje, że nie można uaktualnić bieżącego planu.
+- Jeśli karta **Uaktualnij** wskazuje, że nie można uaktualnić bieżącego planu.
 
-- Jeśli wybierzesz kartę **Uaktualnij** , odpowiedniego planu nie ma na liście.
+- Jeśli po wybraniu karty **Uaktualnianie** żądanego planu nie ma na liście.
 
-- Jeśli nie chcesz uaktualniać wszystkich użytkowników w ten sam sposób. Niektóre firmy potrzebują różnych użytkowników z subskrypcją różnych planów. W tym celu należy użyć zmiany ręcznej.
+- Jeśli nie chcesz uaktualniać wszystkich użytkowników w ten sam sposób. Niektóre firmy potrzebują różnych użytkowników subskrybowanych w różnych planach. W tym celu użyj ręcznej zmiany.
 
-Aby kontynuować ręczne zmienianie, przeczytaj [Krok 2. Kupowanie nowej subskrypcji w](#step-2-buy-a-new-subscription) tym temacie.
+Aby kontynuować ręczną zmianę, przeczytaj [krok 2. Kupowanie nowej subskrypcji](#step-2-buy-a-new-subscription) w tym temacie.
 
 > [!IMPORTANT]
-> Jeśli zmieniasz plan z mniejszą liczbą usług związanych z danymi niż bieżący plan (ocenianie), musisz ręcznie utworzyć kopię zapasową wszystkich danych, które chcesz zachować. Aby uzyskać więcej informacji, zobacz [Temat Kopii zapasowej danych przed zmianą planów](back-up-data-before-switching-plans.md).
+> Jeśli zmieniasz plan z mniejszą liczbą usług związanych z danymi niż bieżący plan (obniżenie poziomu), musisz ręcznie utworzyć kopię zapasową wszystkich danych, które chcesz zachować. Aby uzyskać więcej informacji, zobacz [Tworzenie kopii zapasowej danych przed zmianą planów](back-up-data-before-switching-plans.md).
 
 ## <a name="step-2-buy-a-new-subscription"></a>Krok 2. Kupowanie nowej subskrypcji
 
-**Masz już kupione?** Jeśli masz już subskrypcję, do której chcesz przenieść użytkowników, pomiń ten krok i przejdź do kroku [3.](#step-3-check-your-new-subscription-and-licenses) Sprawdź nową subskrypcję i licencje w tym temacie.
+**Masz już zakupione?** Jeśli masz już subskrypcję, do którą chcesz przenieść użytkowników, pomiń ten krok i przejdź do [kroku 3. Sprawdź nową subskrypcję i licencje w tym temacie](#step-3-check-your-new-subscription-and-licenses) .
 
 LUB
 
-**Kup nową subskrypcję i licencje:** Aby kupić nową subskrypcję, postępuj zgodnie z instrukcjami w kupowaniu innej subskrypcji platformy [Microsoft 365](../try-or-buy-microsoft-365.md) dla firm.
+**Kup nową subskrypcję i licencje:** Wykonaj kroki opisane w temacie [Kupowanie kolejnej subskrypcji Microsoft 365 dla firm](../try-or-buy-microsoft-365.md), aby kupić nową subskrypcję.
 
-Upewnij się, że kupisz subskrypcję dla tej samej organizacji, w których obecnie znajdują się użytkownicy. Na przykład sprawdź adresy e-mail użytkowników, których chcesz przenieść. Jeśli adresy e-mail \@contoso.com, musisz kupić nową subskrypcję usługi contoso.com.
-Dołącz licencję dla każdego użytkownika, którego chcesz przenieść.
+Upewnij się, że zakupiono subskrypcję dla tej samej organizacji, w którą obecnie znajdują się użytkownicy. Na przykład sprawdź adresy e-mail użytkowników, którzy mają zostać przeniesień. Jeśli ich adresy e-mail obejmują \@contoso.com, musisz kupić nową subskrypcję dla contoso.com.
+Dołącz licencję dla każdego użytkownika, który chcesz przenieść.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Krok 3. Sprawdzanie nowej subskrypcji i licencji
 
-1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">z produktami</a> .
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
 
-2. **Sprawdzanie, czy obie subskrypcje są wymienione i aktywne** Subskrypcja, z których przenosisz użytkowników, i subskrypcja, do których przenosisz użytkowników, musi być wymieniona razem. Jeśli nowa subskrypcja nie zostanie wyewidencjonana podczas pierwszego sprawdzania, spróbuj ponownie później. Sprawdź, czy obie subskrypcje są aktywne. [Nowa subskrypcja nie jest wymieniona lub nie jest aktywna](#the-new-subscription-isnt-listed-or-isnt-active).
+2. **Sprawdź, czy obie subskrypcje są wyświetlane i aktywne** Subskrypcja, z której przenosisz użytkowników, oraz subskrypcja, do której przenosisz użytkowników, muszą być wymienione razem. Jeśli podczas pierwszego sprawdzania nowej subskrypcji nie ma, spróbuj ponownie później. Sprawdź, czy obie subskrypcje są aktywne. [Nowa subskrypcja nie jest wyświetlana na liście lub nie jest aktywna](#the-new-subscription-isnt-listed-or-isnt-active).
 
-3. **Sprawdzanie, czy masz wystarczającą ilość licencji dla każdego użytkownika** Każdy użytkownik potrzebuje licencji, która odpowiada jego subskrypcji. Jeśli więc chcesz przenieść dziesięciu użytkowników do usługi Microsoft 365 Business Premium, musisz upewnić się, że jest dostępnych dziesięć licencji.
+3. **Sprawdź, czy masz wystarczającą liczbę licencji dla każdego użytkownika** Każdy użytkownik musi mieć licencję zgodną ze swoją subskrypcją. Jeśli więc chcesz przenieść dziesięciu użytkowników do Microsoft 365 Business Premium, musisz upewnić się, że dostępnych jest dziesięć licencji.
 
-4. **Potrzebujesz większej liczby licencji na nową subskrypcję?**
-   Przejdź do **strony Twoje produkty** i [kup więcej licencji](../licenses/buy-licenses.md).
+4. **Potrzebujesz więcej licencji dla nowej subskrypcji?**
+   Przejdź do strony **Twoje produkty** i [kup więcej licencji](../licenses/buy-licenses.md).
 
 > [Co ze starymi licencjami?](#what-about-the-old-licenses)
 
-### <a name="the-new-subscription-isnt-listed-or-isnt-active"></a>Nowa subskrypcja nie jest wymieniona lub nie jest aktywna
+### <a name="the-new-subscription-isnt-listed-or-isnt-active"></a>Nowa subskrypcja nie jest wyświetlana na liście lub nie jest aktywna
 
-- **Jeśli zakupiono dwie subskrypcje** i nie wymieniono ich obu tutaj, być może zostały one kupione dla różnych organizacji (dla różnych domen). Subskrypcje nie mogą przekraczać granic organizacji.
+- **Jeśli zakupiono dwie subskrypcje i nie są one wymienione w tym miejscu**, mogły zostać zakupione dla różnych organizacji (dla różnych domen). Subskrypcje nie mogą przekraczać granic organizacji.
 
-- **Jeśli wiesz, że masz dodatkową subskrypcję** i nie ma jej na liście lub nie jest ona aktywna, zadzwoń do [pomocy technicznej firmy Microsoft](../../admin/get-help-support.md).
+- **Jeśli wiesz, że masz dodatkową subskrypcję** i nie jest ona wymieniona w tym miejscu lub nie jest aktywna, [zadzwoń do pomocy technicznej firmy Microsoft](../../admin/get-help-support.md).
 
 ### <a name="what-about-the-old-licenses"></a>Co ze starymi licencjami?
 
-Licencje dla bieżącej subskrypcji zostaną później usunięte. od tego czasu zapłacisz tylko za nowe licencje użytkowników.
+Licencje dla bieżącej subskrypcji zostaną usunięte później. Od tego czasu płacisz tylko za nowe licencje użytkowników.
 
-## <a name="step-4-reassign-licenses"></a>Krok 4. Ponowne przypisanie licencji
+## <a name="step-4-reassign-licenses"></a>Krok 4. Ponowne przypisywanie licencji
 
-Po uaktualnieniu z planu usługi Office 365 do planu Microsoft 365 musisz zmienić przypisania licencji dla wszystkich użytkowników. Licencje nie są przypisywane automatycznie po ręcznej zmianie planów.
+Podczas uaktualniania planu Office 365 do planu Microsoft 365 należy zmienić przypisania licencji dla wszystkich użytkowników. Licencje nie są przypisywane automatycznie podczas ręcznej zmiany planów.
 
-### <a name="reassign-a-license-for-one-user"></a>Ponowne przypisanie licencji dla jednego użytkownika
-
-1. W centrum administracyjnym przejdź do strony **Użytkownicy** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktywni użytkownicy</a>.
-
-2. Na **stronie Aktywni** użytkownicy wybierz użytkownika, do którego chcesz przypisać licencję.
-
-3. Na karcie **Licencje i aplikacje** rozwiń pozycję **Licencje, zaznacz** pola licencji, które chcesz przypisać, a następnie wybierz **pozycję Zapisz zmiany**.
-
-### <a name="reassign-licenses-for-multiple-users-at-once"></a>Ponowne przypisanie licencji dla wielu użytkowników jednocześnie
+### <a name="reassign-a-license-for-one-user"></a>Ponowne przypisywanie licencji dla jednego użytkownika
 
 1. W centrum administracyjnym przejdź do strony **Użytkownicy** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktywni użytkownicy</a>.
 
-2. Wybierz kółka obok nazw użytkowników, dla których chcesz zamienić istniejące licencje.
+2. Na stronie **Aktywni użytkownicy** wybierz użytkownika, któremu chcesz przypisać licencję.
+
+3. Na **karcie Licencje i aplikacje** rozwiń węzeł **Licencje**, wybierz pola licencji, które chcesz przypisać, a następnie wybierz pozycję **Zapisz zmiany**.
+
+### <a name="reassign-licenses-for-multiple-users-at-once"></a>Ponowne przypisywanie licencji dla wielu użytkowników jednocześnie
+
+1. W centrum administracyjnym przejdź do strony **Użytkownicy** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktywni użytkownicy</a>.
+
+2. Wybierz okręgi obok nazw użytkowników, dla których chcesz zastąpić istniejące licencje.
 
 3. U góry wybierz trzy kropki (więcej akcji), a następnie wybierz pozycję **Zarządzaj licencjami produktów**.
 
 4. Wybierz pozycję **Zastąp istniejące przypisania licencji produktów** \> **Dalej**.
 
-5. Przestaw przełącznik na pozycję **Włącz** dla produktów, które chcesz przypisać do tych użytkowników.
+5. Przełącz przełącznik na pozycję **Włączone** dla produktów, które chcesz przypisać do tych użytkowników.
 
     > [!TIP]
-    > - Aby ograniczyć usługi dostępne dla użytkownika, przestaw przełączniki na pozycję Wyłączone dla usług,  które chcesz usunąć dla tego użytkownika. Jeśli na przykład chcesz, aby użytkownik miał dostęp do wszystkich dostępnych usług oprócz usługi Skype dla firm Online, możesz ustawić przełącznik dla usługi Skype dla firm Online na **pozycję Wyłączone.**
+    > - Aby ograniczyć, które usługi są dostępne dla użytkownika, przełącz się do pozycji **Wyłączone** dla usług, które chcesz usunąć dla tego użytkownika. Jeśli na przykład chcesz, aby użytkownik miał dostęp do wszystkich dostępnych usług z wyjątkiem Skype dla firm Online, możesz przełączyć przełącznik dla usługi Skype dla firm Online na pozycję **Wyłączone**.
     > - Zostaną usunięte wszystkie poprzednie przypisania licencji dla wybranych użytkowników.
 
 6. U dołu okienka **Zastąp istniejące produkty** wybierz pozycję **Zastąp** \> **Zamknij**.
 
-## <a name="step-5-cancel-subscriptions-or-remove-licenses-that-you-no-longer-need-optional"></a>Krok 5. Anulowanie subskrypcji lub usuwanie licencji, które nie są już potrzebne (opcjonalnie)
+## <a name="step-5-cancel-subscriptions-or-remove-licenses-that-you-no-longer-need-optional"></a>Krok 5. Anulowanie subskrypcji lub usunięcie niepotrzebnych licencji (opcjonalnie)
 
 Jeśli wszyscy użytkownicy zostali przeniesieni z jednej subskrypcji do innej i nie potrzebujesz już oryginalnej subskrypcji, możesz [anulować tę subskrypcję](cancel-your-subscription.md).
 
-Jeśli do innej subskrypcji przeniesiono tylko niektórych użytkowników, usuń [licencje](../licenses/buy-licenses.md) , których już nie potrzebujesz.
+Jeśli przeniesiono tylko niektórych użytkowników do innej subskrypcji, [usuń licencje](../licenses/buy-licenses.md) , których już nie potrzebujesz.
 
-## <a name="call-support-to-help-you-change-plans"></a>Zadzwoń do pomocy technicznej, aby pomóc Ci w zmianie planów
+## <a name="call-support-to-help-you-change-plans"></a>Zadzwoń do pomocy technicznej, aby ułatwić zmianę planów
 
 [Zadzwoń do pomocy technicznej firmy Microsoft](../../admin/get-help-support.md).

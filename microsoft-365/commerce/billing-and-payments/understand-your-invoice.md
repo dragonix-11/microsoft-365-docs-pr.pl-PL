@@ -3,7 +3,7 @@ title: Opis rachunku lub faktury
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 f1.keywords:
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Dowiedz się, jak odczytywać i interpretować rachunek lub fakturę za produkty biznesowe firmy Microsoft.
 ms.date: 05/04/2021
-ms.openlocfilehash: ce057a9a3fc72ab1ba818047112451f984894d99
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4d5bd00726004d0e9dce3f6d284546ba81fb7edd
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315809"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101783"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Opis rachunku lub faktury
 

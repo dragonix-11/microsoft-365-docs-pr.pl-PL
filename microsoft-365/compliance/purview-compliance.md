@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ad165fcdca11edbafd55a5cb0d37d12d0fba49c3
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: c56c855983e27a3882796cd1e222c97305a627c4
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090638"
+ms.locfileid: "66101551"
 ---
 # <a name="microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview rozwiązania dotyczące ryzyka i zgodności
 
@@ -27,7 +27,7 @@ Microsoft Purview rozwiązania dotyczące ryzyka i zgodności pomagają zarządz
 
 ## <a name="protect-sensitive-data-across-clouds-apps-and-devices"></a>Ochrona poufnych danych w chmurach, aplikacjach i na urządzeniach
 
-Strategia ochrony informacji powinna być oparta na potrzebach biznesowych, ale każda organizacja musi chronić niektóre lub wszystkie dane. Skorzystaj z możliwości [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) (dawniej Microsoft Information Protection), aby ułatwić odnajdywanie, klasyfikowanie, ochronę i zarządzanie poufnymi informacjami wszędzie tam, gdzie się znajdują lub podróżują.
+Strategia ochrony informacji powinna być oparta na potrzebach biznesowych, ale każda organizacja musi chronić niektóre lub wszystkie dane. Skorzystaj z możliwości [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) (dawniej Microsoft informācijas aizsardzība), aby ułatwić odnajdywanie, klasyfikowanie, ochronę i zarządzanie poufnymi informacjami wszędzie tam, gdzie się znajdują lub podróżują.
 
 ### <a name="know-your-data"></a>Poznaj swoje dane
 
@@ -57,6 +57,12 @@ Niezamierzone udostępnianie poufnych elementów może spowodować szkodę finan
 [zarządzanie cyklem życia danych Microsoft Purview](/microsoft-365/compliance/manage-data-governance#microsoft-purview-data-lifecycle-management) (dawniej Microsoft Information Governance) udostępnia narzędzia i możliwości przechowywania i usuwania zawartości w Exchange, SharePoint, OneDrive, Grupy Microsoft 365 , Teams i Yammer. Przechowywanie i usuwanie wiadomości e-mail, dokumentów i wiadomości jest często potrzebne w celu spełnienia wymagań dotyczących zgodności i przepisów. Jednak usunięcie zawartości, która nie ma już wartości biznesowej, zmniejsza również obszar ataków.
 
 Aby uzyskać więcej informacji, zobacz [Informacje o zarządzaniu cyklem życia danych](/microsoft-365/compliance/data-lifecycle-management).
+
+### <a name="encrypt-your-data-and-control-your-encryption-keys"></a>Szyfrowanie danych i kontrola kluczy szyfrowania
+
+[Szyfrowanie](/microsoft-365/compliance/encryption) jest ważną częścią strategii ochrony plików i ochrony informacji. Proces szyfrowania koduje dane (nazywane zwykłego tekstu) do szyfru. W przeciwieństwie do zwykłego tekstu, szyfrowanie nie może być używane przez osoby lub komputery, chyba że i dopóki nie zostanie odszyfrowany szyfrowany. Odszyfrowywanie wymaga klucza szyfrowania, który mają tylko autoryzowani użytkownicy. Szyfrowanie pomaga zagwarantować, że tylko autoryzowani adresaci mogą odszyfrować twoją zawartość.
+
+[Microsoft Purview podwójne szyfrowanie kluczy](/microsoft-365/compliance/double-key-encryption) pomaga zabezpieczyć najbardziej poufne dane, które podlegają najsurowszym wymaganiom ochrony. [Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview) pomaga spełnić wymagania prawne lub zgodności dotyczące kontrolowania kluczy głównych. Jawnie autoryzujesz usługi Microsoft 365 do używania kluczy szyfrowania w celu dostarczania usług w chmurze o wartości dodanej, takich jak elektroniczne wykrywanie, ochrona przed złośliwym oprogramowaniem, ochrona przed spamem, indeksowanie wyszukiwania itd.
 
 ## <a name="identify-data-risks-and-manage-regulatory-compliance-requirements"></a>Określanie ryzyka związanego z danymi i zarządzanie wymogami zgodności z przepisami
 

@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jamitche, jmueller
+ms.reviewer: lishepar, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,12 @@ ms.custom:
 search.appverid: MET150
 description: Kupowanie produktów lub usług biznesowych firmy Microsoft przy użyciu istniejącej metody płatności lub dodanie nowej w centrum administracyjne platformy Microsoft 365.
 ms.date: 06/01/2022
-ms.openlocfilehash: a6f15318e1539ef1f6c2656197c222e068f04f87
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: e92ceaadd61b90ac2357543eb97f8a16eeb65597
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923002"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102531"
 ---
 # <a name="manage-payment-methods"></a>Zarządzanie formami płatności
 

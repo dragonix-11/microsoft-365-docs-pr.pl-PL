@@ -21,16 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08fd6e2fed34296b42fb3b12bec9b5b2b4cb91f8
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 551d2f0f2da872ff24da2bd0d691eea775894c08
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535851"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102575"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów Ochrona usługi Office 365 w usłudze Defender w portalu Microsoft 365 Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
@@ -48,7 +48,7 @@ Ochrona usługi Office 365 w usłudze Microsoft Defender organizacje (na przykł
 
 ### <a name="download-reports"></a>Pobieranie raportów
 
-1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do obszaru **RaportySzaporty** >  **& współpracy** \> pocztą **e-mail do pobrania**. Aby przejść bezpośrednio do strony **Raporty do pobrania** , użyj polecenia <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
+W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do pozycji **Raporty** > **e-mail & raporty współpracy** \> **do pobrania**. Aby przejść bezpośrednio do strony **Raporty do pobrania** , użyj polecenia <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
 :::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="Strona Raporty dotyczące współpracy & poczty e-mail w portalu Microsoft 365 Defender" lightbox="../../media/email-collaboration-download-reports.png":::
 
@@ -149,7 +149,7 @@ Widok **danych według adresu URL kliknij widok akcji ochrony** pokazuje liczbę
 - **Zablokowane**: kliknij pozycję Zablokowane.
 - **Zablokowane przez administratora dzierżawy**: kliknięcia zablokowane w zasadach linków Sejf.
 - **Zablokowane i kliknięty:** zablokowane kliknięcia, w których użytkownicy klikają zablokowany adres URL.
-- **Zablokowane przez administratora dzierżawy i klikniętych przez**: Administrator zablokował link, ale użytkownik kliknął.
+- **Zablokowane przez administratora dzierżawy i klikniętego przez**: Administracja zablokował link, ale użytkownik kliknął.
 - **Kliknięty podczas skanowania**: kliknięcia, w których użytkownicy klikają oczekującą stronę skanowania pod adresem URL.
 - **Oczekujące skanowanie**: klika adresy URL oczekujące na werdykt skanowania.
 
@@ -224,7 +224,7 @@ Polecenia cmdlet raportowania programu PowerShell:
 
 |Raport|Temat|
 |---|---|
-|Najważniejsi nadawcy i adresaci|[Get-MailTrafficTopReport](/powershell/module/exchange/get-mailtraffictopreport) <p> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|Najważniejsi nadawcy i adresaci|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |Najważniejsze złośliwe oprogramowanie|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |Ruch poczty|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <p> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |Bezpieczne linki|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|

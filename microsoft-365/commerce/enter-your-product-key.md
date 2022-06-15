@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ ms.custom:
 - AdminTemplateSet
 description: Jeśli zakupiono Microsoft 365 Business Standard w sklepie, dowiedz się, jak zrealizować klucz produktu i aktywować subskrypcję.
 ms.date: 11/13/2020
-ms.openlocfilehash: 9d0adb7609f7334f3dc5dcb0d0c52839bc61758d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9dd666155022298ca824a1d0cf563e8fcc7f63ae
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316607"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101509"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Wprowadź klucz produktu platformy Microsoft 365 Business Standard
 

@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,16 +21,16 @@ ms.custom:
 - AdminTemplateSet
 description: Dowiedz się, ile podatku zostanie naliczone za subskrypcję Microsoft 365 dla firm w różnych regionach.
 ms.date: 03/17/2021
-ms.openlocfilehash: 35442bc495b6179a844bdbe3a6b98a4f58556140
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 049b361f75dec9402464aa4216e15388a8174f1d
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731234"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101629"
 ---
 # <a name="tax-information"></a>Informacje podatkowe
 
-W przypadku zakupu Microsoft 365 produktów i usług podatki, które płacisz, zależą od jednej z dwóch rzeczy: adresu biznesowego lub adresu wysyłkowego, jeśli jest on inny. Jeśli Twoja organizacja znajduje się w Stany Zjednoczone, musisz podać federalny numer identyfikacyjny pracodawcy (FEIN).
+W przypadku zakupu Microsoft 365 produktów i usług podatki, które płacisz, zależą od jednej z dwóch rzeczy: adresu biznesowego lub adresu wysyłkowego, jeśli jest on inny. Jeśli Twoja organizacja znajduje się w Estados Unidos, musisz podać federalny numer identyfikacyjny pracodawcy (FEIN).
 
 Firmy w następujących krajach mogą podać swój numer VAT lub lokalny odpowiednik:
 
@@ -132,9 +132,9 @@ Jeśli opłaty są naliczane z jednej z następujących lokalizacji, zostanie za
 
 ## <a name="north-central-and-south-america"></a>Ameryka Północna, Środkowa i Południowa
 
-W Stany Zjednoczone, Kanadzie, Meksyku, Chile i Kolumbii obowiązują różne stawki podatkowe w zależności od rodzaju produktu i lokalizacji.
+W Estados Unidos, Kanadzie, Meksyku, Chile i Kolumbii obowiązują różne stawki podatkowe w zależności od rodzaju produktu i lokalizacji.
   
-Jeśli rozliczenia są wykonywane przez firmę Microsoft Corporation ([zobacz fakturę](view-your-bill-or-invoice.md) i zarejestrowano się w celu Microsoft 365 poza Stany Zjednoczone, Kanadą, Portoryko, Chile i Kolumbią, podatek na ogół nie jest naliczany.
+Jeśli rozliczenia są wykonywane przez firmę Microsoft Corporation ([zobacz fakturę](view-your-bill-or-invoice.md) i zarejestrowano się w celu Microsoft 365 poza Estados Unidos, Kanadą, Portoryko, Chile i Kolumbią, podatek zazwyczaj nie jest naliczany.
 
 ## <a name="add-your-vat-id"></a>Dodawanie identyfikatora VAT
 
@@ -152,7 +152,7 @@ Przykład:
 
 >*(cena jednostkowa X stawka podatkowa) X ilość = całkowity podatek od sprzedaży*
 
--or-
+-lub-
 
 >(1,29 USD X 0,095 USD) X 100 = $12.25
 

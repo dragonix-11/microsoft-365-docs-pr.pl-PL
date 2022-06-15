@@ -1,11 +1,11 @@
 ---
-title: Kupowanie dodatków i zarządzanie nimi
+title: Kupowanie dodatków lub zarządzanie nimi
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,62 +19,62 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: Dowiedz się, jak kupować dodatki i zarządzać nimi w ramach subskrypcji usługi Microsoft 365 dla firm.
+description: Dowiedz się, jak kupować dodatki dla subskrypcji Microsoft 365 for Business i zarządzać nimi.
 ms.date: 04/02/2021
-ms.openlocfilehash: ef24e1f6b743c19adc1e7f3120d76e90ebd82192
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 28c155eaa10a578d10126c563945859e6931f180
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329281"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101651"
 ---
-# <a name="buy-or-manage-add-ons"></a>Kupowanie dodatków i zarządzanie nimi
+# <a name="buy-or-manage-add-ons"></a>Kupowanie dodatków lub zarządzanie nimi
 
-Wiele Microsoft 365 dla firm ma dodatki, które można kupić dla swoich subskrypcji. Dodatki zapewniają więcej funkcji w celu ulepszania możliwości subskrypcji.
+Wiele Microsoft 365 dla planów biznesowych ma dodatki, które można kupić dla subskrypcji. Dodatki zapewniają więcej funkcji, aby ulepszyć środowisko subskrypcji.
 
 Istnieją dwa typy dodatków:
 
-1. **Dodatki tradycyjne są** powiązane z konkretną subskrypcją. Jeśli anulujesz subskrypcję, powiązany dodatek również zostanie anulowany.
-2. **Subskrypcje autonomiczne są wyświetlane** jako osobne subskrypcje **na stronie Twoje** produkty i mają własną datę wygaśnięcia. W przeciwieństwie do dodatków tradycyjnych, subskrypcje autonomiczne nie są powiązane z konkretną subskrypcją. Autonomiczną subskrypcją dodatków można zarządzać tak samo jak każdą inną subskrypcję.
+1. **Tradycyjne dodatki** są połączone z określoną subskrypcją. Jeśli anulujesz subskrypcję, skojarzony dodatek również zostanie anulowany.
+2. **Autonomiczne subskrypcje dodatków są wyświetlane jako oddzielna subskrypcja** na stronie **Twoje produkty** i mają własną datę wygaśnięcia. W przeciwieństwie do tradycyjnych dodatków autonomiczne subskrypcje dodatków nie są połączone z określoną subskrypcją. Autonomiczną subskrypcją dodatku zarządzasz w taki sam sposób, jak w przypadku każdej innej subskrypcji.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Aby wykonać czynności opisane w tym artykule, musisz być administratorem globalnym lub rozliczeniowym. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../admin/add-users/about-admin-roles.md).
+Aby wykonać instrukcje w tym artykule, musisz być administratorem globalnym lub administratorem rozliczeń. W celu uzyskania dodatkowych informacji, zobacz [Informacje o rolach administratora](../admin/add-users/about-admin-roles.md).
 
 ## <a name="buy-an-add-on"></a>Kupowanie dodatku
 
-Aby znaleźć i kupić dodatki, skorzystaj z poniższych kroków. Lista obejmuje tylko dodatki, które są dla Ciebie dostępne. Ta lista jest oparta na Twoich obecnie aktywnych subskrypcjach i wszystkich innych istniejących już posiadanych dodatków. Jeśli dodatku nie ma na liście, nie można go kupić.
+Wykonaj poniższe kroki, aby znaleźć i kupić dodatki. Lista zawiera tylko dodatki, które są dostępne dla Ciebie. Ta lista jest oparta na aktualnie aktywnych subskrypcjach i wszystkich innych istniejących dodatkach, które już masz. Jeśli dodatku nie ma na liście, nie można go kupić.
 
-Aby uzyskać informacje Skype dla firm dotyczące dodatków, zobacz Skype dla firm i Microsoft Teams [dotyczące licencjonowania dodatków](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
+Aby uzyskać informacje o dodatkach Skype dla firm, zobacz [licencjonowanie dodatków Skype dla firm i Microsoft Teams](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
 
-1. W centrum administracyjnym przejdź **do strony** Zakup \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">usług rozliczeniowych</a> .
-2. U dołu strony **Zakup** usług w sekcji Dodatki znajdź dodatek,  który chcesz kupić, a następnie wybierz pozycję **Szczegóły**.
+1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Usługi zakupu rozliczeń</a>  \>.
+2. W dolnej części strony **Zakup usług** w sekcji **Dodatki** znajdź dodatek, który chcesz kupić, i wybierz pozycję **Szczegóły**.
 3. Na stronie szczegółów produktu wybierz pozycję **Dalej**.
-4. W razie potrzeby wypełnij wszelkie inne informacje o zamówieniu. Te informacje mogą obejmować wybieranie subskrypcji dodatku. Po zakończeniu wybierz pozycję **Wyewidencjonaj teraz**.
-5. W razie potrzeby przejrzyj informacje o zamówieniach i cenach, a następnie wybierz pozycję **Dalej**.
-6. Wybierz metodę płatności lub dodaj nową, a następnie **wybierz pozycję** >  Zamieć **zamówienieGo do strony głównej administratorów**.
+4. W razie potrzeby wypełnij wszelkie inne informacje o zamówieniu. Te informacje mogą obejmować wybranie subskrypcji, dla których jest przeznaczony dodatek. Po zakończeniu wybierz pozycję **Wyewidencjonuj teraz**.
+5. W razie potrzeby przejrzyj informacje o zamówieniu i cenach, a następnie wybierz pozycję **Dalej**.
+6. Wybierz formę płatności lub dodaj nową, a następnie wybierz pozycję **Umieść zamówienie** > **Przejdź do Administracja Strona główna**.
 
-## <a name="manage-an-add-on"></a>Zarządzanie dodatku
+## <a name="manage-an-add-on"></a>Zarządzanie dodatkiem
 
-Autonomiczną subskrypcją dodatków można zarządzać tak samo jak każdą inną subskrypcję — na **stronie Twoje** produkty. Na przykład możesz [kupić lub usunąć](licenses/buy-licenses.md) licencje, zarządzać rozliczeniami [cyklicznymi](subscriptions/renew-your-subscription.md) oraz edytować [](billing-and-payments/manage-payment-methods.md) lub zamieniać metody płatności dla subskrypcji dodatków autonomicznych.
+Autonomiczną subskrypcją dodatku zarządzasz w taki sam sposób, jak w przypadku dowolnej innej subskrypcji — na stronie **Twoje produkty** . Możesz na przykład [kupować lub usuwać licencje](licenses/buy-licenses.md), [zarządzać rozliczeniami cyklicznymi](subscriptions/renew-your-subscription.md) oraz [edytować lub zastępować formy płatności](billing-and-payments/manage-payment-methods.md) dla autonomicznych subskrypcji dodatków.
 
-Tradycyjny dodatek można zarządzać, przechodząc do subskrypcji, która go zawiera, i wprowadzać w nim zmiany. Aby zarządzać tradycyjnym dodatekem, należy wykonać poniższe czynności.
+Tradycyjny dodatek można zarządzać, przechodząc do subskrypcji, która go zawiera, i wprowadzając tam zmiany. Aby zarządzać tradycyjnym dodatkiem, wykonaj poniższe kroki.
   
-1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">z produktami</a> .
-2. Na **karcie Produkty** wybierz subskrypcję zawierającą dodatek, który chcesz zaktualizować.
-3. Na stronie szczegóły subskrypcji w **sekcji** Dodatki jest wymieniona lista kupionych dodatków. Wybierz **pozycję Zarządzaj dodatki**.
-4. W **okienku Zarządzanie** dodatki z listy rozwijanej Dodatek wybierz  dodatek, który chcesz zmienić.
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
+2. Na karcie **Produkty** wybierz subskrypcję zawierającą dodatek, który chcesz zaktualizować.
+3. Na stronie szczegółów subskrypcji sekcja **Dodatki** zawiera listę zakupionych dodatków. Wybierz pozycję **Zarządzaj dodatkami**.
+4. W okienku **Zarządzanie dodatkami** z listy rozwijanej **Dodatek** wybierz dodatek, który chcesz zmienić.
 5. Wprowadź zmianę ilości dla dodatku, a następnie wybierz pozycję **Zapisz**.
 
 ## <a name="remove-an-add-on"></a>Usuwanie dodatku
 
-Aby usunąć autonomiczną subskrypcję dodatku, [anuluj ją](subscriptions/cancel-your-subscription.md), tak jak każdą inną subskrypcję. Możesz też wyłączyć [Rozliczanie cykliczne](subscriptions/renew-your-subscription.md).
+Aby usunąć autonomiczną subskrypcję dodatku, [anuluj subskrypcję](subscriptions/cancel-your-subscription.md), podobnie jak w przypadku każdej innej subskrypcji. Możesz też [wyłączyć rozliczenia cykliczne](subscriptions/renew-your-subscription.md).
 
-Nie można usunąć dodatku tradycyjnego. Jeśli chcesz usunąć dodatek tradycyjny, skontaktuj się z pomocą techniczną, aby uzyskać pomoc ([Uzyskaj pomoc techniczną](../admin/get-help-support.md).
+Nie można usunąć tradycyjnego dodatku. Jeśli chcesz usunąć tradycyjny dodatek, skontaktuj się z pomocą techniczną w celu [uzyskania pomocy (Uzyskaj pomoc techniczną](../admin/get-help-support.md).
   
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Dodawanie miejsca do magazynowania dla subskrypcji](add-storage-space.md) (artykuł)\
 [Kupowanie lub usuwanie licencji subskrypcji](licenses/buy-licenses.md) (artykuł)\
-[Wyłączanie lub włączanie Rozliczanie cykliczne](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) (artykuł)\
-[Zarządzanie metodami płatności](billing-and-payments/manage-payment-methods.md) (artykuł)
+[Wyłącz lub włącz rozliczenia cykliczne](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) (artykuł)\
+[Zarządzanie formami płatności](billing-and-payments/manage-payment-methods.md) (artykuł)

@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Najprostszym sposobem uaktualnienia planów jest użycie karty Uaktualnianie w centrum administracyjnym. Jednak karta Uaktualnianie nie zawsze jest obsługiwana.
 ms.date: 04/21/2021
-ms.openlocfilehash: 1867a161f8de02e20261553bb4dbb10b92ce523f
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 4578730d82fddd5bdd3d0d25dd7fd1e16414808b
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042401"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102263"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Przełączanie na inny plan
 
@@ -36,7 +36,7 @@ Gdy twoja firma się zmieni lub potrzebujesz więcej funkcji, możesz uaktualni�
 
 W przypadku korzystania z karty **Uaktualnianie** możesz przejść przez proces zakupu nowego planu. Wszyscy użytkownicy mają automatycznie przypisane licencje w nowym planie, a stary plan zostanie anulowany.
 
-1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a> .
+1. W centrum Administracja przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
 2. Wybierz subskrypcję, którą chcesz uaktualnić.
 3. Na stronie szczegółów subskrypcji w obszarze **Szczegóły produktu i uaktualnienia** wybierz pozycję **Wyświetl uaktualnienia zalecane dla organizacji**.
 4. Znajdź plan, do którego chcesz uaktualnić, a następnie wybierz przycisk **Uaktualnij** .
@@ -58,7 +58,7 @@ W przypadku korzystania z karty **Uaktualnianie** plany, do których można uakt
 
 Jeśli chcesz przejść do planu z mniejszą liczbą usług, możesz [zmienić plany ręcznie](change-plans-manually.md) lub [skontaktować się z pomocą techniczną](../../admin/get-help-support.md) , aby uzyskać pomoc.
 
-## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Chcę tylko uaktualnić niektórych moich użytkowników. Jak mogę to zrobić?
+## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Chcę tylko uaktualnić niektórych moich użytkowników. 如何实现 to zrobić?
 
 Jeśli chcesz tylko uaktualnić niektórych użytkowników do innego planu, ale najpierw musisz kupić nową subskrypcję, zobacz [Ręczne zmienianie planów](change-plans-manually.md). Jeśli masz już subskrypcję, do którą chcesz uaktualnić użytkowników, zobacz [Przenoszenie użytkowników do innej subskrypcji](move-users-different-subscription.md).
 
@@ -80,7 +80,7 @@ Aby plany uaktualniania były uaktualniane automatycznie, wszyscy użytkownicy m
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Nie można teraz uaktualnić subskrypcji, ponieważ ta subskrypcja nie jest w pełni skonfigurowana lub usługa nie jest dostępna
 
-Jeśli na przykład jedna z usług ma zdarzenie, nie będzie można uaktualnić do momentu, gdy wszystkie usługi będą w dobrej kondycji. Aby sprawdzić, czy występują problemy z aprowizowaniem lub kondycją usługi, w centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Kondycja usługi kondycji</a>  \>.
+Jeśli na przykład jedna z usług ma zdarzenie, nie będzie można uaktualnić do momentu, gdy wszystkie usługi będą w dobrej kondycji. Aby sprawdzić, czy występują problemy z aprowizowaniem lub kondycją usługi, w centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Estado de funcionamento dos serviços kondycji</a>  \>.
 
 Jeśli okaże się, że usługa nie jest w pełni zainicjowana lub że występuje problem z kondycją usługi, poczekaj kilka godzin na udostępnienie usługi i spróbuj ponownie. Jeśli nadal masz problem, [skontaktuj się z pomocą techniczną](../../admin/get-help-support.md).
 

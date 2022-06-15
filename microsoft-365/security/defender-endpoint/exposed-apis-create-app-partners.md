@@ -1,7 +1,7 @@
 ---
-title: Tworzenie aplikacji w celu uzyskania dostępu do Ochrona punktu końcowego w usłudze Microsoft Defender bez użytkownika
+title: Dostęp partnerów za pośrednictwem interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender
 ms.reviewer: ''
-description: Dowiedz się, jak zaprojektować aplikację internetową w celu uzyskania dostępu programowego do Ochrona punktu końcowego w usłudze Microsoft Defender bez użytkownika.
+description: Dowiedz się, jak zaprojektować aplikację internetową w celu uzyskania dostępu programowego do Ochrona punktu końcowego w usłudze Microsoft Defender w imieniu użytkowników.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5f17f29f083df6e567218363027e7677c87ee154
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 7ca212cf6cdacdaf374dbe65f4fd88c74712bb34
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268880"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101849"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Dostęp partnerów za pośrednictwem interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "65268880"
 > Zaawansowane możliwości wyszukiwania zagrożeń nie są uwzględniane w usłudze Defender dla firm. Zobacz [Porównanie Microsoft Defender dla Firm z planami Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 
-> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -59,7 +59,7 @@ Poniższe kroki przeprowadzą Cię przez proces tworzenia aplikacji Azure AD, uz
 
 1. Zaloguj się do [dzierżawy platformy Azure](https://portal.azure.com) przy użyciu użytkownika z rolą **administratora globalnego** .
 
-2. Przejdź do **Azure Active Directory** \> **Rejestracje aplikacji** \> **Nowa rejestracja**.
+2. Przejdź do **Azure Active Directory** \> **App-registraties** \> **Nowa rejestracja**.
 
    :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Okienko nawigacji do rejestracji aplikacji" lightbox="images/atp-azure-new-app2.png":::
 
@@ -140,7 +140,7 @@ W poniższym przykładzie użyjemy uprawnienia **"Odczyt wszystkich alertów"** 
 
 **Uwaga:** Aby uzyskać token dostępu w imieniu klienta, użyj identyfikatora dzierżawy klienta w następujących przejęciach tokenu.
 
-Aby uzyskać więcej informacji na temat tokenu AAD, zobacz [samouczek AAD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Aby uzyskać więcej informacji na temat tokenu usługi AAD, zobacz [samouczek usługi AAD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-powershell"></a>Korzystanie z programu PowerShell
 
@@ -168,33 +168,35 @@ return $token
 
 ### <a name="using-c"></a>Korzystanie z języka C #
 
-> Poniższy kod został przetestowany za pomocą narzędzia Nuget Microsoft.IdentityModel.Clients.ActiveDirectory
+> Poniższy kod został przetestowany za pomocą narzędzia Nuget Microsoft.Identity.Client
 
 > [!IMPORTANT]
-> Pakiet [microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet i biblioteka uwierzytelniania Azure AD (ADAL) zostały przestarzałe. Od 30 czerwca 2020 r. nie dodano żadnych nowych funkcji.   Zdecydowanie zachęcamy do uaktualnienia. Aby uzyskać więcej informacji, zobacz [przewodnik migracji](/azure/active-directory/develop/msal-migration) .
+> Pakiet [microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet i biblioteka uwierzytelniania Azure AD (ADAL) zostały przestarzałe. Od 30 czerwca 2020 r. nie dodano żadnych nowych funkcji. Zdecydowanie zachęcamy do uaktualnienia. Aby uzyskać więcej informacji, zobacz [przewodnik migracji](/azure/active-directory/develop/msal-migration) .
 
 - Tworzenie nowej aplikacji konsolowej
-- Instalowanie NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
+- Instalowanie NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/)
 - Dodaj poniższe elementy przy użyciu polecenia
 
     ```console
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 - Skopiuj/wklej poniższy kod w aplikacji (nie zapomnij zaktualizować trzech zmiennych: `tenantId`, `appId`i `appSecret`)
 
-    ```console
+    ```csharp
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.microsoftonline.com";
-    const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
 
 ### <a name="using-python"></a>Korzystanie z języka Python

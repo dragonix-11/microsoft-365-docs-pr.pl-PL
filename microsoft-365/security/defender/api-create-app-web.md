@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 1fb5e5087d03842832e89a3982826df1e94b857c
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 05450912d78e7da774de76e02dfe4d42a1569084
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268842"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102399"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>Tworzenie aplikacji w celu uzyskania dostępu do Microsoft 365 Defender bez użytkownika
 
@@ -41,7 +41,7 @@ ms.locfileid: "65268842"
 
 Na tej stronie opisano sposób tworzenia aplikacji w celu uzyskania dostępu programowego do Microsoft 365 Defender bez zdefiniowanego użytkownika — na przykład w przypadku tworzenia demona lub usługi w tle.
 
-Jeśli potrzebujesz dostępu programowego do Microsoft 365 Defender w imieniu co najmniej jednego użytkownika, zobacz [Tworzenie aplikacji w celu uzyskania dostępu do interfejsów API Microsoft 365 Defender w imieniu użytkownika](api-create-app-user-context.md) i [Tworzenie aplikacji z dostępem partnera do interfejsów API Microsoft 365 Defender](api-partner-access.md). Jeśli nie masz pewności, jakiego rodzaju dostępu potrzebujesz, zobacz [Wprowadzenie](api-access.md).
+Jeśli potrzebujesz dostępu programowego do Microsoft 365 Defender w imieniu co najmniej jednego użytkownika, zobacz [Tworzenie aplikacji w celu uzyskania dostępu do interfejsów API Microsoft 365 Defender w imieniu użytkownika](api-create-app-user-context.md) i [Tworzenie aplikacji z dostępem partnera do interfejsów API Microsoft 365 Defender](api-partner-access.md). Jeśli nie masz pewności, jakiego rodzaju dostępu potrzebujesz, zobacz [Első lépések](api-access.md).
 
 Microsoft 365 Defender uwidacznia wiele swoich danych i akcji za pośrednictwem zestawu programowych interfejsów API. Te interfejsy API ułatwiają automatyzowanie przepływów pracy i korzystanie z możliwości Microsoft 365 Defender. Ten dostęp do interfejsu API wymaga uwierzytelniania OAuth2.0. Aby uzyskać więcej informacji, zobacz [Kod autoryzacji OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
@@ -61,13 +61,13 @@ W tym artykule wyjaśniono, jak:
 
 1. Zaloguj się do [platformy Azure](https://portal.azure.com) jako użytkownik z rolą **administratora globalnego** .
 
-2. Przejdź do **Azure Active Directory** >  **Rejestracje aplikacji** >  **Nowa rejestracja**.
+2. Przejdź do **Azure Active Directory** >  **App-registraties** >  **Nowa rejestracja**.
 
    :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="Karta Nowa rejestracja w portalu Microsoft 365 Defender" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. W formularzu wybierz nazwę aplikacji, a następnie wybierz pozycję **Zarejestruj**.
 
-4. Na stronie aplikacji wybierz pozycję **Uprawnienia** >  interfejsu **APIDodaj** **uprawnieniaUdodatki** >  używane przez moją organizację >, wpisz **Microsoft Threat Protection** i wybierz pozycję **Microsoft Threat Protection**. Aplikacja może teraz uzyskiwać dostęp do Microsoft 365 Defender.
+4. Na stronie aplikacji wybierz pozycję **Uprawnienia interfejsu API****Dodaj interfejsy** >  API uprawnień  > **używane przez moją organizację** >, wpisz **Microsoft Threat Protection** i wybierz pozycję **Microsoft Threat Protection**. Aplikacja może teraz uzyskiwać dostęp do Microsoft 365 Defender.
 
    > [!TIP]
    > *Usługa Microsoft Threat Protection* jest poprzednią nazwą Microsoft 365 Defender i nie będzie wyświetlana na oryginalnej liście. Aby je wyświetlić, musisz zacząć pisać jego nazwę w polu tekstowym.
@@ -123,7 +123,7 @@ W tym artykule wyjaśniono, jak:
 Aby uzyskać więcej informacji na temat tokenów Azure Active Directory, zobacz [samouczek Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
-> Chociaż przykłady w tej sekcji zachęcają do wklejania wartości wpisów tajnych do celów testowych, **nigdy nie należy kodować wpisów tajnych** do aplikacji działającej w środowisku produkcyjnym. Inna firma może użyć Twojego wpisu tajnego do uzyskania dostępu do zasobów. Możesz pomóc w zabezpieczeniu wpisów tajnych aplikacji przy użyciu [usługi Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Praktyczny przykład sposobu ochrony aplikacji można znaleźć [w temacie Zarządzanie wpisami tajnymi w aplikacjach serwera przy użyciu usługi Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+> Chociaż przykłady w tej sekcji zachęcają do wklejania wartości wpisów tajnych do celów testowych, **nigdy nie należy kodować wpisów tajnych** do aplikacji działającej w środowisku produkcyjnym. Inna firma może użyć Twojego wpisu tajnego do uzyskania dostępu do zasobów. Możesz pomóc w zabezpieczeniu wpisów tajnych aplikacji przy użyciu [usługi Azure 密钥保管库](/azure/key-vault/general/about-keys-secrets-certificates). Praktyczny przykład sposobu ochrony aplikacji można znaleźć [w temacie Zarządzanie wpisami tajnymi w aplikacjach serwera przy użyciu usługi Azure 密钥保管库](/learn/modules/manage-secrets-with-azure-key-vault/).
 
 ### <a name="get-an-access-token-using-powershell"></a>Uzyskiwanie tokenu dostępu przy użyciu programu PowerShell
 
@@ -155,35 +155,38 @@ return $token
 ### <a name="get-an-access-token-using-c"></a>Uzyskiwanie tokenu dostępu przy użyciu języka C\#
 
 > [!NOTE]
-> Poniższy kod został przetestowany przy użyciu narzędzia Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+> Poniższy kod został przetestowany przy użyciu narzędzia Nuget Microsoft.Identity.Client 3.19.8.
 
 > [!IMPORTANT]
 > Pakiet [microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet i biblioteka uwierzytelniania Azure AD (ADAL) zostały przestarzałe. Od 30 czerwca 2020 r. nie dodano żadnych nowych funkcji.   Zdecydowanie zachęcamy do uaktualnienia. Aby uzyskać więcej informacji, zobacz [przewodnik migracji](/azure/active-directory/develop/msal-migration) .
 
 1. Utwórz nową aplikację konsolową.
 
-1. Zainstaluj NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. Zainstaluj NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/).
 
 1. Dodaj następujący wiersz:
 
     ```C#
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 1. Skopiuj i wklej następujący kod do aplikacji (nie zapomnij zaktualizować trzech zmiennych: `tenantId`, `clientId`, `appSecret`):
 
     ```C#
-    string tenantId = ""; // Paste your directory (tenant) ID here
-    string clientId = ""; // Paste your application (client) ID here
-    string appSecret = ""; // Paste your own app secret here to test, then store it in a safe place, such as the Azure Key Vault!
+    csharp
+    string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
+    string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.windows.net";
-    const string wdatpResourceId = "https://api.security.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(clientId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
 
 ### <a name="get-an-access-token-using-python"></a>Uzyskiwanie tokenu dostępu przy użyciu języka Python
@@ -268,7 +271,7 @@ W poniższym przykładzie pokazano, jak wysłać żądanie, aby uzyskać listę 
     var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 ```
 
-## <a name="related-articles"></a>Artykuły pokrewne
+## <a name="related-articles"></a>Powiązane artykuły:
 
 - [Omówienie interfejsów API Microsoft 365 Defender](api-overview.md)
 - [Uzyskiwanie dostępu do interfejsów API Microsoft 365 Defender](api-access.md)
@@ -277,5 +280,5 @@ W poniższym przykładzie pokazano, jak wysłać żądanie, aby uzyskać listę 
 - [Tworzenie aplikacji z dostępem partnerów z wieloma dzierżawami do interfejsów API Microsoft 365 Defender](api-partner-access.md)
 - [Dowiedz się więcej o limitach interfejsu API i licencjonowaniu](api-terms.md)
 - [Omówienie kodów błędów](api-error-codes.md)
-- [Zarządzanie wpisami tajnymi w aplikacjach serwera przy użyciu usługi Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Zarządzanie wpisami tajnymi w aplikacjach serwera przy użyciu usługi Azure 密钥保管库](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [Autoryzacja protokołu OAuth 2.0 na potrzeby logowania użytkownika i dostępu do interfejsu API](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

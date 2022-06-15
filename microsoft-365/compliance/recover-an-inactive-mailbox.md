@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Dowiedz się, jak odzyskać zawartość nieaktywnej skrzynki pocztowej w Office 365, konwertując ją na nową skrzynkę pocztową zawierającą zawartość nieaktywnej skrzynki pocztowej.
-ms.openlocfilehash: 027abe49a6e517a783f6458013bdcb4d0faee78b
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2c679407cb4f7203bb69d88c871bd844694a7c47
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435396"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101585"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Odzyskaj nieaktywną skrzynkę pocztową
 
@@ -109,7 +109,7 @@ Po odzyskaniu nieaktywnej skrzynki pocztowej zostanie również utworzone nowe k
   Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | Format-List ExternalDirectoryObjectId
   ```
     
-    - Jeśli istnieje wartość właściwości **ExternalDirectoryObjectId** , okres przechowywania skrzynki pocztowej wygasł i możesz odzyskać nieaktywną skrzynkę pocztową, uruchamiając polecenie **New-Mailbox -InactiveMailbox** .
+    - Jeśli nie ma wartości właściwości **ExternalDirectoryObjectId** , okres przechowywania skrzynki pocztowej wygasł i możesz odzyskać nieaktywną skrzynkę pocztową, uruchamiając polecenie **New-Mailbox -InactiveMailbox** .
     - Jeśli istnieje wartość właściwości **ExternalDirectoryObjectId** , okres przechowywania nietrwałej skrzynki pocztowej nie wygasł i musisz odzyskać skrzynkę pocztową, [przywracając konto użytkownika](../admin/add-users/delete-a-user.md).
 
 - **Rozważ włączenie archiwum skrzynki pocztowej po odzyskaniu nieaktywnej skrzynki pocztowej.** Dzięki temu powracający użytkownik lub nowy pracownik może przenieść stare wiadomości do archiwum skrzynki pocztowej. Po wygaśnięciu blokady przechowywania zasady archiwum, które są częścią domyślnej Exchange zasad przechowywania usługi MRM przypisanych do skrzynek pocztowych Exchange Online, będą przenosić elementy, które są dwa lata lub starsze, do skrzynki pocztowej archiwum. Jeśli nie włączysz archiwum skrzynki pocztowej, elementy starsze niż dwa lata pozostaną w podstawowej skrzynce pocztowej użytkownika. Aby uzyskać więcej informacji, zobacz [Włączanie archiwalnych skrzynek pocztowych](enable-archive-mailboxes.md).
