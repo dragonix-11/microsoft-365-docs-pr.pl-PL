@@ -1,6 +1,8 @@
-- name: Zgodność usługi Microsoft Purview
+- name: Microsoft Purview — rozwiązania dotyczące zgodności i ryzyka
   href: index.yml
-- name: Co nowego w usłudze Microsoft Purview
+- name: Dowiedz się więcej o rozwiązaniach dotyczących zgodności i ryzyka
+  href: purview-compliance.md
+- name: Co nowego w rozwiązaniach dotyczących zgodności i ryzyka
   href: whats-new.md
 - name: Wersje próbne zgodności
   items:
@@ -1001,6 +1003,8 @@
           href: set-up-basic-audit.md
         - name: Przeszukaj dziennik inspekcji
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Inspekcja nowego wyszukiwania
+          href: audit-new-search.md
         - name: 'Eksportuj, konfiguruj i wyświetlaj rekordy dziennika inspekcji'
           href: export-view-audit-log-records.md
         - name: Przeszukaj dziennik inspekcji za pomocą skryptu programu PowerShell
