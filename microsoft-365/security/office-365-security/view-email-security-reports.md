@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef22f0873e6a61864cf3b2abf2d8a4bc26f80c4d
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 5501477e14bd5053f6adbe597642470854616a5e
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078991"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089975"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender
 
@@ -424,7 +424,7 @@ Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozyc
   - **Oczekujące**
   - **Zakończone**
 
-Tabela szczegółów poniżej wykresu zawiera te same informacje i ma te same opcje **grupowania** lub **dostosowywania kolumn**, co na karcie **Przesłane do analizy** na stronie **Przesyłanie** współpracy \> **& poczty e-mail**. Aby uzyskać więcej informacji, zobacz [Wyświetlanie przesłanych przez administratorów do firmy Microsoft](admin-submission.md#view-urls-admin-submissions-to-microsoft).
+Tabela szczegółów poniżej wykresu zawiera te same informacje i ma te same opcje **grupowania** lub **dostosowywania kolumn**, co na karcie **Przesłane do analizy** na stronie **Przesyłanie** współpracy \> **& poczty e-mail**. Aby uzyskać więcej informacji, zobacz [Wyświetlanie przesłanych wiadomości e-mail do firmy Microsoft przez administratora poczty e-mail](admin-submission.md#view-email-admin-submissions-to-microsoft).
 
 Na stronie **Przesłane** dostępny jest przycisk **[Eksportuj](#export-report)** .
 

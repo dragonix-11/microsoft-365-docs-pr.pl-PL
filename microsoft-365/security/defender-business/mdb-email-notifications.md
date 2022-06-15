@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7dc6c65221211367e080fac46506f209d17f88ff
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.openlocfilehash: b6ffc1325eb71bf366761545c8e21bfe5da3b4fa
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587451"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090107"
 ---
 # <a name="set-up-email-notifications"></a>Konfigurowanie powiadomień e-mail
 
@@ -31,10 +31,6 @@ Możesz skonfigurować powiadomienia e-mail dla zespołu ds. zabezpieczeń. Nast
 3. [Przejdź do kolejnych kroków](#next-steps).
 
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 ## <a name="types-of-email-notifications"></a>Typy powiadomień e-mail
 

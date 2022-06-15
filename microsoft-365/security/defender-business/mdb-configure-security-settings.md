@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 9d401c5be4fc0454ce1d895fe5ea49267e5c5f70
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: c7b01355b782a3b08b76f95b31db5b0a9f5e1188
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469178"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090322"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Wyświetlanie i edytowanie zasad zabezpieczeń i ustawień w Microsoft Defender dla Firm
 
@@ -53,10 +53,6 @@ Skorzystaj z tego artykułu jako przewodnika po zarządzaniu zasadami i ustawien
 6. [Wyświetl inne ustawienia w portalu Microsoft 365 Defender](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
 7. [Przejdź do kolejnych kroków](#next-steps).
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 ## <a name="choose-where-to-manage-security-policies-and-devices"></a>Wybieranie miejsca zarządzania zasadami zabezpieczeń i urządzeniami
 
@@ -125,7 +121,7 @@ Filtrowanie zawartości internetowej jest dostępne w głównych przeglądarkach
 
 Oprócz zasad ochrony nowej generacji, zapory i filtrowania zawartości internetowej usługa Defender dla firm obejmuje zaawansowane funkcje zabezpieczeń. Te funkcje są wstępnie skonfigurowane przy użyciu zalecanych ustawień; Można je jednak przejrzeć i w razie potrzeby edytować ustawienia zgodnie z potrzebami biznesowymi.
 
-Aby uzyskać dostęp do ustawień zaawansowanych funkcji, w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) przejdź do **obszaru Ustawienia** EndpointsGeneralAdvanced features(Ustawienia  >  EndpointsGeneralAdvanced >  >  **features**).
+Aby uzyskać dostęp do ustawień funkcji zaawansowanych, w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) przejdź do **Ustawienia** >  **Punkty** > **ogólne** > **funkcje zaawansowane**.
 
 W poniższej tabeli opisano ustawienia funkcji zaawansowanych:
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6c39db3cceec62ef80cf19f34bbf3d89a219a4f3
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 23d216e4fb831ef6425bff93bf3fc0063a263852
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042983"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089721"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux
 
@@ -318,8 +318,9 @@ Dane diagnostyczne służą do zapewnienia bezpieczeństwa i aktualności usług
 |---|---|
 |**Klucz**|diagnosticLevel|
 |**Typ danych**|Ciąg|
-|**Dopuszczalne wartości**|opcjonalne (domyślne) <p> Wymagane|
-
+|**Dopuszczalne wartości**|Opcjonalne <p> required (wartość domyślna)|
+|
+  
 #### <a name="enable--disable-automatic-sample-submissions"></a>Włączanie/wyłączanie automatycznych przesyłania przykładów
 
 Określa, czy podejrzane próbki (które mogą zawierać zagrożenia) są wysyłane do firmy Microsoft. Istnieją trzy poziomy kontroli przesyłania przykładów:

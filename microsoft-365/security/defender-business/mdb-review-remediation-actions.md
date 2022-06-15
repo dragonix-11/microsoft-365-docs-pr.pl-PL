@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 438d43548b4318499c44aea65399a7d5a3a5f43d
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5c73b840b127770c4581dda4d03b3c95066df515
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174366"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089533"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Przeglądanie akcji korygowania w centrum akcji
 
@@ -34,10 +34,6 @@ W miarę wykrywania zagrożeń w grę wchodzą akcje korygowania. W zależności
 - [Jak używać centrum akcji](#how-to-use-the-action-center)
 - [Działania naprawcze](#remediation-actions)
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 ## <a name="how-to-use-the-action-center"></a>Jak używać centrum akcji
 

@@ -1,6 +1,6 @@
 ---
 title: Zapora w Microsoft Defender dla Firm
-description: Dowiedz się więcej o ustawieniach zapory Windows Defender w usłudze Defender dla Firm. Zapora może zapobiec przepływowi niepożądanego ruchu sieciowego do urządzeń firmowych.
+description: Dowiedz się więcej o ustawieniach Zapora Windows Defender w usłudze Defender dla Firm. Zapora może zapobiec przepływowi niepożądanego ruchu sieciowego do urządzeń firmowych.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -15,16 +15,16 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 9a22af2e1ef047de0deaf98c6eea37cda15dcc5f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9ec6e0b10812c42c90266fd2793557ae6f3b2efc
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172661"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090349"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>Zapora w Microsoft Defender dla Firm
 
-Microsoft Defender dla Firm obejmuje możliwości zapory z [usługą Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Ochrona zapory ułatwia zabezpieczanie urządzeń za pomocą reguł określających, który ruch sieciowy może wprowadzać lub przepływać z urządzeń. 
+Microsoft Defender dla Firm obejmuje możliwości zapory z [Zapora Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Ochrona zapory ułatwia zabezpieczanie urządzeń za pomocą reguł określających, który ruch sieciowy może wprowadzać lub przepływać z urządzeń. 
 
 Za pomocą ochrony zapory można określić, czy zezwalać na połączenia na urządzeniach w różnych lokalizacjach, czy blokować je. Na przykład ustawienia zapory mogą zezwalać na połączenia przychodzące na urządzeniach połączonych z siecią wewnętrzną firmy, ale zapobiegać tym połączeniom, gdy urządzenie znajduje się w sieci z niezaufanymi urządzeniami.
 
@@ -33,10 +33,6 @@ Za pomocą ochrony zapory można określić, czy zezwalać na połączenia na ur
 - [Domyślne ustawienia zapory w usłudze Defender dla Firm](#default-firewall-settings-in-defender-for-business)
 - [Ustawienia zapory, które można skonfigurować w usłudze Defender dla Firm](#firewall-settings-you-can-configure-in-defender-for-business)
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 ## <a name="default-firewall-settings-in-defender-for-business"></a>Domyślne ustawienia zapory w usłudze Defender dla Firm
 
@@ -50,7 +46,7 @@ W Microsoft Defender dla Firm można zdefiniować wyjątki, aby blokować lub ze
 
 ## <a name="firewall-settings-you-can-configure-in-defender-for-business"></a>Ustawienia zapory, które można skonfigurować w usłudze Defender dla Firm
 
-Microsoft Defender dla Firm obejmuje ochronę zapory za pośrednictwem zapory Windows Defender. W poniższej tabeli wymieniono ustawienia, które można skonfigurować pod kątem ochrony zapory w Microsoft Defender dla Firm.
+Microsoft Defender dla Firm obejmuje ochronę zapory za pośrednictwem Zapora Windows Defender. W poniższej tabeli wymieniono ustawienia, które można skonfigurować pod kątem ochrony zapory w Microsoft Defender dla Firm.
 
 | Ustawienie | Opis |
 |--|--|
@@ -62,7 +58,7 @@ Microsoft Defender dla Firm obejmuje ochronę zapory za pośrednictwem zapory Wi
 ## <a name="next-steps"></a>Następne kroki
 
 - [Zarządzanie ustawieniami zapory w Microsoft Defender dla Firm](mdb-custom-rules-firewall.md)
-- [Dowiedz się więcej o zaporze Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+- [Dowiedz się więcej o Zapora Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm](mdb-view-manage-incidents.md)
 - [Reagowanie na zagrożenia w Microsoft Defender dla Firm i eliminowanie ich](mdb-respond-mitigate-threats.md)
 - [Przeglądanie akcji korygowania w centrum akcji](mdb-review-remediation-actions.md)

@@ -106,6 +106,8 @@
       href: m365bp-maintain-environment.md
     - name: Usuwanie użytkowników
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Dodawanie użytkowników
+      href: m365bp-add-users.md
     - name: Usuwanie danych z urządzeń
       href: m365bp-remove-company-data.md
     - name: Resetuj urządzenia do ustawień fabrycznych

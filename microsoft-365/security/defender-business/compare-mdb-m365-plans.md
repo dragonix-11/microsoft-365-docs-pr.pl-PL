@@ -16,21 +16,17 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: d7ee7588d9c73a6146b770cfcf135a8eeb44f72f
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 245063299df0df25f8a4c14ed9a3ee26b880ea15
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663431"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089887"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Porównanie funkcji zabezpieczeń w planach Microsoft 365 dla małych i średnich firm
 
 Firma Microsoft oferuje szeroką gamę rozwiązań i usług w chmurze, w tym kilka różnych planów dla małych i średnich firm. Na przykład [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) obejmuje funkcje zabezpieczeń i zarządzania urządzeniami oraz funkcje zwiększające produktywność, takie jak Office aplikacje. Ten artykuł ma na celu wyjaśnienie, jakie funkcje zabezpieczeń, takie jak ochrona urządzenia, są zawarte w Microsoft 365 Business Premium, Microsoft Defender dla Firm i Ochrona punktu końcowego w usłudze Microsoft Defender.
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 **Skorzystaj z tego artykułu, aby**:
 

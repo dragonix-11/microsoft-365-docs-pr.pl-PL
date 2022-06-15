@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Administratorzy mogą dowiedzieć się, jak używać portalu Przesyłania w portalu Microsoft 365 Defender do przesyłania podejrzanych wiadomości e-mail, podejrzanych wiadomości phishingowych, spamu i innych potencjalnie szkodliwych wiadomości, adresów URL i załączników wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 125e151873e45717a4621bf2798e3587671c6b8d
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 47e97b728fb27d8df6ad813946d3cdbe08c52085
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078968"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089116"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Przesyłanie do firmy Microsoft podejrzanych wiadomości spamowych, adresów URL i plików przy użyciu portalu Przesyłania
 
@@ -180,7 +180,7 @@ Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywi
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Opcje nowej kolumny Dostosowywanie dla przesyłania przez administratora" lightbox="../../media/email-admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Dostosuj opcję kolumny dla przesyłania przez administratora poczty e-mail." lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - Aby filtrować wpisy, kliknij pozycję **Filtruj**. Dostępne filtry to:
      - **Przesłana data**: **data rozpoczęcia** i **data zakończenia**.
@@ -197,7 +197,7 @@ Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywi
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Opcje nowego filtru dla przesłanych przez administratorów" lightbox="../../media/email-admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Opcje filtrowania dla przesyłania przez administratora poczty e-mail." lightbox="../../media/email-admin-submission-filters.png":::
 
    - Aby pogrupować wpisy, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
      - **Brak**
@@ -231,8 +231,7 @@ Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywi
 
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Opcje nowej kolumny Dostosowywanie dla przesyłania przez administratora" lightbox="../../media/email-attachment-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Dostosuj opcje kolumn dla przesłanych przez administratora załączników wiadomości e-mail.":::
 
    - Aby filtrować wpisy, kliknij pozycję **Filtruj**. Dostępne filtry to:
      - **Przesłana data**: **data rozpoczęcia** i **data zakończenia**.
@@ -245,8 +244,7 @@ Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywi
 
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Opcje nowego filtru dla przesłanych przez administratorów" lightbox="../../media/email-attachment-admin-submission-filters.png":::
+     :::image type="content" source="../../media/email-attachment-admin-submission-filters.png" alt-text="Opcje filtrowania dla przesłanych przez administratorów załączników wiadomości e-mail.":::
 
    - Aby pogrupować wpisy, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
      - **Brak**
@@ -280,8 +278,7 @@ Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywi
 
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Opcje nowej kolumny Dostosowywanie dla przesyłania przez administratora" lightbox="../../media/url-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Dostosuj opcje kolumn dla przesyłania przez administratora adresu URL.":::
 
    - Aby filtrować wpisy, kliknij pozycję **Filtruj**. Dostępne filtry to:
      - **Przesłana data**: **data rozpoczęcia** i **data zakończenia**.
@@ -294,8 +291,7 @@ Zgłoszona wiadomość zostanie oznaczona jako fałszywie dodatnia lub fałszywi
 
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Opcje nowego filtru dla przesłanych przez administratorów" lightbox="../../media/url-admin-submission-filters.png":::
+     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Opcje filtrowania przesyłanych przez administratorów adresów URL.":::
 
    - Aby pogrupować wpisy, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
      - **Brak**

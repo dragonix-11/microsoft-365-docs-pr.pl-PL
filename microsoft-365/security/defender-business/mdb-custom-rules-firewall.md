@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: acc183abcbae89cd952011cfc637161bb409a95f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e8ab0981b2e4cfbcd5d885bdfc26f42c6f432aa6
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174513"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090393"
 ---
 # <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Zarządzanie niestandardowymi regułami zasad zapory w Microsoft Defender dla Firm
 
@@ -34,16 +34,12 @@ Aby dowiedzieć się więcej na temat zasad i ustawień zapory, zobacz [Zapora w
 - [Edytowanie reguły niestandardowej dla zasad zapory](#edit-a-custom-rule-for-a-firewall-policy)
 - [Usuwanie reguły niestandardowej](#delete-a-custom-rule)
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 ## <a name="create-a-custom-rule-for-a-firewall-policy"></a>Tworzenie reguły niestandardowej dla zasad zapory
 
 1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
-2. Przejdź do **pozycji Punkty końcoweKonfiguracja** >  **urządzenia** i przejrzyj listę zasad.
+2. Przejdź do **pozycji Punkty końcowe** > **Konfiguracja urządzenia** i przejrzyj listę zasad.
 
 3. W sekcji **Zapora** wybierz istniejące zasady lub dodaj nowe zasady.
 
@@ -66,7 +62,7 @@ Aby dowiedzieć się więcej na temat zasad i ustawień zapory, zobacz [Zapora w
 
 1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
-2. Przejdź do **pozycji Punkty końcoweKonfiguracja** >  **urządzenia** i przejrzyj listę zasad.
+2. Przejdź do **pozycji Punkty końcowe** > **Konfiguracja urządzenia** i przejrzyj listę zasad.
 
 3. W sekcji **Zapora** wybierz istniejące zasady lub dodaj nowe zasady.
 
@@ -91,7 +87,7 @@ Aby dowiedzieć się więcej na temat zasad i ustawień zapory, zobacz [Zapora w
 
 1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
-2. Przejdź do **pozycji Punkty końcoweKonfiguracja** >  **urządzenia** i przejrzyj listę zasad.
+2. Przejdź do **pozycji Punkty końcowe** > **Konfiguracja urządzenia** i przejrzyj listę zasad.
 
 3. W sekcji **Zapora** wybierz istniejące zasady lub dodaj nowe zasady.
 

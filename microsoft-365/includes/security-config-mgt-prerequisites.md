@@ -4,12 +4,12 @@ description: uwzględnij plik
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 3da0554f55e25f765702fa0d0fbf169ba2e66438
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 61d7b5f00a42789a2d4f46aa41eb3f8865fb6e03
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65601667"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66091459"
 ---
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -123,7 +123,7 @@ Poniższa tabela pomaga zrozumieć, które zasady, które można skonfigurować 
 
 Aby obsługiwać Ochrona punktu końcowego w usłudze Microsoft Defender zarządzania konfiguracją zabezpieczeń za pośrednictwem centrum administracyjnego Microsoft Endpoint Manager, należy włączyć komunikację między nimi z poziomu każdej konsoli.
 
-1. Zaloguj się do [portalu Microsoft 365 Defender](https://security.microsoft.com/) i przejdź do **Ustawienia** >  **EndpointsConfiguration** >  **ManagementW** >  **zakresie usługiForcement** i włącz platformy do zarządzania ustawieniami zabezpieczeń:
+1. Zaloguj się do [portalu Microsoft 365 Defender](https://security.microsoft.com/) i przejdź do **obszaru Ustawienia** >  **Endpoints** >  Configuration Management **Enforcement Scope (Zakres wymuszania zarządzania** **konfiguracją** >  punktów) i włącz platformy do zarządzania ustawieniami zabezpieczeń:
 
    :::image type="content" source="../media/security-settings-mgt.png" alt-text="Włącz zarządzanie ustawieniami Ochrona punktu końcowego w usłudze Microsoft Defender w konsoli usługi Defender.":::
     
@@ -134,7 +134,7 @@ Aby obsługiwać Ochrona punktu końcowego w usłudze Microsoft Defender zarząd
   > [!TIP]
   > Użyj trybu pilotażowego i odpowiednich tagów urządzeń, aby przetestować i zweryfikować wdrożenie na niewielkiej liczbie urządzeń. Bez korzystania z trybu pilotażowego każde urządzenie wchodzące w skonfigurowany zakres zostanie automatycznie zarejestrowane.
 
-1. Upewnij się, że odpowiedni użytkownicy mają uprawnienia do zarządzania ustawieniami zabezpieczeń punktu końcowego w Microsoft Endpoint Manager lub udzielania tych uprawnień, konfigurując rolę w portalu usługi Defender. Przejdź do **pozycji Ustawienia** >  **RolesAdd** > :
+1. Upewnij się, że odpowiedni użytkownicy mają uprawnienia do zarządzania ustawieniami zabezpieczeń punktu końcowego w Microsoft Endpoint Manager lub udzielania tych uprawnień, konfigurując rolę w portalu usługi Defender. Przejdź do **pozycji Ustawienia** >  **Role** > **Dodaj element**:
 
    :::image type="content" source="../media/add-role-in-mde.png" alt-text="Utwórz nową rolę w portalu usługi Defender.":::
 
@@ -158,14 +158,11 @@ Aby obsługiwać Ochrona punktu końcowego w usłudze Microsoft Defender zarząd
 Ochrona punktu końcowego w usłudze Microsoft Defender obsługuje kilka opcji dołączania urządzeń. Aby uzyskać bieżące wskazówki, zobacz [Dołączanie narzędzi i metod dla urządzeń Windows](/microsoft-365/security/defender-endpoint/security-config-management) w dokumentacji usługi Defender for Endpoint.
 
 
-> [!IMPORTANT]
-> Po dołączeniu urządzenia z Ochrona punktu końcowego w usłudze Microsoft Defender należy je otagować za pomocą funkcji **zarządzania urządzeniami przenośnymi**, zanim będzie można je zarejestrować w usłudze Security Management dla Ochrona punktu końcowego w usłudze Microsoft Defender. Aby uzyskać więcej informacji na temat tagowania urządzeń w środowisku MDE, zobacz [*Tworzenie tagów urządzeń i zarządzanie nimi*](/microsoft-365/security/defender-endpoint/machine-tags).
-
 
 ## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>Współistnienie z Microsoft Endpoint Configuration Manager
 W niektórych środowiskach może być konieczne użycie usługi Security Management do Ochrona punktu końcowego w usłudze Microsoft Defender z [dołączaniem dzierżawy Configuration Manager](/mem/configmgr/tenant-attach/endpoint-security-get-started). Jeśli używasz obu tych kanałów, musisz kontrolować zasady za pośrednictwem jednego kanału, ponieważ użycie więcej niż jednego kanału stwarza szansę na konflikty i niepożądane wyniki.
 
-Aby to obsłużyć, skonfiguruj *ustawienia Zarządzanie zabezpieczeniami przy użyciu przełącznika Configuration Manager* w pozycji *Wyłączone*.  Zaloguj się do [portalu Microsoft 365 Defender](https://security.microsoft.com/) i przejdź do **Ustawienia** >  **EndpointsConfiguration** >  **ManagementW** >  **zakresie usługiForcement**:
+Aby to obsłużyć, skonfiguruj *ustawienia Zarządzanie zabezpieczeniami przy użyciu przełącznika Configuration Manager* w pozycji *Wyłączone*.  Zaloguj się do [portalu Microsoft 365 Defender](https://security.microsoft.com/) i przejdź do **obszaru Ustawienia** >  Endpoints Configuration Management **Enforcement Scope (Zakres wymuszania zarządzania** **konfiguracją** >  **punktów końcowych** > ):
 
 :::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="Zarządzanie ustawieniami zabezpieczeń przy użyciu ustawienia Configuration Manager.":::
 
@@ -181,7 +178,7 @@ Aby zidentyfikować urządzenia zarejestrowane w Ochrona punktu końcowego w us�
 
 1. Zaloguj się do [centrum administracyjnego Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Przejdź do pozycji **UrządzeniaWszystkie** >  urządzenia, a następnie wybierz kolumnę **Zarządzane przez**, aby posortować widok urządzeń.
+2. Przejdź do pozycji **Urządzenia** > **Wszystkie urządzenia**, a następnie wybierz kolumnę **Zarządzane przez** , aby posortować widok urządzeń.
 
    Urządzenia dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender i zarejestrowane, ale nie są zarządzane przez Intune wyświetlają **Ochrona punktu końcowego w usłudze Microsoft Defender** w kolumnie *Zarządzane przez*. Są to urządzenia, które mogą odbierać zasady zarządzania zabezpieczeniami dla Ochrona punktu końcowego w usłudze Microsoft Defender.
 

@@ -15,21 +15,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 68695ee348b11fcc10f3a82d2cba2d2c168af666
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e491e6d093396e54983e96eb1ca96c5e713565ba
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174386"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089181"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Samouczki i symulacje w Microsoft Defender dla Firm
 
 Jeśli właśnie ukończono konfigurowanie Microsoft Defender dla Firm, możesz się zastanawiać, od czego zacząć uczyć się, jak działa usługa Defender for Business. W tym artykule opisano kilka scenariuszy do wypróbowania oraz kilka samouczków i symulacji, które są dostępne dla usługi Defender dla firm. Te zasoby ułatwiają sprawdzenie, jak usługa Defender dla Firm może działać dla Twojej firmy.
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 ## <a name="try-these-scenarios"></a>Wypróbuj te scenariusze
 
@@ -37,7 +33,7 @@ Poniższa tabela zawiera podsumowanie kilku scenariuszy, które należy wypróbo
 
 | Scenariusz  | Opis  |
 |---------|---------|
-| Dołączanie urządzeń przy użyciu skryptu lokalnego     | W usłudze Defender dla firm można dołączyć urządzenia z systemem Windows i macOS przy użyciu skryptu pobranego i uruchomionego na każdym urządzeniu. Skrypt tworzy relację zaufania z Azure Active Directory (Azure AD) (jeśli to zaufanie jeszcze nie istnieje), rejestruje urządzenie przy użyciu Microsoft Intune (jeśli masz Intune) i dołącza je do usługi Defender for Business. Aby dowiedzieć się więcej, zobacz [Dołączanie urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md).         |
+| Dołączanie urządzeń przy użyciu skryptu lokalnego     | W usłudze Defender dla firm można dołączać urządzenia Windows i macOS przy użyciu skryptu, który jest pobierany i uruchamiany na każdym urządzeniu. Skrypt tworzy relację zaufania z Azure Active Directory (Azure AD) (jeśli to zaufanie jeszcze nie istnieje), rejestruje urządzenie przy użyciu Microsoft Intune (jeśli masz Intune) i dołącza je do usługi Defender for Business. Aby dowiedzieć się więcej, zobacz [Dołączanie urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md).         |
 | Dołączanie urządzeń przy użyciu centrum administracyjnego Microsoft Endpoint Manager     | Jeśli używasz już Intune przed uzyskaniem usługi Defender dla Firm, możesz nadal używać centrum administracyjnego Endpoint Manager do dołączania urządzeń. Spróbuj dołączyć urządzenia Windows, macOS, iOS i Android przy użyciu Microsoft Intune. Aby dowiedzieć się więcej, zobacz [Rejestrowanie urządzeń w Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | Edytowanie zasad zabezpieczeń     | Jeśli zarządzasz zasadami zabezpieczeń w usłudze Defender dla Firm, użyj strony **Konfiguracja urządzenia** , aby wyświetlić i, w razie potrzeby, edytować zasady. Usługa Defender dla firm jest dostarczana z domyślnymi zasadami, które używają zalecanych ustawień w celu zabezpieczenia urządzeń firmy natychmiast po ich dołączeniu. Możesz zachować domyślne zasady, edytować je i definiować własne zgodnie z potrzebami biznesowymi. Aby dowiedzieć się więcej, zobacz [Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm](mdb-view-edit-policies.md).        |
 | Uruchamianie symulowanego ataku   | W usłudze Defender dla Firm dostępnych jest kilka samouczków i symulacji. Te samouczki i symulacje zostały zaprojektowane tak, aby z pierwszej ręki pokazać, jak funkcje ochrony przed zagrożeniami w usłudze Defender for Business mogą działać dla Twojej firmy. Możesz również użyć symulowanego ataku jako ćwiczenia szkoleniowego dla swojego zespołu. Aby wypróbować co najmniej jeden z samouczków, zobacz [Zalecane samouczki dotyczące Microsoft Defender dla Firm](#recommended-tutorials-for-defender-for-business).         |

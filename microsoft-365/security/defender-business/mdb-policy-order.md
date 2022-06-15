@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 4003585c82c835c21218fd1200b3468140c8370b
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 8490793794d7cbd1ad7b3e660e2394edf870e2a7
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174091"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089633"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Omówienie kolejności zasad w Microsoft Defender dla Firm
 
@@ -32,10 +32,6 @@ Po dodaniu zasad zauważysz, że przypisano kolejność priorytetów. Możesz ed
 
 **Ważne jest, aby pamiętać o wielu zasadach, ponieważ urządzenia otrzymają tylko pierwsze zastosowane zasady.** Odwołując się do naszego wcześniejszego przykładu trzech zasad nowej generacji, załóżmy, że masz urządzenia objęte wszystkimi trzema zasadami. W takim przypadku te urządzenia otrzymają numer zasad 1, ale nie otrzymają zasad o numerach 2 i 3. 
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 ## <a name="key-points-to-remember-about-policy-order"></a>Najważniejsze kwestie, które należy pamiętać o kolejności zasad
 

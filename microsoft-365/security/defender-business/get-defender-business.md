@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: b5fb9fabad337570744dbd94b76c39d446431cf6
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: daa32cf5b20d62a9574ed90660bfc705ad7ed5e5
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663497"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090547"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Uzyskiwanie Microsoft Defender dla Firm
 
@@ -32,10 +32,6 @@ Jeśli nie masz jeszcze Microsoft Defender dla Firm, możesz wybrać jedną z ki
 
 Jeśli masz konto w wersji próbnej, po otrzymaniu wiadomości e-mail z akceptacją możesz [aktywować wersję próbną i przypisać licencje użytkowników](#how-to-activate-your-trial), a następnie przejść do [kolejnych kroków](#next-steps).
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 ## <a name="try-or-buy-microsoft-defender-for-business"></a>Spróbuj lub kup Microsoft Defender dla Firm
 

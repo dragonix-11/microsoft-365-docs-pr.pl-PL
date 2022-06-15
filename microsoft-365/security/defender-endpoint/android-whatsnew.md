@@ -1,6 +1,6 @@
 ---
-title: Co nowego w Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android
-description: Dowiedz się więcej o najważniejszych zmianach w poprzednich wersjach Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android.
+title: Co nowego w Ochrona punktu końcowego w usłudze Microsoft Defender na Android
+description: Dowiedz się więcej o najważniejszych zmianach w poprzednich wersjach Ochrona punktu końcowego w usłudze Microsoft Defender na Android.
 keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, mac, instalacja, macos, whatsnew
 ms.prod: m365-security
 ms.mktglfcycl: security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 95c4d77014e31c748cc4bd6662a148810c01f79a
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: d1379836a2d55a8c6c256ce734c40acc5fc48599
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825195"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090503"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Co nowego w Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Co nowego w Ochrona punktu końcowego w usłudze Microsoft Defender na Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,12 +29,19 @@ ms.locfileid: "64825195"
 - [Ochrona punktu końcowego w usłudze Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="network-protection"></a>Ochrona sieci
+Ochrona sieci w Ochrona punktu końcowego w usłudze Microsoft Defender jest teraz dostępna w publicznej wersji zapoznawczej. Ochrona sieci zapewnia ochronę przed nieautoryzowanymi zagrożeniami związanymi z Wi-Fi, nieautoryzowanym sprzętem, takim jak urządzenia ananasowe, i powiadamia użytkownika o wykryciu powiązanego zagrożenia. Użytkownicy zobaczą również środowisko z przewodnikiem umożliwiające nawiązywanie połączeń z bezpiecznymi sieciami i zmienianie sieci po nawiązaniu połączenia z niezabezpieczonym połączeniem.
+
+Obejmuje ona kilka kontrolek administratora zapewniających elastyczność, na przykład możliwość konfigurowania funkcji z poziomu centrum Microsoft Endpoint Manager Administracja. Administratorzy mogą również włączyć mechanizmy kontroli prywatności, aby skonfigurować dane wysyłane przez usługę Defender for Endpoint z urządzeń Android. 
+
+Jeśli chcesz wziąć udział w tej publicznej wersji zapoznawczej, udostępnij nam swój identyfikator dzierżawy w networkprotection@microsoft.com. Aby uzyskać więcej informacji, zobacz [ochrona sieci](/microsoft-365/security/defender-endpoint/android-configure).
 
 >[!NOTE]
 >Usługa Microsoft Defender nie jest już obsługiwana w wersjach poniżej 1.0.3011.0302. Użytkownicy są proszeni o uaktualnienie do najnowszych wersji w celu zapewnienia bezpieczeństwa urządzeń.
 Aby zostać zaktualizowanym, użytkownicy mogą wykonać następujące czynności:
->1. W profilu służbowym przejdź do sklepu Managed Play Store.
+>1. W profilu służbowym przejdź do pozycji Zarządzane Sklep Play.
 >2. Naciśnij ikonę profilu w prawym górnym rogu i wybierz pozycję "Zarządzaj aplikacjami i urządzeniem".
 >3. Zlokalizuj rozwiązanie MDE w obszarze dostępne aktualizacje i wybierz pozycję Aktualizuj.
 >
@@ -46,11 +53,11 @@ Ochrona punktu końcowego w usłudze Microsoft Defender jest teraz dostępna jak
 
 ## <a name="threat-and-vulnerability-management"></a>Zarządzanie zagrożeniami i lukami w zabezpieczeniach
 
-25 stycznia 2022 r. ogłosiliśmy ogólną dostępność zarządzania zagrożeniami i lukami w zabezpieczeniach w systemach Android i iOS. Aby uzyskać więcej informacji, zobacz [wpis techcommunity tutaj](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+25 stycznia 2022 r. ogłosiliśmy ogólną dostępność zarządzania zagrożeniami i lukami w zabezpieczeniach w Android i iOS. Aby uzyskać więcej informacji, zobacz [wpis techcommunity tutaj](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
-## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Nadchodzące zmiany uprawnień dla Ochrona punktu końcowego w usłudze Microsoft Defender z systemem Android 11 lub nowszym (listopad 2021 r.)
+## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Nadchodzące zmiany uprawnień dla Ochrona punktu końcowego w usłudze Microsoft Defender uruchomionych Android 11 lub nowszych (listopad 2021 r.)
 
-Kompilacja wydania: 1.0.3501.0301 Miesiąc wydania: listopad 2021 r. Ochrona punktu końcowego w usłudze Microsoft Defender wydała tę aktualizację wymaganą przez [firmę Google](https://developer.android.com/distribute/play-policies#APILevel30) do uaktualnienia do interfejsu API systemu Android 30. Ta zmiana spowoduje wyświetlenie monitu dla użytkowników poszukujących dostępu do [nowego uprawnienia](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play) magazynu dla urządzeń z systemem Android 11 lub nowszym. Użytkownicy będą musieli zaakceptować to nowe uprawnienie magazynu po zaktualizowaniu aplikacji Defender przy użyciu kompilacji wersji 1.0.3501.0301 lub nowszej. Zapewni to, że funkcja zabezpieczeń aplikacji usługi Defender for Endpoint będzie działać bez żadnych zakłóceń. Aby uzyskać więcej informacji, zapoznaj się z poniższymi sekcjami.
+Kompilacja wydania: 1.0.3501.0301 Miesiąc wydania: listopad 2021 r. Ochrona punktu końcowego w usłudze Microsoft Defender wydała tę aktualizację wymaganą przez [firmę Google](https://developer.android.com/distribute/play-policies#APILevel30) do uaktualnienia do interfejsu API 30 Android. Ta zmiana spowoduje wyświetlenie monitu dla użytkowników poszukujących dostępu do [nowego uprawnienia magazynu](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play) dla urządzeń z systemem Android 11 lub nowszym. Użytkownicy będą musieli zaakceptować to nowe uprawnienie magazynu po zaktualizowaniu aplikacji Defender przy użyciu kompilacji wersji 1.0.3501.0301 lub nowszej. Zapewni to, że funkcja zabezpieczeń aplikacji usługi Defender for Endpoint będzie działać bez żadnych zakłóceń. Aby uzyskać więcej informacji, zapoznaj się z poniższymi sekcjami.
 
 **Jak wpłynie to na organizację:** Te zmiany zostaną wprowadzone, jeśli używasz Ochrona punktu końcowego w usłudze Microsoft Defender na urządzeniach z systemem Android 11 lub nowszym i zaktualizowano usługę Defender for Endpoint w celu wydania kompilacji 1.0.3501.0301 lub nowszej.
 
@@ -75,4 +82,4 @@ Powiadom użytkowników i pomoc techniczną (w stosownych przypadkach), że uży
 4. Urządzenie jest teraz chronione.
 
   > [!NOTE]
-  > To uprawnienie umożliwia Ochrona punktu końcowego w usłudze Microsoft Defender dostęp do magazynu na urządzeniu użytkownika, co pomaga wykrywać i usuwać złośliwe i niechciane aplikacje. Ochrona punktu końcowego w usłudze Microsoft Defender uzyskuje dostęp/skanuje tylko plik pakietu aplikacji systemu Android (apk). Na urządzeniach z profilem służbowym usługa Defender for Endpoint skanuje tylko pliki związane z pracą.
+  > To uprawnienie umożliwia Ochrona punktu końcowego w usłudze Microsoft Defender dostęp do magazynu na urządzeniu użytkownika, co pomaga wykrywać i usuwać złośliwe i niechciane aplikacje. Ochrona punktu końcowego w usłudze Microsoft Defender uzyskuje dostęp/skanuje tylko Android pliku pakietu aplikacji (apk). Na urządzeniach z profilem służbowym usługa Defender for Endpoint skanuje tylko pliki związane z pracą.

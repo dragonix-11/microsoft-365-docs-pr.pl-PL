@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: a4df65d0364aff71c3d3bbfb261952859d6d8ecf
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 8301119b0169e0ee2ac56cc7a85b3037ccb75907
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393093"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090569"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Korzystanie z pulpitu nawigacyjnego zarządzania lukami w zabezpieczeniach & w Microsoft Defender dla Firm
 
@@ -37,10 +37,6 @@ Chcesz zobaczyć, jak to działa? Obejrzyj to wideo, w którym opisano [Zarządz
 
 [Dowiedz się więcej o Zarządzanie lukami w zabezpieczeniach w usłudze Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Tworzenie zasad przechowywania automatycznego etykietowania w celu automatycznego stosowania etykiet w celu zachowania potrzebnych elementów i usunięcia tego, czego nie potrzebujesz
-ms.openlocfilehash: 1b8871cba184772bd82e5e608c6e38113d4b0024
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b059a90c8a4f1406e8368cb399ca5de58b2538dd
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012885"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089865"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Automatyczne stosowanie etykiety przechowywania w celu zachowania lub usunięcia zawartości
 
@@ -75,7 +75,7 @@ Przed utworzeniem zasad etykiet przechowywania zdecyduj, czy będą **to zasady 
 
 Podczas tworzenia zasad automatycznego stosowania należy wybrać etykietę przechowywania, która ma być automatycznie stosowana do zawartości, na podstawie określonych warunków.
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) przejdź do jednej z następujących lokalizacji:
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) przejdź do jednej z następujących lokalizacji:
     
     - Jeśli używasz zarządzania rekordami:
         - **Rozwiązania** >  **Karta Zasady zarządzania rekordami** > > **Etykiety** > **automatyczne stosowanie etykiety**
@@ -149,7 +149,7 @@ Ponadto SharePoint elementów, które są w wersji roboczej lub które nigdy nie
 > 
 > Mimo że skrzynki pocztowe grup zazwyczaj są uwzględniane przez wybranie lokalizacji **Grupy Microsoft 365**, dla tej konkretnej konfiguracji zasad lokalizacja grup obejmuje tylko SharePoint lokacji połączonych z grupą Microsoft 365.
 
-Podczas tworzenia zasad automatycznego stosowania etykiet przechowywania dla informacji poufnych zostanie wyświetlona ta sama lista szablonów zasad, co podczas tworzenia zasad ochrony przed utratą danych (DLP) w usłudze Microsoft Purview. Każdy szablon jest wstępnie skonfigurowany do wyszukiwania określonych typów informacji poufnych. W poniższym przykładzie typy informacji poufnych pochodzą z kategorii **Prywatność** i szablonu **danych osobowych (PII):**
+Podczas tworzenia zasad automatycznego stosowania etykiet przechowywania dla informacji poufnych zostanie wyświetlona ta sama lista szablonów zasad, co podczas tworzenia zasad Ochrona przed utratą danych w Microsoft Purview (DLP). Każdy szablon jest wstępnie skonfigurowany do wyszukiwania określonych typów informacji poufnych. W poniższym przykładzie typy informacji poufnych pochodzą z kategorii **Prywatność** i szablonu **danych osobowych (PII):**
 
 ![Szablony zasad z typami informacji poufnych.](../media/sensitive-info-configuration.png)
 
@@ -327,6 +327,8 @@ Do rozważenia podczas automatycznego stosowania etykiet przechowywania do zał�
 
 - Tylko nowo udostępnione załączniki w chmurze zostaną automatycznie oznaczone do przechowywania.
 
+- Po dodaniu użytkownika do konwersacji Teams i uzyskaniu dostępu do pełnej historii konwersacji ta historia może zawierać załączniki w chmurze. Jeśli zostały udostępnione w ciągu 48 godzin od dodania użytkownika do konwersacji, bieżące kopie załączników w chmurze są automatycznie oznaczane etykietami przechowywania. Załączniki w chmurze udostępnione przed tym okresem nie są obsługiwane dla nowo dodanych użytkowników.
+
 - Załączniki w chmurze udostępnione poza Teams i Outlook nie są obsługiwane.
 
 - Następujące elementy nie są obsługiwane jako załączniki w chmurze, które można przechowywać:
@@ -343,7 +345,7 @@ W przypadku automatycznego stosowania etykiet przechowywania na podstawie poufny
   
 ![Diagram przedstawiający, kiedy stosowane automatycznie etykiety są stosowane.](../media/retention-labels-autoapply-timings.png)
 
-Jeśli oczekiwane etykiety nie pojawią się po siedmiu dniach, sprawdź **stan** zasad automatycznego stosowania, wybierając je na stronie **Zasady etykiet** w portalu zgodności usługi Microsoft Purview. Jeśli w szczegółach lokalizacji zostanie wyświetlony komunikat o tym, że wdrażanie zasad (dla SharePoint **)** lub próba ponownego wdrożenia zasad (dla OneDrive) trwa dłużej niż oczekiwano, spróbuj uruchomić polecenie [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell, aby ponowić próbę dystrybucji zasad:
+Jeśli oczekiwane etykiety nie są wyświetlane po siedmiu dniach, sprawdź **stan** zasad automatycznego stosowania, wybierając je na stronie **Zasady etykiet** w portal zgodności Microsoft Purview. Jeśli w szczegółach lokalizacji zostanie wyświetlony komunikat o tym, że wdrażanie zasad (dla SharePoint **)** lub próba ponownego wdrożenia zasad (dla OneDrive) trwa dłużej niż oczekiwano, spróbuj uruchomić polecenie [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell, aby ponowić próbę dystrybucji zasad:
 
 1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 

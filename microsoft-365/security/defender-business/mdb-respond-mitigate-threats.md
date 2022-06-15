@@ -16,21 +16,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 0481ffdf51b60a40de854ec2e4eb9b9d38d4344a
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: b7a911991935407f9d512213c9d76c92106b74c8
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174858"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089567"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Reagowanie na zagrożenia w Microsoft Defender dla Firm i eliminowanie ich
 
 Portal Microsoft 365 Defender umożliwia zespołowi ds. zabezpieczeń reagowanie na wykryte zagrożenia i ich eliminowanie. W tym artykule przedstawiono przykład korzystania z usługi Defender dla Firm.
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 ## <a name="view-detected-threats"></a>Wyświetlanie wykrytych zagrożeń
 

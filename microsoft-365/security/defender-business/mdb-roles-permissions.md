@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 03295989e1ee44ab43fe0cc53e4029a6c4307ea8
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5b321b15e608c96a18e756c2f6634b5fb4f69e6f
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172645"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089467"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Przypisywanie ról i uprawnień w Microsoft Defender dla Firm
 
@@ -32,10 +32,6 @@ Aby wykonywać zadania w portalu Microsoft 365 Defender, takie jak konfigurowani
 2. [Wyświetlanie lub edytowanie przypisań ról dla zespołu ds. zabezpieczeń](#view-or-edit-role-assignments).
 3. [Przejdź do kolejnych kroków](#next-steps).
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 ## <a name="roles-in-defender-for-business"></a>Role w usłudze Defender dla firm
 

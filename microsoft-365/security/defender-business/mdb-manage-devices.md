@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: e08c53dd949858a1fcc9af9c8553c5d0eed07cef
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 099cddf662b58f918af5aa3b8cc2cb1fea26b0f8
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173095"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090019"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business"></a>Zarządzanie urządzeniami w Microsoft Defender dla Firm
 
@@ -32,10 +32,6 @@ W Microsoft Defender dla Firm można zarządzać urządzeniami w następujący s
 - [Dołączanie urządzenia do usługi Defender dla Firm](#onboard-a-device)  
 - [Odłączanie urządzenia od usługi Defender dla Firm](#offboard-a-device)
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 ## <a name="view-the-list-of-onboarded-devices"></a>Wyświetlanie listy dołączonych urządzeń
 

@@ -17,21 +17,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 042f20cce0e0d30195ed241b376bf304abeaa2aa
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 034c37e0b87ab77c2e4119ab87563da06925501a
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172781"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089006"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Korzystanie z kreatora konfiguracji w Microsoft Defender dla Firm
 
 Microsoft Defender dla Firm została zaprojektowana w celu zaoszczędzenia czasu i wysiłku małych i średnich firm. Na przykład można wykonać początkową konfigurację i konfigurację za pomocą kreatora konfiguracji. Kreator konfiguracji przeprowadzi Cię przez udzielanie dostępu zespołowi ds. zabezpieczeń, konfigurowanie powiadomień e-mail dla zespołu ds. zabezpieczeń i dołączanie urządzeń Windows firmy.
 
->
-> **Masz minutę?**
-> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
->
 
 > [!TIP]
 > Korzystanie z kreatora konfiguracji jest opcjonalne. Możesz ręcznie przejść przez proces konfiguracji i konfiguracji. Aby dowiedzieć się więcej, zobacz:
@@ -42,7 +38,7 @@ Microsoft Defender dla Firm została zaprojektowana w celu zaoszczędzenia czasu
 
 Kreator instalacji jest przeznaczony do uruchamiania po raz pierwszy, gdy ktoś w firmie loguje się do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-Jeśli Twoja firma korzysta z Microsoft 365 Business Premium, kreator konfiguracji usługi Defender dla Firm uruchomi polecenie po raz pierwszy, gdy ktoś przejdzie do **spisu punktów** **końcowychUrządzenia** > . 
+Jeśli Twoja firma korzysta z Microsoft 365 Business Premium, kreator konfiguracji usługi Defender dla Firm uruchomi polecenie po raz pierwszy, gdy ktoś przejdzie do **spisu urządzeń** **punktów końcowych** > . 
 
 Ekran uruchamiania kreatora instalacji wygląda następująco:
 
@@ -59,7 +55,7 @@ Kreator konfiguracji został zaprojektowany, aby ułatwić szybkie i wydajne kon
 
    W usłudze Defender dla firm członkom zespołu ds. zabezpieczeń można przypisać jedną z następujących trzech ról:<br/>
    
-   - **Administrator globalny**: administrator globalny może wyświetlać i edytować wszystkie ustawienia w dzierżawie Microsoft 365. Administrator globalny przeprowadza początkową konfigurację subskrypcji Microsoft 365 firmy. 
+   - **Administracja globalne**: administrator globalny może wyświetlać i edytować wszystkie ustawienia w dzierżawie Microsoft 365. Administrator globalny przeprowadza początkową konfigurację subskrypcji Microsoft 365 firmy. 
    - **Administrator zabezpieczeń**: administrator zabezpieczeń może wyświetlać i edytować ustawienia zabezpieczeń oraz podejmować działania w przypadku wykrycia zagrożeń.
    - **Czytelnik zabezpieczeń**: czytelnik zabezpieczeń może wyświetlać informacje w raportach, ale nie może zmieniać żadnych ustawień zabezpieczeń. 
 
