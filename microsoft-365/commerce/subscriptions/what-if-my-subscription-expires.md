@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 'Dowiedz się, co się stanie z Twoimi danymi, gdy subskrypcja usługi Microsoft 365 dla firm wygaśnie, zostanie wyłączona lub gdy ją anulujesz. '
 ms.date: 09/16/2021
-ms.openlocfilehash: 8baebd55217dd5cd38228cca26a7504e5021f06b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a96ef700c522577e8d22f734ea6a8a94b410d83a
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322187"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102312"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Co się stanie z moimi danymi i z moim dostępem po zakończeniu subskrypcji usługi Microsoft 365 dla firm?
 
@@ -134,7 +134,7 @@ Po zakończeniu okresu próbnego nie możesz bezpłatnie korzystać z platformy 
 
 - **Kup Microsoft 365.** Gdy wersja próbna wygasa, przechodzi ona do etapu „Wygasła”, dając Ci 30 dni (dla większości wersji próbnych w większości krajów i regionów) na zakup Microsoft 365. Aby dowiedzieć się, jak przekształcić wersję próbną w płatną subskrypcję, zobacz [Kupowanie subskrypcji z bezpłatnej wersji próbnej](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
 - **Przedłużenie okresu próbnego**. Potrzebujesz więcej czasu na ocenę platformy Microsoft 365? W niektórych przypadkach możesz [przedłużyć okres próbny](../extend-your-trial.md).
-- **Anulowanie wersji próbnej lub pozwolenie na jej wygaśnięcie.** Jeśli nie zdecydujesz się na zakup usługi Microsoft 365, możesz pozwolić, aby wersja próbna wygasła lub możesz [ją anulować](cancel-your-subscription.md). Utwórz kopię zapasową wszystkich danych, które chcesz zachować. Wkrótce po 30-dniowym etapie wygaśnięcia informacje i dane konta wersji próbnej zostaną trwale usunięte.
+- **Anulowanie wersji próbnej lub pozwolenie na jej wygaśnięcie.** Jeśli nie zdecydujesz się na zakup usługi Microsoft 365, możesz pozwolić, aby wersja próbna wygasła lub możesz [ją anulować](cancel-your-subscription.md). Utwórz kopię zapasową wszystkich danych, które chcesz zachować. Po upływie 30 dni od daty wygaśnięcia, informacje i dane dotyczące konta próbnego zostają trwale usunięte.
 
 > [!NOTE]
 >
