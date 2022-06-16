@@ -20,16 +20,16 @@ ms.collection:
 description: Administratorzy mogą dowiedzieć się więcej o funkcji załączników Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d069d92eb012211af8dd4e12109ebcae7eb221e
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: e50904932b95dabdad627a7a3291659c1c4d9584
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128723"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115944"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Sejf załączników w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
@@ -84,6 +84,16 @@ W tej sekcji opisano ustawienia zasad Sejf Załączniki:
   - **Odbiorca jest członkiem**
 
   Warunek lub wyjątek można użyć tylko raz, ale warunek lub wyjątek może zawierać wiele wartości. Wiele wartości tego samego warunku lub wyjątku używa logiki OR (na przykład _\<recipient1\>_ lub _\<recipient2\>_). Różne warunki lub wyjątki używają logiki AND (na przykład _\<recipient1\>_ i _\<member of group 1\>_).
+
+  > [!IMPORTANT]
+  > Wiele różnych warunków lub wyjątków nie są addytywne; są inkluzywne. Zasady są stosowane _tylko_ do tych adresatów, którzy pasują do _wszystkich_ filtrów określonych adresatów. Na przykład należy skonfigurować warunek filtru adresata w zasadach z następującymi wartościami:
+  >
+  > - Adresatem jest: romain@contoso.com
+  > - Odbiorca jest członkiem: Kierownictwo
+  >
+  > Zasady są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, zasady nie są do niego stosowane.
+  >
+  > Podobnie, jeśli używasz tego samego filtru adresata co wyjątek od zasad, zasady nie są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, polityka nadal ma do niego zastosowanie.
 
 - **Priorytet**: jeśli tworzysz wiele zasad, możesz określić kolejność ich stosowania. Żadne dwie zasady nie mogą mieć takiego samego priorytetu, a przetwarzanie zasad zostanie zatrzymane po zastosowaniu pierwszych zasad.
 

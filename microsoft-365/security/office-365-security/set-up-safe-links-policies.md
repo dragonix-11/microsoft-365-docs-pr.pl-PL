@@ -19,12 +19,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak wyświetlać, tworzyć, modyfikować i usuwać zasady linków Sejf i globalne ustawienia linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 969e3f3bb3b139a21cd2d84b4a0bd698a74b5107
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 5e66b1b079f67d6454754d056ca9fedf5fefb74f
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772451"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115790"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Konfigurowanie zasad linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -116,6 +116,16 @@ Utworzenie niestandardowych zasad łączy Sejf w portalu Microsoft 365 Defender 
    Wiele wartości w tym samym warunku używa logiki OR (na przykład _\<recipient1\>_ lub _\<recipient2\>_). Różne warunki używają logiki AND (na przykład _\<recipient1\>_ i _\<member of group 1\>_).
 
    - **Wyklucz tych użytkowników, grupy i domeny**: aby dodać wyjątki dla wewnętrznych adresatów, których dotyczą zasady (wyjątki adresatów), wybierz tę opcję i skonfiguruj wyjątki. Ustawienia i zachowanie są dokładnie takie same jak warunki.
+
+   > [!IMPORTANT]
+   > Wiele różnych warunków lub wyjątków nie są addytywne; są inkluzywne. Zasady są stosowane _tylko_ do tych adresatów, którzy pasują do _wszystkich_ filtrów określonych adresatów. Na przykład należy skonfigurować warunek filtru adresata w zasadach z następującymi wartościami:
+   >
+   > - Adresatem jest: romain@contoso.com
+   > - Odbiorca jest członkiem: Kierownictwo
+   >
+   > Zasady są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, zasady nie są do niego stosowane.
+   >
+   > Podobnie, jeśli używasz tego samego filtru adresata co wyjątek od zasad, zasady nie są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, polityka nadal ma do niego zastosowanie.
 
    Po zakończeniu kliknij przycisk **Dalej**.
 

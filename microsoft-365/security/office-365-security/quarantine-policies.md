@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak używać zasad kwarantanny do kontrolowania, co użytkownicy mogą zrobić w przypadku komunikatów poddanych kwarantannie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef3fc69cf07f4b643e12bab96a73b68627e07203
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 74f1a657cbf675b8a55edc169339cb16a22f4dbe
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648244"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115680"
 ---
 # <a name="quarantine-policies"></a>Zasady kwarantanny
 
@@ -685,6 +685,9 @@ Jeśli zasady kwarantanny przypisują uprawnienia **pełnego dostępu** (wszystk
   - **Przegląd**
 
   :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="Dostępne przyciski w powiadomieniu o kwarantannie, jeśli zasady kwarantanny dają użytkownikowi pełne uprawnienia dostępu" lightbox="../../media/quarantine-tags-esn-full-access.png":::
+
+> [!NOTE]
+> Jak wyjaśniono wcześniej, powiadomienia o kwarantannie są wyłączone w domyślnych zasadach kwarantanny o nazwie DefaultFullAccessPolicy, mimo że te zasady kwarantanny mają przypisaną grupę uprawnień **pełnego dostępu** . Powiadomienia o kwarantannie są dostępne tylko w niestandardowych zasadach kwarantanny utworzonych lub w domyślnych zasadach dostępu do kwarantanny o nazwie NotificationEnabledPolicy ([jeśli te zasady są dostępne w organizacji](#full-access-permissions-and-quarantine-notifications)).
 
 ### <a name="individual-permissions"></a>Uprawnienia indywidualne
 

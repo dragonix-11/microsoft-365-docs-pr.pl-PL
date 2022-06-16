@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dowiedz się więcej o ochronie linków Sejf w Ochrona usługi Office 365 w usłudze Defender, aby chronić organizację przed wyłudzaniem informacji i innymi atakami korzystającymi ze złośliwych adresów URL. Odnajdywanie linków Teams Sejf i wyświetlanie grafiki komunikatów Sejf Links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4b518095404f22631533cbf7eff744a62a9c7bd1
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: b1e013c77005c30872fc5355ae0b0e3f7cae67ca
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739898"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115812"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>linki Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -140,6 +140,16 @@ Ustawienia w zasadach linków Sejf, które mają zastosowanie do wiadomości e-m
   - **Odbiorca jest członkiem**
 
   Warunek lub wyjątek można użyć tylko raz, ale warunek lub wyjątek może zawierać wiele wartości. Wiele wartości tego samego warunku lub wyjątku używa logiki OR (na przykład _\<recipient1\>_ lub _\<recipient2\>_). Różne warunki lub wyjątki używają logiki AND (na przykład _\<recipient1\>_ i _\<member of group 1\>_).
+
+  > [!IMPORTANT]
+  > Wiele różnych warunków lub wyjątków nie są addytywne; są inkluzywne. Zasady są stosowane _tylko_ do tych adresatów, którzy pasują do _wszystkich_ filtrów określonych adresatów. Na przykład należy skonfigurować warunek filtru adresata w zasadach z następującymi wartościami:
+  >
+  > - Adresatem jest: romain@contoso.com
+  > - Odbiorca jest członkiem: Kierownictwo
+  >
+  > Zasady są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, zasady nie są do niego stosowane.
+  >
+  > Podobnie, jeśli używasz tego samego filtru adresata co wyjątek od zasad, zasady nie są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, polityka nadal ma do niego zastosowanie.
 
 - **Priorytet**: jeśli tworzysz wiele zasad, możesz określić kolejność ich stosowania. Żadne dwie zasady nie mogą mieć takiego samego priorytetu, a przetwarzanie zasad zostanie zatrzymane po zastosowaniu pierwszych zasad.
 

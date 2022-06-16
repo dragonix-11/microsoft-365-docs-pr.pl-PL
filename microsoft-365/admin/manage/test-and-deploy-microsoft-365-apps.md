@@ -14,16 +14,16 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Znajdź, przetestuj i wdróż aplikacje partnerskie firmy Microsoft i firmy Microsoft dla użytkowników i grup w organizacji w portalu Zintegrowane aplikacje w Centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: 7d28f541c319622a4c15ac4eb4619b805cd0f13b
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 862d70fe57974d2940458cb1fa59d05674d7ff58
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043171"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115504"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Testowanie i wdrażanie Aplikacje Microsoft 365 przez partnerów w portalu zintegrowanych aplikacji
 
-Centrum administracyjne platformy Microsoft 365 zapewnia elastyczność wdrażania aplikacji z jednego sklepu, niestandardowych linii biznesowych aplikacji i aplikacji Microsoft 365 partnerów z jednej lokalizacji. Dostęp do lokalizacji można uzyskać w ustawieniach centrum administracyjnego firmy Microsoft w obszarze Zintegrowane aplikacje. Możliwość znajdowania, testowania i pełnego wdrażania zakupionych i licencjonowanych aplikacji przez partnerów firmy Microsoft w portalu zintegrowanych aplikacji zapewnia wygodę i korzyści, które organizacja wymaga, aby usługi biznesowe były regularnie aktualizowane i wydajnie uruchamiane.
+Centrum administracyjne platformy Microsoft 365 zapewnia elastyczność wdrażania aplikacji z jednego sklepu, niestandardowych linii biznesowych aplikacji i aplikacji Microsoft 365 partnerów z jednej lokalizacji. Dostęp do lokalizacji można uzyskać w ustawieniach centrum Administracja firmy Microsoft w obszarze Zintegrowane aplikacje. Możliwość znajdowania, testowania i pełnego wdrażania zakupionych i licencjonowanych aplikacji przez partnerów firmy Microsoft w portalu zintegrowanych aplikacji zapewnia wygodę i korzyści, które organizacja wymaga, aby usługi biznesowe były regularnie aktualizowane i wydajnie uruchamiane.
 
 Aby uzyskać dodatkowe informacje na temat zakupu i licencjonowania aplikacji Microsoft 365 od partnerów w organizacji, zobacz [Zarządzanie Aplikacje Microsoft 365 i wdrażanie ich z Centrum administracyjne platformy Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
 
@@ -93,7 +93,7 @@ Nie będzie można wdrożyć aplikacji z jednego sklepu ani Aplikacje Microsoft 
 
 1. W centrum administracyjnym w lewym pasku nawigacyjnym wybierz **pozycję Ustawienia**, a następnie pozycję **Zintegrowane aplikacje**.
 
-2. Wybierz pozycję **Przekaż aplikacje niestandardowe**. Obsługiwane są tylko niestandardowe aplikacje dla programu Word, PowerPoint, Excel i Outlook.
+2. Wybierz pozycję **Przekaż aplikacje niestandardowe**. Obsługiwane są tylko niestandardowe aplikacje programu Word, PowerPoint, Excel i Outlook.
 
 3. Przekaż plik manifestu z urządzenia lub dodaj link adresu URL. Niektóre aplikacje wymagają dodania użytkowników przed wybraniem pozycji Wdróż.
 
@@ -242,7 +242,7 @@ Aktualizacje dodatków są przeprowadzane w następujący sposób:
 - **Office Store add-in**: jeśli administrator wybrał dodatek ze sklepu Office Store, jeśli dodatek zostanie zaktualizowany w sklepie Office Store, przy następnym uruchomieniu odpowiedniego Office aplikacji dodatek zostanie zaktualizowany. Aplikacja internetowa może się zmienić w dowolnym momencie. 
 
 > [!NOTE]
-> W przypadku programu Word Excel i PowerPoint używają [wykazu aplikacji SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) do wdrażania dodatków dla użytkowników w środowisku lokalnym bez połączenia z Microsoft 365 i/lub obsługi dodatków SharePoint. W przypadku Outlook użyj panelu sterowania Exchange do wdrożenia w środowisku lokalnym bez połączenia z Microsoft 365.  
+> W przypadku programów Word, Excel i PowerPoint używać [wykazu aplikacji SharePoint](/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) do wdrażania dodatków dla użytkowników w środowisku lokalnym bez połączenia z Microsoft 365 i/lub obsługi dodatków SharePoint. W przypadku Outlook użyj panelu sterowania Exchange do wdrożenia w środowisku lokalnym bez połączenia z Microsoft 365.  
 
 ## <a name="add-in-states"></a>Stany dodatku
 Dodatek może mieć stan **Włączone** lub **Wyłączone** . 
@@ -284,7 +284,7 @@ Możesz również usunąć wdrożony dodatek.
 
 ## <a name="scenarios-where-exchange-admin-cannot-deploy-an-add-in"></a>Scenariusze, w których administrator Exchange nie może wdrożyć dodatku 
 
-Istnieją dwa przypadki, w których administrator Exchange nie będzie mógł wdrożyć dodatku:
+Istnieją dwa przypadki, w których Exchange Administracja nie będzie mógł wdrożyć dodatku:
 - Jeśli dodatek wymaga uprawnień do interfejsów API usługi MS Graph i wymaga zgody administratora globalnego.
 - Jeśli dodatek jest połączony z co najmniej dwoma dodatkami i aplikacjami internetowymi, a co najmniej jeden z tych dodatków jest wdrażany przez innego administratora (exchange/global), a przypisanie użytkownika nie jest jednolite. Zezwalamy na wdrażanie dodatków tylko wtedy, gdy przypisanie użytkownika jest takie samo dla wszystkich już wdrożonych aplikacji.  
 

@@ -16,16 +16,16 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak tworzyć, modyfikować i usuwać zasady ochrony przed wyłudzaniem informacji, które są dostępne w organizacjach Exchange Online Protection (EOP) z Exchange Online skrzynkami pocztowymi lub bez tych zasad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08523e98577f208858fb615911ef24aacf7bedc6
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 384494fdd625fe050079ecd99f59b68d1ba87cad
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438910"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115702"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurowanie zasad ochrony przed wyłudzaniem informacji w usłudze EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -112,6 +112,16 @@ Utworzenie niestandardowych zasad ochrony przed wyłudzaniem informacji w portal
    Wiele wartości w tym samym warunku używa logiki OR (na przykład _\<recipient1\>_ lub _\<recipient2\>_). Różne warunki używają logiki AND (na przykład _\<recipient1\>_ i _\<member of group 1\>_).
 
    - **Wyklucz tych użytkowników, grupy i domeny**: aby dodać wyjątki dla wewnętrznych adresatów, których dotyczą zasady (wyjątki adresatów), wybierz tę opcję i skonfiguruj wyjątki. Ustawienia i zachowanie są dokładnie takie same jak warunki.
+
+   > [!IMPORTANT]
+   > Wiele różnych warunków lub wyjątków nie są addytywne; są inkluzywne. Zasady są stosowane _tylko_ do tych adresatów, którzy pasują do _wszystkich_ filtrów określonych adresatów. Na przykład należy skonfigurować warunek filtru adresata w zasadach z następującymi wartościami:
+   >
+   > - Adresatem jest: romain@contoso.com
+   > - Odbiorca jest członkiem: Kierownictwo
+   >
+   > Zasady są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, zasady nie są do niego stosowane.
+   >
+   > Podobnie, jeśli używasz tego samego filtru adresata co wyjątek od zasad, zasady nie są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, polityka nadal ma do niego zastosowanie.
 
    Po zakończeniu kliknij przycisk **Dalej**.
 

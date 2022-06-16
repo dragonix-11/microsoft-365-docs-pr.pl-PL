@@ -14,16 +14,16 @@ search.appverid: MET150
 description: Korygowanie zagrożeń
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d584ce10f4e119ec4fe8aa2991c6cac0edd5377c
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 6102d1e7d3b7e39787c3787b8bc0851eedbdcefb
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621902"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115548"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Korygowanie złośliwych wiadomości e-mail dostarczanych w usłudze Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2](defender-for-office-365.md)
@@ -36,6 +36,8 @@ Korygowanie oznacza podjęcie określonego działania przeciwko zagrożeniu. Zł
 ## <a name="what-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem
 
 Administratorzy mogą podejmować wymagane działania w wiadomościach e-mail, ale aby te akcje zostały zatwierdzone, muszą mieć przypisaną rolę *Wyszukiwania i przeczyszczania* w uprawnieniach **do współpracy & poczty e-mail** w portalu Microsoft 365 Defender. Bez roli *Wyszukaj i przeczyszczanie* dodanej do jednej z grup ról nie będą mogli wykonać akcji.
+
+Ponieważ akcje poczty e-mail tworzą zautomatyzowane badania w zapleczu, należy włączyć *automatyczne badanie*. Przejdź do **obszaru Ustawienia** \> **Funkcje zaawansowane** **punktów końcowych** \> i włącz funkcję **Zautomatyzowane badanie**.
 
 ## <a name="manual-and-automated-remediation"></a>Ręczne i zautomatyzowane korygowanie
 
@@ -55,7 +57,7 @@ Po wybraniu wiadomości e-mail za pośrednictwem Eksploratora możesz rozpoczą�
 
 - Bezpośrednie zatwierdzenie: Gdy akcje, takie jak *przenoszenie do skrzynki odbiorczej*, *przenoszenie do wiadomości-śmieci*, *przenoszenie do usuniętych elementów*, *usuwanie nietrwałe* lub *usuwanie twarde* , są wybierane przez pracowników ochrony, którzy mają odpowiednie uprawnienia, a następnie są wykonywane kolejne kroki korygowania, proces korygowania rozpoczyna wykonywanie wybranej akcji.
 > [!NOTE]
-> Gdy korygowanie zostanie uruchomione, generuje alert i badanie równolegle. Alert jest wyświetlany w kolejce alertów o nazwie "Akcja administracyjna przesłana przez administratora" sugerująca, że pracownicy ochrony podjęli akcję korygowania jednostki. Przedstawia szczegóły, takie jak imię i nazwisko osoby, która wykonała akcję, link do badania pomocniczego, czas itp. To działa naprawdę dobrze wiedzieć za każdym razem, gdy trudne działania, takie jak korygowanie jest wykonywana na jednostkach. Wszystkie te akcje można śledzić na karcie **Actions & Submissions** **Action** **centerHistory** \>  ->  (publiczna wersja zapoznawcza).
+> Gdy korygowanie zostanie uruchomione, generuje alert i badanie równolegle. Alert jest wyświetlany w kolejce alertów o nazwie "Akcja administracyjna przesłana przez administratora" sugerująca, że pracownicy ochrony podjęli akcję korygowania jednostki. Przedstawia szczegóły, takie jak imię i nazwisko osoby, która wykonała akcję, link do badania pomocniczego, czas itp. To działa naprawdę dobrze wiedzieć za każdym razem, gdy trudne działania, takie jak korygowanie jest wykonywana na jednostkach. Wszystkie te akcje można śledzić na **karcie Historia** **centrum**  ->  akcji **& Przesłania** \> (publiczna wersja zapoznawcza).
 
 - Zatwierdzanie dwuetapowe: akcję "dodaj do korygowania" mogą wykonać administratorzy, którzy nie mają odpowiednich uprawnień lub muszą poczekać na wykonanie akcji. W takim przypadku docelowe wiadomości e-mail są dodawane do kontenera korygowania. Zatwierdzenie jest wymagane przed wykonaniem korygowania.
 
@@ -64,9 +66,9 @@ Po wybraniu wiadomości e-mail za pośrednictwem Eksploratora możesz rozpoczą�
 > [!div class="mx-imgBorder"]
 > [![Poczta ze złośliwym oprogramowaniem na stronie "Zapped" z czasem wykonywania zap.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-Wszystkie korygowanie (zatwierdzenia bezpośrednie) utworzone w Eksploratorze, Zaawansowane wyszukiwanie zagrożeń lub za pośrednictwem zautomatyzowanego badania są wyświetlane w Centrum akcji. Uzyskaj do nich dostęp za pośrednictwem panelu nawigacyjnego po lewej stronie w obszarze **Akcje** \> & **Centrum**  ->  akcji **PrzesyłaniaNa karta Historia**.
+Wszystkie korygowanie (zatwierdzenia bezpośrednie) utworzone w Eksploratorze, Zaawansowane wyszukiwanie zagrożeń lub za pośrednictwem zautomatyzowanego badania są wyświetlane w Centrum akcji. Uzyskaj do nich dostęp za pośrednictwem panelu nawigacyjnego po lewej stronie w obszarze **Akcje** \> &**Karta Historia** **centrum**  ->  akcji przesyłania.
 
-Wszystkie korygowania (zatwierdzenia bezpośrednie), które zostały utworzone w Eksploratorze lub Zaawansowane wyszukiwanie zagrożeń lub za pośrednictwem zautomatyzowanego badania są wyświetlane w Centrum akcji. Uzyskaj do nich dostęp za pośrednictwem panelu nawigacyjnego po lewej stronie w obszarze **Akcje** \> & **Centrum**  ->  akcji **PrzesyłaniaNa karta Historia**. 
+Wszystkie korygowania (zatwierdzenia bezpośrednie), które zostały utworzone w Eksploratorze lub Zaawansowane wyszukiwanie zagrożeń lub za pośrednictwem zautomatyzowanego badania są wyświetlane w Centrum akcji. Uzyskaj do nich dostęp za pośrednictwem panelu nawigacyjnego po lewej stronie w obszarze **Akcje** \> &**Karta Historia** **centrum**  ->  akcji przesyłania. 
 
 Akcje ręczne oczekujące na zatwierdzenie przy użyciu dwuetapowego procesu zatwierdzania (1. dodaj do korygowania przez jednego członka zespołu operacji zabezpieczeń, 2. przeglądane i zatwierdzane przez innego członka zespołu operacji zabezpieczeń) są widoczne tylko w starszej Ochrona usługi Office 365 w usłudze Defender centrum akcji **Review** \> **Action Center**, a nie w zdarzeniach/badaniach i Centrum ujednoliconej akcji.
 

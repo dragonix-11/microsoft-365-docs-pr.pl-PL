@@ -3,11 +3,12 @@ title: Łączność sieciowa w centrum Administracja Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/06/2021
+ms.date: 06/15/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
+ms.reviewer: pandrew1
 search.appverid:
 - MET150
 ms.collection:
@@ -15,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Omówienie łączności sieciowej w centrum Administracja Microsoft 365
-ms.openlocfilehash: 19aa6beaf299a80b76753357e4cbe4f8f0966362
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 5c360820c39be6ec1c42ecdfa0a045a51716e408
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043870"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115653"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Łączność sieciowa w centrum Administracja Microsoft 365
 
@@ -35,7 +36,7 @@ Centrum Administracja Microsoft 365 zawiera teraz zagregowane metryki łącznoś
 > ![Strona wydajności sieci.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 > [!NOTE]
-> Łączność sieciowa w Centrum administracyjnym obsługuje dzierżawy WW Commercial i Niemczech, ale nie GCC Moderate, GCC High, DoD lub China.
+> Łączność sieciowa w centrum Administracja obsługuje dzierżawy w usługach komercyjnych i w Niemczech, ale nie GCC Moderate, GCC High, DoD lub China.
 
 Po pierwszym przejściu na stronę wydajności sieci należy skonfigurować lokalizacje, aby wyświetlić mapę globalnej wydajności sieci, ocenę sieci w zakresie całej dzierżawy, odsetek użytkowników pracujących zdalnie a lokację oraz listę bieżących problemów do podjęcia działań i/lub dalszych badań. W okienku przeglądu możesz przejść do szczegółów, aby wyświetlić konkretne metryki wydajności sieci i problemy według lokalizacji. Aby uzyskać więcej informacji, zobacz [Omówienie wydajności sieci w centrum Administracja Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
@@ -47,19 +48,22 @@ Aby rozpocząć, włącz ustawienie zgody na lokalizację, aby automatycznie zbi
 
 ### <a name="1-enable-windows-location-services"></a>1. Włączanie usług lokalizacji Windows
 
-W przypadku tej opcji w każdej lokalizacji biura muszą być uruchomione co najmniej dwa komputery, które obsługują wymagania wstępne. OneDrive dla wersji Windows musi być aktualna i zainstalowana na każdym komputerze. Aby uzyskać więcej informacji na temat wersji OneDrive, zobacz [informacje o wersji OneDrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Pomiary sieci mają zostać wkrótce dodane do innych Office 365 aplikacji klienckich.
+W przypadku tej opcji w każdej lokalizacji biura muszą być uruchomione co najmniej dwa komputery, które obsługują wymagania wstępne. OneDrive dla wersji Windows musi być aktualna i zainstalowana na każdym komputerze. Testy sieciowe są uruchamiane nie częściej niż raz dziennie o losowej godzinie. Pomiary sieci mają zostać wkrótce dodane do innych Office 365 aplikacji klienckich.
 
 Windows usługi lokalizacyjnej musi być wyrażana zgoda na maszynach. Możesz to przetestować, uruchamiając aplikację **Mapy** i lokalizując siebie. Można ją włączyć na jednej maszynie z **Ustawienia | | prywatności Lokalizacja**, w której należy włączyć ustawienie _Zezwalaj aplikacjom na dostęp do lokalizacji_. Windows zgodę usług lokalizacyjnych można wdrożyć na komputerach przy użyciu rozwiązania MDM lub zasady grupy z ustawieniem _LetAppsAccessLocation_.
 
-Nie musisz dodawać lokalizacji w Centrum administracyjnym przy użyciu tej metody, ponieważ są one automatycznie identyfikowane w uchwałach miasta. W przypadku korzystania z usług Windows Location Services nie będzie wyświetlanych wiele lokalizacji biurowych w tym samym mieście. Informacje o lokalizacji są zaokrąglane do najbliższych 300 metrów na 300 metrów, aby nie uzyskiwać dostępu do bardziej precyzyjnych informacji o lokalizacji.
+Nie musisz dodawać lokalizacji w centrum Administracja przy użyciu tej metody, ponieważ są one automatycznie identyfikowane w uchwałach miasta. W przypadku korzystania z usług Windows Location Services nie będzie wyświetlanych wiele lokalizacji biurowych w tym samym mieście. Informacje o lokalizacji są zaokrąglane do najbliższych 300 metrów na 300 metrów, aby nie uzyskiwać dostępu do bardziej precyzyjnych informacji o lokalizacji. Korzystanie z usług Windows Location Services do pomiarów sieci jest domyślnie wyłączone dla klientów. Należy ją włączyć w wysuwanej lokalizacji Ustawienia łączności sieciowej.
+
+   > [!div class="mx-imgBorder"]
+   > ![Włącz lokalizację](../media/m365-mac-perf/m365-mac-perf-location-enable.png)
 
 Maszyny powinny mieć Wi-Fi sieci, a nie kabel Ethernet. Maszyny z kablem Ethernet nie mają dokładnych informacji o lokalizacji.
 
-Przykłady pomiarów i lokalizacje biura powinny zacząć pojawiać się 24 godziny po spełnieniu tych wymagań wstępnych.
+Przykłady pomiarów i lokalizacje biura powinny zacząć pojawiać się 24 godziny po spełnieniu tych wymagań wstępnych. Office lokalizacje odnalezione z usług Windows Location Services są agregowane według miasta i są przechowywane w widoku przez 90 dni po tym, jak próbki nie zostaną już odebrane. Jeśli zdecydujesz się na przejście do lokalizacji pakietu Office dodanych przez administratora z informacjami o podsieci SIECI LAN, możesz wyłączyć Windows Usługi lokalizacyjne i ukryć wszystkie odnalezione lokalizacje. Zostaną one usunięte po upływie 90 dni.
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. Dodaj lokalizacje i podaj informacje o podsieci SIECI LAN
 
-W przypadku tej opcji nie są wymagane ani usługi lokalizacji Windows, ani Wi-Fi. OneDrive dla wersji Windows musi być aktualny i zainstalowany na co najmniej jednym komputerze w lokalizacji.
+W przypadku tej opcji nie są wymagane ani usługi lokalizacji Windows, ani Wi-Fi. OneDrive dla wersji Windows musi być aktualna i zainstalowana na co najmniej jednym komputerze w lokalizacji i musisz znać informacje o podsieci SIECI LAN dla każdego z biur. Ta opcja zezwala na wiele lokalizacji biurowych na miasto i można nazwać lokalizacje biura. Można je również przekazać z innych źródeł.
 
 Upewnij się, że dodano również lokalizacje na **stronie lokalizacji** lub zaimportowaliśmy je z pliku CSV. Dodane lokalizacje muszą zawierać informacje o podsieci sieci LAN biura. W oknie dialogowym dodawania lub edytowania lokalizacji można określić liczbę podsieci SIECI LAN i liczbę publicznych podsieci IP ruchu wychodzącego. Podsieci sieci LAN są wymagane, a jedna z nich musi być zgodna z atrybutem podsieci LAN w otrzymanej ocenie sieci, aby wyniki były wyświetlane. Super nets nie są obsługiwane, więc podsieć SIECI LAN musi być dokładnie zgodna.
 
@@ -73,9 +77,9 @@ Wszystkie pomiary testowe z maszyn klienckich zawierają informacje o podsieci S
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Ręczne zbieranie raportów testowych za pomocą narzędzia do testowania łączności sieciowej Microsoft 365
 
-W przypadku tej opcji należy zidentyfikować osobę w każdej lokalizacji. Poproś ich o przejście do [Microsoft 365 testu łączności sieciowej](https://connectivity.office.com) na maszynie Windows, na której mają uprawnienia administracyjne. W witrynie sieci Web muszą zalogować się do swojego konta Office 365 dla tej samej organizacji, w której chcesz wyświetlić wyniki. Następnie należy kliknąć pozycję **Uruchom test**. Podczas testu jest pobierany test łączności EXE. Muszą to otworzyć i wykonać. Po zakończeniu testów wynik testu jest przekazywany do Centrum administracyjnego.
+W przypadku tej opcji należy zidentyfikować osobę w każdej lokalizacji. Poproś ich o przejście do [Microsoft 365 testu łączności sieciowej](https://connectivity.office.com) na maszynie Windows, na której mają uprawnienia administracyjne. W witrynie sieci Web muszą zalogować się do swojego konta Office 365 dla tej samej organizacji, w której chcesz wyświetlić wyniki. Następnie należy kliknąć pozycję **Uruchom test**. Podczas testu jest pobierany test łączności EXE. Muszą to otworzyć i wykonać. Po zakończeniu testów wynik testu jest przekazywany do centrum Administracja.
 
-Raporty testowe są połączone z lokalizacją, jeśli zostały dodane z informacjami o podsieci SIECI LAN, w przeciwnym razie są wyświetlane tylko w lokalizacji miasta.
+Raporty testowe są połączone z lokalizacją, jeśli zostały dodane z informacjami o podsieci SIECI LAN, w przeciwnym razie są wyświetlane tylko w odnalezionej lokalizacji miasta.
 
 Przykłady pomiarów i lokalizacje biura powinny zacząć pojawiać się 2–3 minuty po zakończeniu raportu testowego. Aby uzyskać więcej informacji, zobacz [Microsoft 365 test łączności sieciowej](office-365-network-mac-perf-onboarding-tool.md).
 

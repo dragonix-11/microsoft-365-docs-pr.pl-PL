@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano, jak rozpocząć korzystanie z eDiscovery (Standard) w Microsoft Purview. Po przypisaniu uprawnień do zbierania elektronicznych materiałów dowodowych i utworzeniu sprawy można dodać członków, utworzyć blokady zbierania elektronicznych materiałów dowodowych, a następnie wyszukać i wyeksportować zawartość, która jest odpowiednia dla badania.
-ms.openlocfilehash: 38e4d24405810293c9261c1c7f728ece0714cd66
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: c8a3ca883191c450ebc20ddb555018b8b480199b
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078485"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115878"
 ---
 # <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Wprowadzenie zbierania elektronicznych materiałów dowodowych (standard) w Microsoft Purview
 
@@ -41,6 +41,10 @@ Licencjonowanie zbierania elektronicznych materiałów dowodowych (Standardowa) 
 
 - **Licencjonowanie na użytkownika:** Aby umieścić blokadę zbierania elektronicznych materiałów dowodowych w skrzynkach pocztowych i witrynach, użytkownicy muszą mieć przypisaną jedną z następujących licencji, w zależności od subskrypcji organizacji:
 
+  -  Exchange licencji planu 2 w trybie online
+
+   LUB
+   
   - Licencja Microsoft 365 E3 lub Office 365 E3 lub nowsza
 
    LUB

@@ -18,16 +18,16 @@ description: Dowiedz się, jak zdefiniować zasady Sejf Załączniki, aby chroni
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 811730ce12af80b2ac8df7db068b63b96b856bbd
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 46b69c1bea0f967fe22c031397a8887f3399c99b
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847095"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115570"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Konfigurowanie zasad załączników Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
@@ -106,7 +106,17 @@ Utworzenie niestandardowych zasad Sejf Załączniki w portalu Microsoft 365 Defe
 
    Wiele wartości w tym samym warunku używa logiki OR (na przykład _\<recipient1\>_ lub _\<recipient2\>_). Różne warunki używają logiki AND (na przykład _\<recipient1\>_ i _\<member of group 1\>_).
 
-   - **Wyklucz tych użytkowników, grupy i domeny**: aby dodać wyjątki dla adresatów wewnętrznych, których dotyczą zasady (wyjątki recpient), wybierz tę opcję i skonfiguruj wyjątki. Ustawienia i zachowanie są dokładnie takie same jak warunki.
+   - **Wyklucz tych użytkowników, grupy i domeny**: aby dodać wyjątki dla wewnętrznych adresatów, których dotyczą zasady (wyjątki adresatów), wybierz tę opcję i skonfiguruj wyjątki. Ustawienia i zachowanie są dokładnie takie same jak warunki.
+
+   > [!IMPORTANT]
+   > Wiele różnych warunków lub wyjątków nie są addytywne; są inkluzywne. Zasady są stosowane _tylko_ do tych adresatów, którzy pasują do _wszystkich_ filtrów określonych adresatów. Na przykład należy skonfigurować warunek filtru adresata w zasadach z następującymi wartościami:
+   >
+   > - Adresatem jest: romain@contoso.com
+   > - Odbiorca jest członkiem: Kierownictwo
+   >
+   > Zasady są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, zasady nie są do niego stosowane.
+   >
+   > Podobnie, jeśli używasz tego samego filtru adresata co wyjątek od zasad, zasady nie są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, polityka nadal ma do niego zastosowanie.
 
    Po zakończeniu kliknij przycisk **Dalej**.
 

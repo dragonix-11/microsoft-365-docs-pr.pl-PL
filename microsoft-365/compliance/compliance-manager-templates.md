@@ -1,5 +1,5 @@
 ---
-title: Praca z szablonami oceny w programie Microsoft Purview Compliance Manager
+title: Dowiedz się więcej o szablonach oceny w menedżerze zgodności Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak używać szablonów do tworzenia ocen i zarządzać nimi w programie Microsoft Purview Compliance Manager. Tworzenie i modyfikowanie szablonów przy użyciu sformatowanego pliku Excel.
-ms.openlocfilehash: 009b2d742ab135abcde7c3ab73f9ec15c05c8f29
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: e83e079ba47a9e9ab33b3219ca648d1b4af9f124
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972788"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66116010"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>Dowiedz się więcej o szablonach oceny w menedżerze zgodności
 
@@ -36,13 +36,16 @@ ms.locfileid: "64972788"
 
 ## <a name="templates-overview"></a>Omówienie szablonów
 
-Szablon to struktura mechanizmów kontroli do tworzenia oceny w menedżerze zgodności. Nasz kompleksowy zestaw szablonów może pomóc Twojej organizacji w spełnieniu krajowych, regionalnych i branżowych wymagań regulujących zbieranie i wykorzystywanie danych.
+Szablon to struktura mechanizmów kontroli do tworzenia oceny w menedżerze zgodności. Nasz kompleksowy zestaw szablonów może pomóc Twojej organizacji w spełnieniu krajowych, regionalnych i branżowych wymagań regulujących zbieranie i wykorzystywanie danych. Odnosimy się do szablonów o tej samej nazwie co ich podstawowa certyfikacja lub rozporządzenie, takie jak szablon RODO UE i szablon ISO/IEC 27701:2019.
 
 ## <a name="template-versions-microsoft-and-universal"></a>Wersje szablonów: Microsoft i uniwersalne
 
-Odnosimy się do szablonów o tej samej nazwie co ich podstawowa certyfikacja lub rozporządzenie, takie jak szablon RODO UE i szablon ISO/IEC 27701:2019.
+Menedżer zgodności może służyć do oceny różnych typów produktów. Wszystkie szablony, z wyjątkiem domyślnego szablonu [punktu odniesienia usługi Microsoft Data Protection](compliance-manager-assessments.md#data-protection-baseline-default-assessment) , są dostępne w dwóch wersjach:
 
-Menedżer zgodności może służyć do oceny różnych typów produktów. Wszystkie szablony oprócz punktu odniesienia są dostępne w co najmniej jednej wersji, która ma zastosowanie do wstępnie zdefiniowanego produktu, takiego jak Microsoft 365, oraz uniwersalnej wersji, która może być dostosowana do innych produktów. Oceny z szablonów uniwersalnych są bardziej uogólnione, ale oferują rozszerzoną wszechstronność, ponieważ mogą ułatwić śledzenie zgodności organizacji w wielu produktach.
+1. Wersja, która ma zastosowanie do wstępnie zdefiniowanego produktu, takiego jak Microsoft 365 i
+2. Uniwersalna wersja, która może być dostosowana do innych produktów.
+
+Oceny z szablonów uniwersalnych są bardziej uogólnione, ale oferują rozszerzoną wszechstronność, ponieważ mogą ułatwić śledzenie zgodności organizacji w wielu produktach.
 
 Należy pamiętać, że klienci usług Us Government Community (GCC) Moderate, GCC High i Department of Defense (DoD) nie mogą obecnie używać szablonów uniwersalnych.
 
@@ -80,7 +83,7 @@ GCC kontach high i DOD muszą kupować licencje szablonów w ramach [licencjonow
 
 Aby wypróbować szablony premium przed dokonaniem zakupu, możesz również uzyskać wersje próbne licencji. Licencje próbne są dobre dla maksymalnie 25 szablonów przez 90 dni. Po uzyskaniu licencji próbnej szablony powinny zostać udostępnione w dzierżawie w ciągu 48 godzin.
 
-Jeśli Twoja organizacja ma komercyjną licencję programu Compliance Manager, możesz dowiedzieć się, jak rozpocząć wersję próbną, korzystając z [bezpłatnej wersji próbnej ocen premium programu Microsoft Purview Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
+Jeśli Twoja organizacja ma licencję komercyjną na menedżera zgodności, możesz dowiedzieć się, jak rozpocząć wersję próbną, korzystając z [bezpłatnej wersji próbnej na potrzeby ocen premium programu Microsoft Purview Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
 
 Jeśli Twoja organizacja ma licencję GCC lub DOD, wybierz odpowiedni link do wersji próbnej dla swojej organizacji:
 

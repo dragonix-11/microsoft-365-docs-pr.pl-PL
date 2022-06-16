@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Administratorzy mogą dowiedzieć się, jak używać portalu Przesyłania w portalu Microsoft 365 Defender do przesyłania podejrzanych wiadomości e-mail, podejrzanych wiadomości phishingowych, spamu i innych potencjalnie szkodliwych wiadomości, adresów URL i załączników wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47e97b728fb27d8df6ad813946d3cdbe08c52085
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: bd56ce39cbb1d48470742f80a8b07747dd52f33a
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089116"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66116049"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Przesyłanie do firmy Microsoft podejrzanych wiadomości spamowych, adresów URL i plików przy użyciu portalu Przesyłania
 
@@ -394,3 +394,7 @@ Na karcie **Komunikaty zgłaszane przez użytkownika** wybierz komunikat z listy
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="Przycisk Nowe opcje na przycisku Akcja" lightbox="../../media/admin-submission-main-action-button.png":::
+
+Jeśli komunikat zostanie zgłoszony firmie Microsoft, wartość **Przekonwertowane na przesyłanie przez administratora** zmieni się z **nie** na **tak**. Możesz bezpośrednio uzyskać dostęp do przesyłania przez administratora, klikając pozycję **Wyświetl przekonwertowane przesłanie administratora** z menu przepełnienia wewnątrz wysuwanego przesyłania odpowiedniego komunikatu zgłoszonego przez użytkownika.
+
+:::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Opcja wyświetlania utworzonego przesłania przez administratora na podstawie komunikatu zgłoszonego przez użytkownika.":::

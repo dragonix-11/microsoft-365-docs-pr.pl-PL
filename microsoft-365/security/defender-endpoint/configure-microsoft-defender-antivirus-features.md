@@ -12,23 +12,22 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 10/14/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4047b4628c8b63996be29d77ec13712082fde182
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8271f6d0fcc58ce5a7e1ce08f6034a8a90afab48
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419225"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115460"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Konfiguruj funkcje programu antywirusowego Microsoft Defender
 
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Program antywirusowy Microsoft Defender
@@ -56,9 +55,7 @@ Można skonfigurować następujące szerokie kategorie funkcji:
 
 > [!TIP]
 > Zapoznaj [się z tematami referencyjnymi dotyczącymi narzędzi do zarządzania i konfiguracji](configuration-management-reference-microsoft-defender-antivirus.md).
-
-> [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
 > - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
 > - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

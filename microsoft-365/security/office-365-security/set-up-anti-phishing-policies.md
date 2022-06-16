@@ -17,16 +17,16 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej o zasadach ochrony przed wyłudzaniem informacji dostępnych w Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 786a71e37e9602be2c8de4637ffd5f83a70e7e59
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 1a1265e70c0d22182e8ee4db865eeb53ac8168b7
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438888"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115900"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Zasady ochrony przed wyłudzaniem informacji w Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -86,6 +86,15 @@ Następujące ustawienia zasad są dostępne w zasadach ochrony przed wyłudzani
 
   > [!NOTE]
   > Co najmniej jeden wybór w **ustawieniach Użytkownicy, grupy i domeny** jest wymagany w niestandardowych zasadach ochrony przed wyłudzaniem informacji, aby zidentyfikować **adresatów** wiadomości <u>, których dotyczą zasady</u>. Zasady ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender mają również [ustawienia personifikacji](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), w których można określić poszczególne adresy e-mail nadawcy lub domeny nadawcy<u>, które otrzymają ochronę przed personifikacją</u> zgodnie z opisem w dalszej części tego artykułu.
+  >
+  > Wiele różnych warunków lub wyjątków nie są addytywne; są inkluzywne. Zasady są stosowane _tylko_ do tych adresatów, którzy pasują do _wszystkich_ filtrów określonych adresatów. Na przykład należy skonfigurować warunek filtru adresata w zasadach z następującymi wartościami:
+  >
+  > - Adresatem jest: romain@contoso.com
+  > - Odbiorca jest członkiem: Kierownictwo
+  >
+  > Zasady są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, zasady nie są do niego stosowane.
+  >
+  > Podobnie, jeśli używasz tego samego filtru adresata co wyjątek od zasad, zasady nie są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, polityka nadal ma do niego zastosowanie.
 
 ## <a name="spoof-settings"></a>Ustawienia fałszowania
 

@@ -16,12 +16,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak stosować standardowe i ścisłe ustawienia zasad w funkcjach ochrony Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Microsoft Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06db733b50de51750d6c9f7b3dcf14f28cdff414
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: eb9eb8c3f45b0047922be854972d1f96123342cb
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044395"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115526"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Wstępne ustawienie zasad zabezpieczeń w usłudze EOP i ochronie usługi Office 365 w usłudze Microsoft Defender
 
@@ -64,6 +64,16 @@ Profil określa poziom ochrony. Dostępne są następujące profile:
   - **Domeny**: Wszyscy adresaci w określonych [zaakceptowanych domenach](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) w organizacji.
 
   Warunek lub wyjątek można użyć tylko raz, ale można określić wiele wartości dla warunku lub wyjątku. Wiele wartości tego samego warunku lub wyjątku używa logiki OR (na przykład _\<recipient1\>_ lub _\<recipient2\>_). Różne warunki lub wyjątki używają logiki AND (na przykład _\<recipient1\>_ i _\<member of group 1\>_).
+
+  > [!IMPORTANT]
+  > Wiele różnych warunków lub wyjątków nie są addytywne; są inkluzywne. Zasady są stosowane _tylko_ do tych adresatów, którzy pasują do _wszystkich_ filtrów określonych adresatów. Na przykład należy skonfigurować warunek filtru adresata w zasadach z następującymi wartościami:
+  >
+  > - Adresatem jest: romain@contoso.com
+  > - Odbiorca jest członkiem: Kierownictwo
+  >
+  > Zasady są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, zasady nie są do niego stosowane.
+  >
+  > Podobnie, jeśli używasz tego samego filtru adresata co wyjątek od zasad, zasady nie są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, polityka nadal ma do niego zastosowanie.
 
 - **Wbudowana ochrona** (tylko Ochrona usługi Office 365 w usłudze Defender): profil, który umożliwia ochronę tylko linków Sejf i załączników Sejf. Ten profil skutecznie udostępnia domyślne zasady dla linków Sejf i załączników Sejf, które nigdy nie miały domyślnych zasad.
 

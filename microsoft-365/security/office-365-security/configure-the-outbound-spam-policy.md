@@ -19,16 +19,16 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się, jak wyświetlać, tworzyć, modyfikować i usuwać zasady spamu wychodzącego w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ab8585a0671f9c62ec2015d91486539c84004db
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 690d4def4081812653cb533765f6c61cca7d1e90
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847470"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115834"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurowanie filtrowania wychodzącego spamu w ramach operacji EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -115,6 +115,16 @@ Utworzenie niestandardowych zasad spamu wychodzącego w portalu Microsoft 365 De
    Wiele wartości w tym samym warunku używa logiki OR (na przykład _\<sender1\>_ lub _\<sender2\>_). Różne warunki używają logiki AND (na przykład _\<sender1\>_ i _\<member of group 1\>_).
 
    - **Wyklucz tych użytkowników, grupy i domeny**: aby dodać wyjątki dla wewnętrznych nadawców, których dotyczą zasady (wyjątki adresatów), wybierz tę opcję i skonfiguruj wyjątki. Ustawienia i zachowanie są dokładnie takie same jak warunki.
+
+   > [!IMPORTANT]
+   > Wiele różnych warunków lub wyjątków nie są addytywne; są inkluzywne. Zasady są stosowane _tylko_ do tych adresatów, którzy pasują do _wszystkich_ filtrów określonych adresatów. Na przykład należy skonfigurować warunek filtru adresata w zasadach z następującymi wartościami:
+   >
+   > - Adresatem jest: romain@contoso.com
+   > - Odbiorca jest członkiem: Kierownictwo
+   >
+   > Zasady są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, zasady nie są do niego stosowane.
+   >
+   > Podobnie, jeśli używasz tego samego filtru adresata co wyjątek od zasad, zasady nie są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, polityka nadal ma do niego zastosowanie.
 
    Po zakończeniu kliknij przycisk **Dalej**.
 

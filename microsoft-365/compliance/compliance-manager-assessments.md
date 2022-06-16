@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Twórz oceny w programie Microsoft Purview Compliance Manager, aby ułatwić spełnienie wymagań dotyczących przepisów i certyfikatów, które są ważne dla Twojej organizacji.
-ms.openlocfilehash: 841d48951eebf0d04bf5c97a708a250218b44c65
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+description: Twórz oceny w programie Microsoft Purview Compliance Manager, aby ułatwić spełnienie wymagań dotyczących przepisów i certyfikatów, które są ważne dla Organizacji.
+ms.openlocfilehash: cb2d90bf8dfbdcb2ec2ca534d1659a19d27998bc
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972568"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115746"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Tworzenie ocen i zarządzanie nimi w menedżerze zgodności
 
@@ -79,11 +79,11 @@ Grupę można utworzyć podczas tworzenia nowej oceny. Nie można tworzyć grup 
 
 ## <a name="understand-templates-before-creating-assessments"></a>Omówienie szablonów przed utworzeniem ocen
 
-Szablony oceny zawierają zalecenia dotyczące kontroli i akcji dla ocen na podstawie certyfikatów dla różnych przepisów i standardów dotyczących prywatności. Dostępne szablony organizacji mogą obejmować co najmniej jeden szablon, który został uwzględniony w ramach umowy licencyjnej, wraz z wszelkimi dodatkowymi zakupionymi szablonami premium.
+Szablony oceny zawierają zalecenia dotyczące kontroli i akcji dla ocen na podstawie certyfikatów dla różnych przepisów i standardów dotyczących prywatności. Twoja organizacja zaczyna od co najmniej jednego i prawdopodobnie większej **liczby dostępnych** szablonów do użycia, w zależności od umowy licencyjnej. Twoja organizacja może również zakupić dodatkowe szablony **premium** .
 
-Każdy szablon, dołączony lub premium, istnieje w dwóch wersjach: jeden do użytku z Microsoft 365 (lub innymi produktami firmy Microsoft w miarę dostępności) i uniwersalną wersją, którą można dostosować do oceny innych używanych produktów. Możesz wybrać odpowiedni typ szablonu dla produktu, który chcesz ocenić.
+Każdy szablon istnieje w dwóch wersjach: jeden do użytku z Microsoft 365 (lub innymi produktami firmy Microsoft w miarę dostępności) i uniwersalną wersją, którą można dostosować do oceny innych używanych produktów. Możesz wybrać odpowiedni typ szablonu dla produktu, który chcesz ocenić.
 
-Aby dowiedzieć się więcej na temat szablonów, zobacz [Praca z szablonami oceny](compliance-manager-templates.md).
+Więcej szczegółów na temat szablonów można znaleźć w [temacie Dowiedz się więcej o szablonach oceny w menedżerze zgodności](compliance-manager-templates.md).
 
 ## <a name="create-assessments"></a>Tworzenie ocen
 

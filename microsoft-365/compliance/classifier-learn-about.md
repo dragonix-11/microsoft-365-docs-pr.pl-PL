@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Klasyfikatory z możliwością trenowania mogą rozpoznawać różne typy zawartości do etykietowania lub aplikacji zasad, dając jej pozytywne i negatywne próbki do obejrzenia.
-ms.openlocfilehash: 955e94aad0c7c4c20a020a76ebf4b4ffc1871d9a
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: ed2b744c1c136afde38151dc424eef547607ef27
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078815"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115856"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Dowiedz się więcej o klasyfikatorach z możliwością szkolenia
 
@@ -57,7 +57,7 @@ Ta metoda klasyfikacji jest odpowiednia dla zawartości, która nie jest łatwo 
 
 ### <a name="where-you-can-use-classifiers"></a>Gdzie można używać klasyfikatorów
 
-Klasyfikatory są dostępne do użycia jako warunek [Office automatycznego etykietowania z etykietami poufności](apply-sensitivity-label-automatically.md), [automatycznego stosowania zasad etykiet przechowywania na podstawie warunku](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) i [zgodności z komunikacją](communication-compliance.md). 
+Klasyfikatory są dostępne do użycia jako warunek [Office automatycznego etykietowania z etykietami poufności](apply-sensitivity-label-automatically.md), [automatycznego stosowania zasad etykiet przechowywania na podstawie warunku](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) i [zgodności z komunikacją](communication-compliance.md).
 
 Etykiety poufności mogą używać klasyfikatorów jako warunków. Zobacz [Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md).
 
@@ -73,15 +73,11 @@ Etykiety poufności mogą używać klasyfikatorów jako warunków. Zobacz [Autom
 
 Microsoft 365 zawiera wiele wstępnie wytrenowanych klasyfikatorów:
 
-- **Adult, Racy i Gory**: wykrywa obrazy tych typów. Obrazy muszą mieć rozmiar od 50 kilobajtów (KB) do 4 megabajtów (MB) i być większe niż 50 x 50 pikseli w wymiarach wysokości x szerokości. Skanowanie i wykrywanie są obsługiwane w przypadku Exchange Online wiadomości e-mail oraz Microsoft Teams kanałów i czatów. Wykrywa zawartość w plikach jpeg, .png, .gif i .bmp.
+- **Dorosły, racy i gory**: wykrywa obrazy tych typów. Obrazy muszą mieć rozmiar od 50 kilobajtów (KB) do 4 megabajtów (MB) i być większe niż 50 x 50 pikseli w wymiarach wysokości x szerokości. Skanowanie i wykrywanie są obsługiwane w przypadku Exchange Online wiadomości e-mail oraz Microsoft Teams kanałów i czatów. Wykrywa zawartość w plikach jpeg, .png, .gif i .bmp.
 
 - **Umowy**: Wykrywa zawartość związaną z umowami prawnymi, takimi jak umowy o zachowaniu poufności, oświadczenia o pracy, umowy pożyczki i dzierżawy, umowy o pracę i umowy o zachowaniu konkurencji. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
-- **Życiorysy**: wykrywa dokumenty, .pdf, rtf, .txt elementy, które są tekstowymi kontami osobistymi, edukacyjnymi, zawodowymi, doświadczeniami służbowymi i innymi danymi identyfikacyjnymi wnioskodawcy
-
-- **Kod źródłowy**: wykrywa elementy zawierające zestaw instrukcji i instrukcji napisanych w 25 najlepszych używanych językach programowania komputerowego na GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Wykrywa zawartość w plikach .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . RData, .rds, .rb, .scala, .sc, .sh, .swift files.
-
-- **Skargi klientów**: klasyfikator skarg klientów wykrywa opinie i skargi dotyczące produktów lub usług organizacji. Ten klasyfikator może pomóc w spełnieniu wymagań regulacyjnych dotyczących wykrywania i klasyfikowania skarg, takich jak wymagania Consumer Financial Protection Bureau i Food and Drug Administration. W przypadku zgodności z usługą Communications wykrywa zawartość w plikach msg i eml. W pozostałych usługach Microsoft Purview Information Protection wykrywa zawartość w plikach .docx, .pdf, .txt, rtf, .jpg, jpeg, .png, .gif, .bmp, .svg.
+- **Skargi klientów**: Klasyfikator skarg klientów wykrywa opinie i skargi dotyczące produktów lub usług organizacji. Ten klasyfikator może pomóc w spełnieniu wymagań regulacyjnych dotyczących wykrywania i klasyfikowania skarg, takich jak wymagania Consumer Financial Protection Bureau i Food and Drug Administration. W przypadku zgodności z usługą Communications wykrywa zawartość w plikach msg i eml. W pozostałych usługach Microsoft Purview Information Protection wykrywa zawartość w plikach .docx, .pdf, .txt, rtf, .jpg, jpeg, .png, .gif, .bmp, .svg.
 
 - **Dyskryminacja**: Wykrywa jawny dyskryminujący język i jest wrażliwy na dyskryminujący język wobec społeczności Afroamerykańskich/Czarnych w porównaniu z innymi społecznościami.
 
@@ -97,27 +93,26 @@ Microsoft 365 zawiera wiele wstępnie wytrenowanych klasyfikatorów:
 
 - **IT**: Wykrywa zawartość w kategoriach technologii informatycznych i cyberbezpieczeństwa, takich jak ustawienia sieci, zabezpieczenia informacji, sprzęt i oprogramowanie. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
 
-- **Sprawy prawne**: Wykrywa treści w kategoriach prawnych, takich jak spory sądowe, proces prawny, obowiązek prawny, terminologia prawna, prawo i ustawodawstwo. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
+- **Sprawy prawne**: Wykrywa zawartość w kategoriach prawnych, takich jak spory sądowe, proces prawny, obowiązek prawny, terminologia prawna, prawo i ustawodawstwo. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
 - **Zaopatrzenie**: Wykrywa zawartość w kategoriach licytacji, ofert, zakupów i płacenia za dostawę towarów i usług. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
 
-- **Wulgaryzmy**: wykrywa określoną kategorię obraźliwych elementów tekstowych języka, które zawierają wyrażenia, które zawstydzają większość ludzi.
+- **Wulgaryzmy**: wykrywa określoną kategorię obraźliwych elementów tekstowych języka, które zawierają wyrażenia, które zawstydzają większość ludzi. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp, svg.
 
-- **Życiorysy**: wykrywa dokumenty, .pdf, rtf, .txt elementy, które są tekstowymi kontami osobistymi, edukacyjnymi, zawodowymi, doświadczeniami służbowymi i innymi danymi identyfikacyjnymi wnioskodawcy
+- **Wznów**: wykrywa dokumenty, .pdf, rtf, .txt elementy, które są tekstowymi kontami osobistymi, edukacyjnymi, zawodowymi, doświadczeniem zawodowym i innymi danymi identyfikacyjnymi wnioskodawcy
 
-- **Kod źródłowy**: wykrywa elementy zawierające zestaw instrukcji i instrukcji napisanych w 25 najlepszych używanych językach programowania komputerowego na GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
+- **Kod źródłowy**: wykrywa elementy zawierające zestaw instrukcji i instrukcji napisanych języków programowania komputerowego w GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Wykrywa zawartość w plikach .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . RData, .rds, .rb, .scala, .sc, .sh, .swift files.
 
-    > [!NOTE]
-    > Kod źródłowy jest wytrenowany do wykrywania, kiedy większość tekstu to kod źródłowy. Nie wykrywa tekstu kodu źródłowego, który jest przeplatany zwykłym tekstem.
+  > [!NOTE]
+  > Kod źródłowy jest wytrenowany do wykrywania, kiedy większość tekstu to kod źródłowy. Nie wykrywa tekstu kodu źródłowego, który jest przeplatany zwykłym tekstem.
 
 - **Podatek**: Wykrywa zawartość relacji podatkowych, takich jak planowanie podatkowe, formularze podatkowe, zgłoszenia podatkowe, przepisy podatkowe. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 
 - **Zagrożenie**: wykrywa określoną kategorię obraźliwych elementów tekstowych języka związanych z groźbami popełnienia przemocy lub wyrządzenia fizycznej krzywdy lub szkody osobie lub mienia.
-- **Wulgaryzmy**: wykrywa określoną kategorię obraźliwych elementów tekstowych języka, które zawierają wyrażenia, które zawstydzają większość ludzi. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp, svg.
-- **Podatek**: Wykrywa zawartość relacji podatkowych, takich jak planowanie podatkowe, formularze podatkowe, zgłoszenia podatkowe, przepisy podatkowe. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
+
 - **Zagrożenie**: wykrywa określoną kategorię obraźliwych elementów tekstowych języka związanych z groźbami popełnienia przemocy lub wyrządzenia fizycznej krzywdy lub szkody osobie lub mienia. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp, svg.
 
-Są one wyświetlane w widoku **klasyfikatorów klasyfikujących** **portal zgodności Microsoft Purview** >  **Data** >  ze stanem `Ready to use`.
+Klasyfikatory te są wyświetlane w widoku **klasyfikatorów** **portal zgodności Microsoft Purview** \> **Data classification** \> Trainable ze stanem `Ready to use`.
 
 ![classifiers-pre-trained-classifiers.](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -145,7 +140,7 @@ Wszystkie inne są angielski tylko w tej chwili.
 
 Gdy wstępnie wytrenowane klasyfikatory nie spełniają Twoich potrzeb, możesz utworzyć i wytrenować własne klasyfikatory. Tworzenie własnych aplikacji wymaga większej ilości pracy, ale będą one znacznie lepiej dostosowane do potrzeb organizacji.
 
-Możesz rozpocząć tworzenie niestandardowego klasyfikatora trenowalnego, podając przykłady, które zdecydowanie należą do tej kategorii. Po przetłuczeniu tych przykładów można przetestować je, nadając mu kombinację zarówno zgodnych, jak i niezgodnych przykładów. Klasyfikator następnie prognozuje, czy dany element należy do kategorii, którą tworzysz. Następnie potwierdzasz jego wyniki, sortując wartości prawdziwie dodatnie, prawdziwie ujemne, fałszywie dodatnie i fałszywie ujemne, aby zwiększyć dokładność przewidywań. 
+Możesz rozpocząć tworzenie niestandardowego klasyfikatora trenowalnego, podając przykłady, które zdecydowanie należą do tej kategorii. Po przetłuczeniu tych przykładów można przetestować je, nadając mu kombinację zarówno zgodnych, jak i niezgodnych przykładów. Klasyfikator następnie prognozuje, czy dany element należy do kategorii, którą tworzysz. Następnie potwierdzasz jego wyniki, sortując wartości prawdziwie dodatnie, prawdziwie ujemne, fałszywie dodatnie i fałszywie ujemne, aby zwiększyć dokładność przewidywań.
 
 Po opublikowaniu klasyfikatora sortuje on elementy w lokalizacjach takich jak SharePoint Online, Exchange i OneDrive oraz klasyfikuje zawartość. Po opublikowaniu klasyfikatora możesz kontynuować trenowanie go przy użyciu procesu opinii, który jest podobny do początkowego procesu trenowania.
 
