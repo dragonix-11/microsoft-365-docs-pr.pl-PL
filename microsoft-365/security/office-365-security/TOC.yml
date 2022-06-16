@@ -404,6 +404,8 @@
           href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
         - name: Jak skonfigurować uprawnienia i zasady kwarantanny
           href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+        - name: Bądź na bieżąco z nadchodzącymi zmianami w ochronie usługi Office 365 w usłudze Microsoft Defender za pomocą centrum wiadomości
+          href: step-by-step-guides/stay-informed-with-message-center.md
         - name: 'Zapewnianie, że zawsze masz optymalne mechanizmy kontroli zabezpieczeń ze wstępnie ustawionymi zasadami zabezpieczeń'
           href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
         - name: 'Jak ustalać priorytety, zarządzać, badać i reagować na zdarzenia w usłudze Microsoft 365 Defender'
