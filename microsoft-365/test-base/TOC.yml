@@ -6,7 +6,7 @@
       href: overview.md
 - name: Przewodniki Szybki start
   items:
-    - name: Utwórz konto usługi Test Base
+    - name: Tworzenie konta usługi Test Base
       href: createaccount.md
     - name: Testowanie aplikacji w usłudze Test Base
       items:
@@ -40,6 +40,8 @@
       href: memory.md
     - name: Analiza regresji procesora
       href: cpu.md
+    - name: Żądanie zmiany poziomu dostępu
+      href: accesslevel.md
     - name: ZESTAW SDK I INTERFEJS API
       href: sdkapi.md
 - name: Odwołanie
