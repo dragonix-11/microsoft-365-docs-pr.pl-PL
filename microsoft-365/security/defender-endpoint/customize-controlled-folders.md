@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: ba9102f96ea08bf33f72a260779b4b37d6a6f0f4
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 3d6f763bd2ac2c4352f1b200c05c3079bc615aaf
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217381"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139346"
 ---
 # <a name="customize-controlled-folder-access"></a>Dostosuj kontrolowany dostęp do folderu
 
@@ -33,14 +33,14 @@ ms.locfileid: "65217381"
 - System Windows
 
 > [!TIP]
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Kontrolowany dostęp do folderów pomaga chronić cenne dane przed złośliwymi aplikacjami i zagrożeniami, takimi jak oprogramowanie wymuszające okup. Kontrolowany dostęp do folderów jest obsługiwany na klientach Windows Server 2019, Windows Server 2022, Windows 10 i Windows 11. W tym artykule opisano sposób dostosowywania możliwości kontrolowanego dostępu do folderów i przedstawiono następujące sekcje:
 
 - [Ochrona dodatkowych folderów](#protect-additional-folders)
 - [Dodawanie aplikacji, które powinny mieć dostęp do chronionych folderów](#allow-specific-apps-to-make-changes-to-controlled-folders)
 - [Zezwalaj podpisanym plikom wykonywalnym na dostęp do folderów chronionych](#allow-signed-executable-files-to-access-protected-folders)
-- [Dostosowywanie powiadomienia](#customize-the-notification)
+- [Dostosuj powiadomienie](#customize-the-notification)
 
 > [!IMPORTANT]
 > Kontrolowany dostęp do folderów monitoruje aplikacje pod kątem działań wykrytych jako złośliwe. Czasami legalne aplikacje nie mogą wprowadzać zmian w plikach. Jeśli kontrolowany dostęp do folderów wpływa na wydajność organizacji, możesz rozważyć uruchomienie tej funkcji w [trybie inspekcji](audit-windows-defender.md) , aby w pełni ocenić wpływ.
@@ -169,7 +169,7 @@ Ochrona punktu końcowego w usłudze Microsoft Defender wskaźniki certyfikatów
 > [!Note]
 > Nie dotyczy to aparatów skryptów, w tym programu PowerShell
 
-## <a name="customize-the-notification"></a>Dostosowywanie powiadomienia
+## <a name="customize-the-notification"></a>Dostosuj powiadomienie
 
 Aby uzyskać więcej informacji na temat dostosowywania powiadomienia po wyzwoleniu reguły i zablokowaniu aplikacji lub pliku, zobacz [Konfigurowanie powiadomień o alertach w Ochrona punktu końcowego w usłudze Microsoft Defender](configure-email-notifications.md).
 
@@ -177,4 +177,4 @@ Aby uzyskać więcej informacji na temat dostosowywania powiadomienia po wyzwole
 
 - [Ochrona ważnych folderów za pomocą kontrolowanego dostępu do folderów](controlled-folders.md)
 - [Włącz kontrolowany dostępu do folderu](enable-controlled-folders.md)
-- [Ocena reguł zmniejszania obszaru ataków](evaluate-attack-surface-reduction.md)
+- [Włączanie reguł zmniejszania obszaru ataków](enable-attack-surface-reduction.md)

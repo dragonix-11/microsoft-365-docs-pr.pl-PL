@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak uzyskać pomoc i pomoc techniczną.
-ms.openlocfilehash: 5bf61e9563a87ac44219c1c4644153ce98755cb5
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: cf0f9e9fd689f8e683b63af4cc8db7a09a1f6240
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017811"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139324"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Uzyskaj pomoc i pomoc techniczną dotyczącą Microsoft 365 Lighthouse 
 
@@ -40,7 +40,7 @@ Jeśli potrzebujesz pomocy, dostępnych jest kilka opcji. Najpierw sprawdź, czy
     3. Na liście usług znajdź **Microsoft 365 suite**, a następnie rozwiń go, aby wyświetlić wszystkie usługi w pakiecie.
     4. Znajdź **Microsoft 365 Lighthouse** i sprawdź kondycję.
 
-- Sprawdź, czy problem jest wymieniony w [temacie Znane problemy z Microsoft 365 Lighthouse](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues).
+- Sprawdź, czy problem jest wymieniony w [temacie Znane problemy z Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-known-issues?view=o365-worldwide).
 
 Jeśli występuje problem, którego nie ma na liście w żadnym z tych zasobów, postępuj zgodnie z instrukcjami w tym artykule, aby wyświetlić opcje samodzielnej pomocy lub utworzyć żądanie obsługi.
 

@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 065e9a124deb7c064b31666d96a11f076d65abdd
-ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
+ms.openlocfilehash: 71b4fc8a671f4b30d70a4c3ec026c39b24c1a9a4
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66060966"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139524"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Tożsamość i nie tylko — punkt widzenia jednego architekta
 
@@ -194,7 +194,7 @@ W przypadku [wielu obszarów geograficznych](../enterprise/microsoft-365-multi-g
 - Nie zapewnia korzyści z wydajności. Może to pogorszyć wydajność, jeśli [projekt sieci](https://aka.ms/office365networking) nie jest poprawny. Przybliż urządzenia do sieci firmy Microsoft, niekoniecznie do danych.
 - Nie jest to rozwiązanie dotyczące [zgodności z RODO](https://www.microsoft.com/trust-center/privacy/gdpr-overview). RODO nie koncentruje się na niezależności danych ani lokalizacjach magazynu. Istnieją inne struktury zgodności.
 - Nie rozwiązuje delegowania administracji (patrz poniżej) ani [barier informacyjnych](../compliance/information-barriers.md).
-- To nie to samo, co wielodostępne i wymaga dodatkowych przepływów pracy [aprowizacji użytkowników](https://github.com/MicrosoftDocs/azure-docs-pr/blob/master/articles/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation.md) .
+- To nie to samo, co wielodostępne i wymaga dodatkowych przepływów pracy [aprowizacji użytkowników](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) .
 - Nie [przenosi dzierżawy](../enterprise/moving-data-to-new-datacenter-geos.md) (Azure AD) do innej lokalizacji geograficznej.
 
 ## <a name="delegation-of-administration"></a>Delegowanie administracji
@@ -227,7 +227,7 @@ Czasami scenariusze wymagają dodania użytkownika zewnętrznego do roli (zobacz
 
 ### <a name="microsoft-365-defender-and-microsoft-365-purview-compliance-portals"></a>portale zgodności usługi Microsoft 365 Defender i Microsoft 365 Purview
 
-**Role współpracy & poczty e-mail** w [portalu Microsoft 365 Defender](../security/office-365-security/permissions-microsoft-365-security-center.md) i **_Grupy ról dla rozwiązań usługi Microsoft Purview_* w [portalu zgodności usługi Microsoft 365 Purview](../compliance/microsoft-365-compliance-center-permissions.md) są kolekcją "grup ról", które różnią się od Azure AD ról. Może to być mylące, ponieważ niektóre z tych grup ról mają taką samą nazwę jak role Azure AD (na przykład Czytelnik zabezpieczeń), ale mogą mieć inne członkostwo. Wolę używać ról Azure AD. Każda grupa ról składa się z co najmniej jednej "ról" (zobacz, co mam na myśli w przypadku ponownego użycia tego samego wyrazu?) i mają elementy członkowskie z Azure AD, które są obiektami z włączoną obsługą poczty e-mail. Ponadto można utworzyć grupę ról o takiej samej nazwie jak rola, która może lub nie może zawierać tej roli (unikaj tego pomyłek).
+**Role współpracy & poczty e-mail** w [portalu Microsoft 365 Defender](../security/office-365-security/permissions-microsoft-365-security-center.md) i **_Grupy ról dla rozwiązań Microsoft Purview_* w [portalu zgodności usługi Microsoft 365 Purview](../compliance/microsoft-365-compliance-center-permissions.md) są kolekcją "grup ról", które różnią się od ról Azure AD. Może to być mylące, ponieważ niektóre z tych grup ról mają taką samą nazwę jak role Azure AD (na przykład Czytelnik zabezpieczeń), ale mogą mieć inne członkostwo. Wolę używać ról Azure AD. Każda grupa ról składa się z co najmniej jednej "ról" (zobacz, co mam na myśli w przypadku ponownego użycia tego samego wyrazu?) i mają elementy członkowskie z Azure AD, które są obiektami z włączoną obsługą poczty e-mail. Ponadto można utworzyć grupę ról o takiej samej nazwie jak rola, która może lub nie może zawierać tej roli (unikaj tego pomyłek).
 
 W pewnym sensie te uprawnienia są ewolucją modelu Exchange grup ról. Jednak Exchange Online ma własny interfejs [zarządzania grupami ról](/exchange/permissions-exo). Niektóre grupy ról w Exchange Online są zablokowane i zarządzane z Azure AD lub portali zgodności Microsoft 365 Defender i Microsoft 365 Purview, ale inne mogą mieć takie same lub podobne nazwy i są zarządzane w Exchange Online (dodając do pomyłek). Zalecam unikanie używania Exchange Online interfejsu użytkownika, chyba że potrzebujesz zakresów do zarządzania Exchange.
 

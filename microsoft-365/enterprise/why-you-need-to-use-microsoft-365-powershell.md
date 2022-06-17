@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: admindeeplinkEXCHANGE
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Podsumowanie: Dowiedz się, dlaczego należy używać programu PowerShell do zarządzania Microsoft 365, w niektórych przypadkach bardziej wydajnie, a w innych przypadkach z konieczności.'
-ms.openlocfilehash: 114b97ff27ae1b79e58589eb746a261f83dc422f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0da00ffe3c492b3bac3da9f435ece89219b4113f
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097937"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139368"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Dlaczego musisz używać programu PowerShell do Microsoft 365
 
@@ -172,7 +172,7 @@ Centrum administracyjne platformy Microsoft 365 ma na celu zapewnienie dostępu 
 
 Na przykład centrum administracyjne usługi Skype dla firm Online oferuje kilka opcji tworzenia niestandardowych zaproszeń na spotkania:
 
-![Przykład wyświetlania niestandardowych zaproszeń na spotkania w centrum administracyjnym usługi Skype dla firm Online.](../media/o365-powershell-meeting-invitation.png)
+![Przykład wyświetlania niestandardowych zaproszeń na spotkania w centrum Administracja Skype dla firm Online.](../media/o365-powershell-meeting-invitation.png)
 
 Za pomocą tych ustawień możesz dodać odrobinę personalizacji i profesjonalizmu do zaproszeń na spotkania. Jednak ustawienia konfiguracji spotkania to coś więcej niż tylko tworzenie niestandardowych zaproszeń na spotkania. Na przykład domyślnie spotkania zezwalają na:
 
@@ -189,7 +189,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConference
 ```
 
 > [!NOTE]
-> Aby uruchomić to polecenie, należy zainstalować [moduł Skype dla firm Online programu PowerShell](https://www.microsoft.com/download/details.aspx?id=39366).
+> Aby uruchomić to polecenie, należy zainstalować [moduł Skype dla firm Online programu PowerShell](/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-the-skype-for-business-online-connector).
 
 Interpretacja tego polecenia programu PowerShell to:
 
@@ -221,7 +221,7 @@ W ostatnim przykładzie załóżmy, że masz kilkaset SharePoint witryn online i
 
 4. W oknie dialogowym **Udostępnianie** wybierz link pokazujący wszystkich użytkowników, którzy mają uprawnienia do witryny:
 
-     ![Przykład wyświetlania elementów członkowskich witryny SharePoint Online w centrum administracyjnym usługi SharePoint Online.](../media/o365-powershell-view-permissions.png)
+     ![Przykład wyświetlania elementów członkowskich witryny SharePoint Online w centrum Administracja SharePoint Online.](../media/o365-powershell-view-permissions.png)
 
 5. W oknie dialogowym **Udostępnianie** wybierz pozycję **Zaawansowane**.
 
@@ -238,7 +238,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 > [!NOTE]
 > To polecenie wymaga zainstalowania [modułu SharePoint Online programu PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-Interpretacja tego polecenia programu PowerShell: Pobierz wszystkie witryny SharePoint w bieżącej subskrypcji Microsoft 365 (**Get-SPOSite**) i dla każdej witryny usuń Kena Meyera z listy użytkowników, którzy mogą uzyskać do niej dostęp (**ForEach {Remove-SPOUser -Site $\_. Url -LoginName "kenmyer\@ litwareinc.com"}**).
+Interpretacja tego polecenia programu PowerShell: Pobierz wszystkie witryny SharePoint w bieżącej subskrypcji Microsoft 365 (**Get-SPOSite**) i dla każdej witryny usuń Kena Meyera z listy użytkowników, którzy mogą uzyskać do niej dostęp (**ForEach {Remove-SPOUser -Site $\_. Url -LoginName "kenmyer\@litwareinc.com"}**).
 
 Mówimy Microsoft 365, aby usunąć Ken Meyer z każdej strony, w tym tych, że nie ma dostępu do. Wyniki będą więc pokazywać błędy dla tych witryn, do których nie ma dostępu. Możemy użyć dodatkowego warunku dla tego polecenia, aby usunąć Ken Meyer tylko z witryn, które mają go na liście logowania. Ale zwrócone błędy nie powodują szkody dla samych witryn. Uruchomienie tego polecenia może potrwać kilka minut względem setek witryn, a nie godzin pracy za pośrednictwem Centrum administracyjne platformy Microsoft 365.
 
@@ -248,7 +248,7 @@ Oto kolejny przykład operacji zbiorczej. Użyj tego polecenia, aby dodać *bonn
 Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}
 ```
 
-Interpretacja tego polecenia programu PowerShell jest następująca: Pobierz wszystkie witryny SharePoint w bieżącej subskrypcji Microsoft 365 i dla każdej witryny zezwalaj na dostęp Bonnie Kearney, dodając jej nazwę logowania do grupy **Członkowie witryny (ForEach {Add-SPOUser -Site $\_. Url -LoginName "bkearney\@ litwareinc.com" -Group "Members"}**).
+Interpretacja tego polecenia programu PowerShell jest następująca: Pobierz wszystkie witryny SharePoint w bieżącej subskrypcji Microsoft 365 i dla każdej witryny zezwalaj na dostęp Bonnie Kearney, dodając jej nazwę logowania do grupy **Członkowie witryny (ForEach {Add-SPOUser -Site $\_. Url -LoginName "bkearney\@litwareinc.com" -Group "Members"}**).
 
 ## <a name="powershell-for-microsoft-365-is-great-at-filtering-data"></a>Program PowerShell dla Microsoft 365 doskonale nadaje się do filtrowania danych
 
@@ -258,7 +258,7 @@ Centrum administracyjne platformy Microsoft 365 udostępnia kilka sposobów filt
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centrum administracyjne Exchange</a> umożliwia również łączenie kryteriów filtrowania. Na przykład możesz znaleźć skrzynki pocztowe dla wszystkich osób mieszkających w Bloomington i działających w dziale finansów.
 
-Istnieją jednak ograniczenia dotyczące tego, co można zrobić w centrum administracyjnym Exchange. Na przykład nie można tak łatwo znaleźć skrzynek pocztowych osób mieszkających w Bloomington *lub* San Diego, ani skrzynek pocztowych dla wszystkich osób, które nie mieszkają w Bloomington.
+Istnieją jednak ograniczenia dotyczące tego, co można zrobić w centrum Exchange Administracja. Na przykład nie można tak łatwo znaleźć skrzynek pocztowych osób mieszkających w Bloomington *lub* San Diego, ani skrzynek pocztowych dla wszystkich osób, które nie mieszkają w Bloomington.
 
 Aby uzyskać listę skrzynek pocztowych dla wszystkich osób mieszkających w Bloomington lub San Diego, możesz użyć następującego polecenia programu PowerShell dla Microsoft 365:
 
@@ -330,7 +330,7 @@ Interpretacja tego polecenia programu PowerShell to: Pobierz wszystkich użytkow
 
 Centrum administracyjne platformy Microsoft 365 umożliwia wyświetlanie list danych. Oto przykład centrum administracyjnego usługi Skype dla firm Online z listą użytkowników, którzy zostali włączeni dla usługi Skype dla firm Online:
 
-![Przykład centrum administracyjnego usługi Skype dla firm Online z listą użytkowników, którzy zostali włączeni dla usługi Skype dla firm Online.](../media/o365-powershell-lync-users.png)
+![Przykład centrum Administracja Skype dla firm Online z listą użytkowników, dla których włączono Skype dla firm Online.](../media/o365-powershell-lync-users.png)
 
 Aby zapisać te informacje w pliku, należy wkleić je do dokumentu lub Microsoft Excel arkuszu. Każdy przypadek może wymagać dodatkowego formatowania. Ponadto Centrum administracyjne platformy Microsoft 365 nie umożliwia bezpośredniego drukowania wyświetlonej listy.
 
@@ -378,7 +378,7 @@ Załóżmy, że chcesz utworzyć raport zawierający następujące informacje dl
 
 - Czy użytkownik jest włączony dla usługi Skype dla firm Online
 
-Nie można łatwo utworzyć takiego raportu w Centrum administracyjne platformy Microsoft 365. Zamiast tego należy utworzyć oddzielny dokument do przechowywania informacji, takich jak arkusz Excel. Następnie pobierz wszystkie nazwy użytkowników i informacje o licencjonowaniu z Centrum administracyjne platformy Microsoft 365, pobierz informacje o skrzynce pocztowej z <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a>, uzyskaj informacje Skype dla firm Online z Skype dla firm  Centrum administracyjne online, a następnie połącz te informacje.
+Nie można łatwo utworzyć takiego raportu w Centrum administracyjne platformy Microsoft 365. Zamiast tego należy utworzyć oddzielny dokument do przechowywania informacji, takich jak arkusz Excel. Następnie pobierz wszystkie nazwy użytkowników i informacje o licencjonowaniu z Centrum administracyjne platformy Microsoft 365, pobierz informacje o skrzynce pocztowej z <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a>, uzyskaj informacje Skype dla firm Online z usługi Skype dla firm Online Administracja w centrum, a następnie połącz te informacje.
 
 Alternatywą jest użycie skryptu programu PowerShell do skompilowania raportu.
 

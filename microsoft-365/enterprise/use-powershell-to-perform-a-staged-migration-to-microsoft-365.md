@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: Dowiedz się, jak za pomocą programu PowerShell przenosić zawartość ze źródłowego systemu poczty e-mail w czasie przy użyciu migracji etapowej do Microsoft 365.
-ms.openlocfilehash: 26c12208c00e6b9b33b0be850a4791ddca804c8c
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0c40e617fbd069ab9894d572a5582985194e7a6e
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014217"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139546"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Używanie programu PowerShell do wykonywania migracji etapowej do platformy Microsoft 365
 
@@ -65,7 +65,7 @@ Przed migracją skrzynek pocztowych do Microsoft 365 przy użyciu migracji etapo
 
 - Użyj programu Outlook poza siecią firmową, aby połączyć się ze swoją lokalną skrzynką pocztową programu Exchange.
 
-- Użyj [analizatora łączności zdalnej firmy Microsoft](https://https://testconnectivity.microsoft.com/) , aby przetestować ustawienia połączenia. Użyj funkcji Outlook Anywhere (RPC przez HTTP) lub testów wykrywania automatycznego w programie Outlook.
+- Użyj [analizatora łączności zdalnej firmy Microsoft](https://testconnectivity.microsoft.com/) , aby przetestować ustawienia połączenia. Użyj funkcji Outlook Anywhere (RPC przez HTTP) lub testów wykrywania automatycznego w programie Outlook.
 
 - Uruchom następujące polecenia w programie Exchange Online programu PowerShell:
 

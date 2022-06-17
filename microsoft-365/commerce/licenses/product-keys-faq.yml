@@ -12,12 +12,12 @@ metadata:
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: Klucze produktów — często zadawane pytania
-  ms.openlocfilehash: e42553a7ae588464481bc1573442016f8ce15b55
-  ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+  ms.openlocfilehash: aac4f6aeed6fb8320929d333cdc7b58addfbd221
+  ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64715214"
+  ms.lasthandoff: 06/17/2022
+  ms.locfileid: "66139656"
 title: Klucze produktów — często zadawane pytania
 summary: ''
 sections:
@@ -35,7 +35,7 @@ sections:
       Aby uzyskać więcej informacji, zobacz [Aktywacja usługi online dla otwartych programów — często zadawane pytania](/licensing/online-service-activation-faq).
   - question: >
       Jak mogę znaleźć klucze produktów w Centrum administracyjne platformy Microsoft 365?
-    answer: "1. Zaloguj się do Centrum administracyjne platformy Microsoft 365. \n2. Przejdź do pozycji **BillingYour** >  **productsVolume** >  **licensingDownloads** >  & keys > hover on product and select **View keys (Wyświetl klucze**) i wybierz pozycję Wyświetl klucze.\n\nZnajdziesz informacje o kluczu produktu dla każdego produktu, typ licencjonowania (klucz licencjonowania zbiorowego, usługa zarządzania kluczami (KMS) i klucz aktywacji wielokrotnej (MAK) oraz liczbę używanych i dostępnych aktywacji klucza MAK.\n\nWybierz pozycję **Pobierz wszystkie klucze produktu** , aby pobrać klucze wyświetlane dla licencji na dysk lokalny.\n"
+    answer: "1. Zaloguj się do Centrum administracyjne platformy Microsoft 365. \n2. Przejdź do pozycji Rozliczenia **Produkty** > **Licencjonowanie** > **zbiorowe Pobrane & klucze** > **aktywowanie** >  kursora na produkcie i wybierz pozycję **Wyświetl klucze**.\n\nZnajdziesz informacje o kluczu produktu dla każdego produktu, typ licencjonowania (klucz licencjonowania zbiorowego, usługa zarządzania kluczami (KMS) i klucz aktywacji wielokrotnej (MAK) oraz liczbę używanych i dostępnych aktywacji klucza MAK.\n\nWybierz pozycję **Pobierz wszystkie klucze produktu** , aby pobrać klucze wyświetlane dla licencji na dysk lokalny.\n"
   - question: >
       Jak mogę znaleźć klucze produktu SQL Server?
     answer: >
@@ -45,7 +45,7 @@ sections:
       Klucz można również znaleźć, pobierając plik iso SQL z centrum administracyjnego > .. Plik > DefaultSetup.ini folderu \x64. Przed zainstalowaniem lub uaktualnieniem wersji SQL należy utworzyć kopię zapasową dowolnej istniejącej wersji. Jeśli potrzebujesz pomocy w rozwiązywaniu problemów technicznych podczas instalacji produktu lub aktywacji usługi online, skontaktuj się z pomocą techniczną firmy Microsoft, przesyłając [wniosek o pomoc techniczną](https://support.microsoft.com/oas).
   - question: >
       Jak mogę znaleźć klucz produktu do zakupu licencjonowania zbiorowego?
-    answer: "Jeśli Twoja umowa autoryzuje dostęp do produktu, który wymaga klucza, możesz znaleźć te klucze, przechodząc do pozycji **BillingYour** >  **productsVolume licensingDownloads & keys (RozliczeniaOdtwarzanie produktówVolume** >  **LicensingDownloads** >  & klucze). \n\nJednak niektóre produkty nie wymagają klucza produktu. Te informacje znajdują się w opisie produktu w katalogu Pliki do pobrania i klucze.\n\nAby określić, czy produkt wymaga klucza, przejdź do pozycji [Aktywacja produktu i informacje o kluczu](https://licensingapps.microsoft.com/product-activation). W obszarze Znajdź produkty wybierz produkt lub wyszukaj nazwę swojego produktu.\n"
+    answer: "Jeśli Twoja umowa autoryzuje dostęp do produktu wymagającego klucza, możesz znaleźć te klucze, przechodząc do pozycji **Rozliczenia** > **Produktów** > **Licencjonowanie zbiorowe** > **Pobrane & klucze**. \n\nJednak niektóre produkty nie wymagają klucza produktu. Te informacje znajdują się w opisie produktu w katalogu Pliki do pobrania i klucze.\n\nAby określić, czy produkt wymaga klucza, przejdź do pozycji [Aktywacja produktu i informacje o kluczu](https://licensingapps.microsoft.com/product-activation). W obszarze Znajdź produkty wybierz produkt lub wyszukaj nazwę swojego produktu.\n"
   - question: >
       Co to jest klucz konfiguracji?
     answer: >
@@ -67,7 +67,7 @@ sections:
 
       > [!NOTE]
 
-      > Wszyscy klienci mają prawo do używania kluczy produktów do ponownego obrazowania i obniżania poziomu. Wybierz pozycję Plus, Enterprise Agreement (EA) i Wybierz klientów mają ograniczone prawa do oceny szkoleń i tworzenia kopii zapasowych. Aby uzyskać więcej informacji, zobacz [Informacje o licencjonowaniu produktów](/licensing/learn-more/volume-licensing-briefs).
+      > Wszyscy klienci mają prawo do używania kluczy produktów do ponownego obrazowania i obniżania poziomu. Wybierz pozycję Plus, Enterprise Agreement (EA) i Wybierz klientów mają ograniczone prawa do oceny szkoleń i tworzenia kopii zapasowych. Aby uzyskać więcej informacji, zobacz [Informacje o licencjonowaniu produktów](https://www.microsoft.com/licensing/docs/view/Licensing-Briefs).
 - name: Aktywacja zbiorcza
   questions:
   - question: >
@@ -168,7 +168,7 @@ sections:
       Po pobraniu nośnika serwera z VLSC można go aktywować przy użyciu kreatora aktywacji produktu. Nie musisz znajdować klucza licencji zbiorczej ani klucza konfiguracji produktu w usłudze VLSC. Wykonanie wszystkich kroków kreatora aktywacji powoduje wyświetlenie monitu serwera o nawiązanie połączenia z usługą Microsoft Clearing House za pośrednictwem Internetu w celu zweryfikowania danych. Alternatywnie w przypadku serwerów offline kreator aktywacji oferuje aktywację telefoniczną lub internetową.
 
 
-      Aby rozpocząć, przypisz rolę licencjonowania pulpitu zdalnego dla serwera (**StartAdministrative** >  Tools  > **Menedżer serwera**), a następnie aktywuj usługę RDS z Poziomu Menedżera licencji pulpitu zdalnego. Wybierz pozycję **StartAdministrative** >  **ToolsRemote** >  Desktop Services, a następnie wybierz pozycję **Pulpit zdalny/Menedżer licencji terminalu**.
+      Aby rozpocząć, przypisz rolę licencjonowania pulpitu zdalnego dla serwera (**Uruchom** > **narzędzia** >  administracyjne **Menedżer serwera**), a następnie aktywuj usługę RDS z Poziomu Menedżera licencji pulpitu zdalnego. Wybierz pozycję **Uruchom** > **narzędzia** >  administracyjne **Usługi pulpitu zdalnego**, a następnie wybierz pozycję **Pulpit zdalny/Menedżer licencji terminalu**.
 
 
       Podczas aktywacji zostanie wyświetlony monit o wybranie programu licencji i numeru umowy. W przypadku klientów korzystających z licencji open wprowadź numer autoryzacji. W polu MPSA wprowadź numer konta zakupu (a nie numer umowy MPSA). Jeśli nie masz pewności co do typu programu dla identyfikatora licencji użytego do zakupu licencji cal, przejdź do **podsumowania relacji VLSC** i zapoznaj się z **kolumną Program nadrzędny** .
@@ -190,10 +190,10 @@ sections:
       > Jeśli jesteś klientem licencji open, musisz zakupić co najmniej jedną jednostkę produktu, którą chcesz ponownie wyświetlić, aby uzyskać dostęp do nośnika produktu i otrzymać klucz produktu.
 
 
-      Aby uzyskać więcej informacji na temat praw do ponownego [obrazowania, zobacz Dokumentacja licencjonowania produktów](/licensing/learn-more/volume-licensing-briefs).
+      Aby uzyskać więcej informacji na temat praw do ponownego [obrazowania, zobacz Dokumentacja licencjonowania produktów](https://www.microsoft.com/licensing/docs/view/Licensing-Briefs).
   - question: >
       Jak mogę pobrać moje klucze do pliku lokalnego?
-    answer: "Centrum administracyjne platformy Microsoft 365 oferuje opcję pobrania kluczy produktu do pliku lokalnego do późniejszego użycia. Po pobraniu kluczy produktu ze strony Pliki do pobrania i klucze plik zawiera wszystkie klucze licencji zbiorczej skojarzone z umowami w profilu centrum administracyjnego. Jeśli jednak pobierzesz klucze z widoku Identyfikator licencjonowania na stronie Podsumowanie relacji, plik zawiera tylko klucze skojarzone z wyświetlanym identyfikatorem licencjonowania.\n\nPlik klucza produktu do pobrania jest w formacie rozdzielanym tabulatorami i można go otworzyć w Excel lub edytorze tekstów w celu sortowania i wyświetlania kluczy. Są to kolumny zawarte w pliku: **Identyfikator licencji**, **Program nadrzędny**, **Organizacja**, **Produkt**, **Klucz produktu**, **Typ** i **KLUCZ MAK Aktywacje używane/Dostępne, Miejsca i Stan OSA**. \n\nAby otworzyć pobrany plik w Excel, wykonaj następujące kroki:\n  1. Otwórz Microsoft Excel.\n  2. Wybierz pozycję **PlikOtwórz** > , a następnie wybierz pobrany plik CSV.\n  3. Wybierz pozycję **Rozdzielane** (wartość domyślna), a następnie wybierz pozycję **Rozdzielone tabulatorem** (aby zapobiec wyświetlaniu wszystkich danych w jednej kolumnie).\n  4. Wybierz **Zakończ**. \n\nPlik .CSV zostanie otwarty w Excel, a dane są wyświetlane w oddzielnych kolumnach.\n"
+    answer: "Centrum administracyjne platformy Microsoft 365 oferuje opcję pobrania kluczy produktu do pliku lokalnego do późniejszego użycia. Po pobraniu kluczy produktu ze strony Pliki do pobrania i klucze plik zawiera wszystkie klucze licencji zbiorczej skojarzone z umowami w profilu centrum administracyjnego. Jeśli jednak pobierzesz klucze z widoku Identyfikator licencjonowania na stronie Podsumowanie relacji, plik zawiera tylko klucze skojarzone z wyświetlanym identyfikatorem licencjonowania.\n\nPlik klucza produktu do pobrania jest w formacie rozdzielanym tabulatorami i można go otworzyć w Excel lub edytorze tekstów w celu sortowania i wyświetlania kluczy. Są to kolumny zawarte w pliku: **Identyfikator licencji**, **Program nadrzędny**, **Organizacja**, **Produkt**, **Klucz produktu**, **Typ** i **KLUCZ MAK Aktywacje używane/Dostępne, Miejsca i Stan OSA**. \n\nAby otworzyć pobrany plik w Excel, wykonaj następujące kroki:\n  1. Otwórz Microsoft Excel.\n  2. Wybierz pozycję **Otwórz plik** > , a następnie wybierz pobrany plik CSV.\n  3. Wybierz pozycję **Rozdzielane** (wartość domyślna), a następnie wybierz pozycję **Rozdzielone tabulatorem** (aby zapobiec wyświetlaniu wszystkich danych w jednej kolumnie).\n  4. Wybierz **Zakończ**. \n\nPlik .CSV zostanie otwarty w Excel, a dane są wyświetlane w oddzielnych kolumnach.\n"
 - name: Pomoc techniczna
   questions:
   - question: >

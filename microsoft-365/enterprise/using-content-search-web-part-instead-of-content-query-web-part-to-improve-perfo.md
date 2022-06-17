@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: Dowiedz się, jak zwiększyć wydajność, zastępując składnik Web Part kwerendy zawartości składnikiem Web Part wyszukiwania zawartości w SharePoint Server 2013 i SharePoint Online.
-ms.openlocfilehash: 45b43b3071ca39c67283ac70ab92b20e2fc7e21a
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4c8a97d24320d5380eccc089737947df9b1a0d0b
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621974"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139502"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Używanie składnika Web Part wyszukiwania zawartości zamiast składnika Web Part zapytania o zawartość w celu zwiększenia wydajności w SharePoint Online
 
@@ -72,6 +72,6 @@ Po dodaniu składnika Web Part wyszukiwania zawartości możesz uściślić wysz
   
 ## <a name="query-building-and-testing-tool"></a>Narzędzie do tworzenia i testowania zapytań
 
-Aby uzyskać narzędzie do tworzenia i testowania złożonych zapytań, zobacz Search Query Tool on Codeplex ( [Narzędzie do wyszukiwania zapytań](https://sp2013searchtool.codeplex.com/) w programie Codeplex). 
+Aby uzyskać narzędzie do tworzenia i testowania złożonych zapytań, zobacz [Narzędzie do wyszukiwania zapytań](https://github.com/pnp/PnP-Tools/tree/master/Solutions/SharePoint.Search.QueryTool#download-the-tool).
   
 

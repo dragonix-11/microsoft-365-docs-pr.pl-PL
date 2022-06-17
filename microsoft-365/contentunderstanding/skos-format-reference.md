@@ -1,5 +1,5 @@
 ---
-title: Informacje o formacie SKOS dla SharePoint taksonomii
+title: Dokumentacja formatu SKOS dla taksonomii SharePoint
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,55 +9,55 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: enabler-strategic
 ms.localizationpriority: high
-description: Informacje o formacie SKOS dla SharePoint taksonomii
-ms.openlocfilehash: 95183b64d76a70f69d08cd5a3c9dcf76f4e83bce
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+description: Dokumentacja formatu SKOS dla taksonomii SharePoint
+ms.openlocfilehash: c9dbaae4242155522eec2fff0f7fd4d721e697cc
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62989749"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139678"
 ---
-# <a name="skos-format-reference-for-sharepoint-taxonomy"></a>Informacje o formacie SKOS dla SharePoint taksonomii
+# <a name="skos-format-reference-for-sharepoint-taxonomy"></a>Dokumentacja formatu SKOS dla taksonomii SharePoint
 
-Ten artykuł zawiera słownictwo RDF używane do [SharePoint taksonomii](/dotnet/api/microsoft.sharepoint.taxonomy) i jest oparte na [języku SKOS](https://www.w3.org/TR/skos-primer/). Aby uzyskać numerowanie tej składni RDF, użyj funkcji ŻÓŁW.RDF.[](https://www.w3.org/TR/turtle/)
+Ten artykuł zawiera słownictwo RDF używane do reprezentowania [taksonomii SharePoint](/dotnet/api/microsoft.sharepoint.taxonomy) i jest oparte na [SKOS](https://www.w3.org/TR/skos-primer/). Do serializacji tej składni RDF użyj [ŻÓŁWIA](https://www.w3.org/TR/turtle/) RDF.
 
-W poniższej tabeli przedstawiono [odpowiedniki SKOS](https://www.w3.org/TR/skos-primer/) dla [słownictwa SharePoint taksonomii](/dotnet/api/microsoft.sharepoint.taxonomy). SharePoint wartości [SKOS](https://www.w3.org/TR/skos-primer/), które nie mają odpowiednika SharePoint taksonomii.
+W poniższej tabeli [przedstawiono odpowiedniki SKOS](https://www.w3.org/TR/skos-primer/) dla [słownictwa taksonomii SharePoint](/dotnet/api/microsoft.sharepoint.taxonomy). SharePoint nie obsługuje wartości [SKOS](https://www.w3.org/TR/skos-primer/), które nie mają odpowiednika taksonomii SharePoint.
 
-|SharePoint taksonomii|Odpowiednik SKOS|
+|taksonomia SharePoint|Odpowiednik SKOS|
 |:-----------------|:--------------|
-|Sharepoint-taksonomia:Termin|skos:Concept|
+|sharepoint-taksonomia:Termin|skos:Concept|
 |sharepoint-taksonomia:TermSet|skos:ConceptScheme|
 |sharepoint-taksonomia:inTermSet|skos:inScheme|
 |sharepoint-taksonomia:hasTopLevelTerm|skos:hasTopConcept|
 |sharepoint-taksonomia:topLevelTermOf|skos:topConceptOf|
-|sharepoint-taksonomia:etykieta domyślna|skos:prefLabel|
+|sharepoint-taksonomia:defaultLabel|skos:prefLabel|
 |sharepoint-taksonomia:termSetName|skos:prefLabel|
-|sharepoint-taksonomia:nazwa_właściwości|skos:prefLabel|
-|sharepoint-taksonomia:etykieta inna|skos:altLabel|
-|sharepoint-taksonomia:opis|skos:definition|
-|sharepoint-taksonomia:element nadrzędny|skos:broader|
-|sharepoint-taksonomia:dziecko|skos:węższy|
+|sharepoint-taksonomia:propertyName|skos:prefLabel|
+|sharepoint-taksonomia:otherLabel|skos:altLabel|
+|sharepoint-taksonomia:description|skos:definition|
+|sharepoint-taksonomia:parent|skos:broader|
+|sharepoint-taksonomia:child|skos:narrower|
 
-W poniższej tabeli przedstawiono jednostki słownictwa SharePoint taksonomii pochodzące z [OWL](https://www.w3.org/TR/owl2-primer/).
+W poniższej tabeli przedstawiono jednostki słownictwa taksonomii SharePoint pochodzące z [protokołu OWL](https://www.w3.org/TR/owl2-primer/).
 
-|SharePoint słownictwa taksonomii|Pochodny od OWL|
+|słownictwo taksonomii SharePoint|Pochodzi z OWL|
 |:-----------------------------|:----------------------|
 |sharepoint-taksonomia:isAvailableForTagging|owl:datatypeproperty|
 |sharepoint-taksonomia:SharedCustomPropertyForTerm|owl:ObjectProperty|
 |sharepoint-taksonomia:LocalCustomPropertyForTerm|owl:ObjectProperty|
 |sharepoint-taksonomia:CustomPropertyForTermSet|owl:ObjectProperty|
 
-## <a name="sharepoint-taxonomy-vocabulary"></a>SharePoint słownictwa taksonomii
+## <a name="sharepoint-taxonomy-vocabulary"></a>słownictwo taksonomii SharePoint
 
-Taksonomia to formalny system klasyfikacji. Taksonomia grupuje wyrazy, etykiety i terminy opisujące informacje, a następnie rozmieszcza grupy w hierarchii.
+Taksonomia jest formalnym systemem klasyfikacji. Taksonomia grupuje słowa, etykiety i terminy, które coś opisują, a następnie rozmieszcza grupy w hierarchii.
 
-**Sharepoint-taksonomia:Termin**
+**sharepoint-taksonomia:Termin**
 
 Reprezentuje termin lub słowo kluczowe w hierarchii zarządzanych metadanych.
 
-Termin [jest](/dotnet/api/microsoft.sharepoint.taxonomy.term) niepodzielną jednostką niepodzielną SharePoint [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore). Każdy [termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) należy do [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset) należącego do [grupy terminów](/dotnet/api/microsoft.sharepoint.taxonomy.group).
+[Termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) jest niepodzielną jednostką magazynu SharePoint [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore). Każdy [termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) należy do [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset) , który należy do [grupy termgroup](/dotnet/api/microsoft.sharepoint.taxonomy.group).
 
-Składnia definiowania [terminu jest](/dotnet/api/microsoft.sharepoint.taxonomy.term) następująca:
+Składnia definiująca [termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) jest następująca:
 
 ```SKOS
 ex:TermA    a    sharepoint-taxonomy:Term;
@@ -68,27 +68,27 @@ ex:TermA    a    sharepoint-taxonomy:Term;
     sharePoint-taxonomy:defaultLabel    “Term A”@en-us.
 ```
 
-Termin [ten](/dotnet/api/microsoft.sharepoint.taxonomy.term) występuje w obrębie [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Etykieta Domyślna to [nazwa terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) wyświetlana w graficznej reprezentacji. Pola wymagane do zdefiniowania [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) to:
+[Termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) obowiązkowo istnieje w ramach [zestawu TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). DefaultLabel to nazwa [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) wyświetlana w wizualnej reprezentacji. Pola wymagane do zdefiniowania [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) obejmują:
 
-- sharepoint-taksonomia:etykieta domyślna
+- sharepoint-taksonomia:defaultLabel
 - sharepoint-taksonomia:inTermSet
 
-Termin [może](/dotnet/api/microsoft.sharepoint.taxonomy.term) :
+[Termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) może:
 
-- Należy hierarchicznie związek z innym [terminem](/dotnet/api/microsoft.sharepoint.taxonomy.term) pod warunkiem, że oba [terminy](/dotnet/api/microsoft.sharepoint.taxonomy.term) należą do [tego samego zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
-- Należy mieć wiele [terminów podrzędnych](/dotnet/api/microsoft.sharepoint.taxonomy.term), ale tylko jeden termin [nadrzędny](/dotnet/api/microsoft.sharepoint.taxonomy.term).
-- Nie zdefiniowano [nadrzędnego terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) , jeśli jest to element najwyższego wielopoziomowego zestawu [terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
-- Have one defaultLabel, per [TermStore working](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) language.
-- Nie istnieje, jeśli nie zawiera [nadrzędnego terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) ani najwyższego zestawu rekordów.[](/dotnet/api/microsoft.sharepoint.taxonomy.termset)
-- Na tym samym poziomie hierarchii musi być tylko unikatowa etykieta domyślna.
+- Bądź hierarchicznie powiązany z innym [terminem](/dotnet/api/microsoft.sharepoint.taxonomy.term) , który jest dostarczany, [oba warunki](/dotnet/api/microsoft.sharepoint.taxonomy.term) należą do tego samego [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
+- Mieć wiele [terminów podrzędnych](/dotnet/api/microsoft.sharepoint.taxonomy.term), ale tylko jeden [termin nadrzędny](/dotnet/api/microsoft.sharepoint.taxonomy.term).
+- Nie zdefiniowano [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) nadrzędnego, jeśli jest to topLevelTermOf [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
+- Na język roboczy [magazynu TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) należy mieć jedną wartość defaultLabel.
+- Nie istnieje, jeśli nie zawiera [terminu nadrzędnego](/dotnet/api/microsoft.sharepoint.taxonomy.term) ani nie jest topLevelTermOf [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
+- Na tym samym poziomie hierarchicznym ma tylko unikatowy element defaultLabel.
 
 **sharepoint-taksonomia:TermSet**
 
-Reprezentuje hierarchiczny lub płaski zestaw obiektów terminów, nazywany "zestawem terminów".
+Reprezentuje hierarchiczny lub płaski zestaw obiektów terminów znanych jako "TermSet".
 
-Jak sama nazwa wskazuje, zestaw terminów jest zestawem [terminów](/dotnet/api/microsoft.sharepoint.taxonomy.term). Termin [w](/dotnet/api/microsoft.sharepoint.taxonomy.term) [łacie magazynu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) musi należeć do [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Żaden [termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) nie może istnieć niezależnie.
+Jak sugeruje nazwa, TermSet jest zestawem [warunków](/dotnet/api/microsoft.sharepoint.taxonomy.term). [Termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) w magazynie [terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) musi należeć do [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Żaden [termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) nie może istnieć niezależnie.
 
-Składnia definiowania [zestawu terminów jest](/dotnet/api/microsoft.sharepoint.taxonomy.termset) następująca:
+Składnia definiująca [zestaw terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset) to:
 
 ```SKOS
 ex:TermSetA    a    sharepoint-taxonomy:TermSet;
@@ -97,30 +97,30 @@ ex:TermSetA    a    sharepoint-taxonomy:TermSet;
     sharepoint-taxonomy:hasTopLevelTerm    Ex:Term A.
 ```
 
-[Zestawy terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset) są logicznie grupowane w [grupach okresów](/dotnet/api/microsoft.sharepoint.taxonomy.group). Pole wymagane do zdefiniowania [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset) jest:
+[Zestawy terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset) są logicznie pogrupowane w [grupach terminów](/dotnet/api/microsoft.sharepoint.taxonomy.group). Pole wymagane do zdefiniowania [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset) to:
 
 - sharepoint-taksonomia:termSetName
 
-W przypadku podanej nazwy termSetName nie jest unikatowa w grupie [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group), program SharePoint dołącza na końcu nazwy liczbę w celu zachowania unikatowości nazwy termSetName(y).
+W przypadku podanej nazwy termSetName nie jest unikatowa w grupie [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group), SharePoint dołącza liczbę na końcu nazwy, aby zachować unikatowość nazw termSetName.s.
 
 **sharepoint-taksonomia:hasTopLevelTerm**
 
-SharePoint używa tej właściwości do zamapowania najważniejszego terminu w [](/dotnet/api/microsoft.sharepoint.taxonomy.term) obiekcie [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset), który jest punktem wejścia do hierarchii terminów w [](/dotnet/api/microsoft.sharepoint.taxonomy.term) [zestawach terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Jest to odwrotna zależność do taksonomii sharepoint-taksonomii:topLevelTermOf.
+SharePoint używa tej właściwości do mapowania najwięcej [terminów](/dotnet/api/microsoft.sharepoint.taxonomy.term) w [zestawie terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset), który jest punktem wejścia do hierarchii [terminów](/dotnet/api/microsoft.sharepoint.taxonomy.term) w [zestawie terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Jest to odwrotna relacja do elementu sharepoint-taksonomia:topLevelTermOf.
 
-Składnia definiowania tego jest następująca:
+Składnia do zdefiniowania tego elementu to:
 
 ```SKOS
 ex:TermSetA    sharepoint-taxonomy:hasTopLevelTerm    ex:TermA.
 ```
 
 > [!NOTE]
-> Nie można zdefiniować najwyższego [poziomu termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) [nadrzędny.](/dotnet/api/microsoft.sharepoint.taxonomy.term)
+> Nie można zdefiniować [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) najwyższego poziomu [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) nadrzędnego.
 
 **sharepoint-taksonomia:topLevelTermOf**
 
-Sharepoint-taksonomia:topLevelTermOf jest odwrotnością taksonomii sharepoint:hasTopLevelTerm
+Sharepoint-taksonomia:topLevelTermOf jest odwrotnością elementu sharepoint-taksonomia:hasTopLevelTerm
 
-Składnia definiowania tego jest następująca:
+Składnia do zdefiniowania tego elementu to:
 
 ```SKOS
 ex:TermA    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA.
@@ -128,47 +128,47 @@ ex:TermA    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA.
 
 **sharepoint-taksonomia:inTermSet**
 
-Skorzystaj z tej funkcji, [aby zamapować termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) na [zestaw okresów](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Termin [może](/dotnet/api/microsoft.sharepoint.taxonomy.term) istnieć tylko w jednym [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset). SharePoint tej właściwości podczas [definiowania terminu](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/3a3cd54dd076b18bdff1d43b3e342897f8704c23/microsoft-365/contentunderstanding/skos-format-reference.md#term).
+Służy do mapowania [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) na [zestaw terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset). [Termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) może istnieć tylko w jednym [zestawie terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset). SharePoint wymaga tej właściwości podczas [definiowania terminu](#sharepoint-taxonomy-vocabulary).
 
 ## <a name="required-labels"></a>Wymagane etykiety
 
-Organizacja może przed rozpoczęciem korzystania z zarządzanych metadanych wykonać staranne planowanie. Ilość planowania, która należy wykonać, zależy od tego, jak formalna jest taksonomia. Zależy to również od tego, ile kontroli chcesz narzucić na metadane. Na każdym poziomie hierarchii należy skonfigurować etykiety wymagane dla zestawu terminów lub okresów.
+Twoja organizacja może chcieć dokładnie zaplanować, zanim zaczniesz używać zarządzanych metadanych. Ilość planowania, które należy zrobić, zależy od tego, jak formalna jest taksonomia. Zależy to również od tego, ile kontroli chcesz nałożyć na metadane. Na każdym poziomie hierarchii należy skonfigurować wymagane etykiety dla zestawu terminów lub terminów.
 
-Termin może mieć co najmniej jedną etykietę w języku domyślnym oraz zero lub więcej etykiet w języku innym niż domyślny. Jeśli termin ma etykiety w języku, jedna z etykiet musi być etykietą domyślną.
+Termin może mieć co najmniej jedną etykietę w języku domyślnym i zero lub więcej etykiet w języku innym niż domyślny. Jeśli termin zawiera etykiety w języku, jedną z etykiet musi być etykieta domyślna.
 
-**sharepoint-taksonomia:etykieta domyślna**
+**sharepoint-taksonomia:defaultLabel**
 
-Tej domyślnej etykiety lexowej należy używać [w przypadku terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) , który jest parametrem wymaganym dla [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term). Użyj, aby wizualnie przedstawiać [termin](/dotnet/api/microsoft.sharepoint.taxonomy.term).
+Użyj tej domyślnej etykiety leksykalne dla [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) , który jest parametrem wymaganym dla [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term). Służy do wizualnego reprezentowania [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term).
 
-Składnia definiowania etykiety domyślnej to:
+Składnia definiująca wartość defaultLabel to:
 
 ```SKOS
 ex:TermA    sharepoint-taxonomy:defaultLabel    “Term A”@en-us.
 ```
 
-Etykieta domyślna zawiera dwie części — ciąg i tag języka. Język musi być jednym z języków [roboczych sklepu TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) . Etykieta domyślna musi być unikatowa dla wszystkich [warunków](/dotnet/api/microsoft.sharepoint.taxonomy.term) w tym samym [zestawu](/dotnet/api/microsoft.sharepoint.taxonomy.termset) terminów na tym samym poziomie hierarchii.
+Etykieta defaultLabel zawiera dwie części — ciąg i tag języka. Język musi być jednym z języków roboczych [magazynu TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) . Wartość defaultLabel musi być unikatowa dla wszystkich [terminów](/dotnet/api/microsoft.sharepoint.taxonomy.term) w tym samym [zestawie terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset) na tym samym poziomie hierarchicznym.
 
 **sharepoint-taksonomia:termSetName**
 
 Pobiera i ustawia nazwę bieżącego obiektu TermSet.
 
-To etykieta lexyczna dla [zestawu warunków (TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)) w języku pracy [magazynu](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) terminów. Jest to parametr wymagany dla [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Wizualne przedstawianie [zestawu okresów](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
+Etykieta leksykalna dla zestawu [terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset) w języku roboczym [Magazynu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) . Jest to parametr wymagany dla zestawu [terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Służy do wizualnego reprezentowania [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
 
-Składnia definiowania terminuSetName jest następująca:
+Składnia definiująca terminSetName to:
 
 ```SKOS
 ex:TermA    sharepoint-taxonomy:TermSetName    “Term Set A”@en-us.
 ```
 
-**sharepoint-taksonomia:nazwa_właściwości**
+**sharepoint-taksonomia:propertyName**
 
-Pobiera i ustawia nazwę właściwości bieżącego obiektu TermSet.
+Pobiera i ustawia nazwę właściwości dla bieżącego obiektu TermSet.
 
-To jest etykieta lexczna dla taksonomii sharepoint-taksonomii:SharedCustomPropertyForTerm, sharepoint-taksonomia:LocalCustomPropertyForTerm i sharepoint-taksonomia:CustomPropertyForTermSet w języku pracy witryny [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) .
+Jest to etykieta leksykalna dla elementu sharepoint-taksonomii:SharedCustomPropertyForTerm, sharepoint-taksonomia:LocalCustomPropertyForTerm i sharepoint-taksonomia:CustomPropertyForTermSet w języku roboczym [magazynu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) .
 
-Właściwość sharepoint-taksonomia:nazwa_właściwości jest traktowana jak klucz właściwości CustomProperty.
+Element sharepoint-taksonomia:propertyName jest traktowany jako klucz właściwości CustomProperty.
 
-Składnia definiowania nazwy właściwości to:
+Składnia definiująca propetyName to:
 
 ```SKOS
 ex:SharedCustomProperty1    sharepoint-taxonomy:propertyName    “Shared Custom Property Key 1”@en-us.
@@ -176,13 +176,13 @@ ex:SharedCustomProperty1    sharepoint-taxonomy:propertyName    “Shared Custom
 
 ## <a name="optional-labels"></a>Etykiety opcjonalne
 
-Możesz również dodać etykiety opcjonalne do taksonomii.
+Możesz również dodać opcjonalne etykiety do taksonomii.
 
-**sharepoint-taksonomia:etykieta inna**
+**sharepoint-taksonomia:otherLabel**
 
-Jest to alternatywna etykieta lexyczna dla [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term).
+Jest to alternatywna etykieta leksykalna dla [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term).
 
-Składnia definiowania etykiety innej jest następująca:
+Składnia definiująca element otherLabel to:
 
 ```SKOS
 ex:TermA    sharepoint-taxonomy:otherLabel    “Term A”@en-us.
@@ -190,43 +190,43 @@ ex:TermA    sharepoint-taxonomy:otherLabel    “Term A”@en-us.
 
 ## <a name="semantic-relationships"></a>Relacje semantyczne
 
-Taksonomie mają hierarchiczną, a czasami prostą "powiązaną" relację skojarzoną z terminem, ale niektóre z nich mają "relacje semantyczne" lub utworzone niestandardowe.
+Taksonomie mają hierarchiczną, a czasami prostą relację asocjacyjną "powiązanego terminu", ale niektóre z nich mają "relacje semantyczne" lub niestandardowe relacje.
 
-**sharepoint-taksonomia:element nadrzędny**
+**sharepoint-taksonomia:parent**
 
-To hierarchiczne relacja terminu [z](/dotnet/api/microsoft.sharepoint.taxonomy.term) innym [terminem](/dotnet/api/microsoft.sharepoint.taxonomy.term). Termin [może](/dotnet/api/microsoft.sharepoint.taxonomy.term) być terminem najwyższego [](/dotnet/api/microsoft.sharepoint.taxonomy.term) poziomu w [zestawach](/dotnet/api/microsoft.sharepoint.taxonomy.termset) terminów, ale na wypadek, gdy nie musi mieć nadrzędnego [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term).
+Ten hierarchicznie wiąże [termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) z innym [terminem](/dotnet/api/microsoft.sharepoint.taxonomy.term). [Termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) może być [terminem](/dotnet/api/microsoft.sharepoint.taxonomy.term) najwyższego poziomu zestawu [terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset), ale jeśli nie, musi mieć [termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) nadrzędny.
 
-Składnia definiowania elementu nadrzędnego jest następująca:
+Składnia definiująca element nadrzędny to:
 
 ```SKOS
 ex:TermA1    sharepoint-taxonomy:parent    ex:TermA.
 ```
 
-Oznacza to, że termA jest elementem nadrzędnym, a termA jest elementem podrzędnym.
+Oznacza to, że terma jest elementem nadrzędnym, a terma jest elementem podrzędnym.
 
-**sharepoint-taksonomia:dziecko**
+**sharepoint-taksonomia:child**
 
-Obiekt zawiera co najmniej jedno wystąpienie podrzędne zestawu okresów, do których dostęp można uzyskać za pośrednictwem właściwości TermSets. Ta klasa zawiera również metody tworzenia nowych podrzędnych obiektów termset. Uprawnienia do edytowania wystąpień podrzędnego zestawu okresów i okresów są określone w grupie.
+Obiekt zawiera co najmniej jedno podrzędne wystąpienie zestawu terminów, do których można uzyskać dostęp za pośrednictwem właściwości TermSets. Ta klasa udostępnia również metody tworzenia nowych podrzędnych obiektów TermSet. Uprawnienia do edytowania wystąpień podrzędnych terminów i zestawów terminów są określone w grupie.
 
-To hierarchiczne relacja terminu [z](/dotnet/api/microsoft.sharepoint.taxonomy.term) innym [terminem](/dotnet/api/microsoft.sharepoint.taxonomy.term).
+Ten hierarchicznie wiąże [termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) z innym [terminem](/dotnet/api/microsoft.sharepoint.taxonomy.term).
 
-Składnia definiowania dziecka jest następująca:
+Składnia definiująca element podrzędny to:
 
 ```SKOS
 ex:TermA    sharepoint-taxonomy:child    ex:TermA1.
 ```
 
-Oznacza to, że termA jest elementem nadrzędnym, a termA jest elementem podrzędnym.
+Oznacza to, że terma jest elementem nadrzędnym, a terma jest elementem podrzędnym.
 
-## <a name="documentation-notes"></a>Uwagi dotyczące dokumentacji
+## <a name="documentation-notes"></a>Informacje o dokumentacji
 
-W tej sekcji omówiono taksonomię podaną w firmie Microsoft. SharePoint. Przestrzeń nazw taksonomii.
+W tej sekcji omówiono taksonomię opisaną w artykule Microsoft. SharePoint. Przestrzeń nazw taksonomii.
 
-**sharepoint-taksonomia:opis**
+**sharepoint-taksonomia:description**
 
-Jest to szczegółowe objaśnienie dowolnego [podmiotu słownictwa SharePoint taksonomii](/dotnet/api/microsoft.sharepoint.taxonomy).
+Jest to szczegółowe wyjaśnienie każdej [jednostki słownictwa taksonomii SharePoint](/dotnet/api/microsoft.sharepoint.taxonomy).
 
-Składnia dodawania opisu jest następująca:
+Składnia dodawania opisu to:
 
 ```SKOS
 ex:TermA    sharepoint-taxonomy:description    “Term A is the top level term of TermSetA”@en-us.
@@ -234,13 +234,13 @@ ex:TermA    sharepoint-taxonomy:description    “Term A is the top level term o
 
 ## <a name="custom-properties"></a>Właściwości niestandardowe
 
-Pobiera kolekcję niestandardowych obiektów właściwości dla bieżącego obiektu Term ze słownika tylko do odczytu.
+Pobiera kolekcję obiektów właściwości niestandardowych dla bieżącego obiektu Term ze słownika tylko do odczytu.
 
-Właściwości niestandardowe to pary wartości kluczy, które można zdefiniować dla określonego terminu [](/dotnet/api/microsoft.sharepoint.taxonomy.term) lub zestawu terminów [w celu](/dotnet/api/microsoft.sharepoint.taxonomy.termset) dalszego opisu tego terminu lub [](/dotnet/api/microsoft.sharepoint.taxonomy.term) [zestawu.](/dotnet/api/microsoft.sharepoint.taxonomy.termset) SharePoint określa klucz właściwości niestandardowej za pomocą właściwościName.
+Właściwości niestandardowe to pary klucz-wartości, które można zdefiniować dla [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) lub [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset) w celu dalszego opisu [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) lub [zestawu terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset). SharePoint określa klucz właściwości niestandardowej za pomocą właściwości propertyName.
 
 **sharepoint-taksonomia:CustomPropertyForTermSet**
 
-Składnia definiowania tego jest następująca:
+Składnia do zdefiniowania tego elementu to:
 
 ```SKOS
 ex:CustomProp1    rdf:type    sharepoint-taxonomy:CustomPropertyForTermSet;
@@ -251,9 +251,9 @@ ex:TermSetA    ex:CustomProp1    “Red”@en-us.
 
 **sharepoint-taksonomia:SharedCustomPropertyForTerm**
 
-Jeśli właściwość niestandardowa terminu [musi](/dotnet/api/microsoft.sharepoint.taxonomy.term) zostać zrealizowana razem z terminem[, to](/dotnet/api/microsoft.sharepoint.taxonomy.term) w przypadku ponownego użycia [](/dotnet/api/microsoft.sharepoint.taxonomy.term) terminu w innym miejscu należy zdefiniować go w obszarze SharedCustomPropertyForTerm.
+Jeśli właściwość niestandardowa [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) musi być przenoszona wraz z [terminem](/dotnet/api/microsoft.sharepoint.taxonomy.term), podczas ponownego używania [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) w innym miejscu należy zdefiniować ją w obszarze SharedCustomPropertyForTerm.
 
-Składnia definiowania tego jest następująca:
+Składnia do zdefiniowania tego elementu to:
 
 ```SKOS
 ex:CustomProp2    rdf:type sharepoint-taxonomy:SharedCustomPropertyForTerm;
@@ -263,9 +263,9 @@ ex:TermA    ex:CustomProp2    “5 cm”@en-us.
 ```
 **sharepoint-taksonomia:LocalCustomPropertyForTerm**
 
-Jeśli właściwość niestandardowa terminu nie [](/dotnet/api/microsoft.sharepoint.taxonomy.term) musi być przesunana razem z terminem[, ponowne](/dotnet/api/microsoft.sharepoint.taxonomy.term) użycie tego terminu [](/dotnet/api/microsoft.sharepoint.taxonomy.term) będzie konieczne w obszarze LocalCustomPropertyForTerm.
+Jeśli właściwość niestandardowa [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) nie musi być przenoszona wraz z [terminem](/dotnet/api/microsoft.sharepoint.taxonomy.term), podczas ponownego używania [terminu](/dotnet/api/microsoft.sharepoint.taxonomy.term) w innym miejscu należy zdefiniować go w obszarze LocalCustomPropertyForTerm.
 
-Składnia definiowania tego jest następująca:
+Składnia do zdefiniowania tego elementu to:
 
 ```SKOS
 ex:CustomProp3    rdf:type sharepoint-taxonomy:LocalCustomPropertyForTerm;
@@ -276,13 +276,13 @@ ex:TermA    ex:CustomProp3    “5 cm”@en-us.
 
 ## <a name="data-properties"></a>Właściwości danych
 
-Na każdym poziomie hierarchii można skonfigurować określone właściwości danych dla zestawu okresów lub okresów.
+Na każdym poziomie hierarchii można skonfigurować określone właściwości danych dla zestawu terminów lub terminów.
 
 **sharepoint-taksonomia:isAvailableForTagging**
 
-Ten sposób określania, czy [termin lub](/dotnet/api/microsoft.sharepoint.taxonomy.term) zestaw [termów](/dotnet/api/microsoft.sharepoint.taxonomy.termset) jest dostępny w SharePoint listach i bibliotekach.
+Użyj tego polecenia, aby określić, czy [termin](/dotnet/api/microsoft.sharepoint.taxonomy.term) lub [zestaw terminów](/dotnet/api/microsoft.sharepoint.taxonomy.termset) jest dostępny w SharePoint list i bibliotek.
 
-Składnia tej funkcji jest następująca:
+W tym celu składnia to:
 
 ```SKOS
 ex:TermA    sharepoint-taxonomy:isAvailableForTagging     "true"^^xsd:Boolean;
@@ -290,33 +290,33 @@ ex:TermA    sharepoint-taxonomy:isAvailableForTagging     "true"^^xsd:Boolean;
 
 ## <a name="domain-and-range"></a>Domena i zakres
 
-W poniższej tabeli opisano domenę i zakres SharePoint słownictwa taksonomii.
+W poniższej tabeli opisano domenę i zakres słownictwa taksonomii SharePoint.
 
 |Predykaty/czasownik|Znaczenie|Domain (Domena)|Zakres|
 |:--------------|:------|:-----|:----|
-inTermSet|W zestawie okresów|Termin|Zestaw okresów|
-inTermGroup|W grupie termin|TermSet|TermGroup|
-topLevelTermOf|to najwyższego poziomu termin|Termin|TermSet|
-hasTopLevelTerm|Ma termin najwyższego poziomu|Zestaw okresów|Termin|
-termSetName|Zestaw okresów ma nazwę|Termin|Zwykły literał|
-etykieta domyślna|Termin ma etykietę domyślną|Termin|Zwykły literał|
-etykieta inna|Termin ma inną etykietę|Termin|Zwykły literał|
-propertyName|Ma etykietę właściwości|SharedCustomPropertyForTerm, LocalCustomPropertyForTerm, CustomPropertyForTermSet |Wartość logiczna, ciąg, liczba całkowita, dziesiętna, podwójna|
-|opis|Zawiera opis|Wszystkie|Zwykły literał|
-|element nadrzędny|Ma rodzica|Termin|Termin|
-|dziecko|Ma dziecko|Termin|Termin|
-|isAvailableForTagging|Dostępne do otagowania|Termin, zestaw okresów|Wartość logiczna|
-|SharedCustomPropertyForTerm|Ma udostępnioną właściwość niestandardową|Termin|Wartość logiczna, ciąg, liczba całkowita, dziesiętny, podwójna|
-|LocalCustomPropertyForTerm|Ma lokalną właściwość niestandardową|Termin|Wartość logiczna, ciąg, liczba całkowita, dziesiętna, podwójna|
-|CustomPropertyForTermSet|Ma właściwość niestandardową|TermSet|Wartość logiczna, ciąg, liczba całkowita, dziesiętna, podwójna|
+inTermSet|W zestawie terminów|Okres|Zestaw terminów|
+inTermGroup|W grupie terminów|Zestaw terminów|TermGroup|
+topLevelTermOf|Jest terminem najwyższego poziomu|Okres|Zestaw terminów|
+hasTopLevelTerm|Ma termin najwyższego poziomu|Zestaw terminów|Okres|
+termSetName|Zestaw terminów ma nazwę|Okres|Zwykły literał|
+defaultLabel|Termin ma etykietę domyślną|Okres|Zwykły literał|
+otherLabel|Termin ma inną etykietę|Okres|Zwykły literał|
+Propertyname|Ma etykietę właściwości|SharedCustomPropertyForTerm, LocalCustomPropertyForTerm, CustomPropertyForTermSet |Wartość logiczna, ciąg, liczba całkowita, liczba dziesiętna, podwójna|
+|Opis|Ma opis|Wszystkie|Zwykły literał|
+|Nadrzędny|Ma element nadrzędny|Okres|Okres|
+|Dziecko|Ma element podrzędny|Okres|Okres|
+|isAvailableForTagging|Jest dostępny do tagowania|Termin, zestaw terminów|Wartość logiczna|
+|SharedCustomPropertyForTerm|Ma udostępnioną właściwość niestandardową|Okres|Wartość logiczna, ciąg, liczba całkowita, liczba dziesiętna, podwójna|
+|LocalCustomPropertyForTerm|Ma lokalną właściwość niestandardową|Okres|Wartość logiczna, ciąg, liczba całkowita, liczba dziesiętna, podwójna|
+|CustomPropertyForTermSet|Ma właściwość niestandardową|Zestaw terminów|Wartość logiczna, ciąg, liczba całkowita, liczba dziesiętna, podwójna|
 
-[Prawidłowe scenariusze SKOS](https://www.w3.org/TR/skos-primer/), SharePoint nie zezwalają na [taksonomię](/dotnet/api/microsoft.sharepoint.taxonomy):
+[Prawidłowe scenariusze SKOS](https://www.w3.org/TR/skos-primer/), które [SharePoint taksonomii](/dotnet/api/microsoft.sharepoint.taxonomy), nie zezwalają na:
 
-- Nadmiarowość hierarchiczna — koncepcję [SKOS](https://www.w3.org/TR/skos-primer/) można dołączyć do kilku szerszej koncepcji jednocześnie, ale taksonomia programu SharePoint:Termin może mieć tylko jedną taksonomię sharepoint:element nadrzędny, przez co zależność cykliczna warunków również nie jest dozwolona.
-- Warunki oddzielone nie są dozwolone SharePoint taksonomii. Każda taksonomia programu SharePoint:Termin powinien mieć element sharepoint-taksonomia:element nadrzędny lub powinien to być taksonomia programu SharePoint:topLevelTerm zestawu terminów.
-- SharePoint taksonomii nie obsługuje relacji skojarzeń.
-- SharePoint tylko 2 typy relacji hierarchicznych — sharepoint-taksonomia:nadrzędny i sharepoint-taksonomia:dziecko.
-- W [przeciwieństwie do SKOS](https://www.w3.org/TR/skos-primer/) relacji hierarchicznej w SharePoint słownictwa taksonomii, można określić tylko przy użyciu warunków w tym samym zestawu terminów.
+- Nadmiarowość hierarchiczna — koncepcja [SKOS](https://www.w3.org/TR/skos-primer/) może być jednocześnie dołączona do kilku szerszych pojęć, ale właściwość sharepoint-taksonomia:Termin może mieć tylko jedną taksonomię sharepoint-taksonomię:nadrzędną, stąd zależność cykliczna, warunków również nie jest dozwolona.
+- Oddzielone terminy nie są dozwolone w SharePoint taksonomii. Każda taksonomia sharepoint:Term powinna mieć element sharepoint-taksonomia:parent lub powinien być elementem sharepoint-taksonomia:topLevelTermOf zestawu terminów.
+- SharePoint taksonomia nie obsługuje stosunków asocjacyjnych.
+- SharePoint taksonomia zezwala tylko na 2 typy relacji hierarchicznych — sharepoint-taksonomia:parent i sharepoint-Taxonomy:child.
+- W przeciwieństwie do [usługi SKOS](https://www.w3.org/TR/skos-primer/) relację hierarchiczną w SharePoint słownictwa taksonomii można ustanowić tylko za pomocą warunków w ramach tego samego zestawu terminów.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 05/16/2022
+ms.date: 06/17/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 19f5267759f81de60e04659681b3698dd53f320d
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 00db46643d3f2b49003194075c44970a20ba83e9
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102289"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139436"
 ---
 # <a name="compare-microsoft-defender-for-endpoint-plans"></a>Porównanie planów Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -37,11 +37,27 @@ Ten artykuł ułatwia wyjaśnienie, jaką ochronę zapewniają różne funkcje d
 
 ## <a name="compare-defender-for-endpoint-plans"></a>Porównanie planów ochrony punktu końcowego w usłudze Microsoft Defender
 
-| Subskrypcji | Co jest dołączone |
+W poniższej tabeli przedstawiono podsumowanie elementów uwzględnionych w każdym planie usługi Defender for Endpoint.
+
+| Plan | Co jest dołączone |
 |:---|:---|
-| [Ochrona punktu końcowego w usłudze Microsoft Defender — Plan 1](defender-endpoint-plan-1.md) | [Ochrona nowej generacji](defender-endpoint-plan-1.md#next-generation-protection) <br/>(obejmuje oprogramowanie chroniące przed złośliwym kodem i oprogramowanie antywirusowe) <p> [Zmniejszanie obszaru podatnego na ataki](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Ręczne akcje odpowiedzi](defender-endpoint-plan-1.md#manual-response-actions) <p> [Scentralizowane zarządzanie](defender-endpoint-plan-1.md#centralized-management) <p>[Raporty zabezpieczeń](defender-endpoint-plan-1.md#reporting) <p>[Interfejsów api](defender-endpoint-plan-1.md#apis) <p> [Obsługa urządzeń Windows 10, iOS, Android I macOS](defender-endpoint-plan-1.md#cross-platform-support)|
-| [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) | Możliwości usługi Defender for Endpoint Plan 1 oraz: <p> <p> [Wykrywanie urządzeń](device-discovery.md) <p> [Spisz urządzeń](machines-view-overview.md) <p> [Podstawowe możliwości zarządzania lukami w zabezpieczeniach usługi Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) <p> [Analiza zagrożeń](threat-analytics.md) <p> [Zautomatyzowane badanie i reagowanie](automated-investigations.md) <p> [Zaawansowane wyszukiwanie zagrożeń](advanced-hunting-overview.md) <p> [Wykrywanie i reagowanie dotyczące punktów końcowych](overview-endpoint-detection-response.md) <p> [Microsoft Threat Experts](microsoft-threat-experts.md) <p>Obsługa [platform Windows](configure-endpoints.md) (klienta i serwera) i [platform innych niż Windows](configure-endpoints-non-windows.md)<br/> (macOS, iOS, Android i Linux) |
-| [Dodatek usługi Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) |  Dodatkowe zarządzanie lukami w zabezpieczeniach usługi Defender dla usługi Defender for Endpoint Plan 2: <p><p> [Ocena punktów odniesienia zabezpieczeń](../defender-vulnerability-management/tvm-security-baselines.md) <p> [Blokuj aplikacje podatne na zagrożenia](../defender-vulnerability-management/tvm-block-vuln-apps.md) <p> [Rozszerzenia przeglądarki](../defender-vulnerability-management/tvm-browser-extensions.md) <p> [Ocena certyfikatów cyfrowych](../defender-vulnerability-management/tvm-certificate-inventory.md) <p> [Analiza udziału sieciowego](../defender-vulnerability-management/tvm-network-share-assessment.md) <p> Obsługa [platform Windows](configure-endpoints.md) (klienta i serwera) i [platform innych niż Windows](configure-endpoints-non-windows.md)<br/> (macOS, iOS, Android i Linux) |
+| [Ochrona punktu końcowego w usłudze Microsoft Defender — Plan 1](defender-endpoint-plan-1.md) | <ul><li>[Ochrona następnej generacji](defender-endpoint-plan-1.md#next-generation-protection) (w tym oprogramowanie chroniące przed złośliwym kodem i oprogramowanie antywirusowe)</li><li>[Zmniejszanie obszaru podatnego na ataki](defender-endpoint-plan-1.md#attack-surface-reduction)</li><li> [Ręczne akcje odpowiedzi](defender-endpoint-plan-1.md#manual-response-actions)</li><li>[Scentralizowane zarządzanie](defender-endpoint-plan-1.md#centralized-management)</li><li>[Raporty zabezpieczeń](defender-endpoint-plan-1.md#reporting)</li><li>[Interfejsów api](defender-endpoint-plan-1.md#apis)</li><li>[Obsługa urządzeń Windows 10, iOS, Android I macOS](defender-endpoint-plan-1.md#cross-platform-support)</li></ul>|
+| [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) | Wszystkie możliwości planu 1 usługi Defender for Endpoint oraz:<ul><li>[Wykrywanie urządzeń](device-discovery.md)</li><li>[Spisz urządzeń](machines-view-overview.md)</li><li>[Podstawowe możliwości zarządzania lukami w zabezpieczeniach usługi Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[Analiza zagrożeń](threat-analytics.md)</li><li>[Zautomatyzowane badanie i reagowanie](automated-investigations.md)</li><li>[Zaawansowane wyszukiwanie zagrożeń](advanced-hunting-overview.md)</li><li>[Wykrywanie i reagowanie dotyczące punktów końcowych](overview-endpoint-detection-response.md)</li><li>[Microsoft Threat Experts](microsoft-threat-experts.md)</li><li>Obsługa [platform Windows](configure-endpoints.md) (klienta i serwera) i [platform innych niż Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android i Linux)</li></ul> |
+| [Dodatek usługi Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | Dodatkowe zarządzanie lukami w zabezpieczeniach usługi Defender dla usługi Defender for Endpoint Plan 2:<ul><li>[Ocena punktów odniesienia zabezpieczeń](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[Blokuj aplikacje podatne na zagrożenia](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[Rozszerzenia przeglądarki](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[Ocena certyfikatów cyfrowych](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[Analiza udziału sieciowego](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>Obsługa [platform Windows](configure-endpoints.md) (klienta i serwera) i [platform innych niż Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android i Linux)</li></ul> |
+
+## <a name="mixed-licensing-scenarios"></a>Scenariusze licencjonowania mieszanego
+
+Załóżmy, że Twoja organizacja korzysta z różnych subskrypcji zabezpieczeń punktu końcowego firmy Microsoft, takich jak Defender for Endpoint Plan 1 i Defender for Endpoint Plan 2. **Obecnie najwyższa funkcjonalna subskrypcja zabezpieczeń punktu końcowego firmy Microsoft ustawia środowisko dla twojej dzierżawy**. W tym przykładzie środowisko dzierżawy będzie mieć wartość Defender for Endpoint Plan 2 dla wszystkich użytkowników.
+
+Można jednak **skontaktować się z pomocą techniczną i poprosić o zastąpienie środowiska dzierżawy**. Oznacza to, że możesz zażądać zastąpienia w celu zachowania środowiska usługi Defender for Endpoint Plan 1 dla wszystkich użytkowników. 
+
+- Aby uzyskać szczegółowe informacje na temat licencji i postanowień dotyczących produktów, zobacz [Licencjonowanie i postanowienia dotyczące produktów dla subskrypcji Microsoft 365](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
+- Aby uzyskać informacje o kontaktowaniu się z pomocą techniczną, zobacz [Kontakt z pomocą techniczną Ochrona punktu końcowego w usłudze Microsoft Defender](contact-support.md).
+
+> [!TIP]
+> Jeśli Twoja organizacja jest małą lub średnią firmą, zobacz następujące artykuły:
+> - [Co to jest usługa Microsoft Defender dla Firm?](../defender-business/mdb-overview.md)
+> - [Porównanie funkcji zabezpieczeń w planach Microsoft 365 dla małych i średnich firm](../defender-business/compare-mdb-m365-plans.md).
 
 ## <a name="start-a-trial"></a>Rozpoczynanie wersji próbnej
 
