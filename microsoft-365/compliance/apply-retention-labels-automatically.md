@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Tworzenie zasad przechowywania automatycznego etykietowania w celu automatycznego stosowania etykiet w celu zachowania potrzebnych elementów i usunięcia tego, czego nie potrzebujesz
-ms.openlocfilehash: a349ce1678c6cc28a82aa6c97c31358a57970f35
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 87328b69f2649a1e6a6c6755892e17e7c04aac53
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115614"
+ms.locfileid: "66128838"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Automatyczne stosowanie etykiety przechowywania w celu zachowania lub usunięcia zawartości
 
@@ -78,8 +78,8 @@ Podczas tworzenia zasad automatycznego stosowania należy wybrać etykietę prze
     - Jeśli używasz zarządzania rekordami:
         - **Rozwiązania** \> **Zarządzanie rekordami** \> Karta \> **Zasady etykiety** **Automatyczne stosowanie etykiety**
 
-    - Jeśli używasz zarządzania magazynem życia danych:
-        - **Rozwiązania** \> **Zarządzanie magazynem** \> życia danych Karta \> **Zasady etykiety** **Automatyczne stosowanie etykiety**
+    - Jeśli używasz zarządzania cyklem życia danych:
+        - **Rozwiązania** \> **Zarządzanie cyklem** \> życia danych Karta \> **Zasady etykiety** **Automatyczne stosowanie etykiety**
 
     Nie widzisz rozwiązania od razu w okienku nawigacji? Najpierw wybierz pozycję **Pokaż wszystko**.
 

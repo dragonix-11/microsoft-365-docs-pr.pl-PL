@@ -14,12 +14,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8cb3dcec3690ae3a4433bfffee53dc99842c0028
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: f788c72c9b437dba7528c59adedb3ced21539ada
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872319"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129124"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Przewodnik wdrożenia programu antywirusowego Microsoft Defender w środowisku infrastruktury pulpitu wirtualnego
 
@@ -31,13 +31,10 @@ ms.locfileid: "65872319"
 **Platformy**
 - System Windows
 
-Oprócz standardowych konfiguracji lokalnych lub sprzętowych można również używać Program antywirusowy Microsoft Defender w środowisku pulpitu zdalnego (RDS) lub nietrwałej infrastruktury pulpitu wirtualnego (VDI).
+Oprócz standardowych konfiguracji lokalnych lub sprzętowych można używać Program antywirusowy Microsoft Defender w środowisku pulpitu zdalnego (RDS) lub nietrwałej infrastruktury pulpitu wirtualnego (VDI). Dzięki możliwości łatwego wdrażania aktualizacji maszyn wirtualnych działających w interfejsach VDI można szybko i łatwo uzyskiwać aktualizacje na maszynach. Nie trzeba już okresowo tworzyć i uszczelniać złotych obrazów, ponieważ aktualizacje są rozszerzane na ich bity składników na serwerze hosta, a następnie pobierane bezpośrednio na maszynę wirtualną po jej włączeniu.
 
-Aby uzyskać więcej informacji na temat obsługi usług Pulpit zdalny Microsoft Services i VDI, zobacz [Dokumentacja usługi Azure Virtual Desktop](/azure/virtual-desktop).
-
-W przypadku maszyn wirtualnych opartych na platformie Azure zobacz [Instalowanie Endpoint Protection w Microsoft Defender dla Chmury](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
-
-Dzięki możliwości łatwego wdrażania aktualizacji na maszynach wirtualnych działających w interfejsach VDI skróciliśmy ten przewodnik, aby skupić się na tym, jak można szybko i łatwo uzyskiwać aktualizacje na maszynach. Nie trzeba już okresowo tworzyć i uszczelniać złotych obrazów, ponieważ aktualizacje są rozszerzane na ich bity składników na serwerze hosta, a następnie pobierane bezpośrednio na maszynę wirtualną po jej włączeniu.
+> [!NOTE]
+> Witryna demonstracyjna usługi Defender for Endpoint w witrynie `demo.wd.microsoft.com` jest przestarzała i zostanie usunięta w przyszłości.
 
 W tym przewodniku opisano sposób konfigurowania maszyn wirtualnych pod kątem optymalnej ochrony i wydajności, w tym:
 
@@ -51,12 +48,12 @@ W tym przewodniku opisano sposób konfigurowania maszyn wirtualnych pod kątem o
 
 Możesz również pobrać oficjalny [dokument Program antywirusowy Microsoft Defender na temat infrastruktury pulpitu wirtualnego](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), który analizuje nową funkcję aktualizacji analizy zabezpieczeń, a także testy wydajności i wskazówki dotyczące sposobu testowania wydajności oprogramowania antywirusowego na własnej infrastrukturze VDI.
 
-> [!NOTE]
-> Witryna demonstracyjna usługi Defender for Endpoint w demo.wd.microsoft.com jest przestarzała i zostanie usunięta w przyszłości.
+Aby uzyskać więcej informacji na temat obsługi usług Pulpit zdalny Microsoft Services i VDI, zobacz [Dokumentacja usługi Azure Virtual Desktop](/azure/virtual-desktop).
+
+W przypadku maszyn wirtualnych opartych na platformie Azure zobacz [Instalowanie Endpoint Protection w Microsoft Defender dla Chmury](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 > [!IMPORTANT]
 > Mimo że interfejs VDI może być hostowany na Windows Server 2012 lub Windows Server 2016, maszyny wirtualne powinny działać Windows 10, co najmniej 1607, ze względu na zwiększone technologie ochrony i funkcje, które są niedostępne we wcześniejszych wersjach Windows.
->
 > Istnieją ulepszenia wydajności i funkcji w sposobie, w jaki usługa Microsoft Defender AV działa na maszynach wirtualnych w Windows 10 Insider Preview, kompilacja 18323 (i nowsze). W tym przewodniku zidentyfikujemy, czy musisz używać kompilacji insider preview; Jeśli nie zostanie określony, minimalna wymagana wersja dla najlepszej ochrony i wydajności jest Windows 10 1607.
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Konfigurowanie dedykowanego udziału plików VDI
@@ -114,9 +111,8 @@ Zalecamy rozpoczęcie od raz dziennie, ale należy eksperymentować z zwiększan
 Pakiety analizy zabezpieczeń są zwykle publikowane raz na trzy do czterech godzin. Nie zaleca się ustawiania częstotliwości krótszej niż cztery godziny, ponieważ bez korzyści zwiększy to obciążenie sieci na komputerze zarządzania.
 
 Możesz również skonfigurować pojedynczy serwer lub maszynę, aby pobierać aktualizacje w imieniu maszyn wirtualnych w odstępach czasu i umieszczać je w udziale plików do użycia.
-Jest to możliwe, gdy urządzenia mają uprawnienia do udziału i ntfs dostępu do odczytu do udziału, aby mogły pobrać aktualizacje.
+Jest to możliwe, gdy urządzenia mają uprawnienia do udziału i ntfs dostępu do odczytu do udziału, aby mogły pobrać aktualizacje. W tym celu:
 
-W tym celu:
  1. Utwórz udział plików SMB/CIFS. 
  
  2. Użyj poniższego przykładu, aby utworzyć udział plików z następującymi uprawnieniami udziału.
@@ -134,7 +130,7 @@ W tym celu:
 
     W tym przykładzie udział plików to:
 
-    \\\fileserver.fqdn\mdatp$\wdav-update
+    `\\fileserver.fqdn\mdatp$\wdav-update`
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>Ustawianie zaplanowanego zadania w celu uruchomienia skryptu programu PowerShell
 
@@ -208,7 +204,6 @@ Pomijanie powiadomień uniemożliwia wyświetlanie powiadomień z Program antywi
 
 > [!TIP]
 > Aby otworzyć Centrum akcji w Windows 10 lub Windows 11, wykonaj jedną z następujących czynności:
->
 > - Na prawym końcu paska zadań wybierz ikonę Centrum akcji.
 > - Naciśnij przycisk Windows logo + A.
 > - Na urządzeniu z ekranem dotykowym szybko przesuń palcem od prawej krawędzi ekranu.
@@ -231,6 +226,18 @@ Wyłączenie skanowania po aktualizacji uniemożliwi skanowanie po otrzymaniu ak
 5. Wdróż obiekt zasady grupy tak jak zwykle.
 
 Te zasady uniemożliwiają uruchamianie skanowania natychmiast po aktualizacji.
+
+## <a name="disable-the-scanonlyifidle-option"></a>Wyłącz opcję `ScanOnlyIfIdle`
+
+Użyj następującego polecenia cmdlet, aby zatrzymać szybkie lub zaplanowane skanowanie za każdym razem, gdy urządzenie będzie bezczynne, jeśli jest w trybie pasywnym.
+
+```PowerShell
+Set-MpPreference -ScanOnlyIfIdleEnabled $false
+```
+
+Można również wyłączyć opcję `ScanOnlyIfIdle` w Program antywirusowy Microsoft Defender przez konfigurację za pośrednictwem zasad grupy lokalnej lub domeny. Zapobiega to znacznej rywalizacji o procesor CPU w środowiskach o wysokiej gęstości.
+
+Aby uzyskać więcej informacji, zobacz [Uruchamianie zaplanowanego skanowania tylko wtedy, gdy komputer jest włączony, ale nie jest używany](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle).
 
 ## <a name="scan-vms-that-have-been-offline"></a>Skanowanie maszyn wirtualnych, które były w trybie offline
 

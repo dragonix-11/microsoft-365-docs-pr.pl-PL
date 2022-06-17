@@ -21,12 +21,12 @@ description: Użyj portal zgodności Microsoft Purview, aby przeszukać ujednoli
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 0e8ac4e3a8705960f307314717127c969a26c2f6
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 76cee49b8f37f946f9aa8e67bf40e8642f242fac
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078507"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128828"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Przeszukiwanie dziennika inspekcji w portalu zgodności
 
@@ -63,6 +63,7 @@ Dlaczego ujednolicony dziennik inspekcji? Ponieważ można przeszukiwać dzienni
 | Zasady przechowywania i etykiety przechowywania|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
 | Typy informacji poufnych|DlpSensitiveInformationType|
 | Etykiety wrażliwości|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
+| Zaszyfrowany portal wiadomości|OMEPortal|
 | SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation |
 | Stream|MicrosoftStream|
 | Analiza zagrożeń|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
@@ -409,7 +410,7 @@ Kliknij jeden z poniższych linków, aby przejść do określonej tabeli.
         [Działania zaszyfrowanego portalu wiadomości](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
-        [Działania narzędzia SystemSync] (działania #systemsync)
+        [Działania narzędzia SystemSync](#systemsync-activities)
     :::column-end:::
     :::column:::
         

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrukcje publikowania etykiet przechowywania, dzięki czemu można je zastosować w aplikacjach, aby zachować to, czego potrzebujesz, i usunąć to, czego nie potrzebujesz.
-ms.openlocfilehash: 3acbe0632a387139bbe865b854a92f8e51609cc1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b96d5f3df440db58aff63bffca11523f7c09d8ee
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007333"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128926"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach
 
@@ -58,13 +58,13 @@ Upewnij się, że [utworzono etykiety przechowywania](file-plan-manager.md#creat
 
 Przed utworzeniem zasad etykiet przechowywania zdecyduj, czy będą **to zasady adaptacyjne** , czy **statyczne**. Aby uzyskać więcej informacji, zobacz [Adaptacyjne lub statyczne zakresy zasad przechowywania](retention.md#adaptive-or-static-policy-scopes-for-retention). Jeśli zdecydujesz się na korzystanie z zasad adaptacyjnych, musisz utworzyć co najmniej jeden zakres adaptacyjny przed utworzeniem zasad etykiet przechowywania, a następnie wybrać je podczas procesu tworzenia zasad etykiet przechowywania. Aby uzyskać instrukcje, zobacz [Informacje o konfiguracji dla zakresów adaptacyjnych](retention-settings.md#configuration-information-for-adaptive-scopes).
 
-1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> przejdź do jednej z następujących lokalizacji:
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a> przejdź do jednej z następujących lokalizacji:
     
     - Jeśli używasz zarządzania rekordami:
         - **Rozwiązania** >  **Karta Zasady zarządzania rekordami** > > **Etykiety** > **Publikowanie etykiet**
     
     - Jeśli używasz zarządzania cyklem życia danych:
-        - **Rozwiązania** >  **Zarządzanie magazynem** >  życia danych **Karta Zasady etykiet** > **Publikowanie etykiet**
+        - **Rozwiązania** >  **Zarządzanie cyklem** >  życia danych **Karta Zasady etykiet** > **Publikowanie etykiet**
     
     Nie widzisz rozwiązania od razu w okienku nawigacji? Najpierw wybierz pozycję **Pokaż wszystko**. 
 
@@ -92,7 +92,7 @@ Jeśli publikujesz etykiety przechowywania w Exchange, wyświetlanie etykiet prz
 
 ![Diagram przedstawiający, kiedy opublikowane etykiety wchodzą w życie.](../media/retention-labels-published-timings.png)
 
-Jeśli etykiety nie są wyświetlane po siedmiu dniach, sprawdź **stan** zasad etykiety, wybierając je na stronie **Zasady etykiet** w portalu zgodności usługi Microsoft Purview. Jeśli zobaczysz **(błąd)** uwzględniony w stanie i w szczegółach lokalizacji zobaczysz komunikat, że wdrożenie zasad trwa dłużej niż oczekiwano lub spróbuj ponownie wdrożyć zasady, spróbuj uruchomić polecenie [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) lub [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) , aby ponowić próbę dystrybucji zasad:
+Jeśli etykiety nie są wyświetlane po siedmiu dniach, sprawdź **stan** zasad etykiety, wybierając je na stronie **Zasady etykiet** w portal zgodności Microsoft Purview. Jeśli zobaczysz **(błąd)** uwzględniony w stanie i w szczegółach lokalizacji zobaczysz komunikat, że wdrożenie zasad trwa dłużej niż oczekiwano lub spróbuj ponownie wdrożyć zasady, spróbuj uruchomić polecenie [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) lub [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) , aby ponowić próbę dystrybucji zasad:
 
 1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 

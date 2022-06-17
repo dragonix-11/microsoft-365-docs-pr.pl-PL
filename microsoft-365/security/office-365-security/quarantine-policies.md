@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak używać zasad kwarantanny do kontrolowania, co użytkownicy mogą zrobić w przypadku komunikatów poddanych kwarantannie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 74f1a657cbf675b8a55edc169339cb16a22f4dbe
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: a3d50debf31f53f75177e7c8cf8c7116ae3789b6
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115680"
+ms.locfileid: "66128860"
 ---
 # <a name="quarantine-policies"></a>Zasady kwarantanny
 
@@ -212,6 +212,9 @@ Domyślne zasady kwarantanny, wstępnie ustawione grupy uprawnień i uprawnienia
 > Jeśli masz domyślne uprawnienia użytkownika końcowego i powiadomienia o kwarantannie, które są udostępniane (lub nie są udostępniane) przez domyślne zasady kwarantanny, nie musisz nic robić. Jeśli chcesz dodać lub usunąć możliwości użytkownika końcowego (dostępne przyciski) dla komunikatów poddanych kwarantannie przez użytkownika lub włączyć powiadomienia o kwarantannie oraz dodać lub usunąć te same możliwości w powiadomieniach o kwarantannie, możesz przypisać inne zasady kwarantanny do akcji kwarantanny.
 
 ## <a name="assign-quarantine-policies-in-supported-policies-in-the-microsoft-365-defender-portal"></a>Przypisywanie zasad kwarantanny w obsługiwanych zasadach w portalu Microsoft 365 Defender
+
+> [!NOTE]
+> Użytkownicy nie mogą wydawać własnych komunikatów, które zostały poddane kwarantannie jako złośliwe oprogramowanie (zasady ochrony przed złośliwym oprogramowaniem) lub wyłudzanie informacji o wysokim poziomie zaufania (zasady ochrony przed spamem), niezależnie od sposobu konfigurowania zasad kwarantanny. W najlepszym przypadku administratorzy mogą skonfigurować zasady kwarantanny, aby użytkownicy mogli zażądać wydania złośliwego oprogramowania poddanej kwarantannie lub wiadomości wyłudzających informacje o wysokim poziomie zaufania.
 
 ### <a name="anti-spam-policies"></a>Zasady ochrony przed spamem
 

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Użyj uproszczonego widoku w Centrum administracyjne platformy Microsoft 365, aby zarządzać typowymi zadaniami lub widokiem pulpitu nawigacyjnego, aby uzyskać bardziej złożone ustawienia i zadania.
-ms.openlocfilehash: d553eff9a9ed78225200320bbadb5a7e28d517f0
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f3f9d1616189a5e3347a882a6caec0df28e274c0
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436146"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129036"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Omówienie centrum administracyjnego platformy Microsoft 365
 
@@ -45,7 +45,7 @@ Dzięki <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_bla
 
 Zaloguj się do witryny Office.com przy użyciu konta służbowego i wybierz narzędzie do uruchamiania aplikacji.
 
-Jeśli masz uprawnienia dostępu do centrum administracyjnego, na liście zobaczysz pozycję **Administrator** . Wybierz go.
+Jeśli masz uprawnienia dostępu do centrum administracyjnego, zobaczysz **Administracja** na liście. Wybierz go.
 
 W górnej części centrum administracyjnego przejrzyj najważniejsze akcje. W zależności od tego, co już skonfigurowano, mogą być widoczne różne akcje, takie jak tworzenie nowych kont, używanie Teams, konfigurowanie poczty e-mail i instalowanie aplikacji Office.
 
@@ -67,7 +67,7 @@ Jeśli potrzebujesz pomocy, wybierz pozycję **Pomoc & pomocy technicznej**. Wys
 
 Specjalistyczne obszary robocze, takie jak zarządzanie zabezpieczeniami lub urządzeniami, umożliwiają bardziej szczegółową kontrolę. Aby uzyskać więcej informacji na temat współpracy centrów administracyjnych, zobacz [Co z określonymi typami ról IT i innych obszarów roboczych, takich jak zabezpieczenia, Zarządzanie urządzeniami lub Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) w tym artykule.
 
-Aby przejść do Centrum administracyjne platformy Microsoft 365, przejdź do [admin.microsoft.com](https://admin.microsoft.com) lub, jeśli już się zalogowano, wybierz narzędzie do uruchamiania aplikacji i wybierz pozycję **Administrator**.
+Aby przejść do Centrum administracyjne platformy Microsoft 365, przejdź do [admin.microsoft.com](https://admin.microsoft.com) lub, jeśli już się zalogowano, wybierz narzędzie do uruchamiania aplikacji i wybierz **pozycję Administracja**.
 
 Na stronie głównej można tworzyć karty do często wykonywanych zadań. Aby dodać nową kartę, wybierz pozycję **Dodaj kartę**, a następnie wybierz znak plus obok karty, którą chcesz dodać. Po zakończeniu zamknij okno. Możesz zmienić rozmieszczenie kart, wybierając, a następnie przeciągając je tam, gdzie chcesz. Aby usunąć kartę, wybierz trzy kropki (więcej akcji), a następnie wybierz pozycję **Usuń**.
 
@@ -149,7 +149,7 @@ Poniżej przedstawiono funkcje i ustawienia dostępne w centrum administracyjnym
 
 3. Wybierz **wersję docelową dla wszystkich** lub **docelową wersję dla wybranych użytkowników**. Jeśli wybierzesz wersję docelową dla wybranych użytkowników, upewnij się, że do listy wybranych użytkowników dodasz konto administratora (i innych administratorów w organizacji, którzy chcą uczestniczyć).
 
-## <a name="admin-center-feedback"></a>Opinia centrum administracyjnego
+## <a name="admin-center-feedback"></a>Opinia centrum Administracja
 
 W centrum administracyjnym możesz przekazać firmie Microsoft opinię na temat swojego środowiska, wybierając pozycję **Przekaż opinię** tuż obok przycisku **Potrzebujesz pomocy?** w dolnej części każdej strony. Powiedz nam, co lubisz i co możemy zrobić lepiej. Ponadto możesz otrzymywać wyskakujące ankiety od czasu do czasu z pytaniem o ogólne wrażenia lub konkretne środowisko, które jest nowo wydane. Możesz również przekazać opinię na końcu tego artykułu, wybierając pozycję **Czy te informacje były pomocne?**
 
@@ -171,13 +171,13 @@ Aby uzyskać więcej informacji, zobacz [Try or buy a Microsoft 365 for business
 
 Uwielbiamy cię słyszeć! Zgłaszanie usterek i udostępnianie opinii pomaga nam ulepszyć Centrum administracyjne platformy Microsoft 365. Aby przekazać opinię, wybierz przycisk **Opinie** w dolnej części strony i użyj formularza, aby wysłać nam swoje przemyślenia. Zaznacz pole wyboru i potwierdź swój adres e-mail, jeśli chcesz, aby ktoś z zespołu Centrum administracyjne platformy Microsoft 365 śledził Twoje komentarze. Nie możemy obiecać, że będziemy śledzić każdą opinię, ale spróbujemy!
 
-Możesz również przekazać opinię spoza centrum administracyjnego na naszym forum UserVoice. Ta strona umożliwia tworzenie sugestii dotyczących funkcji, na które mogą głosować inni użytkownicy forum: [forum UserVoice dla nowego centrum administracyjnego](https://go.microsoft.com/fwlink/?linkid=2024994).
+<!---You can also give feedback from outside of the admin center on our UserVoice forum. You can use this page to make feature suggestions that can be voted on by other forum users: [UserVoice forum for the new admin center](https://go.microsoft.com/fwlink/?linkid=2024994).--->
 
 ### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Co z określonymi typami ról IT i innych obszarów roboczych, takich jak zabezpieczenia, Zarządzanie urządzeniami lub Exchange?
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> jest typowym punktem wejścia dla wszystkich zespołów i ról zarządzających Microsoft 365. Środowisko, informacje i kontrolki są dostosowane i dostosowywane dla każdego administratora i roli. Ponadto specjalistyczne obszary robocze umożliwiają głęboką, szczegółową kontrolę. Te specjalistyczne obszary robocze obejmują SharePoint, Teams &amp; Skype, Exchange, Zabezpieczenia, Zgodność, Zarządzanie urządzeniami i Azure Active Directory. Specjalistyczne obszary robocze można znaleźć w okienku nawigacji w Centrum administracyjne platformy Microsoft 365 pod adresem [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339).
 
-### <a name="what-language-options-are-available-the-admin-center"></a>Jakie opcje językowe są dostępne w Centrum administracyjnym?
+### <a name="what-language-options-are-available-the-admin-center"></a>Jakie opcje językowe są dostępne w centrum Administracja?
 
 Centrum administracyjne platformy Microsoft 365 jest w pełni zlokalizowana w 40 językach.
 

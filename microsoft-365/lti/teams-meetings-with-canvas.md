@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrowanie spotkań Microsoft Teams z kanwą
-ms.openlocfilehash: cbb24972dba7fafe60cb460e514a0fede64a08fb
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 59b4ee7a31d1c88f0417d2a9d3e0af1335155076
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621459"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129168"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Korzystanie ze spotkań w aplikacji Microsoft Teams z kanwą
 
@@ -31,15 +31,16 @@ Microsoft Teams spotkania to aplikacja Edukacja Tools Interoperability (LTI), kt
 >
 > - Dzierżawca musi mieć licencję microsoft education.
 > - Do mapowania użytkowników między aplikacjami Canvas i Microsoft można używać tylko jednej dzierżawy firmy Microsoft.
-> - Przed użyciem klasy Teams LTI należy wyłączyć School Data Sync (SDS), aby uniknąć duplikowania grup.
+> - Jeśli planujesz używać funkcji synchronizacji Microsoft Teams kanwy współbieżnie z School Data Sync firmy Microsoft (SDS), nie uwzględniaj danych listy klas i klas w synchronizacji SDS. Możesz nadal używać SDS do synchronizowania wszystkich innych danych, w tym użytkowników, organizacji, kontaktów nadrzędnych i danych demograficznych.
+> - Możesz użyć Teams Meetings LTI bez włączania **synchronizacji kursów**. Nie będzie można jednak użyć opcji **Dodaj całą klasę**. Możesz wpisać lub skopiować i wkleić adresy e-mail uczestników lub dodać kanały istniejących zespołów do spotkań.
 
-## <a name="microsoft-office-365-admin"></a>administrator Microsoft Office 365
+## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Administracja
 
 Przed rozpoczęciem zarządzania integracją Microsoft Teams w kanwie Instructure ważne jest, aby aplikacja **Microsoft-Teams-Sync-for-Canvas** platformy Azure firmy Canvas została zatwierdzona przez administratora Microsoft Office 365 instytucji w dzierżawie Microsoft Azure przed ukończeniem konfiguracji administratora kanwy.
 
 1. Zaloguj się do kanwy.
 
-2. Wybierz link **Administrator** w nawigacji globalnej, a następnie wybierz swoje konto.
+2. Wybierz link **Administracja** w nawigacji globalnej, a następnie wybierz swoje konto.
 
 3. W obszarze nawigacji administratora wybierz link **Ustawienia**, a następnie kartę **Integracje**.
 
@@ -52,7 +53,7 @@ Przed rozpoczęciem zarządzania integracją Microsoft Teams w kanwie Instructur
 
 5. Po **zakończeniu** wybierz pozycję Aktualizuj Ustawienia.
 
-6. Aby zatwierdzić dostęp do aplikacji **Microsoft-Teams-Sync-for-Canvas** platformy Azure programu Canvas, wybierz link **Udzielanie dostępu do dzierżawy**. Nastąpi przekierowanie do punktu końcowego zgody administratora platformy tożsamości firmy Microsoft.
+6. Aby zatwierdzić dostęp do aplikacji **Microsoft-Teams-Sync-for-Canvas** platformy Azure programu Canvas, wybierz link **Udzielanie dostępu do dzierżawy**. Nastąpi przekierowanie do punktu końcowego microsoft identity platform Administracja consent.
 
    ![Uprawnienia.](media/permissions.png)
 
@@ -65,15 +66,15 @@ Przed rozpoczęciem zarządzania integracją Microsoft Teams w kanwie Instructur
 
    ![teams-sync.](media/teams-sync.png)
 
-## <a name="canvas-admin"></a>Administrator kanwy
+## <a name="canvas-admin"></a>Administracja kanwy
 
 Skonfiguruj integrację Microsoft Teams LTI 1.3.
 
-Jako administrator kanwy musisz dodać aplikację LTI Microsoft Teams spotkań w danym środowisku. Zanotuj identyfikator klienta LTI dla aplikacji.
+Jako Administracja kanwy musisz dodać aplikację LTI Microsoft Teams spotkań w środowisku. Zanotuj identyfikator klienta LTI dla aplikacji.
 
- - spotkania Microsoft Teams — 170000000000703
+- spotkania Microsoft Teams — 170000000000703
 
-1. Dostęp **do ustawień** >  **administratoraAplikacje**.
+1. Dostęp **do ustawień** >  Administracja **Aplikacje**.
 
 2. Wybierz pozycję **+ Aplikacja**, aby dodać Teams aplikacji LTI.
 

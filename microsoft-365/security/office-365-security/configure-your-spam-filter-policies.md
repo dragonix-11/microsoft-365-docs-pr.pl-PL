@@ -18,12 +18,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak wyświetlać, tworzyć, modyfikować i usuwać zasady ochrony przed spamem w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20372843af62c28f4aae05c40d714bdfcdca203b
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: d72b99b73a7c399147360364fc2de0a6cee6435b
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115988"
+ms.locfileid: "66128728"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurowanie zasad ochrony przed spamem w ramach EOP
 
@@ -177,6 +177,8 @@ Utworzenie niestandardowych zasad ochrony przed spamem w portalu Microsoft 365 D
      > <sup>2</sup> Możesz użyć wartości jako warunku w regułach przepływu poczty, aby filtrować lub kierować wiadomość.
      >
      > <sup>3</sup> Pusta wartość **Wybierz wartość zasad** oznacza, że są używane domyślne zasady kwarantanny dla danego werdyktu. Po późniejszej edycji zasad ochrony przed spamem lub wyświetleniu ustawień wyświetlana jest domyślna nazwa zasad kwarantanny. Aby uzyskać więcej informacji na temat domyślnych zasad kwarantanny używanych do werdyktów filtru spamu, zobacz [tę tabelę](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
+     >
+     > Użytkownicy nie mogą wydawać własnych komunikatów, które zostały poddane kwarantannie jako wyłudzanie informacji o wysokim poziomie zaufania. W najlepszym razie administratorzy mogą skonfigurować zasady kwarantanny, aby użytkownicy mogli zażądać wydania komunikatów wyłudzających informacje o wysokim poziomie ufności w kwarantannie.
 
    - **Zachowaj spam w kwarantannie przez tyle dni**: określa czas przechowywania wiadomości w kwarantannie, jeśli **wybrano komunikat kwarantanny** jako akcję dotyczącą werdyktu filtrowania spamu. Po upływie okresu komunikat zostanie usunięty i nie będzie można go odzyskać. Prawidłowa wartość wynosi od 1 do 30 dni.
 

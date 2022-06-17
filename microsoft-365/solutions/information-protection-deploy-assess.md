@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Określ przepisy dotyczące prywatności danych, odpowiednie scenariusze, gotowość i typy informacji poufnych, które znajdują się w środowisku Microsoft 365.
-ms.openlocfilehash: 73cf1f3a51806fb53d5f04eb835a2fbcc7cd7b3b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a09e447733baa352a5302490b88e95a08a2775a4
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015043"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129058"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Ocena ryzyka związanego z prywatnością danych i identyfikowanie poufnych elementów przy użyciu Microsoft 365
 
@@ -192,11 +192,11 @@ Ten krok obejmuje identyfikację konkretnych typów informacji poufnych, które 
 
 Znajdowanie zawartości w środowisku zawierającej dane osobiste może być ogromnym zadaniem, które wcześniej wiąże się z użyciem wyszukiwania zgodności, zbierania elektronicznych materiałów dowodowych, zbierania elektronicznych materiałów dowodowych (Premium), DLP i inspekcji.
 
-Dzięki nowemu rozwiązaniu **do klasyfikacji danych** w portalu zgodności usługi Microsoft Purview stało się to znacznie łatwiejsze dzięki funkcji [Eksploratora zawartości](../compliance/data-classification-content-explorer.md) , która współpracuje z wbudowanymi lub niestandardowymi typami informacji poufnych, w tym tymi dotyczącymi danych osobowych.
+Dzięki nowemu rozwiązaniu **do klasyfikacji danych** w portal zgodności Microsoft Purview stało się to znacznie łatwiejsze dzięki funkcji [Eksploratora zawartości](../compliance/data-classification-content-explorer.md), która współpracuje z wbudowanymi lub niestandardowymi typami informacji poufnych, w tym tymi dotyczącymi danych osobowych.
 
 ### <a name="sensitive-information-types"></a>Typy informacji poufnych
 
-Portal zgodności usługi Microsoft Purview zawiera wstępnie załadowanych ponad 100 poufnych typów informacji, z większością z nich związanych z identyfikowaniem i lokalizowaniem danych osobowych. Te wbudowane typy informacji poufnych mogą pomóc w identyfikowaniu i ochronie numerów kart kredytowych, numerów kont bankowych, numerów paszportów i innych, na podstawie wzorców zdefiniowanych przez wyrażenie regularne (regex) lub funkcję. Aby dowiedzieć się więcej, zobacz [Wyszukiwanie typów informacji poufnych](../compliance/sensitive-information-type-entity-definitions.md).
+Portal zgodności Microsoft Purview jest wstępnie załadowany z ponad 100 poufnych typów informacji, większość z nich związanych z identyfikacją i lokalizowaniem danych osobowych. Te wbudowane typy informacji poufnych mogą pomóc w identyfikowaniu i ochronie numerów kart kredytowych, numerów kont bankowych, numerów paszportów i innych, na podstawie wzorców zdefiniowanych przez wyrażenie regularne (regex) lub funkcję. Aby dowiedzieć się więcej, zobacz [Wyszukiwanie typów informacji poufnych](../compliance/sensitive-information-type-entity-definitions.md).
 
 Jeśli musisz zidentyfikować i chronić specyficzny dla organizacji lub regionalny typ poufnych elementów, na przykład niestandardowy format identyfikatorów pracowników lub inne dane osobowe, które nie są jeszcze objęte wbudowanym typem informacji poufnych, możesz utworzyć niestandardowy typ informacji poufnych przy użyciu następujących metod:
 
@@ -210,13 +210,13 @@ Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
 - [Dostosuj wbudowany typ informacji poufnych](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [Dowiedz się więcej o typach informacji poufnych](../compliance/sensitive-information-type-learn-about.md)
-- [Tworzenie niestandardowego typu informacji poufnych w portalu zgodności usługi Microsoft 365 Purview](../compliance/create-a-custom-sensitive-information-type.md)
-- [Tworzenie niestandardowego typu informacji poufnych w programie PowerShell security & Compliance](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Tworzenie niestandardowych typów informacji poufnych przy użyciu klasyfikacji opartej na dokładnym dopasowaniu danych](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Tworzenie niestandardowego typu informacji poufnych w Centrum zgodności & zabezpieczeń](../compliance/create-a-custom-sensitive-information-type.md)
+- [Tworzenie niestandardowego typu informacji poufnych w programie PowerShell Centrum zgodności & zabezpieczeń](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Tworzenie niestandardowych typów informacji poufnych przy użyciu klasyfikacji opartej na dokładnym dopasowaniu danych](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview?view=o365-worldwide)
 
 ### <a name="content-explorer"></a>Eksplorator zawartości
 
-Ważnym narzędziem do określania wystąpienia poufnych elementów w środowisku jest nowy [Eksplorator zawartości](../compliance/data-classification-content-explorer.md) w centrum administracyjnym usługi Microsoft Purview. Jest to zautomatyzowane narzędzie do początkowego i ciągłego skanowania całej subskrypcji Microsoft 365 pod kątem występowania typów informacji poufnych i wyświetlania wyników.
+Ważnym narzędziem do określania wystąpienia poufnych elementów w środowisku jest nowy [Eksplorator zawartości](../compliance/data-classification-content-explorer.md) w centrum administracyjnym Microsoft Purview. Jest to zautomatyzowane narzędzie do początkowego i ciągłego skanowania całej subskrypcji Microsoft 365 pod kątem występowania typów informacji poufnych i wyświetlania wyników.
 
 Nowe narzędzie Eksploratora zawartości umożliwia szybkie identyfikowanie lokalizacji poufnych elementów w środowisku przy użyciu wbudowanych typów informacji poufnych lub niestandardowych. Może to obejmować ustanowienie procesu i przypisaną odpowiedzialność za regularne badanie obecności i lokalizacji poufnych elementów.
 

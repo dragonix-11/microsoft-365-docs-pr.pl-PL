@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 'Dowiedz się, co się stanie z Twoimi danymi, gdy subskrypcja usługi Microsoft 365 dla firm wygaśnie, zostanie wyłączona lub gdy ją anulujesz. '
 ms.date: 09/16/2021
-ms.openlocfilehash: a96ef700c522577e8d22f734ea6a8a94b410d83a
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: a9837a146ff6494ceaa94adeefeeaf6ed7769986
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102312"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128706"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Co się stanie z moimi danymi i z moim dostępem po zakończeniu subskrypcji usługi Microsoft 365 dla firm?
 
@@ -55,7 +55,7 @@ W poniższej tabeli wyjaśniono, czego można oczekiwać po wygaśnięciu płatn
   
 > [!NOTE]
 >
-> **Co to są „dane klienta”?** Dane klienta, zgodnie z definicją w [warunkach świadczenia usług online firmy Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613649), to wszystkie dane, w tym wszystkie pliki tekstowe, dźwiękowe lub obrazy, które są dostarczane do firmy Microsoft przez klienta lub w jego imieniu w ramach korzystania przez niego z usług Microsoft 365. Aby dowiedzieć się więcej na temat ochrony danych klientów, zobacz sekcję [Wprowadzenie do usługi Service Trust Portal firmy Microsoft](../../compliance/get-started-with-service-trust-portal.md).
+> **Co to są „dane klienta”?** Dane klienta, zgodnie z definicją w [warunkach świadczenia usług online firmy Microsoft](https://www.microsoft.com/en-us/licensing/product-licensing/products), to wszystkie dane, w tym wszystkie pliki tekstowe, dźwiękowe lub obrazy, które są dostarczane do firmy Microsoft przez klienta lub w jego imieniu w ramach korzystania przez niego z usług Microsoft 365. Aby dowiedzieć się więcej na temat ochrony danych klientów, zobacz sekcję [Wprowadzenie do usługi Service Trust Portal firmy Microsoft](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Co się dzieje w przypadku anulowania subskrypcji?
 
