@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Dowiedz się, jak za pomocą programu PowerShell przenieść zawartość ze źródłowego systemu poczty e-mail jednocześnie, przeprowadzając migrację jednorazową do Microsoft 365.
-ms.openlocfilehash: d63b7250cd1c4c34d169521943c3973104b15837
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 3761640c42a6907818886e96c9d6355d70073522
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008402"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151211"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Używanie programu PowerShell do wykonywania migracji jednorazowej do platformy Microsoft 365
 
@@ -177,7 +177,7 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 
 Systemy poczty e-mail ustalają lokalizację, do której należy dostarczać wiadomości e-mail, na podstawie rekordu DNS nazywanego rekordem MX. W trakcie procesu migracji poczty e-mail rekord MX wskazywał źródłowy system poczty e-mail. Po zakończeniu migracji wiadomości e-mail do Microsoft 365 nadszedł czas, aby wskazać rekord MX na Microsoft 365. Pomaga to upewnić się, że wiadomość e-mail jest dostarczana do skrzynek pocztowych Microsoft 365. Przenosząc rekord MX, możesz również wyłączyć stary system poczty e-mail, gdy wszystko będzie gotowe.
 
-W przypadku wielu dostawców hostingu DNS dostępne są szczegółowe instrukcje dotyczące zmieniania rekordu MX. Jeśli Twojego dostawcy hostingu DNS nie ma na liście lub jeśli chcesz zapoznać się z ogólnymi wskazówkami, dostępne są również [ogólne instrukcje dotyczące rekordów MX](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx).
+W przypadku wielu dostawców hostingu DNS dostępne są szczegółowe instrukcje dotyczące zmieniania rekordu MX. Jeśli Twojego dostawcy hostingu DNS nie ma na liście lub jeśli chcesz zapoznać się z ogólnymi wskazówkami, dostępne są również [ogólne instrukcje dotyczące rekordów MX](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide#add-an-mx-record-for-email-outlook-exchange-online).
 
 Rozpoznanie zmienionego rekordu MX przez systemy poczty e-mail Twoich klientów i partnerów może potrwać do 72 godzin. Poczekaj co najmniej 72 godziny, zanim przejdziesz do następnego zadania: [Krok 6. Usuwanie partii migracji jednorazowej](#step-6-delete-the-cutover-migration-batch).
 

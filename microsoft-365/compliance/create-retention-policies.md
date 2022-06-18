@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj zasad przechowywania, aby efektywnie kontrolować zawartość generowaną przez użytkowników za pomocą poczty e-mail, dokumentów i konwersacji. Zachowaj to, czego chcesz, i pozbądź się tego, czego nie chcesz.
-ms.openlocfilehash: 6243db961e9c7789ea1a43f41d848d3d9cbda9e2
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 7b8ca4e909893ec417d3466f825c2c0a1c5c736a
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016465"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151189"
 ---
 # <a name="create-and-configure-retention-policies"></a>Tworzenie i konfigurowanie zasad przechowywania
 
@@ -78,7 +78,7 @@ Jeśli masz więcej niż jedną zasadę przechowywania, a także używasz etykie
 > [!NOTE]
 > Zasady przechowywania obsługują teraz [kanały udostępnione](/MicrosoftTeams/shared-channels) w wersji zapoznawczej. Po skonfigurowaniu ustawień przechowywania dla lokalizacji **komunikatów kanału Teams**, jeśli zespół ma jakiekolwiek kanały udostępnione, dziedziczy ustawienia przechowywania po swoim zespole nadrzędnym.
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Zasady przechowywania** **zarządzania cyklem** >  życia danych.
+1. Z [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Zasady przechowywania** **zarządzania cyklem** >  życia danych.
 
 2. Wybierz pozycję **Nowe zasady przechowywania** , aby rozpocząć **konfigurowanie zasad przechowywania** i nadać nazwę nowym zasadom przechowywania.
 
@@ -134,7 +134,7 @@ Istnieje możliwość, że zasady przechowywania stosowane do grup Microsoft 365
 >
 > Aby korzystać z tej funkcji, sieć Yammer musi być [trybem natywnym](/yammer/configure-your-yammer-network/overview-native-mode), a nie trybem hybrydowym.
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Zasady przechowywania** **zarządzania cyklem** >  życia danych.
+1. Z [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Zasady przechowywania** **zarządzania cyklem** >  życia danych.
 
 2. Wybierz pozycję **Nowe zasady przechowywania** , aby utworzyć nowe zasady przechowywania.
 
@@ -162,15 +162,11 @@ Aby uzyskać więcej informacji na temat sposobu działania zasad przechowywania
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Dodatkowe zasady przechowywania potrzebne do obsługi Yammer
 
-Yammer to coś więcej niż tylko wiadomości społeczności i wiadomości prywatne. Aby zachować i usunąć wiadomości e-mail dla sieci Yammer, skonfiguruj dodatkowe zasady przechowywania, które obejmują wszystkie grupy Microsoft 365 używane do Yammer przy użyciu lokalizacji **Grupy Microsoft 365**. 
+Yammer to coś więcej niż tylko wiadomości społeczności i wiadomości prywatne. Aby zachować i usunąć wiadomości e-mail dla sieci Yammer, skonfiguruj dodatkowe zasady przechowywania, które obejmują wszystkie grupy Microsoft 365 używane do Yammer przy użyciu lokalizacji **Grupy Microsoft 365**.
 
-Aby zachować i usunąć pliki przechowywane w Yammer, potrzebne są zasady przechowywania zawierające **lokalizację Grupy Microsoft 365** lub **lokalizacje kont OneDrive**:
+Ta lokalizacja będzie również zawierać pliki przekazywane do Yammer społeczności. Te pliki są przechowywane w witrynie SharePoint połączonej z grupą dla społeczności Yammer.
 
-- Pliki udostępnione w wiadomościach prywatnych są przechowywane na koncie OneDrive użytkownika, który udostępnił plik. 
-
-- Pliki przekazywane do społeczności są przechowywane w witrynie SharePoint połączonej z grupą dla społeczności Yammer.
-
-Istnieje możliwość, że zasady przechowywania stosowane do SharePoint witryn lub kont OneDrive mogą usunąć plik, do którego odwołuje się komunikat Yammer przed usunięciem tych komunikatów. W tym scenariuszu plik nadal jest wyświetlany w komunikacie Yammer, ale po wybraniu pliku przez użytkowników występuje błąd "Nie znaleziono pliku". To zachowanie nie jest specyficzne dla zasad przechowywania i może również wystąpić, jeśli użytkownik ręcznie usunie plik z SharePoint lub OneDrive.
+Istnieje możliwość, że zasady przechowywania stosowane do witryn SharePoint mogą usunąć plik, do którego odwołuje się komunikat Yammer przed usunięciem tych komunikatów. W tym scenariuszu plik nadal jest wyświetlany w komunikacie Yammer, ale po wybraniu pliku przez użytkowników występuje błąd "Nie znaleziono pliku". To zachowanie nie jest specyficzne dla zasad przechowywania i może również wystąpić, jeśli użytkownik ręcznie usunie plik z SharePoint.
 
 ### <a name="retention-policy-for-locations-other-than-teams-and-yammer"></a>Zasady przechowywania dla lokalizacji innych niż Teams i Yammer
 
@@ -182,7 +178,7 @@ Użyj następujących instrukcji dotyczących zasad przechowywania, które mają
 - Grupy platformy Microsoft 365
 - Skype dla firm
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Zasady przechowywania** **zarządzania cyklem** >  życia danych.
+1. Z [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Zasady przechowywania** **zarządzania cyklem** >  życia danych.
 
 2. Wybierz pozycję **Nowe zasady przechowywania** , aby rozpocząć **konfigurowanie zasad przechowywania** i nadać nazwę nowym zasadom przechowywania.
 
@@ -212,7 +208,7 @@ Po utworzeniu i przesłaniu zasad przechowywania zastosowanie zasad przechowywan
   
 ![Diagram przedstawiający, kiedy zasady przechowywania wchodzą w życie.](../media/retention-policy-timings.png)
 
-Najpierw zasady przechowywania muszą być dystrybuowane do wybranych lokalizacji, a następnie stosowane do zawartości. Zawsze możesz sprawdzić stan dystrybucji zasad przechowywania, wybierając je na stronie **Zasady przechowywania** w portalu zgodności usługi Microsoft Purview. Jeśli w okienku wysuwanym zostanie wyświetlony komunikat **(Błąd)** uwzględniony w stanie, a w szczegółach lokalizacji zostanie wyświetlony komunikat, że wdrażanie zasad trwa dłużej niż oczekiwano lub spróbuj ponownie wdrożyć zasady, spróbuj uruchomić polecenie [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) lub [Set-RetentionCompliancePolicy,](/powershell/module/exchange/set-retentioncompliancepolicy) aby ponowić próbę dystrybucji zasad:
+Najpierw zasady przechowywania muszą być dystrybuowane do wybranych lokalizacji, a następnie stosowane do zawartości. Zawsze możesz sprawdzić stan dystrybucji zasad przechowywania, wybierając ją na stronie **Zasady przechowywania** w portal zgodności Microsoft Purview. Jeśli w okienku wysuwanym zostanie wyświetlony komunikat **(Błąd)** uwzględniony w stanie, a w szczegółach lokalizacji zostanie wyświetlony komunikat, że wdrażanie zasad trwa dłużej niż oczekiwano lub spróbuj ponownie wdrożyć zasady, spróbuj uruchomić polecenie [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) lub [Set-RetentionCompliancePolicy,](/powershell/module/exchange/set-retentioncompliancepolicy) aby ponowić próbę dystrybucji zasad:
 
 1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
