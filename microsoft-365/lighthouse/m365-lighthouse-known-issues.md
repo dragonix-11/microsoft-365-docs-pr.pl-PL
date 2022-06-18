@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse zobacz listę znanych problemów z usługą Lighthouse według obszaru funkcji.
-ms.openlocfilehash: 7a175d6c14e9b434240ff1a85f901a919ea79dcc
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 61073729b9589033ab361973c1c87bac2b28959a
+ms.sourcegitcommit: 04a93269fbbbdb5513335422cabdc1b269ead5ac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016729"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160825"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Znane problemy z Microsoft 365 Lighthouse
 
@@ -66,15 +66,15 @@ W tym artykule wymieniono znane problemy dotyczące Microsoft 365 Lighthouse wed
 | **Akcje dezaktywowania i ponownego aktywowania nie są wyświetlane w dziennikach inspekcji** | Następujące działania nie są obecnie zgłaszane na stronie Dzienniki inspekcji w aplikacji Lighthouse: <ul><li>Nazwa: offboardTenant Action: Inactivate a customer (Nazwa: offboardTenant \| Action: Inactivate a customer)</li> <li>Nazwa: resetTenantOnboardingStatus \| Action: Reaktywny klient</li></ul> | Nie ma obejścia, ale pracujemy nad poprawką. Te działania będą wyświetlane w dziennikach inspekcji po wdrożeniu poprawki w usłudze. |
 | **Filtr nie pokazuje wszystkich użytkowników** | Gdy technicy MSP próbują filtrować przy użyciu opcji **Inicjowane przez**, lista wszystkich nazw głównych użytkowników (UPN) — odpowiadających identyfikatorom poczty e-mail techników, którzy zainicjowali akcje generujące dzienniki inspekcji — nie jest w pełni wyświetlana w filtrze.<br><br>Pamiętaj, że same dzienniki inspekcji zostaną w pełni wyświetlone. Ma to wpływ tylko na możliwość ich filtrowania przy użyciu funkcji **Inicjowane przez** . | Nie ma obejścia, ale pracujemy nad poprawką. Filtr powróci do oczekiwanego zachowania — wyświetlając pełną listę nazw UPN do filtrowania według — po wdrożeniu poprawki w usłudze. |
 
-## <a name="delegated-admin-privileges-dap"></a>Delegowane uprawnienia administratora (DAP)
+## <a name="delegated-admin-privileges-dap"></a>Delegowane uprawnienia Administracja (DAP)
 
 | Problem | Opis | Rozwiązanie |
 | ---------------- | ---------------- | ---------------- |
-| **Opóźnienie uprawnień podczas zmiany ról języka DAP** | Jeśli technik MSP zostanie dodany lub usunięty z grupy agenta administracyjnego lub agenta pomocy technicznej, może wystąpić opóźnienie w odzwierciedlaniu odpowiednich uprawnień w usłudze Lighthouse. | Problem zostanie rozwiązany w ciągu 30 minut. Nie są wymagane żadne dodatkowe kroki. |
+| **Opóźnienie uprawnień podczas zmiany ról języka DAP** | Jeśli technik MSP zostanie dodany lub usunięty z grupy agenta Administracja lub agenta pomocy technicznej, może wystąpić opóźnienie w odzwierciedlaniu odpowiednich uprawnień w usłudze Lighthouse. | Problem zostanie rozwiązany w ciągu 30 minut. Nie są wymagane żadne dodatkowe kroki. |
 
-## <a name="granular-delegated-admin-privileges-gdap"></a>Szczegółowe uprawnienia administratora delegowanego (GDAP)
+## <a name="granular-delegated-admin-privileges-gdap"></a>Szczegółowe uprawnienia Administracja delegowane (GDAP)
 
-Aby dołączyć klientów do usługi Lighthouse, wymagane są szczegółowe uprawnienia administratora delegowanego (GDAP) oraz relacja pośredniego odsprzedawcy lub relacja delegowane uprawnienia administratora (DAP). Jeśli dap i GDAP współistnieją w dzierżawie klienta, uprawnienia GDAP mają pierwszeństwo dla techników MSP w grupach zabezpieczeń z obsługą protokołu GDAP. Wkrótce klienci z relacjami tylko Z GDAP (bez pośrednich relacji odsprzedawców) będą mogli dołączyć do usługi Lighthouse.<br><br>
+Aby dołączyć klientów do usługi Lighthouse, wymagana jest szczegółowa relacja delegowanych uprawnień Administracja (GDAP) oraz relacja odsprzedawcy pośredniego lub relacja Delegowane uprawnienia Administracja (DAP). Jeśli dap i GDAP współistnieją w dzierżawie klienta, uprawnienia GDAP mają pierwszeństwo dla techników MSP w grupach zabezpieczeń z obsługą protokołu GDAP. Klienci z relacjami tylko GDAP (bez pośrednich relacji odsprzedawców) obecnie nie mogą dołączyć do usługi Lighthouse, ale będą mogli dołączyć ją w przyszłej wersji.<br><br>
 
 | Problem | Opis | Rozwiązanie |
 | ---------------- | ---------------- | ---------------- |
