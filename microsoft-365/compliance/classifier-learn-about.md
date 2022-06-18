@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Klasyfikatory z możliwością trenowania mogą rozpoznawać różne typy zawartości do etykietowania lub aplikacji zasad, dając jej pozytywne i negatywne próbki do obejrzenia.
-ms.openlocfilehash: ed2b744c1c136afde38151dc424eef547607ef27
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 03c0c0991188982fbfc4fb9ec908f6e5f4ab3bba
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115856"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159581"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Dowiedz się więcej o klasyfikatorach z możliwością szkolenia
 
@@ -53,7 +53,7 @@ Ta metoda klasyfikacji jest odpowiednia dla zawartości, która nie jest łatwo 
 
 > [!NOTE]
 > W wersji zapoznawczej — klasyfikatory z możliwością trenowania można wyświetlić w Eksploratorze zawartości, rozwijając pozycję **Klasyfikatory klasyfikujące możliwość** trenowania w panelu filtrów. Klasyfikatory z możliwością trenowania automatycznie wyświetlają liczbę zdarzeń znalezionych w SharePoint, Teams i OneDrive bez konieczności etykietowania.
-> Jeśli nie chcesz korzystać z tej funkcji, musisz wysłać żądanie z pomoc techniczna firmy Microsoft, aby wyłączyć klasyfikację out-of-the-box. Spowoduje to wyłączenie skanowania poufnej i oznaczonej zawartości przed utworzeniem zasad etykietowania.
+> Jeśli nie chcesz używać tej funkcji, musisz wysłać żądanie do pomoc techniczna firmy Microsoft. Spowoduje to wyłączenie wyświetlania poufnych danych, które nie są używane w żadnych zasadach etykietowania w Eksploratorze zawartości. Możesz również wyłączyć skanowanie danych. Jeśli skanowanie jest wyłączone, etykietowanie poufności i zasady DLP z tymi klasyfikatorami nie będą działać
 
 ### <a name="where-you-can-use-classifiers"></a>Gdzie można używać klasyfikatorów
 

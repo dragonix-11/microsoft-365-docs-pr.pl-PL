@@ -302,8 +302,6 @@
                   href: end-life-cycle-groups-teams-sites-yammer.md
         - name: Współpraca nad plikami w programie SharePoint z pomocą platformy Microsoft 365
           href: /sharepoint/deploy-file-collaboration
-        - name: Przewodnik po usłudze OneDrive dla przedsiębiorstw
-          href: /onedrive/plan-onedrive-enterprise
     - name: Zgodność
       items:
         - name: Rozwiązania ryzyka wewnętrznego w usłudze Microsoft Purview

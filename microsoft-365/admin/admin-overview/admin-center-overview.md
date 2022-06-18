@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Użyj uproszczonego widoku w Centrum administracyjne platformy Microsoft 365, aby zarządzać typowymi zadaniami lub widokiem pulpitu nawigacyjnego, aby uzyskać bardziej złożone ustawienia i zadania.
-ms.openlocfilehash: f3f9d1616189a5e3347a882a6caec0df28e274c0
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 056072e454b0df3e7c4b06ce39735b1db3961b25
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66129036"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159559"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Omówienie centrum administracyjnego platformy Microsoft 365
 
@@ -108,11 +108,7 @@ Jeśli nie masz pojęcia, z kim skontaktować się w twojej pracy lub szkole w c
 
 ## <a name="admin-center-features-and-settings"></a>Funkcje i ustawienia centrum administracyjnego
 
-Poniżej przedstawiono funkcje i ustawienia dostępne w centrum administracyjnym w obszarze nawigacji po lewej stronie. Dowiedz się więcej o zadaniach administratora w sekcji [pomoc dla administratorów](Omówienie Centrum administracyjne platformy Microsoft 365](admin-center-overview.md).
-
-<br>
-
-****
+Poniżej przedstawiono funkcje i ustawienia dostępne w centrum administracyjnym w obszarze nawigacji po lewej stronie. Dowiedz się więcej na temat zadań administracyjnych z zasobów [pomocy dla administratorów](/microsoft-365/admin/).
 
 |Menu|Zastosowanie|
 |-----|-----|

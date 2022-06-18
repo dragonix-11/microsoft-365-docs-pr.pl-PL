@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 2000d10918c7e351c7e4bedfe8281b6a011cca9d
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 82ed2110987bcb5fc1238a31a45c264c64392ba3
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872429"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159407"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Program antywirusowy Microsoft Defender zgodności z innymi produktami zabezpieczającymi
 
@@ -63,8 +63,8 @@ Poniższa tabela zawiera podsumowanie oczekiwań:
 
 |Wersje systemu Windows|Podstawowe rozwiązanie antywirusowe/chroniące przed złośliwym kodem|stan Program antywirusowy Microsoft Defender|
 |:---|:---|:---|
-|Windows 10 <br/> Windows 11|Program antywirusowy Microsoft Defender|Tryb aktywny|
-|Windows 10 <br/> System Windows 11|Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft|Tryb wyłączony (odbywa się automatycznie)|
+|Windows 10 <br/> System Windows 11|Program antywirusowy Microsoft Defender|Tryb aktywny|
+|Windows 10 <br/> Windows 11|Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft|Tryb wyłączony (odbywa się automatycznie)|
 |Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server, wersja 1803 lub nowsza <br/> Windows Server 2016 <br/> Windows Server 2012 R2 |Program antywirusowy Microsoft Defender|Tryb aktywny|
 |Windows Server 2022<br/>Windows Server 2019<br/>Windows Server, wersja 1803 lub nowsza <br/> Windows Server 2016 |Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft|Wyłączone (ustaw ręcznie) <sup>[[1](#fn1)]</sup>|
 
@@ -91,7 +91,7 @@ W poniższej tabeli podsumowano stan Program antywirusowy Microsoft Defender w k
 | Windows 10 <br/> Windows 11| Program antywirusowy Microsoft Defender | Tak  | Tryb aktywny | 
 | Windows 10 <br/> System Windows 11 | Program antywirusowy Microsoft Defender | Nie   | Tryb aktywny |
 | Windows 10 <br/> System Windows 11  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Tak  | Tryb pasywny (automatycznie) |
-| Windows 10 <br/> Windows 11  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Nie   | Tryb wyłączony (automatycznie)    |
+| Windows 10 <br/> System Windows 11  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Nie   | Tryb wyłączony (automatycznie)    |
 | Windows Server 2022 <br/> Windows Server 2019 <br/>Windows Server, wersja 1803 lub nowsza  | Program antywirusowy Microsoft Defender  | Tak |         Tryb aktywny  |
 | Windows Server 2022 <br/> Windows Server 2019 <br/> Windows Server, wersja 1803 lub nowsza   | Program antywirusowy Microsoft Defender | Nie  | Tryb aktywny |
 | Windows Server 2022 <br/> Windows Server 2019 <p> Windows Server, wersja 1803 lub nowsza  | Rozwiązanie antywirusowe/chroniące przed złośliwym kodem firmy Microsoft | Tak  | Program antywirusowy Microsoft Defender należy ustawić na tryb pasywny (ręcznie) <sup>[[2](#fn2)]<sup>  | 
@@ -103,11 +103,90 @@ W poniższej tabeli podsumowano stan Program antywirusowy Microsoft Defender w k
 
 (<a id="fn2">2</a>) Na Windows Server 2019, Windows Server, wersja 1803 lub nowsza, Windows Server 2016 lub Windows Server 2012 R2, Program antywirusowy Microsoft Defender  program antywirusowy innej firmy nie przechodzi automatycznie w tryb pasywny. W takich przypadkach ustaw Program antywirusowy Microsoft Defender na tryb pasywny, aby zapobiec problemom spowodowanym przez zainstalowanie wielu produktów antywirusowych na serwerze. Możesz ustawić Program antywirusowy Microsoft Defender na tryb pasywny przy użyciu programu PowerShell, zasady grupy lub klucza rejestru. 
 
+**Metoda klucza rejestru**
+
   Możesz ustawić Program antywirusowy Microsoft Defender na tryb pasywny, ustawiając następujący klucz rejestru:
 - Ścieżka: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Nazwa: `ForceDefenderPassiveMode`
 - Typu: `REG_DWORD`
 - Wartość: `1`
+
+**Metoda obiektu zasad grupy**
+
+- Otwórz edytor zarządzania zasady grupy >**szablony** >  administracyjne **konfiguracji** >  komputera **Windows składniki** >  **Program antywirusowy Microsoft Defender**.
+- Wybierz pozycję **Wyłącz Program antywirusowy Microsoft Defender**.
+- Ustaw obiekt zasad grupy na **wartość Włączone**.
+
+Stan ochrony można wyświetlić w programie PowerShell za pomocą polecenia "Get-MpComputerStatus" i klucza "AMRunningMode".
+
+## SYNTAX
+
+```
+PS C:\Users\tommaso> Get-MpComputerStatus
+
+
+AMEngineVersion                  : 0.0.0.0
+AMProductVersion                 : 4.18.2205.4
+AMRunningMode                    : Not running
+AMServiceEnabled                 : False
+AMServiceVersion                 : 0.0.0.0
+AntispywareEnabled               : False
+AntispywareSignatureAge          : 4294967295
+AntispywareSignatureLastUpdated  :
+AntispywareSignatureVersion      : 0.0.0.0
+AntivirusEnabled                 : False
+AntivirusSignatureAge            : 4294967295
+AntivirusSignatureLastUpdated    :
+AntivirusSignatureVersion        : 0.0.0.0
+BehaviorMonitorEnabled           : False
+ComputerID                       : 5CF99D95-BF09-4B2E-9911-8E01C55642E5
+ComputerState                    : 0
+DefenderSignaturesOutOfDate      : False
+DeviceControlDefaultEnforcement  : N/A
+DeviceControlPoliciesLastUpdated : 01/01/1601 00:00:00
+DeviceControlState               : N/A
+FullScanAge                      : 4294967295
+FullScanEndTime                  :
+FullScanOverdue                  : False
+FullScanRequired                 : False
+FullScanSignatureVersion         :
+FullScanStartTime                :
+IoavProtectionEnabled            : False
+IsTamperProtected                : False
+IsVirtualMachine                 : True
+LastFullScanSource               : 0
+LastQuickScanSource              : 0
+NISEnabled                       : False
+NISEngineVersion                 : 0.0.0.0
+NISSignatureAge                  : 4294967295
+NISSignatureLastUpdated          :
+NISSignatureVersion              : 0.0.0.0
+OnAccessProtectionEnabled        : False
+ProductStatus                    : 1
+QuickScanAge                     : 4294967295
+QuickScanEndTime                 :
+QuickScanOverdue                 : False
+QuickScanSignatureVersion        :
+QuickScanStartTime               :
+RealTimeProtectionEnabled        : False
+RealTimeScanDirection            : 0
+RebootRequired                   : False
+TamperProtectionSource           : Signatures
+TDTMode                          : N/A
+TDTStatus                        : N/A
+TDTTelemetry                     : N/A
+TroubleShootingDailyMaxQuota     :
+TroubleShootingDailyQuotaLeft    :
+TroubleShootingEndTime           :
+TroubleShootingExpirationLeft    :
+TroubleShootingMode              :
+TroubleShootingModeSource        :
+TroubleShootingQuotaResetTime    :
+TroubleShootingStartTime         :
+PSComputerName                   :
+```
+
+W poniższym przykładzie stan usługi Defender **to Nie uruchomiono**.
 
  > [!NOTE]
  > Aby tryb pasywny działał w punktach końcowych z uruchomionymi Windows Server 2016 i Windows Server 2012 R2, te punkty końcowe muszą być dołączone do nowoczesnego, ujednoliconego rozwiązania opisanego w [temacie Dołączanie serwerów Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 

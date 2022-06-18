@@ -1,6 +1,6 @@
 ---
-title: Ręczne wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS
-description: Zainstaluj Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS ręcznie z poziomu wiersza polecenia.
+title: Ręczne wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender na macOS
+description: Zainstaluj Ochrona punktu końcowego w usłudze Microsoft Defender na macOS ręcznie z poziomu wiersza polecenia.
 keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,41 +16,41 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c2bf6cef9e2d2d7413cff9aa4a8ed110ae72edf
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 68f91e4b8f789087aacea14b6b2a8a8b67262fd0
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129271"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159624"
 ---
-# <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Ręczne wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS
+# <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Ręczne wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender na macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink).
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink).
 
-W tym temacie opisano sposób ręcznego wdrażania Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS. Pomyślne wdrożenie wymaga wykonania wszystkich następujących kroków:
+W tym temacie opisano sposób ręcznego wdrażania Ochrona punktu końcowego w usłudze Microsoft Defender na macOS. Pomyślne wdrożenie wymaga wykonania wszystkich następujących kroków:
 
 - [Pobieranie pakietów instalacyjnych i dołączanych](#download-installation-and-onboarding-packages)
 - [Instalacja aplikacji (macOS 10.15)](#application-installation-macos-1015)
-- [Instalacja aplikacji (system macOS 11 i nowsze wersje)](#application-installation-macos-11-and-newer-versions)
+- [Instalacja aplikacji (macOS 11 i nowszych wersji)](#application-installation-macos-11-and-newer-versions)
 - [Konfiguracja klienta](#client-configuration)
 
 ## <a name="prerequisites-and-system-requirements"></a>Wymagania wstępne i wymagania systemowe
 
-Przed rozpoczęciem zapoznaj się z [głównym Ochrona punktu końcowego w usłudze Microsoft Defender na stronie systemu macOS](microsoft-defender-endpoint-mac.md), aby zapoznać się z opisem wymagań wstępnych i wymagań systemowych dotyczących bieżącej wersji oprogramowania.
+Przed rozpoczęciem zapoznaj się z [głównym Ochrona punktu końcowego w usłudze Microsoft Defender na stronie macOS](microsoft-defender-endpoint-mac.md), aby zapoznać się z opisem wymagań wstępnych i wymagań systemowych dotyczących bieżącej wersji oprogramowania.
 
 ## <a name="download-installation-and-onboarding-packages"></a>Pobieranie pakietów instalacyjnych i dołączanych
 
 Pobierz pakiety instalacyjne i dołączające z portalu Microsoft 365 Defender:
 
 1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a> przejdź do **obszaru Ustawienia > Endpoints > Device management > Onboarding (Punkty końcowe > Dołączanie do zarządzania urządzeniami**).
-2. W sekcji 1 strony ustaw opcję system operacyjny na **macOS** , a metodę Wdrożenia na **skrypt lokalny**.
+2. W sekcji 1 strony ustaw system operacyjny na **macOS**, a metodę wdrożenia na **skrypt lokalny**.
 3. W sekcji 2 strony wybierz pozycję **Pobierz pakiet instalacyjny**. Zapisz go jako plik wdav.pkg w katalogu lokalnym.
 4. W sekcji 2 strony wybierz pozycję **Pobierz pakiet dołączania**. Zapisz go jako WindowsDefenderATPOnboardingPackage.zip w tym samym katalogu.
 
@@ -85,9 +85,9 @@ Aby ukończyć ten proces, musisz mieć uprawnienia administratora na urządzeni
    > Jeśli nie wybierzesz opcji **Zezwalaj**, instalacja będzie kontynuowana po 5 minutach. Ochrona punktu końcowego w usłudze Microsoft Defender zostaną załadowane, ale niektóre funkcje, takie jak ochrona w czasie rzeczywistym, zostaną wyłączone. Aby uzyskać informacje na temat sposobu rozwiązania tego problemu, zobacz [Rozwiązywanie problemów z rozszerzeniem jądra](mac-support-kext.md) .
 
 > [!NOTE]
-> System macOS może zażądać ponownego uruchomienia urządzenia podczas pierwszej instalacji Ochrona punktu końcowego w usłudze Microsoft Defender. Ochrona w czasie rzeczywistym nie będzie dostępna do momentu ponownego uruchomienia urządzenia.
+> macOS może zażądać ponownego uruchomienia urządzenia podczas pierwszej instalacji Ochrona punktu końcowego w usłudze Microsoft Defender. Ochrona w czasie rzeczywistym nie będzie dostępna do momentu ponownego uruchomienia urządzenia.
 
-## <a name="application-installation-macos-11-and-newer-versions"></a>Instalacja aplikacji (system macOS 11 i nowsze wersje)
+## <a name="application-installation-macos-11-and-newer-versions"></a>Instalacja aplikacji (macOS 11 i nowszych wersji)
 
 Aby ukończyć ten proces, musisz mieć uprawnienia administratora na urządzeniu.
 
@@ -117,7 +117,7 @@ Aby ukończyć ten proces, musisz mieć uprawnienia administratora na urządzeni
 
 ## <a name="client-configuration"></a>Konfiguracja klienta
 
-1. Skopiuj plik wdav.pkg i MicrosoftDefenderATPOnboardingMacOs.sh na urządzenie, na którym wdrażasz Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS.
+1. Skopiuj pliki wdav.pkg i MicrosoftDefenderATPOnboardingMacOs.sh na urządzenie, na którym wdrażasz Ochrona punktu końcowego w usłudze Microsoft Defender na macOS.
 
     Urządzenie klienckie nie jest skojarzone z org_id. Należy pamiętać, że atrybut *org_id* jest pusty.
 
@@ -128,7 +128,7 @@ Aby ukończyć ten proces, musisz mieć uprawnienia administratora na urządzeni
 2. Uruchom skrypt powłoki Bash, aby zainstalować plik konfiguracji:
 
     ```bash
-    bash MicrosoftDefenderATPOnboardingMacOs.sh
+    Sudo bash -x MicrosoftDefenderATPOnboardingMacOs.sh
     ```
 
 3. Sprawdź, czy urządzenie jest teraz skojarzone z Twoją organizacją i zgłosi prawidłowy identyfikator organizacji:
@@ -137,7 +137,7 @@ Aby ukończyć ten proces, musisz mieć uprawnienia administratora na urządzeni
     mdatp health --field org_id
     ```
 
-    Po zakończeniu instalacji ikona usługi Microsoft Defender zostanie wyświetlona na pasku stanu systemu macOS w prawym górnym rogu.
+    Po zakończeniu instalacji ikona usługi Microsoft Defender zostanie wyświetlona na pasku stanu macOS w prawym górnym rogu.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="Ikona usługi Microsoft Defender na pasku stanu" lightbox="images/mdatp-icon-bar.png":::
@@ -145,7 +145,7 @@ Aby ukończyć ten proces, musisz mieć uprawnienia administratora na urządzeni
 ## <a name="how-to-allow-full-disk-access"></a>Jak zezwolić na pełny dostęp do dysku
 
 > [!CAUTION]
-> System macOS 10.15 (Catalina) zawiera nowe ulepszenia zabezpieczeń i prywatności. Począwszy od tej wersji, domyślnie aplikacje nie mogą uzyskać dostępu do niektórych lokalizacji na dysku (takich jak Dokumenty, Pliki do pobrania, Pulpit itp.) bez wyraźnej zgody. W przypadku braku tej zgody Ochrona punktu końcowego w usłudze Microsoft Defender nie jest w stanie w pełni chronić urządzenia.
+> macOS 10.15 (Catalina) zawiera nowe ulepszenia zabezpieczeń i prywatności. Począwszy od tej wersji, domyślnie aplikacje nie mogą uzyskać dostępu do niektórych lokalizacji na dysku (takich jak Dokumenty, Pliki do pobrania, Pulpit itp.) bez wyraźnej zgody. W przypadku braku tej zgody Ochrona punktu końcowego w usłudze Microsoft Defender nie jest w stanie w pełni chronić urządzenia.
 
 1. Aby udzielić zgody, otwórz **pozycję Preferencje systemowe** \> **Zabezpieczenia & Prywatność Prywatność** \>  \> **— pełny dostęp do dysku**. Kliknij ikonę blokady, aby wprowadzić zmiany (u dołu okna dialogowego). Wybierz pozycję Ochrona punktu końcowego w usłudze Microsoft Defender.
 
@@ -190,7 +190,7 @@ Aby ukończyć ten proces, musisz mieć uprawnienia administratora na urządzeni
    > Po dwukrotnym kliknięciu zostanie wyświetlony następujący komunikat:
    >
    > > **Nie można otworzyć "MDATP MacOS DIY", ponieważ deweloper nie może być weryfikatorem.**<br/>
-   > > System macOS nie może sprawdzić, czy ta aplikacja jest wolna od złośliwego oprogramowania.<br/>
+   > > macOS nie może sprawdzić, czy ta aplikacja jest wolna od złośliwego oprogramowania.<br/>
    > > **\[Przenieś do kosza\]** **\[anuluj\]**
 
 7. Kliknij przycisk **Anuluj**.
@@ -199,14 +199,14 @@ Aby ukończyć ten proces, musisz mieć uprawnienia administratora na urządzeni
 
     System powinien wyświetlić następujący komunikat:
 
-    > **System macOS nie może zweryfikować dewelopera funkcji MDATP dla systemu MacOS DIY. Czy na pewno chcesz go otworzyć?**<br/>
+    > **macOS nie może zweryfikować dewelopera MDATP MacOS DIY. Czy na pewno chcesz go otworzyć?**<br/>
     > Otwarcie tej aplikacji spowoduje zastąpienie zabezpieczeń systemu, które może uwidoczniać komputer i dane osobowe złośliwemu oprogramowaniu, które może zaszkodzić twojemu komputerowi Mac lub naruszyć twoją prywatność.
 
 9. Kliknij przycisk **Otwórz**.
 
     System powinien wyświetlić następujący komunikat:
 
-    > Ochrona punktu końcowego w usłudze Microsoft Defender — plik testowy systemu macOS EDR DIY<br/>
+    > Ochrona punktu końcowego w usłudze Microsoft Defender — plik testowy macOS EDR DIY<br/>
     > Odpowiedni alert będzie dostępny w portalu MDATP.
 
 10. Kliknij przycisk **Otwórz**.
@@ -217,7 +217,7 @@ Aby ukończyć ten proces, musisz mieć uprawnienia administratora na urządzeni
 
 12. Przejdź do kolejki alertów.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Alert testowy systemu macOS EDR pokazujący ważność, kategorię, źródło wykrywania i zwinięte menu akcji" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Alert testowy macOS EDR pokazujący ważność, kategorię, źródło wykrywania i zwinięte menu akcji" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
 
     Przyjrzyj się szczegółom alertu i osi czasu urządzenia i wykonaj regularne kroki badania.
 
@@ -227,4 +227,4 @@ Zobacz [Rejestrowanie problemów z instalacją](mac-resources.md#logging-install
 
 ## <a name="uninstallation"></a>Dezinstalacji
 
-Zobacz [Odinstalowywanie](mac-resources.md#uninstalling), aby uzyskać szczegółowe informacje na temat usuwania Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS z urządzeń klienckich.
+Aby uzyskać szczegółowe informacje na temat usuwania Ochrona punktu końcowego w usłudze Microsoft Defender na macOS z urządzeń klienckich, zobacz [Odinstalowywanie](mac-resources.md#uninstalling).
