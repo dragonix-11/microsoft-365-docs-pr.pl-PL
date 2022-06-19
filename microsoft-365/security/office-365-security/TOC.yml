@@ -223,13 +223,13 @@
         - name: Lista dozwolonych/zablokowanych dzierżaw
           items:
             - name: Zarządzanie listą dozwolonych/zablokowanych dzierżaw
-              href: tenant-allow-block-list.md
-            - name: Dodawanie blokad na liście dozwolonych/zablokowanych dzierżaw
-              href: manage-tenant-blocks.md
-            - name: Dodawanie zezwoleń na liście dozwolonych/zablokowanych dzierżaw
-              href: manage-tenant-allows.md
-            - name: Modyfikowanie i usuwanie wpisów na liście dozwolonych/zablokowanych dzierżaw
-              href: modify-remove-entries-tenant-allow-block.md
+              href: manage-tenant-allow-block-list.md
+            - name: Zezwalanie na wiadomości e-mail lub blokuj je przy użyciu listy dozwolonych/zablokowanych dzierżaw
+              href: allow-block-email-spoof.md
+            - name: Zezwalaj na adresy URL lub blokuj je przy użyciu listy dozwolonych/zablokowanych dzierżaw
+              href: allow-block-urls.md
+            - name: Zezwalanie na pliki lub blokuj je przy użyciu listy dozwolonych/zablokowanych dzierżaw
+              href: allow-block-files.md
         - name: Tworzenie list zablokowanych nadawców
           href: Create-block-sender-lists-in-office-365.md
         - name: Tworzenie list bezpiecznych nadawców
