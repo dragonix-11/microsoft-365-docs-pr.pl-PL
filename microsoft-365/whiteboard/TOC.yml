@@ -1,0 +1,24 @@
+- name: Microsoft Whiteboard
+  href: index.md
+- name: Tablica dla organizacji
+  items:
+    - name: Włączanie dostępu i zarządzanie nim
+      href: enable-whiteboard-access-organizations.md
+    - name: Zarządzanie danymi
+      href: manage-data-organizations.md
+    - name: Zarządzaj udostępnianiem
+      href: manage-sharing-organizations.md
+    - name: Wdrożenie na urządzeniach z systemem Windows
+      href: deploy-on-windows-organizations.md
+- name: Tablica dla instytucji rządowych
+  items:
+    - name: Włączanie dostępu i zarządzanie nim — GCC High
+      href: enable-whiteboard-access-gcc-high.md
+    - name: Zarządzanie danymi — GCC High
+      href: manage-data-gcc-high.md
+    - name: Zarządzanie udostępnianiem — GCC High
+      href: manage-sharing-gcc-high.md
+    - name: Zarządzanie klientami — GCC High
+      href: manage-clients-gcc-high.md
+- name: Tablica programu PowerShell
+  href: /powershell/module/whiteboard/
