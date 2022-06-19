@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Uzyskaj okresowy raport o tym, jak osoby w Twojej organizacji korzystają z usług platformy Microsoft 365, i przejdź do szczegółów każdego wykresu, aby uzyskać więcej szczegółowych informacji.
-ms.openlocfilehash: 6d773b3f6bf7f2660a2608085b503b1cde1c05c9
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 9dbd1ef7044db3a27c93cfe7e2acd09aaa32cd14
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007245"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151167"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Raporty platformy Microsoft 365 w centrum administracyjnym
 
@@ -113,6 +113,7 @@ W zależności od subskrypcji we wszystkich środowiskach dostępne są następu
 |[Aktywność sesji równorzędnych usługi Skype dla firm Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Tak|Tak|Nie<sup>1</sup>|Nie<sup>1</sup>|Tak|
 |[Aktywność usługi Viva Learning](viva-learning-activity.md)|Tak|nd.|nd.|nd.|nd.|
 |[Aktywność usługi Szczegółowe informacje Viva](viva-insights-activity.md)|Tak|Tak|nd.|nd.|nd.|
+|[Aktywność projektu](project-activity.md)|Tak|Tak|nd.|nd.|nd.|
 
 N/D<sup>1</sup>: raport jest planowany do wydania w przyszłości. <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Plan platformy Microsoft 365</a> zostanie zaktualizowany przed wydaniem.
 N/D<sup>2</sup>: usługa nie jest dostępna w środowisku, więc nie ma planu wydania raportu.
