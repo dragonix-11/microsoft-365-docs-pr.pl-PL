@@ -9,20 +9,26 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Zmień motyw kolorów strony rezerwacji w aplikacji Microsoft Bookings.
-ms.openlocfilehash: 1c00f87f3447b7002bf647086ee60c756662803d
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: df91e0855615612cfca1fc24a3ddf4cdcb992b0e
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637808"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185110"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Dostosuj i opublikuj stronę rezerwacji
 
 Strona rezerwacji to miejsce, na którym skonfigurujesz, jak będzie wyglądać twoja zewnętrzna strona rezerwacji. Gdy dostosujesz i opublikujesz stronę rezerwacji, użytkownicy będą jej używać do rezerwacji spotkań z Tobą.
 
-Aby dostosować stronę rezerwacji, zaloguj się w [witrynie Office.com](https://office.com), a następnie przejdź do **strony Bookings** \> **Booking**. Stronę rezerwacji można dostosować przy użyciu następujących opcji. Po skonfigurowaniu strony rezerwacji możesz ją opublikować, aby umożliwić użytkownikom rozpoczęcie rezerwacji terminów.
+Aby dostosować stronę rezerwacji, zaloguj się w [witrynie Office.com](https://office.com), a następnie przejdź do strony **Bookings** \> **Booking**. Stronę rezerwacji można dostosować przy użyciu następujących opcji. Po skonfigurowaniu strony rezerwacji możesz ją opublikować, aby umożliwić użytkownikom rozpoczęcie rezerwacji terminów.
 
-1. W Microsoft 365 wybierz program uruchamiania aplikacji, a następnie wybierz **pozycję Bookings**.
+## <a name="watch-customize-and-publish-your-booking-page"></a>Obejrzyj: Dostosowywanie i publikowanie strony rezerwacji
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuYil]
+
+## <a name="steps"></a>Kroki
+
+1. W Microsoft 365 wybierz narzędzie do uruchamiania aplikacji, a następnie wybierz pozycję **Rezerwacje**.
 
 1. Wybierz kalendarz.
 
@@ -34,7 +40,7 @@ Poniższa sekcja zawiera informacje o konfigurowaniu strony rezerwacji i sposobi
 
     Wewnętrzna strona rezerwacji wygląda następująco:
 
-    :::image type="content" source="media/bookings-internal-page-1.png" alt-text="Strona Bookings.":::
+    :::image type="content" source="media/bookings-internal-page-1.png" alt-text="Strona Rezerwacje.":::
 
 - **Kontrola dostępu do strony rezerwacji: wymaganie konta Microsoft 365 od mojej organizacji do zarezerwowania** wybrania tej opcji umożliwi tylko osobom w organizacji wyświetlenie strony lub zarezerwowanie dowolnych usług. Dostęp do strony jest autoryzowany za pośrednictwem kontroli poświadczeń, aby upewnić się, że użytkownik należy do konta w dzierżawie.
 
@@ -44,31 +50,31 @@ Poniższa sekcja zawiera informacje o konfigurowaniu strony rezerwacji i sposobi
 
 - **Zasady planowania**, **powiadomienia e-mail** i **personel** Wszystkie te ustawienia są podobne do tych dostępnych dla każdej usługi na karcie Usługi.
 
-- **Dostępność** Jest to opcja ustawiania określonych zakresów czasu i dat dostępności dla usługi. W przeciwnym razie Bookings będzie domyślnie godzinami pracy. W tym miejscu możesz użyć opcji **Dostępność** w scenariuszach, takich jak dni wolne lub dłuższe godziny.
+- **Dostępność** Jest to opcja ustawiania określonych zakresów czasu i dat dostępności dla usługi. W przeciwnym razie wartość Bookings będzie domyślnie ustawiona na godziny pracy. W tym miejscu możesz użyć opcji **Dostępność** w scenariuszach, takich jak dni wolne lub dłuższe godziny.
 
 - **Dostosowywanie strony** Wybierz kolory i logo wyświetlane na stronie Self-Service, na przykład w celu zachowania spójności marki.
 
-- **Ustawienia regionu i strefy czasowej** W tym miejscu można ustawić strefę czasowa i preferencje językowe dla strony Self-Service. Zalecamy ustawienie lokalnej strefy czasowej. W przypadku odwiedzających stronę Self-Service Bookings automatycznie wykrywają lokalne strefy czasowe i wyświetlają im dostępność we własnych strefach czasowych. Jeśli na przykład termin jest dostępny o godzinie 13:00 czasu PST, ktoś w CST zobaczy dostępny czas wyświetlany jako 15:00 czasu CST.
+- **Ustawienia regionu i strefy czasowej** W tym miejscu można ustawić strefę czasowa i preferencje językowe dla strony Self-Service. Zalecamy ustawienie lokalnej strefy czasowej. W przypadku odwiedzających stronę Self-Service usługa Bookings automatycznie wykrywa lokalne strefy czasowe i wyświetla im dostępność we własnych strefach czasowych. Jeśli na przykład termin jest dostępny o godzinie 13:00 czasu PST, ktoś w CST zobaczy dostępny czas wyświetlany jako 15:00 czasu CST.
 
 Po opublikowaniu strony rezerwacji klienci zobaczą Twoją stronę rezerwacji, na której będą mogli zarezerwować spotkania z Tobą. Strona rezerwacji klienta wygląda następująco:
 
 :::image type="content" source="media/bookings-self-service-2.png" alt-text="Strona rezerwacji skierowana do klienta.":::
 
-## <a name="publish-the-booking-page"></a>Publikowanie strony rezerwacji
+<!-- ## Publish the booking page
 
-Obejrzyj ten film wideo lub wykonaj poniższe kroki, aby opublikować lub cofnąć publikowanie strony rezerwacji.
+Watch this video or follow the steps below to publish or unpublish your booking page.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuYil]
 
-1. W Microsoft 365 wybierz program uruchamiania aplikacji, a następnie wybierz **pozycję Bookings**.
+1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-1. W okienku nawigacji wybierz pozycję **Strona rezerwacji**.
+1. In the navigation pane, select **Booking page**.
 
-1. Sprawdź, czy zasady planowania są poprawne. Aby uzyskać więcej informacji [, zobacz Ustawianie zasad planowania](set-scheduling-policies.md) .
+1. Verify your scheduling policies are correct. See [Set your scheduling policies](set-scheduling-policies.md) for more information.
 
-1. Wybierz pozycję **Zapisz i opublikuj**. Zostanie wyświetlony komunikat z potwierdzeniem.
+1. Select **Save and publish**. You'll see a confirmation message.
 
-1. Wybierz pozycję **Otwórz opublikowaną stronę** , aby wyświetlić stronę w przeglądarce internetowej.
+1. Select **Open published page** to see your page in a web browser. -->
 
 ## <a name="unpublish-the-booking-page"></a>Anulowanie publikowania strony rezerwacji
 

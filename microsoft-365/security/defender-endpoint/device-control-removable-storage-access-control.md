@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/06/2022
-ms.openlocfilehash: 503740e6dc16aea98fd44b71d9693d2b4a5844a8
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.date: 06/20/2022
+ms.openlocfilehash: 78eb4f9cb65fb5eec54747a256abf290a43deb2f
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043638"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185464"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Ochrona punktu końcowego w usłudze Microsoft Defender Storage Access Control wymienna kontrolki urządzenia
 
@@ -290,7 +290,7 @@ Przejdź do centrum administracyjnego Microsoft Endpoint Manager (<https://endpo
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Wdrażanie zasad i zarządzanie nimi przy użyciu interfejsu użytkownika Intune
 
-(*Wkrótce!*) Ta funkcja będzie dostępna w centrum administracyjnym Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>). Przejdź do obszaru Tworzenie **zasad tworzenia** obszaru **podatnego** >  **na ataki zabezpieczeń** >  punktu końcowego. Wybierz **pozycję Platforma: Windows 10 i nowsze** z **opcją Profil: Kontrola urządzenia**.
+Ta funkcja jest dostępna w centrum administracyjnym Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>). Przejdź do obszaru Tworzenie **zasad tworzenia** obszaru **podatnego** >  **na ataki zabezpieczeń** >  punktu końcowego. Wybierz **pozycję Platforma: Windows 10 i nowsze** z **opcją Profil: Kontrola urządzenia**.
 
 ## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>Wdrażanie Storage Access Control wymiennych i zarządzanie nimi przy użyciu zasady grupy
 

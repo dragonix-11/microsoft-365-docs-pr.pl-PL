@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej na temat wersji próbnej rozwiązań Microsoft Purview i sposobu tworzenia konta.
-ms.openlocfilehash: 653c80e7c8b412ac1d9c14a021519ca80baab6e9
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 425c9c3aecd4df38a53a5b6bee818f466f167a27
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188839"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185132"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Informacje o wersji próbnej rozwiązań Microsoft Purview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Rozwiązania usługi Microsoft Purview pomagają chronić organizację przed zagrożeniami wewnętrznymi wynikającymi z niewłaściwych uprawnień do plików i wiadomości e-mail oraz pomagają organizacji spełnić wymagania prawne i wewnętrzne.
+rozwiązania Microsoft Purview pomagają chronić organizację przed zagrożeniami wewnętrznymi wynikającymi z niewłaściwych uprawnień do plików i wiadomości e-mail oraz pomagają organizacji spełnić wymagania prawne i wewnętrzne.
 
-Wersja próbna rozwiązań Microsoft Purview to najprostszy sposób wypróbowania wszystkich możliwości rozwiązań Microsoft Purview, a jego skonfigurowanie zajmuje tylko kilka minut. Po zakończeniu konfiguracji wersji próbnej wszystkie funkcje pakietu licencji microsoft E5 są dostępne do użycia przez maksymalnie 90 dni.
+Wersja próbna rozwiązań Microsoft Purview jest najprostszym sposobem wypróbowania wszystkich możliwości Microsoft Purview rozwiązań, a jego skonfigurowanie zajmuje tylko kilka minut. Po zakończeniu konfiguracji wersji próbnej wszystkie funkcje pakietu licencji microsoft E5 są dostępne do użycia przez maksymalnie 90 dni.
 
 ## <a name="terms-and-conditions"></a>Warunki i postanowienia
 
@@ -54,9 +54,9 @@ Szczegółowe informacje na temat ról można znaleźć w artykule [Informacje o
 
 Odwiedź [centrum wersji próbnych Microsoft 365](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef), aby zarejestrować się w wersji próbnej. Możesz również wykonać poniższe kroki:
 
-1. W [portalu zgodności usługi Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=2077149) wybierz pozycję **Wersje próbne** na lewym pasku nawigacyjnym, aby przejść do centrum Microsoft 365 trials.
-2. W obszarze **Wersje próbne zgodności** znajdź kartę **Rozwiązania usługi Microsoft Purview** i wybierz pozycję **Wypróbuj teraz**.
-3. W okienku **wysuwanej wersji próbnej rozwiązań Microsoft Purview** przejrzyj informacje o tym, co jest uwzględnione i czego można oczekiwać po rozpoczęciu wersji próbnej, a następnie wybierz pozycję **Rozpocznij wersję próbną.**
+1. W [portal zgodności Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=2077149) wybierz pozycję **Wersje próbne** na lewym pasku nawigacyjnym, aby przejść do centrum Microsoft 365 trials.
+2. W obszarze **Wersje próbne zgodności** znajdź kartę **rozwiązania Microsoft Purview** i wybierz pozycję **Wypróbuj teraz**.
+3. W okienku wysuwu **wersji próbnej rozwiązania Microsoft Purview solutions** przejrzyj informacje o tym, co jest uwzględnione i czego można oczekiwać po rozpoczęciu wersji próbnej, a następnie wybierz pozycję **Rozpocznij wersję próbną.**
 
 Twoja wersja próbna będzie obowiązywać natychmiast przez 90 dni. Wyświetlenie wszystkich rozwiązań usługi Purview w lewym obszarze nawigacji może potrwać do dwóch godzin. Wyloguj się i zaloguj się ponownie, aby wyświetlić aktualizacje.
 
@@ -64,7 +64,7 @@ Twoja wersja próbna będzie obowiązywać natychmiast przez 90 dni. Wyświetlen
 
 #### <a name="getting-started"></a>Wprowadzenie
 
-Możesz zacząć korzystać z rozwiązań usługi Purview, gdy tylko zobaczysz je w portalu zgodności usługi Microsoft Purview. Nic nie jest tworzone automatycznie i nie będzie to miało wpływu na użytkowników. Po przejściu do każdego rozwiązania możesz skorzystać z przewodnika, aby utworzyć dodatkowe konfiguracje konfiguracji, aby rozpocząć korzystanie z funkcji.
+Możesz zacząć korzystać z rozwiązań usługi Purview, gdy tylko zobaczysz je w portal zgodności Microsoft Purview. Nic nie jest tworzone automatycznie i nie będzie to miało wpływu na użytkowników. Po przejściu do każdego rozwiązania możesz skorzystać z przewodnika, aby utworzyć dodatkowe konfiguracje konfiguracji, aby rozpocząć korzystanie z funkcji.
 
 Skorzystaj z naszego [podręcznika wersji próbnej](compliance-easy-trials-compliance-playbook.md) , aby ułatwić Rozpoczęcie pracy.
 
@@ -88,15 +88,15 @@ Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? We
 
 - **Inspekcji**
 
-  Inspekcja usługi Microsoft Purview (Premium) pomaga organizacjom w prowadzeniu badań kryminalistycznych i zgodności poprzez zwiększenie przechowywania dzienników inspekcji wymaganych do przeprowadzenia badania, zapewnienie dostępu do kluczowych zdarzeń, które pomagają określić zakres naruszenia zabezpieczeń i szybszy dostęp do interfejsu API działań zarządzania Office 365. Dowiedz się więcej o [inspekcji](advanced-audit.md)
+  Inspekcja w Microsoft Purview (Premium) pomaga organizacjom w prowadzeniu badań kryminalistycznych i zgodności poprzez zwiększenie przechowywania dzienników inspekcji wymaganych do przeprowadzenia badania, zapewnienie dostępu do kluczowych zdarzeń, które pomagają określić zakres naruszenia zabezpieczeń i szybszy dostęp do interfejsu API działania zarządzania Office 365. Dowiedz się więcej o [inspekcji](advanced-audit.md)
 
 - **Zgodność z komunikacją**
 
-  Microsoft Purview Communication Compliance pomaga przezwyciężyć nowoczesne wyzwania związane ze zgodnością związane z komunikacją wewnętrzną i zewnętrzną, pomagając automatycznie przechwytywać nieodpowiednie komunikaty, badać możliwe naruszenia zasad i podejmować kroki w celu skorygowania problemu. Dowiedz się więcej o [zgodności komunikacji](communication-compliance.md)
+  Zgodność w komunikacji w Microsoft Purview pomaga przezwyciężyć nowoczesne wyzwania związane ze zgodnością związane z komunikacją wewnętrzną i zewnętrzną, pomagając automatycznie przechwytywać nieodpowiednie komunikaty, badać możliwe naruszenia zasad i podejmować kroki w celu skorygowania problemu. Dowiedz się więcej o [zgodności komunikacji](communication-compliance.md)
 
 - **Menedżer zgodności**
 
-  Program Microsoft Purview Compliance Manager może pomóc w całej procesie zapewniania zgodności, od tworzenia spisu zagrożeń związanych z ochroną danych po zarządzanie złożonością wdrażania mechanizmów kontroli, aktualizowanie przepisów i certyfikatów oraz raportowanie do audytorów. Dowiedz się więcej o [Menedżerze zgodności](compliance-manager.md)
+  Microsoft Purview Compliance Manager może pomóc w całej procesie zapewniania zgodności, od tworzenia spisu zagrożeń związanych z ochroną danych po zarządzanie złożonością wdrażania mechanizmów kontroli, aktualizowanie przepisów i certyfikatów oraz raportowanie do audytorów. Dowiedz się więcej o [Menedżerze zgodności](compliance-manager.md)
 
 - **Zarządzanie cyklem życia danych**
 
@@ -104,12 +104,12 @@ Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? We
 
 - **Zapobieganie utracie danych**
 
-  Usługa Microsoft Purview Data Loss Prevention (DLP) ułatwia kontrolowanie udostępniania i używania poufnych informacji na urządzeniach, aplikacjach i usługach. Dzięki próbom można rozszerzyć zakres zasad DLP na Teams i urządzenia, chronić jeszcze bardziej wrażliwą zawartość przy użyciu klasyfikatorów z możliwością trenowania i dokładnego dopasowania danych (EDM) oraz szybko rozpocząć pracę z zalecanymi zasadami DLP.  [Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md)
+  Ochrona przed utratą danych w Microsoft Purview (DLP) ułatwia kontrolowanie udostępniania i używania poufnych informacji na urządzeniach, aplikacjach i usługach. Dzięki próbom można rozszerzyć zakres zasad DLP na Teams i urządzenia, chronić jeszcze bardziej wrażliwą zawartość przy użyciu klasyfikatorów z możliwością trenowania i dokładnego dopasowania danych (EDM) oraz szybko rozpocząć pracę z zalecanymi zasadami DLP.  [Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md)
 
    Po zakończeniu okresu próbnego:
 
   - Istniejące zasady pozostaną włączone, chyba że zostaną wyłączone.
-  - Jeśli edytujesz zasady DLP, które zawierają lokalizacje Teams lub Urządzenia po zakończeniu wersji próbnej, te lokalizacje zostaną usunięte z zasad.
+  - Nie będzie już można edytować ani dodawać lokalizacji Teams lub Urządzeń w istniejących lub nowych zasadach.
 
 - **Zbierania elektronicznych materiałów dowodowych**
 
@@ -117,7 +117,7 @@ Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? We
 
 - **Information Protection**
 
-  Zaimplementuj Information Protection Microsoft Purview z [etykietami poufności](sensitivity-labels.md), aby ułatwić odnajdywanie, klasyfikowanie i ochronę poufnych treści wszędzie tam, gdzie się znajduje lub podróżuje. Dzięki próbom można polecić użytkownikom stosowanie etykiet poufności do swoich wiadomości e-mail i dokumentów, odnajdywanie i automatyczne etykietowanie poufnej zawartości, korzystanie z klasyfikatorów opartych na uczeniu maszynowym oraz szybkie rozpoczęcie pracy z zalecanymi etykietami i zasadami.
+  Zaimplementuj Microsoft Purview Information Protection z [etykietami poufności](sensitivity-labels.md), aby ułatwić odnajdywanie, klasyfikowanie i ochronę poufnych treści wszędzie tam, gdzie się znajduje lub podróżuje. Dzięki próbom można polecić użytkownikom stosowanie etykiet poufności do swoich wiadomości e-mail i dokumentów, odnajdywanie i automatyczne etykietowanie poufnej zawartości, korzystanie z klasyfikatorów opartych na uczeniu maszynowym oraz szybkie rozpoczęcie pracy z zalecanymi etykietami i zasadami.
 
   Wersja próbna Information Protection zapewnia etykiety domyślne, automatyczne etykietowanie dokumentów i wiadomości e-mail oraz zapobieganie utracie danych w celu ochrony numerów kart kredytowych udostępnianych w Teams i urządzeniach. Domyślne zasady, które utworzymy dla Ciebie, umożliwiają szybkie uruchomienie, ale można je w pełni dostosować zgodnie z potrzebami.
 
@@ -127,9 +127,9 @@ Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? We
   - Istniejące zasady pozostaną włączone, chyba że zostaną wyłączone.
   - Nie można edytować żadnych zasad automatycznego etykietowania po zakończeniu wersji próbnej, ale można je usunąć.
   
-  Aby uzyskać więcej informacji na temat każdej z tych wstępnie skonfigurowanych funkcji i ich wpływu na użytkowników, zobacz Informacje o [bezpłatnej wersji próbnej usługi Microsoft Purview Information Protection](mip-easy-trials.md).
+  Aby uzyskać więcej informacji na temat każdej z tych wstępnie skonfigurowanych funkcji i ich wpływu na użytkowników, zobacz Informacje o [bezpłatnej wersji próbnej dla Microsoft Purview Information Protection](mip-easy-trials.md).
 
-  Aby uzyskać więcej informacji na temat pełnego zakresu funkcji usługi Microsoft Purview Information Protection, zobacz [Microsoft Purview Information Protection](information-protection.md).
+  Aby uzyskać więcej informacji na temat pełnego zakresu funkcji dla Microsoft Purview Information Protection, zobacz [Microsoft Purview Information Protection](information-protection.md).
 
 - **Zarządzanie ryzykiem wewnętrznym**
 
@@ -143,7 +143,7 @@ Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? We
 
 - **Zarządzanie rekordami**
 
-  Zintegrowane funkcje zarządzania rekordami usługi Microsoft Purview umożliwiają:
+  Użyj zintegrowanych funkcji Zarządzanie rekordami w Microsoft Purview, aby:
 
   - Klasyfikowanie zawartości jako rekordu w celu uniemożliwienia użytkownikom edytowania zgodnie z wymaganiami przepisów, przepisów lub zasad organizacyjnych
   - Automatyczne stosowanie etykiet przechowywania do zawartości, gdy spełnia określone kryteria, przy użyciu zasad automatycznego stosowania etykiet

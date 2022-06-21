@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Ustaw godziny pracy i dostępność pracowników w usłudze Microsoft Bookings.
-ms.openlocfilehash: 19b5a186c66659777a0dbe3444c0e43c4142ff36
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 1cd395b377d9d9b0a20ef1d01956a27c559afb42
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637257"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185066"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Godziny pracy pracowników w usłudze Microsoft Bookings
 
@@ -30,9 +30,9 @@ Obejrzyj to wideo lub wykonaj poniższe kroki, aby ustawić godziny pracy pracow
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
-## <a name="customize-employee-working-hours"></a>Dostosowywanie godzin pracy pracowników
+## <a name="steps"></a>Kroki
 
-1. W Microsoft 365 wybierz program uruchamiania aplikacji, a następnie wybierz **pozycję Bookings**.
+1. W Microsoft 365 wybierz narzędzie do uruchamiania aplikacji, a następnie wybierz pozycję **Rezerwacje**.
 
 1. Wybierz kalendarz.
 
@@ -42,7 +42,7 @@ Obejrzyj to wideo lub wykonaj poniższe kroki, aby ustawić godziny pracy pracow
 
 1. Użyj list rozwijanych, aby wybrać godziny rozpoczęcia i zakończenia dla każdego dnia. Czasy są dostępne w odstępach 15 minut.
 
-   ![Obraz przedstawiający ekran Bookings godzin pracy personelu.](../media/bookings-staff-hours.png)
+   ![Obraz przedstawiający ekran godzin pracy personelu bookings.](../media/bookings-staff-hours.png)
 
 1. Wybierz **+** , aby dodać selektory czasu rozpoczęcia i zakończenia.
 
@@ -54,7 +54,7 @@ Gdy planujesz dzień wolny dla pracownika, ten pracownik będzie niedostępny na
 
 1. Na ekranie godzin pracy wybierz **znak x** obok dnia, w którym pracownik będzie wyłączony.
 
-   ![Obraz przedstawiający ekran Bookings godzin pracy personelu z przyciskiem myszy na x.](../media/bookings-staff-time-off.png)
+   ![Obraz przedstawiający ekran Godziny pracy personelu Bookings z przyciskiem myszy na x.](../media/bookings-staff-time-off.png)
 
 1. Jeśli chcesz zaplanować dzień wcześniej oznaczony jako dzień wolny, wybierz **+** znak obok dnia, który chcesz zaplanować.
 

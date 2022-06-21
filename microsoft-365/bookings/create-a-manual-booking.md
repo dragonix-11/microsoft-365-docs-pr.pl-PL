@@ -9,18 +9,24 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Postępuj zgodnie z tymi instrukcjami, aby utworzyć termin i przypisać pracownika za pośrednictwem aplikacji Microsoft Bookings.
-ms.openlocfilehash: 8b7c54a9d8f06ba2f5618ad77049b87a2c212edb
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: b53283bfcd446ab89e7a3c3b647504dcc4c557cb
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637830"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185176"
 ---
 # <a name="create-a-manual-booking"></a>Twórz rezerwację ręczną
 
-Bookings można zaplanować i obsługiwać na dwa różne sposoby. Pierwszym sposobem jest użycie przez klienta autonomicznej strony rezerwacji lub osadzonej strony rezerwacji, którą dodajesz do swojej witryny internetowej. Innym sposobem jest ręczne wprowadzanie rezerwacji przez Ciebie lub jednego z pracowników, na przykład gdy klient dzwoni na spotkanie. W tym artykule opisano scenariusz ręczny.
+Rezerwacje można zaplanować i obsługiwać na dwa różne sposoby. Pierwszym sposobem jest użycie przez klienta autonomicznej strony rezerwacji lub osadzonej strony rezerwacji, którą dodajesz do swojej witryny internetowej. Innym sposobem jest ręczne wprowadzanie rezerwacji przez Ciebie lub jednego z pracowników, na przykład gdy klient dzwoni na spotkanie. W tym artykule opisano scenariusz ręczny.
 
-1. W Microsoft 365 wybierz pozycję Uruchamianie aplikacji, a następnie wybierz pozycję **Bookings**.
+## <a name="watch-create-a-manual-booking"></a>Obejrzyj: Tworzenie rezerwacji ręcznej
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Zd77]
+
+## <a name="steps"></a>Kroki
+
+1. W Microsoft 365 wybierz pozycję Uruchamianie aplikacji, a następnie wybierz pozycję **Rezerwacje**.
 
 1. W okienku nawigacji wybierz pozycję **Kalendarz** \> **Nowa rezerwacja**.
 

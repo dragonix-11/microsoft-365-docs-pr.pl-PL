@@ -8,7 +8,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 05/05/2022
+ms.date: 06/20/2022
 ms.reviewer: georgiah
 ms.custom:
 - it-pro
@@ -16,18 +16,18 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 839d320bfb52175f58009b8d254ec37eadeb4cb1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: fc0c9186f506cdead968668959c401517551a4d3
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007311"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185396"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migracja skrzynki pocztowej między dzierżawami (wersja zapoznawcza)
 
 Często podczas fuzji lub zbycia potrzebna jest możliwość przeniesienia skrzynki pocztowej Exchange Online użytkownika do nowej dzierżawy. Migracja skrzynki pocztowej między dzierżawami umożliwia administratorom dzierżawy korzystanie z dobrze znanych interfejsów, takich jak Exchange Online programu PowerShell i usługi MRS, w celu przeniesienia użytkowników do nowej organizacji.
 
-Administratorzy mogą używać polecenia cmdlet New-MigrationBatch dostępnego za pośrednictwem roli zarządzania Przenoszenie skrzynek pocztowych do wykonywania ruchów między dzierżawami.
+Administratorzy mogą używać polecenia cmdlet **New-MigrationBatch** dostępnego za pośrednictwem roli zarządzania _Przenoszenie skrzynek pocztowych_ do wykonywania ruchów między dzierżawami.
 
 Użytkownicy migrujący muszą być obecni w systemie Exchange Online dzierżawy docelowej jako użytkownicy poczty oznaczone określonymi atrybutami, aby umożliwić przenoszenie między dzierżawami. Przenoszenie systemu zakończy się niepowodzeniem dla użytkowników, którzy nie są prawidłowo skonfigurowani w dzierżawie docelowej.
 
@@ -210,17 +210,9 @@ Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [Centrum admi
 
 Konfigurację migracji skrzynki pocztowej między dzierżawami można sprawdzić, uruchamiając polecenie cmdlet [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) względem punktu końcowego migracji między dzierżawami utworzonego w dzierżawie docelowej.
 
-   > [!NOTE]
-   >
-   > - Dzierżawa docelowa:
-   >
-   > Test-MigrationServerAvailability -Endpoint "[nazwa punktu końcowego migracji między dzierżawami]"
-   >
-   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
-   >
-   > - Dzierżawa źródłowa:
-   >
-   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+```powershell
+Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant mailbox moves" - TestMailbox "Primary SMTP of MailUser object in target tenant"
+```
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>Przenoszenie skrzynek pocztowych z powrotem do oryginalnego źródła
 
@@ -377,19 +369,19 @@ Gdy skrzynka pocztowa zostanie przeniesiona ze źródła do miejsca docelowego, 
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-**Czy musimy zaktualizować zdalne skrzynki pocztowe w środowisku lokalnym źródła po przeniesieniu?**
+### <a name="do-we-need-to-update-remotemailboxes-in-source-on-premises-after-the-move"></a>Czy musimy zaktualizować zdalne skrzynki pocztowe w środowisku lokalnym źródła po przeniesieniu?
 
 Tak, należy zaktualizować element targetAddress (RemoteRoutingAddress/ExternalEmailAddress) źródłowych użytkowników lokalnych, gdy źródłowa skrzynka pocztowa dzierżawy zostanie przeniesiona do dzierżawy docelowej.  Routing poczty może być zgodny z poleceniami wielu użytkowników poczty z różnymi elementami docelowymiAddresses, natomiast wyszukiwanie wolnych/zajętych użytkowników poczty musi być przeznaczone dla lokalizacji użytkownika skrzynki pocztowej. Odnośniki Wolny/Zajęty nie będą gonić wielu przekierowań.
 
-**Czy Teams spotkania migrują między dzierżawami?**
+### <a name="do-teams-meetings-migrate-cross-tenant"></a>Czy Teams spotkania migrują między dzierżawami?
 
 Spotkania zostaną przeniesione, jednak adres URL spotkania Teams nie jest aktualizowany podczas migrowania elementów między dzierżawami. Ponieważ adres URL będzie nieprawidłowy w dzierżawie docelowej, należy usunąć i ponownie utworzyć spotkania Teams.
 
-**Czy zawartość folderu czatu Teams migruje między dzierżawami?**
+### <a name="does-the-teams-chat-folder-content-migrate-cross-tenant"></a>Czy zawartość folderu czatu Teams migruje między dzierżawami?
 
 Nie, zawartość folderu czatu Teams nie migruje między dzierżawami.
 
-**Jak mogę zobaczyć tylko ruchy, które są ruchami między dzierżawami, a nie moimi ruchami dołączania i wejścia na pokład?**
+### <a name="how-can-i-see-just-moves-that-are-cross-tenant-moves-not-my-onboarding-and-off-boarding-moves"></a>Jak mogę zobaczyć tylko ruchy, które są ruchami między dzierżawami, a nie moimi ruchami dołączania i wejścia na pokład?
 
 Użyj parametru _Flags_ . Oto przykład.
 
@@ -397,7 +389,7 @@ Użyj parametru _Flags_ . Oto przykład.
 Get-MoveRequest -Flags "CrossTenant"
 ```
 
-**Czy można podać przykładowe skrypty do kopiowania atrybutów używanych podczas testowania?**
+### <a name="can-you-provide-example-scripts-for-copying-attributes-used-in-testing"></a>Czy można podać przykładowe skrypty do kopiowania atrybutów używanych podczas testowania?
 
 > [!NOTE]
 > SAMPLE — AS IS, NO WARRANTY Ten skrypt zakłada połączenie zarówno ze źródłową skrzynką pocztową (w celu uzyskania wartości źródłowych), jak i docelową lokalna usługa Active Directory Domain Services (w celu ostemplowania obiektu ADUser). Jeśli w źródle włączono postępowanie sądowe lub odzyskiwanie pojedynczego elementu, ustaw to na koncie docelowym.  Spowoduje to zwiększenie rozmiaru śmietnika konta docelowego do 100 GB.
@@ -434,7 +426,7 @@ Get-MoveRequest -Flags "CrossTenant"
    Start-ADSyncSyncCycle
    ```
 
-**Jak uzyskać dostęp do Outlook w dniu 1 po przeniesieniu skrzynki pocztowej do użycia?**
+### <a name="how-do-we-access-outlook-on-day-1-after-the-use-mailbox-is-moved"></a>Jak uzyskać dostęp do Outlook w dniu 1 po przeniesieniu skrzynki pocztowej do użycia?
 
 Ponieważ tylko jedna dzierżawa może być właścicielem domeny, poprzedni podstawowy adres SMTPAddress nie będzie skojarzony z użytkownikiem w dzierżawie docelowej po zakończeniu przenoszenia skrzynki pocztowej; tylko te domeny skojarzone z nową dzierżawą. Outlook używa nowej nazwy UPN użytkowników do uwierzytelniania w usłudze, a profil Outlook oczekuje znalezienia starszej podstawowej nazwy SMTPAddress w celu dopasowania jej do skrzynki pocztowej w systemie docelowym. Ponieważ starszy adres nie znajduje się w systemie docelowym, profil programu Outlook nie połączy się, aby znaleźć nowo przeniesioną skrzynkę pocztową.
 
@@ -443,7 +435,7 @@ W przypadku tego początkowego wdrożenia użytkownicy będą musieli ponownie s
 > [!NOTE]
 > Zaplanuj odpowiednio partię użytkowników do ukończenia. Należy uwzględnić wykorzystanie sieci i pojemność podczas tworzenia Outlook profilów klientów, a kolejne pliki OST i OAB są pobierane do klientów.
 
-**Do jakich Exchange ról RBAC muszę być członkiem, aby skonfigurować lub ukończyć przenoszenie między dzierżawami?**
+### <a name="what-exchange-rbac-roles-do-i-need-to-be-member-of-to-set-up-or-complete-a-cross-tenant-move"></a>Do jakich Exchange ról RBAC muszę być członkiem, aby skonfigurować lub ukończyć przenoszenie między dzierżawami?
 
 Istnieje macierz ról oparta na założeniu delegowanych obowiązków podczas wykonywania przenoszenia skrzynki pocztowej. Obecnie wymagane są dwie role:
 
@@ -451,17 +443,17 @@ Istnieje macierz ról oparta na założeniu delegowanych obowiązków podczas wy
 
 - Rolę wykonywania rzeczywistych poleceń przenoszenia można delegować do funkcji niższego poziomu. Rola Przenoszenie skrzynek pocztowych jest przypisywana do możliwości przenoszenia skrzynek pocztowych do lub z organizacji.
 
-**Jak określić, który adres SMTP jest wybrany dla elementu targetAddress (TargetDeliveryDomain) w przekonwertowanej skrzynce pocztowej (na konwersję usługi MailUser)?**
+### <a name="how-do-we-target-which-smtp-address-is-selected-for-targetaddress-targetdeliverydomain-on-the-converted-mailbox-to-mailuser-conversion"></a>Jak określić, który adres SMTP jest wybrany dla elementu targetAddress (TargetDeliveryDomain) w przekonwertowanej skrzynce pocztowej (na konwersję usługi MailUser)?
 
 Exchange przenoszenia skrzynki pocztowej przy użyciu funkcji MRS utwórz element targetAddress w oryginalnej źródłowej skrzynce pocztowej podczas konwertowania na usługę MailUser, dopasowując adres e-mail (proxyAddress) do obiektu docelowego. Proces pobiera wartość -TargetDeliveryDomain przekazaną do polecenia move, a następnie sprawdza, czy po stronie docelowej jest odpowiedni serwer proxy dla tej domeny. Gdy znajdziemy dopasowanie, pasujący serwer proxyAddress jest używany do ustawiania obiektu ExternalEmailAddress (targetAddress) w konwertowanej skrzynce pocztowej (obecnie MailUser).
 
-**Jak można przenieść uprawnienia skrzynki pocztowej?**
+### <a name="how-do-mailbox-permissions-transition"></a>Jak można przenieść uprawnienia skrzynki pocztowej?
 
 Uprawnienia skrzynki pocztowej obejmują wysyłanie w imieniu i dostęp do skrzynki pocztowej:
 
 - Usługa Send On Behalf Of (AD:publicDelegates) przechowuje nazwę DN adresatów z dostępem do skrzynki pocztowej użytkownika jako pełnomocnik. Ta wartość jest przechowywana w usłudze Active Directory i obecnie nie jest przenoszona w ramach przejścia skrzynki pocztowej. Jeśli źródłowa skrzynka pocztowa ma ustawioną wartość publicDelegates, należy ponownie skonfigurować bramy publicDelegate w docelowej skrzynce pocztowej po zakończeniu konwersji meu do skrzynki pocztowej w środowisku docelowym, uruchamiając polecenie `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`.
 
-- Uprawnienia skrzynki pocztowej przechowywane w skrzynce pocztowej zostaną przeniesione ze skrzynką pocztową po przeniesieniu jednostki i delegata do systemu docelowego. Na przykład użytkownik TestUser_7 jest przyznawany funkcji FullAccess do skrzynki pocztowej TestUser_8 w SourceCompany.onmicrosoft.com dzierżawy. Po zakończeniu przenoszenia skrzynki pocztowej do TargetCompany.onmicrosoft.com te same uprawnienia są konfigurowane w katalogu docelowym. Poniżej przedstawiono przykłady użycia polecenia *Get-MailboxPermission* dla TestUser_7 w dzierżawach źródłowych i docelowych. Exchange polecenia cmdlet są odpowiednio poprzedzone elementem źródłowym i docelowym.
+- Uprawnienia skrzynki pocztowej przechowywane w skrzynce pocztowej zostaną przeniesione ze skrzynką pocztową po przeniesieniu jednostki i delegata do systemu docelowego. Na przykład użytkownik TestUser_7 jest przyznawany funkcji FullAccess do skrzynki pocztowej TestUser_8 w SourceCompany.onmicrosoft.com dzierżawy. Po zakończeniu przenoszenia skrzynki pocztowej do TargetCompany.onmicrosoft.com te same uprawnienia są konfigurowane w katalogu docelowym. Poniżej przedstawiono przykłady użycia polecenia _Get-MailboxPermission_ dla TestUser_7 w dzierżawach źródłowych i docelowych. Exchange polecenia cmdlet są odpowiednio poprzedzone elementem źródłowym i docelowym.
 
 Oto przykład danych wyjściowych uprawnień skrzynki pocztowej przed przeniesieniem.
 
@@ -488,7 +480,7 @@ TestUser_8@TargetCompany.onmicrosoft.com         {FullAccess}                   
 > [!NOTE]
 > Uprawnienia skrzynki pocztowej i kalendarza między dzierżawami NIE są obsługiwane. Musisz zorganizować jednostki i delegatów w skonsolidowane partie przenoszenia, aby te połączone skrzynki pocztowe były przenoszone w tym samym czasie z dzierżawy źródłowej.
 
-**Jaki serwer proxy X500 powinien zostać dodany do docelowych adresów proxy usługi MailUser w celu włączenia migracji?**
+### <a name="what-x500-proxy-should-be-added-to-the-target-mailuser-proxy-addresses-to-enable-migration"></a>Jaki serwer proxy X500 powinien zostać dodany do docelowych adresów proxy usługi MailUser w celu włączenia migracji?
 
 Migracja skrzynki pocztowej między dzierżawami wymaga, aby wartość LegacyExchangeDN źródłowego obiektu skrzynki pocztowej była ostemplowana jako adres e-mail x500 w docelowym obiekcie MailUser.
 
@@ -505,11 +497,11 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 > [!NOTE]
 > Oprócz tego serwera proxy X500 należy skopiować wszystkie serwery proxy X500 ze skrzynki pocztowej w źródle do skrzynki pocztowej w miejscu docelowym.
 
-**Czy dzierżawa źródłowa i docelowa może używać tej samej nazwy domeny?**
+### <a name="can-the-source-and-target-tenant-utilize-the-same-domain-name"></a>Czy dzierżawa źródłowa i docelowa może używać tej samej nazwy domeny?
 
 Nie. Nazwy domen dzierżawy źródłowej i docelowej muszą być unikatowe. Na przykład domena źródłowa contoso.com i domena docelowa fourthcoffee.com.
 
-**Czy udostępnione skrzynki pocztowe będą przenoszone i nadal będą działać?**
+### <a name="will-shared-mailboxes-move-and-still-work"></a>Czy udostępnione skrzynki pocztowe będą przenoszone i nadal będą działać?
 
 Tak, jednak zachowujemy tylko uprawnienia sklepu zgodnie z opisem w następujących artykułach:
 
@@ -517,35 +509,43 @@ Tak, jednak zachowujemy tylko uprawnienia sklepu zgodnie z opisem w następując
 
 - [pomoc techniczna firmy Microsoft | Jak udzielić Exchange i Outlook uprawnień skrzynki pocztowej w Office 365 dedykowane](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
-**Czy masz jakieś zalecenia dotyczące partii?**
+### <a name="do-you-have-any-recommendations-for-batches"></a>Czy masz jakieś zalecenia dotyczące partii?
 
 Nie należy przekraczać 2000 skrzynek pocztowych na partię. Zdecydowanie zalecamy przesyłanie partii na dwa tygodnie przed datą przecięcia, ponieważ nie ma to wpływu na użytkowników końcowych podczas synchronizacji. Jeśli potrzebujesz wskazówek dotyczących ilości skrzynek pocztowych powyżej 50 000, możesz skontaktować się z działem dystrybucji opinii inżynierów w crosstenantmigrationpreview@service.microsoft.com.
 
-**Co zrobić, jeśli używam szyfrowania usługi z kluczem klienta?**
+### <a name="what-if-i-use-service-encryption-with-customer-key"></a>Co zrobić, jeśli używam szyfrowania usługi z kluczem klienta?
 
 Skrzynka pocztowa zostanie odszyfrowana przed przeniesieniem. Upewnij się, że klucz klienta jest skonfigurowany w dzierżawie docelowej, jeśli jest nadal wymagany. Aby uzyskać więcej informacji, zobacz [tutaj](/microsoft-365/compliance/customer-key-overview) .
 
-**Jaki jest szacowany czas migracji?**
+### <a name="what-is-the-estimated-migration-time"></a>Jaki jest szacowany czas migracji?
 
 Aby ułatwić planowanie migracji, w poniższej [tabeli przedstawiono](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) wskazówki dotyczące tego, kiedy należy oczekiwać ukończenia zbiorczych migracji skrzynek pocztowych lub migracji indywidualnych. Te szacunki są oparte na analizie danych z poprzednich migracji klientów. Ponieważ każde środowisko jest unikatowe, dokładna szybkość migracji może się różnić.
 
 Należy pamiętać, że ta funkcja jest obecnie w wersji zapoznawczej i umowa SLA, a wszystkie odpowiednie poziomy usług nie mają zastosowania do żadnych problemów z wydajnością lub dostępnością podczas stanu wersji zapoznawczej tej funkcji.
 
-**Ochrona dokumentów w dzierżawie źródłowej, które mogą być używane przez użytkowników w dzierżawie docelowej.**
+### <a name="protecting-documents-in-the-source-tenant-consumable-by-users-in-the-destination-tenant"></a>Ochrona dokumentów w dzierżawie źródłowej, które mogą być używane przez użytkowników w dzierżawie docelowej.**
 
 Migracja między dzierżawami tylko migruje dane skrzynki pocztowej i nic więcej. Istnieje wiele innych opcji, które zostały udokumentowane w następującym wpisie w blogu, które mogą pomóc: <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
 
-**Czy mogę mieć te same etykiety w dzierżawie docelowej, co w dzierżawie źródłowej, jako jedyny zestaw etykiet lub dodatkowy zestaw etykiet dla migrowanych użytkowników w zależności od wyrównania między organizacjami.**
+### <a name="can-i-have-the-same-labels-in-the-destination-tenant-as-you-had-in-the-source-tenant-either-as-the-only-set-of-labels-or-an-additional-set-of-labels-for-the-migrated-users-depending-on-alignment-between-the-organizations"></a>Czy mogę mieć te same etykiety w dzierżawie docelowej, co w dzierżawie źródłowej, jako jedyny zestaw etykiet lub dodatkowy zestaw etykiet dla migrowanych użytkowników w zależności od wyrównania między organizacjami.**
 
 Ponieważ migracje między dzierżawami nie eksportują etykiet i nie ma możliwości udostępniania etykiet między dzierżawami, można to osiągnąć tylko przez ponowne utworzenie etykiet w dzierżawie docelowej.
 
-**Czy obsługujesz przenoszenie Grupy Microsoft 365?**
+### <a name="do-you-support-moving-microsoft-365-groups"></a>Czy obsługujesz przenoszenie Grupy Microsoft 365?
 
 Obecnie funkcja migracji skrzynek pocztowych między dzierżawami nie obsługuje migracji Grupy Microsoft 365.
 
-**Czy administrator dzierżawy źródłowej może przeprowadzić wyszukiwanie zbierania elektronicznych materiałów dowodowych w skrzynce pocztowej po migracji skrzynki pocztowej do nowej/docelowej dzierżawy?**
+### <a name="can-a-source-tenant-admin-perform-an-ediscovery-search-against-a-mailbox-after-the-mailbox-has-been-migrated-to-the-newtarget-tenant"></a>Czy administrator dzierżawy źródłowej może przeprowadzić wyszukiwanie zbierania elektronicznych materiałów dowodowych w skrzynce pocztowej po migracji skrzynki pocztowej do nowej/docelowej dzierżawy?
 
 Nie, po migracji skrzynki pocztowej między dzierżawami nie działa funkcja zbierania elektronicznych materiałów dowodowych względem skrzynki pocztowej zmigrowanego użytkownika w źródle. Dzieje się tak, ponieważ w źródle nie ma już skrzynki pocztowej do wyszukania, ponieważ skrzynka pocztowa została zmigrowana do dzierżawy docelowej i teraz należy do dzierżawy docelowej. Zbierania elektronicznych materiałów dowodowych migrację po skrzynce pocztowej można przeprowadzić tylko w dzierżawie docelowej (gdzie obecnie istnieje skrzynka pocztowa). Jeśli kopia źródłowej skrzynki pocztowej musi zostać utrwalona w dzierżawie źródłowej po migracji, administrator w źródle może skopiować zawartość do alternatywnej skrzynki pocztowej przed migracją na potrzeby przyszłych operacji zbierania elektronicznych materiałów dowodowych względem danych.
+
+### <a name="at-which-point-will-the-destination-mailuser-be-converted-to-a-destination-mailbox-and-the-source-mailbox-converted-to-a-source-mailuser"></a>W którym momencie docelowy element MailUser zostanie przekonwertowany na docelową skrzynkę pocztową, a źródłowa skrzynka pocztowa zostanie przekonwertowana na źródłową skrzynkę pocztową?
+
+Te konwersje są wykonywane automatycznie podczas procesu migracji. Nie są wymagane żadne ręczne kroki.
+
+### <a name="at-which-step-should-i-assign-the-exchange-online-license-to-destination-mailusers"></a>W którym kroku należy przypisać licencję Exchange Online do docelowych użytkowników poczty?
+
+Można to zrobić przed zakończeniem migracji, ale nie należy przypisywać licencji przed sygnaturą atrybutu _ExchangeGuid_ lub konwersja obiektu MailUser na skrzynkę pocztową zakończy się niepowodzeniem i zostanie utworzona nowa skrzynka pocztowa. Aby wyeliminować to ryzyko, najlepiej poczekać, aż migracja zostanie zakończona, i przypisać licencje w okresie prolongaty 30 dni.
 
 ## <a name="known-issues"></a>Znane problemy
 
