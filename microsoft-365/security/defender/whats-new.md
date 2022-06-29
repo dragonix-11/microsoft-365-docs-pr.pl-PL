@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3c11e531e8b4706128e1519b790046f800827d67
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: ed3d06e1719b51d0914c89e6283c8b53c2ab0812
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285023"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530521"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Co nowego w usłudze Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->Następujące funkcje są dostępne w wersji zapoznawczej lub ogólnie dostępne w najnowszej wersji Microsoft 365 Defender.
+Wyświetla listę nowych funkcji i funkcji w Microsoft 365 Defender. 
 
 Kanał informacyjny RSS: otrzymywanie powiadomień o aktualizacji tej strony przez skopiowanie i wklejenie następującego adresu URL do czytnika kanału informacyjnego:
 
@@ -45,12 +45,15 @@ Aby uzyskać więcej informacji na temat nowości w innych produktach zabezpiecz
 
 Aktualizacje produktów i ważne powiadomienia można również uzyskać za pośrednictwem [centrum komunikatów](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
-## <a name="may-2022"></a>Maj 2022 r.
+## <a name="june-2022"></a>Czerwiec 2022
+- (wersja zapoznawcza) Tabele [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) i [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) są teraz dostępne w zaawansowanym schemacie wyszukiwania zagrożeń. Te tabele umożliwiają wyszukiwanie zdarzeń oceny w usłudze Defender Vulnerability Management, w tym stanu różnych konfiguracji i stanów obszaru podatnego na ataki urządzeń.
+
+## <a name="may-2022"></a>Maj 2022
 - (wersja zapoznawcza) Zgodnie z niedawno ogłoszonym rozszerzeniem do nowej kategorii usług o nazwie [Microsoft Security Experts](https://aka.ms/MicrosoftSecurityExperts) wprowadzamy dostępność ekspertów [usługi Microsoft Defender do wyszukiwania zagrożeń](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) w publicznej wersji zapoznawczej. Defender Experts for Hunting jest przeznaczony dla klientów, którzy mają niezawodne centrum operacji zabezpieczeń, ale chcą, aby firma Microsoft pomagała im aktywnie wyszukiwać zagrożenia w danych usługi Microsoft Defender, w tym punkty końcowe, Office 365, aplikacje w chmurze i tożsamość. 
 
 ## <a name="april-2022"></a>Kwiecień 2022 r.
 - (wersja zapoznawcza) Teraz można wykonywać [akcje](advanced-hunting-take-action.md) dotyczące wiadomości e-mail bezpośrednio z wyników zapytania wyszukiwania zagrożeń. Wiadomości e-mail można przenosić do innych folderów lub trwale usuwać. 
-- (wersja zapoznawcza) Nowa [`UrlClickEvents` tabela](advanced-hunting-urlclickevents-table.md) zaawansowanego wyszukiwania zagrożeń może służyć do wyszukiwania zagrożeń, takich jak kampanie phishingowe i podejrzane linki, na podstawie informacji pochodzących z kliknięć linków Sejf w wiadomościach e-mail, Microsoft Teams i aplikacjach Office 365.
+- (wersja zapoznawcza) Nowa [`UrlClickEvents` tabela](advanced-hunting-urlclickevents-table.md) zaawansowanego wyszukiwania zagrożeń może służyć do wyszukiwania zagrożeń, takich jak kampanie phishingowe i podejrzane linki, na podstawie informacji pochodzących z kliknięć bezpiecznych linków w wiadomościach e-mail, usłudze Microsoft Teams i aplikacjach Office 365.
 
 ## <a name="march-2022"></a>Marzec 2022 r.
 
@@ -63,7 +66,7 @@ Aktualizacje produktów i ważne powiadomienia można również uzyskać za poś
 
 ## <a name="november-2021"></a>Listopad 2021
 
-- (wersja zapoznawcza) Funkcja dodatku ładu aplikacji do aplikacji Defender dla Chmury Apps jest teraz dostępna w Microsoft 365 Defender. Zarządzanie aplikacjami zapewnia możliwość zarządzania zabezpieczeniami i zasadami przeznaczoną dla aplikacji z obsługą protokołu OAuth, które uzyskują dostęp Microsoft 365 danych za pośrednictwem interfejsów API Graph firmy Microsoft. Ład aplikacji zapewnia pełny wgląd, korygowanie i nadzór w zakresie sposobu, w jaki te aplikacje i ich użytkownicy uzyskują dostęp, używają i udostępniają poufne dane przechowywane w Microsoft 365 za pośrednictwem praktycznych szczegółowych informacji oraz zautomatyzowanych alertów i akcji zasad. [Dowiedz się więcej na temat ładu aplikacji](/cloud-app-security/app-governance-manage-app-governance).
+- (wersja zapoznawcza) Funkcja dodatku ładu aplikacji w usłudze Defender for Cloud Apps jest teraz dostępna w Microsoft 365 Defender. Zarządzanie aplikacjami zapewnia możliwość zarządzania zabezpieczeniami i zasadami przeznaczoną dla aplikacji z obsługą protokołu OAuth, które uzyskują dostęp do danych platformy Microsoft 365 za pośrednictwem interfejsów API programu Microsoft Graph. Ład aplikacji zapewnia pełny wgląd, korygowanie i nadzór w zakresie sposobu, w jaki te aplikacje i ich użytkownicy uzyskują dostęp, używają i udostępniają poufne dane przechowywane na platformie Microsoft 365 za pośrednictwem szczegółowych informacji z możliwością działania oraz zautomatyzowanych alertów i akcji zasad. [Dowiedz się więcej na temat ładu aplikacji](/cloud-app-security/app-governance-manage-app-governance).
 - (wersja zapoznawcza) Zaawansowana strona [wyszukiwania zagrożeń](advanced-hunting-overview.md) ma teraz obsługę wielu kart, inteligentne przewijanie, usprawnione karty schematu, opcje szybkiej edycji zapytań, wskaźnik użycia zasobów zapytań i inne ulepszenia ułatwiające płynne i bardziej precyzyjne wykonywanie zapytań.
 - (wersja zapoznawcza) Teraz możesz użyć [linku do funkcji zdarzenia](advanced-hunting-link-to-incident.md) , aby uwzględnić zdarzenia lub rekordy z zaawansowanych wyników zapytania wyszukiwania zagrożeń bezpośrednio do nowego lub istniejącego incydentu, który badasz.
 
@@ -87,11 +90,11 @@ Aktualizacje produktów i ważne powiadomienia można również uzyskać za poś
 
 - (wersja zapoznawcza) Wykres zdarzeń
 
-  Nowa karta **Graph** na karcie **Podsumowanie** incydentu pokazuje pełny zakres ataku, sposób rozprzestrzeniania się ataku przez sieć w czasie, miejsce jego rozpoczęcia i jak daleko posunęli się atakujący.
+  Nowa karta **Graph** na karcie **Podsumowanie** zdarzenia pokazuje pełny zakres ataku, sposób rozprzestrzeniania się ataku w sieci w czasie, miejsce jego rozpoczęcia i jak daleko posunęli się atakujący.
 
 ## <a name="july-2021"></a>Lipiec 2021
 
-- [wykaz usług Professional](https://sip.security.microsoft.com/interoperability/professional_services)
+- [Katalog usług profesjonalnych](https://sip.security.microsoft.com/interoperability/professional_services)
 
   Zwiększ możliwości wykrywania, badania i analizy zagrożeń platformy przy użyciu obsługiwanych połączeń partnerskich.
 
@@ -135,7 +138,7 @@ Aktualizacje produktów i ważne powiadomienia można również uzyskać za poś
 
 - [Microsoft 365 Defender raport analizy zagrożeń](threat-analytics.md)
 
-  Analiza zagrożeń pomaga reagować i minimalizować wpływ aktywnych ataków. Możesz również dowiedzieć się więcej o próbach ataku zablokowanych przez rozwiązania Microsoft 365 Defender i podjąć działania zapobiegawcze, które zmniejszają ryzyko dalszego narażenia i zwiększają odporność. W ramach ujednoliconego środowiska zabezpieczeń analiza zagrożeń jest teraz dostępna dla Ochrona punktu końcowego w usłudze Microsoft Defender i usługi Microsoft Defender dla posiadaczy licencji Office E5.
+  Analiza zagrożeń pomaga reagować i minimalizować wpływ aktywnych ataków. Możesz również dowiedzieć się więcej o próbach ataku zablokowanych przez rozwiązania Microsoft 365 Defender i podjąć działania zapobiegawcze, które zmniejszają ryzyko dalszego narażenia i zwiększają odporność. W ramach ujednoliconego środowiska zabezpieczeń analiza zagrożeń jest teraz dostępna dla posiadaczy licencji Ochrona punktu końcowego w usłudze Microsoft Defender i Microsoft Defender for Office E5.
 
 ## <a name="march-2021"></a>Marzec 2021 r.
 

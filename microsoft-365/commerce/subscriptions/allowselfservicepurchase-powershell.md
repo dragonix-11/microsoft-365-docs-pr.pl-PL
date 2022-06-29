@@ -21,12 +21,12 @@ search.appverid:
 description: Dowiedz się, jak włączyć lub wyłączyć zakup samoobsługowy za pomocą polecenia cmdlet AllowSelfServicePurchase programu PowerShell.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 4/7/2022
-ms.openlocfilehash: e4423892f2dc045a9729e68519c85d471838d5ac
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 7c9ac6a1e58049d188d4cd29441d8e0689f2c787
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042193"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530843"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Użyj polecenia AllowSelfServicePurchase dla modułu MSCommerce programu PowerShell
 
@@ -45,7 +45,7 @@ Do korzystania z modułu **MSCommerce** programu PowerShell potrzebne są:
 - Urządzenie Windows 10
 - Program PowerShell 5 lub nośny. Obecnie program PowerShell 6.x/7.x nie jest obsługiwany w tym module.
 - Uprawnienia administratora dla urządzenia
-- Rola administratora globalnego lub administratora rozliczeń dla dzierżawy
+- Rola Administracja globalna lub Administracja rozliczeniowa dla dzierżawy
 
 ## <a name="install-the-mscommerce-powershell-module"></a>Instalowanie modułu MSCommerce programu PowerShell
 
@@ -65,7 +65,7 @@ Po zainstalowaniu modułu na urządzeniu Windows 10 należy zaimportować go do 
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>Połączenie do programu MSCommerce przy użyciu poświadczeń
+## <a name="connect-to-mscommerce-with-your-credentials"></a>Nawiązywanie połączenia z programem MSCommerce przy użyciu poświadczeń
 
 Aby nawiązać połączenie z modułem programu PowerShell przy użyciu poświadczeń, uruchom następujące polecenie.
 
@@ -73,7 +73,7 @@ Aby nawiązać połączenie z modułem programu PowerShell przy użyciu poświad
 Connect-MSCommerce
 ```
 
-To polecenie łączy bieżącą sesję programu PowerShell z dzierżawą Azure Active Directory. Polecenie wyświetli monit o podanie nazwy użytkownika i hasła dla dzierżawy, z którą chcesz nawiązać połączenie. Jeśli dla poświadczeń włączono uwierzytelnianie wieloskładnikowe, użyj opcji interaktywnej, aby się zalogować.
+To polecenie łączy bieżącą sesję programu PowerShell z dzierżawą usługi Azure Active Directory. Polecenie wyświetli monit o podanie nazwy użytkownika i hasła dla dzierżawy, z którą chcesz nawiązać połączenie. Jeśli dla poświadczeń włączono uwierzytelnianie wieloskładnikowe, użyj opcji interaktywnej, aby się zalogować.
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>Wyświetlanie szczegółów elementu AllowSelfServicePurchase
 
@@ -95,8 +95,8 @@ W poniższej tabeli wymieniono dostępne produkty i ich **identyfikator ProductI
 
 | Rezultat | Productid |
 |-----------------------------|--------------|
-| Power Apps na użytkownika | CFQ7TTC0LH2H |
-| Power Automate na użytkownika | CFQ7TTC0KP0N |
+| Usługa Power Apps na użytkownika* | CFQ7TTC0LH2H |
+| Usługa Power Automate na użytkownika | CFQ7TTC0KP0N |
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (autonomiczny) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
@@ -107,6 +107,7 @@ W poniższej tabeli wymieniono dostępne produkty i ich **identyfikator ProductI
 | Windows 365 Enterprise | CFQ7TTC0HHS9 |
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Business z Korzyść użycia hybrydowego platformy Windows | CFQ7TTC0HX99 |
+| Microsoft 365 F3 | CFQ7TTC0LH05 |
 
 *Te identyfikatory uległy zmianie. Jeśli wcześniej zablokowano produkty przy użyciu starych identyfikatorów, są one automatycznie blokowane przy użyciu nowych identyfikatorów. Nie jest wymagana żadna dodatkowa praca.
 
@@ -134,7 +135,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>Przykładowy skrypt wyłączania funkcji AllowSelfServicePurchase
 
-W poniższym przykładzie przedstawiono sposób importowania modułu **MSCommerce**, logowania się przy użyciu konta, uzyskiwania identyfikatora **ProductId** dla Power Automate na użytkownika, a następnie wyłączania **opcji AllowSelfServicePurchase** dla tego produktu.
+W poniższym przykładzie przedstawiono sposób importowania modułu **MSCommerce** , logowania się przy użyciu konta, uzyskiwania **identyfikatora ProductId** dla usługi Power Automate na użytkownika, a następnie wyłączania **opcji AllowSelfServicePurchase** dla tego produktu.
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -184,6 +185,6 @@ Uninstall-Module -Name MSCommerce
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Zarządzanie zakupami samoobsługowymi (administrator)](manage-self-service-purchases-admins.md) (artykuł)
+[Zarządzanie zakupami samoobsługowymi (Administracja)](manage-self-service-purchases-admins.md) (artykuł)
 
 [Samoobsługowy zakup — często zadawane pytania](self-service-purchase-faq.yml) (artykuł)

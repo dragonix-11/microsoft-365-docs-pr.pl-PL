@@ -1,5 +1,5 @@
 ---
-title: Podręcznik wersji próbnej ocen programu Microsoft Compliance Manager w warstwie Premium
+title: Podręcznik wersji próbnej ocen programu Microsoft Purview Compliance Manager premium
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,17 +14,20 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Podręcznik wersji próbnej ocen programu Microsoft Compliance Manager w warstwie Premium.
-ms.openlocfilehash: f50060fa5e9f037fbe1301496f18422684c38d3d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Podręcznik wersji próbnej ocen programu Microsoft Purview Compliance Manager premium.
+ms.custom: trial-playbook
+ms.openlocfilehash: 3d41cde8cbf7cb6158573ed158a41dfe42d28dd5
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759860"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531017"
 ---
-# <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>Podręcznik wersji próbnej: oceny premium w programie Microsoft Compliance Manager
+# <a name="trial-playbook-microsoft-purview-compliance-manager-premium-assessments"></a>Podręcznik wersji próbnej: oceny premium programu Microsoft Purview Compliance Manager
 
-Witamy w podręczniku wersji próbnej oceny premium programu Microsoft Compliance Manager.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Witamy w podręczniku wersji próbnej oceny premium programu Microsoft Purview Compliance Manager.
 
 Ten podręcznik pomoże Ci w maksymalnym wykorzystaniu 90-dniowej bezpłatnej wersji próbnej, ucząc cię, jak korzystać z kompleksowego zestawu szablonów oceny premium (dodatku).
 
@@ -61,7 +64,7 @@ Menedżer zgodności oferuje również ponad 300 szablonów regulacyjnych lub pr
 
 Licencje próbne umożliwiają korzystanie z 25 szablonów w warstwie Premium przez 90 dni. Będzie można wybrać spośród listy ponad 300 szablonów w warstwie Premium. Nie musisz jednocześnie wybierać wszystkich 25 szablonów. Po wybraniu tych szablonów licencjonowane są dostępne do użycia w ciągu 4 godzin od uzyskania licencji próbnej.
 
-Istnieją dwa sposoby włączania wersji próbnej dodatku do oceny Premium: za pośrednictwem pulpitu nawigacyjnego programu Compliance Manager lub wersji próbnej Microsoft 365 Compliance.
+Istnieją dwa sposoby włączania wersji próbnej dodatku Premium Assessment: za pośrednictwem pulpitu nawigacyjnego programu Compliance Manager lub wersji próbnej usługi Microsoft Purview.
 
 ### <a name="enable-trial-via-the-compliance-manager-dashboard"></a>Włączanie wersji próbnej za pośrednictwem pulpitu nawigacyjnego programu Compliance Manager
 

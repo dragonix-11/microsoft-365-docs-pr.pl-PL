@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Zazwyczaj częścią rozwiązania do zarządzania rekordami można skonfigurować etykietę przechowywania w celu rozpoczęcia okresu przechowywania na podstawie identyfikowanego zdarzenia.
-ms.openlocfilehash: 65a3c2088974398abb6ddbeb205cfb66541629e2
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 380a95a6b4d6fa6585d0912b675d65032cd8258b
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285111"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530865"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Rozpocznij przechowywanie po wystąpieniu zdarzenia
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -52,7 +52,7 @@ Przechowywanie oparte na zdarzeniach jest zwykle używane w ramach procesu zarz�
 - Etykiety przechowywania oparte na zdarzeniach zwykle wyzwalają przegląd dyspozycji na końcu okresu przechowywania, dzięki czemu menedżer rekordów może ręcznie przeglądać i usuwać zawartość. Aby uzyskać więcej informacji, zobacz [Dyspozycja zawartości](disposition.md).
     
 
-Etykieta przechowywania oparta na zdarzeniu ma takie same możliwości jak każda etykieta przechowywania w Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md).
+Etykieta przechowywania oparta na zdarzeniu ma takie same możliwości jak każda etykieta przechowywania w usłudze Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md).
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Opis relacji między typami zdarzeń, etykietami, zdarzeniami i identyfikatorami zasobów
 
@@ -64,13 +64,13 @@ Aby pomyślnie korzystać z przechowywania opartego na zdarzeniach, ważne jest 
   
 1. Tworzysz etykiety przechowywania dla różnych typów zawartości, a następnie kojarzysz je z typem zdarzenia. Na przykład etykiety przechowywania dla różnych typów plików i rekordów produktów są skojarzone z typem zdarzenia o nazwie Okres istnienia produktu, ponieważ te rekordy muszą być przechowywane przez 10 lat od momentu zakończenia życia produktu.
     
-2. Użytkownicy (zazwyczaj menedżerowie rekordów) stosują te etykiety przechowywania do zawartości i (w przypadku dokumentów w SharePoint i OneDrive) wprowadzają identyfikator zasobu dla każdego elementu. W tym przykładzie identyfikator zasobu jest nazwą produktu lub kodem używanym przez organizację. Następnie do rekordów każdego produktu jest przypisywana etykieta przechowywania, a każdy rekord ma właściwość zawierającą identyfikator zasobu. Diagram reprezentuje **całą zawartość** wszystkich rekordów produktów w organizacji, a każdy element ma identyfikator zasobu produktu, którego rekord jest. 
+2. Użytkownicy (zazwyczaj menedżerowie rekordów) stosują te etykiety przechowywania do zawartości i (w przypadku dokumentów w programach SharePoint i OneDrive) wprowadzają identyfikator zasobu dla każdego elementu. W tym przykładzie identyfikator zasobu jest nazwą produktu lub kodem używanym przez organizację. Następnie do rekordów każdego produktu jest przypisywana etykieta przechowywania, a każdy rekord ma właściwość zawierającą identyfikator zasobu. Diagram reprezentuje **całą zawartość** wszystkich rekordów produktów w organizacji, a każdy element ma identyfikator zasobu produktu, którego rekord jest. 
     
 3. Okres istnienia produktu to typ zdarzenia; konkretny produkt, który zbliża się do końca życia, jest wydarzeniem. Gdy wystąpi zdarzenie tego typu zdarzenia — w tym przypadku, gdy produkt osiągnie koniec życia — utworzysz zdarzenie, które określa:
     
-   - Identyfikator zasobu (dla dokumentów SharePoint i OneDrive)
+   - Identyfikator zasobu (dla dokumentów programu SharePoint i usługi OneDrive)
     
-   - Słowa kluczowe (dla Exchange elementów). W tym przykładzie organizacja używa kodu produktu w komunikatach zawierających rekordy produktów, więc słowo kluczowe dla elementów Exchange jest funkcjonalnie takie samo jak identyfikator zasobu dla SharePoint i OneDrive dokumentów.
+   - Słowa kluczowe (dla elementów programu Exchange). W tym przykładzie organizacja używa kodu produktu w komunikatach zawierających rekordy produktów, więc słowo kluczowe dla elementów programu Exchange jest funkcjonalnie takie samo jak identyfikator zasobu dla dokumentów programu SharePoint i OneDrive.
     
    - Data wystąpienia zdarzenia. Ta data jest używana jako początek okresu przechowywania. Ta data może być bieżącą, przeszłą lub przyszłą datą.
 
@@ -87,7 +87,7 @@ Przepływ pracy wysokiego poziomu na potrzeby przechowywania opartego na zdarzen
 ![Diagram przepływu pracy na potrzeby konfigurowania przechowywania opartego na zdarzeniach.](../media/event-based-retention-process.png)
   
 > [!TIP]
-> Zobacz [Używanie etykiet przechowywania do zarządzania cyklem życia dokumentów przechowywanych w SharePoint, aby zapoznać](auto-apply-retention-labels-scenario.md) się ze szczegółowym scenariuszem dotyczącym używania właściwości zarządzanych w SharePoint do automatycznego stosowania etykiet przechowywania i implementowania przechowywania opartego na zdarzeniach.
+> Zobacz [Używanie etykiet przechowywania do zarządzania cyklem życia dokumentów przechowywanych w programie SharePoint, aby zapoznać](auto-apply-retention-labels-scenario.md) się ze szczegółowym scenariuszem dotyczącym używania właściwości zarządzanych w programie SharePoint do automatycznego stosowania etykiet przechowywania i implementowania przechowywania opartego na zdarzeniach.
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Krok 1. Tworzenie etykiety, której okres przechowywania jest oparty na zdarzeniu
 
@@ -97,7 +97,7 @@ Aby utworzyć i skonfigurować etykietę przechowywania, zobacz instrukcje dotyc
 
 Typ zdarzenia to po prostu ogólny opis zdarzenia, które chcesz skojarzyć z etykietą przechowywania.
 
-Domyślne typy zdarzeń mają **(typ zdarzenia)** po ich nazwie na liście rozwijanej, aby ułatwić identyfikację, a także można zobaczyć i utworzyć typ zdarzenia na karcie Zarządzanie **rekordamiWykonywanie**  >  > **Zarządzanie typami zdarzeń**.
+Domyślne typy zdarzeń mają **(typ zdarzenia)** po ich nazwie na liście rozwijanej, aby ułatwić identyfikację, a także można zobaczyć i utworzyć typ zdarzenia na karcie **Zdarzenia** **zarządzania rekordami** >  > **Zarządzanie typami zdarzeń**.
 
 Przechowywanie oparte na zdarzeniach wymaga ustawień przechowywania, które:
   
@@ -131,17 +131,17 @@ Po zastosowaniu etykiety opartej na zdarzeniach do zawartości można wprowadzi�
   
 - Kody produktów, których można użyć do przechowywania zawartości tylko dla określonego produktu.
     
-- Project kody, których można użyć do przechowywania zawartości tylko dla określonego projektu.
+- Kody projektów, których można użyć do przechowywania zawartości tylko dla określonego projektu.
     
 - Identyfikatory pracowników, których można użyć do przechowywania zawartości tylko dla określonej osoby.
     
-Identyfikator zasobu to po prostu inna właściwość dokumentu dostępna w SharePoint i OneDrive. Twoja organizacja może już używać innych właściwości i identyfikatorów dokumentów do klasyfikowania zawartości. Jeśli tak, możesz również użyć tych właściwości i wartości podczas tworzenia zdarzenia — zobacz krok 6, który następuje. Ważne jest, aby użyć kombinacji *właściwości:value* we właściwościach dokumentu, aby skojarzyć ten element z typem zdarzenia.
+Identyfikator zasobu to po prostu inna właściwość dokumentu dostępna w programach SharePoint i OneDrive. Twoja organizacja może już używać innych właściwości i identyfikatorów dokumentów do klasyfikowania zawartości. Jeśli tak, możesz również użyć tych właściwości i wartości podczas tworzenia zdarzenia — zobacz krok 6, który następuje. Ważne jest, aby użyć kombinacji *właściwości:value* we właściwościach dokumentu, aby skojarzyć ten element z typem zdarzenia.
   
 ![Pole tekstowe umożliwiające wprowadzenie identyfikatora zasobu.](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>Krok 5. Tworzenie zdarzenia
 
-Gdy wystąpi określone wystąpienie tego typu zdarzenia, takie jak produkt, do końca życia, przejdź do strony Zarządzanie **rekordamiZarządzanie zdarzeniami**  >  w portalu zgodności usługi Microsoft Purview i wybierz pozycję **+ Utwórz**, aby utworzyć zdarzenie. Zdarzenie jest wyzwalane przez utworzenie go w tym miejscu.
+Gdy wystąpi określone wystąpienie tego typu zdarzenia, takie jak produkt, do końca życia, przejdź do strony **Zdarzenia** **zarządzania rekordami** >  w portal zgodności Microsoft Purview i wybierz pozycję **+ Utwórz**, aby utworzyć zdarzenie. Zdarzenie jest wyzwalane przez utworzenie go w tym miejscu.
 
 ![Utwórz zdarzenie wyzwalające rozpoczęcie przechowywania dla etykiet przechowywania opartych na zdarzeniach.](../media/create-event-records-management.png)
 
@@ -155,11 +155,11 @@ Podczas tworzenia zdarzenia wybierz ten sam typ zdarzenia określony w ustawieni
 
 Alternatywnie, jeśli musisz utworzyć zdarzenie dla wielu etykiet przechowywania, które mają różne typy zdarzeń, wybierz opcję **Wybierz istniejące etykiety** . Następnie wybierz etykiety skonfigurowane dla typów zdarzeń, które chcesz skojarzyć z tym zdarzeniem.
 
-### <a name="step-7-enter-keywords-or-query-for-exchange-asset-id-for-sharepoint-and-onedrive"></a>Krok 7. Wprowadź słowa kluczowe lub zapytanie dotyczące Exchange, identyfikatora zasobu dla SharePoint i OneDrive
+### <a name="step-7-enter-keywords-or-query-for-exchange-asset-id-for-sharepoint-and-onedrive"></a>Krok 7. Wprowadzanie słów kluczowych lub zapytań dotyczących programu Exchange, identyfikatora zasobu dla programu SharePoint i usługi OneDrive
 
-Teraz zawężasz zakres zawartości. W przypadku Exchange zawartości należy to zrobić, określając słowa kluczowe lub zapytanie. W przypadku zawartości SharePoint i OneDrive należy to zrobić, określając identyfikatory zasobów.
+Teraz zawężasz zakres zawartości. W przypadku zawartości programu Exchange należy to zrobić, określając słowa kluczowe lub zapytanie. W przypadku zawartości programu SharePoint i usługi OneDrive należy to zrobić, określając identyfikatory zasobów.
 
-W przypadku Exchange elementów użyj słów kluczowych lub zapytania używającego języka zapytań słów kluczowych (KQL). Aby uzyskać więcej informacji na temat składni zapytania, zobacz [Dokumentacja składni języka zapytań słów kluczowych (KQL).](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) Aby uzyskać więcej informacji na temat właściwości z możliwością wyszukiwania, których można użyć dla Exchange, zobacz [Zapytania słów kluczowych i warunki wyszukiwania dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
+W przypadku elementów programu Exchange użyj słów kluczowych lub zapytania używającego języka zapytań słów kluczowych (KQL). Aby uzyskać więcej informacji na temat składni zapytania, zobacz [Dokumentacja składni języka zapytań słów kluczowych (KQL).](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) Aby uzyskać więcej informacji na temat właściwości możliwych do wyszukiwania, których można użyć dla programu Exchange, zobacz [Zapytania dotyczące słów kluczowych i warunki wyszukiwania dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
 
 W przypadku identyfikatorów zasobów przechowywanie będzie wymuszane tylko dla zawartości z określoną parą *property:value* . Jeśli na przykład używasz właściwości Asset ID, wprowadź `ComplianceAssetID:<value>` w polu identyfikatory zasobów wyświetlane na poniższej ilustracji.
 
@@ -202,15 +202,22 @@ Skrypt programu PowerShell umożliwia zautomatyzowanie przechowywania opartego n
 - [New-ComplianceRetentionEvent](/powershell/module/exchange/new-complianceretentionevent)
     
 
+Aby ułatwić identyfikowanie innych poleceń cmdlet do tworzenia etykiet przechowywania i ich zasad, zobacz [Polecenia cmdlet programu PowerShell dotyczące zasad przechowywania i etykiet przechowywania](retention-cmdlets.md).
+
 ## <a name="automate-events-by-using-a-rest-api"></a>Automatyzowanie zdarzeń przy użyciu interfejsu API REST
 
 Interfejs API REST umożliwia automatyczne tworzenie zdarzeń wyzwalających początek czasu przechowywania.
 
-Interfejs API REST to punkt końcowy usługi, który obsługuje zestawy operacji HTTP (metod), które zapewniają dostęp do zasobów usługi do tworzenia/pobierania/aktualizowania/usuwania. Aby uzyskać więcej informacji, zobacz [Składniki żądania/odpowiedzi interfejsu API REST](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). Przy użyciu interfejsu API REST Microsoft 365 zdarzenia można tworzyć i pobierać przy użyciu metod POST i GET.
+> [!NOTE]
+> Teraz, w wersji zapoznawczej, możesz użyć usługi [Microsoft interfejs Graph API do zarządzania rekordami](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) w celu utworzenia zdarzenia, a także utworzyć typy zdarzeń i etykiety przechowywania.
+> 
+> Zachęcamy do wypróbowania tych interfejsów API programu Graph, ponieważ interfejsy API REST w tej sekcji wkrótce zostaną przestarzałe i przestaną działać.
+
+Interfejs API REST to punkt końcowy usługi, który obsługuje zestawy operacji HTTP (metod), które zapewniają dostęp do zasobów usługi do tworzenia/pobierania/aktualizowania/usuwania. Aby uzyskać więcej informacji, zobacz [Składniki żądania/odpowiedzi interfejsu API REST](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). Przy użyciu interfejsu API REST platformy Microsoft 365 zdarzenia można tworzyć i pobierać przy użyciu metod POST i GET.
 
 Istnieją dwie opcje korzystania z interfejsu API REST:
 
-- **Firma Microsoft Power Automate lub podobną aplikację**, aby automatycznie wyzwolić wystąpienie zdarzenia. Microsoft Power Automate jest orkiestratorem do łączenia się z innymi systemami, więc nie trzeba pisać rozwiązania niestandardowego. Aby uzyskać więcej informacji, zobacz [witrynę internetową Power Automate](https://flow.microsoft.com/en-us/).
+- **Usługa Microsoft Power Automate lub podobna aplikacja** do automatycznego wyzwalania wystąpienia zdarzenia. Usługa Microsoft Power Automate to orkiestrator do łączenia się z innymi systemami, więc nie trzeba pisać rozwiązania niestandardowego. Aby uzyskać więcej informacji, zobacz [witrynę internetową usługi Power Automate](https://flow.microsoft.com/en-us/).
 
 - **Program PowerShell lub klient HTTP do wywoływania interfejsu API REST** w celu tworzenia zdarzeń przy użyciu programu PowerShell (wersja 6 lub nowsza), który jest częścią rozwiązania niestandardowego.
 
@@ -222,13 +229,13 @@ https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentio
 
 Sprawdź kod odpowiedzi. Jeśli jest to wartość 302, pobierz przekierowany adres URL z właściwości Location nagłówka odpowiedzi i użyj tego adresu URL zamiast `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` w poniższych instrukcjach.
 
-Zdarzenia, które są tworzone automatycznie, można potwierdzić, wyświetlając je w portalu zgodności usługi Microsoft Purview > **Records** **managementEvents** >  .
+Zdarzenia, które są tworzone automatycznie, można potwierdzić, wyświetlając je w portal zgodności Microsoft Purview > **Zdarzenia zarządzania rekordami** >  **.**
 
 ### <a name="use-microsoft-power-automate-to-create-the-event"></a>Tworzenie zdarzenia przy użyciu usługi Microsoft Power Automate
 
-Utwórz przepływ, który tworzy zdarzenie przy użyciu interfejsu API REST Microsoft 365:
+Utwórz przepływ, który tworzy zdarzenie przy użyciu interfejsu API REST platformy Microsoft 365:
 
-![Tworzenie zdarzenia przy użyciu Flow.](../media/automate-event-driven-retention-flow-1.png)
+![Tworzenie zdarzenia przy użyciu usługi Flow.](../media/automate-event-driven-retention-flow-1.png)
 
 ![Wywoływanie interfejsu API REST przy użyciu przepływu.](../media/automate-event-driven-retention-flow-2.png)
 

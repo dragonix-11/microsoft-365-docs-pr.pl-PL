@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 description: podręcznik wersji próbnej rozwiązań Ochrona usługi Office 365 w usłudze Microsoft Defender.
-ms.openlocfilehash: a1adcf15bd051478e874b990a5e6b12f19d3b0c6
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.custom: trial-playbook
+ms.openlocfilehash: 6f4bd69e1797398dbe7e091a61fcc7a25d474121
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648354"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531127"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Podręcznik wersji próbnej: Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -44,11 +45,11 @@ Po zainicjowaniu wersji próbnej i zakończeniu procesu konfiguracji wprowadzeni
 
 Automatycznie skonfigurowaliśmy [wstępnie skonfigurowane zasady zabezpieczeń](preset-security-policies.md) w twoim środowisku. Te zasady reprezentują profil ochrony punktu odniesienia, który jest odpowiedni dla większości użytkowników. Standardowa ochrona obejmuje:
 
-- Sejf Linki, Sejf Załączniki i zasady ochrony przed wyłudzaniem informacji, które są ograniczone do całej dzierżawy lub podzestawu użytkowników, których można było wybrać podczas procesu konfiguracji wersji próbnej.
-- ochrona załączników Sejf dla SharePoint, OneDrive i Microsoft Teams.
-- ochrona linków Sejf dla obsługiwanych aplikacji Office 365.
+- Bezpieczne linki, bezpieczne załączniki i zasady ochrony przed wyłudzaniem informacji, które są ograniczone do całej dzierżawy lub podzestawu użytkowników wybranych podczas procesu konfiguracji wersji próbnej.
+- Ochrona bezpiecznych załączników dla programów SharePoint, OneDrive i Microsoft Teams.
+- Ochrona bezpiecznych łączy dla obsługiwanych aplikacji Office 365.
 
-Obejrzyj ten film wideo, aby dowiedzieć się więcej: [Ochrona przed złośliwymi linkami za pomocą linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender — YouTube](https://www.youtube.com/watch?v=vhIJ1Veq36Y&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=9).
+Obejrzyj ten film wideo, aby dowiedzieć się więcej: [Ochrona przed złośliwymi linkami za pomocą bezpiecznych linków w Ochrona usługi Office 365 w usłudze Microsoft Defender — YouTube](https://www.youtube.com/watch?v=vhIJ1Veq36Y&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=9).
 
 ### <a name="enable-users-to-report-suspicious-content"></a>Umożliwianie użytkownikom zgłaszania podejrzanych treści
 

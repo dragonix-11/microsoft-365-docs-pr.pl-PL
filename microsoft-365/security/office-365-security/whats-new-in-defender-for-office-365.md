@@ -19,12 +19,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37819c0f5ea458a4f5ee25b3536e3688aabd1882
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 82b23047b8013f9916168d46b5b595b326f6d1e5
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486912"
+ms.locfileid: "66530537"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Co nowego w ochronie usługi Office 365 w usłudze Microsoft Defender?
 
@@ -67,6 +67,7 @@ Aby uzyskać więcej informacji na temat nowości w innych produktach zabezpiecz
 
 - [Wprowadzenie do tabeli URLClickEvents w Microsoft 365 Defender Advanced Hunting](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096): Introducing the UrlClickEvents table in advanced hunting with Ochrona usługi Office 365 w usłudze Microsoft Defender (Zaawansowane wyszukiwanie zagrożeń: wprowadzenie do tabeli UrlClickEvents w zaawansowanym polowaniu z użyciem Ochrona usługi Office 365 w usłudze Microsoft Defender).
 - [Ulepszenia ręcznego korygowania poczty e-mail](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): wprowadzenie ręcznych akcji przeczyszczania poczty e-mail podjętych w Ochrona usługi Office 365 w usłudze Microsoft Defender do ujednoliconego centrum akcji Microsoft 365 Defender (M365D) przy użyciu nowego badania ukierunkowanego na akcje.
+- [Wprowadzenie do zróżnicowanej ochrony kont priorytetowych w Ochrona usługi Office 365 w usłudze Microsoft Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838): wprowadzenie ogólnej dostępności zróżnicowanej ochrony dla kont priorytetowych. 
  
 ## <a name="march-2022"></a>Marzec 2022 r.
 

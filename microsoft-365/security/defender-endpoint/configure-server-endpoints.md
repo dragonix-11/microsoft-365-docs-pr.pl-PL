@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 18ca82c4bbcb765eec419cd5b7477df8abbd8515
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4c21d0bdf8a96347e60b79d998c0b8c64fd507a1
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490681"
+ms.locfileid: "66531105"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Dołączanie serwerów z systemem Windows do usługi Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -146,6 +146,16 @@ Obejście:
 3. Zaimportuj certyfikat do zaufanego magazynu "Pośrednie urzędy certyfikacji" komputera lokalnego.
 Możesz użyć polecenia programu PowerShell: Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine\Ca
 
+## <a name="integration-with-microsoft-defender-for-cloud"></a>Integracja z Microsoft Defender dla Chmury
+
+Ochrona punktu końcowego w usłudze Microsoft Defender bezproblemowo integruje się z usługą Microsoft Defender for Cloud. Serwery można dołączać automatycznie, serwery monitorowane przez usługę Microsoft Defender for Cloud są wyświetlane w usłudze Defender for Endpoint i przeprowadzać szczegółowe badania jako klient usługi Microsoft Defender for Cloud. 
+
+Aby uzyskać więcej informacji, zobacz [Integracja z usługą Microsoft Defender for Cloud](azure-server-integration.md). Serwery dołączone za pośrednictwem usługi Microsoft Defender for Cloud będą miały początkową konfigurację ustawioną na uruchamianie programu antywirusowego Defender w [trybie pasywnym](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
+
+> [!NOTE]
+> - Integracja między usługą Microsoft Defender dla serwerów i Ochrona punktu końcowego w usłudze Microsoft Defender została rozszerzona o obsługę systemów Windows Server 2022, [Windows Server 2019 i Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+> - Monitorowanie punktu końcowego serwera korzystające z tej integracji zostało wyłączone dla klientów Office 365 GCC.
+
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 i Windows Server 2016
 
 ### <a name="prerequisites"></a>Wymagania wstępne
@@ -166,7 +176,7 @@ Pakiet instalatora sprawdzi, czy następujące składniki zostały już zainstal
 
 #### <a name="prerequisites-for-running-with-third-party-security-solutions"></a>Wymagania wstępne dotyczące uruchamiania z rozwiązaniami zabezpieczeń innych firm
 
-Jeśli zamierzasz używać rozwiązania chroniącego przed złośliwym kodem innej firmy, musisz uruchomić program antywirusowy Microsoft Defender w trybie pasywnym. Należy pamiętać o ustawieniu trybu pasywnego podczas procesu instalacji i dołączania.
+Jeśli zamierzasz korzystać z rozwiązania chroniącego przed złośliwym oprogramowaniem innej firmy, musisz uruchomić program antywirusowy Microsoft Defender w trybie pasywnym. Należy pamiętać o ustawieniu trybu pasywnego podczas procesu instalacji i dołączania.
 
 > [!NOTE]
 > Jeśli instalujesz Ochrona punktu końcowego w usłudze Microsoft Defender na serwerach z programem McAfee Endpoint Security (ENS) lub VirusScan Enterprise (VSE), może być konieczne zaktualizowanie wersji platformy McAfee w celu zapewnienia, że program antywirusowy Microsoft Defender nie zostanie usunięty lub wyłączony. Aby uzyskać więcej informacji, w tym wymagane numery wersji, zobacz [artykuł McAfee Knowledge Center](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
@@ -193,7 +203,7 @@ Należy pobrać zarówno **pakiety instalacyjne** , jak i **dołączane** z port
    > [!NOTE]
    > W systemie Windows Server 2012R2 program antywirusowy Microsoft Defender zostanie zainstalowany przez pakiet instalacyjny i będzie aktywny, chyba że zostanie ustawiony na tryb pasywny. W Windows Server 2016 należy najpierw zainstalować program antywirusowy Microsoft Defender jako funkcję (zobacz [Przełączanie do rozwiązania MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) i w pełni zaktualizować go przed kontynuowaniem instalacji.
    >
-   > Jeśli korzystasz z rozwiązania chroniącego przed złośliwym kodem firmy innej niż Microsoft, przed instalacją upewnij się, że dodano wykluczenia dla programu antywirusowego Microsoft Defender ([z tej listy procesów usługi Microsoft Defender na karcie Procesy usługi Defender](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)) do rozwiązania innego niż Microsoft.  Zaleca się również dodanie rozwiązań zabezpieczeń innych niż Microsoft do listy wykluczeń programu antywirusowego Defender.
+   > Jeśli korzystasz z rozwiązania chroniącego przed złośliwym oprogramowaniem firmy innej niż Microsoft, przed instalacją upewnij się, że dodano wykluczenia dla programu antywirusowego Microsoft Defender ([z tej listy procesów usługi Microsoft Defender na karcie Procesy usługi Defender](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)) do rozwiązania innego niż Microsoft.  Zaleca się również dodanie rozwiązań zabezpieczeń innych niż Microsoft do listy wykluczeń programu antywirusowego Defender.
 
 **Pakiet instalacyjny** zawiera plik MSI, który instaluje agenta Ochrona punktu końcowego w usłudze Microsoft Defender.
 
@@ -374,7 +384,7 @@ Możesz odłączyć Windows Server 2012 R2, Windows Server 2016, Windows Server 
 
 - [Odłączanie urządzeń przy użyciu zasady grupy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Odłączanie urządzeń przy użyciu Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
-- [Odłączanie i monitorowanie urządzeń przy użyciu narzędzi mobile Zarządzanie urządzeniami](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Odłączanie urządzeń przy użyciu narzędzi mobile Zarządzanie urządzeniami](configure-endpoints-mdm.md#offboard-devices-using-mobile-device-management-tools)
 - [Odłączanie urządzeń przy użyciu skryptu lokalnego](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
 Po odłączeniu można odinstalować pakiet ujednoliconego rozwiązania w Windows Server 2012 R2 i Windows Server 2016.

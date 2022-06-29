@@ -1,6 +1,6 @@
 ---
-title: Dołącz urządzenia z systemem Windows przy użyciu narzędzi do zarządzania urządzeniami przenośnymi
-description: Użyj narzędzi mobile Zarządzanie urządzeniami, aby wdrożyć pakiet konfiguracji na urządzeniach, tak aby były one dołączane do usługi Defender for Endpoint.
+title: Dołączanie urządzeń z systemem Windows do usługi Defender for Endpoint przy użyciu Intune
+description: Użyj Microsoft Intune, aby wdrożyć pakiet konfiguracji na urządzeniach, tak aby były dołączane do usługi Defender for Endpoint.
 keywords: dołączanie urządzeń przy użyciu zarządzania urządzeniami przenośnymi, zarządzania urządzeniami, dołączania Ochrona punktu końcowego w usłudze Microsoft Defender urządzeń, zarządzania urządzeniami przenośnymi
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3e81470cb02742eb94e62118f77f1ae0e8c62f90
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 90c6ec688b19f328f89e2bcabe70b7955086e8da
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599686"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531061"
 ---
-# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>Dołącz urządzenia z systemem Windows przy użyciu narzędzi do zarządzania urządzeniami przenośnymi
+# <a name="onboard-windows-devices-to-defender-for-endpoint-using-intune"></a>Dołączanie urządzeń z systemem Windows do usługi Defender for Endpoint przy użyciu Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,18 +35,17 @@ ms.locfileid: "65599686"
 
 Rozwiązania do zarządzania urządzeniami przenośnymi (MDM) umożliwiają konfigurowanie Windows 10 urządzeń. Usługa Defender for Endpoint obsługuje rozwiązania MDM, udostępniając OMA-URIs do tworzenia zasad zarządzania urządzeniami.
 
-
 Aby uzyskać więcej informacji na temat korzystania z dostawcy CSP usługi Defender for Endpoint, zobacz [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) i [WindowsAdvancedThreatProtection plik DDF](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Jeśli używasz Microsoft Intune, musisz mieć zarejestrowane urządzenie MDM. W przeciwnym razie ustawienia nie zostaną zastosowane pomyślnie.
+Urządzenia muszą być zarejestrowane w usłudze Intune jako rozwiązanie usługi Mobile Zarządzanie urządzeniami (MDM).
 
 Aby uzyskać więcej informacji na temat włączania zarządzania urządzeniami przenośnymi za pomocą Microsoft Intune, zobacz [Rejestrowanie urządzeń (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>Dołączanie urządzeń przy użyciu Microsoft Intune
 
-Zapoznaj się z plikiem [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) lub [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx), aby wyświetlić różne ścieżki wdrażania usługi Defender dla punktu końcowego.
+Zapoznaj się z plikiem [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) lub [programem Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) , aby wyświetlić różne ścieżki wdrażania usługi Defender for Endpoint.
 
 Postępuj zgodnie z instrukcjami z [Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
@@ -57,15 +56,14 @@ Aby uzyskać więcej informacji na temat korzystania z dostawcy CSP usługi Defe
 >
 > - Zasady **Stan kondycji dołączonych urządzeń** używają właściwości tylko do odczytu i nie można ich skorygować.
 > - Konfiguracja częstotliwości raportowania danych diagnostycznych jest dostępna tylko dla urządzeń w Windows 10, wersja 1703.
+> - Dołączanie do usługi Defender for Endpoint spowoduje dołączenie urządzenia do usługi [Data Loss Prevention (DLP),](../../compliance/endpoint-dlp-learn-about.md) która jest również częścią zgodności platformy Microsoft 365.
 
-
-Zapoznaj się z plikiem [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) lub [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx), aby wyświetlić różne ścieżki wdrażania Ochrona punktu końcowego w usłudze Microsoft Defender.
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Uruchamianie testu wykrywania w celu zweryfikowania dołączania
 Po dołączeniu urządzenia można uruchomić test wykrywania, aby sprawdzić, czy urządzenie jest prawidłowo dołączone do usługi. Aby uzyskać więcej informacji, zobacz [Uruchamianie testu wykrywania na nowo dołączonym urządzeniu Ochrona punktu końcowego w usłudze Microsoft Defender](run-detection-test.md).
 
 
-## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>Odłączanie i monitorowanie urządzeń przy użyciu narzędzi mobile Zarządzanie urządzeniami
+## <a name="offboard-devices-using-mobile-device-management-tools"></a>Odłączanie urządzeń przy użyciu narzędzi mobile Zarządzanie urządzeniami
 
 Ze względów bezpieczeństwa pakiet używany do odłączenia urządzeń wygaśnie 30 dni po pobraniu. Wygasłe pakiety odłączania wysyłane do urządzenia zostaną odrzucone. Podczas pobierania pakietu odłączania otrzymasz powiadomienie o dacie wygaśnięcia pakietów i zostanie on również uwzględniony w nazwie pakietu.
 
