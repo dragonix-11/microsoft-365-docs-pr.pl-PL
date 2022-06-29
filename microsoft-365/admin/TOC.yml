@@ -14,7 +14,7 @@
         - name: Planowanie konfiguracji subskrypcji Microsoft 365 dla Firm
           href: setup/plan-your-setup.md
         - name: Rejestracja w subskrypcji Microsoft 365 dla Firm w warstwie Premium
-          href: ../business-premium/index.md
+          href: ../business-premium/get-microsoft-365-business-premium.md
         - name: Rejestracja w subskrypcji Microsoft 365 dla Firm w warstwie Standard
           items:
             - name: Rejestracja w subskrypcji Microsoft 365 dla Firm w warstwie Standard
@@ -50,7 +50,7 @@
         - name: Instalowanie aplikacji pakietu Office
           href: setup/install-applications.md
         - name: Skonfiguruj urządzenia z systemem Windows
-          href: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
+          href: /microsoft-365/business-premium/m365bp-set-up-windows-devices
         - name: Konfigurowanie urządzeń przenośnych
           href: setup/set-up-mobile-devices.md
         - name: Skonfiguruj program Outlook dla platformy Microsoft 365 dla Firm (klip wideo)
@@ -346,8 +346,6 @@
           href: manage/idle-session-timeout-web-apps.md
         - name: Włączanie nowoczesnego uwierzytelniania dla klientów pakietu Office 2013
           href: security-and-compliance/enable-modern-authentication.md
-        - name: Zagrożenia wykryte przez program antywirusowy Microsoft Defender
-          href: /microsoft-365/business-premium/m365bp-review-threats-take-action
         - name: Przewodnik po zgodności z RODO
           href: security-and-compliance/gdpr-compliance.md
     - name: Zarządzaj urządzeniami i danymi aplikacji
