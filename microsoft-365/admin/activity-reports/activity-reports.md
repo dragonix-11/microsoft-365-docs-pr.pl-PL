@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- adminvideo
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Uzyskaj okresowy raport o tym, jak osoby w Twojej organizacji korzystają z usług platformy Microsoft 365, i przejdź do szczegółów każdego wykresu, aby uzyskać więcej szczegółowych informacji.
-ms.openlocfilehash: 9dbd1ef7044db3a27c93cfe7e2acd09aaa32cd14
-ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
+ms.openlocfilehash: 481f7abf0015994ab211f55feedabc4aa615dbca
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66151167"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486325"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Raporty platformy Microsoft 365 w centrum administracyjnym
 
@@ -151,6 +152,16 @@ Administratorzy globalni mogą cofnąć tę zmianę dla swojej dzierżawy i wyś
 2. Wybierz pozycję **Raporty**.
 
 3. Usuń zaznaczenie opcji **Wyświetl ukryte nazwy użytkowników, grup i witryn we wszystkich raportach**, a następnie zapisz zmiany.
+
+Od 23 czerwca 2022 r. interfejs API będzie stopniowo udostępniany we wszystkich środowiskach, aby administratorzy globalni mogli zmieniać to ustawienie bez konieczności odwiedzania centrum administracyjnego platformy Microsoft 365. Szczegóły interfejsu API znajdują się poniżej:  
+
+Adres URL to https://graph.microsoft.com/beta/admin/reportSettings 
+
+Dla tego interfejsu API zatwierdzono dwie metody:
+
+:::image type="content" source="../../media/api-show-details.png" alt-text="Metody interfejsu API.":::
+
+Raport będzie zawierać tylko właściwość Ustawienia prywatności. Aby uzyskać więcej informacji na temat interfejsu Graph API, zobacz [Użyj interfejsu Microsoft Graph API](/graph/use-the-api). Administratorzy globalni mogą używać zestawu Software Development Kit (SDK) lub bezpośrednio wywoływać interfejs API przy użyciu dowolnego języka programu z obsługą sieci. Zalecamy używanie [Eksploratora programu Graph](/graph/graph-explorer/graph-explorer-overview).
 
 Wprowadzanie tych zmian w raportach na pulpicie nawigacyjnym Raporty potrwa kilka minut. To ustawienie dotyczy również raportów użycia platformy Microsoft 365 w programie [Microsoft Graph](/graph/api/resources/report) i usłudze [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) oraz [raportów użycia w Centrum administracyjnym usługi Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Wyświetlanie identyfikowalnych informacji o użytkowniku jest zarejestrowanym zdarzeniem w dzienniku inspekcji portalu zgodności usługi Microsoft Purview.
 

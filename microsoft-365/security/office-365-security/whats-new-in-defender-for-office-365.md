@@ -19,12 +19,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f2613825e0925e1899268b4682f66b7facc9600d
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 37819c0f5ea458a4f5ee25b3536e3688aabd1882
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015010"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486912"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Co nowego w ochronie usługi Office 365 w usłudze Microsoft Defender?
 
@@ -47,9 +47,21 @@ Aby uzyskać więcej informacji na temat nowości w innych produktach zabezpiecz
 - [Co nowego w Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
 
-## <a name="june-2022"></a>Czerwiec 2022 r.
+## <a name="june-2022"></a>Czerwiec 2022
 
-- [uproszczenie środowiska kwarantanny część druga w Microsoft 365 Defender dla usługi Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): uproszczenie środowiska kwarantanny część druga z Ochrona usługi Office 365 w usłudze Microsoft Defender.
+- [Fałszowanie umożliwia przesyłanie danych przez administratora](allow-block-email-spoof.md#use-admin-submission-in-microsoft-365-defender): tworzenie dozwolonych fałszywych wpisów nadawcy przy użyciu listy dozwolonych/zablokowanych dzierżawców.
+
+- [Personifikacja umożliwia przesyłanie przez administratora](allow-block-email-spoof.md#create-impersonated-sender-entries): opcja Dodaj umożliwia personifikowanie nadawców przy użyciu strony Przesłane w Microsoft 365 Defender.
+
+- [Wyświetl przekonwertowane przesyłanie przez administratora z przesłania przez użytkownika](admin-submission.md#convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission): skonfiguruj niestandardową skrzynkę pocztową w celu przechwycenia wiadomości zgłoszonych przez użytkownika bez wysyłania wiadomości do firmy Microsoft w celu analizy.
+
+- [Wyświetl skojarzony alert dotyczący przesyłania przez użytkowników i administratorów](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions): wyświetl odpowiedni alert dla każdego zgłoszonego przez użytkownika komunikatu phish i przesłania wiadomości e-mail administratora. 
+
+- [Konfigurowalna ochrona przed personifikacją niestandardowych użytkowników i domen oraz zwiększony zakres w ramach wstępnie ustawionych zasad](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459):
+  - (Wybierz opcję) Zastosuj wstępnie ustawione zasady ścisłe/standardowe do całej organizacji i unikaj kłopotliwego wybierania określonych użytkowników, grup lub domen adresatów, a tym samym zabezpieczania wszystkich użytkowników adresatów w organizacji. 
+  - Skonfiguruj ustawienia ochrony przed personifikacją dla użytkowników niestandardowych i domen niestandardowych w ramach wstępnie ustawionych zasad ścisłych/standardowych oraz automatycznie chroń docelowych użytkowników i domenę docelową przed atakami personifikacji.
+
+- [Upraszczanie środowiska kwarantanny (część druga) w Microsoft 365 Defender dla usługi Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): wyróżnia dodatkowe funkcje, aby jeszcze bardziej ułatwić korzystanie z kwarantanny.
 
 ## <a name="april-2022"></a>Kwiecień 2022 r.
 
@@ -67,7 +79,7 @@ Aby uzyskać więcej informacji na temat nowości w innych produktach zabezpiecz
 ## <a name="october-2021"></a>Październik 2021
 
 - [Zaawansowane rozszerzenie DKIM dostarczania](configure-advanced-delivery.md): dodano obsługę wpisu domeny DKIM w ramach konfiguracji symulacji wyłudzania informacji innych firm.
-- [Domyślnie bezpieczne](secure-by-default.md): domyślnie rozszerzone zabezpieczenia dla reguł przepływu poczty Exchange (nazywanych również regułami transportu).
+- [Zabezpiecz domyślnie](secure-by-default.md): domyślnie rozszerzone zabezpieczenia dla reguł przepływu poczty programu Exchange (nazywanych również regułami transportu).
 
 ## <a name="september-2021"></a>Wrzesień 2021
 
@@ -80,14 +92,14 @@ Aby uzyskać więcej informacji na temat nowości w innych produktach zabezpiecz
 
 ## <a name="august-2021"></a>Sierpień 2021
 
-- [Przegląd przez administratora zgłoszonych komunikatów](admin-review-reported-message.md): Administratorzy mogą teraz wysyłać szablonowe komunikaty z powrotem do użytkowników końcowych po przejrzeniu zgłoszonych komunikatów. Szablony można dostosować dla organizacji i na podstawie werdyktu administratora.
+- [Administracja przeglądu zgłoszonych komunikatów](admin-review-reported-message.md): administratorzy mogą teraz wysyłać szablonowe komunikaty z powrotem do użytkowników końcowych po przejrzeniu zgłoszonych komunikatów. Szablony można dostosować dla organizacji i na podstawie werdyktu administratora.
 - [Dodaj opcje zezwalania na korzystanie z listy dozwolonych/blokowych dzierżawy](manage-tenant-allows.md): możesz teraz dodać wpisy zezwalania do listy dozwolonych/zablokowanych dzierżaw, jeśli zablokowany komunikat został przesłany w ramach procesu przesyłania przez administratora. W zależności od charakteru bloku przesłany adres URL, plik i/lub zezwolenie nadawcy zostaną dodane do listy dozwolonych/zablokowanych dzierżaw. W większości przypadków, pozwala są dodawane, aby dać systemowi trochę czasu i pozwolić mu naturalnie, jeśli jest to uzasadnione. W niektórych przypadkach firma Microsoft zarządza zezwoleniem dla Ciebie.
 
 ## <a name="july-2021"></a>Lipiec 2021
 
 - [Ulepszenia analizy poczty e-mail w zautomatyzowanych badaniach](email-analysis-investigations.md)
 - [Zaawansowane dostarczanie](configure-advanced-delivery.md): wprowadzenie nowej możliwości konfigurowania dostarczania symulacji wyłudzania informacji innych firm użytkownikom i niefiltrowanych wiadomości do skrzynek pocztowych operacji zabezpieczeń.
-- [linki Sejf dla Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- [Bezpieczne linki dla usługi Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
 - Nowe zasady alertów dla następujących scenariuszy: zagrożone skrzynki pocztowe, wyłudzanie informacji o formularzach, złośliwe wiadomości e-mail dostarczane z powodu przesłonięć i zaokrąglanie zap
   - Podejrzane działania w zakresie przesyłania dalej wiadomości e-mail
   - Użytkownik nie może udostępniać formularzy i zbierać odpowiedzi
@@ -100,15 +112,15 @@ Aby uzyskać więcej informacji na temat nowości w innych produktach zabezpiecz
 
 ## <a name="june-2021"></a>Czerwiec 2021
 
-- Nowe ustawienie porada dotycząca bezpieczeństwa pierwszego kontaktu w ramach zasad ochrony przed wyłudzaniem informacji. Ten porada dotycząca bezpieczeństwa jest wyświetlany, gdy adresaci po raz pierwszy otrzymują wiadomość e-mail od nadawcy lub często nie otrzymują wiadomości e-mail od nadawcy. Aby uzyskać więcej informacji na temat tego ustawienia i sposobu jego konfigurowania, zobacz następujące artykuły:
-  - [Pierwszy kontakt porada dotycząca bezpieczeństwa](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- Nowe ustawienie porad dotyczących zabezpieczeń pierwszego kontaktu w ramach zasad ochrony przed wyłudzaniem informacji. Ta wskazówka dotycząca bezpieczeństwa jest wyświetlana, gdy adresaci po raz pierwszy otrzymują wiadomość e-mail od nadawcy lub często nie otrzymują wiadomości e-mail od nadawcy. Aby uzyskać więcej informacji na temat tego ustawienia i sposobu jego konfigurowania, zobacz następujące artykuły:
+  - [Porada bezpieczeństwa pierwszego kontaktu](set-up-anti-phishing-policies.md#first-contact-safety-tip)
   - [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w usłudze EOP](configure-anti-phishing-policies-eop.md)
   - [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>Kwiecień/maj 2021 r.
 
 - [Strona jednostki poczty e-mail](mdo-email-entity-page.md): ujednolicony 360-stopniowy widok wiadomości e-mail z wzbogaconymi informacjami o zagrożeniach, uwierzytelnianiu i wykrywaniu, szczegółach detonacji i zupełnie nowym środowisku podglądu wiadomości e-mail.
-- [interfejs API zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): aktualizacje funkcji EmailEvents (RecordType 28) w celu dodania akcji dostarczania, oryginalnych i najnowszych lokalizacji dostarczania oraz zaktualizowanych szczegółów wykrywania.
+- [interfejs API zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): Aktualizacje do usługi EmailEvents (RecordType 28), aby dodać akcję dostarczania, oryginalne i najnowsze lokalizacje dostarczania oraz zaktualizowane szczegóły wykrywania.
 - [Analiza zagrożeń dla Ochrona usługi Office 365 w usłudze Defender](/microsoft-365/security/defender/threat-analytics): wyświetlanie aktywnych aktorów zagrożeń, popularnych technik i obszarów ataków, a także obszerne raporty naukowców firmy Microsoft dotyczące trwających kampanii.
 
 ## <a name="februarymarch-2021"></a>Luty/marzec 2021 r.
@@ -124,5 +136,5 @@ Czy wiesz, że Ochrona usługi Office 365 w usłudze Microsoft Defender jest dos
 
 ## <a name="see-also"></a>Zobacz też
 
-- [plan Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
+- [Plan działania platformy Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 - [Opis usługi Ochrona usługi Office 365 w usłudze Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

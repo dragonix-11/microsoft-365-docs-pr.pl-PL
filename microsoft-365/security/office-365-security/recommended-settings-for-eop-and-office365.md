@@ -19,12 +19,12 @@ ms.collection:
 description: Jakie są najlepsze rozwiązania dotyczące ustawień zabezpieczeń Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Defender? Jakie są bieżące zalecenia dotyczące standardowej ochrony? Co powinno być używane, jeśli chcesz być bardziej rygorystyczne? A jakie dodatki otrzymujesz, jeśli również używasz Ochrona usługi Office 365 w usłudze Defender?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 96eb39bf6cdf0ba110c7474e86a16b2e3a7e72fe
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 7798bc177cf6d3a864644fdfa6563ced14cd0ab8
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078859"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489796"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Zalecane ustawienia zabezpieczeń EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "66078859"
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-**Exchange Online Protection (EOP)** jest podstawą zabezpieczeń dla subskrypcji Microsoft 365 i pomaga zapobiegać docieraniu złośliwych wiadomości e-mail do skrzynek odbiorczych pracownika. Jednak w przypadku nowych, bardziej zaawansowanych ataków pojawiających się każdego dnia często wymagane są ulepszone zabezpieczenia. **Ochrona usługi Office 365 w usłudze Microsoft Defender** Plan 1 lub Plan 2 zawierają dodatkowe funkcje, które zapewniają administratorom więcej warstw zabezpieczeń, kontroli i badania.
+**Exchange Online Protection (EOP)** jest podstawą zabezpieczeń subskrypcji platformy Microsoft 365 i pomaga zapobiegać docieraniu złośliwych wiadomości e-mail do skrzynek odbiorczych pracownika. Jednak w przypadku nowych, bardziej zaawansowanych ataków pojawiających się każdego dnia często wymagane są ulepszone zabezpieczenia. **Ochrona usługi Office 365 w usłudze Microsoft Defender** Plan 1 lub Plan 2 zawierają dodatkowe funkcje, które zapewniają administratorom więcej warstw zabezpieczeń, kontroli i badania.
 
 Mimo że umożliwiamy administratorom zabezpieczeń dostosowywanie ich ustawień zabezpieczeń, zalecamy stosowanie dwóch poziomów zabezpieczeń w ramach EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender: **Standardowa** i **Ścisła**. Mimo że środowiska i potrzeby klientów są różne, te poziomy filtrowania pomogą zapobiec docieraniu niechcianej poczty do skrzynki odbiorczej pracowników w większości sytuacji.
 
@@ -46,10 +46,10 @@ W tym artykule opisano ustawienia domyślne, a także zalecane ustawienia standa
 > [!NOTE]
 > Moduł Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) dla programu PowerShell może ułatwić (administratorom) znalezienie bieżących wartości tych ustawień. W szczególności polecenie cmdlet **Get-ORCAReport** generuje ocenę ochrony przed spamem, ochrony przed wyłudzaniem informacji i innych ustawień higieny wiadomości. Moduł ORCA można pobrać pod adresem <https://www.powershellgallery.com/packages/ORCA/>.
 >
-> W Microsoft 365 organizacjach zalecamy pozostawienie filtru wiadomości-śmieci w Outlook ustawić wartość **Brak automatycznego filtrowania**, aby zapobiec niepotrzebnym konfliktom (zarówno pozytywnym, jak i negatywnym) z werdyktami filtrowania spamu z EOP. Aby uzyskać więcej informacji, zapoznaj się z następującymi artykułami:
+> W organizacjach platformy Microsoft 365 zalecamy pozostawienie filtru wiadomości-śmieci w programie Outlook na wartość **Brak automatycznego filtrowania** , aby zapobiec niepotrzebnym konfliktom (zarówno pozytywnym, jak i negatywnym) z werdyktami filtrowania spamu z EOP. Aby uzyskać więcej informacji, zapoznaj się z następującymi artykułami:
 >
 > - [Konfigurowanie ustawień wiadomości-śmieci w skrzynkach pocztowych Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md)
-> - [Informacje o ustawieniach wiadomości-śmieci w Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
+> - [Informacje o ustawieniach wiadomości-śmieci w programie Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
 > - [Zmienianie poziomu ochrony w filtrze wiadomości-śmieci](https://support.microsoft.com/en-us/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
 > - [Tworzenie list bezpiecznych nadawców w ramach EOP](create-safe-sender-lists-in-office-365.md)
 > - [Tworzenie zablokowanych list nadawców w ramach EOP](create-block-sender-lists-in-office-365.md)
@@ -90,26 +90,26 @@ Aby utworzyć i skonfigurować zasady ochrony przed spamem, zobacz [Konfigurowan
 
 #### <a name="asf-settings-in-anti-spam-policies"></a>Ustawienia usługi ASF w zasadach ochrony przed spamem
 
-W tabeli w tej sekcji opisano ustawienia zaawansowanego filtru spamu (ASF), które są dostępne w zasadach ochrony przed spamem. Wszystkie te ustawienia są **wyłączone** dla poziomów **standardowych** i **ścisłych** . Aby uzyskać więcej informacji na temat ustawień asf, zobacz [Ustawienia zaawansowanego filtru spamu (ASF) w EOP](advanced-spam-filtering-asf-options.md).
+Aby uzyskać więcej informacji na temat ustawień zaawansowanego filtru spamu (ASF) w zasadach ochrony przed spamem, zobacz [Ustawienia zaawansowanego filtru spamu (ASF) w usłudze EOP](advanced-spam-filtering-asf-options.md).
 
-|Nazwa funkcji zabezpieczeń|Komentowanie|
-|---|---|
-|**Linki obrazów do lokacji zdalnych** (_IncreaseScoreWithImageLinks_)||
-|**Numeryczny adres IP w adresie URL** (_IncreaseScoreWithNumericIps_)||
-|**Przekierowanie adresu URL do innego portu** (_IncreaseScoreWithRedirectToOtherPort_)||
-|**Linki do witryn .biz lub .info** (_IncreaseScoreWithBizOrInfoUrls_)||
-|**Puste komunikaty** (_MarkAsSpamEmptyMessages_)||
-|**Osadzanie tagów w języku HTML** (_MarkAsSpamEmbedTagsInHtml_)||
-|**JavaScript lub VBScript w języku HTML** (_MarkAsSpamJavaScriptInHtml_)||
-|**Tagi formularzy w języku HTML** (_MarkAsSpamFormTagsInHtml_)||
-|**Tagi ramek lub ramek w języku HTML** (_MarkAsSpamFramesInHtml_)||
-|**Usterki internetowe w języku HTML** (_MarkAsSpamWebBugsInHtml_)||
-|**Tagi obiektów w języku HTML** (_MarkAsSpamObjectTagsInHtml_)||
-|**Wyrazy wrażliwe** (_MarkAsSpamSensitiveWordList_)||
-|**Rekord SPF: twardy błąd** (_MarkAsSpamSpfRecordHardFail_)||
-|**Filtrowanie identyfikatora nadawcy nie powiodło się** (_MarkAsSpamFromAddressAuthFail_)||
-|**Backscatter** (_MarkAsSpamNdrBackscatter_)||
-|**Tryb testu** (_TestModeAction_)|W przypadku ustawień asf, które obsługują akcję **Testuj** jako akcję, możesz skonfigurować akcję trybu **testowego na wartość Brak**, **Dodaj domyślny tekst X-Header** lub **Wyślij komunikat Bcc** (`None`, `AddXHeader`lub `BccMessage`). Aby uzyskać więcej informacji, zobacz [Włączanie, wyłączanie lub testowanie ustawień asf](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
+|Nazwa funkcji zabezpieczeń|Domyślne|Zalecane<br/>Standard|Zalecane<br/>Ścisłe|Komentowanie|
+|---|:---:|:---:|:---:|---|
+|**Linki obrazów do lokacji zdalnych** <p> _IncreaseScoreWithImageLinks_|Wył.|Wył.|Wył.||
+|**Numeryczny adres IP w adresie URL** <p> _IncreaseScoreWithNumericIps_|Wył.|Wył.|Wył.||
+|**Przekierowanie adresu URL do innego portu** <p> _IncreaseScoreWithRedirectToOtherPort_|Wył.|Wył.|Wył.||
+|**Linki do witryn .biz lub .info** <p> _IncreaseScoreWithBizOrInfoUrls_|Wył.|Wył.|Wył.||
+|**Puste komunikaty** <p> _MarkAsSpamEmptyMessages_|Wył.|Wył.|Wył.||
+|**Osadzanie tagów w kodzie HTML** <p> _MarkAsSpamEmbedTagsInHtml_|Wył.|Wył.|Wył.||
+|**Język JavaScript lub VBScript w języku HTML** <p> _MarkAsSpamJavaScriptInHtml_|Wył.|Wył.|Wył.||
+|**Tagi formularzy w języku HTML** <p> _MarkAsSpamFormTagsInHtml_|Wył.|Wył.|Wył.||
+|**Tagi ramek lub ramek w języku HTML** <p> _MarkAsSpamFramesInHtml_|Wył.|Wył.|Wył.||
+|**Błędy internetowe w kodzie HTML** <p> _MarkAsSpamWebBugsInHtml_|Wył.|Wył.|Wył.||
+|**Tagi obiektów w kodzie HTML** <p> _MarkAsSpamObjectTagsInHtml_|Wył.|Wył.|Wył.||
+|**Wyrazy wrażliwe** <p> _MarkAsSpamSensitiveWordList_|Wył.|Wył.|Wył.||
+|**Rekord SPF: niepowodzenie twarde** <p> _MarkAsSpamSpfRecordHardFail_|Wył.|Wył.|Wył.||
+|**Filtrowanie identyfikatora nadawcy kończy się niepowodzeniem** <p> _MarkAsSpamFromAddressAuthFail_|Wył.|Wył.|Wył.||
+|**Backscatter** <p> _MarkAsSpamNdrBackscatter_|Wył.|Wył.|Wył.||
+|**Tryb testowania** <p> _TestModeAction_)|Brak|Brak|Brak|W przypadku ustawień asf, które obsługują akcję **Testuj** jako akcję, możesz skonfigurować akcję trybu **testowego na wartość Brak**, **Dodaj domyślny tekst X-Header** lub **Wyślij komunikat Bcc** (`None`, `AddXHeader`lub `BccMessage`). Aby uzyskać więcej informacji, zobacz [Włączanie, wyłączanie lub testowanie ustawień asf](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
 
 #### <a name="eop-outbound-spam-policy-settings"></a>Ustawienia zasad wychodzących zasad dotyczących spamu w usłudze EOP
 
@@ -137,14 +137,9 @@ Aby utworzyć i skonfigurować zasady ochrony przed złośliwym oprogramowaniem,
 |Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|---|
 |**Ustawienia ochrony**|||||
-|**Włączanie wspólnego filtru załączników** <p> _EnableFileFilter_|Nie zaznaczono <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`|To ustawienie powoduje kwarantannę komunikatów zawierających załączniki wykonywalne na podstawie typu pliku, niezależnie od zawartości załącznika.|
+|**Włączanie wspólnego filtru załączników** <p> _EnableFileFilter_|Nie zaznaczono <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`|To ustawienie powoduje kwarantannę komunikatów zawierających załączniki na podstawie typu pliku, niezależnie od zawartości załącznika. Aby uzyskać listę typów plików, zobacz [Zasady ochrony przed złośliwym oprogramowaniem](anti-malware-protection.md#anti-malware-policies).|
 |**Włączanie automatycznego przeczyszczania z zerową godziną w przypadku złośliwego oprogramowania** <p> _ZapEnabled_|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
 |**Zasady kwarantanny**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|Podczas tworzenia nowych zasad ochrony przed złośliwym oprogramowaniem pusta wartość oznacza, że domyślne zasady kwarantanny są używane do definiowania historycznych możliwości komunikatów, które zostały poddane kwarantannie jako złośliwe oprogramowanie (AdminOnlyAccessPolicy bez powiadomień kwarantanny). <p> Standardowe i ścisłe wstępnie ustawione zasady zabezpieczeń używają domyślnych zasad kwarantanny (AdminOnlyAccessPolicy bez powiadomień o kwarantannie) zgodnie z opisem w tabeli [tutaj](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <p> Administratorzy mogą tworzyć i wybierać niestandardowe zasady kwarantanny, które definiują więcej możliwości dla użytkowników w domyślnych lub niestandardowych zasadach ochrony przed złośliwym oprogramowaniem. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).|
-|**Powiadomienia adresatów**|||||
-|**Powiadamianie adresatów o kwarantannie wiadomości jako złośliwe oprogramowanie** <p> _Akcja_|Nie zaznaczono <p> _DeleteMessage_|Nie zaznaczono <p> _DeleteMessage_|Nie zaznaczono <p> _DeleteMessage_|Jeśli złośliwe oprogramowanie zostanie wykryte w załączniku wiadomości e-mail, wiadomość zostanie poddana kwarantannie i może zostać wydana tylko przez administratora.|
-|**Powiadomienia nadawcy**|||||
-|**Powiadamianie wewnętrznych nadawców, gdy komunikaty są poddawane kwarantannie jako złośliwe oprogramowanie** <p> _EnableInternalSenderNotifications_|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`||
-|**Powiadamianie nadawców zewnętrznych, gdy komunikaty są poddawane kwarantannie jako złośliwe oprogramowanie** <p> _EnableExternalSenderNotifications_|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`||
 |**powiadomienia Administracja**|||||
 |**Powiadamianie administratora o niedostarczonych komunikatach od nadawców wewnętrznych** <p> _EnableInternalSenderAdminNotifications_ <p> _InternalSenderAdminAddress_|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie mamy żadnych konkretnych zaleceń dotyczących tego ustawienia.|
 |**Powiadamianie administratora o niedostarczonych komunikatach od nadawców zewnętrznych** <p> _EnableExternalSenderAdminNotifications_ <p> _ExternalSenderAdminAddress_|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie mamy żadnych konkretnych zaleceń dotyczących tego ustawienia.|
@@ -152,10 +147,10 @@ Aby utworzyć i skonfigurować zasady ochrony przed złośliwym oprogramowaniem,
 |**Korzystanie z dostosowanego tekstu powiadomień** <p> _CustomNotifications_|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`||
 |**Z nazwy** <p> _CustomFromName_|Puste <p> `$null`|Puste <p> `$null`|Puste <p> `$null`||
 |**Z adresu** <p> _CustomFromAddress_|Puste <p> `$null`|Puste <p> `$null`|Puste <p> `$null`||
-|**Dostosowywanie powiadomień dotyczących komunikatów od nadawców wewnętrznych**||||Te ustawienia są używane tylko wtedy, **gdy powiadom wewnętrznych nadawców, gdy komunikaty zostaną poddane kwarantannie jako złośliwe oprogramowanie** lub zostanie wybrana opcja **Powiadom administratora o niedostarczonych komunikatach od nadawców wewnętrznych** .|
+|**Dostosowywanie powiadomień dotyczących komunikatów od nadawców wewnętrznych**||||Te ustawienia są używane tylko wtedy, gdy zostanie **wybrana opcja Powiadom administratora o niedostarczonych komunikatach od nadawców wewnętrznych** .|
 |**Temat** <p> _CustomInternalSubject_|Puste <p> `$null`|Puste <p> `$null`|Puste <p> `$null`||
 |**Komunikat** <p> _CustomInternalBody_|Puste <p> `$null`|Puste <p> `$null`|Puste <p> `$null`||
-|**Dostosowywanie powiadomień dotyczących komunikatów od nadawców zewnętrznych**||||Te ustawienia są używane tylko wtedy, **gdy powiadom zewnętrznych nadawców, gdy komunikaty są poddane kwarantannie jako złośliwe oprogramowanie** lub zostanie wybrana opcja **Powiadom administratora o niedostarczonych komunikatach od nadawców zewnętrznych** .|
+|**Dostosowywanie powiadomień dotyczących komunikatów od nadawców zewnętrznych**||||Te ustawienia są używane tylko wtedy, gdy zostanie wybrane **powiadomienie administratora o niedostarczonych komunikatach od nadawców zewnętrznych** .|
 |**Temat** <p> _CustomExternalSubject_|Puste <p> `$null`|Puste <p> `$null`|Puste <p> `$null`||
 |**Komunikat** <p> _CustomExternalBody_|Puste <p> `$null`|Puste <p> `$null`|Puste <p> `$null`||
 
@@ -163,7 +158,7 @@ Aby utworzyć i skonfigurować zasady ochrony przed złośliwym oprogramowaniem,
 
 Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Spoof settings (Fałszowanie ustawień](set-up-anti-phishing-policies.md#spoof-settings)). Aby skonfigurować te ustawienia, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w ramach EOP](configure-anti-phishing-policies-eop.md).
 
-Ustawienia fałszowania są ze sobą powiązane, ale ustawienie **Pokaż pierwszy kontakt porada dotycząca bezpieczeństwa** nie ma zależności od ustawień fałszowania.
+Ustawienia fałszowania są ze sobą powiązane, ale ustawienie **Pokaż pierwszą poradę bezpieczeństwa kontaktu** nie jest zależne od ustawień fałszowania.
 
 |Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|---|
@@ -171,8 +166,8 @@ Ustawienia fałszowania są ze sobą powiązane, ale ustawienie **Pokaż pierwsz
 |**Włączanie analizy fałszowania** <p> _EnableSpoofIntelligence_|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
 |**Działania**|||||
 |**Jeśli komunikat zostanie wykryty jako sfałszowany** <p> _AuthenticationFailAction_|**Przenoszenie wiadomości do folderów wiadomości-śmieci adresatów** <p> `MoveToJmf`|**Przenoszenie wiadomości do folderów wiadomości-śmieci adresatów** <p> `MoveToJmf`|**Kwarantanna komunikatu** <p> `Quarantine`|To ustawienie dotyczy sfałszowanych nadawców, którzy zostali automatycznie zablokowani, jak pokazano w szczegółowych [informacjach dotyczących fałszowania analizy](learn-about-spoof-intelligence.md) lub ręcznie zablokowanych na [liście dozwolonych/zablokowanych dzierżaw](tenant-allow-block-list.md). <p> Jeśli **wybierzesz pozycję Kwarantanna komunikatu**, pole **Zastosuj zasady kwarantanny** jest dostępne, aby wybrać zasady kwarantanny, które definiują, co użytkownicy mogą robić dla komunikatów, które są poddane kwarantannie jako fałszowanie. Podczas tworzenia nowych zasad ochrony przed wyłudzaniem informacji pusta wartość oznacza, że domyślne zasady kwarantanny są używane do definiowania historycznych możliwości komunikatów, które zostały poddane kwarantannie jako fałszowanie (DefaultFullAccessPolicy bez powiadomień kwarantanny). <p> Standardowe i ścisłe wstępnie ustawione zasady zabezpieczeń używają domyślnych zasad kwarantanny (DefaultFullAccessPolicy bez powiadomień o kwarantannie) zgodnie z opisem w tabeli [tutaj](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <p> Administratorzy mogą tworzyć i wybierać niestandardowe zasady kwarantanny, które definiują bardziej restrykcyjne lub mniej restrykcyjne możliwości dla użytkowników w domyślnych lub niestandardowych zasadach ochrony przed wyłudzaniem informacji. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).|
-|**Pokaż pierwszy kontakt porada dotycząca bezpieczeństwa** <p> _EnableFirstContactSafetyTips_|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Aby uzyskać więcej informacji, zobacz [Pierwszy kontakt porada dotycząca bezpieczeństwa](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
-|**Pokaż (?) dla nieuwierzytelnionych nadawców na potrzeby fałszowania** <p> _EnableUnauthenticatedSender_|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`|Dodaje znak zapytania (?) do zdjęcia nadawcy w Outlook dla niezidentyfikowanych sfałszowanych nadawców. Aby uzyskać więcej informacji, zobacz [Nieuwierzytelnione wskaźniki nadawcy](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
+|**Pokaż pierwszą poradę bezpieczeństwa kontaktu** <p> _EnableFirstContactSafetyTips_|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Aby uzyskać więcej informacji, zobacz [Porada dotycząca bezpieczeństwa pierwszego kontaktu](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
+|**Pokaż (?) dla nieuwierzytelnionych nadawców na potrzeby fałszowania** <p> _EnableUnauthenticatedSender_|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`|Dodaje znak zapytania (?) do zdjęcia nadawcy w programie Outlook dla niezidentyfikowanych sfałszowanych nadawców. Aby uzyskać więcej informacji, zobacz [Nieuwierzytelnione wskaźniki nadawcy](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
 |**Pokaż tag "via"** <p> _EnableViaTag_|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`|Dodaje tag via (chris@contoso.com za pośrednictwem fabrikam.com) do adresu Od, jeśli różni się on od domeny w podpisie DKIM lub **adresIE MAIL FROM** . <p> Aby uzyskać więcej informacji, zobacz [Nieuwierzytelnione wskaźniki nadawcy](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
 
 ## <a name="microsoft-defender-for-office-365-security"></a>zabezpieczenia Ochrona usługi Office 365 w usłudze Microsoft Defender
@@ -183,9 +178,9 @@ Dodatkowe korzyści związane z zabezpieczeniami są dostępne w ramach subskryp
 >
 > - Domyślne zasady ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender zapewniają [ochronę przed fałszowaniem](set-up-anti-phishing-policies.md#spoof-settings) i analizę skrzynek pocztowych dla wszystkich adresatów. Jednak inne dostępne funkcje [ochrony przed personifikacją](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) i [ustawienia zaawansowane](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) nie są skonfigurowane ani włączone w zasadach domyślnych. Aby włączyć wszystkie funkcje ochrony, zmodyfikuj domyślne zasady ochrony przed wyłudzaniem informacji lub utwórz dodatkowe zasady ochrony przed wyłudzaniem informacji.
 >
-> - Mimo że nie ma domyślnych zasad Sejf Załączniki ani Sejf Links, **zasady zabezpieczeń wbudowanej ochrony** zapewniają ochronę Sejf Załączniki i Sejf Linki dla adresatów, którzy nie są jeszcze uwzględniane w niestandardowych zasadach załączników Sejf lub zasadach linków Sejf. Aby uzyskać więcej informacji, zobacz [Preset security policies in EOP and Ochrona usługi Office 365 w usłudze Microsoft Defender (Ustawienia wstępne zasad zabezpieczeń w usłudze EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md)).
+> - Mimo że nie ma domyślnych zasad bezpiecznych załączników ani zasad bezpiecznych łączy, wstępnie skonfigurowane zasady zabezpieczeń **wbudowanej ochrony** zapewniają ochronę bezpiecznych załączników i bezpieczne linki adresatom, którzy nie są jeszcze uwzględniane w niestandardowych zasadach bezpiecznych załączników lub zasadach bezpiecznych łączy. Aby uzyskać więcej informacji, zobacz [Preset security policies in EOP and Ochrona usługi Office 365 w usłudze Microsoft Defender (Ustawienia wstępne zasad zabezpieczeń w usłudze EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md)).
 >
-> - [Sejf Załączniki do ochrony SharePoint, OneDrive i](mdo-for-spo-odb-and-teams.md) Microsoft Teams oraz ochrony [dokumentów Sejf](safe-docs.md) nie mają zależności od zasad łączy Sejf.
+> - [Bezpieczne załączniki do ochrony programu SharePoint, usługi OneDrive i usługi Microsoft Teams](mdo-for-spo-odb-and-teams.md) oraz ochrony [bezpiecznych dokumentów](safe-docs.md) nie są zależne od zasad bezpiecznych łączy.
 
 Jeśli Twoja subskrypcja obejmuje Ochrona usługi Office 365 w usłudze Microsoft Defender lub jeśli zakupiono Ochrona usługi Office 365 w usłudze Defender jako dodatek, ustaw następujące konfiguracje standardowe lub ścisłe.
 
@@ -219,115 +214,115 @@ Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Temat Impersona
 |**Jeśli komunikat zostanie wykryty jako personifikowany użytkownik** <p> _TargetedUserProtectionAction_|**Nie stosuj żadnej akcji** <p> `NoAction`|**Kwarantanna komunikatu** <p> `Quarantine`|**Kwarantanna komunikatu** <p> `Quarantine`||
 |**Jeśli komunikat zostanie wykryty jako domena personifikowana** <p> _TargetedDomainProtectionAction_|**Nie stosuj żadnej akcji** <p> `NoAction`|**Kwarantanna komunikatu** <p> `Quarantine`|**Kwarantanna komunikatu** <p> `Quarantine`||
 |**Jeśli analiza skrzynki pocztowej wykryje i personifikuje użytkownika** <p> _Skrzynka pocztowaIntelligenceProtectionAction_|**Nie stosuj żadnej akcji** <p> `NoAction`|**Przenoszenie wiadomości do folderów wiadomości-śmieci adresatów** <p> `MoveToJmf`|**Kwarantanna komunikatu** <p> `Quarantine`||
-|**Pokaż porada dotycząca bezpieczeństwa personifikacji użytkownika** <p> _EnableSimilarUsersSafetyTips_|Wył. <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`||
-|**Pokaż porada dotycząca bezpieczeństwa personifikacji domeny** <p> _EnableSimilarDomainsSafetyTips_|Wył. <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`||
-|**Pokaż nietypowe znaki personifikacji użytkownika porada dotycząca bezpieczeństwa** <p> _EnableUnusualCharactersSafetyTips_|Wył. <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`||
+|**Pokaż poradę dotyczącą bezpieczeństwa personifikacji użytkownika** <p> _EnableSimilarUsersSafetyTips_|Wył. <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`||
+|**Pokaż poradę dotyczącą bezpieczeństwa personifikacji domeny** <p> _EnableSimilarDomainsSafetyTips_|Wył. <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`||
+|**Pokaż wskazówki bezpieczeństwa dotyczące personifikacji nietypowych znaków przez użytkownika** <p> _EnableUnusualCharactersSafetyTips_|Wył. <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`||
 
 #### <a name="eop-anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Ustawienia zasad ochrony przed wyłudzaniem informacji na platformie EOP w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 Są to te same ustawienia, które są dostępne w [ustawieniach zasad ochrony przed spamem w ramach EOP](#eop-anti-spam-policy-settings).
 
-### <a name="safe-attachments-settings"></a>ustawienia załączników Sejf
+### <a name="safe-attachments-settings"></a>Ustawienia bezpiecznych załączników
 
-Sejf Załączniki w Ochrona usługi Office 365 w usłudze Microsoft Defender zawierają ustawienia globalne, które nie mają relacji z zasadami załączników Sejf, oraz ustawienia specyficzne dla poszczególnych zasad łączy Sejf. Aby uzyskać więcej informacji, zobacz [Sejf Załączniki w Ochrona usługi Office 365 w usłudze Defender](safe-attachments.md).
+Bezpieczne załączniki w Ochrona usługi Office 365 w usłudze Microsoft Defender obejmują ustawienia globalne, które nie mają relacji z zasadami bezpiecznych załączników, oraz ustawienia specyficzne dla poszczególnych zasad bezpiecznych łączy. Aby uzyskać więcej informacji, zobacz [Bezpieczne załączniki w Ochrona usługi Office 365 w usłudze Defender](safe-attachments.md).
 
-Mimo że nie ma domyślnych zasad Sejf Załączniki, wstępnie skonfigurowane zasady zabezpieczeń **wbudowanej ochrony** zapewniają ochronę Sejf załączników wszystkim adresatom, którzy nie są jeszcze uwzględniane w niestandardowych zasadach załączników Sejf. Aby uzyskać więcej informacji, zobacz [Preset security policies in EOP and Ochrona usługi Office 365 w usłudze Microsoft Defender (Ustawienia wstępne zasad zabezpieczeń w usłudze EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md)).
+Mimo że nie ma domyślnych zasad bezpiecznych załączników, wstępnie skonfigurowane zasady zabezpieczeń **wbudowanej ochrony** zapewniają ochronę bezpiecznych załączników wszystkim adresatom, którzy nie są jeszcze uwzględnieni w niestandardowych zasadach bezpiecznych załączników. Aby uzyskać więcej informacji, zobacz [Preset security policies in EOP and Ochrona usługi Office 365 w usłudze Microsoft Defender (Ustawienia wstępne zasad zabezpieczeń w usłudze EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md)).
 
-#### <a name="global-settings-for-safe-attachments"></a>Ustawienia globalne dla załączników Sejf
+#### <a name="global-settings-for-safe-attachments"></a>Ustawienia globalne bezpiecznych załączników
 
 > [!NOTE]
-> Ustawienia globalne dla załączników Sejf są ustawiane przez wstępnie ustawione zasady zabezpieczeń **wbudowanej ochrony**, ale nie przez **standardowe lub** **ścisłe** zasady zabezpieczeń. Tak czy inaczej, administratorzy mogą modyfikować te globalne ustawienia Sejf Załączniki w dowolnym momencie.
+> Ustawienia globalne bezpiecznych załączników są ustawiane przez wstępnie ustawione zasady zabezpieczeń **wbudowanej ochrony** , ale nie przez **standardowe lub** **ścisłe** zasady zabezpieczeń. Tak czy inaczej, administratorzy mogą modyfikować te globalne ustawienia bezpiecznych załączników w dowolnym momencie.
 >
 > Kolumna **Domyślne** zawiera wartości przed istnieniem **zasad zabezpieczeń wstępnie ustawionych wbudowanej ochrony** . Kolumna **Wbudowana ochrona** pokazuje wartości, które są ustawiane przez **wbudowane** zasady zabezpieczeń wstępnie ustawione, które są również naszymi zalecanymi wartościami.
 
-Aby skonfigurować te ustawienia, zobacz [Włączanie załączników Sejf dla SharePoint, OneDrive oraz Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) i [Sejf Dokumenty w Microsoft 365 E5](safe-docs.md).
+Aby skonfigurować te ustawienia, zobacz [Włączanie bezpiecznych załączników dla programów SharePoint, OneDrive i Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) oraz [Bezpieczne dokumenty w Microsoft 365 E5](safe-docs.md).
 
 W programie PowerShell używasz polecenia cmdlet [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) dla tych ustawień.
 
 |Nazwa funkcji zabezpieczeń|Domyślne|Wbudowana ochrona|Komentowanie|
 |---|:---:|:---:|---|
-|**Włącz Ochrona usługi Office 365 w usłudze Defender dla SharePoint, OneDrive i Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Wył. <p> `$false`|Na <p> `$true`|Aby uniemożliwić użytkownikom pobieranie złośliwych plików, zobacz [Używanie programu PowerShell SharePoint Online, aby uniemożliwić użytkownikom pobieranie złośliwych plików](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
-|**Włączanie Sejf dokumentów dla klientów Office** <p> _EnableSafeDocs_|Wył. <p> `$false`|Na <p> `$true`|Ta funkcja jest dostępna i zrozumiała tylko w przypadku licencji, które nie są uwzględnione w Ochrona usługi Office 365 w usłudze Defender (na przykład Microsoft 365 E5 lub Zabezpieczenia platformy Microsoft 365 E5). Aby uzyskać więcej informacji, zobacz [Sejf Documents in Microsoft 365 E5 (Dokumenty Sejf w Microsoft 365 E5](safe-docs.md)).|
-|**Zezwalaj użytkownikom na klikanie widoku chronionego, nawet jeśli Sejf Documents zidentyfikowało plik jako złośliwy** <p> _AllowSafeDocsOpen_|Wył. <p> `$false`|Wył. <p> `$false`|To ustawienie jest związane z dokumentami Sejf.|
+|**Włączanie Ochrona usługi Office 365 w usłudze Defender dla programów SharePoint, OneDrive i Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Wył. <p> `$false`|Na <p> `$true`|Aby uniemożliwić użytkownikom pobieranie złośliwych plików, zobacz [Używanie programu PowerShell usługi SharePoint Online, aby uniemożliwić użytkownikom pobieranie złośliwych plików](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
+|**Włączanie bezpiecznych dokumentów dla klientów pakietu Office** <p> _EnableSafeDocs_|Wył. <p> `$false`|Na <p> `$true`|Ta funkcja jest dostępna i zrozumiała tylko w przypadku licencji, które nie są uwzględnione w Ochrona usługi Office 365 w usłudze Defender (na przykład Microsoft 365 E5 lub Zabezpieczenia platformy Microsoft 365 E5). Aby uzyskać więcej informacji, zobacz [Safe Documents in Microsoft 365 E5 (Bezpieczne dokumenty w Microsoft 365 E5](safe-docs.md)).|
+|**Zezwalaj użytkownikom na klikanie widoku chronionego, nawet jeśli bezpieczne dokumenty zidentyfikowały plik jako złośliwy** <p> _AllowSafeDocsOpen_|Wył. <p> `$false`|Wył. <p> `$false`|To ustawienie jest związane z bezpiecznymi dokumentami.|
 
-#### <a name="safe-attachments-policy-settings"></a>ustawienia zasad załączników Sejf
+#### <a name="safe-attachments-policy-settings"></a>Ustawienia zasad bezpiecznych załączników
 
-Aby skonfigurować te ustawienia, zobacz [Konfigurowanie zasad załączników Sejf w Ochrona usługi Office 365 w usłudze Defender](set-up-safe-attachments-policies.md).
+Aby skonfigurować te ustawienia, zobacz [Konfigurowanie zasad bezpiecznych załączników w Ochrona usługi Office 365 w usłudze Defender](set-up-safe-attachments-policies.md).
 
 W programie PowerShell dla tych ustawień są używane polecenia cmdlet [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy) i [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safelinkspolicy) .
 
 > [!NOTE]
-> Zgodnie z wcześniejszym opisem nie ma domyślnych zasad Sejf Załączniki, ale Sejf ochrona załączników jest przypisywana do wszystkich adresatów przez [wstępnie ustawione zasady zabezpieczeń **wbudowanej ochrony**](preset-security-policies.md).
+> Zgodnie z wcześniejszym opisem nie ma domyślnych zasad bezpiecznych załączników, ale ochrona bezpiecznych załączników jest przypisywana do wszystkich adresatów przez [wstępnie ustawione zasady zabezpieczeń **wbudowanej ochrony**](preset-security-policies.md).
 >
-> **Kolumna Domyślna w kolumnie niestandardowej** odwołuje się do wartości domyślnych w nowych zasadach Sejf Załączniki, które tworzysz. Pozostałe kolumny wskazują (o ile nie zaznaczono inaczej) wartości skonfigurowane w odpowiednich wstępnie ustawionych zasadach zabezpieczeń.
+> **Kolumna Domyślne w kolumnie niestandardowej** odwołuje się do wartości domyślnych utworzonych w nowych zasadach bezpiecznych załączników. Pozostałe kolumny wskazują (o ile nie zaznaczono inaczej) wartości skonfigurowane w odpowiednich wstępnie ustawionych zasadach zabezpieczeń.
 
 |Nazwa funkcji zabezpieczeń|Wartość domyślna w obszarze niestandardowym|Wbudowana ochrona|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|:---:|---|
-|**Sejf Załączniki — nieznana odpowiedź na złośliwe oprogramowanie** <p> _Włączanie_ i _działanie_|**Wył.** <p> `-Enable $false` I `-Action Block`|**Blokuj** <p> `-Enable $true` I `-Action Block`|**Blokuj** <p> `-Enable $true` I `-Action Block`|**Blokuj** <p> `-Enable $true` I `-Action Block`|Gdy parametr _Enable_ jest $false, wartość parametru _Action_ nie ma znaczenia.|
-|**Zasady kwarantanny** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy| <p> Standardowe i ścisłe wstępnie ustawione zasady zabezpieczeń używają domyślnych zasad kwarantanny (AdminOnlyAccessPolicy bez powiadomień o kwarantannie) zgodnie z opisem w tabeli [tutaj](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <p> Podczas tworzenia nowych zasad Sejf Załączniki wartość pusta oznacza, że domyślne zasady kwarantanny są używane do definiowania historycznych możliwości komunikatów, które zostały poddane kwarantannie przez załączniki Sejf (AdminOnlyAccessPolicy bez powiadomień kwarantanny). <p> Administratorzy mogą tworzyć i wybierać niestandardowe zasady kwarantanny, które definiują więcej możliwości dla użytkowników. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).|
-|**Przekierowanie załącznika z wykrytymi załącznikami** : **Włącz przekierowanie** <p> _Przekierowanie_ <p> _RedirectAddress_|Nie wybrano i nie określono adresu e-mail. <p> `-Redirect $false` <p> _RedirectAddress_ jest pusty (`$null`)|Nie wybrano i nie określono adresu e-mail. <p> `-Redirect $false` <p> _RedirectAddress_ jest pusty (`$null`)|Wybrano i określ adres e-mail. <p> `$true` <p> adres e-mail|Wybrano i określ adres e-mail. <p> `$true` <p> adres e-mail|Przekieruj komunikaty do administratora zabezpieczeń w celu sprawdzenia. <p> **Uwaga**: to ustawienie nie jest skonfigurowane w zasadach zabezpieczeń wstępnie ustawionych w **warstwie Standardowa**, **Ścisła** ani **Wbudowana ochrona** . Wartości **Standardowe** i **Ścisłe** wskazują **zalecane** wartości w nowych zasadach Sejf Załączniki, które tworzysz.|
-|**Zastosuj odpowiedź wykrywania załączników Sejf, jeśli skanowanie nie może zakończyć się (przekroczenie limitu czasu lub błędy)** <p> _ActionOnError_|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
+|**Odpowiedź na nieznane złośliwe oprogramowanie dotyczące bezpiecznych załączników** <p> _Włączanie_ i _działanie_|**Wył.** <p> `-Enable $false` I `-Action Block`|**Blokuj** <p> `-Enable $true` I `-Action Block`|**Blokuj** <p> `-Enable $true` I `-Action Block`|**Blokuj** <p> `-Enable $true` I `-Action Block`|Gdy parametr _Enable_ jest $false, wartość parametru _Action_ nie ma znaczenia.|
+|**Zasady kwarantanny** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy| <p> Standardowe i ścisłe wstępnie ustawione zasady zabezpieczeń używają domyślnych zasad kwarantanny (AdminOnlyAccessPolicy bez powiadomień o kwarantannie) zgodnie z opisem w tabeli [tutaj](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <p> Podczas tworzenia nowych zasad bezpiecznych załączników pusta wartość oznacza, że domyślne zasady kwarantanny są używane do definiowania historycznych możliwości komunikatów, które zostały poddane kwarantannie przez bezpieczne załączniki (AdminOnlyAccessPolicy bez powiadomień kwarantanny). <p> Administratorzy mogą tworzyć i wybierać niestandardowe zasady kwarantanny, które definiują więcej możliwości dla użytkowników. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).|
+|**Przekierowanie załącznika z wykrytymi załącznikami** : **Włącz przekierowanie** <p> _Przekierowanie_ <p> _RedirectAddress_|Nie wybrano i nie określono adresu e-mail. <p> `-Redirect $false` <p> _RedirectAddress_ jest pusty (`$null`)|Nie wybrano i nie określono adresu e-mail. <p> `-Redirect $false` <p> _RedirectAddress_ jest pusty (`$null`)|Wybrano i określ adres e-mail. <p> `$true` <p> adres e-mail|Wybrano i określ adres e-mail. <p> `$true` <p> adres e-mail|Przekieruj komunikaty do administratora zabezpieczeń w celu sprawdzenia. <p> **Uwaga**: to ustawienie nie jest skonfigurowane w zasadach zabezpieczeń wstępnie ustawionych w **warstwie Standardowa**, **Ścisła** ani **Wbudowana ochrona** . Wartości **Standardowe** i **Ścisłe** wskazują **zalecane** wartości w nowych zasadach bezpiecznych załączników, które tworzysz.|
+|**Zastosuj odpowiedź wykrywania bezpiecznych załączników, jeśli skanowanie nie może zakończyć się (przekroczenie limitu czasu lub błędy)** <p> _ActionOnError_|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
 
-### <a name="safe-links-settings"></a>ustawienia linków Sejf
+### <a name="safe-links-settings"></a>Ustawienia bezpiecznych łączy
 
-Sejf Linki w Ochrona usługi Office 365 w usłudze Defender zawierają ustawienia globalne, które mają zastosowanie do wszystkich użytkowników, którzy są uwzględniane w aktywnych zasadach Sejf Łącza, oraz ustawienia specyficzne dla poszczególnych zasad Sejf Łącza. Aby uzyskać więcej informacji, zobacz [linki Sejf w Ochrona usługi Office 365 w usłudze Defender](safe-links.md).
+Bezpieczne linki w Ochrona usługi Office 365 w usłudze Defender obejmują ustawienia globalne, które mają zastosowanie do wszystkich użytkowników, którzy są uwzględniane w aktywnych zasadach bezpiecznych łączy, oraz ustawienia specyficzne dla poszczególnych zasad bezpiecznych łączy. Aby uzyskać więcej informacji, zobacz [Bezpieczne linki w Ochrona usługi Office 365 w usłudze Defender](safe-links.md).
 
-Mimo że nie ma domyślnych zasad Sejf Łącza, wstępnie ustawione zasady zabezpieczeń **wbudowanej ochrony** zapewniają ochronę Sejf Łącza wszystkim adresatom (użytkownikom, którzy nie są zdefiniowani w niestandardowych zasadach Sejf Łącza). Aby uzyskać więcej informacji, zobacz [Preset security policies in EOP and Ochrona usługi Office 365 w usłudze Microsoft Defender (Ustawienia wstępne zasad zabezpieczeń w usłudze EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md)).
+Chociaż nie ma domyślnych zasad bezpiecznych łączy, wstępnie ustawione zasady zabezpieczeń **wbudowanej ochrony** zapewniają ochronę bezpiecznych łączy wszystkim adresatom (użytkownikom, którzy nie są zdefiniowani w niestandardowych zasadach bezpiecznych łączy). Aby uzyskać więcej informacji, zobacz [Preset security policies in EOP and Ochrona usługi Office 365 w usłudze Microsoft Defender (Ustawienia wstępne zasad zabezpieczeń w usłudze EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md)).
 
-#### <a name="global-settings-for-safe-links"></a>Ustawienia globalne linków Sejf
+#### <a name="global-settings-for-safe-links"></a>Ustawienia globalne bezpiecznych linków
 
 > [!NOTE]
-> Ustawienia globalne dla linków Sejf są ustawiane przez wstępnie ustawione zasady zabezpieczeń **wbudowanej ochrony**, ale nie przez **standardowe lub** **ścisłe** wstępnie ustawione zasady zabezpieczeń. Tak czy inaczej, administratorzy mogą modyfikować te globalne ustawienia linków Sejf w dowolnym momencie.
+> Ustawienia globalne bezpiecznych linków są ustawiane przez wstępnie ustawione zasady zabezpieczeń **wbudowanej ochrony** , ale nie przez **standardowe lub** **ścisłe** zasady zabezpieczeń. Tak czy inaczej, administratorzy mogą modyfikować te globalne ustawienia bezpiecznych łączy w dowolnym momencie.
 >
 > Kolumna **Domyślne** zawiera wartości przed istnieniem **zasad zabezpieczeń wstępnie ustawionych wbudowanej ochrony** . Kolumna **Wbudowana ochrona** pokazuje wartości, które są ustawiane przez **wbudowane** zasady zabezpieczeń wstępnie ustawione, które są również naszymi zalecanymi wartościami.
 
-Aby skonfigurować te ustawienia, zobacz [Konfigurowanie ustawień globalnych dla linków Sejf w Ochrona usługi Office 365 w usłudze Defender](configure-global-settings-for-safe-links.md).
+Aby skonfigurować te ustawienia, zobacz [Konfigurowanie ustawień globalnych bezpiecznych łączy w Ochrona usługi Office 365 w usłudze Defender](configure-global-settings-for-safe-links.md).
 
 W programie PowerShell używasz polecenia cmdlet [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) dla tych ustawień.
 
 |Nazwa funkcji zabezpieczeń|Domyślne|Wbudowana ochrona|Komentowanie|
 |---|:---:|:---:|---|
-|**Blokuj następujące adresy URL** <p> _ExcludedUrls_|Puste <p> `$null`|Puste <p> `$null`|Nie mamy żadnych konkretnych zaleceń dotyczących tego ustawienia. <p> Aby uzyskać więcej informacji, zobacz [listę "Blokuj następujące adresy URL" dla linków Sejf](safe-links.md#block-the-following-urls-list-for-safe-links).
-|**Używanie linków Sejf w aplikacjach Office 365** <p> _EnableSafeLinksForO365Clients_|Na <p> `$true`|Na <p> `$true`|Użyj linków Sejf w obsługiwanych aplikacjach Office 365 desktop i mobile (iOS i Android). Aby uzyskać więcej informacji, zobacz [ustawienia linków Sejf dla aplikacji Office 365](safe-links.md#safe-links-settings-for-office-365-apps).|
+|**Blokuj następujące adresy URL** <p> _ExcludedUrls_|Puste <p> `$null`|Puste <p> `$null`|Nie mamy żadnych konkretnych zaleceń dotyczących tego ustawienia. <p> Aby uzyskać więcej informacji, zobacz ["Blokuj następujące adresy URL" listy bezpiecznych linków](safe-links.md#block-the-following-urls-list-for-safe-links). <p> **Uwaga**: możesz teraz zarządzać wpisami adresu URL bloku na [liście dozwolonych/zablokowanych dzierżaw](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). Lista "Blokuj następujące adresy URL" jest w trakcie wycofywania. Spróbujemy przeprowadzić migrację istniejących wpisów z listy "Blokuj następujące adresy URL", aby zablokować wpisy adresów URL na liście dozwolonych/zablokowanych dzierżaw. Komunikaty zawierające zablokowany adres URL zostaną poddane kwarantannie.|
+|**Używanie bezpiecznych linków w aplikacjach Office 365** <p> _EnableSafeLinksForO365Clients_|Na <p> `$true`|Na <p> `$true`|Używaj bezpiecznych linków w obsługiwanych aplikacjach Office 365 klasycznych i mobilnych (iOS i Android). Aby uzyskać więcej informacji, zobacz [Ustawienia bezpiecznych linków dla aplikacji Office 365](safe-links.md#safe-links-settings-for-office-365-apps).|
 |**Nie śledź, gdy użytkownicy klikają linki chronione w aplikacjach Office 365** <p> _TrackClicks_|Na <p> `$false`|Wył. <p> `$true`|Wyłączenie tego ustawienia (ustawienie _pozycji TrackClicks_ na `$true`) śledzi kliknięcia użytkowników w obsługiwanych aplikacjach Office 365.|
 |**Nie zezwalaj użytkownikom na klikanie oryginalnego adresu URL w aplikacjach Office 365** <p> _AllowClickThrough_|Na <p> `$false`|Na <p> `$false`|Włączenie tego ustawienia (ustawienie _allowClickThrough_ `$false`na ) uniemożliwia kliknięcie oryginalnego adresu URL w obsługiwanych aplikacjach Office 365.|
 
-#### <a name="safe-links-policy-settings"></a>ustawienia zasad linków Sejf
+#### <a name="safe-links-policy-settings"></a>Ustawienia zasad bezpiecznych łączy
 
-Aby skonfigurować te ustawienia, zobacz [Konfigurowanie zasad linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-safe-links-policies.md).
+Aby skonfigurować te ustawienia, zobacz [Konfigurowanie zasad bezpiecznych łączy w Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-safe-links-policies.md).
 
 W programie PowerShell dla tych ustawień są używane polecenia cmdlet [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy) i [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy) .
 
 > [!NOTE]
-> Zgodnie z wcześniejszym opisem nie ma domyślnych zasad Sejf Łącza, ale ochrona Sejf Łącza jest przypisywana do wszystkich adresatów przez [wstępnie ustawione zasady zabezpieczeń **wbudowanej ochrony**](preset-security-policies.md).
+> Zgodnie z wcześniejszym opisem nie ma domyślnych zasad bezpiecznych łączy, ale ochrona bezpiecznych łączy jest przypisywana do wszystkich adresatów za pomocą [**wbudowanych zasad zabezpieczeń wstępnie** ustawionych zabezpieczeń](preset-security-policies.md) ochrony.
 >
-> **Kolumna Domyślne w kolumnie niestandardowej** odnosi się do wartości domyślnych w nowych zasadach Sejf Łącza, które tworzysz. Pozostałe kolumny wskazują (o ile nie zaznaczono inaczej) wartości skonfigurowane w odpowiednich wstępnie ustawionych zasadach zabezpieczeń.
+> **Kolumna Domyślne w kolumnie niestandardowej** odwołuje się do wartości domyślnych w nowych zasadach bezpiecznych łączy, które tworzysz. Pozostałe kolumny wskazują (o ile nie zaznaczono inaczej) wartości skonfigurowane w odpowiednich wstępnie ustawionych zasadach zabezpieczeń.
 
 |Nazwa funkcji zabezpieczeń|Wartość domyślna w obszarze niestandardowym|Wbudowana ochrona|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|:---:|---|
 |**Adres URL & kliknij ustawienia ochrony**||||||
 |**Akcja dotycząca potencjalnie złośliwych adresów URL w wiadomościach e-mail**||||||
-|**Włączone: Sejf Linki sprawdzają listę znanych, złośliwych linków, gdy użytkownicy klikają linki w wiadomości e-mail** <p> _EnableSafeLinksForEmail_|Nie zaznaczono <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
-|**Stosowanie linków Sejf do wiadomości e-mail wysyłanych w organizacji** <p> _EnableForInternalSenders_|Nie zaznaczono <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
+|**Włączone: Bezpieczne linki sprawdzają listę znanych, złośliwych linków, gdy użytkownicy klikają linki w wiadomości e-mail** <p> _EnableSafeLinksForEmail_|Nie zaznaczono <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
+|**Stosowanie bezpiecznych linków do wiadomości e-mail wysyłanych w organizacji** <p> _EnableForInternalSenders_|Nie zaznaczono <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
 |**Stosowanie skanowania adresów URL w czasie rzeczywistym w poszukiwaniu podejrzanych linków i linków wskazujących pliki** <p> _ScanUrls_|Nie zaznaczono <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
 |**Przed dostarczeniem komunikatu poczekaj na ukończenie skanowania adresu URL** <p> _DeliverMessageAfterScan_|Nie zaznaczono <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
-|**Nie przepisuj ponownie adresów URL, sprawdzaj tylko za pośrednictwem interfejsu API linków Sejf** <p> _DisableURLRewrite_|Nie zaznaczono <p> `$false`|Wybrane <p> `$true`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`||
-|**Nie należy ponownie pisać następujących adresów URL w wiadomości e-mail** <p> _DoNotRewriteUrls_|Nie zaznaczono <p> Puste|Nie zaznaczono <p> Puste|Nie zaznaczono <p> Puste|Nie zaznaczono <p> Puste|Nie mamy żadnych konkretnych zaleceń dotyczących tego ustawienia. Aby uzyskać więcej informacji, zobacz [artykuł "Nie przepisuj ponownie następujących adresów URL" list w zasadach linków Sejf](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).|
-|**Akcja dla potencjalnie złośliwych adresów URL w Microsoft Teams**||||||
-|**On: Sejf Links checks a list of known, malicious links when users click links in Microsoft Teams** <p> _EnableSafeLinksForTeams_|Nie zaznaczono <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
+|**Nie należy ponownie pisać adresów URL, sprawdzaj tylko za pośrednictwem interfejsu API bezpiecznych linków** <p> _DisableURLRewrite_|Nie zaznaczono <p> `$false`|Wybrane <p> `$true`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`||
+|**Nie należy ponownie pisać następujących adresów URL w wiadomości e-mail** <p> _DoNotRewriteUrls_|Nie zaznaczono <p> Puste|Nie zaznaczono <p> Puste|Nie zaznaczono <p> Puste|Nie zaznaczono <p> Puste|Nie mamy żadnych konkretnych zaleceń dotyczących tego ustawienia. <p> **Uwaga**: Celem listy "Nie przepisuj ponownie następujących adresów URL" jest pominięcie zawijania bezpiecznych łączy określonych adresów URL. Zamiast korzystać z tej listy, można teraz [tworzyć wpisy dozwolonych adresów URL na liście dozwolonych/zablokowanych dzierżaw](allow-block-urls.md#create-allow-url-entries).|
+|**Akcja dla potencjalnie złośliwych adresów URL w usłudze Microsoft Teams**||||||
+|**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams** <p> _EnableSafeLinksForTeams_|Nie zaznaczono <p> `$false`|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
 |**Kliknij ustawienia ochrony**||||||
 |**Śledzenie kliknięć użytkowników** <p> _TrackUserClicks_|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`|Wybrane <p> `$true`||
 |**Zezwalaj użytkownikom na klikanie oryginalnego adresu URL** <p> _AllowClickThrough_|Wybrane <p> `$true`|Wybrane <p> `$true`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Wyłączenie tego ustawienia (ustawienie _opcji AllowClickThrough_ `$false`na ) uniemożliwia przejście do oryginalnego adresu URL.|
-|**Wyświetlanie znakowania organizacji na stronach powiadomień i ostrzeżeń** <p> _EnableOrganizationBranding_|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie mamy żadnych konkretnych zaleceń dotyczących tego ustawienia. <p> Przed włączeniem tego ustawienia należy postępować zgodnie z instrukcjami w [temacie Dostosowywanie motywu Microsoft 365 dla organizacji](../../admin/setup/customize-your-organization-theme.md) w celu przekazania logo firmy.|
+|**Wyświetlanie znakowania organizacji na stronach powiadomień i ostrzeżeń** <p> _EnableOrganizationBranding_|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie zaznaczono <p> `$false`|Nie mamy żadnych konkretnych zaleceń dotyczących tego ustawienia. <p> Przed włączeniem tego ustawienia należy postępować zgodnie z instrukcjami w [temacie Dostosowywanie motywu platformy Microsoft 365 dla organizacji](../../admin/setup/customize-your-organization-theme.md) , aby przekazać logo firmy.|
 |**Powiadomienie**||||||
-|**Jak chcesz powiadomić użytkowników?**|**Użyj domyślnego tekstu powiadomienia**|**Użyj domyślnego tekstu powiadomienia**|**Użyj domyślnego tekstu powiadomienia**|**Użyj domyślnego tekstu powiadomienia**|Nie mamy żadnych konkretnych zaleceń dotyczących tego ustawienia. <p> Możesz wybrać pozycję **Użyj niestandardowego tekstu powiadomień** (_CustomNotificationText_), aby wprowadzić dostosowany tekst powiadomienia do użycia. Możesz również wybrać pozycję **Użyj Microsoft Translator do automatycznej lokalizacji** (_UseTranslatedNotificationText_), aby przetłumaczyć niestandardowy tekst powiadomienia na język użytkownika.
+|**Jak chcesz powiadomić użytkowników?**|**Użyj domyślnego tekstu powiadomienia**|**Użyj domyślnego tekstu powiadomienia**|**Użyj domyślnego tekstu powiadomienia**|**Użyj domyślnego tekstu powiadomienia**|Nie mamy żadnych konkretnych zaleceń dotyczących tego ustawienia. <p> Możesz wybrać pozycję **Użyj niestandardowego tekstu powiadomień** (_CustomNotificationText_), aby wprowadzić dostosowany tekst powiadomienia do użycia. Możesz również wybrać pozycję **Użyj usługi Microsoft Translator do automatycznej lokalizacji** (_UseTranslatedNotificationText_), aby przetłumaczyć niestandardowy tekst powiadomienia na język użytkownika.
 
 ## <a name="related-articles"></a>Powiązane artykuły:
 
-- Czy szukasz najlepszych rozwiązań dotyczących **reguł przepływu poczty Exchange (nazywanych również regułami transportu**)? Zobacz [Najlepsze rozwiązania dotyczące konfigurowania reguł przepływu poczty w Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
+- Szukasz najlepszych rozwiązań dotyczących **reguł przepływu poczty programu Exchange (nazywanych również regułami transportu**)? Zobacz [Najlepsze rozwiązania dotyczące konfigurowania reguł przepływu poczty w Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
 - Administratorzy i użytkownicy mogą przesyłać do firmy Microsoft wyniki fałszywie dodatnie (dobra wiadomość e-mail oznaczona jako zła) i fałszywie ujemne (niedozwolona wiadomość e-mail). Aby uzyskać więcej informacji, zobacz [Zgłaszanie komunikatów i plików do firmy Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - Skorzystaj z tych linków, aby uzyskać informacje na temat **konfigurowania** [usługi EOP](/exchange/standalone-eop/set-up-your-eop-service) i **konfigurowania** [Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md). Nie zapomnij o pomocnych kierunkach w [temacie "Ochrona przed zagrożeniami w Office 365](protect-against-threats.md)".
 
-- **Punkty odniesienia zabezpieczeń dla Windows** można znaleźć tutaj: [Gdzie mogę uzyskać punkty odniesienia zabezpieczeń?](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) dla opcji obiektu zasad grupy/lokalnego i [Użyj punktów odniesienia zabezpieczeń, aby skonfigurować urządzenia Windows w Intune](/intune/protect/security-baselines) pod kątem zabezpieczeń opartych na Intune. Na koniec porównanie punktów odniesienia zabezpieczeń Ochrona punktu końcowego w usłudze Microsoft Defender i Microsoft Intune jest dostępne w artykule [Porównanie Ochrona punktu końcowego w usłudze Microsoft Defender i Windows Intune punktów odniesienia zabezpieczeń](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).
+- **Punkty odniesienia zabezpieczeń dla systemu Windows** można znaleźć tutaj: [Gdzie można uzyskać punkty odniesienia zabezpieczeń?](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) w przypadku opcji obiektu zasad grupy/lokalnego i [Użyj punktów odniesienia zabezpieczeń, aby skonfigurować urządzenia z systemem Windows w Intune](/intune/protect/security-baselines) na potrzeby zabezpieczeń opartych na Intune. Na koniec porównanie punktów odniesienia zabezpieczeń Ochrona punktu końcowego w usłudze Microsoft Defender i Microsoft Intune jest dostępne w artykule [Porównanie Ochrona punktu końcowego w usłudze Microsoft Defender i Intune punktów odniesienia zabezpieczeń systemu Windows](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).

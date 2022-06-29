@@ -20,14 +20,14 @@ search.appverid: MET150
 description: Dowiedz się więcej o propozycjach ułatwiających zakup produktów i usług firmy Microsoft.
 ROBOTS: NOINDEX
 ms.date: 04/28/2022
-ms.openlocfilehash: 8dc80bfaadcbee236f282796dcdb37f59360ebe4
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: e54b68b5090287d7a61e9dea70726b7ec9e83c72
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144866"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485984"
 ---
-# <a name="understand-the-proposal-workflow"></a>Omówienie przepływu pracy propozycji
+# <a name="understand-the-microsoft-proposal-workflow"></a>Omówienie przepływu pracy propozycji firmy Microsoft
 
 Propozycja jest formalną ofertą firmy Microsoft dla Twojej organizacji w celu zakupu produktów i usług firmy Microsoft. Pracujesz bezpośrednio z przedstawicielem firmy Microsoft, aby określić określone produkty, usługi i warunki swojej propozycji.
 
@@ -59,7 +59,7 @@ Role właściciela konta rozliczeniowego i współautora konta rozliczeniowego s
 
 ### <a name="assign-roles-in-the-microsoft-365-admin-center"></a>Przypisywanie ról w Centrum administracyjne platformy Microsoft 365
 
-1. W Centrum administracyjne platformy Microsoft 365 przejdź do strony **RozliczeniaRozliczenia** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">kont</a>.
+1. W Centrum administracyjne platformy Microsoft 365 przejdź do  >  strony<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Rozliczenia kont rozliczeniowych</a>.
 2. Na stronie **Konta rozliczeniowe** w sekcji **Role konta rozliczeniowego** wybierz pozycję **Przypisz role**.
 3. W okienku **Przypisywanie ról** wyszukaj imię i nazwisko osoby, do której chcesz przypisać rolę.
 4. Zaznacz pole dla nazwy roli, którą ma mieć dana osoba, a następnie wybierz pozycję **Przypisz**.
@@ -76,7 +76,7 @@ Aby uzyskać więcej informacji na temat ról konta rozliczeniowego, zobacz [Om�
 Jeśli jest to nowe konto rozliczeniowe i nikt nie zaakceptował umowy, automatycznie stajesz się właścicielem konta rozliczeniowego, pod warunkiem, że:
 
 - Czy osoba wymieniona w propozycji **lub**
-- Jesteś już [administratorem globalnym Azure Active Directory](/azure/active-directory/roles/permissions-reference#global-administrator) twojej organizacji
+- Jesteś już [administratorem globalnym usługi Azure Active Directory](/azure/active-directory/roles/permissions-reference#global-administrator) dla twojej organizacji
 
 ## <a name="what-is-the-overall-workflow"></a>Jaki jest ogólny przepływ pracy?
 

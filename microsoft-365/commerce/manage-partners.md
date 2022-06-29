@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie relacjami partnerów
+title: Zarządzanie relacjami z partnerami
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -18,85 +18,85 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150
-description: Dowiedz się, jak współpracować z certyfikowanymi przez firmę Microsoft dostawcami rozwiązań (partnerami) w celu kupowania produktów i usług oraz zarządzania nimi w organizacji lub szkole.
+description: Dowiedz się, jak współpracować z certyfikowanymi przez firmę Microsoft dostawcami rozwiązań (partnerami) w celu kupowania produktów i usług dla organizacji lub szkoły oraz zarządzania nimi.
 ms.date: 02/04/2022
-ms.openlocfilehash: c07267989e8df7203cced6c3a21ffd9aa667347f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 313cea4bef92da66bb5c95f3cf9ccd0f9a1d6f32
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328977"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490724"
 ---
-# <a name="manage-partner-relationships"></a>Zarządzanie relacjami partnerów
+# <a name="manage-microsoft-certified-solution-provider-partner-relationships"></a>Zarządzanie relacjami partnerów dostawcy rozwiązań certyfikowanych przez firmę Microsoft
 
-Możesz współpracować z certyfikowanymi dostawcami rozwiązań (partnerami) firmy Microsoft, aby kupować produkty i usługi dla swojej organizacji lub instytucji szkolnej oraz zarządzać nimi. Konfigurowanie tego procesu jest związane z kilkoma etapami.
+Możesz współpracować z certyfikowanymi przez firmę Microsoft dostawcami rozwiązań (partnerami) w celu zakupu produktów i usług dla organizacji lub szkoły oraz zarządzania nimi. W konfigurowanie rzeczy jest zaangażowanych kilka kroków.
 
-1. Administratorzy znajdź partnera i skontaktują się z nim za pomocą formularza na stronie <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a>.
-2. Partnerzy wysyłają do klientów wiadomość e-mail z prośbą o nawiązanie relacji partnerskiej.
-3. Klienci zaakceptowali zaproszenie w centrum administracyjne platformy Microsoft 365 i rozpocząć współpracę z partnerem.
+1. Administratorzy znajdują partnera i kontaktują się z nim przy użyciu formularza pod adresem <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a>.
+2. Partnerzy wysyłają do klientów żądanie e-mail dotyczące nawiązania relacji z partnerem.
+3. Klienci akceptują zaproszenie w Centrum administracyjne platformy Microsoft 365 i rozpoczynają pracę z partnerem.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Aby wykonać te czynności, musisz być administratorem globalnym lub rozliczeniowym. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../admin/add-users/about-admin-roles.md).
+Aby wykonać te kroki, musisz być administratorem globalnym lub administratorem rozliczeń. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../admin/add-users/about-admin-roles.md).
 
-## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>Co może robić partner w mojej organizacji lub szkole?
+## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>Co partner może zrobić dla mojej organizacji lub szkoły?
 
-Istnieje kilka sposobów współpracy partnera. W zależności od określonych potrzeb biznesowych te osoby wybierają jeden z tych typów podczas wysyłania prośby o współpracy.
+Partner może pracować z Tobą na kilka sposobów. Na podstawie określonych potrzeb biznesowych wybierają jeden z tych typów podczas wysyłania żądania współpracy z Tobą.
 
 | Typ partnera | Opis |
 | ------ | ------------------- |
-| Szczegółowego administratora delegowanego | Partnerzy, którzy zarządzają produktami i usługami w Twojej organizacji lub szkole, ale mają ograniczony dostęp do tego, co mogą robić w centrum administracyjne platformy Microsoft 365. Szczegółowe uprawnienia administratora delegowanego (GDAP) umożliwiają partnerom wykonywanie zadań w centrum administracyjnym bez uprawnień administratora globalnego. Zapewniając GDAP partnerom, zapewniasz im najmniejszą permisywną rolę i ograniczasz ryzyko dla twojej organizacji. |
-| Odsprzedawca | Partnerzy, którzy sprzedają produkty Firmy Microsoft w Twojej organizacji lub szkole. |
-| Administrator delegowany | Partnerzy, którzy zarządzają produktami i usługami w Twojej organizacji lub szkole. W Azure Active Directory (AD) partner jest administratorem globalnym Twojej dzierżawy. Ta rola umożliwia im zarządzanie usługami, na przykład tworzenie kont użytkowników, przypisywanie licencji i zarządzanie nimi oraz resetowanie hasła. |
-| Administrator & odsprzedawcy | Partnerzy, którzy sprzedają produkty i usługi firmy Microsoft i zarządzają nimi w Twojej organizacji lub szkole. |
-| Partner | Dasz partnerowi konto użytkownika w Twojej dzierżawie, a będzie on pracować z usługi firmy Microsoft w Twoim imieniu. |
-| Opiekun | Partnerzy mogą resetować hasła i obsługiwać zdarzenia dotyczące pomocy technicznej. |
-| Partner Microsoft Products & Services Agreement (MPSA) | Jeśli współpracujesz z wieloma partnerami za pośrednictwem programu MPSA, możesz zezwolić im na wyświetlanie zakupów poszczególnych partnerów. |
-| Partner biznesowy (LOB) | Partnerzy mogą tworzyć i przesyłać aplikacje LOB specyficzne dla Twojej organizacji lub szkoły oraz zarządzać nimi. |
+| Szczegółowy administrator delegowany | Partnerzy, którzy zarządzają produktami i usługami dla Twojej organizacji lub szkoły, ale mają ograniczony dostęp do tego, co mogą robić w Centrum administracyjne platformy Microsoft 365. Szczegółowe uprawnienia administratora delegowanego (GDAP) umożliwiają partnerom wykonywanie zadań w centrum administracyjnym bez uprawnień administratora globalnego. Dając GDAP partnerom, upewnij się, że mają oni najmniej permisywne role i ograniczasz ryzyko dla organizacji. |
+| Sprzedawcy | Partnerzy, którzy sprzedają produkty firmy Microsoft twojej organizacji lub szkole. |
+| Administrator delegowany | Partnerzy, którzy zarządzają produktami i usługami dla Twojej organizacji lub szkoły. W usłudze Azure Active Directory (AD) partner jest administratorem globalnym dzierżawy. Ta rola umożliwia im zarządzanie usługami, takimi jak tworzenie kont użytkowników, przypisywanie licencji i zarządzanie nimi oraz resetowanie haseł. |
+| Odsprzedawca & administrator delegowany | Partnerzy, którzy sprzedają produkty i usługi firmy Microsoft oraz zarządzają nimi w organizacji lub szkole. |
+| Partner | Dajesz partnerowi konto użytkownika w dzierżawie i współpracuje on z innymi usługami firmy Microsoft w Twoim imieniu. |
+| Opiekun | Partnerzy mogą resetować hasła i obsługiwać zdarzenia pomocy technicznej. |
+| Partner programu Microsoft Products & Services Agreement (MPSA) | Jeśli pracowałeś z wieloma partnerami za pośrednictwem programu MPSA, możesz zezwolić im na wyświetlanie zakupów dokonanych przez siebie nawzajem. |
+| Partner biznesowy (LOB) | Partnerzy mogą opracowywać i przesyłać aplikacje lob specyficzne dla Twojej organizacji lub szkoły oraz zarządzać nimi. |
 
 ## <a name="find-a-partner"></a>Znajdowanie partnera
 
 1. Przejdź do witryny <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>.
-2. Wprowadź swoją lokalizację, wybierz rozmiar organizacji, dodaj słowa kluczowe dotyczące typu potrzebnych usług, a następnie wybierz pozycję **Przejdź**.
+2. Wprowadź swoją lokalizację, wybierz rozmiar organizacji, dodaj słowa kluczowe dla typu potrzebnych usług, a następnie wybierz pozycję **Przejdź**.
 3. Wybierz co najmniej jednego partnera, a następnie wybierz pozycję **Skontaktuj się z wybranymi dostawcami**.
-4. Wypełnij formularz opisujący potrzeby biznesowe, a następnie wybierz pozycję **Wyślij**.
+4. Wypełnij formularz, aby opisać potrzeby biznesowe, a następnie wybierz pozycję **Wyślij**.
 
-Partner kontaktuje się z Tobę i zapewnia Ci możliwość dowiedznia się o nich więcej. Jeśli zdecydujesz się pracować z nimi, te osoby będą wysyłać Ci wiadomość e-mail z zaproszeniem do nawiązania relacji partnerskiej.
+Partner kontaktuje się z Tobą i daje ci szansę, aby dowiedzieć się więcej na ich temat. Jeśli zdecydujesz się na współpracę z nimi, wysyłają ci wiadomość e-mail z zaproszeniem do nawiązania relacji z partnerem.
 
-## <a name="review-and-accept-a-partner-relationship-and-microsoft-customer-agreement"></a>Przeglądanie i akceptowanie relacji partnerskiej i Umowy klienta firmy Microsoft
+## <a name="review-and-accept-a-partner-relationship-and-microsoft-customer-agreement"></a>Przejrzyj i zaakceptuj relację z partnerem i Umowa z Klientem Microsoft
 
-Gdy znajdziesz partnera i zdecydujesz się z nim pracować, wyślij Ci wiadomość e-mail z zaproszeniem.
+Po znalezieniu partnera i podjęciu decyzji o współpracy z nim wysyła on zaproszenie e-mail.
 
-1. W wiadomości e-mail wybierz link, aby <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">przejść do centrum administracyjne platformy Microsoft 365</a>.
-2. Na stronie **Zaakceptuj umowę &** partnerów wybierz link do Umowy klienta firmy **Microsoft** i przeczytaj dokument.
-3. Zaznacz pole wyboru, aby potwierdzić przeczytanie umowy.
-4. Wybierz **pozycję Zaakceptuj & Autoryzuj**.
-5. Zostanie wyświetlona lista partnerów, z których pracujesz. Wybierz dowolnego partnera, aby wyświetlić szczegółowe informacje.
+1. W wiadomości e-mail wybierz link, aby przejść do <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>.
+2. Na stronie **Akceptuj umowę & autoryzowanie partnera** wybierz link do **Umowa z Klientem Microsoft** i przeczytaj dokument.
+3. Zaznacz pole wyboru, aby potwierdzić, że przeczytano umowę.
+4. Wybierz pozycję **Zaakceptuj & Autoryzuj**.
+5. Zostanie wyświetlona lista partnerów, z którymi pracujesz. Wybierz dowolnego partnera, aby wyświetlić szczegóły.
 
-## <a name="review-and-accept-a-microsoft-customer-agreement"></a>Przeglądanie i akceptowanie Umowy klienta firmy Microsoft
+## <a name="review-and-accept-a-microsoft-customer-agreement"></a>Przeglądanie i akceptowanie Umowa z Klientem Microsoft
 
-Jeśli masz już partnera, który jeszcze nie podpiszeł Umowy klienta firmy Microsoft, musisz zaakceptować tę umowę, zanim będzie on miał możliwość zakupów lub zarządzania subskrypcjami w Twoim imieniu.
+Jeśli masz już partnera, ale nie masz jeszcze podpisanego Umowa z Klientem Microsoft, musisz zaakceptować umowę, zanim będzie mógł dokonać zakupów lub zarządzać subskrypcjami w Twoim imieniu.
 
-1. Jeśli otrzymasz wiadomość e-mail od partnera, wybierz link, aby przejść do centrum administracyjne platformy Microsoft 365, lub przejdź do strony <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">Zaakceptuj umowę</a>.
-2. Wybierz link do Umowy klienta **firmy Microsoft** i przeczytaj dokument.
-3. Zaznacz pole wyboru, aby potwierdzić przeczytanie umowy.
-4. Wybierz **pozycję Zaakceptuj**.
-5. Zostanie wyświetlona lista partnerów, z których pracujesz. Wybierz dowolnego partnera, aby wyświetlić szczegółowe informacje.
+1. Jeśli otrzymasz wiadomość e-mail od partnera, wybierz link, aby przejść do Centrum administracyjne platformy Microsoft 365, lub przejdź do strony <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">Akceptuj umowę</a>.
+2. Wybierz link do **Umowa z Klientem Microsoft** i przeczytaj dokument.
+3. Zaznacz pole wyboru, aby potwierdzić, że przeczytano umowę.
+4. Wybierz pozycję **Zaakceptuj**.
+5. Zostanie wyświetlona lista partnerów, z którymi pracujesz. Wybierz dowolnego partnera, aby wyświetlić szczegóły.
 
-## <a name="remove-partner-admin-roles"></a>Usuwanie ról administratora partnerów
+## <a name="remove-partner-admin-roles"></a>Usuwanie ról administratora partnera
 
-W zależności od żądania skierowanego przez tego partnera wyrażasz zgodę na role administratora globalnego i pomocy technicznej. Gdy te role administratora są nadawać partnerowi, automatycznie udzielasz mu uprawnień administratora delegowanego w usłudze Azure AD. Aby dowiedzieć się więcej, [zobacz Uprawnienia administratora delegowanego w usłudze Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
+W zależności od żądania złożonego przez partnera po zaakceptowaniu zaproszenia zgadzasz się na nadaj mu role administratora globalnego i pomocy technicznej. Po przekazaniu tych ról administratora partnerowi automatycznie przyznajesz im delegowane uprawnienia administratora w Azure AD. Aby dowiedzieć się więcej, zobacz [Delegowanie uprawnień administratora w Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
 
-Nowa szczegółowa funkcja delegowanych uprawnień administracyjnych (GDAP) zapewnia partnerom bardziej szczegółowy i ograniczony czas dostęp do obciążeń ich klientów. Oznacza to, że partnerzy mogą lepiej rozwiązać problemy związane z zabezpieczeniami swoich klientów. Partnerzy mogą również świadczyć więcej usług klientom, którzy nie muszą korzystać z bieżących poziomów dostępu partnera i którzy mają wymagania prawne, aby zapewnić partnerom dostęp tylko o najmniejszych uprawnieniach. W programie GDAP wyrażasz zgodę na nadawać partnerom role określone w ich żądaniach. Te role można dostosowywać, więc możesz dyskutować z partnerem, jeśli określone uprawnienia nie zostały przez Ciebie zatwierdzone.
+Nowa funkcja szczegółowych delegowanych uprawnień administracyjnych (GDAP) zapewnia partnerom bardziej szczegółowy i ograniczony czasowo dostęp do obciążeń klientów. Oznacza to, że partnerzy są w stanie lepiej rozwiązywać problemy związane z bezpieczeństwem swoich klientów. Partnerzy mogą również świadczyć więcej usług klientom, którzy nie czują się komfortowo z obecnym poziomem dostępu partnerów i mają wymagania prawne, aby zapewnić partnerom tylko najmniej uprzywilejowany dostęp. W przypadku protokołu GDAP wyrażasz zgodę na nadanie partnerom ról określonych w ich żądaniu. Te role można dostosowywać, dzięki czemu można dyskutować z partnerem, jeśli określone uprawnienia nie zostaną przez Ciebie zatwierdzone.
 
-Jeśli nie chcesz udzielać ról administratora partnerowi, anuluj zaproszenie, nie akceptując go.
+Jeśli nie chcesz podawać ról administratora partnerowi, anuluj zaproszenie zamiast go akceptować.
 
-Role administratora można usunąć od partnera w dowolnym momencie. Usunięcie ról administratora nie powoduje usunięcia relacji partnerskiej. Mogą oni nadal współpracować z Tobą w innej pojemności, takiej jak Reseller. Jeśli zdecydujesz, że nie chcesz już współpracować z partnerem, skontaktuj się z partnerem, aby zakończyć relację.
+Role administratora można usunąć z partnera w dowolnym momencie. Usunięcie ról administratora nie powoduje usunięcia relacji z partnerem. Nadal mogą pracować z Tobą w innej pojemności, takiej jak Odsprzedawca. Jeśli zdecydujesz, że nie chcesz już współpracować z partnerem, skontaktuj się z partnerem, aby zakończyć relację.
 
-1. W centrum administracyjnym przejdź **do strony Ustawienia** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner.</a>
-2. Na stronie **Relacje partnerów** zaznacz wiersz zawierający nazwę partnera, którego chcesz usunąć.
-3. Zaznacz wiersz zawierający nazwę partnera.
+1. W centrum administracyjnym przejdź do strony **Ustawienia** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relacji partnerów</a> .
+2. Na stronie **Relacje partnerskie** wybierz wiersz zawierający nazwę partnera, którego chcesz usunąć.
+3. Wybierz wiersz zawierający nazwę partnera.
 4. Na stronie partnera wybierz pozycję **Usuń role**.
-5. W **oknie dialogowym Usuwanie ról?** wybierz pozycję **Tak**.
+5. W oknie dialogowym **Usuwanie ról?** wybierz pozycję **Tak**.
 
-Jeśli opcja Usuń role nie **jest dostępna,** skontaktuj się z [Centrum partnerskim](https://partner.microsoft.com/support).
+Jeśli nie widzisz opcji **Usuń role** , skontaktuj się z [Centrum partnerskim](https://partner.microsoft.com/support).

@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak Microsoft 365 Business Premium pomaga Firmie w zapewnianiu produktywności i bezpieczeństwa.
-ms.openlocfilehash: f9501ce8a478af45d8d1b79db1411575636eda36
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8cfdbdf6f8980a0dbc3a30ca5994714b82571920
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098131"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489886"
 ---
-# <a name="how-microsoft-365-business-premium-helps-your-business"></a>Jak Microsoft 365 Business Premium pomaga Twojej firmie
+# <a name="how-microsoft-365-security-recommendations-affect-your-users"></a>Jak zalecenia dotyczące zabezpieczeń platformy Microsoft 365 wpływają na użytkowników
 
 Microsoft 365 Business Premium to ekonomiczne rozwiązanie, które umożliwia małym i średnim firmom bardziej wydajną i bezpieczną pracę niż wcześniej. W tym artykule opisano, w jaki sposób Microsoft 365 Business Premium może pomóc Twojej firmie i zawiera następujące sekcje:
 
@@ -43,7 +43,7 @@ Microsoft 365 Business Premium to ekonomiczne rozwiązanie, które umożliwia ma
 
 ## <a name="video-top-5-benefits-of-microsoft-365-business-premium"></a>Wideo: 5 najważniejszych korzyści z Microsoft 365 Business Premium
 
-Obejrzyj poniższy film wideo, aby dowiedzieć się, jak Microsoft 365 Business Premium pomaga twojej firmie być bardziej produktywnym i bezpiecznym: <p>
+Obejrzyj poniższy film wideo, aby zobaczyć, jak Microsoft 365 Business Premium pomaga twojej firmie być bardziej produktywnym i bezpiecznym: <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
@@ -52,10 +52,10 @@ Obejrzyj poniższy film wideo, aby dowiedzieć się, jak Microsoft 365 Business 
 
 ## <a name="productivity-and-security"></a>Produktywność i bezpieczeństwo
 
-Microsoft 365 Business Premium obejmuje ulubione aplikacje zwiększające produktywność Office, narzędzia do współpracy, takie jak Microsoft Teams, oraz rozwiązania do zarządzania tożsamościami, tożsamościami i urządzeniami klasy korporacyjnej. Dzięki Microsoft 365 Business Premium możesz bezpieczniej prowadzić firmę na różnych urządzeniach i z niemal dowolnego miejsca. Microsoft 365 Business Premium obejmuje:
+Microsoft 365 Business Premium obejmuje ulubione aplikacje zwiększające produktywność pakietu Office, narzędzia do współpracy, takie jak Microsoft Teams, oraz rozwiązania do zarządzania zabezpieczeniami, tożsamościami i urządzeniami klasy korporacyjnej. Dzięki Microsoft 365 Business Premium możesz bezpieczniej prowadzić firmę na różnych urządzeniach i z niemal dowolnego miejsca. Microsoft 365 Business Premium obejmuje:
 
-- **uaktualnienia Windows 10 i 11 Pro** dla urządzeń Windows firmy
-- **Office aplikacje**, takie jak Word, Excel i PowerPoint, które można instalować na komputerach (Windows i Mac) oraz na urządzeniach przenośnych (Windows, iOS i Android). Uzyskasz również Publisher i dostęp dla urządzeń Windows.
+- **uaktualnienia Windows 10 i wersji 11 Pro** dla urządzeń z systemem Windows firmy
+- **Aplikacje pakietu Office**, takie jak Word, Excel i PowerPoint, które można zainstalować na komputerach (Windows i Mac) oraz na urządzeniach przenośnych (Windows, iOS i Android). Uzyskasz również dostęp i wydawcę dla urządzeń z systemem Windows.
 - **Microsoft Teams, Outlook i Exchange** na potrzeby poczty e-mail, kalendarzy, spotkań i współpracy
 - **SharePoint i OneDrive** do przechowywania plików biznesowych i zarządzania nimi
 - **Zaawansowana ochrona przed zagrożeniami** , takimi jak wyłudzanie informacji, złośliwe oprogramowanie i ochrona przed oprogramowaniem wymuszającym okup
@@ -63,7 +63,7 @@ Microsoft 365 Business Premium obejmuje ulubione aplikacje zwiększające produk
 - **Możliwości zarządzania urządzeniami** , które umożliwiają zespołowi ds. zabezpieczeń zapewnienie aktualności i bezpieczeństwa komputerów, tabletów i telefonów
 
 > [!TIP]
-> Aby uzyskać bardziej szczegółowe informacje o tym, co znajduje się w Microsoft 365 Business Premium, zobacz [Microsoft 365 Pakiety subskrypcji użytkowników dla małych i średnich firm](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
+> Aby uzyskać bardziej szczegółowe informacje o tym, co znajduje się w Microsoft 365 Business Premium, zobacz [Pakiety subskrypcji użytkowników platformy Microsoft 365 dla małych i średnich firm](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
 ## <a name="resources-to-train-your-users"></a>Zasoby do trenowania użytkowników
 
@@ -72,7 +72,7 @@ Zalecenia dotyczące zabezpieczeń przedstawione w tej bibliotece znacznie utrud
 Dostępne są zasoby ułatwiające wszystkim w organizacji:
 
 - [Ochrona urządzeń](m365bp-devices-overview.md)
-- [Bezpieczne korzystanie z poczty e-mail](m365bp-protect-email-overview.md)
+- [Bezpieczniejsze korzystanie z poczty e-mail](m365bp-protect-email-overview.md)
 - [Współpracuj i bezpieczniejszo udostępniaj informacje](m365bp-collaborate-share-securely.md)
 
 Skorzystaj z zaleceń zawartych w tej bibliotece, aby ułatwić użytkownikom wydajniejszą i bardziej bezpieczną pracę.
@@ -83,10 +83,10 @@ Nasz przewodnik po zagrożeniach cyfrowych opisuje różne rodzaje zagrożeń i 
 
 [:::image type="content" source="media/m365bp-whatuserscandotosecure.png" alt-text="Miniatura przewodnika do pobrania.":::](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf)
 
-[PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) |  [PowerPoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
+[PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) |  [Powerpoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
 
 ## <a name="next-steps"></a>Następne kroki
 
-1. Uzyskaj [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) lub [Microsoft 365 kampanii](get-microsoft-365-campaigns.md).
+1. Uzyskaj [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) lub [microsoft 365 dla kampanii](get-microsoft-365-campaigns.md).
 
 2. [Rozpocznij proces instalacji](m365bp-setup-overview.md).

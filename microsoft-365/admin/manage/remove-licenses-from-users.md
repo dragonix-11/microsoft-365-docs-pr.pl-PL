@@ -22,15 +22,15 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Metoda używana do cofania przypisania licencji produktów zależy od tego, czy nie przypisano licencji od określonych użytkowników, czy od określonego produktu.
-ms.date: 04/22/2022
-ms.openlocfilehash: 23fc9ea04f45cdeb50acb0ec2d62d584974d6499
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.date: 06/23/2022
+ms.openlocfilehash: 87e62b8c39e5ba0a8f61caeea3560438a716881d
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043247"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486181"
 ---
-# <a name="unassign-microsoft-365-licenses-from-users"></a>Anulowanie przypisywania licencji Microsoft 365 od użytkowników
+# <a name="unassign-microsoft-365-licenses-from-users"></a>Anulowanie przypisywania licencji platformy Microsoft 365 od użytkowników
 
 Licencje od użytkowników można anulować na stronie **Aktywni użytkownicy** lub na stronie **Licencje** . Używana metoda zależy od tego, czy chcesz anulować przypisanie licencji produktów od określonych użytkowników, czy cofnąć przypisanie licencji użytkowników z określonego produktu.
 
@@ -42,13 +42,15 @@ Licencje od użytkowników można anulować na stronie **Aktywni użytkownicy** 
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Musisz być administratorem globalnym, licencją, administratorem użytkownika, aby anulować przypisanie licencji. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratora Microsoft 365](../add-users/about-admin-roles.md).
+- Musisz być administratorem globalnym, licencją, administratorem użytkownika, aby anulować przypisanie licencji. Aby uzyskać więcej informacji, zobacz [About Microsoft 365 admin roles (Informacje o rolach administratora platformy Microsoft 365](../add-users/about-admin-roles.md)).
 - Możesz [usuwać licencje z kont użytkowników przy użyciu programu Office 365 PowerShell](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md).
 - Możesz również [usunąć konta użytkowników](../add-users/delete-a-user.md) , do których przypisano licencję, aby udostępnić ich licencję innym użytkownikom. Po usunięciu konta użytkownika jego licencja jest natychmiast dostępna do przypisania innej osobie.
 
 ## <a name="use-the-licenses-page-to-unassign-licenses"></a>Użyj strony Licencje, aby anulować przypisanie licencji
 
-W przypadku korzystania ze strony **Licencje** do cofania przypisania licencji można anulować przypisanie licencji dla określonego produktu dla maksymalnie 20 użytkowników.
+Strona **Licencje** umożliwia przypisywanie lub cofanie przypisania licencji dla maksymalnie 20 użytkowników jednocześnie. Na stronie przedstawiono posiadane produkty, liczbę dostępnych licencji dla każdego produktu oraz liczbę przypisanych licencji z łącznej liczby dostępnych licencji. Liczba licencji to łączna suma licencji dla wszystkich subskrypcji dla tej samej nazwy produktu.
+
+Na przykład możesz mieć jedną subskrypcję dla Microsoft 365 Business Premium, która ma 5 licencji, i inną subskrypcję, która ma 8 licencji na ten sam produkt. Strona **Licencje** pokazuje, że masz łącznie 13 licencji na Microsoft 365 Business Premium we wszystkich subskrypcjach. Różni się to od tego, co widać na stronie **Twoje produkty** , która wyświetla wiersz dla każdej posiadanej subskrypcji, nawet jeśli są one dla tego samego produktu.
 
 ::: moniker range="o365-worldwide"
 
@@ -62,13 +64,13 @@ W przypadku korzystania ze strony **Licencje** do cofania przypisania licencji m
 
 ::: moniker-end
 
-2. Wybierz produkt, dla którego chcesz anulować przypisanie licencji.
+1. Wybierz produkt.
 
-3. Wybierz użytkowników, dla których chcesz anulować przypisanie licencji.
+2. Zaznacz pola wyboru użytkowników, dla których chcesz anulować przypisanie licencji.
 
-4. Wybierz pozycję **Usuń przypisanie licencji**.
+3. Wybierz pozycję **Usuń przypisanie licencji**.
 
-5. W polu **Cofanie przypisania licencji** wybierz pozycję **Usuń przypisanie**.
+4. W polu **Cofanie przypisania licencji** wybierz pozycję **Usuń przypisanie**.
 
 ## <a name="use-the-active-users-page-to-unassign-licenses"></a>Anulowanie przypisania licencji przy użyciu strony Aktywni użytkownicy
 
@@ -119,11 +121,11 @@ W przypadku korzystania ze strony **Aktywni użytkownicy** do cofania przypisani
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Co się stanie z danymi użytkownika po usunięciu licencji?
 
 - Po usunięciu licencji z użytkownika Exchange Online dane skojarzone z tym kontem są przechowywane przez 30 dni. Po upływie 30-dniowego okresu prolongaty dane są usuwane i nie można ich odzyskać. Jest ona jednak połączona z zasadami przechowywania, a zawartość zgodna z etykietami przechowywania jest zachowywana na potrzeby odnajdywania.
-- Pliki zapisane w OneDrive dla Firm nie są usuwane, chyba że użytkownik zostanie usunięty z Centrum administracyjne platformy Microsoft 365 lub zostanie usunięty w ramach synchronizacji usługi Active Directory. Aby uzyskać więcej informacji, zobacz [przechowywanie i usuwanie OneDrive](/onedrive/retention-and-deletion).
-- Gdy licencja zostanie usunięta, skrzynka pocztowa użytkownika nie będzie już przeszukiwana przy użyciu narzędzia zbierania elektronicznych materiałów dowodowych, takiego jak wyszukiwanie zawartości lub zbierania elektronicznych materiałów dowodowych (Premium). Aby uzyskać więcej informacji, zobacz "Wyszukiwanie rozłączonych lub nielicenacjonowanych skrzynek pocztowych" w [wyszukiwaniu zawartości w Microsoft 365](../../compliance/content-search.md).
-- Jeśli masz subskrypcję Enterprise, taką jak Office 365 Enterprise E3, Exchange Online umożliwia zachowanie danych skrzynki pocztowej usuniętego konta użytkownika przy użyciu [nieaktywnych skrzynek pocztowych](../../compliance/inactive-mailboxes-in-office-365.md). Aby uzyskać więcej informacji, zobacz [Tworzenie nieaktywnych skrzynek pocztowych i zarządzanie nimi w Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
-- Aby dowiedzieć się, jak zablokować użytkownikowi dostęp do danych Microsoft 365 po usunięciu licencji oraz jak uzyskać dostęp do danych później, zobacz [Usuwanie byłego pracownika](../add-users/remove-former-employee.md).
-- Jeśli usuniesz licencję użytkownika i nadal masz zainstalowane aplikacje Office, podczas korzystania z aplikacji Office będą widoczne [błędy nielicencjonowanego produktu i aktywacji w Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380).
+- Pliki zapisane w OneDrive dla Firm nie są usuwane, chyba że użytkownik zostanie usunięty z Centrum administracyjne platformy Microsoft 365 lub zostanie usunięty w ramach synchronizacji usługi Active Directory. Aby uzyskać więcej informacji, zobacz [Przechowywanie i usuwanie usługi OneDrive](/onedrive/retention-and-deletion).
+- Po usunięciu licencji skrzynka pocztowa użytkownika nie jest już przeszukiwana przy użyciu narzędzia zbierania elektronicznych materiałów dowodowych, takiego jak wyszukiwanie zawartości lub elektroniczne wykrywanie (Premium). Aby uzyskać więcej informacji, zobacz "Wyszukiwanie rozłączonych lub nielicenacjonowanych skrzynek pocztowych" w [usłudze Content Search na platformie Microsoft 365](../../compliance/content-search.md).
+- Jeśli masz subskrypcję enterprise, taką jak Office 365 Enterprise E3, Exchange Online umożliwia zachowanie danych skrzynki pocztowej usuniętego konta użytkownika przy użyciu [nieaktywnych skrzynek pocztowych](../../compliance/inactive-mailboxes-in-office-365.md). Aby uzyskać więcej informacji, zobacz [Tworzenie nieaktywnych skrzynek pocztowych i zarządzanie nimi w Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
+- Aby dowiedzieć się, jak zablokować użytkownikowi dostęp do danych platformy Microsoft 365 po usunięciu licencji oraz jak uzyskać dostęp do danych, zobacz [Usuwanie byłego pracownika](../add-users/remove-former-employee.md).
+- Jeśli usuniesz licencję użytkownika i nadal masz zainstalowane aplikacje pakietu Office, podczas korzystania z aplikacji pakietu Office będą widoczne [błędy nielicencjonowanego produktu i aktywacji w](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) pakiecie Office.
 
 ## <a name="next-steps"></a>Następne kroki
 

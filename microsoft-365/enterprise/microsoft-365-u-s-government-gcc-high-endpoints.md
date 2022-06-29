@@ -3,7 +3,7 @@ title: Punkty końcowe usługi Office 365 U.S. Government GCC High
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/04/2022
+ms.date: 06/01/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,20 +18,20 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
-description: W tym artykule znajdziesz punkty końcowe dostępne dla klientów korzystających z planów Office 365 Us Government GCC High.
+description: W tym artykule znajdziesz punkty końcowe dostępne dla klientów korzystających z Office 365 planów GCC High dla instytucji rządowych USA.
 hideEdit: true
-ms.openlocfilehash: bc9cfcd0b8a6bc2b84c63948d3e7eaee5767a66b
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 92ce46666ceea3bb610c53ec6baac0f649aab26b
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679489"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490149"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Punkty końcowe usługi Office 365 U.S. Government GCC High
 
 *Dotyczy: Office 365 Admin*
 
-Usługa Office 365 wymaga połączenia z Internetem. Poniższe punkty końcowe powinny być dostępne tylko dla klientów korzystających z planów Office 365 Us Government GCC High.
+Usługa Office 365 wymaga połączenia z Internetem. Poniższe punkty końcowe powinny być dostępne tylko dla klientów korzystających z Office 365 planów GCC High dla instytucji rządowych USA.
   
  **Office 365 punkty końcowe:** [Na całym świecie (w tym GCC)](urls-and-ip-address-ranges.md) \| [Office 365 obsługiwane przez 21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| [Office 365 Us Government DoD](microsoft-365-u-s-government-dod-endpoints.md) \| *Office 365 Us Government GCC High*
 
@@ -41,14 +41,14 @@ Usługa Office 365 wymaga połączenia z Internetem. Poniższe punkty końcowe p
 
 |Uwagi|Pobierz|
 |---|---|
-|**Ostatnia aktualizacja:** 04.05.2022 r. — ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Subskrypcja dziennika zmian](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Pobierz:** pełna lista w [formacie JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
+|**Ostatnia aktualizacja:** 01.06.2022 r. — ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Subskrypcja dziennika zmian](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Pobierz:** pełna lista w [formacie JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
 |
 
  Zacznij od pozycji [Zarządzanie punktami końcowymi usługi Office 365](managing-office-365-endpoints.md), aby zrozumieć nasze zalecenia dotyczące zarządzania łącznością sieciową przy użyciu tych danych. Dane punktów końcowych są aktualizowane zgodnie z potrzebami na początku każdego miesiąca przy użyciu nowych adresów IP i adresów URL opublikowanych 30 dni przed uaktywnieniem. Dzięki temu klienci, którzy nie mają jeszcze automatycznych aktualizacji, mogą ukończyć swoje procesy, zanim będzie wymagana nowa łączność. Punkty końcowe mogą być również aktualizowane w ciągu miesiąca, jeśli jest to konieczne w celu realizacji eskalacji pomocy technicznej, zdarzeń zabezpieczeń lub innych natychmiastowych wymagań operacyjnych. Wszystkie dane wyświetlane na poniższej stronie są generowane na podstawie usług internetowych opartych na protokole REST. Jeśli do uzyskiwania dostępu do tych danych używasz skryptu lub urządzenia sieciowego, przejdź bezpośrednio do pozycji [Usługa sieci Web](microsoft-365-ip-web-service.md).
 
 Poniżej wymieniono wymagania dotyczące łączności z maszyny użytkownika do Office 365. Nie obejmuje ona połączeń sieciowych firmy Microsoft z siecią klienta, czasami nazywanych połączeniami sieciowymi hybrydowymi lub przychodzącymi.
 
-Punkty końcowe są pogrupowane w cztery obszary usług. Pierwsze trzy obszary usług można niezależnie wybrać na potrzeby łączności. Czwarty obszar usługi jest wspólną zależnością (nazywaną Microsoft 365 Common i Office) i musi zawsze mieć łączność sieciową.
+Punkty końcowe są pogrupowane w cztery obszary usług. Pierwsze trzy obszary usług można niezależnie wybrać na potrzeby łączności. Czwarty obszar usługi jest wspólną zależnością (o nazwie Microsoft 365 Common i Office) i musi zawsze mieć łączność sieciową.
 
 Wyświetlane kolumny danych to:
 
@@ -56,7 +56,7 @@ Wyświetlane kolumny danych to:
 
 - **Kategoria**: pokazuje, czy zestaw punktów końcowych jest skategoryzowany jako "Optymalizuj", "Zezwalaj" lub "Domyślny". Informacje o tych kategoriach i wskazówki dotyczące zarządzania nimi można znaleźć na stronie [https://aka.ms/pnc](./microsoft-365-network-connectivity-principles.md). Ta kolumna zawiera również listę zestawów punktów końcowych wymaganych do łączności sieciowej. W przypadku zestawów punktów końcowych, które nie muszą mieć łączności sieciowej, w tym polu udostępniamy uwagi wskazujące, jakich funkcji brakowałoby w przypadku zablokowania zestawu punktów końcowych. Jeśli wykluczasz cały obszar usługi, zestawy punktów końcowych wymienione jako wymagane nie wymagają łączności.
 
-- **ER**: jest to **Tak**, jeśli zestaw punktów końcowych jest obsługiwany przez usługę Azure ExpressRoute z prefiksami tras usługi Office 365. Społeczność BGP zawierająca wyświetlane prefiksy tras jest zgodna z wymienionym obszarem usługi. Gdy wartość ER to **Nie**, oznacza to, że usługa ExpressRoute nie jest obsługiwana dla tego zestawu punktów końcowych. Nie należy jednak zakładać, że żadne trasy nie są anonsowane dla zestawu punktów końcowych, w którym ER ma wartość **Nie**. Jeśli planujesz używać Azure AD Połączenie, przeczytaj [sekcję poświęconą zagadnieniom specjalnym](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government), aby upewnić się, że masz odpowiednią konfigurację Azure AD Połączenie.
+- **ER**: jest to **Tak**, jeśli zestaw punktów końcowych jest obsługiwany przez usługę Azure ExpressRoute z prefiksami tras usługi Office 365. Społeczność BGP zawierająca wyświetlane prefiksy tras jest zgodna z wymienionym obszarem usługi. Gdy wartość ER to **Nie**, oznacza to, że usługa ExpressRoute nie jest obsługiwana dla tego zestawu punktów końcowych. Nie należy jednak zakładać, że żadne trasy nie są anonsowane dla zestawu punktów końcowych, w którym ER ma wartość **Nie**. Jeśli planujesz używać programu Azure AD Connect, przeczytaj [sekcję poświęconą zagadnieniom specjalnym](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government), aby upewnić się, że masz odpowiednią konfigurację programu Azure AD Connect.
 
 - **Adresy**: wyświetla listę nazw FQDN lub nazw domen z symbolami wieloznacznymi i zakresów adresów IP dla zestawu punktów końcowych. Należy pamiętać, że zakres adresów IP jest w formacie CIDR i może zawierać wiele pojedynczych adresów IP w określonej sieci.
 
@@ -66,6 +66,6 @@ Wyświetlane kolumny danych to:
 
 Uwagi dotyczące tej tabeli:
 
-- Centrum zabezpieczeń i zgodności (SCC) zapewnia obsługę usługi Azure ExpressRoute dla Office 365. To samo dotyczy wielu funkcji udostępnianych za pośrednictwem SCC, takich jak raportowanie, inspekcja, zbieranie elektronicznych materiałów dowodowych (Premium), unified DLP i zarządzanie danymi. Dwie konkretne funkcje, PST Import i eDiscovery Export, obecnie nie obsługują usługi Azure ExpressRoute tylko Office 365 filtrów tras ze względu na ich zależność od Azure Blob Storage. Aby korzystać z tych funkcji, potrzebujesz oddzielnej łączności z Azure Blob Storage przy użyciu dowolnych obsługiwanych opcji łączności platformy Azure, które obejmują łączność z Internetem lub usługę Azure ExpressRoute z filtrami tras publicznych platformy Azure. Należy ocenić ustanowienie takiej łączności dla obu tych funkcji. Zespół Office 365 Information Protection jest świadomy tego ograniczenia i aktywnie pracuje nad obsługą usługi Azure ExpressRoute dla Office 365 ograniczony do Office 365 filtrów tras dla obu tych funkcji.
+- Centrum zabezpieczeń i zgodności (SCC) zapewnia obsługę usługi Azure ExpressRoute dla Office 365. To samo dotyczy wielu funkcji udostępnianych za pośrednictwem SCC, takich jak raportowanie, inspekcja, zbieranie elektronicznych materiałów dowodowych (Premium), ujednolicone DLP i zarządzanie danymi. Dwie konkretne funkcje, PST Import i eDiscovery Export, obecnie nie obsługują usługi Azure ExpressRoute tylko Office 365 filtrów tras ze względu na ich zależność od Azure Blob Storage. Aby korzystać z tych funkcji, potrzebujesz oddzielnej łączności z Azure Blob Storage przy użyciu dowolnych obsługiwanych opcji łączności platformy Azure, które obejmują łączność z Internetem lub usługę Azure ExpressRoute z filtrami tras publicznych platformy Azure. Należy ocenić ustanowienie takiej łączności dla obu tych funkcji. Zespół Office 365 Information Protection jest świadomy tego ograniczenia i aktywnie pracuje nad obsługą usługi Azure ExpressRoute dla Office 365 ograniczony do Office 365 filtrów tras dla obu tych funkcji.
 
 - Istnieją dodatkowe opcjonalne punkty końcowe dla Aplikacje Microsoft 365 dla przedsiębiorstw, które nie są wymienione i nie są wymagane, aby użytkownicy uruchamiali Aplikacje Microsoft 365 dla przedsiębiorstw aplikacje i edytowali dokumenty. Opcjonalne punkty końcowe są hostowane w centrach danych firmy Microsoft i nie przetwarzają, nie przesyłają ani nie przechowują danych klientów. Zalecamy, aby połączenia użytkowników z tymi punktami końcowymi były kierowane do domyślnego obwodu ruchu wychodzącego z Internetu.

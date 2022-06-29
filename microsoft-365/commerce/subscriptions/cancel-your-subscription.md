@@ -21,14 +21,16 @@ ms.custom:
 search.appverid: MET150
 description: Dowiedz się, jak anulować subskrypcje usług Dynamics 365, Intune, Power Platform i Microsoft 365 dla firm w wersji próbnej lub płatnych subskrypcjach w centrum administracyjnym platformy Microsoft 365.
 ms.date: 06/02/2022
-ms.openlocfilehash: ea2a3bf0e77d11733e19b27f19bef378f691fd73
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 962553d620b9cc3477f5eb7c91fa0b822dc5de07
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873671"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490370"
 ---
-# <a name="cancel-your-business-subscription"></a>Anuluj subskrypcję biznesową
+# <a name="cancel-your-microsoft-subscription"></a>Anulowanie subskrypcji firmy Microsoft
+
+Jeśli chcesz anulować subskrypcję, najprostszym sposobem jest [wyłączenie rozliczeń cyklicznych](renew-your-subscription.md). Po wyłączeniu rozliczania cyklicznego możesz nadal korzystać z subskrypcji, dopóki nie wygaśnie ona po zakończeniu jej okresu trwania. Jeśli chcesz natychmiast anulować subskrypcję, skorzystaj z informacji i kroków opisanych w tym artykule.
 
 > [!IMPORTANT]
 > - Ten artykuł dotyczy tylko usług Dynamics 365, Intune, Power Platform i Microsoft 365 dla firm. Jeśli masz subskrypcję platformy Microsoft 365 Family lub Personal, zobacz [Anulowanie subskrypcji platformy Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).

@@ -1,5 +1,5 @@
 ---
-title: Pełne omówienie linków Sejf dla Ochrona usługi Office 365 w usłudze Microsoft Defender
+title: Pełne omówienie bezpiecznych linków dla Ochrona usługi Office 365 w usłudze Microsoft Defender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -25,17 +25,17 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: Dowiedz się więcej o ochronie linków Sejf w Ochrona usługi Office 365 w usłudze Defender, aby chronić organizację przed wyłudzaniem informacji i innymi atakami korzystającymi ze złośliwych adresów URL. Odnajdywanie linków Teams Sejf i wyświetlanie grafiki komunikatów Sejf Links.
+description: Dowiedz się więcej o ochronie bezpiecznych łączy w Ochrona usługi Office 365 w usłudze Defender, aby chronić organizację przed wyłudzaniem informacji i innymi atakami korzystającymi ze złośliwych adresów URL. Odnajdywanie bezpiecznych linków w usłudze Teams i wyświetlanie grafiki komunikatów bezpiecznych linków.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1e013c77005c30872fc5355ae0b0e3f7cae67ca
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: b3eb2ee76beb106d26d5b7b65d13c7aa0a0d5c1e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115812"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487054"
 ---
-# <a name="safe-links-in-microsoft-defender-for-office-365"></a>linki Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Bezpieczne linki w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -44,77 +44,77 @@ ms.locfileid: "66115812"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Ten artykuł jest przeznaczony dla klientów biznesowych, którzy [mają Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md). Jeśli używasz witryny Outlook.com, Microsoft 365 Family lub Microsoft 365 Personal i szukasz informacji o bezpiecznych linkach w Outlook, zobacz [Zaawansowane zabezpieczenia Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Ten artykuł jest przeznaczony dla klientów biznesowych, którzy [mają Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md). Jeśli używasz Outlook.com, Microsoft 365 Family lub Microsoft 365 Personal i szukasz informacji o bezpiecznych linkach w programie Outlook, zobacz [Zaawansowane zabezpieczenia Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Sejf Links to funkcja w [Ochrona usługi Office 365 w usłudze Defender](defender-for-office-365.md), która umożliwia skanowanie i ponowne zapisywanie adresów URL przychodzących wiadomości e-mail w przepływie poczty oraz weryfikację adresów URL i linków w wiadomościach e-mail i innych lokalizacjach. Sejf Skanowanie linków odbywa się oprócz zwykłych wiadomości [e-mail](anti-spam-protection.md) dla ruchu [przychodzącego i chroniącego przed spamem i chroniącego przed złośliwym oprogramowaniem](anti-malware-protection.md) w Exchange Online Protection (EOP). Sejf Skanowanie linków może pomóc chronić organizację przed złośliwymi linkami używanymi podczas wyłudzania informacji i innych ataków.
+Bezpieczne linki to funkcja w [Ochrona usługi Office 365 w usłudze Defender](defender-for-office-365.md), która zapewnia skanowanie adresów URL i ponowne zapisywanie przychodzących wiadomości e-mail w przepływie poczty oraz weryfikację adresów URL i linków w wiadomościach e-mail i innych lokalizacjach. Skanowanie bezpiecznych linków odbywa się oprócz zwykłych wiadomości [e-mail w ramach ochrony przed spamem](anti-spam-protection.md) i [złośliwym oprogramowaniem](anti-malware-protection.md) w przychodzących wiadomościach e-mail w Exchange Online Protection (EOP). Skanowanie bezpiecznych linków może pomóc chronić organizację przed złośliwymi linkami używanymi podczas wyłudzania informacji i innych ataków.
 
-Obejrzyj ten krótki film wideo na temat ochrony przed złośliwymi linkami za pomocą linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender.  
+Obejrzyj ten krótki film wideo na temat ochrony przed złośliwymi linkami za pomocą bezpiecznych linków w Ochrona usługi Office 365 w usłudze Microsoft Defender.  
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
-Sejf Ochrona linków jest dostępna w następujących lokalizacjach:
+Ochrona bezpiecznych łączy jest dostępna w następujących lokalizacjach:
 
-- **Wiadomości e-mail**: Mimo że nie ma domyślnych zasad Sejf Łącza, wstępnie ustawione zasady zabezpieczeń **wbudowanej ochrony** zapewniają ochronę Sejf Łącza wszystkim adresatom (użytkownikom, którzy nie są zdefiniowani w niestandardowych zasadach Sejf Łączy). Aby uzyskać więcej informacji, zobacz [Preset security policies in EOP and Ochrona usługi Office 365 w usłudze Microsoft Defender (Ustawienia wstępne zasad zabezpieczeń w usłudze EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md)). Można również utworzyć zasady linków Sejf, które mają zastosowanie do określonych użytkowników, grup lub domen. Aby uzyskać instrukcje, zobacz [Konfigurowanie zasad linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-safe-links-policies.md).
+- **Wiadomości e-mail**: Chociaż nie ma domyślnych zasad zabezpieczeń bezpiecznych łączy, wstępnie ustawione zasady zabezpieczeń **wbudowanej ochrony** zapewniają ochronę bezpiecznych łączy wszystkim adresatom (użytkownikom, którzy nie są zdefiniowani w niestandardowych zasadach bezpiecznych łączy). Aby uzyskać więcej informacji, zobacz [Preset security policies in EOP and Ochrona usługi Office 365 w usłudze Microsoft Defender (Ustawienia wstępne zasad zabezpieczeń w usłudze EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md)). Można również utworzyć zasady bezpiecznych łączy, które mają zastosowanie do określonych użytkowników, grup lub domen. Aby uzyskać instrukcje, zobacz [Konfigurowanie zasad bezpiecznych linków w Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-safe-links-policies.md).
 
-  Aby uzyskać więcej informacji na temat ochrony Sejf Linki dla wiadomości e-mail, zobacz sekcję [ustawienia linków Sejf dla wiadomości e-mail](#safe-links-settings-for-email-messages) w dalszej części tego artykułu.
+  Aby uzyskać więcej informacji na temat ochrony bezpiecznych łączy dla wiadomości e-mail, zobacz sekcję [Ustawienia bezpiecznych łączy dla wiadomości e-mail](#safe-links-settings-for-email-messages) w dalszej części tego artykułu.
   
   > [!NOTE]
-  > Sejf Łącza nie działają w folderach publicznych z włączoną obsługą poczty.
+  > Bezpieczne linki nie działają w folderach publicznych z włączoną obsługą poczty.
   >
-  > Sejf Links obsługuje tylko formaty HTTP(S) i FTP.
+  > Bezpieczne linki obsługują tylko formaty HTTP(S) i FTP.
 
-- **Microsoft Teams**: ochrona linków Sejf linków w Teams konwersacjach, czatach grupowych lub kanałach jest również kontrolowana przez zasady linków Sejf.
+- **Microsoft Teams**: ochrona bezpiecznych linków dla linków w konwersacjach w usłudze Teams, czatach grupowych lub kanałach jest również kontrolowana przez zasady bezpiecznych linków.
 
-  Aby uzyskać więcej informacji na temat ochrony linków Sejf w Teams, zobacz sekcję [ustawienia linków Sejf dla Microsoft Teams](#safe-links-settings-for-microsoft-teams) w dalszej części tego artykułu.
+  Aby uzyskać więcej informacji na temat ochrony bezpiecznych łączy w usłudze Teams, zobacz [sekcję Ustawienia bezpiecznych linków dla usługi Microsoft Teams](#safe-links-settings-for-microsoft-teams) w dalszej części tego artykułu.
 
   > [!NOTE]
-  > Obecnie ochrona linków Sejf dla Microsoft Teams nie jest dostępna w Microsoft 365 GCC High lub Microsoft 365 DoD.
+  > Obecnie ochrona bezpiecznych linków dla usługi Microsoft Teams nie jest dostępna w usłudze Microsoft 365 GCC High lub Microsoft 365 DoD.
 
-- **aplikacje Office 365**: ochrona linków Sejf dla aplikacji Office 365 jest dostępna w obsługiwanych aplikacjach klasycznych, mobilnych i internetowych. Ochronę łączy Sejf dla aplikacji Office 365 **można skonfigurować** w ustawieniu globalnym **, które wykraczają poza** zasady linków Sejf. Aby uzyskać instrukcje, zobacz [Konfigurowanie ustawień globalnych dla ustawień linków Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-global-settings-for-safe-links.md).
+- **aplikacje Office 365**: ochrona bezpiecznych linków dla aplikacji Office 365 jest dostępna w obsługiwanych aplikacjach klasycznych, mobilnych i internetowych. Ochronę bezpiecznych łączy **można skonfigurować** dla aplikacji Office 365 w ustawieniu globalnym **, które wykraczają poza** zasady bezpiecznych łączy. Aby uzyskać instrukcje, zobacz [Konfigurowanie ustawień globalnych ustawień bezpiecznych łączy w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-global-settings-for-safe-links.md).
 
-  Sejf Ochrona linków dla aplikacji Office 365 jest stosowana do wszystkich użytkowników w organizacji, którzy mają licencję na Ochrona usługi Office 365 w usłudze Defender, niezależnie od tego, czy użytkownicy są uwzględnieni w aktywnych zasadach linków Sejf.
+  Ochrona bezpiecznych linków dla aplikacji Office 365 jest stosowana do wszystkich użytkowników w organizacji, którzy mają licencję na Ochrona usługi Office 365 w usłudze Defender, niezależnie od tego, czy użytkownicy są uwzględnieni w aktywnych zasadach bezpiecznych linków.
 
-  Aby uzyskać więcej informacji na temat ochrony linków Sejf w aplikacjach Office 365, zobacz sekcję [ustawienia linków Sejf dla aplikacji Office 365](#safe-links-settings-for-office-365-apps) w dalszej części tego artykułu.
+  Aby uzyskać więcej informacji na temat ochrony bezpiecznych łączy w aplikacjach Office 365, zobacz sekcję [Ustawienia bezpiecznych łączy dla aplikacji Office 365](#safe-links-settings-for-office-365-apps) w dalszej części tego artykułu.
 
-Ten artykuł zawiera szczegółowe opisy następujących typów ustawień linków Sejf:
+Ten artykuł zawiera szczegółowe opisy następujących typów ustawień bezpiecznych łączy:
 
-- **Ustawienia w zasadach linków Sejf**: te ustawienia mają zastosowanie tylko do użytkowników uwzględnionych w określonych zasadach, a ustawienia mogą się różnić między zasadami. Te ustawienia obejmują:
+- **Ustawienia zasad bezpiecznych łączy**: te ustawienia mają zastosowanie tylko do użytkowników uwzględnionych w określonych zasadach, a ustawienia mogą się różnić między zasadami. Te ustawienia obejmują:
 
-  - [ustawienia linków Sejf dla wiadomości e-mail](#safe-links-settings-for-email-messages)
-  - [ustawienia linków Sejf dla Microsoft Teams](#safe-links-settings-for-microsoft-teams)
-  - [Listy "Nie należy ponownie pisać następujących adresów URL" w zasadach linków Sejf](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
+  - [Ustawienia bezpiecznych łączy dla wiadomości e-mail](#safe-links-settings-for-email-messages)
+  - [Ustawienia bezpiecznych linków dla usługi Microsoft Teams](#safe-links-settings-for-microsoft-teams)
+  - [Listy "Nie przepisuj ponownie następujących adresów URL" w zasadach bezpiecznych linków](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Ustawienia łączy Sejf** globalnych: te ustawienia są konfigurowane globalnie, a nie w zasadach linków Sejf. Te ustawienia obejmują:
+- **Globalne ustawienia bezpiecznych łączy**: te ustawienia są konfigurowane globalnie, a nie w zasadach bezpiecznych łączy. Te ustawienia obejmują:
 
-  - [ustawienia linków Sejf dla aplikacji Office 365](#safe-links-settings-for-office-365-apps)
-  - [Lista "Blokuj następujące adresy URL" dla linków Sejf](#block-the-following-urls-list-for-safe-links)
+  - [Ustawienia bezpiecznych linków dla aplikacji Office 365](#safe-links-settings-for-office-365-apps)
+  - [Lista "Blokuj następujące adresy URL" dla bezpiecznych linków](#block-the-following-urls-list-for-safe-links)
 
-W poniższej tabeli opisano scenariusze dotyczące linków Sejf w organizacjach Microsoft 365 i Office 365, które obejmują Ochrona usługi Office 365 w usłudze Defender (należy pamiętać, że brak licencji nigdy nie stanowi problemu w przykładach).
+W poniższej tabeli opisano scenariusze dotyczące bezpiecznych linków w usłudze Microsoft 365 i organizacjach Office 365, które obejmują Ochrona usługi Office 365 w usłudze Defender (należy pamiętać, że brak licencji nigdy nie stanowi problemu w przykładach).
 
 |Scenariusz|Result (Wynik)|
 |---|---|
-|Jean jest członkiem działu marketingu. Sejf Ochrona linków dla aplikacji Office 365 jest włączona w ustawieniach globalnych linków Sejf, a zasady linków Sejf, które mają zastosowanie do członków działu marketingu, istnieją. Jean otwiera prezentację PowerPoint w wiadomości e-mail, a następnie klika adres URL w prezentacji.|Jean jest chroniony przez Sejf Links. <p> Jean jest uwzględniony w zasadach linków Sejf, a ochrona linków Sejf dla aplikacji Office 365 jest włączona. <p> Aby uzyskać więcej informacji na temat wymagań dotyczących ochrony linków Sejf w aplikacjach Office 365, zobacz sekcję [ustawienia linków Sejf dla aplikacji Office 365](#safe-links-settings-for-office-365-apps) w dalszej części tego artykułu.|
-|Organizacja Microsoft 365 E5 Chrisa nie ma skonfigurowanych zasad linków Sejf. Chris otrzymuje wiadomość e-mail od zewnętrznego nadawcy zawierającego adres URL do złośliwej witryny internetowej, którą ostatecznie klika.|Chris nie jest chroniony przez Sejf Links. <p> Administrator musi utworzyć co najmniej jedną zasadę linków Sejf, aby każda osoba miała dostęp do ochrony Sejf Łącza w przychodzących wiadomościach e-mail. Chris musi zostać uwzględniony w warunkach zasad, aby uzyskać ochronę Sejf Linki.|
-|W organizacji pata żaden administrator nie utworzył żadnych zasad linków Sejf, ale ochrona linków Sejf dla aplikacji Office 365 jest włączona. Pat otwiera dokument programu Word i klika adres URL w pliku.|Pat nie jest chroniony przez linki Sejf. <p> Mimo że ochrona linków Sejf dla aplikacji Office 365 jest włączona globalnie, pat nie jest uwzględniony w żadnych aktywnych zasadach Sejf Łącza, więc nie można zastosować ochrony.|
-|W organizacji `https://tailspintoys.com` Lee jest skonfigurowany na liście **Blokuj następujące adresy URL** w ustawieniach globalnych dla linków Sejf. Zasady linków Sejf, w tym Lee, już istnieją. Lee otrzymuje wiadomość e-mail zawierającą adres URL `https://tailspintoys.com/aboutus/trythispage`. Lee klika adres URL.|Adres URL może zostać automatycznie zablokowany dla lee; to zależy od wpisu adresu URL na liście i klienta poczty e-mail Lee używane. Aby uzyskać więcej informacji, zobacz [sekcję "Blokuj następujące adresy URL", aby uzyskać Sejf Linki](#block-the-following-urls-list-for-safe-links) w dalszej części tego artykułu.|
-|Jamie i Julia pracują dla contoso.com. Dawno temu administratorzy skonfigurowali zasady Sejf Linki, które mają zastosowanie zarówno do Jamiego, jak i Julii. Jamie wysyła wiadomość e-mail do Julii, nie wiedząc, że wiadomość e-mail zawiera złośliwy adres URL.|Julia jest chroniona przez Sejf Links **, jeśli** zasady linków Sejf, które mają do niej zastosowanie, są skonfigurowane do stosowania do wiadomości między odbiorcami wewnętrznymi. Aby uzyskać więcej informacji, zobacz sekcję [ustawienia linków Sejf dla wiadomości e-mail](#safe-links-settings-for-email-messages) w dalszej części tego artykułu.|
+|Jean jest członkiem działu marketingu. Ochrona bezpiecznych łączy dla aplikacji Office 365 jest włączona w ustawieniach globalnych bezpiecznych linków, a zasady bezpiecznych łączy, które mają zastosowanie do członków działu marketingu, istnieją. Jean otwiera prezentację programu PowerPoint w wiadomości e-mail, a następnie klika adres URL w prezentacji.|Jean jest chroniony przez bezpieczne linki. <p> Jean jest uwzględniony w zasadach bezpiecznych linków, a ochrona bezpiecznych linków dla aplikacji Office 365 jest włączona. <p> Aby uzyskać więcej informacji na temat wymagań dotyczących ochrony bezpiecznych łączy w aplikacjach Office 365, zobacz sekcję [Ustawienia bezpiecznych łączy dla aplikacji Office 365](#safe-links-settings-for-office-365-apps) w dalszej części tego artykułu.|
+|Organizacja Microsoft 365 E5 Chrisa nie ma skonfigurowanych zasad bezpiecznych linków. Chris otrzymuje wiadomość e-mail od zewnętrznego nadawcy zawierającego adres URL do złośliwej witryny internetowej, którą ostatecznie klika.|Chris nie jest chroniony przez bezpieczne linki. <p> Administrator musi utworzyć co najmniej jedną zasadę bezpiecznych łączy dla każdego, aby uzyskać ochronę bezpiecznych łączy w przychodzących wiadomościach e-mail. Chris musi zostać uwzględniony w warunkach zasad, aby uzyskać ochronę bezpiecznych linków.|
+|W organizacji pata żaden administrator nie utworzył żadnych zasad bezpiecznych linków, ale ochrona bezpiecznych łączy dla aplikacji Office 365 jest włączona. Pat otwiera dokument programu Word i klika adres URL w pliku.|Pat nie jest chroniony przez bezpieczne linki. <p> Mimo że ochrona bezpiecznych łączy dla aplikacji Office 365 jest włączona globalnie, pat nie jest uwzględniony w żadnych aktywnych zasadach bezpiecznych linków, więc nie można zastosować ochrony.|
+|W organizacji `https://tailspintoys.com` Lee jest skonfigurowany na liście **Blokuj następujące adresy URL** w ustawieniach globalnych bezpiecznych linków. Zasady bezpiecznych łączy, w tym Lee, już istnieją. Lee otrzymuje wiadomość e-mail zawierającą adres URL `https://tailspintoys.com/aboutus/trythispage`. Lee klika adres URL.|Adres URL może zostać automatycznie zablokowany dla lee; to zależy od wpisu adresu URL na liście i klienta poczty e-mail Lee używane. Aby uzyskać więcej informacji, zobacz [sekcję "Blokuj następujące adresy URL" dla bezpiecznych linków](#block-the-following-urls-list-for-safe-links) w dalszej części tego artykułu.|
+|Jamie i Julia pracują dla contoso.com. Dawno temu administratorzy skonfigurowali zasady bezpiecznych łączy, które mają zastosowanie zarówno do Jamiego, jak i Julii. Jamie wysyła wiadomość e-mail do Julii, nie wiedząc, że wiadomość e-mail zawiera złośliwy adres URL.|Julia jest chroniona przez bezpieczne linki **, jeśli** zasady bezpiecznych linków, które mają do niej zastosowanie, są skonfigurowane do stosowania do wiadomości między adresatami wewnętrznymi. Aby uzyskać więcej informacji, zobacz sekcję [Ustawienia bezpiecznych łączy dla wiadomości e-mail](#safe-links-settings-for-email-messages) w dalszej części tego artykułu.|
 
-## <a name="safe-links-settings-for-email-messages"></a>ustawienia linków Sejf dla wiadomości e-mail
+## <a name="safe-links-settings-for-email-messages"></a>Ustawienia bezpiecznych łączy dla wiadomości e-mail
 
-Sejf Linki skanują przychodzące wiadomości e-mail pod kątem znanych złośliwych hiperłączy. Zeskanowane adresy URL są ponownie zapisywane przy użyciu prefiksu standardowego adresu URL firmy Microsoft: `https://nam01.safelinks.protection.outlook.com`. Po ponownym napisaniu linku jest on analizowany pod kątem potencjalnie złośliwej zawartości.
+Usługa Safe Links skanuje przychodzące wiadomości e-mail pod kątem znanych złośliwych hiperlinków. Zeskanowane adresy URL są ponownie zapisywane przy użyciu prefiksu standardowego adresu URL firmy Microsoft: `https://nam01.safelinks.protection.outlook.com`. Po ponownym napisaniu linku jest on analizowany pod kątem potencjalnie złośliwej zawartości.
 
-Po ponownym zapisaniu adresu URL przez Sejf Links adres URL pozostaje ponownie zapisywany, nawet jeśli wiadomość jest _przekazywana ręcznie_ lub odpowiadana (zarówno adresatom wewnętrznym, jak i zewnętrznym). Dodatkowe linki, które są dodawane do wiadomości przesłanej dalej lub przekazanej do wiadomości, nie są ponownie zapisywane. Jednak w przypadku _automatycznego_ przesyłania dalej według reguł skrzynki odbiorczej lub przekazywania SMTP adres URL nie zostanie ponownie zapisany w wiadomości przeznaczonej dla końcowego adresata, _chyba że_ adresat jest również chroniony przez Sejf Links lub adres URL został już przepisany w poprzedniej komunikacji. Dopóki Sejf łącza są włączone, adresy URL są nadal skanowane przed dostarczeniem, niezależnie od tego, czy zostały one przepisane, czy nie. Nieopakowane adresy URL będą nadal sprawdzane przez wywołanie interfejsu API po stronie klienta w celu Sejf Łącza w momencie kliknięcia w Outlook dla programu Desktop w wersji 16.0.12513 lub nowszej.
+Po ponownym zapisaniu adresu URL w bezpiecznych linkach adres URL pozostaje ponownie zapisywany, nawet jeśli wiadomość jest _przekazywana ręcznie_ lub odpowiadana (zarówno adresatom wewnętrznym, jak i zewnętrznym). Dodatkowe linki, które są dodawane do wiadomości przesłanej dalej lub przekazanej do wiadomości, nie są ponownie zapisywane. Jednak w przypadku _automatycznego_ przesyłania dalej według reguł skrzynki odbiorczej lub przekazywania SMTP adres URL nie zostanie ponownie zapisany w wiadomości przeznaczonej dla końcowego adresata, chyba że adresat jest również chroniony bezpiecznymi _linkami_ lub adres URL został już przepisany w poprzedniej komunikacji. Dopóki bezpieczne linki są włączone, adresy URL są nadal skanowane przed dostarczeniem, niezależnie od tego, czy zostały one przepisane, czy nie. Nieopakowane adresy URL będą również nadal sprawdzane przez wywołanie interfejsu API po stronie klienta do bezpiecznych linków w momencie kliknięcia w programie Outlook for Desktop w wersji 16.0.12513 lub nowszej.
 
-Ustawienia w zasadach linków Sejf, które mają zastosowanie do wiadomości e-mail, są opisane na następującej liście:
+Ustawienia zasad bezpiecznych łączy, które mają zastosowanie do wiadomości e-mail, są opisane na następującej liście:
 
-- **On: Sejf Links checks a list of known, malicious links when users click links in email: Enables or disables Sejf Links scanning in email messages .On: Sejf Links checks a list of known, malicious links when users click links in email: Enables or disables Sejf Links scanning in email messages (Włączone: Sejf Linki sprawdzają listę znanych złośliwych linków, gdy użytkownicy klikają linki w wiadomościach e-mail**: włącza lub wyłącza skanowanie linków Zalecana wartość jest zaznaczona (włączona) i powoduje wykonanie następujących akcji:
-  - skanowanie linków Sejf jest włączone w Outlook (C2R) na Windows.
-  - Adresy URL są ponownie zapisywane, a użytkownicy są kierowani przez ochronę Sejf Linki po kliknięciu adresów URL w komunikatach.
+- **Włączone: Bezpieczne linki sprawdzają listę znanych, złośliwych linków, gdy użytkownicy klikają linki w wiadomościach e-mail**: Włącza lub wyłącza skanowanie bezpiecznych linków w wiadomościach e-mail. Zalecana wartość jest zaznaczona (włączona) i powoduje wykonanie następujących akcji:
+  - Skanowanie bezpiecznych łączy jest włączone w programie Outlook (C2R) w systemie Windows.
+  - Adresy URL są ponownie zapisywane, a użytkownicy są kierowani przez ochronę bezpiecznych linków po kliknięciu adresów URL w komunikatach.
   - Po kliknięciu adresy URL są sprawdzane pod kątem listy znanych złośliwych adresów URL i [listy "Blokuj następujące adresy URL"](#block-the-following-urls-list-for-safe-links).
   - Adresy URL, które nie mają prawidłowej reputacji, są detonowane asynchronicznie w tle.
 
-  Następujące ustawienia są dostępne tylko wtedy, gdy skanowanie linków Sejf jest włączone w wiadomościach e-mail:
+  Następujące ustawienia są dostępne tylko wtedy, gdy skanowanie bezpiecznych linków jest włączone w wiadomościach e-mail:
 
-  - **Zastosuj Sejf Łącza do wiadomości e-mail wysyłanych w organizacji**: włącza lub wyłącza skanowanie Sejf Linków w wiadomościach wysyłanych między nadawcami wewnętrznymi i odbiorcami wewnętrznymi w tej samej organizacji Exchange Online. Zalecana wartość jest zaznaczona (włączone).
+  - **Stosowanie bezpiecznych linków do wiadomości e-mail wysyłanych w organizacji**: włącza lub wyłącza skanowanie bezpiecznych łączy w wiadomościach wysyłanych między nadawcami wewnętrznymi i odbiorcami wewnętrznymi w tej samej organizacji Exchange Online. Zalecana wartość jest zaznaczona (włączone).
 
   - **Zastosuj skanowanie adresów URL w czasie rzeczywistym w poszukiwaniu podejrzanych linków i linków wskazujących pliki**: umożliwia skanowanie linków w czasie rzeczywistym, w tym linków w wiadomościach e-mail wskazujących na zawartość do pobrania. Zalecana wartość jest zaznaczona (włączone).
 
@@ -122,17 +122,17 @@ Ustawienia w zasadach linków Sejf, które mają zastosowanie do wiadomości e-m
     - Wybrane (włączone): komunikaty zawierające adresy URL są przechowywane do momentu zakończenia skanowania. Komunikaty są dostarczane dopiero po potwierdzeniu, że adresy URL są bezpieczne. Jest to zalecana wartość.
     - Nie wybrano (wyłączone): jeśli skanowanie adresu URL nie może zakończyć się, i tak dostarczyć komunikat.
 
-  - **Nie należy ponownie pisać adresów URL, sprawdzaj tylko za pośrednictwem interfejsu API SafeLinks**: jeśli to ustawienie jest włączone, nie ma zawijania adresów URL. Sejf Łącza są wywoływane wyłącznie za pośrednictwem interfejsów API w momencie kliknięcia adresu URL przez Outlook klientów, którzy go obsługują. Wartość zalecana jest wyłączona.
+  - **Nie należy ponownie pisać adresów URL, sprawdzaj tylko za pośrednictwem interfejsu API SafeLinks**: jeśli to ustawienie jest włączone, nie ma zawijania adresów URL. Bezpieczne linki są wywoływane wyłącznie za pośrednictwem interfejsów API w momencie kliknięcia adresu URL przez klientów programu Outlook, którzy ją obsługują. Wartość zalecana jest wyłączona.
 
-- **Śledzenie kliknięć użytkownika**: włącza lub wyłącza przechowywanie Sejf Łącza klikają dane dla adresów URL klikniętych w wiadomościach e-mail. Zalecaną wartością jest pozostawienie wybranego ustawienia (śledzenie kliknięć użytkownika).
+- **Śledzenie kliknięć użytkownika**: włącza lub wyłącza przechowywanie bezpiecznych linków, klikając dane dla adresów URL klikniętych w wiadomościach e-mail. Zalecaną wartością jest pozostawienie wybranego ustawienia (śledzenie kliknięć użytkownika).
 
   Śledzenie kliknięć adresów URL dla linków w wiadomościach e-mail wysyłanych między nadawcami wewnętrznymi i odbiorcami wewnętrznymi nie jest obecnie obsługiwane.
 
 - **Zezwalaj użytkownikom na klikanie oryginalnego adresu URL**: umożliwia lub blokuje użytkownikom klikanie [przez stronę ostrzeżenia](#warning-pages-from-safe-links) do oryginalnego adresu URL. Wartość zalecana jest wyłączona.
 
-- **Wyświetlanie znakowania organizacji na stronach powiadomień i ostrzeżeń**: ta opcja pokazuje znakowanie organizacji na stronach ostrzegawczych. Znakowanie pomaga użytkownikom identyfikować uzasadnione ostrzeżenia, ponieważ domyślne strony ostrzegawcze firmy Microsoft są często używane przez osoby atakujące. Aby uzyskać więcej informacji na temat niestandardowego znakowania, zobacz [Dostosowywanie motywu Microsoft 365 dla organizacji](../../admin/setup/customize-your-organization-theme.md).
+- **Wyświetlanie znakowania organizacji na stronach powiadomień i ostrzeżeń**: ta opcja pokazuje znakowanie organizacji na stronach ostrzegawczych. Znakowanie pomaga użytkownikom identyfikować uzasadnione ostrzeżenia, ponieważ domyślne strony ostrzegawcze firmy Microsoft są często używane przez osoby atakujące. Aby uzyskać więcej informacji na temat niestandardowego znakowania, zobacz [Dostosowywanie motywu platformy Microsoft 365 dla organizacji](../../admin/setup/customize-your-organization-theme.md).
 
-  Aby uzyskać więcej informacji o zalecanych wartościach standardowych i ścisłych ustawień zasad dla zasad Sejf Łącza, zobacz [Sejf Ustawienia zasad łączy](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
+  Aby uzyskać więcej informacji na temat zalecanych wartości dla standardowych i ścisłych ustawień zasad zasad bezpiecznych łączy, zobacz [Ustawienia zasad bezpiecznych łączy](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 - **Filtry adresatów**: należy określić warunki i wyjątki adresatów, które określają, do kogo mają zastosowanie zasady. Możesz użyć tych właściwości w przypadku warunków i wyjątków:
   - **Adresat jest**
@@ -155,15 +155,15 @@ Ustawienia w zasadach linków Sejf, które mają zastosowanie do wiadomości e-m
 
   Aby uzyskać więcej informacji na temat kolejności pierwszeństwa oraz sposobu oceniania i stosowania wielu zasad, zobacz [Kolejność i pierwszeństwo ochrony poczty e-mail](how-policies-and-protections-are-combined.md).
   
-### <a name="how-safe-links-works-in-email-messages"></a>Jak działają linki Sejf w wiadomościach e-mail
+### <a name="how-safe-links-works-in-email-messages"></a>Jak działają bezpieczne linki w wiadomościach e-mail
 
-Na wysokim poziomie poniżej przedstawiono sposób działania ochrony linków Sejf na adresach URL w wiadomościach e-mail:
+Na wysokim poziomie poniżej przedstawiono sposób działania ochrony bezpiecznych linków na adresach URL w wiadomościach e-mail:
 
 1. Wszystkie wiadomości e-mail przechodzą przez operacje EOP, gdzie filtry protokołu internetowego (IP) i koperty, ochrona przed złośliwym oprogramowaniem oparte na podpisie, filtry chroniące przed spamem i złośliwym oprogramowaniem przed dostarczeniem wiadomości do skrzynki pocztowej adresata.
 
 2. Użytkownik otwiera wiadomość w swojej skrzynce pocztowej i klika adres URL w wiadomości.
 
-3. Sejf Linki natychmiast sprawdzają adres URL przed otwarciem witryny internetowej:
+3. Bezpieczne linki natychmiast sprawdzają adres URL przed otwarciem witryny internetowej:
 
    - Jeśli adres URL zostanie uwzględniony na liście **Blokuj następujące adresy URL** , zostanie otwarte [ostrzeżenie o zablokowanym adresie URL](#blocked-url-warning) .
 
@@ -173,110 +173,113 @@ Na wysokim poziomie poniżej przedstawiono sposób działania ochrony linków Se
 
    - Jeśli adres URL zostanie uznany za bezpieczny, zostanie otwarta witryna internetowa.
 
-## <a name="safe-links-settings-for-microsoft-teams"></a>ustawienia linków Sejf dla Microsoft Teams
+## <a name="safe-links-settings-for-microsoft-teams"></a>Ustawienia bezpiecznych linków dla usługi Microsoft Teams
 
-Ochronę Sejf Łącza dla Microsoft Teams można włączyć lub wyłączyć w zasadach linków Sejf. W szczególności należy użyć **ustawienia Wybierz akcję dla nieznanych lub potencjalnie złośliwych adresów URL w Microsoft Teams**. Zalecana wartość to **Włączone**.
+Ochronę bezpiecznych łączy dla usługi Microsoft Teams można włączyć lub wyłączyć w zasadach bezpiecznych łączy. W szczególności należy użyć **ustawienia Wybierz akcję dla nieznanych lub potencjalnie złośliwych adresów URL w usłudze Microsoft Teams** . Zalecana wartość to **Włączone**.
 
 > [!NOTE]
-> Po włączeniu lub wyłączeniu ochrony Sejf Łącza dla Teams może upłynąć do 24 godzin, aż zmiana zostanie wprowadzona.
+> Po włączeniu lub wyłączeniu ochrony bezpiecznych linków dla usługi Teams może upłynąć do 24 godzin, aż zmiana zostanie wprowadzona.
 >
-> Obecnie ochrona linków Sejf dla Microsoft Teams nie jest dostępna w Microsoft 365 GCC High lub Microsoft 365 DoD.
+> Obecnie ochrona bezpiecznych linków dla usługi Microsoft Teams nie jest dostępna w usłudze Microsoft 365 GCC High lub Microsoft 365 DoD.
 
-Następujące ustawienia w zasadach linków Sejf, które mają zastosowanie do linków w wiadomościach e-mail, dotyczą również linków w Teams:
+Następujące ustawienia zasad bezpiecznych linków, które mają zastosowanie do linków w wiadomościach e-mail, dotyczą również linków w usłudze Teams:
 
 - **Stosowanie skanowania adresów URL w czasie rzeczywistym w poszukiwaniu podejrzanych linków i linków wskazujących pliki**
 - **Nie śledź kliknięć użytkownika**
 - **Nie zezwalaj użytkownikom na klikanie oryginalnego adresu URL**
 
-Te ustawienia zostały wcześniej wyjaśnione w [ustawieniach linków Sejf dla wiadomości e-mail](#safe-links-settings-for-email-messages).
+Te ustawienia zostały wcześniej wyjaśnione w [obszarze Ustawienia bezpiecznych linków dla wiadomości e-mail](#safe-links-settings-for-email-messages).
 
-Po włączeniu ochrony Sejf Łącza dla Microsoft Teams adresy URL w Teams są sprawdzane pod kątem listy znanych złośliwych linków, gdy chroniony użytkownik kliknie link (ochrona przed kliknięciem). Adresy URL nie są ponownie zapisywane. Jeśli link zostanie uznany za złośliwy, użytkownicy będą mieli następujące środowiska:
+Po włączeniu ochrony bezpiecznych linków dla usługi Microsoft Teams adresy URL w usłudze Teams są sprawdzane pod kątem listy znanych złośliwych linków, gdy chroniony użytkownik kliknie link (ochrona przed kliknięciem). Adresy URL nie są ponownie zapisywane. Jeśli link zostanie uznany za złośliwy, użytkownicy będą mieli następujące środowiska:
 
-- Jeśli link został kliknięty w Teams konwersacji, czatu grupowego lub kanałów, strona ostrzeżenia, jak pokazano na poniższym zrzucie ekranu, pojawi się w domyślnej przeglądarce internetowej.
-- Jeśli link został kliknięty na przypiętej karcie, strona ostrzeżenia zostanie wyświetlona w interfejsie Teams na tej karcie. Opcja otwarcia linku w przeglądarce internetowej jest wyłączona ze względów bezpieczeństwa.
+- Jeśli link został kliknięty w konwersacji w usłudze Teams, czacie grupowym lub w kanałach, strona ostrzeżenia, jak pokazano na poniższym zrzucie ekranu, pojawi się w domyślnej przeglądarce internetowej.
+- Jeśli link został kliknięty na przypiętej karcie, strona ostrzeżenia zostanie wyświetlona w interfejsie usługi Teams na tej karcie. Opcja otwarcia linku w przeglądarce internetowej jest wyłączona ze względów bezpieczeństwa.
 - W zależności od tego, jak skonfigurowano ustawienie **Nie zezwalaj użytkownikom na klikanie oryginalnego adresu URL** w zasadach, użytkownik będzie lub nie będzie mógł kliknąć oryginalnego adresu URL (**kontynuuj mimo to (niezalecane)** na zrzucie ekranu. Zalecamy włączenie ustawienia **Nie zezwalaj użytkownikom na klikanie oryginalnego adresu URL** , aby użytkownicy nie mogli klikać oryginalnego adresu URL.
 
-Jeśli użytkownik, który wysłał link, nie jest uwzględniony w zasadach linków Sejf, w których włączono ochronę Teams, użytkownik może kliknąć oryginalny adres URL na swoim komputerze lub urządzeniu.
+Jeśli użytkownik, który wysłał link, nie jest uwzględniony w zasadach bezpiecznych linków, w których włączono ochronę aplikacji Teams, użytkownik może kliknąć oryginalny adres URL na swoim komputerze lub urządzeniu.
 
-:::image type="content" source="../../media/tp-safe-links-for-teams-malicious.png" alt-text="Linki Sejf do strony Teams zgłaszania złośliwego linku" lightbox="../../media/tp-safe-links-for-teams-malicious.png":::
+:::image type="content" source="../../media/tp-safe-links-for-teams-malicious.png" alt-text="Strona Bezpieczne linki dla usługi Teams zgłasza złośliwy link" lightbox="../../media/tp-safe-links-for-teams-malicious.png":::
 
-Kliknięcie przycisku **Wróć** na stronie ostrzeżenia spowoduje powrót użytkownika do oryginalnego kontekstu lub lokalizacji adresu URL. Jednak ponowne kliknięcie oryginalnego linku spowoduje ponowne przeskanowanie adresu URL Sejf Links, aby strona ostrzeżenia pojawiła się ponownie.
+Kliknięcie przycisku **Wróć** na stronie ostrzeżenia spowoduje powrót użytkownika do oryginalnego kontekstu lub lokalizacji adresu URL. Jednak ponowne kliknięcie oryginalnego linku spowoduje ponowne przeskanowanie adresu URL w bezpiecznych linkach, aby strona ostrzeżenia pojawiła się ponownie.
 
-### <a name="how-safe-links-works-in-teams"></a>Jak działają linki Sejf w Teams
+### <a name="how-safe-links-works-in-teams"></a>Jak działają bezpieczne linki w usłudze Teams
 
-Na wysokim poziomie poniżej przedstawiono sposób działania ochrony linków Sejf dla adresów URL w Microsoft Teams:
+Na wysokim poziomie poniżej przedstawiono sposób działania ochrony bezpiecznych linków dla adresów URL w usłudze Microsoft Teams:
 
 1. Użytkownik uruchamia aplikację Teams.
 
-2. Microsoft 365 sprawdza, czy organizacja użytkownika obejmuje Ochrona usługi Office 365 w usłudze Microsoft Defender i czy użytkownik jest uwzględniony w aktywnych zasadach linków Sejf, w których włączono ochronę Microsoft Teams.
+2. Platforma Microsoft 365 sprawdza, czy organizacja użytkownika obejmuje Ochrona usługi Office 365 w usłudze Microsoft Defender i czy użytkownik jest uwzględniony w aktywnych zasadach bezpiecznych linków, w których włączono ochronę aplikacji Microsoft Teams.
 
 3. Adresy URL są weryfikowane w momencie kliknięcia użytkownika w czatach, czatach grupowych, kanałach i kartach.
 
-## <a name="safe-links-settings-for-office-365-apps"></a>ustawienia linków Sejf dla aplikacji Office 365
+## <a name="safe-links-settings-for-office-365-apps"></a>Ustawienia bezpiecznych linków dla aplikacji Office 365
 
-Sejf Ochrona linków dla aplikacji Office 365 sprawdza linki w dokumentach Office, a nie linki w wiadomościach e-mail (ale może sprawdzać linki w dołączonych dokumentach Office w wiadomościach e-mail po otwarciu dokumentu).
+Ochrona bezpiecznych linków dla aplikacji Office 365 sprawdza linki w dokumentach pakietu Office, a nie linki w wiadomościach e-mail (ale może sprawdzać linki w dołączonych dokumentach pakietu Office w wiadomościach e-mail po otwarciu dokumentu).
 
-Ochrona linków Sejf dla aplikacji Office 365 ma następujące wymagania klienta:
+Ochrona bezpiecznych łączy dla aplikacji Office 365 ma następujące wymagania klienta:
 
 - Aplikacje Microsoft 365 lub Microsoft 365 Business Premium.
-  - Bieżące wersje programu Word, Excel i PowerPoint na Windows, Mac lub w przeglądarce internetowej.
-  - Office aplikacje na urządzeniach iOS lub Android.
-  - Visio na Windows.
-  - OneNote w przeglądarce internetowej.
-  - Outlook dla Windows podczas otwierania zapisanych plików EML lub MSG.
+  - Bieżące wersje programów Word, Excel i PowerPoint w systemach Windows, Mac lub w przeglądarce internetowej.
+  - Aplikacje pakietu Office na urządzeniach z systemem iOS lub Android.
+  - Program Visio w systemie Windows.
+  - Program OneNote w przeglądarce internetowej.
+  - Program Outlook dla systemu Windows podczas otwierania zapisanych plików EML lub MSG.
 
-- Office 365 aplikacje są skonfigurowane do korzystania z nowoczesnego uwierzytelniania. Aby uzyskać więcej informacji, zobacz [Jak działa nowoczesne uwierzytelnianie dla aplikacji klienckich Office 2013, Office 2016 i Office 2019](../../enterprise/modern-auth-for-office-2013-and-2016.md).
+- Office 365 aplikacje są skonfigurowane do korzystania z nowoczesnego uwierzytelniania. Aby uzyskać więcej informacji, zobacz [Jak działa nowoczesne uwierzytelnianie dla aplikacji klienckich pakietu Office 2013, Office 2016 i Office 2019](../../enterprise/modern-auth-for-office-2013-and-2016.md).
 
-- Użytkownicy są zalogowani przy użyciu kont służbowych. Aby uzyskać więcej informacji, zobacz [Logowanie się do Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).
+- Użytkownicy są zalogowani przy użyciu kont służbowych. Aby uzyskać więcej informacji, zobacz [Logowanie do pakietu Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).
 
-Ochronę łączy Sejf dla aplikacji Office 365 należy skonfigurować w ustawieniach globalnych linków Sejf, a nie w zasadach Sejf Łącza. Ochrona jest stosowana do wszystkich użytkowników w organizacji, którzy mają licencję na Ochrona usługi Office 365 w usłudze Defender, niezależnie od tego, czy użytkownicy są uwzględnieni w aktywnych zasadach linków Sejf.
+Ochronę bezpiecznych łączy można skonfigurować dla aplikacji Office 365 w ustawieniach globalnych bezpiecznych łączy, a nie w zasadach bezpiecznych łączy. Ochrona jest stosowana do wszystkich użytkowników w organizacji, którzy mają licencję na Ochrona usługi Office 365 w usłudze Defender, niezależnie od tego, czy użytkownicy są uwzględnieni w aktywnych zasadach bezpiecznych linków.
 
-Następujące ustawienia linków Sejf są dostępne dla aplikacji Office 365:
+Następujące ustawienia bezpiecznych linków są dostępne dla aplikacji Office 365:
 
-- **aplikacje Office 365**: włącza lub wyłącza skanowanie linków Sejf w obsługiwanych aplikacjach Office 365. Wartość domyślna i zalecana to **Włączone**.
+- **aplikacje Office 365**: włącza lub wyłącza skanowanie bezpiecznych łączy w obsługiwanych aplikacjach Office 365. Wartość domyślna i zalecana to **Włączone**.
 
-- **Nie śledź, gdy użytkownicy klikają Sejf Łącza**: włącza lub wyłącza przechowywanie Sejf Łącza klikają dane dla adresów URL klikniętych w wersjach klasycznych Programu Word, Excel, PowerPoint i Visio. Zalecana wartość to **Wyłączone**, co oznacza, że kliknięcia użytkownika są śledzone.
+- **Nie śledź, gdy użytkownicy klikną pozycję Bezpieczne linki**: włącza lub wyłącza przechowywanie bezpiecznych linków, klikając dane dla adresów URL klikniętych w wersjach klasycznych Word, Excel, PowerPoint i Visio. Zalecana wartość to **Wyłączone**, co oznacza, że kliknięcia użytkownika są śledzone.
 
-- **Nie zezwalaj użytkownikom na klikanie bezpiecznych linków do oryginalnego adresu URL**: umożliwia lub blokuje użytkownikom klikanie [strony ostrzeżenia](#warning-pages-from-safe-links) do oryginalnego adresu URL w wersjach klasycznych Word, Excel, PowerPoint i Visio. Wartość domyślna i zalecana to **Włączone**.
+- **Nie zezwalaj użytkownikom na klikanie bezpiecznych linków do oryginalnego adresu URL**: umożliwia lub blokuje użytkownikom klikanie [strony z ostrzeżeniem](#warning-pages-from-safe-links) do oryginalnego adresu URL w wersjach klasycznych Word, Excel, PowerPoint i Visio. Wartość domyślna i zalecana to **Włączone**.
 
-Aby skonfigurować ustawienia linków Sejf dla aplikacji Office 365, zobacz [Konfigurowanie ochrony linków Sejf dla aplikacji Office 365](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
+Aby skonfigurować ustawienia bezpiecznych łączy dla aplikacji Office 365, zobacz [Konfigurowanie ochrony bezpiecznych łączy dla aplikacji Office 365](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
-Aby uzyskać więcej informacji na temat zalecanych wartości dla standardowych i ścisłych ustawień zasad, zobacz [Ustawienia globalne dla linków Sejf](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links).
+Aby uzyskać więcej informacji na temat zalecanych wartości ustawień zasad standardowych i ścisłych, zobacz [Ustawienia globalne dla bezpiecznych linków](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links).
 
-### <a name="how-safe-links-works-in-office-365-apps"></a>Jak działają linki Sejf w aplikacjach Office 365
+### <a name="how-safe-links-works-in-office-365-apps"></a>Jak działają bezpieczne linki w aplikacjach Office 365
 
-Na wysokim poziomie poniżej przedstawiono sposób działania ochrony Sejf Linków dla adresów URL w aplikacjach Office 365. Obsługiwane aplikacje Office 365 opisano w poprzedniej sekcji.
+Na wysokim poziomie poniżej przedstawiono sposób działania ochrony bezpiecznych linków dla adresów URL w aplikacjach Office 365. Obsługiwane aplikacje Office 365 opisano w poprzedniej sekcji.
 
 1. Użytkownik loguje się przy użyciu konta służbowego w organizacji obejmującej Aplikacje Microsoft 365 lub Microsoft 365 Business Premium.
 
-2. Użytkownik otwiera i klika link do dokumentu Office w obsługiwanym aplikacja pakietu Office.
+2. Użytkownik otwiera i klika link do dokumentu pakietu Office w obsługiwanej aplikacji pakietu Office.
 
-3. Sejf Linki natychmiast sprawdzają adres URL przed otwarciem docelowej witryny internetowej:
+3. Bezpieczne linki natychmiast sprawdzają adres URL przed otwarciem docelowej witryny internetowej:
 
-   - Jeśli adres URL znajduje się na liście, która pomija skanowanie linków Sejf (lista **Blokuj następujące adresy URL**) zostanie otwarta [zablokowana strona ostrzeżenia adresu URL](#blocked-url-warning).
+   - Jeśli adres URL znajduje się na liście, która pomija skanowanie bezpiecznych linków (lista **Blokuj następujące adresy URL** ) zostanie otwarta [zablokowana strona ostrzeżenia adresu URL](#blocked-url-warning) .
 
    - Jeśli adres URL wskazuje witrynę internetową, która została określona jako złośliwa, zostanie otwarta [złośliwa strona ostrzeżenia witryny internetowej](#malicious-website-warning) (lub inna strona ostrzeżenia).
 
-   - Jeśli adres URL wskazuje na plik do pobrania, a zasady linków Sejf, które mają zastosowanie do użytkownika, są skonfigurowane do skanowania linków do zawartości do pobrania (**zastosuj skanowanie adresów URL w czasie rzeczywistym w poszukiwaniu podejrzanych linków i linków wskazujących pliki**), plik do pobrania jest sprawdzany.
+   - Jeśli adres URL wskazuje na plik do pobrania, a zasady bezpiecznych łączy, które mają zastosowanie do użytkownika, są skonfigurowane do skanowania linków do zawartości do pobrania (**zastosuj skanowanie adresów URL w czasie rzeczywistym w poszukiwaniu podejrzanych linków i linków wskazujących pliki**), plik do pobrania jest sprawdzany.
 
    - Jeśli adres URL zostanie uznany za bezpieczny, użytkownik zostanie przekierowany do witryny internetowej.
 
-   - Jeśli skanowanie linków Sejf nie jest w stanie ukończyć, ochrona Sejf Łącza nie zostanie wyzwolona. W Office klientów klasycznych użytkownik zostanie ostrzeżony przed przejściem do docelowej witryny internetowej.
+   - Jeśli skanowanie bezpiecznych łączy nie jest w stanie ukończyć, ochrona bezpiecznych łączy nie jest wyzwalana. W przypadku klientów klasycznych pakietu Office użytkownik zostanie ostrzeżony przed przejściem do docelowej witryny internetowej.
 
 > [!NOTE]
-> Może upłynąć kilka sekund na początku każdej sesji, aby sprawdzić, czy użytkownik ma Sejf Łącza dla Office włączone.
+> Na początku każdej sesji może upłynąć kilka sekund, aby sprawdzić, czy użytkownik ma włączone bezpieczne linki dla pakietu Office.
 
-## <a name="block-the-following-urls-list-for-safe-links"></a>Lista "Blokuj następujące adresy URL" dla linków Sejf
+## <a name="block-the-following-urls-list-for-safe-links"></a>Lista "Blokuj następujące adresy URL" dla bezpiecznych linków
 
-Lista **Blokuj następujące adresy URL** definiuje łącza, które są zawsze blokowane przez skanowanie linków Sejf w następujących lokalizacjach:
+> [!NOTE]
+> Teraz możesz zarządzać wpisami bloku adresu URL na [liście dozwolonych/zablokowanych dzierżaw](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). Lista "Blokuj następujące adresy URL" jest w trakcie wycofywania. Spróbujemy przeprowadzić migrację istniejących wpisów z listy "Blokuj następujące adresy URL", aby zablokować wpisy adresów URL na liście dozwolonych/zablokowanych dzierżaw. Komunikaty zawierające zablokowany adres URL zostaną poddane kwarantannie.
+
+Lista **Blokuj następujące adresy URL** definiuje łącza, które są zawsze blokowane przez skanowanie bezpiecznych łączy w następujących lokalizacjach:
 
 - Wiadomości e-mail.
-- Dokumenty w aplikacjach Office 365 na komputerach Windows i Mac.
-- Dokumenty w Office dla iOS i Android.
+- Dokumenty w aplikacjach Office 365 w systemach Windows i Mac.
+- Dokumenty w pakiecie Office dla systemów iOS i Android.
 
-Gdy użytkownik w aktywnych zasadach Sejf Łącza kliknie zablokowany link w obsługiwanej aplikacji, zostanie przekierowany do strony [ostrzeżenia Zablokowany adres URL](#blocked-url-warning).
+Gdy użytkownik w aktywnych zasadach bezpiecznych łączy kliknie zablokowany link w obsługiwanej aplikacji, zostanie przekierowany do strony [ostrzeżenia Zablokowany adres URL](#blocked-url-warning) .
 
-Listę adresów URL można skonfigurować w ustawieniach globalnych dla linków Sejf. Aby uzyskać instrukcje, zobacz [Konfigurowanie listy "Blokuj następujące adresy URL"](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal).
+Listę adresów URL można skonfigurować w ustawieniach globalnych bezpiecznych linków. Aby uzyskać instrukcje, zobacz [Konfigurowanie listy "Blokuj następujące adresy URL"](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal).
 
 **Uwagi**:
 
@@ -301,25 +304,25 @@ Przykłady wartości, które można wprowadzić i ich wyników, opisano w poniż
 |`https://contoso.com/a*`|Bloki `https://contoso.com/a` i dodatkowe ścieżki podrzędne, takie jak `https://contoso.com/a/b`.|
 |`https://toys.contoso.com*`|Blokuje poddomenę (`toys` w tym przykładzie), ale zezwala na kliknięcia innych adresów URL domeny (np `https://contoso.com` . lub `https://home.contoso.com`).|
 
-## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>Listy "Nie należy ponownie pisać następujących adresów URL" w zasadach linków Sejf
+## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>Listy "Nie przepisuj ponownie następujących adresów URL" w zasadach bezpiecznych linków
 
 > [!NOTE]
-> Jeśli Twoja organizacja korzysta z zasad Sejf Links, **listy Nie przepisuj ponownie następujących adresów URL** są jedyną obsługiwaną metodą testów wyłudzania informacji innych firm.
+> Celem listy "Nie przepisuj ponownie następujących adresów URL" jest pominięcie zawijania bezpiecznych łączy określonych adresów URL. Zamiast korzystać z tej listy, można teraz [tworzyć wpisy dozwolonych adresów URL na liście dozwolonych/zablokowanych dzierżaw](allow-block-urls.md#create-allow-url-entries).
 
-Każda zasada Sejf Łącza zawiera listę **Nie przepisuj ponownie następujących adresów URL**, których można użyć do określenia adresów URL, które nie są ponownie zapisywane przez skanowanie linków Sejf. Innymi słowy, lista umożliwia użytkownikom uwzględnionym w zasadach dostęp do określonych adresów URL, które w przeciwnym razie zostałyby zablokowane przez Sejf Łącza. Różne listy można skonfigurować w różnych zasadach linków Sejf. Przetwarzanie zasad zostaje zatrzymane po zastosowaniu do użytkownika pierwszych zasad (prawdopodobnie o najwyższym priorytecie). Dlatego do użytkownika, który jest uwzględniony w wielu aktywnych zasadach linków Sejf linków, jest stosowana tylko jedna lista Nie **przepisuj ponownie następujących adresów URL**.
+Każda zasada bezpiecznych łączy zawiera listę **Nie przepisuj ponownie następujących adresów URL** , których można użyć do określenia adresów URL, które nie są ponownie zapisywane przez skanowanie bezpiecznych linków. Innymi słowy, lista umożliwia użytkownikom uwzględnionym w zasadach dostęp do określonych adresów URL, które w przeciwnym razie zostałyby zablokowane przez bezpieczne linki. Różne listy można skonfigurować w różnych zasadach bezpiecznych łączy. Przetwarzanie zasad zostaje zatrzymane po zastosowaniu do użytkownika pierwszych zasad (prawdopodobnie o najwyższym priorytecie). Dlatego tylko jeden **nie należy ponownie pisać poniższej listy adresów URL** jest stosowany do użytkownika, który jest uwzględniony w wielu aktywnych zasad bezpiecznych linków.
 
-Aby dodać wpisy do listy w nowych lub istniejących zasadach łączy Sejf, zobacz [Tworzenie zasad łączy Sejf](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) lub [Modyfikowanie zasad łączy Sejf](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies).
+Aby dodać wpisy do listy w nowych lub istniejących zasadach bezpiecznych łączy, zobacz [Tworzenie zasad bezpiecznych łączy](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) lub [Modyfikowanie zasad bezpiecznych łączy](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies).
 
 **Uwagi**:
 
-- Następujący klienci nie rozpoznają listy **Nie przepisuj ponownie następujących adresów URL** w zasadach Sejf Łącza. Użytkownikom uwzględnionym w zasadach można zablokować dostęp do adresów URL na podstawie wyników skanowania linków Sejf w tych klientach:
+- Następujący klienci nie rozpoznają listy **Nie przepisuj ponownie następujących adresów URL** w zasadach bezpiecznych łączy. Użytkownikom uwzględnionym w zasadach można zablokować dostęp do adresów URL na podstawie wyników skanowania bezpiecznych łączy w tych klientach:
   - Microsoft Teams
-  - Office aplikacje internetowe
+  - Aplikacje internetowe pakietu Office
 
-  Aby uzyskać prawdziwie uniwersalną listę adresów URL dozwolonych wszędzie, zobacz [Zarządzanie listą dozwolonych/zablokowanych dzierżaw](tenant-allow-block-list.md). Należy jednak pamiętać, że dodane adresy URL nie zostaną wykluczone z ponownego zapisywania linków Sejf, ponieważ należy to zrobić w zasadach Sejf Łącza.
+  Aby uzyskać prawdziwie uniwersalną listę adresów URL dozwolonych wszędzie, zobacz [Zarządzanie listą dozwolonych/zablokowanych dzierżaw](tenant-allow-block-list.md). Należy jednak pamiętać, że dodane adresy URL nie zostaną wykluczone z ponownego pisania bezpiecznych linków, ponieważ należy to zrobić w zasadach bezpiecznych łączy.
 
 - Rozważ dodanie często używanych wewnętrznych adresów URL do listy, aby ulepszyć środowisko użytkownika. Jeśli na przykład masz usługi lokalne, takie jak Skype dla firm lub SharePoint, możesz dodać te adresy URL, aby wykluczyć je ze skanowania.
-- Jeśli w zasadach Sejf Łącza nie zostały już **ponownie zapisane następujące wpisy adresów URL**, zapoznaj się z listami i dodaj symbole wieloznaczne zgodnie z wymaganiami. Na przykład lista zawiera wpis podobny `https://contoso.com/a` do tego, a później decydujesz się na uwzględnienie ścieżek podrzędnych, takich jak `https://contoso.com/a/b`. Zamiast dodawać nowy wpis, dodaj symbol wieloznaczny do istniejącego wpisu, aby stał się `https://contoso.com/a/*`.
+- Jeśli w zasadach bezpiecznych łączy nie zapisano już **ponownie następujących wpisów adresów URL** , zapoznaj się z listami i dodaj symbole wieloznaczne zgodnie z wymaganiami. Na przykład lista zawiera wpis podobny `https://contoso.com/a` do tego, a później decydujesz się na uwzględnienie ścieżek podrzędnych, takich jak `https://contoso.com/a/b`. Zamiast dodawać nowy wpis, dodaj symbol wieloznaczny do istniejącego wpisu, aby stał się `https://contoso.com/a/*`.
 - Możesz dołączyć maksymalnie trzy symbole wieloznaczne (`*`) na wpis adresu URL. Symbole wieloznaczne jawnie zawierają prefiksy lub poddomeny. Na przykład wpis `contoso.com` nie jest taki sam jak `*.contoso.com/*`, ponieważ `*.contoso.com/*` umożliwia użytkownikom odwiedzanie domen podrzędnych i ścieżek w określonej domenie.
 - Jeśli adres URL używa automatycznego przekierowania dla protokołu HTTP do protokołu HTTPS (na przykład przekierowania 302 dla `http://www.contoso.com` polecenia do `https://www.contoso.com`), i spróbujesz wprowadzić zarówno wpisy HTTP, jak i HTTPS dla tego samego adresu URL na liście, możesz zauważyć, że drugi wpis adresu URL zastępuje pierwszy wpis adresu URL. To zachowanie nie występuje, jeśli wersje HTTP i HTTPS adresu URL są całkowicie oddzielone.
 - Nie należy określać http:// ani https:// (czyli contoso.com), aby wykluczyć wersje HTTP i HTTPS.
@@ -338,15 +341,15 @@ Przykłady wartości, które można wprowadzić i ich wyników, opisano w poniż
 |`https://contoso.com/a`|Zezwala na dostęp do `https://contoso.com/a`ścieżek podrzędnych, takich jak , `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Umożliwia dostęp do `https://contoso.com/a` ścieżek podrzędnych i takich jak `https://contoso.com/a/b`|
 
-## <a name="warning-pages-from-safe-links"></a>Strony ostrzeżenia z linków Sejf
+## <a name="warning-pages-from-safe-links"></a>Strony ostrzegawcze z bezpiecznych linków
 
-Ta sekcja zawiera przykłady różnych stron ostrzegawczych wyzwalanych przez ochronę Sejf Łącza po kliknięciu adresu URL.
+Ta sekcja zawiera przykłady różnych stron ostrzegawczych, które są wyzwalane przez ochronę bezpiecznych łączy po kliknięciu adresu URL.
 
 Należy pamiętać, że zaktualizowano kilka stron ostrzegawczych. Jeśli nie widzisz jeszcze zaktualizowanych stron, wkrótce to zrobisz. Zaktualizowane strony zawierają nowy schemat kolorów, więcej szczegółów i możliwość kontynuowania pracy z witryną pomimo danego ostrzeżenia i zaleceń.
 
 ### <a name="scan-in-progress-notification"></a>Skanowanie w toku — powiadomienie
 
-Klikniętego adresu URL jest skanowany przez Sejf Łącza. Może być konieczne odczekanie kilku chwil przed ponownym wypróbowaniem linku.
+Klikniętego adresu URL jest skanowany przez bezpieczne linki. Może być konieczne odczekanie kilku chwil przed ponownym wypróbowaniem linku.
 
 :::image type="content" source="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png" alt-text="Powiadomienie o skanowaniu linku" lightbox="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png":::
 
@@ -378,7 +381,7 @@ Oryginalna strona ostrzeżenia wyglądała następująco:
 
 ### <a name="blocked-url-warning"></a>Ostrzeżenie o zablokowanym adresie URL
 
-Kliknięty adres URL został ręcznie zablokowany przez administratora w organizacji (lista **Blokuj następujące adresy URL** w ustawieniach globalnych dla linków Sejf). Link nie został zeskanowany przez Sejf Links, ponieważ został ręcznie zablokowany.
+Kliknięty adres URL został ręcznie zablokowany przez administratora w organizacji (lista **Blokuj następujące adresy URL** w ustawieniach globalnych bezpiecznych linków). Link nie został zeskanowany przez bezpieczne linki, ponieważ został ręcznie zablokowany.
 
 Istnieje kilka powodów, dla których administrator ręcznie blokuje określone adresy URL. Jeśli uważasz, że witryna nie powinna być zablokowana, skontaktuj się z administratorem.
 

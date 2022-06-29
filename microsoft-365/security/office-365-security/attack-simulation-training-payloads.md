@@ -1,5 +1,5 @@
 ---
-title: Ładunki do trenowania symulacji ataków
+title: Szkolenie dotyczące ładunków w symulacji ataków
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -13,14 +13,14 @@ ms.collection:
 ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak tworzyć ładunki do trenowania symulacji ataków i zarządzać nimi w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: a21e3e72e435e9aaa53fb5fab825be6c490017fe
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 38e9e60c50a7bc0dec4e8f9f75845fdc34e4b237
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840238"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487229"
 ---
-# <a name="payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Ładunki do trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Defender
+# <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Szkolenie dotyczące ładunków w symulacji ataków w Ochrona usługi Office 365 w usłudze Defender
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -42,7 +42,7 @@ Dla każdego ładunku są wyświetlane następujące informacje:
 - **Język**: jeśli ładunek zawiera wiele tłumaczeń, dwa pierwsze języki są wyświetlane bezpośrednio. Aby wyświetlić pozostałe języki, umieść kursor nad ikoną liczbową (na przykład **+10**).
 - **Źródło**: W przypadku wbudowanych ładunków wartość to **Globalna**. W przypadku ładunków niestandardowych wartość to **Dzierżawa**.
 - **Uruchomiono symulacje**: liczba uruchomionych symulacji korzystających z ładunku.
-- **Wskaźnik naruszeń (%)**: w przypadku wbudowanych ładunków ta wartość jest przewidywanym średnim współczynnikiem kompromisu dla symulacji symulacji ataków, które używają tego samego typu ładunku we wszystkich innych organizacjach Microsoft 365.
+- **Wskaźnik naruszeń (%)**: w przypadku wbudowanych ładunków ta wartość jest przewidywanym średnim współczynnikiem kompromisu dla symulacji symulacji ataków, które używają tego samego typu ładunku we wszystkich innych organizacjach platformy Microsoft 365.
 - **Utworzone przez**: w przypadku wbudowanych ładunków wartość to **Microsoft**. W przypadku ładunków niestandardowych wartość to nazwa UPN użytkownika, który utworzył ładunek.
 - **Ostatnia modyfikacja**
 - **Technika**: Jedna z dostępnych [technik inżynierii społecznej](attack-simulation-training.md#select-a-social-engineering-technique):
@@ -178,7 +178,7 @@ Po wybraniu ładunku z listy zostanie wyświetlony wysuwany szczegół z następ
      - <https://www.windocyte.com>
 
      > [!NOTE]
-     > Usługa reputacji adresu URL może zidentyfikować co najmniej jeden z tych adresów URL jako niebezpieczny. Przed użyciem adresu URL w symulacji sprawdź dostępność adresu URL w obsługiwanych przeglądarkach internetowych. Aby uzyskać więcej informacji, zobacz [Adresy URL symulacji wyłudzania informacji zablokowane przez usługę Google Sejf Browsing](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
+     > Usługa reputacji adresu URL może zidentyfikować co najmniej jeden z tych adresów URL jako niebezpieczny. Przed użyciem adresu URL w symulacji sprawdź dostępność adresu URL w obsługiwanych przeglądarkach internetowych. Aby uzyskać więcej informacji, zobacz [Adresy URL symulacji wyłudzania informacji zablokowane przez bezpieczne przeglądanie google](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
 
    - Sekcja **zawartości załącznika**: ta sekcja jest dostępna tylko **wtedy, gdy wybrano pozycję Link w załączniku** na stronie **Wybieranie techniki**.
 
@@ -190,7 +190,7 @@ Po wybraniu ładunku z listy zostanie wyświetlony wysuwany szczegół z następ
 
      - **Dodawanie tagów**
   
-     - **Motyw**: Dostępne wartości to: **Aktywacja konta**, **Weryfikacja konta**, **Rozliczenia**, **Oczyszczanie poczty**, **Odebrane dokumenty**, **Wydatki**, **Faks**, **Raport finansowy**, **Wiadomości przychodzące**, **Faktura**, **Odebrany element**, **Alert logowania**, **Odebrana poczta**, **Inne**, **Hasło**, **Płatność**, **Lista płac**, **Spersonalizowana oferta**, **Kwarantanna** , **praca zdalna**, **przejrzyj komunikat**, **aktualizację zabezpieczeń**, **wstrzymanie usługi**, **wymagany podpis**, **uaktualnienie skrzynki pocztowej Storage**, **weryfikowanie skrzynki pocztowej** lub **poczty głosowej**.
+     - **Motyw**: Dostępne wartości to: **Aktywacja konta**, **Weryfikacja konta**, **Rozliczenia**, **Oczyszczanie poczty**, **Odebrane dokumenty**, **Wydatki**, **Faks**, **Raport finansowy**, **Wiadomości przychodzące**, **Faktura**, **Odebrany element**, **Alert logowania**, **Odebrana poczta**, **Inne**, **Hasło**, **Płatność**, **Lista płac**, **Spersonalizowana oferta**, **Kwarantanna** , **praca zdalna**, **przejrzyj komunikat**, **aktualizację zabezpieczeń**, **wstrzymanie usługi**, **wymagany podpis**, **uaktualnienie magazynu skrzynki pocztowej**, **zweryfikowanie skrzynki pocztowej** lub **poczty głosowej**.
   
      - **Marka**: Dostępne wartości to: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud** lub **Inne**.
   

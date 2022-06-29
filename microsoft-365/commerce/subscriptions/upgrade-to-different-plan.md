@@ -21,14 +21,14 @@ ms.custom:
 search.appverid: MET150
 description: Najprostszym sposobem uaktualnienia planów jest użycie karty Uaktualnianie w centrum administracyjnym. Jednak karta Uaktualnianie nie zawsze jest obsługiwana.
 ms.date: 04/21/2021
-ms.openlocfilehash: 4578730d82fddd5bdd3d0d25dd7fd1e16414808b
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 557070177fac2e1ae91d3ddb9e2125221c6b4f3f
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102263"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489151"
 ---
-# <a name="upgrade-to-a-different-plan"></a>Przełączanie na inny plan
+# <a name="upgrade-to-a-different-microsoft-plan"></a>Uaktualnianie do innego planu firmy Microsoft
 
 Gdy twoja firma się zmieni lub potrzebujesz więcej funkcji, możesz uaktualnić plany. Najprostszym sposobem na to jest użycie karty **Uaktualnianie** w centrum administracyjnym. Jednak korzystanie z karty **Uaktualnianie** nie jest obsługiwane we wszystkich sytuacjach. W niektórych przypadkach może być możliwe ręczne zmienianie planów.
 
@@ -36,7 +36,7 @@ Gdy twoja firma się zmieni lub potrzebujesz więcej funkcji, możesz uaktualni�
 
 W przypadku korzystania z karty **Uaktualnianie** możesz przejść przez proces zakupu nowego planu. Wszyscy użytkownicy mają automatycznie przypisane licencje w nowym planie, a stary plan zostanie anulowany.
 
-1. W centrum Administracja przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
 2. Wybierz subskrypcję, którą chcesz uaktualnić.
 3. Na stronie szczegółów subskrypcji w obszarze **Szczegóły produktu i uaktualnienia** wybierz pozycję **Wyświetl uaktualnienia zalecane dla organizacji**.
 4. Znajdź plan, do którego chcesz uaktualnić, a następnie wybierz przycisk **Uaktualnij** .
@@ -58,7 +58,7 @@ W przypadku korzystania z karty **Uaktualnianie** plany, do których można uakt
 
 Jeśli chcesz przejść do planu z mniejszą liczbą usług, możesz [zmienić plany ręcznie](change-plans-manually.md) lub [skontaktować się z pomocą techniczną](../../admin/get-help-support.md) , aby uzyskać pomoc.
 
-## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Chcę tylko uaktualnić niektórych moich użytkowników. 如何实现 to zrobić?
+## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Chcę tylko uaktualnić niektórych moich użytkowników. Jak mogę to zrobić?
 
 Jeśli chcesz tylko uaktualnić niektórych użytkowników do innego planu, ale najpierw musisz kupić nową subskrypcję, zobacz [Ręczne zmienianie planów](change-plans-manually.md). Jeśli masz już subskrypcję, do którą chcesz uaktualnić użytkowników, zobacz [Przenoszenie użytkowników do innej subskrypcji](move-users-different-subscription.md).
 
@@ -80,7 +80,7 @@ Aby plany uaktualniania były uaktualniane automatycznie, wszyscy użytkownicy m
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Nie można teraz uaktualnić subskrypcji, ponieważ ta subskrypcja nie jest w pełni skonfigurowana lub usługa nie jest dostępna
 
-Jeśli na przykład jedna z usług ma zdarzenie, nie będzie można uaktualnić do momentu, gdy wszystkie usługi będą w dobrej kondycji. Aby sprawdzić, czy występują problemy z aprowizowaniem lub kondycją usługi, w centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Estado de funcionamento dos serviços kondycji</a>  \>.
+Jeśli na przykład jedna z usług ma zdarzenie, nie będzie można uaktualnić do momentu, gdy wszystkie usługi będą w dobrej kondycji. Aby sprawdzić, czy występują problemy z aprowizowaniem lub kondycją usługi, w centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Kondycja usługi kondycji</a>  \>.
 
 Jeśli okaże się, że usługa nie jest w pełni zainicjowana lub że występuje problem z kondycją usługi, poczekaj kilka godzin na udostępnienie usługi i spróbuj ponownie. Jeśli nadal masz problem, [skontaktuj się z pomocą techniczną](../../admin/get-help-support.md).
 
@@ -147,7 +147,7 @@ Użytkownicy ze starymi subskrypcjami zostaną automatycznie przeniesieni do now
 Jeśli stara subskrypcja obejmuje wiele usług i jeśli zmieniono, do których z tych usług przypisano użytkowników, warto zanotować tę wartość przed uaktualnieniem planów, aby później można było ponownie utworzyć te zmiany. Wszyscy użytkownicy uzyskają dostęp do wszystkich usług w ramach nowej subskrypcji. Jeśli na przykład wcześniej zakupiono Microsoft 365 Business Premium dla wszystkich 100 użytkowników, ale nie przypisano usługi SharePoint Online od 50 z nich, ta zmiana nie zostanie zachowana po uaktualnieniu planów.
 
 Jeśli masz więcej niż jedną subskrypcję przed uaktualnieniem planów i masz przypisane licencje użytkowników do więcej niż jednej subskrypcji, ten wzorzec przypisania zostanie zachowany w jak największej ilości w nowej subskrypcji.
-Podczas uaktualniania zostaną zachowane wszystkie dane użytkownika, w tym Exchange skrzynki pocztowe i SharePoint dokumenty, listy i inne informacje online.
+Podczas uaktualniania zostaną zachowane wszystkie dane użytkownika, w tym skrzynki pocztowe programu Exchange i dokumenty, listy i inne informacje usługi SharePoint Online.
   
 ### <a name="billing"></a>Rozliczenia
 
@@ -165,4 +165,4 @@ W dniu ukończenia uaktualnienia planu rozliczenia w starej subskrypcji zostaną
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Ręczne zmienianie planów](change-plans-manually.md) (artykuł)\
-[Tworzenie kopii zapasowej danych przed przełączeniem Microsoft 365 dla planów biznesowych](back-up-data-before-switching-plans.md) (artykuł)
+[Tworzenie kopii zapasowej danych przed przełączeniem planów platformy Microsoft 365 dla firm](back-up-data-before-switching-plans.md) (artykuł)

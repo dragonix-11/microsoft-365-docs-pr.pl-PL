@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9e46b428500b41b143585434f7a16c13227db1c
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: ebfcfe21070656d71c50429cd4653d0e14f7724d
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669765"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493236"
 ---
 # <a name="offboard-machine-api"></a>Interfejs API maszyny odłączaowej
 
@@ -48,7 +48,7 @@ Odłącz urządzenie od usługi Defender for Endpoint.
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> Ten interfejs API jest obsługiwany w Windows 11, Windows 10, wersji 1703 lub nowszej lub Windows Server 2019 i nowszych.
+> Ten interfejs API jest obsługiwany w systemie Windows 11, Windows 10, wersji 1703 lub nowszej albo w systemie Windows Server 2019 lub nowszym.
 >
 > Ten interfejs API nie jest obsługiwany na urządzeniach z systemem MacOS lub Linux.
 
@@ -98,7 +98,7 @@ W przypadku powodzenia ta metoda zwraca wartość 200 — utworzony kod odpowied
 
 ### <a name="request"></a>Żądanie
 
-Oto przykład żądania.
+Oto przykład żądania. Jeśli nie dodano komentarza JSON, zostanie wyświetlony błąd z kodem **400**.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/offboard

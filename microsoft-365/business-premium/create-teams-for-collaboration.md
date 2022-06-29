@@ -2,11 +2,11 @@
 title: Korzystanie z aplikacji Microsoft Teams do współpracy
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, dlaczego i jak utworzyć zespół w usłudze Microsoft Teams, aby twoja mała firma lub kampania mogła współpracować.
-ms.openlocfilehash: a996430d884e50d36c636c8682d862317775f63a
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 046a888c0df95bc404bafcddb041e015131e6503
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65892565"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489653"
 ---
 # <a name="use-microsoft-teams-for-collaboration"></a>Korzystanie z aplikacji Microsoft Teams do współpracy
 
@@ -70,11 +70,11 @@ Po utworzeniu zespołu poniżej przedstawiono, co jeszcze zostanie utworzone:
 
 - Witryna i biblioteka dokumentów [usługi SharePoint Online](/MicrosoftTeams/sharepoint-onedrive-interact) do przechowywania plików zespołu
 
-- Udostępniona skrzynka pocztowa i kalendarz [usługi Exchange Online](/MicrosoftTeams/exchange-teams-interact)
+- [Udostępniona skrzynka](/MicrosoftTeams/exchange-teams-interact) pocztowa i kalendarz Exchange Online
 
 - Notes programu OneNote
 
-- Powiązania z innymi aplikacjami usługi Office 365, takimi jak Planner i Power BI
+- Wiąże się z innymi aplikacjami Office 365, takimi jak Planner i Power BI
 
 W usłudze Microsoft Teams można znaleźć następujące elementy:
 
@@ -104,10 +104,10 @@ Utwórz zespół, który udostępniasz gościom spoza organizacji, na przykład 
 
 Dowiedz się więcej o usłudze Microsoft Teams w [dokumentacji technicznej usługi Microsoft Teams](/microsoftteams/microsoft-teams)
 
-## <a name="admin-settings"></a>Ustawienia administratora
+## <a name="admin-settings"></a>ustawienia Administracja
 
-> [!Note]
-> Aby utworzyć zespół w całej organizacji, musisz być administratorem. Aby uzyskać więcej informacji, zobacz [Co to jest administrator na platformie Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+> [!NOTE]
+> Aby utworzyć zespół w całej organizacji, musisz być administratorem. Aby uzyskać więcej informacji, zobacz [Co to jest Administracja na platformie Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="next-objective"></a>Następny cel
 

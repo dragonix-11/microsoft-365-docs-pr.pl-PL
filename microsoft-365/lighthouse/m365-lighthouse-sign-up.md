@@ -18,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych dowiedz się, jak zarejestrować się w Microsoft 365 Lighthouse.
-ms.openlocfilehash: 5596005ff9a3db4e5a873a32f87b2677cdc8efaa
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 19acad120e6796369e5de511b13ad37c4d9e4623
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007135"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489095"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Tworzenie konta w Microsoft 365 Lighthouse
 
@@ -39,15 +39,11 @@ Ten artykuł zawiera instrukcje dotyczące rejestrowania się w Microsoft 365 Li
 
 1. Przejdź do Centrum administracyjne platformy Microsoft 365 pod adresem <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> i zaloguj się przy użyciu poświadczeń dzierżawy partnera. 
 
-1. Przejdź do pozycji **Rozliczenia** > **Zakup usług** > **Innych usług**.
+2. Przejdź do obszaru **Billing Purchase Services****Microsoft 365 Services (Usługi** >  zakupu **rozliczeń** >  platformy Microsoft 365).
+   
+3. W obszarze **Microsoft 365 Lighthouse** wybierz pozycję **Szczegóły**. 
 
-    Jeśli Microsoft 365 Lighthouse nie znajduje się na liście usług, wybierz pozycję **Zobacz wszystkie inne produkty usług**.
-
-    Jeśli napotkasz stronę błędu Zakup usług, wybierz pozycję **Wyświetl produkty** w dolnej części strony.
-
-1. W obszarze **Microsoft 365 Lighthouse** wybierz pozycję **Szczegóły**. 
-
-1. Wybierz pozycję **Kup**.
+4. Wybierz pozycję **Kup**.
 
     > [!NOTE]
     > Usługa Lighthouse wymaga jednej licencji tylko dla dzierżawy partnera. Dla partnera nie są wymagane żadne dodatkowe licencje na użytkownika, a w żadnej dzierżawie klienta nie są wymagane żadne licencje usługi Lighthouse. 

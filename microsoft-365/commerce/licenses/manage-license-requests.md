@@ -18,16 +18,16 @@ ms.custom:
 - MACBillingLicensesRequests
 - AdminSurgePortfolio
 search.appverid: MET150
-description: Dowiedz się, jak przeglądać i zatwierdzać lub odrzucać żądania licencji od użytkowników dotyczące subskrypcji Microsoft 365 dla firm.
+description: Dowiedz się, jak przeglądać i zatwierdzać lub odrzucać żądania licencji od użytkowników dotyczące subskrypcji platformy Microsoft 365 dla firm.
 ms.date: 04/22/2022
-ms.openlocfilehash: dfe8410ce894e19489664396866917e4c5bb3dd4
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: b4259c4c04284e47193d827a6a10214669a5c991
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044252"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491012"
 ---
-# <a name="manage-license-requests"></a>Zarządzanie żądaniami licencji
+# <a name="manage-self-service-license-requests"></a>Zarządzanie żądaniami licencji samoobsługowych
 
 > [!NOTE]
 > Informacje zawarte w tym artykule dotyczą tylko produktów zakupionych samodzielnie. Aby dowiedzieć się więcej, zobacz [Samoobsługowy zakup — często zadawane pytania](../subscriptions/self-service-purchase-faq.yml).
@@ -35,7 +35,7 @@ ms.locfileid: "66044252"
 Jeśli wyłączysz zakupy samoobsługowe w organizacji, możesz użyć żądań licencji do zarządzania procesem żądania licencji dla użytkowników. Gdy użytkownik próbuje dokonać zakupu samoobsługowego dla zablokowanego produktu, może przesłać do Ciebie żądanie licencji, administratora. Podczas tworzenia żądania mogą dodawać nazwy innych użytkowników, którzy również potrzebują licencji dla produktu.
 
 > [!NOTE]
-> Jeśli zablokujesz użytkownikom możliwość dokonywania zakupów samoobsługowych, firma Microsoft nie wyśle im marketingowych wiadomości e-mail. Ponadto jeśli używają wersji próbnej produktu, nie widzą monitów o jego zakup. Aby dowiedzieć się więcej, zobacz [Zarządzanie zakupami samoobsługowymi (administrator).](../subscriptions/manage-self-service-purchases-admins.md)
+> Jeśli zablokujesz użytkownikom możliwość dokonywania zakupów samoobsługowych, firma Microsoft nie wyśle im marketingowych wiadomości e-mail. Ponadto jeśli używają wersji próbnej produktu, nie widzą monitów o jego zakup. Aby dowiedzieć się więcej, zobacz [Zarządzanie zakupami samoobsługowymi (Administracja)](../subscriptions/manage-self-service-purchases-admins.md).
 
 Aby wyświetlić żądania licencji i zarządzać nimi, administrator korzysta z karty **Żądania** na stronie **Licencjonowanie** . Lista zawiera nazwę żądanego produktu, nazwę osoby żądającej licencji, żądaną datę i stan żądania. Administratorzy mogą filtrować listę, aby wyświetlić żądania oczekujące lub zakończone. Żądania są przechowywane przez 30 dni.
 

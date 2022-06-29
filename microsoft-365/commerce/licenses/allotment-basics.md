@@ -19,14 +19,14 @@ ms.custom:
 search.appverid: MET150
 description: Dowiedz się więcej o nowej funkcji przydziałów.
 ms.date: 05/12/2022
-ms.openlocfilehash: 60c2fdcd451f5926cbda84d8e5236176314bd3f5
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 2ab253bd122fb4f8ec83c38cb623217ec6ae3815
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636091"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489118"
 ---
-# <a name="allotment-basics"></a>Podstawy przydziału
+# <a name="microsoft-365-license-allotment-basics"></a>Podstawy przydziału licencji platformy Microsoft 365
 
 Przydziały licencji umożliwiają ustawianie limitów licencji i delegowanie zarządzania przypisaniem licencji tylko do wybranych produktów i limitów licencji.
 
@@ -40,13 +40,13 @@ Musisz spełnić wymagania licencyjne dotyczące [licencjonowania opartego na gr
 
 Przydziałów można używać z dowolnym produktem dostępnym dla użytkowników:
 
-- Office pakiety i produkty autonomiczne
-- produkty Enterprise i mobility
+- Pakiety pakietu Office i produkty autonomiczne
+- Produkty dla przedsiębiorstw i mobilności
 - Produkty usługi Dynamics 365
 
 Z przydziałami nie można używać następujących produktów:
 
-- aplikacje Microsoft Store
+- Aplikacje ze Sklepu Microsoft
 - Oprogramowanie bezterminowe lub oprogramowanie, które jest bezpośrednio przypisane do użytkownika, jeśli nie ma licencji.
 - Zasoby platformy Azure
 

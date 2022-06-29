@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 audience: ITPro
-ms.topic: article
+ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -18,12 +18,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: bcba0da734c4f5b1945a506d77a88355215efada
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: c1354d69ea1b645ee419ce7635c49e65a0557f26
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923308"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487868"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Zarządzanie aktualizacjami programu antywirusowego Microsoft Defender i stosowanie punktów odniesienia
 
@@ -77,19 +77,46 @@ Aby uzyskać więcej informacji, zobacz [Zarządzanie źródłami aktualizacji o
 > - Ten artykuł zawiera listę zmian uwzględnionych w szerokim kanale wydań. [Zobacz najnowszą wersję szerokiego kanału tutaj](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 > - Aby dowiedzieć się więcej na temat procesu stopniowego wdrażania i wyświetlić więcej informacji na temat następnej wersji, zobacz [Zarządzanie procesem stopniowego wdrażania aktualizacji usługi Microsoft Defender](manage-gradual-rollout.md).
 > - Aby dowiedzieć się więcej na temat aktualizacji analizy zabezpieczeń, zobacz [Aktualizacje analizy zabezpieczeń dla programu antywirusowego Microsoft Defender i innych programów chroniących przed złośliwym kodem firmy Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).
-> - Jeśli szukasz listy procesów usługi Microsoft Defender, **[pobierz skoroszyt mde-urls](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**, a następnie wybierz arkusz **Procesy usługi Microsoft Defender** . Skoroszyt mde-urls zawiera również listę usług i skojarzonych z nimi adresów URL, z którymi sieć musi być w stanie nawiązać połączenie, zgodnie z opisem w temacie [Enable access to Microsoft Defender for Endpoint service URLLs in the proxy server (Włączanie dostępu do adresów URL usługi Microsoft Defender for Endpoint na serwerze proxy](configure-proxy-internet.md)).
+> - Jeśli szukasz listy procesów usługi Microsoft Defender, **[pobierz skoroszyt mde-urls](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**, a następnie wybierz arkusz **Procesy usługi Microsoft Defender** . Skoroszyt mde-urls zawiera również listę usług i skojarzonych z nimi adresów URL, z którymi sieć musi być w stanie nawiązać połączenie, zgodnie z opisem w temacie [Enable access to Ochrona punktu końcowego w usłudze Microsoft Defender service URLLs in the proxy server (Włączanie dostępu do adresów URL usługi Ochrona punktu końcowego w usłudze Microsoft Defender na serwerze proxy](configure-proxy-internet.md)).
 
 ## <a name="monthly-platform-and-engine-versions"></a>Miesięczne wersje platformy i aparatu
 
-Aby uzyskać informacje na temat aktualizowania lub instalowania aktualizacji platformy, zobacz [Update for Windows Defender antimalware platform (Aktualizacja dla platformy ochrony przed złośliwym kodem w usłudze Windows Defender](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)).
+Aby uzyskać informacje na temat aktualizowania lub instalowania aktualizacji platformy, zobacz [Update for Windows Defender antimalware platform (Aktualizacja dla platformy ochrony przed złośliwym kodem](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)).
 
 Wszystkie nasze aktualizacje zawierają
 
 - Ulepszenia wydajności
 - Ulepszenia obsługi
-- Ulepszenia integracji (Chmura, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
+- Ulepszenia integracji (chmura, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Maj-2022 r. (platforma: 4.18.2205.7 | Silnik: 1.1.19300.2)</summary>
+
+&ensp;Wersja aktualizacji analizy zabezpieczeń: **1.369.88.0**<br/>
+&ensp;Data wydania: **22 czerwca 2022 r**.<br/>
+&ensp;Platforma: **4.18.2205.7**<br/>
+&ensp;Silnik: **1.1.19300.2**<br/>
+&ensp;Faza pomocy technicznej: **Zabezpieczenia i krytyczne Aktualizacje**<br/>
+
+Wersja aparatu: 1.1.19300.2<br/>
+Wersja aktualizacji analizy zabezpieczeń: 1.369.88.0<br/>
+
+### <a name="whats-new"></a>Co nowego
+
+- Dodano poprawkę konfiguracji kanału ETW dla aktualizacji 
+- Dodano obsługę wykluczeń kontekstowych umożliwiających bardziej szczegółowe określanie wartości docelowych wykluczeń 
+- Stały rozmiar maksymalny kontekstu
+- Dodano poprawkę [wykrywania LSASS usługi ASR](attack-surface-reduction-rules-reference.md)
+- Dodano poprawkę do modułu SHSetKnownFolder dla logiki wykluczania reguł
+- Dodano limity użycia dysków AMSI dla magazynu historii
+- Dodano poprawkę dla usługi Defender odmawiającej zaakceptowania aktualizacji podpisu
+
+### <a name="known-issues"></a>Znane problemy
+
+Brak znanych problemów
+
+<br/><br/>
+</details><details>
 <summary>*AKTUALIZACJA* z marca 2022 r. (platforma: 4.18.2203.5 | Silnik: 1.1.19200.5)</summary>
 
 *Klienci, którzy zastosowali aktualizację aparatu microsoft defender z marca 2022 r **. (1.1.19100.5**), mogli napotkać wysokie wykorzystanie zasobów (procesor CPU i/lub pamięć). Firma Microsoft wydała aktualizację (**1.1.19200.5**), która rozwiązuje błędy wprowadzone we wcześniejszej wersji. Zaleca się, aby klienci zaktualizowali tę nową kompilację aparatu antywirusowego (**1.1.19200.5**). Aby upewnić się, że wszystkie problemy z wydajnością są w pełni rozwiązane, zaleca się ponowne uruchomienie maszyn po zastosowaniu aktualizacji.*
@@ -98,7 +125,7 @@ Wszystkie nasze aktualizacje zawierają
 &ensp;Data wydania: **22 kwietnia 2022 r**.<br/>
 &ensp;Platforma: **4.18.2203.5**<br/>
 &ensp;Silnik: **1.1.19200.5**<br/>
-&ensp;Faza pomocy technicznej: **Aktualizacje zabezpieczeń i krytyczne**<br/>
+&ensp;Faza pomocy technicznej: **Zabezpieczenia i krytyczne Aktualizacje**<br/>
 
 Wersja aparatu: 1.1.19200.5 <br/>
 Wersja aktualizacji analizy zabezpieczeń: 1.363.817.0<br/>
@@ -119,7 +146,7 @@ Brak znanych problemów
 &ensp;Data wydania: **7 kwietnia 2022 r**.<br/>
 &ensp;Platforma: **4.18.2203.5**<br/>
 &ensp;Silnik: **1.1.19100.5**<br/>
-&ensp;Faza pomocy technicznej: **Aktualizacje zabezpieczeń i krytyczne**<br/>
+&ensp;Faza pomocy technicznej: **Zabezpieczenia i krytyczne Aktualizacje**<br/>
 
 Wersja aparatu: 1.1.19100.5 <br/>
 Wersja aktualizacji analizy zabezpieczeń: 1.361.1449.0<br/>
@@ -134,7 +161,7 @@ Wersja aktualizacji analizy zabezpieczeń: 1.361.1449.0<br/>
 
 ### <a name="known-issues"></a>Znane problemy
 
-Brak znanych problemów
+- Potencjał wysokiego wykorzystania zasobów (procesor i/lub pamięć). Zobacz aktualizację platformy 4.18.2203.5 i aparatu 1.1.19200.5 dla marca 2022 r.
 
 <br/><br/>
 </details><details>
@@ -144,7 +171,7 @@ Brak znanych problemów
 &ensp;Data wydania: **14 marca 2022 r**.<br/>
 &ensp;Platforma: **4.18.2202.4**<br/>
 &ensp;Silnik: **1.1.19000.8**<br/>
-&ensp;Faza pomocy technicznej: **Aktualizacje zabezpieczeń i krytyczne**<br/>
+&ensp;Faza pomocy technicznej: **Zabezpieczenia i krytyczne Aktualizacje**<br/>
 
 Wersja aparatu: 1.1.19000.8 <br/>
 Wersja aktualizacji analizy zabezpieczeń: 1.361.14.0 <br/>
@@ -154,40 +181,12 @@ Wersja aktualizacji analizy zabezpieczeń: 1.361.14.0 <br/>
 - Ulepszenia logiki monitorowania wykrywania i zachowania
 - Naprawiono wykrywanie redukcji obszaru ataków wyzwalające fałszywie dodatnie
 - Dodano poprawkę zapewniającą lepszą wierność alertów EDR i zaawansowanego wykrywania zagrożeń
-- Usługa Defender nie obsługuje już powiadomień niestandardowych w wyskakujących oknach podręcznych. Zmodyfikowano obiekt zasad grupy/usługę Intune/SCCM i dokumentację w celu odzwierciedlenia tej zmiany.
-- Ulepszenia przechwytywania zarówno informacji, jak i kopii plików zapisywanych w magazynie wymiennym. Aby dowiedzieć się więcej, zobacz [Microsoft Defender for Endpoint Device Control Removable Storage Access Control(Kontrola dostępu do magazynu wymiennego) i removable storage media (wymienny nośnik magazynu](device-control-removable-storage-access-control.md)).
+- Usługa Defender nie obsługuje już powiadomień niestandardowych w wyskakujących oknach podręcznych. Zmodyfikowano obiekt zasad grupy/Intune/SCCM i dokumentację, aby odzwierciedlić tę zmianę.
+- Ulepszenia przechwytywania zarówno informacji, jak i kopii plików zapisywanych w magazynie wymiennym. Aby dowiedzieć się więcej, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender Device Control Removable Storage Access Control, wymienny nośnik magazynu](device-control-removable-storage-access-control.md).
 - Ulepszone dane wyjściowe ruchu, gdy usługa SmartScreen jest nieosiągalna 
 - Ulepszenia łączności dla klientów korzystających z serwerów proxy z wymaganiami dotyczącymi uwierzytelniania
 - Naprawiono usterkę aktualizacji urządzenia VDI dla sieciowych akcji plików 
 - Środowisko EDR w trybie bloku obsługuje teraz szczegółowe określanie wartości docelowej urządzeń przy użyciu nowych dostawców CSP. Zobacz [Wykrywanie i reagowanie na punkty końcowe (EDR) w trybie bloku](edr-in-block-mode.md).
-
-### <a name="known-issues"></a>Znane problemy
-
-Brak znanych problemów
-
-<br/><br/>
-</details><details>
-<summary>Styczeń-2022 r. (platforma: 4.18.2201.10 | Silnik: 1.1.18900.2)</summary>
-
-&ensp;Wersja aktualizacji analizy zabezpieczeń: **1.357.8.0**<br/>
-&ensp;Data wydania: **9 lutego 2022 r**.<br/>
-&ensp;Platforma: **4.18.2201.10**<br/>
-&ensp;Silnik: **1.1.18900.2**<br/>
-&ensp;Faza pomocy technicznej: **Aktualizacje zabezpieczeń i krytyczne**<br/>
-
-Wersja aparatu: 1.1.18900.2 <br/>
-Wersja aktualizacji analizy zabezpieczeń: 1.357.8.0 <br/>
-
-### <a name="whats-new"></a>Co nowego
-
-- Ulepszenia monitorowania zachowania w wydajności filtrowania
-- Wzmacnianie zabezpieczeń na platformie TrustedInstaller
-- Ulepszenia ochrony przed naruszeniami
-- Zastąpione `ScanScheduleTime` nowym `ScanScheduleOffest` poleceniem cmdlet w [poleceniu Set-MpPreference](/powershell/module/defender/set-mppreference). Te zasady konfigurują liczbę minut po północy w celu przeprowadzenia zaplanowanego skanowania.
-- `-ServiceHealthReportInterval` Dodano ustawienie [Set-MpPreference](/powershell/module/defender/set-mppreference). Te zasady konfigurują interwał czasu (w minutach) w celu przeprowadzenia zaplanowanego skanowania.
-- `AllowSwitchToAsyncInspection` Dodano ustawienie [Set-MpPreference](/powershell/module/defender/set-mppreference). Te zasady umożliwiają optymalizację wydajności, która umożliwia synchronicznie kontrolowane przepływy sieciowe, przełączenie się do inspekcji asynchronicznej po sprawdzeniu i zweryfikowaniu.
-- Aktualizacje analizatora wydajności w wersji 2: dodano zdalną obsługę programu PowerShell i programu PowerShell 7.x. Zobacz [Analizator wydajności dla programu antywirusowego Microsoft Defender](tune-performance-defender-antivirus.md).
-- Usunięto potencjalne usterki zduplikowanych pakietów w sterowniku systemu kontroli sieci programu antywirusowego Microsoft Defender.
 
 ### <a name="known-issues"></a>Znane problemy
 
@@ -202,6 +201,34 @@ Brak znanych problemów
 Po wydaniu nowej wersji pakietu obsługa dwóch poprzednich wersji jest ograniczona tylko do pomocy technicznej. Wersje starsze niż wymienione w tej sekcji i są udostępniane tylko do obsługi uaktualnień technicznych.<br/><br/>
 
 <details>
+<summary>Styczeń-2022 r. (platforma: 4.18.2201.10 | Silnik: 1.1.18900.2)</summary>
+
+&ensp;Wersja aktualizacji analizy zabezpieczeń: **1.357.8.0**<br/>
+&ensp;Data wydania: **9 lutego 2022 r**.<br/>
+&ensp;Platforma: **4.18.2201.10**<br/>
+&ensp;Silnik: **1.1.18900.2**<br/>
+&ensp;Faza pomocy technicznej: **pomoc techniczna dotycząca uaktualniania (tylko)**<br/>
+
+Wersja aparatu: 1.1.18900.2 <br/>
+Wersja aktualizacji analizy zabezpieczeń: 1.357.8.0 <br/>
+
+### <a name="whats-new"></a>Co nowego
+
+- Ulepszenia monitorowania zachowania w wydajności filtrowania
+- Wzmacnianie zabezpieczeń na platformie TrustedInstaller
+- Ulepszenia ochrony przed naruszeniami
+- Zastąpione `ScanScheduleTime` nowym `ScanScheduleOffest` poleceniem cmdlet w [poleceniu Set-MpPreference](/powershell/module/defender/set-mppreference). Te zasady konfigurują liczbę minut po północy w celu przeprowadzenia zaplanowanego skanowania.
+- `-ServiceHealthReportInterval` Dodano ustawienie [Set-MpPreference](/powershell/module/defender/set-mppreference). Te zasady konfigurują interwał czasu (w minutach) w celu przeprowadzenia zaplanowanego skanowania.
+- `AllowSwitchToAsyncInspection` Dodano ustawienie [Set-MpPreference](/powershell/module/defender/set-mppreference). Te zasady umożliwiają optymalizację wydajności, która umożliwia synchronicznie kontrolowane przepływy sieciowe, przełączenie się do inspekcji asynchronicznej po sprawdzeniu i zweryfikowaniu.
+- Analizator wydajności aktualizacje wersji 2: dodano zdalną obsługę programu PowerShell i programu PowerShell 7.x. Zobacz [Analizator wydajności dla programu antywirusowego Microsoft Defender](tune-performance-defender-antivirus.md).
+- Usunięto potencjalne usterki zduplikowanych pakietów w sterowniku systemu kontroli sieci programu antywirusowego Microsoft Defender.
+
+### <a name="known-issues"></a>Znane problemy
+
+Brak znanych problemów
+
+<br/><br/>
+</details><details>
 <summary>Listopad-2021 (Platforma: 4.18.2111.5 | Silnik: 1.1.18800.4)</summary>
 
 &ensp;Wersja aktualizacji analizy zabezpieczeń: **1.355.2.0**<br/>
@@ -215,9 +242,9 @@ Wersja aparatu: 1.1.18800.4 Wersja aktualizacji analizy zabezpieczeń: 1.355.2.0
 ### <a name="whats-new"></a>Co nowego
 
 - Ulepszona wydajność użycia procesora CPU w przypadku niektórych intensywnych scenariuszy na serwerach programu Exchange
-- Dodano nowe pola stanu sterowania urządzeniami w obszarze Get-MpComputerStatus w module programu PowerShell usługi Defender. Aby uzyskać więcej informacji, zobacz [Kontrola dostępu do magazynu wymiennego w usłudze Microsoft Defender for Endpoint Device Control](device-control-removable-storage-access-control.md).
+- Dodano nowe pola stanu sterowania urządzeniami w obszarze Get-MpComputerStatus w module programu PowerShell usługi Defender. Aby uzyskać więcej informacji, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md).
 - Usunięto usterkę polegającą na tym, że `SharedSignatureRoot` nie można było usunąć wartości po ustawieniu przy użyciu programu PowerShell
-- Usunięto usterkę polegającą na tym, że nie można było włączyć [ochrony przed naruszeniami](prevent-changes-to-security-settings-with-tamper-protection.md) , mimo że usługa Microsoft Defender dla punktu końcowego wskazała, że ochrona przed naruszeniami została włączona
+- Usunięto usterkę polegającą na tym, że nie można było włączyć [ochrony przed naruszeniami](prevent-changes-to-security-settings-with-tamper-protection.md), mimo że Ochrona punktu końcowego w usłudze Microsoft Defender wskazuje, że ochrona przed naruszeniami została włączona
 - Dodano obsługę i poprawki usterek do analizatora wydajności dla narzędzia antywirusowego Microsoft Defender. Aby uzyskać więcej informacji, zobacz [Analizator wydajności dla programu antywirusowego Microsoft Defender](tune-performance-defender-antivirus.md).   
    - Dodano obsługę środowiska ISE programu PowerShell dla `New-MpPerformanceRecording`
    - Naprawiono błędy błędów dla `Get-MpPerformanceReport -TopFilesPerProcess`
@@ -241,7 +268,7 @@ Wersja aparatu: 1.1.18700.4 Wersja aktualizacji analizy zabezpieczeń: 1.353.3.0
 ### <a name="whats-new"></a>Co nowego
 
 - Ulepszenia pokrycia ruchu sieciowego protokołu transferu plików (FTP)
-- Poprawka zmniejszająca użycie procesora MICROSOFT Defender w programie Exchange Server działającym w systemie Windows Server 2016
+- Poprawka umożliwiająca zmniejszenie użycia procesora CPU w usłudze Microsoft Defender w Exchange Server działających na Windows Server 2016
 - Poprawka w przypadku przerw w skanowaniu
 - Poprawka dotycząca alertów dotyczących zablokowanych prób naruszenia, które nie są wyświetlane w usłudze Security Center
 - Ulepszenia odporności na naruszenia w usłudze Microsoft Defender
@@ -298,7 +325,7 @@ Brak znanych problemów
 ### <a name="whats-new"></a>Co nowego
 - Dodano obsługę sterowania urządzeniami przenośnymi z systemem Windows
 - Ochrona potencjalnie niechcianych aplikacji (PUA) jest domyślnie włączona dla użytkowników (zobacz [Blokowanie potencjalnie niechcianych aplikacji za pomocą programu antywirusowego Microsoft Defender](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)).
-- Zaplanowane skanowanie systemów zarządzanych przez obiekt zasad grupy będzie zgodne z czasem skanowania skonfigurowanym przez użytkownika
+- Zaplanowane skanowania dla systemów zarządzanych zasady grupy Object będą zgodne z czasem skanowania skonfigurowanym przez użytkownika
 - Ulepszenia aparatu monitorowania zachowania
 
 ### <a name="known-issues"></a>Znane problemy
@@ -459,7 +486,7 @@ Brak znanych problemów
 
 ### <a name="whats-new"></a>Co nowego
 
-- Uprawnienia administratora są wymagane do przywracania plików w kwarantannie
+- Administracja uprawnienia są wymagane do przywracania plików w kwarantannie
 - Zdarzenia w formacie XML są teraz obsługiwane
 - Obsługa programu CSP w celu ignorowania scalania wykluczeń
 - Nowe interfejsy zarządzania dla:
@@ -467,7 +494,7 @@ Brak znanych problemów
    - Ochrona sieci na serwerze 2019
    - Wykluczenia adresów IP dla ochrony sieci
 - Lepszy wgląd w pomiary modułu TPM
-- Ulepszone skanowanie modułów VBA pakietu Office
+- Ulepszone skanowanie modułów Visual Basic for Applications pakietu Office
 
 ### <a name="known-issues"></a>Znane problemy
 
@@ -648,7 +675,7 @@ Silnik: **1.1.16700.2**<br/>
 
 ### <a name="known-issues"></a>Znane problemy
 
-[**Naprawiono**] urządzenia korzystające z [nowoczesnego trybu wstrzymania](/windows-hardware/design/device-experiences/modern-standby) mogą spowodować zawieszenie sterownika filtru usługi Windows Defender, co powoduje przerwę w ochronie.  Maszyny, których dotyczy problem, wydają się być wyświetlane klientowi jako nie zaktualizowane do najnowszej platformy ochrony przed złośliwym kodem.
+[**Naprawiono**] urządzenia korzystające z [nowoczesnego trybu wstrzymania](/windows-hardware/design/device-experiences/modern-standby) mogą napotkać zawieszenie ze sterownikiem filtru Windows Defender, co powoduje przerwę w ochronie.  Maszyny, których dotyczy problem, wydają się być wyświetlane klientowi jako nie zaktualizowane do najnowszej platformy ochrony przed złośliwym kodem.
 <br/>
 > [!IMPORTANT]
 > Ta aktualizacja jest następująca:
@@ -656,7 +683,7 @@ Silnik: **1.1.16700.2**<br/>
 > - ma flagę ponownego uruchomienia dla systemów, które mają problemy z zawieszaniem się;
 > - zostanie ponownie wydany w kwietniu 2020 r. i nie zostanie zastąpiony przez nowsze aktualizacje, aby zachować przyszłą dostępność;
 > - jest skategoryzowany jako aktualizacja ze względu na wymaganie ponownego uruchomienia; I
-> - jest oferowany tylko w [usłudze Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).
+> - jest oferowany tylko z [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).
 <br/>
 </details>
 
@@ -686,22 +713,22 @@ Po zainstalowaniu tej aktualizacji urządzenie musi mieć pakiet jump 4.18.2001.
 
 Aktualizacje platformy i aparatu są udostępniane w comiesięcznym okresie. Aby zapewnić pełną obsługę, bądź na bieżąco z najnowszymi aktualizacjami platformy. Nasza struktura pomocy technicznej jest dynamiczna i zmienia się w dwie fazy w zależności od dostępności najnowszej wersji platformy:
 
-- **Faza obsługi aktualizacji zabezpieczeń i aktualizacji krytycznych** — podczas uruchamiania najnowszej wersji platformy będziesz mieć uprawnienia do otrzymywania zarówno aktualizacji zabezpieczeń, jak i aktualizacji krytycznych dla platformy chroniącej przed złośliwym oprogramowaniem.
+- **Faza obsługi zabezpieczeń i krytycznych Aktualizacje** — podczas uruchamiania najnowszej wersji platformy będziesz mieć uprawnienia do otrzymywania zarówno aktualizacji zabezpieczeń, jak i aktualizacji krytycznych dla platformy chroniącej przed złośliwym oprogramowaniem.
 
 - **Faza pomocy technicznej (tylko)** — po wydaniu nowej wersji platformy obsługa starszych wersji (N-2) zostanie zredukowana tylko do pomocy technicznej. Wersje platformy starsze niż N-2 nie będą już obsługiwane.*
 
-\* Pomoc techniczna będzie nadal zapewniana w przypadku uaktualnień z wersji systemu Windows 10 (zobacz [Wersja platformy dołączona do wersji systemu Windows 10](#platform-version-included-with-windows-10-releases)) do najnowszej wersji platformy.
+\*Pomoc techniczna będzie nadal zapewniana w przypadku uaktualnień z wersji Windows 10 wersji (zobacz [Wersja platformy dołączona do wersji Windows 10](#platform-version-included-with-windows-10-releases)) do najnowszej wersji platformy.
 
 W fazie pomocy technicznej (tylko) uzasadnione pod względem handlowym zdarzenia pomocy technicznej będą udostępniane za pośrednictwem działu obsługi klienta firmy Microsoft & Pomocy technicznej i zarządzanych ofert pomocy technicznej firmy Microsoft (takich jak pomoc techniczna Premier). Jeśli zdarzenie pomocy technicznej wymaga eskalacji w celu uzyskania dalszych wskazówek, wymaga aktualizacji niezwiązanej z zabezpieczeniami lub wymaga aktualizacji zabezpieczeń, klienci zostaną poproszeni o uaktualnienie do najnowszej wersji platformy lub aktualizacji pośredniej (*).
 
 > [!NOTE]
 > Jeśli ręcznie wdrażasz aktualizację platformy antywirusowej Microsoft Defender lub używasz skryptu lub produktu do zarządzania firmą inną niż Microsoft do wdrażania aktualizacji platformy antywirusowej Microsoft Defender, upewnij się, że wersja `4.18.2001.10` jest zainstalowana z [katalogu microsoft update](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) przed zainstalowaniem najnowszej wersji aktualizacji platformy (N-2).
 
-### <a name="platform-version-included-with-windows-10-releases"></a>Wersja platformy dołączona do wersji systemu Windows 10
+### <a name="platform-version-included-with-windows-10-releases"></a>Wersja platformy dołączona do wersji Windows 10
 
-Poniższa tabela zawiera platformę antywirusową Microsoft Defender i wersje aparatu dostarczane z najnowszymi wersjami systemu Windows 10:<br/><br/>
+Poniższa tabela zawiera platformę programu antywirusowego Microsoft Defender i wersje aparatu dostarczane z najnowszymi wersjami Windows 10:<br/><br/>
 
-|Wersja systemu Windows 10  |Wersja platformy  |Wersja aparatu |Faza pomocy technicznej |
+|wersja Windows 10  |Wersja platformy  |Wersja aparatu |Faza pomocy technicznej |
 |:---|:---|:---|:---|
 |2004 (20H1/20H2) |4.18.1909.6 |1.1.17000.2 | Pomoc techniczna dotycząca uaktualniania (tylko) |
 |1909 (19H2) |4.18.1902.5 |1.1.16700.3 | Pomoc techniczna dotycząca uaktualniania (tylko) |
@@ -712,11 +739,11 @@ Poniższa tabela zawiera platformę antywirusową Microsoft Defender i wersje ap
 |1703 (RS2) |4.11.15603.2 |1.1.13504.0 | Pomoc techniczna dotycząca uaktualniania (tylko) |
 |1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Pomoc techniczna dotycząca uaktualniania (tylko) |
 
-Aby uzyskać informacje o wersji systemu Windows 10, zobacz [arkusz informacyjny cyklu życia systemu Windows](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+Aby uzyskać Windows 10 informacji o wersji, zobacz [arkusz informacyjny cyklu życia systemu Windows](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
-## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>Aktualizacje dotyczące obsługi i zarządzania obrazami wdrożenia (DISM)
+## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>Aktualizacje do obsługi i zarządzania obrazami wdrożenia (DISM)
 
-Zalecamy zaktualizowanie obrazów instalacyjnych systemu Operacyjnego Windows 10 (Enterprise, Pro i Home), systemu Windows Server 2019, Windows Server 2022 i Windows Server 2016 o najnowsze aktualizacje oprogramowania antywirusowego i ochrony przed złośliwym kodem. Aktualizowanie obrazów instalacyjnych systemu operacyjnego pomaga uniknąć luki w ochronie.
+Zalecamy zaktualizowanie Windows 10 (wersje Enterprise, Pro i Home), systemu Windows Server 2019, Windows Server 2022 i Windows Server 2016 obrazów instalacyjnych systemu operacyjnego przy użyciu najnowszych aktualizacji oprogramowania antywirusowego i ochrony przed złośliwym kodem. Aktualizowanie obrazów instalacyjnych systemu operacyjnego pomaga uniknąć luki w ochronie.
 
 Aby uzyskać więcej informacji, zobacz [Microsoft Defender update for Windows operating system installation images (Aktualizacja usługi Microsoft Defender dla obrazów instalacyjnych systemu operacyjnego Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)).
 
@@ -1038,13 +1065,13 @@ Aby uzyskać więcej informacji, zobacz [Microsoft Defender update for Windows o
 
 | Artykułu | Opis  |
 |:---|:---|
-|[Obrazy instalacji systemu operacyjnego Microsoft Defender dla systemu operacyjnego Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Przejrzyj pakiety aktualizacji oprogramowania chroniącego przed złośliwym kodem dla obrazów instalacyjnych systemu operacyjnego (pliki WIM i VHD). Pobierz aktualizacje programu antywirusowego Microsoft Defender dla systemów Windows 10 (wersje Enterprise, Pro i Home), Windows Server 2019, Windows Server 2022 i Windows Server 2016.  |
+|[Obrazy instalacji systemu operacyjnego Microsoft Defender dla systemu operacyjnego Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Przejrzyj pakiety aktualizacji oprogramowania chroniącego przed złośliwym kodem dla obrazów instalacyjnych systemu operacyjnego (pliki WIM i VHD). Pobierz aktualizacje programu antywirusowego Microsoft Defender dla Windows 10 (wersje Enterprise, Pro i Home), Windows Server 2019, Windows Server 2022 i Windows Server 2016 obrazów instalacyjnych.  |
 |[Zarządzanie sposobem pobierania i stosowania aktualizacji ochrony](manage-protection-updates-microsoft-defender-antivirus.md) | Aktualizacje ochrony mogą być dostarczane za pośrednictwem wielu źródeł. |
 |[Zarządzanie pobieraniem i stosowaniem aktualizacji ochrony](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Możesz zaplanować, kiedy należy pobrać aktualizacje ochrony. |
 |[Zarządzanie aktualizacjami dla punktów końcowych, które są nieaktualne](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Jeśli punkt końcowy przegapi aktualizację lub zaplanowane skanowanie, możesz wymusić aktualizację lub skanować przy następnym zalogowaniu się użytkownika. |
 |[Zarządzaj wymuszonymi aktualizacjami opartymi na zdarzeniach](manage-event-based-updates-microsoft-defender-antivirus.md) | Aktualizacje ochrony można ustawić do pobrania podczas uruchamiania lub po niektórych zdarzeniach ochrony dostarczanych przez chmurę. |
 |[Zarządzaj aktualizacjami dla urządzeń przenośnych i maszyn wirtualnych ](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Można określić ustawienia, takie jak to, czy aktualizacje powinny być wykonywane w przypadku zasilania baterii, które są szczególnie przydatne w przypadku urządzeń przenośnych i maszyn wirtualnych. |
-| [Aktualizacja usługi Microsoft Defender dla punktu końcowego dla czujnika EDR](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | Możesz zaktualizować czujnik EDR (MsSense.exe), który jest dołączony do nowego pakietu ujednoliconego rozwiązania usługi Microsoft Defender for Endpoint wydanego w 2021 roku.   |
+| [aktualizacja Ochrona punktu końcowego w usłudze Microsoft Defender czujnika EDR](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | Możesz zaktualizować czujnik EDR (MsSense.exe), który jest dołączony do nowego pakietu ujednoliconego rozwiązania Ochrona punktu końcowego w usłudze Microsoft Defender wydanego w 2021 roku.   |
 
 > [!TIP]
 > Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:

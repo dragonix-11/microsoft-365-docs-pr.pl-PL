@@ -19,18 +19,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: Dowiedz się, ile podatku zostanie naliczone za subskrypcję Microsoft 365 dla firm w różnych regionach.
+description: Dowiedz się, ile podatku zostanie naliczone za subskrypcję platformy Microsoft 365 dla firm w różnych regionach.
 ms.date: 03/17/2021
-ms.openlocfilehash: 049b361f75dec9402464aa4216e15388a8174f1d
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 1c676167f68c37b51c2ccdfc8ac08561e52cbea9
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101629"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486542"
 ---
-# <a name="tax-information"></a>Informacje podatkowe
+# <a name="microsoft-365-tax-information"></a>Microsoft 365 — informacje o podatkach
 
-W przypadku zakupu Microsoft 365 produktów i usług podatki, które płacisz, zależą od jednej z dwóch rzeczy: adresu biznesowego lub adresu wysyłkowego, jeśli jest on inny. Jeśli Twoja organizacja znajduje się w Estados Unidos, musisz podać federalny numer identyfikacyjny pracodawcy (FEIN).
+W przypadku zakupu produktów i usług platformy Microsoft 365 opłaty są określane na podstawie jednej z dwóch rzeczy: adresu biznesowego lub adresu wysyłkowego, jeśli jest on inny. Jeśli Twoja organizacja znajduje się w Stany Zjednoczone, musisz podać federalny numer identyfikacyjny pracodawcy (FEIN).
 
 Firmy w następujących krajach mogą podać swój numer VAT lub lokalny odpowiednik:
 
@@ -102,13 +102,13 @@ Firmy w następujących krajach mogą podać swój numer VAT lub lokalny odpowie
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Bliski Wschód i Afryka (EMEA)
 
-W przypadku zakupu usług Microsoft 365 w regionie EMEA ten zakup może podlegać Value-Added podatku (VAT).
+W przypadku zakupu usług platformy Microsoft 365 w regionie EMEA ten zakup może podlegać Value-Added podatku (VAT).
   
 - Jeśli znajdujesz się w państwie członkowskim Unii Europejskiej, Armenii, Białorusi, Norwegii, Turcji lub Zjednoczonych Emiratach Arabskich i nie podajesz prawidłowego lokalnego identyfikatora VAT, firma Microsoft Ireland Operations Ltd. zastosuje bieżącą lokalną stawkę VAT na podstawie kraju rozliczeniowego, na którym twoje konto jest ustawione.
 
 - Jeśli znajdujesz się w Liechtensteinie, Rosji, Serbii, Republice Południowej Afryki lub Szwajcarii, stosowany jest podatek VAT, niezależnie od tego, czy podajesz swój identyfikator VAT, czy nie.
 
-- W przypadku klientów z UE, zanim będziemy mogli zweryfikować Twój identyfikator VAT, musi on być dostępny do weryfikacji w systemie Exchange informacji o vat (VIES). Jeśli nie można zweryfikować twojego identyfikatora VAT, skontaktuj się z lokalnym urzędem podatkowym.
+- W przypadku klientów z UE, zanim będziemy mogli zweryfikować Twój identyfikator VAT, musi on być dostępny do weryfikacji w systemie wymiany informacji VAT (VIES). Jeśli nie można zweryfikować twojego identyfikatora VAT, skontaktuj się z lokalnym urzędem podatkowym.
 
 Możesz kwalifikować się do zerowej klasyfikacji VAT, jeśli:
   
@@ -132,9 +132,9 @@ Jeśli opłaty są naliczane z jednej z następujących lokalizacji, zostanie za
 
 ## <a name="north-central-and-south-america"></a>Ameryka Północna, Środkowa i Południowa
 
-W Estados Unidos, Kanadzie, Meksyku, Chile i Kolumbii obowiązują różne stawki podatkowe w zależności od rodzaju produktu i lokalizacji.
+W Stany Zjednoczone, Kanadzie, Meksyku, Chile i Kolumbii obowiązują różne stawki podatkowe w zależności od rodzaju produktu i lokalizacji.
   
-Jeśli rozliczenia są wykonywane przez firmę Microsoft Corporation ([zobacz fakturę](view-your-bill-or-invoice.md) i zarejestrowano się w celu Microsoft 365 poza Estados Unidos, Kanadą, Portoryko, Chile i Kolumbią, podatek zazwyczaj nie jest naliczany.
+Jeśli rozliczenia są wykonywane przez firmę Microsoft Corporation ([zobacz fakturę](view-your-bill-or-invoice.md) i zarejestrowano się na platformie Microsoft 365 poza Stany Zjednoczone, Kanadą, Portoryko, Chile i Kolumbią, podatek zazwyczaj nie jest naliczany.
 
 ## <a name="add-your-vat-id"></a>Dodawanie identyfikatora VAT
 

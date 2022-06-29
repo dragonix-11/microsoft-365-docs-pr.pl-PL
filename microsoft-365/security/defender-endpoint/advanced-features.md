@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac43b62c16cd3e1394cec7a1a75e69bf613757ef
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d9824a738468f14ebfc7cd7bdc3c612c21a0e43c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934340"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493114"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurowanie zaawansowanych funkcji w usłudze Defender for Endpoint
 
@@ -30,13 +30,13 @@ ms.locfileid: "64934340"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 W zależności od używanych produktów zabezpieczeń firmy Microsoft niektóre zaawansowane funkcje mogą być dostępne do integracji z usługą Defender for Endpoint.
 
 ## <a name="enable-advanced-features"></a>Włączanie zaawansowanych funkcji
 
-1. W okienku nawigacji wybierz pozycję **Ustawienia** \> **Funkcje zaawansowane** **punktów końcowych**\>.
+1. W okienku nawigacji wybierz pozycję **Ustawienia** \> **Punkty końcowe** \> **Funkcje zaawansowane**.
 2. Wybierz zaawansowaną funkcję, którą chcesz skonfigurować, i przełącz ustawienie między **włączaniem** i **wyłączaniem**.
 3. Kliknij **pozycję Zapisz preferencje**.
 
@@ -80,7 +80,7 @@ Tej konfiguracji można używać w scenariuszach, w których lokalne operacje SO
 
 ## <a name="enable-edr-in-block-mode"></a>Włączanie EDR w trybie bloku
 
-Wykrywanie i reagowanie na punkty końcowe (EDR) w trybie bloku zapewnia ochronę przed złośliwymi artefaktami, nawet jeśli Program antywirusowy Microsoft Defender działa w trybie pasywnym. Po włączeniu EDR w trybie bloku blokuje złośliwe artefakty lub zachowania wykryte na urządzeniu. EDR w trybie bloku działa w tle w celu skorygowania złośliwych artefaktów, które zostały wykryte po naruszeniu zabezpieczeń.
+Wykrywanie i reagowanie na punkty końcowe (EDR) w trybie bloku zapewnia ochronę przed złośliwymi artefaktami, nawet jeśli program antywirusowy Microsoft Defender działa w trybie pasywnym. Po włączeniu program EDR w trybie bloku blokuje złośliwe artefakty lub zachowania wykryte na urządzeniu. EDR w trybie bloku działa w tle, aby korygować złośliwe artefakty, które zostały wykryte po naruszeniu zabezpieczeń.
 
 ## <a name="autoresolve-remediated-alerts"></a>Skorygowane alerty autoresolve
 
@@ -98,7 +98,7 @@ W przypadku dzierżaw utworzonych w Windows 10, wersja 1809 lub po nim funkcja a
 
 Blokowanie jest dostępne tylko wtedy, gdy organizacja spełnia następujące wymagania:
 
-- Używa Program antywirusowy Microsoft Defender jako aktywnego rozwiązania chroniącego przed złośliwym kodem i,
+- Używa programu antywirusowego Microsoft Defender jako aktywnego rozwiązania chroniącego przed złośliwym kodem i,
 - Włączono funkcję ochrony opartą na chmurze
 
 Ta funkcja umożliwia blokowanie potencjalnie złośliwych plików w sieci. Zablokowanie pliku uniemożliwi jego odczyt, zapisanie lub wykonanie na urządzeniach w organizacji.
@@ -129,15 +129,15 @@ Aby uzyskać więcej informacji, zobacz [Zarządzanie wskaźnikami](manage-indic
 ## <a name="tamper-protection"></a>Ochrona przed naruszeniami
 Podczas pewnego rodzaju cyberataków źle aktorzy próbują wyłączyć funkcje zabezpieczeń, takie jak ochrona przed wirusami, na maszynach. Źle aktorzy lubią wyłączać funkcje zabezpieczeń, aby uzyskać łatwiejszy dostęp do danych, zainstalować złośliwe oprogramowanie lub w inny sposób wykorzystać dane, tożsamość i urządzenia.
 
-Ochrona przed naruszeniami zasadniczo blokuje Program antywirusowy Microsoft Defender i uniemożliwia zmianę ustawień zabezpieczeń za pośrednictwem aplikacji i metod.
+Ochrona przed naruszeniami zasadniczo blokuje program antywirusowy Microsoft Defender i uniemożliwia zmianę ustawień zabezpieczeń za pośrednictwem aplikacji i metod.
 
-Ta funkcja jest dostępna, jeśli organizacja korzysta z Program antywirusowy Microsoft Defender i włączono ochronę opartą na chmurze. Aby uzyskać więcej informacji, zobacz [Korzystanie z technologii nowej generacji w Program antywirusowy Microsoft Defender za pośrednictwem ochrony dostarczanej w chmurze](cloud-protection-microsoft-defender-antivirus.md).
+Ta funkcja jest dostępna, jeśli twoja organizacja korzysta z programu antywirusowego Microsoft Defender i włączono ochronę opartą na chmurze. Aby uzyskać więcej informacji, zobacz [Korzystanie z technologii nowej generacji w programie antywirusowym Microsoft Defender za pośrednictwem ochrony dostarczanej w chmurze](cloud-protection-microsoft-defender-antivirus.md).
 
 Zachowaj włączoną ochronę przed naruszeniami, aby zapobiec niepożądanym zmianom w rozwiązaniu zabezpieczeń i jego podstawowych funkcjach.
 
 ## <a name="show-user-details"></a>Pokaż szczegóły użytkownika
 
-Włącz tę funkcję, aby zobaczyć szczegóły użytkownika przechowywane w Azure Active Directory. Szczegóły obejmują obraz użytkownika, nazwę, tytuł i informacje o dziale podczas badania jednostek konta użytkownika. Informacje o koncie użytkownika można znaleźć w następujących widokach:
+Włącz tę funkcję, aby wyświetlić szczegóły użytkownika przechowywane w usłudze Azure Active Directory. Szczegóły obejmują obraz użytkownika, nazwę, tytuł i informacje o dziale podczas badania jednostek konta użytkownika. Informacje o koncie użytkownika można znaleźć w następujących widokach:
 
 - Pulpit nawigacyjny operacji zabezpieczeń
 - Kolejka alertów
@@ -150,7 +150,7 @@ Aby uzyskać więcej informacji, zobacz [Badanie konta użytkownika](investigate
 Włączenie integracji Skype dla firm zapewnia możliwość komunikowania się z użytkownikami przy użyciu Skype dla firm, poczty e-mail lub telefonu. Ta aktywacja może być przydatna w przypadku konieczności komunikowania się z użytkownikiem i ograniczania ryzyka.
 
 > [!NOTE]
-> Gdy urządzenie jest odizolowane od sieci, istnieje wyskakujące okienko, w którym można włączyć komunikację Outlook i Skype, która umożliwia komunikację z użytkownikiem, gdy jest odłączony od sieci. To ustawienie dotyczy komunikacji Skype i Outlook, gdy urządzenia są w trybie izolacji.
+> Gdy urządzenie jest odizolowane od sieci, istnieje wyskakujące okienko, w którym można włączyć komunikację programu Outlook i Skype, która umożliwia komunikację z użytkownikiem, gdy jest odłączony od sieci. To ustawienie dotyczy komunikacji za pomocą programu Skype i programu Outlook, gdy urządzenia są w trybie izolacji.
 
 ## <a name="microsoft-defender-for-identity-integration"></a>integracja Microsoft Defender for Identity
 
@@ -163,7 +163,7 @@ Integracja z usługą Microsoft Defender for Identity umożliwia przejście bezp
 
 Ta funkcja jest dostępna tylko wtedy, gdy masz aktywny Office 365 E5 lub dodatek Analiza zagrożeń. Aby uzyskać więcej informacji, zobacz stronę produktu Office 365 Enterprise E5.
 
-Po włączeniu tej funkcji będzie można włączyć dane z Ochrona usługi Office 365 w usłudze Microsoft Defender do Microsoft 365 Defender, aby przeprowadzić kompleksowe badanie zabezpieczeń w skrzynkach pocztowych Office 365 i Windows Urządzeń.
+Po włączeniu tej funkcji będzie można włączyć dane z Ochrona usługi Office 365 w usłudze Microsoft Defender do Microsoft 365 Defender, aby przeprowadzić kompleksowe badanie zabezpieczeń na Office 365 skrzynkach pocztowych i urządzeniach z systemem Windows.
 
 > [!NOTE]
 > Aby włączyć tę funkcję, musisz mieć odpowiednią licencję.
@@ -179,7 +179,7 @@ Spośród dwóch składników programu Microsoft Threat Expert powiadomienie o u
 
 ## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-Włączenie tego ustawienia przekazuje sygnały usługi Defender for Endpoint do Microsoft Defender for Cloud Apps w celu zapewnienia głębszego wglądu w użycie aplikacji w chmurze. Przekazane dane są przechowywane i przetwarzane w tej samej lokalizacji co dane usługi Defender dla Chmury Apps.
+Włączenie tego ustawienia przekazuje sygnały usługi Defender for Endpoint do Microsoft Defender for Cloud Apps w celu zapewnienia głębszego wglądu w użycie aplikacji w chmurze. Przekazane dane są przechowywane i przetwarzane w tej samej lokalizacji co dane usługi Defender for Cloud Apps.
 
 > [!NOTE]
 > Ta funkcja będzie dostępna z licencją E5 dla [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) na urządzeniach z systemem Windows 10, wersja 1709 (kompilacja systemu operacyjnego 16299.1085 z [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, wersja 1803 (kompilacja systemu operacyjnego 17134.704 z [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, wersja 1809  (Kompilacja systemu operacyjnego 17763.379 z [kb4489899](https://support.microsoft.com/help/4489899)), nowsze wersje Windows 10 lub Windows 11.
@@ -200,11 +200,15 @@ Po wykonaniu kroków integracji w obu portalach będzie można wyświetlić odpo
 
 Blokuj dostęp do witryn internetowych zawierających niepożądaną zawartość i śledź aktywność internetową we wszystkich domenach. Aby określić kategorie zawartości internetowej, które chcesz zablokować, utwórz [zasady filtrowania zawartości internetowej](https://security.microsoft.com/preferences2/web_content_filtering_policy). Upewnij się, że masz ochronę sieci w trybie bloku podczas wdrażania [punktu odniesienia zabezpieczeń Ochrona punktu końcowego w usłudze Microsoft Defender](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2).
 
-## <a name="share-endpoint-alerts-with-microsoft-purview-compliance-portal"></a>Udostępnianie alertów punktu końcowego w portalu zgodności usługi Microsoft Purview
+## <a name="share-endpoint-alerts-with-microsoft-purview-compliance-portal"></a>Udostępnianie alertów punktu końcowego za pomocą portal zgodności Microsoft Purview
 
-Przekazuje alerty zabezpieczeń punktów końcowych i ich stan klasyfikacji do portalu zgodności usługi Microsoft Purview, co pozwala ulepszyć zasady zarządzania ryzykiem wewnętrznym za pomocą alertów i korygować wewnętrzne zagrożenia, zanim spowodują one szkody. Przekazane dane są przetwarzane i przechowywane w tej samej lokalizacji co dane Office 365.
+Przekazuje alerty zabezpieczeń punktu końcowego i ich stan klasyfikacji do portal zgodności Microsoft Purview, co pozwala ulepszyć zasady zarządzania ryzykiem wewnętrznym za pomocą alertów i korygować ryzyko wewnętrzne, zanim spowodują one szkody. Przekazane dane są przetwarzane i przechowywane w tej samej lokalizacji co dane Office 365.
 
 Po skonfigurowaniu [wskaźników naruszenia zasad zabezpieczeń](/microsoft-365/compliance/insider-risk-management-settings#indicators) w ustawieniach zarządzania ryzykiem wewnętrznym alerty usługi Defender dla punktów końcowych będą udostępniane odpowiednim użytkownikom za pomocą zarządzania ryzykiem wewnętrznym.
+
+## <a name="authenticated-telemetry"></a>Uwierzytelnione dane telemetryczne
+
+Możesz **włączyć** dane telemetryczne uwierzytelnione, aby zapobiec fałszowaniu danych telemetrycznych na pulpicie nawigacyjnym.
 
 ## <a name="microsoft-intune-connection"></a>połączenie Microsoft Intune
 
@@ -215,8 +219,8 @@ Usługę Defender for Endpoint można zintegrować z [Microsoft Intune](/intune/
 
 Ta funkcja jest dostępna tylko wtedy, gdy masz następujące wymagania wstępne:
 
-- Licencjonowana dzierżawa dla Enterprise Mobility + Security E3 i Windows E5 (lub Microsoft 365 Enterprise E5)
-- Aktywne środowisko Microsoft Intune z Intune zarządzanymi urządzeniami Windows [dołączonymi do usługi Azure AD](/azure/active-directory/devices/concept-azure-ad-join/).
+- Licencjonowana dzierżawa dla Enterprise Mobility + Security E3 i systemu Windows E5 (lub Microsoft 365 Enterprise E5)
+- Aktywne środowisko Microsoft Intune z Intune zarządzanymi urządzeniami z systemem Windows [Azure AD przyłączonymi](/azure/active-directory/devices/concept-azure-ad-join/).
 
 ### <a name="conditional-access-policy"></a>Zasady dostępu warunkowego
 

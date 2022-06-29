@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Administratorzy mogą dowiedzieć się, jak używać portalu Przesyłania w portalu Microsoft 365 Defender do przesyłania podejrzanych wiadomości e-mail, podejrzanych wiadomości phishingowych, spamu i innych potencjalnie szkodliwych wiadomości, adresów URL i załączników wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd56ce39cbb1d48470742f80a8b07747dd52f33a
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 280b609f39431759216ab4e40cfb5d01752b6514
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66116049"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487702"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Przesyłanie do firmy Microsoft podejrzanych wiadomości spamowych, adresów URL i plików przy użyciu portalu Przesyłania
 
@@ -32,7 +32,7 @@ ms.locfileid: "66116049"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 
-W Microsoft 365 organizacjach ze skrzynkami pocztowymi Exchange Online administratorzy mogą przesyłać wiadomości e-mail, adresy URL i załączniki do firmy Microsoft za pomocą portalu Przesyłania w portalu Microsoft 365 Defender w celu przesyłania wiadomości e-mail, adresów URL i załączników do firmy Microsoft w celu skanowania.
+W organizacjach platformy Microsoft 365 z Exchange Online skrzynkami pocztowymi administratorzy mogą przesyłać wiadomości e-mail, adresy URL i załączniki do firmy Microsoft za pomocą portalu Przesyłania w portalu Microsoft 365 Defender do przesyłania wiadomości e-mail, adresów URL i załączników do firmy Microsoft w celu skanowania.
 
 Po przesłaniu wiadomości e-mail do analizy otrzymasz:
 
@@ -46,7 +46,7 @@ Po przesłaniu wiadomości e-mail do analizy otrzymasz:
 
 Aby uzyskać inne sposoby przesyłania wiadomości e-mail, adresów URL i załączników do firmy Microsoft, zobacz [Zgłaszanie wiadomości i plików do firmy Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak używać przesłanych przez administratorów w Ochrona usługi Office 365 w usłudze Microsoft Defender do przesyłania komunikatów do firmy Microsoft w celu oceny. 
+Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak używać przesłanych przez administratorów w Ochrona usługi Office 365 w usłudze Microsoft Defender do przesyłania komunikatów do firmy Microsoft w celu oceny.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
@@ -376,11 +376,11 @@ Jeśli wdrożono [dodatek Komunikat raportu](enable-the-report-message-add-in.md
 > [!NOTE]
 > Jeśli organizacje są skonfigurowane do wysyłania wiadomości zgłoszonych przez użytkownika tylko do niestandardowej skrzynki pocztowej, zgłoszone wiadomości będą wyświetlane w **wiadomościach zgłoszonych przez użytkownika** , ale ich wyniki będą zawsze puste (ponieważ nie zostałyby ponownie przeskanowane).
 
-### <a name="undo-user-submissions"></a>Cofanie przesyłania przez użytkownika
+## <a name="undo-user-submissions"></a>Cofanie przesyłania przez użytkownika
 
 Gdy użytkownik prześle podejrzaną wiadomość e-mail do niestandardowej skrzynki pocztowej, użytkownik i administrator nie będą mogli cofnąć przesyłania. Jeśli użytkownik chce odzyskać wiadomość e-mail, będzie on dostępny do odzyskania w folderach Elementy usunięte lub Wiadomości-śmieci.
 
-### <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Konwertowanie wiadomości zgłoszonych przez użytkownika z niestandardowej skrzynki pocztowej na przesyłanie przez administratora
+## <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Konwertowanie wiadomości zgłoszonych przez użytkownika z niestandardowej skrzynki pocztowej na przesyłanie przez administratora
 
 Jeśli niestandardowa skrzynka pocztowa została skonfigurowana do przechwytywania wiadomości zgłoszonych przez użytkowników bez wysyłania wiadomości do firmy Microsoft, możesz znaleźć i wysłać określone wiadomości do firmy Microsoft w celu analizy.
 
@@ -398,3 +398,20 @@ Na karcie **Komunikaty zgłaszane przez użytkownika** wybierz komunikat z listy
 Jeśli komunikat zostanie zgłoszony firmie Microsoft, wartość **Przekonwertowane na przesyłanie przez administratora** zmieni się z **nie** na **tak**. Możesz bezpośrednio uzyskać dostęp do przesyłania przez administratora, klikając pozycję **Wyświetl przekonwertowane przesłanie administratora** z menu przepełnienia wewnątrz wysuwanego przesyłania odpowiedniego komunikatu zgłoszonego przez użytkownika.
 
 :::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Opcja wyświetlania utworzonego przesłania przez administratora na podstawie komunikatu zgłoszonego przez użytkownika.":::
+
+## <a name="view-associated-alert-for-user-and-admin-email-submissions"></a>Wyświetlanie skojarzonego alertu dla przesłanych wiadomości e-mail użytkowników i administratorów
+
+> [!IMPORTANT]
+> Informacje w tej sekcji dotyczą tylko Ochrona usługi Office 365 w usłudze Defender planu 2 lub nowszego.
+>
+> Obecnie przesyłanie przez użytkowników generuje alerty tylko dla komunikatów zgłaszanych jako wyłudzanie informacji.
+
+Dla każdego użytkownika zgłoszonego wiadomości wyłudzającej informacje i przesłania wiadomości e-mail administratora jest generowany odpowiedni alert.
+
+Aby wyświetlić odpowiedni alert dla wiadomości wyłudzania informacji zgłoszonych przez użytkownika, wybierz kartę **Komunikaty zgłaszane przez użytkownika** , a następnie kliknij dwukrotnie komunikat, aby otworzyć wysuwany komunikat przesyłania. Kliknij ikonę ![Więcej opcji.](../../media/m365-cc-sc-more-actions-icon.png) **Więcej opcji** , a następnie wybierz pozycję  **Wyświetl alert**.
+
+:::image type="content" source="../../media/alert-from-user-submission.png" alt-text="Opcja wyświetlania powiązanego alertu z wiadomości wyłudzającej informacje zgłoszonej przez użytkownika.":::
+
+Aby wyświetlić odpowiedni alert dotyczący przesyłania wiadomości e-mail przez administratora, wybierz kartę **Wiadomości e-mail** , a następnie kliknij dwukrotnie wiadomość, aby otworzyć wysuwany komunikat przesyłania. Wybierz pozycję **Wyświetl alert** w opcji **Otwórz jednostkę poczty e-mail** .
+
+:::image type="content" source="../../media/alert-from-admin-submission.png" alt-text="Opcja wyświetlania powiązanego alertu z poziomu przesłania przez administratora.":::

@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 2cd146cfb0fe9b6af10f562bbf6eb00bc5bf9a3d
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 8cacce248561acc0e51fb40c6b5f48b33f6d2de7
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078401"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487210"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft Defender for Cloud Apps w Microsoft 365 Defender (wersja zapoznawcza)
 
@@ -38,7 +38,7 @@ ms.locfileid: "66078401"
 Microsoft Defender for Cloud Apps jest teraz częścią Microsoft 365 Defender. Portal Microsoft 365 Defender umożliwia administratorom zabezpieczeń wykonywanie zadań zabezpieczeń w jednej lokalizacji. Uprości to przepływy pracy i doda funkcje innych usług Microsoft 365 Defender. Microsoft 365 Defender będzie miejscem do monitorowania zabezpieczeń i zarządzania nimi w ramach tożsamości, danych, urządzeń, aplikacji i infrastruktury firmy Microsoft.
 
 Analitycy SOC będą mogli klasyfikować, badać i polować na wszystkie obciążenia Microsoft 365 Defender, w tym aplikacje w chmurze.
-Defender dla Chmury Alerty aplikacji będą nadal wyświetlane w kolejce zdarzeń Microsoft 365 Defender i w kolejce alertów, ale teraz z odpowiednią zawartością na stronach alertów dostępnych w portalu Microsoft 365 Defender w jednolitym formacie z odpowiednimi dostosowaniami do każdego typu alertów.
+Alerty usługi Defender for Cloud Apps będą nadal wyświetlane w kolejce zdarzeń Microsoft 365 Defender i w kolejce alertów, ale teraz z odpowiednią zawartością na stronach alertów dostępnych w portalu Microsoft 365 Defender w ujednoliconym formacie z odpowiednimi dostosowaniami do każdego typu alertów.
 
 Przyjrzyj się Microsoft 365 Defender pod adresem <https://security.microsoft.com>.
 
@@ -49,7 +49,7 @@ Dowiedz się więcej o korzyściach: [Omówienie Microsoft 365 Defender](microso
 Obraz i poniższa tabela zawierają listę zmian w nawigacji między Microsoft Defender for Cloud Apps i Microsoft 365 Defender.
 
 > [!NOTE]
-> Niektóre strony nie zostały jeszcze zmigrowane i powinny być dostępne w portalu usługi Defender dla Chmury Apps.
+> Niektóre strony nie zostały jeszcze zmigrowane i powinny być dostępne w portalu usługi Defender for Cloud Apps.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/defender-cloud-apps-m365-defender.png" alt-text="Nowe lokalizacje w portalu Microsoft 365 Defender" lightbox="../../media/defender-cloud-apps-m365-defender.png":::
@@ -65,29 +65,29 @@ Obraz i poniższa tabela zawierają listę zmian w nawigacji między Microsoft D
 | Wykaz aplikacji w chmurze |  Aplikacje w chmurze — wykaz aplikacji > Cloud |
 | Tworzenie raportu migawki usługi Cloud Discovery | Na stronie Cloud Discovery w obszarze Akcje |
 | Dziennik aktywności | Aplikacje w chmurze — dziennik aktywności > |
-| Pliki | pozostanie w portalu aplikacji Defender dla Chmury |
+| Pliki | pozostanie w portalu usługi Defender for Cloud Apps |
 | Użytkownicy i konta | Tożsamości > zasobów |
-| Konfiguracja zabezpieczeń | pozostanie w portalu aplikacji Defender dla Chmury |
+| Konfiguracja zabezpieczeń | pozostanie w portalu usługi Defender for Cloud Apps |
 | Stan zabezpieczeń tożsamości | [Oceny stanu zabezpieczeń tożsamości Microsoft Defender for Identity](/defender-for-identity/isp-overview) |
 | Aplikacje OAuth | Aplikacje w chmurze — > aplikacje OAuth |
-| Połączone aplikacje | pozostanie w portalu aplikacji Defender dla Chmury |
+| Połączone aplikacje | pozostanie w portalu usługi Defender for Cloud Apps |
 
 > [!NOTE]
-> Nowe środowisko aplikacji Defender dla Chmury w portalu Microsoft 365 Defender jest obecnie dostępne dla wszystkich użytkowników szczegółowo w [temacie Zarządzanie dostępem administratora](/defender-cloud-apps/manage-admins), z wyjątkiem tych z rolami zdefiniowanymi [w wbudowanych rolach administracyjnych w usłudze Defender dla Chmury Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
+> Nowe środowisko usługi Defender for Cloud Apps w portalu Microsoft 365 Defender jest obecnie dostępne dla wszystkich użytkowników opisanych w [temacie Zarządzanie dostępem administratora](/defender-cloud-apps/manage-admins), z wyjątkiem **administratora aplikacji/wystąpienia**, **administratora grupy użytkowników**, **administratora globalnego usługi Cloud Discovery** i **administratora raportu usługi Cloud Discovery**, zgodnie z definicją [w obszarze Wbudowane role administratora w usłudze Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
 
 ## <a name="whats-changed"></a>Co się zmieniło
 
-Dowiedz się więcej o zmianach wprowadzonych dzięki integracji aplikacji Defender dla Chmury i Microsoft 365 Defender.
+Dowiedz się więcej o zmianach wprowadzonych dzięki integracji usługi Defender for Cloud Apps i Microsoft 365 Defender.
 
 ### <a name="global-search"></a>Wyszukiwanie globalne
 
-Wyszukiwanie globalne w Microsoft 365 Defender (przy użyciu paska wyszukiwania w górnej części strony) zawiera teraz dodatkową jednostkę z możliwością wyszukiwania: umożliwia wyszukiwanie połączonych aplikacji w usłudze Defender dla Chmury Apps.
+Wyszukiwanie globalne w Microsoft 365 Defender (przy użyciu paska wyszukiwania w górnej części strony) zawiera teraz dodatkową jednostkę z możliwością wyszukiwania: umożliwia wyszukiwanie połączonych aplikacji w usłudze Defender for Cloud Apps.
 
 :::image type="content" source="../../media/global-search-apps.png" alt-text="Wyszukaj połączone aplikacje.":::
 
 ### <a name="assets-and-identities"></a>Zasoby i tożsamości
 
-W ramach tworzenia dedykowanej sekcji **Zasoby**, która obejmuje całe środowisko Microsoft 365 Defender, sekcja **Użytkownicy i konta** Defender dla Chmury Apps została zmieniona na sekcję **Tożsamości**. Nie są oczekiwane żadne zmiany funkcjonalności.
+W ramach tworzenia dedykowanej sekcji **Zasobów** obejmującej całe środowisko Microsoft 365 Defender sekcja **Użytkownicy i konta** usługi Defender for Cloud Apps została zmieniona na sekcję **Tożsamości**. Nie są oczekiwane żadne zmiany funkcjonalności.
 
 ## <a name="related-information"></a>Informacje pokrewne
 

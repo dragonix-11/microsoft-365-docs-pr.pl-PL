@@ -21,14 +21,14 @@ ms.custom:
 search.appverid: MET150
 description: Po zamknięciu konta w firmie Microsoft wszystkie informacje związane z Twoim kontem zostaną usunięte, w tym licencje, użytkownicy i dane użytkowników.
 ms.date: 04/02/2021
-ms.openlocfilehash: c036a4cda929d58265a088b15a43772caacb0b94
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: a14dd1153d8030dd953c58404902a891aeefdaf9
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102465"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491764"
 ---
-# <a name="close-your-account"></a>Zamknij konto
+# <a name="close-your-microsoft-account"></a>Zamykanie konta Microsoft
 
 Po zamknięciu konta Microsoft usunięte zostaną wszystkie informacje dotyczące tego konta. Informacje te obejmują subskrypcje, licencje, metody płatności, użytkowników i ich dane.
 
@@ -42,13 +42,13 @@ Musisz być administratorem globalnym lub administratorem ds. rozliczeń, aby wy
 
 Usuń wszystkich użytkowników z wyjątkiem jednego administratora globalnego. Administrator globalny wykonuje kroki, aby zamknąć konto. Aby można było usunąć katalog na końcu tego procesu, musisz usunąć wszystkich innych użytkowników.
 
-Jeśli użytkownicy są synchronizowani ze środowiska lokalnego, najpierw wyłącz synchronizację, a następnie usuń użytkowników w katalogu w chmurze przy użyciu poleceń cmdlet Azure-Portal lub Azure PowerShell.
+Jeśli użytkownicy są synchronizowani ze środowiska lokalnego, najpierw wyłącz synchronizację, a następnie usuń użytkowników w katalogu w chmurze przy użyciu poleceń cmdlet Azure Portal lub Azure PowerShell.
 
 Aby usunąć użytkowników, zobacz [Administrator zarządzania użytkownikami: Usuwanie co najmniej jednego użytkownika](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365).
 
 Możesz również użyć polecenia cmdlet [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) programu PowerShell, aby zbiorczo usuwać użytkowników.
 
-Jeśli Organizacja używa usługi Active Directory synchronizowanej z Microsoft Azure Active Directory (Azure AD), zamiast tego usuń konto użytkownika z usługi Active Directory. Aby uzyskać instrukcje, zobacz [Zbiorcze usuwanie użytkowników w Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
+Jeśli Organizacja używa usługi Active Directory synchronizowanej z Microsoft Azure Active Directory (Azure AD), zamiast tego usuń konto użytkownika z usługi Active Directory. Aby uzyskać instrukcje, zobacz [Zbiorcze usuwanie użytkowników w usłudze Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Krok 2. Anulowanie wszystkich aktywnych subskrypcji
 
@@ -72,7 +72,7 @@ Jeśli Organizacja używa usługi Active Directory synchronizowanej z Microsoft 
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Krok 4. Wyłączanie uwierzytelniania wieloskładnikowego
 
-1. Zaloguj się do centrum administracyjnego przy użyciu konta глобальный администратор. Aby sprawdzić, jakie role masz, zobacz [Sprawdzanie ról administratorów w organizacji](../admin/add-users/assign-admin-roles.md#check-admin-roles-in-your-organization).
+1. Zaloguj się do centrum administracyjnego przy użyciu konta administrator globalny. Aby sprawdzić, jakie role masz, zobacz [Sprawdzanie ról administratorów w organizacji](../admin/add-users/assign-admin-roles.md#check-admin-roles-in-your-organization).
 2. Przejdź do strony **Użytkownicy** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">aktywni użytkownicy</a> .
 3. Wybierz **pozycję Uwierzytelnianie wieloskładnikowe**.
 4. Na stronie uwierzytelniania wieloskładnikowego wyłącz wszystkie konta z wyjątkiem aktualnie używanego konta administratora globalnego.
@@ -80,9 +80,9 @@ Jeśli Organizacja używa usługi Active Directory synchronizowanej z Microsoft 
 Program [PowerShell umożliwia również wyłączenie uwierzytelniania wieloskładnikowego dla wielu użytkowników](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell).
 
 
-## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Krok 5. Usuwanie katalogu w Azure Active Directory
+## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Krok 5. Usuwanie katalogu w usłudze Azure Active Directory
 
-1. Zaloguj się do <a href="https://aad.portal.azure.com/" target="_blank">centrum administracyjnego Azure AD</a> przy użyciu konta глобальный администратор.
+1. Zaloguj się do <a href="https://aad.portal.azure.com/" target="_blank">centrum administracyjnego Azure AD</a> przy użyciu konta administrator globalny.
 2. Wybierz pozycję **Azure Active Directory**.
 3. Przejdź do organizacji, którą chcesz usunąć.
 4. Wybierz pozycję **Usuń dzierżawę**.

@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Dowiedz się, jak skonfigurować i chronić konta administratorów w Microsoft 365 Business Premium.
-ms.openlocfilehash: 1428ee6b447f3f841e7e8e9b77cfd82c2f7a6444
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: e20fa8f408668287065f6aa1e30490fd8e3c2fec
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320016"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489930"
 ---
 # <a name="protect-your-administrator-accounts-in-microsoft-365-business-premium"></a>Ochrona kont administratorów w Microsoft 365 Business Premium
 
@@ -36,11 +36,11 @@ Ponieważ konta administratorów mają podwyższone uprawnienia, są one cennymi
 - Jak skonfigurować dodatkowe konto administratora w nagłych wypadkach.
 - Jak chronić te konta.
 
-Po utworzeniu konta w celu Microsoft 365 i wprowadzeniu informacji automatycznie stajesz się administratorem globalnym (nazywanym również administratorem globalnym). Administrator globalny ma ostateczną kontrolę nad kontami użytkowników i wszystkimi innymi ustawieniami w centrum administracyjnym firmy Microsoft ([https://admin.microsoft.com](https://admin.microsoft.com)), ale istnieje wiele różnych rodzajów kont administratorów o różnym stopniu dostępu. Zobacz [informacje o rolach administratora](/office365/admin/add-users/about-admin-roles) , aby uzyskać informacje o różnych poziomach dostępu dla każdego rodzaju roli administratora.
+Gdy zarejestrujesz się w usłudze Microsoft 365 i wprowadzisz swoje informacje, automatycznie zostaniesz administratorem globalnym (nazywanym również administratorem globalnym). Administrator globalny ma ostateczną kontrolę nad kontami użytkowników i wszystkimi innymi ustawieniami w centrum administracyjnym firmy Microsoft ([https://admin.microsoft.com](https://admin.microsoft.com)), ale istnieje wiele różnych rodzajów kont administratorów o różnym stopniu dostępu. Zobacz [informacje o rolach administratora](/office365/admin/add-users/about-admin-roles) , aby uzyskać informacje o różnych poziomach dostępu dla każdego rodzaju roli administratora.
 
 ## <a name="create-additional-admin-accounts"></a>Tworzenie dodatkowych kont administratorów
 
-Używaj kont administratora tylko do administrowania. Administratorzy powinni mieć oddzielne konto użytkownika do regularnego korzystania z aplikacji Office i używać ich konta administracyjnego tylko wtedy, gdy jest to konieczne do zarządzania kontami i urządzeniami oraz podczas pracy nad innymi funkcjami administratora. Dobrym pomysłem jest również usunięcie licencji Microsoft 365 z kont administratorów, aby nie trzeba było za nie płacić.
+Używaj kont administratora tylko do administrowania. Administratorzy powinni mieć oddzielne konto użytkownika do regularnego korzystania z aplikacji pakietu Office i używać ich konta administracyjnego tylko wtedy, gdy jest to konieczne do zarządzania kontami i urządzeniami oraz podczas pracy z innymi funkcjami administratora. Dobrym pomysłem jest również usunięcie licencji platformy Microsoft 365 z kont administratorów, aby nie trzeba było za nie płacić.
 
 Chcesz skonfigurować co najmniej jedno dodatkowe konto administratora globalnego, aby przyznać administratorowi dostęp do innego zaufanego pracownika. Możesz również utworzyć oddzielne konta administratora do zarządzania użytkownikami (ta rola nosi nazwę **Administrator zarządzania użytkownikami**). Aby uzyskać więcej informacji, zobacz [o rolach administratora](/office365/admin/add-users/about-admin-roles).
 
@@ -56,7 +56,7 @@ Aby utworzyć dodatkowe konta administratora:
 
  1. Wprowadź i skonfiguruj informacje o **licencjach produktów** .
 
- 1. W **obszarze Ustawienia opcjonalne** zdefiniuj rolę użytkownika, w tym w razie potrzeby dodaj dostęp do centrum administracyjnego.
+ 1. W **obszarze Ustawienia opcjonalne** zdefiniuj rolę użytkownika, w tym w razie potrzeby dodaj dostęp Administracja centrum.
 
     :::image type="content" source="media/m365bp-global-admin.png" alt-text="Zdefiniuj nowe role użytkowników.":::
 

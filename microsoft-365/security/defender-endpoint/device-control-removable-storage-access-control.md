@@ -1,5 +1,5 @@
 ---
-title: Ochrona punktu końcowego w usłudze Microsoft Defender Storage Access Control wymienne kontrolki urządzenia, wymienne nośniki magazynu
+title: Ochrona punktu końcowego w usłudze Microsoft Defender Access Control magazynu wymiennego sterowania urządzeniami, wymiennych nośników magazynu
 description: Przewodnik po Ochrona punktu końcowego w usłudze Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,25 +14,25 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/20/2022
-ms.openlocfilehash: 78eb4f9cb65fb5eec54747a256abf290a43deb2f
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.date: 06/24/2022
+ms.openlocfilehash: d9ff97aa50a03c1a75f073328a250a9acc3faf54
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185464"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490758"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Ochrona punktu końcowego w usłudze Microsoft Defender Storage Access Control wymienna kontrolki urządzenia
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Ochrona punktu końcowego w usłudze Microsoft Defender Access Control magazynu wymiennego sterowania urządzeniami
 
 **Dotyczy:**
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 
 > [!NOTE]
-> Zarządzanie zasady grupy i zarządzanie Intune OMA-URI/niestandardowe zarządzanie zasadami tego produktu są teraz ogólnie dostępne (4.18.2106): Zobacz [blog Tech Community: Ochrona wymiennego magazynu i drukarki za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
+> Zarządzanie zasady grupy i zarządzanie Intune OMA-URI/niestandardowe zarządzanie zasadami tego produktu są teraz ogólnie dostępne (4.18.2106): Zobacz [Blog społeczności technicznej: Ochrona wymiennego magazynu i drukarki za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
-## <a name="device-control-removable-storage-access-control-overview"></a>Omówienie Storage Access Control wymiennych kontrolek urządzeń
+## <a name="device-control-removable-storage-access-control-overview"></a>Omówienie Access Control magazynu wymiennego kontrolki urządzenia
 
-Ochrona punktu końcowego w usłudze Microsoft Defender funkcja Storage Access Control wymiennego sterowania urządzeniami umożliwia przeprowadzanie inspekcji, zezwalanie na odczyt, zapis lub wykonywanie dostępu do magazynu wymiennego z wykluczeniem lub bez nich.
+Ochrona punktu końcowego w usłudze Microsoft Defender funkcja Access Control magazynu wymiennego kontroli urządzeń umożliwia przeprowadzanie inspekcji, zezwalanie na odczyt, zapis lub wykonywanie dostępu do magazynu wymiennego z wykluczeniem lub bez nich.
 
 |Uprawnień|Uprawnienia|
 |---|---|
@@ -43,39 +43,41 @@ Ochrona punktu końcowego w usłudze Microsoft Defender funkcja Storage Access C
 |Obsługa oparta na użytkownikach|Tak|
 |Obsługa oparta na maszynie|Tak|
 
-Ochrona punktu końcowego w usłudze Microsoft Defender funkcja Storage Access Control wymiennego sterowania urządzeniami zapewnia następujące możliwości:
+Ochrona punktu końcowego w usłudze Microsoft Defender funkcja Access Control magazynu wymiennego sterowania urządzeniami zapewnia następujące możliwości:
 
 |Możliwości|Opis|Wdrażanie za pośrednictwem Intune|Wdrażanie za pośrednictwem zasady grupy|
 |---|---|---|---|
-|Tworzenie wymiennej grupy multimediów|Umożliwia tworzenie wymiennej grupy multimediów wielokrotnego użytku|Krok 4 i 6 w sekcji [Deploying Removable Storage Access Control by using Intune OMA-URI (Wdrażanie Storage Access Control wymiennych przy użyciu identyfikatora OMA-URI Intune](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| Krok 4 i 6 w sekcji [Wdrażanie wymiennych Storage Access Control przy użyciu zasady grupy](#deploying-removable-storage-access-control-by-using-group-policy)|
-|Tworzenie zasad|Umożliwia tworzenie zasad wymuszania każdej wymiennej grupy multimediów|Krok 5 i 7 w sekcji [Deploying Removable Storage Access Control by using Intune OMA-URI (Wdrażanie wymiennych Storage Access Control przy użyciu identyfikatora OMA-URI Intune](#deploying-removable-storage-access-control-by-using-intune-oma-uri))| Kroki 5 i 7 w sekcji [Wdrażanie wymiennych Storage Access Control przy użyciu zasady grupy](#deploying-removable-storage-access-control-by-using-group-policy)|
-|Domyślne wymuszanie|Umożliwia ustawienie domyślnego dostępu (Odmów lub Zezwalaj) na nośnik wymienny, jeśli nie ma żadnych zasad|Krok 2 w sekcji [Deploying Removable Storage Access Control by using Intune OMA-URI (Wdrażanie wymiennych Storage Access Control przy użyciu identyfikatora OMA-URI Intune](#deploying-removable-storage-access-control-by-using-intune-oma-uri) | Krok 2 w sekcji [Deploying Removable Storage Access Control by using zasady grupy (Wdrażanie wymiennych Storage Access Control przy użyciu zasady grupy](#deploying-removable-storage-access-control-by-using-group-policy)|
-|Włączanie lub wyłączanie Storage Access Control wymiennych|Jeśli ustawisz opcję Wyłącz, spowoduje to wyłączenie zasad Storage Access Control wymiennych na tym komputerze| Krok 1 w sekcji [Deploying Removable Storage Access Control by using Intune OMA-URI (Wdrażanie wymiennych Storage Access Control przy użyciu Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri))| Krok 1 w sekcji [Wdrażanie wymiennych Storage Access Control przy użyciu zasady grupy](#deploying-removable-storage-access-control-by-using-group-policy)|
-|Przechwytywanie informacji o pliku|Umożliwia tworzenie zasad w celu przechwytywania informacji o plikach w przypadku korzystania z dostępu do zapisu|  | Krok 10 w sekcji [Wdrażanie wymiennych Storage Access Control przy użyciu zasady grupy](#deploying-removable-storage-access-control-by-using-group-policy) |
+|Tworzenie wymiennej grupy multimediów|Umożliwia tworzenie wymiennej grupy multimediów wielokrotnego użytku|Krok 4 i 6 w sekcji [Deploying Removable Storage Access Control by using Intune OMA-URI (Wdrażanie magazynu wymiennego Access Control przy użyciu identyfikatora OMA-URI Intune](#deploying-removable-storage-access-control-by-using-intune-oma-uri))| Krok 4 i 6 w sekcji [Wdrażanie magazynu wymiennego Access Control przy użyciu zasady grupy](#deploying-removable-storage-access-control-by-using-group-policy)|
+|Tworzenie zasad|Umożliwia tworzenie zasad wymuszania każdej wymiennej grupy multimediów|Krok 5 i 7 w sekcji [Deploying Removable Storage Access Control by using Intune OMA-URI (Wdrażanie magazynu wymiennego Access Control przy użyciu identyfikatora OMA-URI)](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| Kroki 5 i 7 w sekcji [Wdrażanie magazynu wymiennego Access Control przy użyciu zasady grupy](#deploying-removable-storage-access-control-by-using-group-policy)|
+|Domyślne wymuszanie|Umożliwia ustawienie domyślnego dostępu (Odmów lub Zezwalaj) na nośnik wymienny, jeśli nie ma żadnych zasad|Krok 2 w sekcji [Wdrażanie magazynu wymiennego Access Control przy użyciu Intune identyfikatora OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri) | Krok 2 w sekcji [Wdrażanie magazynu wymiennego Access Control przy użyciu zasady grupy](#deploying-removable-storage-access-control-by-using-group-policy)|
+|Włączanie lub wyłączanie magazynu wymiennego Access Control|Jeśli ustawisz ustawienie Wyłącz, spowoduje to wyłączenie zasad Access Control magazynu wymiennego na tym komputerze| Krok 1 w sekcji [Wdrażanie magazynu wymiennego Access Control przy użyciu Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| Krok 1 w sekcji [Wdrażanie magazynu wymiennego Access Control przy użyciu zasady grupy](#deploying-removable-storage-access-control-by-using-group-policy)|
+|Przechwytywanie informacji o pliku|Umożliwia tworzenie zasad w celu przechwytywania informacji o plikach w przypadku korzystania z dostępu do zapisu|  | Krok 10 w sekcji [Wdrażanie magazynu wymiennego Access Control przy użyciu zasady grupy](#deploying-removable-storage-access-control-by-using-group-policy) |
 
 ### <a name="prepare-your-endpoints"></a>Przygotowywanie punktów końcowych
 
-Wdróż Storage Access Control wymienne na urządzeniach Windows 10 i Windows 11, które mają klienta ochrony przed złośliwym kodem w wersji **4.18.2103.3 lub nowszej**.
+Wdróż Access Control magazynu wymiennego na urządzeniach Windows 10 i Windows 11, które mają klienta ochrony przed złośliwym kodem w wersji **4.18.2103.3 lub nowszej**.
 
-- **4.18.2104 lub nowszy**: Dodaj identyfikator SerialNumberId, VID_PID, obsługę obiektów zasad grupy opartych na ścieżce plików, ComputerSid
+- **4.18.2104 lub nowszy**: Dodaj `SerialNumberId`, , `VID_PID`obsługę obiektu zasad grupy opartą na ścieżce plików i `ComputerSid`
 
-- **4.18.2105 lub nowszy**: Dodaj obsługę symboli wieloznacznych dla hardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, kombinacji określonego użytkownika na określonej maszynie, wymiennego dysku SSD (SanDisk Extreme SSD)/obsługa dołączonego interfejsu SCSI (UAS) usb
+- **4.18.2105 lub nowszy**: Dodaj obsługę symboli wieloznacznych dla `HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId`, kombinacji określonego użytkownika na określonej maszynie, wymiennego dysku SSD (SanDisk Extreme SSD)/obsługa scsi dołączonej do usb (UAS)
 
-- **4.18.2107 lub nowszy**: dodaj obsługę Windows Portable Device (WPD) (dla urządzeń przenośnych, takich jak tablety), dodaj nazwę konta do [zaawansowanego wyszukiwania zagrożeń](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
+- **4.18.2107 lub nowszy**: Dodawanie obsługi urządzeń przenośnych z systemem Windows (WPD) (dla urządzeń przenośnych, takich jak tablety); dodaj `AccountName` do [zaawansowanego wyszukiwania zagrożeń](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
+
+- **4.18.2205 lub nowszy**: rozwiń domyślne wymuszanie na **drukarkę**. Jeśli ustawisz opcję **Odmów**, spowoduje to również zablokowanie opcji Drukarka, więc jeśli chcesz zarządzać magazynem, pamiętaj o utworzeniu zasad niestandardowych zezwalających na użycie drukarki.
 
 :::image type="content" source="images/powershell.png" alt-text="Interfejs programu PowerShell" lightbox="images/powershell.png":::
 
 > [!NOTE]
-> Żaden ze składników Zabezpieczenia Windows nie musi być aktywny, ponieważ można uruchamiać Storage Access Control wymienne niezależnie od stanu Zabezpieczenia Windows.
+> Żaden ze składników Zabezpieczenia Windows nie musi być aktywny, ponieważ można uruchomić magazyn wymienny Access Control niezależnie od stanu Zabezpieczenia Windows.
 
-## <a name="device-control-removable-storage-access-control-policies"></a>Zasady Storage Access Control wymiennych kontrolek urządzeń
+## <a name="device-control-removable-storage-access-control-policies"></a>Zasady Access Control magazynu wymiennego sterowania urządzeniami
 
 Aby utworzyć grupę magazynu wymiennego, można użyć następujących właściwości:
 
 > [!NOTE]
 > Komentarze korzystające z notacji `<!-- COMMENT -->` komentarzy XML mogą być używane w plikach XML reguły i grupy, ale muszą znajdować się wewnątrz pierwszego tagu XML, a nie pierwszego wiersza pliku XML.
 
-### <a name="removable-storage-group"></a>Wymienna grupa Storage
+### <a name="removable-storage-group"></a>Grupa magazynu wymiennego
 
 |Nazwa właściwości|Opis|Opcje|
 |---|---|---|
@@ -98,15 +100,15 @@ Aby utworzyć zasady kontroli dostępu, można użyć następujących właściwo
 | **Opcje** | Określa, czy ma być wyświetlane powiadomienie, czy nie |**Po wybraniu opcji Zezwalaj na typ:** <p>0: nic<p>4: wyłącz **auditAllowed** i **AuditDenied** dla tego wpisu. Nawet jeśli ustawienie **Zezwalaj** zostanie skonfigurowane, a ustawienie AuditAllowed zostanie skonfigurowane, system nie wyśle zdarzenia. <p>8: przechwytywanie informacji o pliku i posiadanie kopii pliku jako dowodu na dostęp do zapisu. <p>16: przechwytywanie informacji o pliku na potrzeby dostępu do zapisu. <p>**Po wybraniu opcji Odmów typu**: <p>0: nic<p>4: wyłącz **wartość AuditDenied** dla tego wpisu. Nawet jeśli ustawienie **Blokuj** nastąpi i skonfigurowano ustawienie AuditDenied, system nie wyświetli powiadomienia. <p>**Po **wybraniu opcji Typ AuditAllowed**:** <p>0: nic <p>1: nic <p>2: wyślij zdarzenie<p> **Po **wybraniu opcji Type AuditDenied****: <p>0: nic <p>1: pokaż powiadomienie <p>2: wyślij zdarzenie<p>3: pokaż powiadomienie i wyślij zdarzenie |
 |Maska dostępu|Definiuje dostęp. | **Dostęp na poziomie dysku**: <p>1: Odczyt <p>2: Zapis <p>4: Wykonywanie <p>**Dostęp na poziomie systemu plików**: <p>8: Odczyt systemu plików <p>16: Zapis systemu plików <p>32: Wykonywanie systemu plików <p><p>Możesz mieć wiele dostępu, wykonując operację binarną LUB, na przykład maska dostępu do odczytu i zapisu i wykonywania będzie miała wartość 7; Maska dostępu dla odczytu i zapisu będzie mieć wartość 3.|
 
-## <a name="device-control-removable-storage-access-control-scenarios"></a>Scenariusze Storage Access Control wymiennych kontrolek urządzeń
+## <a name="device-control-removable-storage-access-control-scenarios"></a>Scenariusze Access Control magazynu wymiennego sterowania urządzeniami
 
-Aby ułatwić zapoznanie się z Ochrona punktu końcowego w usłudze Microsoft Defender wymiennymi Storage Access Control, przygotowaliśmy kilka typowych scenariuszy, które należy wykonać.
+Aby ułatwić zapoznanie się z Ochrona punktu końcowego w usłudze Microsoft Defender Access Control magazynu wymiennego, przygotowaliśmy kilka typowych scenariuszy, które należy wykonać.
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>Scenariusz 1. Uniemożliwiaj dostęp do zapisu i wykonywania wszystkim, ale zezwalaj na określone zatwierdzone obiekty USB
 
 1. Tworzenie grup
 
-    1. Grupa 1. Dowolny magazyn wymienny i dysk CD/DVD. Przykładem magazynu wymiennego i dysków CD/DVD jest grupa **9b28fae8-72f7-4267-a1a5-685f747a7146** w przykładowym pliku [Group.xmlAny Removable Storage and CD-DVD.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
+    1. Grupa 1. Dowolny magazyn wymienny i dysk CD/DVD. Przykładem magazynu wymiennego i dysku CD/DVD jest grupa **9b28fae8-72f7-4267-a1a5-685f747a7146** w przykładowym pliku [Group.xmlDowolny magazyn wymienny i dysk CD-DVD](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
     2. Grupa 2. Zatwierdzone bazy danych USB na podstawie właściwości urządzenia. Przykładem tego przypadku użycia jest: Identyfikator wystąpienia — grupa **65fa649a-a111-4912-9294-fb6337a25038** w przykładowym pliku [Group.xmlZatwierdzone obiekty USB](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
@@ -123,7 +125,7 @@ Aby ułatwić zapoznanie się z Ochrona punktu końcowego w usłudze Microsoft D
 
 1. Tworzenie grup
 
-    1. Grupa 1. Dowolny magazyn wymienny i dysk CD/DVD. Przykładem tego przypadku użycia jest grupa **9b28fae8-72f7-4267-a1a5-685f747a7146** w przykładowym pliku [Storage wymiennym i cd-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples).
+    1. Grupa 1. Dowolny magazyn wymienny i dysk CD/DVD. Przykładem tego przypadku użycia jest: Grupa **9b28fae8-72f7-4267-a1a5-685f747a7146** w przykładowym pliku [Group.xmlDowolny magazyn wymienny i DYSK CD-DVD](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
     2. Grupa 2: Niezatwierdzone bazy danych USB na podstawie właściwości urządzenia, na przykład identyfikator dostawcy / identyfikator produktu, przyjazna nazwa — grupa **65fa649a-a111-4912-9294-fb6337a25038** w przykładowym pliku [Group.xmlniezatwierdzone obiekty USBs](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
@@ -136,13 +138,13 @@ Aby ułatwić zapoznanie się z Ochrona punktu końcowego w usłudze Microsoft D
 
     2. Zasady 2: Inspekcja dostępu do zapisu i wykonywania dla innych osób. Przykładem tego przypadku użycia jest: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** w przykładowym [scenariuszu 2 Inspekcja zapisu i wykonywania dostępu do pliku others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
-## <a name="deploying-and-managing-removable-storage-access-control-by-using-intune-oma-uri"></a>Wdrażanie Storage Access Control wymiennych i zarządzanie nimi przy użyciu identyfikatora OMA-URI Intune
+## <a name="deploying-and-managing-removable-storage-access-control-by-using-intune-oma-uri"></a>Wdrażanie Access Control magazynu wymiennego i zarządzanie nim przy użyciu identyfikatora OMA-URI Intune
 
-Funkcja wymiennych Storage Access Control umożliwia stosowanie zasad przy użyciu identyfikatora OMA-URI do użytkownika lub urządzenia lub obu tych elementów.
+Funkcja Access Control magazynu wymiennego umożliwia stosowanie zasad przy użyciu identyfikatora OMA-URI do użytkownika lub urządzenia lub obu tych elementów.
 
 ### <a name="licensing-requirements"></a>Wymagania dotyczące licencjonowania
 
-Przed rozpoczęciem pracy z usługą Removable Storage Access Control musisz potwierdzić [subskrypcję Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Aby uzyskać dostęp do Storage Access Control wymiennych i korzystać z nich, musisz mieć Microsoft 365 E3 lub Microsoft 365 E5.
+Przed rozpoczęciem pracy z usługą Removable Storage Access Control musisz potwierdzić [subskrypcję platformy Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Aby uzyskać dostęp do Access Control magazynu wymiennego i korzystać z niego, musisz mieć Microsoft 365 E3 lub Microsoft 365 E5.
 
 ### <a name="permission"></a>Uprawnienia
 
@@ -152,17 +154,15 @@ W przypadku wdrażania zasad w Intune konto musi mieć uprawnienia do tworzenia,
 - Rola niestandardowa z włączonymi uprawnieniami Utwórz/Edytuj/Aktualizuj/Odczyt/Usuń/Wyświetl raporty dla profilów konfiguracji urządzenia
 - Administrator globalny
 
-### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>Wdrażanie wymiennych Storage Access Control przy użyciu identyfikatora OMA-URI Intune
+### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>Wdrażanie magazynu wymiennego Access Control przy użyciu identyfikatora OMA-URI Intune
 
-Przejdź do centrum administracyjnego Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>) **> Urządzenia > Tworzenie profilu > Platform: Windows 10 i nowszych, Typ profilu: Szablony > Niestandardowe**
+Przejdź do centrum administracyjnego firmy Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>) **> Urządzenia > Tworzenie profilu > Platform: Windows 10 i nowszych, typ profilu: szablony > niestandardowe**
 
-1. Włącz lub wyłącz wymienne Storage Access Control (RSAC):
-
-   Można włączyć Storage Access Control wymienne w następujący sposób:
+1. Włącz lub wyłącz kontrolkę Urządzenia w następujący sposób:
 
    - W obszarze **Ustawienia konfiguracji > niestandardowej** kliknij pozycję **Dodaj**.
    - W okienku **Dodawanie wiersza** wprowadź:
-     - **Nazwa** jako **Włącz funkcję RSAC**
+     - **Nazwa** jako **Włącz kontrolkę urządzenia**
      - **Identyfikator OMA-URI** jako `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
      - **Typ danych** jako **liczba całkowita**
      - **Wartość** **1**
@@ -172,13 +172,13 @@ Przejdź do centrum administracyjnego Microsoft Endpoint Manager (<https://endpo
 
      - Kliknij **Zapisz**.
 
-   :::image type="content" source="images/enable-rsac.png" alt-text="Zrzut ekranu przedstawiający włączanie zasad Storage Access Control wymiennych" lightbox="images/enable-rsac.png":::
+   :::image type="content" source="images/enable-rsac.png" alt-text="Zrzut ekranu przedstawiający włączanie zasad Access Control magazynu wymiennego" lightbox="images/enable-rsac.png":::
 
 2. Ustaw domyślne wymuszanie:
 
-   Możesz ustawić domyślny dostęp (Odmów lub Zezwalaj) na nośnik wymienny, jeśli nie ma żadnych zasad.
+   Możesz ustawić domyślny dostęp (Odmów lub Zezwalaj) dla wszystkich funkcji kontroli urządzenia (`RemovableMediaDevices`, , `CdRomDevices`, `WpdDevices``PrinterDevices`).
 
-   Na przykład masz zasady Odmów lub Zezwalaj dla urządzeń RemovableMediaDevices, ale nie masz żadnych zasad dla urządzeń CdRomDevices lub WpdDevices. Za pomocą tych zasad ustawiono opcję Odmów domyślny, a następnie dostęp odczytu/zapisu/wykonywania do urządzeń CdRomDevices lub WpdDevices zostanie zablokowany.
+   Na przykład masz zasady **Odmów** lub **Zezwalaj** dla `RemovableMediaDevices`programu , ale nie masz zasad dla `CdRomDevices` lub `WpdDevices`. Za pomocą tych zasad można ustawić **opcję Odmów domyślny** , a następnie dostęp do odczytu/zapisu/wykonania lub `CdRomDevices` `WpdDevices` zostanie zablokowany. Jeśli chcesz zarządzać tylko magazynem, pamiętaj o utworzeniu zasad **zezwalania** dla drukarki. W przeciwnym razie to domyślne wymuszanie zostanie również zastosowane do drukarek.
 
    - W okienku **Dodawanie wiersza** wprowadź:
      - **Nazwa** jako **domyślna odmowa**
@@ -208,7 +208,7 @@ Przejdź do centrum administracyjnego Microsoft Endpoint Manager (<https://endpo
 
        Ścieżka pliku XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml>
 
-       Użyj następujących danych XML, aby utworzyć zasady inspekcji dla domyślnego odmów:
+       Użyj następujących danych XML, aby utworzyć zasady inspekcji dla domyślnej odmowy:
 
        :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Zrzut ekranu przedstawiający domyślny plik XML odmowy inspekcji":::
 
@@ -217,17 +217,17 @@ Przejdź do centrum administracyjnego Microsoft Endpoint Manager (<https://endpo
    Grupę magazynu wymiennego można utworzyć z dostępem ReadOnly w następujący sposób:
 
    - W okienku **Dodawanie wiersza** wprowadź:
-     - **Nazwa** **dowolnej grupy Storage wymiennych**
+     - **Nazwa** **dowolnej grupy magazynu wymiennego**
      - **Identyfikator OMA-URI** jako `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
 
-       :::image type="content" source="images/any-removable-storage-group.png" alt-text="Zrzut ekranu przedstawiający tworzenie dowolnej grupy Storage wymiennych" lightbox="images/any-removable-storage-group.png":::
+       :::image type="content" source="images/any-removable-storage-group.png" alt-text="Zrzut ekranu przedstawiający tworzenie dowolnej grupy magazynu wymiennego" lightbox="images/any-removable-storage-group.png":::
 
      - **Typ danych** jako **ciąg (plik XML)**
-       - **Niestandardowy plik XML** jako **dowolny plik Storage wymienny i CD-DVD i WPD Group.xml**
+       - **Niestandardowy kod XML** jako **dowolny magazyn wymienny oraz plik Group.xmlCD-DVD i WPD**
 
          Ścieżka pliku XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml>
 
-         Użyj następujących danych XML, aby utworzyć "Dowolny wymienny Storage i CD-DVD i grupa WPD" z dostępem ReadOnly:
+         Użyj następujących danych XML, aby utworzyć "Dowolny magazyn wymienny oraz dysk CD-DVD i grupę WPD" z dostępem ReadOnly:
 
          :::image type="content" source="images/read-only-group-xml-file.png" alt-text="Zrzut ekranu przedstawiający plik XML grupy tylko do odczytu":::
 
@@ -290,32 +290,34 @@ Przejdź do centrum administracyjnego Microsoft Endpoint Manager (<https://endpo
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Wdrażanie zasad i zarządzanie nimi przy użyciu interfejsu użytkownika Intune
 
-Ta funkcja jest dostępna w centrum administracyjnym Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>). Przejdź do obszaru Tworzenie **zasad tworzenia** obszaru **podatnego** >  **na ataki zabezpieczeń** >  punktu końcowego. Wybierz **pozycję Platforma: Windows 10 i nowsze** z **opcją Profil: Kontrola urządzenia**.
+Ta funkcja jest dostępna w centrum administracyjnym microsoft Endpoint Manager (<https://endpoint.microsoft.com/>). Przejdź do obszaru Tworzenie **zasad tworzenia** obszaru **podatnego** >  **na ataki zabezpieczeń** >  punktu końcowego. Wybierz **pozycję Platforma: Windows 10 i nowsze** z **opcją Profil: Kontrola urządzenia**.
 
-## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>Wdrażanie Storage Access Control wymiennych i zarządzanie nimi przy użyciu zasady grupy
+## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>Wdrażanie Access Control magazynu wymiennego i zarządzanie nim przy użyciu zasady grupy
 
-Funkcja wymiennych Storage Access Control umożliwia stosowanie zasad przy użyciu zasady grupy do użytkownika lub urządzenia lub obu tych elementów.
+Funkcja Access Control magazynu wymiennego umożliwia stosowanie zasad przy użyciu zasady grupy do użytkownika lub urządzenia lub obu tych elementów.
 
 ### <a name="licensing"></a>Licencjonowanie
 
-Przed rozpoczęciem pracy z usługą Removable Storage Access Control musisz potwierdzić [subskrypcję Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Aby uzyskać dostęp do Storage Access Control wymiennych i korzystać z nich, musisz mieć Microsoft 365 E3 lub Microsoft 365 E5.
+Przed rozpoczęciem pracy z usługą Removable Storage Access Control musisz potwierdzić [subskrypcję platformy Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Aby uzyskać dostęp do Access Control magazynu wymiennego i korzystać z niego, musisz mieć Microsoft 365 E3 lub Microsoft 365 E5.
 
-### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>Wdrażanie Storage Access Control wymiennych przy użyciu zasady grupy
+### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>Wdrażanie magazynu wymiennego Access Control przy użyciu zasady grupy
 
-1. Włącz lub wyłącz Storage Access Control wymienne:
+1. Włącz lub wyłącz Access Control magazynu wymiennego:
 
-   Funkcję Wymienne Storage Access Control (RSAC) można włączyć w następujący sposób:
+   Kontrolkę Urządzenia można włączyć w następujący sposób:
 
-   - Przejdź do pozycji **Konfiguracja komputera > szablony administracyjne > Windows składniki > Program antywirusowy Microsoft Defender > funkcje > kontrolki urządzenia**
+   - Przejdź do **obszaru Konfiguracja komputera > szablony administracyjne > składników systemu Windows > funkcji > programu antywirusowego Microsoft Defender > kontrolki urządzenia**
    - W oknie **Kontrola urządzenia** wybierz pozycję **Włączone**.
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="Zrzut ekranu przedstawiający włączanie funkcji RSAC przy użyciu zasady grupy " lightbox="images/enable-rsac-gp.png":::
 
 2. Ustaw domyślne wymuszanie:
 
-   Możesz ustawić domyślny dostęp (Odmów lub Zezwalaj) na nośnik wymienny, jeśli nie ma żadnych zasad w następujący sposób:
+   Możesz ustawić domyślny dostęp (Odmów lub Zezwalaj) dla wszystkich funkcji kontroli urządzenia (RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices).
 
-   - Przejdź do pozycji **Konfiguracja komputera > Szablony administracyjne > Windows składniki > Program antywirusowy Microsoft Defender > funkcje > kontrolce urządzenia > wybierz domyślne wymuszanie kontroli urządzenia**
+   Na przykład masz zasady Odmów lub Zezwalaj dla urządzeń RemovableMediaDevices, ale nie masz żadnych zasad dla urządzeń CdRomDevices lub WpdDevices. Za pomocą tych zasad ustawiono opcję Odmów domyślny, a następnie dostęp odczytu/zapisu/wykonywania do urządzeń CdRomDevices lub WpdDevices zostanie zablokowany. Jeśli chcesz zarządzać magazynem, pamiętaj o utworzeniu zasad Zezwalaj dla drukarki. W przeciwnym razie to domyślne wymuszanie zostanie również zastosowane do drukarki.
+
+   - Przejdź do pozycji **Konfiguracja komputera > szablony administracyjne > składniki systemu Windows > funkcji > programu antywirusowego Microsoft Defender > kontrolki urządzenia > wybierz domyślne wymuszanie kontroli urządzenia**
 
    - W oknie **Wybieranie domyślnego wymuszania kontrolki urządzenia** wybierz opcję **Odmów domyślny**:
 
@@ -361,7 +363,7 @@ Przed rozpoczęciem pracy z usługą Removable Storage Access Control musisz pot
 
    Grupy zasad sterowania urządzeniami można połączyć w jeden plik XML w następujący sposób:
 
-   - Przejdź do pozycji **Konfiguracja** \> komputera **Szablony** \> administracyjne **Windows Składniki** \> **Program antywirusowy Microsoft Defender** \> **Kontrolka** \> **urządzenia Zdefiniuj grupy zasad sterowania urządzeniami**.
+   - Przejdź do **pozycji Konfiguracja** \> komputera **Szablony** \> administracyjne **Składniki** \> systemu Windows Kontrolka **urządzenia** \> **antywirusowego** \> Microsoft Defender **Zdefiniuj grupy zasad sterowania urządzeniami**.
 
     :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="Zrzut ekranu przedstawiający definiowanie grup zasad sterowania urządzeniami" lightbox="images/define-device-control-policy-grps-gp.png":::
 
@@ -377,7 +379,7 @@ Przed rozpoczęciem pracy z usługą Removable Storage Access Control musisz pot
 
    Reguły zasad sterowania urządzeniami można połączyć w jeden plik XML w następujący sposób:
 
-   - Przejdź do pozycji **Konfiguracja komputera > Szablony administracyjne > Windows Składniki > Program antywirusowy Microsoft Defender > Kontrolka urządzenia > Definiowanie reguł zasad sterowania urządzeniami**
+   - Przejdź do **obszaru Konfiguracja komputera > Szablony administracyjne > składniki systemu Windows > program antywirusowy Microsoft Defender > Kontrolka urządzeń > Definiowanie reguł zasad sterowania urządzeniami**
 
      :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="Zrzut ekranu przedstawiający definiowanie reguł zasad sterowania urządzeniami" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
 
@@ -393,17 +395,17 @@ Przed rozpoczęciem pracy z usługą Removable Storage Access Control musisz pot
 
     Jeśli chcesz mieć kopię pliku (dowody) podczas dostępu do zapisu, musisz ustawić lokalizację, w której system może zapisać kopię.
 
-    - Przejdź do **obszaru Konfiguracja komputera > Szablony administracyjne > Windows Składniki > Program antywirusowy Microsoft Defender > Kontrolka urządzenia > Zdefiniuj zdalną lokalizację danych dowodowych kontrolki urządzenia**.
+    - Przejdź do pozycji **Konfiguracja komputera > szablony administracyjne > składniki systemu Windows > program antywirusowy Microsoft Defender > kontrolki urządzenia > definiowania zdalnej lokalizacji danych dowodowych kontroli urządzenia**.
 
     - W oknie **Definiowanie zdalnej lokalizacji danych dowodowych kontrolki urządzenia** wybierz pozycję **Włączone** i wprowadź ścieżkę folderu udziału lokalnego lub sieciowego.
 
       :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="Zrzut ekranu przedstawiający zdalną lokalizację danych dowodowych definiowania kontrolki urządzenia" lightbox="images/evidence-data-remote-location-gp.png":::
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Wyświetlanie danych Storage Access Control wymiennych kontrolek urządzenia w Ochrona punktu końcowego w usłudze Microsoft Defender
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Wyświetlanie danych magazynu wymiennego kontrolki urządzenia Access Control w Ochrona punktu końcowego w usłudze Microsoft Defender
 
-W [portalu Microsoft 365 Defender](https://security.microsoft.com/advanced-hunting) są wyświetlane zdarzenia wyzwalane przez Storage Access Control wymienne kontrolki urządzenia. Aby uzyskać dostęp do zabezpieczeń Microsoft 365, musisz mieć następującą subskrypcję:
+W [portalu Microsoft 365 Defender](https://security.microsoft.com/advanced-hunting) są wyświetlane zdarzenia wyzwalane przez Access Control magazynu wymiennego kontroli urządzeń. Aby uzyskać dostęp do zabezpieczeń platformy Microsoft 365, musisz mieć następującą subskrypcję:
 
-- Microsoft 365 raportowania E5
+- Raportowanie platformy Microsoft 365 for E5
 
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
@@ -457,7 +459,7 @@ Identyfikator GUID można wygenerować za pośrednictwem open source online lub 
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>Jakie są ograniczenia dotyczące wymiennych nośników magazynu i zasad?
 
-W centrum administracyjnym Microsoft Endpoint Manager (Intune) lub za pośrednictwem interfejs Graph API firmy Microsoft wywołanie zaplecza odbywa się za pośrednictwem identyfikatora OMA-URI (pobierz do odczytu lub poprawki w celu zaktualizowania), a zatem ograniczenie jest takie samo jak dowolny niestandardowy profil konfiguracji OMA-URI w firmie Microsoft, który oficjalnie zawiera 350 000 znaków dla plików XML.
+W centrum administracyjnym firmy Microsoft Endpoint Manager (Intune) lub za pośrednictwem interfejs Graph API firmy Microsoft wywołanie zaplecza odbywa się za pośrednictwem identyfikatora OMA-URI (get to read lub PATCH to update), a zatem ograniczenie jest takie samo jak każdy niestandardowy profil konfiguracji OMA-URI w firmie Microsoft, który oficjalnie zawiera 350 000 znaków dla plików XML.
 
 Na przykład jeśli potrzebujesz dwóch bloków wpisów na identyfikator SID użytkownika do "Zezwalaj"/"Inspekcja dozwolonych" określonych użytkowników i dwóch bloków wpisów na końcu "Odmów" wszystkim, będziesz mógł zarządzać 2276 użytkownikami.
 
@@ -483,7 +485,7 @@ Jako administrator możesz uruchomić polecenie "Get-MpComputerStatus" w program
 
 ### <a name="how-can-i-know-which-machine-is-using-out-of-date-antimalware-client-version-in-the-organization"></a>Skąd mogę wiedzieć, która maszyna używa nieaktualizowej wersji klienta ochrony przed złośliwym kodem w organizacji?
 
-Następujące zapytanie umożliwia pobranie wersji klienta ochrony przed złośliwym kodem w portalu zabezpieczeń Microsoft 365:
+Aby uzyskać wersję klienta ochrony przed złośliwym kodem w portalu zabezpieczeń platformy Microsoft 365, możesz użyć następującego zapytania:
 
 ```kusto
 //check the antimalware client version

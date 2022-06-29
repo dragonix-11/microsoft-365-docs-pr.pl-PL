@@ -4,38 +4,28 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom:
-- TopSMBIssues
-- MSStore_Link
-- TRN_M365B
-- OKR_SMB_Videos
-- AdminSurgePortfolio
-- AdminTemplateSet
-- business_assist
-- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 - GEA150
-ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Resetowanie haseł dla użytkowników w Microsoft 365 Business Premium.
-ms.openlocfilehash: 0232846c4dcc315e80c3a9ec72c171fddd65f72b
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: a2841c3819011237fcb0dce3af58b4009d537904
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090682"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489688"
 ---
 # <a name="reset-passwords-in-microsoft-365-business-premium"></a>Resetowanie haseł w Microsoft 365 Business Premium
 
@@ -55,9 +45,9 @@ Gdy użytkownik zażąda nowego hasła, żądanie resetowania hasła jest wysył
 
 ## <a name="admin-initiated-password-reset"></a>resetowanie hasła inicjowane przez Administracja
 
-Czasami Administracja może chcieć wymusić resetowanie hasła na kontach.
+Zdarza się, że administrator może chcieć wymusić resetowanie hasła na kontach.
 
-1. W centrum administracyjnym przejdź do strony **Użytkownicy** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktywni użytkownicy</a>.
+1. W centrum Administracja przejdź do strony **Użytkownicy** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">aktywni użytkownicy</a>.
 
 2. Na stronie **Aktywni użytkownicy** wybierz określonego użytkownika do zresetowania, a następnie wybierz pozycję **Resetuj hasło**.
 
@@ -67,27 +57,27 @@ Czasami Administracja może chcieć wymusić resetowanie hasła na kontach.
 
 ## <a name="let-users-reset-their-own-passwords"></a>Zezwalanie użytkownikom na resetowanie swoich haseł
 
-Rozważ ustawienie samoobsługowego resetowania haseł dla organizacji, aby nie trzeba było ręcznie resetować haseł dla użytkowników. Mniej pracy dla Ciebie! Aby dowiedzieć się, jak to zrobić, zobacz [Zezwalanie użytkownikom na resetowanie własnych haseł](../admin/add-users/let-users-reset-passwords.md).
+Zdecydowanie zalecamy skonfigurowanie samoobsługowego resetowania hasła. Dzięki temu nie będzie konieczne ręczne resetowanie haseł użytkowników. Aby dowiedzieć się, jak to zrobić, zobacz [Zezwalanie użytkownikom na resetowanie swoich haseł w usłudze Office 365](/admin/add-users/let-users-reset-passwords.md).
 
 ## <a name="reset-my-admin-password"></a>Resetowanie hasła administratora
 
-Wykonaj następujące kroki, jeśli nie pamiętasz hasła, ale możesz zalogować się do Microsoft 365, ponieważ na przykład hasło jest zapisywane w przeglądarce:
+Wykonaj następujące kroki, jeśli nie pamiętasz hasła, ale możesz zalogować się na platformie Microsoft 365, ponieważ na przykład hasło jest zapisywane w przeglądarce:
 
 1. Wybierz swoją nazwę (ikonę) w prawym górnym rogu > **Moje dane****osobowe** konta > .
 
 2. W obszarze **Szczegóły kontaktu** sprawdź dokładnie, czy **alternatywna wiadomość e-mail** jest dokładna i czy podano numer telefonu komórkowego. W przeciwnym razie zmień je teraz.
 
-3. Wyloguj się: wybierz swoje imię i nazwisko w prawym górnym rogu \> **Wyloguj się**.
+3. Wyloguj się: wybierz swoje imię i nazwisko w prawym górnym rogu \> **Wyloguj.**
 
 4. Teraz zaloguj się ponownie: wpisz nazwę \> użytkownika **Dalej**\>, a następnie wybierz pozycję **Nie pamiętam hasła**.
 
 5. Postępuj zgodnie z instrukcjami kreatora, aby zresetować hasło. Korzystając z alternatywnych informacji kontaktowych, kreator sprawdzi, czy jesteś właściwą osobą do resetowania Twojego hasła.
 
-> [!IMPORTANT]
-> Jeśli nie pamiętasz hasła administratora i nie możesz się zalogować:
-> - Poproś innego administratora globalnego w Twojej firmie, aby zresetował hasło za Ciebie.
-> - Upewnij się, że podano alternatywne informacje kontaktowe, w tym numer telefonu komórkowego.
-> - [Skontaktuj się z pomocą techniczną](../admin/get-help-support.md).
+Jeśli nie pamiętasz hasła i nie możesz się zalogować:
+
+- Poproś innego administratora globalnego w Twojej firmie, aby zresetował hasło za Ciebie.
+
+- Upewnij się, że podano alternatywne informacje kontaktowe, w tym numer telefonu komórkowego.
 
 ## <a name="reset-all-business-passwords-for-everyone-at-the-same-time"></a>Resetuj wszystkie hasła biznesowe dla wszystkich jednocześnie
 
@@ -111,15 +101,11 @@ Ta procedura dotyczy firm z dziesiątkami użytkowników. Jeśli masz setki lub 
 
 Aby zresetować hasła dla wielu kont, użyj programu PowerShell. Zapoznaj się z tym wpisem autorstwa Eyal Doron: [Zarządzanie hasłami za pomocą programu PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
 
-Aby uzyskać informacje o przeglądzie, zobacz [Zarządzanie Microsoft 365 przy użyciu programu PowerShell](../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
-  
-## <a name="force-a-password-change-for-all-users-in-your-business"></a>Wymuszanie zmiany hasła dla wszystkich użytkowników w firmie
-
-Zapoznaj się z tym doskonałym wpisem w blogu autorstwa Vasila Micheva, specjalisty Microsoft MVP: [Wymuszanie zmiany haseł dla wszystkich użytkowników w usłudze Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
+Aby uzyskać informacje o przeglądzie, zobacz [Manage Microsoft 365 with PowerShell (Zarządzanie platformą Microsoft 365 przy użyciu programu PowerShell](../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)).
   
 ## <a name="related-content"></a>Zawartość pokrewna
   
 [Zezwalaj użytkownikom na resetowanie własnych haseł](../admin/add-users/let-users-reset-passwords.md)
- [Resetowanie haseł w Microsoft 365 dla firm](../admin/add-users/reset-passwords.md)
-[Ustaw hasło pojedynczego użytkownika, aby nigdy nie wygasało](../admin/add-users/set-password-to-never-expire.md) 
-[Ustaw zasady wygasania haseł dla organizacji](../admin/manage/set-password-expiration-policy.md)
+ [Resetowanie haseł w usłudze Microsoft 365 dla firm](../admin/add-users/reset-passwords.md)
+ [Ustawianie hasła pojedynczego użytkownika tak, aby nigdy nie wygasało](../admin/add-users/set-password-to-never-expire.md) 
+ [Ustawianie zasad wygasania haseł dla organizacji](../admin/manage/set-password-expiration-policy.md)

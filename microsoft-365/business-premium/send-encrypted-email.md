@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/08/2022
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -25,15 +24,15 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Dowiedz się, jak wysyłać zaszyfrowane wiadomości e-mail przy użyciu Outlook.
-ms.openlocfilehash: b9b2251114831bfe0b6364dc4327bd0c21da55e2
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Dowiedz się, jak wysyłać zaszyfrowane wiadomości e-mail przy użyciu programu Outlook.
+ms.openlocfilehash: e4a25cc59d0d92c1905507b1e5db1253f120849c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65316837"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489563"
 ---
-# <a name="encrypt-or-label-sensitive-email"></a>Szyfrowanie lub etykietowanie poufnych wiadomości e-mail
+# <a name="encrypt-or-label-your-sensitive-email-in-microsoft-365"></a>Szyfrowanie lub etykietowanie poufnych wiadomości e-mail na platformie Microsoft 365
 
 Dane i informacje są ważne i często poufne. W tym miejscu celem jest pomoc w ochronie tych poufnych informacji poprzez zapewnienie, że wszyscy używają etykiet poufności, aby adresaci wiadomości e-mail traktowali te informacje z najwyższą poufnością.
 
@@ -49,21 +48,21 @@ Przed wysłaniem wiadomości e-mail z poufnymi lub poufnymi informacjami należy
 
 ## <a name="set-it-up"></a>Konfigurowanie
 
-Jeśli chcesz zaszyfrować komunikat, który nie spełnia wstępnie zdefiniowanej reguły lub administrator nie skonfigurował żadnych reguł, możesz zastosować różne reguły szyfrowania przed wysłaniem komunikatu. Aby wysłać zaszyfrowaną wiadomość z Outlook 2013 lub 2016 r. lub Outlook 2016 dla komputerów Mac, wybierz pozycję **Opcje > Uprawnienia**, a następnie wybierz odpowiednią opcję ochrony. Możesz również wysłać zaszyfrowaną wiadomość, wybierając przycisk **Chroń** w Outlook w sieci Web. Aby uzyskać więcej informacji, zobacz [Wysyłanie, wyświetlanie i odpowiadanie na zaszyfrowane wiadomości w Outlook dla komputera](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
+Jeśli chcesz zaszyfrować komunikat, który nie spełnia wstępnie zdefiniowanej reguły lub administrator nie skonfigurował żadnych reguł, możesz zastosować różne reguły szyfrowania przed wysłaniem komunikatu. Aby wysłać zaszyfrowaną wiadomość z programu Outlook 2013 lub 2016 lub Outlook 2016 dla komputerów Mac, wybierz pozycję **Opcje > Uprawnienia**, a następnie wybierz odpowiednią opcję ochrony. Możesz również wysłać zaszyfrowaną wiadomość, wybierając przycisk **Chroń** w Outlook w sieci Web. Aby uzyskać więcej informacji, zobacz [Wysyłanie, wyświetlanie i odpowiadanie na zaszyfrowane wiadomości w programie Outlook dla komputerów PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
 
-## <a name="admin-settings"></a>Ustawienia administratora
+## <a name="admin-settings"></a>ustawienia Administracja
 
-Wszystkie informacje na temat konfigurowania szyfrowania poczty e-mail można znaleźć w [temacie Szyfrowanie poczty e-mail w Microsoft 365](../compliance/email-encryption.md).
+Możesz dowiedzieć się wszystkiego na temat konfigurowania szyfrowania poczty [e-mail na stronie Szyfrowanie poczty e-mail na platformie Microsoft 365](../compliance/email-encryption.md).
 
 ### <a name="automatically-encrypt-email-messages"></a>Automatyczne szyfrowanie wiadomości e-mail
 
 Administratorzy mogą tworzyć reguły przepływu poczty, aby automatycznie chronić wiadomości e-mail wysyłane i odbierane z kampanii lub firmy. Skonfiguruj reguły szyfrowania wszelkich wychodzących wiadomości e-mail i usuwania szyfrowania z zaszyfrowanych wiadomości pochodzących z organizacji lub odpowiedzi na zaszyfrowane wiadomości wysyłane z organizacji.
 
-Tworzysz reguły przepływu poczty w celu szyfrowania wiadomości e-mail przy użyciu Szyfrowanie wiadomości w Microsoft Purview. Zdefiniuj reguły przepływu poczty na potrzeby wyzwalania szyfrowania wiadomości przy użyciu <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange (EAC).</a>
+Tworzysz reguły przepływu poczty w celu szyfrowania wiadomości e-mail przy użyciu Szyfrowanie wiadomości w Microsoft Purview. Zdefiniuj reguły przepływu poczty na potrzeby wyzwalania szyfrowania wiadomości przy użyciu <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego programu Exchange (EAC).</a>
 
 1. W przeglądarce internetowej zaloguj się przy użyciu konta służbowego, któremu udzielono uprawnień administratora globalnego.
-2. Wybierz kafelek Administrator.
-3. W centrum administracyjnym wybierz pozycję **Centra administracyjne > Exchange**.
+2. Wybierz kafelek Administracja.
+3. W centrum Administracja wybierz **pozycję centra Administracja > Exchange**.
 
 Aby uzyskać więcej informacji, zobacz [Definiowanie reguł przepływu poczty w celu szyfrowania wiadomości e-mail](../compliance/define-mail-flow-rules-to-encrypt-email.md).
 

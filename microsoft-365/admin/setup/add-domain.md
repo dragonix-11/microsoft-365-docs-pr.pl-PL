@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- adminvideo
 - TopSMBIssues
 - SaRA
 - MSStore_Link
@@ -27,13 +28,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Kreator instalacji umożliwia dodanie domeny do usługi Microsoft 365 w centrum administracyjnym platformy Microsoft 365 przez dodanie rekordu DNS na hoście DNS.
-ms.openlocfilehash: ad4654bce8781607a77272dafeb3eb9135c85765
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+description: Kreator instalacji umożliwia dodanie domeny do usługi Microsoft 365 w Centrum administracyjne platformy Microsoft 365 przez dodanie rekordu DNS na hoście DNS.
+ms.openlocfilehash: 64b82aab051af2c9d5444042f27009b4e02f1ad8
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922928"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492043"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Dodawanie domeny do platformy Microsoft 365
 
@@ -52,7 +53,7 @@ Aby dodawać, modyfikować lub usuwać domeny, **musisz** być **administratorem
 
 Twoja firma może potrzebować wielu nazw domen do różnych celów. Możesz na przykład dodać inną pisownię nazwy firmy, ponieważ klienci już z niej korzystają, a ich komunikacja nie dotarła do Ciebie.
 
-1. W centrum administracyjnym platformy Microsoft 365 wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Konfiguracja**</a>.
+1. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Konfiguracja**</a>.
 1. W obszarze **Pobierz konfigurację domeny niestandardowej** wybierz pozycję **Wyświetl** > **zarządzanie** > **dodawaniem domeny**.
 1. Wprowadź nową nazwę domeny, którą chcesz dodać, a następnie wybierz pozycję **Dalej**.
 1. Zaloguj się do rejestratora domen, a następnie wybierz pozycję **Dalej**.
@@ -159,18 +160,20 @@ Każda organizacja platformy Microsoft 365 może mieć maksymalnie pięć onmicr
 
 Aby dodać domenę onmicrosoft.com:
 
-1. W centrum administracyjnym platformy Microsoft 365 wybierz pozycję **Ustawienia**, a następnie wybierz pozycję **Domeny**.
-2. Wybierz domenę domyślną onmicrosoft.com.
+1. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję **Ustawienia**, a następnie wybierz pozycję **Domeny**.
+
+2. Wybierz istniejącą domenę *onmicrosoft.com* .
 
     ![Strona Domeny.](../../media/onmicrosoft-domains.png)
   
-3. Na stronie właściwości domeny w sekcji **Informacje o tej domenie** wybierz pozycję **Dodaj domenę onmicrosoft**.
 
-    ![Informacje o tej stronie domen.](../../media/add-onmicrosoft-domain-link.png)
+3. Na karcie **Przegląd** wybierz pozycję **Dodaj domenę onmicrosoft.com**.
 
-4. Na stronie **Dodawanie domeny onmicrosoft** w polu **Nazwa domeny** wpisz nazwę nowej domeny onmicrosoft.com. 
+    ![Zrzut ekranu przedstawiający właściwości domeny.](../../media/add-onmicrosoft-domain-link.png)
 
-    ![Zrzut ekranu przedstawiający stronę Dodawanie domeny onmicrosoft.](../../media/add-an-onmicrosoftcom-domain-page.png)
+4. Na stronie **Dodawanie domeny onmicrosoft** w polu **Nazwa domeny** wprowadź nazwę nowej domeny onmicrosoft.com. 
+
+    ![Zrzut ekranu przedstawiający pozycję Dodaj domenę onmicrosoft.](../../media/add-an-onmicrosoftcom-domain-page.png)
 
     > [!NOTE]
     > Sprawdź pisownię i dokładność wprowadzonej nazwy domeny. Masz ograniczoną liczbę onmicrosoft.com domen i obecnie nie można ich usunąć po ich utworzeniu.     

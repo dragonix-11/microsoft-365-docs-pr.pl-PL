@@ -18,17 +18,17 @@ ms.custom:
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
-description: Dowiedz się więcej o dostępnych opcjach tworzenia bezpiecznego środowiska udostępniania gościa w Microsoft 365, zapewniając dostęp gościa w celu usprawnienia współpracy.
-ms.openlocfilehash: 5b6f27bd81a47a92926cebeef89de11ed78fcd3d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Dowiedz się więcej o dostępnych opcjach tworzenia bezpiecznego środowiska udostępniania gościa na platformie Microsoft 365, zapewniając dostęp gościa w celu usprawnienia współpracy.
+ms.openlocfilehash: 26daea8795084a87a2891a5dd04da172692990cb
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948358"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490924"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Tworzenie bezpiecznego środowiska udostępniania gościa
 
-W tym artykule omówimy różne opcje tworzenia bezpiecznego środowiska udostępniania gościa w Microsoft 365. Oto przykłady umożliwiające wyobrażenie o dostępnych opcjach. Tych procedur można używać w różnych kombinacjach, aby spełnić wymagania organizacji dotyczące zabezpieczeń i zgodności.
+W tym artykule omówimy różne opcje tworzenia bezpiecznego środowiska udostępniania gościa na platformie Microsoft 365. Oto przykłady umożliwiające wyobrażenie o dostępnych opcjach. Tych procedur można używać w różnych kombinacjach, aby spełnić wymagania organizacji dotyczące zabezpieczeń i zgodności.
 
 Ten artykuł zawiera:
 
@@ -41,7 +41,7 @@ Ten artykuł zawiera:
 - Automatyczne przypisywanie etykiety poufności do dokumentów zawierających typ informacji poufnych.
 - Automatyczne usuwanie dostępu gościa z plików z etykietą poufności.
 
-Niektóre opcje omówione w tym artykule wymagają, aby goście mieli konto w Azure Active Directory. Aby upewnić się, że goście są dołączani do katalogu podczas udostępniania im plików i folderów, użyj [SharePoint i OneDrive integracji z usługą Azure AD B2B (wersja zapoznawcza](/sharepoint/sharepoint-azureb2b-integration-preview)).
+Niektóre opcje omówione w tym artykule wymagają, aby goście mieli konto w usłudze Azure Active Directory. Aby upewnić się, że goście są dołączane do katalogu podczas udostępniania im plików i folderów, użyj [integracji programu SharePoint i usługi OneDrive z usługą Azure AD B2B Preview](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 Pamiętaj, że w tym artykule nie będziemy omawiać włączania ustawień udostępniania gości. Aby uzyskać szczegółowe informacje na temat włączania udostępniania gości w różnych scenariuszach, zobacz [Współpraca z osobami spoza organizacji](collaborate-with-people-outside-your-organization.md) .
 
@@ -49,7 +49,7 @@ Pamiętaj, że w tym artykule nie będziemy omawiać włączania ustawień udost
 
 Uwierzytelnianie wieloskładnikowe znacznie zmniejsza prawdopodobieństwo naruszenia zabezpieczeń konta. Ponieważ goście mogą korzystać z osobistych kont e-mail, które nie są zgodne z żadnymi zasadami ładu lub najlepszymi rozwiązaniami, szczególnie ważne jest wymaganie uwierzytelniania wieloskładnikowego dla gości. W przypadku kradzieży nazwy użytkownika i hasła gościa wymaganie drugiego czynnika uwierzytelniania znacznie zmniejsza prawdopodobieństwo uzyskania dostępu do witryn i plików przez nieznane strony.
 
-W tym przykładzie skonfigurujemy uwierzytelnianie wieloskładnikowe dla gości przy użyciu zasad dostępu warunkowego w Azure Active Directory.
+W tym przykładzie skonfigurujemy uwierzytelnianie wieloskładnikowe dla gości przy użyciu zasad dostępu warunkowego w usłudze Azure Active Directory.
 
 Aby skonfigurować uwierzytelnianie wieloskładnikowe dla gości
 
@@ -68,21 +68,21 @@ Teraz gość będzie musiał zarejestrować się w uwierzytelnianiu wieloskładn
 
 ### <a name="more-information"></a>Więcej informacji
 
-[Planowanie wdrożenia uwierzytelniania wieloskładnikowego w usłudze Azure AD](/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planowanie wdrożenia uwierzytelniania wieloskładnikowego Azure AD](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Konfigurowanie warunków użytkowania dla gości
 
 W niektórych sytuacjach goście mogą nie mieć podpisanych umów o zachowaniu poufności ani innych umów prawnych z Organizacją. Przed uzyskaniem dostępu do plików, które są im udostępniane, goście mogą wymagać zgody na warunki użytkowania. Warunki użytkowania mogą być wyświetlane przy pierwszej próbie uzyskania dostępu do udostępnionego pliku lub witryny.
 
-Aby utworzyć warunki użytkowania, musisz najpierw utworzyć dokument w programie Word lub innym programie do tworzenia, a następnie zapisać go jako plik .pdf. Ten plik można następnie przekazać do usługi Azure AD.
+Aby utworzyć warunki użytkowania, musisz najpierw utworzyć dokument w programie Word lub innym programie do tworzenia, a następnie zapisać go jako plik .pdf. Ten plik można następnie przekazać do Azure AD.
 
-Aby utworzyć warunki użytkowania usługi Azure AD
+Aby utworzyć warunki użytkowania Azure AD
 
 1. Zaloguj się do platformy Azure jako administrator globalny, administrator zabezpieczeń lub administrator dostępu warunkowego.
 2. Przejdź do [obszaru Warunki użytkowania](https://aka.ms/catou).
 3. Kliknij **pozycję Nowe terminy**.
 
-   ![Zrzut ekranu przedstawiający nowe ustawienia warunków użytkowania usługi Azure AD.](../media/azure-ad-guest-terms-of-use.png)
+   ![Zrzut ekranu przedstawiający Azure AD nowych ustawień warunków użytkowania.](../media/azure-ad-guest-terms-of-use.png)
 
 4. Wpisz **nazwę** i **nazwę wyświetlaną**.
 6. W obszarze **Dokument warunków użytkowania** przejdź do utworzonego pliku pdf i wybierz go.
@@ -102,7 +102,7 @@ Aby utworzyć zasady dostępu warunkowego
 5. W bloku **Użytkownicy i grupy** wybierz pozycję **Wybierz użytkowników i grupy**, zaznacz pole wyboru **Wszyscy goście i użytkownicy zewnętrzni** .
 6. W obszarze **Przypisania** kliknij pozycję **Aplikacje lub akcje w chmurze**.
 7. Na karcie **Dołączanie** wybierz pozycję **Wybierz aplikacje**, a następnie kliknij pozycję **Wybierz**.
-8. W bloku **Wybierz** wybierz pozycję **Microsoft Teams**, **Office 365 SharePoint Online** i **Outlook Grupy**, a następnie kliknij przycisk **Wybierz**.
+8. W bloku **Wybierz** wybierz pozycję **Microsoft Teams**, **Office 365 SharePoint Online** i **Grupy programu Outlook**, a następnie kliknij pozycję **Wybierz**.
 9. W obszarze **Kontrolki dostępu** kliknij pozycję **Udziel**.
 10. W bloku **Udzielanie** wybierz pozycję **Warunki użytkowania gościa**, a następnie kliknij pozycję **Wybierz**.
 11. W bloku **Nowy** w obszarze **Włącz zasady** kliknij pozycję **Włączone**, a następnie kliknij pozycję **Utwórz**.
@@ -114,18 +114,18 @@ Teraz, gdy gość po raz pierwszy próbuje uzyskać dostęp do zawartości, zesp
 
 ### <a name="more-information"></a>Więcej informacji
 
-[Azure Active Directory warunków użytkowania](/azure/active-directory/conditional-access/terms-of-use)
+[Warunki użytkowania usługi Azure Active Directory](/azure/active-directory/conditional-access/terms-of-use)
 
 ## <a name="set-up-guest-access-reviews"></a>Konfigurowanie przeglądów dostępu gościa
 
-Przeglądy dostępu w usłudze Azure AD umożliwiają automatyzację okresowego przeglądu dostępu użytkowników do różnych zespołów i grup. Wymagając przeglądu dostępu dla gości, możesz pomóc w zapewnieniu, że goście nie zachowają dostępu do poufnych informacji organizacji dłużej niż jest to konieczne.
+Przeglądy dostępu w Azure AD umożliwiają automatyzację okresowego przeglądu dostępu użytkowników do różnych zespołów i grup. Wymagając przeglądu dostępu dla gości, możesz pomóc w zapewnieniu, że goście nie zachowają dostępu do poufnych informacji organizacji dłużej niż jest to konieczne.
 
 Aby skonfigurować przegląd dostępu gościa
 
 1. Na [stronie Zarządzanie tożsamościami](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade) w menu po lewej stronie kliknij pozycję **Przeglądy dostępu**.
 2. Kliknij pozycję **Nowy przegląd dostępu**.
-3. Wybierz opcję **Teams + Grupy**.
-4. Wybierz opcję **Wszystkie grupy Microsoft 365 z użytkownikami-gośćmi**. Kliknij **pozycję Wybierz grupy, aby wykluczyć** , jeśli chcesz wykluczyć dowolne grupy.
+3. Wybierz opcję **Teams + Groups (Zespoły i grupy** ).
+4. Wybierz opcję **Wszystkie grupy platformy Microsoft 365 z użytkownikami-gośćmi** . Kliknij **pozycję Wybierz grupy, aby wykluczyć** , jeśli chcesz wykluczyć dowolne grupy.
 5. Wybierz **opcję Tylko użytkownicy-goście** , a następnie kliknij przycisk **Dalej: Recenzje**.
 6. W obszarze **Wybierz recenzentów** wybierz pozycję **Właściciele grupy**.
 7. Kliknij **pozycję Wybierz rezerwowych recenzentów**, wybierz, kto powinien być rezerwowym recenzentem, a następnie kliknij pozycję **Wybierz**.
@@ -133,31 +133,31 @@ Aby skonfigurować przegląd dostępu gościa
 9. Wybierz datę rozpoczęcia i czas trwania.
 10. W polu **Koniec** wybierz pozycję **Nigdy**, a następnie kliknij przycisk **Dalej: Ustawienia**.
 
-    ![Zrzut ekranu przedstawiający kartę przeglądu dostępu usługi Azure AD.](../media/azure-ad-create-access-review.png)
+    ![Zrzut ekranu przedstawiający kartę przeglądu dostępu Azure AD.](../media/azure-ad-create-access-review.png)
 
 11. Na karcie **Ustawienia** przejrzyj ustawienia zgodności z regułami biznesowymi.
 
-    ![Zrzut ekranu przedstawiający kartę ustawień przeglądu dostępu usługi Azure AD.](../media/azure-ad-create-access-review-settings.png)
+    ![Zrzut ekranu przedstawiający kartę ustawień przeglądu dostępu Azure AD.](../media/azure-ad-create-access-review-settings.png)
 
 12. Kliknij **przycisk Dalej: Przejrzyj i utwórz**.
 13. Wpisz **nazwę przeglądu** i przejrzyj ustawienia.
 14. Kliknij **pozycję Utwórz**.
 
-Należy pamiętać, że w przypadku lokalizacji SharePoint i OneDrive dokumenty będą aktywnie blokowane bezpośrednio po wykryciu informacji poufnych, niezależnie od tego, czy dokument jest udostępniony, czy nie, dla wszystkich gości, podczas gdy użytkownicy wewnętrzni będą nadal mieli dostęp do dokumentu.
+Należy pamiętać, że w przypadku lokalizacji programu SharePoint i usługi OneDrive dokumenty będą aktywnie blokowane bezpośrednio po wykryciu informacji poufnych, niezależnie od tego, czy dokument jest udostępniony, czy nie, dla wszystkich gości, podczas gdy użytkownicy wewnętrzni będą nadal mieć dostęp do dokumentu.
 
 ### <a name="more-information"></a>Więcej informacji
 
-[Zarządzanie dostępem gościa za pomocą przeglądów dostępu do usługi Azure AD](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+[Zarządzanie dostępem gościa za pomocą przeglądów dostępu Azure AD](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
-[Tworzenie przeglądu dostępu grup lub aplikacji w przeglądach dostępu usługi Azure AD](/azure/active-directory/governance/create-access-review)
+[Tworzenie przeglądu dostępu grup lub aplikacji w Azure AD przeglądów dostępu](/azure/active-directory/governance/create-access-review)
 
 ## <a name="set-up-web-only-access-for-guests"></a>Konfigurowanie dostępu tylko do Internetu dla gości
 
-Możesz ograniczyć obszar ataków i ułatwić administrowanie, wymagając od gości dostępu do zespołów, witryn i plików tylko za pomocą przeglądarki internetowej.
+Możesz wymagać od gości dostępu do zespołów, witryn i plików tylko za pomocą przeglądarki internetowej. Zmniejsza to prawdopodobieństwo pobrania poufnych plików i pozostawienia ich na niezarządzanym urządzeniu. Jest to również przydatne podczas udostępniania środowiskom korzystającym z urządzeń udostępnionych.
 
-W przypadku Grupy Microsoft 365 i Teams odbywa się to przy użyciu zasad dostępu warunkowego usługi Azure AD. Dla SharePoint jest to skonfigurowane w centrum administracyjnym SharePoint. (Możesz również [użyć etykiet poufności, aby ograniczyć gościom dostęp tylko do Internetu](../compliance/sensitivity-labels-teams-groups-sites.md)).
+W przypadku Grupy Microsoft 365 i aplikacji Teams odbywa się to przy użyciu Azure AD zasad dostępu warunkowego. W przypadku programu SharePoint jest to skonfigurowane w centrum administracyjnym programu SharePoint. (Możesz również [użyć etykiet poufności, aby ograniczyć gościom dostęp tylko do Internetu](../compliance/sensitivity-labels-teams-groups-sites.md)).
 
-Aby ograniczyć gościom dostęp tylko do internetu dla grup i Teams:
+Aby ograniczyć gościom dostęp tylko do Internetu dla grup i aplikacji Teams:
 
 1. Przejdź do [obszaru Zasady dostępu warunkowego platformy Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. W bloku **Dostęp warunkowy — zasady** kliknij pozycję **Nowe zasady**.
@@ -166,30 +166,30 @@ Aby ograniczyć gościom dostęp tylko do internetu dla grup i Teams:
 5. W bloku **Użytkownicy i grupy** wybierz pozycję **Wybierz użytkowników i grupy**, zaznacz pole wyboru **Wszyscy goście i użytkownicy zewnętrzni** .
 6. W obszarze **Przypisania** kliknij pozycję **Aplikacje lub akcje w chmurze**.
 7. Na karcie **Dołączanie** wybierz pozycję **Wybierz aplikacje**, a następnie kliknij pozycję **Wybierz**.
-8. W bloku **Wybierz** wybierz pozycję **Microsoft Teams** i **grupy Outlook**, a następnie kliknij pozycję **Wybierz**.
+8. W bloku **Wybierz** wybierz pozycję **Microsoft Teams** i **grupy programu Outlook**, a następnie kliknij pozycję **Wybierz**.
 9. W obszarze **Przypisania** kliknij pozycję **Warunki**.
 10. W bloku **Warunki** kliknij pozycję **Aplikacje klienckie**.
 11. W bloku **Aplikacje klienckie** kliknij pozycję **Tak**, aby **skonfigurować**, a następnie wybierz ustawienia **Aplikacje mobilne i klienci klasyczni**, **Exchange ActiveSync klientów** i **Inni klienci**. Wyczyść pole wyboru **Przeglądarka** .
 
-    ![Zrzut ekranu przedstawiający ustawienia aplikacji klienckich dostępu warunkowego usługi Azure AD.](../media/azure-ad-conditional-access-client-mobile.png)
+    ![Zrzut ekranu przedstawiający Azure AD ustawień aplikacji klienckich dostępu warunkowego.](../media/azure-ad-conditional-access-client-mobile.png)
 
 12. Kliknij pozycję **Gotowe**.
 13. W obszarze **Kontrolki dostępu** kliknij pozycję **Udziel**.
-14. W bloku **Udzielanie** wybierz pozycję **Wymagaj, aby urządzenie było oznaczone jako zgodne** i **wymagaj urządzenia dołączonego hybrydowo do usługi Azure AD**.
+14. W bloku **Udzielanie** wybierz pozycję **Wymagaj, aby urządzenie było oznaczone jako zgodne** i **Wymagaj urządzenia przyłączonego do hybrydowego Azure AD**.
 15. **W obszarze Dla wielu kontrolek** wybierz pozycję **Wymagaj jednej z wybranych kontrolek**, a następnie kliknij pozycję **Wybierz**.
 16. W bloku **Nowy** w obszarze **Włącz zasady** kliknij pozycję **Włączone**, a następnie kliknij pozycję **Utwórz**.
 
-Aby ograniczyć gościom dostęp do internetu dla SharePoint
+Aby ograniczyć gościom dostęp do internetu w programie SharePoint
 
-1. W centrum administracyjnym SharePoint rozwiń węzeł **Zasady** i wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**Kontrola dostępu**</a>.
+1. W centrum administracyjnym programu SharePoint rozwiń węzeł **Zasady** i wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**Kontrola dostępu**</a>.
 2. Wybierz pozycję **Urządzenia niezarządzane**.
 3. Wybierz opcję **Zezwalaj na ograniczony dostęp tylko do Internetu** , a następnie wybierz pozycję **Zapisz**.
 
-Należy pamiętać, że to ustawienie w centrum administracyjnym SharePoint tworzy pomocnicze zasady dostępu warunkowego w usłudze Azure AD.
+Należy pamiętać, że to ustawienie w centrum administracyjnym programu SharePoint powoduje utworzenie pomocniczych zasad dostępu warunkowego w Azure AD.
 
 ## <a name="configure-a-session-timeout-for-guests"></a>Konfigurowanie limitu czasu sesji dla gości
 
-Wymaganie od gości regularnego uwierzytelniania może zmniejszyć możliwość uzyskania przez nieznanych użytkowników dostępu do zawartości organizacji, jeśli urządzenie gościa nie jest zabezpieczone. Możesz skonfigurować zasady dostępu warunkowego limitu czasu sesji dla gości w usłudze Azure AD.
+Wymaganie od gości regularnego uwierzytelniania może zmniejszyć możliwość uzyskania przez nieznanych użytkowników dostępu do zawartości organizacji, jeśli urządzenie gościa nie jest zabezpieczone. Możesz skonfigurować zasady dostępu warunkowego limitu czasu sesji dla gości w Azure AD.
 
 Aby skonfigurować zasady limitu czasu sesji gościa
 
@@ -200,7 +200,7 @@ Aby skonfigurować zasady limitu czasu sesji gościa
 5. W bloku **Użytkownicy i grupy** wybierz pozycję **Wybierz użytkowników i grupy**, zaznacz pole wyboru **Wszyscy goście i użytkownicy zewnętrzni** .
 6. W obszarze **Przypisania** kliknij pozycję **Aplikacje lub akcje w chmurze**.
 7. Na karcie **Dołączanie** wybierz pozycję **Wybierz aplikacje**, a następnie kliknij pozycję **Wybierz**.
-8. W bloku **Wybierz** wybierz pozycję **Microsoft Teams**, **Office 365 SharePoint Online** i **Outlook Grupy**, a następnie kliknij przycisk **Wybierz**.
+8. W bloku **Wybierz** wybierz pozycję **Microsoft Teams**, **Office 365 SharePoint Online** i **Grupy programu Outlook**, a następnie kliknij pozycję **Wybierz**.
 9. W obszarze **Kontrolki dostępu** kliknij pozycję **Sesja**.
 10. W bloku **Sesja** wybierz pozycję **Częstotliwość logowania**.
 11. Wybierz **1** i **dni** dla okresu, a następnie kliknij przycisk **Wybierz**.
@@ -208,17 +208,17 @@ Aby skonfigurować zasady limitu czasu sesji gościa
 
 ## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Tworzenie poufnego typu informacji dla wysoce wrażliwego projektu
 
-Typy informacji poufnych to wstępnie zdefiniowane ciągi, których można używać w przepływach pracy zasad w celu wymuszania wymagań dotyczących zgodności. Portal zgodności usługi Microsoft Purview zawiera ponad sto poufnych typów informacji, w tym numery praw jazdy, numery kart kredytowych, numery kont bankowych itp.
+Typy informacji poufnych to wstępnie zdefiniowane ciągi, których można używać w przepływach pracy zasad w celu wymuszania wymagań dotyczących zgodności. Portal zgodności Microsoft Purview zawiera ponad sto poufnych typów informacji, w tym numery praw jazdy, numery kart kredytowych, numery kont bankowych itp.
 
 Możesz tworzyć niestandardowe typy informacji poufnych, aby ułatwić zarządzanie zawartością specyficzną dla organizacji. W tym przykładzie utworzymy niestandardowy typ informacji poufnych dla wysoce wrażliwego projektu. Następnie możemy użyć tego typu informacji poufnych, aby automatycznie zastosować etykietę poufności.
 
 Aby utworzyć typ informacji poufnych
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) w lewym obszarze nawigacyjnym rozwiń węzeł **Klasyfikacja**, a następnie kliknij pozycję **Typy informacji poufnych**.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) w obszarze nawigacji po lewej stronie rozwiń węzeł **Klasyfikacja**, a następnie kliknij pozycję **Typy informacji poufnych**.
 2. Kliknij **pozycję Utwórz**.
-3. W **polu Nazwa** i **Opis** wpisz **Project Saturn**, a następnie kliknij przycisk **Dalej**.
+3. W **polu Nazwa** i **opis** wpisz **Project Saturn**, a następnie kliknij przycisk **Dalej**.
 4. Kliknij **pozycję Dodaj element**.
-5. Na liście **Wykryj zawartość zawierającą** wybierz pozycję **Słowa kluczowe**, a następnie wpisz *Project Saturn* w polu słowa kluczowego.
+5. Na liście **Wykryj zawartość zawierającą** wybierz pozycję **Słowa kluczowe**, a następnie wpisz *ciąg Project Saturn* w polu słowa kluczowego.
 6. Kliknij **przycisk Dalej**, a następnie kliknij przycisk **Zakończ**.
 7. Jeśli zostanie wyświetlone pytanie, czy chcesz przetestować typ informacji poufnych, kliknij przycisk **Nie**.
 
@@ -237,7 +237,7 @@ Aby utworzyć zasady automatycznego etykietowania
 3. Na karcie **Automatyczne etykietowanie** kliknij pozycję **Utwórz zasady automatycznego etykietowania**.
 4. Na stronie **Wybierz informacje, do których ma zostać zastosowana ta etykieta** , wybierz pozycję **Niestandardowe** , a następnie kliknij przycisk **Dalej**.
 5. Wpisz nazwę i opis zasad, a następnie kliknij przycisk **Dalej**.
-6. Na stronie **Wybieranie lokalizacji, w których chcesz zastosować etykietę**, włącz **SharePoint witryn** i kliknij pozycję **Wybierz witryny**.
+6. Na stronie **Wybieranie lokalizacji, w których chcesz zastosować etykietę** , włącz **witryny programu SharePoint** i kliknij pozycję **Wybierz witryny**.
 7. Dodaj adresy URL witryn, w których chcesz włączyć automatyczne etykietowanie, a następnie kliknij przycisk **Gotowe**.
 8. Kliknij **Dalej**.
 9. Na stronie **Konfigurowanie reguł typowych lub zaawansowanych** wybierz pozycję **Typowe reguły** , a następnie kliknij przycisk **Dalej**.
@@ -258,7 +258,7 @@ Gdy zasady zostaną wprowadzone, gdy użytkownik wpisze ciąg "Project Saturn" d
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Tworzenie zasad DLP w celu usunięcia dostępu gościa do wysoce poufnych plików
 
-Aby zapobiec niechcianemu udostępnianiu poufnej zawartości przez gościa, można użyć [ochrony przed utratą danych (DLP) w usłudze Microsoft Purview](../compliance/dlp-learn-about-dlp.md) . Zapobieganie utracie danych może podjąć działania na podstawie etykiety poufności pliku i usunąć dostęp gościa.
+Możesz użyć [Ochrona przed utratą danych w Microsoft Purview (DLP),](../compliance/dlp-learn-about-dlp.md) aby zapobiec niepożądanemu udostępnianiu przez gości poufnej zawartości. Zapobieganie utracie danych może podjąć działania na podstawie etykiety poufności pliku i usunąć dostęp gościa.
 
 Aby utworzyć regułę DLP
 
@@ -266,7 +266,7 @@ Aby utworzyć regułę DLP
 2. Kliknij **pozycję Utwórz zasady**.
 3. Wybierz pozycję **Niestandardowe** i kliknij przycisk **Dalej**.
 4. Wpisz nazwę zasad i kliknij przycisk **Dalej**.
-5. Na stronie **Lokalizacje do zastosowania zasad** wyłącz wszystkie ustawienia z wyjątkiem **witryn SharePoint** i **kont OneDrive**, a następnie kliknij przycisk **Dalej**.
+5. Na stronie **Lokalizacje, aby zastosować zasady** wyłącz wszystkie ustawienia z wyjątkiem **witryn programu SharePoint** i **kont usługi OneDrive**, a następnie kliknij przycisk **Dalej**.
 6. Na stronie **Definiowanie ustawień zasad** kliknij przycisk **Dalej**.
 7. Na stronie **Dostosowywanie zaawansowanych reguł DLP** kliknij pozycję **Utwórz regułę** i wpisz nazwę reguły.
 8. W obszarze **Warunki** kliknij pozycję **Dodaj warunek** i wybierz pozycję **Zawartość zawiera**.
@@ -274,8 +274,8 @@ Aby utworzyć regułę DLP
 
    ![Zrzut ekranu przedstawiający opcje warunków, typy informacji poufnych, etykiety poufności i etykiety przechowywania.](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. W obszarze **Akcje** kliknij **pozycję Dodaj akcję** i wybierz pozycję **Ogranicz dostęp lub zaszyfruj zawartość w Microsoft 365 lokalizacjach**.
-11. Zaznacz pole wyboru **Ogranicz dostęp lub zaszyfruj zawartość w Microsoft 365 lokalizacjach**, a następnie wybierz opcję **Tylko osoby spoza organizacji**.
+10. W obszarze **Akcje** kliknij **pozycję Dodaj akcję** i wybierz pozycję **Ogranicz dostęp lub zaszyfruj zawartość w lokalizacjach platformy Microsoft 365**.
+11. Zaznacz pole wyboru **Ogranicz dostęp lub zaszyfruj zawartość w lokalizacjach platformy Microsoft 365** , a następnie wybierz opcję **Tylko osoby spoza organizacji** .
 
       ![Zrzut ekranu przedstawiający opcje akcji regułY DLP.](../media/dlp-remove-guest-access-sensitive-files.png)
 
@@ -290,10 +290,10 @@ Należy pamiętać, że te zasady nie usuwają dostępu, jeśli gość jest czł
 
 ## <a name="additional-options"></a>Opcje dodatkowe
 
-Istnieją pewne dodatkowe opcje w Microsoft 365 i Azure Active Directory, które mogą pomóc w zabezpieczeniu środowiska udostępniania gościa.
+Istnieją pewne dodatkowe opcje w usługach Microsoft 365 i Azure Active Directory, które mogą pomóc w zabezpieczeniu środowiska udostępniania gościa.
 
-- Możesz utworzyć listę dozwolonych lub niedozwolonych domen udostępniania, aby ograniczyć liczbę użytkowników, którzy mogą udostępniać. Aby uzyskać więcej informacji, zobacz [Ograniczanie udostępniania zawartości SharePoint i OneDrive według domeny](/sharepoint/restricted-domains-sharing) oraz [Zezwalaj lub blokuj zaproszenia dla użytkowników B2B z określonych organizacji](/azure/active-directory/b2b/allow-deny-list).
-- Możesz ograniczyć inne dzierżawy Azure Active Directory, z którymi użytkownicy mogą się łączyć. Aby uzyskać informacje, zobacz [Używanie ograniczeń dzierżawy do zarządzania dostępem do aplikacji w chmurze SaaS](/azure/active-directory/manage-apps/tenant-restrictions) .
+- Możesz utworzyć listę dozwolonych lub niedozwolonych domen udostępniania, aby ograniczyć liczbę użytkowników, którzy mogą udostępniać. Aby uzyskać więcej informacji, zobacz [Ograniczanie udostępniania zawartości programu SharePoint i usługi OneDrive według domeny](/sharepoint/restricted-domains-sharing) oraz [Zezwalaj lub blokuj zaproszenia dla użytkowników B2B z określonych organizacji](/azure/active-directory/b2b/allow-deny-list) .
+- Możesz ograniczyć inne dzierżawy usługi Azure Active Directory, z którymi użytkownicy mogą się łączyć. Aby uzyskać informacje, zobacz [Używanie ograniczeń dzierżawy do zarządzania dostępem do aplikacji w chmurze SaaS](/azure/active-directory/manage-apps/tenant-restrictions) .
 - Możesz utworzyć środowisko zarządzane, w którym partnerzy mogą pomóc w zarządzaniu kontami gości. Aby uzyskać informacje [, zobacz Tworzenie ekstranetu B2B z zarządzanymi gośćmi](/Office365/Enterprise/b2b-extranet) .
 
 ## <a name="see-also"></a>Zobacz też

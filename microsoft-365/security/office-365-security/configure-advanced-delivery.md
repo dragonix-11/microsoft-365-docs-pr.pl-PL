@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak używać zaawansowanych zasad dostarczania w Exchange Online Protection (EOP) do identyfikowania komunikatów, które nie powinny być filtrowane w określonych obsługiwanych scenariuszach (symulacje wyłudzania informacji i wiadomości dostarczane do skrzynek pocztowych operacji zabezpieczeń (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9176f73c94df6413e3b79053318f5547788d773
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 109d711623d2a0355851414af3ef0cb1beadf6af
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011590"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490448"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Konfigurowanie dostarczania symulacji wyłudzania informacji innych firm użytkownikom i niefiltrowanych wiadomości do skrzynek pocztowych SecOps
 
@@ -38,35 +38,35 @@ Aby zapewnić bezpieczeństwo organizacji [domyślnie](secure-by-default.md), Ex
 - **Symulacje wyłudzania informacji innych firm**: symulowane ataki mogą pomóc zidentyfikować narażonych użytkowników, zanim rzeczywisty atak wpłynie na Organizację.
 - **Skrzynki pocztowe operacji zabezpieczeń (SecOps):** dedykowane skrzynki pocztowe używane przez zespoły zabezpieczeń do zbierania i analizowania niefiltrowanych wiadomości (zarówno dobrych, jak i złych).
 
-Zaawansowane _zasady dostarczania_ w Microsoft 365 uniemożliwiają _filtrowanie komunikatów przychodzących w tych konkretnych scenariuszach_.<sup>\*</sup> Zaawansowane zasady dostarczania zapewniają, że komunikaty w tych scenariuszach osiągną następujące wyniki:
+Zaawansowane _zasady dostarczania_ w usłudze Microsoft 365 uniemożliwiają _filtrowanie komunikatów przychodzących w tych konkretnych scenariuszach_ .<sup>\*</sup> Zaawansowane zasady dostarczania zapewniają, że komunikaty w tych scenariuszach osiągną następujące wyniki:
 
 - Filtry w modelu EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender nie podejmują żadnych działań w przypadku tych komunikatów.<sup>\*</sup>
 - [Bezgodzinne przeczyszczanie (ZAP)](zero-hour-auto-purge.md) w przypadku spamu i wyłudzania informacji nie podejmuje żadnych działań w przypadku tych wiadomości.<sup>\*\*</sup>
 - [Domyślne alerty systemowe](/microsoft-365/compliance/alert-policies#default-alert-policies) nie są wyzwalane dla tych scenariuszy.
 - [Funkcja AIR i klastrowanie w Ochrona usługi Office 365 w usłudze Defender](office-365-air.md) ignoruje te komunikaty.
 - W szczególności w przypadku symulacji wyłudzania informacji innych firm:
-  - [Przesyłanie przez administratora](admin-submission.md) generuje automatyczną odpowiedź z informacją, że wiadomość jest częścią kampanii symulacji wyłudzania informacji i nie stanowi rzeczywistego zagrożenia. Alerty i air nie zostaną wyzwolone. Środowisko przesyłania przez administratora będzie pokazywać te komunikaty jako symulowane zagrożenie.
+  - [Administracja przesyłania](admin-submission.md) generuje automatyczną odpowiedź z informacją, że wiadomość jest częścią kampanii symulacji wyłudzania informacji i nie stanowi rzeczywistego zagrożenia. Alerty i air nie zostaną wyzwolone. Środowisko przesyłania przez administratora będzie pokazywać te komunikaty jako symulowane zagrożenie.
   - Gdy użytkownik zgłosi komunikat symulacji wyłudzania informacji przy użyciu [komunikatu raportu lub dodatków Wyłudzanie informacji o raporcie](enable-the-report-message-add-in.md), system nie wygeneruje alertu, badania ani zdarzenia. Linki lub pliki nie zostaną zdetonowane, ale komunikat zostanie również wyświetlony na karcie **Komunikaty zgłaszane przez użytkownika** na stronie **Przesłane** .
-  - [Sejf Linki w Ochrona usługi Office 365 w usłudze Defender](safe-links.md) nie blokują ani nie detonują określonych adresów URL w tych komunikatach w momencie kliknięcia. Adresy URL są nadal opakowane, ale nie są blokowane.
-  - [Sejf Załączniki w Ochrona usługi Office 365 w usłudze Defender](safe-attachments.md) nie detonują załączników w tych wiadomościach.
+  - [Bezpieczne linki w Ochrona usługi Office 365 w usłudze Defender](safe-links.md) nie blokują ani nie detonują określonych adresów URL w tych komunikatach w momencie kliknięcia. Adresy URL są nadal opakowane, ale nie są blokowane.
+  - [Bezpieczne załączniki w Ochrona usługi Office 365 w usłudze Defender](safe-attachments.md) nie detonują załączników w tych komunikatach.
 
 <sup>\*</sup> Nie można pominąć filtrowania złośliwego oprogramowania.
 
 <sup>\*\*</sup> Możesz pominąć zap dla złośliwego oprogramowania, tworząc zasady ochrony przed złośliwym oprogramowaniem dla skrzynki pocztowej SecOps, gdzie zap dla złośliwego oprogramowania jest wyłączony. Aby uzyskać instrukcje, zobacz [Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w ramach EOP](configure-anti-malware-policies.md).
 
-Komunikaty identyfikowane przez zaawansowane zasady dostarczania nie są zagrożeniami bezpieczeństwa, dlatego komunikaty są oznaczone przesłonięciami systemu. Środowiska administratora będą wyświetlać te komunikaty z powodu zastąpienia systemu **symulacji wyłudzania informacji** lub zastąpienia systemu **skrzynki pocztowej SecOps** . Administratorzy mogą filtrować i analizować te przesłonięcia systemu w następujących środowiskach:
+Komunikaty identyfikowane przez zaawansowane zasady dostarczania nie są zagrożeniami bezpieczeństwa, dlatego komunikaty są oznaczone przesłonięciami systemu. Administracja środowiska będą pokazywać te komunikaty z powodu zastąpienia systemu **symulacji wyłudzania informacji** lub zastąpienia systemu **skrzynki pocztowej SecOps**. Administratorzy mogą filtrować i analizować te przesłonięcia systemu w następujących środowiskach:
 
-- [Wykrywanie zagrożeń/wykrywanie w czasie rzeczywistym w Ochrona usługi Office 365 w usłudze Defender planie 2](threat-explorer.md): administrator może filtrować **źródło zastąpienia systemu** i wybierać **symulację wyłudzania informacji** lub **skrzynkę pocztową SecOps**.
-- [Strona jednostki Poczty e-mail w Eksploratorze zagrożeń/Wykrywanie w czasie rzeczywistym](mdo-email-entity-page.md): administrator może wyświetlić komunikat dozwolony przez zasady organizacji przez **skrzynkę pocztową SecOps** lub **symulację wyłudzania informacji** w obszarze **Zastępowanie dzierżawy** w sekcji **Przesłonięcia**.
-- [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report): Administrator może filtrować według **wyświetlania danych według zastąpienia systemu** w menu rozwijanym i wybrać opcję wyświetlenia komunikatów dozwolonych z powodu zastąpienia systemu symulacji wyłudzania informacji. Aby wyświetlić komunikaty dozwolone przez zastąpienie skrzynki pocztowej SecOps, możesz wybrać **podział wykresu według lokalizacji dostarczania** w menu rozwijanym **Podział wykresu według przyczyny** .
+- [Wykrywanie zagrożeń/wykrywanie w czasie rzeczywistym w Ochrona usługi Office 365 w usłudze Defender planie 2](threat-explorer.md): Administracja może filtrować **źródło zastąpienia systemu** i wybierać **symulację wyłudzania informacji** lub **skrzynkę pocztową SecOps**.
+- [Strona jednostki Poczty e-mail w Eksploratorze zagrożeń/Wykrywanie w czasie rzeczywistym](mdo-email-entity-page.md): Administracja może wyświetlić komunikat dozwolony przez zasady organizacji przez **skrzynkę pocztową SecOps** lub **symulację wyłudzania informacji** w obszarze **Zastępowanie dzierżawy** w sekcji **Przesłonięcia**.
+- [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report): Administracja może filtrować według **wyświetlania danych według zastąpienia systemu** w menu rozwijanym i wybrać opcję wyświetlania komunikatów dozwolonych z powodu zastąpienia systemu symulacji wyłudzania informacji. Aby wyświetlić komunikaty dozwolone przez zastąpienie skrzynki pocztowej SecOps, możesz wybrać **podział wykresu według lokalizacji dostarczania** w menu rozwijanym **Podział wykresu według przyczyny** .
 - [Zaawansowane wyszukiwanie zagrożeń w Ochrona punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/advanced-hunting-overview.md): symulacja wyłudzania informacji i przesłonięcia systemu skrzynek pocztowych SecOps będą wyświetlane jako opcje w obszarze OrgLevelPolicy w usłudze EmailEvents.
-- [Widoki kampanii](campaigns.md): administrator może filtrować **źródło zastąpienia systemu** i wybierać **symulację wyłudzania informacji** lub **skrzynkę pocztową SecOps**.
+- [Widoki kampanii](campaigns.md): Administracja może filtrować **źródło zastąpienia systemu** i wybierać **symulację wyłudzania informacji** lub **skrzynkę pocztową SecOps**.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
 - Otwórz portal Microsoft 365 Defender pod adresem <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **Zaawansowane dostarczanie** , otwórz pozycję <https://security.microsoft.com/advanceddelivery>.
 
-- Aby nawiązać połączenie z programem PowerShell zgodności & zabezpieczeń, zobacz [Połączenie z programem PowerShell & zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell).
+- Aby nawiązać połączenie z programem PowerShell security & Compliance, zobacz [Connect to Security & Compliance PowerShell (Łączenie z programem PowerShell & zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell)).
 
 - Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia:
   - Aby tworzyć, modyfikować lub usuwać skonfigurowane ustawienia w zaawansowanych zasadach dostarczania, musisz być członkiem grupy ról **administratora zabezpieczeń** w **portalu Microsoft 365 Defender** i członkiem grupy ról **Zarządzanie organizacją** w **Exchange Online**.
@@ -75,7 +75,7 @@ Komunikaty identyfikowane przez zaawansowane zasady dostarczania nie są zagroż
   Aby uzyskać więcej informacji, zobacz [Uprawnienia w portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md) i [Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > Dodanie użytkowników do odpowiedniej roli Azure Active Directory daje użytkownikom wymagane uprawnienia w portalu Microsoft 365 Defender _i_ uprawnienia do innych funkcji w Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
+  > Dodanie użytkowników do odpowiedniej roli usługi Azure Active Directory zapewnia użytkownikom wymagane uprawnienia w portalu Microsoft 365 Defender _i_ uprawnienia do innych funkcji w usłudze Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Konfigurowanie skrzynek pocztowych Usługi SecOps w zaawansowanych zasadach dostarczania przy użyciu portalu Microsoft 365 Defender
 
@@ -110,7 +110,7 @@ Skonfigurowane wpisy skrzynki pocztowej SecOps są wyświetlane na karcie **Skrz
    - **Domena**: rozwiń to ustawienie i wprowadź co najmniej jedną domenę adresu e-mail (na przykład contoso.com), klikając pole, wprowadzając wartość, a następnie naciskając klawisz Enter lub wybierając wartość wyświetlaną poniżej pola. Powtórz ten krok tyle razy, ile jest to konieczne. Możesz dodać maksymalnie 20 wpisów.
 
      > [!NOTE]
-     > Użyj domeny z `5321.MailFrom` adresu (znanego również jako adres **MAIL FROM** , nadawca P1 lub nadawca koperty), która jest używana w transmisji SMTP wiadomości **lub** domenie DomainKeys Identified Mail (DKIM) określonej przez dostawcę symulacji wyłudzania informacji. 
+     > Użyj domeny z `5321.MailFrom` adresu (znanego również jako adres **MAIL FROM** , nadawca P1 lub nadawca koperty), która jest używana w transmisji SMTP wiadomości **lub** domenie DomainKeys Identified Mail (DKIM) określonej przez dostawcę symulacji wyłudzania informacji.
 
    - **Wysyłanie adresu IP**: rozwiń to ustawienie i wprowadź co najmniej jeden prawidłowy adres IPv4, klikając pole, wprowadzając wartość, a następnie naciskając klawisz Enter lub wybierając wartość wyświetlaną poniżej pola. Powtórz ten krok tyle razy, ile jest to konieczne. Możesz dodać maksymalnie 10 wpisów. Prawidłowe wartości to:
      - Pojedynczy adres IP: na przykład 192.168.1.1.
@@ -121,13 +121,13 @@ Skonfigurowane wpisy skrzynki pocztowej SecOps są wyświetlane na karcie **Skrz
    Aby usunąć istniejącą wartość, kliknij przycisk usuń ![Usuń ikonę.](../../media/m365-cc-sc-remove-selection-icon.png) obok wartości.
 
    > [!NOTE]
-   > Aby skonfigurować symulację wyłudzania informacji innych firm w usłudze Advanced Delivery, należy uzyskać następujące informacje:
-   > 
+   > Aby skonfigurować symulację wyłudzania informacji innej firmy w usłudze Advanced Delivery, należy podać następujące informacje:
+   >
    > - Co najmniej jedna **domena** z jednego z następujących źródeł:
    >   - Adres `5321.MailFrom` (znany również jako adres MAIL FROM, nadawca P1 lub nadawca koperty).
    >   - Domena DKIM.
    > - Co najmniej jeden **adres IP wysyłania**.
-   > 
+   >
    > Opcjonalnie możesz dołączyć **adresy URL symulacji, aby** upewnić się, że adresy URL w komunikatach symulacji nie są blokowane.
    > Dla każdego pola można określić maksymalnie 10 wpisów.
    > Musi istnieć dopasowanie co najmniej jednej **domeny** i jednego **wysyłającego adresu IP**, ale nie jest utrzymywane żadne skojarzenie między wartościami.
@@ -142,9 +142,9 @@ Skonfigurowane wpisy symulacji wyłudzania informacji innych firm są wyświetla
 
 Oprócz dwóch scenariuszy, w których mogą pomóc zaawansowane zasady dostarczania, istnieją inne scenariusze, które mogą wymagać pominięcia filtrowania:
 
-- **Filtry innych firm**: jeśli rekord MX twojej domeny *nie* wskazuje na Office 365 (komunikaty są najpierw kierowane gdzie indziej), [zabezpieczenia domyślnie](secure-by-default.md) *nie są dostępne*. Jeśli chcesz dodać ochronę, musisz włączyć rozszerzone filtrowanie dla łączników (nazywane również *pomijaniem listy*). Aby uzyskać więcej informacji, zobacz [Manage mail flow using a third-party cloud service with Exchange Online (Zarządzanie przepływem poczty przy użyciu usługi w chmurze innej firmy z Exchange Online](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)). Jeśli nie chcesz rozszerzonego filtrowania dla łączników, użyj reguł przepływu poczty (znanych również jako reguły transportu), aby pominąć filtrowanie przez firmę Microsoft wiadomości, które zostały już ocenione przez filtrowanie innych firm. Aby uzyskać więcej informacji, zobacz [Używanie reguł przepływu poczty do ustawiania listy SCL w wiadomościach](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+- **Filtry innych firm**: jeśli rekord MX twojej domeny _nie_ wskazuje na Office 365 (komunikaty są najpierw kierowane gdzie indziej), [zabezpieczenia domyślnie](secure-by-default.md) _nie są dostępne_. Jeśli chcesz dodać ochronę, musisz włączyć rozszerzone filtrowanie dla łączników (nazywane również _pomijaniem listy_). Aby uzyskać więcej informacji, zobacz [Manage mail flow using a third-party cloud service with Exchange Online (Zarządzanie przepływem poczty przy użyciu usługi w chmurze innej firmy z Exchange Online](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)). Jeśli nie chcesz rozszerzonego filtrowania dla łączników, użyj reguł przepływu poczty (znanych również jako reguły transportu), aby pominąć filtrowanie przez firmę Microsoft wiadomości, które zostały już ocenione przez filtrowanie innych firm. Aby uzyskać więcej informacji, zobacz [Używanie reguł przepływu poczty do ustawiania listy SCL w wiadomościach](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
-- **Wyniki fałszywie dodatnie w trakcie przeglądu**: możesz tymczasowo zezwolić niektórym komunikatom, które są nadal analizowane przez firmę Microsoft za pośrednictwem [przesłanych przez administratorów](admin-submission.md) , na zgłaszanie znanych dobrych wiadomości, które są niepoprawnie oznaczone jako złe dla firmy Microsoft (wyniki fałszywie dodatnie). Podobnie jak w przypadku wszystkich zastąpień, **_zdecydowanie zalecamy, aby_** te dodatki były tymczasowe.
+- **Wyniki fałszywie dodatnie w trakcie przeglądu**: możesz tymczasowo zezwolić niektórym komunikatom, które są nadal analizowane przez firmę Microsoft za pośrednictwem [przesłanych przez administratorów](admin-submission.md) , na zgłaszanie znanych dobrych wiadomości, które są niepoprawnie oznaczone jako złe dla firmy Microsoft (wyniki fałszywie dodatnie). Podobnie jak w przypadku wszystkich zastąpień, _**zdecydowanie zalecamy, aby**_ te dodatki były tymczasowe.
 
 ## <a name="security--compliance-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procedury programu PowerShell dotyczące zgodności & zabezpieczeń dla skrzynek pocztowych SecOps w zaawansowanych zasadach dostarczania
 

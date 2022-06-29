@@ -1,7 +1,7 @@
 ---
 title: Skonfiguruj i zweryfikuj połączenia sieciowe programu antywirusowego Microsoft Defender
-description: Skonfiguruj i przetestuj połączenie z usługą Program antywirusowy Microsoft Defender cloud protection.
-keywords: antivirus, Program antywirusowy Microsoft Defender, antimalware, security, defender, cloud, aggressiveness, protection level
+description: Skonfiguruj i przetestuj połączenie z usługą ochrony w chmurze programu antywirusowego Microsoft Defender.
+keywords: antivirus, Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -12,16 +12,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 02/03/2022
+ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0365f8a9d2f267d7ebc0cfeddd5b7d1d5c16a72a
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: e06b2a37f45ccf0febc35e31d33ece55c03e3303
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078793"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492065"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Skonfiguruj i zweryfikuj połączenia sieciowe programu antywirusowego Microsoft Defender
 
@@ -34,23 +34,23 @@ ms.locfileid: "66078793"
 **Platformy**
 - System Windows
 
-Aby upewnić się, Program antywirusowy Microsoft Defender ochrona dostarczana przez chmurę działa prawidłowo, zespół ds. zabezpieczeń musi skonfigurować sieć tak, aby zezwalała na połączenia między punktami końcowymi a niektórymi serwerami firmy Microsoft. Ten artykuł zawiera listę połączeń, które muszą być dozwolone do korzystania z reguł zapory. Zawiera również instrukcje dotyczące weryfikowania połączenia. Prawidłowe skonfigurowanie ochrony gwarantuje, że otrzymasz najlepszą wartość z usług ochrony dostarczanych przez chmurę.
+Aby zapewnić prawidłowe działanie ochrony przed oprogramowaniem antywirusowym Microsoft Defender w chmurze, zespół ds. zabezpieczeń musi skonfigurować sieć tak, aby zezwalała na połączenia między punktami końcowymi a niektórymi serwerami firmy Microsoft. Ten artykuł zawiera listę połączeń, które muszą być dozwolone do korzystania z reguł zapory. Zawiera również instrukcje dotyczące weryfikowania połączenia. Prawidłowe skonfigurowanie ochrony gwarantuje, że otrzymasz najlepszą wartość z usług ochrony dostarczanych przez chmurę.
 
 > [!IMPORTANT]
-> Ten artykuł zawiera informacje dotyczące konfigurowania połączeń sieciowych tylko dla Program antywirusowy Microsoft Defender. Jeśli używasz Ochrona punktu końcowego w usłudze Microsoft Defender (w tym Program antywirusowy Microsoft Defender), zobacz [Konfigurowanie ustawień serwera proxy urządzenia i łączności internetowej dla usługi Defender for Endpoint](configure-proxy-internet.md).
+> Ten artykuł zawiera informacje dotyczące konfigurowania połączeń sieciowych tylko dla programu antywirusowego Microsoft Defender. Jeśli używasz programu Ochrona punktu końcowego w usłudze Microsoft Defender (w tym programu antywirusowego Microsoft Defender), zobacz [Konfigurowanie ustawień serwera proxy urządzenia i łączności z Internetem dla usługi Defender for Endpoint](configure-proxy-internet.md).
 
 
 > [!NOTE]
 > Witryna demonstracyjna usługi Defender for Endpoint w demo.wd.microsoft.com jest przestarzała i zostanie usunięta w przyszłości.
 
-## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Zezwalaj na połączenia z usługą w chmurze Program antywirusowy Microsoft Defender
+## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Zezwalaj na połączenia z usługą w chmurze programu antywirusowego Microsoft Defender
 
-Usługa Program antywirusowy Microsoft Defender w chmurze zapewnia szybką i silną ochronę punktów końcowych. Włączenie usługi ochrony dostarczanej w chmurze jest opcjonalne. Program antywirusowy Microsoft Defender usługa w chmurze jest zalecana, ponieważ zapewnia ważną ochronę przed złośliwym oprogramowaniem w punktach końcowych i sieci. Aby uzyskać więcej informacji, zobacz [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) for enableing service with Intune, Microsoft Endpoint Configuration Manager, zasady grupy, PowerShell cmdlets, or individual clients in the Zabezpieczenia Windows app (Włączanie ochrony dostarczanej w chmurze na potrzeby włączania usługi za pomocą Intune, Microsoft Endpoint Configuration Manager, zasady grupy, poleceń cmdlet programu PowerShell lub klientów indywidualnych w aplikacji Zabezpieczenia Windows.
+Usługa w chmurze programu antywirusowego Microsoft Defender zapewnia szybką i silną ochronę punktów końcowych. Włączenie usługi ochrony dostarczanej w chmurze jest opcjonalne. Usługa w chmurze programu antywirusowego Microsoft Defender jest zalecana, ponieważ zapewnia ważną ochronę przed złośliwym oprogramowaniem w punktach końcowych i sieci. Aby uzyskać więcej informacji, zobacz [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) for enableing service with Intune, Microsoft Endpoint Configuration Manager, zasady grupy, PowerShell cmdlets, or individual clients in the Zabezpieczenia Windows app (Włączanie ochrony dostarczanej w chmurze na potrzeby włączania usługi za pomocą Intune, Configuration Manager punktu końcowego firmy Microsoft, zasady grupy, poleceń cmdlet programu PowerShell lub poszczególnych klientów w aplikacji Zabezpieczenia Windows.
 
 Po włączeniu usługi należy skonfigurować sieć lub zaporę, aby zezwalać na połączenia między siecią a punktami końcowymi. Ponieważ ochrona jest usługą w chmurze, komputery muszą mieć dostęp do Internetu i uzyskiwać dostęp do usług firmy Microsoft w chmurze. Nie wykluczaj adresu URL `*.blob.core.windows.net` z jakiejkolwiek inspekcji sieci.
 
 > [!NOTE]
-> Usługa Program antywirusowy Microsoft Defender w chmurze zapewnia zaktualizowaną ochronę sieci i punktów końcowych. Usługa w chmurze nie powinna być traktowana jako ochrona tylko plików przechowywanych w chmurze. Zamiast tego usługa w chmurze korzysta z zasobów rozproszonych i uczenia maszynowego, aby zapewnić ochronę punktów końcowych szybciej niż tradycyjne aktualizacje analizy zabezpieczeń.
+> Usługa w chmurze programu antywirusowego Microsoft Defender zapewnia zaktualizowaną ochronę sieci i punktów końcowych. Usługa w chmurze nie powinna być traktowana jako ochrona tylko plików przechowywanych w chmurze. Zamiast tego usługa w chmurze korzysta z zasobów rozproszonych i uczenia maszynowego, aby zapewnić ochronę punktów końcowych szybciej niż tradycyjne aktualizacje analizy zabezpieczeń.
 
 ## <a name="services-and-urls"></a>Usługi i adresy URL
 
@@ -62,22 +62,22 @@ Upewnij się, że nie ma reguł filtrowania zapory ani sieci, które odmawiają 
 
 |Usługa i opis|ADRES URL|
 |---|---|
-|Program antywirusowy Microsoft Defender usługa ochrony dostarczana w chmurze jest określana jako usługa Microsoft Active Protection (MAPS).<p> Program antywirusowy Microsoft Defender korzysta z usługi MAPS w celu zapewnienia ochrony dostarczanej w chmurze.|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
+|Usługa ochrony antywirusowej Microsoft Defender dostarczana w chmurze jest nazywana usługą Microsoft Active Protection (MAPS).<p> Program antywirusowy Microsoft Defender korzysta z usługi MAPS w celu zapewnienia ochrony dostarczanej w chmurze.|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
 |Microsoft Update Service (MU) i Windows Update Service (WU) <p>Te usługi umożliwią analizę zabezpieczeń i aktualizacje produktów.|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> Aby uzyskać więcej informacji, zobacz [Punkty końcowe połączenia dla Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
-|Aktualizacje analizy zabezpieczeń Alternatywna lokalizacja pobierania (ADL)<p>Jest to alternatywna lokalizacja dla aktualizacji analizy zabezpieczeń Program antywirusowy Microsoft Defender, jeśli zainstalowana analiza zabezpieczeń jest nieaktualna (co najmniej siedem dni).|`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
+|Aktualizacje analizy zabezpieczeń Alternatywna lokalizacja pobierania (ADL)<p>Jest to alternatywna lokalizacja aktualizacji analizy zabezpieczeń programu antywirusowego Microsoft Defender, jeśli zainstalowana analiza zabezpieczeń jest nieaktualna (co najmniej siedem dni).|`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://www.microsoft.com/security/encyclopedia/adlpackages.aspx` <p> `https://definitionupdates.microsoft.com/download/DefinitionUpdates/` <p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 |Magazyn przesyłania złośliwego oprogramowania <p>Jest to lokalizacja przekazywania plików przesłanych do firmy Microsoft za pośrednictwem formularza przesyłania lub automatycznego przesyłania przykładów.|`ussus1eastprod.blob.core.windows.net` <p> `ussus2eastprod.blob.core.windows.net` <p> `ussus3eastprod.blob.core.windows.net` <p> `ussus4eastprod.blob.core.windows.net` <p> `wsus1eastprod.blob.core.windows.net` <p> `wsus2eastprod.blob.core.windows.net` <p> `ussus1westprod.blob.core.windows.net` <p> `ussus2westprod.blob.core.windows.net` <p> `ussus3westprod.blob.core.windows.net` <p> `ussus4westprod.blob.core.windows.net` <p> `wsus1westprod.blob.core.windows.net` <p> `wsus2westprod.blob.core.windows.net` <p> `usseu1northprod.blob.core.windows.net` <p> `wseu1northprod.blob.core.windows.net` <p> `usseu1westprod.blob.core.windows.net` <p> `wseu1westprod.blob.core.windows.net` <p> `ussuk1southprod.blob.core.windows.net` <p> `wsuk1southprod.blob.core.windows.net` <p> `ussuk1westprod.blob.core.windows.net` <p> `wsuk1westprod.blob.core.windows.net`|
-|Lista odwołania certyfikatów (CRL) <p> Windows używać tej listy podczas tworzenia połączenia SSL z usługą MAPS w celu zaktualizowania listy CRL.|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
-|Magazyn symboli <p>Program antywirusowy Microsoft Defender użyć magazynu symboli do przywrócenia niektórych plików krytycznych podczas przepływów korygowania.|`https://msdl.microsoft.com/download/symbols`|
-|Uniwersalny klient RODO <p> Windows tego klienta do wysyłania danych diagnostycznych klienta. <p> Program antywirusowy Microsoft Defender używa ogólnego rozporządzenia o ochronie danych do celów związanych z jakością produktów i monitorowaniem.|Aktualizacja używa protokołu SSL (port TCP 443) do pobierania manifestów i przekazywania danych diagnostycznych do firmy Microsoft używających następujących punktów końcowych DNS: <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
+|Lista odwołania certyfikatów (CRL) <p> System Windows używa tej listy podczas tworzenia połączenia SSL z usługą MAPS w celu zaktualizowania listy CRL.|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
+|Magazyn symboli <p>Program antywirusowy Microsoft Defender używa magazynu symboli do przywracania niektórych krytycznych plików podczas przepływów korygowania.|`https://msdl.microsoft.com/download/symbols`|
+|Uniwersalny klient RODO <p> System Windows używa tego klienta do wysyłania danych diagnostycznych klienta. <p> Program antywirusowy Microsoft Defender używa ogólnego rozporządzenia o ochronie danych do celów związanych z jakością produktów i monitorowaniem.|Aktualizacja używa protokołu SSL (port TCP 443) do pobierania manifestów i przekazywania danych diagnostycznych do firmy Microsoft używających następujących punktów końcowych DNS: <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
 
 
 ## <a name="validate-connections-between-your-network-and-the-cloud"></a>Weryfikowanie połączeń między siecią a chmurą
 
-Po dopuszczeniu wymienionych adresów URL sprawdź, czy masz połączenie z usługą w chmurze Program antywirusowy Microsoft Defender. Sprawdź, czy adresy URL prawidłowo zgłaszają i odbierają informacje, aby upewnić się, że jesteś w pełni chroniony.
+Po dopuszczeniu wymienionych adresów URL sprawdź, czy masz połączenie z usługą w chmurze programu antywirusowego Microsoft Defender. Sprawdź, czy adresy URL prawidłowo zgłaszają i odbierają informacje, aby upewnić się, że jesteś w pełni chroniony.
 
 ### <a name="use-the-cmdline-tool-to-validate-cloud-delivered-protection"></a>Weryfikowanie ochrony dostarczanej w chmurze przy użyciu narzędzia cmdline
 
-Użyj następującego argumentu z narzędziem wiersza polecenia Program antywirusowy Microsoft Defender (`mpcmdrun.exe`), aby sprawdzić, czy sieć może komunikować się z usługą w chmurze Program antywirusowy Microsoft Defender:
+Użyj następującego argumentu z narzędziem wiersza polecenia programu antywirusowego Microsoft Defender (`mpcmdrun.exe`), aby sprawdzić, czy sieć może komunikować się z usługą w chmurze programu antywirusowego Microsoft Defender:
 
 ```console
 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
@@ -86,18 +86,18 @@ Użyj następującego argumentu z narzędziem wiersza polecenia Program antywiru
 > [!NOTE]
 > Otwórz wiersz polecenia jako administrator. Kliknij prawym przyciskiem myszy element w menu **Start** , kliknij przycisk **Uruchom jako administrator** i kliknij przycisk **Tak** w wierszu polecenia uprawnień. To polecenie będzie działać tylko w Windows 10, wersji 1703 lub nowszej lub Windows 11.
 
-Aby uzyskać więcej informacji, zobacz [Zarządzanie Program antywirusowy Microsoft Defender za pomocą narzędzia wiersza polecenia mpcmdrun.exe](command-line-arguments-microsoft-defender-antivirus.md).
+Aby uzyskać więcej informacji, zobacz [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool (Zarządzanie programem antywirusowym Microsoft Defender za pomocą narzędzia wiersza polecenia mpcmdrun.exe](command-line-arguments-microsoft-defender-antivirus.md)).
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Próba pobrania fałszywego pliku złośliwego oprogramowania od firmy Microsoft
 
-Możesz pobrać przykładowy plik, który Program antywirusowy Microsoft Defender wykryje i zablokuje połączenie z chmurą. Odwiedź stronę [https://aka.ms/ioavtest1](https://aka.ms/ioavtest1) , aby pobrać plik.
+Możesz pobrać przykładowy plik, który program antywirusowy Microsoft Defender wykryje i zablokuje, jeśli masz prawidłowe połączenie z chmurą. Odwiedź stronę [https://aka.ms/ioavtest1](https://aka.ms/ioavtest1) , aby pobrać plik.
 
 > [!NOTE]
 > Pobrany plik nie jest dokładnie złośliwym oprogramowaniem. Jest to fałszywy plik przeznaczony do testowania, czy masz prawidłowe połączenie z chmurą.
 
-Jeśli masz prawidłowe połączenie, zostanie wyświetlone ostrzeżenie Program antywirusowy Microsoft Defender powiadomienia.
+Jeśli masz prawidłowe połączenie, zostanie wyświetlone ostrzeżenie Dotyczące programu antywirusowego Microsoft Defender.
 
-Jeśli używasz Microsoft Edge, zostanie również wyświetlony komunikat z powiadomieniem:
+Jeśli używasz przeglądarki Microsoft Edge, zostanie również wyświetlony komunikat z powiadomieniem:
 
 :::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Powiadomienie o znalezieniu złośliwego oprogramowania w przeglądarce Edge" lightbox="../../media/wdav-bafs-edge.png":::
 
@@ -116,7 +116,7 @@ Podobny komunikat występuje, jeśli używasz programu Internet Explorer:
    > [!NOTE]
    > Wersje Windows 10 przed wersją 1703 mają inny interfejs użytkownika. Zobacz [Program antywirusowy Microsoft Defender w aplikacji Zabezpieczenia Windows](microsoft-defender-security-center-antivirus.md).
 
-   W dzienniku zdarzeń Windows zostanie również wyświetlony [identyfikator zdarzenia klienta Windows Defender 1116](troubleshoot-microsoft-defender-antivirus.md).
+   W dzienniku zdarzeń systemu Windows zostanie również wyświetlony [identyfikator zdarzenia klienta Windows Defender 1116](troubleshoot-microsoft-defender-antivirus.md).
 
     > [!TIP]
     > Jeśli szukasz informacji dotyczących programu antywirusowego dla innych platform, zobacz:
@@ -132,5 +132,5 @@ Podobny komunikat występuje, jeśli używasz programu Internet Explorer:
 ## <a name="see-also"></a>Zobacz też
 
 - [Konfigurowanie ustawień serwera proxy urządzenia i łączności z Internetem dla Ochrona punktu końcowego w usłudze Microsoft Defender](configure-proxy-internet.md)
-- [Konfigurowanie Program antywirusowy Microsoft Defender i zarządzanie nimi przy użyciu ustawień zasady grupy](use-group-policy-microsoft-defender-antivirus.md)
+- [Konfigurowanie programu antywirusowego Microsoft Defender i zarządzanie nimi przy użyciu ustawień zasady grupy](use-group-policy-microsoft-defender-antivirus.md)
 - [Ważne zmiany w punkcie końcowym usług Microsoft Active Protection Services](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) 

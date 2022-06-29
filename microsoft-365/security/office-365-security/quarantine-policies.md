@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak używać zasad kwarantanny do kontrolowania, co użytkownicy mogą zrobić w przypadku komunikatów poddanych kwarantannie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3d50debf31f53f75177e7c8cf8c7116ae3789b6
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 780d2bade0713bac295cf9597662c5ef2313a093
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128860"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490105"
 ---
 # <a name="quarantine-policies"></a>Zasady kwarantanny
 
@@ -53,8 +53,10 @@ Poszczególne uprawnienia zasad kwarantanny, które znajdują się w wstępnie u
 |**Blokuj nadawcę** (_PermissionToBlockSender_)||![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
 |**Usuń** (_PermissionToDelete_)||![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
 |**Wersja zapoznawcza** (_PermissionToPreview_)||![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
-|**Zezwalaj adresatom na zwolnienie komunikatu z kwarantanny** (_PermissionToRelease_)|||![Znacznik wyboru.](../../media/checkmark.png)|
+|**Zezwalaj adresatom na zwolnienie komunikatu z kwarantanny** (_PermissionToRelease_)<sup>\*</sup>|||![Znacznik wyboru.](../../media/checkmark.png)|
 |**Zezwalaj adresatom na żądanie zwolnienia komunikatu z kwarantanny** (_PermissionToRequestRelease_)||![Znacznik wyboru](../../media/checkmark.png)||
+
+<sup>\*</sup>**Uprawnienie Zezwalaj adresatom na zwolnienie wiadomości z kwarantanny** nie jest uwzględniane w zasadach ochrony przed złośliwym oprogramowaniem ani w przypadku werdyktu dotyczącego wyłudzania informacji o wysokim poziomie zaufania w zasadach ochrony przed spamem. Użytkownicy nie mogą zwolnić własnego złośliwego oprogramowania ani wiadomości wyłudzających informacje o wysokim poziomie zaufania z kwarantanny. W najlepszym razie możesz użyć opcji **Zezwalaj adresatom na żądanie zwolnienia komunikatu z uprawnienia kwarantanny** .
 
 Domyślne zasady kwarantanny, skojarzone z nimi grupy uprawnień i to, czy powiadomienia o kwarantannie są włączone, są opisane w poniższej tabeli:
 
@@ -66,7 +68,7 @@ Domyślne zasady kwarantanny, skojarzone z nimi grupy uprawnień i to, czy powia
 
 Jeśli nie podobają Ci się domyślne uprawnienia w wstępnie ustawionych grupach uprawnień lub chcesz włączyć powiadomienia o kwarantannie, utwórz niestandardowe zasady kwarantanny i użyj ich. Aby uzyskać więcej informacji o tym, co robi każde uprawnienie, zobacz sekcję [Szczegóły uprawnień zasad kwarantanny](#quarantine-policy-permission-details) w dalszej części tego artykułu.
 
-Zasady kwarantanny można tworzyć i przypisywać w portalu Microsoft 365 Defender lub w programie PowerShell (Exchange Online programu PowerShell dla organizacji Microsoft 365 z Exchange Online skrzynkami pocztowymi; autonomiczny program PowerShell EOP w organizacjach EOP bez Exchange Online skrzynki pocztowe).
+Zasady kwarantanny można tworzyć i przypisywać w portalu Microsoft 365 Defender lub w programie PowerShell (Exchange Online programu PowerShell dla organizacji platformy Microsoft 365 z Exchange Online skrzynkami pocztowymi; autonomicznym programem PowerShell EOP w organizacjach EOP bez Exchange Online skrzynek pocztowych).
 
 > [!NOTE]
 > Czas przechowywania wiadomości poddanych kwarantannie przed ich wygaśnięciem jest kontrolowany przez kwarantannę **Zachowaj spam w kwarantannie przez tyle dni** (_QuarantineRetentionPeriod_) w zasadach ochrony przed spamem. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed spamem w ramach EOP](configure-your-spam-filter-policies.md).
@@ -90,7 +92,7 @@ W przypadku nowych organizacji lub starszych organizacji, w których nigdy nie w
 
 - Otwórz portal Microsoft 365 Defender pod adresem <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **Zasady kwarantanny** , użyj polecenia <https://security.microsoft.com/quarantinePolicies>.
 
-- Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Połączenie to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Aby nawiązać połączenie z autonomicznym programem PowerShell EOP, zobacz [Połączenie do Exchange Online Protection programu PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Łączenie z programem PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Aby nawiązać połączenie z autonomicznym programem PowerShell EOP, zobacz [Connect to Exchange Online Protection PowerShell (Nawiązywanie połączenia z programem PowerShell).](/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
 - Aby wyświetlać, tworzyć, modyfikować lub usuwać zasady kwarantanny, musisz być członkiem ról **Zarządzanie organizacją**, **Administrator zabezpieczeń** lub **Administrator kwarantanny** w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, zobacz [Uprawnienia w portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
@@ -201,7 +203,7 @@ W _obsługiwanych_ funkcjach ochrony, które poddają wiadomości e-mail kwarant
 |[Zasady ochrony przed spamem](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**Spam o wysokim poziomie ufności** (_HighConfidenceSpamAction_)</li><li>**Wyłudzanie informacji** (_PhishSpamAction_)</li><li>**Wyłudzanie informacji o wysokim poziomie zaufania** (_HighConfidencePhishAction_)</li><li>**Zbiorczo** (_BulkSpamAction_)</li></ul>|Tak|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>AdminOnlyAccessPolicy (brak dostępu)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li></ul>|
 |Zasady ochrony przed wyłudzaniem informacji: <ul><li>[Ochrona przed fałszowaniem inteligencji](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Ochrona przed personifikacją w Ochrona usługi Office 365 w usłudze Defender](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Jeśli komunikat zostanie wykryty jako personifikowany użytkownik** (_TargetedUserProtectionAction_)</li><li>**Jeśli komunikat zostanie wykryty jako domena personifikowana** (_TargetedDomainProtectionAction_)</li><li>**Jeśli analiza skrzynki pocztowej wykryje i personifikuje użytkownika** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Tak|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>Ochrona przed personifikacjami:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li></ul></li></ul>|
 |[Zasady ochrony przed złośliwym oprogramowaniem](configure-anti-malware-policies.md): wszystkie wykryte komunikaty są zawsze poddawane kwarantannie.|Tak|AdminOnlyAccessPolicy (brak dostępu)|
-|[ochrona załączników Sejf](safe-attachments.md): <ul><li>Wiadomości e-mail z załącznikami, które zostały poddane kwarantannie jako złośliwe oprogramowanie przez zasady załączników Sejf (_Włączanie_ i _działanie_)</li><li>Pliki poddane kwarantannie jako złośliwe oprogramowanie przez [Sejf Załączniki dla SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Tak</li><li>Nie</li></ul>|<ul><li>AdminOnlyAccessPolicy (brak dostępu)</li><li>nie dotyczy</li></ul>|
+|[Ochrona bezpiecznych załączników](safe-attachments.md): <ul><li>Wiadomości e-mail z załącznikami, które zostały poddane kwarantannie jako złośliwe oprogramowanie przez zasady bezpiecznych załączników (_Włączanie_ i _działanie_)</li><li>Pliki poddane kwarantannie jako złośliwe oprogramowanie przez [bezpieczne załączniki dla programów SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Tak</li><li>Nie</li></ul>|<ul><li>AdminOnlyAccessPolicy (brak dostępu)</li><li>nie dotyczy</li></ul>|
 |[Reguły przepływu poczty](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (nazywane również regułami transportu) z akcją: **Dostarczanie wiadomości do hostowanej kwarantanny** (_kwarantanna_).|Nie|nie dotyczy|
 
 <sup>\*</sup> Jak [opisano wcześniej w tym artykule](#full-access-permissions-and-quarantine-notifications), Organizacja może używać notificationEnabledPolicy zamiast DefaultFullAccessPolicy. Jedyną różnicą między tymi dwoma zasadami kwarantanny jest włączenie powiadomień kwarantanny w obszarze NotificationEnabledPolicy i wyłączenie w obszarze DefaultFullAccessPolicy.
@@ -285,7 +287,7 @@ Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Set-Host
 
 ### <a name="anti-phishing-policies"></a>Zasady ochrony przed wyłudzaniem informacji
 
-Analiza fałszowania jest dostępna w ramach operacji EOP i Ochrona usługi Office 365 w usłudze Defender. Ochrona przed personifikacją użytkowników, ochrona przed personifikacją domeny i analiza skrzynki pocztowej są dostępne tylko w Ochrona usługi Office 365 w usłudze Defender. Aby uzyskać więcej informacji, zobacz [Zasady ochrony przed wyłudzaniem informacji w Microsoft 365](set-up-anti-phishing-policies.md).
+Analiza fałszowania jest dostępna w ramach operacji EOP i Ochrona usługi Office 365 w usłudze Defender. Ochrona przed personifikacją użytkowników, ochrona przed personifikacją domeny i analiza skrzynki pocztowej są dostępne tylko w Ochrona usługi Office 365 w usłudze Defender. Aby uzyskać więcej informacji, zobacz [Zasady ochrony przed wyłudzaniem informacji na platformie Microsoft 365](set-up-anti-phishing-policies.md).
 
 1. W [portalu Microsoft 365 Defender przejdź do obszaru](https://security.microsoft.com) Zasady **współpracy** \> & poczty e-mail **& reguły** \> **Zasady** \> zagrożeń **— ochrona przed wyłudzaniem informacji** w sekcji **Zasady**.
 
@@ -424,31 +426,31 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy).
 
-### <a name="safe-attachments-policies-in-defender-for-office-365"></a>zasady załączników Sejf w Ochrona usługi Office 365 w usłudze Defender
+### <a name="safe-attachments-policies-in-defender-for-office-365"></a>Zasady bezpiecznych załączników w Ochrona usługi Office 365 w usłudze Defender
 
-1. W [portalu Microsoft 365 Defender przejdź do obszaru](https://security.microsoft.com) Zasady **współpracy** \> & poczty e-mail **& reguły** \> **zasad** \> zagrożeń **Sejf załączników** w sekcji **Zasady**.
+1. W [portalu Microsoft 365 Defender przejdź do obszaru](https://security.microsoft.com) Zasady **współpracy** \> & poczty e-mail **& reguły** \> **Zasad** \> **zagrożeń Bezpieczne załączniki** w sekcji **Zasady**.
 
-   Aby przejść bezpośrednio do strony **załączników Sejf**, użyj polecenia <https://security.microsoft.com/safeattachmentv2>.
+   Aby przejść bezpośrednio do strony **Bezpieczne załączniki** , użyj polecenia <https://security.microsoft.com/safeattachmentv2>.
 
-2. Na stronie **załączników Sejf** wykonaj jedną z następujących czynności:
-   - Znajdź i wybierz istniejące zasady Sejf Załączniki.
-   - Utwórz nowe zasady Sejf Załączniki.
+2. Na stronie **Bezpieczne załączniki** wykonaj jedną z następujących czynności:
+   - Znajdź i wybierz istniejące zasady bezpiecznych załączników.
+   - Utwórz nowe zasady bezpiecznych załączników.
 
 3. Wykonaj jedną z następujących czynności:
-   - **Edytuj istniejące**: wybierz zasady, klikając nazwę zasad. W wysuwanych szczegółach zasad przejdź do sekcji **Ustawienia**, a następnie kliknij pozycję **Edytuj ustawienia**.
-   - **Utwórz nową**: w nowym kreatorze zasad przejdź do strony **Ustawienia**.
+   - **Edytuj istniejące**: wybierz zasady, klikając nazwę zasad. W wysuwanych szczegółach zasad przejdź do sekcji **Ustawienia** , a następnie kliknij pozycję **Edytuj ustawienia**.
+   - **Utwórz nową**: w nowym kreatorze zasad przejdź do strony **Ustawienia** .
 
 4. Na stronie **Ustawienia** wykonaj następujące czynności:
-   1. **Sejf Odpowiedzi na nieznane złośliwe oprogramowanie załączników**: wybierz pozycję **Blokuj**, **Zastąp** lub **Dynamiczne dostarczanie**.
+   1. **Odpowiedź na nieznane złośliwe oprogramowanie w bezpiecznych załącznikach**: wybierz pozycję **Blokuj**, **Zastąp** lub **Dynamiczne dostarczanie**.
    2. Wybierz zasady kwarantanny w polu **Zasady kwarantanny** .
 
    **Uwaga**: podczas tworzenia nowych zasad pusta wartość **zasad kwarantanny** wskazuje, że są używane domyślne zasady kwarantanny. Podczas późniejszej edycji zasad pusta wartość jest zastępowana rzeczywistą domyślną nazwą zasad kwarantanny zgodnie z opisem w poprzedniej tabeli.
 
-Pełne instrukcje dotyczące tworzenia i modyfikowania zasad załączników Sejf opisano w temacie [Konfigurowanie zasad załączników Sejf w Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-safe-attachments-policies.md).
+Pełne instrukcje dotyczące tworzenia i modyfikowania zasad bezpiecznych załączników opisano w temacie [Konfigurowanie zasad bezpiecznych załączników w Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-safe-attachments-policies.md).
 
-#### <a name="safe-attachments-policies-in-powershell"></a>zasady załączników Sejf w programie PowerShell
+#### <a name="safe-attachments-policies-in-powershell"></a>Zasady bezpiecznych załączników w programie PowerShell
 
-Jeśli wolisz używać programu PowerShell do przypisywania zasad kwarantanny w zasadach Sejf Załączniki, połącz się z programem Exchange Online programu PowerShell lub Exchange Online Protection programu PowerShell i użyj następującej składni:
+Jeśli wolisz używać programu PowerShell do przypisywania zasad kwarantanny w zasadach bezpiecznych załączników, połącz się z programem Exchange Online programu PowerShell lub Exchange Online Protection programu PowerShell i użyj następującej składni:
 
 ```powershell
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
@@ -458,9 +460,9 @@ Jeśli wolisz używać programu PowerShell do przypisywania zasad kwarantanny w 
 
 - Wartości parametrów _Akcja_ Blokuj, Zastąp lub DynamicDelivery mogą powodować komunikaty poddane kwarantannie (wartość Zezwalaj nie powoduje kwarantanny komunikatów). Wartość parametru _Action (Akcja_ ) ma znaczenie tylko wtedy, gdy wartość parametru _Enable_ to `$true`.
 
-- Podczas tworzenia nowych zasad załączników Sejf bez użycia parametru QuarantineTag są używane domyślne zasady kwarantanny dla wykrywania załączników Sejf w wiadomości e-mail (AdminOnlyAccessPolicy).
+- Podczas tworzenia nowych zasad bezpiecznych załączników bez użycia parametru QuarantineTag są używane domyślne zasady kwarantanny dla wykrywania bezpiecznych załączników w wiadomości e-mail (AdminOnlyAccessPolicy).
 
-  Domyślne zasady kwarantanny należy zastąpić niestandardowymi zasadami kwarantanny tylko wtedy, gdy chcesz zmienić domyślne możliwości użytkowników końcowych w wiadomościach e-mail poddawanych kwarantannie przez zasady Sejf Załączniki.
+  Domyślne zasady kwarantanny należy zastąpić niestandardowymi zasadami kwarantanny tylko wtedy, gdy chcesz zmienić domyślne możliwości użytkowników końcowych w wiadomościach e-mail poddawanych kwarantannie przez zasady bezpiecznych załączników.
 
   Aby wyświetlić ważne wartości parametrów, uruchom następujące polecenie:
 
@@ -468,7 +470,7 @@ Jeśli wolisz używać programu PowerShell do przypisywania zasad kwarantanny w 
   Get-SafeAttachmentPolicy | Format-List Name,Enable,Action,QuarantineTag
   ```
 
-- Nowe zasady załączników Sejf w programie PowerShell wymagają zasad bezpiecznego załącznika (ustawień) przy użyciu polecenia cmdlet **New-SafeAttachmentPolicy** i wyłącznej reguły bezpiecznego załącznika (filtry adresatów) przy użyciu polecenia cmdlet **New-SafeAttachmentRule**. Aby uzyskać instrukcje, zobacz [Konfigurowanie zasad Sejf załączników za pomocą programu Exchange Online programu PowerShell lub autonomicznego programu PowerShell EOP](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies).
+- Nowe zasady bezpiecznych załączników w programie PowerShell wymagają zasad bezpiecznego załącznika (ustawień) przy użyciu polecenia cmdlet **New-SafeAttachmentPolicy** i wyłącznej reguły bezpiecznego załącznika (filtry adresatów) przy użyciu polecenia cmdlet **New-SafeAttachmentRule** . Aby uzyskać instrukcje, zobacz [Używanie Exchange Online programu PowerShell lub autonomicznego programu PowerShell EOP do konfigurowania zasad bezpiecznych załączników](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies).
 
 W tym przykładzie utworzono zasady bezpiecznego załącznika o nazwie Dział badań, które blokują wykryte komunikaty i używają niestandardowych zasad kwarantanny o nazwie NoAccess, które przypisują do komunikatów z kwarantanną brak uprawnień **dostępu** .
 
@@ -519,7 +521,7 @@ Globalne ustawienia zasad kwarantanny umożliwiają dostosowywanie powiadomień 
 
         :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="Wybrane języki w globalnych ustawieniach powiadomień kwarantanny zasad kwarantanny." lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
-   - **Użyj logo mojej firmy**: wybierz tę opcję, aby zastąpić domyślne logo firmy Microsoft używane w górnej części powiadomień o kwarantannie. Przed wykonaniem tego kroku należy postępować zgodnie z instrukcjami w [temacie Dostosowywanie motywu Microsoft 365 dla organizacji](../../admin/setup/customize-your-organization-theme.md) w celu przekazania niestandardowego logo.
+   - **Użyj logo mojej firmy**: wybierz tę opcję, aby zastąpić domyślne logo firmy Microsoft używane w górnej części powiadomień o kwarantannie. Przed wykonaniem tego kroku należy postępować zgodnie z instrukcjami w [temacie Dostosowywanie motywu platformy Microsoft 365 dla organizacji](../../admin/setup/customize-your-organization-theme.md) w celu przekazania logo niestandardowego.
 
      Poniższy zrzut ekranu przedstawia niestandardowe logo w powiadomieniu o kwarantannie:
 
@@ -632,7 +634,7 @@ Domyślnie domyślne zasady alertów o nazwie **Użytkownik zażądał wydania k
 
 Administratorzy mogą dostosować adresatów powiadomień e-mail lub utworzyć niestandardowe zasady alertów, aby uzyskać więcej opcji.
 
-Aby uzyskać więcej informacji na temat zasad alertów, zobacz [Zasady alertów w Microsoft 365](../../compliance/alert-policies.md).
+Aby uzyskać więcej informacji na temat zasad alertów, zobacz [Zasady alertów na platformie Microsoft 365](../../compliance/alert-policies.md).
 
 ## <a name="quarantine-policy-permission-details"></a>Szczegóły uprawnień zasad kwarantanny
 
@@ -729,6 +731,9 @@ Uprawnienie **podglądu** (_PermissionToPreview_) steruje możliwością wyświe
 - **Powiadomienia o kwarantannie**: Brak efektu.
 
 #### <a name="allow-recipients-to-release-a-message-from-quarantine-permission"></a>Zezwalaj adresatom na zwolnienie komunikatu z uprawnienia kwarantanny
+
+> [!NOTE]
+> To uprawnienie nie jest uwzględniane w zasadach ochrony przed złośliwym oprogramowaniem ani w przypadku werdyktu dotyczącego wyłudzania informacji o wysokim poziomie zaufania w zasadach ochrony przed spamem. Użytkownicy nie mogą zwolnić własnego złośliwego oprogramowania ani wiadomości wyłudzających informacje o wysokim poziomie zaufania z kwarantanny. W najlepszym razie możesz użyć opcji [Zezwalaj adresatom na żądanie wydania komunikatu z uprawnienia do kwarantanny](#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission) .
 
 Pozycja **Zezwalaj adresatom na zwolnienie komunikatu z uprawnienia do kwarantanny** (_PermissionToRelease_) umożliwia użytkownikom bezpośrednie i bez zgody administratora wydawanie komunikatów objętych kwarantanną.
 

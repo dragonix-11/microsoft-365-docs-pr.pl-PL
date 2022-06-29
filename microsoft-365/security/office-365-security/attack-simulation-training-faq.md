@@ -18,12 +18,12 @@ ms.custom:
 description: Administratorzy mogą poznać zagadnienia dotyczące wdrażania i często zadawane pytania dotyczące symulacji ataków i szkoleń w organizacjach Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4145dcd073ec97c43ac64eecdbd25c48612a9b83
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 50f82d975e9dc4f534f9223b85fd9e841a3ad725
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649026"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490492"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Zagadnienia dotyczące wdrażania szkolenia z symulacji ataków i często zadawane pytania
 
@@ -34,23 +34,23 @@ ms.locfileid: "65649026"
 
 Trenowanie symulacji ataków umożliwia organizacjom Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2 mierzenie ryzyka związanego z inżynierią społeczną i zarządzanie nim, umożliwiając tworzenie symulacji wyłudzania informacji i zarządzanie nimi, które są obsługiwane przez rzeczywiste ładunki wyłudzania informacji bez broni. Szkolenie hiper-ukierunkowane, realizowane we współpracy z zabezpieczeniami programu Terranova, pomaga poprawić wiedzę i zmienić zachowanie pracowników.
 
-Aby uzyskać więcej informacji na temat rozpoczynania trenowania symulacji ataków, zobacz [Wprowadzenie korzystanie z trenowania symulacji ataków](attack-simulation-training-get-started.md).
+Aby uzyskać więcej informacji na temat rozpoczynania pracy z trenowaniem symulacji ataków, zobacz [Wprowadzenie do trenowania symulacji ataków](attack-simulation-training-get-started.md).
 
 Podczas gdy całe środowisko tworzenia i planowania symulacji zostało zaprojektowane tak, aby było swobodne i bezproblemowe, uruchamianie symulacji w skali przedsiębiorstwa często wymaga planowania. Ten artykuł pomaga sprostać konkretnym wyzwaniom, które widzimy, gdy nasi klienci uruchamiają symulacje we własnych środowiskach.
 
 ## <a name="issues-with-end-user-experiences"></a>Problemy z środowiskami użytkowników końcowych
 
-### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Adresy URL symulacji wyłudzania informacji zablokowane przez usługę Google Sejf Browsing
+### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Adresy URL symulacji wyłudzania informacji zablokowane przez bezpieczne przeglądanie google
 
-Usługa reputacji adresu URL może zidentyfikować co najmniej jeden adres URL używany przez trenowanie symulacji ataków jako niebezpieczny. Przeglądanie google Sejf w przeglądarce Google Chrome blokuje niektóre symulowane adresy URL wyłudzania informacji z **komunikatem o zwodniczej witrynie**. Chociaż współpracujemy z wieloma dostawcami reputacji adresów URL, aby zawsze zezwalać na nasze adresy URL symulacji, nie zawsze mamy pełne pokrycie.
+Usługa reputacji adresu URL może zidentyfikować co najmniej jeden adres URL używany przez trenowanie symulacji ataków jako niebezpieczny. Bezpieczne przeglądanie Google w przeglądarce Google Chrome blokuje niektóre symulowane adresy URL wyłudzania informacji za pomocą komunikatu **zwodniczej witryny** . Chociaż współpracujemy z wieloma dostawcami reputacji adresów URL, aby zawsze zezwalać na nasze adresy URL symulacji, nie zawsze mamy pełne pokrycie.
 
 :::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="Ostrzeżenie o zwodniczej witrynie w Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
-Należy pamiętać, że ten problem nie ma wpływu na Microsoft Edge.
+Należy pamiętać, że ten problem nie ma wpływu na przeglądarkę Microsoft Edge.
 
-W ramach fazy planowania przed użyciem adresu URL w kampanii wyłudzania informacji sprawdź dostępność adresu URL w obsługiwanych przeglądarkach internetowych. Jeśli adresy URL są blokowane przez usługę Google Sejf Browsing, [postępuj zgodnie z poniższymi wskazówkami](https://support.google.com/chrome/a/answer/7532419) firmy Google, aby zezwolić na dostęp do adresów URL.
+W ramach fazy planowania przed użyciem adresu URL w kampanii wyłudzania informacji sprawdź dostępność adresu URL w obsługiwanych przeglądarkach internetowych. Jeśli adresy URL są blokowane przez bezpieczne przeglądanie google, [postępuj zgodnie z poniższymi wskazówkami](https://support.google.com/chrome/a/answer/7532419) firmy Google, aby zezwolić na dostęp do adresów URL.
 
-Zapoznaj się [z Wprowadzenie korzystania z trenowania symulacji ataków](attack-simulation-training-get-started.md), aby uzyskać listę adresów URL, które są obecnie używane przez trenowanie symulacji ataków.
+Aby uzyskać listę adresów URL, które są obecnie używane przez trenowanie symulacji ataków, zobacz [Wprowadzenie do trenowania symulacji ataków](attack-simulation-training-get-started.md) .
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>Symulacja wyłudzania informacji i adresy URL administratora zablokowane przez rozwiązania serwera proxy sieci i sterowniki filtrów
 
@@ -62,7 +62,7 @@ Zarówno adresy URL symulacji wyłudzania informacji, jak i adresy URL administr
 
 Chociaż widzieliśmy, że niewielu klientów jest zablokowanych w tej warstwie, tak się dzieje. Jeśli wystąpią problemy, rozważ skonfigurowanie następujących adresów URL w celu obejścia skanowania przez urządzenia zabezpieczeń lub filtry zgodnie z wymaganiami:
 
-- Symulowane adresy URL wyłudzania informacji zgodnie z opisem w [Wprowadzenie przy użyciu trenowania symulacji ataków](attack-simulation-training-get-started.md).
+- Symulowane adresy URL wyłudzania informacji zgodnie z opisem w artykule [Wprowadzenie do trenowania symulacji ataków](attack-simulation-training-get-started.md).
 - <https://security.microsoft.com/attacksimulator>
 - <https://security.microsoft.com/attacksimulationreport>
 - <https://security.microsoft.com/trainingassignments>
@@ -73,7 +73,7 @@ Możliwe, że liczba użytkowników, którzy faktycznie otrzymują wiadomości e
 
 - Nieprawidłowe adresy e-mail adresatów.
 - Użytkownicy-goście.
-- Użytkownicy, którzy nie są już aktywni w Azure Active Directory (Azure AD).
+- Użytkownicy, którzy nie są już aktywni w usłudze Azure Active Directory (Azure AD).
 
 Tylko prawidłowi użytkownicy niebędący gośćmi z prawidłową skrzynką pocztową zostaną uwzględnieni w symulacjach. Jeśli używasz grup dystrybucyjnych lub grup zabezpieczeń z obsługą poczty do kierowania użytkowników, możesz użyć polecenia cmdlet [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) w [programie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), aby wyświetlić i zweryfikować członków grupy dystrybucyjnej.
 
@@ -127,12 +127,18 @@ Raporty symulacji w trenowaniu symulatora ataków zawierają szczegółowe infor
 - Użytkownicy, którzy zrezygnowali ze swoich poświadczeń.
 - Użytkownicy, którzy zgłosili wiadomość jako wyłudzanie informacji.
 
-Jeśli wiadomości zgłaszane przez użytkowników jako wyłudzanie informacji nie są przechwytywane w raportach symulacji symulacji symulacji ataków, może istnieć Exchange reguła przepływu poczty (znana również jako reguła transportu), która blokuje dostarczanie zgłoszonych wiadomości do firmy Microsoft. Sprawdź, czy reguły przepływu poczty nie blokują dostarczania na następujące adresy e-mail:
+Jeśli komunikaty zgłaszane przez użytkowników jako wyłudzanie informacji nie są przechwytywane w raportach symulacji symulacji ataków, może istnieć reguła przepływu poczty programu Exchange (znana również jako reguła transportu), która blokuje dostarczanie zgłoszonych wiadomości do firmy Microsoft. Sprawdź, czy reguły przepływu poczty nie blokują dostarczania na następujące adresy e-mail:
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
 - phish@office365.microsoft.com
-- nie\_ junk@office365.microsoft.com
+- nie\_junk@office365.microsoft.com
+
+### <a name="users-are-assigned-training-after-they-report-a-simulated-message"></a>Użytkownicy są przypisani do szkolenia po zgłoszeniu symulowanego komunikatu
+
+Jeśli użytkownicy mają przypisane szkolenie po zgłoszeniu komunikatu symulacji wyłudzania informacji, sprawdź, czy twoja organizacja ma **niestandardową skrzynkę pocztową** skonfigurowaną w **zasadach przesyłania użytkowników**. Podczas konfigurowania **niestandardowej skrzynki pocztowej** ta skrzynka pocztowa musi zostać wykluczona z zasad bezpiecznych łączy i bezpiecznych załączników zgodnie z [wymaganiami wstępnymi niestandardowej skrzynki pocztowej](user-submission.md).
+
+Jeśli twoja organizacja ma **skonfigurowaną niestandardową skrzynkę pocztową** i nie skonfigurowała wymaganych wykluczeń, te wiadomości mogą zostać zdetonowane, co spowoduje przypisanie szkoleń.
 
 ## <a name="other-frequently-asked-questions"></a>Inne często zadawane pytania
 
@@ -163,7 +169,7 @@ Mimo to możesz utworzyć własny ładunek w wybranym języku przy użyciu niest
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>Pyt.: Jak mogę przełączyć się na inne języki dla portalu administracyjnego i środowiska szkoleniowego?
 
-Odc. W Microsoft 365 lub Office 365 konfiguracja języka jest specyficzna i scentralizowana dla każdego konta użytkownika. Aby uzyskać instrukcje dotyczące sposobu zmiany ustawienia języka, zobacz [Zmienianie języka wyświetlania i strefy czasowej w Microsoft 365 dla firm](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
+Odc. Na platformie Microsoft 365 lub Office 365 konfiguracja języka jest specyficzna i scentralizowana dla każdego konta użytkownika. Aby uzyskać instrukcje dotyczące sposobu zmiany ustawienia języka, zobacz [Zmienianie języka wyświetlania i strefy czasowej w usłudze Microsoft 365 dla firm](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
 
 Należy pamiętać, że synchronizacja zmiany konfiguracji może potrwać do 30 minut we wszystkich usługach.
 
@@ -188,3 +194,8 @@ Odświadczanie: Dostarczanie z obsługą regionu używa atrybutu TimeZone skrzyn
 Tego samego dnia o godzinie 9:00 komunikat symulacji jest wysyłany do usługi UserB. W przypadku dostarczania z obsługą regionu komunikat nie jest wysyłany do użytkownika UserA tego samego dnia, ponieważ godzina 9:00 czasu pacyficznego to 12:00 czasu wschodniego. Zamiast tego wiadomość jest wysyłana do użytkownika UserA o godzinie 9:00 czasu wschodniego następnego dnia.
 
 Dlatego podczas początkowego przebiegu kampanii z włączonym dostarczaniem z obsługą regionu może się wydawać, że komunikat symulacji został wysłany tylko do użytkowników w określonej strefie czasowej. Jednak w miarę upływu czasu coraz więcej użytkowników wchodzi w zakres, docelowi użytkownicy będą się zwiększać.
+
+
+### <a name="q-does-microsoft-collect-or-store-any-information-that-users-enter-at-the-credential-harvest-sign-in-page-used-in-the-credential-harvest-simulation-technique"></a>Pyt.: Czy firma Microsoft zbiera lub przechowuje jakiekolwiek informacje wprowadzane przez użytkowników na stronie logowania Credential Harvest używanej w technice symulacji poświadczeń?
+
+Odp. Nie. Wszelkie informacje wprowadzone na stronie logowania do zbioru poświadczeń są odrzucane w trybie dyskretnym. Tylko "kliknięcie" jest rejestrowane w celu przechwycenia zdarzenia naruszenia zabezpieczeń. Firma Microsoft nie zbiera, nie rejestruje ani nie przechowuje żadnych szczegółów wprowadzonych przez użytkowników w tym kroku.

@@ -1,5 +1,5 @@
 ---
-title: Wybieranie domeny do użycia podczas tworzenia grup Microsoft 365
+title: Wybieranie domeny do użycia podczas tworzenia grup platformy Microsoft 365
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,21 +17,21 @@ search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
-description: Dowiedz się, jak wybrać domenę do użycia podczas tworzenia grup Microsoft 365, konfigurując zasady adresów e-mail przy użyciu programu PowerShell.
-ms.openlocfilehash: c6eb1bbccf8745c88941f40d6fefeed29aec5620
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Dowiedz się, jak wybrać domenę do użycia podczas tworzenia grup platformy Microsoft 365, konfigurując zasady adresów e-mail przy użyciu programu PowerShell.
+ms.openlocfilehash: bd9fad340d136fe4cac228f94f1904761cff7071
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012543"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490902"
 ---
-# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Wybieranie domeny do użycia podczas tworzenia grup Microsoft 365
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Wybieranie domeny do użycia podczas tworzenia grup platformy Microsoft 365
 
-Niektóre organizacje używają osobnych domen poczty e-mail w celu rozdzielenia różnych części swojej działalności. Możesz określić, która domena ma być używana podczas tworzenia grup Microsoft 365 przez użytkowników.
+Niektóre organizacje używają osobnych domen poczty e-mail w celu rozdzielenia różnych części swojej działalności. Możesz określić, która domena ma być używana podczas tworzenia grup platformy Microsoft 365 przez użytkowników.
   
 Jeśli Twoja organizacja potrzebuje użytkowników do tworzenia grup w domenach innych niż domyślna akceptowana domena firmy, możesz na to zezwolić, konfigurując zasady adresów e-mail (EAPs) przy użyciu programu PowerShell.
 
-Przed uruchomieniem poleceń cmdlet programu PowerShell pobierz i zainstaluj moduł, który umożliwi ci rozmowę z organizacją. Zapoznaj się [z Połączenie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Przed uruchomieniem poleceń cmdlet programu PowerShell pobierz i zainstaluj moduł, który umożliwi ci rozmowę z organizacją. Zapoznaj się z pozycją [Połącz z Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="example-scenarios"></a>Przykładowe scenariusze
 
@@ -50,7 +50,7 @@ W poniższych dwóch scenariuszach wyjaśniono, w jaki sposób można to osiągn
   
 ### <a name="scenario-1"></a>Scenariusz 1
 
-W poniższym przykładzie pokazano, jak aprowizować wszystkie grupy Microsoft 365 w organizacji w domenie groups.contoso.com.
+W poniższym przykładzie pokazano, jak aprowizować wszystkie grupy platformy Microsoft 365 w organizacji w domenie groups.contoso.com.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -58,7 +58,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>Scenariusz 2
 
-Załóżmy, że chcesz kontrolować, w których domenach podrzędnych są tworzone Microsoft 365 grupy. Chcesz:
+Załóżmy, że chcesz kontrolować, w których domenach podrzędnych są tworzone grupy platformy Microsoft 365. Chcesz:
   
 - Grupy utworzone przez uczniów (użytkowników, dla których **dział** ma ustawioną pozycję **Studenci**) w domenie students.groups.contoso.com. Użyj tego polecenia:
     
@@ -77,7 +77,9 @@ Załóżmy, że chcesz kontrolować, w których domenach podrzędnych są tworzo
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
   ```
-
+> [!NOTE]
+> Ten scenariusz nie działa, gdy rekord MX wskazuje na filtrowanie spamu innych firm.
+ 
 ## <a name="change-email-address-policies"></a>Zmienianie zasad adresów e-mail
 
 Aby zmienić szablony priorytetów lub adresów e-mail dla istniejącego protokołu EAP, użyj polecenia cmdlet Set-EmailAddressPolicy.
@@ -101,7 +103,7 @@ Zmiana protokołu EAP nie ma wpływu na grupy, które zostały już aprowizowane
   
 ## <a name="hybrid-requirements"></a>Wymagania hybrydowe
 
-Jeśli Twoja organizacja jest skonfigurowana w scenariuszu hybrydowym, zapoznaj się [z tematem Konfigurowanie grup Microsoft 365 przy użyciu lokalnego Exchange hybrydowego](/exchange/hybrid-deployment/set-up-microsoft-365-groups), aby upewnić się, że twoja organizacja spełnia wymagania dotyczące tworzenia grup Microsoft 365. 
+Jeśli Twoja organizacja została skonfigurowana w scenariuszu hybrydowym, zapoznaj się [z tematem Konfigurowanie grup platformy Microsoft 365 za pomocą hybrydowego programu Exchange lokalnego](/exchange/hybrid-deployment/set-up-microsoft-365-groups) , aby upewnić się, że twoja organizacja spełnia wymagania dotyczące tworzenia grup platformy Microsoft 365. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>Dodatkowe informacje na temat korzystania z grup zasad adresów e-mail:
 
@@ -125,4 +127,4 @@ Jest jeszcze kilka rzeczy do poznania:
 
 [Tworzenie planu zarządzania współpracą](collaboration-governance-first.md) (artykuł)
 
-[Tworzenie grupy Microsoft 365 w centrum administracyjnym](../admin/create-groups/create-groups.md) (artykuł)
+[Tworzenie grupy platformy Microsoft 365 w centrum administracyjnym](../admin/create-groups/create-groups.md) (artykuł)

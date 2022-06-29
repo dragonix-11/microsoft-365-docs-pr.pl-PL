@@ -18,12 +18,12 @@ ms.collection:
 description: Dowiedz się, jak skonfigurować oparte na domenie uwierzytelnianie komunikatów, raportowanie i zgodność (DMARC) w celu weryfikowania komunikatów wysyłanych z organizacji.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 99c688587e7e09e2726457256f14403e2db73d1e
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: a3e5cc711aef4e81833540572027b8d06087c510
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772081"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486934"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Sprawdzanie poprawności poczty e-mail przy użyciu usługi DMARC
 
@@ -39,9 +39,9 @@ Uwierzytelnianie, raportowanie i zgodność ([DMARC](https://dmarc.org)) oparte 
 Funkcja DMARC zapewnia, że docelowe systemy poczty e-mail ufają komunikatom wysyłającym z twojej domeny. Użycie funkcji DMARC z platformami SPF i DKIM zapewnia organizacjom większą ochronę przed fałszowaniem i wyłudzaniem informacji za pośrednictwem poczty e-mail. Usługa DMARC ułatwia odbieranie systemów poczty podejmowania decyzji, co zrobić z wiadomościami z domeny, które nie sprawdzają SPF lub DKIM.
 
 > [!TIP]
-> Odwiedź katalog [Microsoft Intelligent Security Association (MISA),](https://www.microsoft.com/misapartnercatalog) aby wyświetlić dostawców innych firm oferujących raportowanie DMARC dla Microsoft 365.
+> Odwiedź katalog [Microsoft Intelligent Security Association (MISA),](https://www.microsoft.com/misapartnercatalog) aby wyświetlić dostawców innych firm oferujących raportowanie DMARC dla platformy Microsoft 365.
 
-## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-microsoft-365"></a>Jak SPF i DMARC współpracują ze sobą w celu ochrony poczty e-mail w Microsoft 365?
+## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-microsoft-365"></a>Jak SPF i DMARC współpracują ze sobą w celu ochrony poczty e-mail na platformie Microsoft 365?
 
  Wiadomość e-mail może zawierać wiele adresów inicjalatora lub nadawcy. Te adresy są używane do różnych celów. Rozważmy na przykład następujące adresy:
 
@@ -92,17 +92,17 @@ Rekord DMARC TXT firmy Microsoft wygląda mniej więcej tak:
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.contoso.com; ruf=mailto:d@ruf.contoso.com; fo=1"
 ```
 
-Aby uzyskać więcej dostawców innych firm, którzy oferują raportowanie DMARC dla Microsoft 365, odwiedź [katalog MISA](https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365).
+Aby uzyskać więcej dostawców innych firm, którzy oferują raportowanie DMARC dla platformy Microsoft 365, odwiedź [katalog MISA](https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365).
 
 ## <a name="set-up-dmarc-for-inbound-mail"></a>Konfigurowanie usługi DMARC dla poczty przychodzącej
 
-Nie musisz wykonywać żadnych czynności, aby skonfigurować usługę DMARC dla poczty otrzymanej w Microsoft 365. To wszystko jest pod opieką. Jeśli chcesz dowiedzieć się, co się stanie z pocztą, która nie przejdzie testów DMARC, zobacz [Jak Microsoft 365 obsługuje przychodzącą wiadomość e-mail, która kończy się niepowodzeniem DMARC.If](#how-microsoft-365-handles-inbound-email-that-fails-dmarc) you want to learn what happens to mail that fail to pass our DMARC checks, see How Microsoft 365 handles inbound email that fail DMARC.
+Nie musisz wykonywać żadnych czynności, aby skonfigurować usługę DMARC dla poczty otrzymanej na platformie Microsoft 365. To wszystko jest pod opieką. Jeśli chcesz dowiedzieć się, co się stanie z pocztą, która nie przejdzie testów DMARC, zobacz [Jak platforma Microsoft 365 obsługuje przychodzącą wiadomość e-mail, która kończy się niepowodzeniem DMARC](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
 
-## <a name="set-up-dmarc-for-outbound-mail-from-microsoft-365"></a>Konfigurowanie usługi DMARC dla poczty wychodzącej z Microsoft 365
+## <a name="set-up-dmarc-for-outbound-mail-from-microsoft-365"></a>Konfigurowanie usługi DMARC dla poczty wychodzącej z platformy Microsoft 365
 
-Jeśli używasz Microsoft 365, ale nie używasz domeny niestandardowej (używasz onmicrosoft.com), nie musisz wykonywać żadnych innych czynności. SPF jest już skonfigurowany dla Ciebie i Microsoft 365 automatycznie generuje podpis DKIM dla poczty wychodzącej. Nie ma nic więcej do zrobienia, aby skonfigurować DMARC dla organizacji. Aby uzyskać więcej informacji na temat tego podpisu, zobacz [Domyślne zachowanie DKIM i Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+Jeśli używasz platformy Microsoft 365, ale nie używasz domeny niestandardowej (używasz onmicrosoft.com), nie musisz wykonywać żadnych innych czynności. SPF jest już skonfigurowany dla Ciebie, a platforma Microsoft 365 automatycznie generuje podpis DKIM dla poczty wychodzącej. Nie ma nic więcej do zrobienia, aby skonfigurować DMARC dla organizacji. Aby uzyskać więcej informacji na temat tego podpisu, zobacz [Zachowanie domyślne dla infrastruktury DKIM i platformy Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
 
- Jeśli masz domenę niestandardową lub używasz lokalnych serwerów Exchange wraz z Microsoft 365, musisz ręcznie skonfigurować usługę DMARC dla poczty wychodzącej. Konfigurowanie usługi DMARC dla domeny niestandardowej obejmuje następujące kroki:
+ Jeśli masz domenę niestandardową lub używasz lokalnych serwerów exchange wraz z platformą Microsoft 365, musisz ręcznie skonfigurować usługę DMARC dla poczty wychodzącej. Konfigurowanie usługi DMARC dla domeny niestandardowej obejmuje następujące kroki:
 
 - [Krok 1. Identyfikowanie prawidłowych źródeł poczty dla domeny](#step-1-identify-valid-sources-of-mail-for-your-domain)
 
@@ -134,15 +134,15 @@ Najlepszym rozwiązaniem jest upewnienie się, że rekord SPF TXT uwzględnia na
 
 ### <a name="step-3-set-up-dkim-for-your-custom-domain"></a>Krok 3. Konfigurowanie usługi DKIM dla domeny niestandardowej
 
-Po skonfigurowaniu SPF należy skonfigurować infrastrukturę DKIM. Program DKIM umożliwia dodanie podpisu cyfrowego do wiadomości e-mail w nagłówku wiadomości. Jeśli nie skonfigurujesz modułu DKIM i zamiast tego zezwolisz Microsoft 365 na używanie domyślnej konfiguracji DKIM dla domeny, funkcja DMARC może zakończyć się niepowodzeniem. Ten błąd może wystąpić, ponieważ domyślna konfiguracja DKIM używa oryginalnej domeny *onmicrosoft.com* jako *adresu 5322.From*, a nie domeny *niestandardowej* . Spowoduje to niezgodność adresów *5321.MailFrom* i *5322. Z adresów* we wszystkich wiadomościach e-mail wysłanych z domeny.
+Po skonfigurowaniu SPF należy skonfigurować infrastrukturę DKIM. Program DKIM umożliwia dodanie podpisu cyfrowego do wiadomości e-mail w nagłówku wiadomości. Jeśli nie skonfigurujesz modułu DKIM i zamiast tego zezwolisz platformie Microsoft 365 na używanie domyślnej konfiguracji DKIM dla domeny, funkcja DMARC może zakończyć się niepowodzeniem. Ten błąd może wystąpić, ponieważ domyślna konfiguracja DKIM używa oryginalnej domeny *onmicrosoft.com* jako adresu *5321.MailFrom* , a nie domeny *niestandardowej* . Spowoduje to niezgodność adresów *5321.MailFrom* i *5322. Z adresów* we wszystkich wiadomościach e-mail wysłanych z domeny.
 
-Jeśli masz nadawców innych firm, którzy wysyłają wiadomość e-mail w Twoim imieniu i wysyłaną przez nich wiadomość e-mail, niezgodnie z adresami 5321.MailFrom i 5322.From, DMARC zakończy się niepowodzeniem dla tej wiadomości e-mail. Aby tego uniknąć, należy skonfigurować usługę DKIM dla domeny specjalnie z tym nadawcą innej firmy. Umożliwia to Microsoft 365 uwierzytelnianie poczty e-mail z tej usługi innej firmy. Jednak umożliwia również innym, na przykład Yahoo, Gmail i Comcast, zweryfikowanie wiadomości e-mail wysłanych do nich przez inną firmę tak, jakby była wysyłana przez Ciebie pocztą e-mail. Jest to korzystne, ponieważ pozwala klientom na budowanie zaufania z domeną bez względu na to, gdzie znajduje się ich skrzynka pocztowa, a jednocześnie Microsoft 365 nie oznaczy wiadomości jako spamu z powodu fałszowania, ponieważ przekazuje testy uwierzytelniania dla twojej domeny.
+Jeśli masz nadawców innych firm, którzy wysyłają wiadomość e-mail w Twoim imieniu i wysyłaną przez nich wiadomość e-mail, niezgodnie z adresami 5321.MailFrom i 5322.From, DMARC zakończy się niepowodzeniem dla tej wiadomości e-mail. Aby tego uniknąć, należy skonfigurować usługę DKIM dla domeny specjalnie z tym nadawcą innej firmy. Dzięki temu platforma Microsoft 365 może uwierzytelniać pocztę e-mail z tej usługi innej firmy. Jednak umożliwia również innym, na przykład Yahoo, Gmail i Comcast, zweryfikowanie wiadomości e-mail wysłanych do nich przez inną firmę tak, jakby była wysyłana przez Ciebie pocztą e-mail. Jest to korzystne, ponieważ umożliwia klientom budowanie zaufania z domeną bez względu na to, gdzie znajduje się ich skrzynka pocztowa, a jednocześnie platforma Microsoft 365 nie oznaczy wiadomości jako spamu z powodu fałszowania, ponieważ przekazuje testy uwierzytelniania dla twojej domeny.
 
 Aby uzyskać instrukcje dotyczące konfigurowania modułu DKIM dla domeny, w tym sposobu konfigurowania modułu DKIM dla nadawców innych firm, aby mogli podszywać się pod twoją domenę, zobacz [Używanie modułu DKIM do weryfikowania wychodzących wiadomości e-mail wysyłanych z domeny niestandardowej](use-dkim-to-validate-outbound-email.md).
 
 ### <a name="step-4-form-the-dmarc-txt-record-for-your-domain"></a>Krok 4. Tworzenie rekordu DMARC TXT dla domeny
 
-Chociaż istnieją inne opcje składni, które nie są tutaj wymienione, są to najczęściej używane opcje Microsoft 365. Sformatuj rekord DMARC TXT dla domeny w formacie:
+Chociaż istnieją inne opcje składni, które nie są tutaj wymienione, są to najczęściej używane opcje dla platformy Microsoft 365. Sformatuj rekord DMARC TXT dla domeny w formacie:
 
 ```console
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
@@ -158,7 +158,7 @@ Gdzie:
 
 - *Zasady* określają zasady, które mają być przestrzegane przez serwer odbierający w przypadku niepowodzenia DMARC. Możesz ustawić zasady na brak, kwarantannę lub odrzucenie.
 
-Aby uzyskać informacje na temat opcji do użycia, zapoznaj się z pojęciami w [temacie Najlepsze rozwiązania dotyczące implementowania DMARC w Microsoft 365](#best-practices-for-implementing-dmarc-in-microsoft-365).
+Aby uzyskać informacje o opcjach, których należy użyć, zapoznaj się z pojęciami w temacie [Najlepsze rozwiązania dotyczące implementowania usługi DMARC w usłudze Microsoft 365](#best-practices-for-implementing-dmarc-in-microsoft-365).
 
 Przykłady:
 
@@ -190,9 +190,9 @@ Po utworzeniu rekordu należy zaktualizować rekord u rejestratora domen.
 W tym przykładzie rekord TXT DMARC: `dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"`, możesz zobaczyć adres *rua* , w tym przypadku przetworzony przez firmę innej firmy Agari. Ten adres służy do wysyłania "zagregowanej opinii" do analizy i służy do generowania raportu.
 
 > [!TIP]
-> Odwiedź [katalog MISA,](https://www.microsoft.com/misapartnercatalog) aby wyświetlić więcej dostawców innych firm oferujących raportowanie DMARC dla Microsoft 365. Aby uzyskać więcej informacji na temat adresów "rua" DMARC, zobacz " [Domain-based Message Authentication, Reporting, and Conformance (DMARC) firmy IETF.org"](https://datatracker.ietf.org/doc/html/rfc7489) .
+> Odwiedź [katalog misa,](https://www.microsoft.com/misapartnercatalog) aby wyświetlić więcej dostawców innych firm oferujących raportowanie DMARC dla platformy Microsoft 365. Aby uzyskać więcej informacji na temat adresów "rua" DMARC, zobacz " [Domain-based Message Authentication, Reporting, and Conformance (DMARC) firmy IETF.org"](https://datatracker.ietf.org/doc/html/rfc7489) .
 
-## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>Najlepsze rozwiązania dotyczące implementowania DMARC w Microsoft 365
+## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>Najlepsze rozwiązania dotyczące implementowania DMARC na platformie Microsoft 365
 
 Program DMARC można wdrażać stopniowo bez wpływu na pozostałą część przepływu poczty. Utwórz i zaimplementuj plan wdrożenia, który jest zgodny z tymi krokami. Przed przejściem do następnego kroku wykonaj każdy z tych kroków najpierw z domeną podrzędną, a następnie innymi domenami podrzędnymi, a na koniec z domeną najwyższego poziomu w organizacji.
 
@@ -220,31 +220,31 @@ Program DMARC można wdrażać stopniowo bez wpływu na pozostałą część prz
    _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
    ```
 
-## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Jak Microsoft 365 obsługuje wychodzącą wiadomość e-mail, która kończy się niepowodzeniem DMARC
+## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Jak platforma Microsoft 365 obsługuje wychodzącą wiadomość e-mail, która kończy się niepowodzeniem DMARC
 
-Jeśli komunikat jest wychodzący z Microsoft 365 i kończy się niepowodzeniem DMARC, a zasady zostały ustawione na p=kwarantanna lub p=reject, komunikat jest kierowany przez [pulę dostarczania wysokiego ryzyka dla komunikatów wychodzących](high-risk-delivery-pool-for-outbound-messages.md). Wychodząca wiadomość e-mail nie jest zastępowana.
+Jeśli komunikat jest wychodzący z platformy Microsoft 365 i kończy się niepowodzeniem DMARC, a zasady zostały ustawione na p=kwarantanna lub p=reject, komunikat jest kierowany przez [pulę dostarczania wysokiego ryzyka dla komunikatów wychodzących](high-risk-delivery-pool-for-outbound-messages.md). Wychodząca wiadomość e-mail nie jest zastępowana.
 
-Jeśli opublikujesz zasady odrzucania DMARC (p=reject), żaden inny klient w Microsoft 365 nie może podszyć domeny, ponieważ komunikaty nie będą mogły przekazać SPF lub DKIM dla domeny podczas przekazywania komunikatu wychodzącego za pośrednictwem usługi. Jeśli jednak opublikujesz zasady odrzucania DMARC, ale nie masz wszystkich wiadomości e-mail uwierzytelnionych za pośrednictwem Microsoft 365, niektóre z nich mogą być oznaczone jako spam dla przychodzącej wiadomości e-mail (zgodnie z powyższym opisem) lub zostaną odrzucone, jeśli nie opublikujesz SPF i spróbujesz przekazać go wychodzącego za pośrednictwem usługi. Dzieje się tak na przykład w przypadku zapomnienia o uwzględnieniu niektórych adresów IP dla serwerów i aplikacji, które wysyłają pocztę w imieniu domeny podczas tworzenia rekordu DMARC TXT.
+Jeśli opublikujesz zasady odrzucania DMARC (p=reject), żaden inny klient w usłudze Microsoft 365 nie będzie mógł podszyć domeny, ponieważ komunikaty nie będą mogły przekazać SPF lub DKIM dla domeny podczas przekazywania komunikatu wychodzącego za pośrednictwem usługi. Jeśli jednak opublikujesz zasady odrzucenia DMARC, ale nie masz wszystkich wiadomości e-mail uwierzytelnionych za pośrednictwem usługi Microsoft 365, niektóre z nich mogą być oznaczone jako spam dla przychodzącej wiadomości e-mail (zgodnie z powyższym opisem) lub zostaną odrzucone, jeśli nie opublikujesz SPF i spróbujesz przekazać go wychodzącego za pośrednictwem usługi. Dzieje się tak na przykład w przypadku zapomnienia o uwzględnieniu niektórych adresów IP dla serwerów i aplikacji, które wysyłają pocztę w imieniu domeny podczas tworzenia rekordu DMARC TXT.
 
-## <a name="how-microsoft-365-handles-inbound-email-that-fails-dmarc"></a>Jak Microsoft 365 obsługuje przychodzącą wiadomość e-mail, która kończy się niepowodzeniem DMARC
+## <a name="how-microsoft-365-handles-inbound-email-that-fails-dmarc"></a>Jak platforma Microsoft 365 obsługuje przychodzącą wiadomość e-mail, która kończy się niepowodzeniem DMARC
 
-Jeśli zasady DMARC serwera wysyłającego to `p=reject`, [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) oznacza komunikat jako fałszywy zamiast odrzucać. Innymi słowy, w przypadku przychodzącej poczty e-mail Microsoft 365 traktuje `p=reject` i `p=quarantine` w ten sam sposób. Administratorzy mogą zdefiniować akcję do wykonania w przypadku komunikatów sklasyfikowanych jako fałszywe w ramach [zasad ochrony przed wyłudzaniem informacji](set-up-anti-phishing-policies.md).
+Jeśli zasady DMARC serwera wysyłającego to `p=reject`, [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) oznacza komunikat jako fałszywy zamiast odrzucać. Innymi słowy, w przypadku przychodzącej poczty e-mail platforma Microsoft 365 traktuje `p=reject` ją w `p=quarantine` taki sam sposób. Administratorzy mogą zdefiniować akcję do wykonania w przypadku komunikatów sklasyfikowanych jako fałszywe w ramach [zasad ochrony przed wyłudzaniem informacji](set-up-anti-phishing-policies.md).
 
-Microsoft 365 jest skonfigurowany w ten sposób, ponieważ niektóre uzasadnione wiadomości e-mail mogą zakończyć się niepowodzeniem DMARC. Na przykład komunikat może zakończyć się niepowodzeniem DMARC, jeśli zostanie wysłany do listy adresowej, która następnie przekazuje wiadomość wszystkim uczestnikom listy. Jeśli Microsoft 365 odrzuci te wiadomości, użytkownicy mogą utracić legalną wiadomość e-mail i nie mieć możliwości jej pobrania. Zamiast tego te komunikaty nadal będą kończyć się niepowodzeniem DMARC, ale zostaną oznaczone jako spam i nie zostaną odrzucone. W razie potrzeby użytkownicy mogą nadal pobierać te komunikaty w skrzynce odbiorczej za pomocą następujących metod:
+Platforma Microsoft 365 jest skonfigurowana w ten sposób, ponieważ niektóre uzasadnione wiadomości e-mail mogą zakończyć się niepowodzeniem DMARC. Na przykład komunikat może zakończyć się niepowodzeniem DMARC, jeśli zostanie wysłany do listy adresowej, która następnie przekazuje wiadomość wszystkim uczestnikom listy. Jeśli platforma Microsoft 365 odrzuciła te wiadomości, użytkownicy mogą utracić legalną wiadomość e-mail i nie mieć możliwości jej pobrania. Zamiast tego te komunikaty nadal będą kończyć się niepowodzeniem DMARC, ale zostaną oznaczone jako spam i nie zostaną odrzucone. W razie potrzeby użytkownicy mogą nadal pobierać te komunikaty w skrzynce odbiorczej za pomocą następujących metod:
 
 - Użytkownicy dodają bezpiecznych nadawców indywidualnie przy użyciu klienta poczty e-mail.
 
 - Administratorzy mogą używać [analizy fałszowania](learn-about-spoof-intelligence.md) lub [listy dozwolonych/zablokowanych dzierżaw](tenant-allow-block-list.md) , aby zezwalać na komunikaty od sfałszowanego nadawcy.
 
-- Administratorzy tworzą regułę przepływu poczty Exchange (znaną również jako reguła transportu) dla wszystkich użytkowników, która zezwala na wiadomości dla tych konkretnych nadawców.
+- Administratorzy tworzą regułę przepływu poczty programu Exchange (znaną również jako reguła transportu) dla wszystkich użytkowników, która zezwala na wiadomości dla tych konkretnych nadawców.
 
 Aby uzyskać więcej informacji, zobacz [Tworzenie list bezpiecznych nadawców](create-safe-sender-lists-in-office-365.md).
 
-## <a name="how-microsoft-365-utilizes-authenticated-received-chain-arc"></a>Jak Microsoft 365 korzysta z uwierzytelnionego odebranego łańcucha (ARC)
+## <a name="how-microsoft-365-utilizes-authenticated-received-chain-arc"></a>Jak platforma Microsoft 365 korzysta z uwierzytelnionego odebranego łańcucha (ARC)
 
-Wszystkie hostowane skrzynki pocztowe w Microsoft 365 będą teraz korzystać z usługi ARC z lepszą dostarczaniem wiadomości i ulepszoną ochroną przed fałszowaniem. Usługa ARC zachowuje wyniki uwierzytelniania poczty e-mail od wszystkich uczestniczących pośredników lub przeskoków, gdy wiadomość e-mail jest kierowana z serwera źródłowego do skrzynki pocztowej adresata. Przed użyciem usługi ARC modyfikacje wykonywane przez pośredników w routingu poczty e-mail, takie jak reguły przekazywania lub podpisy automatyczne, mogą powodować błędy DMARC do czasu, gdy wiadomość e-mail dotarła do skrzynki pocztowej adresata. Dzięki usłudze ARC kryptograficzne zachowanie wyników uwierzytelniania umożliwia Microsoft 365 zweryfikowanie autentyczności nadawcy wiadomości e-mail.
+Wszystkie hostowane skrzynki pocztowe w usłudze Microsoft 365 będą teraz korzystać z usługi ARC z lepszą dostarczaniem wiadomości i rozszerzoną ochroną przed fałszowaniem. Usługa ARC zachowuje wyniki uwierzytelniania poczty e-mail od wszystkich uczestniczących pośredników lub przeskoków, gdy wiadomość e-mail jest kierowana z serwera źródłowego do skrzynki pocztowej adresata. Przed użyciem usługi ARC modyfikacje wykonywane przez pośredników w routingu poczty e-mail, takie jak reguły przekazywania lub podpisy automatyczne, mogą powodować błędy DMARC do czasu, gdy wiadomość e-mail dotarła do skrzynki pocztowej adresata. Dzięki usłudze ARC kryptograficzne zachowanie wyników uwierzytelniania umożliwia usłudze Microsoft 365 zweryfikowanie autentyczności nadawcy wiadomości e-mail.
 
-Microsoft 365 obecnie używa usługi ARC do weryfikowania wyników uwierzytelniania, gdy firma Microsoft jest uszczelniaczem ARC, ale planuje dodać obsługę uszczelniaczy ARC innych firm w przyszłości.
+Obecnie platforma Microsoft 365 używa usługi ARC do weryfikowania wyników uwierzytelniania, gdy firma Microsoft jest uszczelniaczem ARC, ale planuje dodać obsługę uszczelniaczy ARC innych firm w przyszłości.
 
 ## <a name="troubleshooting-your-dmarc-implementation"></a>Rozwiązywanie problemów z implementacją DMARC
 
@@ -265,7 +265,7 @@ Wszystkie lub większość wiadomości e-mail będą najpierw kierowane do mail.
 
 Chcesz uzyskać więcej informacji na temat usługi DMARC? Te zasoby mogą pomóc.
 
-- [Nagłówki wiadomości antyspamowych](anti-spam-message-headers.md) zawierają pola składni i nagłówków używane przez Microsoft 365 do sprawdzania DMARC.
+- [Nagłówki wiadomości antyspamowych](anti-spam-message-headers.md) zawierają pola składni i nagłówków używane przez usługę Microsoft 365 do sprawdzania DMARC.
 
 - Weź udział w [serii szkoleniowej DMARC](https://www.m3aawg.org/activities/training/dmarc-training-series) od M<sup>3</sup>AAWG (Messaging, Malware, Mobile Anti-Abuse Working Group).
 
@@ -275,10 +275,10 @@ Chcesz uzyskać więcej informacji na temat usługi DMARC? Te zasoby mogą pomó
 
 ## <a name="see-also"></a>Zobacz też
 
-[Jak Microsoft 365 używa struktury zasad nadawcy (SPF), aby zapobiec fałszowaniu](how-office-365-uses-spf-to-prevent-spoofing.md)
+[Jak platforma Microsoft 365 używa programu Sender Policy Framework (SPF), aby zapobiec fałszowaniu](how-office-365-uses-spf-to-prevent-spoofing.md)
 
-[**Konfigurowanie SPF w Microsoft 365, aby zapobiec fałszowaniu**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+[**Konfigurowanie SPF na platformie Microsoft 365 w celu zapobiegania fałszowaniu**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-[**Weryfikowanie wychodzących wiadomości e-mail wysyłanych z domeny niestandardowej w Microsoft 365 za pomocą modułu DKIM**](use-dkim-to-validate-outbound-email.md)
+[**Weryfikowanie wychodzących wiadomości e-mail wysyłanych z domeny niestandardowej na platformie Microsoft 365 przy użyciu modułu DKIM**](use-dkim-to-validate-outbound-email.md)
 
 [Używanie zaufanych nadawców usługi ARC na potrzeby legalnych przepływów poczty](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)

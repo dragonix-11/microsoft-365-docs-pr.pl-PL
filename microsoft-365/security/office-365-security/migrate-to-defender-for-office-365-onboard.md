@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Wykonaj kroki migracji z usługi ochrony innej firmy lub urządzenia w celu Ochrona usługi Office 365 w usłudze Microsoft Defender ochrony.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2b70cdd53797a4985cc76f777401fa33f3e1163
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b2358103b3ab6bfee34e88d23f4b3de0d774e34e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939218"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492131"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migrowanie do Ochrona usługi Office 365 w usłudze Microsoft Defender — faza 3: dołączanie
 
@@ -39,22 +39,22 @@ ms.locfileid: "64939218"
 
 Witamy w **fazie 3: dołączanie** **[migracji do Ochrona usługi Office 365 w usłudze Microsoft Defender](migrate-to-defender-for-office-365.md#the-migration-process)**! Ta faza migracji obejmuje następujące kroki:
 
-1. [Rozpoczynanie dołączania Teams zabezpieczeń](#step-1-begin-onboarding-security-teams)
+1. [Rozpoczynanie dołączania zespołów zabezpieczeń](#step-1-begin-onboarding-security-teams)
 2. [(Opcjonalnie) Wykluczenie użytkowników pilotażowych z filtrowania według istniejącej usługi ochrony](#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)
 3. [Dostrajanie inteligencji fałszowania](#step-3-tune-spoof-intelligence)
 4. [Dostrajanie ochrony przed personifikacją i analizy skrzynek pocztowych](#step-4-tune-impersonation-protection-and-mailbox-intelligence)
 5. [Mierzenie i dostosowywanie danych przesyłanych przez użytkowników przy użyciu danych przesyłanych przez użytkownika](#step-5-use-data-from-user-submissions-to-measure-and-adjust)
 6. [(Opcjonalnie) Dodawanie większej liczby użytkowników do pilotażu i iterowanie](#step-6-optional-add-more-users-to-your-pilot-and-iterate)
-7. [Rozszerzanie ochrony Microsoft 365 na wszystkich użytkowników i wyłączanie reguły przepływu poczty SCL=-1](#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)
+7. [Rozszerzanie ochrony platformy Microsoft 365 na wszystkich użytkowników i wyłączanie reguły przepływu poczty SCL=-1](#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)
 8. [Przełączanie rekordów MX](#step-8-switch-your-mx-records)
 
-## <a name="step-1-begin-onboarding-security-teams"></a>Krok 1. Rozpoczynanie dołączania Teams zabezpieczeń
+## <a name="step-1-begin-onboarding-security-teams"></a>Krok 1. Rozpoczynanie dołączania zespołów zabezpieczeń
 
 Jeśli Twoja organizacja ma zespół reagowania na zabezpieczenia, nadszedł czas, aby rozpocząć integrację Ochrona usługi Office 365 w usłudze Microsoft Defender z procesami reagowania, w tym systemami biletów. Jest to cały temat sam w sobie, ale czasami jest pomijany. Wczesne zaangażowanie zespołu ds. reagowania na zabezpieczenia zapewni, że organizacja będzie gotowa do radzenia sobie z zagrożeniami podczas przełączania rekordów MX. Reagowanie na zdarzenia musi być dobrze przygotowane do obsługi następujących zadań:
 
 - Poznaj nowe narzędzia i zintegruj je z istniejącymi przepływami. Przykład:
-  - Zarządzanie przez administratora komunikatów poddanych kwarantannie jest ważne. Aby uzyskać instrukcje, zobacz [Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator](manage-quarantined-messages-and-files.md).
-  - Śledzenie komunikatów pozwala zobaczyć, co się stało z komunikatami podczas wprowadzania lub opuszczania Microsoft 365. Aby uzyskać więcej informacji, zobacz [Śledzenie komunikatów w nowoczesnym centrum administracyjnym Exchange w Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
+  - Administracja zarządzanie komunikatami poddanymi kwarantannie jest ważne. Aby uzyskać instrukcje, zobacz [Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator](manage-quarantined-messages-and-files.md).
+  - Śledzenie komunikatów pozwala zobaczyć, co się stało z komunikatami podczas ich wprowadzania lub opuszczania platformy Microsoft 365. Aby uzyskać więcej informacji, zobacz [Śledzenie komunikatów w nowoczesnym centrum administracyjnym programu Exchange w Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 - Identyfikowanie zagrożeń, które mogły zostać wprowadzone do organizacji.
 - Dostrajanie i dostosowywanie [alertów](../../compliance/alert-policies.md) dla procesów organizacyjnych.
 - Zarządzanie kolejką zdarzeń i korygowanie potencjalnych zagrożeń.
@@ -78,10 +78,10 @@ Jeśli Twoja organizacja nie ma zespołu reagowania na zabezpieczenia ani istnie
 
 Uprawnienia w Ochrona usługi Office 365 w usłudze Defender są oparte na kontroli dostępu opartej na rolach (RBAC) i opisano je w temacie Uprawnienia w [portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Należy pamiętać o następujących ważnych kwestiach:
 
-- Role usługi Azure AD dają uprawnienia do **wszystkich** obciążeń w Microsoft 365. Jeśli na przykład dodasz użytkownika do administratora zabezpieczeń w Azure Portal, wszędzie ma uprawnienia administratora zabezpieczeń.
-- Role współpracy & poczty e-mail w portalu Microsoft 365 Defender udzielają uprawnień do portalu Microsoft 365 Defender, portalu zgodności usługi Microsoft Purview i starszego Centrum zgodności usługi Security &. Jeśli na przykład dodasz użytkownika do administratora zabezpieczeń w portalu Microsoft 365 Defender, ma on dostęp administratora zabezpieczeń **tylko** w portalu Microsoft 365 Defender, portalu zgodności usługi Microsoft Purview i Centrum zgodności usługi Security &.
+- Azure AD role dają uprawnienia do **wszystkich** obciążeń w usłudze Microsoft 365. Jeśli na przykład dodasz użytkownika do administratora zabezpieczeń w Azure Portal, wszędzie ma uprawnienia administratora zabezpieczeń.
+- Role współpracy & poczty e-mail w portalu Microsoft 365 Defender udzielają uprawnień portalowi Microsoft 365 Defender, portal zgodności Microsoft Purview i starszemu Centrum zgodności & zabezpieczeń. Jeśli na przykład dodasz użytkownika do administratora zabezpieczeń w portalu Microsoft 365 Defender, ma on dostęp administratora zabezpieczeń **tylko** w portalu Microsoft 365 Defender, portal zgodności Microsoft Purview i Centrum zgodności & zabezpieczeń.
 - Wiele funkcji w portalu Microsoft 365 Defender jest opartych na poleceniach cmdlet programu PowerShell Exchange Online i dlatego wymaga członkostwa w grupach ról w odpowiednich rolach (technicznie grupach ról) w Exchange Online (w szczególności w celu uzyskania dostępu do odpowiednich Exchange Online  Polecenia cmdlet programu PowerShell).
-- W portalu Microsoft 365 Defender istnieją role współpracy & poczty e-mail, które nie mają odpowiedników ról usługi Azure AD i są ważne w przypadku operacji zabezpieczeń (na przykład roli Podgląd oraz roli Wyszukiwanie i przeczyszczanie).
+- W portalu Microsoft 365 Defender istnieją role współpracy & poczty e-mail, które nie mają odpowiedników ról Azure AD i są ważne w przypadku operacji zabezpieczeń (na przykład roli podglądu oraz roli Wyszukiwanie i przeczyszczanie).
 
 Zazwyczaj tylko podzbiór pracowników ochrony będzie potrzebował dodatkowych praw do pobierania wiadomości bezpośrednio ze skrzynek pocztowych użytkowników. Wymaga to dodatkowego uprawnienia, które domyślnie nie ma czytnika zabezpieczeń.
 
@@ -90,7 +90,7 @@ Zazwyczaj tylko podzbiór pracowników ochrony będzie potrzebował dodatkowych 
 Chociaż ten krok nie jest wymagany, należy rozważyć skonfigurowanie użytkowników pilotażowych w celu obejścia filtrowania według istniejącej usługi ochrony. Ta akcja umożliwia Ochrona usługi Office 365 w usłudze Defender obsługę **wszystkich** obowiązków związanych z filtrowaniem i ochroną użytkowników pilotażowych. Jeśli nie zwolnisz użytkowników pilotażowych z istniejącej usługi ochrony, Ochrona usługi Office 365 w usłudze Defender efektywnie działa tylko w przypadku chybień z innej usługi (filtrowanie komunikatów, które zostały już odfiltrowane).
 
 > [!NOTE]
-> Ten krok jest jawnie wymagany, jeśli bieżąca usługa ochrony udostępnia zawijanie linków, ale chcesz pilotować Sejf Funkcje linków. Podwójne zawijanie łączy nie jest obsługiwane.
+> Ten krok jest jawnie wymagany, jeśli bieżąca usługa ochrony udostępnia zawijanie linków, ale chcesz pilotować funkcje bezpiecznych łączy. Podwójne zawijanie łączy nie jest obsługiwane.
 
 ## <a name="step-3-tune-spoof-intelligence"></a>Krok 3. Dostrajanie analizy fałszowania
 
@@ -170,18 +170,18 @@ Jeśli Twoja organizacja używa usługi innej firmy do raportów użytkowników,
 
 Gdy znajdziesz i rozwiążesz problemy, możesz dodać więcej użytkowników do grup pilotażowych (i odpowiednio zwolnić tych nowych użytkowników pilotażowych ze skanowania przez istniejącą usługę ochrony odpowiednio). Więcej testów, które teraz wykonujesz, tym mniej problemów z użytkownikami będzie trzeba rozwiązać później. Takie podejście "kaskadowe" umożliwia dostrajanie większej części organizacji i daje zespołom ds. zabezpieczeń czas na dostosowanie się do nowych narzędzi i procesów.
 
-- Microsoft 365 generuje alerty, gdy zasady organizacji zezwalają na wiadomości wyłudzające informacje o wysokim poziomie ufności. Aby zidentyfikować te komunikaty, dostępne są następujące opcje:
+- Platforma Microsoft 365 generuje alerty, gdy zasady organizacji zezwalają na wyłudzanie informacji o wysokim poziomie zaufania. Aby zidentyfikować te komunikaty, dostępne są następujące opcje:
   - Przesłonięcia w [raporcie o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report).
   - Filtruj w Eksploratorze zagrożeń, aby zidentyfikować komunikaty.
   - Filtruj w obszarze Zaawansowane wyszukiwanie zagrożeń, aby zidentyfikować komunikaty.
 
   Zgłoś firmę Microsoft wyniki fałszywie dodatnie tak wcześnie, jak to możliwe za pośrednictwem przesyłania przez administratora, użyj funkcji [Zezwalaj na dzierżawę/Lista zablokowanych](tenant-allow-block-list.md) , aby skonfigurować bezpieczne przesłonięcia dla tych wyników fałszywie dodatnich.
 
-- Dobrym pomysłem jest również zbadanie niepotrzebnych przesłonięcia. Innymi słowy, przyjrzyj się werdyktom, które Microsoft 365 przedstawiliby w wiadomościach. Jeśli platforma Microsoft365 wyrenderuje prawidłowy werdykt, konieczność zastąpienia jest znacznie zmniejszona lub wyeliminowana.
+- Dobrym pomysłem jest również zbadanie niepotrzebnych przesłonięcia. Innymi słowy, przyjrzyj się werdyktom dostarczonym przez platformę Microsoft 365 w wiadomościach. Jeśli platforma Microsoft365 wyrenderuje prawidłowy werdykt, konieczność zastąpienia jest znacznie zmniejszona lub wyeliminowana.
 
-## <a name="step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule"></a>Krok 7. Rozszerzanie ochrony Microsoft 365 na wszystkich użytkowników i wyłączanie reguły przepływu poczty SCL=-1
+## <a name="step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule"></a>Krok 7. Rozszerzanie ochrony platformy Microsoft 365 na wszystkich użytkowników i wyłączanie reguły przepływu poczty SCL=-1
 
-Wykonaj kroki opisane w tej sekcji, gdy wszystko będzie gotowe do przełączenia rekordów MX, aby wskazać Microsoft 365.
+Wykonaj kroki opisane w tej sekcji, gdy wszystko będzie gotowe do przełączenia rekordów MX na platformę Microsoft 365.
 
 1. Rozszerzanie zasad pilotażowych na całą organizację. Zasadniczo istnieją różne sposoby, aby to zrobić:
    - Użyj [wstępnie ustawionych zasad zabezpieczeń](preset-security-policies.md) i podziel użytkowników między profil ochrony standardowej i profil ścisłej ochrony (upewnij się, że wszyscy są objęci ochroną). Wstępnie ustawione zasady zabezpieczeń są stosowane przed utworzonymi przez Ciebie zasadami niestandardowymi lub wszelkimi domyślnymi zasadami. Możesz wyłączyć indywidualne zasady pilotażowe bez ich usuwania.
@@ -201,21 +201,13 @@ Na tym etapie można wstrzymać rejestrowanie i dostrajanie danych na większą 
 > [!NOTE]
 >
 > - Po przełączeniu rekordu MX dla domeny propagacja zmian w Internecie może potrwać do 48 godzin.
->
 > - Zalecamy obniżenie wartości czasu wygaśnięcia rekordów DNS, aby umożliwić szybszą reakcję i możliwe wycofanie (w razie potrzeby). Możesz przywrócić oryginalną wartość czasu wygaśnięcia po zakończeniu przełączania i zweryfikowaniu.
->
 > - Należy rozważyć rozpoczęcie od zmiany domen, które są używane rzadziej. Możesz wstrzymać i monitorować przed przejściem do większych domen. Jednak nawet jeśli to zrobisz, nadal upewnij się, że wszyscy użytkownicy i domeny są objęci zasadami, ponieważ pomocnicze domeny SMTP są rozpoznane w domenach podstawowych przed aplikacją zasad.
->   
 > - Z technicznego punktu widzenia działa wiele rekordów MX dla jednej domeny, co pozwala na dzielenie routingu, pod warunkiem że wykonano wszystkie wskazówki przedstawione w tym artykule. W szczególności należy upewnić się, że zasady są stosowane do wszystkich użytkowników, że reguła przepływu poczty SCL=-1 jest stosowana tylko do poczty, która przechodzi przez istniejącą usługę ochrony zgodnie z opisem w [kroku 3 konfiguracji: Obsługa lub tworzenie reguły przepływu poczty SCL=-1](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule). Jednak ta konfiguracja wprowadza zachowanie, które znacznie utrudnia rozwiązywanie problemów i dlatego zwykle nie zalecamy tego, szczególnie przez dłuższy czas.
->
-> - Przed przełączeniem rekordów MX sprawdź, czy następujące ustawienia nie są włączone w łączniku przychodzącym z usługi ochrony do Microsoft 365. Zazwyczaj łącznik będzie miał skonfigurowane co najmniej jedno z następujących ustawień:
->
+> - Przed przełączeniem rekordów MX sprawdź, czy następujące ustawienia nie są włączone w łączniku przychodzącym z usługi ochrony na platformę Microsoft 365. Zazwyczaj łącznik będzie miał skonfigurowane co najmniej jedno z następujących ustawień:
 >   - **i wymagać, aby nazwa podmiotu certyfikatu używana przez partnera do uwierzytelniania przy użyciu Office 365 odpowiadała tej nazwie domeny** (*RestrictDomainsToCertificate*)
->   - **Odrzuć wiadomości e-mail, jeśli nie są one wysyłane z tego zakresu adresów IP** (*RestrictDomainsToIPAddresses*)
->
->   Jeśli typ łącznika to **Partner** i któreś z tych ustawień jest włączone, dostarczanie wiadomości e-mail do domen zakończy się niepowodzeniem po przełączeniu rekordów MX. Przed kontynuowaniem należy wyłączyć te ustawienia. Jeśli łącznik jest łącznikiem lokalnym używanym do użycia hybrydowego, nie musisz modyfikować łącznika lokalnego. Jednak nadal możesz sprawdzić obecność łącznika **partnerów** .
->   
-> - Jeśli bieżąca brama poczty również zapewnia weryfikację adresata, możesz sprawdzić, czy domena jest skonfigurowana jako [autorytatywna](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) w Microsoft 365. Może to zapobiec niepotrzebnym komunikatom odbijania.
+>   - **Odrzuć wiadomości e-mail, jeśli nie są one wysyłane z tego zakresu adresów IP** (*RestrictDomainsToIPAddresses*) Jeśli typ łącznika to **Partner** i któreś z tych ustawień jest włączone, dostarczanie poczty do domen zakończy się niepowodzeniem po przełączeniu rekordów MX. Przed kontynuowaniem należy wyłączyć te ustawienia. Jeśli łącznik jest łącznikiem lokalnym używanym do użycia hybrydowego, nie musisz modyfikować łącznika lokalnego. Jednak nadal możesz sprawdzić obecność łącznika **partnerów** .
+> - Jeśli bieżąca brama poczty również zapewnia weryfikację adresata, możesz sprawdzić, czy domena jest skonfigurowana jako [autorytatywna](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) w usłudze Microsoft 365. Może to zapobiec niepotrzebnym komunikatom odbijania.
 
 Gdy wszystko będzie gotowe, przełącz rekord MX dla swoich domen. Wszystkie domeny można migrować jednocześnie. Możesz też najpierw przeprowadzić migrację rzadziej używanych domen, a następnie przeprowadzić migrację pozostałych domen później.
 
@@ -223,7 +215,7 @@ Możesz wstrzymać się i ocenić tutaj w dowolnym momencie. Pamiętaj jednak, �
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulacje! Migracja [do Ochrona usługi Office 365 w usłudze Microsoft Defender została ukończona](migrate-to-defender-for-office-365.md#the-migration-process)! Ponieważ wykonano kroki opisane w tym przewodniku migracji, pierwsze kilka dni, w których poczta jest dostarczana bezpośrednio do Microsoft 365, powinno być znacznie płynniejsze.
+Gratulacje! Migracja [do Ochrona usługi Office 365 w usłudze Microsoft Defender została ukończona](migrate-to-defender-for-office-365.md#the-migration-process)! Ponieważ wykonano kroki opisane w tym przewodniku migracji, pierwsze dni, w których poczta jest dostarczana bezpośrednio do platformy Microsoft 365, powinny być znacznie płynniejsze.
 
 Teraz rozpoczniesz normalną operację i konserwację Ochrona usługi Office 365 w usłudze Defender. Monitoruj i obserwuj problemy podobne do tych, które wystąpiły podczas pilotażu, ale na większą skalę. Najbardziej przydatne będą [szczegółowe informacje dotyczące analizy podróbek](learn-about-spoof-intelligence.md) i [szczegółowe informacje o personifikacji](impersonation-insight.md) , ale rozważ regularne wykonywanie następujących działań:
 

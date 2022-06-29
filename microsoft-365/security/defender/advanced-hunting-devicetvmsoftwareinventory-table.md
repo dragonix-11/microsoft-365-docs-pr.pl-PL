@@ -1,7 +1,7 @@
 ---
-title: Tabela DeviceTvmSoftwareInventory w zaawansowanym schemacie wyszukiwania
-description: Informacje o spisie oprogramowania na Twoich urządzeniach w tabeli DeviceTvmSoftwareInventory zaawansowanego schematu wyszukiwania.
-keywords: zaawansowane szukanie, schłoń pod niebędący zagrożeniami, Microsoft 365 Defender, microsoft 365, m365, wyszukiwanie, zapytanie, telemetria, informacje o schemacie, kusto, tabela, kolumna, typ danych, opis, zagrożenie & zarządzanie lukami w zabezpieczeniach, TVM, zarządzanie urządzeniami, oprogramowanie, zapasy, luki w zabezpieczeniach, identyfikator CVE, system operacyjny DeviceTvmSoftwareInventoryVulnerabilities
+title: Tabela DeviceTvmSoftwareInventory w zaawansowanym schemacie wyszukiwania zagrożeń
+description: Informacje na temat spisu oprogramowania na urządzeniach można znaleźć w tabeli DeviceTvmSoftwareInventory zaawansowanego schematu wyszukiwania zagrożeń.
+keywords: zaawansowane wyszukiwanie zagrożeń, wyszukiwanie zagrożeń, Microsoft 365 Defender wyszukiwanie zagrożeń, wyszukiwanie zagrożeń, telemetria, dokumentacja schematu, kusto, tabela, kolumna, typ danych, opis, zarządzanie lukami w zabezpieczeniach & zagrożeń, zarządzanie urządzeniami, oprogramowanie, spis, luki w zabezpieczeniach, identyfikator CVE, urządzenie systemu operacyjnegoTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a9a17c6e336704cfe09e1c864e9700a4492e8c87
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cecbf2078bff0143a5c14b8b0cffb636d4fa3454
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328025"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490802"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -35,37 +35,37 @@ ms.locfileid: "63328025"
 - Ochrona punktu końcowego w usłudze Microsoft Defender
 
 >[!IMPORTANT]
-> Niektóre informacje odnoszą się do wstępnie wypuszczonych produktów, które mogą zostać znacząco zmodyfikowane przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
+> Niektóre informacje odnoszą się do wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
 
 
-Tabela `DeviceTvmSoftwareInventory` w zaawansowanym schemacie wyszukiwania zawiera spis narzędzi [](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) do zarządzania & lukami w zabezpieczeniach oprogramowania zainstalowanego obecnie na urządzeniach w Twojej sieci, łącznie z informacjami o zakończeniu pomocy technicznej. Możesz na przykład poszukać zdarzeń obejmujących urządzenia instalowane z obecnie podatną na zagrożenia wersją oprogramowania. To odwołanie pozwala konstruować zapytania, które zwracają informacje z tabeli.
+Tabela `DeviceTvmSoftwareInventory` w zaawansowanym schemacie wyszukiwania zagrożeń zawiera spis [zarządzania lukami w zabezpieczeniach & zagrożeń](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) oprogramowania obecnie zainstalowanego na urządzeniach w sieci, w tym informacje o zakończeniu pomocy technicznej. Można na przykład wyszukiwać zdarzenia dotyczące urządzeń zainstalowanych z obecnie podatną na zagrożenia wersją oprogramowania. To odwołanie służy do konstruowania zapytań, które zwracają informacje z tabeli.
 
 >[!NOTE]
-> Tabele `DeviceTvmSoftwareInventory` i `DeviceTvmSoftwareVulnerabilities` te zastąpiły tabelę `DeviceTvmSoftwareInventoryVulnerabilities` . Razem dwie pierwsze tabele zawierają więcej kolumn, które ułatwiają informowanie o działaniach w zakresie zarządzania zagrożeniami lub poszukiwania narażonych urządzeń.
+> Tabele `DeviceTvmSoftwareInventory` i `DeviceTvmSoftwareVulnerabilities` zastąpiły tabelę `DeviceTvmSoftwareInventoryVulnerabilities` . Razem dwie pierwsze tabele zawierają więcej kolumn, których można użyć, aby ułatwić informowanie o działaniach związanych z zarządzaniem vulnerablity lub wyszukiwanie urządzeń podatnych na zagrożenia.
 
-Aby uzyskać informacje o innych tabelach w zaawansowanym schemacie łęgowania, zapoznaj się z [zaawansowanymi informacjami na temat wyszukiwania](advanced-hunting-schema-tables.md).
+Aby uzyskać informacje na temat innych tabel w zaawansowanym schemacie wyszukiwania zagrożeń, zobacz [zaawansowane informacje dotyczące wyszukiwania zagrożeń](advanced-hunting-schema-tables.md).
 
 | Nazwa kolumny | Typ danych | Opis |
 |-------------|-----------|-------------|
-| `DeviceId` | `string` | Unikatowy identyfikator komputera w usłudze |
-| `DeviceName` | `string` | W pełni kwalifikowana nazwa domeny (FQDN) komputera |
-| `OSPlatform` | `string` | Platforma systemu operacyjnego działającego na komputerze. To oznacza określone systemy operacyjne, w tym odmiany w obrębie tej samej rodziny, takie jak Windows 11, Windows 10 i Windows 7. |
-| `OSVersion` | `string` | Wersja systemu operacyjnego działającego na komputerze |
-| `OSArchitecture` | `string` | Architektura systemu operacyjnego działającego na komputerze |
+| `DeviceId` | `string` | Unikatowy identyfikator maszyny w usłudze |
+| `DeviceName` | `string` | W pełni kwalifikowana nazwa domeny (FQDN) maszyny |
+| `OSPlatform` | `string` | Platforma systemu operacyjnego działającego na maszynie. Wskazuje to określone systemy operacyjne, w tym odmiany w tej samej rodzinie, takie jak Windows 11, Windows 10 i Windows 7. |
+| `OSVersion` | `string` | Wersja systemu operacyjnego uruchomionego na maszynie |
+| `OSArchitecture` | `string` | Architektura systemu operacyjnego działającego na maszynie |
 | `SoftwareVendor` | `string` | Nazwa dostawcy oprogramowania |
 | `SoftwareName` | `string` | Nazwa produktu oprogramowania |
 | `SoftwareVersion` | `string` | Numer wersji produktu oprogramowania |
-| `EndOfSupportStatus` | `string` | Wskazuje etap cyklu życia produktu oprogramowania względem jego określonej daty zakończenia wsparcia technicznego (EOS) lub daty zakończenia użytkowania (EOL) |
-| `EndOfSupportDate` | `string` | Data zakończenia pomocy technicznej (EOS) lub daty zakończenia użytkowania (EOL) produktu oprogramowania |
-| `ProductCodeCpe` | `string` | CPE produktu lub "niedostępne", jeśli nie ma cpe |
-
+| `EndOfSupportStatus` | `string` | Wskazuje etap cyklu życia produktu oprogramowania względem określonej daty zakończenia wsparcia (EOS) lub daty zakończenia okresu eksploatacji (EOL) |
+| `EndOfSupportDate` | `string` | Data zakończenia wsparcia technicznego (EOS) lub data zakończenia okresu eksploatacji (EOL) produktu oprogramowania |
+| `ProductCodeCpe` | `string` | cpe produktu oprogramowania lub "niedostępne", jeśli nie ma cpe |
+| `CveTags` | `string` | Tablica tagów odpowiednich dla CVE. Obecnie obsługiwane tagi to "ZeroDay" i "NoSecurityUpdate".
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-- [Aktywne poszukiwania zagrożeń](advanced-hunting-overview.md)
-- [Poznaw język zapytań](advanced-hunting-query-language.md)
+- [Proaktywne wyszukiwanie zagrożeń](advanced-hunting-overview.md)
+- [Nauka języka zapytań](advanced-hunting-query-language.md)
 - [Używanie zapytań udostępnionych](advanced-hunting-shared-queries.md)
-- [Przeszukaj urządzenia, wiadomości e-mail, aplikacje i tożsamości](advanced-hunting-query-emails-devices.md)
-- [Opis schematu](advanced-hunting-schema-tables.md)
-- [Stosowanie najlepszych rozwiązań kwerend](advanced-hunting-best-practices.md)
-- [Omówienie zarządzania & zagrożeniami](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Wyszukiwanie zagrożeń na urządzeniach, w wiadomościach e-mail, aplikacjach i tożsamościach](advanced-hunting-query-emails-devices.md)
+- [Analiza schematu](advanced-hunting-schema-tables.md)
+- [Stosowanie najlepszych rozwiązań dla zapytań](advanced-hunting-best-practices.md)
+- [Omówienie zarządzania lukami w zabezpieczeniach & zagrożeń](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

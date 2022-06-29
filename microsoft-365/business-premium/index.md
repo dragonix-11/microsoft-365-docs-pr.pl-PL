@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Dowiedz się, jak zaimplementować cyberbezpieczeństwo w małych lub średnich firmach przy użyciu platformy Microsoft 365 Business Premium. Możliwości i funkcje cyberbezpieczeństwa są zoptymalizowane pod kątem zapobiegania cyberatakom i naruszeniom zabezpieczeń oraz pomagają chronić dane, urządzenia i informacje za pomocą wysokiej jakości cyberzabezpieczeń.
-ms.openlocfilehash: 2d6ffd452e04c755fd60fcf7cad0d228005c5510
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 61e0321df75645a3e8ef06867d9e110b7bfd40a2
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320099"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491387"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; cyberbezpieczeństwo dla małych firm
 
@@ -68,8 +68,8 @@ Kliknij tutaj, aby poznać [zalety platformy Microsoft 365 Business Premium](m36
 
 Teraz [wzmocnij swoje środowisko przed cyberatakami](m365bp-setup-overview.md)!
 
-> [!Note]
-> Gdy termin lub dyrektywa jest niejasna, sprawdź definicje w [słowniku terminów](m365bp-glossary.md).
+> [!NOTE]
+> Gdy termin lub dyrektywa jest niejasna, sprawdź definicje w [słowniku terminów](m365bp-glossary.yml).
 
 ## <a name="train-your-team"></a>[**Trening zespołu**](#tab/Train)
 
@@ -101,8 +101,8 @@ Kliknij tutaj, aby poznać [zalety platformy Microsoft 365 Business Premium](m36
 
 Teraz [wzmocnij swoje środowisko przed cyberatakami](m365bp-setup-overview.md)!
 
-> [!Note]
-> Gdy termin lub dyrektywa jest niejasna, sprawdź definicje w [słowniku terminów](m365bp-glossary.md).
+> [!NOTE]
+> Gdy termin lub dyrektywa jest niejasna, sprawdź definicje w [słowniku terminów](m365bp-glossary.yml).
 
 ## <a name="safeguard-managed-devices"></a>[**Zabezpieczanie urządzeń zarządzanych**](#tab/Safeguard)
 
@@ -130,5 +130,5 @@ Kliknij tutaj, aby poznać [zalety platformy Microsoft 365 Business Premium](m36
 
 Teraz [wzmocnij swoje środowisko przed cyberatakami](m365bp-setup-overview.md)!
 
-> [!Note]
-> Gdy termin lub dyrektywa jest niejasna, sprawdź definicje w [słowniku terminów](m365bp-glossary.md).
+> [!NOTE]
+> Gdy termin lub dyrektywa jest niejasna, sprawdź definicje w [słowniku terminów](m365bp-glossary.yml).

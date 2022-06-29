@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: c58c447a4aed08af48576b461a638c1cd43aca83
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: ea99a46d468e6c3d5e7346006da0eb24116067d0
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649248"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489952"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Co nowego w Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux
 
@@ -29,142 +29,323 @@ ms.locfileid: "65649248"
 **Dotyczy:**
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 
-## <a name="1016880-30122042168800"></a>101.68.80 (30.122042.16880.0)
+
+Ten artykuł jest często aktualizowany w celu poinformowania o nowościach w najnowszych wersjach Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux. 
+
+- [Co nowego w usłudze Defender for Endpoint w systemie macOS](mac-whatsnew.md)
+- [Co nowego w usłudze Defender for Endpoint w systemie iOS](ios-whatsnew.md)
+
+<details>
+  <summary>Czerwiec 2022 r. (kompilacja: 101.71.18 | Wersja wydania: 30.122052.17118.0)</summary>
+
+&ensp;Data wydania: **24 czerwca 2022 r**.<br/>
+&ensp;Opublikowano: **24 czerwca 2022 r**.<br/>
+&ensp;Kompilacja: **101.71.18**<br/>
+&ensp;Wersja wydania: **30.122042.16880.0**<br/>
+
+
+**Co nowego**
+
+- Rozwiązano problem z czujnikiem produktu używanym w systemie RHEL 6, który mógł prowadzić do zawieszenia systemu operacyjnego
+- `mdatp connectivity test` został rozszerzony o dodatkowy adres URL, który produkt wymaga poprawnego działania. Nowy adres URL to [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
+- Do tej pory poziom dziennika produktu nie był utrwalany między ponownym uruchomieniem produktu. Począwszy od tej wersji, istnieje nowy przełącznik narzędzia wiersza polecenia, który utrwala poziom dziennika. Nowe polecenie to `mdatp log level persist --level <level>`.
+- Usunięto zależność `python` od pakietu instalacyjnego produktu
+- Ulepszenia wydajności operacji kopiowania plików i przetwarzania zdarzeń sieciowych pochodzących z `auditd`
+- Poprawki błędów
+</br>
+
+<br/><br/>
+</details>
+
+
+<details>
+  <summary>Maj-2022 r. (kompilacja: 101.68.80 | Wersja wydania: 30.122042.16880.0)</summary>
+
+&ensp;Data wydania: **23 maja 2022 r**.<br/>
+&ensp;Opublikowano: **23 maja 2022 r**.<br/>
+&ensp;Kompilacja: **101.68.80**<br/>
+&ensp;Wersja wydania: **30.122042.16880.0**<br/>
+
+**Co nowego** 
 
 - Dodano obsługę wersji `2.6.32-754.47.1.el6.x86_64` jądra podczas uruchamiania w systemie RHEL 6
-- W systemie RHEL 6 produkt można teraz zainstalować na urządzeniach z systemem Unbreakable Enterprise Kernel (UEK)
+- W systemie RHEL 6 produkt można teraz zainstalować na urządzeniach z uruchomionym nierozerwalnym jądrem przedsiębiorstwa (UEK)
 - Rozwiązano problem polegający na tym, że nazwa procesu była czasami niepoprawnie wyświetlana, jak `unknown` podczas uruchamiania `mdatp diagnostic real-time-protection-statistics`
 - Usunięto usterkę polegającą na tym, że produkt czasami niepoprawnie wykrywał pliki w folderze kwarantanny
 - Rozwiązano problem polegający na tym `mdatp` , że narzędzie wiersza polecenia nie działało, gdy `/opt` było zainstalowane jako łącze nietrwałe
 - Ulepszenia wydajności & poprawek błędów
+</br>
 
-## <a name="1016577-30122032165770"></a>101.65.77 (30.122032.16577.0)
+<br/><br/>
+</details>
+
+<details>
+<summary>Maj 2022 r. (kompilacja: 101.65.77 | Wersja wydania: 30.122032.16577.0)</summary>
+
+&ensp;Data wydania: **2 maja 2022 r**.<br/>
+&ensp;Opublikowano: **2 maja 2022 r**.<br/>
+&ensp;Kompilacja: **101.65.77**<br/>
+&ensp;Wersja wydania: **30.122032.16577.0**<br/>
+
+
+**Co nowego**
 
 - Ulepszono pole w programie `conflicting_applications` , `mdatp health` aby wyświetlić tylko najnowsze 10 procesów, a także uwzględnić nazwy procesów. Ułatwia to określenie, które procesy mogą być w konflikcie z Ochrona punktu końcowego w usłudze Microsoft Defender dla systemu Linux.
 - Poprawki błędów
 
-## <a name="1016274-30122022162740"></a>101.62.74 (30.122022.16274.0)
+
+<br/><br/>
+</details><details>
+<summary>Mar-2022 (kompilacja: 101.62.74 | Wersja wydania: 30.122022.16274.0)</summary>
+
+&ensp;Data wydania: **24 marca 2022 r**.<br/>
+&ensp;Opublikowano: **24 marca 2022 r**.<br/>
+&ensp;Kompilacja: **101.62.74**<br/>
+&ensp;Wersja wydania: **30.122022.16274.0**<br/>
+
+
+**Co nowego**
 
 - Rozwiązano problem polegający na tym, że produkt niepoprawnie blokował dostęp do plików o rozmiarze większym niż 2 GB podczas uruchamiania w starszych wersjach jądra
 - Poprawki błędów
 
-## <a name="1016093-30122012160930"></a>101.60.93 (30.122012.16093.0)
+
+<br/><br/>
+</details><details>
+<summary>Mar-2022 (kompilacja: 101.60.93 | Wersja wydania: 30.122012.16093.0)</summary>
+
+&ensp;Data wydania: **9 marca 2022 r**.<br/>
+&ensp;Opublikowano: **9 marca 2022 r**.<br/>
+&ensp;Kompilacja: **101.60.93**<br/>
+&ensp;Wersja wydania: **30.122012.16093.0**<br/>
+
+**Co nowego**
 
 - Ta wersja zawiera aktualizację zabezpieczeń dla [CVE-2022-23278](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
 
-## <a name="1016005-30122012160050"></a>101.60.05 (30.122012.16005.0)
+
+<br/><br/>
+</details><details>
+<summary>Mar-2022 (kompilacja: 101.60.05 | Wersja wydania: 30.122012.16005.0)</summary>
+
+&ensp;Data wydania: **3 marca 2022 r**.<br/>
+&ensp;Opublikowano: **3 marca 2022 r**.<br/>
+&ensp;Kompilacja: **101.60.05**<br/>
+&ensp;Wersja wydania: **30.122012.16005.0**<br/>
+
+**Co nowego**
 
 - Dodano obsługę jądra w wersji 2.6.32-754.43.1.el6.x86_64 dla RHEL 6.10
 - Poprawki błędów
 
-## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0)
+
+<br/><br/>
+</details><details>
+<summary>Luty 2022 (kompilacja: 101.58.80 | Wersja wydania: 30.122012.15880.0)</summary>
+
+&ensp;Data wydania: **20 lutego 2022 r**.<br/>
+&ensp;Opublikowano: **20 lutego 2022 r**.<br/>
+&ensp;Kompilacja: **101.58.80**<br/>
+&ensp;Wersja wydania: **30.122012.15880.0**<br/>
+
+**Co nowego**
 
 - Narzędzie wiersza polecenia obsługuje teraz przywracanie plików poddanych kwarantannie do lokalizacji innej niż ta, w której plik został pierwotnie wykryty. Można to zrobić za pośrednictwem programu `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
 - Począwszy od tej wersji, ochronę sieci dla systemu Linux można ocenić na żądanie
 - Poprawki błędów
 
-## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0)
+
+
+<br/><br/>
+</details><details>
+<summary>Jan-2022 (kompilacja: 101.56.62 | Wersja wydania: 30.121122.15662.0)</summary>
+
+&ensp;Data wydania: **26 stycznia 2022 r**.<br/>
+&ensp;Opublikowano: **26 stycznia 2022 r**.<br/>
+&ensp;Kompilacja: **101.56.62**<br/>
+&ensp;Wersja wydania: **30.121122.15662.0**<br/>
+
+**Co nowego**
 
 - Naprawiono awarię produktu wprowadzona w wersji 101.53.02, która wpłynęła na wielu klientów
 
-## <a name="1015302-30121112153020"></a>101.53.02 (30.121112.15302.0)
+
+<br/><br/>
+</details><details>
+<summary>Jan-2022 (kompilacja: 101.53.02 | Wersja wydania: (30.121112.15302.0)</summary>
+
+&ensp;Data wydania: **8 stycznia 2022 r**.<br/>
+&ensp;Opublikowano: **8 stycznia 2022 r**.<br/>
+&ensp;Kompilacja: **101.53.02**<br/>
+&ensp;Wersja wydania: **30.1211112.15302.0**<br/>
+
+**Co nowego**
 
 - Ulepszenia wydajności & poprawek błędów
 
-## <a name="1015257-30121092152570"></a>101.52.57 (30.121092.15257.0)
-
-- Dodano możliwość wykrywania zagrożonych plików jar log4j używanych przez aplikacje Java. Maszyna jest okresowo sprawdzana pod kątem uruchamiania procesów Java z załadowanymi plikami jar log4j. Informacje są zgłaszane do zaplecza Ochrona punktu końcowego w usłudze Microsoft Defender i są widoczne w obszarze Zarządzanie lukami w zabezpieczeniach w portalu.
-
-## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
-
-- Dodano nowy przełącznik do narzędzia wiersza polecenia, aby kontrolować, czy archiwa są skanowane podczas skanowania na żądanie. Można to skonfigurować za pomocą programu `mdatp config scan-archives --value [enabled/disabled]`. Domyślnie jest to ustawienie na wartość `enabled`.
-- Poprawki błędów
-
-## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
-
-- Począwszy od tej wersji, oferujemy obsługę Ochrona punktu końcowego w usłudze Microsoft Defender do następujących dystrybucji: 
-  - Wersje RHEL6.7-6.10 i CentOS6.7-6.10.
-  - Amazon Linux 2
-  - Fedora 33 lub nowsza
-- Poprawki błędów
 
 
-## <a name="1014500-30121072145000"></a>101.45.00 (30.121072.14500.0)
+</details>
 
-- Dodano nowe przełączniki do narzędzia wiersza polecenia:
-  - Kontrolowanie stopnia równoległości skanowania na żądanie. Można to skonfigurować za pomocą programu `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. Domyślnie używany jest stopień równoległości `2` .
-  - Określ, czy skanowanie po włączeniu lub wyłączeniu aktualizacji analizy zabezpieczeń. Można to skonfigurować za pomocą programu `mdatp config scan-after-definition-update --value [enabled/disabled]`. Domyślnie jest to ustawienie na wartość `enabled`.
-- Zmiana poziomu dziennika produktu wymaga teraz podniesienia uprawnień
-- Poprawki błędów
+<details><summary> Wersje 2021</summary><blockquote>
+  <details><summary>(Kompilacja: 101.52.57 | Wersja wydania: 30.121092.15257.0)</summary>
+   
+  <p><b> Kompilacja: 101.52.57 <br>
+Wersja wydania: 30.121092.15257.0</b></p>
+   
+  <p><b> Co nowego </b></p>
 
-## <a name="1013998-30121062139980"></a>101.39.98 (30.121062.13998.0)
+   - Dodano możliwość wykrywania zagrożonych plików jar log4j używanych przez aplikacje Java. Maszyna jest okresowo sprawdzana pod kątem uruchamiania procesów Javaprocesses z załadowanymi plikami jar log4j. Informacje są zgłaszane do zaplecza Ochrona punktu końcowego w usłudze Microsoft Defender i są widoczne w obszarze Zarządzanie dostępnością w portalu.
+   
+   </details>
 
-- Ulepszenia wydajności & poprawek błędów
+  <details><summary>(Kompilacja: 101.47.76 | Wersja wydania: 30.121092.14776.0)</summary>
+   
+  <p><b> Kompilacja: 101.47.76 <br>
+Wersja wydania: 30.121092.14776.0</b></p>
+   
+  <p><b>Co nowego</b></p>
 
-## <a name="1013427-30121052134270"></a>101.34.27 (30.121052.13427.0)
+   - Dodano nowy przełącznik do narzędzia wiersza polecenia, aby kontrolować, czy archiwa są skanowane podczas skanowania na żądanie. Można to skonfigurować za pomocą konfiguracji mdatp scan-archives --value [enabled/disabled]. Domyślnie jest to ustawienie włączone.
 
-- Ulepszenia wydajności & poprawek błędów
+   - Poprawki błędów
 
-## <a name="1012964-30121042129640"></a>101.29.64 (30.121042.12964.0)
+   </details>
 
-- Począwszy od tej wersji, zagrożenia wykryte podczas skanowania antywirusowego na żądanie wyzwalane za pośrednictwem klienta wiersza polecenia są automatycznie korygowane. Zagrożenia wykryte podczas skanowania wyzwalane za pośrednictwem interfejsu użytkownika nadal wymagają akcji ręcznej.
-- `mdatp diagnostic real-time-protection-statistics` Teraz obsługuje dwa dodatkowe przełączniki:
-  - `--sort`: sortuje dane wyjściowe malejąco według całkowitej liczby skanowanych plików
-  - `--top N`: wyświetla pierwsze wyniki N (działa tylko wtedy, gdy `--sort` jest również określona)
-- Ulepszenia wydajności & poprawek błędów
+   <details><summary>(Kompilacja: 101.45.13 | Wersja wydania: 30.121082.14513.0)</summary>
+   
+  <p> 
+  Kompilacja: <b>101.45.13 </b>  <br>
+Wersja wydania:<b> 30.121082.14513.0 </b></p>
+   
+  <p><b>Co nowego</b></p>
 
-## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0)
+  - Począwszy od tej wersji, oferujemy obsługę Ochrona punktu końcowego w usłudze Microsoft Defender do następujących dystrybucji:
 
-- Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux jest teraz dostępna w wersji zapoznawczej dla klientów rządowych USA. Aby uzyskać więcej informacji, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów rządowych USA](gov.md).
-- Rozwiązano problem polegający na tym, że użycie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux w systemach z systemami plików FUSE doprowadziło do zawieszenia systemu operacyjnego
-- Ulepszenia wydajności & innych poprawek błędów
+    - Wersje RHEL6.7-6.10 i CentOS6.7-6.10.
+    - Amazon Linux 2
+    - Fedora 33 lub nowsza
 
-## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0)
+  - Poprawki błędów
 
-- Ulepszenia wydajności & poprawek błędów
+   </details>
 
-## <a name="1012364-30121021123640"></a>101.23.64 (30.121021.12364.0)
 
-- Poprawa wydajności w sytuacji, gdy cały punkt instalacji jest dodawany do listy wykluczeń programu antywirusowego. Przed tą wersją działanie pliku pochodzące z punktu instalacji było nadal przetwarzane przez produkt. Począwszy od tej wersji, działanie pliku dla wykluczonych punktów instalacji jest pomijane, co prowadzi do lepszej wydajności produktu
-- Dodano nową opcję do narzędzia wiersza polecenia, aby wyświetlić informacje o ostatnim skanowaniu na żądanie. Aby wyświetlić informacje o ostatnim skanowaniu na żądanie, uruchom polecenie `mdatp health --details antivirus`
-- Inne ulepszenia wydajności & poprawki błędów
+   <details><summary>(Kompilacja: 101.45.00 | Wersja wydania: 30.121072.14500.0)</summary>
+   
+   <p> 
+   Kompilacja:<b> 101.45.00</b> <br>
+Wersja wydania: <b>30.121072.14500.0</b></p>
+   
+   <p><b>Co nowego</b></p>
+      
 
-## <a name="1011853"></a>101.18.53
+  - Dodano nowe przełączniki do narzędzia wiersza polecenia:
+    - Kontrolowanie stopnia równoległości skanowania na żądanie. Można to skonfigurować za pomocą programu `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. Domyślnie używany jest stopień równoległości `2` .
+    - Określ, czy skanowanie po włączeniu lub wyłączeniu aktualizacji analizy zabezpieczeń. Można to skonfigurować za pomocą programu `mdatp config scan-after-definition-update --value [enabled/disabled]`. Domyślnie jest to ustawienie na wartość `enabled`.
+  - Zmiana poziomu dziennika produktu wymaga teraz podniesienia uprawnień
+  - Poprawki błędów
 
-- EDR dla systemu Linux jest teraz [ogólnie dostępna](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-- Dodano nowy przełącznik wiersza polecenia (`--ignore-exclusions`) w celu ignorowania wykluczeń av podczas skanowania niestandardowego (`mdatp scan custom`)
-- Rozszerzono `mdatp diagnostic create` o nowy parametr (`--path [directory]`), który umożliwia zapisywanie dzienników diagnostycznych w innym katalogu
-- Ulepszenia wydajności & poprawek błędów
+   </details>
 
-## <a name="1011299"></a>101.12.99
+   <details><summary>(Kompilacja: 101.39.98 | Wersja wydania: 30.121062.13998.0)</summary>
+   
+   <p> 
+   Kompilacja: <b>101.39.98 </b><br>
+Wersja wydania: <b>30.121062.13998.0</b></p>
+   
+   <p><b>Co nowego</b></p>
 
-- Ulepszenia wydajności & poprawek błędów
+  - Ulepszenia wydajności & poprawek błędów
+  
+   </details>
 
-## <a name="1010476"></a>101.04.76
+   <details><summary>(Kompilacja: 101.34.27 | Wersja wydania: 30.121052.13427.0)</summary>
+   
+   <p> 
+   Kompilacja:<b> 101.34.27</b> <br>
+Wersja wydania: <b>30.121052.13427.0</b></p>
+   
+   <p><b>Co nowego</b></p>
 
-- Poprawki błędów
+   - Ulepszenia wydajności & poprawek błędów
+  
+   </details>
 
-## <a name="1010348"></a>101.03.48
+   <details><summary>(Kompilacja: 101.29.64 | Wersja wydania: 30.121042.12964.0)</summary>
+   
+   <p> 
+   Kompilacja:<b> 101.29.64 </b><br>
+Wersja wydania:<b> 30.121042.12964.0</b></p>
+   
+   <p><b>Co nowego</b></p>
 
-- Poprawki błędów
+   - Począwszy od tej wersji, zagrożenia wykryte podczas skanowania antywirusowego na żądanie wyzwalane za pośrednictwem klienta wiersza polecenia są automatycznie korygowane. Zagrożenia wykryte podczas skanowania wyzwalane za pośrednictwem interfejsu użytkownika nadal wymagają akcji ręcznej.
+   - `mdatp diagnostic real-time-protection-statistics` Teraz obsługuje dwa dodatkowe przełączniki:
+     - `--sort`: sortuje dane wyjściowe malejąco według całkowitej liczby skanowanych plików
+     - `--top N`: wyświetla pierwsze wyniki N (działa tylko wtedy, gdy `--sort` jest również określona)
+   - Ulepszenia wydajności & poprawek błędów
+  
+   </details>
 
-## <a name="1010255"></a>101.02.55
+   <details><summary>(Kompilacja: 101.25.72 | Wersja wydania: 30.121022.12563.0)</summary>
+   
+   <p> 
+   Kompilacja:<b> 101.25.72</b> <br>
+Wersja wydania: <b>30.121022.12563.0</b></p>
+   
+   <p><b>Co nowego</b></p>
 
-- Rozwiązano problem polegający na tym, że produkt czasami nie uruchamiał się po ponownym uruchomieniu/uaktualnieniu
-- Rozwiązano problem polegający na tym, że ustawienia serwera proxy nie były utrwalane w ramach uaktualnień produktów
+   - Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux jest teraz dostępna w wersji zapoznawczej dla klientów rządowych USA. Aby uzyskać więcej informacji, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów rządowych USA](gov.md).
+   - Rozwiązano problem polegający na tym, że użycie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux w systemach z systemami plików FUSE doprowadziło do zawieszenia systemu operacyjnego
+   - Ulepszenia wydajności & innych poprawek błędów
+  
+   </details>
 
-## <a name="1010075"></a>101.00.75
+   
+   <details><summary>(Kompilacja: 101.25.63 | Wersja wydania: 30.121022.12563.0)</summary>
+   
+   <p> 
+   Kompilacja:<b> 101.25.63</b> <br>
+Wersja wydania: <b>30.121022.12563.0</b></p>
+   
+   <p><b>Co nowego</b></p>
 
-- Dodano obsługę następujących typów systemów plików: , , , , , `nfs``overlay`, `ramfs`, `reiserfs`, `udf`i `jfs``fuseblk``fuse``ecryptfs``vfat`
-- Nowa składnia [narzędzia wiersza polecenia](linux-resources.md#configure-from-the-command-line).
-- Ulepszenia wydajności & poprawek błędów
+   - Ulepszenia wydajności & poprawek błędów
+  
+   </details>
 
-## <a name="1009070"></a>100.90.70
+   <details><summary>(Kompilacja: 101.23.64 | Wersja wydania: 30.121021.12364.0)</summary>
+   
+   <p>
+Kompilacja:<b> 101.23.64 </b><br>
+Wersja wydania: 30.121021.12364.0</b></p>
+   
+   <p><b>Co nowego</b></p>
 
-> [!WARNING]
-> Podczas uaktualniania zainstalowanego pakietu z wersji produktu starszej niż 100.90.70 aktualizacja może zakończyć się niepowodzeniem w dystrybucjach opartych na systemie Red Hat i SLES. Jest to spowodowane istotną zmianą ścieżki pliku. Rozwiązaniem tymczasowym jest usunięcie starszego pakietu, a następnie zainstalowanie nowszego. Ten problem nie istnieje w nowszych wersjach.
+   - Poprawa wydajności w sytuacji, gdy cały punkt instalacji jest dodawany do listy wykluczeń programu antywirusowego. Przed tą wersją działanie pliku pochodzące z punktu instalacji było nadal przetwarzane przez produkt. Począwszy od tej wersji, działanie pliku dla wykluczonych punktów instalacji jest pomijane, co prowadzi do lepszej wydajności produktu
+   - Dodano nową opcję do narzędzia wiersza polecenia, aby wyświetlić informacje o ostatnim skanowaniu na żądanie. Aby wyświetlić informacje o ostatnim skanowaniu na żądanie, uruchom polecenie `mdatp health --details antivirus`
+   - Inne ulepszenia wydajności & poprawki błędów
+  
+   </details>
 
-- [Wykluczenia programu antywirusowego obsługują teraz symbole wieloznaczne](linux-exclusions.md#supported-exclusion-types)
-- Dodano możliwość [rozwiązywania problemów z wydajnością](linux-support-perf.md) za pomocą narzędzia wiersza `mdatp` polecenia
-- Ulepszenia w celu zwiększenia niezawodności instalacji pakietu
-- Ulepszenia wydajności & poprawek błędów
+   <details><summary>(Kompilacja: 101.18.53)</summary>
+   
+    <p> 
+    Kompilacja:<b> 101.18.53 </b><br>
+        
+    <p>Co nowego</b></p>
+
+   - EDR dla systemu Linux jest teraz [ogólnie dostępny](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+   - Dodano nowy przełącznik wiersza polecenia (`--ignore-exclusions`) w celu ignorowania wykluczeń av podczas skanowania niestandardowego (`mdatp scan custom`)
+   - Rozszerzono `mdatp diagnostic create` o nowy parametr (`--path [directory]`), który umożliwia zapisywanie dzienników diagnostycznych w innym katalogu
+    - Ulepszenia wydajności & poprawek błędów
+    
+   </details>
+
+
+
+
+
+</blockquote></details>
+

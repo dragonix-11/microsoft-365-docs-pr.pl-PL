@@ -1,7 +1,7 @@
 ---
-title: Naprawianie czujników o złej kondycji w programie Microsoft Defender dla punktu końcowego
-description: Napraw czujniki urządzenia, które zgłaszają się jako nieprawidłowo skonfigurowane lub nieaktywne, aby usługa odbierała dane z urządzenia.
-keywords: nieprawidłowo skonfigurowane, nieaktywne, naprawianie czujnika, kondycja czujnika, bez danych czujnika, dane czujnika, zakłócona komunikacja, komunikacja
+title: Naprawianie czujników w złej kondycji w Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Napraw czujniki urządzeń, które są raportowane jako nieprawidłowo skonfigurowane lub nieaktywne, tak aby usługa odbierała dane z urządzenia.
+keywords: nieprawidłowa konfiguracja, nieaktywność, napraw czujnik, kondycja czujnika, brak danych czujnika, dane czujnika, komunikacja z zaburzeniami
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,87 +15,93 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/23/2020
 ms.technology: mde
-ms.openlocfilehash: e801776001b79bf1ae3e6e8a220c5e4c395896db
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: cc88fa877c0c284555f1702a5fa3190a06e7e47e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63033740"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490880"
 ---
-# <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Naprawianie czujników o złej kondycji w programie Microsoft Defender dla punktu końcowego
+# <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Naprawianie czujników w złej kondycji w Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
-Urządzenia można kategoryzować jako nieprawidłowo skonfigurowane lub nieaktywne, z różnych przyczyn. W tej sekcji przedstawiono niektóre objaśnienia przyczyn, które mogły spowodować kategoryzowanie urządzenia jako nieaktywnego lub nieprawidłowo skonfigurowanego.
+Urządzenia można sklasyfikować jako nieprawidłowo skonfigurowane lub nieaktywne, które są oflagowane z różnych przyczyn. Ta sekcja zawiera kilka wyjaśnień, co mogło spowodować, że urządzenie zostało sklasyfikowane jako nieaktywne lub nieprawidłowo skonfigurowane.
 
 ## <a name="inactive-devices"></a>Nieaktywne urządzenia
 
-Nieaktywne urządzenie nie musi być oflagowane z powodu problemu. Następujące akcje wykonane na urządzeniu mogą powodować kategoryzowanie urządzenia jako nieaktywnego:
+Nieaktywne urządzenie nie musi być oflagowane z powodu problemu. Następujące akcje wykonywane na urządzeniu mogą spowodować sklasyfikowanie urządzenia jako nieaktywnego:
 
-### <a name="device-is-not-in-use"></a>Urządzenie nie jest w użyciu
+- Urządzenie nie jest używane
+- Urządzenie zostało ponownie zainstalowane lub zmieniono jego nazwę
+- Urządzenie zostało odłączone
+- Urządzenie nie wysyła sygnałów
 
-Każde urządzenie, które nie jest w użyciu dłużej niż siedem dni, zachowa w portalu status "Nieaktywny".
 
-### <a name="device-was-reinstalled-or-renamed"></a>Urządzenie zostało ponownie zainstalowane lub jego nazwa została zmieniona
-W aplikacji jest generowana nowa jednostka Microsoft 365 Defender dla urządzeń ponownie zainstalowanych lub o zmienionych nazwach. Poprzednia jednostka urządzenia pozostaje ze stanem "Nieaktywny" w portalu. Jeśli ponownie zainstalowano urządzenie i wdrożono pakiet Defender for Endpoint, wyszukaj nową nazwę urządzenia, aby sprawdzić, czy urządzenie raportuje normalnie.
+### <a name="device-isnt-in-use"></a>Urządzenie nie jest używane
 
-### <a name="device-was-offboarded"></a>Urządzenie zostało wyłączone
-Jeśli urządzenie zostało wyłączone, nadal będzie wyświetlane na liście urządzeń. Po upływie siedmiu dni stan kondycji urządzenia powinien zmienić się na nieaktywny.
+Każde urządzenie, które nie jest używane przez więcej niż siedem dni, zachowa stan "Nieaktywne" w portalu.
 
-### <a name="device-is-not-sending-signals"></a>Urządzenie nie wysyła sygnałów
-Jeśli urządzenie z jakiegokolwiek powodu nie wysyła żadnych sygnałów do żadnego kanału programu Microsoft Defender for Endpoint przez ponad siedem dni, urządzenie można uznać za nieaktywne. obejmuje to warunki, które mogą podlegać nieprawidłowo skonfigurowanej klasyfikacji urządzeń.
+### <a name="device-was-reinstalled-or-renamed"></a>Urządzenie zostało ponownie zainstalowane lub zmieniono jego nazwę
+Nowa jednostka urządzenia jest generowana w Microsoft 365 Defender dla ponownie zainstalowanych lub zmienionych nazw urządzeń. Poprzednia jednostka urządzenia pozostaje ze stanem "Nieaktywne" w portalu. Jeśli ponownie zainstalowano urządzenie i wdrożono pakiet usługi Defender for Endpoint, wyszukaj nową nazwę urządzenia, aby sprawdzić, czy urządzenie jest raportowane normalnie.
+
+### <a name="device-was-offboarded"></a>Urządzenie zostało odłączone
+Jeśli urządzenie zostało odłączone, nadal będzie wyświetlane na liście urządzeń. Po siedmiu dniach stan kondycji urządzenia powinien ulec zmianie na nieaktywny.
+
+### <a name="device-isnt-sending-signals"></a>Urządzenie nie wysyła sygnałów
+Jeśli urządzenie nie wysyła żadnych sygnałów do żadnych kanałów Ochrona punktu końcowego w usłudze Microsoft Defender przez więcej niż siedem dni z jakiegokolwiek powodu, urządzenie może zostać uznane za nieaktywne; obejmuje to warunki objęte błędną klasyfikacją urządzeń.
 
 Czy oczekujesz, że urządzenie będzie w stanie "Aktywne"? [Otwórz bilet pomocy technicznej](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 
 ## <a name="misconfigured-devices"></a>Nieprawidłowo skonfigurowane urządzenia
-Nieprawidłowo skonfigurowane urządzenia można dodatkowo sklasyfikować jako:
-- Komunikacja z ograniczoną komunikacją
+Błędnie skonfigurowane urządzenia można dalej klasyfikować do:
+- Komunikacja z upośledzoną łącznością
 - Brak danych czujnika
 
-### <a name="impaired-communications"></a>Komunikacja z ograniczoną komunikacją
-Ten stan oznacza, że między urządzeniem a usługą jest ograniczona komunikacja.
+### <a name="impaired-communications"></a>Komunikacja z upośledzoną łącznością
+Ten stan wskazuje, że komunikacja między urządzeniem a usługą jest ograniczona.
 
-Następujące sugerowane działania mogą ułatwić rozwiązywanie problemów związanych z nieprawidłowo skonfigurowanym urządzeniem z ograniczoną komunikacją:
+Następujące sugerowane akcje mogą pomóc rozwiązać problemy związane z błędnie skonfigurowanym urządzeniem z ograniczoną komunikacją:
 
-- [Upewnij się, że urządzenie ma połączenie internetowe](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Czujnik programu Microsoft Defender for Endpoint wymaga, Windows Http (WinHTTP) firmy Microsoft do zgłaszania danych czujnika i komunikowania się z usługą Microsoft Defender for Endpoint.
+- [Upewnij się, że urządzenie ma połączenie z Internetem](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
+  Czujnik Ochrona punktu końcowego w usłudze Microsoft Defender wymaga protokołu HTTP (WinHTTP) systemu Microsoft Windows do raportowania danych czujnika i komunikowania się z usługą Ochrona punktu końcowego w usłudze Microsoft Defender.
 
-- [Weryfikowanie łączności klienta z adresami URL usługi Programu Microsoft Defender dla punktu końcowego](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
-  Sprawdź pomyślnie ukończoną konfigurację serwera proxy, czy system WinHTTP może wykrywać i komunikować się za pośrednictwem serwera proxy w Twoim środowisku oraz czy serwer proxy zezwala na ruch do adresów URL usługi Programu Microsoft Defender dla punktów końcowych.
+- [Weryfikowanie łączności klienta z adresami URL usługi Ochrona punktu końcowego w usłudze Microsoft Defender](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
+  Sprawdź, czy konfiguracja serwera proxy została ukończona pomyślnie, czy usługa WinHTTP może odnajdywać i komunikować się za pośrednictwem serwera proxy w danym środowisku oraz czy serwer proxy zezwala na ruch do adresów URL usługi Ochrona punktu końcowego w usłudze Microsoft Defender.
 
-Jeśli poczynisz działania korygacyjne, a stan urządzenia nadal jest nieprawidłowo skonfigurowany, [otwórz zgłoszenie do pomocy technicznej](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
+Jeśli akcje naprawcze zostały wykonywane, a stan urządzenia jest nadal nieprawidłowo skonfigurowany, [otwórz bilet pomocy technicznej](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 
 ### <a name="no-sensor-data"></a>Brak danych czujnika
-Nieprawidłowo skonfigurowane urządzenie ze stanem "Brak danych czujnika" ma komunikację z usługą, ale może zgłaszać tylko dane częściowego czujnika.
+Nieprawidłowo skonfigurowane urządzenie o stanie "Brak danych czujnika" ma komunikację z usługą, ale może zgłaszać tylko częściowe dane czujnika.
 
-Wykonaj poniższe czynności, aby rozwiązać znane problemy związane z nieprawidłowo skonfigurowanym urządzeniem ze stanem "Brak danych czujnika":
+Wykonaj następujące czynności, aby rozwiązać znane problemy związane z błędnie skonfigurowanym urządzeniem o stanie "Brak danych czujnika":
 
-- [Upewnij się, że urządzenie ma połączenie internetowe](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Czujnik programu Microsoft Defender for Endpoint wymaga, Windows Http (WinHTTP) firmy Microsoft do zgłaszania danych czujnika i komunikowania się z usługą Microsoft Defender for Endpoint.
+- [Upewnij się, że urządzenie ma połączenie z Internetem](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
+  Czujnik Ochrona punktu końcowego w usłudze Microsoft Defender wymaga protokołu HTTP (WinHTTP) systemu Microsoft Windows do raportowania danych czujnika i komunikowania się z usługą Ochrona punktu końcowego w usłudze Microsoft Defender.
 
-- [Weryfikowanie łączności klienta z adresami URL usługi Programu Microsoft Defender dla punktu końcowego](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
-  Sprawdź pomyślnie ukończoną konfigurację serwera proxy, czy system WinHTTP może wykrywać i komunikować się za pośrednictwem serwera proxy w Twoim środowisku oraz czy serwer proxy zezwala na ruch do adresów URL usługi Programu Microsoft Defender dla punktów końcowych.
+- [Weryfikowanie łączności klienta z adresami URL usługi Ochrona punktu końcowego w usłudze Microsoft Defender](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
+  Sprawdź, czy konfiguracja serwera proxy została ukończona pomyślnie, czy usługa WinHTTP może odnajdywać i komunikować się za pośrednictwem serwera proxy w danym środowisku oraz czy serwer proxy zezwala na ruch do adresów URL usługi Ochrona punktu końcowego w usłudze Microsoft Defender.
 
 - [Upewnij się, że usługa danych diagnostycznych jest włączona](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
-Jeśli urządzenia nie zgłaszają się poprawnie, upewnij się, że usługa Windows jest ustawiona na automatyczne uruchamianie. Sprawdź również, czy Windows danych diagnostycznych jest uruchomiona w punkcie końcowym.
+Jeśli urządzenia nie są prawidłowo raportowania, należy sprawdzić, czy usługa danych diagnostycznych systemu Windows jest ustawiona na automatyczne uruchamianie. Sprawdź również, czy usługa danych diagnostycznych systemu Windows jest uruchomiona w punkcie końcowym.
 
-- [Zapewnianie, Program antywirusowy Microsoft Defender nie jest wyłączone przez zasady](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
-Jeśli na Twoich urządzeniach jest uruchomiony klient ochrony przed złośliwym oprogramowaniem innej firmy, agent programu Defender for Endpoint wymaga, aby Program antywirusowy Microsoft Defender włączono sterownik ELAM (Early Launch Antimalware).
+- [Upewnij się, że program antywirusowy Microsoft Defender nie jest wyłączony przez zasady](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
+Jeśli na urządzeniach działa klient ochrony przed złośliwym kodem innej firmy, agent usługi Defender for Endpoint wymaga włączenia sterownika ochrony przed złośliwym oprogramowaniem antywirusowym Microsoft Defender (ELAM).
 
-Jeśli poczynisz działania korygacyjne, a stan urządzenia nadal jest nieprawidłowo skonfigurowany, [otwórz zgłoszenie do pomocy technicznej](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
+Jeśli akcje naprawcze zostały wykonywane, a stan urządzenia jest nadal nieprawidłowo skonfigurowany, [otwórz bilet pomocy technicznej](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 
 ## <a name="see-also"></a>Zobacz też
-- [Sprawdzanie stanu kondycji czujnika w programie Microsoft Defender dla punktu końcowego](check-sensor-status.md)
-- [Omówienie analizatora klientów](overview-client-analyzer.md)
-- [Pobieranie i uruchamianie analizatora klienta](download-client-analyzer.md)
-- [Uruchamianie analizatora klienta na Windows](run-analyzer-windows.md)
-- [Uruchamianie analizatora klienta w systemie macOS lub Linux](run-analyzer-macos-linux.md)
-- [Zbieranie danych na potrzeby zaawansowanego rozwiązywania problemów na Windows](data-collection-analyzer.md)
+- [Sprawdzanie stanu kondycji czujnika w Ochrona punktu końcowego w usłudze Microsoft Defender](check-sensor-status.md)
+- [Omówienie funkcji analizatora klienta](overview-client-analyzer.md)
+- [Pobierz i uruchom analizator klienta](download-client-analyzer.md)
+- [Uruchom analizator klienta w systemie Windows](run-analyzer-windows.md)
+- [Uruchom analizator klienta w systemie macOS lub Linux](run-analyzer-macos-linux.md)
+- [ Zbieranie danych na potrzeby zaawansowanego rozwiązywania problemów w systemie Windows](data-collection-analyzer.md)
 

@@ -1,7 +1,7 @@
 ---
-title: Eksplorator interfejsu API w programie Microsoft Defender for Endpoint
+title: Eksplorator interfejsu API w Ochrona punktu końcowego w usłudze Microsoft Defender
 ms.reviewer: ''
-description: Używanie Eksploratora API do konstruowania i używania zapytań interfejsu API, testowania i wysyłania żądań dowolnego dostępnego interfejsu API
+description: Tworzenie i wykonywanie zapytań interfejsu API, testowanie i wysyłanie żądań dla dowolnego dostępnego interfejsu API za pomocą Eksploratora interfejsu API
 keywords: api, explorer, send, request, get, post,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,38 +16,37 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6e7d0e5927a85f2f3952221c294fe2387c268546
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 5d3d81f878e201cd00e7286bd045caa5fb3e1625
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996248"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486800"
 ---
 # <a name="api-explorer"></a>Eksplorator interfejsu API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 
-Microsoft Defender for Endpoint API Explorer to narzędzie, które ułatwia interakcyjne eksplorowanie różnych interfejsów API usługi Defender dla punktu końcowego.
+Eksplorator interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender to narzędzie, które ułatwia interaktywne eksplorowanie różnych interfejsów API usługi Defender for Endpoint.
 
-Eksplorator API ułatwia konstruowanie i tworzenie zapytań interfejsu API, testowanie i wysyłanie żądań dowolnego dostępnego punktu końcowego interfejsu API usługi Defender. Za pomocą Eksploratora API możesz podjąć działania lub znaleźć dane, które mogą jeszcze nie być dostępne za pośrednictwem interfejsu użytkownika.
+Eksplorator interfejsu API ułatwia tworzenie i wykonywanie zapytań interfejsu API, testowanie i wysyłanie żądań dla dowolnego dostępnego punktu końcowego interfejsu API usługi Defender for Endpoint. Użyj Eksploratora interfejsu API, aby wykonywać akcje lub znajdować dane, które mogą nie być jeszcze dostępne za pośrednictwem interfejsu użytkownika.
 
-To narzędzie jest przydatne podczas tworzenia aplikacji. Pozwala on na wykonywanie zapytań interfejsu API z przestrzeganiem ustawień dostępu użytkownika, co ogranicza konieczność generowania tokenów dostępu.
+Narzędzie jest przydatne podczas tworzenia aplikacji. Umożliwia wykonywanie zapytań interfejsu API, które respektują ustawienia dostępu użytkowników, co zmniejsza konieczność generowania tokenów dostępu.
 
-Za pomocą tego narzędzia możesz również eksplorować galerię przykładowych zapytań, kopiować przykłady kodów wyników i generować informacje o debugowaniu.
+Możesz również użyć narzędzia do eksplorowania galerii przykładowych zapytań, kopiowania przykładów kodu wynikowego i generowania informacji debugowania.
 
-Eksplorator interfejsu API umożliwia:
+Za pomocą Eksploratora interfejsu API możesz:
 
-- Uruchamianie żądań dowolnej metody i wyświetlanie odpowiedzi w czasie rzeczywistym
-- Szybkie przeglądanie przykładów interfejsu API i dowiedz się, jakie parametry obsługują
-- Łatwe nakieruj interfejs API na połączenia; nie trzeba logować się poza portalem zarządzania
+- Uruchom żądania dla dowolnej metody i zobacz odpowiedzi w czasie rzeczywistym.
+- Szybko przejrzyj przykłady interfejsu API i dowiedz się, jakie parametry obsługują.
+- Łatwe wykonywanie wywołań interfejsu API; nie trzeba uwierzytelniać się poza logowaniem do portalu zarządzania.
 
-## <a name="access-api-explorer"></a>Eksplorator interfejsu API programu Access
+## <a name="access-api-explorer"></a>Eksplorator interfejsu API dostępu
 
-Z menu nawigacji po lewej stronie wybierz pozycję **Partnerzy & Eksploratora interfejsów** \> **API INTERFEJSÓW API**.
+Z menu nawigacji po lewej stronie wybierz pozycję **Partnerzy &** **[Eksplorator interfejsów API](https://security.microsoft.com/interoperability/api-explorer)** interfejsów \> API.
 
 ## <a name="supported-apis"></a>Obsługiwane interfejsy API
 
@@ -57,16 +56,16 @@ Lista obsługiwanych interfejsów API jest dostępna w [dokumentacji interfejsó
 
 ## <a name="get-started-with-the-api-explorer"></a>Wprowadzenie do Eksploratora interfejsu API
 
-1. W okienku po lewej stronie znajduje się lista przykładowych żądań, których możesz użyć.
-2. Postępuj zgodnie z linkami i kliknij **pozycję Uruchom zapytanie**.
+1. W okienku po lewej stronie znajduje się lista przykładowych żądań, których można użyć.
+2. Postępuj zgodnie z linkami i kliknij pozycję **Uruchom zapytanie**.
 
-Niektóre próbki mogą wymagać określenia parametru w adresie URL, na przykład {machine-ID}.
+Niektóre przykłady mogą wymagać określenia parametru w adresie URL, na przykład {machine- ID}.
 
 ## <a name="faq"></a>Często zadawane pytania
 
-**Czy do korzystania z Eksploratora API muszę mieć token API?** <br>
-Poświadczenia dostępu do interfejsu API nie są potrzebne. Eksplorator interfejsu API używa tokenu portalu zarządzania punktami końcowymi usługi Defender zawsze, gdy zażąda.
+**Czy muszę mieć token interfejsu API, aby korzystać z Eksploratora interfejsu API?** <br>
+Poświadczenia umożliwiające dostęp do interfejsu API nie są potrzebne. Eksplorator interfejsu API używa tokenu portalu zarządzania punktami końcowymi usługi Defender za każdym razem, gdy wysyła żądanie.
 
-Poświadczenia uwierzytelniania zalogowanego użytkownika służą do sprawdzania, czy Eksplorator interfejsu API jest autoryzowany do uzyskiwania dostępu do danych w Twoim imieniu.
+Poświadczenie uwierzytelniania zalogowanego użytkownika służy do sprawdzania, czy Eksplorator interfejsu API ma autoryzację dostępu do danych w Twoim imieniu.
 
-Określone żądania interfejsu API są ograniczone w zależności od Twoich uprawnień RBAC. Na przykład żądanie "Wskaźnik Prześlij" jest ograniczone do roli administratora zabezpieczeń.
+Określone żądania interfejsu API są ograniczone w zależności od uprawnień RBAC. Na przykład żądanie "Prześlij wskaźnik" jest ograniczone do roli administratora zabezpieczeń.

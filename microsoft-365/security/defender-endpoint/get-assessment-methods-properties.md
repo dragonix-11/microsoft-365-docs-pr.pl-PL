@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: fc2686b9ef6a30c9c81d7633ce8a59a0454d622d
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 022c5854c955ed9b0faef16455be1af3a81b0997
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65838948"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487294"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Eksportowanie metod oceny i właściwości na urządzenie
 
@@ -166,7 +166,8 @@ rbacGroupId|Ciąg|Identyfikator grupy kontroli dostępu opartej na rolach (RBAC)
 ZalecenieReferencja|Ciąg|Odwołanie do identyfikatora zalecenia związanego z tym oprogramowaniem.
 RecommendedSecurityUpdate|Ciąg|Nazwa lub opis aktualizacji zabezpieczeń udostępnionej przez dostawcę oprogramowania w celu rozwiązania problemu z luką w zabezpieczeniach.
 RecommendedSecurityUpdateId|Ciąg|Identyfikator odpowiednich aktualizacji zabezpieczeń lub identyfikatora odpowiednich wskazówek lub artykułów baza wiedzy (KB).
-Ciąg tablicy\[ścieżki rejestru\]|Rejestr wskazuje, że produkt jest zainstalowany na urządzeniu.
+Ścieżki rejestru|Tablica[ciąg]|Rejestr wskazuje, że produkt jest zainstalowany na urządzeniu.
+SecurityUpdateAvailable|Wartość logiczna|Wskazuje, czy aktualizacja zabezpieczeń jest dostępna dla oprogramowania.
 SoftwareName|Ciąg|Nazwa produktu programowego.
 SoftwareVendor|Ciąg|Nazwa dostawcy oprogramowania.
 SoftwareVersion|Ciąg|Numer wersji produktu oprogramowania.
@@ -213,5 +214,5 @@ VulnerabilitySeverityLevel|Ciąg|Poziom ważności przypisany do luki w zabezpie
 
 Inne powiązane
 
-- [& zarządzanie lukami w zabezpieczeniach zagrożeń opartych na ryzyku](next-gen-threat-and-vuln-mgt.md)
+- [Zarządzanie lukami w zabezpieczeniach & zagrożeń opartych na ryzyku](next-gen-threat-and-vuln-mgt.md)
 - [Luki w zabezpieczeniach w organizacji](tvm-weaknesses.md)

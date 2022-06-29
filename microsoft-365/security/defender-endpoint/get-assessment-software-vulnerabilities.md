@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 86d2b0b09748a83c9b73430c4c6e371ca2e37f31
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 52dc38d3675ffe15bd781aefaecede9d1783bac3
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65838993"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487175"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Eksportowanie oceny luk w zabezpieczeniach oprogramowania na urządzenie
 
@@ -116,6 +116,7 @@ ZalecenieReferencja|Ciąg|Odwołanie do identyfikatora zalecenia związanego z t
 RecommendedSecurityUpdate (opcjonalnie)|Ciąg|Nazwa lub opis aktualizacji zabezpieczeń udostępnionej przez dostawcę oprogramowania w celu rozwiązania problemu z luką w zabezpieczeniach.|Aktualizacje zabezpieczeń z kwietnia 2020 r.
 RecommendedSecurityUpdateId (opcjonalnie)|Ciąg|Identyfikator odpowiednich aktualizacji zabezpieczeń lub identyfikatora odpowiednich wskazówek lub artykułów baza wiedzy (KB)|4550961
 RegistryPaths|Ciąg tablicy\[\]|Rejestr wskazuje, że produkt jest zainstalowany na urządzeniu.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
+SecurityUpdateAvailable|Wartość logiczna|Wskazuje, czy aktualizacja zabezpieczeń jest dostępna dla oprogramowania.| Możliwe wartości to true lub false.
 SoftwareName|Ciąg|Nazwa produktu programowego.|Chrome
 SoftwareVendor|Ciąg|Nazwa dostawcy oprogramowania.|Google
 SoftwareVersion|Ciąg|Numer wersji produktu oprogramowania.|81.0.4044.138
@@ -157,7 +158,8 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 14:17:26",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-edge"
+            "recommendationReference": "va-_-microsoft-_-edge",
+            "securityUpdateAvailable": true
         },
         {
             "id": "00044f912345baf756462bde6db733b9a9c56ad4_.net_framework_4.0.0.0__",
@@ -182,7 +184,8 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 13:18:33",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-.net_framework"
+            "recommendationReference": "va-_-microsoft-_-.net_framework",
+            "securityUpdateAvailable": true
         },
         {
             "id": "00044f912345baf756462dbe6db733d6a9c59ab4_system_center_2012_endpoint_protection_4.10.209.0__",
@@ -207,7 +210,8 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 14:17:26",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-system_center_2012_endpoint_protection"
+            "recommendationReference": "va-_-microsoft-_-system_center_2012_endpoint_protection",
+            "securityUpdateAvailable": true
         },
         {
             "id": "00044f612345bdaf759462dbe6bd733b6a9c59ab4_onedrive_20.245.1206.2__",
@@ -232,7 +236,8 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 13:18:33",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-onedrive"
+            "recommendationReference": "va-_-microsoft-_-onedrive",
+            "securityUpdateAvailable": true
         },
         {
             "id": "00044f912345daf759462bde6db733b6a9c56ab4_windows_10_10.0.17763.1637__",
@@ -255,7 +260,8 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 14:17:26",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11"
+            "recommendationReference": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11",
+            "securityUpdateAvailable": true
         }
     ],
     "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitiesByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
@@ -586,5 +592,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
 
 Inne powiązane
 
-- [& zarządzanie lukami w zabezpieczeniach zagrożeń opartych na ryzyku](next-gen-threat-and-vuln-mgt.md)
+- [Zarządzanie lukami w zabezpieczeniach & zagrożeń opartych na ryzyku](next-gen-threat-and-vuln-mgt.md)
 - [Luki w zabezpieczeniach w organizacji](tvm-weaknesses.md)

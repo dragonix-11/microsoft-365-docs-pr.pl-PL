@@ -15,18 +15,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d7681be9f1103fbf21b7f3f89b74fc6d9d32f809
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 276bcd6616abe3cf68731bad6f62b3d996557719
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663651"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490127"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business"></a>Microsoft 365 Lighthouse i Microsoft Defender dla Firm
 
 ## <a name="microsoft-defender-for-business-integrates-with-microsoft-365-lighthouse"></a>Microsoft Defender dla Firm integruje się z Microsoft 365 Lighthouse
 
-Jeśli jesteś Microsoft Cloud Solution Provider (CSP) i masz [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), możesz zarządzać zabezpieczeniami swoich klientów (małych i średnich firm). Microsoft Defender dla Firm jest przeznaczony do integracji z Microsoft 365 Lighthouse, dzięki czemu można wyświetlać zdarzenia zabezpieczeń w dzierżawach w portalu Microsoft 365 Lighthouse ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
+Jeśli jesteś dostawcą rozwiązań w chmurze firmy Microsoft i masz [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), możesz zarządzać zabezpieczeniami swoich klientów (małych i średnich firm). Microsoft Defender dla Firm jest przeznaczony do integracji z Microsoft 365 Lighthouse, dzięki czemu można wyświetlać zdarzenia zabezpieczeń w dzierżawach w portalu Microsoft 365 Lighthouse ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
 
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="zrzut ekranu przedstawiający listę zdarzeń w Microsoft 365 Lighthouse":::
 
@@ -41,3 +41,7 @@ Microsoft 365 Lighthouse umożliwia dostawcom usług w chmurze firmy Microsoft z
 - [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md) (w tym [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](../defender-endpoint/defender-endpoint-plan-1.md))
 
 Aby dowiedzieć się więcej, zobacz [Omówienie Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md).
+
+## <a name="see-also"></a>Zobacz też
+
+[Microsoft Defender dla Firm i zarządzane zasoby dostawcy usług](mdb-partners.md)

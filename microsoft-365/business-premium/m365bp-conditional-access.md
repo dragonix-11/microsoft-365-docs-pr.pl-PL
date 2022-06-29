@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak ustawienia domyślne zabezpieczeń mogą pomóc chronić organizację przed atakami związanymi z tożsamością, udostępniając wstępnie skonfigurowane ustawienia zabezpieczeń dla Microsoft 365 Business Premium.
-ms.openlocfilehash: c1a63efc29154768a7d54d31f51c25a3c84fa30a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 24f4cbc8feda3689a3a6f7ee49a876cd205939f3
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417847"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489173"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Ustawienia domyślne zabezpieczeń i uwierzytelnianie wieloskładnikowe
 
@@ -54,7 +54,7 @@ Ustawienia domyślne zabezpieczeń zostały zaprojektowane tak, aby ułatwić oc
 - Wyłączanie uwierzytelniania ze starszych klientów uwierzytelniania, którzy nie mogą wykonywać uwierzytelniania wieloskładnikowego.
 - Ochrona administratorów przez wymaganie dodatkowego uwierzytelniania za każdym razem, gdy się logują.
 
-Uwierzytelnianie wieloskładnikowe to ważny pierwszy krok w zabezpieczaniu firmy, a ustawienia domyślne zabezpieczeń ułatwiają implementowanie uwierzytelniania wieloskładnikowego. Jeśli subskrypcja została utworzona w dniu 22 października 2019 r. lub później, ustawienia domyślne zabezpieczeń mogły zostać automatycznie włączone, jeśli chcesz&mdash; sprawdzić ustawienia w celu potwierdzenia.
+Uwierzytelnianie wieloskładnikowe to ważny pierwszy krok w zabezpieczaniu firmy, a ustawienia domyślne zabezpieczeń ułatwiają implementowanie uwierzytelniania wieloskładnikowego. Jeśli subskrypcja została utworzona 22 października 2019 r. lub później, ustawienia domyślne zabezpieczeń mogły zostać automatycznie włączone&mdash;, aby sprawdzić ustawienia, aby potwierdzić.
 
 > [!TIP]
 > Aby uzyskać więcej informacji na temat ustawień domyślnych zabezpieczeń i wymuszanych przez nie zasad, zobacz [Co to są wartości domyślne zabezpieczeń?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
@@ -63,13 +63,13 @@ Uwierzytelnianie wieloskładnikowe to ważny pierwszy krok w zabezpieczaniu firm
 
 1. Zaloguj się do <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> przy użyciu poświadczeń administratora zabezpieczeń, administratora dostępu warunkowego lub administratora globalnego.
 
-2. W okienku po lewej stronie wybierz pozycję **Pokaż wszystko,** a następnie w obszarze **Centra administracyjne** wybierz pozycję **Azure Active Directory**.
+2. W okienku po lewej stronie wybierz pozycję **Pokaż wszystko,** a następnie w obszarze **Administracja center** wybierz pozycję **Azure Active Directory**.
 
-3. W lewym okienku **centrum administracyjnego Azure Active Directory** wybierz pozycję **Azure Active Directory**.
+3. W lewym okienku **centrum administracyjnego usługi Azure Active Directory** wybierz pozycję **Azure Active Directory**.
 
 4. W menu po lewej stronie pulpitu nawigacyjnego w sekcji **Zarządzanie** wybierz pozycję **Właściwości**.
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Zrzut ekranu centrum administracyjnego Azure Active Directory przedstawiający lokalizację elementu menu Właściwości.":::
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Zrzut ekranu centrum administracyjnego usługi Azure Active Directory przedstawiający lokalizację elementu menu Właściwości.":::
 
 5. W dolnej części strony **Właściwości** wybierz pozycję **Zarządzaj wartościami domyślnymi zabezpieczeń**.
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b81daa25618fd971f5f29e2672673e8dcd2e35bc
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 38e0145d1df971d651aab0be02c08e46ea70fe70
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159451"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490327"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft Threat Experts
 
@@ -46,11 +46,11 @@ Obejrzyj ten film wideo, aby dowiedzieć się, jak Microsoft Threat Experts zape
 
 > [!NOTE]
 > Przed zastosowaniem do usługi wyszukiwania zagrożeń zarządzanych należy omówić wymagania dotyczące uprawnień u dostawcy usług technicznych firmy Microsoft i zespołu ds. konta.
-> Eksperci od zagrożeń nie są obecnie dostępni w Microsoft 365 dla chmur rządowych USA.
+> Usługa Threat Experts nie jest obecnie dostępna w usłudze Microsoft 365 dla chmur dla instytucji rządowych USA.
 
 Jeśli jesteś klientem Ochrona punktu końcowego w usłudze Microsoft Defender, musisz ubiegać się o **Microsoft Threat Experts — ukierunkowane powiadomienia o atakach**, aby uzyskać specjalne szczegółowe informacje i analizy, które ułatwiają identyfikowanie najbardziej krytycznych zagrożeń w środowisku, dzięki czemu możesz szybko na nie reagować.
 
-Aby zarejestrować się w Microsoft Threat Experts — korzyści związane z docelowymi powiadomieniami o atakach, przejdź do **obszaru** \> Ustawienia **Punkty końcowe** \> **Ogólne** \> **funkcje** \> zaawansowane **Microsoft Threat Experts — powiadomienia o atakach docelowych** do zastosowania. Po zaakceptowaniu otrzymasz korzyści z powiadomień o ukierunkowanych atakach.
+Aby zarejestrować się w Microsoft Threat Experts — korzyści związane z docelowymi powiadomieniami o atakach, przejdź do obszaru **Ustawienia** \> **Punkty końcowe** \> **Ogólne** \> **funkcje** \> zaawansowane **Microsoft Threat Experts — docelowe powiadomienia o atakach** do zastosowania. Po zaakceptowaniu otrzymasz korzyści z powiadomień o ukierunkowanych atakach.
 
 Skontaktuj się z zespołem ds. konta lub przedstawicielem firmy Microsoft, aby zasubskrybować **Microsoft Threat Experts — Eksperci na żądanie**, aby skonsultować się z naszymi ekspertami od zagrożeń w sprawie odpowiednich wykryć i przeciwników, z którymi boryka się Twoja organizacja.
 
@@ -67,7 +67,7 @@ Microsoft Threat Experts — powiadomienie o ukierunkowanym ataku zapewnia aktyw
 
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Microsoft Threat Experts — eksperci na żądanie
 
-Klienci mogą skontaktować się z naszymi ekspertami w dziedzinie zabezpieczeń bezpośrednio z poziomu Microsoft 365 Defender w celu terminowego i dokładnego reagowania. Eksperci zapewniają szczegółowe informacje potrzebne do lepszego zrozumienia złożonych zagrożeń wpływających na organizację, od zapytań o alerty, potencjalnie naruszonych urządzeń, głównej przyczyny podejrzanego połączenia sieciowego, po dodatkową analizę zagrożeń dotyczącą trwających zaawansowanych kampanii trwałych zagrożeń. Dzięki tej możliwości można:
+Klienci mogą skontaktować się z naszymi ekspertami w dziedzinie zabezpieczeń bezpośrednio z poziomu portalu Microsoft 365 Defender w celu uzyskania odpowiedzi. Eksperci zapewniają szczegółowe informacje potrzebne do lepszego zrozumienia złożonych zagrożeń wpływających na organizację, od zapytań o alerty, potencjalnie naruszonych urządzeń, głównej przyczyny podejrzanego połączenia sieciowego, po dodatkową analizę zagrożeń dotyczącą trwających zaawansowanych kampanii trwałych zagrożeń. Dzięki tej możliwości można:
 
 - Uzyskiwanie dodatkowych wyjaśnień dotyczących alertów, w tym głównej przyczyny lub zakresu zdarzenia
 - Uzyskaj jasność co do podejrzanego zachowania urządzenia i wykonaj kolejne kroki w przypadku zaawansowanego atakującego

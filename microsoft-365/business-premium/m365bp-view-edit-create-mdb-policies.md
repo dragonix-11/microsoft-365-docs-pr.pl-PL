@@ -7,40 +7,38 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 05/20/2022
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5a01c2f045ea797aa61f3028f2a0a4ef4e260fe6
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: d628df3109eafd3d342041784d70b9857e260d81
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623190"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486038"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>Wyświetlanie i edytowanie zasad ochrony urządzeń
 
-W Microsoft 365 Business Premium ustawienia zabezpieczeń dla urządzeń zarządzanych są konfigurowane za pomocą zasad ochrony urządzeń w centrum zabezpieczeń usługi Microsoft Defender lub w centrum administracyjnym. Aby uprościć konfigurację i konfigurację, istnieją wstępnie skonfigurowane zasady, które ułatwiają ochronę urządzeń organizacji natychmiast po ich dołączeniu. Możesz użyć zasad domyślnych, edytować istniejące zasady lub tworzyć własne zasady.
+W Microsoft 365 Business Premium ustawienia zabezpieczeń dla urządzeń zarządzanych są konfigurowane za pomocą zasad ochrony urządzeń w centrum zabezpieczeń usługi Microsoft Defender lub w centrum Administracja. Aby uprościć konfigurację i konfigurację, istnieją wstępnie skonfigurowane zasady, które ułatwiają ochronę urządzeń organizacji natychmiast po ich dołączeniu. Możesz użyć zasad domyślnych, edytować istniejące zasady lub tworzyć własne zasady.
 
 **W tych wskazówkach opisano, jak** wykonać następujące czynności:
 
 - Zapoznaj się z omówieniem domyślnych zasad
-- Praca z zasadami urządzeń w centrum zabezpieczeń usługi Defender, centrum administracyjnym i Intune.
+- Praca z zasadami urządzeń w usłudze Defender Security Center, Administracja Center i Intune.
 
 ## <a name="about-the-default-device-protection-policies"></a>Informacje o domyślnych zasadach ochrony urządzeń
 
 Microsoft 365 Business Premium obejmuje dwa główne typy zasad ochrony urządzeń organizacji:
 
-- **Zasady ochrony nowej generacji**, które określają sposób konfigurowania Program antywirusowy Microsoft Defender i innych funkcji ochrony przed zagrożeniami.
+- **Zasady ochrony nowej generacji**, które określają sposób konfigurowania programu antywirusowego Microsoft Defender i innych funkcji ochrony przed zagrożeniami.
 
 - **Zasady zapory**, które określają, jaki ruch sieciowy może przepływać do i z urządzeń organizacji.
 
-Te zasady są częścią Microsoft Defender dla Firm uwzględnionych w subskrypcji Microsoft 365 Business Premium. Informacje są udostępniane do pracy z zasadami w centrum zabezpieczeń usługi Microsoft Defender, a także sposobu pracy z zasadami w centrum administracyjnym i Intune.
+Te zasady są częścią Microsoft Defender dla Firm uwzględnionych w subskrypcji Microsoft 365 Business Premium. Informacje dotyczące pracy z zasadami w centrum zabezpieczeń usługi Microsoft Defender oraz sposobu pracy z zasadami w centrum Administracja i Intune.
 
 ## <a name="working-with-device-polices-in-the-microsoft-defender-security-center"></a>Praca z zasadami urządzeń w centrum zabezpieczeń usługi Microsoft Defender
 
@@ -52,11 +50,11 @@ Aby wyświetlić istniejące zasady ochrony urządzeń w centrum zabezpieczeń:
 
 1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
-1. W okienku nawigacji wybierz pozycję **Konfiguracja urządzenia**. Zasady są zorganizowane według systemu operacyjnego (na przykład **klienta Windows**) i typu zasad (na przykład **ochrony następnej generacji** i **zapory**).
+1. W okienku nawigacji wybierz pozycję **Konfiguracja urządzenia**. Zasady są zorganizowane według systemu operacyjnego (takiego jak **klient systemu Windows**) i typu zasad (takich jak **ochrona następnej generacji** i **zapora**).
 
     :::image type="content" source="../media/mdb-deviceconfiguration.png" lightbox="../media/mdb-deviceconfiguration.png" alt-text="Strona Konfiguracja urządzenia.":::
 
-1. Wybierz kartę systemu operacyjnego (na przykład **Windows klientów**), a następnie przejrzyj listę zasad w kategoriach **Ochrona następnej generacji** i **Zapora**.
+1. Wybierz kartę systemu operacyjnego (na przykład **klientów systemu Windows**), a następnie przejrzyj listę zasad w kategoriach **Ochrona następnej generacji** i **Zapora** .
 
 1. Aby wyświetlić więcej szczegółów dotyczących zasad, wybierz jej nazwę. Zostanie otwarte okienko boczne, które zawiera więcej informacji o tych zasadach, takich jak urządzenia chronione przez te zasady.
 
@@ -68,9 +66,9 @@ Aby edytować zasady urządzenia:
 
 1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
-1. W okienku nawigacji wybierz pozycję **Konfiguracja urządzenia**. Zasady są zorganizowane według systemu operacyjnego (na przykład **klienta Windows**) i typu zasad (na przykład **ochrony następnej generacji** i **zapory**).
+1. W okienku nawigacji wybierz pozycję **Konfiguracja urządzenia**. Zasady są zorganizowane według systemu operacyjnego (takiego jak **klient systemu Windows**) i typu zasad (takich jak **ochrona następnej generacji** i **zapora**).
 
-1. Wybierz kartę systemu operacyjnego (na przykład **Windows klientów**), a następnie przejrzyj listę zasad w kategoriach **Ochrona następnej generacji** i **Zapora**.
+1. Wybierz kartę systemu operacyjnego (na przykład **klientów systemu Windows**), a następnie przejrzyj listę zasad w kategoriach **Ochrona następnej generacji** i **Zapora** .
 
 1. Aby edytować zasady, wybierz jej nazwę, a następnie wybierz pozycję **Edytuj**.
 
@@ -103,9 +101,9 @@ Aby utworzyć nowe zasady ochrony urządzeń:
 
 1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
-1. W okienku nawigacji wybierz pozycję **Konfiguracja urządzenia**. Zasady są zorganizowane według systemu operacyjnego (na przykład **klienta Windows**) i typu zasad (na przykład **ochrony następnej generacji** i **zapory**).
+1. W okienku nawigacji wybierz pozycję **Konfiguracja urządzenia**. Zasady są zorganizowane według systemu operacyjnego (takiego jak **klient systemu Windows**) i typu zasad (takich jak **ochrona następnej generacji** i **zapora**).
 
-1. Wybierz kartę systemu operacyjnego (na przykład **Windows klientów**), a następnie przejrzyj listę zasad **ochrony następnej generacji**.
+1. Wybierz kartę systemu operacyjnego (na przykład **klienci systemu Windows**), a następnie przejrzyj listę zasad **ochrony następnej generacji** .
 
 1. W obszarze **Ochrona następnej generacji** lub **Zapora** wybierz pozycję **+ Dodaj**.
 
@@ -120,7 +118,7 @@ Aby utworzyć nowe zasady ochrony urządzeń:
    - Początkowo możesz mieć tylko domyślną grupę urządzeń, która obejmuje urządzenia używane przez osoby w organizacji do uzyskiwania dostępu do danych organizacji i poczty e-mail. Możesz zachować domyślną grupę urządzeń i korzystać z niej.
    - Utwórz nową grupę urządzeń, aby zastosować zasady z określonymi ustawieniami, które różnią się od zasad domyślnych.
    - Podczas konfigurowania grupy urządzeń należy określić pewne kryteria, takie jak wersja systemu operacyjnego. Urządzenia spełniające kryteria są uwzględniane w tej grupie urządzeń, chyba że zostaną wykluczone.
-   - Wszystkie grupy urządzeń, w tym zdefiniowane domyślne i niestandardowe grupy urządzeń, są przechowywane w Azure Active Directory (Azure AD).
+   - Wszystkie grupy urządzeń, w tym zdefiniowane domyślne i niestandardowe grupy urządzeń, są przechowywane w usłudze Azure Active Directory (Azure AD).
 
    Aby dowiedzieć się więcej o grupach urządzeń, zobacz [Temat Grupy urządzeń w Microsoft Defender dla Firm](../security/defender-business/mdb-create-edit-device-groups.md).
 
@@ -131,13 +129,13 @@ Aby utworzyć nowe zasady ochrony urządzeń:
    - Wprowadź wszelkie wymagane zmiany, wybierając pozycję **Edytuj**.
    - Gdy wszystko będzie gotowe do kontynuowania, wybierz pozycję **Utwórz zasady**.
 
-## <a name="using-device-policies-in-the-admin-center"></a>Korzystanie z zasad urządzeń w Centrum administracyjnym
+## <a name="using-device-policies-in-the-admin-center"></a>Korzystanie z zasad urządzeń w centrum Administracja
 
-Poniższe informacje opisują wyświetlanie zasad i zarządzanie nimi w centrum administracyjnym usługi Microsoft Business Premium.
+Poniższe informacje opisują wyświetlanie zasad i zarządzanie nimi w centrum Administracja Microsoft Business Premium.
 
 ### <a name="working-with-device-policies"></a>Praca z zasadami urządzeń
 
-Aby pracować z zasadami w Centrum administracyjnym:
+Aby pracować z zasadami w centrum Administracja:
 
 1.  Przejdź do centrum administracyjnego w witrynie <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
@@ -159,7 +157,7 @@ Aby wyświetlić zasady i zarządzać nimi:
 
 ## <a name="working-with-device-policies-in-intune"></a>Praca z zasadami urządzeń w Intune
 
-Poniższe informacje umożliwiają tworzenie zasad urządzeń i zarządzanie nimi w Intune, które są wykonywane za pośrednictwem zabezpieczeń punktu końcowego w centrum administracyjnym Microsoft Endpoint Manager.
+Poniższe informacje umożliwiają tworzenie zasad urządzeń i zarządzanie nimi w Intune, które są wykonywane za pośrednictwem zabezpieczeń punktu końcowego w centrum administracyjnym usługi Microsoft Endpoint Manager.
 
 ### <a name="create-duplicate-and-edit-policies"></a>Tworzenie, duplikowanie i edytowanie zasad
 
@@ -212,7 +210,7 @@ Aby edytować zasady:
 
 1. Wybierz nowe zasady, a następnie wybierz pozycję **Właściwości**.
 
-1. Wybierz **pozycję Ustawienia**, aby rozwinąć listę ustawień konfiguracji w zasadach. Nie można zmodyfikować ustawień z tego widoku, ale możesz sprawdzić, jak są skonfigurowane.
+1. Wybierz pozycję **Ustawienia** , aby rozwinąć listę ustawień konfiguracji w zasadach. Nie można zmodyfikować ustawień z tego widoku, ale możesz sprawdzić, jak są skonfigurowane.
 
 1. Aby zmodyfikować zasady, wybierz pozycję **Edytuj** dla każdej kategorii, w której chcesz wprowadzić zmianę:
 
@@ -237,7 +235,7 @@ Niezależnie od metody zasad zarządzanie tym samym ustawieniem na tym samym urz
 
 [Zarządzanie zabezpieczeniami punktu końcowego w Microsoft Intune](/mem/Intune/protect/endpoint-security)
 
-[Najlepsze rozwiązania dotyczące zabezpieczania Microsoft 365 dla planów biznesowych](../admin/security-and-compliance/secure-your-business-data.md)
+[Najlepsze rozwiązania dotyczące zabezpieczania planów platformy Microsoft 365 dla firm](../admin/security-and-compliance/secure-your-business-data.md)
 
 ## <a name="next-objective"></a>Następny cel
 

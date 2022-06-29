@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 29a221e60484431722be4e7104efb5b37a0408bc
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 7b195f595592b5c3b284b6dee4fd65b66d80e06a
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648574"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489370"
 ---
 # <a name="web-content-filtering"></a>Filtrowanie zawartości sieci Web
 
@@ -63,6 +63,17 @@ Przed wypróbowaniem tej funkcji upewnij się, że spełniasz wymagania opisane 
 
 Dane są przechowywane w regionie wybranym w ramach [ustawień obsługi danych Ochrona punktu końcowego w usłudze Microsoft Defender](data-storage-privacy.md). Dane nie opuszczą centrum danych w tym regionie. Ponadto dane użytkownika nie będą udostępniane żadnym osobom trzecim, w tym naszym dostawcom danych.
 
+## <a name="precedence-for-multiple-active-policies"></a>Pierwszeństwo dla wielu aktywnych zasad
+
+Zastosowanie wielu różnych zasad filtrowania zawartości internetowej do tego samego urządzenia spowoduje zastosowanie bardziej restrykcyjnych zasad dla każdej kategorii. Rozpatrzmy następujący scenariusz:
+
+- **Zasady 1**: blokują kategorie 1 i 2, a pozostałe przeprowadzają inspekcję
+- **Zasady 2**: blokuje kategorie 3 i 4, a pozostałe przeprowadzają inspekcję
+
+W rezultacie wszystkie kategorie od 1 do 4 są blokowane.  Jest to zilustrowane na poniższej ilustracji.
+
+:::image type="content" source="images/web-content-filtering-policies-mode-precedence.png" alt-text="Ilustruje pierwszeństwo trybu bloku zasad filtrowania zawartości internetowej w trybie inspekcji":::
+
 ## <a name="turn-on-web-content-filtering"></a>Włączanie filtrowania zawartości internetowej
 
 1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a> i zaloguj się.
@@ -75,7 +86,7 @@ Dane są przechowywane w regionie wybranym w ramach [ustawień obsługi danych O
 
 ### <a name="configure-web-content-filtering-policies"></a>Konfigurowanie zasad filtrowania zawartości internetowej
 
-Zasady filtrowania zawartości sieci Web określają, które kategorie witryn są blokowane dla grup urządzeń. Aby zarządzać zasadami, przejdź do **obszaru Ustawienia** \> **Filtrowanie zawartości sieci Web** **punktów końcowych** (w obszarze **Reguły**\>).
+Zasady filtrowania zawartości sieci Web określają, które kategorie witryn są blokowane dla grup urządzeń. Aby zarządzać zasadami, przejdź do obszaru **Ustawienia** \> Filtrowanie **zawartości sieci Web** **punktów końcowych** \> (w obszarze **Reguły**).
 
 Zasady można wdrożyć, aby zablokować dowolną z następujących kategorii nadrzędnych lub podrzędnych:
 
@@ -143,7 +154,7 @@ Zasady można wdrożyć, aby zablokować dowolną z następujących kategorii na
 
 **Wiadomości błyskawiczne**: witryny, których można użyć do pobierania oprogramowania do obsługi wiadomości błyskawicznych lub wiadomości błyskawicznych opartych na kliencie.
 
-**sieć Professional**: lokacje, które zapewniają profesjonalne usługi sieciowe.
+**Sieć profesjonalna**: lokacje, które zapewniają profesjonalne usługi sieciowe.
 
 **Sieci społecznościowe**: witryny, które zapewniają usługi sieci społecznościowych.
 
@@ -166,7 +177,7 @@ Zasady można wdrożyć, aby zablokować dowolną z następujących kategorii na
 
 Aby dodać nowe zasady, wykonaj następujące kroki:
 
-1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a> wybierz pozycję **Ustawienia** >  **Filtrowanie** >  zawartości sieci Web **+ Dodaj zasady**.
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a> wybierz pozycję **Ustawienia** > **Filtrowanie** >  zawartości sieci Web **+ Dodaj zasady**.
 
 2. Określ nazwę.
 
@@ -186,7 +197,7 @@ Aby dodać nowe zasady, wykonaj następujące kroki:
 
 ## <a name="end-user-experience"></a>Środowisko użytkownika końcowego
 
-Środowisko blokowania obsługiwanych przeglądarek innych firm jest zapewniane przez ochronę sieci, która udostępnia komunikat na poziomie systemu powiadamiający użytkownika o zablokowanym połączeniu. Aby uzyskać bardziej przyjazne dla użytkownika środowisko w przeglądarce, rozważ użycie Microsoft Edge.
+Środowisko blokowania obsługiwanych przeglądarek innych firm jest zapewniane przez ochronę sieci, która udostępnia komunikat na poziomie systemu powiadamiający użytkownika o zablokowanym połączeniu. Aby uzyskać bardziej przyjazne dla użytkownika środowisko w przeglądarce, rozważ użycie przeglądarki Microsoft Edge.
 
 ### <a name="allow-specific-websites"></a>Zezwalaj na określone witryny sieci Web
 
@@ -194,7 +205,7 @@ Istnieje możliwość zastąpienia zablokowanej kategorii w filtrowaniu zawarto�
 
 Aby zdefiniować wskaźnik niestandardowy, wykonaj następujące kroki:
 
-1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a> przejdź do **pozycji Ustawienia** \> **Adres URL** **wskaźników** \> **punktów końcowych**\>/**Dodaj**\> element domeny.
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a> przejdź do pozycji **Ustawienia** \> Adres URL **wskaźników** \> **punktów końcowych**\>/**Dodaj element** **domeny**\>.
 
 2. Wprowadź domenę witryny.
 
@@ -248,9 +259,9 @@ Użyj filtru zakresu czasu w lewym górnym rogu strony, aby wybrać okres. Może
 
 ### <a name="known-issues-and-limitations"></a>Znane problemy i ograniczenia
 
-Tylko Microsoft Edge jest obsługiwane, jeśli konfiguracja systemu operacyjnego urządzenia to Serwer (**konfiguracja systemu operacyjnego cmd** \> **Systeminfo** \> **).** Ochrona sieci jest obsługiwana tylko w trybie inspekcji na urządzeniach serwera, który jest odpowiedzialny za zabezpieczanie ruchu w obsługiwanych przeglądarkach innych firm.
+Tylko przeglądarka Microsoft Edge jest obsługiwana, jeśli konfiguracją systemu operacyjnego urządzenia jest serwer (**konfiguracja systemu operacyjnego cmd** \> **Systeminfo** \> **).** Ochrona sieci jest obsługiwana tylko w trybie inspekcji na urządzeniach serwera, który jest odpowiedzialny za zabezpieczanie ruchu w obsługiwanych przeglądarkach innych firm.
 
-Obsługiwane są tylko Microsoft Edge, a ochrona sieci nie jest obsługiwana na Windows 10 hostach z wieloma sesjami usługi Azure Virtual Desktop.
+Obsługiwana jest tylko przeglądarka Microsoft Edge, a ochrona sieci nie jest obsługiwana na Windows 10 hostach z wieloma sesjami usługi Azure Virtual Desktop.
 
 Ochrona sieci nie obsługuje obecnie inspekcji protokołu SSL, co może spowodować, że niektóre witryny będą dozwolone przez filtrowanie zawartości internetowej, które normalnie byłyby blokowane. Witryny będą dozwolone z powodu braku wglądu w zaszyfrowany ruch po uzgadnianiu protokołu TLS i niemożności przeanalizowania niektórych przekierowań.  Obejmuje to przekierowania ze stron logowania poczty internetowej do strony skrzynki pocztowej. Jako zaakceptowane obejście możesz utworzyć niestandardowy wskaźnik bloku dla strony logowania, aby upewnić się, że żaden użytkownik nie będzie mógł uzyskać dostępu do witryny. Należy pamiętać, że może to zablokować ich dostęp do innych usług skojarzonych z tą samą witryną internetową. 
 

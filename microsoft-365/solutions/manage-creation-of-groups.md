@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: Dowiedz się, jak kontrolować, którzy użytkownicy mogą tworzyć grupy platformy Microsoft 365.
-ms.openlocfilehash: 992f5c62654f23f90f910f62dc3bb78199b949b0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2136fbf51912e00b7552e687282d4a80688dcd9e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946929"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493048"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Zarządzanie tym, kto może tworzyć grupy platformy Microsoft 365
 
@@ -94,7 +94,7 @@ Aby zmienić ustawienie dostępu gościa na poziomie grupy, musisz użyć wersji
 
 - Jeśli masz zainstalowaną ogólnie dostępną wersję modułu Azure AD PowerShell (AzureAD) w wersji 2.0, musisz ją odinstalować, uruchamiając `Uninstall-Module AzureAD` w sesji programu PowerShell, a następnie zainstalować wersję zapoznawczą, uruchamiając `Install-Module AzureADPreview`.
 
-- Jeśli masz już zainstalowaną wersję zapoznawczą, uruchom `Install-Module AzureADPreview` , aby upewnić się, że jest to najnowsza wersja tego modułu.
+- Jeśli masz już zainstalowaną wersję zapoznawczą, uruchom `Update-Module AzureADPreview` , aby upewnić się, że jest to najnowsza wersja tego modułu.
 
 Skopiuj poniższy skrypt do edytora tekstów, takiego jak Notatnik, lub [środowiska Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 

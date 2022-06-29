@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 5605678a1fcc30719d7f838a16452ba527c554b7
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 669d4f3b4e8c2d805f72f9113cea1e9e926f3390
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847054"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492374"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Akcje korygowania w Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ Poniższa tabela zawiera podsumowanie akcji korygowania, które są obecnie obs�
 
 |Akcje korygowania urządzenia (punktu końcowego)  |Akcje korygowania poczty e-mail  |Użytkownicy (konta)  |
 |:---------|:---------|----------|
-|— Zbieranie pakietu badania <br/>- Izolowanie urządzenia (tę akcję można cofnąć)<br/>- Maszyna odłączona <br/>— Wykonywanie kodu wydania <br/>— Zwolnienie z kwarantanny <br/>— Przykład żądania <br/>— Ograniczanie wykonywania kodu (tę akcję można cofnąć) <br/>— Uruchamianie skanowania antywirusowego <br/>— Zatrzymywanie i kwarantanna      |- Blokuj adres URL (czas kliknięcia)<br/>- Usuwanie nietrwałe wiadomości e-mail lub klastrów<br/>— Wiadomość e-mail o kwarantannie<br/>— Kwarantanna załącznika wiadomości e-mail<br/>- Wyłącz przekazywanie poczty zewnętrznej          |— Wyłączanie użytkownika<br />- Resetowanie hasła użytkownika<br />— Potwierdź, że użytkownik został naruszona          |
+|— Zbieranie pakietu badania <br/>- Izolowanie urządzenia (tę akcję można cofnąć)<br/>- Maszyna odłączona <br/>— Wykonywanie kodu wydania <br/>— Zwolnienie z kwarantanny <br/>— Przykład żądania <br/>— Ograniczanie wykonywania kodu (tę akcję można cofnąć) <br/>— Uruchamianie skanowania antywirusowego <br/>— Zatrzymywanie i kwarantanna <br/>— Zawiera urządzenia z sieci     |- Blokuj adres URL (czas kliknięcia)<br/>- Usuwanie nietrwałe wiadomości e-mail lub klastrów<br/>— Wiadomość e-mail o kwarantannie<br/>— Kwarantanna załącznika wiadomości e-mail<br/>- Wyłącz przekazywanie poczty zewnętrznej          |— Wyłączanie użytkownika<br />- Resetowanie hasła użytkownika<br />— Potwierdź, że użytkownik został naruszona          |
 
 Akcje korygowania, oczekujące na zatwierdzenie lub już zakończone, można wyświetlić w [Centrum akcji](m365d-action-center.md).
 
@@ -85,3 +85,4 @@ Oprócz akcji korygowania, które są wykonywane po zautomatyzowanych badaniach,
 - [Odwiedź centrum akcji](m365d-action-center.md)
 - [Wyświetlanie działań naprawczych i zarządzanie nimi](m365d-autoir-actions.md)
 - [Adres fałszywie dodatnie lub fałszywie ujemne](m365d-autoir-report-false-positives-negatives.md)
+- [Zawiera urządzenia z sieci](../defender-endpoint\respond-machine-alerts.md#contain-devices-from-the-network)

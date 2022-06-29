@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 33eff726609db3d7f2d07f4a5bcf4955536c086c
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 0dcb03a5398b38e05c3c7c867306444b17b8c720
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647288"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490237"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Hostuj raportowanie zapory w usłudze ochrony punktu końcowego w usłudze Microsoft Defender
 
@@ -41,8 +41,9 @@ Jeśli jesteś administratorem globalnym lub administratorem zabezpieczeń, moż
   - [Inspekcja połączenia platformy filtrowania](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - Włącz te zdarzenia przy użyciu edytora obiektów zasady grupy, zasad zabezpieczeń lokalnych lub poleceń auditpol.exe. Aby uzyskać więcej informacji, zobacz [tutaj](/windows/win32/fwp/auditing-and-logging).
   - Dwa polecenia programu PowerShell to:
-    - **auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable**
-    - **auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable**
+    - `auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable`
+    - `auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable`
+
 ```powershell
 param (
     [switch]$remediate
@@ -81,23 +82,32 @@ catch {
 > [!NOTE]
 > Pamiętaj, aby postępować zgodnie z instrukcjami z powyższej sekcji i prawidłowo skonfigurować urządzenia pod kątem wczesnego uczestnictwa w wersji zapoznawczej.
 
-- Po włączeniu zdarzeń Microsoft 365 Defender rozpocznie monitorowanie danych.
-  - Zdalny adres IP, port zdalny, port lokalny, lokalny adres IP, nazwa komputera, proces między połączeniami przychodzącymi i wychodzącymi.
-- Administratorzy mogą teraz zobaczyć działanie zapory hosta Windows [tutaj](https://security.microsoft.com/firewall).
-  - Dodatkowe raportowanie można ułatwić, pobierając [skrypt raportowania niestandardowego](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) w celu monitorowania działań Zapora Windows Defender przy użyciu Power BI.
-  - Może upłynąć do 12 godzin, zanim dane zostaną odzwierciedlone.
+- Po włączeniu zdarzeń Microsoft 365 Defender rozpocznie monitorowanie danych, w tym: 
+   - Zdalny adres IP
+   - Port zdalny
+   - Port lokalny
+   - Lokalny adres IP
+   - Nazwa komputera
+   - Przetwarzanie między połączeniami przychodzącymi i wychodzącymi
+- Administratorzy mogą teraz zobaczyć działanie zapory [hosta](https://security.microsoft.com/firewall) systemu Windows tutaj.
+   - Dodatkowe raportowanie można ułatwić, pobierając [skrypt raportowania niestandardowego](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) w celu monitorowania działań Zapora Windows Defender przy użyciu usługi Power BI.
+   - Może upłynąć do 12 godzin, zanim dane zostaną odzwierciedlone.
 
 ## <a name="supported-scenarios"></a>Obsługiwane scenariusze
 
-Następujące scenariusze są obsługiwane podczas wersji zapoznawczej Ring0.
+Następujące scenariusze są obsługiwane podczas wersji zapoznawczej Ring0:
+
+- [Raportowanie zapory](#firewall-reporting)
+- [Z pozycji "Komputery z zablokowanym połączeniem" do urządzenia](#from-computers-with-a-blocked-connection-to-device)
+- [Przechodzenie do zaawansowanego wyszukiwania zagrożeń (odświeżanie w wersji zapoznawczej)](#drill-into-advanced-hunting-preview-refresh)
 
 ### <a name="firewall-reporting"></a>Raportowanie zapory
 
-Oto kilka przykładów stron raportu zapory. Tutaj znajdziesz podsumowanie aktywności ruchu przychodzącego, wychodzącego i działania aplikacji. Dostęp do tej strony można uzyskać bezpośrednio, przechodząc do strony <https://security.microsoft.com/firewall>.
+Oto kilka przykładów stron raportów zapory. Tutaj znajdziesz podsumowanie aktywności ruchu przychodzącego, wychodzącego i działania aplikacji. Dostęp do tej strony można uzyskać bezpośrednio, przechodząc do strony <https://security.microsoft.com/firewall>.
 
 :::image type="content" source="images/host-firewall-reporting-page.png" alt-text="Strona Raportowanie zapory hosta" lightbox="\images\host-firewall-reporting-page.png":::
 
-Dostęp do tych raportów można również uzyskać, przechodząc do pozycji **RaportyZabezpieczenia** >  **ReportDevices** >  (sekcja) znajdującej się w dolnej części karty **Zablokowane połączenia przychodzące zapory**.
+Dostęp do tych raportów można również uzyskać, przechodząc do sekcji **Urządzenia** > **raportów** >  zabezpieczeń **(sekcja**) znajdującej się w dolnej części karty **Połączenia przychodzące zablokowane przez zaporę**.
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>Z pozycji "Komputery z zablokowanym połączeniem" do urządzenia
 
@@ -119,4 +129,4 @@ Raporty zapory obsługują przechodzenie do szczegółów z karty bezpośrednio 
 
 Zapytanie można teraz wykonać, a wszystkie powiązane zdarzenia zapory z ostatnich 30 dni można zbadać.
 
-W przypadku dodatkowych raportów lub zmian niestandardowych zapytanie można wyeksportować do Power BI w celu dalszej analizy. Raportowanie niestandardowe można ułatwić, pobierając [skrypt raportowania niestandardowego](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) w celu monitorowania działań Zapora Windows Defender przy użyciu Power BI.
+Aby uzyskać więcej raportów lub zmian niestandardowych, zapytanie można wyeksportować do usługi Power BI w celu dalszej analizy. Raportowanie niestandardowe można ułatwić, pobierając [skrypt raportowania niestandardowego](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) w celu monitorowania działań Zapora Windows Defender przy użyciu usługi Power BI.

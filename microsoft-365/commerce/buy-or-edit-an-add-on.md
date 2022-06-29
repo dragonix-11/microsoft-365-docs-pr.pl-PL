@@ -19,18 +19,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: Dowiedz się, jak kupować dodatki dla subskrypcji Microsoft 365 for Business i zarządzać nimi.
+description: Dowiedz się, jak kupować dodatki dla subskrypcji platformy Microsoft 365 dla firm i zarządzać nimi.
 ms.date: 04/02/2021
-ms.openlocfilehash: 28c155eaa10a578d10126c563945859e6931f180
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 4fbb4cc9277c4f4a6ddc3c780388d0ebd8d492ad
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101651"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492087"
 ---
-# <a name="buy-or-manage-add-ons"></a>Kupowanie dodatków lub zarządzanie nimi
+# <a name="buy-or-manage-add-ons-for-microsoft-365-business-plans"></a>Kupowanie dodatków dla planów biznesowych platformy Microsoft 365 lub zarządzanie nimi
 
-Wiele Microsoft 365 dla planów biznesowych ma dodatki, które można kupić dla subskrypcji. Dodatki zapewniają więcej funkcji, aby ulepszyć środowisko subskrypcji.
+Wiele planów platformy Microsoft 365 dla firm ma dodatki, które można kupić dla subskrypcji. Dodatki zapewniają więcej funkcji, aby ulepszyć środowisko subskrypcji.
 
 Istnieją dwa typy dodatków:
 

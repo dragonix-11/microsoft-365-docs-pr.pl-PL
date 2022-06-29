@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 355fc0f367c415ae679259195e18ff3920812f4a
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: b2b1303fc9ab0841643536ccf5a85470243fe74e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670163"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490580"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Minimalne wymagania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -38,16 +38,16 @@ Istnieją pewne minimalne wymagania dotyczące dołączania urządzeń do usług
 > [!TIP]
 >
 > - W tym artykule opisano minimalne wymagania dotyczące planu Ochrona punktu końcowego w usłudze Microsoft Defender 2. Jeśli szukasz informacji o usłudze Defender for Endpoint Plan 1, zobacz [Wymagania dotyczące usługi Defender for Endpoint Plan 1](mde-p1-setup-configuration.md#review-the-requirements).
-> - Dowiedz się więcej o najnowszych ulepszeniach usługi Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
-> - Usługa Defender for Endpoint zademonstrowała wiodącą w branży optykę i możliwości wykrywania w ostatniej ocenie MITRE. Przeczytaj: [Szczegółowe informacje z oceny opartej na&MITRE ATT](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - Dowiedz się więcej o najnowszych ulepszeniach w usłudze Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
+> - Usługa Defender for Endpoint zademonstrowała wiodącą w branży optykę i możliwości wykrywania w ostatniej ocenie MITRE. Przeczytaj: [Szczegółowe informacje z oceny opartej na programie MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## <a name="licensing-requirements"></a>Wymagania dotyczące licencjonowania
-Aby uzyskać informacje o wymaganiach licencyjnych dotyczących Ochrona punktu końcowego w usłudze Microsoft Defender, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender informacje o licencjonowaniu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
+Aby uzyskać informacje o wymaganiach licencyjnych dotyczących Ochrona punktu końcowego w usłudze Microsoft Defender, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender informacje o licencjonowaniu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 Aby uzyskać szczegółowe informacje o licencjonowaniu, zobacz [witrynę Warunki produktu](https://www.microsoft.com/licensing/terms/) i skontaktuj się z zespołem ds. konta, aby dowiedzieć się więcej na temat warunków i postanowień.
 
-Aby uzyskać więcej informacji na temat tablicy funkcji w wersjach Windows, zobacz [Porównanie wersji Windows](https://www.microsoft.com/windowsforbusiness/compare).
+Aby uzyskać więcej informacji na temat tablicy funkcji w wersjach systemu Windows, zobacz [Porównanie wersji systemu Windows](https://www.microsoft.com/windowsforbusiness/compare).
 
 ## <a name="browser-requirements"></a>Wymagania przeglądarki
 
@@ -61,12 +61,8 @@ Dostęp do usługi Defender for Endpoint odbywa się za pośrednictwem przegląd
 
 ## <a name="hardware-and-software-requirements"></a>Wymagania dotyczące sprzętu i oprogramowania
 
-### <a name="supported-windows-versions"></a>Obsługiwane wersje Windows
+### <a name="supported-windows-versions"></a>Obsługiwane wersje systemu Windows
 
-- Windows 7 Enterprise SP1 ([wymaga ESU do obsługi](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)).
-- Windows 7 Pro SP1 ([wymaga ESU do obsługi](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)).
-- Windows 8.1 Enterprise
-- Windows 8.1 Pro
 - System Windows 11 dla firm
 - System Windows 11 dla edukacji
 - System Windows 11 Pro
@@ -81,10 +77,14 @@ Dostęp do usługi Defender for Endpoint odbywa się za pośrednictwem przegląd
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
-- serwer Windows
+- Windows 8.1 Enterprise
+- Windows 8.1 Pro
+- Windows 7 SP1 Enterprise ([wymaga ESU do obsługi](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)).
+- Windows 7 SP1 Pro ([wymaga ESU do obsługi](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)).
+- Windows Server
   - Windows Server 2008 R2 SP1 ([wymaga ESU do obsługi](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
-  - Windows Server 2016
+  - System Windows Server 2016
   - Windows Server, wersja 1803 lub nowsza
   - Windows Server 2019
   - Windows Server 2022
@@ -100,18 +100,18 @@ Wymagania sprzętowe usługi Defender dla punktu końcowego na urządzeniach są
 Aby uzyskać więcej informacji na temat obsługiwanych wersji Windows 10, zobacz (/windows/release-health/release-information).
 
 > [!NOTE]
-> Maszyny z mobilnymi wersjami Windows (na przykład Windows CE i Windows 10 Mobile) nie są obsługiwane.
+> - Punkty końcowe z mobilnymi wersjami systemu Windows (takimi jak Windows CE i Windows 10 Mobile) nie są obsługiwane.
 >
-> Maszyny wirtualne z systemem Windows 10 Enterprise 2016 LTSB mogą napotkać problemy z wydajnością, jeśli są uruchamiane na platformach wirtualizacji innych niż Microsoft.
+> - Virtual Machines uruchomione Windows 10 Enterprise 2016 LTSB mogą napotkać problemy z wydajnością, jeśli są uruchamiane na platformach wirtualizacji innych niż Microsoft.
 >
-> W przypadku środowisk wirtualnych zalecamy używanie Windows 10 Enterprise LTSC 2019 lub nowszych.
+> - W przypadku środowisk wirtualnych zalecamy używanie Windows 10 Enterprise LTSC 2019 lub nowszych.
+>
+> - Autonomiczne wersje [usług Defender for Endpoint Plan 1 i Plan 2](defender-endpoint-plan-1-2.md) nie obejmują licencji serwera. Aby dołączyć serwery do tych planów, musisz mieć usługę Defender for Servers Plan 1 lub Plan 2 w ramach [oferty usługi Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Aby dowiedzieć się więcej. zobacz [Omówienie usługi Microsoft Defender dla serwerów](/azure/defender-for-cloud/defender-for-servers-introduction).
 
-Gdy składniki są aktualne w systemach operacyjnych microsoft Windows, Ochrona punktu końcowego w usłudze Microsoft Defender pomoc techniczna będzie zgodna z cyklem życia odpowiedniego systemu operacyjnego. Aby uzyskać więcej informacji, zobacz [Często zadawane pytania dotyczące cyklu życia](/lifecycle/faq/general-lifecycle). Nowe funkcje lub możliwości są zwykle udostępniane tylko w systemach operacyjnych, które nie osiągnęły jeszcze końca ich cyklu życia. Aktualizacje analizy zabezpieczeń (aktualizacje definicji i aparatu) i logika wykrywania będą udostępniane co najmniej do:
+Gdy składniki są aktualne w systemach operacyjnych Microsoft Windows, obsługa Ochrona punktu końcowego w usłudze Microsoft Defender będzie zgodna z cyklem życia odpowiedniego systemu operacyjnego. Aby uzyskać więcej informacji, zobacz [Często zadawane pytania dotyczące cyklu życia](/lifecycle/faq/general-lifecycle). Nowe funkcje lub możliwości są zwykle udostępniane tylko w systemach operacyjnych, które nie osiągnęły jeszcze końca ich cyklu życia. Aktualizacje analizy zabezpieczeń (aktualizacje definicji i aparatu) i logika wykrywania będą udostępniane co najmniej do:
 
-- [Data zakończenia wsparcia](/lifecycle/products/) (dla systemów operacyjnych, które nie mają programu rozszerzonych aktualizacji zabezpieczeń (ESU).
+- [Data zakończenia wsparcia](/lifecycle/products/) (dla systemów operacyjnych, które nie mają programu Extended Security Aktualizacje (ESU).
 - [Koniec daty ESU](/lifecycle/faq/extended-security-updates) (dla systemów operacyjnych z programem ESU).
-
-
 
 ### <a name="other-supported-operating-systems"></a>Inne obsługiwane systemy operacyjne
 
@@ -121,7 +121,7 @@ Gdy składniki są aktualne w systemach operacyjnych microsoft Windows, Ochrona 
 - [macOS](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
-> Aby integracja działała, musisz potwierdzić, że dystrybucje i wersje systemu Linux Android, iOS i macOS są zgodne z usługą Defender for Endpoint.
+> Aby integracja działała, musisz potwierdzić, że dystrybucje systemu Linux i wersje systemów Android, iOS i macOS są zgodne z usługą Defender for Endpoint.
 
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>Wymagania dotyczące sieci i magazynu danych oraz konfiguracji
 
@@ -140,7 +140,7 @@ Po pierwszym uruchomieniu kreatora dołączania należy wybrać miejsce przechow
 Upewnij się, że usługa danych diagnostycznych jest włączona na wszystkich urządzeniach w organizacji.
 Domyślnie ta usługa jest włączona. Dobrym rozwiązaniem jest sprawdzenie, czy otrzymasz od nich dane z czujników.
 
-#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>Użyj wiersza polecenia, aby sprawdzić typ uruchamiania usługi danych diagnostycznych Windows
+#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>Użyj wiersza polecenia, aby sprawdzić typ uruchamiania usługi danych diagnostycznych systemu Windows
 
 1. Otwórz wiersz polecenia z podwyższonym poziomem uprawnień na urządzeniu:
    1. Przejdź do **pozycji Start** i wpisz **cmd**.
@@ -158,7 +158,7 @@ Domyślnie ta usługa jest włączona. Dobrym rozwiązaniem jest sprawdzenie, cz
 
 Musisz ustawić usługę tak, aby była uruchamiana automatycznie, jeśli **START_TYPE** nie jest ustawiona na **AUTO_START**.
 
-#### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>Użyj wiersza polecenia, aby ustawić automatyczne uruchamianie usługi danych diagnostycznych Windows
+#### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>Użyj wiersza polecenia, aby ustawić automatyczne uruchamianie usługi danych diagnostycznych systemu Windows
 
 1. Otwórz wiersz polecenia z podwyższonym poziomem uprawnień w punkcie końcowym:
     1. Przejdź do **pozycji Start** i wpisz **cmd**.
@@ -186,26 +186,26 @@ Aby uzyskać więcej informacji na temat dodatkowych ustawień konfiguracji serw
 
 Przed dołączeniem urządzeń należy włączyć usługę danych diagnostycznych. Usługa jest domyślnie włączona w Windows 10 i Windows 11.
 
-## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Program antywirusowy Microsoft Defender wymagania dotyczące konfiguracji
+## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Wymaganie konfiguracji programu antywirusowego Microsoft Defender
 
-Agent usługi Defender for Endpoint zależy od możliwości Program antywirusowy Microsoft Defender skanowania plików i dostarczania informacji o nich.
+Agent usługi Defender for Endpoint zależy od możliwości skanowania plików i dostarczania informacji o nich przez program antywirusowy Microsoft Defender.
 
-Skonfiguruj aktualizacje analizy zabezpieczeń na urządzeniach usługi Defender for Endpoint, niezależnie od tego, czy Program antywirusowy Microsoft Defender jest aktywnym oprogramowaniem chroniącym przed złośliwym kodem. Aby uzyskać więcej informacji, zobacz [Manage Program antywirusowy Microsoft Defender updates and apply baselines (Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie punktów odniesienia](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)).
+Skonfiguruj aktualizacje analizy zabezpieczeń na urządzeniach usługi Defender for Endpoint, niezależnie od tego, czy program antywirusowy Microsoft Defender jest aktywnym oprogramowaniem chroniącym przed złośliwym kodem. Aby uzyskać więcej informacji, zobacz [Zarządzanie aktualizacjami programu antywirusowego Microsoft Defender i stosowanie punktów odniesienia](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
-Jeśli Program antywirusowy Microsoft Defender nie jest aktywnym oprogramowaniem chroniącym przed złośliwym kodem w organizacji i używasz usługi Defender for Endpoint, Program antywirusowy Microsoft Defender przechodzi w tryb pasywny.
+Gdy program antywirusowy Microsoft Defender nie jest aktywnym oprogramowaniem chroniącym przed złośliwym kodem w organizacji i używasz usługi Defender for Endpoint, program antywirusowy Microsoft Defender przechodzi w tryb pasywny.
 
-Jeśli twoja organizacja wyłączyła Program antywirusowy Microsoft Defender za pomocą zasad grupy lub innych metod, dołączone urządzenia muszą zostać wykluczone z tych zasad grupy.
+Jeśli Twoja organizacja wyłączyła program antywirusowy Microsoft Defender za pomocą zasad grupy lub innych metod, dołączone urządzenia muszą zostać wykluczone z tych zasad grupy.
 
-Jeśli dołączasz serwery i Program antywirusowy Microsoft Defender nie jest aktywnym oprogramowaniem chroniącym przed złośliwym kodem na serwerach, Program antywirusowy Microsoft Defender należy skonfigurować tryb pasywny lub odinstalować. Konfiguracja zależy od wersji serwera. Aby uzyskać więcej informacji, zobacz [Program antywirusowy Microsoft Defender zgodność](microsoft-defender-antivirus-compatibility.md).
+Jeśli dołączasz serwery, a program antywirusowy Microsoft Defender nie jest aktywnym oprogramowaniem chroniącym przed złośliwym kodem na serwerach, program antywirusowy Microsoft Defender musi zostać skonfigurowany tak, aby działał w trybie pasywnym lub był odinstalowany. Konfiguracja zależy od wersji serwera. Aby uzyskać więcej informacji, zobacz [Zgodność programu antywirusowego Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
-> Zwykłe zasady grupy nie mają zastosowania do ochrony przed naruszeniami, a zmiany ustawień Program antywirusowy Microsoft Defender zostaną zignorowane, gdy ochrona przed naruszeniami jest włączona.
+> Regularne zasady grupy nie mają zastosowania do ochrony przed naruszeniami, a zmiany ustawień programu antywirusowego Microsoft Defender zostaną zignorowane, gdy ochrona przed naruszeniami jest włączona.
 
-## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Program antywirusowy Microsoft Defender włączono sterownik wczesnego uruchamiania oprogramowania chroniącego przed złośliwym kodem (ELAM)
+## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Sterownik ochrony przed złośliwym oprogramowaniem antywirusowym Microsoft Defender (ELAM) jest włączony
 
-Jeśli używasz Program antywirusowy Microsoft Defender jako podstawowego produktu chroniącego przed złośliwym kodem na urządzeniach, agent usługi Defender for Endpoint zostanie pomyślnie dołączone.
+Jeśli używasz programu antywirusowego Microsoft Defender jako podstawowego produktu chroniącego przed złośliwym kodem na urządzeniach, agent usługi Defender for Endpoint zostanie pomyślnie dołączone.
 
-Jeśli korzystasz z klienta ochrony przed złośliwym kodem innej firmy i używasz rozwiązań mobile Zarządzanie urządzeniami lub Microsoft Endpoint Manager (bieżąca gałąź), musisz upewnić się, że sterownik Program antywirusowy Microsoft Defender ELAM jest włączony. Aby uzyskać więcej informacji, zobacz [Upewnij się, że Program antywirusowy Microsoft Defender nie jest wyłączona przez zasady](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Jeśli używasz klienta ochrony przed złośliwym kodem innej firmy i używasz rozwiązań mobile Zarządzanie urządzeniami lub microsoft Endpoint Manager (bieżąca gałąź), musisz upewnić się, że sterownik ELAM programu antywirusowego Microsoft Defender jest włączony. Aby uzyskać więcej informacji, zobacz [Upewnij się, że program antywirusowy Microsoft Defender nie jest wyłączony przez zasady](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

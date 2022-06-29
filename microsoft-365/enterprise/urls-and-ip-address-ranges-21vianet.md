@@ -3,7 +3,7 @@ title: Adresy URL i zakresy adresów IP dla Office 365 obsługiwanych przez firm
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/28/2022
+ms.date: 06/01/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,22 +21,22 @@ f1.keywords:
 - NOCSH
 description: Ten artykuł zawiera listę adresów URL i zakresów adresów IP dla Office 365 obsługiwanych przez firmę 21Vianet w Chinach.
 hideEdit: true
-ms.openlocfilehash: 4c91505c0a83408e435879e718901d949e5eba26
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: e99a89e511faef069f0856e046ea1898e896b3c1
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217525"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489908"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>Adresy URL i zakresy adresów IP dla Office 365 obsługiwanych przez firmę 21Vianet
 
- *Dotyczy: Office 365 obsługiwany przez 21Vianet - Small Business Admin, Office 365 obsługiwany przez 21Vianet - Admin*
+ *Dotyczy: Office 365 obsługiwany przez firmę 21Vianet — Small Business Administracja, Office 365 obsługiwany przez firmę 21Vianet - Administracja*
 
 Podsumowanie: Następujące punkty końcowe (nazwy FQDN, porty, **adresy** URL, prefiksy IPv4 i IPv6) mają zastosowanie do Office 365 obsługiwanych przez sieć Vianet 21 i są przeznaczone do dostarczania usług produktywności organizacjom korzystającym tylko z tych planów.
   
  **Office 365 punkty końcowe:** [Na całym świecie (w tym GCC)](urls-and-ip-address-ranges.md)  | *Office 365 obsługiwane przez 21 Vianet* |  [Office 365 Us Government DoD](microsoft-365-u-s-government-dod-endpoints.md) |  [Office 365 Us Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
   
-**Ostatnia aktualizacja:** 28.04.2021 r. — ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Subskrypcja dziennika zmian](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**Ostatnia aktualizacja:** 01.06.2022 r. — ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Subskrypcja dziennika zmian](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **Pobieranie:** lista w [formacie JSON](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) zawierająca wszystkie wymagane i opcjonalne adresy docelowe.
 
@@ -44,7 +44,7 @@ Zacznij od pozycji [Zarządzanie punktami końcowymi usługi Office 365](managin
 
 Poniżej wymieniono wymagania dotyczące łączności z maszyny użytkownika do Office 365. Nie obejmuje ona połączeń sieciowych firmy Microsoft z siecią klienta, czasami nazywanych połączeniami sieciowymi hybrydowymi lub przychodzącymi.
 
-Punkty końcowe są pogrupowane w cztery obszary usług. Pierwsze trzy obszary usług można niezależnie wybrać na potrzeby łączności. Czwarty obszar usługi jest wspólną zależnością (nazywaną Microsoft 365 Common i Office) i musi zawsze mieć łączność sieciową.
+Punkty końcowe są pogrupowane w cztery obszary usług. Pierwsze trzy obszary usług można niezależnie wybrać na potrzeby łączności. Czwarty obszar usługi jest wspólną zależnością (o nazwie Microsoft 365 Common i Office) i musi zawsze mieć łączność sieciową.
 
 Wyświetlane kolumny danych to:
 
