@@ -1,5 +1,5 @@
 ---
-title: Ręczne zmienianie Microsoft 365 dla planów biznesowych
+title: Ręczne zmienianie planów platformy Microsoft 365 dla firm
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -20,14 +20,14 @@ search.appverid: MET150
 description: Ręcznie zmień subskrypcje, kupując nową subskrypcję i upewniając się, że obie subskrypcje są wyświetlane i aktywne.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: d7969821cceb0864ac2ee20674e7aa67d8a12e39
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 5e2d9e3da47c8d9c86e3e0b6d3d0b648c6016509
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101603"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493558"
 ---
-# <a name="change-plans-manually"></a>Ręczne zmienianie planów
+# <a name="manually-change-microsoft-plans"></a>Ręczne zmienianie planów firmy Microsoft
 
 ## <a name="step-1-decide-how-to-change-plans"></a>Krok 1. Podejmowanie decyzji o zmianie planów
 
@@ -50,7 +50,7 @@ Aby kontynuować ręczną zmianę, przeczytaj [krok 2. Kupowanie nowej subskrypc
 
 LUB
 
-**Kup nową subskrypcję i licencje:** Wykonaj kroki opisane w temacie [Kupowanie kolejnej subskrypcji Microsoft 365 dla firm](../try-or-buy-microsoft-365.md), aby kupić nową subskrypcję.
+**Kup nową subskrypcję i licencje:** Wykonaj kroki opisane w temacie [Kupowanie kolejnej subskrypcji platformy Microsoft 365 dla firm](../try-or-buy-microsoft-365.md) , aby kupić nową subskrypcję.
 
 Upewnij się, że zakupiono subskrypcję dla tej samej organizacji, w którą obecnie znajdują się użytkownicy. Na przykład sprawdź adresy e-mail użytkowników, którzy mają zostać przeniesień. Jeśli ich adresy e-mail obejmują \@contoso.com, musisz kupić nową subskrypcję dla contoso.com.
 Dołącz licencję dla każdego użytkownika, który chcesz przenieść.
@@ -80,7 +80,7 @@ Licencje dla bieżącej subskrypcji zostaną usunięte później. Od tego czasu 
 
 ## <a name="step-4-reassign-licenses"></a>Krok 4. Ponowne przypisywanie licencji
 
-Podczas uaktualniania planu Office 365 do planu Microsoft 365 należy zmienić przypisania licencji dla wszystkich użytkowników. Licencje nie są przypisywane automatycznie podczas ręcznej zmiany planów.
+Podczas uaktualniania z planu Office 365 do planu platformy Microsoft 365 należy zmienić przypisania licencji dla wszystkich użytkowników. Licencje nie są przypisywane automatycznie podczas ręcznej zmiany planów.
 
 ### <a name="reassign-a-license-for-one-user"></a>Ponowne przypisywanie licencji dla jednego użytkownika
 

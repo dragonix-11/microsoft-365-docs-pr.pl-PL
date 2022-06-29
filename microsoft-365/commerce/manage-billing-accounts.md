@@ -21,20 +21,20 @@ ms.custom:
 search.appverid: MET150
 description: Dowiedz się więcej o kontach rozliczeniowych i sposobie ich użycia do zarządzania ustawieniami konta, fakturami, formami płatności i zakupami.
 ms.date: 05/24/2022
-ms.openlocfilehash: 0c1dd2048cbe38ecca162f361f3f0bdbc6c3861f
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 4630ee028a298d3c901a0e66cde41df58bebece2
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670063"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493624"
 ---
-# <a name="understand-billing-accounts"></a>Omówienie kont rozliczeniowych
+# <a name="understand-your-microsoft-billing-accounts"></a>Informacje o kontach rozliczeniowych firmy Microsoft
 
-Konto rozliczeniowe jest tworzone podczas tworzenia konta w celu wypróbowania lub zakupu produktów firmy Microsoft. Konto rozliczeniowe służy do zarządzania ustawieniami konta, fakturami, formami płatności i zakupami. Możesz mieć dostęp do wielu kont rozliczeniowych. Na przykład zarejestrowaliśmy się bezpośrednio w celu Microsoft 365 lub masz dostęp do Enterprise Agreement organizacji, umowy microsoft product & Services lub Umowa z Klientem Microsoft. W każdym z tych scenariuszy będziesz mieć oddzielne konto rozliczeniowe.
+Konto rozliczeniowe jest tworzone podczas tworzenia konta w celu wypróbowania lub zakupu produktów firmy Microsoft. Konto rozliczeniowe służy do zarządzania ustawieniami konta, fakturami, formami płatności i zakupami. Możesz mieć dostęp do wielu kont rozliczeniowych. Na przykład użytkownik zarejestrował się bezpośrednio na platformie Microsoft 365 lub masz dostęp do Enterprise Agreement, umowy microsoft product & Services lub Umowa z Klientem Microsoft. W każdym z tych scenariuszy będziesz mieć oddzielne konto rozliczeniowe.
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Obecnie Centrum administracyjne platformy Microsoft 365</a> obsługuje następujący typ kont rozliczeniowych:
 
-- Microsoft Online Services Program: to konto rozliczeniowe jest tworzone podczas bezpośredniego tworzenia konta w Microsoft 365 subskrypcji.
+- Microsoft Online Services Program: to konto rozliczeniowe jest tworzone podczas bezpośredniego tworzenia konta subskrypcji platformy Microsoft 365.
 - Program microsoft Products & Services Agreement (MPSA): to konto rozliczeniowe jest tworzone, gdy organizacja podpisuje umowę licencjonowania zbiorowego MPSA w celu zakupu oprogramowania i Usługi online.
 - Umowa z Klientem Microsoft: to konto rozliczeniowe jest tworzone, gdy organizacja współpracuje z przedstawicielem firmy Microsoft, autoryzowanym partnerem lub kupuje niezależnie.
 
@@ -77,7 +77,7 @@ Możesz zapewnić innym osobom dostęp do konta rozliczeniowego w <a href="https
 
 > [!Note]
 > - Role konta rozliczeniowego mają zastosowanie tylko do kont rozliczeniowych i nie mają zastosowania do innych scenariuszy Centrum administracyjne platformy Microsoft 365.
-> - W przypadku kont rozliczeniowych utworzonych w ramach rejestracji Microsoft 365 nowi administratorzy globalni, rozliczeń i globalni administratorzy czytelników automatycznie otrzymują różne poziomy dostępu. Dostępem można zarządzać na  >  stronie **Konta rozliczeniowe**, jawnie usuwając tych użytkowników z sekcji przypisania roli w dolnej części strony.
+> - W przypadku kont rozliczeniowych utworzonych w ramach rejestracji na platformie Microsoft 365 nowi administratorzy globalni, rozliczeń i globalni czytelnicy automatycznie otrzymują różne poziomy dostępu. Dostępem można zarządzać na  >  stronie **Konta rozliczeniowe**, jawnie usuwając tych użytkowników z sekcji przypisania roli w dolnej części strony.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 

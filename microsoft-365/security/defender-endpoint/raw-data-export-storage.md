@@ -1,6 +1,6 @@
 ---
-title: Przesyłanie strumieniowe zdarzeń Ochrona punktu końcowego w usłudze Microsoft Defender do konta Storage
-description: Dowiedz się, jak skonfigurować Ochrona punktu końcowego w usłudze Microsoft Defender do przesyłania strumieniowego zdarzeń zaawansowanego wyszukiwania zagrożeń do konta Storage.
+title: Przesyłanie strumieniowe zdarzeń Ochrona punktu końcowego w usłudze Microsoft Defender do konta usługi Storage
+description: Dowiedz się, jak skonfigurować Ochrona punktu końcowego w usłudze Microsoft Defender do przesyłania strumieniowego zdarzeń zaawansowanego wyszukiwania zagrożeń do konta magazynu.
 keywords: eksport danych pierwotnych, interfejs API przesyłania strumieniowego, interfejs API, usługa Event Hubs, magazyn platformy Azure, konto magazynu, zaawansowane wyszukiwanie zagrożeń, nieprzetworzone udostępnianie danych
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d5d4917e2464964da819af0a06f0b8e4883dfea9
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: c94830e4f9dbfe16a8dfafba35aecb5a36efddf5
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783892"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493448"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender do przesyłania strumieniowego zdarzeń zaawansowanego wyszukiwania zagrożeń do konta Storage
+# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender do przesyłania strumieniowego zdarzeń zaawansowanego wyszukiwania zagrożeń do konta magazynu
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,11 +30,11 @@ ms.locfileid: "64783892"
 
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-1. Utwórz [konto Storage](/azure/storage/common/storage-account-overview) w dzierżawie.
+1. Utwórz [konto magazynu](/azure/storage/common/storage-account-overview) w dzierżawie.
 
 2. Zaloguj się do [dzierżawy platformy Azure](https://ms.portal.azure.com/), przejdź do **obszaru Subskrypcje > Twoja subskrypcja > Dostawcy zasobów > Rejestrowanie w witrynie Microsoft.insights**.
 
@@ -42,7 +42,7 @@ ms.locfileid: "64783892"
 
 1. Zaloguj się do [Microsoft 365 Defender](https://security.microsoft.com) jako administrator **globalny** _ lub _*_Administrator zabezpieczeń_**.
 
-2. Przejdź do [strony Ustawienia eksportu danych](https://security.microsoft.com/interoperability/dataexport) w Microsoft 365 Defender.
+2. Przejdź do [strony Ustawienia eksportu danych](https://security.microsoft.com/settings/mtp_settings/raw_data_export) w Microsoft 365 Defender.
 
 3. Kliknij pozycję **Dodaj ustawienia eksportu danych**.
 
@@ -50,13 +50,13 @@ ms.locfileid: "64783892"
 
 5. Wybierz pozycję **Prześlij zdarzenia do usługi Azure Storage**.
 
-6. Wpisz identyfikator **zasobu konta Storage**. Aby uzyskać **identyfikator zasobu konta Storage**, przejdź do strony konta Storage na karcie \> właściwości [Azure Portal](https://ms.portal.azure.com/) \> skopiuj tekst w obszarze **identyfikator zasobu konta Storage**:
+6. Wpisz **identyfikator zasobu konta magazynu**. Aby uzyskać **identyfikator zasobu konta magazynu**, przejdź do strony konta magazynu na karcie \> [właściwości Azure Portal](https://ms.portal.azure.com/) \> skopiuj tekst w obszarze **Identyfikator zasobu konta magazynu**:
 
    :::image type="content" source="images/storage-account-resource-id.png" alt-text="Usługa Event Hubs z identyfikatorem zasobu1" lightbox="images/storage-account-resource-id.png":::
 
 7. Wybierz zdarzenia, które chcesz przesyłać strumieniowo, a następnie kliknij przycisk **Zapisz**.
 
-## <a name="the-schema-of-the-events-in-the-storage-account"></a>Schemat zdarzeń na koncie Storage
+## <a name="the-schema-of-the-events-in-the-storage-account"></a>Schemat zdarzeń na koncie magazynu
 
 - Kontener obiektów blob zostanie utworzony dla każdego typu zdarzenia:
 

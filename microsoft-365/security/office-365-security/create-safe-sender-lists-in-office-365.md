@@ -18,28 +18,28 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej o dostępnych i preferowanych opcjach zezwalania na komunikaty przychodzące w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 898f04826f89e3a33c0cfcca01b717523e7c6122
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 016257a6cdc3128ba6753532bb0bed74845355d0
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974218"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493092"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Tworzenie list bezpiecznych nadawców w ramach EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Jeśli jesteś klientem Microsoft 365 ze skrzynkami pocztowymi w Exchange Online lub autonomicznym klientem Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych, usługa EOP oferuje wiele sposobów zapewnienia, że użytkownicy będą otrzymywać wiadomości e-mail od zaufanych nadawców. Te opcje obejmują Exchange reguły przepływu poczty (nazywane również regułami transportu), Outlook Sejf nadawców, listę dozwolonych adresów IP (filtrowanie połączeń) oraz listy dozwolonych nadawców lub listy dozwolonych domen w zasadach ochrony przed spamem. Łącznie można traktować te opcje jako _listy bezpiecznych nadawców_.
+Jeśli jesteś klientem platformy Microsoft 365 z skrzynkami pocztowymi w Exchange Online lub klientem autonomicznym Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych, usługa EOP oferuje wiele sposobów zapewnienia, że użytkownicy będą otrzymywać wiadomości e-mail od zaufanych nadawców. Te opcje obejmują reguły przepływu poczty programu Exchange (znane również jako reguły transportu), bezpiecznych nadawców programu Outlook, listę dozwolonych adresów IP (filtrowanie połączeń) oraz listy dozwolonych nadawców lub listy dozwolonych domen w zasadach ochrony przed spamem. Łącznie można traktować te opcje jako _listy bezpiecznych nadawców_.
 
 Dostępne listy bezpiecznych nadawców są opisane na poniższej liście w kolejności od najbardziej zalecanych do najmniej zalecanych:
 
 1. Reguły przepływu poczty
-2. nadawcy Outlook Sejf
+2. Bezpieczni nadawcy programu Outlook
 3. Lista dozwolonych adresów IP (filtrowanie połączeń)
 4. Listy dozwolonych nadawców lub listy dozwolonych domen (zasady ochrony przed spamem)
 
@@ -55,7 +55,7 @@ Reguły przepływu poczty zapewniają największą elastyczność w celu zapewni
 >
 > - Aby zezwolić domenie na wysyłanie nieuwierzytelnionych wiadomości e-mail (pomiń ochronę przed fałszowaniem), ale nie pomijaj ochrony przed spamem i innymi zabezpieczeniami, możesz użyć [analizy fałszowania](learn-about-spoof-intelligence.md) i [listy dozwolonych/zablokowanych dzierżaw](tenant-allow-block-list.md).
 >
-> - Metodyka EOP i Outlook sprawdzają różne właściwości komunikatów, aby określić nadawcę wiadomości. Aby uzyskać więcej informacji, zobacz sekcję [Zagadnienia dotyczące zbiorczej poczty e-mail](#considerations-for-bulk-email) w dalszej części tego artykułu.
+> - Metodyka EOP i program Outlook sprawdzają różne właściwości komunikatów, aby określić nadawcę wiadomości. Aby uzyskać więcej informacji, zobacz sekcję [Zagadnienia dotyczące zbiorczej poczty e-mail](#considerations-for-bulk-email) w dalszej części tego artykułu.
 >
 
 Z kolei istnieje kilka opcji blokowania poczty e-mail z określonych źródeł przy użyciu _zablokowanych list nadawców_. Aby uzyskać więcej informacji, zobacz [Create block sender lists in EOP (Tworzenie list nadawców blokowych w ramach EOP](create-block-sender-lists-in-office-365.md)).
@@ -103,14 +103,16 @@ W poniższym przykładzie założono, że potrzebujesz wiadomości e-mail z cont
 
       :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="Ustawienia reguły przepływu poczty w usłudze EAC dotyczące pomijania filtrowania spamu" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
 
-## <a name="use-outlook-safe-senders"></a>Używanie nadawców Outlook Sejf
+## <a name="use-outlook-safe-senders"></a>Korzystanie z bezpiecznych nadawców programu Outlook
 
 > [!CAUTION]
-> Ta metoda stwarza wysokie ryzyko, że osoby atakujące pomyślnie dostarczają wiadomość e-mail do skrzynki odbiorczej, która w przeciwnym razie zostałaby przefiltrowana. Jednak listy Sejf nadawców lub domen Sejf użytkownika nie uniemożliwiają filtrowania złośliwego oprogramowania ani wiadomości wyłudzających informacje o wysokim poziomie ufności.
+> Ta metoda stwarza wysokie ryzyko, że osoby atakujące pomyślnie dostarczają wiadomość e-mail do skrzynki odbiorczej, która w przeciwnym razie zostałaby przefiltrowana. Jednak listy bezpiecznych nadawców lub bezpiecznych domen użytkownika nie uniemożliwiają filtrowania złośliwego oprogramowania ani wiadomości wyłudzających informacje o wysokim poziomie zaufania.
 
-Zamiast ustawienia organizacyjnego użytkownicy lub administratorzy mogą dodać adresy e-mail nadawcy do listy nadawców Sejf w skrzynce pocztowej. Aby uzyskać instrukcje, zobacz [Konfigurowanie ustawień wiadomości-śmieci w Exchange Online skrzynkach pocztowych w Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Nie jest to pożądane w większości sytuacji, ponieważ nadawcy omijają części stosu filtrowania. Mimo że nadawca jest zaufany, nadal można naruszyć bezpieczeństwo nadawcy i wysłać złośliwą zawartość. Najlepiej, aby nasze filtry robiły to, co jest potrzebne do sprawdzenia każdej wiadomości, a następnie [zgłaszały fałszywe wyniki dodatnie/ujemne firmie Microsoft](report-junk-email-messages-to-microsoft.md) , jeśli nasze filtry pomyliły się. Pomijanie stosu filtrowania zakłóca również [zap](zero-hour-auto-purge.md).
+Zamiast ustawienia organizacyjnego użytkownicy lub administratorzy mogą dodawać adresy e-mail nadawcy do listy Bezpieczni nadawcy w skrzynce pocztowej. Aby uzyskać instrukcje, zobacz [Konfigurowanie ustawień wiadomości-śmieci w Exchange Online skrzynkach pocztowych w Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Ta metoda nie jest pożądana w większości sytuacji, ponieważ nadawcy pomijają części stosu filtrowania. Mimo że nadawca jest zaufany, nadal można naruszyć bezpieczeństwo nadawcy i wysłać złośliwą zawartość. Lepiej jest, gdy pozwolisz naszym filtrom sprawdzić każdą wiadomość, a następnie [zgłosić fałszywie dodatnie/ujemne firmie Microsoft](report-junk-email-messages-to-microsoft.md) , jeśli się pomyliliśmy. Pomijanie stosu filtrowania zakłóca również [automatyczne przeczyszczanie o wartości zero godzin (ZAP).](zero-hour-auto-purge.md)
 
-Gdy wiadomości pomijają filtrowanie spamu z powodu listy nadawców Sejf użytkownika, pole nagłówka **X-Forefront-Antispam-Report** będzie zawierać wartość `SFV:SFE`, która wskazuje, że filtrowanie pod kątem spamu, fałszowania i wyłudzania informacji zostało pominięte.
+Z założenia i w celu zwiększenia bezpieczeństwa Exchange Online skrzynek pocztowych rozpoznawane są tylko ustawienia wiadomości-śmieci dla bezpiecznych nadawców, zablokowanych nadawców i zablokowanych domen. Ustawienia bezpiecznych domen są ignorowane.
+
+Gdy wiadomości pomijają filtrowanie spamu z powodu listy bezpiecznych nadawców użytkownika, pole nagłówka **X-Forefront-Antispam-Report** będzie zawierać wartość `SFV:SFE`, która wskazuje, że filtrowanie pod kątem spamu, fałszowania i wyłudzania informacji zostało pominięte.
 
 ## <a name="use-the-ip-allow-list"></a>Używanie listy dozwolonych adresów IP
 
@@ -149,11 +151,11 @@ Często adresy `5321.MailFrom` i `5322.From` są takie same (komunikacja między
 Załóżmy na przykład, że Blue Yonder Airlines zatrudniła Margie's Travel do wysyłania reklam e-mail. Komunikat otrzymywany w skrzynce odbiorczej ma następujące właściwości:
 
 - Adres `5321.MailFrom` jest blueyonder.airlines@margiestravel.com.
-- Adres `5322.From` jest blueyonder@news.blueyonderairlines.com, co zobaczysz w Outlook.
+- Adres `5322.From` jest blueyonder@news.blueyonderairlines.com, co zobaczysz w programie Outlook.
 
-Sejf listy nadawców i listy bezpiecznych domen w zasadach ochrony przed spamem w usłudze EOP sprawdzają tylko `5322.From` adresy, jest to podobne do Outlook Sejf nadawców używających `5322.From` tego adresu.
+Listy bezpiecznych nadawców i listy bezpiecznych domen w zasadach ochrony przed spamem w usłudze EOP sprawdzają tylko `5322.From` adresy, jest to podobne do bezpiecznych nadawców programu Outlook, którzy używają tego `5322.From` adresu.
 
 Aby zapobiec filtrowaniu tego komunikatu, możesz wykonać następujące kroki:
 
-- Dodaj blueyonder@news.blueyonderairlines.com (`5322.From`adres) jako nadawcę Outlook Sejf.
+- Dodaj blueyonder@news.blueyonderairlines.com ( `5322.From` adres) jako bezpiecznego nadawcę programu Outlook.
 - [Użyj reguły przepływu poczty](#recommended-use-mail-flow-rules) z warunkiem, który wyszuka wiadomości z blueyonder@news.blueyonderairlines.com ( `5322.From` adres, blueyonder.airlines@margiestravel.com ( `5321.MailFrom`), lub obu tych elementów.
