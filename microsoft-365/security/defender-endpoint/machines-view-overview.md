@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78cb81b1a0da9f0d1965dab7c209067a4e8d02e6
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 81ff80776d3b12e4ec90d6d2c2473389686ae9c9
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874179"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554472"
 ---
 # <a name="device-inventory"></a>Spisz urządzeń
 
@@ -64,7 +64,7 @@ Możesz zastosować następujące filtry, aby ograniczyć listę alertów i uzys
 
 Podczas procesu dołączania Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia dołączone do rozwiązania MDE są stopniowo wypełniane do spisu urządzeń, gdy zaczynają raportować dane czujników. Następnie spis urządzeń jest wypełniany przez urządzenia odnalezione w sieci za pośrednictwem procesu odnajdywania urządzeń. Spis urządzeń ma trzy karty, które wyświetlają listę urządzeń według:
 
-- **Komputery i urządzenia przenośne**: punkty końcowe Enterprise (stacje robocze, serwery i urządzenia przenośne)
+- **Komputery i urządzenia przenośne**: punkty końcowe przedsiębiorstwa (stacje robocze, serwery i urządzenia przenośne)
 - **Urządzenia sieciowe**: urządzenia takie jak routery i przełączniki
 - **Urządzenia IoT**: urządzenia, takie jak drukarki i aparaty fotograficzne
 
@@ -119,12 +119,12 @@ Filtrowanie | Opis
 **Stan wykluczenia** </br> | Przefiltruj listę na podstawie tego, czy urządzenie zostało wykluczone, czy nie. Aby uzyskać więcej informacji, zobacz [Wykluczanie urządzeń](exclude-devices.md).
 **Platforma systemu operacyjnego** </br>| Filtrowanie według platform systemu operacyjnego, które chcesz zbadać </br></br>(_Tylko komputery i urządzenia przenośne i IoT_)
 **Pierwszy raz widziany** </br> | Filtruj widok na podstawie tego, kiedy urządzenie było po raz pierwszy widoczne w sieci lub kiedy po raz pierwszy zostało zgłoszone przez czujnik Ochrona punktu końcowego w usłudze Microsoft Defender.</br></br>(_Tylko komputery i urządzenia przenośne i IoT_)
-**Wersje systemu Windows** </br> | Filtruj według Windows wersji, które chcesz zbadać.</br></br> (_Tylko komputery i urządzenia przenośne_)
+**Wersje systemu Windows** </br> | Filtruj według wersji systemu Windows, które chcesz zbadać.</br></br> (_Tylko komputery i urządzenia przenośne_)
 **Stan kondycji czujnika** </br> | Filtruj według następujących stanów kondycji czujnika, aby urządzenia dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender:</br> - **Aktywne**: urządzenia, które aktywnie zgłaszają dane czujników do usługi.</br> - **Nieaktywne**: urządzenia, które przestały wysyłać sygnały przez ponad 7 dni. </br> - **Nieprawidłowa konfiguracja**: urządzenia, które mają ograniczoną komunikację z usługą lub nie mogą wysyłać danych czujnika. </br> Błędnie skonfigurowane urządzenia można dalej klasyfikować do: </br>  — Brak danych czujnika </br>  - Komunikacja z upośledzoną łącznością </br>  Aby uzyskać więcej informacji na temat rozwiązywania problemów dotyczących nieprawidłowo skonfigurowanych urządzeń, zobacz [Rozwiązywanie problemów z czujnikami w złej kondycji](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors).</br></br> (_Tylko komputery i urządzenia przenośne_)
 **Stan dołączania** </br> | Stan dołączania wskazuje, czy urządzenie jest obecnie dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender czy nie. Możesz filtrować według następujących stanów: </br> - **Dołączone**: punkt końcowy jest dołączany do Ochrona punktu końcowego w usłudze Microsoft Defender.  </br> - **Można dołączyć**: punkt końcowy został odnaleziony w sieci jako obsługiwane urządzenie, ale nie jest obecnie dołączony. Firma Microsoft zdecydowanie zaleca dołączanie tych urządzeń. </br> - **Nieobsługiwane**: punkt końcowy został odnaleziony w sieci, ale nie jest obsługiwany przez Ochrona punktu końcowego w usłudze Microsoft Defender. </br> - **Niewystarczające informacje**: system nie może określić możliwości obsługi urządzenia.</br></br> (_Tylko komputery i urządzenia przenośne_)
 **Stan programu antywirusowego** </br> | Filtruj widok na podstawie tego, czy stan programu antywirusowego jest wyłączony, a nie zaktualizowany, czy nieznany.</br></br> (_Tylko komputery i urządzenia przenośne_)
 **Grupa** </br> | Przefiltruj listę na podstawie grupy, którą chcesz zbadać. </br></br> (_Tylko komputery i urządzenia przenośne_)
-**Zarządzane przez** </br> | Zarządzane przez wskazuje sposób zarządzania urządzeniem. Możesz filtrować według:</br>- Ochrona punktu końcowego w usłudze Microsoft Defender </br> — Zarządzanie urządzeniami przenośnymi (MDM) </br>- Nieznane: może to być spowodowane uruchomieniem nieaktualizowanej wersji Windows, obecnościĄ programu SCCM lub zarządzaniem urządzeniami przenośnymi innej firmy.</br></br> (_Tylko komputery i urządzenia przenośne_)
+**Zarządzane przez** </br> | Zarządzane przez wskazuje sposób zarządzania urządzeniem. Możesz filtrować według:</br> - Ochrona punktu końcowego w usłudze Microsoft Defender</br> — Microsoft Endpoint Manager (MEM), w tym współzarządzanie z firmą Microsoft Configuration Manager za pośrednictwem dołączania dzierżawy</br>— Microsoft Configuration Manager (ConfigMgr)</br> - Nieznany: może to być spowodowane uruchomieniem nieaktualizowanej wersji systemu Windows, zarządzania obiektem zasad grupy lub zarządzania urządzeniami przenośnymi innej firmy.</br></br> (_Tylko komputery i urządzenia przenośne_) 
 **Typ urządzenia** </br> | Filtruj według typu urządzenia, który chcesz zbadać.</br></br> (_Tylko urządzenia IoT_)
 
 ## <a name="use-columns-to-customize-the-device-inventory-views"></a>Dostosowywanie widoków spisu urządzeń przy użyciu kolumn

@@ -1,5 +1,5 @@
 ---
-title: Przewodnik Szybki start dotyczący menedżera zgodności firmy Microsoft
+title: Przewodnik Szybki start dotyczący programu Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,58 +17,60 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Skorzystaj z przewodnika Szybki start dla menedżera zgodności, aby ułatwić Ci rozpoczęcie zrozumienia, konfiguracji i korzystania z Menedżera zgodności.
-ms.openlocfilehash: 636f34145626a54c10c613c1b914837c3f697c25
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Skorzystaj z przewodnika Szybki start dotyczącego menedżera zgodności, aby ułatwić Ci zrozumienie, konfigurację i korzystanie z Menedżera zgodności.
+ms.openlocfilehash: a4699e48c76aa041e0bc8ef3e35308ffb5f0e79c
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317755"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554186"
 ---
-# <a name="compliance-manager-quickstart"></a>Szybki start menedżera zgodności
+# <a name="compliance-manager-quickstart"></a>Menedżer zgodności — szybki start
 
-**W tym artykule:** Ten przewodnik Szybki start pomoże Ci w podróży za pomocą menedżera zgodności firmy Microsoft w celu zarządzania zgodnością organizacji z przepisami, zasadami i standardami.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Menedżer zgodności udostępnia inteligentne dane z akcjami podczas pierwszej wizyty. Menedżer zgodności oferuje również zaawansowane możliwości skalowania zgodności, gdy wszystko będzie gotowe. Dostępne oceny zależą od umowy licencyjnej; [dowiedz się więcej](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+**W tym artykule:** Skorzystaj z tego przewodnika Szybki start, aby ułatwić ci korzystanie z programu Microsoft Purview Compliance Manager w celu zarządzania zgodnością organizacji z przepisami, zasadami i standardami.
 
-Niezależnie od tego, czy po raz pierwszy przychodzisz do Menedżera zgodności, czy chcesz korzystać z niektórych zaawansowanych funkcji, ten przewodnik może pomóc Ci w podróży.
+Menedżer zgodności udostępnia inteligentne i praktyczne dane podczas pierwszej wizyty. Menedżer zgodności ma również zaawansowane możliwości skalowania zgodności, gdy wszystko będzie gotowe. Dostępne oceny zależą od umowy licencyjnej; [dowiedz się więcej](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## <a name="first-visit-get-to-know-compliance-manager"></a>Pierwsza wizyta: poznaj Menedżera zgodności
+Niezależnie od tego, czy przychodzisz do Menedżera zgodności po raz pierwszy, czy jesteś gotowy do korzystania z niektórych zaawansowanych funkcji, ten przewodnik może cię wspierać podczas podróży.
 
-Menedżer zgodności znajduje się w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a>. Zanim zaczniesz korzystać z Menedżera zgodności, administrator [](compliance-manager-setup.md#set-user-permissions-and-assign-roles) globalny organizacji będzie musiał skonfigurować uprawnienia użytkowników i przypisać role.
+## <a name="first-visit-get-to-know-compliance-manager"></a>Pierwsza wizyta: zapoznanie się z Menedżerem zgodności
 
-Podczas pierwszej wizyty w Menedżerze zgodności zostanie wyświetlony wynik zgodności dla organizacji. Menedżer zgodności ocenia już bieżące środowisko Microsoft 365 względem planu bazowego ochrony danych. Najlepszym sposobem na rozpoczęcie poznania Menedżera zgodności jest zrozumienie tego, co jest wyświetlane, jego kluczowe elementy i jak dostosować pulpit nawigacyjny.
+Menedżer zgodności znajduje się w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>. Administrator globalny organizacji będzie musiał [skonfigurować uprawnienia użytkownika i przypisać role](compliance-manager-setup.md#set-user-permissions-and-assign-roles) przed rozpoczęciem korzystania z Menedżera zgodności.
 
-Strona [przeglądu Menedżera zgodności](compliance-manager.md) jest najlepszym pierwszym etapem kompleksowego przeglądu tego, czym jest Menedżer zgodności i jak to działa. Możesz również przejść bezpośrednio do kluczowych sekcji naszej dokumentacji, korzystając z poniższych linków:
+Podczas pierwszej wizyty w Menedżerze zgodności zostanie wyświetlony wynik zgodności dla organizacji. Menedżer zgodności już ocenia bieżące środowisko platformy Microsoft 365 pod kątem punktu odniesienia ochrony danych. Najlepszym sposobem, aby rozpocząć zapoznanie się z Menedżerem zgodności, jest zapoznanie się z wyświetlanymi informacjami, jego kluczowymi elementami i sposobem dostosowywania pulpitu nawigacyjnego.
 
-- [Opis wyniku w zakresie zgodności](compliance-manager.md#understanding-your-compliance-score)
-- [Omówienie kluczowych elementów: kontrolek, ocen, szablonów i działań usprawnień](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-- [Opis pulpitu nawigacyjnego Menedżera zgodności](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
+Nasza [strona przeglądu programu Compliance Manager](compliance-manager.md) jest najlepszym pierwszym przystankiem w celu kompleksowego przeglądu tego, czym jest Menedżer zgodności i jak działa. Możesz również przejść bezpośrednio do kluczowych sekcji naszej dokumentacji, korzystając z poniższych linków:
+
+- [Omówienie oceny zgodności](compliance-manager.md#understanding-your-compliance-score)
+- [Omówienie kluczowych elementów: kontrolek, ocen, szablonów i akcji poprawy](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
+- [Omówienie pulpitu nawigacyjnego programu Compliance Manager](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Filtrowanie widoku pulpitu nawigacyjnego](compliance-manager-setup.md#filtering-your-dashboard-view)
-- [Dowiedz się więcej o działaniach usprawnień](compliance-manager-setup.md#improvement-actions-page)
-- [Opis ocen](compliance-manager.md#assessments)
-- [Wykonaj szybkie skanowanie środowiska za pomocą centrum zgodności firmy Microsoft Menedżer konfiguracji](compliance-manager-mcca.md)
+- [Dowiedz się więcej o akcjach ulepszania](compliance-manager-setup.md#improvement-actions-page)
+- [Omówienie ocen](compliance-manager.md#assessments)
+- [Szybkie skanowanie środowiska przy użyciu analizatora konfiguracji dla usługi Microsoft Purview](compliance-manager-mcca.md)
 
-## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>Rozszerz: konfigurowanie Menedżera zgodności w celu zarządzania działaniami zgodności
+## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>Zwiększanie poziomu: konfigurowanie menedżera zgodności w celu zarządzania działaniami dotyczącymi zgodności
 
-Gdy zaznajomisz się z podstawowymi czynnościami, musisz skonfigurować wszystko tak, aby spełniało potrzeby Twojej organizacji. Możesz rozpocząć pracę z ocenami i wprowadzić działania ulepszeń w celu wdrożenia kontroli i poprawienia wyniku zgodności. Wiedza o tym, jak na tym etapie wykonać wszystkie działania, może pomóc Twojej organizacji w przestrzeganiu i przedstawianiu zgodności z przepisami w swojej branży i regionie. Aby znaleźć więcej informacji, odwiedź poniższe linki:
+Po zapoznaniu się z podstawowymi informacjami nadszedł czas, aby skonfigurować elementy spełniające potrzeby organizacji. Możesz rozpocząć pracę z ocenami i podejmować działania ulepszeń w celu zaimplementowania mechanizmów kontroli i poprawy oceny zgodności. Znajomość sposobu wykonywania wszystkich działań na tym etapie może pomóc organizacji w przestrzeganiu i demonstrowania zgodności z przepisami w całej branży i regionie. Odwiedź poniższe linki, aby poznać następujące informacje:
 
-- [Wybierz wstępnie sbudowaną ocenę, aby utworzyć pierwszą ocenę i zarządzać jej](compliance-manager-assessments.md)
+- [Wybierz wstępnie utworzoną ocenę, aby utworzyć pierwszą ocenę i zarządzać nią](compliance-manager-assessments.md)
 - [Dowiedz się, jak używać szablonów do tworzenia ocen](compliance-manager-templates.md)
-- [Wykonywanie prac implementacji i testów nad działaniami udoskonalania w celu ukończenia kontroli w testach](compliance-manager-improvement-actions.md)
+- [Wykonywanie prac związanych z implementacją i testowaniem akcji poprawy w celu ukończenia kontroli w ocenach](compliance-manager-improvement-actions.md)
 - [Lepsze zrozumienie wpływu różnych akcji na wynik zgodności](compliance-score-calculation.md)
 
-## <a name="scaling-up-use-advanced-functionality-to-meet-your-custom-needs"></a>Skalowanie: korzystanie z zaawansowanych funkcji w celu zaspokojenia potrzeb niestandardowych
+## <a name="scaling-up-use-advanced-functionality-to-meet-your-custom-needs"></a>Skalowanie w górę: korzystanie z zaawansowanych funkcji w celu spełnienia niestandardowych potrzeb
 
-Jeśli chcesz zarządzać ocenami w Menedżerze zgodności, możesz korzystać z szablonów w celu zmodyfikowania oceny Menedżera zgodności przy użyciu własnych akcji i kontrolek. Możesz również utworzyć własną niestandardową ocenę. Oceny niestandardowe są przydatne w przypadku:
+Jeśli dobrze zarządzasz ocenami w Menedżerze zgodności, możesz pracować z szablonami, aby zmodyfikować ocenę menedżera zgodności przy użyciu własnych akcji i kontrolek. Możesz również utworzyć własną ocenę niestandardową. Niestandardowe oceny są przydatne w:
 
-- Zarządzanie zgodnością dla produktów Microsoft 365 innych firm, takich jak usługi i aplikacje innych firm, aplikacje lokalne i inne zasoby.
-- Zarządzanie własnymi niestandardowymi lub firmowych mechanizmami kontroli zgodności.
+- Zarządzanie zgodnością produktów innych niż Microsoft 365, takich jak aplikacje i usługi innych firm, aplikacje lokalne i inne zasoby.
+- Zarządzanie własnymi niestandardowymi lub specyficznymi dla firmy kontrolami zgodności.
 
-Możesz również skonfigurować automatyczne testowanie wszystkich działań udoskonalania lub ich podzestawu. Aby poznać bardziej zaawansowane funkcje w Menedżerze zgodności, odwiedź poniższe linki:
+Możesz również skonfigurować automatyczne testowanie wszystkich lub podzestawu akcji poprawy. Skorzystaj z poniższych linków, aby poznać bardziej zaawansowane funkcje w Menedżerze zgodności:
 
-- [Rozszerzanie szablonu Menedżera zgodności przez dodanie własnych kontrolek i działań udoskonalania](compliance-manager-templates-extend.md)
+- [Rozszerzanie szablonu programu Compliance Manager przez dodawanie własnych kontrolek i akcji ulepszania](compliance-manager-templates-extend.md)
 - [Tworzenie własnego szablonu niestandardowego](compliance-manager-templates-create.md)
-- [Modyfikowanie istniejącego szablonu w celu dodania lub usunięcia kontrolek i akcji](compliance-manager-templates-modify.md)
-- [Konfigurowanie automatycznego testowania działań udoskonalania](compliance-manager-setup.md#set-up-automated-testing)
-- [Ponowne przypisanie akcji udoskonalania do innego użytkownika](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
+- [Modyfikowanie istniejącego szablonu w celu dodawania lub usuwania kontrolek i akcji](compliance-manager-templates-modify.md)
+- [Konfigurowanie zautomatyzowanego testowania akcji poprawy](compliance-manager-setup.md#set-up-automated-testing)
+- [Ponowne przypisywanie akcji poprawy do innego użytkownika](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

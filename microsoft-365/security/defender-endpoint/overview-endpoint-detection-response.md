@@ -1,8 +1,8 @@
 ---
-title: Omówienie możliwości wykrywanie i reagowanie w punktach końcowych
+title: Omówienie możliwości wykrywania punktów końcowych i reagowania na nie
 ms.reviewer: ''
-description: Dowiedz się więcej o możliwościach wykrywanie i reagowanie w punktach końcowych w Ochrona punktu końcowego w usłudze Microsoft Defender
-keywords: Ochrona punktu końcowego w usłudze Microsoft Defender, wykrywanie i reagowanie w punktach końcowych, reagowanie, wykrywanie, cyberbezpieczeństwo, ochrona
+description: Dowiedz się więcej o możliwościach wykrywania punktów końcowych i reagowania na nie w Ochrona punktu końcowego w usłudze Microsoft Defender
+keywords: Ochrona punktu końcowego w usłudze Microsoft Defender, wykrywanie i reagowanie na punkty końcowe, reagowanie, wykrywanie, cyberbezpieczeństwo, ochrona
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,24 +15,27 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 78f05c9e366d2f8b4d5b4d7697961f0d702581f8
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 757064e8867cda8676fd0cf20a662ff04d130e9c
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438533"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554516"
 ---
-# <a name="overview-of-endpoint-detection-and-response"></a>Omówienie wykrywanie i reagowanie w punktach końcowych
+# <a name="overview-of-endpoint-detection-and-response"></a>Omówienie wykrywania i reagowania na punkty końcowe
 
 **Dotyczy:**
-- [plany Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2](defender-endpoint-plan-1-2.md)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender – plan 1 i 2](defender-endpoint-plan-1-2.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Funkcje usługi Defender for Endpoint wykrywanie i reagowanie w punktach końcowych zapewniają zaawansowane wykrywanie ataków, które są niemal w czasie rzeczywistym i umożliwiają podjęcie działań. Analitycy zabezpieczeń mogą efektywnie ustalać priorytety alertów, uzyskiwać wgląd w pełny zakres naruszenia i podejmować działania reagowania w celu skorygowania zagrożeń.
+Funkcje wykrywania punktów końcowych i reagowania na nie w usłudze Defender for Endpoint zapewniają zaawansowane wykrywanie ataków, które są niemal w czasie rzeczywistym i umożliwiają podjęcie działań. Analitycy zabezpieczeń mogą efektywnie ustalać priorytety alertów, uzyskiwać wgląd w pełny zakres naruszenia i podejmować działania reagowania w celu skorygowania zagrożeń.
 
 Po wykryciu zagrożenia w systemie są tworzone alerty umożliwiające analitykowi badanie. Alerty z tymi samymi technikami ataku lub przypisywane tej samej atakującej są agregowane w jednostkę o nazwie _zdarzenie_. Agregowanie alertów w ten sposób ułatwia analitykom zbiorcze badanie zagrożeń i reagowanie na nie.
+
+> [!NOTE]
+> Wykrywanie punktu końcowego w usłudze Defender nie ma być rozwiązaniem do inspekcji ani rejestrowania, które rejestruje każdą operację lub działanie wykonywane w danym punkcie końcowym. Nasz czujnik ma wewnętrzny mechanizm ograniczania przepustowości, więc wysoka częstotliwość powtarzania identycznych zdarzeń nie zala dzienników.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4o1j5]
 

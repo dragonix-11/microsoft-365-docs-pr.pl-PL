@@ -1,7 +1,7 @@
 ---
-title: Tabela DeviceFileCertificateInfo w zaawansowanym schemacie wyszukiwania
-description: Informacje o podpisywaniu plików w tabeli DeviceFileCertificateInfo zaawansowanego schematu chłoń
-keywords: zaawansowane wyszukiwania, chylenie przed zagrożeniami, cyberzagrożenia, Microsoft 365 Defender, microsoft 365, m365, wyszukiwanie, zapytanie, telemetria, informacje o schemacie, kusto, tabela, kolumna, typ danych, podpis cyfrowy, certyfikat, podpisywanie plików, DeviceFileCertificateInfo
+title: Tabela DeviceFileCertificateInfo w zaawansowanym schemacie wyszukiwania zagrożeń
+description: Dowiedz się więcej o informacjach dotyczących podpisywania plików w tabeli DeviceFileCertificateInfo zaawansowanego schematu wyszukiwania zagrożeń
+keywords: zaawansowane wyszukiwanie zagrożeń, wyszukiwanie zagrożeń, Microsoft 365 Defender wyszukiwanie zagrożeń, wyszukiwanie zagrożeń, odwołanie do schematu, kusto, tabela, kolumna, typ danych, podpis cyfrowy, certyfikat, podpisywanie plików, DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b43b6ad8ed1422830f08358f460b20b16588996
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 019ca8eced735b8a9e24c2b0f3e3baae37757875
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017876"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554560"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -34,35 +34,35 @@ ms.locfileid: "63017876"
 - Microsoft 365 Defender
 - Ochrona punktu końcowego w usłudze Microsoft Defender
 
-Tabela `DeviceFileCertificateInfo` w zaawansowanym [schemacie chłoń](advanced-hunting-overview.md) zawiera informacje o certyfikatach podpisywania plików. W poniższej tabeli są używane dane uzyskane z działań weryfikacji certyfikatów, które są regularnie wykonywane na plikach w punktach końcowych.
+Tabela `DeviceFileCertificateInfo` w zaawansowanym schemacie [wyszukiwania zagrożeń](advanced-hunting-overview.md) zawiera informacje o certyfikatach podpisywania plików. Ta tabela używa danych uzyskanych z działań weryfikacji certyfikatu regularnie wykonywanych w plikach w punktach końcowych.
 
-Aby uzyskać informacje o innych tabelach w zaawansowanym schemacie łęgowania, [zapoznaj się z zaawansowanymi informacjami na temat wyszukiwania](advanced-hunting-schema-tables.md).
+Aby uzyskać informacje na temat innych tabel w zaawansowanym schemacie wyszukiwania zagrożeń, [zobacz zaawansowane informacje dotyczące wyszukiwania zagrożeń](advanced-hunting-schema-tables.md).
 
 | Nazwa kolumny | Typ danych | Opis |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | Data i godzina nagrania zdarzenia |
-| `DeviceId` | `string` | Unikatowy identyfikator komputera w usłudze |
-| `DeviceName` | `string` | W pełni kwalifikowana nazwa domeny (FQDN) komputera |
-| `SHA1` | `string` | SHA-1 pliku, do których zastosowano akcję |
-| `IsSigned` | `boolean` | Wskazuje, czy plik jest podpisany. |
-| `SignatureType` | `string` | Wskazuje, czy informacje o podpisie były odczytywane jako zawartość osadzona w samym pliku, czy odczytywane z pliku wykazu zewnętrznego. |
-| `Signer` | `string` | Informacje o podpisie pliku |
-| `SignerHash` | `string` | Unikatowa wartość skrótu identyfikująca osobę podpisujące |
-| `Issuer` | `string` | Informacje o insektując urząd certyfikacji (UC, issuing certificate authority) |
-| `IssuerHash` | `string` | Unikatowa wartość skrótu identyfikująca urząd certyfikacji (UC) |
-| `CertificateSerialNumber` | `string` | Identyfikator certyfikatu, który jest unikatowy dla urzędu certyfikacji |
-| `CrlDistributionPointUrls` | `string` |  Tablica JSON z listą adresów URL udziałów sieciowych, które zawierają certyfikaty i listy odwołań certyfikatów (listy CRL) |
+| `Timestamp` | `datetime` | Data i godzina zarejestrowania zdarzenia |
+| `DeviceId` | `string` | Unikatowy identyfikator maszyny w usłudze |
+| `DeviceName` | `string` | W pełni kwalifikowana nazwa domeny (FQDN) maszyny |
+| `SHA1` | `string` | SHA-1 pliku, do który zastosowano zarejestrowaną akcję |
+| `IsSigned` | `boolean` | Wskazuje, czy plik jest podpisany |
+| `SignatureType` | `string` | Wskazuje, czy informacje o podpisie były odczytywane jako zawartość osadzona w samym pliku, czy odczytywane z pliku wykazu zewnętrznego |
+| `Signer` | `string` | Informacje dotyczące podpisywania pliku |
+| `SignerHash` | `string` | Unikatowa wartość skrótu identyfikująca osoby podpisujące |
+| `Issuer` | `string` | Informacje o urzędzie wystawiającym certyfikaty (CA) |
+| `IssuerHash` | `string` | Unikatowa wartość skrótu identyfikująca urząd wystawiający certyfikat (CA) |
+| `CertificateSerialNumber` | `string` | Identyfikator certyfikatu, który jest unikatowy dla urzędu wystawiającego certyfikaty (CA) |
+| `CrlDistributionPointUrls` | `string` |  Tablica JSON z listą adresów URL udziałów sieciowych zawierających certyfikaty i listy odwołania certyfikatów |
 | `CertificateCreationTime` | `datetime` | Data i godzina utworzenia certyfikatu |
 | `CertificateExpirationTime` | `datetime` | Data i godzina wygaśnięcia certyfikatu |
-| `CertificateCountersignatureTime` | `datetime` | Data i godzina, o których certyfikat został podpisany |
-| `IsTrusted` | `boolean` | Wskazuje, czy plik jest zaufany na podstawie wyników funkcji WinVerifyTrust, która sprawdza nieznane informacje o certyfikacie głównym, nieprawidłowe podpisy, odwołane certyfikaty i inne godne zaufania atrybuty. |
-| `IsRootSignerMicrosoft` | `boolean` | Wskazuje, czy podpis cyfrowym certyfikatem głównym jest firma Microsoft. |
-| `ReportId` | `long` | Identyfikator zdarzenia oparty na liczniku powtarzających się. Aby zidentyfikować unikatowe zdarzenia, należy użyć tej kolumny w połączeniu z kolumnami DeviceName i Timestamp. | 
+| `CertificateCountersignatureTime` | `datetime` | Data i godzina podpisania certyfikatu |
+| `IsTrusted` | `boolean` | Wskazuje, czy plik jest zaufany na podstawie wyników funkcji WinVerifyTrust, która sprawdza, czy nie ma informacji o nieznanym certyfikacie głównym, nieprawidłowych podpisów, odwołanych certyfikatów i innych wątpliwych atrybutów |
+| `IsRootSignerMicrosoft` | `boolean` | Wskazuje, czy podpisywaniem certyfikatu głównego jest firma Microsoft i czy plik jest uwzględniony w systemie operacyjnym Windows |
+| `ReportId` | `long` | Identyfikator zdarzenia na podstawie licznika powtarzającego się. Aby zidentyfikować unikatowe zdarzenia, ta kolumna musi być używana w połączeniu z kolumnami DeviceName i Timestamp. | 
 
 ## <a name="related-topics"></a>Tematy pokrewne
-- [Omówienie zaawansowanego wyszukiwania](advanced-hunting-overview.md)
-- [Poznaw język zapytań](advanced-hunting-query-language.md)
+- [Omówienie zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md)
+- [Nauka języka zapytań](advanced-hunting-query-language.md)
 - [Używanie zapytań udostępnionych](advanced-hunting-shared-queries.md)
-- [Przeszukaj urządzenia, wiadomości e-mail, aplikacje i tożsamości](advanced-hunting-query-emails-devices.md)
-- [Opis schematu](advanced-hunting-schema-tables.md)
-- [Stosowanie najlepszych rozwiązań kwerend](advanced-hunting-best-practices.md)
+- [Wyszukiwanie zagrożeń na urządzeniach, w wiadomościach e-mail, aplikacjach i tożsamościach](advanced-hunting-query-emails-devices.md)
+- [Analiza schematu](advanced-hunting-schema-tables.md)
+- [Stosowanie najlepszych rozwiązań dla zapytań](advanced-hunting-best-practices.md)

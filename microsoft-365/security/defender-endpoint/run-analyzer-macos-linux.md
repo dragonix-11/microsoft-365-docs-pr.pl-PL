@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a4dd7193bed1a22e3b88e6bc9201f5a15ddcd9eb
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: fc5944be9fd209898b53203533f568ae7ccec70e
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090459"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554538"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Uruchamianie analizatora klienta w systemach macOS i Linux
 
@@ -34,7 +34,7 @@ ms.locfileid: "66090459"
 1. Pobierz narzędzie [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) na maszynę z systemem macOS lub Linux, którą należy zbadać.
 
    > [!NOTE]
-   > Bieżący skrót SHA256 "XMDEClientAnalyzer.zip", który jest pobierany z powyższego linku, to: "AFD674A149F139E80F1AE90E36814DAAC08AAD9E8B0DA20CB1D3FA33B9D0D1AD".
+   > Bieżący skrót SHA256 "XMDEClientAnalyzer.zip" pobrany z powyższego linku to: "94DBD785249C10F37D7BE9C1E881AA096CF3A99F30E829DBBFD42683717BC5DA8".
 
 2. Wyodrębnij zawartość XMDEClientAnalyzer.zip na maszynie.
 
@@ -93,7 +93,7 @@ Dodatkowa pomoc dotycząca składni:
 **-f** \# Życie<br>
 \# Zastąp, jeśli dane wyjściowe już istnieją w ścieżce docelowej
 
-## <a name="result-package-contents-on-macos-and-linux"></a>Zawartość pakietu wyników w macOS i Linux
+## <a name="result-package-contents-on-macos-and-linux"></a>Zawartość pakietu wyników w systemach macOS i Linux
 
 - report.html
 
@@ -101,7 +101,7 @@ Dodatkowa pomoc dotycząca składni:
 
 - mde_diagnostic.zip
 
-  Opis: te same dane wyjściowe diagnostyki, które są generowane podczas uruchamiania *narzędzia mdatp diagnostic create* na [obu macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
+  Opis: Te same dane wyjściowe diagnostyki, które są generowane podczas uruchamiania *narzędzia mdatp diagnostic create* w systemie [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
   lub
 
