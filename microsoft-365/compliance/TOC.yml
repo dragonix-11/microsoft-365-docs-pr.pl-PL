@@ -297,7 +297,7 @@
         - name: Omówienie
           href: privileged-access-management-solution-overview.md
         - name: Dowiedz się więcej o usłudze Privileged Access Management
-          href: privileged-access-management-overview.md
+          href: privileged-access-management.md
         - name: Wprowadzenie do usługi Privileged Access Management
           href: privileged-access-management-configuration.md
     - name: Ochroń dostęp użytkowników i urządzeń
@@ -601,6 +601,8 @@
               href: retention-policies-exchange.md
         - name: Typowe ustawienia przechowywania i usuwania
           href: retention-settings.md
+        - name: Polecenia cmdlet programu PowerShell do przechowywania i usuwania
+          href: retention-cmdlets.md
         - name: Limity przechowywania i usuwania
           href: retention-limits.md
     - name: Zarządzanie cyklem życia danych
@@ -1071,7 +1073,7 @@
           href: compliance-manager-alert-policies.md
         - name: 'Dowiedz się, jak jest obliczany wskaźnik zgodności'
           href: compliance-score-calculation.md
-        - name: Narzędzie Analizator konfiguracji zgodności
+        - name: Analizator konfiguracji dla usługi Microsoft Purview
           href: compliance-manager-mcca.md
         - name: Często zadawane pytania
           href: compliance-manager-faq.yml

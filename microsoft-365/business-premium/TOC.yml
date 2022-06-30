@@ -64,30 +64,28 @@
           href: create-communications-site.md
 - name: Ochrona urządzeń zarządzanych
   items:
-    - name: Konfigurowanie i zabezpieczanie urządzeń zarządzanych
+    - name: Omówienie
+      href: m365bp-protect-devices.md
+    - name: Konfigurowanie urządzeń zarządzanych
+      href: m365bp-managed-devices-setup.md
+    - name: Dołączanie zarejestrowanych urządzeń i stosowanie zasad
+      href: m365bp-onboard-devices-mdb.md
+    - name: "Ochrona urządzeń z\_systemem Windows"
       items:
-        - name: Omówienie
-          href: m365bp-protect-devices.md
-        - name: Konfigurowanie urządzeń zarządzanych
-          href: m365bp-managed-devices-setup.md
-        - name: Dołączanie zarejestrowanych urządzeń i stosowanie zasad
-          href: m365bp-onboard-devices-mdb.md
-        - name: "Ochrona urządzeń z\_systemem Windows"
-          items:
-            - name: "Zabezpieczanie urządzeń z\_systemem Windows"
-              href: m365bp-secure-windows-devices.md
-            - name: "Zarządzanie urządzeniami z\_systemem Windows"
-              href: m365bp-manage-windows-devices.md
-            - name: Przygotowywanie do wdrożenia klienta pakietu Office
-              href: m365bp-prepare-for-office-client-deployment.md
-            - name: Tworzenie ustawień ochrony aplikacji dla urządzeń z systemem Windows
-              href: m365bp-protection-settings-for-windows-10-devices.md
-            - name: Weryfikowanie ustawień aplikacji na urządzeniach z systemem Windows
-              href: m365bp-validate-settings-on-windows-10-pcs.md
-        - name: Przeglądanie i edytowanie zasad urządzeń
-          href: m365bp-view-edit-create-mdb-policies.md
-        - name: Zarządzanie grupami urządzeń
-          href: m365bp-device-groups-mdb.md
+        - name: "Zabezpieczanie urządzeń z\_systemem Windows"
+          href: m365bp-secure-windows-devices.md
+        - name: "Zarządzanie urządzeniami z\_systemem Windows"
+          href: m365bp-manage-windows-devices.md
+        - name: Przygotowywanie do wdrożenia klienta pakietu Office
+          href: m365bp-prepare-for-office-client-deployment.md
+        - name: Tworzenie ustawień ochrony aplikacji dla urządzeń z systemem Windows
+          href: m365bp-protection-settings-for-windows-10-devices.md
+        - name: Weryfikowanie ustawień aplikacji na urządzeniach z systemem Windows
+          href: m365bp-validate-settings-on-windows-10-pcs.md
+    - name: Przeglądanie i edytowanie zasad urządzeń
+      href: m365bp-view-edit-create-mdb-policies.md
+    - name: Zarządzanie grupami urządzeń
+      href: m365bp-device-groups-mdb.md
 - name: Zarządzanie zdarzeniami dotyczącymi zabezpieczeń
   items:
     - name: Omówienie
@@ -108,6 +106,8 @@
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Dodawanie użytkowników
       href: m365bp-add-users.md
+    - name: Resetowanie haseł
+      href: m365bp-reset-passwords.md
     - name: Usuwanie danych z urządzeń
       href: m365bp-remove-company-data.md
     - name: Resetuj urządzenia do ustawień fabrycznych
@@ -115,7 +115,7 @@
 - name: Odwołanie
   items:
     - name: Słownik terminów
-      href: m365bp-glossary.md
+      href: m365bp-glossary.yml
     - name: Microsoft 365 Business Premium — często zadawane pytania
       href: microsoft-365-business-faqs.yml
     - name: Zawartość administratora platformy Microsoft 365
@@ -123,11 +123,11 @@
     - name: Konfigurowanie rozwiązania Autopilot
       items:
         - name: Dodawanie urządzeń i profilu rozwiązania Autopilot
-          href: m365bp-add-autopilot-devices-and-profile.md
+          href: m365bp-add-Autopilot-devices-and-profile.md
         - name: Ustawienia profilu rozwiązania Autopilot
-          href: m365bp-autopilot-profile-settings.md
-        - name: Tworzenie i edytowanie profilów rozwiązania AutoPilot
-          href: m365bp-create-and-edit-autopilot-devices.md
+          href: m365bp-Autopilot-profile-settings.md
+        - name: Tworzenie i edytowanie profilów rozwiązania Autopilot
+          href: m365bp-create-and-edit-Autopilot-devices.md
     - name: "Ustawienia ochrony aplikacji dla systemów Android i\_iOS"
       href: m365bp-app-protection-settings-for-android-and-ios.md
     - name: Weryfikowanie ustawień aplikacji w systemie Android lub iOS

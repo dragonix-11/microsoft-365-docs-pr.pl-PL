@@ -20,17 +20,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- intro-overview
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Dowiedz się, jak zaimplementować cyberbezpieczeństwo w małych lub średnich firmach przy użyciu platformy Microsoft 365 Business Premium. Możliwości i funkcje cyberbezpieczeństwa są zoptymalizowane pod kątem zapobiegania cyberatakom i naruszeniom zabezpieczeń oraz pomagają chronić dane, urządzenia i informacje za pomocą wysokiej jakości cyberzabezpieczeń.
-ms.openlocfilehash: 61e0321df75645a3e8ef06867d9e110b7bfd40a2
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 213e96c58c822d0d8b40d2e540582eb6a2719ef8
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491387"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556839"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; cyberbezpieczeństwo dla małych firm
 

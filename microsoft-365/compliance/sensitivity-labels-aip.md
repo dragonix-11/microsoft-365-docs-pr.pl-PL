@@ -1,5 +1,5 @@
 ---
-title: Wybierz pozycję Microsoft Purview Information Protection wbudowane etykietowanie dla Office aplikacji w dodatku Azure Information Protection (AIP)
+title: Wybieranie Microsoft Purview Information Protection wbudowanego etykietowania dla aplikacji pakietu Office w dodatku Azure Information Protection (AIP)
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -16,29 +16,29 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Jeśli używasz klienta ujednoliconego etykietowania usługi Azure Information Protection (AIP), zapoznaj się z zaletami używania wbudowanego etykietowania dla aplikacji Office, a nie dodatku AIP.
-ms.openlocfilehash: 0540f3b1b78b728a7c49e0851696d20a04137bb7
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: Jeśli używasz klienta ujednoliconego etykietowania usługi Azure Information Protection (AIP), zapoznaj się z zaletami używania wbudowanego etykietowania dla aplikacji pakietu Office, a nie dodatku AIP.
+ms.openlocfilehash: b924c9763d29e76f711a8e414c0a2086e09a81d8
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043071"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556861"
 ---
-# <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Dlaczego warto wybrać wbudowane etykietowanie w dodatku AIP dla aplikacji Office
+# <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Dlaczego warto wybrać wbudowane etykietowanie w dodatku AIP dla aplikacji pakietu Office
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Jeśli używasz [etykiet poufności](sensitivity-labels.md) w Aplikacje Microsoft 365 na komputerach Windows, możesz użyć etykiet wbudowanych w aplikacje Office lub dodatku z [klienta ujednoliconego etykietowania usługi Azure Information Protection (AIP](/azure/information-protection/rms-client/aip-clientv2)). 
+Jeśli używasz [etykiet poufności](sensitivity-labels.md) w Aplikacje Microsoft 365 na komputerach z systemem Windows, możesz użyć etykiet wbudowanych w aplikacje pakietu Office lub dodatku z [klienta ujednoliconego etykietowania usługi Azure Information Protection (AIP](/azure/information-protection/rms-client/aip-clientv2)). 
 
-Wbudowane etykietowanie stanowi podstawę [wdrożenia ochrony informacji w usłudze Microsoft Purview](information-protection-solution.md), ponieważ ta technologia etykietowania obejmuje platformy (Windows, macOS, iOS, Android i sieć Web), a także aplikacje i usługi firmy Microsoft i nie tylko. Wbudowane etykietowanie jest również przeznaczone do pracy z innymi funkcjami usługi Microsoft Purview, takimi jak klasyfikacja danych i ochrona przed utratą danych (DLP) w usłudze Microsoft Purview.
+Wbudowane etykietowanie stanowi podstawę [wdrożenia ochrony informacji usługi Microsoft Purview](information-protection-solution.md) , ponieważ ta technologia etykietowania obejmuje platformy (Windows, macOS, iOS, Android i Internet), a także aplikacje i usługi firmy Microsoft oraz inne. Wbudowane etykietowanie jest również przeznaczone do pracy z innymi funkcjami usługi Microsoft Purview, takimi jak klasyfikacja danych i ochrona przed utratą danych (DLP) w usłudze Microsoft Purview.
 
-Ponieważ wbudowane etykiety nie używają dodatku Office, korzystają z większej stabilności i lepszej wydajności. Obsługują one również najnowsze funkcje usługi Microsoft Purview, takie jak zaawansowane klasyfikatory.
+Ponieważ wbudowane etykiety nie używają dodatku pakietu Office, korzystają z większej stabilności i lepszej wydajności. Obsługują one również najnowsze funkcje usługi Microsoft Purview, takie jak zaawansowane klasyfikatory.
 
-Domyślnie wbudowane etykietowanie jest wyłączone w Office dla aplikacji Windows po zainstalowaniu klienta usługi AIP. To zachowanie domyślne można zmienić, korzystając z instrukcji w poniższej sekcji [Jak wyłączyć dodatek AIP, aby używać wbudowanego etykietowania dla aplikacji Office](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
+Domyślnie wbudowane etykietowanie jest wyłączone w aplikacjach pakietu Office dla systemu Windows po zainstalowaniu klienta usługi AIP. To domyślne zachowanie można zmienić, korzystając z instrukcji w poniższej sekcji [Jak wyłączyć dodatek AIP, aby używać wbudowanego etykietowania dla aplikacji pakietu Office](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
 
-Gdy klient usługi AIP jest zainstalowany, ale wyłączony w aplikacjach Office, pozostałe możliwości klienta usługi AIP pozostają obsługiwane:
+Jeśli klient usługi AIP jest zainstalowany, ale wyłączony w aplikacjach pakietu Office, inne możliwości klienta usługi AIP pozostają obsługiwane:
 
 - Kliknij prawym przyciskiem myszy opcje w Eksplorator plików, aby użytkownicy stosują etykiety do wszystkich typów plików.
 
@@ -48,29 +48,29 @@ Gdy klient usługi AIP jest zainstalowany, ale wyłączony w aplikacjach Office,
 
 - Skaner służący do odnajdywania poufnych informacji przechowywanych w lokalnych magazynach danych, a następnie opcjonalnie etykietowania tej zawartości.
 
-Aby uzyskać więcej informacji na temat tych możliwości, które rozszerzają etykietowanie poza aplikacje Office, zobacz [Przewodnik administratora klienta ujednoliconego etykietowania usługi Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide) z dokumentacji usługi AIP.
+Aby uzyskać więcej informacji na temat tych możliwości, które rozszerzają etykietowanie poza aplikacje pakietu Office, zobacz [Przewodnik administratora klienta ujednoliconego etykietowania usługi Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide) z dokumentacji usługi AIP.
 
 Niezależnie od etykietowania możesz nadal używać modułu [AIPService](/powershell/module/aipservice) PowerShell do zarządzania usługą szyfrowania na poziomie dzierżawy. Na przykład skonfiguruj dostęp superużytkownika, gdy musisz usunąć szyfrowanie na potrzeby odzyskiwania danych, śledzić i odwoływać dokumenty otwierane przez klienta usługi AIP oraz skonfigurować okres ważności licencji użytkowania na potrzeby dostępu w trybie offline. Aby uzyskać więcej informacji, zobacz [Administrowanie ochroną z usługi Azure Information Protection przy użyciu programu PowerShell](/azure/information-protection/administer-powershell).
 
-## <a name="decide-whether-to-use-built-in-labeling-for-office-apps-or-the-aip-add-in"></a>Zdecyduj, czy używać wbudowanego etykietowania dla aplikacji Office, czy dodatku usługi AIP
+## <a name="decide-whether-to-use-built-in-labeling-for-office-apps-or-the-aip-add-in"></a>Zdecyduj, czy używać wbudowanego etykietowania dla aplikacji pakietu Office, czy dodatku AIP
 
-Teraz, gdy klient usługi AIP jest w [trybie konserwacji](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613), nie zalecamy używania dodatku AIP dla aplikacji Office z następujących powodów:
+Teraz, gdy klient usługi AIP jest w [trybie konserwacji](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613), nie zalecamy używania dodatku AIP dla aplikacji pakietu Office z następujących powodów:
 
 - Żadne nowe funkcje etykietowania nie będą obsługiwane.
-- Dodatki są mniej stabilne, ponieważ mogą powodować konflikt z innymi dodatkami, co może spowodować, że aplikacje Office zawieszają się, ulegają awarii lub automatycznie wyłączają dodatek.
+- Dodatki są mniej stabilne, ponieważ mogą powodować konflikt z innymi dodatkami, co może spowodować zawieszanie się, awarię lub automatyczne wyłączanie dodatku przez aplikacje pakietu Office.
 - Jako dodatek działa wolniej i może zostać wyłączony przez użytkowników w celu obejścia wymagań dotyczących etykietowania.
 - Wszelkie poprawki błędów będą wymagały ponownej instalacji klienta usługi Azure Information Protection.
 - Środowisko etykietowania dla użytkowników nieco różni się od wbudowanych etykiet, które użytkownicy mają na innych urządzeniach (macOS, iOS, Android) i gdy używają Office dla sieci web. Ta różnica może zwiększyć koszty szkoleń i pomocy technicznej.
-- Istnieją już nowe funkcje etykietowania Office, które są [obsługiwane tylko przez wbudowane etykietowanie](#features-supported-only-by-built-in-labeling-for-office-apps), a lista cały czas rośnie.
+- Istnieją już nowe funkcje etykietowania pakietu Office, które są [obsługiwane tylko przez wbudowane etykietowanie](#features-supported-only-by-built-in-labeling-for-office-apps), a lista cały czas rośnie.
 
-Użyj dodatku usługi AIP dla aplikacji Windows Office tylko wtedy, gdy zostały już wdrożone dla użytkowników i potrzebujesz czasu na migrację ich do wbudowanego etykietowania. Użytkownicy potrzebują też funkcji, która nie jest obsługiwana przez wbudowane etykietowanie. Informacje [o parcie funkcji](#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps) na tej stronie ułatwiają identyfikację tych funkcji.
+Użyj dodatku usługi AIP dla aplikacji pakietu Windows Office tylko wtedy, gdy zostały już wdrożone dla użytkowników i potrzebujesz czasu na migrację ich do wbudowanego etykietowania. Użytkownicy potrzebują też funkcji, która nie jest obsługiwana przez wbudowane etykietowanie. Informacje [o parcie funkcji](#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps) na tej stronie ułatwiają identyfikację tych funkcji.
 
-## <a name="features-supported-only-by-built-in-labeling-for-office-apps"></a>Funkcje obsługiwane tylko przez wbudowane etykietowanie dla aplikacji Office
+## <a name="features-supported-only-by-built-in-labeling-for-office-apps"></a>Funkcje obsługiwane tylko przez wbudowane etykietowanie dla aplikacji pakietu Office
 
 > [!NOTE]
 > Wiele nowych funkcji etykietowania jest w planowaniu lub opracowywaniu, więc spodziewaj się, że lista w tej sekcji będzie rosnąć wraz z upływem czasu.
 
-Niektóre funkcje są obsługiwane tylko przez wbudowane etykietowanie dla aplikacji Office i nie będą obsługiwane przez dodatek AIP. Obejmują one:
+Niektóre funkcje są obsługiwane tylko przez wbudowane etykietowanie aplikacji pakietu Office i nie będą obsługiwane przez dodatek AIP. Obejmują one:
 
 - Do automatycznego i zalecanego etykietowania:
     - Dostęp do inteligentnych usług klasyfikacji, które obejmują [klasyfikatory z możliwością trenowania](classifier-learn-about.md), [dokładne dopasowanie danych (EDM)](sit-learn-about-exact-data-match-based-sits.md) i [nazwane jednostki](named-entities-learn.md)
@@ -89,11 +89,11 @@ Przykład pokazujący, jak użytkownicy mogą przeglądać i opcjonalnie usuwać
 
 Aby być na bieżąco z informacjami o dostępności nowych funkcji etykietowania na potrzeby wbudowanego [etykietowania, zobacz Sekcje Nowości w usłudze Microsoft Purview](whats-new.md) i **etykiety poufności** .
 
-## <a name="how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps"></a>Jak wyłączyć dodatek AIP, aby używać wbudowanego etykietowania dla aplikacji Office
+## <a name="how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps"></a>Jak wyłączyć dodatek AIP, aby używać wbudowanego etykietowania dla aplikacji pakietu Office
 
-Po zainstalowaniu klienta usługi AIP w celu rozszerzenia etykietowania poza aplikacje Office, ale chcesz uniemożliwić ładowanie dodatków klienta w aplikacjach Office, użyj ustawienia zasady grupy **Lista zarządzanych dodatków**, jak opisano w temacie [Brak załadowania dodatków z powodu ustawień zasad grupy dla programów Office 2013 i Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
+Po zainstalowaniu klienta usługi AIP w celu rozszerzenia etykietowania poza aplikacje pakietu Office, ale chcesz uniemożliwić ładowanie dodatku klienta w aplikacjach pakietu Office, użyj ustawienia zasady grupy **Lista zarządzanych dodatków**, jak opisano w temacie [Brak załadowania dodatków z powodu ustawień zasad grupy dla programów pakietu Office 2013 i Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
-W przypadku aplikacji Windows Office, które obsługują wbudowane etykietowanie, użyj konfiguracji dla Microsoft Word 2016 r., Excel 2016, PowerPoint 2016 i Outlook 2016, określ następujące identyfikatory programowe (ProgID) dla klienta usługi AIP i ustaw opcję na **0: Dodatek jest zawsze wyłączony (zablokowany)**
+W przypadku aplikacji pakietu Windows Office, które obsługują wbudowane etykietowanie, użyj konfiguracji programu Microsoft Word 2016, Excel 2016, PowerPoint 2016 i Outlook 2016, określ następujące identyfikatory programowe (ProgID) dla klienta usługi AIP i ustaw opcję **na 0: Dodatek jest zawsze wyłączony (zablokowany)**
 
 |Aplikacja  |Progid  |
 |---------|---------|
@@ -103,25 +103,25 @@ W przypadku aplikacji Windows Office, które obsługują wbudowane etykietowanie
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-Wdróż to ustawienie przy użyciu zasady grupy lub przy użyciu [usługi zasad w chmurze Office](/DeployOffice/overview-office-cloud-policy-service).
+Wdróż to ustawienie przy użyciu zasady grupy lub za pomocą [usługi zasad w chmurze pakietu Office](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!IMPORTANT]
-> Jeśli używasz ustawienia zasady grupy **Użyj funkcji poufności w Office, aby zastosować i wyświetlić etykiety poufności** i ustawić tę wartość na **1**, w niektórych sytuacjach dodatek AIP może nadal ładować się w aplikacjach Office. Blokowanie ładowania dodatku w każdej aplikacji zapobiega temu.
+> Jeśli używasz ustawienia zasady grupy **Użyj funkcji poufności w pakiecie Office, aby zastosować i wyświetlić etykiety poufności** i ustawić tę wartość na **1**, istnieją sytuacje, w których dodatek AIP może nadal ładować się w aplikacjach pakietu Office. Blokowanie ładowania dodatku w każdej aplikacji zapobiega temu.
 
-Możesz też interaktywnie wyłączyć lub usunąć **dodatek Microsoft Azure Information Protection** Office z programu Word, Excel, PowerPoint i Outlook. Ta metoda jest odpowiednia dla pojedynczego komputera i testowania ad hoc. Aby uzyskać instrukcje, zobacz [Wyświetlanie dodatków, zarządzanie nimi i instalowanie ich w programach Office](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d).
+Alternatywnie możesz interaktywnie wyłączyć lub usunąć dodatek **Microsoft Azure Information Protection** Office z programów Word, Excel, PowerPoint i Outlook. Ta metoda jest odpowiednia dla pojedynczego komputera i testowania ad hoc. Aby uzyskać instrukcje, zobacz [Wyświetlanie dodatków, zarządzanie nimi i instalowanie ich w programach pakietu Office](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d).
 
-Niezależnie od wybranej metody zmiany zostaną wprowadzone po ponownym uruchomieniu aplikacji Office.
+Niezależnie od wybranej metody zmiany zostaną wprowadzone po ponownym uruchomieniu aplikacji pakietu Office.
 
 > [!NOTE]
-> Wbudowane etykiety wymagają wersji subskrypcji Office aplikacji. Jeśli masz autonomiczne wersje Office, czasami nazywane "Office Perpetual", zalecamy uaktualnienie do Aplikacje Microsoft 365, aby Enterprise korzystać z [najnowszych możliwości etykietowania](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+> Wbudowane etykiety wymagają wersji subskrypcji aplikacji pakietu Office. Jeśli masz autonomiczne wersje pakietu Office, czasami nazywane "Office Perpetual", zalecamy uaktualnienie do Aplikacje Microsoft 365 dla przedsiębiorstw, aby korzystać z [najnowszych możliwości etykietowania](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-Pamiętaj, że jeśli ta metoda jest używana do wyłączania dodatku AIP, nadal możesz użyć klienta usługi AIP, aby rozszerzyć etykietowanie poza aplikacje Office.
+Pamiętaj, że jeśli ta metoda jest używana do wyłączania dodatku usługi AIP, nadal możesz użyć klienta usługi AIP, aby rozszerzyć etykietowanie poza aplikacje pakietu Office.
 
-## <a name="feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps"></a>Parzystość funkcji na potrzeby wbudowanego etykietowania i dodatku AIP dla aplikacji Office
+## <a name="feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps"></a>Parzystość funkcji na potrzeby wbudowanego etykietowania i dodatku AIP dla aplikacji pakietu Office
 
-Wiele funkcji etykietowania obsługiwanych przez dodatek AIP jest teraz obsługiwanych przez wbudowane etykietowanie. Aby uzyskać bardziej szczegółową listę możliwości, minimalne wersje, które mogą być potrzebne, i informacje o konfiguracji, zobacz [Zarządzanie etykietami poufności w aplikacjach Office](sensitivity-labels-office-apps.md).
+Wiele funkcji etykietowania obsługiwanych przez dodatek AIP jest teraz obsługiwanych przez wbudowane etykietowanie. Aby uzyskać bardziej szczegółową listę możliwości, minimalne wersje, które mogą być potrzebne, i informacje o konfiguracji, zobacz [Zarządzanie etykietami poufności w aplikacjach pakietu Office](sensitivity-labels-office-apps.md).
 
-Planowane i opracowywane są dodatkowe funkcje. Jeśli interesuje Cię konkretna funkcja, sprawdź [plan Microsoft 365](https://aka.ms/MIPC/Roadmap) i rozważ dołączenie do [Information Protection firmy Microsoft w Office prywatnej wersji zapoznawczej](https://aka.ms/MIP/PreviewRing).
+Planowane i opracowywane są dodatkowe funkcje. Jeśli interesuje Cię konkretna funkcja, sprawdź [plan platformy Microsoft 365](https://aka.ms/MIPC/Roadmap) i rozważ dołączenie do [Microsoft Information Protection w prywatnej wersji zapoznawczej pakietu Office](https://aka.ms/MIP/PreviewRing).
 
 Skorzystaj z poniższych informacji, aby określić, czy używasz funkcji z dodatku usługi AIP, która nie jest jeszcze obsługiwana przez wbudowane etykietowanie:
 
@@ -130,8 +130,8 @@ Skorzystaj z poniższych informacji, aby określić, czy używasz funkcji z doda
 |**Kategoria: Ogólne** ||
 |Centralne raportowanie i inspekcja|![Obsługiwane.](../media/yes-icon.png) <br>[Dowiedz się więcej](sensitivity-labels-office-apps.md#auditing-labeling-activities) |
 |Chmura dla instytucji rządowych|![Obsługiwane.](../media/yes-icon.png)|
-|Administrator może wyłączyć etykietowanie <br> — Wszystkie aplikacje|  ![Obsługiwane.](../media/yes-icon.png) <br>[Dowiedz się więcej](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
-|Administrator może wyłączyć etykietowanie <br> — Na aplikację|  W planowaniu lub opracowywaniu|
+|Administracja można wyłączyć etykietowanie <br> — Wszystkie aplikacje|  ![Obsługiwane.](../media/yes-icon.png) <br>[Dowiedz się więcej](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
+|Administracja można wyłączyć etykietowanie <br> — Na aplikację|  W planowaniu lub opracowywaniu|
 |**Kategoria: Środowisko użytkownika** ||
 |Przycisk etykietowania na wstążce|![Obsługiwane.](../media/yes-icon.png)|
 |Obsługa wielu języków dla nazw etykiet i etykietek narzędzi| ![Obsługiwane.](../media/yes-icon.png) <br>[Dowiedz się więcej](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages) |
@@ -148,9 +148,9 @@ Skorzystaj z poniższych informacji, aby określić, czy używasz funkcji z doda
 |Oznaczenia dynamiczne| ![Obsługiwane.](../media/yes-icon.png) <br>[Dowiedz się więcej](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)|
 |Oznaczanie wizualizacji dla aplikacji| ![Obsługiwane.](../media/yes-icon.png) <br>[Dowiedz się więcej](sensitivity-labels-office-apps.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)|
 | **Kategoria: Szyfrowanie** | |
-|Uprawnienia zdefiniowane przez administratora | ![Obsługiwane.](../media/yes-icon.png) <br>[Dowiedz się więcej](encryption-sensitivity-labels.md#assign-permissions-now) |
-|Uprawnienia zdefiniowane przez użytkownika <br> — Nie przekazuj dalej dla Outlook <br> — Uprawnienia niestandardowe użytkownika i grupy dla programu Word, Excel, PowerPoint| ![Obsługiwane.](../media/yes-icon.png) <br>[Dowiedz się więcej](encryption-sensitivity-labels.md#let-users-assign-permissions)|
-|Uprawnienia zdefiniowane przez użytkownika <br> — Uprawnienia niestandardowe dla całej organizacji przez określenie domen dla programu Word, Excel, PowerPoint | W planowaniu lub opracowywaniu |
+|uprawnienia zdefiniowane Administracja | ![Obsługiwane.](../media/yes-icon.png) <br>[Dowiedz się więcej](encryption-sensitivity-labels.md#assign-permissions-now) |
+|Uprawnienia zdefiniowane przez użytkownika <br> — Nie przekazuj dalej dla programu Outlook <br> — Uprawnienia niestandardowe użytkownika i grupy dla programów Word, Excel, PowerPoint| ![Obsługiwane.](../media/yes-icon.png) <br>[Dowiedz się więcej](encryption-sensitivity-labels.md#let-users-assign-permissions)|
+|Uprawnienia zdefiniowane przez użytkownika <br> — Uprawnienia niestandardowe dla całej organizacji przez określenie domen dla programów Word, Excel, PowerPoint | W planowaniu lub opracowywaniu |
 |Współtwoerowanie i automatyczne zapisywanie | ![Obsługiwane.](../media/yes-icon.png) <br>[Dowiedz się więcej](sensitivity-labels-coauthoring.md) |
 |Szyfrowanie podwójnym kluczem | W planowaniu lub opracowywaniu |
 |Odwoływanie dokumentów dla użytkowników | W trakcie przeglądu |
@@ -160,27 +160,28 @@ Skorzystaj z poniższych informacji, aby określić, czy używasz funkcji z doda
 
 Klient usługi AIP obsługuje wiele dostosowań przy użyciu [zaawansowanych ustawień programu PowerShell](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell). Niektóre z tych ustawień zaawansowanych są teraz obsługiwane przez wbudowane etykietowanie, jak opisano w artykule [New-Label](/powershell/module/exchange/new-label) lub [Set-Label](/powershell/module/exchange/set-label) oraz [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) lub [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy).
 
-Może się jednak okazać, że nie trzeba używać programu PowerShell do konfigurowania obsługiwanych ustawień, ponieważ są one uwzględnione w standardowej konfiguracji w portalu zgodności usługi Microsoft Purview. Na przykład możliwość wyłączenia obowiązkowego etykietowania dla Outlook i ustawienia innej etykiety domyślnej.
+Może się jednak okazać, że nie trzeba używać programu PowerShell do konfigurowania obsługiwanych ustawień, ponieważ są one uwzględnione w standardowej konfiguracji z portal zgodności Microsoft Purview. Na przykład możliwość wyłączenia obowiązkowego etykietowania dla programu Outlook i ustawienia innej etykiety domyślnej.
 
 Następujące konfiguracje z dodatku usługi AIP nie są jeszcze obsługiwane przez wbudowane etykietowanie:
 
 - [Dziedziczenie etykiet z załączników wiadomości e-mail](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
-- [Protokół S/MIME dla Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configure-a-label-to-apply-smime-protection-in-outlook)
-- [Nadmierne dzielenie komunikatów podręcznych dla Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
+- [Protokół S/MIME dla programu Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configure-a-label-to-apply-smime-protection-in-outlook)
+    - To ustawienie zaczyna być [wdrażane w wersji zapoznawczej na potrzeby wbudowanego etykietowania](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook)
+- [Nadmierne współdzielenie komunikatów podręcznych dla programu Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
 - [Domyślny etykieta podrzędna etykiety nadrzędnej](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#specify-a-default-sublabel-for-a-parent-label)
 - [Usuwanie oznaczeń zawartości zewnętrznej](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution )
 
-## <a name="features-not-planned-to-be-supported-by-built-in-labeling-for-office-apps"></a>Funkcje, które nie mają być obsługiwane przez wbudowane etykietowanie dla aplikacji Office
+## <a name="features-not-planned-to-be-supported-by-built-in-labeling-for-office-apps"></a>Funkcje, które nie mają być obsługiwane przez wbudowane etykietowanie dla aplikacji pakietu Office
 
-Mimo że nowe możliwości wbudowanego etykietowania są dodawane przez cały czas, dodatek AIP Office obsługuje następujące możliwości, które nie są planowane do udostępnienia w przyszłych wersjach na potrzeby wbudowanego etykietowania:
+Mimo że nowe możliwości wbudowanego etykietowania są dodawane przez cały czas, dodatek pakietu Office AIP obsługuje następujące możliwości, które nie są planowane do udostępnienia w przyszłych wersjach na potrzeby wbudowanego etykietowania:
 
-- Stosowanie etykiet do formatów Microsoft Office 97–2003, takich jak pliki .doc
+- Stosowanie etykiet do formatów pakietu Microsoft Office 97-2003, takich jak pliki .doc
 - Trwale odłączone komputery
-- Autonomiczne wersje Office (czasami nazywane "Office Perpetual"), a nie oparte na subskrypcji
+- Autonomiczne wersje pakietu Office (czasami nazywane "Bezterminowym pakietem Office"), a nie oparte na subskrypcji
 
 ## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać instrukcje dotyczące tworzenia i konfigurowania tych możliwości etykietowania, zobacz [Tworzenie i konfigurowanie etykiet poufności i ich zasad](create-sensitivity-labels.md).
 
 > [!TIP]
-> Jeśli masz już etykiety poufności w portalu zgodności usługi Microsoft Purview, nie będziesz kwalifikować się do automatycznego tworzenia etykiet domyślnych. Jednak nadal warto odwoływać się do ich konfiguracji: [domyślne etykiety poufności](mip-easy-trials.md#default-sensitivity-labels). 
+> Jeśli w portal zgodności Microsoft Purview masz już etykiety poufności, nie będziesz kwalifikować się do automatycznego tworzenia etykiet domyślnych. Jednak nadal warto odwoływać się do ich konfiguracji: [domyślne etykiety poufności](mip-easy-trials.md#default-sensitivity-labels). 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 764d1c84212e240332449a1a107042a83be01b32
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 912254e5827815f796560bc6979856f4545b0ae9
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554363"
+ms.locfileid: "66556817"
 ---
 # <a name="communication-compliance-policies"></a>Zasady zgodności komunikacji
 
@@ -119,7 +119,7 @@ Aby skopiować zasady i utworzyć nowe zasady, wykonaj następujące kroki:
 
 ## <a name="policy-activity-detection"></a>Wykrywanie działań zasad
 
-Komunikacja jest skanowana co godzinę od momentu utworzenia zasad. Jeśli na przykład utworzysz nieodpowiednie zasady zawartości o godzinie 11:00, zasady będą zbierać sygnały zgodności komunikacji co godzinę, począwszy od momentu utworzenia zasad. Edytowanie zasad nie zmienia się tym razem. Aby wyświetlić datę i godzinę ostatniego skanowania zasad, przejdź do kolumny Ostatnie skanowanie zasad na stronie Zasady. Po utworzeniu nowych zasad wyświetlenie daty i godziny pierwszego skanowania zasad może potrwać do godziny. Data i godzina ostatniego skanowania są konwertowane na strefę czasową systemu lokalnego.
+Komunikacja jest skanowana co godzinę od momentu utworzenia zasad. Jeśli na przykład utworzysz nieodpowiednie zasady zawartości o godzinie 11:00, zasady będą zbierać sygnały zgodności komunikacji co godzinę, począwszy od momentu utworzenia zasad. Edytowanie zasad nie zmienia się tym razem. Aby wyświetlić datę i godzinę ostatniego skanowania zasad, przejdź do kolumny *Ostatnie skanowanie zasad* na stronie **Zasady** . Po utworzeniu nowych zasad wyświetlenie daty i godziny pierwszego skanowania zasad może potrwać do godziny. Data i godzina ostatniego skanowania są konwertowane na strefę czasową systemu lokalnego.
 
 W poniższej tabeli przedstawiono czas wykrywania obsługiwanych typów zawartości:
 
@@ -138,7 +138,7 @@ W poniższej tabeli przedstawiono czas wykrywania obsługiwanych typów zawarto�
 
 W przypadku istniejących zasad utworzonych przed 31 lipca 2022 r. wykrywanie komunikatów i przeglądanie alertów zgodnych z tymi zasadami może potrwać do 24 godzin. Aby zmniejszyć opóźnienie tych zasad, [skopiuj istniejące zasady](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) i utwórz nowe zasady na podstawie kopii. Jeśli nie musisz zachowywać żadnych danych ze starszych zasad, można je wstrzymać lub usunąć.
 
-Aby zidentyfikować starsze zasady, przejrzyj kolumnę Ostatnie skanowanie zasad na stronie Zasady. Starsze zasady będą wyświetlać pełną datę skanowania, podczas gdy zasady utworzone po 31 lipca 2022 r. będą wyświetlane 1 godzinę temu na potrzeby skanowania. Inną opcją zmniejszenia opóźnienia jest oczekiwanie do 31 grudnia 2022 r. na automatyczną migrację istniejących zasad do nowych kryteriów wykrywania.
+Aby zidentyfikować starsze zasady, przejrzyj kolumnę *Ostatnie skanowanie zasad* na stronie **Zasady** . Starsze zasady będą wyświetlać pełną datę skanowania, podczas gdy zasady utworzone po 31 lipca 2022 r. będą wyświetlane *1 godzinę temu* na potrzeby skanowania. Inną opcją zmniejszenia opóźnienia jest oczekiwanie do 31 grudnia 2022 r. na automatyczną migrację istniejących zasad do nowych kryteriów wykrywania.
 
 ## <a name="storage-limit-notification-preview"></a>Powiadomienie o limicie magazynu (wersja zapoznawcza)
 

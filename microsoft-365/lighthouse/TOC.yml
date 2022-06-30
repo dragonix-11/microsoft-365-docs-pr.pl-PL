@@ -68,6 +68,8 @@
       href: m365-lighthouse-threat-management-page-overview.md
     - name: Ograniczanie zagrożeń za pomocą programu antywirusowego Microsoft Defender
       href: m365-lighthouse-mitigate-threats.md
+    - name: Omówienie strony Zabezpieczenia urządzenia
+      href: m365-lighthouse-device-security-overview.md
 - name: Uzyskiwanie pomocy i obsługi technicznej
   items:
     - name: Uzyskiwanie pomocy i obsługi technicznej
