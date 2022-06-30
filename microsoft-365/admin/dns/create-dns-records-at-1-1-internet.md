@@ -1,5 +1,5 @@
 ---
-title: Połączenie rekordy DNS w systemie IONOS o 1&1 do Microsoft 365
+title: Łączenie rekordów DNS w usłudze IONOS przez 1&1 z usługą Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Dowiedz się, jak zweryfikować domenę i skonfigurować rekordy DNS dla poczty e-mail, Skype dla firm Online i innych usług pod adresem 1&1 IONOS dla firmy Microsoft.
-ms.openlocfilehash: 8afdfed0998a262b1df4c95a63e9086e4f71e5b6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b9d7474fe0c442670be961a5436558ea168626dc
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780682"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563434"
 ---
-# <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>Połączenie rekordy DNS w systemie IONOS o 1&1 do Microsoft 365
+# <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>Łączenie rekordów DNS w usłudze IONOS przez 1&1 z usługą Microsoft 365
 
  **[Zajrzyj do często zadawanych pytań dotyczących domen](../setup/domains-faq.yml)**, jeśli nie możesz znaleźć szukanych informacji.
 
@@ -39,19 +38,19 @@ Jeśli usługa IONOS by 1&1 jest dostawcą hostingu DNS, wykonaj kroki opisane w
 
 Istnieją dwie opcje konfigurowania rekordów DNS dla domeny:
 
-- [**Użyj Połączenie domeny**](#use-domain-connect-to-verify-and-set-up-your-domain) Jeśli nie skonfigurowano domeny z innym dostawcą usług poczty e-mail, wykonaj kroki Połączenie domeny, aby automatycznie zweryfikować i skonfigurować nową domenę do użycia z Microsoft 365.
+- [**Korzystanie z połączenia z domeną**](#use-domain-connect-to-verify-and-set-up-your-domain) Jeśli domena nie została skonfigurowana z innym dostawcą usług poczty e-mail, wykonaj kroki połączenia z domeną, aby automatycznie zweryfikować i skonfigurować nową domenę do użycia z platformą Microsoft 365.
 
     LUB
 
 - [**Wykonaj kroki ręczne**](#create-dns-records-with-manual-setup) Zweryfikuj domenę, wykonując poniższe kroki ręcznie, i wybierz, kiedy i które rekordy należy dodać do rejestratora domeny. Dzięki temu można skonfigurować nowe rekordy MX (poczty e-mail), na przykład dla Twojej wygody.
 
-## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Weryfikowanie i konfigurowanie domeny przy użyciu Połączenie domeny
+## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Weryfikowanie i konfigurowanie domeny przy użyciu programu Domain Connect
 
-Wykonaj następujące kroki, aby automatycznie zweryfikować i skonfigurować domenę IONOS by 1&1 przy użyciu Microsoft 365:
+Wykonaj następujące kroki, aby automatycznie zweryfikować i skonfigurować domenę IONOS by 1&1 przy użyciu platformy Microsoft 365:
 
-1. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję **Ustawienia** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domeny**</a> i wybierz domenę, którą chcesz skonfigurować.
+1. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję **Ustawienia** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domeny**</a> i wybierz domenę, którą chcesz skonfigurować.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-1.png" alt-text="Wybierz domenę w Microsoft 365.":::
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-1.png" alt-text="Wybierz domenę na platformie Microsoft 365.":::
 
 1. Wybierz trzy kropki (więcej akcji), > wybierz pozycję **Rozpocznij instalację**.
 
@@ -61,15 +60,15 @@ Wykonaj następujące kroki, aby automatycznie zweryfikować i skonfigurować do
 
 1. Na stronie Dodawanie rekordów DNS wybierz pozycję **Dodaj rekordy DNS**.
 
-1. Na stronie logowania IONOS by 1&1 zaloguj się do swojego konta, a następnie wybierz pozycję **Połączenie** i **Zezwalaj**.
+1. Na stronie logowania IONOS by 1&1 zaloguj się do swojego konta, a następnie wybierz pozycję **Połącz** i **Zezwalaj**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="Wybierz pozycję Połączenie, a następnie pozycję Zezwalaj.":::
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="Wybierz pozycję Połącz, a następnie pozycję Zezwalaj.":::
 
-    Spowoduje to ukończenie konfiguracji domeny dla Microsoft 365.
+    Spowoduje to ukończenie konfiguracji domeny dla platformy Microsoft 365.
 
 ## <a name="create-dns-records-with-manual-setup"></a>Tworzenie rekordów DNS z ręczną konfiguracją
 
-Po dodaniu tych rekordów w usłudze IONOS do 1&1 domena zostanie skonfigurowana do pracy z usługi firmy Microsoft.
+Po dodaniu tych rekordów w usłudze IONOS przez 1&1 domena zostanie skonfigurowana do pracy z usługami firmy Microsoft.
 
 > [!CAUTION]
 > Należy pamiętać, że protokół IONOS by 1&1 nie zezwala domenie na posiadanie zarówno rekordu MX, jak i rekordu CNAME automatycznego wykrywania najwyższego poziomu. Ogranicza to sposoby konfigurowania Exchange Online dla firmy Microsoft. Istnieje obejście problemu, ale zalecamy zastosowanie go **tylko** wtedy, gdy masz już doświadczenie w tworzeniu domen podrzędnych w usłudze IONOS przez 1&1.
@@ -115,17 +114,17 @@ Przed użyciem domeny z firmą Microsoft musimy upewnić się, że jesteś jej w
 
     Przed kontynuowaniem poczekaj kilka minut na zaktualizowanie utworzonego właśnie rekordu w Internecie.
 
-Po dodaniu rekordu w witrynie rejestratora domen wrócisz do Microsoft 365 i zażądasz Microsoft 365 w celu wyszukania rekordu. Gdy firma Microsoft znajdzie właściwy rekord TXT, domena zostanie zweryfikowana.
+Po dodaniu rekordu w witrynie rejestratora domen wrócisz do platformy Microsoft 365 i poprosisz firmę Microsoft 365 o wyszukanie rekordu. Gdy firma Microsoft znajdzie właściwy rekord TXT, domena zostanie zweryfikowana.
 
-Aby zweryfikować rekord w Microsoft 365:
+Aby zweryfikować rekord w usłudze Microsoft 365:
 
-1. W centrum administracyjnym przejdź do **obszaru domeny Ustawienia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**.**</a>
+1. W centrum administracyjnym przejdź do obszaru **Domeny ustawień**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. Na stronie Domeny wybierz domenę, którą weryfikujesz, a następnie wybierz pozycję **Rozpocznij konfigurację**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Wybierz pozycję Rozpocznij konfigurację.":::
 
-1. Wybierz pozycję **Kontynuuj**.
+1. Naciśnij przycisk **Kontynuuj**.
 
 1. Na stronie **Weryfikowanie domeny** wybierz pozycję **Weryfikuj**.
 
@@ -219,7 +218,7 @@ Aby zweryfikować rekord w Microsoft 365:
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Dodawanie rekordu TXT SPF w celu zapobiegania spamowi w wiadomościach e-mail
 
 > [!IMPORTANT]
-> Nie można mieć więcej niż jednego rekordu TXT na rekord SPF dla domeny. Jeśli domena ma więcej niż jeden rekord SPF, może to spowodować błędy poczty e-mail, a także problemy z dostarczaniem i klasyfikacją spamu. Jeśli masz już rekord SPF dla swojej domeny, nie twórz nowego rekordu dla firmy Microsoft. Zamiast tego dodaj wymagane wartości firmy Microsoft do bieżącego rekordu, aby mieć  *jeden*  rekord SPF zawierający oba zestawy wartości. Potrzebujesz przykładów? Zapoznaj się z tymi [rekordami systemu nazw domen zewnętrznych dla firmy Microsoft](../../enterprise/external-domain-name-system-records.md). Aby zweryfikować rekord SPF, możesz użyć jednego z tych [narzędzi weryfikacjiSPF](../setup/domains-faq.yml).
+> Nie można mieć więcej niż jednego rekordu TXT na rekord SPF dla domeny. Jeśli domena ma więcej niż jeden rekord SPF, może to spowodować błędy poczty e-mail, a także problemy z dostarczaniem i klasyfikacją spamu. Jeśli masz już rekord SPF dla swojej domeny, nie twórz nowego rekordu dla firmy Microsoft. Zamiast tego dodaj wymagane wartości firmy Microsoft do bieżącego rekordu, aby mieć  *jeden*  rekord SPF zawierający oba zestawy wartości. Potrzebujesz przykładów? Zapoznaj się z tymi [rekordami systemu nazw domen zewnętrznych dla firmy Microsoft](../../enterprise/external-domain-name-system-records.md). Aby zweryfikować rekord SPF, możesz użyć jednego z tych[narzędzi weryfikacji SPF](../setup/domains-faq.yml).
 
 > [!NOTE]
 > Jeśli zarejestrowano się w 1und1.de, [zaloguj się tutaj](https://go.microsoft.com/fwlink/?linkid=859152).
@@ -254,7 +253,7 @@ Aby zweryfikować rekord w Microsoft 365:
 
 ## <a name="advanced-option-skype-for-business"></a>Opcja zaawansowana: Skype dla firm
 
-Tę opcję należy wybrać tylko wtedy, gdy organizacja używa Skype dla firm dla usług komunikacji online, takich jak czat, połączenia konferencyjne i połączenia wideo, oprócz Microsoft Teams. Skype wymaga 4 rekordów: 2 rekordy SRV do komunikacji między użytkownikami i 2 rekordy CNAME, aby zalogować się i połączyć użytkowników z usługą.
+Tę opcję należy wybrać tylko wtedy, gdy organizacja używa Skype dla firm dla usług komunikacji online, takich jak czat, połączenia konferencyjne i połączenia wideo, oprócz usługi Microsoft Teams. Skype potrzebuje 4 rekordów: 2 rekordy SRV do komunikacji między użytkownikami i 2 rekordy CNAME, aby zalogować się i połączyć użytkowników z usługą.
 
 ### <a name="add-two-additional-cname-records"></a>Dodawanie dwóch dodatkowych rekordów CNAME
 
@@ -361,7 +360,7 @@ Tę opcję należy wybrać tylko wtedy, gdy organizacja używa Skype dla firm dl
 > [!NOTE]
 > Wprowadzenie zmian w systemie DNS trwa zwykle około 15 minut. Jednak czasem aktualizacja internetowego systemu DNS może potrwać dłużej. Jeśli masz problemy z przepływem poczty lub inne problemy po dodaniu rekordów DNS, zobacz [Znajdowanie i rozwiązywanie problemów po dodaniu domeny lub rekordów DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opcja zaawansowana: Intune i mobile Zarządzanie urządzeniami dla Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opcja zaawansowana: Intune i mobile Zarządzanie urządzeniami dla platformy Microsoft 365
 
 Ta usługa ułatwia zabezpieczanie i zdalne zarządzanie urządzeniami przenośnymi łączącymi się z domeną. Usługa Mobile Zarządzanie urządzeniami wymaga 2 rekordów CNAME, aby użytkownicy mogli rejestrować urządzenia w usłudze.
 

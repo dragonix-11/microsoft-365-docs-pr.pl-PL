@@ -1,5 +1,5 @@
 ---
-title: Połączenie rekordy DNS w usłudze Network Solutions, aby Microsoft 365
+title: Łączenie rekordów DNS w usłudze Network Solutions z platformą Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +21,20 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Dowiedz się, jak zweryfikować domenę i skonfigurować rekordy DNS dla poczty e-mail, Skype dla firm Online i innych usług w usłudze Network Solutions dla firmy Microsoft.
-ms.openlocfilehash: 87026bfbbae7398c774bf083e0df8d2c228c7560
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 6ebe81c17d02c0cc6126f75f3b6471e01a334db4
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780324"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563280"
 ---
-# <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>Połączenie rekordy DNS w usłudze Network Solutions, aby Microsoft 365
+# <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>Łączenie rekordów DNS w usłudze Network Solutions z platformą Microsoft 365
 
  **[Zajrzyj do często zadawanych pytań dotyczących domen](../setup/domains-faq.yml)**, jeśli nie możesz znaleźć szukanych informacji.
 
 Jeśli witryna Network Solutions jest Twoim dostawcą hostingu DNS, wykonaj czynności opisane w tym artykule, aby zweryfikować domenę i skonfigurować rekordy DNS dla poczty e-mail, usługi Skype dla firm Online i tym podobne.
 
-Po dodaniu tych rekordów w usłudze Network Solutions domena zostanie skonfigurowana do pracy z usługi firmy Microsoft.
+Po dodaniu tych rekordów w usłudze Network Solutions domena zostanie skonfigurowana do pracy z usługami firmy Microsoft.
 
 > [!NOTE]
 > Wprowadzenie zmian w systemie DNS trwa zwykle około 15 minut. Jednak czasem aktualizacja internetowego systemu DNS może potrwać dłużej. Jeśli po dodaniu rekordów DNS występują problemy z przepływem poczty e-mail lub inne, zobacz [Rozwiązywanie problemów po zmianie nazwy domeny lub rekordów DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -86,15 +85,15 @@ Przed użyciem domeny z firmą Microsoft musimy upewnić się, że jesteś jej w
 
 Po dodaniu rekordu w witrynie rejestratora domen wrócisz do firmy Microsoft i zażądasz rekordu. Gdy firma Microsoft znajdzie właściwy rekord TXT, domena zostanie zweryfikowana.
 
-Aby zweryfikować rekord w Microsoft 365:
+Aby zweryfikować rekord w usłudze Microsoft 365:
 
-1. W centrum administracyjnym przejdź do **obszaru domeny Ustawienia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**.**</a>
+1. W centrum administracyjnym przejdź do obszaru **Domeny ustawień**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. Na stronie Domeny wybierz domenę, którą weryfikujesz, a następnie wybierz pozycję **Rozpocznij konfigurację**.
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Wybierz pozycję Rozpocznij konfigurację.":::
 
-1. Wybierz pozycję **Kontynuuj**.
+1. Naciśnij przycisk **Kontynuuj**.
 
 1. Na stronie **Weryfikowanie domeny** wybierz pozycję **Weryfikuj**.
 
@@ -225,7 +224,7 @@ Aby zweryfikować rekord w Microsoft 365:
 
 ## <a name="advanced-option-skype-for-business"></a>Opcja zaawansowana: Skype dla firm
 
-Tę opcję należy wybrać tylko wtedy, gdy organizacja używa Skype dla firm dla usług komunikacji online, takich jak czat, połączenia konferencyjne i połączenia wideo, oprócz Microsoft Teams. Skype wymaga 4 rekordów: 2 rekordy SRV do komunikacji między użytkownikami i 2 rekordy CNAME, aby zalogować się i połączyć użytkowników z usługą.
+Tę opcję należy wybrać tylko wtedy, gdy organizacja używa Skype dla firm dla usług komunikacji online, takich jak czat, połączenia konferencyjne i połączenia wideo, oprócz usługi Microsoft Teams. Skype potrzebuje 4 rekordów: 2 rekordy SRV do komunikacji między użytkownikami i 2 rekordy CNAME, aby zalogować się i połączyć użytkowników z usługą.
 
 ### <a name="add-the-two-required-srv-records"></a>Dodawanie dwóch wymaganych rekordów SRV
 
@@ -319,7 +318,7 @@ Tę opcję należy wybrać tylko wtedy, gdy organizacja używa Skype dla firm dl
 > [!NOTE]
 > Wprowadzenie zmian w systemie DNS trwa zwykle około 15 minut. Jednak czasem aktualizacja internetowego systemu DNS może potrwać dłużej. Jeśli po dodaniu rekordów DNS występują problemy z przepływem poczty e-mail lub inne, zobacz [Rozwiązywanie problemów po zmianie nazwy domeny lub rekordów DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opcja zaawansowana: Intune i mobile Zarządzanie urządzeniami dla Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opcja zaawansowana: Intune i mobile Zarządzanie urządzeniami dla platformy Microsoft 365
 
 Ta usługa ułatwia zabezpieczanie i zdalne zarządzanie urządzeniami przenośnymi łączącymi się z domeną. Usługa Mobile Zarządzanie urządzeniami wymaga 2 rekordów CNAME, aby użytkownicy mogli rejestrować urządzenia w usłudze.
 

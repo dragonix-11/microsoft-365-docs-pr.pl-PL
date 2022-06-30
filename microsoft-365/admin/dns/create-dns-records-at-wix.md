@@ -1,5 +1,5 @@
 ---
-title: Połączenie rekordy DNS w systemie Wix do Microsoft 365
+title: Łączenie rekordów DNS w usłudze Wix z platformą Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +21,20 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Dowiedz się, jak zweryfikować domenę i skonfigurować rekordy DNS dla poczty e-mail, Skype dla firm Online i innych usług w aplikacji Wix for Microsoft.
-ms.openlocfilehash: 58d7819e006183a35272811ed791d3236f9fc742
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 9ae245481173b99a9cb1221ed0650dc0b91feecd
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780325"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563192"
 ---
-# <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>Połączenie rekordy DNS w systemie Wix do Microsoft 365
+# <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>Łączenie rekordów DNS w usłudze Wix z platformą Microsoft 365
 
 **[Zajrzyj do często zadawanych pytań dotyczących domen](../setup/domains-faq.yml)**, jeśli nie możesz znaleźć szukanych informacji.
 
 Jeśli Wix jest dostawcą hostingu DNS, wykonaj kroki opisane w tym artykule, aby zweryfikować domenę i skonfigurować rekordy DNS dla poczty e-mail, Skype dla firm Online itd.
 
-Po dodaniu tych rekordów w programie Wix domena zostanie skonfigurowana do pracy z usługi firmy Microsoft.
+Po dodaniu tych rekordów w aplikacji Wix domena zostanie skonfigurowana do pracy z usługami firmy Microsoft.
 
 > [!NOTE]
 > Wprowadzenie zmian w systemie DNS trwa zwykle około 15 minut. Jednak czasem aktualizacja internetowego systemu DNS może potrwać dłużej. Jeśli po dodaniu rekordów DNS występują problemy z przepływem poczty e-mail lub inne, zobacz [Rozwiązywanie problemów po zmianie nazwy domeny lub rekordów DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -64,9 +63,9 @@ Przed użyciem domeny z firmą Microsoft musimy upewnić się, że jesteś jej w
 
    |Nazwa hosta|Wartość TXT|Czas wygaśnięcia|
    |---|---|---|
-   |Automatycznie wypełnione (pozostaw puste)|MS=*msXXXXXXXXXX* <br/> **Uwaga:** Jest to przykład. W tym miejscu użyj określonej wartości **Destination (Miejsce docelowe) lub Points to Address (Punkty do adresu** ) z tabeli . [Jak to znaleźć?](../get-help-with-domains/information-for-dns-records.md)|1 godzina|
+   |Automatycznie wypełnione (pozostaw puste)|MS=ms *XXXXXXXXXX* <br/> **Uwaga:** Jest to przykład. W tym miejscu użyj określonej wartości **Destination (Miejsce docelowe) lub Points to Address (Punkty do adresu** ) z tabeli . [Jak to znaleźć?](../get-help-with-domains/information-for-dns-records.md)|1 godzina|
 
-5. Wybierz **pozycjęZapisz**.
+5. Wybierz pozycję **Zapisz**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-txt-save.png" alt-text="Wybierz pozycję Zapisz.":::
 
@@ -75,15 +74,15 @@ Przed użyciem domeny z firmą Microsoft musimy upewnić się, że jesteś jej w
 
 Po dodaniu rekordu w witrynie rejestratora domen wrócisz do firmy Microsoft i zażądasz rekordu. Gdy firma Microsoft znajdzie właściwy rekord TXT, domena zostanie zweryfikowana.
 
-Aby zweryfikować rekord w Microsoft 365:
+Aby zweryfikować rekord w usłudze Microsoft 365:
 
-1. W centrum administracyjnym przejdź do **obszaru domeny Ustawienia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**.**</a>
+1. W centrum administracyjnym przejdź do obszaru **Domeny ustawień**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. Na stronie Domeny wybierz domenę, którą weryfikujesz, a następnie wybierz pozycję **Rozpocznij konfigurację**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Wybierz pozycję Rozpocznij konfigurację.":::
 
-1. Wybierz pozycję **Kontynuuj**.
+1. Naciśnij przycisk **Kontynuuj**.
 
 1. Na stronie **Weryfikowanie domeny** wybierz pozycję **Weryfikuj**.
 
@@ -173,7 +172,7 @@ Aby zweryfikować rekord w Microsoft 365:
 
 ## <a name="advanced-option-skype-for-business"></a>Opcja zaawansowana: Skype dla firm
 
-Tę opcję należy wybrać tylko wtedy, gdy organizacja używa Skype dla firm dla usług komunikacji online, takich jak czat, połączenia konferencyjne i połączenia wideo, oprócz Microsoft Teams. Skype potrzebuje czterech rekordów: dwóch rekordów SRV na potrzeby komunikacji między użytkownikami i dwóch rekordów CNAME, aby zalogować się i połączyć użytkowników z usługą.
+Tę opcję należy wybrać tylko wtedy, gdy organizacja używa Skype dla firm dla usług komunikacji online, takich jak czat, połączenia konferencyjne i połączenia wideo, oprócz usługi Microsoft Teams. Skype potrzebuje czterech rekordów: dwóch rekordów SRV na potrzeby komunikacji między użytkownikami i dwóch rekordów CNAME, aby zalogować się i połączyć użytkowników z usługą.
 
 ### <a name="add-the-two-required-srv-records"></a>Dodawanie dwóch wymaganych rekordów SRV
 
@@ -221,7 +220,7 @@ Tę opcję należy wybrać tylko wtedy, gdy organizacja używa Skype dla firm dl
 > [!NOTE]
 > Wprowadzenie zmian w systemie DNS trwa zwykle około 15 minut. Jednak czasem aktualizacja internetowego systemu DNS może potrwać dłużej. Jeśli po dodaniu rekordów DNS występują problemy z przepływem poczty e-mail lub inne, zobacz [Rozwiązywanie problemów po zmianie nazwy domeny lub rekordów DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opcja zaawansowana: Intune i mobile Zarządzanie urządzeniami dla Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opcja zaawansowana: Intune i mobile Zarządzanie urządzeniami dla platformy Microsoft 365
 
 Ta usługa ułatwia zabezpieczanie i zdalne zarządzanie urządzeniami przenośnymi łączącymi się z domeną. Usługa Mobile Zarządzanie urządzeniami wymaga dwóch rekordów CNAME, aby użytkownicy mogli rejestrować urządzenia w usłudze.
 
