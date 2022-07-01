@@ -21,14 +21,14 @@ ms.custom:
 search.appverid: MET150
 description: Dowiedz się, jak zaktualizować adresy rozliczeniowe lub adres e-mail używany do odbierania powiadomień o rozliczeniach dla platformy Microsoft 365 dla firm.
 ms.date: 01/24/2022
-ms.openlocfilehash: 3c03315612b4f3a65dc39d2dcabee639bc578edd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3421cdfa1951d4bcde91d8b0eb97612054980ced
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322271"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493380"
 ---
-# <a name="change-your-billing-addresses"></a>Zmienianie adresów rozliczeniowych
+# <a name="change-your-microsoft-365-for-business-billing-addresses"></a>Zmienianie adresów rozliczeniowych platformy Microsoft 365 dla firm
 
 Rachunek lub faktura zawiera trzy adresy:
   
