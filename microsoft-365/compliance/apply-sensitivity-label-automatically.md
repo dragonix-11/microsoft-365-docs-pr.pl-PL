@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Podczas tworzenia etykiety poufności możesz automatycznie przypisywać etykietę do plików i wiadomości e-mail lub monitować użytkowników o wybranie zalecanej etykiety.
-ms.openlocfilehash: 2726a55b05ff27caee3c9739ad9d8604ce1a29d6
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: 79c0ac8873ba23604f394340bb030c1412a6212a
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556928"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574249"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatyczne stosowanie etykiety poufności do zawartości
 
@@ -30,7 +30,7 @@ ms.locfileid: "66556928"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-> [!TIP]
+> [!NOTE]
 > Aby uzyskać informacje na temat automatycznego stosowania etykiety poufności na mapie danych, zobacz [Etykietowanie w Mapa danych w Microsoft Purview](/azure/purview/create-sensitivity-label).
 
 Podczas tworzenia etykiety poufności można automatycznie przypisywać tę etykietę do plików i wiadomości e-mail, gdy jest ona zgodna z określonymi warunkami.
@@ -79,6 +79,12 @@ Istnieją dwie różne metody automatycznego stosowania etykiety poufności do z
     - Przychodząca wiadomość e-mail jest oznaczona etykietą w przypadku dopasowania do warunków automatycznego etykietowania. Jeśli ta etykieta jest skonfigurowana pod kątem [szyfrowania](encryption-sensitivity-labels.md), to szyfrowanie jest zawsze stosowane, gdy nadawca pochodzi z organizacji. Domyślnie szyfrowanie nie jest stosowane, gdy nadawca znajduje się poza organizacją, ale można je zastosować, konfigurując **dodatkowe ustawienia poczty e-mail** i określając właściciela usługi Rights Management.
     - Gdy etykieta stosuje szyfrowanie, [wystawca usługi Rights Management i właściciel usługi Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) to osoba, która wysyła wiadomość e-mail, gdy nadawca pochodzi z własnej organizacji. Gdy nadawca znajduje się poza organizacją, możesz określić właściciela usługi Rights Management dla przychodzącej wiadomości e-mail, która jest oznaczona etykietą i szyfrowana przez zasady.
     - Jeśli etykieta jest skonfigurowana do stosowania [oznaczeń dynamicznych](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), należy pamiętać, że w przypadku przychodzącej poczty e-mail ta konfiguracja może spowodować wyświetlenie nazwisk osób spoza organizacji.
+
+> [!TIP]
+> W przypadku niektórych nowych klientów oferujemy automatyczną konfigurację domyślnych ustawień automatycznego etykietowania dla etykietowania po stronie klienta i etykietowania po stronie usługi. Nawet jeśli nie kwalifikujesz się do tej konfiguracji automatycznej, może okazać się przydatne odwołanie do ich konfiguracji. Można na przykład ręcznie skonfigurować istniejące etykiety i utworzyć własne zasady automatycznego etykietowania z tymi samymi ustawieniami, aby przyspieszyć wdrażanie etykietowania.
+> 
+> Aby uzyskać więcej informacji, zobacz [Domyślne etykiety i zasady dla Microsoft Purview Information Protection](mip-easy-trials.md).
+
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Porównanie automatycznego etykietowania dla aplikacji pakietu Office z zasadami automatycznego etykietowania
 

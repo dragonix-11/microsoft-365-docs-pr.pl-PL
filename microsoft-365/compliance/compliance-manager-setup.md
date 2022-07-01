@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie za pomocą programu Microsoft Purview Compliance Manager
+title: Wprowadzenie do programu Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ustaw uprawnienia i role użytkownika programu Microsoft Purview Compliance Manager oraz skonfiguruj automatyczne testowanie akcji. Zarządzanie historią użytkowników i filtrowanie widoku pulpitu nawigacyjnego.
-ms.openlocfilehash: c7920a9eac06128f3cf9bfb54645a83296ca7e53
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 76126f9a13716e3ebf48309f8129de6ede4d11e9
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091032"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574052"
 ---
 # <a name="get-started-with-compliance-manager"></a>Wprowadzenie do Menedżera zgodności
 
@@ -31,17 +31,17 @@ ms.locfileid: "65091032"
 
 **W tym artykule:** Ten artykuł ułatwia skonfigurowanie Menedżera zgodności. Dowiedz się, jak **uzyskać dostęp** do Menedżera zgodności, **ustawić role i uprawnienia oraz** skonfigurować **automatyczne testowanie akcji poprawy**. Zapoznaj **się z pulpitem nawigacyjnym programu Compliance Manager** i zapoznaj się ze stronami głównymi: stroną akcji poprawy, stroną rozwiązań, stroną ocen i stroną szablonów oceny.
 
-## <a name="who-can-access-compliance-manager"></a>KtoTo może uzyskać dostęp do Menedżera zgodności
+## <a name="who-can-access-compliance-manager"></a>Kto może uzyskać dostęp do Menedżera zgodności
 
-Menedżer zgodności jest dostępny dla organizacji z licencjami Office 365 i Microsoft 365 oraz dla klientów us Government Community Cloud (GCC) Moderate, GCC High i Department of Defense (DoD). Dostępność oceny i możliwości zarządzania zależą od umowy licencyjnej.  [Wyświetl szczegóły opisu usługi](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+Menedżer zgodności jest dostępny dla organizacji z licencjami Office 365 i Microsoft 365 oraz dla klientów z usługami Us Government Community Cloud (GCC) Moderate, GCC High i Department of Defense (DoD). Dostępność oceny i możliwości zarządzania zależą od umowy licencyjnej.  [Wyświetl szczegóły opisu usługi](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Administrator globalny Microsoft 365 w twojej organizacji będzie prawdopodobnie pierwszym użytkownikiem, który uzyska dostęp do Menedżera zgodności. Zalecamy zalogowanie się administratora globalnego i ustawienie uprawnień użytkownika zgodnie z poniższym opisem podczas pierwszego wizyty w Menedżerze zgodności.
+Administrator globalny usługi Microsoft 365 w twojej organizacji będzie prawdopodobnie pierwszym użytkownikiem, który uzyska dostęp do Menedżera zgodności. Zalecamy zalogowanie się administratora globalnego i ustawienie uprawnień użytkownika zgodnie z poniższym opisem podczas pierwszego wizyty w Menedżerze zgodności.
 
 ## <a name="sign-in"></a>Logowanie się
 
-1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> i **zaloguj się** przy użyciu konta administratora globalnego Microsoft 365.
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a> i **zaloguj się** przy użyciu konta administratora globalnego platformy Microsoft 365.
 2. Wybierz pozycję **Menedżer zgodności** w okienku nawigacji po lewej stronie. Zostanie wyświetlony [pulpit nawigacyjny programu Compliance Manager](#understand-the-compliance-manager-dashboard).
 
 Bezpośredni link umożliwiający dostęp do Menedżera zgodności to [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager).
@@ -52,14 +52,14 @@ Menedżer zgodności używa modelu uprawnień kontroli dostępu opartej na rolac
 
 ### <a name="where-to-set-permissions"></a>Gdzie ustawić uprawnienia
 
-Osoba pełniąca rolę administratora globalnego w organizacji może ustawić uprawnienia użytkownika dla Menedżera zgodności. Uprawnienia można ustawić w portalu zgodności usługi Microsoft Purview, a także w Azure Active Directory (Azure AD).
+Osoba pełniąca rolę administratora globalnego w organizacji może ustawić uprawnienia użytkownika dla Menedżera zgodności. Uprawnienia można ustawić w portal zgodności Microsoft Purview, a także w usłudze Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Klienci w środowiskach Us Government Community (GCC) High i Department of Defense (DoD) mogą ustawiać uprawnienia i role użytkowników tylko dla Menedżera zgodności w usłudze Azure AD. Zobacz poniżej, aby uzyskać instrukcje usługi Azure AD i definicje typów ról.
+> Klienci w środowiskach Us Government Community (GCC) High i Department of Defense (DoD) mogą ustawiać tylko uprawnienia użytkownika i role menedżera zgodności w Azure AD. Aby uzyskać instrukcje Azure AD i definicje typów ról, zobacz poniżej.
 
-Aby ustawić uprawnienia i przypisać role w portalu zgodności usługi Microsoft Purview, wykonaj poniższe kroki:
+Aby ustawić uprawnienia i przypisać role w portal zgodności Microsoft Purview, wykonaj poniższe kroki:
 
-1. Przejdź do portalu zgodności usługi Microsoft Purview i wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Uprawnienia**</a>.
+1. Przejdź do portal zgodności Microsoft Purview i wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Uprawnienia**</a>.
 
 2. Na liście rozwijanej portalu zgodności wybierz pozycję **Role**.
 
@@ -75,19 +75,19 @@ Aby ustawić uprawnienia i przypisać role w portalu zgodności usługi Microsof
 
 8. Po zakończeniu przypisywania użytkowników wybierz pozycję **Gotowe**, a następnie wybierz pozycję **Zapisz**, a następnie **zamknij**.
 
-#### <a name="more-about-azure-ad"></a>Więcej informacji o usłudze Azure AD
+#### <a name="more-about-azure-ad"></a>Więcej informacji o Azure AD
 
-Aby przypisać role i ustawić uprawnienia w usłudze Azure AD, zobacz [Przypisywanie ról administratora i nieadministratora do użytkowników z Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+Aby przypisać role i ustawić uprawnienia w Azure AD, zobacz [Przypisywanie ról administratora i spoza administratora do użytkowników za pomocą usługi Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
-Użytkownicy z tożsamościami usługi Azure AD, którzy nie mają subskrypcji Office 365 lub Microsoft 365, nie będą mogli uzyskać dostępu do Menedżera zgodności w portalu zgodności usługi Microsoft Purview. Aby uzyskać pomoc dotyczącą uzyskiwania dostępu do Menedżera zgodności, skontaktuj się z [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
+Użytkownicy z tożsamościami Azure AD, którzy nie mają Office 365 lub subskrypcji platformy Microsoft 365, nie będą mogli uzyskać dostępu do Menedżera zgodności w portal zgodności Microsoft Purview. Aby uzyskać pomoc dotyczącą uzyskiwania dostępu do Menedżera zgodności, skontaktuj się z [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
 ### <a name="role-types"></a>Typy ról
 
-W poniższej tabeli przedstawiono funkcje dozwolone przez każdą rolę w Menedżerze zgodności. W tabeli przedstawiono również sposób mapowania poszczególnych [ról usługi Azure AD](/azure/active-directory/roles/permissions-reference) na role Menedżera zgodności. Aby uzyskać dostęp do Menedżera zgodności, użytkownicy będą potrzebować co najmniej roli czytelnika programu Compliance Manager lub globalnej roli czytelnika usługi Azure AD.
+W poniższej tabeli przedstawiono funkcje dozwolone przez każdą rolę w Menedżerze zgodności. W tabeli pokazano również, jak każda [rola Azure AD](/azure/active-directory/roles/permissions-reference) jest mapowana na role Menedżera zgodności. Aby uzyskać dostęp do Menedżera zgodności, użytkownicy będą potrzebować co najmniej roli czytelnika programu Compliance Manager lub Azure AD roli czytelnika globalnego.
 
-| Użytkownik może: | Rola Menedżera zgodności | Rola usługi Azure AD | 
+| Użytkownik może: | Rola Menedżera zgodności | rola Azure AD | 
 | :------------- | :-------------: | :------------: |
-| **Odczytywanie, ale nie edytowanie danych**| Czytelnik programu Compliance Manager  | Czytelnik globalny usługi Azure AD, czytelnik zabezpieczeń |
+| **Odczytywanie, ale nie edytowanie danych**| Czytelnik programu Compliance Manager  | Azure AD czytelnik globalny, czytelnik zabezpieczeń |
 | **Edytowanie danych**| Wkład menedżera zgodności | Administrator zgodności |
 | **Edytowanie wyników testu**| Asesor menedżera zgodności | Administrator zgodności |
 | **Zarządzanie ocenami oraz danymi szablonu i dzierżawy**| Administracja programu Compliance Manager | Administrator zgodności, administrator danych zgodności, administrator zabezpieczeń  |
@@ -114,26 +114,34 @@ Możesz rozpocząć wersję próbną bezpośrednio z poziomu Menedżera zgodnoś
 
 Dowiedz się więcej na temat rozpoczynania oceny, odwiedzając sekcję [Oceny](#assessments-page) poniżej.
 
-## <a name="settings-for-automated-testing-and-user-history"></a>Ustawienia do testowania automatycznego i historii użytkowników
+## <a name="settings-for-automated-testing-and-user-history"></a>Ustawienia automatycznego testowania i historii użytkowników
 
-Ustawienia menedżera zgodności w portalu zgodności usługi Microsoft Purview umożliwiają włączanie i wyłączanie automatycznego testowania akcji poprawy. Ustawienia umożliwiają również zarządzanie danymi użytkowników skojarzonymi z akcjami ulepszania, w tym możliwością ponownego przypisywania akcji poprawy do innego użytkownika.  Tylko osoby z rolą administratora globalnego lub administratora menedżera zgodności mogą uzyskać dostęp do ustawień Menedżera zgodności.
+Ustawienia menedżera zgodności w portal zgodności Microsoft Purview umożliwiają włączanie i wyłączanie automatycznego testowania akcji poprawy. Ustawienia umożliwiają również zarządzanie danymi użytkowników skojarzonymi z akcjami ulepszania, w tym możliwością ponownego przypisywania akcji poprawy do innego użytkownika.  Tylko osoby z rolą administratora globalnego lub administratora menedżera zgodności mogą uzyskać dostęp do ustawień Menedżera zgodności.
 
 > [!NOTE]
-> Funkcja automatycznego testowania nie jest dostępna dla klientów w środowiskach GCC High i DoD, ponieważ wskaźnik bezpieczeństwa nie jest dostępny w tych środowiskach. klienci GCC High i DoD będą musieli ręcznie zaimplementować i przetestować swoje działania poprawy.
+> Funkcja automatycznego testowania nie jest dostępna dla klientów w środowiskach GCC High i DoD, ponieważ wskaźnik bezpieczeństwa nie jest dostępny w tych środowiskach. Klienci GCC High i DoD będą musieli ręcznie zaimplementować i przetestować swoje działania poprawy.
 
 ### <a name="set-up-automated-testing"></a>Konfigurowanie testowania automatycznego
 
-Menedżer zgodności wykrywa sygnały z innych rozwiązań usługi Microsoft Purview subskrybowanych przez organizację, w tym zarządzania cyklem życia danych, ochrony informacji, ochrony przed utratą danych w usłudze Microsoft Purview, zgodności z komunikacją i zarządzania ryzykiem wewnętrznym. Na stronie szczegółów każdej akcji poprawy pole **Logika testowania** na karcie **Testowanie** pokaże, co jest wymagane w innym rozwiązaniu, aby akcja przekazywała i zdobywała punkty w kierunku oceny zgodności.
+Menedżer zgodności wykrywa sygnały z innych rozwiązań usługi Microsoft Purview, które organizacja może subskrybować, w tym zarządzania cyklem życia danych, ochrony informacji, Ochrona przed utratą danych w Microsoft Purview, zgodności z komunikacją i zarządzania ryzykiem wewnętrznym. Menedżer zgodności wykrywa również sygnały z uzupełniających się akcji poprawy, które są monitorowane przez wskaźnik [bezpieczeństwa firmy Microsoft](../security/defender/microsoft-secure-score.md).
 
-Menedżer zgodności wykrywa również sygnały z uzupełniających akcji poprawy, które są również monitorowane przez [wskaźnik bezpieczeństwa firmy Microsoft](../security/defender/microsoft-secure-score.md). Korzystając z tych sygnałów, Menedżer zgodności może automatycznie przetestować pewne akcje poprawy, co pomaga zmaksymalizować wydajność działań związanych ze zgodnością. Po pomyślnym przetestowaniu i zaimplementowaniu akcji poprawy otrzymasz pełną ilość punktów, które zostaną zapisane w ogólnym wyniku zgodności.
+Korzystając z tych sygnałów, Menedżer zgodności może automatycznie przetestować pewne akcje poprawy, co pomaga zmaksymalizować wydajność działań związanych ze zgodnością. Po pomyślnym przetestowaniu i zaimplementowaniu akcji poprawy otrzymasz pełną ilość punktów, które zostaną [zapisane w ogólnym wyniku zgodności](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
-Automatyczne testowanie jest domyślnie włączone dla organizacji nowych w Menedżerze zgodności. Po pierwszym wdrożeniu Microsoft 365 lub Office 365 pełne zebranie danych i uwzględnienie ich w wyniku zgodności zajmuje około siedmiu dni. Po włączeniu testowania automatycznego data testu akcji nie zostanie zaktualizowana, ale jej stan testu zostanie zaktualizowany. Po utworzeniu nowych ocen wyniki są automatycznie uwzględniane w wynikach kontroli firmy Microsoft i integracji z bezpiecznym wynikiem.
+**Automatyczne testowanie jest domyślnie włączone dla organizacji nowych w Menedżerze zgodności.** Po pierwszym wdrożeniu platformy Microsoft 365 lub Office 365 pełne zebranie danych i uwzględnienie ich w wyniku zgodności zajmuje około siedmiu dni. Po włączeniu testowania automatycznego data testu akcji nie zostanie zaktualizowana, ale jej stan testu zostanie zaktualizowany. Po utworzeniu nowych ocen wyniki są automatycznie uwzględniane w wynikach kontroli firmy Microsoft i integracji z bezpiecznym wynikiem. Zobacz [Zarządzanie ustawieniami testowania automatycznego](#manage-automated-testing-settings) poniżej, aby edytować lub wyłączyć to ustawienie.
+
+#### <a name="how-to-tell-which-actions-are-tested-automatically"></a>Jak sprawdzić, które akcje są testowane automatycznie
+
+Na stronie **Akcje poprawy** znajdź kolumnę **Źródło testowania** . Jeśli wartość jest wyświetlana jako **Automatyczna**, akcja jest automatycznie testowana przez Menedżera zgodności.  Jeśli wartość to **Ręczne**, akcja jest testowana przez organizację. Jeśli wartość to **Parent**, akcja dziedziczy stan testowania innej akcji, z którą jest połączona. Uzyskaj szczegółowe informacje o [źródle testowania akcji poprawy](compliance-manager-improvement-actions.md#update-testing-source).
+
+#### <a name="which-actions-cant-be-tested-automatically"></a>Których akcji nie można przetestować automatycznie
+
+Akcje poprawy w szablonach nieobjętych zakresem usługi Microsoft 365 nie kwalifikują się obecnie do testowania automatycznego. Na przykład szablony uniwersalne lub szablon dla platformy Microsoft Azure lub Microsoft Dynamics nie będą miały akcji, które można przetestować automatycznie. Dowiedz się więcej o [szablonach oceny](compliance-manager-templates.md).
 
 #### <a name="manage-automated-testing-settings"></a>Zarządzanie ustawieniami testowania automatycznego
 
 Administrator globalny organizacji może w dowolnym momencie zmienić ustawienia testowania automatycznego. Możesz wyłączyć testowanie automatyczne dla typowych akcji poprawy lub włączyć je dla poszczególnych akcji. Postępuj zgodnie z poniższymi instrukcjami, aby zmienić ustawienia testowania automatycznego.
 
-1. Wybierz <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**pozycję Ustawienia**</a> w portalu zgodności usługi Microsoft Purview.
+1. Wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Ustawienia**</a> w portal zgodności Microsoft Purview.
 
 2. Na stronie ustawień wybierz pozycję **Menedżer zgodności**.
 
@@ -145,11 +153,8 @@ Administrator globalny organizacji może w dowolnym momencie zmienić ustawienia
 
 6. Wybierz pozycję **Zapisz** , aby zapisać ustawienia. W górnej części ekranu zostanie wyświetlony komunikat z potwierdzeniem, że wybór został zapisany. Jeśli zostanie wyświetlone powiadomienie o błędzie, spróbuj ponownie.
 
-**Uwaga:** Tylko administrator globalny może włączać lub wyłączać automatyczne aktualizacje dla wszystkich akcji. Administrator programu Compliance Manager może włączyć automatyczne aktualizacje dla poszczególnych akcji, ale nie dla wszystkich akcji globalnie.
-
-**Dowiedz się więcej**
-- [Dowiedz się więcej o tym, jak ciągłe monitorowanie przyczynia się do oceny zgodności](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
-- [Dowiedz się więcej na temat wyznaczania źródła testowania dla akcji poprawy](compliance-manager-improvement-actions.md#update-testing-source).
+> [!NOTE]
+> Tylko administrator globalny może włączać lub wyłączać automatyczne aktualizacje dla wszystkich akcji. Administrator programu Compliance Manager może włączyć automatyczne aktualizacje dla poszczególnych akcji, ale nie dla wszystkich akcji globalnie.
 
 ### <a name="manage-user-history"></a>Zarządzanie historią użytkowników
 
@@ -159,7 +164,7 @@ Ustawienia historii użytkowników umożliwiają również ponowne przypisanie w
 
 **Aby znaleźć ustawienia historii użytkownika:**
 
-1. Wybierz <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**pozycję Ustawienia**</a> w portalu zgodności usługi Microsoft Purview.
+1. Wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Ustawienia**</a> w portal zgodności Microsoft Purview.
 
 2. Na stronie ustawień wybierz pozycję **Menedżer zgodności**.
 
@@ -171,13 +176,13 @@ Po prawej stronie adresu e-mail każdego użytkownika menu rozwijane **Wybierz**
 
 #### <a name="export-a-report-of-user-history-data"></a>Eksportowanie raportu danych historii użytkowników
 
-Możesz wyeksportować plik Excel zawierający listę akcji poprawy aktualnie przypisanych do użytkownika.  Raport zawiera również listę wszelkich plików dowodowych przekazanych przez tego użytkownika. Te informacje mogą pomóc w ponownym przypisaniu otwartych akcji poprawy.
+Możesz wyeksportować plik programu Excel zawierający listę akcji poprawy aktualnie przypisanych do użytkownika.  Raport zawiera również listę wszelkich plików dowodowych przekazanych przez tego użytkownika. Te informacje mogą pomóc w ponownym przypisaniu otwartych akcji poprawy.
 
 Raport odzwierciedla stan akcji poprawy od daty utworzenia. Nie jest to historyczny raport wszystkich poprzednich zmian stanu lub przypisania (dowiedz się, jak [wyeksportować raport ze strony akcji poprawy](compliance-manager-improvement-actions.md#export-a-report)).
 
 **Wykonaj poniższe kroki, aby wyeksportować raport według użytkownika:**
 
-1. Wybierz <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**pozycję Ustawienia**</a> w portalu zgodności usługi Microsoft Purview.
+1. Wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Ustawienia**</a> w portal zgodności Microsoft Purview.
 
 2. Na stronie ustawień wybierz pozycję **Menedżer zgodności**.
 
@@ -187,7 +192,7 @@ Raport odzwierciedla stan akcji poprawy od daty utworzenia. Nie jest to historyc
 
 5. Z menu rozwijanego **Wybierz** wybierz pozycję **Eksportuj raport**.
 
-6. Po wygenerowaniu pliku Excel raportu możesz go otworzyć i zapisać na komputerze lokalnym.
+6. Po wygenerowaniu pliku programu Excel raportu możesz go otworzyć i zapisać na komputerze lokalnym.
 
 #### <a name="reassign-improvement-actions-to-another-user"></a>Ponowne przypisywanie akcji poprawy do innego użytkownika
 
@@ -195,7 +200,7 @@ Możesz ponownie przypisać akcje poprawy od jednego użytkownika do innego. Po 
 
 **Wykonaj poniższe kroki, aby ponownie przypisać akcje poprawy do innego użytkownika:**
 
-1. Wybierz <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**pozycję Ustawienia**</a> w portalu zgodności usługi Microsoft Purview.
+1. Wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Ustawienia**</a> w portal zgodności Microsoft Purview.
 
 2. Na stronie ustawień wybierz pozycję **Menedżer zgodności**.
 
@@ -222,7 +227,7 @@ Usunięcie historii użytkownika spowoduje usunięcie ich jako właściciela akc
 
 Aby usunąć historię użytkownika, wykonaj poniższe kroki:
 
-1. Wybierz <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**pozycję Ustawienia**</a> w portalu zgodności usługi Microsoft Purview.
+1. Wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Ustawienia**</a> w portal zgodności Microsoft Purview.
 
 2. Na stronie ustawień wybierz pozycję **Menedżer zgodności**.
 
@@ -246,7 +251,7 @@ Pulpit nawigacyjny programu Compliance Manager został zaprojektowany z myślą 
 
 Wskaźnik zgodności jest wyróżniony w górnej części. Pokazuje ona wartość procentową w oparciu o punkty osiągalne do wykonania działań ulepszeń, które odnoszą się do kluczowych standardów i przepisów dotyczących ochrony danych. Punkty z [akcji firmy Microsoft](compliance-manager-assessments.md#microsoft-actions-tab), które są zarządzane przez moją firmę Microsoft, również są wliczane do oceny zgodności.
 
-Gdy po raz pierwszy przychodzisz do Menedżera zgodności, twój początkowy wynik jest oparty na [Microsoft 365 punktu odniesienia ochrony danych](compliance-manager-assessments.md#data-protection-baseline-default-assessment). Ta ocena bazowa, dostępna dla wszystkich organizacji, to zestaw mechanizmów kontroli, który obejmuje wspólne przepisy branżowe i standardy. Menedżer zgodności skanuje istniejące rozwiązania Microsoft 365 i umożliwia wstępną ocenę na podstawie bieżących ustawień prywatności i zabezpieczeń. Po dodaniu ocen, które są istotne dla Twojej organizacji, twój wynik staje się dla Ciebie bardziej zrozumiały.
+Po pierwszym przejściu do Menedżera zgodności twój początkowy wynik jest oparty na [punkcie odniesienia ochrony danych platformy Microsoft 365](compliance-manager-assessments.md#data-protection-baseline-default-assessment). Ta ocena bazowa, dostępna dla wszystkich organizacji, to zestaw mechanizmów kontroli, który obejmuje wspólne przepisy branżowe i standardy. Menedżer zgodności skanuje istniejące rozwiązania platformy Microsoft 365 i umożliwia wstępną ocenę na podstawie bieżących ustawień prywatności i zabezpieczeń. Po dodaniu ocen, które są istotne dla Twojej organizacji, twój wynik staje się dla Ciebie bardziej zrozumiały.
 
 **Dowiedz się więcej: Dowiedz się**[, jak jest obliczana ocena zgodności](compliance-score-calculation.md).
 
@@ -345,7 +350,7 @@ Istnieją dwa sposoby podejmowania akcji na tym ekranie:
 
 1. W wierszu zamierzonego rozwiązania w kolumnie **Pozostałe akcje** wybierz numer hiperłącza. Zobaczysz filtrowany widok ekranu akcji poprawy przedstawiający niesprawdzone akcje poprawy dla tego rozwiązania.
 
-2. W wierszu zamierzonego rozwiązania w kolumnie **Otwórz rozwiązanie** wybierz pozycję **Otwórz**. Rozwiązanie lub lokalizacja zostaną wyświetlone w Microsoft 365 i Office 365 centrach zabezpieczeń i zgodności, w których można wykonać zalecaną akcję.
+2. W wierszu zamierzonego rozwiązania w kolumnie **Otwórz rozwiązanie** wybierz pozycję **Otwórz**. Rozwiązanie lub lokalizacja zostaną wyświetlone w witrynie Microsoft 365 i Office 365 centrach zabezpieczeń i zgodności, w których można wykonać zalecane działania.
 
 ## <a name="assessments-page"></a>Strona Ocen
 
@@ -388,7 +393,7 @@ Szablon to platforma do tworzenia oceny w menedżerze zgodności. Na stronie sza
 
 Licznik **aktywowanych szablonów** w górnej części strony pokazuje liczbę aktywnych szablonów oceny aktualnie używanych z łącznej liczby szablonów dostępnych dla organizacji do użycia. Aby uzyskać więcej informacji, zobacz [Dostępność szablonu i licencjonowanie](compliance-manager-templates.md#template-availability-and-licensing) .
 
-Wybierz szablon z jego wiersza, aby wyświetlić jego stronę szczegółów, która zawiera opis szablonu oraz dalsze informacje o certyfikacie, zakresie i szczegółach kontrolek. Na tej stronie możesz wybrać odpowiednie przyciski, aby utworzyć ocenę, wyeksportować dane szablonu do Excel lub zmodyfikować szablon.
+Wybierz szablon z jego wiersza, aby wyświetlić jego stronę szczegółów, która zawiera opis szablonu oraz dalsze informacje o certyfikacie, zakresie i szczegółach kontrolek. Na tej stronie możesz wybrać odpowiednie przyciski, aby utworzyć ocenę, wyeksportować dane szablonu do programu Excel lub zmodyfikować szablon.
 
 **Dowiedz się więcej:** [Przeczytaj, jak pracować z szablonami oceny](compliance-manager-templates.md).
 

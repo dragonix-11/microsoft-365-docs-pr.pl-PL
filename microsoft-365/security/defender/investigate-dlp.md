@@ -16,12 +16,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 6111bf9e2a44d079bfae19d9aa0c34f7b125ff08
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: a92e3b206b10b68ecc3ff2f94870a9174185b63b
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057895"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574308"
 ---
 # <a name="investigate-data-loss-incidents-with-microsoft-365-defender"></a>Badanie zdarzeń utraty danych za pomocą Microsoft 365 Defender
 
@@ -31,7 +31,7 @@ ms.locfileid: "66057895"
 
 - Microsoft 365 Defender
 
-Zdarzenia dotyczące ochrony przed utratą danych (DLP) w usłudze Microsoft Purview można teraz zarządzać w portalu Microsoft 365 Defender. Zdarzeniami DLP można zarządzać wraz z zdarzeniami zabezpieczeń z obszaru **Zdarzenia & alerty** \> **Zdarzenia** na szybkim uruchomieniu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>. Na tej stronie możesz:
+Zdarzenia dotyczące Ochrona przed utratą danych w Microsoft Purview (DLP) można teraz zarządzać w portalu Microsoft 365 Defender. Zdarzeniami DLP można zarządzać wraz z zdarzeniami zabezpieczeń z obszaru **Zdarzenia & alerty** \> **Zdarzenia** na szybkim uruchomieniu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>. Na tej stronie możesz:
 
 - Wyświetl wszystkie alerty DLP pogrupowane w ramach zdarzeń w kolejce zdarzeń Microsoft 365 Defender.
 - Wyświetl alerty inteligentne między rozwiązaniami (DLP-MDE, DLP-MDO) i intra-solution (DLP-DLP) skorelowane w ramach pojedynczego zdarzenia.
@@ -44,7 +44,7 @@ Zdarzenia dotyczące ochrony przed utratą danych (DLP) w usłudze Microsoft Pur
 
 ## <a name="licensing-requirements"></a>Wymagania dotyczące licencjonowania
 
-Aby zbadać zdarzenia zapobiegania utracie danych w usłudze Microsoft Purview w portalu Microsoft 365 Defender, potrzebujesz licencji z jednej z następujących subskrypcji: 
+Aby zbadać Ochrona przed utratą danych w Microsoft Purview zdarzeń w portalu Microsoft 365 Defender, potrzebujesz licencji z jednej z następujących subskrypcji: 
 
 - Microsoft Office 365 E5/A5
 - Microsoft 365 E5/A5
@@ -52,9 +52,12 @@ Aby zbadać zdarzenia zapobiegania utracie danych w usłudze Microsoft Purview w
 - zabezpieczenia Microsoft 365 E5/A5
 - Microsoft 365 E5/A5 Information Protection i ład
 
+> [!NOTE] 
+> Jeśli masz licencję i kwalifikujesz się do tej funkcji, alerty DLP będą automatycznie przepływać do Microsoft 365 Defender. Otwórz przypadek pomocy technicznej, jeśli chcesz wyłączyć tę funkcję. 
+
 ## <a name="dlp-investigation-experience-in-the-microsoft-365-defender-portal"></a>Środowisko badania DLP w portalu Microsoft 365 Defender
 
-Przed rozpoczęciem [włącz alerty dla wszystkich zasad DLP](/microsoft-365/compliance/dlp-configure-view-alerts-policies#alert-configuration-experience) w <a href="https://purview.microsoft.com" target="_blank">portalu zgodności usługi Microsoft Purview</a>.
+Przed rozpoczęciem [włącz alerty dla wszystkich zasad DLP](/microsoft-365/compliance/dlp-configure-view-alerts-policies#alert-configuration-experience) w <a href="https://purview.microsoft.com" target="_blank">portal zgodności Microsoft Purview</a>.
 
 1. Przejdź do portalu Microsoft 365 Defender i wybierz pozycję **Incydenty** w menu nawigacji po lewej stronie, aby otworzyć stronę zdarzeń.
 
@@ -89,7 +92,7 @@ Przed rozpoczęciem [włącz alerty dla wszystkich zasad DLP](/microsoft-365/com
 
 Łącznik Microsoft 365 Defender w usłudze Microsoft Sentinel umożliwia zaimportowanie wszystkich zdarzeń DLP do usługi Sentinel w celu rozszerzenia korelacji, wykrywania i badania w innych źródłach danych oraz rozszerzenia zautomatyzowanych przepływów orkiestracji przy użyciu natywnych funkcji soar usługi Sentinel. 
 
-1. Postępuj zgodnie z instrukcjami dotyczącymi Połączenie danych z Microsoft 365 Defender do usługi Microsoft Sentinel, aby zaimportować wszystkie zdarzenia, w tym zdarzenia DLP i alerty do usługi Sentinel. Włącz `CloudAppEvents` łącznik zdarzeń, aby ściągnąć wszystkie dzienniki inspekcji usługi O365 do usługi Sentinel.
+1. Postępuj zgodnie z instrukcjami dotyczącymi łączenia danych z Microsoft 365 Defender do usługi Microsoft Sentinel, aby zaimportować wszystkie zdarzenia, w tym zdarzenia DLP i alerty do usługi Sentinel. Włącz `CloudAppEvents` łącznik zdarzeń, aby ściągnąć wszystkie dzienniki inspekcji usługi O365 do usługi Sentinel.
 
    Po skonfigurowaniu powyższego łącznika powinno być możliwe wyświetlanie zdarzeń DLP w usłudze Sentinel.
 

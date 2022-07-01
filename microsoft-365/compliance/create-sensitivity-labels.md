@@ -17,25 +17,30 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: 'Wymaganie dotyczące wszystkich rozwiązań usługi Microsoft Purview Information Protection: tworzenie, konfigurowanie i publikowanie etykiet poufności w celu klasyfikowania i ochrony danych organizacji.'
-ms.openlocfilehash: 8b25fa9864bcbef92f509f7251a15bf24cc3da2d
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: 'Wymaganie dotyczące wszystkich rozwiązań Microsoft Purview Information Protection: tworzenie, konfigurowanie i publikowanie etykiet poufności w celu klasyfikowania i ochrony danych organizacji.'
+ms.openlocfilehash: 0f920c91e1e844a4feaab7f9d1d58e88da6791ca
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017037"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573874"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Tworzenie i konfigurowanie etykiet poufności i ich zasad
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Wszystkie rozwiązania Information Protection Microsoft Purview są implementowane przy użyciu [etykiet poufności](sensitivity-labels.md). Aby utworzyć i opublikować te etykiety, przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a>.
+Wszystkie rozwiązania Microsoft Purview Information Protection są implementowane przy użyciu [etykiet poufności](sensitivity-labels.md). Aby utworzyć i opublikować te etykiety, przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>.
 
-Najpierw utwórz i skonfiguruj etykiety poufności, które chcesz udostępnić aplikacjom i innym usługom. Na przykład etykiety, które użytkownicy mają wyświetlać i stosować z Office aplikacji.
+Najpierw utwórz i skonfiguruj etykiety poufności, które chcesz udostępnić aplikacjom i innym usługom. Na przykład etykiety, które użytkownicy mają wyświetlać i stosować z aplikacji pakietu Office.
 
 Następnie utwórz co najmniej jedną zasadę etykiet zawierającą skonfigurowane etykiety i ustawienia zasad. To zasady etykiet publikują etykiety i ustawienia dla wybranych użytkowników i lokalizacji.
+
+> [!TIP]
+> Jeśli nie masz jeszcze żadnych etykiet poufności, możesz kwalifikować się do automatycznego tworzenia etykiet domyślnych i domyślnych zasad etykiet. Nawet jeśli masz jakieś etykiety, może okazać się przydatne wyświetlenie konfiguracji tych etykiet domyślnych, które tworzymy dla nowych klientów. Możesz na przykład wykonać te same konfiguracje ręczne, aby przyspieszyć wdrażanie własnej etykiety.
+> 
+> Aby uzyskać więcej informacji, zobacz [Domyślne etykiety i zasady dla Microsoft Purview Information Protection](mip-easy-trials.md).
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -43,7 +48,7 @@ Administrator globalny organizacji ma pełne uprawnienia do tworzenia wszystkich
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Tworzenie i konfigurowanie etykiet poufności
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Rozwiązania Etykiety** > **ochrony** >  informacji
+1. Z [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Rozwiązania Etykiety** > **ochrony** >  informacji
 
 2. Na stronie **Etykiety** wybierz pozycję **+ Utwórz etykietę** , aby rozpocząć nową konfigurację etykiet poufności: 
     
@@ -56,11 +61,11 @@ Administrator globalny organizacji ma pełne uprawnienia do tworzenia wszystkich
 
     ![Zakresy etykiet poufności.](../media/sensitivity-labels-scopes.png)
 
-    - Jeśli wybrano **opcję Pliki & wiadomości e-mail**, możesz skonfigurować ustawienia dotyczące aplikacji obsługujące etykiety poufności, takie jak Office Word i Outlook. Jeśli ta opcja nie zostanie wybrana, zobaczysz pierwszą stronę tych ustawień, ale nie możesz ich skonfigurować, a etykiety nie będą dostępne dla użytkowników do wybrania w tych aplikacjach.
+    - Jeśli wybrano **opcję Pliki & wiadomości e-mail** , możesz skonfigurować ustawienia, które mają zastosowanie do aplikacji obsługujące etykiety poufności, takie jak Office Word i Outlook. Jeśli ta opcja nie zostanie wybrana, zobaczysz pierwszą stronę tych ustawień, ale nie możesz ich skonfigurować, a etykiety nie będą dostępne dla użytkowników do wybrania w tych aplikacjach.
 
-    - Jeśli wybrano **opcję Grupy & lokacje**, można skonfigurować ustawienia dotyczące grup Microsoft 365 i witryn dla Teams i SharePoint. Jeśli ta opcja nie zostanie wybrana, zobaczysz pierwszą stronę tych ustawień, ale nie możesz ich skonfigurować, a etykiety nie będą dostępne dla użytkowników do wybrania dla grup i witryny.
+    - Jeśli wybrano **opcję Grupy & witryn** , możesz skonfigurować ustawienia dotyczące grup platformy Microsoft 365 i witryn dla aplikacji Teams i SharePoint. Jeśli ta opcja nie zostanie wybrana, zobaczysz pierwszą stronę tych ustawień, ale nie możesz ich skonfigurować, a etykiety nie będą dostępne dla użytkowników do wybrania dla grup i witryny.
 
-    Aby uzyskać informacje o zakresie **schematyzowanych zasobów danych** , zobacz [Automatyczne etykietowanie zawartości w usłudze Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
+    Aby uzyskać informacje o zakresie **schematyzowanych zasobów danych**, zobacz [Automatyczne etykietowanie zawartości w Mapa danych w Microsoft Purview](/azure/purview/create-sensitivity-label).
 
 4. Postępuj zgodnie z monitami o konfigurację ustawień etykiety.
 
@@ -94,15 +99,15 @@ Przykład:
 
 - Użyj parametru *LocaleSettings* dla wdrożeń międzynarodowych, aby użytkownicy widzieli nazwę etykiety i etykietkę narzędzia w języku lokalnym. Poniższa [sekcja](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) zawiera przykładową konfigurację, która określa nazwę etykiety i tekst etykietki narzędzia dla języka francuskiego, włoskiego i niemieckiego.
 
-- Klient ujednoliconego etykietowania platformy Azure Information Protection obsługuje obszerną listę [zaawansowanych ustawień](/azure/information-protection/rms-client/clientv2-admin-guide-customizations), które obejmują ustawianie koloru etykiety i stosowanie właściwości niestandardowej po zastosowaniu etykiety. Aby uzyskać pełną listę, zobacz [Dostępne ustawienia zaawansowane dla etykiet](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) z tego przewodnika administratora klienta.
+- Ustawienia zaawansowane obsługiwane przez wbudowane etykietowanie są zawarte w dokumentacji programu PowerShell. Aby uzyskać więcej pomocy w określaniu tych ustawień zaawansowanych programu [PowerShell, zobacz porady programu PowerShell dotyczące określania ustawień zaawansowanych](#powershell-tips-for-specifying-the-advanced-settings) . Aby uzyskać dodatkowe zaawansowane ustawienia obsługiwane przez klienta ujednoliconego etykietowania usługi Azure Information Protection, zapoznaj się [z dokumentacją przewodnika administratora tego klienta](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels).
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Przykładowa konfiguracja umożliwiająca skonfigurowanie etykiety poufności dla różnych języków
 
 W poniższym przykładzie przedstawiono konfigurację programu PowerShell dla etykiety o nazwie "Public" z tekstem zastępczym etykietki narzędzia. W tym przykładzie nazwa etykiety i tekst etykietki narzędzia są skonfigurowane dla języka francuskiego, włoskiego i niemieckiego.
 
-W wyniku tej konfiguracji użytkownicy, którzy mają Office aplikacje korzystające z tych języków wyświetlania, widzą nazwy etykiet i etykietki narzędzi w tym samym języku. Podobnie, jeśli masz zainstalowanego klienta ujednoliconego etykietowania usługi Azure Information Protection w celu etykietowania plików z Eksplorator plików, użytkownicy, którzy mają te wersje językowe Windows widzą nazwy etykiet i etykietki narzędzi w języku lokalnym, gdy używają akcji kliknięcia prawym przyciskiem myszy do etykietowania.
+W wyniku tej konfiguracji użytkownicy, którzy mają aplikacje pakietu Office korzystające z tych języków wyświetlania, widzą nazwy etykiet i etykietki narzędzi w tym samym języku. Podobnie jeśli masz zainstalowanego klienta ujednoliconego etykietowania usługi Azure Information Protection w celu etykietowania plików z Eksplorator plików, użytkownicy, którzy mają te wersje językowe systemu Windows, widzą nazwy etykiet i etykietki narzędzi w języku lokalnym, gdy używają akcji kliknięcia prawym przyciskiem myszy do etykietowania.
 
-W przypadku języków, które należy obsługiwać, użyj [identyfikatorów języka](/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) Office (znanych również jako tagi języka) i określ własne tłumaczenie nazwy etykiety i etykietki narzędzia.
+W przypadku języków, które należy obsługiwać, użyj [identyfikatorów języka](/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) pakietu Office (znanych również jako tagi języka) i określ własne tłumaczenie nazwy etykiety i etykietki narzędzia.
 
 Przed uruchomieniem poleceń w programie PowerShell należy najpierw [nawiązać połączenie z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
@@ -124,9 +129,29 @@ Settings=@(
 Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSettings -Depth 3 -Compress),(ConvertTo-Json $TooltipLocaleSettings -Depth 3 -Compress)
 ```
 
+#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Porady programu PowerShell dotyczące określania ustawień zaawansowanych
+
+Mimo że można określić etykietę poufności według jej nazwy, zalecamy użycie identyfikatora GUID etykiety, aby uniknąć potencjalnych pomyłek dotyczących określania nazwy etykiety lub nazwy wyświetlanej. Nazwa etykiety jest unikatowa w dzierżawie, więc możesz mieć pewność, że konfigurujesz poprawną etykietę. Nazwa wyświetlana nie jest unikatowa i może spowodować skonfigurowanie nieprawidłowej etykiety. Aby znaleźć identyfikator GUID i potwierdzić zakres etykiety:
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid, ContentType
+````
+
+Aby usunąć ustawienie zaawansowane z etykiety poufności, użyj tej samej składni parametrów AdvancedSettings, ale określ wartość ciągu o wartości null. Przykład:
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
+````
+
+Aby sprawdzić konfigurację etykiety, w tym ustawienia zaawansowane, użyj następującej składni z własnym identyfikatorem GUID etykiety:
+
+```powershell
+(Get-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e).settings
+```
+
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publikowanie etykiet poufności przez utworzenie zasad etykiet
 
-1. W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Rozwiązania** > **Zasady** **etykiet ochrony informacji** > 
+1. Z [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **RozwiązaniaZasady** > **etykiet** **ochrony informacji** > 
 
 2. Na stronie **Zasady etykiet** wybierz pozycję **Publikuj etykietę** , aby rozpocząć konfigurację **tworzenia zasad** :
     
@@ -148,7 +173,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Jakie zasady etykiet można zrobić](sensitivity-labels.md#what-label-policies-can-do) z informacji przeglądowych i skorzystaj z pomocy w interfejsie użytkownika dla poszczególnych ustawień.
 
-    W przypadku etykiet skonfigurowanych dla **zasobów mapy danych usługi Microsoft Purview (wersja zapoznawcza)**: etykiety te nie mają żadnych skojarzonych ustawień zasad.
+    W przypadku etykiet skonfigurowanych dla **zasobów Mapa danych w Microsoft Purview (wersja zapoznawcza)**: etykiety te nie mają żadnych skojarzonych ustawień zasad.
 
 6. Powtórz te kroki, jeśli potrzebujesz różnych ustawień zasad dla różnych użytkowników lub zakresów. Na przykład chcesz mieć dodatkowe etykiety dla grupy użytkowników lub inną etykietę domyślną dla podzestawu użytkowników. Lub jeśli skonfigurowano etykiety tak, aby miały różne zakresy.
 
@@ -166,7 +191,7 @@ Ten przycisk uruchamia konfigurację **tworzenia zasad** , która umożliwia edy
 
 Dodatkowe ustawienia zasad etykiet są dostępne za pomocą polecenia cmdlet [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) z programu [PowerShell Security & Compliance](/powershell/exchange/scc-powershell).
 
-Klient ujednoliconego etykietowania platformy Azure Information Protection obsługuje wiele [zaawansowanych ustawień](/azure/information-protection/rms-client/clientv2-admin-guide-customizations), które obejmują migrowanie z innych rozwiązań do etykietowania oraz wyskakujące komunikaty w Outlook, które ostrzegają, uzasadniają lub blokują wysyłanie wiadomości e-mail. Aby uzyskać pełną listę, zobacz [Dostępne ustawienia zaawansowane dla zasad etykiet](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) w przewodniku administratora tego klienta.
+Ta dokumentacja zawiera zaawansowane ustawienia, które są obsługiwane przez wbudowane etykietowanie. Aby uzyskać dodatkowe zaawansowane ustawienia obsługiwane przez klienta ujednoliconego etykietowania usługi Azure Information Protection, zapoznaj się [z dokumentacją przewodnika administratora tego klienta](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies).
 
 ## <a name="when-to-expect-new-labels-and-changes-to-take-effect"></a>Kiedy należy spodziewać się wprowadzenia nowych etykiet i zmian
 
@@ -185,7 +210,10 @@ Zapoznaj się z następującą dokumentacją dotyczącą obsługiwanych parametr
 - [Set-Label](/powershell/module/exchange/set-label)
 - [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy)
 
-Możesz również użyć funkcji [Remove-Label](/powershell/module/exchange/remove-label) i [Remove-LabelPolicy](/powershell/module/exchange/remove-labelpolicy) , jeśli musisz wykonać skrypt usuwania etykiet poufności lub zasad etykiet poufności. Jednak przed usunięciem etykiet poufności upewnij się, że przeczytano następującą sekcję.
+> [!TIP]
+> Podczas konfigurowania ustawień zaawansowanych etykiety poufności warto odwołać się do [porad programu PowerShell dotyczących określania sekcji ustawień zaawansowanych](#powershell-tips-for-specifying-the-advanced-settings) na tej stronie.
+
+Możesz również użyć funkcji [Remove-Label](/powershell/module/exchange/remove-label) i [Remove-LabelPolicy](/powershell/module/exchange/remove-labelpolicy) , jeśli musisz wykonać skrypt usuwania etykiet poufności lub zasad etykiet poufności. Jednak przed usunięciem etykiet poufności upewnij się, że przeczytano następną sekcję.
 
 ## <a name="removing-and-deleting-labels"></a>Usuwanie i usuwanie etykiet
 
@@ -193,17 +221,17 @@ W środowisku produkcyjnym jest mało prawdopodobne, że konieczne będzie usuni
 
 Usunięcie etykiety z zasad etykiety jest mniej ryzykowne niż usunięcie tej etykiety i zawsze można ją dodać później, jeśli zajdzie taka potrzeba. Nie będzie można usunąć etykiety, jeśli jest ona nadal w zasadach etykiet.
 
-Po usunięciu etykiety z zasad etykiety, aby etykieta nie była już publikowana dla pierwotnie określonych użytkowników, przy następnym odświeżeniu zasad etykiety użytkownicy nie widzą już tej etykiety do wybrania w swoich aplikacjach Office. Jeśli ta etykieta jest już zastosowana, etykieta nie zostanie usunięta z zawartości ani kontenera. Na przykład użytkownicy korzystający z wbudowanych etykiet w aplikacjach klasycznych dla programu Word, Excel i PowerPoint nadal widzą nazwę zastosowanej etykiety na pasku stanu. Zastosowana etykieta kontenera nadal chroni witrynę Teams lub SharePoint.
+Gdy usuniesz etykietę z zasad etykiety, aby etykieta nie była już publikowana dla pierwotnie określonych użytkowników, następnym razem, gdy zasady etykiet zostaną odświeżone, użytkownicy nie będą już widzieć tej etykiety do wybrania w aplikacjach pakietu Office. Jeśli ta etykieta jest już zastosowana, etykieta nie zostanie usunięta z zawartości ani kontenera. Na przykład użytkownicy, którzy używają wbudowanego etykietowania w aplikacjach klasycznych dla programów Word, Excel i PowerPoint, nadal widzą nazwę zastosowanej etykiety na pasku stanu. Zastosowana etykieta kontenera nadal chroni witrynę usługi Teams lub SharePoint.
 
 Dla porównania po usunięciu etykiety:
 
 - Jeśli etykieta zastosowała szyfrowanie, bazowy szablon ochrony jest archiwizowany, aby można było nadal otwierać wcześniej chronioną zawartość. Z powodu tego zarchiwizowanego szablonu ochrony nie będzie można utworzyć nowej etykiety o tej samej nazwie. Mimo że można usunąć szablon ochrony przy użyciu programu [PowerShell](/powershell/module/aipservice/remove-aipservicetemplate), nie rób tego, chyba że na pewno nie musisz otwierać zawartości zaszyfrowanej za pomocą zarchiwizowanego szablonu.
 
-- W przypadku dokumentów przechowywanych w SharePoint lub OneDrive i [włączono etykiety poufności dla plików Office](sensitivity-labels-sharepoint-onedrive-files.md): po otwarciu dokumentu w Office dla sieci web etykieta nie zostanie zastosowana w aplikacji, a nazwa **etykiety** nie będzie już wyświetlana w kolumnie Czułość w SharePoint. Jeśli usunięta etykieta zastosowała szyfrowanie, a usługi mogą przetwarzać zaszyfrowaną zawartość, szyfrowanie zostanie usunięte. Egress akcje z tych usług powodują taki sam wynik. Na przykład pobierz, skopiuj do, przejdź do i otwórz za pomocą Office aplikacji klasycznej lub mobilnej. Mimo że informacje o etykiecie pozostają w metadanych pliku, aplikacje nie mogą już mapować identyfikatora etykiety na nazwę wyświetlaną, więc użytkownicy zakładają, że plik nie jest oznaczony etykietą.
+- W przypadku dokumentów przechowywanych w programie SharePoint lub OneDrive [włączono etykiety poufności dla plików pakietu Office](sensitivity-labels-sharepoint-onedrive-files.md): po otwarciu dokumentu w Office dla sieci web etykieta nie zostanie zastosowana w aplikacji, a nazwa **etykiety** nie będzie już wyświetlana w kolumnie Czułość w programie SharePoint. Jeśli usunięta etykieta zastosowała szyfrowanie, a usługi mogą przetwarzać zaszyfrowaną zawartość, szyfrowanie zostanie usunięte. Akcje ruchu wychodzącego z tych usług powodują taki sam wynik. Na przykład pobierz, skopiuj do, przejdź do i otwórz za pomocą aplikacji klasycznej lub mobilnej pakietu Office. Mimo że informacje o etykiecie pozostają w metadanych pliku, aplikacje nie mogą już mapować identyfikatora etykiety na nazwę wyświetlaną, więc użytkownicy zakładają, że plik nie jest oznaczony etykietą.
 
-- W przypadku dokumentów przechowywanych poza SharePoint i OneDrive lub nie włączono etykiet poufności dla plików Office i wiadomości e-mail: Po otwarciu zawartości informacje o etykiecie w metadanych pozostają, ale bez identyfikatora etykiety mapowania nazw użytkownicy nie widzą wyświetlanej zastosowanej nazwy etykiety (na przykład na pasku stanu dla aplikacji klasycznych). Jeśli usunięta etykieta zastosowała szyfrowanie, szyfrowanie pozostanie, a użytkownicy nadal będą widzieć nazwę i opis zarchiwizowanego szablonu ochrony.
+- W przypadku dokumentów przechowywanych poza programami SharePoint i OneDrive lub nie włączono etykiet poufności dla plików pakietu Office i wiadomości e-mail: Po otwarciu zawartości informacje o etykietach w metadanych pozostają, ale bez identyfikatora etykiety mapowania nazw użytkownicy nie widzą wyświetlanej zastosowanej nazwy etykiety (na przykład na pasku stanu dla aplikacji klasycznych). Jeśli usunięta etykieta zastosowała szyfrowanie, szyfrowanie pozostanie, a użytkownicy nadal będą widzieć nazwę i opis zarchiwizowanego szablonu ochrony.
 
-- W przypadku kontenerów, takich jak witryny w SharePoint i Teams: etykieta jest usuwana, a wszystkie ustawienia skonfigurowane przy użyciu tej etykiety nie są już wymuszane. Ta akcja zwykle trwa od 48 do 72 godzin dla SharePoint witryn i może być szybsza w przypadku Teams i Grupy Microsoft 365.
+- W przypadku kontenerów, takich jak witryny w programach SharePoint i Teams: etykieta jest usuwana, a wszystkie ustawienia skonfigurowane przy użyciu tej etykiety nie są już wymuszane. Ta akcja zwykle trwa od 48 do 72 godzin w witrynach programu SharePoint i może być szybsza w przypadku aplikacji Teams i Grupy Microsoft 365.
 
 Podobnie jak w przypadku wszystkich zmian etykiet, usunięcie etykiety poufności z zasad etykiety lub usunięcie etykiety poufności wymaga czasu na replikację do wszystkich użytkowników i usług.
 
@@ -219,4 +247,4 @@ Aby skonfigurować i używać etykiet poufności dla określonych scenariuszy, s
 
 - [Włącz etykiety poufności dla plików pakietu Office w programie SharePoint i usłudze OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 
-Aby monitorować sposób użycia etykiet, zobacz [Wprowadzenie z klasyfikacją danych](data-classification-overview.md).
+Aby monitorować sposób użycia etykiet, zobacz [Wprowadzenie do klasyfikacji danych](data-classification-overview.md).

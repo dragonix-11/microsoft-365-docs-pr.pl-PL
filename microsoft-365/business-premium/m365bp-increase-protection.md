@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Uzyskaj pomoc dotyczącą zwiększania poziomu ochrony w Microsoft 365 Business Premium
-ms.openlocfilehash: a4f76555fad2147477ab5bf9202c45123d1624f7
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 7917fa7e0530724c201db8b118ea2adedc7c3a62
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486060"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573852"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Zwiększanie ochrony przed zagrożeniami dla Microsoft 365 Business Premium
 
@@ -75,11 +75,11 @@ Jeśli użytkownikom przypisano wiele zasad, do zastosowania zasad jest używana
 
 1. **Ścisła ochrona** otrzymuje najwyższy priorytet i zastępuje wszystkie inne zasady.
 
-2. **Standardowa ochrona** 
+1. **Standardowa ochrona** 
 
-3. **Niestandardowe zasady zabezpieczeń**
+1. **Niestandardowe zasady zabezpieczeń**
 
-4. **Wbudowana ochrona** otrzymuje najniższy priorytet i jest zastępowana przez ścisłą ochronę, standardową ochronę i zasady niestandardowe.
+1. **Wbudowana ochrona** otrzymuje najniższy priorytet i jest zastępowana przez ścisłą ochronę, standardową ochronę i zasady niestandardowe.
 
 Ścisła ochrona zastępuje wszystkie inne zasady, a wbudowana ochrona jest zastępowana przez inne zasady. 
 
@@ -100,11 +100,11 @@ Aby przypisać wstępnie ustawione zasady zabezpieczeń, wykonaj następujące k
 
 1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
-2. Przejdź do **obszaru Zasady współpracy** \> & poczty e-mail **& Reguły** \> **zasad** \> zagrożeń **Wstępnie ustawione zasady zabezpieczeń** w sekcji **Szablony zasad** . (Aby przejść bezpośrednio do strony **Wstępnie ustawione zasady zabezpieczeń** , użyj polecenia <https://security.microsoft.com/presetSecurityPolicies>.)
+1. Przejdź do **obszaru Zasady współpracy** \> & poczty e-mail **& Reguły** \> **zasad** \> zagrożeń **Wstępnie ustawione zasady zabezpieczeń** w sekcji **Szablony zasad** . (Aby przejść bezpośrednio do strony **Wstępnie ustawione zasady zabezpieczeń** , użyj polecenia <https://security.microsoft.com/presetSecurityPolicies>.)
 
-2. Na stronie **Ustawienia wstępne zasad zabezpieczeń** w sekcji **Ochrona** standardowa lub **Ścisła ochrona** zmień przełącznik z **Wyłączone** na **Włączone**, a następnie wybierz pozycję **Zarządzaj**.
+1. Na stronie **Ustawienia wstępne zasad zabezpieczeń** w sekcji **Ochrona** standardowa lub **Ścisła ochrona** zmień przełącznik z **Wyłączone** na **Włączone**, a następnie wybierz pozycję **Zarządzaj**.
 
-3. Kreator **zastosuj ochronę w warstwie Standardowa** lub **Zastosuj ścisłą ochronę** rozpoczyna się w wysuwnym oknie. Na stronie **Ochrona EOP zidentyfikuj** wewnętrznych adresatów, do których mają zastosowanie zasady (warunki adresatów):
+1. Kreator **zastosuj ochronę w warstwie Standardowa** lub **Zastosuj ścisłą ochronę** rozpoczyna się w wysuwnym oknie. Na stronie **Ochrona EOP zidentyfikuj** wewnętrznych adresatów, do których mają zastosowanie zasady (warunki adresatów):
    - **Użytkownicy**
    - **Grupy**
    - **Domeny**
@@ -117,11 +117,11 @@ Aby przypisać wstępnie ustawione zasady zabezpieczeń, wykonaj następujące k
 
    Po zakończeniu wybierz pozycję **Dalej**.
 
-4. Na **Ochrona usługi Office 365 w usłudze Defender ochrony mają zastosowanie do** strony w celu zidentyfikowania wewnętrznych adresatów, do których mają zastosowanie zasady (warunki adresatów). Określ użytkowników, grupy i domeny, tak jak w poprzednim kroku.
+1. Na **Ochrona usługi Office 365 w usłudze Defender ochrony mają zastosowanie do** strony w celu zidentyfikowania wewnętrznych adresatów, do których mają zastosowanie zasady (warunki adresatów). Określ użytkowników, grupy i domeny, tak jak w poprzednim kroku.
 
    Po zakończeniu kliknij przycisk **Dalej**.
 
-5. Na stronie **Przejrzyj i potwierdź zmiany** zweryfikuj wybrane opcje, a następnie wybierz pozycję **Potwierdź**.
+1. Na stronie **Przejrzyj i potwierdź zmiany** zweryfikuj wybrane opcje, a następnie wybierz pozycję **Potwierdź**.
 
 > [!TIP]
 > Aby dowiedzieć się więcej na temat przypisywania wstępnie ustawionych zasad zabezpieczeń, zobacz następujące artykuły:
@@ -144,14 +144,14 @@ Skorzystaj z naszego przewodnika szybkiego startu [Ochrona przed zagrożeniami](
 Domyślnie poziomy udostępniania są ustawione na najbardziej permisywny poziom zarówno dla programu SharePoint, jak i usługi OneDrive. Zalecamy zmianę ustawień domyślnych, aby lepiej chronić firmę.
 
 1. Przejdź do <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">obszaru **Udostępnianie** w centrum administracyjnym programu SharePoint</a> i zaloguj się przy użyciu konta z [uprawnieniami administratora dla organizacji](/sharepoint/sharepoint-admin-role).
- 
-2. W obszarze **Udostępnianie zewnętrzne** określ poziom udostępniania. (Zalecamy użycie **metody Najmniej permisywnej** , aby zapobiec udostępnianiu zewnętrznemu).
 
-3. W obszarze **Łącza do plików i folderów** wybierz opcję (na przykład **Określone osoby**). Następnie zdecyduj, czy domyślnie przyznać uprawnienia Widok, czy Edytuj dla łączy udostępnionych (takich jak **Widok**).
+1. W obszarze **Udostępnianie zewnętrzne** określ poziom udostępniania. (Zalecamy użycie **metody Najmniej permisywnej** , aby zapobiec udostępnianiu zewnętrznemu).
 
-4. W obszarze **Inne ustawienia** wybierz opcje, których chcesz użyć.
+1. W obszarze **Łącza do plików i folderów** wybierz opcję (na przykład **Określone osoby**). Następnie zdecyduj, czy domyślnie przyznać uprawnienia Widok, czy Edytuj dla łączy udostępnionych (takich jak **Widok**).
 
-5. Następnie wybierz pozycję **Zapisz**.
+1. W obszarze **Inne ustawienia** wybierz opcje, których chcesz użyć.
+
+1. Następnie wybierz pozycję **Zapisz**.
 
 > [!TIP]
 > Aby dowiedzieć się więcej na temat tych ustawień, zobacz [Zarządzanie ustawieniami udostępniania](/sharepoint/turn-external-sharing-on-or-off).
@@ -168,9 +168,9 @@ Na poniższej ilustracji przedstawiono niektóre z domyślnych zasad dołączony
 
 1. Przejdź do portal zgodności Microsoft Purview i [https://compliance.microsoft.com](https://compliance.microsoft.com) zaloguj się.
 
-2. W okienku nawigacji wybierz pozycję **Zasady**, a następnie wybierz pozycję **Zasady alertów**.
+1. W okienku nawigacji wybierz pozycję **Zasady**, a następnie wybierz pozycję **Zasady alertów**.
 
-3. Wybierz poszczególne zasady, aby wyświetlić więcej szczegółów lub edytować zasady. Na poniższej ilustracji przedstawiono listę zasad alertów z wybraną jedną zasadą:
+1. Wybierz poszczególne zasady, aby wyświetlić więcej szczegółów lub edytować zasady. Na poniższej ilustracji przedstawiono listę zasad alertów z wybraną jedną zasadą:
 
    :::image type="content" source="media/selected-alert-policy.png" lightbox="media/selected-alert-policy.png" alt-text="Zrzut ekranu przedstawiający wybrane zasady alertów.":::
 
@@ -194,13 +194,13 @@ Możesz uniemożliwić użytkownikom w organizacji udostępnianie ich kalendarzy
 
 1. Przejdź [do ustawień organizacji w Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2053743) i zaloguj się.
 
-2. Wybierz pozycję **Kalendarz** i określ, czy osoby w organizacji mogą udostępniać swoje kalendarze osobom spoza firmy, które mają Office 365 lub exchange, czy innym osobom.
+1. Wybierz pozycję **Kalendarz** i określ, czy osoby w organizacji mogą udostępniać swoje kalendarze osobom spoza firmy, które mają Office 365 lub exchange, czy innym osobom.
 
    Zalecamy wyczyszczenie opcji **Udostępnianie zewnętrzne** .
 
    Jeśli wybierzesz opcję udostępnij dowolnej osobie, możesz zdecydować się na udostępnienie tylko informacji wolnych/zajętych.
 
-3. Wybierz pozycję **Zapisz zmiany** w dolnej części strony.
+1. Wybierz pozycję **Zapisz zmiany** w dolnej części strony.
 
    Na poniższej ilustracji pokazano, że udostępnianie kalendarza jest niedozwolone.
 

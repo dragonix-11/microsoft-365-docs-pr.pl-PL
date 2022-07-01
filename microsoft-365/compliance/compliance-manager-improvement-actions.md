@@ -1,5 +1,5 @@
 ---
-title: Praca z akcjami ulepszania w menedżerze zgodności Microsoft Purview
+title: Praca z akcjami ulepszania w programie Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak implementować i testować mechanizmy kontroli, pracując z akcjami ulepszania w programie Microsoft Purview Compliance Manager. Przypisywanie pracy, przechowywanie dokumentacji i eksportowanie raportów.
-ms.openlocfilehash: 9dca4f3a742b82a2cf119ceb40b04241d1b5177f
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: ed52b6e9b3f6c817430383beebcb57f9c4dcf613
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621784"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574283"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>Praca z akcjami poprawy w Menedżerze zgodności
 
@@ -67,7 +67,7 @@ Po zidentyfikowaniu odpowiedniego przypisanego użytkownika upewnij się, że ma
 3. Wybierz pozycję **Przypisz**. Przypisany użytkownik otrzyma wiadomość e-mail z wyjaśnieniem, że przypisano do niego akcję poprawy, z bezpośrednim linkiem do akcji poprawy.
 
 > [!NOTE]
-> Klienci Community (GCC) High i Department of Defense (DoD) nie otrzymają wiadomości e-mail po przypisaniu do nich akcji poprawy.
+> Klienci us Government Community (GCC) High i Department of Defense (DoD) nie otrzymają wiadomości e-mail po przypisaniu do nich działań ulepszeń.
 
 Przypisany użytkownik może następnie wykonać zalecane akcje.
 
@@ -146,7 +146,7 @@ Historia testowania zawiera pobrany raport wszystkich zmian stanu testu dla akcj
 #### <a name="exporting-testing-history"></a>Eksportowanie historii testowania
 Możesz wyeksportować raport, który wyświetli historię wszystkich zmian stanu testu dla akcji poprawy. Te raporty są szczególnie przydatne do monitorowania postępu [akcji, które są automatycznie testowane](#automatic-testing-source), ponieważ takie akcje są regularnie lub często aktualizowane na podstawie danych dzierżawy.
 
-Na stronie szczegółów akcji poprawy wybierz kartę **Testowanie** . W obszarze **Historia testowania** wybierz przycisk **Eksportuj historię testowania** . Raport zostanie pobrany jako plik Excel.
+Na stronie szczegółów akcji poprawy wybierz kartę **Testowanie** . W obszarze **Historia testowania** wybierz przycisk **Eksportuj historię testowania** . Raport zostanie pobrany jako plik programu Excel.
 
 ## <a name="update-testing-source"></a>Aktualizowanie źródła testowania
 
@@ -156,7 +156,9 @@ Menedżer zgodności udostępnia opcje testowania akcji poprawy. W sekcji **Prze
 Akcje poprawy ustawione na potrzeby testowania ręcznego to akcje, które można ręcznie przetestować i zaimplementować. Należy ustawić niezbędne stany implementacji i stanu testu oraz przekazać wszystkie pliki dowodów na karcie **Dokumenty** . W przypadku niektórych akcji jest to jedyna dostępna metoda testowania akcji poprawy.
 
 #### <a name="automatic-testing-source"></a>Źródło automatycznego testowania
-Jeśli akcja implementacji kwalifikuje się do automatycznego testowania przez Menedżera zgodności, zobaczysz opcję **Automatyczne** dla źródła testowania. Menedżer zgodności wykrywa sygnały z innych rozwiązań zgodności skonfigurowanych w środowisku Microsoft 365, a także wszelkie uzupełniające akcje monitorowane przez firmę Microsoft Secure Score. Pole **Logika testowania** na karcie **Testowanie** pokaże, jakiego rodzaju zasady lub konfiguracja są wymagane w innym rozwiązaniu, aby akcja przekazywała i zdobywała punkty w kierunku oceny zgodności.
+Niektóre akcje poprawy mogą być automatycznie testowane przez Menedżera zgodności. [Uzyskaj szczegółowe informacje o tym](compliance-manager-improvement-actions.md#update-testing-source) , które akcje poprawy mogą i nie mogą być automatycznie testowane.
+
+W przypadku tych akcji ulepszania, które można automatycznie przetestować, zobaczysz opcję **Automatyczne** dla źródła testowania. Menedżer zgodności wykrywa sygnały z innych rozwiązań zgodności skonfigurowanych w środowisku platformy Microsoft 365, a także wszelkie uzupełniające akcje monitorowane przez firmę Microsoft Secure Score. Pole **Logika testowania** na karcie **Testowanie** pokaże, jakiego rodzaju zasady lub konfiguracja są wymagane w innym rozwiązaniu, aby akcja przekazywała i zdobywała punkty w kierunku oceny zgodności.
 
 Gdy sygnały wskazują, że akcja poprawy została pomyślnie zaimplementowana, automatycznie otrzymasz punkty kwalifikujące się do tej akcji, co będzie uwzględniać wyniki dla wszelkich powiązanych kontroli i ocen. Dowiedz się więcej o tym, jak [ciągła ocena wpływa na wynik zgodności](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
@@ -226,7 +228,7 @@ Po wybraniu pozycji **Przejrzyj aktualizację** na stronie szczegółów akcji p
 Wybierz pozycję **Zaakceptuj aktualizację** , aby zaakceptować wszystkie zmiany w akcji poprawy. **Zaakceptowane zmiany są trwałe**.
 
 > [!NOTE]
-> Po zaakceptowaniu aktualizacji akcji akceptujesz również aktualizacje innych wersji lub wystąpień tej akcji. Aktualizacje będą propagowane w całej dzierżawie w przypadku akcji technicznych i będą propagowane w całej grupie w przypadku akcji innych niż techniczne.
+> Po zaakceptowaniu aktualizacji akcji akceptujesz również aktualizacje innych wersji lub wystąpień tej akcji. Aktualizacje będzie propagować całej dzierżawy dla akcji technicznych i będzie propagować całej grupy dla działań nietechnacyjnych.
 
 Jeśli wybierzesz opcję **Anuluj**, aktualizacja nie zostanie zastosowana do akcji poprawy. Będziesz jednak nadal widzieć powiadomienie **Oczekujące na aktualizację** do momentu zaakceptowania aktualizacji.
 
@@ -250,4 +252,4 @@ Możesz skonfigurować alerty, aby natychmiast powiadamiać o pewnych zmianach a
 
 ## <a name="export-a-report"></a>Eksportowanie raportu
 
-Wybierz pozycję **Eksportuj** w lewym górnym rogu ekranu, aby pobrać arkusz Excel zawierający wszystkie akcje poprawy oraz kategorie filtrów wyświetlane na stronie akcji poprawy.
+Wybierz pozycję **Eksportuj** w lewym górnym rogu ekranu, aby pobrać arkusz programu Excel zawierający wszystkie akcje poprawy oraz kategorie filtrów wyświetlane na stronie akcji poprawy.

@@ -25,14 +25,14 @@ ms.custom:
 - adminvideo
 description: Znajdź fakturę lub zestawienie rozliczeniowe w centrum administracyjnym platformy Microsoft 365. Możesz również zapisać i wydrukować kopię rachunku.
 ms.date: 01/25/2022
-ms.openlocfilehash: 02905b1e31dc295d8b5d79bc150a0c93823c9dd7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b82b3c6472abad250c65900208fbdc5e2603e2f6
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316369"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491742"
 ---
-# <a name="view-your-bill-or-invoice"></a>Wyświetlanie rachunku lub faktury
+# <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>Wyświetlanie rachunku lub faktury z tytułu subskrypcji platformy Microsoft 365 dla firm
 
 Ten artykuł jest przeznaczony dla osób, które mają subskrypcję platformy Microsoft 365 dla firm.
   

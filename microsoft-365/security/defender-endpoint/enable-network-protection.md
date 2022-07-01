@@ -15,19 +15,19 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: e53cda0ac61bdc546e972d663bf0063b02b21ad3
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 9e94b164dd5c4863b792acdfdd36756ebd94347a
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363270"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574008"
 ---
 # <a name="turn-on-network-protection"></a>Wyłącz ochronę sieci
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Program antywirusowy Microsoft Defender
@@ -36,7 +36,7 @@ ms.locfileid: "65363270"
 - System Windows
 
 > [!TIP]
-> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [Ochrona sieci](network-protection.md) pomaga uniemożliwić pracownikom korzystanie z dowolnej aplikacji w celu uzyskania dostępu do niebezpiecznych domen, które mogą hostować wyłudzanie informacji, luki w zabezpieczeniach i inne złośliwe treści w Internecie. Ochronę [sieci można przeprowadzać](evaluate-network-protection.md) w środowisku testowym, aby sprawdzić, które aplikacje zostaną zablokowane przed włączeniem ochrony sieci.
 
@@ -67,7 +67,7 @@ Jeśli brakuje klucza, **przejdź do** \> oprogramowania **Microsoft** \> **Wind
 Włącz ochronę sieci przy użyciu dowolnej z następujących metod:
 
 - [PowerShell](#powershell)
-- [Mobile Zarządzanie urządzeniami (MDM)](#mobile-device-management-mdm)
+- [Zarządzanie urządzeniami przenośnymi (MDM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
 - [Zasady grupy](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
@@ -99,17 +99,39 @@ Użyj [dostawcy ./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/w
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
-1. Zaloguj się do centrum administracyjnego Microsoft Endpoint Manager (https://endpoint.microsoft.com).
+#### <a name="microsoft-defender-for-endpoint-baseline-method"></a>Ochrona punktu końcowego w usłudze Microsoft Defender metoda bazowa
 
-2. Przejdź do **pozycji** **UrządzeniaProfile** >  **konfiguracjiUtwórz** >  profil.
+1. Zaloguj się do centrum administracyjnego usługi Microsoft Endpoint Manager (https://endpoint.microsoft.com).
+2. Przejdź do pozycji **Punkty odniesienia** >  zabezpieczeń  > **punktu końcowego** **Ochrona punktu końcowego w usłudze Microsoft Defender Punkt odniesienia**.
+3. Wybierz **pozycję Utwórz profil**, a następnie podaj nazwę profilu, a następnie wybierz pozycję **Dalej**.
+4. W sekcji **Ustawienia konfiguracji** przejdź do pozycji **Reguły zmniejszania obszaru podatnego na ataki** > ustawić **ustawienie Blokuj**, **Włącz** lub **Przeprowadź inspekcję** w **celu włączenia ochrony sieci**. Wybierz pozycję **Dalej**.
+5. Wybierz odpowiednie **tagi zakresu** i **przypisania** zgodnie z wymaganiami organizacji.
+7. Przejrzyj wszystkie informacje, a następnie wybierz pozycję **Utwórz**.
+
+#### <a name="antivirus-policy-method"></a>Metoda zasad ochrony antywirusowej
+1. Zaloguj się do centrum administracyjnego usługi Microsoft Endpoint Manager (https://endpoint.microsoft.com).
+2. Przejdź do programu **antywirusowego** zabezpieczeń  > **punktu końcowego**
+3. Wybierz **pozycję Utwórz zasady**
+4. W oknie **wysuwnym Tworzenie zasad wybierz pozycję** **Windows 10, Windows 11 i Windows Server** z listy **Platforma**.
+5. Wybierz pozycję **Microsoft Defender Antivirus** z listy **Profil** , a następnie wybierz pozycję **Utwórz**
+6. Podaj nazwę profilu, a następnie wybierz pozycję **Dalej**.
+7. W sekcji **Ustawienia konfiguracji** wybierz pozycję **Wyłączone**, **Włączone (tryb bloku)** lub **Włączone (tryb inspekcji)** w obszarze **Włącz ochronę sieci**, a następnie wybierz pozycję **Dalej**.
+8. Wybierz odpowiednie **przypisania** i **tagi zakresu** zgodnie z wymaganiami organizacji.
+9. Przejrzyj wszystkie informacje, a następnie wybierz pozycję **Utwórz**.
+
+#### <a name="configuration-profile-method"></a>Metoda profilu konfiguracji
+
+1. Zaloguj się do centrum administracyjnego usługi Microsoft Endpoint Manager (https://endpoint.microsoft.com).
+
+2. Przejdź do **pozycji Profile** >  konfiguracji **urządzeń** > **Utwórz profil**.
 
 3. W **wysuwnym Tworzenie profilu** wybierz pozycję **Platforma** i wybierz **typ profilu** jako **szablony**.
 
 4. W **polu Nazwa szablonu** wybierz pozycję **Ochrona punktu końcowego** z listy szablonów, a następnie wybierz pozycję **Utwórz**.
 
-4. Przejdź do **pozycji Endpoint** **protectionBasics** > , podaj nazwę profilu, a następnie wybierz pozycję **Dalej**.
+4. Przejdź do pozycji **Podstawy** **programu Endpoint Protection** > , podaj nazwę profilu, a następnie wybierz pozycję **Dalej**.
 
-5. W sekcji **Ustawienia konfiguracji** przejdź do obszaru **Microsoft Defender Exploit Guard** >  **Sieciowe filtrowanieSieć** >  **ochrony przed pracąEnable** >  lub **Inspekcja**. Wybierz pozycję **Dalej**.
+5. W sekcji **Ustawienia konfiguracji** przejdź do obszaru **Filtrowanie** >  sieci **programu Microsoft Defender Exploit Guard** > **Ochrona** >  sieci **włącz** lub **przeprowadź inspekcję**. Wybierz pozycję **Dalej**.
 
 6. Wybierz odpowiednie **tagi zakresu**, **przypisania** i **reguły stosowania** zgodnie z wymaganiami organizacji. Administratorzy mogą ustawić więcej wymagań.
 
@@ -127,15 +149,15 @@ Poniższa procedura umożliwia włączenie ochrony sieci na komputerach przyłą
 
 2. W **edytorze zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera** i wybierz pozycję **Szablony administracyjne**.
 
-3. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Microsoft Defender** \> Windows Defender **ochrony sieci** **exploit guard**\>.
+3. Rozwiń drzewo do **składników** \> systemu Windows **Microsoft Defender Antivirus** \> **Windows Defender exploit guard** \> **ochrony sieci**.
 
    > [!NOTE]
-   > W starszych wersjach Windows ścieżka zasad grupy może zawierać ciąg "Program antywirusowy Windows Defender" zamiast "Program antywirusowy Microsoft Defender".
+   > W starszych wersjach systemu Windows ścieżka zasad grupy może zawierać ciąg "Program antywirusowy Windows Defender" zamiast "Program antywirusowy Microsoft Defender".
 
 4. Kliknij dwukrotnie ustawienie **Uniemożliwiaj użytkownikom i aplikacjom uzyskiwanie dostępu do niebezpiecznych witryn internetowych** i ustaw opcję **Włączone**. W sekcji opcje należy określić jedną z następujących opcji:
     - **Blokuj** — użytkownicy nie mogą uzyskiwać dostępu do złośliwych adresów IP i domen.
     - **Wyłącz (ustawienie domyślne)** — funkcja ochrony sieci nie będzie działać. Dostęp użytkowników do złośliwych domen nie zostanie zablokowany.
-    - **Tryb inspekcji** — jeśli użytkownik odwiedzi złośliwy adres IP lub domenę, zdarzenie zostanie zarejestrowane w dzienniku zdarzeń Windows. Jednak nie będzie można zablokować użytkownikowi możliwości odwiedzenia adresu.
+    - **Tryb inspekcji** — jeśli użytkownik odwiedzi złośliwy adres IP lub domenę, zdarzenie zostanie zarejestrowane w dzienniku zdarzeń systemu Windows. Jednak nie będzie można zablokować użytkownikowi możliwości odwiedzenia adresu.
 
    > [!IMPORTANT]
    > Aby w pełni włączyć ochronę sieci, należy ustawić opcję zasady grupy **włączone**, a także wybrać pozycję **Blokuj** w menu rozwijanym opcje.
@@ -147,7 +169,7 @@ Poniższa procedura umożliwia włączenie ochrony sieci na komputerach przyłą
 
 1. Otwórz konsolę Configuration Manager.
 
-2. Przejdź do **obszaru Zasoby i zgodność** >  **Endpoint Protection** >  **Windows Defender Exploit Guard**.
+2. Przejdź do **obszaru Assets and Compliance** > **Endpoint Protection** >  **Windows Defender Exploit Guard**.
 
 3. Wybierz pozycję **Utwórz zasady funkcji Exploit Guard** na wstążce, aby utworzyć nowe zasady.
    - Aby edytować istniejące zasady, wybierz zasady, a następnie wybierz pozycję **Właściwości** na wstążce lub w menu kliknij prawym przyciskiem myszy. **Edytuj opcję Konfiguruj ochronę sieci** na karcie **Ochrona sieci**.  

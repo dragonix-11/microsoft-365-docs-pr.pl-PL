@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak Microsoft 365 Business Premium pomaga Firmie w zapewnianiu produktywności i bezpieczeństwa.
-ms.openlocfilehash: 8cfdbdf6f8980a0dbc3a30ca5994714b82571920
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 851abcfc2e7d6b55c4c6d201132dabafc56a898e
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489886"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574161"
 ---
 # <a name="how-microsoft-365-security-recommendations-affect-your-users"></a>Jak zalecenia dotyczące zabezpieczeń platformy Microsoft 365 wpływają na użytkowników
 
@@ -67,7 +67,7 @@ Microsoft 365 Business Premium obejmuje ulubione aplikacje zwiększające produk
 
 ## <a name="resources-to-train-your-users"></a>Zasoby do trenowania użytkowników
 
-Zalecenia dotyczące zabezpieczeń przedstawione w tej bibliotece znacznie utrudniają cyberatakom uzyskanie dostępu do środowiska. Jednak ważną częścią strategii zabezpieczeń jest szkolenie użytkowników&mdash; osób w firmie, które regularnie korzystają z systemów. Użytkownicy mogą być twoją pierwszą linią obrony. Każdy musi wiedzieć, jak pracować wydajnie przy jednoczesnym zachowaniu bezpieczniejszej ochrony środowiska. 
+Zalecenia dotyczące zabezpieczeń zawarte w tych misjach znacznie utrudniają cyberatakom uzyskanie dostępu do środowiska. Jednak ważną częścią strategii zabezpieczeń jest szkolenie członków organizacji&mdash;osób w firmie, które regularnie korzystają z systemów. Użytkownicy mogą być twoją pierwszą linią obrony. Każdy musi wiedzieć, jak pracować wydajnie przy jednoczesnym zachowaniu bezpieczniejszej ochrony środowiska.
 
 Dostępne są zasoby ułatwiające wszystkim w organizacji:
 
