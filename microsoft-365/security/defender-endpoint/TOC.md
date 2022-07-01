@@ -44,32 +44,31 @@
 #### [Użyj programu PowerShell, usługi WMI lub MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Scenariusze migracji serwera](server-migration.md)
 
-## [Konfiguruj i dołącz urządzenia]()
+## [Dołącz i konfiguruj urządzenia]()
 ### [Dołącz urządzenia i konfiguruj możliwości usługi ochrony punktu końcowego w usłudze Microsoft Defender](onboard-configure.md)
-
-
-### [Ochrona punktu końcowego w usłudze Microsoft Defender dla systemów Windows i Windows Server]()
-#### [Narzędzia i metody dołączania punktów końcowych dla systemu Windows](configure-endpoints.md)
-#### [Dołącz urządzenia z systemem Windows i Windows Server]()
-
-##### [Dołącz poprzednią wersję systemu Windows](onboard-downlevel.md)
-
-##### [Dołącz urządzenia z systemem Windows i Windows Server]()
-###### [Dołącz system Windows Server 2012 R2, 2016, półroczny kanał, 2019 i 2022](configure-server-endpoints.md)
-###### [Dołącz urządzenia z systemem Windows przy użyciu skryptu lokalnego](configure-endpoints-script.md)
-###### [Dołącz urządzenia z systemem Windows przy użyciu zasad grupy](configure-endpoints-gp.md)
-###### [Dołącz urządzenia z systemem Windows przy użyciu menedżera konfiguracji punktu końcowego Microsoft](configure-endpoints-sccm.md)
-###### [Dołącz urządzenia z systemem Windows przy użyciu narzędzi do zarządzania urządzeniami przenośnymi](configure-endpoints-mdm.md)
-###### [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)](configure-endpoints-vdi.md)
-###### [Dołącz urządzenia wielosesyjne z systemem Windows 10 w pulpicie wirtualnym Windows](onboard-windows-multi-session-device.md)
-
-#### [Integracja z Microsoft Defender dla Chmury](azure-server-integration.md)
-
+### [Dołączanie klienta systemu Windows](onboard-windows-client.md)
+#### [Dołącz klienta systemu Windows przy użyciu usługi Intune](configure-endpoints-mdm.md)
+#### [Dołącz urządzenia z systemem Windows przy użyciu menedżera konfiguracji punktu końcowego Microsoft](configure-endpoints-sccm.md)
+#### [Dołącz urządzenia z systemem Windows przy użyciu zasad grupy](configure-endpoints-gp.md)
+#### [Dołącz urządzenia z systemem Windows przy użyciu skryptu lokalnego](configure-endpoints-script.md)
+#### [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)](configure-endpoints-vdi.md)
+#### [Dołącz urządzenia wielosesyjne z systemem Windows 10 w pulpicie wirtualnym Windows](onboard-windows-multi-session-device.md)
 #### [Dołącz urządzenia bez dostępu do Internetu](onboard-offline-machines.md)
-#### [Uruchom test wykrywania na nowo dołączonym urządzeniu](run-detection-test.md)
-#### [Uruchom symulowane ataki na urządzeniach](attack-simulations.md)
-#### [Konfiguruj ustawienia serwera proxy i połączenia internetowego](configure-proxy-internet.md)
-#### [Utwórz regułę powiadomienia o dołączaniu lub odłączaniu](onboarding-notification.md)
+#### [Dołącz poprzednią wersję systemu Windows](onboard-downlevel.md)
+
+
+
+### [Dołączanie systemu Windows Server](onboard-windows-server.md)
+#### [Dołącz system Windows Server 2012 R2, 2016, półroczny kanał, 2019 i 2022](configure-server-endpoints.md)
+#### [Dołącz urządzenia z systemem Windows Server przy użyciu menedżera konfiguracji](configure-endpoints-sccm.md)
+#### [Dołącz urządzenia z systemem Windows Server przy użyciu zasad grupy](configure-endpoints-gp.md)
+#### [Dołącz urządzenia z systemem Windows Server przy użyciu skryptu lokalnego](configure-endpoints-script.md)
+#### [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)](configure-endpoints-vdi.md)
+
+
+
+
+
 
 ### [Usługa ochrony punktu końcowego w usłudze Microsoft Defender w innych systemach operacyjnych]()
 #### [Dołącz urządzenia z system operacyjnym innym niż Windows](configure-endpoints-non-windows.md)
@@ -175,6 +174,14 @@
 ###### [Często zadawane pytania i rozwiązywania problemów](ios-troubleshoot.md)
 
 ###### [Prywatność](ios-privacy.md)
+
+
+
+### [Integracja z Microsoft Defender dla Chmury](azure-server-integration.md)
+### [Uruchom test wykrywania na nowo dołączonym urządzeniu](run-detection-test.md)
+### [Uruchom symulowane ataki na urządzeniach](attack-simulations.md)
+### [Konfiguruj ustawienia serwera proxy i połączenia internetowego](configure-proxy-internet.md)
+### [Utwórz regułę powiadomienia o dołączaniu lub odłączaniu](onboarding-notification.md)
 
 ### [Zarządzaj ustawieniami konfiguracji usługi ochrony punktu końcowego w usłudze Microsoft Defender na urządzeniach z programem Microsoft Endpoint Manager](security-config-management.md)
 
@@ -326,6 +333,7 @@
 #### [Wykluczenia programu antywirusowego Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
 ##### [Wykluczenia oparte na rozszerzeniu pliku i lokalizacji folderu](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Wykluczenia dla plików otwartych przez procesy](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Kontekstowe wykluczenia plików i folderów](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md)
 ##### [Wykluczenia dla systemu Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Typowe błędy, których należy unikać](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
