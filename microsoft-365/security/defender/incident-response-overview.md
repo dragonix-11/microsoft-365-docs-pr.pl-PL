@@ -18,19 +18,18 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 - m365solution-incidentresponse
-- m365solution-scenario
 - m365solution-overview
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a4edb82291ff01a4876ad93d688dbbbf19416c05
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: a919e8893fff0486d7a9a3eb89be1822a73ce437
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435374"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603555"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Badanie i reagowanie za pomocą Microsoft 365 Defender
 
@@ -44,7 +43,7 @@ Poniżej przedstawiono podstawowe zadania badania i reagowania dla Microsoft 365
 
 ## <a name="incident-response"></a>Reagowanie na zdarzenia
 
-Microsoft 365 usługi i aplikacje tworzą alerty w przypadku wykrycia podejrzanego lub złośliwego zdarzenia lub działania. Poszczególne alerty dostarczają cennych wskazówek dotyczących zakończonego lub trwającego ataku. Jednak ataki zwykle stosują różne techniki względem różnych typów jednostek, takich jak urządzenia, użytkownicy i skrzynki pocztowe. Wynikiem jest wiele alertów dla wielu jednostek w dzierżawie. Ponieważ łączenie poszczególnych alertów w celu uzyskania wglądu w atak może być trudne i czasochłonne, Microsoft 365 Defender automatycznie agreguje alerty i skojarzone z nimi informacje w zdarzeniu.
+Usługi i aplikacje platformy Microsoft 365 tworzą alerty po wykryciu podejrzanego lub złośliwego zdarzenia lub działania. Poszczególne alerty dostarczają cennych wskazówek dotyczących zakończonego lub trwającego ataku. Jednak ataki zwykle stosują różne techniki względem różnych typów jednostek, takich jak urządzenia, użytkownicy i skrzynki pocztowe. Wynikiem jest wiele alertów dla wielu jednostek w dzierżawie. Ponieważ łączenie poszczególnych alertów w celu uzyskania wglądu w atak może być trudne i czasochłonne, Microsoft 365 Defender automatycznie agreguje alerty i skojarzone z nimi informacje w zdarzeniu.
 
 Na bieżąco należy zidentyfikować zdarzenia o najwyższym priorytecie do analizy i rozwiązania w kolejce zdarzeń i przygotować je do odpowiedzi. Jest to kombinacja następujących elementów:
 
@@ -81,7 +80,7 @@ Analiza zagrożeń to funkcja analizy zagrożeń w Microsoft 365 Defender zaproj
 - Typowe powierzchnie ataków
 - Powszechnie stosowane złośliwe oprogramowanie
 
-Analiza zagrożeń zawiera również informacje o powiązanych zdarzeniach i zasobach, których dotyczy problem, w ramach dzierżawy Microsoft 365 dla każdego zidentyfikowanego zagrożenia.
+Analiza zagrożeń zawiera również informacje o powiązanych zdarzeniach i zasobach, których dotyczy problem, w ramach dzierżawy usługi Microsoft 365 dla każdego zidentyfikowanego zagrożenia.
 
 Każde zidentyfikowane zagrożenie obejmuje raport analityków, kompleksową analizę zagrożenia napisaną przez badaczy zabezpieczeń firmy Microsoft, którzy są w czołówce wykrywania i analizy cyberbezpieczeństwa. Te raporty mogą również dostarczać informacji na temat sposobu, w jaki ataki pojawiają się w Microsoft 365 Defender.
 
@@ -91,4 +90,4 @@ Aby uzyskać więcej informacji, zobacz [Analiza zagrożeń w Microsoft 365 Defe
 
 Microsoft Threat Experts — docelowe powiadomienia o atakach to zarządzana usługa wyszukiwania zagrożeń. Po zastosowaniu i zaakceptowaniu otrzymasz powiadomienia o ukierunkowanych atakach od ekspertów firmy Microsoft w zakresie zagrożeń, dzięki czemu nie przegapisz krytycznych zagrożeń dla środowiska. Te powiadomienia pomogą Ci chronić punkty końcowe, pocztę e-mail i tożsamości organizacji. Microsoft Threat Experts — eksperci na żądanie pozwalają uzyskać specjalistyczne porady dotyczące zagrożeń, z którymi boryka się Twoja organizacja, i możesz skontaktować się z pomocą w zakresie zagrożeń, z którymi boryka się Twoja organizacja. Jest ona dostępna jako dodatkowa usługa subskrypcji.
 
-Aby uzyskać więcej informacji, zobacz [Microsoft Threat Experts w Microsoft 365 omówienie](/microsoft-365/security/defender/microsoft-threat-experts).
+Aby uzyskać więcej informacji, zobacz [Microsoft Threat Experts na platformie Microsoft 365 — omówienie](/microsoft-365/security/defender/microsoft-threat-experts).

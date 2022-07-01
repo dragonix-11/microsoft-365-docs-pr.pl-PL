@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Zazwyczaj częścią rozwiązania do zarządzania rekordami można skonfigurować etykietę przechowywania w celu rozpoczęcia okresu przechowywania na podstawie identyfikowanego zdarzenia.
-ms.openlocfilehash: 380a95a6b4d6fa6585d0912b675d65032cd8258b
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 753188e187bd3a80cd83c10d41b373b1507a1e24
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530865"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603213"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Rozpocznij przechowywanie po wystąpieniu zdarzenia
 
@@ -44,13 +44,12 @@ Przykłady korzystania z przechowywania opartego na zdarzeniach:
 - **Okres istnienia produktu** Twoja organizacja może mieć wymagania dotyczące przechowywania związane z ostatnią datą produkcji produktów dla zawartości, takiej jak specyfikacje techniczne. W tym przypadku ostatnia data produkcji jest zdarzeniem wyzwalającym okres przechowywania. 
     
 Przechowywanie oparte na zdarzeniach jest zwykle używane w ramach procesu zarządzania rekordami. Oznacza to, że:
-  
+
 - Etykiety przechowywania oparte na zdarzeniach również zwykle oznaczają elementy jako rekord jako część rozwiązania do zarządzania rekordami. Aby uzyskać więcej informacji, zobacz [Informacje o zarządzaniu rekordami](records-management.md).
 
-- Dokument, który został zadeklarowany jako rekord, ale którego wyzwalacz zdarzenia jeszcze się nie wydarzył, jest przechowywany przez czas nieokreślony (rekordów nie można trwale usunąć), dopóki zdarzenie nie wyzwoli okresu przechowywania tego dokumentu.
-    
+- Dokument, który został zadeklarowany jako rekord, ale którego wyzwalacz zdarzenia jeszcze się nie wydarzył, jest przechowywany przez czas nieokreślony. Dopóki zdarzenie nie wyzwoli okresu przechowywania tego dokumentu, który wygaśnie, rekordów nie można trwale usunąć.
+
 - Etykiety przechowywania oparte na zdarzeniach zwykle wyzwalają przegląd dyspozycji na końcu okresu przechowywania, dzięki czemu menedżer rekordów może ręcznie przeglądać i usuwać zawartość. Aby uzyskać więcej informacji, zobacz [Dyspozycja zawartości](disposition.md).
-    
 
 Etykieta przechowywania oparta na zdarzeniu ma takie same możliwości jak każda etykieta przechowywania w usłudze Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md).
 
@@ -64,7 +63,7 @@ Aby pomyślnie korzystać z przechowywania opartego na zdarzeniach, ważne jest 
   
 1. Tworzysz etykiety przechowywania dla różnych typów zawartości, a następnie kojarzysz je z typem zdarzenia. Na przykład etykiety przechowywania dla różnych typów plików i rekordów produktów są skojarzone z typem zdarzenia o nazwie Okres istnienia produktu, ponieważ te rekordy muszą być przechowywane przez 10 lat od momentu zakończenia życia produktu.
     
-2. Użytkownicy (zazwyczaj menedżerowie rekordów) stosują te etykiety przechowywania do zawartości i (w przypadku dokumentów w programach SharePoint i OneDrive) wprowadzają identyfikator zasobu dla każdego elementu. W tym przykładzie identyfikator zasobu jest nazwą produktu lub kodem używanym przez organizację. Następnie do rekordów każdego produktu jest przypisywana etykieta przechowywania, a każdy rekord ma właściwość zawierającą identyfikator zasobu. Diagram reprezentuje **całą zawartość** wszystkich rekordów produktów w organizacji, a każdy element ma identyfikator zasobu produktu, którego rekord jest. 
+2. Użytkownicy, którzy zazwyczaj są menedżerami rekordów, stosują te etykiety przechowywania do zawartości i (w przypadku dokumentów w programach SharePoint i OneDrive) wprowadzają identyfikator zasobu dla każdego elementu. W tym przykładzie identyfikator zasobu jest nazwą produktu lub kodem używanym przez organizację. Następnie do rekordów każdego produktu jest przypisywana etykieta przechowywania, a każdy rekord ma właściwość zawierającą identyfikator zasobu. Diagram reprezentuje **całą zawartość** wszystkich rekordów produktów w organizacji, a każdy element ma identyfikator zasobu produktu, którego rekord jest. 
     
 3. Okres istnienia produktu to typ zdarzenia; konkretny produkt, który zbliża się do końca życia, jest wydarzeniem. Gdy wystąpi zdarzenie tego typu zdarzenia — w tym przypadku, gdy produkt osiągnie koniec życia — utworzysz zdarzenie, które określa:
     
@@ -76,7 +75,7 @@ Aby pomyślnie korzystać z przechowywania opartego na zdarzeniach, ważne jest 
 
 4. Po utworzeniu zdarzenia ta data zdarzenia jest synchronizowana z całą zawartością, która ma etykietę przechowywania tego typu zdarzenia i zawiera określony identyfikator zasobu lub słowo kluczowe. Podobnie jak każda etykieta przechowywania, ta synchronizacja może potrwać do siedmiu dni. Na poprzednim diagramie wszystkie elementy w kolorze czerwonym mają swój okres przechowywania wyzwolony przez to zdarzenie. Innymi słowy, gdy ten produkt osiągnie koniec życia, to zdarzenie wyzwala okres przechowywania rekordów tego produktu.
 
-Ważne jest, aby zrozumieć, że jeśli nie określisz identyfikatora zasobu lub słów kluczowych dla zdarzenia, **cała zawartość** z etykietą przechowywania tego typu zdarzenia będzie miała swój okres przechowywania wyzwalany przez zdarzenie. Oznacza to, że na poprzednim diagramie cała zawartość zacznie być zachowywana. To może nie być to, co zamierzasz.
+Ważne jest, aby zrozumieć, że jeśli nie określisz identyfikatora zasobu lub słów kluczowych dla zdarzenia, **cała zawartość** z etykietą przechowywania tego typu zdarzenia będzie miała swój okres przechowywania wyzwalany przez zdarzenie. Oznacza to, że na poprzednim diagramie cała zawartość zacznie być zachowywana. Jest mało prawdopodobne, że ten wynik jest tym, co zamierzasz.
 
 Na koniec należy pamiętać, że każda etykieta przechowywania ma własne ustawienia przechowywania. W tym przykładzie wszystkie określają 10 lat, ale zdarzenie może wyzwolić etykiety przechowywania, w których każda etykieta ma inny okres przechowywania.
   
@@ -91,9 +90,13 @@ Przepływ pracy wysokiego poziomu na potrzeby przechowywania opartego na zdarzen
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Krok 1. Tworzenie etykiety, której okres przechowywania jest oparty na zdarzeniu
 
-Aby utworzyć i skonfigurować etykietę przechowywania, zobacz instrukcje dotyczące [tworzenia etykiet przechowywania](file-plan-manager.md#create-retention-labels) na potrzeby zarządzania rekordami lub [Jak utworzyć etykiety przechowywania na potrzeby zarządzania cyklem życia danych](create-retention-labels-data-lifecycle-management.md). Jednak specyficzne dla przechowywania opartego na zdarzeniach na stronie **Definiowanie ustawień przechowywania** podczas tworzenia etykiety przechowywania po **rozpoczęciu okresu przechowywania na podstawie** wybierz jeden z domyślnych typów zdarzeń z listy rozwijanej lub utwórz własne, wybierając pozycję **Utwórz nowy typ zdarzenia**:
+Aby utworzyć i skonfigurować etykietę przechowywania, zobacz instrukcje dotyczące [tworzenia etykiet przechowywania](file-plan-manager.md#create-retention-labels) na potrzeby zarządzania rekordami. Ale specyficzne dla przechowywania opartego na zdarzeniach:
 
-![Utwórz nowy typ zdarzenia dla etykiety przechowywania.](../media/SPRetention6.png)
+- Na stronie **Definiowanie ustawień etykiety** podczas tworzenia etykiety przechowywania upewnij się, że wybrano pozycję **Zachowaj elementy na zawsze lub dla określonego okresu**. Następnie:
+    
+    Na stronie **Definiowanie okresu** po ustawieniu okresu wybierz jeden z domyślnych typów zdarzeń z listy rozwijanej w polu **Kiedy powinien rozpocząć się okres?**. Możesz też utworzyć własny typ zdarzenia, wybierając pozycję **Utwórz nowy typ zdarzenia** i postępuj zgodnie z monitami o konfigurację:
+    
+    ![Utwórz nowy typ zdarzenia dla etykiety przechowywania.](../media/SPRetention6.png)
 
 Typ zdarzenia to po prostu ogólny opis zdarzenia, które chcesz skojarzyć z etykietą przechowywania.
 
@@ -105,7 +108,7 @@ Przechowywanie oparte na zdarzeniach wymaga ustawień przechowywania, które:
     
 - Usuń zawartość automatycznie lub wyzwól przegląd dyspozycji na końcu okresu przechowywania.
   
-Przechowywanie oparte na zdarzeniach jest zwykle używane w przypadku zawartości zadeklarowanej jako rekord, więc jest to dobry moment, aby sprawdzić, czy należy również wybrać opcję oznaczania zawartości jako [rekordu](records-management.md#records).
+Przechowywanie oparte na zdarzeniach jest zwykle używane w przypadku zawartości zadeklarowanej jako rekord, więc teraz warto sprawdzić, czy należy również wybrać opcję oznaczania zawartości jako [rekordu](records-management.md#records).
 
 Jeśli używasz istniejącego typu zdarzenia zamiast tworzenia nowego typu zdarzenia, przejdź do kroku 3.
 
@@ -116,7 +119,7 @@ Jeśli używasz istniejącego typu zdarzenia zamiast tworzenia nowego typu zdarz
 
 Jeśli dla ustawień przechowywania **wybrano pozycję Utwórz nowy typ zdarzenia**, wprowadź nazwę i opis typu zdarzenia. Następnie wybierz pozycję **Dalej**, **Prześlij** i **Gotowe**.
 
-Wróć do strony **Definiowanie ustawień przechowywania** , aby **rozpocząć okres przechowywania na podstawie** listy rozwijanej, aby wybrać utworzony typ zdarzenia.
+Po **powrocie na stronę Definiowanie okresu** dla pozycji **Kiedy powinien rozpocząć się okres?**, użyj listy rozwijanej, aby wybrać utworzony typ zdarzenia.
 
   
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>Krok 3. Publikowanie lub automatyczne stosowanie etykiet przechowywania opartych na zdarzeniach
@@ -145,7 +148,7 @@ Gdy wystąpi określone wystąpienie tego typu zdarzenia, takie jak produkt, do 
 
 ![Utwórz zdarzenie wyzwalające rozpoczęcie przechowywania dla etykiet przechowywania opartych na zdarzeniach.](../media/create-event-records-management.png)
 
-Maksymalnie milion zdarzeń jest obsługiwanych na dzierżawę.
+Do 1 000 000 zdarzeń jest obsługiwanych na dzierżawę.
 
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Krok 6. Wybierz ten sam typ zdarzenia używany przez etykietę w kroku 2
 
@@ -177,7 +180,7 @@ Usunięcie zdarzenia nie powoduje anulowania ustawień przechowywania, które s�
 
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Wyszukiwanie zawartości umożliwia znalezienie całej zawartości z określoną etykietą lub identyfikatorem zasobu
 
-Po przypisaniu etykiet przechowywania do zawartości możesz użyć wyszukiwania zawartości, aby znaleźć całą zawartość sklasyfikowaną przy użyciu określonej etykiety przechowywania lub zawierającą określony identyfikator zasobu:
+Po przypisaniu etykiet przechowywania do zawartości możesz użyć wyszukiwania zawartości, aby znaleźć całą zawartość, która ma określoną etykietę przechowywania lub która zawiera określony identyfikator zasobu:
   
 - Aby znaleźć całą zawartość z określoną etykietą przechowywania, wybierz warunek **Etykieta przechowywania** , a następnie wprowadź pełną nazwę etykiety lub część nazwy etykiety i użyj symbolu wieloznacznego. 
     

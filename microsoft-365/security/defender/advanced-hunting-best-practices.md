@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 505308bec005811e174b90cde9e872532ccacdfe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: c4236edcb2b5ec15b7c66be8f4b74ad0a2bc44c7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739488"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603478"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Zaawansowane najlepsze rozwiązania dotyczące zapytań dotyczących wyszukiwania zagrożeń
 
@@ -33,7 +33,7 @@ ms.locfileid: "65739488"
 **Dotyczy:**
 - Microsoft 365 Defender
 
-Zastosuj te zalecenia, aby szybciej uzyskać wyniki i uniknąć przekroczenia limitu czasu podczas uruchamiania złożonych zapytań. Aby uzyskać więcej wskazówek dotyczących poprawy wydajności zapytań, przeczytaj [Kusto najlepsze rozwiązania dotyczące zapytań](/azure/kusto/query/best-practices).
+Zastosuj te zalecenia, aby szybciej uzyskać wyniki i uniknąć przekroczenia limitu czasu podczas uruchamiania złożonych zapytań. Aby uzyskać więcej wskazówek dotyczących poprawy wydajności zapytań, przeczytaj [Najlepsze rozwiązania dotyczące zapytań Kusto](/azure/kusto/query/best-practices).
 
 ## <a name="understand-cpu-resource-quotas"></a>Omówienie limitów przydziału zasobów procesora CPU
 W zależności od rozmiaru każda dzierżawa ma dostęp do określonej ilości zasobów procesora CPU przydzielonych do uruchamiania zaawansowanych zapytań wyszukiwania zagrożeń. Aby uzyskać szczegółowe informacje o różnych parametrach użycia, [przeczytaj o zaawansowanych limitach przydziałów zagrożeń i parametrach użycia](advanced-hunting-limits.md).
@@ -43,6 +43,8 @@ Po uruchomieniu zapytania można zobaczyć czas wykonywania i jego użycie zasob
 :::image type="content" source="../../media/resource-usage.png" alt-text="Szczegóły zapytania na karcie **Wyniki** w portalu Microsoft 365 Defender" lightbox="../../media/resource-usage.png":::
 
 Klienci, którzy regularnie uruchamiają wiele zapytań, powinni śledzić użycie i stosować wskazówki dotyczące optymalizacji w tym artykule, aby zminimalizować zakłócenia wynikające z przekroczenia limitów przydziału lub parametrów użycia.
+
+Obejrzyj [optymalizowanie zapytań KQL](https://www.youtube.com/watch?v=ceYvRuPp5D8) , aby zobaczyć niektóre z najpopularniejszych sposobów ulepszania zapytań.  
 
 ## <a name="general-optimization-tips"></a>Ogólne porady dotyczące optymalizacji
 
@@ -63,7 +65,9 @@ Klienci, którzy regularnie uruchamiają wiele zapytań, powinni śledzić użyc
 - **Analizuj, nie wyodrębniaj** — jeśli to możliwe, użyj [operatora analizy](/azure/data-explorer/kusto/query/parseoperator) lub funkcji analizy, takiej jak [parse_json()](/azure/data-explorer/kusto/query/parsejsonfunction). `matches regex` Unikaj operatora ciągu lub [funkcji extract(),](/azure/data-explorer/kusto/query/extractfunction) które używają wyrażenia regularnego. Zarezerwuj użycie wyrażenia regularnego w bardziej złożonych scenariuszach. [Przeczytaj więcej na temat analizowania funkcji](#parse-strings)
 - **Nie filtruj tabel —** nie filtruj kolumny obliczeniowej, jeśli możesz filtrować kolumnę tabeli.
 - **Brak terminów trzyznakowych** — unikaj porównywania lub filtrowania przy użyciu terminów z trzema znakami lub mniejszą liczbą znaków. Te terminy nie są indeksowane, a ich dopasowanie będzie wymagało większej ilości zasobów.
-- **Project selektywnie** — ułatwić zrozumienie wyników przez projekcję tylko potrzebnych kolumn. Projekcja określonych kolumn przed uruchomieniem [sprzężenia](/azure/data-explorer/kusto/query/joinoperator) lub podobnych operacji również pomaga zwiększyć wydajność.
+- **Selektywne projektowanie** — ułatwić zrozumienie wyników przez projekcję tylko potrzebnych kolumn. Projekcja określonych kolumn przed uruchomieniem [sprzężenia](/azure/data-explorer/kusto/query/joinoperator) lub podobnych operacji również pomaga zwiększyć wydajność.
+
+
 
 ## <a name="optimize-the-join-operator"></a>Optymalizowanie `join` operatora
 [Operator sprzężenia](/azure/data-explorer/kusto/query/joinoperator) scala wiersze z dwóch tabel, dopasowując wartości w określonych kolumnach. Zastosuj te wskazówki, aby zoptymalizować zapytania korzystające z tego operatora.
@@ -186,13 +190,13 @@ Klienci, którzy regularnie uruchamiają wiele zapytań, powinni śledzić użyc
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
 
-Obejrzyj ten [krótki film wideo](https://www.youtube.com/watch?v=ceYvRuPp5D8), aby dowiedzieć się, jak zoptymalizować język zapytań Kusto.  
+
 
 ## <a name="query-scenarios"></a>Scenariusze zapytań
 
 ### <a name="identify-unique-processes-with-process-ids"></a>Identyfikowanie unikatowych procesów przy użyciu identyfikatorów procesów
 
-Identyfikatory procesów są poddawane recyklingowi w Windows i ponownie używane w nowych procesach. Same w sobie nie mogą służyć jako unikatowe identyfikatory dla określonych procesów.
+Identyfikatory procesów (PID) są poddawane recyklingowi w systemie Windows i ponownie używane w nowych procesach. Same w sobie nie mogą służyć jako unikatowe identyfikatory dla określonych procesów.
 
 Aby uzyskać unikatowy identyfikator procesu na określonej maszynie, użyj identyfikatora procesu wraz z czasem tworzenia procesu. Podczas dołączania lub podsumowywania danych dotyczących procesów dołącz kolumny identyfikatora maszyny ( `DeviceId` lub `DeviceName`), identyfikator procesu (`ProcessId` lub `InitiatingProcessId`), a czas tworzenia procesu (`ProcessCreationTime` lub `InitiatingProcessCreationTime`)
 
@@ -273,7 +277,7 @@ Aby dowiedzieć się więcej o wszystkich obsługiwanych funkcjach analizowania,
 >Niektóre tabele w tym artykule mogą nie być dostępne w Ochrona punktu końcowego w usłudze Microsoft Defender. [Włącz Microsoft 365 Defender](m365d-enable.md), aby wyszukiwać zagrożenia przy użyciu większej liczby źródeł danych. Zaawansowane przepływy pracy wyszukiwania zagrożeń można przenieść z Ochrona punktu końcowego w usłudze Microsoft Defender do Microsoft 365 Defender, wykonując kroki opisane w [temacie Migrowanie zaawansowanych zapytań wyszukiwania zagrożeń z Ochrona punktu końcowego w usłudze Microsoft Defender](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Tematy pokrewne
-- [dokumentacja języka zapytań Kusto](/azure/data-explorer/kusto/query/)
+- [Dokumentacja języka zapytań Kusto](/azure/data-explorer/kusto/query/)
 - [Przydziały i parametry użycia](advanced-hunting-limits.md)
 - [Obsługa zaawansowanych błędów wyszukiwania zagrożeń](advanced-hunting-errors.md)
 - [Omówienie zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md)

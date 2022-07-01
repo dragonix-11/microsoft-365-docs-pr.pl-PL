@@ -1,5 +1,5 @@
 ---
-title: Reguły zmniejszania obszaru ataków testowych (ASR)
+title: Przetestuj reguły zmniejszania obszaru podatnego na ataki
 description: Zawiera wskazówki dotyczące testowania wdrażania reguł zmniejszania obszaru ataków (ASR).
 keywords: Wdrażanie reguł zmniejszania obszaru ataków, wdrażanie usługi ASR, włączanie reguł asr, konfigurowanie usługi ASR, system zapobiegania włamaniom do hostów, reguły ochrony, reguły ochrony przed lukami w zabezpieczeniach, reguły antyeksploatowania, reguły wykorzystujące luki w zabezpieczeniach, reguły zapobiegania zakażeniom, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł usługi ASR
 search.product: eADQiWindows 10XVcnh
@@ -17,17 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: facce2b736cb23cc41625b4b7d5c3f8b0ca5cfae
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 8bfe3e0d36a02831b5673b92217152ce87804d0a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705280"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601295"
 ---
-# <a name="test-attack-surface-reduction-asr-rules"></a>Reguły zmniejszania obszaru ataków testowych (ASR)
+# <a name="test-attack-surface-reduction-asr-rules"></a>Przetestuj reguły zmniejszania obszaru podatnego na ataki
 
 Testowanie reguł zmniejszania obszaru ataków (ASR) pomaga określić, czy reguły będą utrudniać operacje biznesowe przed włączeniem jakiejkolwiek reguły. Zaczynając od małej, kontrolowanej grupy, możesz ograniczyć potencjalne zakłócenia pracy podczas rozszerzania wdrożenia w całej organizacji.
 
@@ -42,10 +41,10 @@ Rozpocznij fazę testowania, włączając reguły usługi ASR z regułami ustawi
 
 ### <a name="configure-asr-rules-using-mem"></a>Konfigurowanie reguł usługi ASR przy użyciu MEM
 
-Do konfigurowania niestandardowych reguł usługi ASR można użyć zabezpieczeń punktu końcowego Microsoft Endpoint Manager (MEM).
+Do konfigurowania niestandardowych reguł usługi ASR można użyć usługi Microsoft Endpoint Manager (MEM) Endpoint Security.
 
-1. Otwórz [centrum administracyjne Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home).
-2. Przejdź do **obszaru Zabezpieczenia** >  punktu **końcowegoW celu zmniejszenia obszaru**.
+1. Otwórz [centrum administracyjne Endpoint Manager firmy Microsoft](https://endpoint.microsoft.com/#home).
+2. Przejdź do obszaru **Zmniejszanie obszaru ataków** zabezpieczeń  > **punktu końcowego**.
 3. Wybierz pozycję **Utwórz zasady**.
 4. W **obszarze Platforma** wybierz pozycję **Windows 10 i nowsze**, a następnie w obszarze **Profil** wybierz pozycję **Reguły zmniejszania obszaru ataków**.
   
@@ -76,7 +75,7 @@ Nowe zasady zmniejszania obszaru ataków dla reguł usługi ASR są wymienione w
 
 ## <a name="step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Krok 2. Omówienie strony raportowania reguł zmniejszania obszaru ataków w portalu Microsoft 365 Defender
 
-Strona raportowania reguł usługi ASR znajduje się w **portalu** >  Microsoft 365 Defender **ReportsAttack** >  **— reguły zmniejszania obszaru**. Ta strona ma trzy karty:
+Strona raportowania reguł usługi ASR znajduje się w **Microsoft 365 Defender portalu****Raporty Reguły** > **zmniejszania obszaru** >  podatnego na ataki. Ta strona ma trzy karty:
 
 - Wykrywania
 - Konfiguracja
@@ -124,7 +123,7 @@ Funkcja **GroupBy** zwraca wyniki ustawione na następujące grupy:
 > :::image type="content" source="images/asr-defender365-filter.png" alt-text="Filtr wykrywania reguł zmniejszania obszaru ataków w regułach" lightbox="images/asr-defender365-filter.png":::
 
 >[!Note]
->Jeśli masz licencję Microsoft Microsoft 365 Security E5 lub A5, Windows E5 lub A5, poniższy link otwiera kartę Raporty usługi Microsoft Defender 365 > [Obszar ataków](https://security.microsoft.com/asr?viewid=detections) > Wykrywanie.
+>Jeśli masz licencję Microsoft Microsoft 365 Security E5 lub A5, Windows E5 lub A5, poniższy link otwiera kartę Raporty usługi Microsoft Defender 365 > [obszaru ataków](https://security.microsoft.com/asr?viewid=detections) > kartę Wykrywanie.
 
 ### <a name="configuration-tab"></a>Karta Konfiguracja
 
@@ -138,7 +137,7 @@ Na karcie Konfiguracje możesz sprawdzić — na poszczególnych urządzeniach �
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-configurations.settings.png" alt-text="Włączone reguły zmniejszania obszaru ataków i tryb" lightbox="images/asr-defender365-configurations.settings.png":::
 
-Link **Wprowadzenie** otwiera centrum administracyjne Microsoft Endpoint Manager, w którym można utworzyć lub zmodyfikować zasady ochrony punktu końcowego dla usługi ASR:
+Link **Wprowadzenie** otwiera centrum administracyjne usługi Microsoft Endpoint Manager, w którym można utworzyć lub zmodyfikować zasady ochrony punktu końcowego dla usługi ASR:
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-05b-mem1.png" alt-text="Element menu *Zabezpieczenia punktu końcowego na stronie Przegląd" lightbox="images/asr-defender365-05b-mem1.png":::
@@ -154,20 +153,20 @@ W | zabezpieczeń punktu końcowego Omówienie, wybierz pozycję **Zmniejszanie 
 > :::image type="content" source="images/asr-defender365-05b-mem3.png" alt-text="Okienko zmniejszania obszaru ataków zabezpieczeń punktu końcowego" lightbox="images/asr-defender365-05b-mem3.png":::
 
 >[!Note]
->Jeśli masz licencję microsoft defender 365 E5 (lub Windows E5?), ten link otworzy kartę Raporty usługi Microsoft Defender 365 > ataków > kartę [Konfiguracje](https://security.microsoft.com/asr?viewid=configuration).
+>Jeśli masz licencję usługi Microsoft Defender 365 E5 (lub Windows E5?), ten link spowoduje otwarcie karty Raporty usługi Microsoft Defender 365 > Atak > [konfiguracji](https://security.microsoft.com/asr?viewid=configuration) .
 
 ### <a name="add-exclusions"></a>Dodawanie wykluczeń
 
 Ta karta zawiera metodę wybierania wykrytych jednostek (na przykład wyników fałszywie dodatnich) do wykluczenia. Po dodaniu wykluczeń raport zawiera podsumowanie oczekiwanego wpływu.
 
 >[!Note]
-> Program antywirusowy Microsoft Defender wykluczenia av są przestrzegane przez reguły usługi ASR.  Zobacz [Konfigurowanie i weryfikowanie wykluczeń na podstawie rozszerzenia, nazwy lub lokalizacji](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+> Wykluczenia av programu antywirusowego Microsoft Defender są przestrzegane przez reguły usługi ASR.  Zobacz [Konfigurowanie i weryfikowanie wykluczeń na podstawie rozszerzenia, nazwy lub lokalizacji](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="Images/asr-defender365-06d.png" alt-text="Okienko wykluczania wykrytego pliku" lightbox="Images/asr-defender365-06d.png":::
 
 > [!Note]
->Jeśli masz licencję microsoft defender 365 E5 (lub Windows E5?), ten link otworzy kartę Raporty usługi Microsoft Defender 365 > Obszar ataków > [wykluczeń](https://security.microsoft.com/asr?viewid=exclusions).
+>Jeśli masz licencję microsoft defender 365 E5 (lub Windows E5?), ten link otworzy kartę Raporty usługi Microsoft Defender 365 > Obszar ataków > [wykluczenia](https://security.microsoft.com/asr?viewid=exclusions) .
 
 ### <a name="use-powershell-as-an-alternative-method-to-enable-asr-rules"></a>Używanie programu PowerShell jako alternatywnej metody w celu włączenia reguł usługi ASR
 
@@ -192,9 +191,9 @@ Aby włączyć wszystkie dodane reguły zmniejszania obszaru ataków w trybie in
 
 Możesz również użyć dostawców usług konfiguracji zasady grupy, Intune lub zarządzania urządzeniami przenośnymi (MDM), aby skonfigurować i wdrożyć to ustawienie. Dowiedz się więcej w artykule Main [Attack surface reduction rules (Główne reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction.md) ).
 
-## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Użyj Windows Podgląd zdarzeń Review jako alternatywy dla strony raportowania reguł zmniejszania obszaru ataków w portalu Microsoft 365 Defender
+## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Używanie funkcji Windows Podgląd zdarzeń Review jako alternatywy dla strony raportowania reguł zmniejszania obszaru ataków w portalu Microsoft 365 Defender
 
-Aby przejrzeć aplikacje, które zostałyby zablokowane, otwórz Podgląd zdarzeń i odfiltruj identyfikator zdarzenia 1121 w dzienniku microsoft-Windows-Windows Defender/operacyjnym. W poniższej tabeli wymieniono wszystkie zdarzenia ochrony sieci.
+Aby przejrzeć aplikacje, które zostałyby zablokowane, otwórz Podgląd zdarzeń i odfiltruj identyfikator zdarzenia 1121 w dzienniku Microsoft-Windows-Windows Defender/Operational. W poniższej tabeli wymieniono wszystkie zdarzenia ochrony sieci.
 
 Identyfikator zdarzenia | Opis
 -|-
@@ -204,12 +203,12 @@ Identyfikator zdarzenia | Opis
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Dodatkowe tematy w tej kolekcji wdrożeń
 
-[Omówienie wdrażania reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment.md)
+[Omówienie wdrażania reguł zmniejszania powierzchni podatnej na ataki (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Planowanie wdrożenia reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+[Zaplanuj wdrażanie reguł zmniejszania powierzchni podatnej na ataki (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[Włączanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+[Włącz reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-implement.md)
 
-[Operacjonalizowanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operacjonalizuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Dokumentacja reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-reference.md)
+[Odwołuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-reference.md)

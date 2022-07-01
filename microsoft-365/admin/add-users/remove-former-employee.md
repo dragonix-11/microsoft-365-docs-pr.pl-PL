@@ -28,14 +28,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Zablokuj dostęp do usługi Microsoft 365, aby były pracownik nie mógł się zalogować, zabezpieczyć danych organizacji i zezwolić innym pracownikom na dostęp do poczty e-mail i danych usługi OneDrive.
-ms.openlocfilehash: d8b32a2489735469ecdd2af3b479b0705d33be13
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 12c1656ba0826e9d4d2472427642914cdcc7b2e6
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486225"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601723"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Omówienie: Usuwanie byłego pracownika i zabezpieczanie danych
+
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
 
 Często pojawia się pytanie: "Co należy zrobić, aby zabezpieczyć dane i chronić dostęp, gdy pracownik opuści moją organizację?" W tej serii artykułów wyjaśniono, jak zablokować dostęp do platformy Microsoft 365, aby ci użytkownicy nie mogli zalogować się do platformy Microsoft 365, czynności, które należy wykonać w celu zabezpieczenia danych organizacji, oraz jak zezwolić innym pracownikom na dostęp do poczty e-mail i danych usługi OneDrive.
 
@@ -78,7 +80,9 @@ Aby wykonać kroki opisane w tej serii, użyj tych funkcji i funkcji platformy M
 |[Krok 6. Usuwanie i usuwanie licencji platformy Microsoft 365 od byłego pracownika](remove-former-employee-step-6.md)|Po odebraniu licencji możesz ją przypisać innej osobie. Możesz też usunąć licencję, aby nie płacić za nią do czasu zatrudnienia nowej osoby.  <p> Po odebraniu lub usunięciu licencji stare wiadomości e-mail, kontakty i kalendarz użytkownika będą przechowywane przez okres **30 dni**, po czym zostaną trwale usunięte. Jeśli tylko usuniesz licencję, ale nie usuniesz konta, zawartość w usłudze OneDrive użytkownika pozostanie dla Ciebie dostępna nawet po upływie 30 dni.  |
 |[Krok 7. Usuwanie konta użytkownika byłego pracownika](remove-former-employee-step-7.md)|Spowoduje to usunięcie konta z centrum administracyjnego. Dzięki temu zostanie zachowany porządek.|
 
- ## <a name="watch-delete-a-user"></a>Obejrzyj: Usuwanie użytkownika
+## <a name="watch-delete-a-user"></a>Obejrzyj: Usuwanie użytkownika
+
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198203).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 

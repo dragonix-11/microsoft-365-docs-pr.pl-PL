@@ -18,12 +18,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować skrzynkę pocztową do zbierania wiadomości e-mail dotyczących spamu i wyłudzania informacji zgłaszanych przez użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f2881076679f64633afc1ddcac6a9de7df64acb
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 64ce66e10e7f6f549479b6f8a838c5db220d36dd
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530603"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602453"
 ---
 # <a name="user-reported-message-settings"></a>Ustawienia wiadomości zgłoszonych przez użytkownika
 
@@ -48,16 +48,16 @@ Dostarczanie wiadomości zgłoszonych przez użytkownika do niestandardowej skrz
 ## <a name="custom-mailbox-prerequisites"></a>Wymagania wstępne niestandardowej skrzynki pocztowej
 
 Poniższe artykuły umożliwiają skonfigurowanie wymaganych wymagań wstępnych, aby wiadomości zgłaszane przez użytkownika przechodziły do niestandardowej skrzynki pocztowej:
- 
-- [Identyfikowanie niestandardowej skrzynki pocztowej jako skrzynki pocztowej SecOps w zaawansowanych zasadach dostarczania](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
+
+- [Identyfikowanie niestandardowej skrzynki pocztowej jako skrzynki pocztowej SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
 - [Tworzenie zasad ochrony przed złośliwym oprogramowaniem](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) dla niestandardowej skrzynki pocztowej, w której
-    - automatyczne przeczyszczanie typu zero-godzin (ZAP) dla złośliwego oprogramowania jest wyłączone (nie wybrano sekcji \>**Ustawienia ochrony** **Włącz automatyczne przeczyszczanie w godzinach zerowych dla złośliwego oprogramowania**). 
-    - opcja filtru wspólnego załącznika jest wyłączona (sekcja \>**Ustawienia ochrony** **Włącz wspólny filtr załączników** nie jest zaznaczona). 
+  - Automatyczne przeczyszczanie o wartości zero godzin (ZAP) dla złośliwego oprogramowania jest wyłączone (nie wybrano sekcji \>**Ustawienia ochrony** **Włącz automatyczne przeczyszczanie automatyczne w godzinach zerowych dla złośliwego oprogramowania**).
+  - Opcja filtru wspólnego załącznika jest wyłączona (nie wybrano sekcji \>**Ustawienia ochrony** **Włącz wspólny filtr załączników**).
 
 Jeśli masz Ochrona usługi Office 365 w usłudze Microsoft Defender, należy również skonfigurować następujące ustawienia, aby nasze zaawansowane filtrowanie nie miało wpływu na użytkowników zgłaszających komunikaty:
 
-- [Upewnij się, że niestandardowa skrzynka pocztowa nie jest częścią żadnych wstępnie ustawionych zasad zabezpieczeń](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
+- Upewnij się, że niestandardowa skrzynka pocztowa nie jest częścią żadnych [wstępnie ustawionych zasad zabezpieczeń](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
 
 - [Utwórz zasady bezpiecznych łączy](set-up-safe-links-policies.md) dla niestandardowej skrzynki pocztowej, w której skanowanie bezpiecznych łączy jest wyłączone (**wybierz akcję dla nieznanych potencjalnie złośliwych adresów URL w** sekcji \> Wiadomości **Wyłączone**).
 
@@ -134,7 +134,7 @@ Po upewnieniu się, że skrzynka pocztowa spełnia wszystkie odpowiednie wymagan
 
 Możesz skonfigurować narzędzia do raportowania wiadomości innych firm, aby wysyłać zgłoszone wiadomości do niestandardowej skrzynki pocztowej. W tym celu należy ustawić ustawienie **przycisku Komunikat raportu programu Microsoft Outlook** na **Wartość Wyłączone** i ustawić **skrzynkę pocztową mojej organizacji** na wybraną Office 365 skrzynkę pocztową.
 
-Jedynym wymaganiem jest uwzględnienie oryginalnego komunikatu jako . EML lub . Załącznik msg (nieskompresowany) w wiadomości wysyłanej do niestandardowej skrzynki pocztowej (nie przekazuj oryginalnej wiadomości do niestandardowej skrzynki pocztowej). 
+Jedynym wymaganiem jest uwzględnienie oryginalnego komunikatu jako . EML lub . Załącznik msg (nieskompresowany) w wiadomości wysyłanej do niestandardowej skrzynki pocztowej (nie przekazuj oryginalnej wiadomości do niestandardowej skrzynki pocztowej).
 
  > [!NOTE]
  > Jeśli w wiadomości e-mail znajduje się wiele załączników wiadomości e-mail, przesłanie zostanie odrzucone. Obsługujemy tylko wiadomości e-mail z jednym załącznikiem wiadomości e-mail.

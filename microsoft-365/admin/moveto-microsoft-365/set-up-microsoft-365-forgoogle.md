@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie migrowania Microsoft 365 Google Workspace
+title: Konfigurowanie migracji platformy Microsoft 365 do obszaru roboczego Google
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,31 +20,35 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Dowiedz się, jak skonfigurować usługę Microsoft 365, aby była gotowa do migracji z usługi Google Workspace.
-ms.openlocfilehash: 2ecb465ee10d0c27dec5baa09598e696641e3f02
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+description: Dowiedz się, jak skonfigurować platformę Microsoft 365, aby była gotowa do migracji z obszaru roboczego Google.
+ms.openlocfilehash: 17c34a06709167360ee2177307361882567195ae
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63014790"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602099"
 ---
-# <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Konfigurowanie migrowania Microsoft 365 Google Workspace
+# <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Konfigurowanie migracji platformy Microsoft 365 do obszaru roboczego Google
+
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
+
+## <a name="watch-set-up-microsoft-365-for-google-workspace-migration"></a>Obejrzyj: Konfigurowanie usługi Microsoft 365 na potrzeby migracji obszaru roboczego Google
+
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198101).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JD2Y?autoplay=false]
 
-Aby przeprowadzić migrację poczty e-mail, kalendarza i kontaktów z usługi Google Workspace, musisz skonfigurować usługę Microsoft 365 Business Premium z domeną tymczasową, dopóki domena Twojej firmy nie będzie gotowa do użycia w ramach subskrypcji.
+Aby przeprowadzić migrację poczty e-mail, kalendarza i kontaktów z obszaru roboczego Google, należy skonfigurować Microsoft 365 Business Premium z domeną tymczasową, dopóki domena biznesowa nie będzie gotowa do użycia z subskrypcją.
 
-## <a name="try-it"></a>Spróbuj! 
+1. Zaloguj się do [office.com](https://office.com) i wybierz **pozycję Administracja**.
+1. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję **Przejdź do konfiguracji z przewodnikiem**. 
+1. Opcjonalnie zainstaluj aplikacje pakietu Office, a następnie wybierz pozycję **Kontynuuj**. 
+1. Ponieważ migrujesz z obszaru roboczego Google, wybierz domenę domyślną i wybierz pozycję **Użyj tej domeny**. 
+1. Wprowadź nazwy użytkownika i żądane nazwy użytkowników, sprawdź swój adres e-mail, aby można było otrzymywać hasła użytkownika, a następnie wybierz pozycję **Dodaj użytkowników i przypisz licencje**. 
+1. Wprowadź adresy e-mail, na których użytkownicy będą otrzymywać nowe poświadczenia, wybierz pozycję **Wyślij wiadomość e-mail i kontynuuj**.
+1. Następnie **kontynuuj** ponownie, aby połączyć domenę tymczasową. 
+1. Opcjonalnie wybierz, aby poinformować użytkowników w organizacji o aplikacji Teams, a następnie wybierz pozycję **Kontynuuj**.
+1. Rozwiń i przejrzyj **ustawienia systemu Android i iOS**, a następnie wybierz pozycję **Utwórz zasady zarządzania aplikacjami mobilnymi**.
+1. W razie potrzeby przekaż opinię i wybierz pozycję **Przejdź do centrum administracyjnego**.
 
-1. Zaloguj się, [aby office.com](https://office.com), a następnie wybierz pozycję **Administrator**.
-1. W menu centrum administracyjne platformy Microsoft 365 wybierz pozycję **Przejdź do konfiguracji ze przewodnikiem**. 
-1. Opcjonalnie zainstaluj aplikacje Office, a następnie wybierz pozycję **Kontynuuj**. 
-1. Ponieważ migracja jest z usługi Google Workspace, wybierz domenę domyślną, a następnie wybierz **pozycję Użyj tej domeny**. 
-1. Wprowadź nazwy użytkowników i żądane nazwy użytkowników, zweryfikuj swój adres e-mail, aby otrzymywać hasła użytkowników, a następnie wybierz pozycję Dodaj użytkowników i **przypisz licencje**. 
-1. Wprowadź adresy e-mail, pod które użytkownicy otrzymają nowe poświadczenia, wybierz pozycję **Wyślij wiadomość e-mail i kontynuuj**.
-1. Następnie **ponownie** wybierz pozycję Kontynuuj, aby połączyć domenę tymczasową. 
-1. Opcjonalnie wybierz opcję informowania użytkowników w organizacji o Teams, a następnie wybierz pozycję **Kontynuuj**.
-1. Rozwiń i przejrzyj ustawienia **systemów Android i iOS, a** następnie wybierz **pozycję Utwórz zasady zarządzania aplikacją mobilną**.
-1. W razie potrzeby podaj opinię i wybierz pozycję **Przejdź do centrum administracyjnego**.
-
-Następnym krokiem tego procesu będzie skonfigurowanie zabezpieczeń dla organizacji.
+Następnym krokiem w tym procesie będzie skonfigurowanie ochrony dla organizacji.

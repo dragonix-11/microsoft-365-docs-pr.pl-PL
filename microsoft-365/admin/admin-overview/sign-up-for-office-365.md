@@ -1,5 +1,5 @@
 ---
-title: Jak się zarejestrować — Pomoc dla administratorów
+title: Jak się zarejestrować — Administracja Pomoc
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -27,38 +27,43 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: Dowiedz się, co musisz wiedzieć o najnowszych wersjach programów Office przed przejściem przez proces tworzenia konta dla Office 365.
+description: Dowiedz się, co należy wiedzieć o najnowszych wersjach programów pakietu Office przed przejściem przez proces tworzenia konta dla Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 185931ba308ae547355cb21a2935bb6f9097c8b7
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 400c30fd1b6879097afe510f36582c46879c85a5
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636223"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601185"
 ---
-# <a name="how-to-sign-up---admin-help"></a>Jak się zarejestrować — Pomoc dla administratorów
+# <a name="how-to-sign-up---admin-help"></a>Jak się zarejestrować — Administracja Pomoc
 
-Utwórz konto w Microsoft 365 dla firm, aby zespół mógł zacząć korzystać z najnowszych wersji programów Word, Excel, PowerPoint i innych programów Office.
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
+
+Utwórz konto usługi Microsoft 365 dla firm, aby twój zespół mógł zacząć korzystać z najnowszych wersji programów Word, Excel, PowerPoint i innych programów pakietu Office.
 
 ::: moniker range="o365-21vianet"
 
-Jeśli jesteś w Chinach, usługa Office 365 obsługiwana przez firmę 21Vianet została zaprojektowana tak, aby spełniała wymagania dotyczące bezpiecznych, niezawodnych i skalowalnych usług w chmurze w Chinach. Ta usługa jest obsługiwana przez technologię, którą firma Microsoft ma licencję 21Vianet. Firma Microsoft nie obsługuje samej usługi. 21Vianet obsługuje, zapewnia i zarządza dostarczaniem usługi. 21Vianet jest największym neutralnym operatorem internetowym dostawcą usług centrów danych w Chinach, świadczącym usługi hostingowe, zarządzane usługi sieciowe i usługi infrastruktury przetwarzania w chmurze. Licencjonując technologie firmy Microsoft, firma 21Vianet obsługuje lokalne centra danych firmy Microsoft, aby zapewnić możliwość korzystania z usługi firmy Microsoft przy jednoczesnym zachowaniu danych w Chinach. 21Vianet zapewnia również subskrypcję i usługi rozliczeniowe oraz pomoc techniczną.
+Jeśli jesteś w Chinach, usługa Office 365 obsługiwana przez firmę 21Vianet została zaprojektowana tak, aby spełniała wymagania dotyczące bezpiecznych, niezawodnych i skalowalnych usług w chmurze w Chinach. Ta usługa jest obsługiwana przez technologię, którą firma Microsoft ma licencję 21Vianet. Firma Microsoft nie obsługuje samej usługi. 21Vianet obsługuje, zapewnia i zarządza dostarczaniem usługi. 21Vianet jest największym neutralnym operatorem internetowym dostawcą usług centrów danych w Chinach, świadczącym usługi hostingowe, zarządzane usługi sieciowe i usługi infrastruktury przetwarzania w chmurze. Licencjonując technologie firmy Microsoft, firma 21Vianet obsługuje lokalne centra danych firmy Microsoft, aby zapewnić możliwość korzystania z usług firmy Microsoft przy jednoczesnym zachowaniu danych w Chinach. 21Vianet zapewnia również subskrypcję i usługi rozliczeniowe oraz pomoc techniczną.
   
 > [!NOTE]
 > Te usługi podlegają chińskiemu prawu.
   
-Utwórz konto Office 365 obsługiwanych przez firmę 21Vianet, aby zespół mógł zacząć korzystać z najnowszych wersji programów Word, Excel, PowerPoint i innych programów Office.
+Utwórz konto Office 365 obsługiwane przez firmę 21Vianet, aby zespół mógł zacząć korzystać z najnowszych wersji programów Word, Excel, PowerPoint i innych programów pakietu Office.
   
 Chcesz się zarejestrować? [Wybierz plan](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans).
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="choose-a-plan"></a>Wybieranie planu
 
 Przed zakupem włóż trochę myśli do planu, w który się zarejestrujesz. Pozwoli to uniknąć późniejszych problemów.
 
-## <a name="watch-choose-a-microsoft-365-subscription"></a>Obejrzyj: Wybierz subskrypcję Microsoft 365
+## <a name="watch-choose-a-microsoft-365-subscription"></a>Obejrzyj: Wybierz subskrypcję platformy Microsoft 365
+
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198032).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -93,9 +98,9 @@ Nie musisz anulować wersji próbnej. Jeśli nie kupisz subskrypcji wersji prób
   - **Adres e-mail** i **numer telefonu**, abyśmy mogli w razie potrzeby kontaktować się z Tobą w sprawach dotyczących subskrypcji. Na przykład jeśli zapomnisz hasła, skorzystamy z tych informacji, aby wysłać Ci hasło tymczasowe. Na podany przez Ciebie adres e-mail wysyłamy również informacje rozliczeniowe.
 
     > [!NOTE]
-    > Podany tutaj adres e-mail różni się od adresu e-mail Microsoft 365 (nazwa logowania poniżej). Ponieważ na ten adres wysyłamy także informacje rozliczeniowe, zalecamy skorzystanie z adresu e-mail, który jest odpowiedni do odbierania firmowej poczty e-mail.
+    > Podany tutaj adres e-mail różni się od adresu e-mail platformy Microsoft 365 (nazwa logowania poniżej). Ponieważ na ten adres wysyłamy także informacje rozliczeniowe, zalecamy skorzystanie z adresu e-mail, który jest odpowiedni do odbierania firmowej poczty e-mail.
   
-- **Nazwa logowania (identyfikator użytkownika):** Ten identyfikator użytkownika staje się początkowym adresem e-mail Microsoft 365, aby szybko rozpocząć pracę.
+- **Nazwa logowania (identyfikator użytkownika):** Ten identyfikator użytkownika staje się początkowym adresem e-mail platformy Microsoft 365, aby szybko rozpocząć pracę.
 
     Ten identyfikator użytkownika to adres e-mail używany do logowania. Na przykład jeśli Twoja firma nosi nazwę Fourth Coffee, jako swój identyfikator użytkownika możesz wybrać adres robert@fourthcoffee.onmicrosoft.com.
 
@@ -114,4 +119,4 @@ Nie musisz anulować wersji próbnej. Jeśli nie kupisz subskrypcji wersji prób
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Microsoft 365 wideo z szkoleniami biznesowymi](../../business-video/index.yml) (strona linku)
+[Filmy szkoleniowe dotyczące platformy Microsoft 365 dla firm](../../business-video/index.yml) (strona linku)

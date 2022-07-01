@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Centrum administracyjne platformy Microsoft 365 — informacje o funkcjach, które zostały dodane w tym miesiącu.
-ms.openlocfilehash: 198832f09f6b219579f128b7104ecf3ae2fa3446
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: fe801e913e227239b53eb7f1166a3f802f4217ce
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679357"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602585"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Co nowego w Centrum administracyjne platformy Microsoft 365
 
@@ -42,16 +42,16 @@ Ciągle dodajemy nowe funkcje do [Centrum administracyjne platformy Microsoft 36
 
 A jeśli chcesz wiedzieć, co nowego w innych usługach w chmurze firmy Microsoft:
 
-- [Co nowego w Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
-- [Co nowego w centrum administracyjnym Exchange](/Exchange/whats-new)
+- [Co nowego w usłudze Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
+- [Co nowego w centrum administracyjnym programu Exchange](/Exchange/whats-new)
 - [Co nowego w Microsoft Intune](/mem/intune/fundamentals/whats-new)
 - [Co nowego w portal zgodności Microsoft Purview](/Office365/SecurityCompliance/whats-new)
 - [Co nowego w usłudze Microsoft 365 Defender](../security/mtp/whats-new.md)
-- [Co nowego w centrum administracyjnym SharePoint](/sharepoint/what-s-new-in-admin-center)
-- [aktualizacje Office](/OfficeUpdates/)
-- [Jak sprawdzić kondycję wersji Windows](/windows/deployment/update/check-release-health)
+- [Co nowego w centrum administracyjnym programu SharePoint](/sharepoint/what-s-new-in-admin-center)
+- [Aktualizacje pakietu Office](/OfficeUpdates/)
+- [Jak sprawdzić kondycję wydania systemu Windows](/windows/deployment/update/check-release-health)
 
-## <a name="may-2022"></a>Maj 2022 r.
+## <a name="may-2022"></a>Maj 2022
 
 ### <a name="role-based-access-controls-rbac"></a>Kontrola dostępu oparta na rolach (RBAC)
 
@@ -73,7 +73,7 @@ Aby uzyskać więcej informacji na temat tych ról, zobacz [Azure AD role wbudow
 
 ### <a name="quick-assist"></a>Szybka pomoc
 
-Przenieśliśmy Szybka pomoc do sklepu Windows Store, aby zwiększyć wydajność i bezpieczeństwo aplikacji. Aplikacja Windows Szybka pomoc umożliwia Tobie i użytkownikom końcowym odbieranie lub udzielanie pomocy komputerowej za pośrednictwem połączenia zdalnego.
+Przenieśliśmy Szybka pomoc do Sklepu Windows, aby zwiększyć wydajność i bezpieczeństwo aplikacji. Aplikacja Windows Szybka pomoc umożliwia użytkownikom końcowym odbieranie lub zapewnianie pomocy komputera za pośrednictwem połączenia zdalnego.
 
 Dzięki nowej aplikacji ze sklepu Szybka pomoc Store powinna nastąpić znacząca poprawa czasu generowania kodu dostępu i zmniejszenie liczby błędów aplikacji.
 
@@ -81,7 +81,7 @@ Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z komputerem 
 
 ## <a name="april-2022"></a>Kwiecień 2022 r.
 
-### <a name="nps-sentiment-insights"></a>Szczegółowe informacje tonacji serwera NPS
+### <a name="nps-sentiment-insights"></a>Analiza tonacji serwera NPS
 
 Analizy ankiet nps to pulpit nawigacyjny oparty na sztucznej inteligencji dostępny w Centrum administracyjne platformy Microsoft 365.
 
@@ -89,7 +89,7 @@ W centrum administracyjnym przejdź do obszaru Informacje o **ankietach nps opin
 
 Ta funkcja ułatwia administratorom, takim jak Ty, uzyskanie praktycznych szczegółowych informacji pochodzących z ankiet nps firmy Microsoft, na które użytkownicy odpowiedzieli. Dowiedz się więcej na [stronie Microsoft product NPS feedback and insights for your organization (Opinie i szczegółowe informacje dotyczące serwera NPS produktów firmy Microsoft dla Twojej organizacji](manage/manage-feedback-product-insights.md)).
 
-Na podstawie Twoich opinii wprowadzamy nową funkcję, która identyfikuje tonację dla każdej opinii nps dosłownej, dzięki czemu możesz dowiedzieć się, co użytkownicy czują w odniesieniu do Microsoft 365 produktów. Etykiety tonacji, takie jak **Pozytywne**, **Negatywne** i **Inne** , są przypisywane do opinii dosłownej nps.
+Na podstawie Twoich opinii wprowadzamy nową funkcję, która identyfikuje tonację każdej opinii nps dosłownej, dzięki czemu możesz dowiedzieć się, co użytkownicy czują w odniesieniu do produktów platformy Microsoft 365. Etykiety tonacji, takie jak **Pozytywne**, **Negatywne** i **Inne** , są przypisywane do opinii dosłownej nps.
 
 :::image type="content" source="../media/product-feedback-nps-verbatims.png" alt-text="Zrzut ekranu: Pulpit nawigacyjny opinii o produkcie na karcie Analizy ankiet nps":::
 
@@ -142,7 +142,7 @@ Małe i średnie firmy często polegają na zaufanych partnerach IT w celu zarz�
 
 :::image type="content" source="../media/lighthouse.png" alt-text="Zrzut ekranu: pulpit nawigacyjny Microsoft 365 Lighthouse":::
 
-Microsoft 365 Lighthouse jest tylko usługą partnera IT i jest dostępna dla partnerów, którzy są zarejestrowani w programie Dostawca rozwiązań w chmurze (CSP) i zarządzają klientami, którzy mają do 1000 licencjonowanych użytkowników z Microsoft 365 Business Premium, Microsoft 365 E3 lub Microsoft Defender dla Firm (w wersji zapoznawczej) subskrypcji. Jeśli jesteś zarejestrowanym partnerem IT w programie Microsoft CSP, Microsoft 365 Lighthouse jest dostępny bezpłatnie dla Organizacji i został zaprojektowany, aby pomóc Twojej firmie w skalowaniu i rozwoju. Aby uzyskać więcej informacji, zapoznaj się z [biblioteką pomocy Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-overview.md).
+Microsoft 365 Lighthouse jest tylko usługą partnera IT i jest dostępna dla partnerów, którzy są zarejestrowani w programie Cloud Solution Provider (CSP) i zarządzają klientami, którzy mają do 1000 licencjonowanych użytkowników z Microsoft 365 Business Premium, Microsoft 365 E3 lub Microsoft Defender dla Firm (w wersji zapoznawczej) subskrypcji. Jeśli jesteś zarejestrowanym partnerem IT w programie Microsoft CSP, Microsoft 365 Lighthouse jest dostępny bezpłatnie dla Organizacji i został zaprojektowany, aby pomóc Twojej firmie w skalowaniu i rozwoju. Aby uzyskać więcej informacji, zapoznaj się z [biblioteką pomocy Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-overview.md).
 
 Aby rozpocząć korzystanie z Microsoft 365 Lighthouse, zobacz [Tworzenie konta w celu Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-sign-up.md). Aby dowiedzieć się więcej na temat Microsoft 365 Lighthouse, usługi Defender dla Firm i Microsoft 365 Business Premium, [dołącz do nas w naszej serii seminariów internetowych partnerów](https://aka.ms/M365MDBSeries).
 
@@ -181,7 +181,7 @@ Dowiedz się więcej na [stronie Microsoft product NPS feedback and insights for
 
 ### <a name="microsoft-365-admin-center-video-training"></a>Centrum administracyjne platformy Microsoft 365 trenowanie wideo
 
-Zaktualizowaliśmy nasze Centrum administracyjne platformy Microsoft 365 szkolenia wideo. Przejdź do strony [biblioteki wideo Administracja training,](admin-video-library.yml) aby dowiedzieć się, jak skonfigurować Microsoft 365 i zarządzać nimi dla swojej firmy.
+Zaktualizowaliśmy nasze Centrum administracyjne platformy Microsoft 365 szkolenia wideo. Przejdź do strony [Administracja biblioteki wideo szkoleniowej](https://go.microsoft.com/fwlink/?linkid=2197659), aby dowiedzieć się, jak skonfigurować platformę Microsoft 365 i zarządzać nią dla swojej firmy.
 
 :::image type="content" source="../media/admin-library-vid-training.png" alt-text="Zrzut ekranu: Wyświetlanie biblioteki trenowania wideo centrum administracyjnego":::
 
@@ -199,11 +199,11 @@ Dodaliśmy 2 grafy o nazwie **Trend woluminu** i **Trend woluminu według produk
 
 Wykres liniowy na karcie **Trend woluminu** wyróżnia trend, jeśli liczba przypadków pomocy technicznej rośnie lub maleje w organizacji z miesiąca na miesiąc. Możesz zatrzymać kursor na wykresie, aby sprawdzić liczbę przypadków pomocy technicznej utworzonych w każdym miesiącu.
 
-:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="Zrzut ekranu: Graph, który wyróżnia trend, jeśli liczba przypadków pomocy technicznej rośnie lub maleje w organizacji z miesiąca na miesiąc":::
+:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="Zrzut ekranu: wykres wyróżniający trend, jeśli liczba przypadków pomocy technicznej rośnie lub maleje w organizacji z miesiąca na miesiąc":::
 
 Wykres **Trend wolumenu według produktu** przedstawia 3 najlepsze produkty każdego miesiąca z najwyższymi przypadkami pomocy technicznej. Włączyliśmy filtrowanie w tabeli i teraz możesz filtrować wyniki według **produktów**, **ważności** i **daty**.
 
-:::image type="content" source="../media/SuppInsight-voltrndproduct.PNG" alt-text="Zrzut ekranu: Graph przedstawia 3 najlepsze produkty każdego miesiąca z najwyższymi przypadkami pomocy technicznej":::
+:::image type="content" source="../media/SuppInsight-voltrndproduct.PNG" alt-text="Zrzut ekranu: Graf przedstawia 3 najlepsze produkty każdego miesiąca z najwyższymi przypadkami pomocy technicznej":::
 
 Dodaliśmy również 2 nowe pola **, Ważność** i **Data zamknięcia** w tabeli **Wyświetl żądanie usługi** , aby uzyskać więcej informacji na temat biletów.
 
@@ -217,7 +217,7 @@ Aby wyewidencjonować te aktualizacje w <a href="https://go.microsoft.com/fwlink
 
 Dodaliśmy kilka nowych kategorii do funkcji wyszukiwania.
 
-- Teraz możesz wyszukiwać role administratora Microsoft 365 w wyszukiwanie globalne i szybko wyświetlać przypisania ról i zarządzać nimi z dowolnej strony. Na przykład wyszukaj **administratora Intune**.
+- Teraz możesz wyszukiwać role administratora platformy Microsoft 365 w wyszukiwanie globalne i szybko wyświetlać przypisania ról i zarządzać nimi z dowolnej strony. Na przykład wyszukaj **administratora Intune**.
 
 - Teraz możesz znaleźć uproszczone środowiska konfiguracji za pośrednictwem wyszukiwanie globalne. Może to pomóc Tobie i Twojej drużynie szybko rozpocząć korzystanie z nowych funkcji. Na przykład wyszukaj **ustawienie hasła, które nigdy nie wygaśnie**.
 

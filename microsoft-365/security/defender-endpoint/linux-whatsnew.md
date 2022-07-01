@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 2f745c0f215f19b0d6e4f9fc06b39ba8234fd170
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: aa6255289ddffd7edb9025e36c69a49f4a3b855b
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554274"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603511"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Co nowego w Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux
 
@@ -46,6 +46,7 @@ Ten artykuł jest często aktualizowany w celu poinformowania o nowościach w na
 
 **Co nowego**
 
+- Poprawka dotycząca obsługi magazynu definicji w lokalizacjach niestandardowych (poza /var) dla aktualizacji definicji w wersji 2
 - Rozwiązano problem z czujnikiem produktu używanym w systemie RHEL 6, który mógł prowadzić do zawieszenia systemu operacyjnego
 - `mdatp connectivity test` został rozszerzony o dodatkowy adres URL, który produkt wymaga poprawnego działania. Nowy adres URL to [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
 - Do tej pory poziom dziennika produktu nie był utrwalany między ponownym uruchomieniem produktu. Począwszy od tej wersji, istnieje nowy przełącznik narzędzia wiersza polecenia, który utrwala poziom dziennika. Nowe polecenie to `mdatp log level persist --level <level>`.

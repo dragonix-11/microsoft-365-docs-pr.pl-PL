@@ -23,14 +23,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Użyj uproszczonego widoku w Centrum administracyjne platformy Microsoft 365, aby zarządzać typowymi zadaniami lub widokiem pulpitu nawigacyjnego, aby uzyskać bardziej złożone ustawienia i zadania.
-ms.openlocfilehash: 056072e454b0df3e7c4b06ce39735b1db3961b25
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: c5be4c0d8fdcdbde9b8fcf6be90e616a052f2fb8
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159559"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601657"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Omówienie centrum administracyjnego platformy Microsoft 365
+
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
 
 - [Centrum administracyjne w widoku uproszczonym](#watch-the-admin-center-in-simplified-view)
 - [Centrum administracyjne w widoku pulpitu nawigacyjnego](#watch-the-admin-center-in-dashboard-view)
@@ -39,23 +41,25 @@ ms.locfileid: "66159559"
 
 ## <a name="watch-the-admin-center-in-simplified-view"></a>Obejrzyj: Centrum administracyjne w uproszczonym widoku
 
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2197911).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
 Dzięki <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> możesz resetować hasła, wyświetlać fakturę, dodawać lub usuwać użytkowników i wiele innych w jednym miejscu.
 
-Zaloguj się do witryny Office.com przy użyciu konta służbowego i wybierz narzędzie do uruchamiania aplikacji.
+Zaloguj się, aby Office.com przy użyciu konta służbowego, a następnie wybierz narzędzie do uruchamiania aplikacji.
 
 Jeśli masz uprawnienia dostępu do centrum administracyjnego, zobaczysz **Administracja** na liście. Wybierz go.
 
-W górnej części centrum administracyjnego przejrzyj najważniejsze akcje. W zależności od tego, co już skonfigurowano, mogą być widoczne różne akcje, takie jak tworzenie nowych kont, używanie Teams, konfigurowanie poczty e-mail i instalowanie aplikacji Office.
+W górnej części centrum administracyjnego przejrzyj najważniejsze akcje. W zależności od konfiguracji, takich jak tworzenie nowych kont, korzystanie z usługi Teams, konfigurowanie poczty e-mail i instalowanie aplikacji pakietu Office, mogą być widoczne różne akcje.
 
 W obszarze **Twoja organizacja** na karcie **Użytkownicy** znajduje się lista osób, które mogą uzyskiwać dostęp do aplikacji i usług, dodawać nowych użytkowników, resetować hasła lub korzystać z menu z trzema kropkami (więcej akcji). Wybierz osobę, aby wyświetlić lub edytować swoje informacje i ustawienia.
 
-Na karcie **Teams** utwórz nowy zespół lub zarządzaj istniejącymi zespołami. Możesz zarządzać członkami zespołu lub wybrać trzy kropki (więcej akcji), aby zmienić inne ustawienia Teams.
+Na karcie **Teams** utwórz nowy zespół lub zarządzaj istniejącymi zespołami. Możesz zarządzać członkami zespołu lub wybrać trzy kropki (więcej akcji), aby zmienić inne ustawienia usługi Teams.
 
 Na **karcie Subskrypcje** dodaj więcej produktów, dodaj licencje lub użyj menu trzech kropek (więcej akcji), aby zmodyfikować licencje lub formę płatności.
 
-Na karcie **Learn** przeglądaj filmy wideo i artykuły dotyczące centrum administracyjnego i innych funkcji Microsoft 365. Aby zapoznać się z bardziej zaawansowanymi funkcjami centrum administracyjnego, otwórz menu nawigacji i rozwiń nagłówki, aby zobaczyć więcej. Wybierz pozycję **Pokaż wszystko** , aby wyświetlić wszystko w menu nawigacji, lub użyj paska wyszukiwania, aby szybko znaleźć szukane elementy.
+Na karcie **Learn** przeglądaj filmy wideo i artykuły dotyczące centrum administracyjnego i innych funkcji platformy Microsoft 365. Aby zapoznać się z bardziej zaawansowanymi funkcjami centrum administracyjnego, otwórz menu nawigacji i rozwiń nagłówki, aby zobaczyć więcej. Wybierz pozycję **Pokaż wszystko** , aby wyświetlić wszystko w menu nawigacji, lub użyj paska wyszukiwania, aby szybko znaleźć szukane elementy.
 
 Jeśli potrzebujesz pomocy, wybierz pozycję **Pomoc & pomocy technicznej**. Wyszukaj temat, który chcesz uzyskać, i wyświetl zalecane rozwiązanie lub wybierz zestaw słuchawkowy, aby skontaktować się z pomocą techniczną, a następnie wprowadź swoje pytanie i informacje kontaktowe.
 
@@ -65,7 +69,7 @@ Jeśli potrzebujesz pomocy, wybierz pozycję **Pomoc & pomocy technicznej**. Wys
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365 to</a> miejsce, w którym zarządzasz firmą w chmurze. Można wykonywać takie zadania, jak dodawanie i usuwanie użytkowników, zmienianie licencji i resetowanie haseł.
 
-Specjalistyczne obszary robocze, takie jak zarządzanie zabezpieczeniami lub urządzeniami, umożliwiają bardziej szczegółową kontrolę. Aby uzyskać więcej informacji na temat współpracy centrów administracyjnych, zobacz [Co z określonymi typami ról IT i innych obszarów roboczych, takich jak zabezpieczenia, Zarządzanie urządzeniami lub Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) w tym artykule.
+Specjalistyczne obszary robocze, takie jak zarządzanie zabezpieczeniami lub urządzeniami, umożliwiają bardziej szczegółową kontrolę. Aby uzyskać więcej informacji na temat współpracy centrów administracyjnych, zobacz [Co z określonymi typami ról IT i innych obszarów roboczych, takich jak Zabezpieczenia, Zarządzanie urządzeniami lub Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) w tym artykule.
 
 Aby przejść do Centrum administracyjne platformy Microsoft 365, przejdź do [admin.microsoft.com](https://admin.microsoft.com) lub, jeśli już się zalogowano, wybierz narzędzie do uruchamiania aplikacji i wybierz **pozycję Administracja**.
 
@@ -85,9 +89,9 @@ Jeśli potrzebujesz pomocy technicznej w dowolnym momencie, wybierz pozycję **P
 
 Aby uzyskać więcej informacji na temat zarządzania rozliczeniami, hasłami, użytkownikami i administratorami, zobacz inne lekcje z tego kursu.
 
-## <a name="who-is-an-admin"></a>KtoTo jest administratorem?
+## <a name="who-is-an-admin"></a>Kto jest administratorem?
 
-Domyślnie osoba, która rejestruje się i kupuje subskrypcję Microsoft 365 dla firm, otrzymuje uprawnienia administratora. Ta osoba może przypisać uprawnienia administratora innym osobom, aby ułatwić im zarządzanie Microsoft 365 w organizacji.
+Domyślnie osoba, która rejestruje się i kupuje subskrypcję platformy Microsoft 365 dla firm, otrzymuje uprawnienia administratora. Ta osoba może przypisać uprawnienia administratora innym osobom, aby ułatwić zarządzanie platformą Microsoft 365 dla organizacji.
 
 Jeśli zostanie wyświetlony komunikat "**Nie masz uprawnień dostępu do tej strony lub wykonasz tę akcję**", nie jesteś administratorem.
 
@@ -114,14 +118,14 @@ Poniżej przedstawiono funkcje i ustawienia dostępne w centrum administracyjnym
 |-----|-----|
 |**Strona główna**|Jest to strona docelowa w centrum administracyjnym. Zobacz na niej, gdzie zarządzać użytkownikami oraz wyświetlać rozliczenia, informacje o kondycji usług i raporty.|
 |**Użytkownicy**|Dodawaj użytkowników w organizacji, w tym pracowników lub uczniów, oraz zarządzaj nimi. Możesz też ustawiać ich poziomy uprawnień lub resetować ich hasła.|
-|**Grupy**|Tworzenie grup w organizacji i zarządzanie nimi, takich jak grupa Microsoft 365, grupa dystrybucyjna, grupa zabezpieczeń lub udostępniona skrzynka pocztowa. Dowiedz się, jak [tworzyć](../create-groups/create-groups.md) grupy i [zarządzać](../create-groups/manage-groups.md) nimi.|
+|**Grupy**|Tworzenie grup w organizacji i zarządzanie nimi, takich jak grupa platformy Microsoft 365, grupa dystrybucyjna, grupa zabezpieczeń lub udostępniona skrzynka pocztowa. Dowiedz się, jak [tworzyć](../create-groups/create-groups.md) grupy i [zarządzać](../create-groups/manage-groups.md) nimi.|
 |**Zasoby**|Twórz zasoby, takie jak zbiór witryn programu SharePoint, i zarządzaj nimi. Dowiedz się, jak [tworzyć zbiory witryn](/sharepoint/create-site-collection).|
 |**Rozliczenia**|Wyświetl, kup lub anuluj subskrypcje dla organizacji. Wyświetl wcześniejsze rozliczenia lub wyświetl liczbę licencji przypisanych do pojedynczych użytkowników. Dowiedz się, jak [zarządzać rozliczeniami](../../commerce/index.yml).|
 |**Pomoc techniczna**|Wyświetl istniejące żądania usługi lub stwórz nowe. Więcej informacji znajdziesz w sekcji [Kontakt z pomocą techniczną w sprawie produktów dla firm — Pomoc dla administratorów](../../business-video/get-help-support.md).|
 |**Ustawienia**|Zarządzaj ustawieniami globalnymi aplikacji, takich jak Poczta e-mail, Witryny i aplikacje pakietu Office. Zmieniaj zasady dotyczące haseł i daty ich wygasania. Dodawaj i aktualizuj nazwy domen, na przykład contoso.com. Zmieniaj profil swojej organizacji i preferencje udostępniania. Wybieraj, czy partnerzy mogą uzyskiwać dostęp do Twojego centrum administracyjnego.|
 |**Konfiguracja**|Zarządzaj istniejącymi domenami, włączaj uwierzytelnianie wieloskładnikowe i zarządzaj nim, zarządzaj dostępem administratora, przeprowadzaj migrację skrzynek pocztowych użytkowników do usługi Office 365, zarządzaj aktualizacjami funkcji i pomagaj użytkownikom instalować ich aplikacje pakietu Office.|
-|**Raporty**|Zobacz, jak twoja organizacja korzysta z Microsoft 365 ze szczegółowymi raportami dotyczącymi używania poczty e-mail, Office aktywacji i nie tylko. Dowiedz się, jak korzystać z nowych [raportów aktywności](../activity-reports/activity-reports.md).|
-|**Kondycja**|Wyświetl kondycję na pierwszy rzut oka. Możesz również zapoznać się z bardziej szczegółowymi informacjami i historią kondycji. Aby uzyskać więcej informacji, zobacz [How to check service health (Jak sprawdzić kondycję usługi](../../enterprise/view-service-health.md)) i [How to check Windows release health (Jak sprawdzić kondycję wersji Windows](/windows/deployment/update/check-release-health)). <p>Korzystaj z Centrum wiadomości, aby śledzić nadchodzące zmiany w funkcjach i usługach. Publikujemy tu ogłoszenia z informacjami, które ułatwiają planowanie zmiany i zrozumienie, jaki może ona mieć wpływ na użytkowników. Uzyskaj więcej szczegółów w [Centrum komunikatów](../manage/message-center.md).|
+|**Raporty**|Zobacz, jak Twoja organizacja korzysta z platformy Microsoft 365 ze szczegółowymi raportami dotyczącymi używania poczty e-mail, aktywacji pakietu Office i nie tylko. Dowiedz się, jak korzystać z nowych [raportów aktywności](../activity-reports/activity-reports.md).|
+|**Kondycja**|Wyświetl kondycję na pierwszy rzut oka. Możesz również zapoznać się z bardziej szczegółowymi informacjami i historią kondycji. Aby uzyskać więcej informacji, zobacz [Jak sprawdzić kondycję usługi](../../enterprise/view-service-health.md) i [Jak sprawdzić kondycję wersji systemu Windows](/windows/deployment/update/check-release-health) . <p>Korzystaj z Centrum wiadomości, aby śledzić nadchodzące zmiany w funkcjach i usługach. Publikujemy tu ogłoszenia z informacjami, które ułatwiają planowanie zmiany i zrozumienie, jaki może ona mieć wpływ na użytkowników. Uzyskaj więcej szczegółów w [Centrum komunikatów](../manage/message-center.md).|
 |**Centra administracyjne**|Otwórz osobne centra administracyjne dla programów Exchange, Skype dla firm, SharePoint, Yammer oraz usługi Azure AD. Każde centrum administracyjne zawiera wszystkie dostępne ustawienia danej usługi.  <p> Na przykład w centrum administracyjnym programu Exchange możesz skonfigurować pocztę e-mail, kalendarz oraz grupy dystrybucyjne, zarządzać tymi elementami i wykonywać inne zadania. W centrum administracyjnym programu SharePoint możesz tworzyć zbiory witryn, ustawienia witryn i usługę OneDrive dla Firm oraz zarządzać tymi elementami. W centrum administracyjnym programu Skype dla firm możesz skonfigurować powiadomienia wiadomości błyskawicznych, konferencje telefoniczne oraz informacje o obecności online.  <p> Dowiedz się więcej o [centrum administracyjnym programu Exchange](/exchange/exchange-admin-center) i [centrum administracyjnym programu SharePoint](/sharepoint/sharepoint-online). <p> **Uwaga:** dostępne centra administracyjne zależą od danego planu i regionu.|
 |
 
@@ -133,13 +137,13 @@ Poniżej przedstawiono funkcje i ustawienia dostępne w centrum administracyjnym
 
 - Wyświetlanie raportów aktywności: [Raporty aktywności](../activity-reports/activity-reports.md)
 
-- [Tworzenie grupy Microsoft 365](../create-groups/create-groups.md)
+- [Tworzenie grupy platformy Microsoft 365](../create-groups/create-groups.md)
 
-- [Zarządzanie grupą Microsoft 365](../create-groups/manage-groups.md)
+- [Zarządzanie grupą platformy Microsoft 365](../create-groups/manage-groups.md)
 
 ## <a name="turn-on-targeted-release"></a>Włączanie wersji docelowej
 
-1. Zaloguj się przy [admin.microsoft.com](https://admin.microsoft.com), przejdź do okienka nawigacji i wybierz pozycję **Ustawienia** >  **Rejestrowanie ustawień** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">karty **Profil organizacji**</a>.
+1. Zaloguj się przy [admin.microsoft.com](https://admin.microsoft.com), przejdź do okienka nawigacji i wybierz kartę **Ustawienia** > **ustawienia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**organizacji Profil organizacji**</a>.
 
 2. Przejdź do karty **Preferencje wydania** , a następnie wybierz pozycję **Edytuj**.
 
@@ -153,15 +157,15 @@ W centrum administracyjnym możesz przekazać firmie Microsoft opinię na temat 
 
 Nie widzisz odpowiedzi na twoje pytania? Przejdź do sekcji **Opinie** w dolnej części tej strony i zadaj pytanie.
 
-### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>Które plany Microsoft 365 są dostępne do wersji próbnej lub zakupu?
+### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>Które plany platformy Microsoft 365 są dostępne do wersji próbnej lub zakupu?
 
-Microsoft 365 to kompletne, inteligentne rozwiązanie, które obejmuje Office 365, Windows 10 i Enterprise Mobility + Security, które pozwala wszystkim być kreatywnymi i bezpiecznie współpracować. Następujące Microsoft 365 subskrypcje są dostępne w centrum administracyjnym, aby spróbować lub kupić teraz:
+Microsoft 365 to kompletne, inteligentne rozwiązanie, które obejmuje Office 365, Windows 10 i Enterprise Mobility + Security, które umożliwia wszystkim tworzenie i bezpieczną współpracę. Następujące subskrypcje platformy Microsoft 365 są dostępne w centrum administracyjnym, aby spróbować kupić teraz:
 
 - Microsoft 365 dla firm
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
 
-Aby uzyskać więcej informacji, zobacz [Try or buy a Microsoft 365 for business subscription (Wypróbuj lub kup subskrypcję Microsoft 365 dla firm](../../commerce/try-or-buy-microsoft-365.md)). 
+Aby uzyskać więcej informacji, zobacz [Try or buy a Microsoft 365 for business subscription (Wypróbuj lub kup subskrypcję platformy Microsoft 365 dla firm](../../commerce/try-or-buy-microsoft-365.md)). 
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>Znaleziono usterkę lub chcę zażądać rozszerzenia funkcji. Jak mogę poinformować firmę Microsoft?
 
@@ -169,9 +173,9 @@ Uwielbiamy cię słyszeć! Zgłaszanie usterek i udostępnianie opinii pomaga na
 
 <!---You can also give feedback from outside of the admin center on our UserVoice forum. You can use this page to make feature suggestions that can be voted on by other forum users: [UserVoice forum for the new admin center](https://go.microsoft.com/fwlink/?linkid=2024994).--->
 
-### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Co z określonymi typami ról IT i innych obszarów roboczych, takich jak zabezpieczenia, Zarządzanie urządzeniami lub Exchange?
+### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Co z określonymi typami ról IT i innych obszarów roboczych, takich jak Zabezpieczenia, Zarządzanie urządzeniami lub Exchange?
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> jest typowym punktem wejścia dla wszystkich zespołów i ról zarządzających Microsoft 365. Środowisko, informacje i kontrolki są dostosowane i dostosowywane dla każdego administratora i roli. Ponadto specjalistyczne obszary robocze umożliwiają głęboką, szczegółową kontrolę. Te specjalistyczne obszary robocze obejmują SharePoint, Teams &amp; Skype, Exchange, Zabezpieczenia, Zgodność, Zarządzanie urządzeniami i Azure Active Directory. Specjalistyczne obszary robocze można znaleźć w okienku nawigacji w Centrum administracyjne platformy Microsoft 365 pod adresem [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339).
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> jest typowym punktem wejścia dla wszystkich zespołów i ról zarządzających platformą Microsoft 365. Środowisko, informacje i kontrolki są dostosowane i dostosowywane dla każdego administratora i roli. Ponadto specjalistyczne obszary robocze umożliwiają głęboką, szczegółową kontrolę. Te specjalistyczne obszary robocze obejmują programy SharePoint, Teams &amp; Skype, Exchange, Security, Compliance, Zarządzanie urządzeniami i Azure Active Directory. Specjalistyczne obszary robocze można znaleźć w okienku nawigacji w Centrum administracyjne platformy Microsoft 365 pod adresem [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339).
 
 ### <a name="what-language-options-are-available-the-admin-center"></a>Jakie opcje językowe są dostępne w centrum Administracja?
 
@@ -223,6 +227,6 @@ Centrum administracyjne platformy Microsoft 365 jest w pełni zlokalizowana w 40
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Co to jest administrator Microsoft 365?](../add-users/about-admin-roles.md) (wideo)\
+[Co to jest administrator platformy Microsoft 365?](../add-users/about-admin-roles.md) (wideo)\
 [Przypisywanie ról administratora](../add-users/assign-admin-roles.md) (wideo)\
-[Dostosowywanie motywu Microsoft 365 dla organizacji](../setup/customize-your-organization-theme.md) (artykuł)
+[Dostosowywanie motywu platformy Microsoft 365 dla organizacji](../setup/customize-your-organization-theme.md) (artykuł)

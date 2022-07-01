@@ -15,16 +15,15 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 31af082f66836ecfbe6a7cd804fd3b7bba2ed4bd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 90244050b9fd8e5714ba28f7ac9850091d368da7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012389"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601229"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Włączanie reguł zmniejszania obszaru ataków
 
@@ -44,9 +43,9 @@ ms.locfileid: "66012389"
 
 ## <a name="requirements"></a>Wymagania
 
-Funkcje zmniejszania obszaru ataków w wersjach Windows
+Funkcje zmniejszania obszaru ataków w wersjach systemu Windows
 
-Możesz ustawić reguły zmniejszania obszaru podatnego na ataki dla urządzeń, na których działa dowolna z następujących wersji i wersji Windows:
+Możesz ustawić reguły zmniejszania obszaru podatnego na ataki dla urządzeń, na których działa dowolna z następujących wersji i wersji systemu Windows:
 
 - [System Windows 11 Pro](/windows/whats-new/windows-11-overview)
 - [System Windows 11 dla firm](https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise)
@@ -64,7 +63,7 @@ Aby użyć całego zestawu funkcji reguł zmniejszania obszaru podatnego na atak
 - [Ochrona przed dostarczaniem w chmurze](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) (niektóre reguły tego wymagają)
 - licencja Windows 10 Enterprise E5 lub E3
 
-Mimo że reguły zmniejszania obszaru ataków nie wymagają [licencji Windows E5](/windows/deployment/deploy-enterprise-licenses) z licencją Windows E5, można uzyskać zaawansowane możliwości zarządzania, w tym monitorowanie, analizę i przepływy pracy dostępne w usłudze Defender for Endpoint, a także możliwości raportowania i konfiguracji w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>. Te zaawansowane możliwości nie są dostępne z licencją E3, ale nadal możesz używać Podgląd zdarzeń do przeglądania zdarzeń reguł zmniejszania obszaru podatnego na ataki.
+Mimo że reguły zmniejszania obszaru podatnego na ataki nie wymagają [licencji systemu Windows E5](/windows/deployment/deploy-enterprise-licenses), z licencją systemu Windows E5 można uzyskać zaawansowane możliwości zarządzania, w tym monitorowanie, analizę i przepływy pracy dostępne w usłudze Defender for Endpoint, a także możliwości raportowania i konfiguracji w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>. Te zaawansowane możliwości nie są dostępne z licencją E3, ale nadal możesz używać Podgląd zdarzeń do przeglądania zdarzeń reguł zmniejszania obszaru podatnego na ataki.
 
 Każda reguła usługi ASR zawiera jedno z czterech ustawień:
 
@@ -73,10 +72,10 @@ Każda reguła usługi ASR zawiera jedno z czterech ustawień:
 - **Inspekcja**: oceń, jak reguła usługi ASR wpłynie na organizację, jeśli zostanie włączona
 - **Ostrzegaj**: Włącz regułę usługi ASR, ale zezwalaj użytkownikowi końcowemu na obejście bloku
 
-Zalecamy używanie reguł usługi ASR z licencją Windows E5 (lub podobną jednostką SKU licencjonowania), aby korzystać z zaawansowanych funkcji monitorowania i raportowania dostępnych w [usłudze Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md) (Defender for Endpoint). Jeśli jednak masz inną licencję, taką jak Windows Professional lub Windows E3, które nie obejmują zaawansowanych funkcji monitorowania i raportowania, możesz opracować własne narzędzia do monitorowania i raportowania oprócz zdarzeń generowanych w każdym punkcie końcowym po wyzwoleniu reguł usługi ASR (na przykład przekazywania zdarzeń).
+Zalecamy używanie reguł usługi ASR z licencją systemu Windows E5 (lub podobną jednostką SKU licencjonowania), aby korzystać z zaawansowanych funkcji monitorowania i raportowania dostępnych w [Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md) (Defender for Endpoint). Jeśli jednak masz inną licencję, taką jak Windows Professional lub Windows E3, które nie obejmują zaawansowanych funkcji monitorowania i raportowania, możesz opracować własne narzędzia do monitorowania i raportowania oprócz zdarzeń generowanych w każdym punkcie końcowym po wyzwoleniu reguł usługi ASR (na przykład przekazywania zdarzeń).
 
 > [!TIP]
-> Aby dowiedzieć się więcej na temat licencjonowania Windows, zobacz [Windows 10 Licensing (Licencjonowanie Windows 10](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)) i zapoznaj się z [przewodnikiem licencjonowania zbiorowego dla Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
+> Aby dowiedzieć się więcej na temat licencjonowania systemu Windows, zobacz [licencjonowanie Windows 10](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) i zapoznaj się z [przewodnikiem licencjonowania zbiorowego dla Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
 Reguły zmniejszania obszaru ataków można włączyć przy użyciu dowolnej z następujących metod:
 
@@ -86,7 +85,7 @@ Reguły zmniejszania obszaru ataków można włączyć przy użyciu dowolnej z n
 - [Zasady grupy](#group-policy)
 - [PowerShell](#powershell)
 
-zaleca się zarządzanie na poziomie Enterprise, takie jak Intune lub Microsoft Endpoint Manager. Enterprise zarządzania na poziomie spowoduje zastąpienie wszystkich ustawień zasady grupy powodujących konflikty lub programu PowerShell podczas uruchamiania.
+Zalecane jest zarządzanie na poziomie przedsiębiorstwa, takie jak Intune lub Microsoft Endpoint Manager. Zarządzanie na poziomie przedsiębiorstwa spowoduje zastąpienie wszelkich powodujących konflikt ustawień zasady grupy lub programu PowerShell podczas uruchamiania.
 
 ## <a name="exclude-files-and-folders-from-asr-rules"></a>Wykluczanie plików i folderów z reguł usługi ASR
 
@@ -108,7 +107,7 @@ Reguły usługi ASR obsługują zmienne środowiskowe i symbole wieloznaczne. Ab
 
 2. Reguły zmniejszania obszaru ataków dla urządzeń zarządzanych przez MEM obsługują teraz zachowanie łączenia ustawień z różnych zasad w celu utworzenia nadzbioru zasad dla każdego urządzenia. Tylko ustawienia, które nie są w konflikcie, są scalane, podczas gdy te, które są w konflikcie, nie są dodawane do nadzbioru reguł. Wcześniej, jeśli dwie zasady zawierały konflikty dla jednego ustawienia, obie zasady były oflagowane jako będące w konflikcie i żadne ustawienia z żadnego z profilów nie były wdrażane. Zachowanie scalania reguł zmniejszania obszaru podatnego na ataki jest następujące:
    - Reguły zmniejszania obszaru podatnego na ataki z następujących profilów są oceniane dla każdego urządzenia, do którego mają zastosowanie reguły:
-     - Urządzenia > zasady konfiguracji > profilu programu Endpoint Protection **> Microsoft Defender Exploit Guard** >  [Dotycz redukcję powierzchni](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
+     - Urządzenia > zasady konfiguracji > profilu ochrony punktu końcowego >[zmniejszanie obszaru podatnego na ataki](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules) w usłudze **Microsoft Defender Exploit Guard** > .
      - Zabezpieczenia punktu końcowego > **zasady zmniejszania obszaru ataków Reguły** > [zmniejszania obszaru podatnego na ataki](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
      - Zabezpieczenia punktu końcowego > punkty odniesienia zabezpieczeń >[reguły zmniejszania obszaru podatnego na ataki](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) **wg planu bazowego** >  usługi Microsoft Defender ATP.
    - Ustawienia, które nie mają konfliktów, są dodawane do nadzbioru zasad dla urządzenia.
@@ -132,7 +131,7 @@ Poniższe procedury włączania reguł usługi ASR zawierają instrukcje dotycz�
 
 #### <a name="device-configuration-profiles"></a>Profile konfiguracji urządzeń
 
-1. Wybierz pozycję **Profile konfiguracji** \> urządzenia. Wybierz istniejący profil ochrony punktu końcowego lub utwórz nowy. Aby utworzyć nowy, wybierz pozycję **Utwórz profil** i wprowadź informacje dotyczące tego profilu. W polu **Typ profilu** wybierz pozycję **Ochrona punktu końcowego**. Jeśli wybrano istniejący profil, wybierz pozycję **Właściwości**, a następnie wybierz **pozycję Ustawienia**.
+1. Wybierz pozycję **Profile konfiguracji** \> urządzenia. Wybierz istniejący profil ochrony punktu końcowego lub utwórz nowy. Aby utworzyć nowy, wybierz pozycję **Utwórz profil** i wprowadź informacje dotyczące tego profilu. W polu **Typ profilu** wybierz pozycję **Ochrona punktu końcowego**. Jeśli wybrano istniejący profil, wybierz pozycję **Właściwości** , a następnie wybierz pozycję **Ustawienia**.
 
 2. W okienku **Ochrona punktu końcowego** wybierz pozycję **Windows Defender Exploit Guard**, a następnie wybierz pozycję **Zmniejszanie obszaru podatnego na ataki**. Wybierz odpowiednie ustawienie dla każdej reguły usługi ASR.
 
@@ -144,7 +143,7 @@ Poniższe procedury włączania reguł usługi ASR zawierają instrukcje dotycz�
 
 #### <a name="endpoint-security-policy"></a>Zasady zabezpieczeń punktu końcowego
 
-1. Wybierz pozycję **Redukcja obszaru ataków** zabezpieczeń \> **punktu końcowego**. Wybierz istniejącą regułę usługi ASR lub utwórz nową. Aby utworzyć nowy, wybierz pozycję **Utwórz zasady** i wprowadź informacje dotyczące tego profilu. W polu **Typ profilu** wybierz pozycję **Reguły zmniejszania obszaru ataków**. Jeśli wybrano istniejący profil, wybierz pozycję **Właściwości**, a następnie wybierz **pozycję Ustawienia**.
+1. Wybierz pozycję **Redukcja obszaru ataków** zabezpieczeń \> **punktu końcowego**. Wybierz istniejącą regułę usługi ASR lub utwórz nową. Aby utworzyć nowy, wybierz pozycję **Utwórz zasady** i wprowadź informacje dotyczące tego profilu. W polu **Typ profilu** wybierz pozycję **Reguły zmniejszania obszaru ataków**. Jeśli wybrano istniejący profil, wybierz pozycję **Właściwości** , a następnie wybierz pozycję **Ustawienia**.
 
 2. W okienku **Ustawienia konfiguracji** wybierz pozycję **Zmniejszanie obszaru podatnego na ataki** , a następnie wybierz odpowiednie ustawienie dla każdej reguły usługi ASR.
 
@@ -156,35 +155,35 @@ Poniższe procedury włączania reguł usługi ASR zawierają instrukcje dotycz�
 
 ### <a name="mem"></a>MEM
 
-Aby skonfigurować niestandardowe reguły usługi ASR, można użyć identyfikatora OMA-URI Microsoft Endpoint Manager (MEM). W poniższej procedurze użyto reguły [Blokuj wykorzystywanie wykorzystywanych, narażonych na zagrożenia podpisanych sterowników](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) .
+Aby skonfigurować niestandardowe reguły usługi ASR, możesz użyć identyfikatora OMA-URI firmy Microsoft Endpoint Manager (MEM). W poniższej procedurze użyto reguły [Blokuj wykorzystywanie wykorzystywanych, narażonych na zagrożenia podpisanych sterowników](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) .
 
-1. Otwórz centrum administracyjne Microsoft Endpoint Manager (MEM). W menu **Narzędzia główne** kliknij pozycję  **Urządzenia**, wybierz pozycję **Profile konfiguracji**, a następnie kliknij pozycję **Utwórz profil**.
+1. Otwórz centrum administracyjne usługi Microsoft Endpoint Manager (MEM). W menu **Narzędzia główne** kliknij pozycję  **Urządzenia**, wybierz pozycję **Profile konfiguracji**, a następnie kliknij pozycję **Utwórz profil**.
 
    > [!div class="mx-imgBorder"]
-   >  :::image type="content" source="images/mem01-create-profile.png" alt-text="Strona Tworzenie profilu w portalu centrum administracyjnego Microsoft Endpoint Manager" lightbox="images/mem01-create-profile.png":::
+   >  :::image type="content" source="images/mem01-create-profile.png" alt-text="Strona Tworzenie profilu w portalu centrum administracyjnego firmy Microsoft Endpoint Manager" lightbox="images/mem01-create-profile.png":::
 
 2. W **obszarze Tworzenie profilu** na następujących dwóch listach rozwijanych wybierz następujące pozycje:
 
    - W **obszarze Platforma** wybierz **pozycję Windows 10 i nowsze**
    - W **obszarze Typ profilu** wybierz pozycję **Szablony**
-   - Jeśli reguły usługi ASR są już ustawione za pomocą zabezpieczeń punktu końcowego, w **polu Typ profilu** wybierz pozycję **Ustawienia Catalog**.
+   - Jeśli reguły usługi ASR są już ustawione za pomocą zabezpieczeń punktu końcowego, w **polu Typ profilu** wybierz pozycję **Katalog ustawień**.
 
    Wybierz pozycję **Niestandardowe**, a następnie wybierz pozycję **Utwórz**.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem02-profile-attributes.png" alt-text="Atrybuty profilu reguły w portalu centrum administracyjnego Microsoft Endpoint Manager" lightbox="images/mem02-profile-attributes.png":::
+   > :::image type="content" source="images/mem02-profile-attributes.png" alt-text="Atrybuty profilu reguły w portalu centrum administracyjnego firmy Microsoft Endpoint Manager" lightbox="images/mem02-profile-attributes.png":::
 
 3. Zostanie otwarte narzędzie Szablon **niestandardowy w kroku 1 Podstawy**. W **obszarze 1 Podstawy** w polu **Nazwa** wpisz nazwę szablonu, a w **polu Opis** możesz wpisać opis (opcjonalnie).
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem03-1-basics.png" alt-text="Podstawowe atrybuty w portalu centrum administracyjnego Microsoft Endpoint Manager" lightbox="images/mem03-1-basics.png":::
+   > :::image type="content" source="images/mem03-1-basics.png" alt-text="Podstawowe atrybuty w portalu centrum administracyjnego Endpoint Manager firmy Microsoft" lightbox="images/mem03-1-basics.png":::
 
-4. Kliknij **Dalej**. Zostanie otwarty krok **2. Ustawienia konfiguracji** . W przypadku Ustawienia OMA-URI kliknij przycisk **Dodaj**. Zostaną wyświetlone dwie opcje: **Dodaj** i **eksportuj**.
+4. Kliknij **Dalej**. Zostanie otwarty krok **2. Ustawienia konfiguracji** . W obszarze Ustawienia OMA-URI kliknij pozycję **Dodaj**. Zostaną wyświetlone dwie opcje: **Dodaj** i **eksportuj**.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="Ustawienia konfiguracji w portalu centrum administracyjnego Microsoft Endpoint Manager" lightbox="images/mem04-2-configuration-settings.png":::
+   > :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="Ustawienia konfiguracji w portalu centrum administracyjnego usługi Microsoft Endpoint Manager" lightbox="images/mem04-2-configuration-settings.png":::
 
-5. Kliknij ponownie **pozycję Dodaj** . Zostanie otwarty **Ustawienia Add Row OMA-URI (Dodaj identyfikator OMA-URI wiersza**). W **obszarze Dodaj wiersz** wykonaj następujące czynności:
+5. Kliknij ponownie **pozycję Dodaj** . Zostanie otwarte **okno Dodawanie ustawień OMA-URI wiersza** . W **obszarze Dodaj wiersz** wykonaj następujące czynności:
 
    - W **polu Nazwa** wpisz nazwę reguły.
    - W **polu Opis** wpisz krótki opis.
@@ -198,7 +197,7 @@ Aby skonfigurować niestandardowe reguły usługi ASR, można użyć identyfikat
      - 6: Ostrzegaj (włącz regułę usługi ASR, ale zezwala użytkownikowi końcowemu na obejście bloku)
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="Konfiguracja identyfikatora URI OMA w portalu centrum administracyjnego Microsoft Endpoint Manager" lightbox="images/mem05-add-row-oma-uri.png":::
+   > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="Konfiguracja identyfikatora URI OMA w portalu centrum administracyjnego firmy Microsoft Endpoint Manager" lightbox="images/mem05-add-row-oma-uri.png":::
 
 6. Wybierz **Zapisz**. **Dodaj zamknięcie wiersza** . W **obszarze Niestandardowe** wybierz pozycję **Dalej**. W kroku **3 Tagi zakresu** tagi zakresu są opcjonalne. Wykonaj jeden z następujących kroków:
 
@@ -212,7 +211,7 @@ Aby skonfigurować niestandardowe reguły usługi ASR, można użyć identyfikat
    - **Dodawanie wszystkich urządzeń**
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem06-4-assignments.png" alt-text="Przypisania w portalu centrum administracyjnego Microsoft Endpoint Manager" lightbox="images/mem06-4-assignments.png":::
+   > :::image type="content" source="images/mem06-4-assignments.png" alt-text="Przypisania w portalu centrum administracyjnego firmy Microsoft Endpoint Manager" lightbox="images/mem06-4-assignments.png":::
 
 8. W **obszarze Wykluczone grupy** wybierz wszystkie grupy, które chcesz wykluczyć z tej reguły, a następnie wybierz pozycję **Dalej**.
 
@@ -223,12 +222,12 @@ Aby skonfigurować niestandardowe reguły usługi ASR, można użyć identyfikat
    - W **polu Wartość** wprowadź odpowiednią wartość lub zakres wartości
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="Reguły stosowania w portalu centrum administracyjnego Microsoft Endpoint Manager" lightbox="images/mem07-5-applicability-rules.png":::
+   > :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="Reguły stosowania w portalu centrum administracyjnego firmy Microsoft Endpoint Manager" lightbox="images/mem07-5-applicability-rules.png":::
 
 10. Wybierz pozycję **Dalej**. W kroku **6 Przejrzyj i utwórz** przejrzyj wybrane i wprowadzone ustawienia oraz informacje, a następnie wybierz pozycję **Utwórz**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mem08-6-review-create.png" alt-text="Opcja Przeglądanie i tworzenie w portalu centrum administracyjnego Microsoft Endpoint Manager" lightbox="images/mem08-6-review-create.png":::
+    > :::image type="content" source="images/mem08-6-review-create.png" alt-text="Opcja Przeglądanie i tworzenie w portalu centrum administracyjnego firmy Microsoft Endpoint Manager" lightbox="images/mem08-6-review-create.png":::
 
     > [!NOTE]
     > Reguły są aktywne i działają w ciągu kilku minut.
@@ -291,7 +290,7 @@ Przykład:
 
 2. W **edytorze zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera** i wybierz pozycję **Szablony administracyjne**.
 
-3. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Microsoft Defender** \> **Microsoft Defender Exploit Guard** \> **zmniejszanie obszaru podatnego na ataki**.
+3. Rozwiń drzewo do **składników** \> systemu Windows **Program antywirusowy** \> **Microsoft Defender Microsoft Defender Exploit Guard** \> **— redukcja obszaru ataków**.
 
 4. Wybierz pozycję **Konfiguruj reguły zmniejszania obszaru podatnego na ataki** i wybierz pozycję **Włączone**. Następnie możesz ustawić indywidualny stan dla każdej reguły w sekcji opcje. Wybierz pozycję **Pokaż...** i wprowadź identyfikator reguły w kolumnie **Nazwa wartości** i wybrany stan w kolumnie **Value** w następujący sposób:
 

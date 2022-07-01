@@ -29,14 +29,16 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Dowiedz się, jak przypisać role administratora do użytkownika lub wielu użytkowników w firmie, aby mogli oni wykonywać określone zadania w centrum administracyjnym.
-ms.openlocfilehash: 663a5fb60fa815eab079f4ab96e53e8b168105b7
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 62a860fd90104e475763494f84ca1b4546774757
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437025"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601526"
 ---
 # <a name="assign-admin-roles-in-the-microsoft-365-admin-center"></a>Przypisywanie ról administratora w Centrum administracyjne platformy Microsoft 365
+
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
 
 Jeśli jesteś osobą, która kupiła Subskrypcję biznesową firmy Microsoft, jesteś administratorem globalnym. Oznacza to, że masz nieograniczoną kontrolę nad produktami w subskrypcjach i masz dostęp do większości danych.
 
@@ -46,17 +48,19 @@ Jeśli dodasz nowych użytkowników, jeśli nie przypiszesz im roli administrato
 
 ## <a name="watch-add-an-admin"></a>Obejrzyj: Dodawanie administratora
 
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198030).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-1. Po utworzeniu konta w Microsoft 365 Business automatycznie stajesz się administratorem globalnym. Aby ułatwić zarządzanie firmą, możesz również tworzyć administratorów innych osób. 
-1. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**UżytkownicyAktywni**</a> >  użytkownicy.
+1. Po utworzeniu konta w usłudze Microsoft 365 Business automatycznie stajesz się administratorem globalnym. Aby ułatwić zarządzanie firmą, możesz również tworzyć administratorów innych osób. 
+1. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję **Użytkownicy** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**aktywni użytkownicy**</a>.
 1. Wybierz użytkownika, który chcesz utworzyć administratora, a następnie wybierz pozycję **Zarządzaj rolami**.
 
 Jeśli ten klip wideo okazał się przydatny, poznaj [kompletną serię szkoleń dla małych firm i nowych użytkowników usługi Microsoft 365](../../business-video/index.yml).
 
 ## <a name="assign-admin-roles"></a>Przypisywanie ról administratora 
 
-Możesz przypisać użytkowników do roli na 2 różne sposoby:
+Możesz przypisać użytkowników do roli na dwa różne sposoby:
 
 - Możesz przejść do szczegółów użytkownika i **zarządzać rolami** , aby przypisać rolę do użytkownika.
 - Możesz też przejść do pozycji **Role** i wybrać rolę, a następnie dodać do niej wielu użytkowników.
@@ -65,7 +69,7 @@ Możesz przypisać użytkowników do roli na 2 różne sposoby:
 
 1. W centrum administracyjnym przejdź do pozycji <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**Przypisania ról**</a>. Wybierz karty **Azure AD** lub **Intune**, aby wyświetlić role administratora dostępne dla Organizacji.
 2. Wybierz rolę administratora, do którą chcesz przypisać użytkownika.
-3. Wybierz pozycję **Przypisani administratorzyDodaj** > .
+3. Wybierz pozycję **Przypisani administratorzy** > **Dodaj**.
 4. Wpisz **nazwę wyświetlaną** użytkownika lub **nazwę użytkownika**, a następnie wybierz użytkownika z listy sugestii.
 5. Dodaj wielu użytkowników, dopóki nie skończysz.
 6. Wybierz pozycję **Zapisz**, a następnie użytkownik zostanie dodany do listy przypisanych administratorów.
@@ -105,7 +109,7 @@ Uprawnienia roli administratora można sprawdzić na 2 różne sposoby:
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Informacje o rolach administratora Microsoft 365](about-admin-roles.md) (artykuł)\
+[Informacje o rolach administratora platformy Microsoft 365](about-admin-roles.md) (artykuł)\
 [Azure AD wbudowanych ról](/azure/active-directory/roles/permissions-reference) (artykuł)\
 [Przypisywanie ról do kont użytkowników przy użyciu programu PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (artykuł)\
 [Autoryzowanie lub usuwanie relacji z partnerami](../misc/add-partner.md) (artykuł)

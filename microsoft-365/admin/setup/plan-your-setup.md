@@ -23,20 +23,24 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Dowiedz się więcej o wymaganiach i zagadnieniach związanych z przejściem na platformę Microsoft 365 dla firm.
-ms.openlocfilehash: 29b72079d877e8a7974b2e31b5b2dc65341da912
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 356d4cc1f696c871badcdceeb392c74b510cb49c
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490846"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601163"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planowanie konfiguracji subskrypcji Microsoft 365 dla Firm
+
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
 
 Ten artykuł dotyczy osób, które subskrybują plan platformy Microsoft 365 dla firm.
   
 Przed przeniesieniem organizacji na platformę Microsoft 365 istnieją wymagania, które należy spełnić, informacje, które musisz mieć pod ręką, oraz decyzje, które musisz podjąć.
 
 ## <a name="overview-of-microsoft-365-for-business-setup"></a>Omówienie konfiguracji platformy Microsoft 365 dla firm
+
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2197910).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vjso?autoplay=false]
 

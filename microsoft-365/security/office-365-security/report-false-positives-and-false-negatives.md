@@ -10,19 +10,19 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-description: Dowiedz się, jak zgłaszać wyniki fałszywie dodatnie i fałszywie ujemne w Outlook przy użyciu funkcji Komunikat raportu.
+description: Dowiedz się, jak raportować wyniki fałszywie dodatnie i fałszywie ujemne w programie Outlook przy użyciu funkcji Komunikat raportu.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 762f16916e03940f4d0f95c48f13751d3cbd63c7
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 60f9a9eff9694752630170991b7a800f52a2952d
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416977"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602143"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Zgłaszanie wyników fałszywie dodatnich i fałszywie ujemnych w programie Outlook
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -30,17 +30,17 @@ ms.locfileid: "65416977"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Jeśli jesteś administratorem w organizacji Microsoft 365 z Exchange Online skrzynkami pocztowymi, zalecamy użycie strony **Przesłane** w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, zobacz [Przesyłanie do firmy Microsoft podejrzanych spamów, adresów URL i plików za pomocą portalu Przesyłania](admin-submission.md).
+> Jeśli jesteś administratorem w organizacji platformy Microsoft 365 z Exchange Online skrzynkami pocztowymi, zalecamy użycie strony **Przesyłanie** w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, zobacz [Przesyłanie do firmy Microsoft podejrzanych spamów, adresów URL i plików za pomocą portalu Przesyłania](admin-submission.md).
 
-W Microsoft 365 organizacji ze skrzynkami pocztowymi w Exchange Online lub lokalnych skrzynkach pocztowych przy użyciu nowoczesnego uwierzytelniania hybrydowego można przesyłać wyniki fałszywie dodatnie (dobra wiadomość e-mail, która została zablokowana lub wysłana do folderu wiadomości-śmieci) oraz fałszywe negatywy (niechciane wiadomości e-mail lub phish dostarczone do skrzynki odbiorczej) do Exchange Online Protection (EOP).
+W organizacjach platformy Microsoft 365 ze skrzynkami pocztowymi w Exchange Online lub lokalnych skrzynkach pocztowych przy użyciu nowoczesnego uwierzytelniania hybrydowego można przesyłać wyniki fałszywie dodatnie (dobra wiadomość e-mail, która została zablokowana lub wysłana do folderu śmieci) oraz fałszywe negatywy (niechciane wiadomości e-mail lub phish dostarczone do skrzynki odbiorczej) do Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
 - Aby uzyskać najlepsze środowisko przesyłania danych przez użytkownika, użyj dodatku Komunikat raportu lub dodatku Wyłudzanie informacji o raportach.
 
-- Dodatek Komunikat raportu i dodatek Report Phishing działają dla Outlook na wszystkich platformach (Outlook w sieci Web, iOS, Android i Desktop).
+- Dodatek Komunikat raportu i dodatek Report Phishing działają dla programu Outlook na wszystkich platformach (Outlook w sieci Web, iOS, Android i Desktop).
 
-- Jeśli jesteś administratorem w organizacji z Exchange Online skrzynkami pocztowymi, użyj portalu Przesłane w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, zobacz [Przesyłanie przez administratora w celu przesyłania do firmy Microsoft podejrzanych wiadomości spamowych, phish, adresów URL i plików](admin-submission.md).
+- Jeśli jesteś administratorem w organizacji z Exchange Online skrzynkami pocztowymi, użyj portalu Przesłane w portalu Microsoft 365 Defender. Aby uzyskać więcej informacji, zobacz [Use Administracja Submission to submited suspected spam, phish, URL, and files to Microsoft (Przesyłanie za pomocą Administracja przesyłania do firmy Microsoft podejrzanych wiadomości spamowych, phish, adresów URL i plików](admin-submission.md)).
 
 - Możesz skonfigurować wysyłanie wiadomości bezpośrednio do firmy Microsoft, określonej skrzynki pocztowej lub obu tych elementów. Aby uzyskać więcej informacji, zobacz [Zasady przesyłania użytkowników](user-submission.md).
 
@@ -50,18 +50,6 @@ W Microsoft 365 organizacji ze skrzynkami pocztowymi w Exchange Online lub lokal
 
 Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak za pomocą Ochrona usługi Office 365 w usłudze Microsoft Defender można łatwo zbadać przesyłanie przez użytkowników w celu określenia zawartości wiadomości i odpowiedzieć na przesłanie, stosując odpowiednią akcję korygowania. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
-
-### <a name="turn-off-the-built-in-reporting-experience"></a>Wyłączanie wbudowanego środowiska raportowania
-
-Nie zalecamy wbudowanego środowiska raportowania w Outlook, ponieważ nie może ono korzystać z [zasad przesyłania użytkowników](./user-submission.md). Zamiast tego zalecamy użycie dodatku Komunikat raportu lub dodatku Wyłudzanie informacji o raportach.
-
-Aby można było uruchomić to polecenie cmdlet, należy mieć przypisane odpowiednie uprawnienia. Aby znaleźć uprawnienia wymagane do uruchomienia dowolnego polecenia cmdlet lub parametru w organizacji, zobacz [Znajdowanie uprawnień wymaganych do uruchomienia dowolnego polecenia cmdlet Exchange](/powershell/exchange/find-exchange-cmdlet-permissions).
-
-Uruchom następujące polecenie programu PowerShell, aby wyłączyć wbudowane środowisko raportowania w Outlook w sieci Web:
-
-```powershell
-Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
-```
 
 ## <a name="use-the-report-message-feature"></a>Korzystanie z funkcji komunikatu raportu
 

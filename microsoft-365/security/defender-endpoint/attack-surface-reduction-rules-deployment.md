@@ -17,15 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 18654dfb1ae6ae10596889fb4491604a37b8ffe8
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 10ae1829f632492afdfd515d080b6be7c335b898
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017436"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601207"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Omówienie wdrażania reguł zmniejszania powierzchni podatnej na ataki (ASR)
 
@@ -58,9 +57,9 @@ Jak opisano w artykule [Używanie reguł zmniejszania obszaru ataków w celu zap
 
 | Zagrożenia polimorficzne | Przenoszenie poprzeczne & kradzież poświadczeń | Reguły aplikacji zwiększających produktywność |  Reguły poczty e-mail | Reguły skryptów | Reguły błędów |
 |:---|:---|:---|:---|:---|:---|
-| Blokuj uruchamianie plików wykonywalnych, chyba że spełniają one częstość występowania (1000 maszyn), wiek (24 godziny) lub kryteria listy zaufanych | Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI | Blokowanie tworzenia zawartości wykonywalnej przez aplikacje Office | Blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej | Blokuj zaciemniony kod JS/VBS/PS/macro | Blokowanie nadużyć wobec wykorzystywanych kierowców <sup>podpisanych w trudnej sytuacji [[1](#fn1)]<sup></sup>  |
-| Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB | Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Blokowanie tworzenia procesów podrzędnych przez aplikacje Office |  Blokuj tworzenie procesów podrzędnych tylko Office aplikacjom komunikacyjnym | Blokuj uruchamianie pobranej zawartości wykonywalnej JS/VBS | |
-| Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup | Blokuj trwałość za pośrednictwem subskrypcji zdarzeń WMI | Blokuj Office aplikacjom wstrzykiwanie kodu do innych procesów | Blokowanie tworzenia procesów podrzędnych przez aplikacje komunikacji Office | | |
+| Blokuj uruchamianie plików wykonywalnych, chyba że spełniają one częstość występowania (1000 maszyn), wiek (24 godziny) lub kryteria listy zaufanych | Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI | Blokuj aplikacjom pakietu Office możliwość tworzenia zawartości wykonywalnej | Blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej | Blokuj zaciemniony kod JS/VBS/PS/macro | Blokowanie nadużyć wobec wykorzystywanych kierowców <sup>podpisanych w trudnej sytuacji [[1](#fn1)]<sup></sup>  |
+| Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB | Blokuj kradzież poświadczeń z podsystemu lokalnego urzędu zabezpieczeń systemu Windows (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Blokuj aplikacjom pakietu Office możliwość tworzenia procesów podrzędnych |  Blokuj tworzenie procesów podrzędnych tylko aplikacjom komunikacyjnym pakietu Office | Blokuj uruchamianie pobranej zawartości wykonywalnej JS/VBS | |
+| Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup | Blokuj trwałość za pośrednictwem subskrypcji zdarzeń WMI | Blokuj aplikacjom pakietu Office wstrzykiwanie kodu do innych procesów | Blokuj aplikacjom komunikacyjnym pakietu Office możliwość tworzenia procesów podrzędnych | | |
 | | | Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych | | | |
 
 (<a id="fn1">1</a>) _Blokowanie nadużywania wykorzystywanych, narażonych na zagrożenia sterowników podpisanych_ nie jest obecnie dostępne w zabezpieczeniach punktu końcowego MEM. Tę regułę można skonfigurować przy użyciu [identyfikatora OMA-URI MEM](enable-attack-surface-reduction.md#mem).
@@ -76,7 +75,7 @@ Mimo że istnieje wiele metod implementowania reguł usługi ASR, ten przewodnik
 - urządzenia Windows 10 i Windows 11
 - licencje Ochrona punktu końcowego w usłudze Microsoft Defender E5 lub Windows E5
 
-Aby w pełni wykorzystać reguły i raportowanie usługi ASR, zalecamy korzystanie z licencji Microsoft 365 Defender E5 lub Windows E5 i A5. Dowiedz się więcej: [Minimalne wymagania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender](minimum-requirements.md).
+Aby w pełni wykorzystać reguły i raportowanie usługi ASR, zalecamy korzystanie z licencji Microsoft 365 Defender E5 lub Windows E5 oraz A5. Dowiedz się więcej: [Minimalne wymagania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender](minimum-requirements.md).
 
 >[!Note]
 >Istnieje wiele metod konfigurowania reguł usługi ASR. Reguły usługi ASR można skonfigurować przy użyciu: Microsoft Endpoint Manager (MEM), PowerShell, zasady grupy, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
@@ -84,7 +83,7 @@ Aby w pełni wykorzystać reguły i raportowanie usługi ASR, zalecamy korzystan
 
 ### <a name="asr-rules-dependencies"></a>Zależności reguł usługi ASR
 
-Program antywirusowy Microsoft Defender musi być włączona i skonfigurowana jako podstawowe rozwiązanie antywirusowe i musi być w następującym trybie:
+Program antywirusowy Microsoft Defender musi być włączony i skonfigurowany jako podstawowe rozwiązanie antywirusowe i musi być w następującym trybie:
 
 - Podstawowe rozwiązanie antywirusowe/chroniące przed złośliwym kodem  
 - Stan: Tryb aktywny
@@ -92,26 +91,26 @@ Program antywirusowy Microsoft Defender musi być włączona i skonfigurowana ja
 Program antywirusowy Microsoft Defender nie może być w żadnym z następujących trybów:
 
 - Pasywne
-- Tryb pasywny z wykrywaniem i reagowaniem punktów końcowych (EDR) w trybie bloku
+- Tryb pasywny z wykrywaniem punktów końcowych i odpowiedzią (EDR) w trybie bloku
 - Ograniczone okresowe skanowanie (LPS)
 - Wył.
 
-Zobacz: [Ochrona i Program antywirusowy Microsoft Defender dostarczane w chmurze](cloud-protection-microsoft-defender-antivirus.md).
+Zobacz: [Ochrona dostarczana w chmurze i program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
 
 ### <a name="cloud-protection-maps-must-be-enabled"></a>Usługa Cloud Protection (MAPS) musi być włączona
 
 Program antywirusowy Microsoft Defender bezproblemowo współpracuje z usługami firmy Microsoft w chmurze. Te usługi ochrony w chmurze, nazywane również usługą Microsoft Advanced Protection Service (MAPS), zwiększają standardową ochronę w czasie rzeczywistym, zapewniając prawdopodobnie najlepszą ochronę antywirusową. Ochrona w chmurze ma kluczowe znaczenie dla zapobiegania naruszeniom złośliwego oprogramowania i krytycznego składnika reguł usługi ASR.
-[Włącz ochronę dostarczaną przez chmurę w Program antywirusowy Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
+[Włącz ochronę dostarczaną przez chmurę w programie antywirusowym Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>składniki Program antywirusowy Microsoft Defender muszą być bieżącymi wersjami
+### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>Składniki programu antywirusowego Microsoft Defender muszą być bieżącymi wersjami
 
-Następujące Program antywirusowy Microsoft Defender wersje składników muszą być nie więcej niż dwie wersje starsze niż najbardziej dostępna wersja:
+Następujące wersje składników programu antywirusowego Microsoft Defender muszą być nie więcej niż dwie wersje starsze niż najbardziej obecnie dostępna wersja:
 
-- **wersja aktualizacji platformy Program antywirusowy Microsoft Defender** — platforma Program antywirusowy Microsoft Defender jest aktualizowana co miesiąc.
-- **Program antywirusowy Microsoft Defender wersji aparatu** — aparat Program antywirusowy Microsoft Defender jest aktualizowany co miesiąc.
-- **Program antywirusowy Microsoft Defender analizy zabezpieczeń** — firma Microsoft stale aktualizuje analizę zabezpieczeń usługi Microsoft Defender (znaną również jako definicja i podpis) w celu rozwiązania najnowszych zagrożeń oraz uściślenia logiki wykrywania.
+- **Wersja aktualizacji platformy antywirusowej Microsoft Defender**  — platforma antywirusowa Microsoft Defender jest aktualizowana co miesiąc.
+- **Wersja aparatu antywirusowego Microsoft Defender** — aparat antywirusowy Microsoft Defender jest aktualizowany co miesiąc.
+- **Analiza zabezpieczeń programu antywirusowego Microsoft Defender** — firma Microsoft stale aktualizuje analizę zabezpieczeń usługi Microsoft Defender (znaną również jako definicja i podpis) w celu rozwiązania najnowszych zagrożeń oraz doprecyzowania logiki wykrywania.
 
-Utrzymywanie bieżących wersji Program antywirusowy Microsoft Defender pomaga zmniejszyć liczbę reguł asr wyników fałszywie dodatnich i zwiększa możliwości wykrywania Program antywirusowy Microsoft Defender. Aby uzyskać więcej informacji na temat bieżących wersji i sposobu aktualizowania różnych składników Program antywirusowy Microsoft Defender, odwiedź [stronę obsługa platformy Program antywirusowy Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
+Utrzymywanie bieżących wersji programu antywirusowego Microsoft Defender pomaga zmniejszyć liczbę wyników fałszywie dodatnich reguł usługi ASR i zwiększyć możliwości wykrywania programu antywirusowego Microsoft Defender. Aby uzyskać więcej informacji na temat bieżących wersji i sposobu aktualizowania różnych składników programu antywirusowego Microsoft Defender, odwiedź [stronę Pomoc techniczna platformy antywirusowej Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ### <a name="caveat"></a>Zastrzeżeniem
 
@@ -165,17 +164,17 @@ Podobnie jak w przypadku każdej nowej implementacji na szeroką skalę, która 
 
 [Rozwiązywanie problemów z wynikami fałszywie pozytywnymi/negatywnymi w ochronie punktu końcowego w usłudze Microsoft Defender](defender-endpoint-false-positives-negatives.md)
 
-[Ochrona i Program antywirusowy Microsoft Defender dostarczane przez chmurę](cloud-protection-microsoft-defender-antivirus.md)
+[Ochrona dostarczana w chmurze i program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 
-[Włączanie ochrony dostarczanej w chmurze w Program antywirusowy Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md)
+[Włączanie ochrony dostarczanej w chmurze w programie antywirusowym Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 [Konfigurowanie i weryfikowanie wykluczeń na podstawie rozszerzenia, nazwy lub lokalizacji](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-[obsługa platformy Program antywirusowy Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md)
+[Obsługa platformy antywirusowej Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 [Omówienie spisu w centrum administracyjnym Aplikacje Microsoft 365](/deployoffice/admincenter/inventory)
 
-[Tworzenie planu wdrożenia dla Windows](/windows/deployment/update/create-deployment-plan)
+[Tworzenie planu wdrożenia dla systemu Windows](/windows/deployment/update/create-deployment-plan)
 
 [Używanie kontroli dostępu opartej na rolach (RBAC) i tagów zakresu dla rozproszonej infrastruktury IT w Intune](/mem/intune/fundamentals/scope-tags)
 
@@ -183,7 +182,7 @@ Podobnie jak w przypadku każdej nowej implementacji na szeroką skalę, która 
 
 ### <a name="management-sites"></a>Lokacje zarządzania
 
-[centrum administracyjne Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)
+[Centrum administracyjne usługi Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)
 
 [Zmniejszanie obszaru podatnego na ataki](https://security.microsoft.com/asr?viewid=detections)
 

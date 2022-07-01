@@ -1,5 +1,5 @@
 ---
-title: Wypróbuj lub kup subskrypcję Microsoft 365 dla firm
+title: Wypróbuj lub kup subskrypcję platformy Microsoft 365 dla firm
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -23,16 +23,18 @@ ms.custom:
 search.appverid: GEA150
 description: Utwórz konto bezpłatnej 30-dniowej wersji próbnej dla Microsoft 365 Business Standard, Microsoft 365 Business Premium lub Aplikacje Microsoft 365 dla firm.
 ms.date: 08/07/2020
-ms.openlocfilehash: d7ead35ebef6431a5e207e7114936d9724948755
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: b1a02ef1828e1868b83e16ad9bde16605103f851
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824229"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602541"
 ---
-# <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Wypróbuj lub kup subskrypcję Microsoft 365 dla firm
+# <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Wypróbuj lub kup subskrypcję platformy Microsoft 365 dla firm
 
-Microsoft 365 dla firm to usługa subskrypcji, która umożliwia uruchamianie organizacji w chmurze, podczas gdy firma Microsoft zajmuje się zasobami IT. Firma Microsoft zarządza urządzeniami, chroni przed rzeczywistymi zagrożeniami i udostępnia organizacji najnowsze oprogramowanie biznesowe. Możesz utworzyć konto bezpłatnej subskrypcji próbnej dla Microsoft 365 Business Standard, Microsoft 365 Business Premium lub Aplikacje Microsoft 365 dla firm i wypróbować ją przez 30 dni.
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
+
+Platforma Microsoft 365 dla firm to usługa subskrypcji, która umożliwia uruchamianie organizacji w chmurze, podczas gdy firma Microsoft zajmuje się it dla Ciebie. Firma Microsoft zarządza urządzeniami, chroni przed rzeczywistymi zagrożeniami i udostępnia organizacji najnowsze oprogramowanie biznesowe. Możesz utworzyć konto bezpłatnej subskrypcji próbnej dla Microsoft 365 Business Standard, Microsoft 365 Business Premium lub Aplikacje Microsoft 365 dla firm i wypróbować ją przez 30 dni.
 
 > [!NOTE]
 > Podczas tworzenia konta w celu skorzystania z bezpłatnej wersji próbnej należy użyć karty kredytowej. Po zakończeniu okresu bezpłatnej wersji próbnej subskrypcja wersji próbnej zostanie automatycznie przekonwertowana na płatną subskrypcję. Twoja karta kredytowa nie jest rozliczona do końca okresu próbnego.
@@ -55,10 +57,10 @@ Nie potrzebujesz istniejącego konta Microsoft, aby utworzyć konto bezpłatnej 
 
 Czy jesteś nowym klientem i nie masz jeszcze konta w firmie Microsoft? Te kroki umożliwiają utworzenie konta i utworzenie bezpłatnej subskrypcji wersji próbnej Microsoft 365 Business Standard, Microsoft 365 Business Premium lub Aplikacje Microsoft 365 dla firm.
 
-1. Przejdź do <a href="https://www.aka.ms/office365signup" target="_blank">witryny produktów Microsoft 365</a>.
+1. Przejdź do <a href="https://www.aka.ms/office365signup" target="_blank">witryny Produkty platformy Microsoft 365</a>.
 2. Wybierz plan, dla który chcesz się zarejestrować, na przykład **Microsoft 365 Business Standard**, przewiń stronę w dół i wybierz pozycję **Wypróbuj bezpłatnie przez 1 miesiąc**.
 3. Na następnej stronie wykonaj kroki konfigurowania konta.
-4. Proces rejestracji może potrwać kilka minut. \'Po jej zakończeniu możesz rozpocząć pracę kreatora konfiguracji subskrypcji. Aby uzyskać więcej informacji na temat konfigurowania subskrypcji, zobacz [Następne kroki](#next-steps).
+4. Proces rejestracji może potrwać kilka minut. \'Po zakończeniu możesz rozpocząć pracę kreatora konfiguracji subskrypcji. Aby uzyskać więcej informacji na temat konfigurowania subskrypcji, zobacz [Następne kroki](#next-steps).
 
 ## <a name="buy-a-subscription-from-your-free-trial"></a>Kupowanie subskrypcji z poziomu bezpłatnej wersji próbnej
 
@@ -76,7 +78,7 @@ Jeśli chcesz kupić subskrypcję przed zakończeniem okresu próbnego, wykonaj 
 
 ## <a name="extend-your-trial"></a>Przedłużanie okresu próbnego
 
-Czy potrzebujesz więcej czasu, aby wypróbować funkcje Microsoft 365 dla firm przed zakupem? Jeśli subskrypcja wersji próbnej wygaśnie w ciągu 15 dni i nie została wcześniej przedłużona, możesz wydłużyć okres próbny o kolejne 30 dni. Możesz to zrobić tylko jeden raz.
+Czy potrzebujesz więcej czasu na wypróbowanie funkcji platformy Microsoft 365 dla firm przed zakupem? Jeśli subskrypcja wersji próbnej wygaśnie w ciągu 15 dni i nie została wcześniej przedłużona, możesz wydłużyć okres próbny o kolejne 30 dni. Możesz to zrobić tylko jeden raz.
 
 1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
 2. Na karcie **Produkty** wybierz subskrypcję wersji próbnej, którą chcesz rozszerzyć.
@@ -91,12 +93,12 @@ Jeśli zdecydujesz się anulować subskrypcję próbną przed zakończeniem okre
 
 ## <a name="try-a-different-subscription"></a>Wypróbuj inną subskrypcję
 
-Jeśli masz już subskrypcję Microsoft 365 dla firm, możesz użyć Centrum administracyjne platformy Microsoft 365, aby wypróbować inną subskrypcję.
+Jeśli masz już subskrypcję platformy Microsoft 365 dla firm, możesz użyć Centrum administracyjne platformy Microsoft 365, aby wypróbować inną subskrypcję.
 
 Po dodaniu subskrypcji za pośrednictwem <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>], nowa subskrypcja jest skojarzona z tą samą organizacją (przestrzenią nazw domeny) co istniejąca subskrypcja. To skojarzenie ułatwia przenoszenie użytkowników w organizacji między subskrypcjami lub przypisywanie im licencji na dodatkowe produkty, których potrzebują.
 
 1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Usługi zakupu rozliczeń</a>  \>.
-2. Na stronie **Zakup usług** zobaczysz plany, które są dostępne dla Twojej organizacji. Wybierz plan Microsoft 365, który chcesz wypróbować.
+2. Na stronie **Zakup usług** zobaczysz plany, które są dostępne dla Twojej organizacji. Wybierz plan platformy Microsoft 365, który chcesz wypróbować.
 3. Na następnej stronie wybierz pozycję **Uzyskaj bezpłatną wersję próbną**. Wersja próbna daje 25 licencji użytkowników na okres jednego miesiąca.
 4. Wybierz, aby odebrać wiadomość SMS lub połączenie, wprowadź swój numer telefonu, a następnie wybierz pozycję **Wyślij wiadomość SMS** lub **Zadzwoń do mnie**.
 5. Wprowadź kod weryfikacyjny, a następnie wybierz pozycję **Rozpocznij bezpłatną wersję próbną**.
@@ -105,9 +107,11 @@ Po dodaniu subskrypcji za pośrednictwem <a href="https://go.microsoft.com/fwlin
 
 ## <a name="buy-a-different-subscription"></a>Kupowanie innej subskrypcji
 
-Jeśli masz już subskrypcję Microsoft 365 dla firm, możesz przejść przez Centrum administracyjne platformy Microsoft 365, aby kupić inną subskrypcję dla swojej organizacji.
+Jeśli masz już subskrypcję platformy Microsoft 365 dla firm, możesz przejść przez Centrum administracyjne platformy Microsoft 365, aby kupić inną subskrypcję dla swojej organizacji.
 
 ### <a name="watch-move-users-to-a-different-subscription"></a>Obejrzyj: Przenoszenie użytkowników do innej subskrypcji
+
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198013).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
@@ -122,7 +126,7 @@ Po zakupie innej subskrypcji za pośrednictwem <a href="https://go.microsoft.com
 2. Na stronie **Zakup usług** wybierz plan, który chcesz kupić, wybierz pozycję **Szczegóły**, a następnie wybierz pozycję **Kup**.
 3. Wprowadź liczbę potrzebnych licencji i wybierz, czy chcesz płacić co miesiąc, czy za cały rok. Określ, czy chcesz automatycznie przypisywać licencje do każdego użytkownika, który obecnie nie ma licencji. Następnie wybierz pozycję **Wyewidencjonuj teraz**.
 4. Przejrzyj informacje o cenach i wybierz pozycję **Dalej**.
-5. Podaj informacje o płatności, a następnie wybierz pozycję **Umieść zamówienie** \> **Przejdź do strony głównej administratora**.
+5. Podaj informacje o płatności, a następnie wybierz pozycję **Umieść zamówienie** \> **Przejdź do Administracja Home**.
 
 > [!NOTE]
 > Przed upływem 90-dniowego okresu prolongaty po wygaśnięciu subskrypcji próbnej musisz przenieść użytkowników z subskrypcji bezpłatnej wersji próbnej do nowej subskrypcji. Dzięki temu przechowujesz dane, konta i konfigurację. W przeciwnym razie te informacje zostaną usunięte.
@@ -156,9 +160,9 @@ Jeśli masz już subskrypcję i dodajesz nową subskrypcję, możesz przenieść
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Microsoft 365 wideo dotyczące szkoleń biznesowych](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (wideo)\
+[Filmy szkoleniowe dotyczące platformy Microsoft 365 dla firm](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (wideo)\
 [Dodawanie użytkowników i przypisywanie licencji w tym samym czasie](../admin/add-users/add-users.md) (artykuł)\
 [Przypisywanie licencji do użytkowników](../admin/manage/assign-licenses-to-users.md) (artykuł)\
 [Uaktualnienie do innego planu](subscriptions/upgrade-to-different-plan.md) (artykuł)\
-[Kup lub edytuj dodatek dla Microsoft 365 dla firm](buy-or-edit-an-add-on.md) (artykuł)\
+[Kup lub edytuj dodatek dla platformy Microsoft 365 dla firm](buy-or-edit-an-add-on.md) (artykuł)\
 [Dodawanie miejsca do magazynowania dla subskrypcji](add-storage-space.md) (artykuł)

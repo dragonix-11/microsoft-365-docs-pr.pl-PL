@@ -1,7 +1,7 @@
 ---
-title: Zarządzanie programem Microsoft Defender dla punktu końcowego przy użyciu Menedżer konfiguracji
-description: Dowiedz się, jak zarządzać usługą Microsoft Defender for Endpoint za pomocą programu Menedżer konfiguracji
-keywords: po migracji, zarządzanie, operacje, konserwacja, wykorzystanie, Menedżer konfiguracji, Microsoft Defender for Endpoint, edr
+title: Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu Configuration Manager
+description: Dowiedz się, jak zarządzać Ochrona punktu końcowego w usłudze Microsoft Defender za pomocą Configuration Manager
+keywords: po migracji, zarządzanie, operacje, konserwacja, wykorzystanie, Configuration Manager, Ochrona punktu końcowego w usłudze Microsoft Defender, edr
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -14,55 +14,54 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-scenario
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.date: 11/29/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 40bac47a4c22e3a8706ed4b38b479fff5d500410
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: e83306f4af82d8a24745ca5af3d146bb50c41ee7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63027062"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603401"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Zarządzanie programem Microsoft Defender for Endpoint za pomocą Menedżer konfiguracji
+# <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu Configuration Manager
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-Zalecamy korzystanie [z usługi Microsoft Endpoint Manager](/mem), która obejmuje usługi [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) i [Microsoft Endpoint Configuration Manager (Menedżer konfiguracji](/mem/configmgr/core/understand/introduction)) do zarządzania funkcjami ochrony przed zagrożeniami organizacji dla urządzeń ( określane również jako punkty końcowe).
+Zalecamy korzystanie z usługi [Microsoft Endpoint Manager](/mem), która obejmuje [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) i [Configuration Manager punktu końcowego firmy Microsoft](/mem/configmgr/core/understand/introduction) (Configuration Manager ), aby zarządzać funkcjami ochrony przed zagrożeniami w organizacji dla urządzeń (nazywanych również punktami końcowymi).
 
 - [Dowiedz się więcej o Endpoint Manager](/mem/endpoint-manager-overview)
-- [Współ zarządzanie usługą Microsoft Defender for Endpoint na Windows 10 i Windows 11 za pomocą usługi Menedżer konfiguracji i Intune](manage-mde-post-migration-intune.md)
+- [Współzarządzaj Ochrona punktu końcowego w usłudze Microsoft Defender na urządzeniach Windows 10 i Windows 11 przy użyciu Configuration Manager i Intune](manage-mde-post-migration-intune.md)
 
-## <a name="configure-microsoft-defender-for-endpoint-with-configuration-manager"></a>Konfigurowanie programu Microsoft Defender dla punktu końcowego za pomocą Menedżer konfiguracji
+## <a name="configure-microsoft-defender-for-endpoint-with-configuration-manager"></a>Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu Configuration Manager
 
 <br/><br/>
 
 |Zadanie|Zasoby, aby dowiedzieć się więcej|
 |---|---|
-|**Zainstaluj konsolę Menedżer konfiguracji,** jeśli jeszcze jej nie masz <br/><br/> *Jeśli nie masz jeszcze konsoli Menedżer konfiguracji, skorzystaj z tych zasobów, aby pobrać i zainstalować tę konsolę.*|[Pobierz nośnik instalacyjny](/mem/configmgr/core/servers/deploy/install/get-install-media) <br/><br/> [Zainstaluj konsolę Menedżer konfiguracji](/mem/configmgr/core/servers/deploy/install/install-consoles)|
-|**Używanie Menedżer konfiguracji do urządzeń w programie** Microsoft Defender for Endpoint <br/><br/> *Jeśli masz urządzenia (lub punkty końcowe), które nie zostały jeszcze podłączone do programu Microsoft Defender for Endpoint, możesz to zrobić za pomocą programu Menedżer konfiguracji.*|[Dołączanie do programu Microsoft Defender dla punktu końcowego za pomocą Menedżer konfiguracji](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#about-onboarding-to-atp-with-configuration-manager)|
-|**Zarządzanie zasadami ochrony przed złośliwym kodem i Windows zabezpieczeń zapory** dla komputerów klienckich (punktów końcowych) <br/><br/> *Skonfiguruj funkcje ochrony punktu końcowego, takie jak program Microsoft Defender for Endpoint, ochrona przed lukami, kontrola aplikacji, ochrona przed złośliwym oprogramowaniem, ustawienia zapory i nie tylko.*|[Menedżer konfiguracji: Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection)|
-|**Wybieranie metod aktualizacji ochrony przed złośliwym oprogramowaniem** na urządzeniach w organizacji <br/><br/> *Dzięki Endpoint Protection w Menedżer konfiguracji możesz wybrać jedną z kilku metod, aby zapewnić aktualne definicje ochrony przed złośliwym oprogramowaniem na urządzeniach organizacji.*|[Konfigurowanie aktualizacji definicji dla Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-definition-updates) <br/><br/> [Dostarczanie aktualizacji Menedżer konfiguracji za pomocą funkcji aktualizacji definicji](/mem/configmgr/protect/deploy-use/endpoint-definitions-configmgr)|
-|**Włączanie ochrony sieci w** celu uniemożliwinia pracownikom korzystania z aplikacji zawierających złośliwą zawartość w Internecie <br/><br/> *Zalecamy używanie [najpierw trybu inspekcji](/microsoft-365/security/defender-endpoint/evaluate-network-protection) w celu ochrony sieci w środowisku testowym, aby sprawdzić, które aplikacje mogą być blokowane przed ich rozpoczęciem.*|[Włączanie ochrony sieci za pomocą Menedżer konfiguracji](/microsoft-365/security/defender-endpoint/enable-network-protection#microsoft-endpoint-configuration-manager)|
-|**Konfigurowanie kontrolowanego dostępu do folderu w** celu ochrony przed oprogramowaniem wymuszającym okup <br/><br/> *Kontrolowany dostęp do folderu jest również określany jako ochrona antyransomware.*|[Ochrona punktu końcowego: Kontrolowany dostęp do folderu](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/> [Włączanie kontrolowanego dostępu do folderu w zarządzaniu konfiguracją punktu końcowego firmy Microsoft](/microsoft-365/security/defender-endpoint/enable-controlled-folders#microsoft-endpoint-configuration-manager)|
+|**Zainstaluj konsolę Configuration Manager**, jeśli jeszcze jej nie masz <br/><br/> *Jeśli nie masz jeszcze konsoli Configuration Manger, użyj tych zasobów, aby pobrać bity i zainstalować je.*|[Pobieranie nośnika instalacyjnego](/mem/configmgr/core/servers/deploy/install/get-install-media) <br/><br/> [Instalowanie konsoli Configuration Manager](/mem/configmgr/core/servers/deploy/install/install-consoles)|
+|**Dołączanie urządzeń do Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu Configuration Manager** <br/><br/> *Jeśli urządzenia (lub punkty końcowe) nie zostały jeszcze dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender, możesz to zrobić za pomocą Configuration Manager.*|[Dołączanie do Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#about-onboarding-to-atp-with-configuration-manager)|
+|**Zarządzanie zasadami ochrony przed złośliwym kodem i zabezpieczeniami zapory systemu Windows** dla komputerów klienckich (punktów końcowych) <br/><br/> *Skonfiguruj funkcje ochrony punktu końcowego, w tym Ochrona punktu końcowego w usłudze Microsoft Defender, ochronę przed lukami w zabezpieczeniach, kontrolę aplikacji, oprogramowanie chroniące przed złośliwym kodem, ustawienia zapory i inne.*|[Configuration Manager: Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection)|
+|**Wybieranie metod aktualizowania aktualizacji oprogramowania chroniącego przed złośliwym kodem** na urządzeniach organizacji <br/><br/> *Dzięki programowi Endpoint Protection w Configuration Manager możesz wybrać jedną z kilku metod, aby zapewnić aktualność definicji oprogramowania chroniącego przed złośliwym kodem na urządzeniach organizacji.*|[Konfigurowanie aktualizacji definicji dla programu Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-definition-updates) <br/><br/> [Dostarczanie aktualizacji definicji przy użyciu Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-definitions-configmgr)|
+|**Włącz ochronę sieci,** aby uniemożliwić pracownikom korzystanie z aplikacji, które mają złośliwą zawartość w Internecie <br/><br/> *Zalecamy używanie [najpierw trybu inspekcji](/microsoft-365/security/defender-endpoint/evaluate-network-protection) do ochrony sieci w środowisku testowym, aby sprawdzić, które aplikacje zostaną zablokowane przed wdrożeniem.*|[Włączanie ochrony sieci za pomocą Configuration Manager](/microsoft-365/security/defender-endpoint/enable-network-protection#microsoft-endpoint-configuration-manager)|
+|**Konfigurowanie kontrolowanego dostępu do folderów** w celu ochrony przed oprogramowaniem wymuszającym okup <br/><br/> *Kontrolowany dostęp do folderów jest również określany jako ochrona przed złośliwym oprogramowaniem.*|[Ochrona punktu końcowego: kontrolowany dostęp do folderów](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/> [Włączanie kontrolowanego dostępu do folderów w usłudze Microsoft Endpoint Configuration Manage](/microsoft-365/security/defender-endpoint/enable-controlled-folders#microsoft-endpoint-configuration-manager)|
 
-## <a name="configure-your-microsoft-365-defender-portal"></a>Konfigurowanie portalu Microsoft 365 Defender sieciOwego
+## <a name="configure-your-microsoft-365-defender-portal"></a>Konfigurowanie portalu Microsoft 365 Defender
 
-Jeśli jeszcze tego nie zrobiono, skonfiguruj w portalu usługi Microsoft 365 Defender wyświetlanie alertów, konfigurowanie funkcji ochrony przed zagrożeniami i wyświetlanie szczegółowych informacji o ogólnym stanie zabezpieczeń Twojej organizacji. Zobacz Podczas wykrycia i zatrzymania ataków, alerty, takie jak "alert dostępu początkowego", zostały wyzwolone i pojawiły się w Microsoft 365 Defender [portalu](/microsoft-365/security/defender/microsoft-365-defender). Możesz także skonfigurować funkcje, które użytkownicy końcowi będą widzieć w portalu Microsoft 365 Defender sieci.
+Jeśli jeszcze tego nie zrobiono, skonfiguruj portal Microsoft 365 Defender w celu wyświetlania alertów, konfigurowania funkcji ochrony przed zagrożeniami i wyświetlania szczegółowych informacji o ogólnej kondycji zabezpieczeń organizacji. Zobacz Podczas wykrywania i zatrzymywania ataku alerty, takie jak "początkowy alert dostępu", zostały wyzwolone i wyświetlone w [portalu Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender). Możesz również skonfigurować, czy i jakie funkcje użytkownicy końcowi mogą wyświetlać w portalu Microsoft 365 Defender.
 
 - [Omówienie Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Ochrona punktu końcowego: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Omówienie funkcji Zarządzanie zagrożeniami i lukami](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Odwiedź pulpit nawigacyjny Microsoft 365 Defender zabezpieczeń portalu](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
-- [Zarządzanie programem Microsoft Defender dla punktu końcowego za pomocą usługi Intune](manage-mde-post-migration-intune.md)
+- [Omówienie Zarządzanie zagrożeniami i lukami](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Odwiedź pulpit nawigacyjny operacji zabezpieczeń portalu Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender za pomocą Intune](manage-mde-post-migration-intune.md)

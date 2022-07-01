@@ -29,16 +29,18 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Kreator instalacji umożliwia dodanie domeny do usługi Microsoft 365 w Centrum administracyjne platformy Microsoft 365 przez dodanie rekordu DNS na hoście DNS.
-ms.openlocfilehash: 64b82aab051af2c9d5444042f27009b4e02f1ad8
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: be72f10727a5d4ed168740d80eb04078584137d9
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492043"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602905"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Dodawanie domeny do platformy Microsoft 365
 
- **[Zajrzyj do często zadawanych pytań dotyczących domen](domains-faq.yml)**, jeśli nie możesz znaleźć szukanych informacji. 
+ **[Zajrzyj do często zadawanych pytań dotyczących domen](domains-faq.yml)**, jeśli nie możesz znaleźć szukanych informacji.
+
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
   
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -48,6 +50,8 @@ Aby dodawać, modyfikować lub usuwać domeny, **musisz** być **administratorem
 > Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą firmy Microsoft ds. małych firm](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
 
 ## <a name="watch-add-a-domain"></a>Obejrzyj: Dodawanie domeny
+
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198213).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 

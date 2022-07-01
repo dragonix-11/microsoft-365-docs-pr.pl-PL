@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 724e6c0b0e0a9854df6c87977cacbf1e1a69bfbe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 8c650e639d1a4629ed25bcc3a7f3a8c28df4b8e8
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65740020"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603489"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Poznaj zaawansowany język zapytań wyszukiwania zagrożeń
 
@@ -37,9 +37,9 @@ ms.locfileid: "65740020"
 - Microsoft 365 Defender
 - Ochrona punktu końcowego w usłudze Microsoft Defender
 
-Zaawansowane wyszukiwanie zagrożeń opiera się na [języku zapytań Kusto](/azure/kusto/query/). Operatory i instrukcje Kusto umożliwiają tworzenie zapytań, które lokalizują informacje w wyspecjalizowanym [schemacie](advanced-hunting-schema-tables.md). 
+Zaawansowane wyszukiwanie zagrożeń jest oparte na [języku zapytań Kusto](/azure/kusto/query/). Operatory i instrukcje Kusto umożliwiają tworzenie zapytań, które lokalizują informacje w wyspecjalizowanym [schemacie](advanced-hunting-schema-tables.md). 
 
-Obejrzyj ten krótki film wideo, aby dowiedzieć się przydatnych Kusto podstaw języka zapytań.
+Obejrzyj ten krótki film wideo, aby poznać przydatne podstawy języka zapytań Kusto.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
  
@@ -133,7 +133,7 @@ Wybierz pozycję **Uruchom zapytanie** , aby wyświetlić wyniki.
 >[!TIP]
 >Możesz wyświetlać wyniki zapytań jako wykresy i szybko dostosowywać filtry. Aby uzyskać wskazówki, [przeczytaj o pracy z wynikami zapytania](advanced-hunting-query-results.md)
 
-Obejrzyj ten [krótki film wideo](https://www.youtube.com/watch?v=8qZx7Pp5XgM), aby dowiedzieć się, jak używać język zapytań Kusto do łączenia tabel.
+
 
 ## <a name="learn-common-query-operators"></a>Poznaj typowe operatory zapytań
 
@@ -143,7 +143,7 @@ Właśnie uruchomiono pierwsze zapytanie i masz ogólne pojęcie o jego składni
 |--|--|
 | `where` | Przefiltruj tabelę do podzestawu wierszy, które spełniają predykat. |
 | `summarize` | Utwórz tabelę, która agreguje zawartość tabeli wejściowej. |
-| `join` | Scal wiersze dwóch tabel, tworząc nową tabelę, dopasowując wartości określonych kolumn z każdej tabeli. |
+| `join` | Scal wiersze dwóch tabel, tworząc nową tabelę, dopasowując wartości określonych kolumn z każdej tabeli. Obejrzyj [artykuł Łączenie tabel w języku KQL](https://www.youtube.com/watch?v=8qZx7Pp5XgM) , aby dowiedzieć się, jak to zrobić.|
 | `count` | Zwraca liczbę rekordów w zestawie rekordów wejściowych. |
 | `top` | Zwróć pierwsze rekordy N posortowane według określonych kolumn. |
 | `limit` | Wróć do określonej liczby wierszy. |
@@ -156,7 +156,7 @@ Aby wyświetlić dynamiczny przykład tych operatorów, uruchom je w sekcji **Wp
 
 ## <a name="understand-data-types"></a>Omówienie typów danych
 
-Zaawansowane wyszukiwanie zagrożeń obsługuje Kusto typów danych, w tym następujące typowe typy:
+Zaawansowane wyszukiwanie zagrożeń obsługuje typy danych Kusto, w tym następujące typowe typy:
 
 | Typ danych | Implikacje dotyczące opisu i zapytania |
 |--|--|
@@ -166,12 +166,12 @@ Zaawansowane wyszukiwanie zagrożeń obsługuje Kusto typów danych, w tym nast�
 | `int` | 32-bitowa liczba całkowita  |
 | `long` | 64-bitowa liczba całkowita |
 
-Aby dowiedzieć się więcej na temat tych typów danych, [przeczytaj o Kusto skalarnym typie danych](/azure/data-explorer/kusto/query/scalar-data-types/).
+Aby dowiedzieć się więcej o tych typach danych, [przeczytaj o typach danych skalarnych Kusto](/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Uzyskiwanie pomocy podczas pisania zapytań
 
 Skorzystaj z następujących funkcji, aby szybciej pisać zapytania:
-- **Automatyczne sugerowanie** — podczas pisania zapytań zaawansowane wyszukiwanie zagrożeń zapewnia sugestie z IntelliSense. 
+- **Automatyczne sugerowanie** — podczas pisania zapytań zaawansowane wyszukiwanie zagrożeń zapewnia sugestie z funkcji IntelliSense. 
 - **Drzewo schematów** — obok obszaru roboczego znajduje się reprezentacja schematu zawierająca listę tabel i ich kolumn. Aby uzyskać więcej informacji, umieść kursor nad elementem. Kliknij dwukrotnie element, aby wstawić go do edytora zapytań.
 - **[Dokumentacja schematu](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** — dokumentacja w portalu z opisami tabel i kolumn, a także obsługiwanymi typami zdarzeń (`ActionType` wartościami) i przykładowymi zapytaniami
 
@@ -202,7 +202,7 @@ Sekcja **Wprowadzenie** zawiera kilka prostych zapytań przy użyciu powszechnie
 :::image type="content" source="../../media/get-started-section.png" alt-text="Sekcja **Wprowadzenie** na stronie **Zaawansowane wyszukiwanie zagrożeń** w portalu Microsoft 365 Defender" lightbox="../../media/get-started-section.png":::
 
 >[!NOTE]
->Oprócz podstawowych przykładów zapytań można również uzyskać dostęp do [udostępnionych zapytań](advanced-hunting-shared-queries.md) dla konkretnych scenariuszy wyszukiwania zagrożeń. Zapoznaj się z udostępnionymi zapytaniami po lewej stronie lub [repozytorium zapytań GitHub](https://aka.ms/hunting-queries).
+>Oprócz podstawowych przykładów zapytań można również uzyskać dostęp do [udostępnionych zapytań](advanced-hunting-shared-queries.md) dla konkretnych scenariuszy wyszukiwania zagrożeń. Zapoznaj się z udostępnionymi zapytaniami po lewej stronie lub [repozytorium zapytań usługi GitHub](https://aka.ms/hunting-queries).
 
 ## <a name="access-query-language-documentation"></a>Dokumentacja języka zapytań dostępu
 

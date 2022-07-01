@@ -1,5 +1,5 @@
 ---
-title: Operacjonalizowanie reguł zmniejszania obszaru ataków (ASR)
+title: Operacjonalizuj reguły zmniejszania obszaru podatnego na ataki
 description: Zawiera wskazówki dotyczące operacjonalizacji wdrożenia reguł zmniejszania obszaru ataków.
 keywords: Wdrażanie reguł zmniejszania obszaru ataków, wdrażanie usługi ASR, włączanie reguł asr, konfigurowanie usługi ASR, system zapobiegania włamaniom do hostów, reguły ochrony, reguły ochrony przed lukami w zabezpieczeniach, reguły antyeksploatowania, reguły wykorzystujące luki w zabezpieczeniach, reguły zapobiegania zakażeniom, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł usługi ASR
 search.product: eADQiWindows 10XVcnh
@@ -17,17 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 2c666a8b31308fb3cfb18a9a35211e49d886eab0
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 708d929376c029ba5ce448c93fd6c455a78ebec8
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705390"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602883"
 ---
-# <a name="operationalize-attack-surface-reduction-asr-rules"></a>Operacjonalizowanie reguł zmniejszania obszaru ataków (ASR)
+# <a name="operationalize-attack-surface-reduction-asr-rules"></a>Operacjonalizuj reguły zmniejszania obszaru podatnego na ataki
 
 Po w pełni wdrożonych regułach zmniejszania obszaru ataków (ASR) ważne jest, aby wdrożono procesy monitorowania działań związanych z usługą ASR i reagowania na nie.
 
@@ -81,12 +80,12 @@ Aby uzyskać więcej informacji na temat opcji wyszukiwania zagrożeń, zobacz: 
 
 ## <a name="topics-in-this-deployment-collection"></a>Tematy w tej kolekcji wdrożeń
 
-[Omówienie wdrażania reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment.md)
+[Omówienie wdrażania reguł zmniejszania powierzchni podatnej na ataki (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Planowanie wdrożenia reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+[Zaplanuj wdrażanie reguł zmniejszania powierzchni podatnej na ataki (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[Reguły zmniejszania obszaru ataków testowych (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[Przetestuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-test.md)
 
-[Włączanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+[Włącz reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-implement.md)
 
-[Dokumentacja reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-reference.md)
+[Odwołuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-reference.md)

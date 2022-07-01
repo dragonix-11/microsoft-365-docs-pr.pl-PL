@@ -21,16 +21,20 @@ search.appverid:
 description: Dowiedz się więcej o Microsoft 365 Business Premium— usłudze subskrypcji, która zajmuje się częścią IT.
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: 00763cd0438a28adbf98b60afed4a463086a2625
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f127ac87d4f3886a623f1c81ef2cec6f53677434
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435816"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601591"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
+
 ## <a name="watch-what-is-microsoft-365-business-premium"></a>Obejrzyj: Co to jest Microsoft 365 Business Premium?
+
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198029).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 
@@ -48,6 +52,6 @@ Gdy zarejestrujesz się w Microsoft 365 Business Premium, uzyskasz wszystkie te 
 | Zabezpieczanie urządzeń | Pliki służbowe można chronić na urządzeniach, ograniczając dostęp mobilny, taki jak kopiowanie i wklejanie. Możesz również selektywnie czyścić dane biznesowe z zarejestrowanych urządzeń przenośnych, jeśli zostaną utracone lub skradzione. |
 | Dodatkowe funkcje zabezpieczeń | Dostępne są zaawansowane funkcje w Microsoft 365 Business Premium, które ułatwiają ochronę firmy przed zagrożeniami cybernetycznymi i ochronę poufnych informacji. Możliwości obejmują Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1, zasady Ochrona przed utratą danych w Microsoft Purview (DLP), archiwizowanie Exchange Online, platformę Azure Information Protection i Intune. |
 
-Jeśli masz usługę Microsoft Business Premium, najszybszym sposobem skonfigurowania zabezpieczeń i bezpiecznego rozpoczęcia współpracy jest skorzystanie ze wskazówek w tej bibliotece: [Microsoft 365 dla mniejszych firm i kampanii](../../business-premium/index.md). Wskazówki te zostały opracowane we współpracy z zespołem Microsoft Defending Democracy w celu ochrony wszystkich małych klientów biznesowych przed zagrożeniami cybernetycznymi wprowadzonymi przez zaawansowanych hakerów. 
+Jeśli masz usługę Microsoft Business Premium, najszybszym sposobem skonfigurowania zabezpieczeń i bezpiecznego rozpoczęcia współpracy jest skorzystanie ze wskazówek w tej [bibliotece: Microsoft 365 dla mniejszych firm i kampanii](../../business-premium/index.md). Wskazówki te zostały opracowane we współpracy z zespołem Microsoft Defending Democracy w celu ochrony wszystkich małych klientów biznesowych przed zagrożeniami cybernetycznymi wprowadzonymi przez zaawansowanych hakerów. 
 
-Aby uzyskać szczegółowe informacje, zobacz [zawartość Microsoft 365 Business](../../admin/index.yml).
+Aby uzyskać szczegółowe informacje, zobacz [zawartość platformy Microsoft 365 Business](../../admin/index.yml).

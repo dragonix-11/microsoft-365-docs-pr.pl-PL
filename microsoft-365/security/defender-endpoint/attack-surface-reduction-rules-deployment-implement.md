@@ -1,5 +1,5 @@
 ---
-title: Włączanie reguł zmniejszania obszaru ataków (ASR)
+title: Włącz reguły zmniejszania obszaru podatnego na ataki
 description: Zawiera wskazówki dotyczące wdrażania reguł zmniejszania obszaru ataków.
 keywords: Wdrażanie reguł zmniejszania obszaru ataków, wdrażanie usługi ASR, włączanie reguł asr, konfigurowanie usługi ASR, system zapobiegania włamaniom do hostów, reguły ochrony, reguły ochrony przed lukami w zabezpieczeniach, reguły antyeksploatowania, reguły wykorzystujące luki w zabezpieczeniach, reguły zapobiegania zakażeniom, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł usługi ASR
 search.product: eADQiWindows 10XVcnh
@@ -17,17 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 19e654c979428e25d1365cbab5b6f75b39adbdb3
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: c3c693a46c3c22749a4e8ff2d572cef56bc06d9b
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705521"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603753"
 ---
-# <a name="enable-attack-surface-reduction-asr-rules"></a>Włączanie reguł zmniejszania obszaru ataków (ASR)
+# <a name="enable-attack-surface-reduction-asr-rules"></a>Włącz reguły zmniejszania obszaru podatnego na ataki
 
 Implementowanie reguł zmniejszania obszaru ataków (ASR) powoduje przeniesienie pierwszego pierścienia testowego w włączony stan funkcjonalny.
 
@@ -99,7 +98,7 @@ Aby uzyskać szczegółowe informacje na temat każdej reguły, zobacz temat [do
 
 2. W **edytorze zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera** i kliknij pozycję **Szablony administracyjne**.
 
-3. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Microsoft Defender** \> **Microsoft Defender Exploit Guard** \> **zmniejszanie obszaru podatnego na ataki**.
+3. Rozwiń drzewo do **składników** \> systemu Windows **Program antywirusowy** \> **Microsoft Defender Microsoft Defender Exploit Guard** \> **— redukcja obszaru ataków**.
 
 4. Kliknij dwukrotnie ustawienie **Wyklucz pliki i ścieżki z reguł zmniejszania obszaru ataków** i ustaw opcję **Włączone**. Wybierz pozycję **Pokaż** i wprowadź każdy plik lub folder w kolumnie **Nazwa wartości** . Wprowadź **wartość 0** w kolumnie **Wartość** dla każdego elementu.
 
@@ -125,18 +124,18 @@ Aby uzyskać szczegółowe informacje na temat każdej reguły, zobacz temat [do
 
 Aby dodać wykluczenia, użyj dostawcy usługi konfiguracji [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) .
 
-##### <a name="customize-the-notification"></a>Dostosowywanie powiadomienia
+##### <a name="customize-the-notification"></a>Dostosuj powiadomienie
 
 Powiadomienie można dostosować w przypadku wyzwolenia reguły i zablokowania aplikacji lub pliku. Zobacz [artykuł Zabezpieczenia Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center).
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Dodatkowe tematy w tej kolekcji wdrożeń
 
-[Omówienie wdrażania reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment.md)
+[Omówienie wdrażania reguł zmniejszania powierzchni podatnej na ataki (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Planowanie wdrożenia reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+[Zaplanuj wdrażanie reguł zmniejszania powierzchni podatnej na ataki (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[Reguły zmniejszania obszaru ataków testowych (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[Przetestuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-test.md)
 
-[Operacjonalizowanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operacjonalizuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Dokumentacja reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-reference.md)
+[Odwołuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-reference.md)

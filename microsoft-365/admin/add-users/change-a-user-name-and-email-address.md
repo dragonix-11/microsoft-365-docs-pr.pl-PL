@@ -25,26 +25,30 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: Dowiedz się, jak Microsoft 365 administrator globalny może zmienić adres e-mail użytkownika i nazwę wyświetlaną po zmianie jego nazwy.
-ms.openlocfilehash: f48cbf3428988ce50b9f8913dd4f6c4e47858b2d
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Dowiedz się, jak administrator globalny platformy Microsoft 365 może zmienić adres e-mail użytkownika i nazwę wyświetlaną po zmianie jego nazwy.
+ms.openlocfilehash: 420a25df1383bccd4fe93b2ea79d0eeb6f91d982
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466729"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601119"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Zmienianie nazwy użytkownika i adresu e-mail
+
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
 
 Może być konieczna zmiana adresu e-mail i nazwy wyświetlanej osoby, jeśli na przykład wyjdą oni za mąż i zmienią się ich nazwisko.
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy uzyskujecie całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm w miarę rozwoju firmy — od dołączania do codziennego użytku.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą firmy Microsoft ds. małych firm](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
 
 ## <a name="watch-change-a-users-name-or-email-address"></a>Obejrzyj: Zmienianie nazwy lub adresu e-mail użytkownika
 
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198016).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc]
 
-1. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**UżytkownicyAktywni**</a> >  użytkownicy.
+1. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję **Użytkownicy** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**aktywni użytkownicy**</a>.
 1. Wybierz użytkownika z listy aktywnych użytkowników.
 1. Wybierz pozycję **Zarządzaj informacjami kontaktowych**.
 1. Zmień nazwę wyświetlaną i wybierz pozycję **Zapisz zmiany**.
@@ -71,7 +75,7 @@ Aby wykonać te kroki, musisz być [administratorem globalnym](about-admin-roles
 
 1. Wybierz nazwę użytkownika, a następnie na karcie **Konto** wybierz pozycję **Zarządzaj nazwą użytkownika**.
 
-1. W pierwszym polu wpisz pierwszą część nowego adresu e-mail. Jeśli dodano własną domenę do Microsoft 365, wybierz domenę dla nowego aliasu wiadomości e-mail przy użyciu listy rozwijanej. [Dowiedz się, jak dodać domenę](../setup/add-domain.md).
+1. W pierwszym polu wpisz pierwszą część nowego adresu e-mail. Jeśli dodano własną domenę do platformy Microsoft 365, wybierz domenę dla nowego aliasu wiadomości e-mail przy użyciu listy rozwijanej. [Dowiedz się, jak dodać domenę](../setup/add-domain.md).
 
 1. Wybierz pozycję **Zapisz zmiany**.
 
@@ -97,7 +101,7 @@ Aby wykonać te kroki, musisz być [administratorem globalnym](about-admin-roles
 3. Wybierz pozycję **Ustaw jako podstawowy** dla adresu e-mail, który chcesz ustawić jako podstawowy adres e-mail dla tej osoby.
 
    > [!IMPORTANT]
-   > Jeśli zakupiono Microsoft 365 w usłudze GoDaddy lub innej usłudze partnerskiej, która udostępnia konsolę zarządzania, nie zostanie wyświetlona opcja Ustaw jako podstawową. Zamiast tego zaloguj się do konsoli zarządzania firmy GoDaddy/innego partnera, aby ustawić alias podstawowy.
+   > Jeśli zakupiono usługę Microsoft 365 w usłudze GoDaddy lub innej usłudze partnerskiej, która udostępnia konsolę zarządzania, ta opcja nie będzie widoczna dla opcji Ustaw jako podstawową. Zamiast tego zaloguj się do konsoli zarządzania firmy GoDaddy/innego partnera, aby ustawić alias podstawowy.
    >
    > Ponadto ta opcja będzie widoczna tylko wtedy, gdy jesteś administratorem globalnym. Jeśli nie widzisz tej opcji, nie masz uprawnień do zmiany nazwy użytkownika i podstawowego adresu e-mail.
 
@@ -107,11 +111,11 @@ Aby wykonać te kroki, musisz być [administratorem globalnym](about-admin-roles
 
    - Ta zmiana może trochę potrwać.
 
-   - Nowa nazwa użytkownika. Będą go potrzebować, aby zalogować się do Microsoft 365.
+   - Nowa nazwa użytkownika. Będą oni musieli zalogować się na platformie Microsoft 365.
 
    - Jeśli korzystają z usługi Skype dla firm Online, muszą zmienić harmonogram wszelkich zorganizowanych przez siebie spotkań Skype dla firm Online i poinformować kontakty zewnętrzne, aby zaktualizowały swoje informacje kontaktowe.
 
-   - Jeśli używają OneDrive, adres URL tej lokalizacji uległ zmianie. Jeśli w OneDrive mają OneNote notesy, może być konieczne zamknięcie i ponowne otwarcie ich w OneNote. Jeśli mają pliki udostępnione z OneDrive, linki do plików mogą nie działać, a użytkownik może ponownie udostępnić.
+   - Jeśli korzystają z usługi OneDrive, adres URL tej lokalizacji uległ zmianie. Jeśli mają notesy programu OneNote w usłudze OneDrive, może być konieczne zamknięcie i ponowne otwarcie ich w programie OneNote. Jeśli mają udostępnione pliki z usługi OneDrive, linki do plików mogą nie działać, a użytkownik może ponownie udostępnić.
 
    - Jeśli ich hasło również uległo zmianie, zostanie wyświetlony monit o wprowadzenie nowego hasła na urządzeniu przenośnym lub nie zostanie ono zsynchronizowane.
 
@@ -135,7 +139,7 @@ Aby wykonać te kroki, musisz być [administratorem globalnym](about-admin-roles
 
    Jeśli zostanie wyświetlony komunikat o błędzie "**Niestety, nie można edytować użytkownika. Przejrzyj informacje o użytkowniku i spróbuj ponownie**, zobacz [Rozwiązywanie komunikatów o błędach](#resolve-error-messages).
 
-Zanim ta zmiana zacznie obowiązywać we wszystkich usługach, może upłynąć do 24 godzin. Po wprowadzeniu zmiany osoba będzie musiała zalogować się do Outlook, Skype dla firm i SharePoint przy użyciu zaktualizowanej nazwy użytkownika.
+Zanim ta zmiana zacznie obowiązywać we wszystkich usługach, może upłynąć do 24 godzin. Po wprowadzeniu zmiany osoba będzie musiała zalogować się do programu Outlook, Skype dla firm i SharePoint przy użyciu zaktualizowanej nazwy użytkownika.
 
 ## <a name="resolve-error-messages"></a>Rozwiązywanie problemów z komunikatami o błędach
 
@@ -155,11 +159,11 @@ Niektóre osoby mogą nadal wysyłać wiadomości e-mail na stary adres e-mail d
 
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>Co zrobić, jeśli nie można zsynchronizować książki adresowej trybu offline osoby z globalną listą adresową?
 
-Jeśli korzystają z Exchange Online lub jeśli ich konto jest połączone z lokalnym środowiskiem Exchange organizacji, podczas próby zmiany nazwy użytkownika i adresu e-mail może zostać wyświetlony ten błąd: "Ten użytkownik jest synchronizowany z lokalną usługą Active Directory. Niektóre szczegóły można edytować wyłącznie za pośrednictwem lokalnej usługi Active Directory."
+Jeśli używają Exchange Online lub jeśli ich konto jest połączone z lokalnym środowiskiem programu Exchange w organizacji, podczas próby zmiany nazwy użytkownika i adresu e-mail może zostać wyświetlony ten błąd: "Ten użytkownik jest synchronizowany z lokalną usługą Active Directory. Niektóre szczegóły można edytować wyłącznie za pośrednictwem lokalnej usługi Active Directory."
 
-Jest to spowodowane adresem routingu poczty e-mail (MOERA) firmy Microsoft Online. Moera jest konstruowany na podstawie _atrybutu userPrincipalName_ osoby w usłudze Active Directory i jest automatycznie przypisywany do konta w chmurze podczas synchronizacji początkowej i po utworzeniu nie można go modyfikować ani usuwać w Microsoft 365. Następnie możesz zmienić nazwę użytkownika w usłudze Active Directory, ale nie zmienia ona moera i mogą wystąpić problemy z wyświetlaniem nowo zmienionej nazwy na globalnej liście adresów.
+Jest to spowodowane adresem routingu poczty e-mail (MOERA) firmy Microsoft Online. Moera jest konstruowany na podstawie  _atrybutu userPrincipalName_ osoby w usłudze Active Directory i jest automatycznie przypisywany do konta w chmurze podczas synchronizacji początkowej i po utworzeniu nie można go zmodyfikować ani usunąć na platformie Microsoft 365. Następnie możesz zmienić nazwę użytkownika w usłudze Active Directory, ale nie zmienia ona moera i mogą wystąpić problemy z wyświetlaniem nowo zmienionej nazwy na globalnej liście adresów.
 
-Aby rozwiązać ten problem, zaloguj się do [modułu Azure Active Directory dla programu PowerShell](https://go.microsoft.com/fwlink/?LinkId=823193) przy użyciu poświadczeń administratora Microsoft 365. i użyj następującej składni:
+Aby rozwiązać ten problem, zaloguj się do [modułu usługi Azure Active Directory dla programu PowerShell](https://go.microsoft.com/fwlink/?LinkId=823193) przy użyciu poświadczeń administratora platformy Microsoft 365. i użyj następującej składni:
 
 ```powershell
 Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.com -NewUserPrincipalName anne.jones@contoso.com

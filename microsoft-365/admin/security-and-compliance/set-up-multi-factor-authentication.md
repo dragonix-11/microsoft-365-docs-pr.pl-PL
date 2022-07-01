@@ -28,37 +28,41 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Dowiedz się, jak skonfigurować uwierzytelnianie wieloskładnikowe dla organizacji.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 6879a49bf0868081fed6ad8171138ce7001783c4
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 00a92a7755c0200d0ad707e84ceb13fac7c978c9
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739920"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603896"
 ---
-# <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Konfigurowanie uwierzytelniania wieloskładnikowego dla Microsoft 365
+# <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Konfigurowanie uwierzytelniania wieloskładnikowego dla platformy Microsoft 365
 
-Uwierzytelnianie wieloskładnikowe oznacza, że Ty i Twoi pracownicy muszą zapewnić więcej niż jeden sposób logowania się do Microsoft 365 jest jednym z najprostszych sposobów zabezpieczenia firmy. Na podstawie zrozumienia [uwierzytelniania wieloskładnikowego (MFA) i jego obsługi w Microsoft 365](multi-factor-authentication-microsoft-365.md) nadszedł czas, aby go skonfigurować i wdrożyć w organizacji. 
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
+
+Uwierzytelnianie wieloskładnikowe oznacza, że Ty i Twoi pracownicy muszą zapewnić więcej niż jeden sposób logowania się na platformie Microsoft 365 jest jednym z najprostszych sposobów zabezpieczania firmy. Na podstawie zrozumienia [uwierzytelniania wieloskładnikowego (MFA) i jego obsługi w usłudze Microsoft 365](multi-factor-authentication-microsoft-365.md) nadszedł czas, aby go skonfigurować i wdrożyć w organizacji. 
 
 > [!IMPORTANT]
 > Jeśli subskrypcja lub wersja próbna została zakupiona po 21 października 2019 r., a po zalogowaniu zostanie wyświetlony monit o uwierzytelnianie [wieloskładnikowe, domyślne ustawienia zabezpieczeń](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) zostały automatycznie włączone dla Twojej subskrypcji.
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy uzyskujecie całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm w miarę rozwoju firmy — od dołączania do codziennego użytku.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą firmy Microsoft ds. małych firm](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej uzyskasz wraz ze swoimi pracownikami całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm potrzebnego w miarę rozwoju Twojej firmy — od dołączania po codzienne użytkowanie.
 
 ## <a name="watch-turn-on-multifactor-authentication"></a>Obejrzyj: Włączanie uwierzytelniania wieloskładnikowego
+
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2197909).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
 1. Przejdź do Centrum administracyjne platformy Microsoft 365 pod adresem <a href="https://admin.microsoft.com/ " target="_blank">https://admin.microsoft.com</a>.
-1. Wybierz pozycję **Pokaż wszystko**, a następnie wybierz **centrum Azure Active Directory Administracja**.
-1. Wybierz **pozycję Azure Active Directory**, **Właściwości**, **Zarządzaj wartościami domyślnymi zabezpieczeń**.
+1. Wybierz pozycję **Pokaż wszystko**, a następnie wybierz centrum **Administracja usługi Azure Active Directory**.
+1. Wybierz pozycję **Azure Active Directory**, **Właściwości**, **Zarządzaj wartościami domyślnymi zabezpieczeń**.
 1. W obszarze **Włącz ustawienia domyślne zabezpieczeń** wybierz pozycję **Tak** , a następnie **pozycję Zapisz**.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
 - Aby zarządzać uwierzytelnianiem wieloskładnikowym, musisz być administratorem globalnym. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../add-users/about-admin-roles.md).
 - Jeśli masz włączoną starszą usługę MFA dla poszczególnych użytkowników, [wyłącz starszą uwierzytelnianie wieloskładnikowe dla poszczególnych użytkowników](#turn-off-legacy-per-user-mfa).
-- Jeśli masz Office klientów 2013 na urządzeniach Windows, [włącz nowoczesne uwierzytelnianie dla klientów Office 2013](./enable-modern-authentication.md).
+- Jeśli masz klientów pakietu Office 2013 na urządzeniach z systemem Windows, [włącz nowoczesne uwierzytelnianie dla klientów pakietu Office 2013](./enable-modern-authentication.md).
 - Zaawansowane: jeśli masz usługi katalogowe innych firm z usługami Active Directory Federation Services (AD FS), skonfiguruj serwer usługi Azure MFA. Aby uzyskać więcej informacji, zobacz [zaawansowane scenariusze z uwierzytelnianiem wieloskładnikowym Azure AD i rozwiązaniami sieci VPN innych firm](/azure/active-directory/authentication/howto-mfaserver-nps-vpn).
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>Wyłączanie starszej wersji uwierzytelniania wieloskładnikowego dla poszczególnych użytkowników
@@ -75,11 +79,11 @@ W przypadku większości organizacji ustawienia domyślne zabezpieczeń oferują
 
 Jeśli twoja subskrypcja jest nowa, ustawienia domyślne zabezpieczeń mogą być już włączone automatycznie.
 
-Ustawienia domyślne zabezpieczeń można włączyć lub wyłączyć w okienku **Właściwości** dla Azure Active Directory (Azure AD) w Azure Portal.
+Ustawienia domyślne zabezpieczeń można włączyć lub wyłączyć w okienku **Właściwości** usługi Azure Active Directory (Azure AD) w Azure Portal.
 
 1. Zaloguj się do [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) przy użyciu poświadczeń administratora globalnego.
-2. W lewym okienku nawigacyjnym wybierz pozycję **Pokaż wszystko** i w obszarze **Administracja center** wybierz **pozycję Azure Active Directory**.
-3. W **centrum administracyjnym Azure Active Directory** wybierz **pozycję właściwości Azure Active Directory**\>.
+2. W lewym okienku nawigacji wybierz pozycję **Pokaż wszystko** i w obszarze **Administracja center** wybierz pozycję **Azure Active Directory**.
+3. W **centrum administracyjnym usługi Azure Active Directory** wybierz pozycję **Właściwości** **usługi Azure Active Directory**\>.
 4. W dolnej części strony wybierz pozycję **Zarządzanie wartościami domyślnymi zabezpieczeń**.
 5. Wybierz pozycję **Tak** , aby włączyć ustawienia domyślne zabezpieczeń lub **Nie** , aby wyłączyć wartości domyślne zabezpieczeń, a następnie wybierz pozycję **Zapisz**.
 
@@ -102,16 +106,14 @@ Dostęp warunkowy jest dostępny dla klientów, którzy zakupili Azure AD — we
 
 Dostęp warunkowy oparty na ryzyku jest dostępny za pośrednictwem licencji Azure AD — wersja Premium P2 lub licencji, które to obejmują, takich jak Microsoft 365 E5. Aby uzyskać więcej informacji, zobacz [Dostęp warunkowy oparty na ryzyku](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
-Aby uzyskać więcej informacji na temat Azure AD P1 i P2, zobacz [cennik Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
+Aby uzyskać więcej informacji na temat Azure AD P1 i P2, zobacz [Cennik usługi Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>Włączanie nowoczesnego uwierzytelniania dla organizacji
 
-W przypadku większości subskrypcji nowoczesne uwierzytelnianie jest automatycznie włączone, ale jeśli subskrypcja została zakupiona przed sierpniem 2017 r., prawdopodobnie trzeba będzie włączyć nowoczesne uwierzytelnianie, aby uzyskać funkcje, takie jak uwierzytelnianie wieloskładnikowe, aby działały w Windows klientów, takich jak Outlook.
+W przypadku większości subskrypcji nowoczesne uwierzytelnianie jest automatycznie włączone, ale jeśli zakupiono subskrypcję przed sierpniem 2017 r., prawdopodobnie trzeba będzie włączyć nowoczesne uwierzytelnianie, aby uzyskać funkcje, takie jak Uwierzytelnianie wieloskładnikowe, aby działały na klientach systemu Windows, takich jak Outlook.
 
-
-1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> w lewym pasku nawigacyjnym wybierz **pozycję Ustawienia** \> **Ustawienia organizacji**.
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> w lewym pasku nawigacyjnym wybierz pozycję **Ustawienia** \> **ustawienia organizacji**.
 2. Na karcie **Usługi** wybierz pozycję **Nowoczesne uwierzytelnianie**, a następnie w okienku **Nowoczesne uwierzytelnianie** upewnij się, że wybrano pozycję **Włącz nowoczesne uwierzytelnianie** . Wybierz **pozycję Zapisz zmiany**.
-
 
 ## <a name="next-steps"></a>Następne kroki
 

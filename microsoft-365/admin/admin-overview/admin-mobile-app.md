@@ -24,19 +24,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Pobierz aplikację administratora platformy Microsoft 365, towarzysza internetowego centrum administracyjnego platformy Microsoft 365, aby zarządzać organizacją online z telefonu lub tabletu.
-ms.openlocfilehash: 07c404a3bfdee064fa1fdcb38caa1cf2da595000
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+description: Pobierz aplikację Administracja Microsoft 365, towarzysza internetowego Centrum administracyjne platformy Microsoft 365, aby zarządzać organizacją online z telefonu lub tabletu.
+ms.openlocfilehash: 4a10c38fcaf793c6ccb3666a16d197c95bbc753a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922158"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601701"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>Informacje o aplikacji mobilnej administratora platformy Microsoft 365
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>Informacje o aplikacji mobilnej Administracja Microsoft 365
 
-Czy jesteś administratorem, który jest zwykle w podróży? Nawet jeśli tak nie jest, mogą wystąpić chwile, kiedy trzeba zarządzać platformą Microsoft 365 z telefonu lub tabletu. Zapoznaj się z bezpłatną [aplikacją administracyjną platformy Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=627216), która jest idealnym towarzyszem internetowego centrum administracyjnego platformy Microsoft 365. Aplikację można pobrać ze [sklepu Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) i [sklepu Google Play](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp), a także z linku aplikacji administratora platformy Microsoft 365 w prawym górnym rogu <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">w centrum administracyjnym platformy Microsoft 365</a>.
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
 
-:::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Zrzut ekranu: Strona główna administratora aplikacji mobilnej, wyświetlając wyszukiwanie, centrum komunikatów, kondycję i szybkie linki":::
+Czy jesteś administratorem, który jest zwykle w podróży? Nawet jeśli tak nie jest, mogą wystąpić chwile, kiedy trzeba zarządzać platformą Microsoft 365 z telefonu lub tabletu. Zapoznaj się z bezpłatną [aplikacją Administracja Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=627216), idealną towarzyszką internetowego Centrum administracyjne platformy Microsoft 365. Aplikację można pobrać z [App Store firmy Apple](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) i z [Sklep Google Play](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp), a także z linku Administracja Microsoft 365 aplikacji w prawym górnym rogu <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>.
+
+:::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Zrzut ekranu: Administracja stronę główną aplikacji mobilnej, wyświetlając wyszukiwanie, Centrum komunikatów, kondycję i szybkie linki":::
 
 Aplikacja administracyjna ma wiele możliwości, które umożliwiają zarządzanie platformą Microsoft 365 z poziomu urządzenia przenośnego lub tabletu, gdy nie możesz dostać się do komputera. Oto lista kilku zadań, które można wykonać z poziomu aplikacji:
 
@@ -51,13 +53,15 @@ Aplikacja administracyjna ma wiele możliwości, które umożliwiają zarządzan
 Jeśli jesteś administratorem i odpowiadasz za więcej niż jedną organizację platformy Microsoft 365, możesz zalogować się do wielu organizacji i szybko się między nimi przełączać. Aplikacja obsługuje ciemny motyw i jest dostępna w 39 językach.
   
 > [!IMPORTANT]
-> Jeśli masz problemy z używaniem aplikacji mobilnej Administrator w systemie iOS lub Android, wyślij do nas wiadomość e-mail na [adres feedback365@microsoft.com](mailto:feedback365@microsoft.com) , aby poinformować nas o tym.
+> Jeśli masz problemy z używaniem aplikacji mobilnej Administracja w systemie iOS lub Android, wyślij do nas wiadomość e-mail na [adres feedback365@microsoft.com](mailto:feedback365@microsoft.com), aby poinformować nas o tym.
 
 ## <a name="watch-install-the-admin-mobile-app"></a>Obejrzyj: Instalowanie aplikacji mobilnej administratora
 
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198017).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
-1. Aby uzyskać aplikację mobilną administratora platformy Microsoft 365, wyszukaj pozycję  **Administrator platformy Microsoft 365**  w sklepie z aplikacjami dla swojego urządzenia i zainstaluj ją.
+1. Aby uzyskać aplikację mobilną Administracja Microsoft 365, wyszukaj **Administracja Microsoft 365** w sklepie z aplikacjami dla swojego urządzenia i zainstaluj je.
 2. Zaloguj się przy użyciu adresu e-mail administratora globalnego i wyświetl pulpit nawigacyjny, aby wyświetlić kondycję usługi, monitorować licencje użytkowników oraz wyświetlać komunikaty i żądania obsługi.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
@@ -66,7 +70,7 @@ Aby korzystać z aplikacji mobilnej administratora, musisz być administratorem 
   
 ## <a name="download-the-admin-mobile-app"></a>Pobierz aplikację Administrator dla urządzeń przenośnych
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> z poziomu linku aplikacji administracyjnej platformy Microsoft 365 w prawym górnym rogu. 
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> z linku aplikacji Administracja Microsoft 365 w prawym górnym rogu. 
 
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
@@ -80,17 +84,17 @@ Poniżej przedstawiono odpowiedzi na często zadawane pytania.
 
 Aby korzystać z aplikacji, musisz mieć uprawnienia administratora i ważną subskrypcję jednej z następujących subskrypcji platformy Microsoft 365:
 
-- Aplikacje platformy Microsoft 365 dla przedsiębiorstw
-- Aplikacje platformy Microsoft 365 dla firm
+- Aplikacje Microsoft 365 dla przedsiębiorstw
+- Aplikacje Microsoft 365 dla firm
 - Microsoft 365 Business Premium
 - Microsoft 365 Business Standard
 - Microsoft 365 dla Firm w warstwie Podstawowa
 - Microsoft 365 E3/E5
 - Office 365: E1, E3/E5
-- Plan usługi Exchange Online
+- plan Exchange Online
 - Plan usługi OneDrive dla firm
   
-### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Czy mogę używać aplikacji z subskrypcją microsoft 365 Family?
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Czy mogę użyć aplikacji z subskrypcją Microsoft 365 Family?
 
 Nie, aplikacja nie współpracuje z subskrypcjami Microsoft 365 Family ani Microsoft 365 Personal.
 
@@ -100,7 +104,7 @@ Tak, ale z ograniczoną funkcjonalnością. Będzie można zalogować się i wy�
   
 ### <a name="what-languages-are-supported-by-the-app"></a>Jakie języki są obsługiwane w aplikacji?
 
-Aplikacja obsługuje wszystkie 39 języków obsługiwanych przez internetowe centrum administracyjne platformy Microsoft 365. Aby zmienić język, w menu nawigacji po lewej stronie w centrum administracyjnym przejdź do pozycji **Język ustawień** >  lub wybierz ikonę **Język** w sekcji **Szybkie linki** na stronie głównej aplikacji mobilnej administratora.
+Aplikacja obsługuje wszystkie 39 języków obsługiwanych przez internetowy Centrum administracyjne platformy Microsoft 365. Aby zmienić język, w menu nawigacji po lewej stronie w centrum administracyjnym przejdź do pozycji **Język ustawień** >  lub wybierz ikonę **Język** w sekcji **Szybkie linki** na stronie głównej aplikacji mobilnej administratora.
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>Jak mogę udostępniać wiadomości i zdarzenia związane z usługą innym osobom w organizacji?
 
@@ -119,7 +123,7 @@ Możesz wypróbować typowe procedury rozwiązywania problemów z aplikacjami dl
 1. Jeśli na urządzeniu jest zainstalowana aplikacja Microsoft Authenticator lub Portal firmy, spróbuj ją ponownie zainstalować lub zaktualizować do najnowszej wersji.
 1. Jeśli to nie zadziała, możesz wysłać do nas wiadomość e-mail o feedback365@microsoft.com, aby nas o tym poinformować.
 
-### <a name="how-do-i-manage-notifications-in-the-app"></a>Jak zarządzać powiadomieniami w aplikacji?
+### <a name="how-do-i-manage-notifications-in-the-app"></a>Jak mogę zarządzać powiadomieniami w aplikacji?
 
 W menu nawigacji po lewej stronie przejdź do pozycji **Powiadomienia o ustawieniach** > . Tutaj możesz zarządzać kondycją usługi, centrum komunikatów i powiadomieniami dotyczącymi rozliczeń.
 

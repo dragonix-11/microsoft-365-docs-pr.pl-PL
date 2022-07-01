@@ -1,5 +1,5 @@
 ---
-title: Różnice między interpretacją dokumentów a modelami przetwarzania formularzy
+title: Różnice między modelami niestandardowymi w usłudze Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się więcej o kluczowych różnicach między modelem zrozumienia dokumentu a modelem przetwarzania formularzy.
-ms.openlocfilehash: 49e3e2a0d63303b1c5cbdbfd941ba8aaa40594a7
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 31f70983b90e758516f92081217010bb6a64acd4
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491708"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603797"
 ---
-# <a name="differences-between-document-understanding-and-form-processing-models"></a>Różnice między interpretacją dokumentów a modelami przetwarzania formularzy 
+# <a name="differences-between-custom-models-in-microsoft-sharepoint-syntex"></a>Różnice między modelami niestandardowymi w usłudze Microsoft SharePoint Syntex 
 
 Opis zawartości w usłudze Microsoft SharePoint Syntex umożliwia identyfikowanie i klasyfikowanie dokumentów przekazanych do bibliotek dokumentów programu SharePoint, a następnie wyodrębnianie odpowiednich informacji z każdego pliku. Na przykład, ponieważ pliki są przekazywane do biblioteki dokumentów programu SharePoint, wszystkie pliki, które są identyfikowane jako *zamówienia zakupu* , są klasyfikowane jako takie, a następnie wyświetlane w niestandardowym widoku biblioteki dokumentów. Ponadto można pobrać określone informacje z każdego pliku (na przykład *numer zamówienia* zakupu i *sumę*) i wyświetlić je jako kolumnę w widoku biblioteki dokumentów. 
 
@@ -78,7 +78,7 @@ Poniższa tabela zawiera informacje o tym, kiedy używać przetwarzania formular
 | Tworzenie modelu | Model utworzony w konstruktorze sztucznej inteligencji z bezproblemowym dostępem z biblioteki dokumentów programu SharePoint.| Model utworzony w programie SharePoint w nowej witrynie — centrum zawartości. |
 | Typ klasyfikacji| Klasyfikator settable służy do udzielania systemowi wskazówek dotyczących wyodrębniania danych.| Klasyfikator trainable z opcjonalnymi wyodrębniaczami przy użyciu nauczania maszynowego w celu przypisania lokalizacji dokumentu do wyodrębnienia danych.|
 | Lokalizacje | Wytrenowane dla pojedynczej biblioteki dokumentów.| Można zastosować do wielu bibliotek.|
-| Obsługiwane typy plików| Trenuj w formacie PDF, JPG, PNG, łącznie 50 MB i 500 stron.| Trenuj w plikach PDF 5–10, Office lub e-mail, w tym w negatywnych przykładach.<br>Pliki pakietu Office są obcinane przy użyciu znaków 64K. Pliki zeskanowane przez protokół OCR są ograniczone do 20 stron. Modele interpretacji dokumentów obsługują następujące typy plików doc, docx, eml, heic, heif, htm, html, jpeg, jpg, markdown, md, msg, pdf, png, ppt, pptx, rtf, tif, tiff, txt, xls i xlsx.|
+| Obsługiwane typy plików| Trenuj w formacie PDF, JPG, PNG, łącznie 50 MB i 500 stron.| Trenuj w plikach PDF 5–10, Office lub e-mail, w tym w negatywnych przykładach.<br>Pliki pakietu Office są obcinane przy użyciu znaków 64K. Pliki zeskanowane przez protokół OCR są ograniczone do 20 stron. Zobacz [obsługiwane typy plików](document-understanding-overview.md#supported-file-types).|
 | Integracja z zarządzanymi metadanymi | Nie | Tak, przez trenowanie wyodrębniania jednostek odwołującego się do skonfigurowanego pola zarządzanych metadanych.|
 | Integracja funkcji zgodności z Microsoft Purview Information Protection | Ustaw opublikowane etykiety przechowywania.<br>Nadchodzą etykiety poufności ustawić. | Ustaw opublikowane etykiety przechowywania.<br>Ustaw opublikowane etykiety poufności. |
 | Obsługiwane regiony| Przetwarzanie formularzy opiera się na usłudze Power Platform. Aby uzyskać informacje o globalnej dostępności platformy Power Platform i narzędzia AI Builder, zobacz [Dostępność platformy Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Dostępne we wszystkich regionach.|

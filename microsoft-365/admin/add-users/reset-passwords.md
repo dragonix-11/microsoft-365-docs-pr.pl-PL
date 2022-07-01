@@ -29,17 +29,19 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: Zaloguj się przy użyciu konta administratora Microsoft 365, aby zresetować hasła dla użytkowników, gdy masz subskrypcję Microsoft 365 dla firm.
-ms.openlocfilehash: 4c2c4bc1409a49b0f0bb26217fd349348331e95b
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+description: Zaloguj się przy użyciu konta administratora platformy Microsoft 365, aby zresetować hasła dla użytkowników, gdy masz subskrypcję platformy Microsoft 365 dla firm.
+ms.openlocfilehash: c7d3d70e2c286fbf35c4d2ae2e3eb8b812fd7e31
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65620957"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601679"
 ---
-# <a name="reset-passwords-in-microsoft-365-for-business"></a>Resetowanie haseł w Microsoft 365 dla firm
+# <a name="reset-passwords-in-microsoft-365-for-business"></a>Resetowanie haseł w usłudze Microsoft 365 dla firm
 
-W tym artykule wyjaśniono, jak zresetować hasła dla siebie i użytkowników, gdy masz subskrypcję Microsoft 365 dla firm.
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
+
+W tym artykule wyjaśniono, jak zresetować hasła dla siebie i użytkowników, gdy masz subskrypcję platformy Microsoft 365 dla firm.
 
 > [!NOTE]
 > Możesz również skonfigurować samoobsługowe resetowanie haseł dla użytkowników, aby mogli oni zresetować własne hasła. Aby dowiedzieć się więcej, zobacz [Zezwalanie użytkownikom na resetowanie własnych haseł](let-users-reset-passwords.md).
@@ -49,17 +51,17 @@ W tym artykule wyjaśniono, jak zresetować hasła dla siebie i użytkowników, 
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Ten artykuł jest przeznaczony dla osób, które konfigurują zasady wygasania haseł dla firmy, instytucji edukacyjnej lub organizacji niedochodowej. Aby wykonać te kroki, musisz zalogować się przy użyciu konta administratora Microsoft 365. [Omówienie w Centrum administracyjne platformy Microsoft 365](../admin-overview/admin-center-overview.md).
+Ten artykuł jest przeznaczony dla osób, które konfigurują zasady wygasania haseł dla firmy, instytucji edukacyjnej lub organizacji niedochodowej. Aby wykonać te kroki, musisz zalogować się przy użyciu konta administratora platformy Microsoft 365. [Omówienie w Centrum administracyjne platformy Microsoft 365](../admin-overview/admin-center-overview.md).
 
 Aby wykonać te kroki, musisz być [administratorem globalnym lub administratorem haseł](about-admin-roles.md) .
 
 ## <a name="watch-reset-a-business-password-for-a-user"></a>Obejrzyj: Resetowanie hasła biznesowego dla użytkownika
 
-Obejrzyj krótki film o resetowaniu haseł użytkowników.<br><br>
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198204).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-1. Gdy użytkownik zażąda nowego hasła, otrzymasz żądanie resetowania hasła w wiadomości e-mail. Aby zresetować hasło, otwórz program uruchamiania aplikacji i wybierz pozycję **Administrator**.
+1. Gdy użytkownik zażąda nowego hasła, otrzymasz żądanie resetowania hasła w wiadomości e-mail. Aby zresetować hasło, otwórz program uruchamiania aplikacji i wybierz pozycję **Administracja**.
 1. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję **Użytkownicy**, <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Aktywni użytkownicy**</a>, a następnie wybierz ikonę klucza obok użytkownika, który zażądał zresetowania.
 1. Wybierz pozycję **Automatycznie wygeneruj hasło** , aby automatycznie utworzyć losowe hasło.
 1. Wybierz pozycję **Resetuj**.
@@ -82,9 +84,9 @@ Zdecydowanie zalecamy skonfigurowanie funkcji samodzielnego resetowania hasła. 
 
 ## <a name="reset-my-admin-password"></a>Resetowanie hasła administratora
 
-Wykonaj następujące kroki, jeśli nie pamiętasz hasła, ale możesz zalogować się do Microsoft 365, ponieważ na przykład hasło jest zapisywane w przeglądarce:
+Wykonaj następujące kroki, jeśli nie pamiętasz hasła, ale możesz zalogować się na platformie Microsoft 365, ponieważ na przykład hasło jest zapisywane w przeglądarce:
 
-1. Wybierz swoją nazwę (ikonę) w prawym górnym rogu > **Moje** **kontoPersonalne** >  informacje.
+1. Wybierz swoją nazwę (ikonę) w prawym górnym rogu > **Moje dane****osobowe** konta > .
 
 2. W obszarze **Szczegóły kontaktu** sprawdź dokładnie, czy **alternatywna wiadomość e-mail** jest dokładna i czy podano numer telefonu komórkowego. W przeciwnym razie zmień je teraz.
 
@@ -103,7 +105,6 @@ Jeśli nie pamiętasz hasła i nie możesz się zalogować:
 - Ewentualnie [zadzwoń do pomocy technicznej firmy Microsoft](../../business-video/get-help-support.md).
 
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Resetuj wszystkie hasła biznesowe dla wszystkich w organizacji w tym samym czasie
-<a name="bkmk_forgot"> </a>
 
 Ta procedura dotyczy firm z dziesiątkami użytkowników. Jeśli masz setki lub tysiące użytkowników, zobacz następną sekcję dotyczącą zbiorczego resetowania haseł (maksymalnie 40 użytkowników jednocześnie).
   
@@ -118,19 +119,18 @@ Ta procedura dotyczy firm z dziesiątkami użytkowników. Jeśli masz setki lub 
 5. Wprowadź adres e-mail, na którym można odbierać hasła tymczasowe. Musisz powiadomić użytkowników, jakie są ich tymczasowe hasła.
   
 ## <a name="reset-business-passwords-in-bulk"></a>Zbiorcze resetowanie haseł biznesowych
-<a name="bkmk_forgot"> </a>
 
 Użyj programu PowerShell. Zapoznaj się z tym wpisem autorstwa Eyal Doron: [Zarządzanie hasłami za pomocą programu PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-Aby uzyskać informacje o przeglądzie, zobacz [Zarządzanie Microsoft 365 przy użyciu programu PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
+Aby uzyskać informacje o przeglądzie, zobacz [Manage Microsoft 365 with PowerShell (Zarządzanie platformą Microsoft 365 przy użyciu programu PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)).
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Wymuszanie zmiany hasła dla wszystkich użytkowników w firmie
 
 Zapoznaj się z tym doskonałym wpisem w blogu autorstwa Vasila Micheva, specjalisty Microsoft MVP: [Wymuszanie zmiany haseł dla wszystkich użytkowników w usłudze Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Nie mam subskrypcji Microsoft 365 dla firm
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Nie mam subskrypcji platformy Microsoft 365 dla firm
 
 Spróbuj skorzystać z tego artykułu: [Nie pamiętam nazwy użytkownika lub hasła do konta używanego z pakietem Office](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp).
   
@@ -140,4 +140,4 @@ Spróbuj skorzystać z tego artykułu: [Nie pamiętam nazwy użytkownika lub has
 [Resetowanie haseł](../add-users/reset-passwords.md) (artykuł)\
 [Ustaw hasło użytkownika, aby nigdy nie wygasało](set-password-to-never-expire.md) (artykuł)\
 [Ustaw zasady wygasania haseł dla organizacji](../manage/set-password-expiration-policy.md) (artykuł)\
-[Microsoft 365 wideo z szkoleniami biznesowymi](../../business-video/index.yml) (strona linku)
+[Filmy szkoleniowe dotyczące platformy Microsoft 365 dla firm](../../business-video/index.yml) (strona linku)

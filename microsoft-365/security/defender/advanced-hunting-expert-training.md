@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2036f0b1e749250d42066fc5ea742c550a2f756e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 4c83db02acea02b076b84f8b180e4d9ff8460a80
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664111"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603324"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Uzyskiwanie specjalistycznych szkoleń na temat zaawansowanego wyszukiwania zagrożeń
 
@@ -40,8 +40,8 @@ Zwiększ swoją wiedzę na temat zaawansowanego wyszukiwania zagrożeń dzięki 
 
 | Tytuł | Opis | Obejrzyj | Kwerendy |
 |---|---|---|---|
-| Odcinek 1: podstawy KQL | Ten odcinek obejmuje podstawy zaawansowanych polowań w Microsoft 365 Defender. Dowiedz się więcej o dostępnych zaawansowanych danych wyszukiwania zagrożeń oraz podstawowej składni i operatorach KQL. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [Plik tekstowy](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
-| Odcinek 2: Sprzężenia | Kontynuuj naukę o danych w zaawansowanym polowaniu i sposobie łączenia tabel ze sobą. Dowiedz się więcej o `inner`sprzężeniach , `outer``unique`, i `semi` oraz zapoznaj się z niuansami domyślnego sprzężenia Kusto`innerunique`. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [Plik tekstowy](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
+| Odcinek 1: Podstawy KQL | Ten odcinek obejmuje podstawy zaawansowanych polowań w Microsoft 365 Defender. Dowiedz się więcej na temat dostępnych zaawansowanych danych wyszukiwania zagrożeń oraz podstawowej składni i operatorów KQL. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [Plik tekstowy](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
+| Odcinek 2: Sprzężenia | Kontynuuj naukę o danych w zaawansowanym polowaniu i sposobie łączenia tabel ze sobą. Dowiedz się więcej o `inner`sprzężeniach , `outer`, `unique`i `semi` oraz zapoznaj się z niuansami domyślnego sprzężenia Kusto `innerunique` . | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [Plik tekstowy](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
 | Odcinek 3. Podsumowanie, przestawianie i wizualizowanie danych | Teraz, gdy już wiesz już, jak filtrować, manipulować danymi i dołączać do niego, nadszedł czas na podsumowanie, kwantyfikację, przestawianie i wizualizowanie. W tym odcinku omówiono `summarize` operator i różne obliczenia, wprowadzając jednocześnie dodatkowe tabele w schemacie. Dowiesz się również, jak przekształcić zestawy danych w wykresy, które mogą pomóc w wyodrębnianiu szczegółowych informacji. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [Plik tekstowy](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.txt) |
 | Odcinek 4. Polowanie! Stosowanie KQL do śledzenia zdarzeń | W tym odcinku nauczysz się śledzić aktywność osoby atakującej. Korzystamy z naszego lepszego zrozumienia Kusto i zaawansowanego wyszukiwania zagrożeń w celu śledzenia ataku. Poznaj rzeczywiste sztuczki używane w tej dziedzinie, w tym abcs cyberbezpieczeństwa i jak zastosować je do reagowania na zdarzenia. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [Plik tekstowy](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt)
 
@@ -55,7 +55,7 @@ Uzyskaj więcej specjalistycznych szkoleń z *L33TSP3AK: Zaawansowane wyszukiwan
 
 ## <a name="how-to-use-the-csl-file"></a>Jak używać pliku CSL
 
-Przed rozpoczęciem odcinka uzyskaj dostęp do odpowiedniego [pliku tekstowego na GitHub](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Webcasts) i skopiuj jego zawartość do zaawansowanego edytora zapytań wyszukiwania zagrożeń. Podczas oglądania odcinka możesz użyć skopiowanych treści, aby śledzić osoby mówiące i uruchamiać zapytania.
+Przed rozpoczęciem odcinka uzyskaj dostęp do odpowiedniego [pliku tekstowego w usłudze GitHub](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Webcasts) i skopiuj jego zawartość do zaawansowanego edytora zapytań wyszukiwania zagrożeń. Podczas oglądania odcinka możesz użyć skopiowanych treści, aby śledzić osoby mówiące i uruchamiać zapytania.
 
 Poniższy fragment pliku tekstowego zawierającego zapytania zawiera kompleksowy zestaw wskazówek oznaczonych jako komentarze za pomocą `//`polecenia .
 
@@ -89,6 +89,14 @@ CloudAppEvents
 | take 100
 | sort by Timestamp desc
 ```
+
+
+## <a name="other-resources"></a>Inne zasoby
+
+| Tytuł | Opis | Obejrzyj |
+|---|---|---|
+|Łączenie tabel w języku KQL | Poznaj możliwości łączenia tabel w tworzeniu znaczących wyników. | [YouTube](https://www.youtube.com/watch?v=8qZx7Pp5XgM) (4:17) |
+| Optymalizowanie tabel w języku KQL | Dowiedz się, jak uniknąć przekroczeń limitu czasu podczas uruchamiania złożonych zapytań, optymalizując zapytania. | [YouTube](https://www.youtube.com/watch?v=ceYvRuPp5D8) (5:38)  | 
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

@@ -1,5 +1,5 @@
 ---
-title: Planowanie wdrożenia reguł zmniejszania obszaru ataków (ASR)
+title: Zaplanuj wdrażanie reguł zmniejszania powierzchni podatnej na ataki (ASR)
 description: Zawiera wskazówki dotyczące planowania wdrożenia reguł zmniejszania obszaru ataków (ASR).
 keywords: Wdrażanie reguł zmniejszania obszaru ataków, wdrażanie usługi ASR, włączanie reguł asr, konfigurowanie usługi ASR, system zapobiegania włamaniom do hostów, reguły ochrony, reguły ochrony przed lukami w zabezpieczeniach, reguły antyeksploatowania, reguły wykorzystujące luki w zabezpieczeniach, reguły zapobiegania zakażeniom, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł usługi ASR
 search.product: eADQiWindows 10XVcnh
@@ -17,17 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 07388ab8f1aac89991423c07fb442017aafb73e6
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 4e538a4e986ad0636c380ec2ba167249221ac3ec
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705302"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602497"
 ---
-# <a name="plan-attack-surface-reduction-asr-rules-deployment"></a>Planowanie wdrożenia reguł zmniejszania obszaru ataków (ASR)
+# <a name="plan-attack-surface-reduction-asr-rules-deployment"></a>Zaplanuj wdrażanie reguł zmniejszania powierzchni podatnej na ataki (ASR)
 
 Podczas testowania reguł zmniejszania obszaru ataków (ASR) należy zacząć od odpowiedniej jednostki biznesowej. Warto zacząć od niewielkiej grupy osób w określonej jednostce biznesowej. W ramach określonej jednostki biznesowej można zidentyfikować niektórych mistrzów usługi ASR, którzy mogą zapewnić rzeczywisty wpływ na reguły usługi ASR i pomóc w dostrojeniu implementacji.
 
@@ -44,7 +43,7 @@ Wybór jednostki biznesowej do wdrożenia reguł usługi ASR będzie zależeć o
   - Oprogramowanie
   - Foldery udostępnione
   - Korzystanie ze skryptów
-  - makra Office
+  - Makra pakietu Office
   - Inne jednostki, których dotyczą reguły usługi ASR
 
 W zależności od potrzeb biznesowych możesz zdecydować się na uwzględnienie wielu jednostek biznesowych w celu uzyskania szerokiego próbkowania oprogramowania, folderów udostępnionych, skryptów, makr itp. Z drugiej strony możesz zdecydować się ograniczyć zakres pierwszego wdrożenia reguł usługi ASR do jednej jednostki biznesowej, a następnie powtórzyć cały proces wdrażania reguł usługi ASR do innych jednostek biznesowych, pojedynczo.
@@ -77,17 +76,17 @@ Typowe role i obowiązki obejmują:
 ## <a name="ring-deployment"></a>Wdrażanie pierścieniowe
 
 W przypadku dużych przedsiębiorstw firma Microsoft zaleca wdrożenie reguł usługi ASR w "pierścieniach". Pierścienie to grupy urządzeń, które są wizualnie reprezentowane jako okręgi koncentryczne, które promieniują na zewnątrz, jak nie nakładające się pierścienie drzewa. Po pomyślnym wdrożeniu najbardziej wewnętrznego pierścienia można przenieść następny pierścień do fazy testowania. Dokładna ocena jednostek biznesowych, elementów nadrzędnych reguł usługi ASR, aplikacji i procesów jest niezbędna do zdefiniowania pierścieni.
-W większości przypadków organizacja będzie projektować pierścienie wdrażania dla etapowych wdrożeń aktualizacji Windows. Istniejący projekt pierścienia umożliwia zaimplementowanie reguł usługi ASR.
-Zobacz: [Tworzenie planu wdrożenia dla Windows](/windows/deployment/update/create-deployment-plan)
+W większości przypadków organizacja będzie projektować pierścienie wdrażania dla etapowych wdrożeń aktualizacji systemu Windows. Istniejący projekt pierścienia umożliwia zaimplementowanie reguł usługi ASR.
+Zobacz: [Tworzenie planu wdrożenia dla systemu Windows](/windows/deployment/update/create-deployment-plan)
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Dodatkowe tematy w tej kolekcji wdrożeń
 
-[Omówienie wdrażania reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment.md)
+[Omówienie wdrażania reguł zmniejszania powierzchni podatnej na ataki (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Reguły zmniejszania obszaru ataków testowych (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[Przetestuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-test.md)
 
-[Włączanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+[Włącz reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-implement.md)
 
-[Operacjonalizowanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operacjonalizuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Dokumentacja reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-reference.md)
+[Odwołuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-reference.md)

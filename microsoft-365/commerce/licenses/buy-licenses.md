@@ -23,14 +23,16 @@ ms.custom:
 search.appverid: MET150
 description: Wykonaj te kroki, aby kupić więcej licencji lub zmniejszyć liczbę licencji dla subskrypcji platformy Microsoft 365 dla firm.
 ms.date: 06/06/2022
-ms.openlocfilehash: ad7f0b15218043757c1e0692603e74760e2c10ef
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 530a1058b9f6676d6a674041ef8fe69d6cfe77e7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489675"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602375"
 ---
 # <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>Kupowanie lub usuwanie licencji platformy Microsoft 365 dla subskrypcji
+
+Zapoznaj się z [pomocą dla małych firm platformy Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
 
 Możesz kupić więcej licencji lub zmniejszyć liczbę licencji dla subskrypcji, wykonując poniższe kroki.
 
@@ -44,6 +46,8 @@ Możesz kupić więcej licencji lub zmniejszyć liczbę licencji dla subskrypcji
 - Jeśli zakupiono usługę Microsoft 365 dla firm lub plan Office 365 Enterprise za pośrednictwem partnera innej firmy, musisz kupić dodatkowe licencje za pośrednictwem tego partnera.
 
 ## <a name="watch-buy-new-licenses"></a>Obejrzyj: Kupowanie nowych licencji
+
+Zapoznaj się z tym filmem i innymi osobami na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198206).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
