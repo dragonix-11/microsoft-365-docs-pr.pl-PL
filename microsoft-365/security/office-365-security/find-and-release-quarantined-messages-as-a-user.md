@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Użytkownicy mogą dowiedzieć się, jak wyświetlać komunikaty poddane kwarantannie i zarządzać nimi w usłudze Exchange Online Protection (EOP), które powinny zostać do nich dostarczone.
+description: Użytkownicy mogą dowiedzieć się, jak wyświetlać komunikaty poddane kwarantannie i zarządzać nimi w Exchange Online Protection (EOP), które powinny zostać im dostarczone.
 ms.technology: mdo
 ms.prod: m365-security
 adobe-target: true
-ms.openlocfilehash: 3a0faf45e6c9c756490be5ae3ab69b99f3a71cb0
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 845e72f2cf3eeb97d7d5f90224967a4fe5068cf1
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941003"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607680"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Znajdowanie i zwalnianie komunikatów poddanych kwarantannie jako użytkownik w ramach EOP
 
@@ -37,7 +37,7 @@ ms.locfileid: "65941003"
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-W organizacjach platformy Microsoft 365 ze skrzynkami pocztowymi w usłudze Exchange Online lub autonomicznych organizacjach programu Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online kwarantanna zawiera potencjalnie niebezpieczne lub niechciane wiadomości. Aby uzyskać więcej informacji, zobacz [Kwarantanna w operacji EOP](quarantine-email-messages.md).
+W organizacjach platformy Microsoft 365 ze skrzynkami pocztowymi w Exchange Online lub autonomicznych organizacjach Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych kwarantanna zawiera potencjalnie niebezpieczne lub niechciane wiadomości. Aby uzyskać więcej informacji, zobacz [Kwarantanna w operacji EOP](quarantine-email-messages.md).
 
 Jako zwykły użytkownik (nie administrator) **domyślne** możliwości dostępne dla Ciebie jako odbiorca wiadomości poddanej kwarantannie są opisane w poniższej tabeli:
 
@@ -51,9 +51,9 @@ Jako zwykły użytkownik (nie administrator) **domyślne** możliwości dostępn
 |Wyłudzanie informacji o dużej pewności||||
 |**Zasady ochrony przed wyłudzaniem informacji**||||
 |Fałszowanie ochrony inteligencji w ramach EOP|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
-|Personifikowana ochrona użytkownika w usłudze Defender dla usługi Office 365|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
-|Personifikowana ochrona domeny w usłudze Defender dla usługi Office 365|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
-|Ochrona przed inteligencją skrzynki pocztowej w usłudze Defender dla usługi Office 365|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
+|Personifikowana ochrona użytkownika w Ochrona usługi Office 365 w usłudze Defender|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
+|Ochrona domeny personifikowana w Ochrona usługi Office 365 w usłudze Defender|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
+|Ochrona inteligencji skrzynki pocztowej w Ochrona usługi Office 365 w usłudze Defender|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
 |**Zasady ochrony przed złośliwym oprogramowaniem**||||
 |Wiadomości e-mail z załącznikami, które zostały poddane kwarantannie jako złośliwe oprogramowanie.||||
 |**Bezpieczne załączniki w usłudze Defender dla Office 365**||||
@@ -64,11 +64,11 @@ Jako zwykły użytkownik (nie administrator) **domyślne** możliwości dostępn
 
 _Zasady kwarantanny_ definiują, co użytkownicy mogą robić w przypadku komunikatów poddanych kwarantannie w oparciu o przyczynę kwarantanny komunikatu w [obsługiwanych funkcjach](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Domyślne zasady kwarantanny wymuszają możliwości historyczne zgodnie z opisem w poprzedniej tabeli. Administratorzy mogą tworzyć i stosować niestandardowe zasady kwarantanny, które definiują mniej restrykcyjne lub bardziej restrykcyjne możliwości dla użytkowników w obsługiwanych funkcjach. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
 
-Komunikaty poddane kwarantannie można wyświetlać i zarządzać nimi w portalu usługi Microsoft 365 Defender lub (jeśli administrator skonfigurował tę funkcję) powiadomienia o kwarantannie z zasad kwarantanny.
+Komunikaty poddane kwarantannie można wyświetlać i zarządzać nimi w portalu Microsoft 365 Defender lub (jeśli administrator skonfigurował tę konfigurację) powiadomienia o kwarantannie z zasad kwarantanny.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
-- Aby otworzyć portal usługi Microsoft 365 Defender, przejdź do strony <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **Kwarantanna** , użyj polecenia <https://security.microsoft.com/quarantine>.
+- Aby otworzyć portal Microsoft 365 Defender, przejdź do strony <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **Kwarantanna** , użyj polecenia <https://security.microsoft.com/quarantine>.
 
 - Administratorzy mogą skonfigurować, jak długo wiadomości są przechowywane w kwarantannie, zanim zostaną trwale usunięte w zasadach ochrony przed spamem. Komunikaty, które wygasły z kwarantanny, są nieodwracalne. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed spamem w ramach EOP](configure-your-spam-filter-policies.md).
 
@@ -79,7 +79,7 @@ Komunikaty poddane kwarantannie można wyświetlać i zarządzać nimi w portalu
 > [!NOTE]
 > Możliwość wyświetlania komunikatów poddanych kwarantannie jest kontrolowana przez [zasady kwarantanny](quarantine-policies.md) , które mają zastosowanie do typu komunikatu poddanego kwarantannie (co może być [domyślną zasadą kwarantanny z powodu kwarantanny](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)).
 
-1. W portalu usługi Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do **pozycji Poczta e-mail & współpracy** \> **— Przegląd** \> **kwarantanny**. Aby przejść bezpośrednio do strony **Kwarantanna** , użyj polecenia <https://security.microsoft.com/quarantine>.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do obszaru **Poczta e-mail & współpracy** \> **Przeglądanie** \> **kwarantanny**. Aby przejść bezpośrednio do strony **Kwarantanna** , użyj polecenia <https://security.microsoft.com/quarantine>.
 
 2. Na stronie **Kwarantanna** możesz posortować wyniki, klikając dostępny nagłówek kolumny. Kliknij **pozycję Dostosuj kolumny**  , aby zmienić wyświetlane kolumny. Wartości domyślne są oznaczone gwiazdką (<sup>\*</sup>):
 
@@ -137,7 +137,11 @@ Komunikaty poddane kwarantannie można wyświetlać i zarządzać nimi w portalu
 
    Po wprowadzeniu kryteriów wyszukiwania naciśnij klawisz ENTER, aby odfiltrować wyniki.
 
+   > [!NOTE]
+   > Pole **Wyszukiwania** na głównej stronie **Kwarantanna** będzie przeszukiwać tylko elementy poddane kwarantannie w bieżącym widoku, a nie w całej kwarantannie. Aby przeszukać wszystkie elementy poddane kwarantannie **, użyj** filtru i wysuwanego wynikowego **filtru** .
+
 Po znalezieniu określonego komunikatu poddanej kwarantannie wybierz komunikat, aby wyświetlić szczegółowe informacje na jego temat i podjąć działania w tej sprawie (na przykład wyświetl, zwolnij, pobierz lub usuń komunikat).
+
 
 ### <a name="view-quarantined-message-details"></a>Wyświetlanie szczegółów komunikatu poddanej kwarantannie
 

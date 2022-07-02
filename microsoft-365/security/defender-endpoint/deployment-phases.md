@@ -1,7 +1,7 @@
 ---
-title: Fazy wdrażania
-description: Dowiedz się, jak wdrożyć Ochrona punktu końcowego w usłudze Microsoft Defender przez przygotowanie, skonfigurowanie i wdrożenie punktów końcowych w tej usłudze
-keywords: wdrażanie, przygotowywanie, konfiguracja, wdrożenie, faza, wdrożenie, wdrażanie, wdrażanie, konfigurowanie
+title: omówienie wdrożenia Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Dowiedz się, jak wdrożyć Ochrona punktu końcowego w usłudze Microsoft Defender, przygotowując, konfigurując i dołączając punkty końcowe do tej usługi
+keywords: wdrażanie, przygotowywanie, konfigurowanie, dołączanie, faza, wdrażanie, wdrażanie, wdrażanie, konfigurowanie
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,86 +17,86 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c39ef92448317e625f3f2e6948f69a38093b1504
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3520d249e7241eb1b890c3939fe6e6165d5c6011
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467714"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607614"
 ---
-# <a name="deployment-phases"></a>Fazy wdrażania
+# <a name="microsoft-defender-for-endpoint-deployment-overview"></a>omówienie wdrożenia Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Dowiedz się, jak wdrożyć Ochrona punktu końcowego w usłudze Microsoft Defender, aby przedsiębiorstwa skorzystały z ochrony zapobiegatywnej, wykrywania po naruszeniu, automatycznego badania i reagowania.
+Dowiedz się, jak wdrożyć Ochrona punktu końcowego w usłudze Microsoft Defender, aby przedsiębiorstwo miało możliwość korzystania z ochrony zapobiegawczej, wykrywania po naruszeniu zabezpieczeń, zautomatyzowanego badania i reagowania.
 
-Ten przewodnik ułatwia pracę uczestnikom projektu w celu przygotowania środowiska i wdrażania urządzeń w sposób metodyczny, od oceny do ważnego wdrożenia pilotażowego.
+Ten przewodnik ułatwia pracę między osobami biorącymi udział w projekcie, aby przygotować środowisko, a następnie dołączyć urządzenia w sposób metodyczny, przechodząc od oceny do znaczącego pilotażu, do pełnego wdrożenia.
 
-Każda sekcja odpowiada osobnemu artykułowi w tym rozwiązaniu.
+Każda sekcja odpowiada oddzielnemu artykułowi w tym rozwiązaniu.
 
-:::image type="content" source="images/deployment-guide-phases.png" alt-text="Etapy wdrażania ze szczegółami z tabeli" lightbox="images/deployment-guide-phases.png":::
+:::image type="content" source="images/deployment-guide-phases.png" alt-text="Fazy wdrażania ze szczegółami z tabeli" lightbox="images/deployment-guide-phases.png":::
 
 
-:::image type="content" source="images/phase-diagrams/deployment-phases.png" alt-text="Podsumowanie faz wdrażania: przygotowanie, konfiguracja, wdrożenie" lightbox="images/phase-diagrams/deployment-phases.png":::
-
-<br>
-
-****
-
-|Faza|Opis|
-|---|---|
-|[Etap 1. Przygotowywanie](prepare-deployment.md)|Dowiedz się, co należy wziąć pod uwagę podczas wdrażania usługi Defender dla punktu końcowego, na przykład zatwierdzenia interesariuszy, zagadnienia dotyczące środowiska, uprawnienia dostępu i kolejność wdrażania funkcji.|
-|[Etap 2. Konfigurowanie](production-deployment.md)|Uzyskaj wskazówki dotyczące początkowych czynności, które należy wykonać, aby uzyskać dostęp do portalu, na przykład sprawdzania poprawności licencjonowania, ukończenia kreatora konfiguracji i konfiguracji sieci.|
-|[Etap 3. Wniesienie](onboarding.md)|Dowiedz się, jak korzystać ze pierścieni wdrażania, obsługiwanych narzędzi wdrażania na podstawie typu punktu końcowego i konfigurowania dostępnych możliwości.|
-|
-
-Po ukończeniu tego przewodnika skonfigurujesz odpowiednie uprawnienia dostępu, punkty końcowe zostaną do tej usługi wnosone i będą raportowane dane czujnika, a także zostaną ustawione funkcje, takie jak ochrona następnej generacji i zmniejszenie obszarów ataków.
-
-Niezależnie od architektury środowiska i metody wdrożenia przedstawionych w wytycznych dotyczących wdrażania [](deployment-strategy.md) w planie ten przewodnik będzie obsługiwać Cię w zakresie punktów końcowych wdrażania.
-
-## <a name="key-capabilities"></a>Najważniejsze funkcje
-
-Chociaż Ochrona punktu końcowego w usłudze Microsoft Defender udostępnia wiele możliwości, głównym celem tego przewodnika po wdrażaniu jest wprowadzenie do pracy z urządzeniami przy wdrażaniu. Oprócz dodatku do pracy z usługą, z poniższych wskazówek możesz również rozpocząć pracę z następującymi możliwościami.
+:::image type="content" source="images/phase-diagrams/deployment-phases.png" alt-text="Podsumowanie faz wdrażania: przygotowywanie, konfigurowanie, dołączanie" lightbox="images/phase-diagrams/deployment-phases.png":::
 
 <br>
 
 ****
 
-|Funkcja|Opis|
+|Fazy|Opis|
 |---|---|
-|Wykrywanie i reagowanie dotyczące punktów końcowych|Funkcje wykrywania punktu końcowego i reagowania są dostępne w celu wykrywania, badania i reagowania na próby dostępu oraz aktywnego naruszenia.|
-|Ochrona nowej generacji|Aby dodatkowo zwiększyć wykorzystanie obwodu zabezpieczeń sieci, Ochrona punktu końcowego w usłudze Microsoft Defender ochrony następnej generacji w celu wychwytania wszystkich typów wyłaniających się zagrożeń.|
-|Zmniejszanie obszaru podatnego na ataki|Udostępnij pierwszą linię obrony w stosie. Po upewnienia się, że ustawienia konfiguracji są poprawnie ustawione i są stosowane techniki wykorzystywania luk w wykorzystywaniu wykorzystywania, te funkcje opierają się na atakach i wykorzystywaniu.|
+|[Faza 1. Przygotowanie](prepare-deployment.md)|Dowiedz się, co należy wziąć pod uwagę podczas wdrażania usługi Defender for Endpoint, takich jak zatwierdzenia uczestników projektu, zagadnienia dotyczące środowiska, uprawnienia dostępu i kolejność wdrażania możliwości.|
+|[Faza 2. Konfiguracja](production-deployment.md)|Uzyskaj wskazówki dotyczące początkowych kroków, które należy wykonać, aby uzyskać dostęp do portalu, takiego jak sprawdzanie poprawności licencjonowania, ukończenie pracy kreatora konfiguracji i konfiguracja sieci.|
+|[Faza 3. Dołączenie](onboarding.md)|Dowiedz się, jak korzystać z pierścieni wdrażania, obsługiwanych narzędzi dołączania na podstawie typu punktu końcowego i konfigurowania dostępnych możliwości.|
 |
 
-Wszystkie te funkcje są dostępne dla Ochrona punktu końcowego w usłudze Microsoft Defender licencji. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące licencjonowania](minimum-requirements.md#licensing-requirements).
+Po ukończeniu tego przewodnika zostanie skonfigurowany z odpowiednimi uprawnieniami dostępu, punkty końcowe zostaną dołączone i będą raportować dane czujników do usługi, a możliwości, takie jak ochrona nowej generacji i redukcja obszaru ataków, zostaną wprowadzone.
+
+Niezależnie od architektury środowiska i metody wdrażania wybranej w przewodniku [Plan deployment](deployment-strategy.md) guidance (Planowanie wdrożenia) ten przewodnik będzie obsługiwał punkty końcowe dołączania.
+
+## <a name="key-capabilities"></a>Kluczowe możliwości
+
+Chociaż Ochrona punktu końcowego w usłudze Microsoft Defender oferuje wiele możliwości, głównym celem tego przewodnika wdrażania jest rozpoczęcie pracy z dołączaniem urządzeń. Oprócz dołączania te wskazówki umożliwiają rozpoczęcie pracy z następującymi możliwościami.
+
+<br>
+
+****
+
+|Możliwości|Opis|
+|---|---|
+|Wykrywanie i reagowanie dotyczące punktów końcowych|Funkcje wykrywania i reagowania na punkty końcowe są wprowadzane w celu wykrywania, badania i reagowania na próby włamań i aktywne naruszenia.|
+|Ochrona nowej generacji|Aby jeszcze bardziej wzmocnić obwód zabezpieczeń sieci, Ochrona punktu końcowego w usłudze Microsoft Defender korzysta z ochrony nowej generacji przeznaczonej do przechwytywania wszystkich typów pojawiających się zagrożeń.|
+|Zmniejszanie obszaru podatnego na ataki|Podaj pierwszy wiersz obrony w stosie. Dzięki zapewnieniu prawidłowego ustawienia konfiguracji i zastosowaniu technik ograniczania ryzyka luk w zabezpieczeniach te możliwości są odporne na ataki i eksploatację.|
+|
+
+Wszystkie te możliwości są dostępne dla Ochrona punktu końcowego w usłudze Microsoft Defender posiadaczy licencji. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące licencjonowania](minimum-requirements.md#licensing-requirements).
 
 ## <a name="scope"></a>Zakres
 
 ### <a name="in-scope"></a>W zakresie
 
-- Korzystanie z Microsoft Endpoint Manager i Microsoft Endpoint Configuration Manager do do konfigurowania usług i punktów końcowych
-- Włączanie funkcji defender dla wykrywanie i reagowanie w punktach końcowych punktów końcowych (EDR)
-- Włączanie funkcji platformy Ochrony punktów końcowych programu Defender (EPP)
+- Używanie Configuration Manager microsoft Endpoint Manager i punktu końcowego firmy Microsoft do dołączania punktów końcowych do usługi i konfigurowania możliwości
+- Włączanie funkcji wykrywania i reagowania punktu końcowego w usłudze Defender for Endpoint (EDR)
+- Włączanie możliwości platformy ochrony punktów końcowych (EPP) w usłudze Defender for Endpoint
   - Ochrona nowej generacji
   - Zmniejszanie obszaru podatnego na ataki
 
 ### <a name="out-of-scope"></a>Poza zakresem
 
-Następujące informacje nie znajdują się w tym przewodniku po wdrażaniu:
+Poniżej przedstawiono zakres tego przewodnika wdrażania:
 
-- Konfiguracja rozwiązań innych firm, które mogą być zintegrowane z programem Defender for Endpoint
-- Testy penetracyjnych w środowisku produkcyjnym
+- Konfiguracja rozwiązań innych firm, które mogą zostać zintegrowane z usługą Defender for Endpoint
+- Testy penetracyjne w środowisku produkcyjnym
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Etap 1. Przygotowywanie](prepare-deployment.md)
-- [Etap 2. Konfigurowanie](production-deployment.md)
-- [Etap 3. Wniesienie](onboarding.md)
-- [Planowanie wdrożenia](deployment-strategy.md)
+- [Faza 1. Przygotowanie](prepare-deployment.md)
+- [Faza 2. Konfiguracja](production-deployment.md)
+- [Faza 3. Dołączenie](onboarding.md)
+- [Zaplanuj wdrożenie](deployment-strategy.md)

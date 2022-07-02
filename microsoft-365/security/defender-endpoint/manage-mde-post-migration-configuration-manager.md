@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: e83306f4af82d8a24745ca5af3d146bb50c41ee7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: b253fe7dad271684f5c0e927ec162ea4e993df29
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603401"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607394"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu Configuration Manager
 
@@ -34,15 +34,12 @@ ms.locfileid: "66603401"
 
 > Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 Zalecamy korzystanie z usługi [Microsoft Endpoint Manager](/mem), która obejmuje [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) i [Configuration Manager punktu końcowego firmy Microsoft](/mem/configmgr/core/understand/introduction) (Configuration Manager ), aby zarządzać funkcjami ochrony przed zagrożeniami w organizacji dla urządzeń (nazywanych również punktami końcowymi).
 
 - [Dowiedz się więcej o Endpoint Manager](/mem/endpoint-manager-overview)
 - [Współzarządzaj Ochrona punktu końcowego w usłudze Microsoft Defender na urządzeniach Windows 10 i Windows 11 przy użyciu Configuration Manager i Intune](manage-mde-post-migration-intune.md)
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-configuration-manager"></a>Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu Configuration Manager
-
-<br/><br/>
 
 |Zadanie|Zasoby, aby dowiedzieć się więcej|
 |---|---|

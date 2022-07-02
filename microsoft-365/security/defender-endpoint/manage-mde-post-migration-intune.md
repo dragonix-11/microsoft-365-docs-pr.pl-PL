@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 05fb01b411b1b32eeac763f3c364b29e29f5d8f5
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 1cbaff007a5ef2839cbcf51babc7a057c7b756c0
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603709"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607460"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender za pomocą Intune
 
@@ -57,8 +57,6 @@ W tym artykule opisano sposób znajdowania ustawień Ochrona punktu końcowego w
 ## <a name="configure-microsoft-defender-for-endpoint-with-intune"></a>Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu Intune
 
 W poniższej tabeli wymieniono różne zadania, które można wykonać w celu skonfigurowania Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu Intune. Nie musisz konfigurować wszystkiego jednocześnie; wybierz zadanie, odczytaj odpowiednie zasoby, a następnie kontynuuj.
-
-<br/><br/>
 
 |Zadanie|Zasoby, aby dowiedzieć się więcej|
 |---|---|

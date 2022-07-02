@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 51ead270b8e8223b2fd67cfd5fb1cf4e9f8a05d4
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 71b18f5e78301ac144faef9046420e817c65fa6b
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603302"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607372"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu programu PowerShell, usługi WMI i MPCmdRun.exe
 
@@ -35,7 +35,6 @@ ms.locfileid: "66603302"
 
 > [!NOTE]
 > Zalecamy używanie usługi [Microsoft Endpoint Manager](/mem) do zarządzania funkcjami ochrony przed zagrożeniami w organizacji dla urządzeń (nazywanych również punktami końcowymi). Endpoint Manager obejmuje [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) i [Configuration Manager punktu końcowego firmy Microsoft](/mem/configmgr/core/understand/introduction).
->
 > - [Dowiedz się więcej o Endpoint Manager](/mem/endpoint-manager-overview)
 > - [Współzarządzaj Ochrona punktu końcowego w usłudze Microsoft Defender na urządzeniach Windows 10 i Windows 11 przy użyciu Configuration Manager i Intune](manage-mde-post-migration-intune.md)
 > - [Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender za pomocą Intune](manage-mde-post-migration-intune.md)

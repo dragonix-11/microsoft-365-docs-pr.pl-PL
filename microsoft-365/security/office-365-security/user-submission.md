@@ -18,12 +18,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować skrzynkę pocztową do zbierania wiadomości e-mail dotyczących spamu i wyłudzania informacji zgłaszanych przez użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64ce66e10e7f6f549479b6f8a838c5db220d36dd
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a4a46225b911c3272baa66772a0cf9ab63f1a1da
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602453"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607592"
 ---
 # <a name="user-reported-message-settings"></a>Ustawienia wiadomości zgłoszonych przez użytkownika
 
@@ -49,19 +49,19 @@ Dostarczanie wiadomości zgłoszonych przez użytkownika do niestandardowej skrz
 
 Poniższe artykuły umożliwiają skonfigurowanie wymaganych wymagań wstępnych, aby wiadomości zgłaszane przez użytkownika przechodziły do niestandardowej skrzynki pocztowej:
 
-- [Identyfikowanie niestandardowej skrzynki pocztowej jako skrzynki pocztowej SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
+- [Zidentyfikuj niestandardową skrzynkę pocztową jako skrzynkę pocztową SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
 - [Tworzenie zasad ochrony przed złośliwym oprogramowaniem](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) dla niestandardowej skrzynki pocztowej, w której
-  - Automatyczne przeczyszczanie o wartości zero godzin (ZAP) dla złośliwego oprogramowania jest wyłączone (nie wybrano sekcji \>**Ustawienia ochrony** **Włącz automatyczne przeczyszczanie automatyczne w godzinach zerowych dla złośliwego oprogramowania**).
-  - Opcja filtru wspólnego załącznika jest wyłączona (nie wybrano sekcji \>**Ustawienia ochrony** **Włącz wspólny filtr załączników**).
+  - Automatyczne przeczyszczanie o wartości zero godzin (ZAP) dla złośliwego oprogramowania jest wyłączone (nie wybrano sekcji **Ustawienia ochrony** > **Włączanie automatycznego przeczyszczania z zerową godziną dla złośliwego oprogramowania** ).
+  - Wspólna opcja filtru załączników jest wyłączona (sekcja **Ustawienia ochrony** > Nie wybrano opcji **Włącz wspólny filtr załączników** ).
 
-Jeśli masz Ochrona usługi Office 365 w usłudze Microsoft Defender, należy również skonfigurować następujące ustawienia, aby nasze zaawansowane filtrowanie nie miało wpływu na użytkowników zgłaszających komunikaty:
+Jeśli masz Ochrona usługi Office 365 w usłudze Microsoft Defender, należy również skonfigurować następujące ustawienia, aby nasze zaawansowane filtrowanie nie miało wpływu na zgłoszone komunikaty:
 
 - Upewnij się, że niestandardowa skrzynka pocztowa nie jest częścią żadnych [wstępnie ustawionych zasad zabezpieczeń](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
 
-- [Utwórz zasady bezpiecznych łączy](set-up-safe-links-policies.md) dla niestandardowej skrzynki pocztowej, w której skanowanie bezpiecznych łączy jest wyłączone (**wybierz akcję dla nieznanych potencjalnie złośliwych adresów URL w** sekcji \> Wiadomości **Wyłączone**).
+- [Utwórz zasady bezpiecznych łączy](set-up-safe-links-policies.md) dla niestandardowej skrzynki pocztowej, w której skanowanie bezpiecznych łączy jest wyłączone (**Wybierz akcję dla nieznanych potencjalnie złośliwych adresów URL w sekcji wiadomości** > **Wyłączone**).
 
-- [Utwórz zasady bezpiecznych załączników](set-up-safe-attachments-policies.md) dla niestandardowej skrzynki pocztowej, w której skanowanie bezpiecznych załączników jest wyłączone (sekcja \>**Bezpieczna odpowiedź na nieznane złośliwe oprogramowanie** jest **wyłączona**).
+- [Utwórz zasady bezpiecznych załączników](set-up-safe-attachments-policies.md) dla niestandardowej skrzynki pocztowej, w której skanowanie bezpiecznych załączników, w tym dynamiczne dostarczanie, jest wyłączone (sekcja **reagowania na nieznane złośliwe oprogramowanie w bezpiecznych załącznikach** > **wyłączona**).
 
 Po upewnieniu się, że skrzynka pocztowa spełnia wszystkie odpowiednie wymagania wstępne, możesz użyć procedur w tym artykule, aby skonfigurować skrzynkę pocztową przesyłania użytkowników.
 
@@ -84,11 +84,11 @@ Po upewnieniu się, że skrzynka pocztowa spełnia wszystkie odpowiednie wymagan
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Konfigurowanie skrzynki pocztowej przesyłania użytkowników przy użyciu portalu Microsoft 365 Defender
 
-1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do pozycji **Zasady & reguły** \> **zasad** \> zagrożeń **Ustawienia komunikatów zgłoszonych przez użytkownika** w sekcji **Inne**. Aby przejść bezpośrednio do strony **Przesyłanie użytkowników** , użyj polecenia <https://security.microsoft.com/userSubmissionsReportMessage>.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do pozycji **Zasady & reguły** > **zasad** >  zagrożeń **Ustawienia komunikatów zgłoszonych przez użytkownika** w sekcji **Inne**. Aby przejść bezpośrednio do strony **Przesyłanie użytkowników** , użyj polecenia <https://security.microsoft.com/userSubmissionsReportMessage>.
 
 2. Na stronie **Przesyłanie użytkowników** to, co widzisz, zależy od tego, czy ustawienie **przycisku Komunikat raportu programu Microsoft Outlook** jest **wyłączone** , czy **włączone**:
 
-   - Przycisk \> **Komunikat raportu programu Microsoft Outlook** **Na** ![ Przełącz wł.](../../media/scc-toggle-on.png): wybierz tę opcję, jeśli używasz dodatku Komunikat raportu, dodatku Wyłudzanie informacji o raportach lub wbudowanego raportowania w Outlook w sieci Web, a następnie skonfiguruj następujące ustawienia:
+   - Przycisk  >  **Komunikat raportu programu Microsoft Outlook** **Na** ![ Przełącz wł.](../../media/scc-toggle-on.png): wybierz tę opcję, jeśli używasz dodatku Komunikat raportu, dodatku Wyłudzanie informacji o raportach lub wbudowanego raportowania w Outlook w sieci Web, a następnie skonfiguruj następujące ustawienia:
      - **Wyślij zgłoszone komunikaty do**: Wybierz jedną z następujących opcji:
        - **Microsoft**: Skrzynka pocztowa przesyłania przez użytkownika nie jest używana (wszystkie zgłoszone wiadomości trafiają do firmy Microsoft).
        - **Skrzynka pocztowa firmy Microsoft i mojej organizacji**: w wyświetlonym polu wprowadź adres e-mail istniejącej skrzynki pocztowej Exchange Online. Grupy dystrybucyjne są niedozwolone. Przesłania użytkowników zostaną przesłane zarówno do firmy Microsoft w celu analizy, jak i do niestandardowej skrzynki pocztowej dla administratora lub zespołu ds. operacji zabezpieczeń w celu przeanalizowania.
@@ -123,7 +123,7 @@ Po upewnieniu się, że skrzynka pocztowa spełnia wszystkie odpowiednie wymagan
 
           > Wiadomość e-mail zostanie przesłana w stanie rzeczywistym do firmy Microsoft w celu analizy. Niektóre wiadomości e-mail mogą zawierać informacje osobiste lub poufne.
 
-   - Przycisk \> **Komunikat raportu programu Microsoft Outlook** **Wył.** ![ Przełącz wyłączone.](../../media/scc-toggle-off.png) Wybierz tę opcję, jeśli używasz narzędzi do raportowania innych firm zamiast dodatku Komunikat raportu, dodatku Wyłudzanie informacji o raportach lub wbudowanego raportowania w Outlook w sieci Web, a następnie skonfiguruj następujące ustawienia:
+   - Przycisk  >  **Komunikat raportu programu Microsoft Outlook** **Wył.** ![ Przełącz wyłączone.](../../media/scc-toggle-off.png) Wybierz tę opcję, jeśli używasz narzędzi do raportowania innych firm zamiast dodatku Komunikat raportu, dodatku Wyłudzanie informacji o raportach lub wbudowanego raportowania w Outlook w sieci Web, a następnie skonfiguruj następujące ustawienia:
      - Wybierz pozycję **Użyj tej niestandardowej skrzynki pocztowej, aby odbierać zgłoszenia zgłaszane przez użytkownika**. W wyświetlonym polu wprowadź adres e-mail istniejącej skrzynki pocztowej Exchange Online, która może odbierać wiadomości e-mail.
 
    - **Przycisk komunikatu raportu kwarantanny**: włącz tę funkcję, jeśli chcesz zezwolić użytkownikom końcowym na zgłaszanie komunikatów z kwarantanny.
@@ -155,8 +155,5 @@ Przykład:
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`
-
-- Oba te komunikaty są zgłaszane jako nie-śmieci na podstawie tematu.
-- Reszta jest ignorowana.
 
 Komunikaty, które nie są zgodne z tym formatem, nie będą wyświetlane poprawnie w portalu Przesłane.

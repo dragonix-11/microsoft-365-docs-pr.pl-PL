@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się, jak wyświetlać komunikaty poddane kwarantannie i zarządzać nimi dla wszystkich użytkowników w Exchange Online Protection (EOP). Administratorzy w organizacjach z Ochrona usługi Office 365 w usłudze Microsoft Defender mogą również zarządzać plikami poddanymi kwarantannie w usłudze SharePoint Online, OneDrive dla Firm i Microsoft Teams.
+description: Administratorzy mogą dowiedzieć się, jak wyświetlać komunikaty poddane kwarantannie i zarządzać nimi dla wszystkich użytkowników w Exchange Online Protection (EOP). Administratorzy w organizacjach z Ochrona usługi Office 365 w usłudze Microsoft Defender mogą również zarządzać plikami objętymi kwarantanną w usługach SharePoint Online, OneDrive dla Firm i Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3bd239231cc49684f8b07fb73f33265c9463bad4
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 50fa4eb3895fa9ad35e6182c2bcc7d7875bdae3a
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839804"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607306"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator w ramach EOP
 
@@ -35,15 +35,15 @@ ms.locfileid: "65839804"
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-W Microsoft 365 organizacji ze skrzynkami pocztowymi w Exchange Online lub autonomicznych organizacjach Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych kwarantanna zawiera potencjalnie niebezpieczne lub niechciane wiadomości. Aby uzyskać więcej informacji, zobacz [Kwarantanna wiadomości e-mail w EOP](quarantine-email-messages.md).
+W organizacjach platformy Microsoft 365 ze skrzynkami pocztowymi w Exchange Online lub autonomicznych organizacjach Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych kwarantanna zawiera potencjalnie niebezpieczne lub niechciane wiadomości. Aby uzyskać więcej informacji, zobacz [Kwarantanna wiadomości e-mail w EOP](quarantine-email-messages.md).
 
 Administratorzy mogą wyświetlać, zwalniać i usuwać wszystkie typy komunikatów objętych kwarantanną dla wszystkich użytkowników. Administratorzy mogą również zgłaszać firmie Microsoft wyniki fałszywie dodatnie.
 
 Domyślnie tylko administratorzy mogą zarządzać wiadomościami, które zostały poddane kwarantannie jako złośliwe oprogramowanie, wyłudzanie informacji o wysokim poziomie zaufania lub w wyniku reguł przepływu poczty (nazywanych również regułami transportu). Administratorzy mogą jednak używać _zasad kwarantanny_ , aby określić, co użytkownicy mogą robić w przypadku komunikatów poddanych kwarantannie w oparciu o przyczynę kwarantanny komunikatu (w przypadku obsługiwanych funkcji). Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
 
-Administratorzy w organizacjach z Ochrona usługi Office 365 w usłudze Microsoft Defender mogą również zarządzać plikami, które zostały poddane kwarantannie przez [załączniki Sejf dla SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+Administratorzy w organizacjach z Ochrona usługi Office 365 w usłudze Microsoft Defender mogą również zarządzać plikami, które zostały poddane kwarantannie przez [bezpieczne załączniki dla programów SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
-Komunikaty poddane kwarantannie można wyświetlać i zarządzać nimi w portalu Microsoft 365 Defender lub w programie PowerShell (Exchange Online programu PowerShell dla organizacji Microsoft 365 ze skrzynkami pocztowymi w Exchange Online; autonomicznym programem PowerShell EOP dla organizacji bez Exchange Online skrzynki pocztowe).
+Komunikaty poddane kwarantannie są wyświetlane w portalu Microsoft 365 Defender lub w programie PowerShell (Exchange Online programu PowerShell dla organizacji platformy Microsoft 365 ze skrzynkami pocztowymi w Exchange Online; autonomicznym programem PowerShell EOP dla organizacji bez Exchange Online skrzynek pocztowych).
 
 Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak zarządzać komunikatami poddanymi kwarantannie jako administrator. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGPF]
@@ -52,7 +52,7 @@ Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak zarządzać komunikat
 
 - Aby otworzyć portal Microsoft 365 Defender, przejdź do strony <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **Kwarantanna** , użyj polecenia <https://security.microsoft.com/quarantine>.
 
-- Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Połączenie to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Aby nawiązać połączenie z autonomicznym programem PowerShell EOP, zobacz [Połączenie do Exchange Online Protection programu PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Łączenie z programem PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Aby nawiązać połączenie z autonomicznym programem PowerShell EOP, zobacz [Connect to Exchange Online Protection PowerShell (Nawiązywanie połączenia z programem PowerShell).](/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
 - Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia w **Exchange Online**:
   - Aby podjąć działania w przypadku komunikatów poddanych kwarantannie dla wszystkich użytkowników, musisz być członkiem grup ról **Zarządzanie organizacją**, **Administrator zabezpieczeń** lub **Administrator**<sup>\*</sup> kwarantanny. Aby przesłać komunikaty do firmy Microsoft, musisz być członkiem grupy ról **Administrator zabezpieczeń** .
@@ -62,7 +62,7 @@ Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak zarządzać komunikat
 
   **Uwagi**:
 
-  - Dodanie użytkowników do odpowiedniej roli Azure Active Directory w Centrum administracyjne platformy Microsoft 365 daje użytkownikom wymagane uprawnienia _i_ uprawnienia do innych funkcji w Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
+  - Dodanie użytkowników do odpowiedniej roli usługi Azure Active Directory w Centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia _i_ uprawnienia do innych funkcji w usłudze Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
   - Grupa ról **Zarządzanie organizacją tylko do wyświetlania** w [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) zapewnia również dostęp tylko do odczytu do tej funkcji.
   - <sup>\*</sup>Członkowie grupy ról **Administrator kwarantanny** w rolach **współpracy & poczty e-mail** w [portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) muszą również być członkami grupy ról **Zarządzanie higieną** w [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups), aby wykonywać procedury kwarantanny w programie Exchange Online programie PowerShell.
 
@@ -113,7 +113,7 @@ Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak zarządzać komunikat
      - **Reguła transportu** (reguła przepływu poczty)
      - **Zbiorczego**
      - **Spam**
-     - **Złośliwe oprogramowanie**: zasady ochrony przed złośliwym oprogramowaniem w zasadach EOP lub Sejf Attachments w Ochrona usługi Office 365 w usłudze Defender. Wartość **Typ zasad** wskazuje, która funkcja została użyta.
+     - **Złośliwe oprogramowanie**: zasady ochrony przed złośliwym oprogramowaniem w zasadach EOP lub Bezpieczne załączniki w Ochrona usługi Office 365 w usłudze Defender. Wartość **Typ zasad** wskazuje, która funkcja została użyta.
      - **Wyłudzanie** informacji: Werdykt filtru spamu polegał na tym, że ochrona przed **wyłudzaniem** informacji lub ochrona przed wyłudzaniem informacji poddała wiadomość kwarantannie ([ustawienia fałszowania](set-up-anti-phishing-policies.md#spoof-settings) lub [ochrona przed personifikacją](set-up-anti-phishing-policies).
      - **Wyłudzanie informacji o dużej pewności**
    - **Adresat**: **Wszyscy użytkownicy** lub **tylko ja**. Użytkownicy końcowi mogą zarządzać tylko wysłanymi do nich komunikatami objętymi kwarantanną.
@@ -125,7 +125,7 @@ Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak zarządzać komunikat
      - **Wydany**
    - **Typ zasad**: filtruj komunikaty według typu zasad:
      - **Zasady ochrony przed złośliwym oprogramowaniem**
-     - **zasady załączników Sejf**
+     - **Zasady bezpiecznych załączników**
      - **Zasady ochrony przed wyłudzaniem informacji**
      - **Zasady ochrony przed spamem**
      - **Reguła transportu** (reguła przepływu poczty)
@@ -137,6 +137,9 @@ Obejrzyj ten krótki film wideo, aby dowiedzieć się, jak zarządzać komunikat
    - Temat. Użyj całego tematu wiadomości. Wyszukiwanie nie uwzględnia wielkości liter.
 
    Po wprowadzeniu kryteriów wyszukiwania naciśnij klawisz ENTER, aby odfiltrować wyniki.
+
+   > [!NOTE]
+   > Pole **Wyszukiwania** na głównej stronie **Kwarantanna** będzie przeszukiwać tylko elementy poddane kwarantannie w bieżącym widoku, a nie w całej kwarantannie. Aby przeszukać wszystkie elementy poddane kwarantannie **, użyj** filtru i wysuwanego wynikowego **filtru** . 
 
 Po znalezieniu określonego komunikatu poddanej kwarantannie wybierz komunikat, aby wyświetlić szczegółowe informacje na jego temat i podjąć działania w tej sprawie (na przykład wyświetl, zwolnij, pobierz lub usuń komunikat).
 
@@ -280,7 +283,7 @@ Po wybraniu wielu komunikatów poddanych kwarantannie na liście (maksymalnie 10
 > [!NOTE]
 > Procedury dotyczące plików poddanych kwarantannie w tej sekcji są dostępne tylko dla subskrybentów Ochrona usługi Office 365 w usłudze Microsoft Defender planu 1 lub planu 2.
 
-W organizacjach z Ochrona usługi Office 365 w usłudze Defender administratorzy mogą zarządzać plikami, które zostały poddane kwarantannie przez załączniki Sejf dla SharePoint, OneDrive i Microsoft Teams. Aby włączyć ochronę tych plików, zobacz [Włączanie Sejf załączników dla SharePoint, OneDrive i Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+W organizacjach z Ochrona usługi Office 365 w usłudze Defender administratorzy mogą zarządzać plikami, które zostały poddane kwarantannie przez bezpieczne załączniki dla programów SharePoint, OneDrive i Microsoft Teams. Aby włączyć ochronę tych plików, zobacz [Włączanie bezpiecznych załączników dla programów SharePoint, OneDrive i Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Wyświetlanie plików poddanych kwarantannie
 
@@ -371,7 +374,7 @@ Polecenia cmdlet używane do wyświetlania komunikatów i plików w kwarantannie
 - [Delete-QuarantineMessage](/powershell/module/exchange/delete-quarantinemessage)
 - [Export-QuarantineMessage](/powershell/module/exchange/export-quarantinemessage)
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
-- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): należy pamiętać, że to polecenie cmdlet dotyczy tylko komunikatów, a nie plików objętych kwarantanną z załączników Sejf dla SharePoint, OneDrive i Microsoft Teams.
+- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): należy pamiętać, że to polecenie cmdlet dotyczy tylko komunikatów, a nie plików objętych kwarantanną z bezpiecznych załączników dla programów SharePoint, OneDrive i Microsoft Teams.
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
 
 ## <a name="for-more-information"></a>Aby uzyskać więcej informacji

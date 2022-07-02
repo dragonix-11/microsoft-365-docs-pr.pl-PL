@@ -16,12 +16,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak stosować standardowe i ścisłe ustawienia zasad w funkcjach ochrony Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Microsoft Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb9eb8c3f45b0047922be854972d1f96123342cb
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: ffce562fbcbdf8ca9d6c19265166400163be7acf
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115526"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607658"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Wstępne ustawienie zasad zabezpieczeń w usłudze EOP i ochronie usługi Office 365 w usłudze Microsoft Defender
 
@@ -75,7 +75,7 @@ Profil określa poziom ochrony. Dostępne są następujące profile:
   >
   > Podobnie, jeśli używasz tego samego filtru adresata co wyjątek od zasad, zasady nie są stosowane do romain@contoso.com _tylko_ wtedy, gdy jest on również członkiem grup Kadra kierownicza. Jeśli nie jest członkiem grupy, polityka nadal ma do niego zastosowanie.
 
-- **Wbudowana ochrona** (tylko Ochrona usługi Office 365 w usłudze Defender): profil, który umożliwia ochronę tylko linków Sejf i załączników Sejf. Ten profil skutecznie udostępnia domyślne zasady dla linków Sejf i załączników Sejf, które nigdy nie miały domyślnych zasad.
+- **Wbudowana ochrona** (tylko Ochrona usługi Office 365 w usłudze Defender): profil, który umożliwia ochronę tylko bezpiecznych linków i bezpiecznych załączników. Ten profil skutecznie udostępnia domyślne zasady dla bezpiecznych linków i bezpiecznych załączników, które nigdy nie miały domyślnych zasad.
 
   W przypadku **ochrony wbudowanej** wstępnie ustawione zasady zabezpieczeń są domyślnie włączone dla wszystkich Ochrona usługi Office 365 w usłudze Defender klientów. Chociaż nie zalecamy tego, można również skonfigurować wyjątki na podstawie **użytkowników**, **grup** i **domen** , aby ochrona nie była stosowana do konkretnych użytkowników.
 
@@ -85,22 +85,22 @@ Dopóki zasady nie zostaną przypisane do użytkowników, zasady zabezpieczeń *
 
 Wstępnie ustawione zasady zabezpieczeń używają odpowiednich zasad z różnych funkcji ochrony w ramach operacji EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender. Te zasady są tworzone _po_ przypisaniu wstępnie ustawionych zasad zabezpieczeń **ochrony standardowej** lub **ścisłej ochrony** do użytkowników. Nie można modyfikować ustawień w tych zasadach.
 
-- **zasady Exchange Online Protection (EOP**): obejmuje to organizacje Microsoft 365 z Exchange Online skrzynkami pocztowymi i autonomicznymi organizacjami EOP bez Exchange Online skrzynek pocztowych:
+- **zasady Exchange Online Protection (EOP**): te zasady znajdują się we wszystkich organizacjach platformy Microsoft 365 z Exchange Online skrzynkami pocztowymi i autonomicznymi organizacjami EOP bez Exchange Online skrzynek pocztowych:
 
   - [Zasady ochrony przed spamem](configure-your-spam-filter-policies.md) o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń** i **Ścisłe wstępnie ustawione zasady zabezpieczeń**.
   - [Zasady ochrony przed złośliwym oprogramowaniem](configure-anti-malware-policies.md) o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń** i **Ścisłe wstępnie ustawione zasady zabezpieczeń**.
-  - [Zasady ochrony przed wyłudzaniem informacji EOP](set-up-anti-phishing-policies.md#spoof-settings) o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń** i **Rygorystyczne ustawienia zabezpieczeń** (ustawienia fałszowania).
+  - [Zasady ochrony przed wyłudzaniem informacji (ochrona przed fałszowaniem)](set-up-anti-phishing-policies.md#spoof-settings) o nazwie **Standardowa wstępnie ustawiona zasada zabezpieczeń** i **ścisłe zasady zabezpieczeń** (ustawienia fałszowania).
 
   > [!NOTE]
   > Zasady dotyczące wychodzącego spamu nie są częścią wstępnie ustawionych zasad zabezpieczeń. Domyślne zasady spamu wychodzącego automatycznie chronią elementy członkowskie wstępnie ustawionych zasad zabezpieczeń. Możesz też utworzyć niestandardowe zasady spamu wychodzącego, aby dostosować ochronę dla członków wstępnie ustawionych zasad zabezpieczeń. Aby uzyskać więcej informacji, zobacz [Konfigurowanie filtrowania spamu wychodzącego w ramach operacji EOP](configure-the-outbound-spam-policy.md).
 
-- **zasady Ochrona usługi Office 365 w usłudze Microsoft Defender**: obejmuje to organizacje z subskrypcjami dodatków Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Defender:
+- **zasady Ochrona usługi Office 365 w usłudze Microsoft Defender**: te zasady znajdują się w organizacjach z subskrypcjami dodatków Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Defender:
   - Zasady ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń** i **ścisłe zasady zabezpieczeń wstępnie ustawione**, które obejmują:
     - Te same [ustawienia fałszowania](set-up-anti-phishing-policies.md#spoof-settings) , które są dostępne w zasadach ochrony przed wyłudzaniem informacji w ramach EOP.
     - [Ustawienia personifikacji](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Zaawansowane progi wyłudzania informacji](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-  - [Sejf Łączy zasady](set-up-safe-links-policies.md) o nazwie **Standardowa wstępnie ustawiona zasada zabezpieczeń**, **ścisłe zasady zabezpieczeń wstępnie ustawione** i **wbudowane zasady ochrony**.
-  - [Sejf zasady załączników](set-up-safe-attachments-policies.md) o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń**, **Ścisłe wstępnie ustawione zasady zabezpieczeń** i **Wbudowane zasady ochrony**.
+  - [Zasady bezpiecznych łączy](set-up-safe-links-policies.md) o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń**, **Ścisłe wstępnie ustawione zasady zabezpieczeń** i **Wbudowane zasady ochrony**.
+  - [Zasady bezpiecznych załączników](set-up-safe-attachments-policies.md) o nazwie **Standardowe wstępnie ustawione zasady zabezpieczeń**, **Ścisłe wstępnie ustawione zasady zabezpieczeń** i **Wbudowane zasady ochrony**.
 
 Ochronę EOP można stosować do innych użytkowników niż Ochrona usługi Office 365 w usłudze Defender ochrony lub zastosować operacje EOP i Ochrona usługi Office 365 w usłudze Defender do tych samych adresatów.
 
@@ -122,13 +122,13 @@ W przypadku zastosowania wielu zasad do użytkownika stosowana jest następując
 1. **Ścisłe** zasady zabezpieczeń ustawień wstępnych ochrony
 2. Wstępnie ustawione zasady zabezpieczeń **ochrony w warstwie Standardowa**
 3. Niestandardowe zasady zabezpieczeń
-4. **Wbudowane** wstępnie ustawione zasady zabezpieczeń i domyślne zasady zabezpieczeń
+4. **Wbudowane zasady zabezpieczeń wstępnie** ustawione dla bezpiecznych linków i bezpiecznych załączników oraz domyślne zasady ochrony przed złośliwym oprogramowaniem, ochroną przed spamem i wyłudzaniem informacji.
 
-Innymi słowy, ustawienia zasad **ścisłej ochrony** zastępują ustawienia standardowych zasad **ochrony**, które zastępują ustawienia zasad niestandardowych, które zastępują ustawienia z **wbudowanych** zasad zabezpieczeń wstępnie ustawionych ochrony (Sejf Linki i załączniki Sejf) oraz domyślnych zasad (antyspamowych, chroniących przed złośliwym oprogramowaniem i chroniących przed wyłudzaniem informacji).
+Innymi słowy, ustawienia zasad **ścisłej ochrony** zastępują ustawienia standardowych zasad **ochrony** , które zastępują ustawienia zasad niestandardowych, które przesłaniają ustawienia z **wbudowanych** zasad zabezpieczeń (bezpieczne linki i bezpieczne załączniki) oraz zasad domyślnych (antyspamowych, chroniących przed złośliwym oprogramowaniem i chroniących przed wyłudzaniem informacji).
 
 Jeśli na przykład ustawienie zabezpieczeń istnieje w usłudze Ochrona w warstwie **Standardowa** , a administrator włączył ochronę w warstwie **Standardowa** dla użytkownika, zostanie zastosowane ustawienie Ochrony w warstwie **Standardowa** zamiast tego, co jest skonfigurowane dla tego ustawienia w zasadach niestandardowych lub w zasadach domyślnych (dla tego samego użytkownika). Pamiętaj, że możesz mieć część organizacji, do której chcesz zastosować tylko zasady **ochrony standardowej** lub **ścisłej** , stosując zasady niestandardowe do innych użytkowników w organizacji w celu spełnienia określonych potrzeb.
 
-**Wbudowana ochrona** nie ma wpływu na adresatów w istniejących zasadach linków Sejf ani załączników Sejf. Jeśli skonfigurowano już **ochronę standardową**, **ścisłą ochronę** lub niestandardowe Sejf Linki lub zasady załączników Sejf, zasady te są _zawsze_ stosowane _przed_ **wbudowaną ochroną**, więc nie ma to wpływu na adresatów, którzy są już zdefiniowani w istniejących zasadach wstępnych lub niestandardowych.
+**Wbudowana ochrona** nie ma wpływu na adresatów w istniejących zasadach bezpiecznych linków ani bezpiecznych załączników. Jeśli masz już skonfigurowaną **ochronę standardową**, **ścisłą ochronę** lub niestandardowe zasady bezpiecznych linków lub bezpiecznych załączników, te zasady są _zawsze_ stosowane _przed_ **wbudowaną ochroną**, więc nie ma to wpływu na adresatów, którzy są już zdefiniowani w istniejących zasadach wstępnych lub niestandardowych.
 
 ## <a name="assign-preset-security-policies-to-users"></a>Przypisywanie wstępnie ustawionych zasad zabezpieczeń do użytkowników
 
@@ -136,7 +136,7 @@ Jeśli na przykład ustawienie zabezpieczeń istnieje w usłudze Ochrona w warst
 
 - Otwórz portal Microsoft 365 Defender pod adresem <https://security.microsoft.com>. Aby przejść bezpośrednio do strony **Wstępnie ustawione zasady zabezpieczeń** , użyj polecenia <https://security.microsoft.com/presetSecurityPolicies>.
 
-- Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Połączenie to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Łączenie z programem PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Aby można było wykonać procedury opisane w tym artykule, musisz mieć przypisane uprawnienia w **Exchange Online**:
   - Aby skonfigurować wstępnie ustawione zasady zabezpieczeń, musisz być członkiem grup ról **Zarządzanie organizacją** lub **Administrator zabezpieczeń** .
@@ -144,7 +144,7 @@ Jeśli na przykład ustawienie zabezpieczeń istnieje w usłudze Ochrona w warst
 
   Aby uzyskać więcej informacji, zobacz [Uprawnienia w Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Uwaga**: dodanie użytkowników do odpowiedniej roli Azure Active Directory w Centrum administracyjne platformy Microsoft 365 daje użytkownikom wymagane uprawnienia _i_ uprawnienia do innych funkcji w Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
+  **Uwaga**: dodanie użytkowników do odpowiedniej roli usługi Azure Active Directory w Centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia _i_ uprawnienia do innych funkcji w usłudze Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Używanie portalu Microsoft 365 Defender do przypisywania wstępnie ustawionych zasad zabezpieczeń standardowych i ścisłych do użytkowników
 
@@ -230,7 +230,7 @@ Aby wyłączyć wstępnie ustawione zasady zabezpieczeń **ochrony standardowej*
 
 ### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-the-built-in-protection-preset-security-policy"></a>Użyj portalu Microsoft 365 Defender, aby zmodyfikować przypisania wstępnie ustawionych zasad zabezpieczeń wbudowanej ochrony
 
-Pamiętaj, że wbudowane zasady zabezpieczeń **wstępnie** ustawionej ochrony są przypisywane do wszystkich adresatów i nie mają wpływu na adresatów zdefiniowanych w zasadach zabezpieczeń wstępnie ustawionych w **warstwie Standardowa** lub **Ścisła ochrona** albo niestandardowych Sejf Linkach lub zasadach załączników Sejf.
+Pamiętaj, że wbudowane zasady zabezpieczeń **wstępnie ustawione ochrony** są przypisywane do wszystkich adresatów i nie mają wpływu na adresatów zdefiniowanych w zasadach zabezpieczeń wstępnie ustawionych w ramach **ochrony standardowej** lub **ścisłej ochrony** , niestandardowych zasad bezpiecznych linków ani bezpiecznych załączników.
 
 W związku z tym zazwyczaj nie zalecamy wyjątków od **wbudowanych zasad zabezpieczeń wstępnie** ustawionych ochrony.
 
@@ -238,7 +238,7 @@ W związku z tym zazwyczaj nie zalecamy wyjątków od **wbudowanych zasad zabezp
 
 2. Na stronie **Ustawienia wstępne zasad zabezpieczeń** wybierz pozycję **Dodaj wykluczenia (niezalecane)** w sekcji **Wbudowana ochrona** .
 
-3. Na wyświetlonym **wysuwnym Wyklucz z wbudowanej ochrony** zidentyfikuj wewnętrznych adresatów wykluczonych z wbudowanej ochrony Sejf Łącza i załączniki Sejf:
+3. Na wyświetlonym **wysuwnym Wyklucz z wbudowanej ochrony** zidentyfikuj wewnętrznych adresatów wykluczonych z wbudowanej ochrony bezpiecznych linków i bezpiecznych załączników:
    - **Użytkownicy**
    - **Grupy**
    - **Domeny**
