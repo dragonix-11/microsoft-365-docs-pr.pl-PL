@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratorzy mogą dowiedzieć się, jak tworzyć zautomatyzowane symulacje zawierające określone techniki i ładunki uruchamiane po spełnieniu określonych warunków w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: 32730dfa36b0140bda246137b4cf6706b3472da7
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 1efc6faaae0040e37aafac4faa0a10228d76e766
+ms.sourcegitcommit: 03543c27c33427ac7f11af4c04fff35a181a2524
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739676"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66609419"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatyzacje symulacji na potrzeby trenowania symulacji ataków
 
@@ -25,7 +25,7 @@ ms.locfileid: "65739676"
 
 **Dotyczy** [planu Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
 
-Aby uzyskać informacje o rozpoczęciu trenowania symulacji ataków, zobacz [Wprowadzenie korzystanie z trenowania symulacji ataków](attack-simulation-training-get-started.md).
+Aby uzyskać informacje o rozpoczęciu trenowania symulacji ataków, zobacz [Wprowadzenie do trenowania symulacji ataków](attack-simulation-training-get-started.md).
 
 Aby utworzyć automatyzację symulacji, wykonaj następujące kroki:
 
@@ -67,7 +67,13 @@ Po kliknięciu linku **Wyświetl szczegóły** w opisie zostanie otwarte okno wy
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
-## <a name="select-payloads"></a>Wybieranie ładunków
+## <a name="select-a-payload-and-login-page"></a>Wybieranie ładunku i strony logowania
+
+Na stronie **Wybieranie ładunku i logowania** musisz wybrać istniejący ładunek z listy lub utworzyć nowy ładunek.
+
+Możesz również wyświetlić stronę logowania używaną w ładunku, wybrać inną stronę logowania do użycia lub utworzyć nową stronę logowania do użycia.
+
+### <a name="payload"></a>Ładunku
 
 Na stronie **Wybieranie ładunków** wybierz jedną z następujących opcji:
 
@@ -76,30 +82,26 @@ Na stronie **Wybieranie ładunków** wybierz jedną z następujących opcji:
 
 Jeśli wybierzesz pozycję **Randomize**, nie ma nic do skonfigurowania na tej stronie, więc kliknij przycisk **Dalej** , aby kontynuować.
 
-Jeśli **wybierzesz pozycję Ręcznie**, musisz wybrać jeden lub więcej ładunków z listy. Zostaną wyświetlone następujące szczegóły, które pomogą Ci wybrać:
+Jeśli **wybierzesz pozycję Ręcznie**, musisz wybrać jeden lub więcej ładunków z listy. Dla każdego ładunku są wyświetlane następujące szczegóły:
 
 - **Nazwa ładunku**
 - **Technika**: musisz wybrać co najmniej jeden ładunek na technikę wybraną na poprzedniej stronie.
-- **Język**: język zawartości ładunku. Katalog ładunków firmy Microsoft (globalny) udostępnia ładunki w ponad 10 językach, które można również filtrować.
+- **Język**: Dostępne wartości to: **angielski**, **hiszpański**, **niemiecki**, **japoński**, **francuski**, **portugalski**, **holenderski**, **włoski**, **szwedzki**, **chiński (uproszczony),** **norweski Bokmål**, **polski**, **rosyjski**, **fiński**, **koreański**, **turecki**, **węgierski**, **hebrajski**, **tajski**, **arabski**, **wietnamski**, **słowacki**, **grecki**, **indonezyjski**, **rumuński**, **słoweński**, **chorwacki**, **kataloński** lub **inny**.
 - **Współczynnik kliknięć**: ile osób kliknąło ten ładunek.
-- **Przewidywany wskaźnik kompromisu**: dane historyczne dotyczące ładunku w Microsoft 365, które przewidują odsetek osób, które zostaną naruszone przez ten ładunek.
+- **Przewidywany wskaźnik kompromisu**: dane historyczne dotyczące ładunku w usłudze Microsoft 365, które przewidują odsetek osób, które zostaną naruszone przez ten ładunek.
 - **Uruchomione symulacje** liczą, ile razy ten ładunek był używany w innych symulacjach.
 
 W ikonie ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Pole wyszukiwania** umożliwia wpisanie części nazwy ładunku i naciśnięcie klawisza Enter w celu filtrowania wyników.
 
 Jeśli klikniesz pozycję **Filtruj**, dostępne są następujące filtry:
 
-- **Źródło**: wskazuje, czy ładunek został utworzony w organizacji, czy jest częścią wcześniej istniejącego wykazu ładunków firmy Microsoft. Prawidłowe wartości to:
-  - **Globalny** (wbudowany)
-  - **Dzierżawa** (niestandardowa)
-  - **Wszystkie**
-
 - **Złożoność**: obliczana na podstawie liczby wskaźników w ładunku, które wskazują na możliwy atak (błędy pisowni, pilność itp.). Więcej wskaźników można łatwiej zidentyfikować jako atak i wskazać mniejszą złożoność. Dostępne wartości to:
-  - **Niskie**
-  - **Średni**
-  - **High (Wysoki)**
 
-- **Język**: Dostępne wartości to: **angielski**, **hiszpański**, **niemiecki**, **japoński**, **francuski**, **portugalski**, **holenderski**, **włoski**, **szwedzki**, **chiński (uproszczony),** **norweski Bokmål**, **polski**, **rosyjski**, **fiński**, **koreański**, **turecki**, **węgierski**, **hebrajski**, **tajski**, **arabski**, **wietnamski**, **słowacki**, **grecki**, **indonezyjski**, **rumuński**, **słoweński**, **chorwacki**, **kataloński** i **inne**.
+  - **High (Wysoki)**
+  - **Średni**
+  - **Niskie**
+
+- **Język**
 
 - **Dodawanie tagów**
 
@@ -115,14 +117,49 @@ Jeśli klikniesz pozycję **Filtruj**, dostępne są następujące filtry:
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj**, **Anuluj** lub **Wyczyść filtry**.
 
-Jeśli wybierzesz ładunek z listy, klikając nazwę, szczegółowe informacje o ładunku są wyświetlane w wysuwnym:
+Jeśli wybierzesz ładunek z listy, klikając dowolne miejsce w wierszu innym niż pole wyboru, szczegółowe informacje o ładunku są wyświetlane w wysuwnym:
 
-- Karta **Przegląd** zawiera przykład i inne szczegóły dotyczące ładunku.
+- Karta **Payload** zawiera przykład i inne szczegóły dotyczące ładunku.
+- Karta **Strona logowania** została opisana w następnej sekcji.
 - Karta **Symulacje uruchomione** zawiera **nazwę symulacji**, **szybkość kliknięć**, **wskaźnik naruszonych** zabezpieczeń i **akcję**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="Wysuwane szczegóły ładunku w szkoleniu symulacji ataków w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="Karta Payload (Ładunek) w wysuwie szczegółów ładunku w szkoleniu symulacji ataków w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
-Po zakończeniu kliknij przycisk **Dalej**.
+### <a name="login-page"></a>Strona logowania
+
+Wybierz ładunek z listy, klikając dowolne miejsce w wierszu innym niż pole wyboru, aby otworzyć wysuwane szczegóły.
+
+Karta **Strona logowania** w wysuwu szczegółów ładunku zawiera stronę logowania, która jest obecnie wybrana dla ładunku.
+
+Aby wyświetlić pełną stronę logowania, użyj linków **Strony 1** i **Strony 2** w dolnej części strony dla dwustronicowych stron logowania.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="Karta strony logowania w wysuwie szczegółów ładunku w szkoleniu symulacji ataku w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
+
+Aby zmienić stronę logowania używaną w ładunku, kliknij pozycję Zmień ikonę ![strony logowania.](../../media/m365-cc-sc-edit-icon.png) **Zmień stronę logowania**.
+
+Na wyświetlonym wysuwu **Wybierz logowanie** są wyświetlane następujące informacje dla każdej strony logowania:
+
+- **Nazwa**
+- **Język**
+- **Źródło**: W przypadku wbudowanych stron logowania wartość to **Globalna**. W przypadku niestandardowych stron logowania wartość to **Dzierżawa**.
+- **Stan**: **Gotowe** lub **wersje robocze**.
+- **Utworzone przez**: w przypadku wbudowanych stron logowania wartość to **Microsoft**. W przypadku niestandardowych stron logowania wartość to nazwa UPN użytkownika, który utworzył stronę logowania.
+- **Ostatnia modyfikacja**
+- **Akcje**: kliknij ikonę ![podglądu.](../../media/m365-cc-sc-eye-icon.png) **Wersja zapoznawcza** , aby wyświetlić podgląd strony logowania.
+
+Aby znaleźć stronę logowania na liście, użyj ikony ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Pole wyszukiwania** w celu znalezienia nazwy strony logowania.
+
+Kliknij ikonę ![Filtruj.](../../media/m365-cc-sc-filter-icon.png) **Filtruj** , aby filtrować strony logowania według **źródła** lub **języka**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="Strona Wybieranie logowania na karcie Strona logowania w wysuwanym oknie szczegółów ładunku w trenowaniu symulacji ataków w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
+
+Aby utworzyć nową stronę logowania, kliknij pozycję [Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Utwórz nową,** aby uruchomić kreatora tworzenia strony logowania użytkownika końcowego. Kroki są takie same jak na **stronie logowania** na karcie **Szkolenie** \> symulacji ataku **Symulowana biblioteka zawartości** . Aby uzyskać instrukcje, zobacz [Tworzenie stron logowania](attack-simulation-training-login-pages.md#create-login-pages).
+
+Po powrocie na **stronę Wybierz logowanie** sprawdź, czy wybrano utworzoną nową stronę logowania, a następnie kliknij przycisk **Zapisz**.
+
+Po powrocie do wysuwanego szczegółów ładunku kliknij [ikonę Zamknij.](../../media/m365-cc-sc-close-icon.png) **Zamknij**.
+
+Po zakończeniu na **stronie Wybieranie ładunku i logowania** kliknij przycisk **Dalej**.
 
 ## <a name="target-users"></a>Użytkownicy docelowi
 
@@ -235,11 +272,11 @@ Po zakończeniu kliknij przycisk **Dalej**.
 
 Na **stronie Docelowa** skonfigurujesz stronę internetową, do którą użytkownik jest pobierany, jeśli otworzy ładunek w symulacji.
 
-- **Wybierz preferencję strony docelowej**: dostępne wartości zależą od poprzednich wyborów na stronie [Wybieranie ładunków](#select-payloads) zgodnie z opisem w poniższej tabeli:
+- **Wybierz preferencję strony docelowej**: dostępne wartości zależą od poprzednich wyborów ładunku na [stronie Wybieranie ładunku i logowania](#select-a-payload-and-login-page) zgodnie z opisem w poniższej tabeli:
 
-  |Wybór na stronie Wybieranie ładunków|Dostępne wartości dla preferencji Wybieranie strony docelowej|
+  |Wybór ładunku|Dostępne wartości dla preferencji Wybieranie strony docelowej|
   |---|---|
-  |Ręczne wybieranie|Używanie domyślnej strony docelowej firmy Microsoft <p> Tworzenie własnej strony docelowej <p> Używanie niestandardowego adresu URL <p> **Uwaga**: wartość **Użyj niestandardowego adresu URL** jest niedostępna, jeśli wcześniej **wybrano pozycję Załącznik złośliwego oprogramowania** lub **Link do złośliwego oprogramowania** na stronie [Wybieranie technik inżynierii społecznej](#select-one-or-more-social-engineering-techniques) .|
+  |Ręczne wybieranie|Używanie domyślnej strony docelowej firmy Microsoft <br><br> Tworzenie własnej strony docelowej <p> Używanie niestandardowego adresu URL <p> **Uwaga**: wartość **Użyj niestandardowego adresu URL** jest niedostępna, jeśli wcześniej **wybrano pozycję Załącznik złośliwego oprogramowania** lub **Link do złośliwego oprogramowania** na stronie [Wybieranie technik inżynierii społecznej](#select-one-or-more-social-engineering-techniques) .|
   |Losowo|Używanie domyślnej strony docelowej firmy Microsoft|
 
   Dostępne wartości **preferencji Wybierz stronę docelową** i skojarzone z nimi ustawienia są opisane na następującej liście:
@@ -480,7 +517,7 @@ Na stronie **Szczegóły uruchamiania** skonfiguruj następujące dodatkowe usta
 - **Używaj unikatowych ładunków w symulacjach w ramach automatyzacji**: domyślnie to ustawienie nie jest zaznaczone.
 - **Cel recydywistów**: domyślnie to ustawienie nie jest zaznaczone. Jeśli ją wybierzesz, skonfiguruj następujące wyświetlone ustawienie:
   - **Wprowadź maksymalną liczbę elementów docelowych użytkownika w ramach tej automatyzacji**: wprowadź wartość z zakresu od 1 do 10.
-- **Wyślij wiadomość e-mail symulacji na podstawie bieżącego ustawienia strefy czasowej użytkownika z Outlook aplikacji internetowej**: domyślnie to ustawienie nie jest zaznaczone.
+- **Wyślij wiadomość e-mail symulacji na podstawie bieżącego ustawienia strefy czasowej użytkownika z aplikacji internetowej Outlook**: domyślnie to ustawienie nie jest zaznaczone.
 - **Wyświetl stronę z zebranymi danymi śródmiąższowymi techniką drive-by**: to ustawienie jest dostępne tylko wtedy, gdy wybrano pozycję **Dysk po adresie URL** na stronie **[Wybieranie technik inżynierii społecznej](#select-one-or-more-social-engineering-techniques)** . Domyślnie ustawienie jest włączone (![przełącz na ikonę).](../../media/scc-toggle-on.png)
 
 ## <a name="review-simulation-automation"></a>Przegląd automatyzacji symulacji

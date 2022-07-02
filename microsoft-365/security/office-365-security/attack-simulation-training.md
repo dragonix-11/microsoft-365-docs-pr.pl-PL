@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak symulować ataki wyłudzania informacji i szkolić swoich użytkowników w zakresie zapobiegania wyłudzaniu informacji przy użyciu trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: 8f6ef692885277368c7ca1c194116a4455f52b31
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: c1489c2653adbfa05958ca61240a97d837a9dc93
+ms.sourcegitcommit: 03543c27c33427ac7f11af4c04fff35a181a2524
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839760"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66609396"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Symulowanie ataku wyłudzającego informacje przy użyciu trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Defender
 
@@ -28,7 +28,7 @@ ms.locfileid: "65839760"
 
 Trenowanie symulacji ataków w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2 lub Microsoft 365 E5 umożliwia uruchamianie niegroźnych symulacji cyberataków w organizacji. Te symulacje testują zasady i praktyki dotyczące zabezpieczeń, a także szkolą pracowników, aby zwiększyli ich świadomość i zmniejszyli podatność na ataki. W tym artykule przedstawiono proces tworzenia symulowanego ataku wyłudzania informacji przy użyciu trenowania symulacji ataków.
 
-Aby uzyskać informacje o rozpoczęciu trenowania symulacji ataków, zobacz [Wprowadzenie korzystanie z trenowania symulacji ataków](attack-simulation-training-get-started.md).
+Aby uzyskać informacje o rozpoczęciu trenowania symulacji ataków, zobacz [Wprowadzenie do trenowania symulacji ataków](attack-simulation-training-get-started.md).
 
 Aby uruchomić symulowany atak wyłudzający informacje, wykonaj następujące czynności:
 
@@ -70,33 +70,32 @@ Na stronie **Symulacja nazw** skonfiguruj następujące ustawienia:
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
-## <a name="select-a-payload"></a>Wybieranie ładunku
+## <a name="select-a-payload-and-login-page"></a>Wybieranie ładunku i strony logowania
 
-Na stronie **Wybierz ładunek** musisz wybrać istniejący ładunek z listy lub utworzyć nowy ładunek.
+Na stronie **Wybieranie ładunku i logowania** musisz wybrać istniejący ładunek z listy lub utworzyć nowy ładunek.
 
-Poniższe szczegóły są wyświetlane na liście ładunków, które pomogą Ci wybrać:
+Możesz również wyświetlić stronę logowania używaną w ładunku, wybrać inną stronę logowania do użycia lub utworzyć nową stronę logowania do użycia.
+
+### <a name="payload"></a>Ładunku
+
+Dla każdego ładunku są wyświetlane następujące szczegóły:
 
 - **Nazwa ładunku**
 - **Język**: język zawartości ładunku. Katalog ładunków firmy Microsoft (globalny) udostępnia ładunki w ponad 10 językach, które można również filtrować.
 - **Współczynnik kliknięć**: ile osób kliknąło ten ładunek.
-- **Przewidywany wskaźnik kompromisu**: dane historyczne dotyczące ładunku w Microsoft 365, które przewidują odsetek osób, które zostaną naruszone przez ten ładunek.
+- **Przewidywany wskaźnik kompromisu**: dane historyczne dotyczące ładunku w usłudze Microsoft 365, które przewidują odsetek osób, które zostaną naruszone przez ten ładunek.
 - **Uruchomione symulacje** liczą, ile razy ten ładunek był używany w innych symulacjach.
 
 W ikonie ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Pole wyszukiwania** umożliwia wpisanie części nazwy ładunku i naciśnięcie klawisza Enter w celu filtrowania wyników.
 
 Jeśli klikniesz pozycję **Filtruj**, dostępne są następujące filtry:
 
-- **Źródło**: wskazuje, czy ładunek został utworzony w organizacji, czy jest częścią wcześniej istniejącego wykazu ładunków firmy Microsoft. Prawidłowe wartości to:
-  - **Globalny** (wbudowany)
-  - **Dzierżawa** (niestandardowa)
-  - **Wszystkie**
-
 - **Złożoność**: obliczana na podstawie liczby wskaźników w ładunku, które wskazują na możliwy atak (błędy pisowni, pilność itp.). Więcej wskaźników można łatwiej zidentyfikować jako atak i wskazać mniejszą złożoność. Dostępne wartości to:
-  - **Niskie**
-  - **Średni**
   - **High (Wysoki)**
+  - **Średni**
+  - **Niskie**
 
-- **Język**: Dostępne wartości to: **chiński (uproszczony),** **chiński (tradycyjny),** **angielski**, **francuski**, **niemiecki**, **włoski**, **japoński**, **koreański**, **portugalski**, **rosyjski**, **hiszpański** i **holenderski**.
+- **Język**: Dostępne wartości to: **angielski**, **hiszpański**, **niemiecki**, **japoński**, **francuski**, **portugalski**, **holenderski**, **włoski**, **szwedzki**, **chiński (uproszczony),** **norweski Bokmål**, **polski**, **rosyjski**, **fiński**, **koreański**, **turecki**, **węgierski**, **hebrajski**, **tajski**, **arabski**, **wietnamski**, **słowacki**, **grecki**, **indonezyjski**, **rumuński**, **słoweński**, **chorwacki**, **kataloński** lub **inny**.
 
 - **Dodawanie tagów**
 
@@ -112,20 +111,55 @@ Jeśli klikniesz pozycję **Filtruj**, dostępne są następujące filtry:
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj**, **Anuluj** lub **Wyczyść filtry**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="Strona Wybieranie ładunku w szkoleniu symulacji ataków w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
-
-Jeśli wybierzesz ładunek z listy, szczegóły dotyczące ładunku są wyświetlane w wysuwnym oknie:
-
-- Karta **Przegląd** zawiera przykład i inne szczegóły dotyczące ładunku.
-- Karta **Symulacje uruchomione** zawiera **nazwę symulacji**, **szybkość kliknięć**, **wskaźnik naruszonych** zabezpieczeń i **akcję**.
-
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="Wysuwane szczegóły ładunku w szkoleniu symulacji ataków w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
-
-Jeśli wybierzesz ładunek z listy, klikając nazwę, ikona ![Wyślij ładunek testowy.](../../media/m365-cc-sc-create-icon.png) Na stronie głównej zostanie wyświetlony przycisk **Wyślij test**, na którym można wysłać kopię wiadomości e-mail ładunku do siebie (obecnie zalogowanego użytkownika) w celu przeprowadzenia inspekcji.
+Jeśli wybierzesz ładunek z listy, zaznaczając pole wyboru, ikona ![Wyślij ładunek testowy.](../../media/m365-cc-sc-create-icon.png) Na stronie głównej zostanie wyświetlony przycisk **Wyślij test**, na którym można wysłać kopię wiadomości e-mail ładunku do siebie (obecnie zalogowanego użytkownika) w celu przeprowadzenia inspekcji.
 
 Aby utworzyć własny ładunek, kliknij pozycję ![Utwórz ikonę ładunku.](../../media/m365-cc-sc-create-icon.png) **Utwórz ładunek**. Aby uzyskać więcej informacji, zobacz [Create custom payloads for Attack simulation training (Tworzenie niestandardowych ładunków na potrzeby trenowania symulacji ataków](attack-simulation-training-payloads.md#create-payloads)).
 
-Po zakończeniu kliknij przycisk **Dalej**.
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="Strona Wybieranie ładunku w szkoleniu symulacji ataków w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
+
+Jeśli wybierzesz ładunek z listy, klikając dowolne miejsce w wierszu innym niż pole wyboru, szczegółowe informacje o ładunku są wyświetlane w wysuwnym:
+
+- Karta **Payload** zawiera przykład i inne szczegóły dotyczące ładunku.
+- Karta **Strona logowania** została opisana w następnej sekcji.
+- Karta **Symulacje uruchomione** zawiera **nazwę symulacji**, **szybkość kliknięć**, **wskaźnik naruszonych** zabezpieczeń i **akcję**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="Karta Payload (Ładunek) w wysuwie szczegółów ładunku w szkoleniu symulacji ataków w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
+
+### <a name="login-page"></a>Strona logowania
+
+Wybierz ładunek z listy, klikając dowolne miejsce w wierszu innym niż pole wyboru, aby otworzyć wysuwane szczegóły.
+
+Karta **Strona logowania** w wysuwu szczegółów ładunku zawiera stronę logowania, która jest obecnie wybrana dla ładunku.
+
+Aby wyświetlić pełną stronę logowania, użyj linków **Strony 1** i **Strony 2** w dolnej części strony dla dwustronicowych stron logowania.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="Karta strony logowania w wysuwie szczegółów ładunku w szkoleniu symulacji ataku w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
+
+Aby zmienić stronę logowania używaną w ładunku, kliknij pozycję Zmień ikonę ![strony logowania.](../../media/m365-cc-sc-edit-icon.png) **Zmień stronę logowania**.
+
+Na wyświetlonym wysuwu **Wybierz logowanie** są wyświetlane następujące informacje dla każdej strony logowania:
+
+- **Nazwa**
+- **Język**
+- **Źródło**: W przypadku wbudowanych stron logowania wartość to **Globalna**. W przypadku niestandardowych stron logowania wartość to **Dzierżawa**.
+- **Stan**: **Gotowe** lub **wersje robocze**.
+- **Utworzone przez**: w przypadku wbudowanych stron logowania wartość to **Microsoft**. W przypadku niestandardowych stron logowania wartość to nazwa UPN użytkownika, który utworzył stronę logowania.
+- **Ostatnia modyfikacja**
+- **Akcje**: kliknij ikonę ![podglądu.](../../media/m365-cc-sc-eye-icon.png) **Wersja zapoznawcza** , aby wyświetlić podgląd strony logowania.
+
+Aby znaleźć stronę logowania na liście, użyj ikony ![Wyszukaj.](../../media/m365-cc-sc-search-icon.png) **Pole wyszukiwania** w celu znalezienia nazwy strony logowania.
+
+Kliknij ikonę ![Filtruj.](../../media/m365-cc-sc-filter-icon.png) **Filtruj** , aby filtrować strony logowania według **źródła** lub **języka**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="Strona Wybieranie logowania na karcie Strona logowania w wysuwanym oknie szczegółów ładunku w trenowaniu symulacji ataków w portalu Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
+
+Aby utworzyć nową stronę logowania, kliknij pozycję [Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Utwórz nową,** aby uruchomić kreatora tworzenia strony logowania użytkownika końcowego. Kroki są takie same jak na **stronie logowania** na karcie **Szkolenie** \> symulacji ataku **Symulowana biblioteka zawartości** . Aby uzyskać instrukcje, zobacz [Tworzenie stron logowania](attack-simulation-training-login-pages.md#create-login-pages).
+
+Po powrocie na **stronę Wybierz logowanie** sprawdź, czy wybrano utworzoną nową stronę logowania, a następnie kliknij przycisk **Zapisz**.
+
+Po powrocie do wysuwanego szczegółów ładunku kliknij [ikonę Zamknij.](../../media/m365-cc-sc-close-icon.png) **Zamknij**.
+
+Po zakończeniu na **stronie Wybieranie ładunku i logowania** kliknij przycisk **Dalej**.
 
 ## <a name="target-users"></a>Użytkownicy docelowi
 
@@ -300,7 +334,7 @@ Na stronie **Wybieranie powiadomienia użytkownika końcowego** wybierz jedną z
 
 - **Domyślne powiadomienie firmy Microsoft (zalecane)**: Na stronie są dostępne następujące dodatkowe ustawienia:
 
-  - **Wybierz język domyślny**: Dostępne wartości to: **chiński (uproszczony),** **chiński (tradycyjny),** **angielski**, **francuski**, **niemiecki**, **włoski**, **japoński**, **koreański**, **portugalski**, **rosyjski**, **hiszpański** i **holenderski**.
+  - **Wybierz język domyślny**: Dostępne wartości to: **angielski**, **hiszpański**, **niemiecki**, **japoński**, **francuski**, **portugalski**, **holenderski**, **włoski**, **szwedzki**, **chiński (uproszczony),** **norweski Bokmål**, **polski**, **rosyjski**, **fiński**, **koreański**, **turecki**, **węgierski**, **hebrajski**, **tajski**, **arabski**, **wietnamski**, **słowacki**, **grecki**, **indonezyjski**, **rumuński**, **słoweński**, **chorwacki**, **kataloński** lub **inny**.
 
   - Domyślnie są uwzględniane następujące powiadomienia:
     - **Powiadomienie o pozytywnym wzmocnieniu firmy Microsoft**

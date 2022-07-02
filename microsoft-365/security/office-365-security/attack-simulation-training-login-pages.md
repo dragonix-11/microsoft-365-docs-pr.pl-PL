@@ -1,5 +1,5 @@
 ---
-title: Strony logowania w trenowaniu symulacji ataków
+title: Strony logowania w szkoleniu z symulacji ataków
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -12,14 +12,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratorzy mogą dowiedzieć się, jak tworzyć strony logowania i zarządzać nimi w przypadku symulowanych ataków wyłudzania informacji w planie Ochrona usługi Office 365 w usłudze Microsoft Defender 2.
 ms.technology: mdo
-ms.openlocfilehash: 5457cc54e7f02f6111db6165a1461a308104c832
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5ecbdddfff4d528c1af8e20cf4d3831d3250eacc
+ms.sourcegitcommit: 03543c27c33427ac7f11af4c04fff35a181a2524
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66494058"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66609290"
 ---
-# <a name="login-pages-in-attack-simulation-training"></a>Strony logowania w trenowaniu symulacji ataków
+# <a name="login-pages-in-attack-simulation-training"></a>Strony logowania w szkoleniu z symulacji ataków
 
 **Dotyczy** [planu Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
 
@@ -29,7 +29,7 @@ Aby wyświetlić dostępne strony logowania, otwórz portal Microsoft 365 Defend
 
 **Strony logowania** mają dwie karty:
 
-- **Globalne strony logowania**: zawiera wbudowane, nie modyfikowalne strony logowania. Istnieją cztery wbudowane strony logowania zlokalizowane w 12 językach:
+- **Globalne strony logowania**: zawiera wbudowane, nie modyfikowalne strony logowania. Istnieją cztery wbudowane strony logowania zlokalizowane w ponad 12 językach:
   - **Strona logowania w usłudze GitHub**
   - **Strona logowania linkedin**
   - **Strona logowania firmy Microsoft**
@@ -56,7 +56,7 @@ Po wybraniu strony logowania z listy zostanie wyświetlone okno wysuwane szczeg�
 
 - ![Ikona edycji.](../../media/m365-cc-sc-edit-icon.png) **Edycja** jest dostępna tylko na niestandardowych stronach logowania na karcie **Strony logowania dzierżawy** .
 - ![Oznacz jako ikonę domyślną.](../../media/m365-cc-sc-set-as-default-icon.png) **Oznacz jako domyślny** , aby ta strona logowania była domyślnym wyborem w obszarze **Zbieranie poświadczeń** lub **Łącze w** [ładunkach załączników](attack-simulation-training-payloads.md) lub [automatyzacjach ładunków](attack-simulation-training-payload-automations.md). Jeśli strona logowania jest już domyślna, ![oznacz jako ikonę domyślną.](../../media/m365-cc-sc-set-as-default-icon.png) **Oznacz jako domyślne** jest niedostępne.
-- Karta **Podgląd**: wyświetl stronę logowania, gdy użytkownicy ją zobaczą. **Linki strony 1** i **strony 2** są dostępne w dolnej części strony dla niestandardowych dwustronicowych stron logowania.
+- Karta **Podgląd**: wyświetl stronę logowania, gdy użytkownicy ją zobaczą. **Linki strony 1** i **strony 2** są dostępne w dolnej części strony dla dwustronicowych stron logowania.
 - Karta **Szczegóły**: wyświetl szczegóły dotyczące strony logowania:
   - **Opis**
   - **Stan**: **Gotowe** lub **wersje robocze**.
@@ -73,10 +73,7 @@ Niestandardowe strony logowania można tworzyć w następujących lokalizacjach:
    Kliknij pozycję ![Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Utwórz nową,** aby uruchomić kreatora tworzenia strony logowania użytkownika końcowego.
 
    > [!NOTE]
-   > Ikona ![Utwórz nową.](../../media/m365-cc-sc-create-icon.png) **Tworzenie nowych** jest również dostępne podczas tworzenia automatyzacji ładunku i ładunku. Aby uzyskać więcej informacji, zobacz następujące tematy:
-   >
-   > - [Tworzenie niestandardowych ładunków na potrzeby trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Defender](attack-simulation-training-payloads.md#create-payloads)
-   > - [Tworzenie automatyzacji ładunków na potrzeby trenowania symulacji ataków](attack-simulation-training-payload-automations.md#create-payload-automations)
+   > Ikona ![Utwórz nową.](../../media/m365-cc-sc-create-icon.png) **Tworzenie nowych** jest również dostępne podczas kroku wyboru ładunku podczas tworzenia symulacji. Aby uzyskać więcej informacji, zobacz [Simulate a phishing attack with Attack simulation training in Ochrona usługi Office 365 w usłudze Defender (Symulowanie ataku wyłudzania informacji przy użyciu trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Defender](attack-simulation-training.md)).
    >
    > W dowolnym momencie kreatora tworzenia można kliknąć przycisk **Zapisz i zamknąć** , aby zapisać postęp i kontynuować konfigurowanie strony logowania później. Możesz wybrać miejsce, w którym zostało przerwane, wybierając stronę logowania na karcie **Strony logowania dzierżawy** na **stronach logowania**, a następnie klikając ikonę ![Edytuj.](../../media/m365-cc-sc-edit-icon.png) **Edytuj**. Częściowo ukończona strona logowania będzie mieć wartość **Stan** **— wersja robocza**.
 
@@ -88,7 +85,7 @@ Niestandardowe strony logowania można tworzyć w następujących lokalizacjach:
 
 3. Na **stronie Konfigurowanie logowania** skonfiguruj następujące ustawienia:
 
-   - **Wybieranie języka**
+   - **Wybierz język**: Dostępne wartości to: **chiński (uproszczony),** **chiński (tradycyjny),** **angielski**, **francuski**, **niemiecki**, **włoski**, **japoński**, **koreański**, **portugalski**, **rosyjski**, **hiszpański** i **holenderski**.
 
    - **Ustaw tę domyślną stronę logowania**: jeśli wybierzesz tę opcję, strona logowania będzie domyślnym wyborem w obszarze **Zbieranie poświadczeń** lub **Link w** [ładunkach załączników](attack-simulation-training-payloads.md) lub [automatyzacjach ładunków](attack-simulation-training-payload-automations.md).
 
