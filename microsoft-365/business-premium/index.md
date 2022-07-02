@@ -26,18 +26,18 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Dowiedz się, jak zaimplementować cyberbezpieczeństwo w małych lub średnich firmach przy użyciu platformy Microsoft 365 Business Premium. Możliwości i funkcje cyberbezpieczeństwa są zoptymalizowane pod kątem zapobiegania cyberatakom i naruszeniom zabezpieczeń oraz pomagają chronić dane, urządzenia i informacje za pomocą wysokiej jakości cyberzabezpieczeń.
-ms.openlocfilehash: 213e96c58c822d0d8b40d2e540582eb6a2719ef8
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: 4baa58c4c4b48e761846c8c0ce7982c8e2c4c101
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556839"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574074"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; cyberbezpieczeństwo dla małych firm
 
-Zacznijmy od stwierdzenia, że wdrożenia platformy Microsoft 365 Business Premium i jej światowej klasy narzędzi zwiększających produktywność było dobrą decyzją. Zaprojektowana z myślą o cyberbezpieczeństwie platforma Microsoft 365 Business Premium chroni Twoje dane, urządzenia i informacje. Jesteś pierwszą i najlepszą obroną swojej organizacji przed hakerami i cyberatakami, w tym przypadkowymi osobami, zorganizowaną cyberprzestępczością lub wysoce zaawansowanymi krajami.
+Zacznijmy od stwierdzenia, że wdrożenia platformy Microsoft 365 Business Premium i jej światowej klasy narzędzi zwiększających produktywność było dobrą decyzją. Zaprojektowana z myślą o cyberbezpieczeństwie platforma Microsoft 365 Business Premium chroni Twoje dane, urządzenia i informacje. Jesteś pierwszą i najlepszą obroną swojej organizacji przed hakerami i sprawcami cyberataków, w tym przed przypadkowymi osobami, zorganizowaną grupą przestępczą lub wysoce zaawansowanymi państwami narodowymi.
 
-Twoim zadaniem jest &mdash; umożliwienie usłudze Microsoft 365 Business Premium zabezpieczenie przyszłości organizacji! Podejdź do tego zadania, wykonując następujące misje, które pomogą Ci wzmocnić środowisko, wytrenować zespół i zabezpieczyć zarządzane urządzenia. Misje są podzielone na kategorie według ważności, a ich ukończenie to najskuteczniejszy sposób na udaremnienie działań hakerów, ochronę przed oprogramowaniem wymuszającym okup i zapewnienie bezpiecznej przyszłości organizacji dzięki najlepszym zabezpieczeniom cybernetycznym. Zatem do dzieła.
+Twoim zadaniem jest &mdash; umożliwienie usłudze Microsoft 365 Business Premium zabezpieczenie przyszłości organizacji! Podejdź do tego zadania, wykonując następujące misje, które pomogą Ci wzmocnić środowisko, wyszkolić członków organizacji i zabezpieczyć urządzenia zarządzane. Misje są pogrupowane według elementów, które wykonuje administrator, i które muszą wykonywać członkowie. Ukończenie ich to najskuteczniejszy sposób na udaremnienie działań hakerów, ochronę przed oprogramowaniem wymuszającym okup i zapewnienie, że firma jest chroniona przy zastosowaniu najlepszych metod obrony w zakresie cyberbezpieczeństwa. Zatem do dzieła.
 
 Kliknij poniższe karty, aby dowiedzieć się więcej o każdej misji i sposobie konfigurowania zabezpieczeń platformy Microsoft 365 Business Premium.
 
