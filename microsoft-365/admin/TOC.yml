@@ -241,6 +241,28 @@
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
             - name: Tworzenie rekordów DNS na dowolnym hoście DNS
               href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+            - name: Łączenie rekordów DNS w usłudze IONOS by 1&1
+              href: dns/create-dns-records-at-1-1-internet.md
+            - name: Łączenie rekordów DNS w witrynie 123-reg.co.uk
+              href: dns/create-dns-records-at-123-reg-co-uk.md
+            - name: Łączenie rekordów DNS w usłudze Amazon Web Services (AWS)
+              href: dns/create-dns-records-at-aws.md
+            - name: Łączenie rekordów DNS w usłudze Cloudflare
+              href: dns/create-dns-records-at-cloudflare.md
+            - name: Łączenie rekordów DNS w witrynie GoDaddy
+              href: dns/create-dns-records-at-godaddy.md
+            - name: Łączenie rekordów DNS w usłudze Namecheap
+              href: dns/create-dns-records-at-namecheap.md
+            - name: Łączenie rekordów DNS w witrynie Network Solutions
+              href: dns/create-dns-records-at-network-solutions.md
+            - name: Łączenie rekordów DNS w witrynie OVH
+              href: dns/create-dns-records-at-ovh.md
+            - name: Łączenie rekordów DNS w witrynie web.com
+              href: dns/create-dns-records-at-web-com.md
+            - name: Łączenie rekordów DNS w usłudze Wix
+              href: dns/create-dns-records-at-wix.md
+            - name: Tworzenie rekordów DNS dla firmy Microsoft przy użyciu usługi DNS opartej na systemie Windows
+              href: dns/create-dns-records-using-windows-based-dns.md
         - name: Rozwiązywanie problemów z domeną
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Zarządzanie danymi i usługami
