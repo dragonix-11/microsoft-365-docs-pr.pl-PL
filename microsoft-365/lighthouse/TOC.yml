@@ -70,6 +70,8 @@
       href: m365-lighthouse-mitigate-threats.md
     - name: Omówienie strony Zabezpieczenia urządzenia
       href: m365-lighthouse-device-security-overview.md
+    - name: Omówienie wiadomości poddanych kwarantannie
+      href: m365-lighthouse-quarantine-messages-overview.md
 - name: Uzyskiwanie pomocy i obsługi technicznej
   items:
     - name: Uzyskiwanie pomocy i obsługi technicznej
