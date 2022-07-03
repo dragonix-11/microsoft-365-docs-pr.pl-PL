@@ -2,12 +2,12 @@
   href: index.md
 - name: Modele niestandardowe
   items:
+    - name: Różnice między modelami niestandardowymi
+      href: difference-between-document-understanding-and-form-processing-model.md
     - name: Analiza dokumentu
       items:
         - name: Omówienie
           href: document-understanding-overview.md
-        - name: Różnice między modelami
-          href: difference-between-document-understanding-and-form-processing-model.md
         - name: Importuj przykładowy model
           href: learn-about-document-understanding-models-through-the-sample-model.md
         - name: Utwórz centrum zawartości
@@ -46,8 +46,6 @@
       items:
         - name: Omówienie
           href: form-processing-overview.md
-        - name: Różnice między modelami
-          href: difference-between-document-understanding-and-form-processing-model.md
         - name: Utwórz model przetwarzania formularzy
           href: create-a-form-processing-model.md
         - name: Zastosuj etykietę przechowywania
