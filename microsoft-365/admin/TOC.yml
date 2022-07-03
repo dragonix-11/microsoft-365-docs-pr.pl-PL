@@ -4,7 +4,7 @@
     - name: 20 najpopularniejszych artykułów pomocy dla administratorów
       href: top-m365-admin-articles.yml
     - name: Biblioteka wideo szkoleń dla administratorów
-      href: admin-video-library.yml
+      href: 'https://go.microsoft.com/fwlink/?linkid=2197659'
     - name: Wprowadzenie
       items:
         - name: Tworzenie konta

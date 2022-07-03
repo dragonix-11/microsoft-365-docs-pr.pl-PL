@@ -23,20 +23,24 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Uzyskaj okresowy raport o tym, jak osoby w Twojej organizacji korzystają z usług platformy Microsoft 365, i przejdź do szczegółów każdego wykresu, aby uzyskać więcej szczegółowych informacji.
-ms.openlocfilehash: 481f7abf0015994ab211f55feedabc4aa615dbca
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 05bee2950cb50b0b5a21ef67e9f73cec5e78b07a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486325"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601613"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Raporty platformy Microsoft 365 w centrum administracyjnym
 
-Możesz łatwo sprawdzić, jak osoby w Twojej firmie korzystają z usług platformy Microsoft 365. Na przykład możesz ustalić, kto często korzysta z usługi i osiąga limity przydziału lub kto może w ogóle nie potrzebować licencji platformy Microsoft 365. Model licencji bezterminowej nie zostanie uwzględniony w raportach.
+Zapoznaj się z [Pomoc techniczna platformy Microsoft 365 dla małego biznesu](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
 
+Możesz łatwo sprawdzić, jak osoby w Twojej firmie korzystają z usług platformy Microsoft 365. Na przykład możesz ustalić, kto często korzysta z usługi i osiąga limity przydziału lub kto może w ogóle nie potrzebować licencji platformy Microsoft 365. Model licencji bezterminowej nie zostanie uwzględniony w raportach. 
+  
 Raporty są dostępne dla ostatnich 7 dni, 30 dni, 90 dni i 180 dni. Nie od razu będą istniały dane dla wszystkich okresów raportowania. Raporty stają się dostępne w ciągu 48 godzin.
 
 ## <a name="watch-act-on-a-usage-report-in-office-365"></a>Obejrzyj: Korzystanie z raportu użycia w usłudze Office 365
+  
+Obejrzyj ten klip wideo i inne na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198103).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
 

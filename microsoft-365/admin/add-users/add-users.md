@@ -23,14 +23,16 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak nadać każdemu członkowi zespołu konto użytkownika, aby mógł mieć licencje platformy Microsoft 365, poświadczenia logowania i skrzynki e-mail na platformie Microsoft 365.
 ms.date: 07/01/2020
-ms.openlocfilehash: 8ebc4b99840f9987d115539d0039efa1950499d3
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: b9662263711bb08063a9c2ff9f70767bb3ea7ce4
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466817"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601999"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Dodawanie użytkowników i jednoczesne przypisywanie licencji
+
+Zapoznaj się z [Pomoc techniczna platformy Microsoft 365 dla małego biznesu](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
 
 Aby osoby z Twojego zespołu mogły zalogować się i uzyskać dostęp do platformy [Microsoft 365 dla firm](https://www.microsoft.com/microsoft-365/business), każda z nich potrzebuje konta użytkownika. Najłatwiejszym sposobem dodawania kont użytkowników jest dodawanie ich pojedynczo w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjnym platformy Microsoft 365</a>. Na końcu tego procesu użytkownicy będą mieli licencje platformy Microsoft 365, poświadczenia logowania oraz skrzynki pocztowe na platformie Microsoft 365.
 
@@ -42,6 +44,8 @@ Aby osoby z Twojego zespołu mogły zalogować się i uzyskać dostęp do platfo
 Aby dodawać użytkowników i przypisywać licencje, musisz być administratorem globalnym, administratorem licencji lub użytkowników. W celu uzyskania więcej informacji zobacz [Informacje o rolach administratora](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="watch-add-users-in-the-dashboard-view"></a>Obejrzyj: Dodawanie użytkowników w widoku pulpitu nawigacyjnego
+
+Obejrzyj ten klip wideo i inne na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198205).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 

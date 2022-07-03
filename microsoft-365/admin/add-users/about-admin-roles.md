@@ -26,14 +26,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Dowiedz się więcej o rolach administratora, takich jak rola administratora usługi, które są powiązane z określonymi funkcjami biznesowymi i zapewniają uprawnienia do wykonywania określonych zadań w centrum administracyjnym.
-ms.openlocfilehash: bef4328146c62d19257ca50d33004ce7d1185fe1
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: cd40eb3421abf21205aac909fa2cb1796d7f0aa2
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636245"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601977"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Informacje dotyczące ról administratora w centrum administracyjnym platformy Microsoft 365
+
+Zapoznaj się z [Pomoc techniczna platformy Microsoft 365 dla małego biznesu](https://go.microsoft.com/fwlink/?linkid=2197659) w serwisie YouTube.
 
 Subskrypcje usług Microsoft 365 lub Office 365 zawierają zestaw ról administratora, które można przypisać użytkownikom w organizacji przy użyciu aplikacji <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a>. Każda rola administratora jest powiązana z typowymi funkcjami biznesowymi i zapewnia osobom w Twojej organizacji uprawnienia do wykonywania określonych zadań w centrum administracyjnym.
 
@@ -43,6 +45,8 @@ Subskrypcje usług Microsoft 365 lub Office 365 zawierają zestaw ról administr
 > Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą ds. małych firm firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy uzyskujecie całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm w miarę rozwoju firmy — od dołączania do codziennego użytku.
 
 ## <a name="watch-what-is-an-admin"></a>Obejrzyj: Kim jest administrator?
+
+Obejrzyj ten klip wideo i inne na naszym [kanale YouTube](https://go.microsoft.com/fwlink/?linkid=2198028).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
