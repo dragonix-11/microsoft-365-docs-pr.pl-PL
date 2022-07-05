@@ -1,7 +1,7 @@
 ---
-title: Włączanie integracji usługi Microsoft Defender for IoT w Ochrona punktu końcowego w usłudze Microsoft Defender
-description: Włączanie integracji usługi Microsoft Defender dla IoT w celu uzyskania widoczności w skoncentrowaniu się na urządzeniach IoT/OT w obszarach sieci, w których nie wdrożono funkcji MDE
-keywords: Enable siem connector, siem, connector, security information and events
+title: Dołączanie usługi Microsoft Defender dla IoT za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Dołącz do usługi Microsoft Defender for IoT, aby uzyskać wgląd i oceny zabezpieczeń skoncentrowane na urządzeniach IoT.
+keywords: włączanie łącznika siem, siem, łącznika, informacji o zabezpieczeniach i zdarzeń
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00b7a7abbf6c9fcb9395723e5e62ef0e89b2114a
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: a70b61ff9a27b10e66b6f4537751790eaabc59af
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470532"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617287"
 ---
-# <a name="enable-microsoft-defender-for-iot-integration"></a>Włączanie integracji z usługą Microsoft Defender dla IoT
+# <a name="onboard-with-microsoft-defender-for-iot"></a>Dołączanie do usługi Microsoft Defender dla IoT
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,40 +34,64 @@ ms.locfileid: "64470532"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Ochrona punktu końcowego w usłudze Microsoft Defender teraz można zintegrować z usługą Microsoft Defender dla IoT. Ta integracja rozszerza możliwości odnajdowania urządzeń o funkcje monitorowania bez agenta udostępniane przez program Microsoft Defender dla IoT. Pomoże to zabezpieczyć urządzenia IoT przedsiębiorstwa połączone z sieciami IT, takimi jak urządzenia VoIP (Voice over Internet Protocol), drukarki i kamery. Umożliwia organizacjom korzystanie z jednego zintegrowanego rozwiązania, które zabezpiecza całą swoją infrastrukturę IoT i technologii operacyjnej (OT). Aby uzyskać więcej informacji, zobacz [Enterprise ochrony sieci IoT](/azure/defender-for-iot/organizations/overview-eiot).
+Ochrona punktu końcowego w usłudze Microsoft Defender teraz bezproblemowo integruje się z usługą Microsoft Defender for IoT. Ta integracja rozszerza możliwości odnajdywania urządzeń dzięki możliwościom monitorowania bez agenta udostępnianych przez usługę Defender for IoT. Pomoże to zabezpieczyć urządzenia IoT przedsiębiorstwa podłączone do sieci IT, takie jak urządzenia voIP (Voice over Internet Protocol), drukarki i kamery. Umożliwia ona organizacjom korzystanie z jednego zintegrowanego rozwiązania, które zabezpiecza całą infrastrukturę IoT i technologii operacyjnej (OT). Aby uzyskać więcej informacji, zobacz [Ochrona sieci IoT w przedsiębiorstwie](/azure/defender-for-iot/organizations/overview-eiot).
 
-Włączenie tej integracji zwiększa Ochrona punktu końcowego w usłudze Microsoft Defender widoczności, ułatwiając znajdowanie, identyfikowanie i zabezpieczanie urządzeń IoT w Twojej sieci. Urządzenia IoT wykryte przez program Microsoft Defender dla IoT lub Ochrona punktu końcowego w usłudze Microsoft Defender automatycznie synchronizują się w obu portalach. Zapewni to pojedynczy ujednolicony widok Twojego pełnego spisu usług OT/IoT wraz z pozostałymi urządzeniami IT (stacjami roboczymi, serwerami i urządzeniami przenośnymi).
+Po zdefiniowaniu planu usługi Defender for IoT i skonfigurowaniu czujnika sieciowego IoT w przedsiębiorstwie dane urządzenia automatycznie uruchamiają przesyłanie strumieniowe do portali Defender for Endpoint i Defender for IoT. 
 
-Usługa Microsoft Defender dla IoT zawiera również wdrażalny czujnik sieci, który zapewnia dodatkowe źródło danych. Skonfigurowanie czujnika sieci w ramach integracji zapewnia pełny widok urządzeń IoT i OT, w szczególności segmentów sieci, w których czujników Ochrona punktu końcowego w usłudze Microsoft Defender nie ma, oraz gdy pracownicy zdalnie uzyskają dostęp do informacji.
+Integracja usługi Defender for IoT zapewnia większą widoczność, aby ułatwić lokalizowanie, identyfikowanie i zabezpieczanie urządzeń IoT w sieci. Dzięki temu uzyskasz jeden ujednolicony widok pełnego spisu OT/IoT wraz z pozostałymi urządzeniami IT (stacjami roboczymi, serwerami i urządzeniami przenośnymi).
+
+Klienci, którzy zostali dołączeni do usługi Defender for IoT, mają również zalecenia dotyczące zabezpieczeń dotyczące oceny luk w zabezpieczeniach i błędnej konfiguracji dla urządzeń IoT.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby włączyć usługę Microsoft Defender dla IoT, użytkownik musi mieć następujące role:
+Aby zmodyfikować ustawienia integracji usługi Defender for Endpoint, użytkownik musi mieć następujące role:
 
-- Administrator globalny dzierżawy w Azure Active Directory
-- Administrator zabezpieczeń dla subskrypcji platformy Azure, która będzie używana na rzecz integracji usługi Microsoft Defender dla IoT
+- Administrator globalny dzierżawy w usłudze Azure Active Directory
+- Administrator zabezpieczeń dla subskrypcji platformy Azure, która będzie używana na potrzeby integracji usługi Microsoft Defender for IoT
 
-## <a name="enabling-the-microsoft-defender-for-iot-integration"></a>Włączanie integracji z usługą Microsoft Defender dla IoT
+## <a name="onboard-a-defender-for-iot-plan"></a>Dołączanie planu usługi Defender for IoT
 
-1. W okienku nawigacji portalu wybierz [https://security.microsoft.com](https://security.microsoft.com/) pozycję Ustawienia  \> **Odnajdowanie urządzeń** \> **Program Microsoft Defender dla systemu IoT**.
+1. W okienku nawigacji portalu [https://security.microsoft.com](https://security.microsoft.com/) wybierz pozycję **Ustawienia** \> **Odnajdywanie urządzeń** \> **Enterprise IoT**.
 
-   :::image type="content" source="images/enable-defender-for-iot.png" alt-text="Konfiguracja integracji z usługą IoT" lightbox="images/enable-defender-for-iot.png":::
+1. Wybierz następujące opcje dla planu:
 
-2. **Wybierz subskrypcję platformy Azure** z listy rozwijanej dostępnych subskrypcji w Twojej Azure Active Directory dzierżawie i wybierz pozycję **Zapisz**.
+   - Wybierz subskrypcję platformy Azure z listy dostępnych subskrypcji w dzierżawie usługi Azure Active Directory, w której chcesz dodać plan.
 
-## <a name="set-up-a-network-sensor"></a>Konfigurowanie czujnika sieci
+   - Wybierz plan cenowy, zobowiązanie miesięczne lub roczne albo wersję próbną. Usługa Microsoft Defender for IoT zapewnia 30-dniową bezpłatną wersję próbną dla pierwszych 1000 zatwierdzonych urządzeń do celów ewaluacyjnych.
 
-Po wybraniu subskrypcji platformy Azure możesz dodać czujnik sieci.
+      Aby uzyskać więcej informacji, zobacz [stronę cennika usługi Microsoft Defender for IoT](https://azure.microsoft.com/pricing/details/iot-defender/).
+   
+   - Wybierz liczbę zatwierdzonych urządzeń, które chcesz monitorować. Jeśli wybrano wersję próbną, ta sekcja nie jest wyświetlana, ponieważ masz domyślnie 1000 urządzeń.
 
-Aby dodać czujnik sieci, w obszarze **Skonfiguruj czujniki sieci** wybierz link **Microsoft Defender for IoT** . To prowadzi do procesu konfiguracji czujnika na wsadu w Azure Portal. Aby uzyskać więcej informacji, zobacz [Zarządzanie czujnikiami za pomocą programu Defender dla IoT w Azure Portal](/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
+## <a name="set-up-a-network-sensor"></a>Konfigurowanie czujnika sieciowego
 
-## <a name="turn-off-subscription-integration"></a>Wyłączanie integracji subskrypcji
+Aby skonfigurować czujnik sieci, subskrypcja platformy Azure musi mieć plan usługi Defender for IoT z dodanymi urządzeniami IoT w przedsiębiorstwie. Aby uzyskać więcej informacji, zobacz [Wprowadzenie do usługi Defender for IoT](/azure/defender-for-iot/organizations/getting-started).
 
-Integrację subskrypcji platformy Azure możesz wyłączyć z usługi Microsoft Defender dla ustawień IoT w [https://security.microsoft.com](https://security.microsoft.com/) portalu. Po wyłączenie subskrypcji nie zobaczysz już urządzeń IoT wykrytych przez usługę Microsoft Defender dla IoT w spisie Ochrona punktu końcowego w usłudze Microsoft Defender urządzeniach.
+Aby dodać czujnik sieciowy, w obszarze **Konfigurowanie czujników sieciowych** wybierz link **Microsoft Defender for IoT** . Spowoduje to wprowadzenie do procesu konfiguracji czujnika dołączania w Azure Portal. Aby uzyskać więcej informacji, zobacz [Wprowadzenie do usługi Enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
+
+## <a name="managing-your-iot-devices"></a>Zarządzanie urządzeniami IoT
+
+Aby wyświetlić urządzenia IoT i zarządzać nimi w [portalu Microsoft 365 Defender](https://security.microsoft.com/), przejdź do **spisu urządzeń** z menu nawigacji **Punkty końcowe** i wybierz kartę **Urządzenia IoT**.
+
+Aby uzyskać informacje na temat wyświetlania urządzeń w usłudze Defender for IoT, zobacz [Manage your IoT devices with the device inventory for organizations (Zarządzanie urządzeniami IoT przy użyciu spisu urządzeń dla organizacji](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations)).
+
+
+## <a name="view-devices-alerts-recommendations-and-vulnerabilities"></a>Wyświetlanie urządzeń, alertów, zaleceń i luk w zabezpieczeniach
+
+Po zdefiniowaniu planu i skonfigurowaniu czujnika sieciowego wyświetl wykryte dane i oceny zabezpieczeń w następujących lokalizacjach:
+
+- Wyświetlanie danych urządzenia w usłudze Defender dla punktu końcowego lub usłudze Defender for IoT
+- Wyświetlanie alertów, zaleceń i luk w zabezpieczeniach w usłudze Defender for Endpoint
+
+Aby uzyskać więcej informacji, zobacz [stronę cennika usługi Defender for IoT](https://azure.microsoft.com/pricing/details/iot-defender/). 
+
+## <a name="cancel-your-defender-for-iot-plan"></a>Anulowanie planu usługi Defender for IoT
+
+Plan usługi Defender for IoT można anulować na stronie ustawień punktu końcowego usługi Defender w portalu [https://security.microsoft.com](https://security.microsoft.com/) . Po anulowaniu planu integracja zostanie zatrzymana i nie będziesz już uzyskiwać wartości oceny zabezpieczeń w usłudze Defender for Endpoint ani wykrywać nowych urządzeń w usłudze Defender for IoT.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Omówienie odnajdowania urządzeń](configure-device-discovery.md)
-- [Odnajdowanie urządzeń — często zadawane pytania](device-discovery-faq.md)
+- [Omówienie wykrywania urządzeń](configure-device-discovery.md)
+- [Wykrywanie urządzeń — często zadawane pytania](device-discovery-faq.md)

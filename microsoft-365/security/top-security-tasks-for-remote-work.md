@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: Ochrona firmowych wiadomości e-mail i danych przed zagrożeniami cybernetycznymi, w tym oprogramowaniem wymuszającym okup, wyłudzaniem informacji i złośliwymi załącznikami.
-ms.openlocfilehash: 3c3a6ad89a795a45a0f76f868fbc6d23a52b963b
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: bc1dd84e83e5c5f1828e65203585d38acc28de5e
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319226"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617265"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 najważniejszych zadań dla zespołów zabezpieczeń do obsługi pracy z domu
 
@@ -33,10 +33,10 @@ Jeśli jesteś jak [firma Microsoft](https://www.microsoft.com/microsoft-365/blo
 
 Jeśli jesteś małą lub średnią organizacją korzystającą z jednego z planów biznesowych firmy Microsoft, zobacz następujące zasoby:
 
-- [Najlepsze rozwiązania dotyczące zabezpieczania Microsoft 365 dla planów biznesowych](../admin/security-and-compliance/secure-your-business-data.md)
-- [Microsoft 365 dla kampanii](../business-premium/index.md) (obejmuje zalecaną konfigurację zabezpieczeń dla Microsoft 365 Business)
+- [Najlepsze rozwiązania dotyczące zabezpieczania planów platformy Microsoft 365 dla firm](../admin/security-and-compliance/secure-your-business-data.md)
+- [Microsoft 365 for Campaigns](../business-premium/index.md) (obejmuje zalecaną konfigurację zabezpieczeń dla platformy Microsoft 365 Business)
 
-W przypadku klientów korzystających z naszych planów dla przedsiębiorstw firma Microsoft zaleca wykonanie zadań wymienionych w poniższej tabeli, które mają zastosowanie do planu usługi. Jeśli zamiast kupować plan Microsoft 365 enterprise, łączysz subskrypcje, zwróć uwagę na następujące kwestie:
+W przypadku klientów korzystających z naszych planów dla przedsiębiorstw firma Microsoft zaleca wykonanie zadań wymienionych w poniższej tabeli, które mają zastosowanie do planu usługi. Jeśli zamiast kupować plan platformy Microsoft 365 enterprise, łączysz subskrypcje, zwróć uwagę na następujące kwestie:
 
 - Microsoft 365 E3 obejmuje Enterprise Mobility + Security (EMS) E3 i Azure AD P1
 - Microsoft 365 E5 obejmuje EMS E5 i Azure AD P2
@@ -58,7 +58,7 @@ W przypadku klientów korzystających z naszych planów dla przedsiębiorstw fir
 |11|[Wprowadzenie do usługi Microsoft Defender for Cloud Apps](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![Zawarte.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12|[Monitorowanie pod kątem zagrożeń i podjęcie akcji](#12-monitor-for-threats-and-take-action)|![Zawarte.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Zawarte.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Zawarte.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Przed rozpoczęciem sprawdź [wskaźnik bezpieczeństwa Microsoft 365](./defender/microsoft-secure-score.md) w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>. Ze scentralizowanego pulpitu nawigacyjnego można monitorować i ulepszać zabezpieczenia Microsoft 365 tożsamości, danych, aplikacji, urządzeń i infrastruktury. Otrzymujesz punkty dotyczące konfigurowania zalecanych funkcji zabezpieczeń, wykonywania zadań związanych z zabezpieczeniami (takich jak wyświetlanie raportów) lub rozwiązywania problemów z zaleceniami za pomocą aplikacji lub oprogramowania innej firmy. Zalecane zadania w tym artykule podniosą twój wynik.
+Przed rozpoczęciem sprawdź wskaźnik [bezpieczeństwa platformy Microsoft 365](./defender/microsoft-secure-score.md) w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>. Ze scentralizowanego pulpitu nawigacyjnego można monitorować i ulepszać zabezpieczenia tożsamości, danych, aplikacji, urządzeń i infrastruktury platformy Microsoft 365. Otrzymujesz punkty dotyczące konfigurowania zalecanych funkcji zabezpieczeń, wykonywania zadań związanych z zabezpieczeniami (takich jak wyświetlanie raportów) lub rozwiązywania problemów z zaleceniami za pomocą aplikacji lub oprogramowania innej firmy. Zalecane zadania w tym artykule podniosą twój wynik.
 
 :::image type="content" source="../media/secure-score.png" alt-text="Ekran Wskaźnik bezpieczeństwa firmy Microsoft w portalu Microsoft 365 Defender" lightbox="../media/secure-score.png":::
 
@@ -74,13 +74,13 @@ Zastosowanie tych zasad potrwa tylko kilka minut, ale będzie przygotowane do ob
 
 |Plan|Zalecenie|
 |---|---|
-|plany Microsoft 365 (bez Azure AD P1 lub P2)|[Włącz wartości domyślne zabezpieczeń w Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Ustawienia domyślne zabezpieczeń w Azure AD obejmują uwierzytelnianie wieloskładnikowe dla użytkowników i administratorów.|
+|Plany platformy Microsoft 365 (bez Azure AD P1 lub P2)|[Włącz wartości domyślne zabezpieczeń w Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Ustawienia domyślne zabezpieczeń w Azure AD obejmują uwierzytelnianie wieloskładnikowe dla użytkowników i administratorów.|
 |Microsoft 365 E3 (z Azure AD P1)|Użyj [typowych zasad dostępu warunkowego](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) , aby skonfigurować następujące zasady: <br/>- [Wymagaj uwierzytelniania wieloskładnikowego dla administratorów](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Wymagaj uwierzytelniania wieloskładnikowego dla wszystkich użytkowników](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Blokowanie starszego uwierzytelniania](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
 |Microsoft 365 E5 (z Azure AD P2)|Korzystając z usługi Azure AD Identity Protection, rozpocznij implementowanie [zalecanego przez firmę Microsoft zestawu dostępu warunkowego i powiązanych zasad](./office-365-security/identity-access-policies.md), tworząc następujące zasady:<br/> - [Wymagaj uwierzytelniania wieloskładnikowego, gdy ryzyko logowania jest średnie lub wysokie](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Blokuj klientów, którzy nie obsługują nowoczesnego uwierzytelniania](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [Użytkownicy wysokiego ryzyka muszą zmienić hasło](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 
 ## <a name="2-protect-against-threats"></a>2: Ochrona przed zagrożeniami
 
-Wszystkie plany Microsoft 365 obejmują różne funkcje ochrony przed zagrożeniami. Wzbożanie ochrony tych funkcji zajmuje zaledwie kilka minut.
+Wszystkie plany platformy Microsoft 365 obejmują różne funkcje ochrony przed zagrożeniami. Wzbożanie ochrony tych funkcji zajmuje zaledwie kilka minut.
 
 - Ochrona przed złośliwym oprogramowaniem
 - Ochrona przed złośliwymi adresami URL i plikami
@@ -103,13 +103,13 @@ Aby zapoznać się z omówieniem, w tym podsumowaniem planów, zobacz [Ochrona u
 
 Administrator globalny może skonfigurować następujące zabezpieczenia:
 
-- [Konfigurowanie zasad linków Sejf](office-365-security/set-up-safe-links-policies.md)
-- [Konfigurowanie ustawień globalnych dla linków Sejf](office-365-security/configure-global-settings-for-safe-links.md)
-- [Konfigurowanie zasad załączników Sejf](office-365-security/set-up-safe-attachments-policies.md)
+- [Konfigurowanie zasad bezpiecznych łączy](office-365-security/set-up-safe-links-policies.md)
+- [Konfigurowanie ustawień globalnych dla bezpiecznych linków](office-365-security/configure-global-settings-for-safe-links.md)
+- [Konfigurowanie zasad bezpiecznych załączników](office-365-security/set-up-safe-attachments-policies.md)
 
 Aby skonfigurować Ochrona usługi Office 365 w usłudze Defender dla tych obciążeń, musisz współpracować z administratorem Exchange Online i administratorem usługi SharePoint Online:
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender dla SharePoint, OneDrive i Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender dla programów SharePoint, OneDrive i Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4: Konfigurowanie Microsoft Defender for Identity
 
@@ -144,7 +144,7 @@ Co więcej, firma Microsoft koordynuje tę strukturę ochrony aplikacji za pomoc
 
 Aby skonfigurować ochronę aplikacji mobilnych, skorzystaj ze wskazówek w temacie [Typowe zasady dostępu do tożsamości i urządzeń](./office-365-security/identity-access-policies.md):
 
- 1. Skorzystaj ze wskazówek dotyczących [stosowania zasad ochrony danych aplikacji](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies), aby utworzyć zasady dla iOS i Android. Poziom 2 (rozszerzona ochrona danych) jest zalecany do ochrony punktu odniesienia.
+ 1. Skorzystaj ze wskazówek dotyczących [stosowania zasad ochrony danych aplikacji](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) , aby utworzyć zasady dla systemów iOS i Android. Poziom 2 (rozszerzona ochrona danych) jest zalecany do ochrony punktu odniesienia.
  2. Utwórz regułę dostępu warunkowego w obszarze [Wymagaj zatwierdzonych aplikacji i ochrony aplikacji](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection).
 
 ## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7: Konfigurowanie uwierzytelniania wieloskładnikowego i dostępu warunkowego dla gości, w tym Intune ochrony aplikacji mobilnych
@@ -171,8 +171,8 @@ Najszybszym sposobem rozpoczęcia pracy jest [skonfigurowanie automatycznej reje
 
 Możesz również skorzystać z następujących samouczków:
 
-- [Rejestrowanie urządzeń Windows w Intune przy użyciu rozwiązania Autopilot](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
-- [Używanie funkcji rejestracji urządzeń firmowych firmy Apple w usłudze Apple Business Manager (ABM) do rejestrowania urządzeń z systemem iOS/iPadOS w Intune](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
+- [Rejestrowanie urządzeń z systemem Windows w Intune przy użyciu rozwiązania Autopilot](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
+- [Rejestrowanie urządzeń z systemem iOS/iPadOS w Intune przy użyciu funkcji rejestracji urządzeń firmowych firmy Apple w programie Apple Business Manager (ABM)](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 Po zarejestrowaniu urządzeń skorzystaj ze wskazówek w temacie [Typowe zasady dostępu do tożsamości i urządzeń](./office-365-security/identity-access-policies.md) , aby utworzyć następujące zasady:
 
@@ -187,7 +187,7 @@ Jeśli szybko włączasz większość pracowników do pracy z domu, to nagłe pr
 
 Elementy sieciowe, takie jak koncentratory sieci VPN, centralne urządzenia wychodzące sieci (takie jak serwery proxy i urządzenia zapobiegające utracie danych), centralna przepustowość Internetu, obwody MPLS typu backhaul, możliwość translatora adresów sieciowych i tak dalej są nagle obciążane ze względu na obciążenie całej firmy korzystającej z nich. Efektem końcowym jest niska wydajność i produktywność w połączeniu ze słabym środowiskiem użytkownika dla użytkowników, którzy dostosowują się do pracy z domu.
 
-Niektóre zabezpieczenia, które tradycyjnie były zapewniane przez kierowanie ruchu z powrotem przez sieć firmową, są udostępniane przez aplikacje w chmurze, do których uzyskują dostęp użytkownicy. Jeśli ten krok został osiągnięty w tym artykule, zaimplementowano zestaw zaawansowanych mechanizmów kontroli zabezpieczeń w chmurze dla usług i danych Microsoft 365. Dzięki tym kontrolom możesz być gotowy do kierowania ruchu użytkowników zdalnych bezpośrednio do Office 365. Jeśli nadal potrzebujesz linku sieci VPN w celu uzyskania dostępu do innych aplikacji, możesz znacznie poprawić wydajność i środowisko użytkownika, implementując tunelowanie podzielone. Po osiągnięciu porozumienia w organizacji może to osiągnąć w ciągu dnia dobrze skoordynowany zespół ds. sieci.
+Niektóre zabezpieczenia, które tradycyjnie były zapewniane przez kierowanie ruchu z powrotem przez sieć firmową, są udostępniane przez aplikacje w chmurze, do których uzyskują dostęp użytkownicy. Jeśli ten krok został osiągnięty w tym artykule, zaimplementowano zestaw zaawansowanych mechanizmów kontroli zabezpieczeń w chmurze dla usług i danych platformy Microsoft 365. Dzięki tym kontrolom możesz być gotowy do kierowania ruchu użytkowników zdalnych bezpośrednio do Office 365. Jeśli nadal potrzebujesz linku sieci VPN w celu uzyskania dostępu do innych aplikacji, możesz znacznie poprawić wydajność i środowisko użytkownika, implementując tunelowanie podzielone. Po osiągnięciu porozumienia w organizacji może to osiągnąć w ciągu dnia dobrze skoordynowany zespół ds. sieci.
 
 Aby uzyskać więcej informacji, zobacz te zasoby w witrynie Docs:
 
@@ -205,14 +205,14 @@ Użytkownicy szkolący mogą zaoszczędzić dużo czasu i frustracji swoim użyt
 
 [Podręcznik kampanii cyberbezpieczeństwa](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) Harvard Kennedy School zawiera doskonałe wskazówki dotyczące ustanawiania silnej kultury świadomości bezpieczeństwa w organizacji, w tym szkolenia użytkowników w celu identyfikowania ataków wyłudzających informacje.
 
-Microsoft 365 udostępnia następujące zasoby ułatwiające informowanie użytkowników w organizacji:
+Platforma Microsoft 365 udostępnia następujące zasoby ułatwiające informowanie użytkowników w organizacji:
 
 ****
 
 |Koncepcja|Zasoby|
 |---|---|
 |Microsoft 365|[Dostosowywalne ścieżki szkoleniowe](/office365/customlearning/) <p>Te zasoby mogą pomóc w zebraniu szkoleń dla użytkowników końcowych w organizacji|
-|Centrum zabezpieczeń platformy Microsoft 365|[moduł Edukacja: Zabezpieczanie organizacji za pomocą wbudowanych, inteligentnych zabezpieczeń z Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Ten moduł umożliwia opisanie sposobu współdziałania funkcji zabezpieczeń Microsoft 365 oraz przedstawienie korzyści wynikających z tych funkcji zabezpieczeń.|
+|Zabezpieczenia platformy Microsoft 365|[Moduł szkoleniowy: Zabezpieczanie organizacji za pomocą wbudowanych, inteligentnych zabezpieczeń z platformy Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Ten moduł umożliwia opisanie współpracy funkcji zabezpieczeń platformy Microsoft 365 oraz przedstawienie korzyści wynikających z tych funkcji zabezpieczeń.|
 |Uwierzytelnianie wieloskładnikowe|[Weryfikacja dwuetapowa: Jaka jest dodatkowa strona weryfikacji?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Ten artykuł pomaga użytkownikom końcowym zrozumieć, czym jest uwierzytelnianie wieloskładnikowe i dlaczego jest używane w organizacji.|
 
 Oprócz tych wskazówek firma Microsoft zaleca użytkownikom podjęcie działań opisanych w tym artykule: [Ochrona konta i urządzeń przed hakerami i złośliwym oprogramowaniem](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Te akcje obejmują:
@@ -227,13 +227,13 @@ Firma Microsoft zaleca również, aby użytkownicy chronili swoje osobiste konta
 
 - [Ochrona konta Gmail za pomocą weryfikacji dwuetapowej](https://go.microsoft.com/fwlink/p/?linkid=2015688)
 
-## <a name="11-get-started-with-microsoft-defender-for-cloud-apps"></a>11: Wprowadzenie z Microsoft Defender for Cloud Apps
+## <a name="11-get-started-with-microsoft-defender-for-cloud-apps"></a>11: Rozpoczynanie pracy z Microsoft Defender for Cloud Apps
 
-[Microsoft Defender for Cloud Apps](/cloud-app-security) zapewnia bogaty wgląd, kontrolę nad przenoszeniem danych i zaawansowane analizy umożliwiające identyfikowanie i zwalczanie cyberoszertw we wszystkich usługach w chmurze. Po rozpoczęciu pracy z aplikacjami Defender dla Chmury zasady wykrywania anomalii są automatycznie włączone, ale Defender dla Chmury Apps ma początkowy okres nauki wynoszący siedem dni, podczas którego nie są zgłaszane wszystkie alerty wykrywania anomalii.
+[Microsoft Defender for Cloud Apps](/cloud-app-security) zapewnia bogaty wgląd, kontrolę nad przenoszeniem danych i zaawansowane analizy umożliwiające identyfikowanie i zwalczanie cyberoszertw we wszystkich usługach w chmurze. Po rozpoczęciu pracy z usługą Defender for Cloud Apps zasady wykrywania anomalii są automatycznie włączone, ale usługa Defender for Cloud Apps ma początkowy okres nauki wynoszący siedem dni, podczas którego nie są zgłaszane wszystkie alerty wykrywania anomalii.
 
-Wprowadzenie teraz z aplikacjami Defender dla Chmury. Później można skonfigurować bardziej zaawansowane monitorowanie i kontrolki.
+Rozpocznij pracę z usługą Defender for Cloud Apps. Później można skonfigurować bardziej zaawansowane monitorowanie i kontrolki.
 
-- [Szybki start: Wprowadzenie z aplikacjami Defender dla Chmury](/cloud-app-security/getting-started-with-cloud-app-security)
+- [Szybki start: rozpoczynanie pracy z usługą Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security)
 - [Uzyskiwanie natychmiastowej analizy behawioralnej i wykrywania anomalii](/cloud-app-security/anomaly-detection-policy)
 - [Dowiedz się więcej o Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 - [Przejrzyj nowe funkcje i możliwości](/cloud-app-security/release-notes)
@@ -241,13 +241,13 @@ Wprowadzenie teraz z aplikacjami Defender dla Chmury. Później można skonfigur
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: Monitorowanie zagrożeń i podjęcie działań
 
-Microsoft 365 obejmuje kilka sposobów monitorowania stanu i podejmowania odpowiednich działań. Najlepszym punktem wyjścia jest <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, w którym można wyświetlić [wskaźnik Microsoft Secure Score](./defender/microsoft-secure-score.md) organizacji oraz wszelkie alerty lub jednostki, które wymagają uwagi.
+Platforma Microsoft 365 obejmuje kilka sposobów monitorowania stanu i podejmowania odpowiednich działań. Najlepszym punktem wyjścia jest <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, w którym można wyświetlić [wskaźnik Microsoft Secure Score](./defender/microsoft-secure-score.md) organizacji oraz wszelkie alerty lub jednostki, które wymagają uwagi.
 
-- [Wprowadzenie z portalem Microsoft 365 Defender](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
-- [Zobacz portale zabezpieczeń w Microsoft 365](./defender/portals.md)
+- [Wprowadzenie do portalu Microsoft 365 Defender](./defender/microsoft-365-defender-portal.md)
+- [Zobacz portale zabezpieczeń na platformie Microsoft 365](./defender/portals.md)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulacje! Szybko zaimplementowano niektóre z najważniejszych zabezpieczeń, a Twoja organizacja jest znacznie bezpieczniejsza. Teraz możesz przejść jeszcze dalej dzięki funkcjom ochrony przed zagrożeniami (w tym Ochrona punktu końcowego w usłudze Microsoft Defender), możliwościom klasyfikacji i ochrony danych oraz zabezpieczaniu kont administracyjnych. Aby uzyskać dokładniejszy, metodyczny zestaw zaleceń dotyczących zabezpieczeń dla Microsoft 365, zobacz [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md).
+Gratulacje! Szybko zaimplementowano niektóre z najważniejszych zabezpieczeń, a Twoja organizacja jest znacznie bezpieczniejsza. Teraz możesz przejść jeszcze dalej dzięki funkcjom ochrony przed zagrożeniami (w tym Ochrona punktu końcowego w usłudze Microsoft Defender), możliwościom klasyfikacji i ochrony danych oraz zabezpieczaniu kont administracyjnych. Aby uzyskać dokładniejszy, metodyczny zestaw zaleceń dotyczących zabezpieczeń dla platformy Microsoft 365, zobacz [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md).
 
-Odwiedź również nową Defender dla Chmury firmy Microsoft na [docs.microsoft.com/security](/security).
+Odwiedź również nową usługę Defender for Cloud firmy Microsoft na [docs.microsoft.com/security](/security).

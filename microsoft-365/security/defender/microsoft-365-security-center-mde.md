@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: bac70dd864e1ab72fae5fbefa2a8da12cce4f6e7
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: dd8721bd8c62a99180f9e8cf34b05c5ec6c8b4c8
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667235"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617199"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Ochrona punktu końcowego w usłudze Microsoft Defender w Microsoft 365 Defender
 
@@ -57,11 +57,11 @@ Obraz i poniższa tabela zawierają listę zmian w nawigacji między Centrum zab
 | Zarządzanie konfiguracją | Zarządzanie konfiguracją |
 | Ustawienia | Ustawienia | 
 
-Ulepszona [Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal) w usłudze <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> łączy funkcje zabezpieczeń, które chronią, wykrywają, badają i reagują na zagrożenia związane z pocztą e-mail, współpracą, tożsamością i urządzeniami. Łączy to funkcje z istniejących portali zabezpieczeń firmy Microsoft, w tym Centrum zabezpieczeń usługi Microsoft Defender i centrum Office 365 Security & Compliance.
+Ulepszona [Microsoft 365 Defender](microsoft-365-defender-portal.md) w usłudze <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> łączy funkcje zabezpieczeń, które chronią, wykrywają, badają i reagują na zagrożenia związane z pocztą e-mail, współpracą, tożsamością i urządzeniami. Łączy to funkcje z istniejących portali zabezpieczeń firmy Microsoft, w tym Centrum zabezpieczeń usługi Microsoft Defender i centrum Office 365 Security & Compliance.
 
 Jeśli znasz Centrum zabezpieczeń usługi Microsoft Defender, ten artykuł ułatwia opisanie niektórych zmian i ulepszeń w Microsoft 365 Defender. Istnieją jednak pewne nowe i zaktualizowane elementy, o których należy pamiętać.
 
-Historycznie [Centrum zabezpieczeń usługi Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/portal-overview) był domem dla Ochrona punktu końcowego w usłudze Microsoft Defender. Enterprise zespoły ds. zabezpieczeń używały go do monitorowania i reagowania na alerty o potencjalnych zaawansowanych trwałych działaniach związanych z zagrożeniami lub naruszeniach danych. Aby zmniejszyć liczbę portali, Microsoft 365 Defender będzie miejscem do monitorowania zabezpieczeń i zarządzania nimi w tożsamościach, danych, urządzeniach, aplikacjach i infrastrukturze firmy Microsoft.
+Historycznie [Centrum zabezpieczeń usługi Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/portal-overview) był domem dla Ochrona punktu końcowego w usłudze Microsoft Defender. Zespoły ds. zabezpieczeń przedsiębiorstwa używały go do monitorowania i reagowania na alerty potencjalnych zaawansowanych trwałych zagrożeń lub naruszeń danych. Aby zmniejszyć liczbę portali, Microsoft 365 Defender będzie miejscem do monitorowania zabezpieczeń i zarządzania nimi w tożsamościach, danych, urządzeniach, aplikacjach i infrastrukturze firmy Microsoft.
 
 Ochrona punktu końcowego w usłudze Microsoft Defender w Microsoft 365 Defender obsługuje [udzielanie dostępu do zarządzanych dostawców usług zabezpieczeń w](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) taki sam sposób, [jak w przypadku Centrum zabezpieczeń usługi Microsoft Defender](mssp-access.md).
 
@@ -70,8 +70,8 @@ Ochrona punktu końcowego w usłudze Microsoft Defender w Microsoft 365 Defender
 
 > [!Note]
 > Microsoft 365 Defender jest niedostępna dla:
->- us Government Community Cloud (GCC)
->- Us Government Community Cloud High (GCC High)
+>- Us Government Community Cloud (GCC)
+>- US Government Community Cloud High (GCC High)
 >- Departament Obrony USA
 >- Wszystkie instytucje rządowe USA z licencjami komercyjnymi
 
@@ -118,7 +118,7 @@ Ta tabela zawiera krótkie odwołanie do zmian między Centrum zabezpieczeń us�
 | Kondycja  |  Obecnie łączy się ze stroną "Kondycja usługi" w [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com/). |
 | Ustawienia |  Zarządzaj ustawieniami Microsoft 365 Defender, punktów końcowych, współpracy & poczty e-mail, tożsamości i odnajdywania urządzeń.   |
 
-## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365 nawigacji i możliwości zabezpieczeń
+## <a name="microsoft-365-security-navigation-and-capabilities"></a>Nawigacja i możliwości zabezpieczeń platformy Microsoft 365
 
 Nawigacja po lewej stronie lub pasek szybkiego uruchamiania będą wyglądać znajomo. Istnieją jednak pewne nowe i zaktualizowane elementy w portalu Microsoft 365 Defender. 
 
@@ -170,7 +170,7 @@ Wyświetlanie raportów, zmienianie ustawień i modyfikowanie ról użytkownikó
 
 ### <a name="siem-api-connections"></a>Połączenia interfejsu API SIEM
 
-Jeśli używasz [interfejsu API SIEM usługi Defender for Endpoint](../defender-endpoint/enable-siem-integration.md), możesz nadal to robić. Dodaliśmy nowe linki do ładunku interfejsu API, które wskazują stronę alertu lub stronę zdarzenia w portalu zabezpieczeń Microsoft 365. Nowe pola interfejsu API obejmują pola LinkToMTP i IncidentLinkToMTP. Aby uzyskać więcej informacji, zobacz [Przekierowywanie kont z Ochrona punktu końcowego w usłudze Microsoft Defender do Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
+Jeśli używasz [interfejsu API SIEM usługi Defender for Endpoint](../defender-endpoint/enable-siem-integration.md), możesz nadal to robić. Dodaliśmy nowe linki do ładunku interfejsu API, które wskazują stronę alertu lub stronę zdarzenia w portalu zabezpieczeń platformy Microsoft 365. Nowe pola interfejsu API obejmują pola LinkToMTP i IncidentLinkToMTP. Aby uzyskać więcej informacji, zobacz [Przekierowywanie kont z Ochrona punktu końcowego w usłudze Microsoft Defender do Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
 
 ### <a name="email-alerts"></a>Alerty poczty e-mail
 

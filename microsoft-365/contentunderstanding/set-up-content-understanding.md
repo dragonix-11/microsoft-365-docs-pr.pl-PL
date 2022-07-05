@@ -15,12 +15,12 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Konfigurowanie usługi SharePoint Syntex
-ms.openlocfilehash: 97d12527667de1583f787844da11a4ad875f34ba
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: 3511719e4f396141217a2b4711f642c675ac781e
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463148"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617243"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Konfigurowanie usługi SharePoint Syntex
 
@@ -28,20 +28,20 @@ Administratorzy mogą użyć <a href="https://go.microsoft.com/fwlink/p/?linkid=
 
 Przed rozpoczęciem należy wziąć pod uwagę następujące kwestie:
 
-- W których SharePoint lokacjach można włączyć przetwarzanie formularzy? Wszystkie z nich, niektóre lub wybrane witryny?
+- W których witrynach programu SharePoint można włączyć przetwarzanie formularzy? Wszystkie z nich, niektóre lub wybrane witryny?
 - Jak określisz nazwę domyślnego centrum zawartości?
 
 Ustawienia można zmienić po początkowej konfiguracji w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>.
 
 Przed rozpoczęciem instalacji upewnij się, że zaplanowano najlepszy sposób konfigurowania i konfigurowania zrozumienia zawartości w środowisku. Na przykład należy podjąć następujące decyzje:
 
-- Witryny SharePoint, w których chcesz włączyć przetwarzanie formularzy — wszystkie z nich, niektóre lub wybrane witryny
+- Witryny programu SharePoint, w których chcesz włączyć przetwarzanie formularzy — wszystkie z nich, niektóre lub wybrane witryny
 - Nazwa i administratorzy centrum zawartości
 
 ## <a name="requirements"></a>Wymagania 
 
 > [!NOTE]
-> Aby uzyskać dostęp do Centrum administracyjne platformy Microsoft 365 i skonfigurować SharePoint Syntex, musisz mieć uprawnienia administratora globalnego lub administratora SharePoint.
+> Aby uzyskać dostęp do Centrum administracyjne platformy Microsoft 365 i skonfigurować SharePoint Syntex, musisz mieć uprawnienia administratora globalnego lub administratora programu SharePoint.
 
 Jako administrator możesz również wprowadzać zmiany w wybranych ustawieniach w dowolnym momencie po skonfigurowaniu i w całym obszarze zarządzania zawartością w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>.
 
@@ -57,13 +57,13 @@ Użytkownicy tworzący modele w [witrynie centrum zawartości](/microsoft-365/co
 
 ### <a name="licensing"></a>Licencjonowanie
 
-Aby korzystać z SharePoint Syntex, organizacja musi mieć subskrypcję do SharePoint Syntex, a każdy użytkownik musi mieć przypisane następujące licencje:
+Aby korzystać z SharePoint Syntex, organizacja musi mieć subskrypcję do SharePoint Syntex, a każdy użytkownik musi mieć przypisane licencje. SharePoint Syntex licencje obejmują następujące aplikacje, które muszą być przypisane:
 
 - SharePoint Syntex
 - SharePoint Syntex — typ SPO
 - Usługa Common Data Service dla SharePoint Syntex
 
-Do korzystania z przetwarzania formularzy potrzebne są również środki na korzystanie z narzędzia AI Builder. Jeśli masz co najmniej 300 licencjonowanych użytkowników, co miesiąc przydzielane są środki narzędzia AI Builder.
+Do korzystania z przetwarzania formularzy potrzebne są również środki na korzystanie z narzędzia AI Builder. Dla każdego licencjonowanego użytkownika SharePoint Syntex co miesiąc przydzielane są środki narzędzia AI Builder.
 
 Aby uzyskać szczegółowe informacje na temat licencjonowania SharePoint Syntex, zobacz [licencjonowanie SharePoint Syntex](syntex-licensing.md)
 
@@ -73,17 +73,17 @@ Aby uzyskać szczegółowe informacje na temat licencjonowania SharePoint Syntex
 
 2. W sekcji **Pliki i zawartość** wybierz pozycję **Automatyzuj zrozumienie zawartości**. Pamiętaj, że bieżąca dostępność środków narzędzia AI Builder jest **wyświetlana w sekcji Na pierwszy rzut oka** .<br/>
 
-3. Na stronie **Automatyzowanie zrozumienia zawartości** kliknij **pozycję Wprowadzenie**, aby przejść przez proces konfiguracji. <br/>
+3. Na stronie **Automatyzowanie zrozumienia zawartości** kliknij pozycję **Rozpocznij** , aby przejść przez proces konfiguracji. <br/>
 
     > [!div class="mx-imgBorder"]
     > ![Rozpocznij instalację.](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. Na stronie **Konfigurowanie przetwarzania formularzy** możesz wybrać, czy chcesz zezwolić użytkownikom na tworzenie modeli przetwarzania formularzy w określonych bibliotekach dokumentów SharePoint. Opcja menu będzie dostępna na wstążce biblioteki dokumentów, aby **utworzyć model przetwarzania formularzy** w SharePoint bibliotekach dokumentów, w których jest włączona.
+4. Na stronie **Konfigurowanie przetwarzania formularzy** możesz wybrać, czy chcesz umożliwić użytkownikom tworzenie modeli przetwarzania formularzy w określonych bibliotekach dokumentów programu SharePoint. Opcja menu będzie dostępna na wstążce biblioteki dokumentów w celu **utworzenia modelu przetwarzania formularzy** w bibliotekach dokumentów programu SharePoint, w których jest włączona.
  
-     W obszarze **Które biblioteki SharePoint powinny wyświetlać opcję utworzenia modelu przetwarzania formularzy**, możesz wybrać następujące opcje:</br>
-      - **Biblioteki we wszystkich SharePoint lokacjach**, aby udostępnić je wszystkim bibliotekom SharePoint w organizacji.</br>
-      - **Biblioteki w wybranych witrynach SharePoint**, a następnie wybierz witryny, w których chcesz je udostępnić, lub przekaż listę maksymalnie 50 witryn.</br>
-      - **Brak bibliotek SharePoint**, jeśli nie chcesz udostępniać ich w żadnych witrynach (możesz to zmienić po skonfigurowaniu).
+     W przypadku **których bibliotek programu SharePoint powinna być wyświetlana opcja utworzenia modelu przetwarzania formularzy**, możesz wybrać następujące opcje:</br>
+      - **Biblioteki we wszystkich witrynach programu SharePoint** , aby udostępnić je wszystkim bibliotekom programu SharePoint w organizacji.</br>
+      - **Biblioteki w wybranych witrynach programu SharePoint**, a następnie wybierz witryny, w których chcesz je udostępnić, lub przekaż listę maksymalnie 50 witryn.</br>
+      - **Brak bibliotek programu SharePoint** , jeśli nie chcesz udostępniać ich w żadnych witrynach (możesz to zmienić po skonfigurowaniu).
 
    > [!div class="mx-imgBorder"]
    > ![Skonfiguruj opcje lokacji przetwarzania formularzy.](../media/content-understanding/admin-configforms.png)
@@ -101,7 +101,7 @@ Aby uzyskać szczegółowe informacje na temat licencjonowania SharePoint Syntex
 
     Kliknij **Dalej**.
 
-5. Na stronie **Tworzenie centrum zawartości** możesz utworzyć witrynę centrum zawartości SharePoint, w której użytkownicy mogą tworzyć modele zrozumienia dokumentów i zarządzać nimi. Jeśli wcześniej utworzono centrum zawartości z centrum administracyjnego SharePoint, te informacje zostaną wyświetlone tutaj i możesz po prostu wybrać pozycję **Dalej**.
+5. Na stronie **Tworzenie centrum zawartości** możesz utworzyć witrynę centrum zawartości programu SharePoint, w której użytkownicy mogą tworzyć modele zrozumienia dokumentów i zarządzać nimi. Jeśli wcześniej utworzono centrum zawartości z poziomu centrum administracyjnego programu SharePoint, te informacje zostaną wyświetlone tutaj i możesz po prostu wybrać pozycję **Dalej**.
 
     1. W polu **Nazwa witryny** wpisz nazwę, którą chcesz nadać witrynie centrum zawartości.
     

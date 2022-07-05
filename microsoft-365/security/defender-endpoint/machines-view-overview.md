@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81ff80776d3b12e4ec90d6d2c2473389686ae9c9
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 232f27b9edb23e932d49cf33e026d22abfbe72dd
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554472"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617331"
 ---
 # <a name="device-inventory"></a>Spisz urządzeń
 
@@ -83,6 +83,11 @@ Użyj kolumny **Stan dołączania**, aby sortować i filtrować według odnalezi
 Na **kartach Urządzenia sieciowe** i **Urządzenia IoT** zobaczysz również informacje, takie jak dostawca, model i typ urządzenia:
 
 ![Obraz przedstawiający listę urządzeń sieciowych.](images/device-inventory-networkdevices.png)
+
+> [!NOTE]
+> Dostępne są integracje odnajdywania urządzeń z usługami [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) i [Corelight](https://corelight.com/integrations/iot-security) , które ułatwiają lokalizowanie, identyfikowanie i zabezpieczanie pełnego spisu zasobów OT/IOT. Urządzenia odnalezione przy użyciu tych integracji będą wyświetlane na karcie **Urządzenia IoT** . Aby uzyskać więcej informacji, zobacz [Integracje odnajdywania urządzeń](device-discovery.md#device-discovery-integrations).
+>
+> Po skonfigurowaniu usługi Defender for IoT można również wyświetlić urządzenia w tym miejscu. Zobacz [Zarządzanie urządzeniami IoT przy użyciu spisu urządzeń dla organizacji](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
 
 W górnej części każdej karty spisu urządzeń można zobaczyć całkowitą liczbę urządzeń, liczbę urządzeń, które nie zostały jeszcze dołączone, oraz liczbę urządzeń, które zostały zidentyfikowane jako większe zagrożenie dla organizacji. Te informacje ułatwiają określanie priorytetów urządzeń pod kątem ulepszeń stanu zabezpieczeń.
 

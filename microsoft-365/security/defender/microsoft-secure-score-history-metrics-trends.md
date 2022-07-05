@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 03a7a070d574ec18a12c3e70d5cef20d2161490b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3604f163ddf8a14098d366f48aca2918b09f1e9e
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663759"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617059"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Śledzenie historii bezpiecznego wyniku firmy Microsoft i osiąganie celów
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Wskaźnik bezpieczeństwa firmy Microsoft](microsoft-secure-score.md) to miara stanu zabezpieczeń organizacji, z większą liczbą wskazującą na więcej podjętych działań ulepszeń. Można go znaleźć w https://security.microsoft.com/securescore [portalu Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal).
+[Wskaźnik bezpieczeństwa firmy Microsoft](microsoft-secure-score.md) to miara stanu zabezpieczeń organizacji, z większą liczbą wskazującą na więcej podjętych działań ulepszeń. Można go znaleźć w https://security.microsoft.com/securescore [portalu Microsoft 365 Defender](microsoft-365-defender-portal.md).
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>Uzyskiwanie wglądu w działania, które wpłynęły na wynik
 

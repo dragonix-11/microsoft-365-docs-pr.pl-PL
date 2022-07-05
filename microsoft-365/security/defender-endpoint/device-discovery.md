@@ -20,18 +20,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 68503556a1d2f3330e47fe601a303363a3f28896
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2e4939eb21a62c99ecf6572060213c87c2c01176
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623238"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617309"
 ---
 # <a name="device-discovery-overview"></a>Omówienie wykrywania urządzeń
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
+
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -39,7 +40,7 @@ Ochrona środowiska wymaga spisu urządzeń znajdujących się w sieci. Jednak m
 
 Ochrona punktu końcowego w usłudze Microsoft Defender zapewnia funkcję odnajdywania urządzeń, która ułatwia znajdowanie niezarządzanych urządzeń połączonych z siecią firmową bez konieczności stosowania dodatkowych urządzeń lub kłopotliwych zmian procesów. Odnajdywanie urządzeń używa dołączonych punktów końcowych w sieci do zbierania, sondowania lub skanowania sieci w celu odnalezienia urządzeń niezarządzanych. Funkcja odnajdywania urządzeń umożliwia odnajdywanie następujących elementów:
 
-- Enterprise punkty końcowe (stacje robocze, serwery i urządzenia przenośne), które nie zostały jeszcze dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender
+- Punkty końcowe przedsiębiorstwa (stacje robocze, serwery i urządzenia przenośne), które nie zostały jeszcze dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender
 - Urządzenia sieciowe, takie jak routery i przełączniki
 - Urządzenia IoT, takie jak drukarki i aparaty fotograficzne
 
@@ -107,7 +108,7 @@ Aby sprostać wyzwaniu, które polega na uzyskaniu wystarczającej widoczności 
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Ocena luk w zabezpieczeniach na odnalezionych urządzeniach
 
-Luki w zabezpieczeniach i zagrożenia na urządzeniach oraz inne odnalezione urządzenia niezarządzane w sieci są częścią bieżących przepływów programu TVM w obszarze "Rekomendacje zabezpieczeń" i są reprezentowane na stronach jednostek w portalu.
+Luki w zabezpieczeniach i zagrożenia na urządzeniach, a także inne odnalezione urządzenia niezarządzane w sieci są częścią bieżących przepływów programu TVM w obszarze "Zalecenia dotyczące zabezpieczeń" i są reprezentowane na stronach jednostek w portalu.
 Wyszukaj rekomendacje dotyczące zabezpieczeń dotyczące protokołu "SSH", aby znaleźć luki w zabezpieczeniach protokołu SSH powiązane z urządzeniami niezarządzanymi i zarządzanymi.
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="Pulpit nawigacyjny zaleceń dotyczących zabezpieczeń" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::

@@ -19,12 +19,12 @@ description: Dowiedz się więcej na temat inteligentnych raportów i szczegół
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54965f7d439f753a1d12f91b584718a52620b51a
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 3dc90846f68d5e3ef5a1b2a003f5afb69cab3c60
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647408"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617091"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Inteligentne raporty i szczegółowe informacje w Centrum zabezpieczeń i zgodności
 
@@ -40,7 +40,7 @@ Zespoły ds. zabezpieczeń mogą używać inteligentnych raportów i szczegóło
 Inteligentne raporty i szczegółowe informacje na **pulpicie nawigacyjnym** mają następujące możliwości:
 
 - Wyróżnij obszary problemów.
-- Rekomendacje i linki do wyświetlania i eksplorowania danych.
+- Zalecenia i linki do wyświetlania i eksplorowania danych.
 - Wykonaj szybką akcję.
 
 Jeśli na przykład użytkownicy w organizacji nagle zgłaszają dużą liczbę wiadomości e-mail jako spam, należy zweryfikować ustawienia zasad ochrony przed spamem.
@@ -53,10 +53,10 @@ W poniższej tabeli wymieniono raporty dostępne na **pulpicie nawigacyjnym**:
 |---|---|---|
 |**Wszystko w górę** <p> Najważniejsze szczegółowe informacje i zalecenia oraz linki do dostępnych raportów zabezpieczeń i raportów zgodności.|<https://protection.office.com/insightdashboard>|[Raporty w Centrum zgodności & zabezpieczeń](../../compliance/reports-in-security-and-compliance.md)|
 |**Raporty współpracy & poczty e-mail** <p> Wykrywanie zagrożeń, trendy złośliwego oprogramowania, najczęściej docelowi użytkownicy, szczegółowe informacje o wysłanych i odebranych wiadomościach e-mail i nie tylko.|<https://security.microsoft.com/emailandcollabreport>|[Wyświetlanie raportów zabezpieczeń poczty e-mail](view-email-security-reports.md) <p> [Wyświetlanie raportów dla Ochrona usługi Office 365 w usłudze Defender](view-reports-for-mdo.md)|
-|**Eksplorator** (nazywany również eksploratorem zagrożeń) lub **wykrywanie w czasie rzeczywistym** <p> Wykryto podejrzenie złośliwego oprogramowania w wiadomościach e-mail i plikach w Microsoft 365.|<https://security.microsoft.com/threatexplorer> <p> <https://security.microsoft.com/realtimereports>|[Eksplorator zagrożeń (lub wykrywanie w czasie rzeczywistym)](threat-explorer.md)|
+|**Eksplorator** (nazywany również eksploratorem zagrożeń) lub **wykrywanie w czasie rzeczywistym** <p> Wykryto podejrzenie złośliwego oprogramowania w wiadomościach e-mail i plikach na platformie Microsoft 365.|<https://security.microsoft.com/threatexplorer> <p> <https://security.microsoft.com/realtimereports>|[Eksplorator zagrożeń (lub wykrywanie w czasie rzeczywistym)](threat-explorer.md)|
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[portal Microsoft 365 Defender](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
+[portal Microsoft 365 Defender](../defender/microsoft-365-defender-portal.md)
 
 [Ochrona przed zagrożeniami w Office 365](protect-against-threats.md)

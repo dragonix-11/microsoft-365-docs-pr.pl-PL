@@ -16,22 +16,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Wprowadzenie przy użyciu funkcji zautomatyzowanego badania i reagowania w Ochrona usługi Office 365 w usłudze Microsoft Defender.
+description: Rozpocznij korzystanie z funkcji zautomatyzowanego badania i reagowania w Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca64509321ff43bbe8b7baf7ec7dfa270d9afdc4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0fda154f8eb52ddab024a7f5bb02f980c9a05894
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941528"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617157"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Zautomatyzowane badanie i reagowanie (AIR) w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Dotyczy**
 - [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
@@ -81,25 +81,25 @@ Funkcje AIR są uwzględniane w [Ochrona usługi Office 365 w usłudze Microsoft
 - [Ochrona przed złośliwym oprogramowaniem](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 - [Ochrona przed wyłudzaniem informacji](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [Ochrona przed spamem](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-- [Sejf łącza i załączniki Sejf](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [Bezpieczne linki i bezpieczne załączniki](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
 Ponadto sprawdź [zasady alertów organizacji](../../compliance/alert-policies.md), zwłaszcza [zasady domyślne w kategorii Zarządzanie zagrożeniami](../../compliance/alert-policies.md#default-alert-policies).
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>Które zasady alertów wyzwalają zautomatyzowane badania?
 
-Microsoft 365 udostępnia wiele wbudowanych zasad alertów, które ułatwiają identyfikowanie zagrożeń związanych z uprawnieniami administratora Exchange, złośliwym oprogramowaniem, potencjalnymi zagrożeniami zewnętrznymi i wewnętrznymi oraz zagrożeniami związanymi z ładem informacyjnym. Niektóre z [domyślnych zasad alertów](../../compliance/alert-policies.md#default-alert-policies) mogą wyzwalać zautomatyzowane badania. W poniższej tabeli opisano alerty, które wyzwalają zautomatyzowane badania, ich ważność w portalu Microsoft 365 Defender i sposób ich generowania:
+Platforma Microsoft 365 udostępnia wiele wbudowanych zasad alertów, które ułatwiają identyfikowanie zagrożeń związanych z uprawnieniami administratora programu Exchange, złośliwym oprogramowaniem, potencjalnymi zagrożeniami zewnętrznymi i wewnętrznymi oraz zagrożeniami związanymi z ładem informacyjnym. Niektóre z [domyślnych zasad alertów](../../compliance/alert-policies.md#default-alert-policies) mogą wyzwalać zautomatyzowane badania. W poniższej tabeli opisano alerty, które wyzwalają zautomatyzowane badania, ich ważność w portalu Microsoft 365 Defender i sposób ich generowania:
 
-|Alert|Ważności|Sposób generowania alertu|
+|Alert|Waga|Sposób generowania alertu|
 |---|---|---|
-|Wykryto potencjalnie złośliwe kliknięcie adresu URL|**High (Wysoki)**|Ten alert jest generowany, gdy wystąpi dowolny z następujących elementów: <ul><li>Użytkownik chroniony przez [Sejf Linki](safe-links.md) w organizacji klika złośliwy link</li><li>Zmiany werdyktów dla adresów URL są identyfikowane przez Ochrona usługi Office 365 w usłudze Microsoft Defender</li><li>Użytkownicy zastępują strony ostrzegawcze linków Sejf (na podstawie [zasad linków Sejf](set-up-safe-links-policies.md) organizacji).</li></ul> <p> Aby uzyskać więcej informacji na temat zdarzeń wyzwalających ten alert, zobacz [Konfigurowanie zasad linków Sejf](set-up-safe-links-policies.md).|
-|Wiadomość e-mail jest zgłaszana przez użytkownika jako złośliwe oprogramowanie lub phish|**Informacyjne**|Ten alert jest generowany, gdy użytkownicy w organizacji zgłaszają komunikaty jako wiadomość e-mail wyłudzającą informacje przy użyciu [dodatku Komunikat raportu](enable-the-report-message-add-in.md) lub [dodatku Wyłudzanie informacji o raportach](enable-the-report-phish-add-in.md).|
-|Wiadomości e-mail zawierające złośliwe oprogramowanie są usuwane po dostarczeniu|**Informacyjne**|Ten alert jest generowany, gdy wszystkie wiadomości e-mail zawierające złośliwe oprogramowanie są dostarczane do skrzynek pocztowych w organizacji. W przypadku wystąpienia tego zdarzenia firma Microsoft usuwa zainfekowane wiadomości z Exchange Online skrzynek pocztowych przy użyciu [automatycznego przeczyszczania o wartości zero godzin (ZAP).](zero-hour-auto-purge.md)|
-|Wiadomości e-mail zawierające fałszywe adresy URL są usuwane po dostarczeniu|**Informacyjne**|Ten alert jest generowany, gdy wszystkie wiadomości zawierające phish są dostarczane do skrzynek pocztowych w organizacji. W przypadku wystąpienia tego zdarzenia firma Microsoft usuwa zainfekowane wiadomości z Exchange Online skrzynek pocztowych przy użyciu [zap](zero-hour-auto-purge.md).|
+|Wykryto potencjalnie złośliwe kliknięcie adresu URL|**High (Wysoki)**|Ten alert jest generowany, gdy wystąpi dowolny z następujących elementów: <ul><li>Użytkownik chroniony bezpiecznymi [linkami](safe-links.md) w organizacji klika złośliwy link</li><li>Zmiany werdyktów dla adresów URL są identyfikowane przez Ochrona usługi Office 365 w usłudze Microsoft Defender</li><li>Użytkownicy zastępują strony ostrzegawcze bezpiecznych linków (na podstawie [zasad bezpiecznych łączy](set-up-safe-links-policies.md) w organizacji.</li></ul> <p> Aby uzyskać więcej informacji na temat zdarzeń wyzwalających ten alert, zobacz [Konfigurowanie zasad bezpiecznych łączy](set-up-safe-links-policies.md).|
+|Wiadomość e-mail jest zgłaszana przez użytkownika jako złośliwe oprogramowanie lub phish|**Informacyjny**|Ten alert jest generowany, gdy użytkownicy w organizacji zgłaszają komunikaty jako wiadomość e-mail wyłudzającą informacje przy użyciu [dodatku Komunikat raportu](enable-the-report-message-add-in.md) lub [dodatku Wyłudzanie informacji o raportach](enable-the-report-phish-add-in.md).|
+|Wiadomości e-mail zawierające złośliwe oprogramowanie są usuwane po dostarczeniu|**Informacyjny**|Ten alert jest generowany, gdy wszystkie wiadomości e-mail zawierające złośliwe oprogramowanie są dostarczane do skrzynek pocztowych w organizacji. W przypadku wystąpienia tego zdarzenia firma Microsoft usuwa zainfekowane wiadomości z Exchange Online skrzynek pocztowych przy użyciu [automatycznego przeczyszczania o wartości zero godzin (ZAP).](zero-hour-auto-purge.md)|
+|Wiadomości e-mail zawierające fałszywe adresy URL są usuwane po dostarczeniu|**Informacyjny**|Ten alert jest generowany, gdy wszystkie wiadomości zawierające phish są dostarczane do skrzynek pocztowych w organizacji. W przypadku wystąpienia tego zdarzenia firma Microsoft usuwa zainfekowane wiadomości z Exchange Online skrzynek pocztowych przy użyciu [zap](zero-hour-auto-purge.md).|
 |Wykryto podejrzane wzorce wysyłania wiadomości e-mail|**Średni**|Ten alert jest generowany, gdy ktoś w organizacji wysłał podejrzaną wiadomość e-mail i istnieje ryzyko ograniczenia wysyłania wiadomości e-mail. Alert jest wczesnym ostrzeżeniem dla zachowania, które może wskazywać, że konto zostało naruszone, ale nie jest wystarczająco poważne, aby ograniczyć użytkownika. <p> Chociaż jest to rzadkie, alert wygenerowany przez te zasady może być anomalią. Warto jednak [sprawdzić, czy konto użytkownika zostało naruszone](responding-to-a-compromised-email-account.md).|
-|Użytkownik nie może wysyłać wiadomości e-mail|**High (Wysoki)**|Ten alert jest generowany, gdy ktoś w organizacji nie może wysyłać poczty wychodzącej. Ten alert zazwyczaj jest wynikiem [naruszenia zabezpieczeń konta e-mail](responding-to-a-compromised-email-account.md). <p> Aby uzyskać więcej informacji na temat użytkowników z ograniczeniami, zobacz [Usuwanie zablokowanych użytkowników z portalu Użytkownicy z ograniczeniami w Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
+|Użytkownik nie może wysyłać wiadomości e-mail|**High (Wysoki)**|Ten alert jest generowany, gdy ktoś w organizacji nie może wysyłać poczty wychodzącej. Ten alert zazwyczaj jest wynikiem [naruszenia zabezpieczeń konta e-mail](responding-to-a-compromised-email-account.md). <p> Aby uzyskać więcej informacji na temat użytkowników z ograniczeniami, zobacz [Usuwanie zablokowanych użytkowników z portalu Użytkownicy z ograniczeniami w usłudze Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
 
 > [!TIP]
-> Aby dowiedzieć się więcej o zasadach alertów lub edytować ustawienia domyślne, zobacz [Zasady alertów w portalu zgodności usługi Microsoft Purview](../../compliance/alert-policies.md).
+> Aby dowiedzieć się więcej o zasadach alertów lub edytować ustawienia domyślne, zobacz [Zasady alertów w portal zgodności Microsoft Purview](../../compliance/alert-policies.md).
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>Wymagane uprawnienia do korzystania z funkcji AIR
 
@@ -107,8 +107,8 @@ Uprawnienia są przyznawane za pośrednictwem niektórych ról, takich jak te op
 
 |Zadanie|Wymagane role|
 |---|---|
-|Konfigurowanie funkcji AIR|Jedna z następujących ról: <ul><li>Administrator globalny</li><li>Administrator zabezpieczeń</li></ul> <p> Te role można przypisać w [Azure Active Directory](/azure/active-directory/roles/permissions-reference) lub w [portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
-|Rozpocznij automatyczne badanie <p> --- lub --- <p> Zatwierdzanie lub odrzucanie zalecanych akcji|Jedna z następujących ról, przypisana w [Azure Active Directory](/azure/active-directory/roles/permissions-reference) lub w [portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md): <ul><li>Administrator globalny</li><li>Administrator zabezpieczeń</li><li>Operator zabezpieczeń</li><li>Czytelnik zabezpieczeń <br> --- i --- </li><li>Wyszukiwanie i przeczyszczanie (ta rola jest przypisywana tylko w [portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Może być konieczne utworzenie nowej grupy ról **współpracy & poczty e-mail** i dodanie roli Wyszukaj i przeczyszczanie do nowej grupy ról.</li></ul>|
+|Konfigurowanie funkcji AIR|Jedna z następujących ról: <ul><li>Administrator globalny</li><li>Administrator zabezpieczeń</li></ul> <p> Te role można przypisać w [usłudze Azure Active Directory](/azure/active-directory/roles/permissions-reference) lub w [portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
+|Rozpocznij automatyczne badanie <p> --- lub --- <p> Zatwierdzanie lub odrzucanie zalecanych akcji|Jedna z następujących ról, przypisana w [usłudze Azure Active Directory](/azure/active-directory/roles/permissions-reference) lub w [portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md): <ul><li>Administrator globalny</li><li>Administrator zabezpieczeń</li><li>Operator zabezpieczeń</li><li>Czytelnik zabezpieczeń <br> --- i --- </li><li>Wyszukiwanie i przeczyszczanie (ta rola jest przypisywana tylko w [portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Może być konieczne utworzenie nowej grupy ról **współpracy & poczty e-mail** i dodanie roli Wyszukaj i przeczyszczanie do nowej grupy ról.</li></ul>|
 
 ## <a name="required-licenses"></a>Wymagane licencje
 
@@ -120,7 +120,7 @@ Ochrona usługi Office 365 w usłudze Microsoft Defender licencje [planu 2](defe
 
 ## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Zmiany pojawią się wkrótce w portalu Microsoft 365 Defender
 
-Jeśli korzystasz już z funkcji AIR w Ochrona usługi Office 365 w usłudze Microsoft Defender, zobaczysz pewne zmiany w [ulepszonym portalu Microsoft 365 Defender](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal).
+Jeśli korzystasz już z funkcji AIR w Ochrona usługi Office 365 w usłudze Microsoft Defender, zobaczysz pewne zmiany w [ulepszonym portalu Microsoft 365 Defender](../defender/microsoft-365-defender-portal.md).
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centrum ujednoliconej akcji" lightbox="../../media/m3d-action-center-unified.png":::
 

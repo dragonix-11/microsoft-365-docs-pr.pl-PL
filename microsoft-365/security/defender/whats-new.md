@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ed3d06e1719b51d0914c89e6283c8b53c2ab0812
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 4f2ab696b728244e495ec04933b83eaafeeb3db0
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530521"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617021"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Co nowego w usłudze Microsoft 365 Defender
 
@@ -134,7 +134,7 @@ Aktualizacje produktów i ważne powiadomienia można również uzyskać za poś
 
 - Microsoft 365 Defender
 
-  Ulepszony portal [Microsoft 365 Defender](https://security.microsoft.com) jest teraz dostępny. To nowe środowisko łączy usługę Defender for Endpoint, Ochrona usługi Office 365 w usłudze Defender, Defender for Identity i nie tylko w jeden portal. Jest to nowy dom do zarządzania mechanizmami kontroli zabezpieczeń. [Dowiedz się, co nowego](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
+  Ulepszony portal [Microsoft 365 Defender](https://security.microsoft.com) jest teraz dostępny. To nowe środowisko łączy usługę Defender for Endpoint, Ochrona usługi Office 365 w usłudze Defender, Defender for Identity i nie tylko w jeden portal. Jest to nowy dom do zarządzania mechanizmami kontroli zabezpieczeń. [Dowiedz się, co nowego](microsoft-365-defender-portal.md).
 
 - [Microsoft 365 Defender raport analizy zagrożeń](threat-analytics.md)
 

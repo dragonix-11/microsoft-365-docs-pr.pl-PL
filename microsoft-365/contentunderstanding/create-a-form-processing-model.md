@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Dowiedz się, jak utworzyć model przetwarzania formularzy w SharePoint Syntex.
-ms.openlocfilehash: bf0a15894e7b9bbc4905a0372d557e1880650e84
-ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
+ms.openlocfilehash: b44dc34b2b57c75f5fefea074cd74fa0b686bcaa
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65349814"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617221"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Tworzenie modelu przetwarzania formularzy w usłudze Microsoft SharePoint Syntex
 
@@ -29,7 +29,7 @@ ms.locfileid: "65349814"
 
 </br>
 
-Korzystając z narzędzia [AI Builder](/ai-builder/overview) — funkcji w usłudze Microsoft Power Apps — użytkownicy SharePoint Syntex mogą tworzyć [model przetwarzania formularzy](form-processing-overview.md) bezpośrednio z biblioteki dokumentów SharePoint. 
+Korzystanie z [narzędzia AI Builder](/ai-builder/overview) — funkcji w usłudze Microsoft Power Apps — SharePoint Syntex użytkownicy mogą tworzyć [model przetwarzania formularzy](form-processing-overview.md) bezpośrednio z biblioteki dokumentów programu SharePoint. 
 
 Tworzenie modelu przetwarzania formularzy obejmuje następujące kroki:
 
@@ -41,7 +41,7 @@ Tworzenie modelu przetwarzania formularzy obejmuje następujące kroki:
 
 ## <a name="requirements"></a>Wymagania
 
-Model przetwarzania formularzy można utworzyć tylko w SharePoint bibliotekach dokumentów, dla których jest włączony. Jeśli przetwarzanie formularzy jest włączone, możesz wyświetlić menu **AutomateAI** **BuilderUtwórz** >  **model do przetwarzania formularzy** w bibliotece  >  dokumentów. Jeśli potrzebujesz włączonego przetwarzania w bibliotece dokumentów, musisz skontaktować się z administratorem SharePoint.
+Model przetwarzania formularzy można utworzyć tylko w bibliotekach dokumentów programu SharePoint, dla których jest włączony. Jeśli przetwarzanie formularzy jest włączone, możesz wyświetlić menu Automate AI Builder Create a model to process forms (Automate **AI Builder** > **Create a model to process forms** ) w **bibliotece** >  dokumentów. Jeśli potrzebujesz włączonego przetwarzania w bibliotece dokumentów, musisz skontaktować się z administratorem programu SharePoint.
 
 ![Zrzut ekranu przedstawiający model narzędzia AI Builder.](../media/content-understanding/create-ai-builder-model2.png)
 
@@ -57,7 +57,7 @@ Pierwszym krokiem tworzenia modelu przetwarzania formularzy jest nazwa modelu, z
 
     ![Zrzut ekranu przedstawiający panel Tworzenie modelu do przetwarzania formularzy.](../media/content-understanding/new-form-model2.png) 
 
-3. Teraz możesz automatycznie wyodrębniać i zapisywać informacje z *kolekcji* plików strukturalnych, które współużytkują podobny układ, taki jak faktury lub dokumenty podatkowe, które znajdują się w bibliotece dokumentów SharePoint. Umożliwia to utworzenie kilku modeli w jednym modelu i wyodrębnienie określonych informacji o elemencie tabeli.
+3. Teraz możesz automatycznie wyodrębniać i zapisywać informacje z *kolekcji* plików strukturalnych, które współużytkują podobny układ , taki jak faktury lub dokumenty podatkowe, które znajdują się w bibliotece dokumentów programu SharePoint. Umożliwia to utworzenie kilku modeli w jednym modelu i wyodrębnienie określonych informacji o elemencie tabeli.
 
    Nazwa kolekcji jest zapisywana w dedykowanej kolumnie w bibliotece dokumentów, w której jest stosowany model, co umożliwia rozróżnianie różnych układów plików przetwarzanych przez ten sam model.
 
@@ -75,9 +75,9 @@ Pierwszym krokiem tworzenia modelu przetwarzania formularzy jest nazwa modelu, z
 
         - Jeśli wybierzesz **istniejącą listę**, w polu **Wybrana lista** wybierz listę, która ma być używana.
 
-4. Podczas tworzenia modelu przetwarzania formularzy tworzysz nowy typ zawartości SharePoint. Typ zawartości SharePoint reprezentuje kategorię dokumentów, które mają wspólne cechy i udostępniają kolekcję kolumn lub właściwości metadanych dla danej zawartości. SharePoint typy zawartości są zarządzane za pośrednictwem <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centrum administracyjnego SharePoint</a>.
+4. Podczas tworzenia modelu przetwarzania formularzy tworzysz nowy typ zawartości programu SharePoint. Typ zawartości programu SharePoint reprezentuje kategorię dokumentów, które mają wspólne cechy i udostępniają kolekcję kolumn lub właściwości metadanych dla danej zawartości. Typy zawartości programu SharePoint są zarządzane za pośrednictwem <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centrum administracyjnego programu SharePoint</a>.
 
-   Aby zamapować ten model na istniejący typ zawartości w galerii SharePoint typów zawartości, wybierz pozycję **Ustawienia zaawansowane**.
+   Aby zamapować ten model na istniejący typ zawartości w galerii typów zawartości programu SharePoint, wybierz pozycję **Ustawienia zaawansowane**.
 
     ![Zrzut ekranu przedstawiający ustawienia zaawansowane w panelu Tworzenie modelu do przetwarzania formularzy.](../media/content-understanding/new-form-model-advanced-settings.png) 
 
@@ -93,7 +93,7 @@ Pierwszym krokiem tworzenia modelu przetwarzania formularzy jest nazwa modelu, z
 
 ## <a name="step-2-add-and-analyze-documents"></a>Krok 2. Dodawanie i analizowanie dokumentów
 
-Po utworzeniu nowego modelu przetwarzania formularzy przeglądarka otworzy nową stronę modelu przetwarzania formularzy Power Apps AI Builder. Na tej stronie możesz dodawać i analizować przykładowe dokumenty. 
+Po utworzeniu nowego modelu przetwarzania formularzy przeglądarka otworzy nową stronę modelu przetwarzania formularzy programu Power Apps AI Builder. Na tej stronie możesz dodawać i analizować przykładowe dokumenty. 
 
 > [!NOTE]
 > Jeśli szukasz przykładowych plików do użycia, zobacz [wymagania dotyczące dokumentu wejściowego modelu przetwarzania formularzy i porady dotyczące optymalizacji](/ai-builder/form-processing-model-requirements). 
@@ -110,15 +110,15 @@ Musisz otagować dokumenty, aby nauczyć model rozumieć pola i dane tabeli, kt�
 
 ## <a name="step-4-train-and-publish-your-model"></a>Krok 4. Trenowanie i publikowanie modelu
 
-1. Po utworzeniu i wytrenowania modelu możesz go opublikować i użyć w SharePoint. Aby uzyskać szczegółowe instrukcje, zobacz [Train and publish your form processing model (Trenowanie i publikowanie modelu przetwarzania formularzy](/ai-builder/form-processing-train)). 
+1. Po utworzeniu i wytrenowania modelu możesz go opublikować i użyć w programie SharePoint. Aby uzyskać szczegółowe instrukcje, zobacz [Train and publish your form processing model (Trenowanie i publikowanie modelu przetwarzania formularzy](/ai-builder/form-processing-train)). 
 
-2. Po opublikowaniu modelu wybierz pozycję **Użyj modelu**, a następnie wybierz pozycję **Utwórz przepływ**. Spowoduje to utworzenie przepływu Power Automate, który może być uruchamiany w bibliotece dokumentów SharePoint i wyodrębnia pola, które zostały zidentyfikowane w modelu.
+2. Po opublikowaniu modelu wybierz pozycję **Użyj modelu**, a następnie wybierz pozycję **Utwórz przepływ**. Spowoduje to utworzenie przepływu usługi Power Automate, który może być uruchamiany w bibliotece dokumentów programu SharePoint i wyodrębnia pola zidentyfikowane w modelu.
 
     ![Zrzut ekranu w narzędziu AI Builder przedstawiający panel Tworzenie przepływu.](../media/content-understanding/ai-builder-create-a-flow-1.png)
  
 3. Po zakończeniu zostanie wyświetlony komunikat: *Przepływ został pomyślnie utworzony*.
 
-4. Wybierz przycisk **Przejdź do SharePoint**, aby wyświetlić bibliotekę dokumentów zaktualizowaną przy użyciu modelu.
+4. Wybierz przycisk **Przejdź do programu SharePoint** , aby wyświetlić bibliotekę dokumentów zaktualizowaną przy użyciu modelu.
 
 ## <a name="step-5-use-your-model"></a>Krok 5. Korzystanie z modelu
 
@@ -141,11 +141,11 @@ Musisz otagować dokumenty, aby nauczyć model rozumieć pola i dane tabeli, kt�
 
 Dostępne są dwa przepływy do przetwarzania wybranego pliku lub partii plików w bibliotece, w której zastosowano model przetwarzania formularzy.
 
-- **Wyodrębnianie informacji z obrazu lub pliku PDF przy użyciu modelu przetwarzania formularzy** — umożliwia wyodrębnienie tekstu z wybranego obrazu lub pliku PDF przez uruchomienie modelu przetwarzania formularzy. Obsługuje pojedynczy wybrany plik jednocześnie i obsługuje tylko pliki PDF i pliki obrazów (PNG, JPG i JPEG). Aby uruchomić przepływ, wybierz plik, a następnie wybierz pozycję **AutomateExtract** >  info.
+- **Wyodrębnianie informacji z obrazu lub pliku PDF przy użyciu modelu przetwarzania formularzy** — umożliwia wyodrębnienie tekstu z wybranego obrazu lub pliku PDF przez uruchomienie modelu przetwarzania formularzy. Obsługuje pojedynczy wybrany plik jednocześnie i obsługuje tylko pliki PDF i pliki obrazów (PNG, JPG i JPEG). Aby uruchomić przepływ, wybierz plik, a następnie wybierz pozycję **Automatyzuj** > **wyodrębnianie informacji**.
 
     ![Zrzut ekranu przedstawiający menu Automatyzowanie z wyróżnionymi informacjami o wyodrębnianiu.](../media/content-understanding/automate-extract-info.png)  
 
-- **Wyodrębnij informacje z plików za pomocą modelu przetwarzania formularzy** — użyj z modelami przetwarzania formularzy, aby odczytywać i wyodrębniać informacje z partii plików. Przetwarza do 5000 SharePoint plików jednocześnie. Po uruchomieniu tego przepływu można ustawić pewne parametry. Można:
+- **Wyodrębnij informacje z plików za pomocą modelu przetwarzania formularzy** — użyj z modelami przetwarzania formularzy, aby odczytywać i wyodrębniać informacje z partii plików. Przetwarza do 5000 plików programu SharePoint jednocześnie. Po uruchomieniu tego przepływu można ustawić pewne parametry. Można:
 
     - Określ, czy mają zostać uwzględnione wcześniej przetworzone pliki (ustawieniem domyślnym jest nie uwzględnianie wcześniej przetworzonych plików).
     - Wybierz liczbę plików do przetworzenia (wartość domyślna to 100 plików).
@@ -153,16 +153,19 @@ Dostępne są dwa przepływy do przetwarzania wybranego pliku lub partii plików
     - Określ, jak ma być sortowane zamówienie (kolejność rosnąca lub malejąca).
 
     ![Zrzut ekranu przedstawiający panel Uruchamianie przepływu z wyróżnionymi opcjami parametrów.](../media/content-understanding/run-flow-panel.png)  
+    
+> [!NOTE]
+> **Wyodrębnianie informacji z obrazu lub pliku PDF z przepływem modelu przetwarzania formularzy** jest automatycznie dostępne dla biblioteki ze skojarzonym modelem przetwarzania formularzy. Przepływ **wyodrębniania informacji z plików z przepływem modelu przetwarzania formularzy** jest szablonem, który w razie potrzeby musi zostać dodany do biblioteki.
 
 ### <a name="classification-date-field"></a>Pole Data klasyfikacji
 
 Gdy model przetwarzania formularzy SharePoint Syntex (lub model interpretacji dokumentów) jest stosowany do biblioteki dokumentów, pole **Data klasyfikacji** jest uwzględniane w schemacie biblioteki. Domyślnie to pole jest puste. Jednak gdy dokumenty są przetwarzane i klasyfikowane przez model, to pole jest aktualizowane za pomocą sygnatury daty i godziny ukończenia. 
 
-Gdy model jest ostemplowany **datą klasyfikacji**, możesz użyć opcji **Wyślij wiadomość e-mail po SharePoint Syntex przetwarza przepływ plików**, aby powiadomić użytkowników, że nowy plik został przetworzony i sklasyfikowany przez model w bibliotece dokumentów SharePoint.
+Gdy model jest ostemplowany **datą klasyfikacji**, możesz użyć opcji **Wyślij wiadomość e-mail po SharePoint Syntex przetwarza przepływ plików**, aby powiadomić użytkowników, że nowy plik został przetworzony i sklasyfikowany przez model w bibliotece dokumentów programu SharePoint.
 
 Aby uruchomić przepływ:
 
-1. Wybierz plik, a następnie wybierz pozycję **Integruj** >  **Power Automate** >  **Utwórz przepływ**.
+1. Wybierz plik, a następnie wybierz pozycję **Integruj** > **usługę Power Automate** > **Utwórz przepływ**.
 
 2. W panelu **Tworzenie przepływu** wybierz pozycję **Wyślij wiadomość e-mail po SharePoint Syntex przetwarza plik**.
 
@@ -170,6 +173,6 @@ Aby uruchomić przepływ:
 
 ## <a name="see-also"></a>Zobacz też
   
-[dokumentacja Power Automate](/power-automate/)
+[Dokumentacja usługi Power Automate](/power-automate/)
 
 [Szkolenie: Zwiększanie wydajności biznesowej za pomocą narzędzia AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)

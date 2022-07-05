@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do ochrony przed utratą danych w Power BI
+title: Wprowadzenie do DLP dla usługi Power BI
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,89 +19,91 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Przygotowywanie i wdrażanie zasad DLP w lokalizacjach usługi PowerBI.
-ms.openlocfilehash: a1ea5321b77db1b4e7741f4d41cdd485adbd0b97
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+description: Przygotowywanie i wdrażanie DLP w lokalizacjach usługi PowerBI.
+ms.openlocfilehash: f831d42898e491258a53423c1d59b9f50c0b289d
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63717327"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66616942"
 ---
-# <a name="get-started-with-data-loss-prevention-policies-for-power-bi-preview"></a>Wprowadzenie do zasad ochrony przed utratą danych dotyczących Power BI (wersja zapoznawcza)
+# <a name="get-started-with-data-loss-prevention-policies-for-power-bi-preview"></a>Wprowadzenie do zasad ochrony przed utratą danych dla Power BI (wersja zapoznawcza)
 
-Aby ułatwić organizacjom wykrywanie i ochronę ich poufnych danych, Microsoft 365 ochrony przed utratą danych [(DLP, Data Loss Prevention) obsługują](/microsoft-365/compliance/dlp-learn-about-dlp) Power BI. Gdy zestaw danych usługi PowerBI odpowiada kryteriom w zasadach DLP, może zostać wyzwolony alert wyjaśniacy charakter poufnej zawartości. Ten alert jest również zarejestrowany na karcie Alerty **ochrony przed utratą** danych w portalu zgodności firmy Microsoft w celu monitorowania i zarządzania przez administratorów. Ponadto alerty e-mail mogą być wysyłane do administratorów i określonych użytkowników.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-## <a name="considerations-and-limitations"></a>Uwagi i ograniczenia
+Aby ułatwić organizacjom wykrywanie i ochronę poufnych danych, [zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview obsługują](/microsoft-365/compliance/dlp-learn-about-dlp) usługę Power BI. Gdy zestaw danych usługi PowerBI spełnia kryteria zasad DLP, można wyzwolić alert wyjaśniający charakter poufnej zawartości. Ten alert jest również zarejestrowany na karcie **Alerty** dotyczące ochrony przed utratą danych w portalu zgodności firmy Microsoft na potrzeby monitorowania i zarządzania przez administratorów. Ponadto alerty e-mail mogą być wysyłane do administratorów i określonych użytkowników.
 
-- Zasady DLP dotyczą obszarów roboczych. Obsługiwane są tylko obszary robocze Premium 2 generacji.
-- Obciążenia pracą oceny zestawów danych DLP wpływają na wydajność. Taryfowe obciążenia pracą przez proces oceny DLP nie są obsługiwane.
-- Obsługiwane są zarówno obszary robocze środowiska klasycznego, jak i nowego, o ile są hostowane Premium 2. generacji.
-- Musisz utworzyć niestandardowe zasady niestandardowe zasad DLP dla Power BI. Szablony DLP nie są obsługiwane.
-- Zasady DLP stosowane do lokalizacji zasad DLP obsługują etykiety wrażliwości, a poufne typy informacji jako warunki. 
-- Zasady DLP dotyczące Power BI nie są obsługiwane w przypadku przykładowych zestawów [danych, zestawów](/power-bi/connect-data/service-real-time-streaming) danych strumieniowych ani zestawów danych, które łączą się ze swoim źródłem danych za pośrednictwem usługi [DirectQuery](/power-bi/connect-data/desktop-use-directquery) lub połączenia [na żywo](/power-bi/connect-data/desktop-directquery-about#live-connections).
-- Zasady DLP dla Power BI nie są obsługiwane w suwerennych chmurach.
+## <a name="considerations-and-limitations"></a>Zagadnienia i ograniczenia
+
+- Zasady DLP mają zastosowanie do obszarów roboczych. Obsługiwane są tylko obszary robocze hostowane w pojemnościach Premium Gen2. Aby uzyskać więcej informacji, zobacz [Co to jest Power BI Premium Gen2?](/power-bi/enterprise/service-premium-gen2-what-is).
+- Obciążenia ewaluacji zestawu danych DLP mają wpływ na pojemność. Pomiary obciążeń oceny DLP nie są obsługiwane.
+- Obsługiwane są zarówno obszary robocze klasyczne, jak i nowe środowisko, o ile są hostowane w pojemnościach Premium Gen2.
+- Musisz utworzyć niestandardowe zasady niestandardowe DLP dla usługi Power BI. Szablony DLP nie są obsługiwane.
+- Zasady DLP stosowane do lokalizacji DLP obsługują etykiety poufności i typy informacji poufnych jako warunki. 
+- Zasady DLP dla usługi Power BI nie są obsługiwane w przypadku przykładowych zestawów danych, [zestawów danych przesyłania strumieniowego](/power-bi/connect-data/service-real-time-streaming) ani zestawów danych łączących się ze źródłem danych za pośrednictwem [trybu DirectQuery](/power-bi/connect-data/desktop-use-directquery) lub [połączenia na żywo](/power-bi/connect-data/desktop-directquery-about#live-connections).
+- Zasady DLP dla usługi Power BI nie są obsługiwane w suwerennych chmurach.
 
 ## <a name="licensing-and-permissions"></a>Licencjonowanie i uprawnienia
 
-### <a name="skusubscriptions-licensing"></a>Licencjonowanie subskrypcji/licencji na subskrypcje sKU
+### <a name="skusubscriptions-licensing"></a>Licencjonowanie jednostek SKU/subskrypcji
 
-Przed rozpoczęciem pracy z zasadą DLP dla usługi Power BI potwierdź swoją Microsoft 365 [subskrypcję](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). Aby uzyskać pełne wskazówki dotyczące licencjonowania, [Microsoft 365 wskazówki dotyczące zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Przed rozpoczęciem pracy z usługą DLP dla usługi Power BI należy potwierdzić [subskrypcję platformy Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). Aby uzyskać pełne wskazówki dotyczące licencjonowania, zobacz [Wskazówki dotyczące zabezpieczeń & zgodności z usługą Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 ### <a name="permissions"></a>Uprawnienia
 
-Dane z zasad DLP Power BI można wyświetlać w [Eksploratorze aktywności](/microsoft-365/compliance/data-classification-activity-explorer). Istnieją cztery role, które przyznają uprawnienia eksploratorowi aktywności. konto, za pomocą których uzyskujesz dostęp do danych, musi być członkiem dowolnej z nich.
+Dane z usługi DLP dla usługi Power BI można wyświetlić w [Eksploratorze działań](/microsoft-365/compliance/data-classification-activity-explorer). Istnieją cztery role, które udzielają uprawnień do Eksploratora działań; konto używane do uzyskiwania dostępu do danych musi być członkiem dowolnego z nich.
 
 - Administrator globalny
 - Administrator zgodności
 - Administrator zabezpieczeń
 - Administrator danych zgodności
 
-## <a name="how-dlp-policies-for-power-bi-work"></a>Jak działają zasady DLP Power BI ochrony przed Power BI działania
+## <a name="how-dlp-policies-for-power-bi-work"></a>Jak działają zasady DLP dla usługi Power BI
 
-Zasady DLP definiujesz w sekcji ochrony przed utratą danych w portalu zgodności. Zobacz Projektowanie [zasad ochrony przed utratą danych](dlp-policy-design.md#design-a-data-loss-prevention-policy). W zasadach określasz etykiety wrażliwości, które chcesz wykryć. Możesz także określić akcje, które będą się odbywać, gdy zasady wykryją zestaw danych, do których zastosowano określoną etykietę wrażliwości. Zasady DLP obsługują dwie akcje dla Power BI:
+Zasady DLP można zdefiniować w sekcji zapobiegania utracie danych w portalu zgodności. Zobacz [Projektowanie zasad ochrony przed utratą danych](dlp-policy-design.md#design-a-data-loss-prevention-policy). W zasadach określasz etykiety poufności, które chcesz wykryć. Należy również określić akcje, które będą wykonywane, gdy zasady wykryje zestaw danych, który ma zastosowaną określoną etykietę poufności. Zasady DLP obsługują dwie akcje usługi Power BI:
 
-- Powiadomienie użytkownika za pośrednictwem porad dotyczących zasad.
+- Powiadomienie użytkownika za pośrednictwem wskazówek dotyczących zasad.
 - Alerty. Alerty mogą być wysyłane pocztą e-mail do administratorów i użytkowników. Ponadto administratorzy mogą monitorować alerty i zarządzać nimi na karcie **Alerty** w Centrum zgodności. 
 
-Podczas oceny zestawu danych przez zasady DLP i dopasowania go do warunków określonych w zasadach DLP są stosowane akcje zdefiniowane w tych zasadach. Oceniany jest zestaw danych, gdy zestaw danych:
+Gdy zestaw danych jest oceniany przez DLP i odpowiada warunkom w zasadach DLP, zostaną zastosowane akcje zdefiniowane w zasadach. Zestaw danych jest oceniany, gdy zestaw danych jest:
 
-- Opublikuj
-- Ponowne opublikować
+- Publikowania
+- Ponownie opublikować
 - Odświeżanie na żądanie
 - Zaplanowane odświeżanie
 
 >[!NOTE]
-> Ocena DLP zestawu danych nie występuje, jeśli cokolwiek z poniższych jest prawdziwe:
-> - Inicjatorem wydarzenia jest podmiot zabezpieczeń usługi.
-> - Właścicielem zestawu danych jest podmiot zabezpieczeń usługi lub użytkownik B2B.
+> Ocena DLP zestawu danych nie występuje, jeśli jedno z następujących elementów ma wartość true:
+> - Inicjatorem zdarzenia jest jednostka usługi.
+> - Właściciel zestawu danych jest jednostką usługi lub użytkownikiem B2B.
 
-### <a name="what-happens-when-a-dataset-matches-a-dlp-policy"></a>Co się stanie, gdy zestaw danych będzie odpowiadać zasadom DLP
+### <a name="what-happens-when-a-dataset-matches-a-dlp-policy"></a>Co się dzieje, gdy zestaw danych jest zgodny z zasadami DLP
 
-Gdy zestaw danych jest pasuje do zasad DLP:
+Gdy zestaw danych jest zgodny z zasadami DLP:
 
-- Jeśli zasady mają skonfigurowane powiadomienie użytkownika, będą one oznaczone w usłudze Power BI ikoną tarczy, aby wskazać, że są one takie, jak zasady DLP.
+- Jeśli zasady mają skonfigurowane powiadomienie użytkownika, zostaną one oznaczone w usługa Power BI ikoną osłony, aby wskazać, że są zgodne z zasadami DLP.
 
-    ![Zrzut ekranu przedstawiający znaczek porad dotyczących zasad na zestawie danych na listach.](../media/dlp-power-bi-policy-tip-on-dataset.png)
+    ![Zrzut ekranu przedstawiający znaczek porad dotyczących zasad dla zestawu danych na listach.](../media/dlp-power-bi-policy-tip-on-dataset.png)
 
-    Otwórz stronę szczegółów zestawu danych, aby wyświetlić poradę o zasadach z objaśnieniami dopasowania zasad i sposobu obsługi wykrytego typu informacji poufnych.
+    Otwórz stronę szczegółów zestawu danych, aby wyświetlić poradę dotyczącą zasad, która wyjaśnia dopasowanie zasad i sposób obsługi wykrytego typu informacji poufnych.
 
-    ![Zrzut ekranu przedstawiający poradę o zasadach na stronie szczegółów zestawu danych.](../media/dlp-power-bi-policy-tip-in-dataset-details.png)
+    ![Zrzut ekranu przedstawiający poradę dotyczącą zasad na stronie szczegółów zestawu danych.](../media/dlp-power-bi-policy-tip-in-dataset-details.png)
 
     >[!NOTE]
-    > Ukrycie porady dotyczącej zasad nie spowoduje usunięcia jej. Pojawi się on przy następnym odwiedzinze strony.
+    > Jeśli ukrysz poradę dotyczącą zasad, nie zostanie ona usunięta. Zostanie on wyświetlony przy następnej wizycie na stronie.
 
-- Jeśli w zasadach włączono alerty, alert zostanie zarejestrowany na karcie Alerty ochrony przed firmami w Centrum zgodności, a do administratorów i/lub określonych użytkowników zostanie wysłana wiadomość e-mail (jeśli została skonfigurowana). Na poniższej ilustracji przedstawiono **kartę Alerty** w sekcji ochrony przed utratą danych w Centrum zgodności.
+- Jeśli alerty są włączone w zasadach, alert zostanie zapisany na karcie **Alerty** dlp w Centrum zgodności i (jeśli zostanie skonfigurowany) wiadomość e-mail zostanie wysłana do administratorów i/lub określonych użytkowników. Na poniższej ilustracji przedstawiono kartę Alerty w sekcji zapobiegania **utracie** danych w portal zgodności Microsoft Purview.
 
     ![Zrzut ekranu przedstawiający kartę Alerty w centrum zgodności.](../media/dlp-power-bi-alerts-tab.png)
 
-## <a name="configure-a-dlp-policy-for-power-bi"></a>Konfigurowanie zasad DLP dla Power BI
+## <a name="configure-a-dlp-policy-for-power-bi"></a>Konfigurowanie zasad DLP dla usługi Power BI
 
-Postępuj zgodnie z [procedurami w teście Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) i używanie szablonu niestandardowego.
+Postępuj zgodnie z procedurami w [temacie Tworzenie, testowanie i dostrajanie zasad DLP](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) oraz używanie szablonu niestandardowego.
 
 > [!IMPORTANT]
-> Po wybraniu lokalizacji zasad DLP dla aplikacji usługi Power BI wybierz tylko lokalizację, Power BI lokalizacji. Nie wybieraj żadnych innych lokalizacji. Ta konfiguracja nie jest obsługiwana. 
+> Po wybraniu lokalizacji dla zasad DLP dla usługi Power BI wybierz tylko lokalizację usługi Power BI. Nie wybieraj żadnych innych lokalizacji, ta konfiguracja nie jest obsługiwana. 
 
-<!--1. Log into the [Microsoft 365 compliance portal](https://compliance.microsoft.com).
+<!--1. Log into the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 
 1. Choose the **Data loss prevention** solution in the navigation pane, select the **Policies** tab, choose **Create policy**.
 
@@ -221,7 +223,7 @@ Assign a severity level that will be shown in alerts generated from this policy.
  
 ## Monitor and manage policy alerts
 
-Log into the Microsoft 365 compliance portal and navigate to **Data loss prevention > Alerts**.
+Log into the Microsoft Purview compliance portal and navigate to **Data loss prevention > Alerts**.
 
 ![Screenshot of D L P Alerts tab.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-alerts-tab.png)
 
@@ -230,5 +232,5 @@ Click on an alert to start drilling down to its details and to see management op
 ## <a name="next-steps"></a>Następne kroki
 
 - [Dowiedz się więcej o ochronie przed utratą danych](/microsoft-365/compliance/dlp-learn-about-dlp)
-- [Etykiety wrażliwości w Power BI](/power-bi/enterprise/service-security-sensitivity-label-overview)
-- [Schemat inspekcji etykiet wrażliwości w Power BI](/power-bi/enterprise/service-security-sensitivity-label-audit-schema)
+- [Etykiety poufności w usłudze Power BI](/power-bi/enterprise/service-security-sensitivity-label-overview)
+- [Schemat inspekcji etykiet poufności w usłudze Power BI](/power-bi/enterprise/service-security-sensitivity-label-audit-schema)

@@ -1,6 +1,6 @@
 ---
-title: Wprowadzenie z planem Ochrona punktu końcowego w usłudze Microsoft Defender 1
-description: Wprowadzenie przy użyciu usługi Defender for Endpoint Plan 1. Dowiedz się, jak korzystać z Defender dla Chmury, zarządzać alertami i urządzeniami oraz wyświetlać raporty.
+title: Wprowadzenie do planu 1 Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Wprowadzenie do korzystania z usługi Defender for Endpoint Plan 1. Dowiedz się, jak używać usługi Defender for Cloud, zarządzać alertami i urządzeniami oraz wyświetlać raporty.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,17 +17,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: d332cbf32f5423fb16abb158f9a30a18c2391a22
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3926282bce47af2abee905f5c95844a8a78c6d33
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939350"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617113"
 ---
-# <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Wprowadzenie z planem Ochrona punktu końcowego w usłudze Microsoft Defender 1
+# <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Wprowadzenie do planu 1 Ochrona punktu końcowego w usłudze Microsoft Defender
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 1)](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) umożliwia wyświetlanie informacji o wykrytych zagrożeniach, zarządzanie alertami i zdarzeniami, wykonywanie wszelkich wymaganych działań w przypadku wykrytych zagrożeń i zarządzanie urządzeniami. W portalu Microsoft 365 Defender można rozpocząć interakcję z funkcjami ochrony przed zagrożeniami dostępnymi w usłudze Defender for Endpoint Plan 1. W poniższych sekcjach opisano sposób rozpoczęcia pracy:
 
@@ -42,7 +42,7 @@ W portalu Microsoft 365 Defender ([https://security.microsoft.com](https://secur
 
 :::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="Portal Microsoft 365 Defender" lightbox="../../media/mde-p1/m365-defender-portal.png":::
 
-Strona główna udostępnia zespołowi ds. zabezpieczeń zagregowany widok migawek alertów, stanu urządzenia i wykrytych zagrożeń. Defender dla Chmury jest skonfigurowany tak, aby zespół ds. operacji zabezpieczeń mógł szybko i łatwo znaleźć informacje, których szuka.
+Strona główna udostępnia zespołowi ds. zabezpieczeń zagregowany widok migawek alertów, stanu urządzenia i wykrytych zagrożeń. Usługa Defender for Cloud jest skonfigurowana tak, aby zespół ds. operacji zabezpieczeń mógł szybko i łatwo znaleźć informacje, których szuka.
 
 > [!NOTE]
 > Nasze przykłady przedstawione w tym artykule mogą różnić się od tego, co widzisz w portalu Microsoft 365 Defender. To, co widzisz w portalu, zależy od licencji i uprawnień. Ponadto zespół ds. zabezpieczeń może dostosować portal organizacji, dodając, usuwając i rozmieszczając karty.
@@ -69,7 +69,7 @@ Pasek nawigacyjny po lewej stronie ekranu umożliwia łatwe przechodzenie międz
 | **Zdarzenia & alerty** >  **Alerty** | Przechodzi do listy **Alerty** (nazywanej również **kolejką alertów**). Alerty są wyzwalane po wykryciu podejrzanego lub złośliwego pliku, procesu lub zachowania. Domyślnie na liście **Alerty** są wyświetlane dane z ostatnich 30 dni z najnowszym alertem wymienionym jako pierwszy. <br/><br/> Aby dowiedzieć się więcej, zobacz [Alerty](alerts-queue.md). |
 | **Centrum akcji** | Przechodzi do centrum akcji, które śledzi akcje korygowania i ręcznego reagowania. Centrum akcji śledzi takie działania: <br/>— Program antywirusowy Microsoft Defender napotyka złośliwy plik, a następnie blokuje/usuwa ten plik. <br/>- Twój zespół ds. zabezpieczeń izoluje urządzenie.<br/>— Usługa Defender for Endpoint wykrywa plik i podda go kwarantannie. <br/><br/> Aby dowiedzieć się więcej, zobacz [Centrum akcji](auto-investigation-action-center.md). |
 | **Wskaźnik bezpieczeństwa** | Przedstawia reprezentację stanu zabezpieczeń organizacji wraz z listą akcji poprawy i metryk. <br/><br/> Aby dowiedzieć się więcej, zobacz [Microsoft Secure Score (Wskaźnik bezpieczeństwa firmy Microsoft](../defender/microsoft-secure-score.md)). |
-| **centrum Edukacja** | Przechodzi do listy ścieżek szkoleniowych, do których można uzyskać dostęp, aby dowiedzieć się więcej o Microsoft 365 możliwościach zabezpieczeń.  |
+| **Centrum szkoleniowe** | Przechodzi do listy ścieżek szkoleniowych, do których można uzyskać dostęp, aby dowiedzieć się więcej o możliwościach zabezpieczeń platformy Microsoft 365.  |
 | **Punkty końcowe** >  **Szukaj** | Przechodzi do strony, na której można wyszukiwać określone urządzenia według nazwy urządzenia. Na liście wyników można szybko zobaczyć szczegóły, takie jak poziom ryzyka i stan kondycji. |
 |  **Punkty końcowe** >  **Spis urządzeń** | Przechodzi do listy urządzeń dołączonych do usługi Defender for Endpoint. Zawiera informacje o urządzeniach, takie jak ich narażenie i poziom ryzyka. <br/><br/> Aby dowiedzieć się więcej, zobacz [Spis urządzeń](machines-view-overview.md). |
 |  **Punkty końcowe** >  **Konfiguracja & punktów odniesienia** | Rozwija się, aby wyświetlić **punkty odniesienia zabezpieczeń** i **zarządzanie konfiguracją**. |
@@ -79,9 +79,9 @@ Pasek nawigacyjny po lewej stronie ekranu umożliwia łatwe przechodzenie międz
 | **Kondycja** | Zawiera linki do **Kondycja usługi** i **Centrum komunikatów**.  |
 | **Zdrowia** >  **Kondycja usługi** | Przechodzi do strony Kondycja usługi w Centrum administracyjne platformy Microsoft 365. Ta strona umożliwia wyświetlanie stanu kondycji we wszystkich usługach dostępnych w ramach subskrypcji organizacji.   |
 | **Zdrowia** >  **Centrum komunikatów** | Przechodzi do centrum komunikatów w Centrum administracyjne platformy Microsoft 365. Centrum komunikatów zawiera informacje o planowanych zmianach. Każdy komunikat zawiera opis nadchodzących zmian, wpływu na użytkowników i sposobu zarządzania zmianami. |  
-| **Uprawnienia & ról** | Umożliwia udzielanie uprawnień do korzystania z portalu Microsoft 365 Defender. Uprawnienia są przyznawane za pośrednictwem ról w Azure Active Directory (Azure AD). Wybierz rolę i zostanie wyświetlone okienko wysuwane. Wysuwane okno zawiera link do usługi Azure AD, w którym można dodawać lub usuwać członków w grupie ról. <br/><br/> Aby dowiedzieć się więcej, zobacz [Zarządzanie dostępem do portalu przy użyciu kontroli dostępu opartej na rolach](rbac.md).  |
-| **Ustawienia** | Przechodzi do ogólnych ustawień portalu Microsoft 365 Defender (wymienionego jako **Centrum zabezpieczeń**) i usługi Defender dla punktu końcowego (wymienionego jako **punkty końcowe**). <br/><br/> Aby dowiedzieć się więcej, zobacz [Ustawienia](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
-| **Więcej zasobów** | Wyświetla listę kolejnych portali i centrów, takich jak Azure Active Directory i portal zgodności usługi Microsoft Purview. <br/><br/> Aby dowiedzieć się więcej, zobacz [Portale zabezpieczeń firmy Microsoft i centra administracyjne](../defender/portals.md). |
+| **Uprawnienia & ról** | Umożliwia udzielanie uprawnień do korzystania z portalu Microsoft 365 Defender. Uprawnienia są przyznawane za pośrednictwem ról w usłudze Azure Active Directory (Azure AD). Wybierz rolę i zostanie wyświetlone okienko wysuwane. Wysuwany element zawiera link do Azure AD, w którym można dodawać lub usuwać członków w grupie ról. <br/><br/> Aby dowiedzieć się więcej, zobacz [Zarządzanie dostępem do portalu przy użyciu kontroli dostępu opartej na rolach](rbac.md).  |
+| **Ustawienia** | Przechodzi do ogólnych ustawień portalu Microsoft 365 Defender (wymienionego jako **Centrum zabezpieczeń**) i usługi Defender dla punktu końcowego (wymienionego jako **punkty końcowe**). <br/><br/> Aby dowiedzieć się więcej, zobacz [Ustawienia](../defender/microsoft-365-defender-portal.md). |
+| **Więcej zasobów** | Wyświetla listę kolejnych portali i centrów, takich jak usługa Azure Active Directory i portal zgodności Microsoft Purview. <br/><br/> Aby dowiedzieć się więcej, zobacz [Portale zabezpieczeń firmy Microsoft i centra administracyjne](../defender/portals.md). |
 
 > [!TIP]
 > Aby dowiedzieć się więcej, zobacz [omówienie portalu Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
