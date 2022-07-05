@@ -18,17 +18,17 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: c1354d69ea1b645ee419ce7635c49e65a0557f26
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 1b8cb5b55cc0605df0040bcc6b3a75498ef1ea4a
+ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487868"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66612178"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Zarządzanie aktualizacjami programu antywirusowego Microsoft Defender i stosowanie punktów odniesienia
 
 > [!IMPORTANT]
-> Klienci, którzy zastosowali aktualizację aparatu microsoft defender z marca 2022 r **. (1.1.19100.5**), mogli napotkać wysokie wykorzystanie zasobów (procesor CPU i/lub pamięć). Firma Microsoft wydała aktualizację (**1.1.19200.5**), która rozwiązuje błędy wprowadzone we wcześniejszej wersji. Zaleca się, aby klienci zaktualizowali tę nową kompilację aparatu antywirusowego (**1.1.19200.5**). Aby upewnić się, że wszystkie problemy z wydajnością są w pełni rozwiązane, zaleca się ponowne uruchomienie maszyn po zastosowaniu aktualizacji. Zobacz [Miesięczne wersje platformy i aparatu](#monthly-platform-and-engine-versions) (w tym artykule).
+> Klienci, którzy zastosowali aktualizację aparatu microsoft defender z marca 2022 r **. (1.1.19100.5**), mogli napotkać wysokie wykorzystanie zasobów (procesor CPU i/lub pamięć). Firma Microsoft wydała aktualizację (**1.1.19200.5**), która rozwiązuje błędy wprowadzone we wcześniejszej wersji. Zaleca się, aby klienci zaktualizowali co najmniej tę nową kompilację aparatu antywirusowego (**1.1.19200.5**). Aby upewnić się, że wszystkie problemy z wydajnością są w pełni rozwiązane, zaleca się ponowne uruchomienie maszyn po zastosowaniu aktualizacji. Zobacz [Miesięczne wersje platformy i aparatu](#monthly-platform-and-engine-versions) (w tym artykule).
 
 **Dotyczy:**
 - [Ochrona punktu końcowego w usłudze Microsoft Defender – plan 1 i 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -119,7 +119,7 @@ Brak znanych problemów
 </details><details>
 <summary>*AKTUALIZACJA* z marca 2022 r. (platforma: 4.18.2203.5 | Silnik: 1.1.19200.5)</summary>
 
-*Klienci, którzy zastosowali aktualizację aparatu microsoft defender z marca 2022 r **. (1.1.19100.5**), mogli napotkać wysokie wykorzystanie zasobów (procesor CPU i/lub pamięć). Firma Microsoft wydała aktualizację (**1.1.19200.5**), która rozwiązuje błędy wprowadzone we wcześniejszej wersji. Zaleca się, aby klienci zaktualizowali tę nową kompilację aparatu antywirusowego (**1.1.19200.5**). Aby upewnić się, że wszystkie problemy z wydajnością są w pełni rozwiązane, zaleca się ponowne uruchomienie maszyn po zastosowaniu aktualizacji.*
+*Klienci, którzy zastosowali aktualizację aparatu microsoft defender z marca 2022 r **. (1.1.19100.5**), mogli napotkać wysokie wykorzystanie zasobów (procesor CPU i/lub pamięć). Firma Microsoft wydała aktualizację (**1.1.19200.5**), która rozwiązuje błędy wprowadzone we wcześniejszej wersji. Zaleca się, aby klienci zaktualizowali co najmniej tę nową kompilację aparatu antywirusowego (**1.1.19200.5**). Aby upewnić się, że wszystkie problemy z wydajnością są w pełni rozwiązane, zaleca się ponowne uruchomienie maszyn po zastosowaniu aktualizacji.*
 
 &ensp;Wersja aktualizacji analizy zabezpieczeń: **1.363.817.0**<br/>
 &ensp;Data wydania: **22 kwietnia 2022 r**.<br/>
@@ -748,6 +748,21 @@ Zalecamy zaktualizowanie Windows 10 (wersje Enterprise, Pro i Home), systemu Win
 Aby uzyskać więcej informacji, zobacz [Microsoft Defender update for Windows operating system installation images (Aktualizacja usługi Microsoft Defender dla obrazów instalacyjnych systemu operacyjnego Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)).
 
 <details>
+<summary>20220629.5</summary>
+
+&ensp;Wersja pakietu: **20220629.5**<br/>
+&ensp;Wersja platformy: **4.18.2205.7**<br/>
+&ensp;Wersja aparatu: **1.1.19300.2**<br/>
+&ensp;Wersja podpisu: **1.369.220.0**<br/>
+
+### <a name="fixes"></a>Poprawki
+- Brak
+
+### <a name="additional-information"></a>Informacje dodatkowe
+- Brak
+
+<br/>
+</details><details>
 <summary>20220603.3</summary>
 
 &ensp;Wersja pakietu: **20220603.3**<br/>
