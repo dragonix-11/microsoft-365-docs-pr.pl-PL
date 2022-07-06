@@ -1,5 +1,5 @@
 ---
-title: Dowiedz się więcej o domyślnych zasadach ochrony przed utratą danych w usłudze Microsoft Teams (wersja zapoznawcza)
+title: Dowiedz się więcej o domyślnych zasadach DLP w usłudze Microsoft Teams (wersja zapoznawcza)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,33 +15,33 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Informacje o domyślnych zasadach ochrony przed utratą danych w aplikacji Microsoft Teams
-ms.openlocfilehash: 61443cdfdc116e9c25d9dad24c968876ae5d0349
-ms.sourcegitcommit: db2ed146b46ade9ea62eed9cb8efff5fea7a35e6
+description: Dowiedz się więcej o domyślnych zasadach ochrony przed utratą danych w usłudze Microsoft Teams
+ms.openlocfilehash: 5c3a5a116da90a41abcc459808e83176dc750fe1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "64481369"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624228"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Dowiedz się więcej o domyślnych zasadach ochrony przed utratą danych w usłudze Microsoft Teams (wersja zapoznawcza)
 
-[Funkcje ochrony przed utratą](dlp-learn-about-dlp.md) danych zostały rozszerzone tak, aby obejmowały Microsoft Teams czatów i wiadomości kanałów, w tym wiadomości w kanałach prywatnych. W ramach tej wersji tworzona jest domyślna zasada DLP dla klientów, którzy po raz Microsoft Teams po raz pierwszy, do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365.</a>
+[Ochrona przed utratą danych w Microsoft Purview](dlp-learn-about-dlp.md) możliwości zostały rozszerzone o komunikaty czatów i kanałów usługi Microsoft Teams, w tym wiadomości z kanału prywatnego. W ramach tej wersji utworliśmy domyślne zasady DLP dla usługi Microsoft Teams dla klientów po raz pierwszy w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>.
 
 ## <a name="licensing"></a>Licencjonowanie
 
-Aby uzyskać pełne informacje dotyczące licencjonowania ochrony przed utratą danych Microsoft Teams, zobacz [Information Protection: Ochrona przed utratą danych w przypadku Teams](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-teams).
+Aby uzyskać pełne informacje licencyjne dotyczące DLP w usłudze Microsoft Teams, zobacz [Information Protection: Ochrona przed utratą danych dla usługi Teams](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-teams).
 
-## <a name="what-does-the-default-policy-do"></a>Do czego mają być włączone zasady domyślne?
+## <a name="what-does-the-default-policy-do"></a>Co robią zasady domyślne?
 
-Domyślne zasady DLP dla Teams śledzi wszystkie numery kart kredytowych udostępnione wewnętrznie i zewnętrznie w organizacji. Te zasady są domyślnie włączone dla wszystkich użytkowników dzierżawy. Nie generuje żadnych porad dotyczących zasad dla użytkowników końcowych, ale generuje zdarzenie Alert i wyzwala do administratora wiadomość e-mail o niskim poziomie ważności (dodane w zasadach). Administrator może wyświetlać działania i edytować szczegóły zasad, logując się do Centrum zgodności.
+Domyślne zasady DLP dla usługi Teams śledzą wszystkie numery kart kredytowych udostępnione wewnętrznie i zewnętrznie organizacji. Te zasady są domyślnie włączone dla wszystkich użytkowników dzierżawy. Nie generuje żadnych wskazówek dotyczących zasad dla użytkowników końcowych, ale generuje zdarzenie alertu, a także wyzwala wiadomość e-mail o niskiej ważności do administratora (dodaną w zasadach). Administrator może wyświetlać działania i edytować szczegóły zasad, logując się do Centrum zgodności.
 
-Administratorzy mogą wyświetlić te zasady na stronie [Centrum](https://compliance.microsoft.com/compliancesettings) zgodności > stronie Zasady ochrony przed utratą danych.
+Administratorzy mogą wyświetlać te zasady na stronie zasad ochrony przed utratą [danych portal zgodności Microsoft Purview](https://compliance.microsoft.com/compliancesettings) >.
 
 
 > [!div class="mx-imgBorder"]
-> ![domyślne Teams DLP.](../media/default-teams-dlp-policy.png)
+> ![domyślne zasady DLP usługi Teams.](../media/default-teams-dlp-policy.png)
 
 ## <a name="edit-or-delete-the-default-policy"></a>Edytowanie lub usuwanie zasad domyślnych
 
-Aby [edytować zasady domyślne w celu zapewnienia lepszej wydajności](create-test-tune-dlp-policy.md#tune-a-dlp-policy) lub ich usunięcia, wystarczy użyć konta z uprawnieniami **do zarządzania zgodnością DLP** . Aby uzyskać więcej informacji, zobacz [Uprawnienia](create-test-tune-dlp-policy.md#permissions).
+Aby [edytować domyślne zasady w celu uzyskania lepszej wydajności lub usunąć je](create-test-tune-dlp-policy.md#tune-a-dlp-policy), wystarczy użyć konta z uprawnieniami **DLP Compliance Management** . Aby uzyskać więcej informacji, zobacz [Uprawnienia](create-test-tune-dlp-policy.md#permissions).
 

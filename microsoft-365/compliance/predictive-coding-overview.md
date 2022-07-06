@@ -13,21 +13,19 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Nowy moduł kodowania predykcyjnego w usłudze eDiscovery (Premium) używa uczenia maszynowego do analizowania elementów w zestawie przeglądów w celu przewidywania elementów, które są istotne dla twojego przypadku lub badania.
-ms.openlocfilehash: cc0db62b4ec7d632dae70347aaba5644138bcdce
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Nowy moduł kodowania predykcyjnego w usłudze eDiscovery (Premium) używa uczenia maszynowego do analizowania elementów w zestawie przeglądów w celu predykcyjnego określania elementów istotnych dla twojego przypadku lub badania.
+ms.openlocfilehash: 3ea3d59aa2387b1a762e66fd11942ed96a6288a2
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100770"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625044"
 ---
 # <a name="learn-about-predictive-coding-in-ediscovery-premium-preview"></a>Dowiedz się więcej o kodowaniu predykcyjnym w usłudze eDiscovery (Premium) (wersja zapoznawcza)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Moduł kodowania predykcyjnego w usłudze eDiscovery (Premium) korzysta z inteligentnych możliwości uczenia maszynowego, które ułatwiają zmniejszenie ilości zawartości do przeglądania. Kodowanie predykcyjne pomaga ograniczyć i zlikwidować duże ilości zawartości przypadków do odpowiedniego zestawu elementów, które można określić jako priorytet do przeglądu. Można to osiągnąć, tworząc i szkoląc własne modele kodowania predykcyjnego, które ułatwiają określenie priorytetów przeglądu najbardziej odpowiednich elementów w zestawie przeglądów.
 
-Moduł kodowania predykcyjnego ma na celu usprawnienie złożoności zarządzania modelem w ramach zestawu przeglądów i zapewnienie iteracyjnego podejścia do trenowania modelu, dzięki czemu można szybciej rozpocząć pracę z możliwościami uczenia maszynowego w dziedzinie zbierania elektronicznych materiałów dowodowych (Premium). Aby rozpocząć pracę, możesz utworzyć model, oznaczać etykietą tylko 50 elementów jako odpowiednich lub nieistotnych. System używa tego szkolenia do stosowania wyników przewidywania do każdego elementu w zestawie przeglądów. Umożliwia to filtrowanie elementów na podstawie wyniku przewidywania, co pozwala najpierw przejrzeć najbardziej odpowiednie (lub nieistotne) elementy. Jeśli chcesz trenować modele z wyższymi wskaźnikami akustyków i współczynników wycofywania, możesz kontynuować etykietowanie elementów w kolejnych rundach szkoleniowych, dopóki model się nie ustabilizuje.  
+Moduł kodowania predykcyjnego został zaprojektowany w celu usprawnienia złożoności zarządzania modelem w ramach zestawu przeglądów i zapewnienia iteracyjnego podejścia do trenowania modelu, dzięki czemu można szybciej rozpocząć pracę z możliwościami uczenia maszynowego w środowisku eDiscovery (Premium). Aby rozpocząć pracę, możesz utworzyć model, oznaczać etykietą tylko 50 elementów jako odpowiednich lub nieistotnych. System używa tego szkolenia do stosowania wyników przewidywania do każdego elementu w zestawie przeglądów. Umożliwia to filtrowanie elementów na podstawie wyniku przewidywania, co pozwala najpierw przejrzeć najbardziej odpowiednie (lub nieistotne) elementy. Jeśli chcesz trenować modele z wyższymi wskaźnikami akustyków i współczynników wycofywania, możesz kontynuować etykietowanie elementów w kolejnych rundach szkoleniowych, dopóki model się nie ustabilizuje.  
 
 ## <a name="the-predictive-coding-workflow"></a>Przepływ pracy kodowania predykcyjnego
 

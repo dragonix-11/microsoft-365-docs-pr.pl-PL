@@ -15,22 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Za pomocą narzędzia content search eDiscovery wyszukaj elementy zaimportowane do skrzynek pocztowych w Microsoft 365 ze źródła danych innej firmy, tworząc zapytania.
+description: Za pomocą narzędzia content search eDiscovery wyszukaj elementy zaimportowane do skrzynek pocztowych w usłudze Microsoft 365 ze źródła danych innej firmy, tworząc zapytania.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 73967c8897ee0fd5143b8e15dfe8874fc0c85755
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6d4475987cddb04e0ad49394eda14d638774c22e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095405"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624846"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Wyszukiwanie zawartości służy do wyszukiwania danych innych firm zaimportowanych przez łącznik niestandardowego partnera
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Za pomocą narzędzia do [zbierania elektronicznych materiałów dowodowych wyszukiwania zawartości](content-search.md) w portalu zgodności usługi Microsoft Purview można wyszukiwać elementy zaimportowane do skrzynek pocztowych w Microsoft 365 ze źródła danych innej firmy. Możesz utworzyć zapytanie do wyszukiwania wszystkich zaimportowanych elementów danych innych firm lub utworzyć zapytanie w celu wyszukiwania określonych elementów danych innych firm. Ponadto można również utworzyć zasady przechowywania oparte na zapytaniach lub oparte na zapytaniach blokady zbierania elektronicznych materiałów dowodowych w celu zachowania danych innych firm.
+Możesz użyć narzędzia do zbierania [elektronicznych materiałów dowodowych wyszukiwania zawartości](content-search.md) w portal zgodności Microsoft Purview, aby wyszukać elementy zaimportowane do skrzynek pocztowych na platformie Microsoft 365 ze źródła danych innej firmy. Możesz utworzyć zapytanie do wyszukiwania wszystkich zaimportowanych elementów danych innych firm lub utworzyć zapytanie w celu wyszukiwania określonych elementów danych innych firm. Ponadto można również utworzyć zasady przechowywania oparte na zapytaniach lub oparte na zapytaniach blokady zbierania elektronicznych materiałów dowodowych w celu zachowania danych innych firm.
   
-Aby uzyskać więcej informacji na temat pracy z partnerem w celu zaimportowania danych innych firm oraz listy typów danych innych firm, które można zaimportować do Microsoft 365, zobacz [Praca z partnerem w celu archiwizacji danych innych firm w Office 365](work-with-partner-to-archive-third-party-data.md).
+Aby uzyskać więcej informacji na temat pracy z partnerem w celu zaimportowania danych innych firm oraz listy typów danych innych firm, które można zaimportować na platformę Microsoft 365, zobacz [Praca z partnerem w celu archiwizacji danych innych firm w Office 365](work-with-partner-to-archive-third-party-data.md).
 
 > [!IMPORTANT]
 > Wskazówki zawarte w tym artykule dotyczą tylko danych innych firm, które zostały zaimportowane przez łącznik niestandardowego partnera. Ten artykuł nie dotyczy danych innych firm, które są importowane przy użyciu [łączników danych innych firm](archiving-third-party-data.md#third-party-data-connectors) w Centrum zgodności firmy Microsoft.
@@ -90,9 +88,9 @@ W poniższej tabeli wymieniono typy danych innych firm, które można wyszukać,
 |Cisco IM &amp; Presence Server  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud for Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
-|Połączenie bezpośredni  <br/> | `ipm.externaldata.DirectConnect*` <br/> |
+|Bezpośrednie łączenie  <br/> | `ipm.externaldata.DirectConnect*` <br/> |
 |Facebook  <br/> | `ipm.externaldata.Facebook*` <br/> |
-|FastTrack  <br/> | `ipm.externaldata.FastTrack*` <br/> |
+|Fasttrack  <br/> | `ipm.externaldata.FastTrack*` <br/> |
 |FXConnect  <br/> | `ipm.externaldata.FXConnect.chat` <br/> |
 |Flickr  <br/> | `ipm.externaldata.Flickr*` <br/> |
 |Gnutella  <br/> | `ipm.externaldata.Gnutella*` <br/> |

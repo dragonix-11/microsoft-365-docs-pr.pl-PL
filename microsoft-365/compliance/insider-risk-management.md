@@ -15,21 +15,19 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 3a2d678f8e653d65007369c2db5ddd8c72a71c66
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 2055d5ce71766a3c1cd1846c6287e5c15c8d621c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923286"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622838"
 ---
 # <a name="learn-about-insider-risk-management"></a>Dowiedz się więcej o zarządzaniu ryzykiem wewnętrznym
 
 > [!TIP]
-> *Czy wiesz, że możesz bezpłatnie wypróbować wersje premium wszystkich dziewięciu rozwiązań Usługi Microsoft Purview?* Skorzystaj z 90-dniowej wersji próbnej rozwiązań Purview, aby dowiedzieć się, jak niezawodne możliwości usługi Purview mogą pomóc organizacji spełnić jej potrzeby w zakresie zgodności. Klienci platformy Microsoft 365 E3 i Office 365 E3 mogą rozpocząć pracę w [centrum wersji próbnych portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Dowiedz się więcej o [tym, kto może zarejestrować się i zapoznać się z postanowieniami dotyczącymi wersji próbnej](compliance-easy-trials.md).
+> *Czy wiesz, że możesz bezpłatnie wypróbować wersje premium wszystkich dziewięciu rozwiązań Usługi Microsoft Purview?* Skorzystaj z 90-dniowej wersji próbnej rozwiązań Purview, aby dowiedzieć się, jak niezawodne możliwości usługi Purview mogą pomóc organizacji spełnić jej potrzeby w zakresie zgodności. Microsoft 365 E3 i Office 365 E3 klienci mogą rozpocząć pracę w [centrum portal zgodności Microsoft Purview prób](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Dowiedz się więcej o [tym, kto może zarejestrować się i zapoznać się z postanowieniami dotyczącymi wersji próbnej](compliance-easy-trials.md).
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview Insider Risk Management to rozwiązanie do zapewniania zgodności, które pomaga zminimalizować ryzyko wewnętrzne, umożliwiając wykrywanie, badanie i działanie na złośliwych i niezamierzonych działaniach w organizacji. Zasady ryzyka dotyczącego informacji poufnych umożliwiają definiowanie typów zagrożeń do identyfikowania i wykrywania w organizacji, w tym działania w sprawach i eskalowanie spraw do usługi Microsoft eDiscovery (Premium) w razie potrzeby. Analitycy ryzyka w organizacji mogą szybko podjąć odpowiednie działania, aby upewnić się, że użytkownicy są zgodni ze standardami zgodności organizacji.
+Zarządzanie ryzykiem wewnętrznym w Microsoft Purview to rozwiązanie do zapewniania zgodności, które pomaga zminimalizować ryzyko wewnętrzne, umożliwiając wykrywanie, badanie i działanie na złośliwych i niezamierzonych działaniach w organizacji. Zasady ryzyka dotyczącego informacji poufnych umożliwiają definiowanie typów zagrożeń do identyfikowania i wykrywania w organizacji, w tym działania w sprawach i eskalowanie spraw do usługi Microsoft eDiscovery (Premium) w razie potrzeby. Analitycy ryzyka w organizacji mogą szybko podjąć odpowiednie działania, aby upewnić się, że użytkownicy są zgodni ze standardami zgodności organizacji.
 
 Aby uzyskać więcej informacji i omówienie procesu planowania w celu rozwiązania ryzykownych działań w organizacji, zobacz [Uruchamianie programu do zarządzania ryzykiem wewnętrznym](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
@@ -149,8 +147,8 @@ Po zbadaniu spraw recenzenci mogą szybko podjąć działania w celu rozwiązani
 
 W poważniejszych sytuacjach może być konieczne udostępnienie informacji o przypadku zarządzania ryzykiem wewnętrznym innym recenzentom lub usługom w organizacji. Zarządzanie ryzykiem wewnętrznym jest ściśle zintegrowane z innymi rozwiązaniami usługi Microsoft Purview, które ułatwiają kompleksowe rozwiązywanie problemów z ryzykiem.
 
-- **eDiscovery (Premium)**: Eskalacja sprawy do zbadania umożliwia przesyłanie danych i zarządzanie sprawą do usługi Microsoft Purview eDiscovery (Premium). Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości reagującej na wewnętrzne i zewnętrzne badania organizacji. Umożliwia zespołom prawnym zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej. Aby dowiedzieć się więcej na temat przypadków zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium)](overview-ediscovery-20.md).
-- **Integracja interfejsów API zarządzania usługi Office 365 (wersja zapoznawcza)**: zarządzanie ryzykiem wewnętrznym obsługuje eksportowanie informacji o alertach do usług zarządzania informacjami o zabezpieczeniach i zdarzeniami (SIEM) za pośrednictwem interfejsów API zarządzania usługi Office 365. Dostęp do informacji o alertach na platformie najlepiej pasuje do procesów ryzyka organizacji, co zapewnia większą elastyczność w sposobie działania na działaniach związanych z ryzykiem. Aby dowiedzieć się więcej na temat eksportowania informacji o alertach za pomocą interfejsów API zarządzania usługi Office 365, zobacz [Eksportowanie alertów](insider-risk-management-settings.md#export-alerts).
+- **eDiscovery (Premium)**: Eskalacja sprawy do zbadania umożliwia przesyłanie danych i zarządzanie sprawą do Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium). Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości reagującej na wewnętrzne i zewnętrzne badania organizacji. Umożliwia zespołom prawnym zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej. Aby dowiedzieć się więcej na temat przypadków zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium)](overview-ediscovery-20.md).
+- **integracja interfejsów API zarządzania Office 365 (wersja zapoznawcza)**: zarządzanie ryzykiem wewnętrznym obsługuje eksportowanie informacji o alertach do usług zarządzania informacjami o zabezpieczeniach i zdarzeniami (SIEM) za pośrednictwem interfejsów API zarządzania Office 365. Dostęp do informacji o alertach na platformie najlepiej pasuje do procesów ryzyka organizacji, co zapewnia większą elastyczność w sposobie działania na działaniach związanych z ryzykiem. Aby dowiedzieć się więcej na temat eksportowania informacji o alertach za pomocą interfejsów API zarządzania Office 365, zobacz [Eksportowanie alertów](insider-risk-management-settings.md#export-alerts).
 
 > [!NOTE]
 > Dziękujemy za opinię i pomoc techniczną w wersji zapoznawczej łącznika usługi ServiceNow. 30 listopada 2020 r. postanowiliśmy zakończyć wersję zapoznawczą łącznika usługi ServiceNow i zakończyć obsługę zarządzania ryzykiem wewnętrznym. Aktywnie oceniamy alternatywne metody, aby zapewnić klientom integrację z usługą ServiceNow w ramach zarządzania ryzykiem wewnętrznym.
@@ -173,7 +171,7 @@ W większości przypadków użytkownicy starają się jak najlepiej obsługiwać
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Zamierzone lub niezamierzone naruszenia zasad zabezpieczeń (wersja zapoznawcza)
 
-Użytkownicy zazwyczaj mają duży stopień kontroli podczas zarządzania swoimi urządzeniami w nowoczesnym miejscu pracy. Ta kontrolka może obejmować uprawnienia do instalowania lub odinstalowywania aplikacji wymaganych do wykonywania swoich obowiązków lub możliwość tymczasowego wyłączania funkcji zabezpieczeń urządzeń. Niezależnie od tego, czy to działanie jest przypadkowe, przypadkowe czy złośliwe, takie zachowanie może stanowić zagrożenie dla twojej organizacji i jest ważne, aby zidentyfikować i podjąć działania w celu zminimalizowania. Aby ułatwić identyfikację tych ryzykownych działań związanych z zabezpieczeniami, następujące szablony zasad zabezpieczeń zarządzania ryzykiem wewnętrznym oceniają wskaźniki ryzyka bezpieczeństwa i używają alertów punktu końcowego w usłudze Microsoft Defender w celu zapewnienia szczegółowych informacji dotyczących działań związanych z zabezpieczeniami:
+Użytkownicy zazwyczaj mają duży stopień kontroli podczas zarządzania swoimi urządzeniami w nowoczesnym miejscu pracy. Ta kontrolka może obejmować uprawnienia do instalowania lub odinstalowywania aplikacji wymaganych do wykonywania swoich obowiązków lub możliwość tymczasowego wyłączania funkcji zabezpieczeń urządzeń. Niezależnie od tego, czy to działanie jest przypadkowe, przypadkowe czy złośliwe, takie zachowanie może stanowić zagrożenie dla twojej organizacji i jest ważne, aby zidentyfikować i podjąć działania w celu zminimalizowania. Aby ułatwić identyfikację tych ryzykownych działań związanych z zabezpieczeniami, następujące szablony zasad zabezpieczeń zarządzania ryzykiem wewnętrznym oceniają wskaźniki ryzyka bezpieczeństwa i używają alertów Ochrona punktu końcowego w usłudze Microsoft Defender w celu zapewnienia szczegółowych informacji dotyczących działań związanych z zabezpieczeniami:
 
 - [Ogólne naruszenia zasad zabezpieczeń (wersja zapoznawcza)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Naruszenia zasad zabezpieczeń przez odchodzących użytkowników (wersja zapoznawcza)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
@@ -200,7 +198,7 @@ Zatrudnienie podkreśla, że zdarzenia mogą mieć wpływ na zachowanie użytkow
 - [Wycieki danych przez niezadowolonych użytkowników (wersja zapoznawcza)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Naruszenia zasad zabezpieczeń przez niezadowolonych użytkowników (wersja zapoznawcza)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-## <a name="ready-to-get-started"></a>Chcesz rozpocząć pracę?
+## <a name="ready-to-get-started"></a>Chcesz rozpocząć?
 
 - Zobacz [Planowanie zarządzania ryzykiem wewnętrznym](insider-risk-management-plan.md) , aby dowiedzieć się, jak przygotować się do włączenia zasad zarządzania ryzykiem wewnętrznym w organizacji.
 - Zobacz [Wprowadzenie do ustawień zarządzania ryzykiem wewnętrznym](insider-risk-management-settings.md) , aby skonfigurować ustawienia globalne dla zasad ryzyka niejawne.

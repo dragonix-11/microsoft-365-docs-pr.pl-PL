@@ -14,25 +14,23 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: Dowiedz się, jak administratorzy mogą konfigurować łącznik danych i używać go do importowania i archiwizowania danych z narzędzia instant bloomberg chat do Microsoft 365.
-ms.openlocfilehash: 54e7853ef34b391676c1e1ecb495a6cf5b8f9991
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak administratorzy mogą konfigurować łącznik danych i używać go do importowania i archiwizowania danych z narzędzia instant bloomberg chat na platformę Microsoft 365.
+ms.openlocfilehash: 9cca5955248ca7bd992c00b769ed2f2fbd212f89
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099021"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623414"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Konfigurowanie łącznika do archiwizowania błyskawicznych danych bloomberga
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Użyj natywnego łącznika w portal zgodności Microsoft Purview, aby zaimportować i zarchiwizować dane czatu usług finansowych z narzędzia [instant bloomberg](https://www.bloomberg.com/professional/product/collaboration/) collaboration. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z bezpieczną witryną FTP (SFTP) organizacji raz dziennie, konwertuje zawartość wiadomości czatu na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych na platformie Microsoft 365.
 
-Użyj natywnego łącznika w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane czatu usług finansowych z narzędzia [instant bloomberg](https://www.bloomberg.com/professional/product/collaboration/) collaboration. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z bezpieczną witryną FTP (SFTP) organizacji raz dziennie, konwertuje zawartość wiadomości czatu na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych w Microsoft 365.
-
-Po zapisaniu danych instant Bloomberg w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, wyszukiwanie zawartości, archiwizowanie In-Place, inspekcja, zgodność z komunikacją i zasady przechowywania Microsoft 365 do danych instant Bloomberg. Możesz na przykład wyszukiwać wiadomości czatu w usłudze Instant Bloomberg przy użyciu wyszukiwania zawartości lub skojarzyć skrzynkę pocztową zawierającą dane instant Bloomberg z opiekunem w przypadku zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium). Użycie łącznika Instant Bloomberg do importowania i archiwizowania danych w Microsoft 365 może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Po przechowywaniu danych instant Bloomberg w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, wyszukiwanie zawartości, archiwizowanie In-Place, inspekcja, zgodność z komunikacją i zasady przechowywania usługi Microsoft 365 do danych instant Bloomberg. Na przykład możesz wyszukiwać wiadomości czatu w usłudze Instant Bloomberg przy użyciu wyszukiwania zawartości lub skojarzyć skrzynkę pocztową zawierającą dane instant Bloomberg z opiekunem w przypadku Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium). Importowanie i archiwizowanie danych na platformie Microsoft 365 przy użyciu łącznika Instant Bloomberg może pomóc Twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-instant-bloomberg-data"></a>Omówienie archiwizacji błyskawicznych danych bloomberga
 
-W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowania danych czatu Instant Bloomberg w Microsoft 365. 
+W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowania błyskawicznych danych czatu bloomberga na platformie Microsoft 365. 
 
 ![Błyskawiczny proces importowania i archiwizacji bloomberga.](../media/InstantBloombergDataArchiving.png)
 
@@ -42,19 +40,19 @@ W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowani
 
 3. Łącznik Instant Bloomberg tworzony w portalu zgodności codziennie łączy się z witryną Bloomberg SFTP i przesyła komunikaty rozmów z poprzednich 24 godzin do bezpiecznego obszaru usługi Azure Storage w chmurze firmy Microsoft. Łącznik konwertuje również zawartość masażu czatu na format wiadomości e-mail.
 
-4. Łącznik importuje elementy wiadomości czatu do skrzynki pocztowej określonego użytkownika. Nowy folder o nazwie InstantBloomberg jest tworzony w skrzynce pocztowej określonego użytkownika i elementy zostaną do niego zaimportowane. Łącznik wykonuje to przy użyciu wartości właściwości *CorporateEmailAddress* . Każda wiadomość czatu zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika wiadomości czatu. Oprócz automatycznego mapowania użytkowników przy użyciu wartości właściwości *CorporateEmailAddress* można również zdefiniować mapowanie niestandardowe, przekazując plik mapowania CSV. Ten plik mapowania powinien zawierać identyfikator UUID bloomberga i odpowiedni adres skrzynki pocztowej Microsoft 365 dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe, dla każdego elementu czatu łącznik najpierw przyjrzy się plikowi mapowania niestandardowego. Jeśli nie znajdzie prawidłowego użytkownika Microsoft 365, który odpowiada identyfikatorowi UUID bloomberga użytkownika, łącznik *użyje właściwości CorporateEmailAddress* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 w pliku mapowania niestandardowego lub właściwości *CorporateEmailAddress* elementu czatu, element nie zostanie zaimportowany.
+4. Łącznik importuje elementy wiadomości czatu do skrzynki pocztowej określonego użytkownika. Nowy folder o nazwie InstantBloomberg jest tworzony w skrzynce pocztowej określonego użytkownika i elementy zostaną do niego zaimportowane. Łącznik wykonuje to przy użyciu wartości właściwości *CorporateEmailAddress* . Każda wiadomość czatu zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika wiadomości czatu. Oprócz automatycznego mapowania użytkowników przy użyciu wartości właściwości *CorporateEmailAddress* można również zdefiniować mapowanie niestandardowe, przekazując plik mapowania CSV. Ten plik mapowania powinien zawierać identyfikator UUID bloomberga i odpowiedni adres skrzynki pocztowej platformy Microsoft 365 dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe, dla każdego elementu czatu łącznik najpierw przyjrzy się plikowi mapowania niestandardowego. Jeśli nie znajdzie prawidłowego użytkownika platformy Microsoft 365 odpowiadającego identyfikatorowi UUID bloomberga użytkownika, łącznik *użyje właściwości CorporateEmailAddress* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika platformy Microsoft 365 w pliku mapowania niestandardowego lub właściwości *CorporateEmailAddress* elementu czatu, element nie zostanie zaimportowany.
 
 ## <a name="before-you-set-up-a-connector"></a>Przed skonfigurowaniem łącznika
 
-Niektóre kroki implementacji wymagane do zarchiwizowania danych instant Bloomberg są zewnętrzne dla Microsoft 365 i muszą zostać ukończone przed utworzeniem łącznika w centrum zgodności.
+Niektóre kroki implementacji wymagane do zarchiwizowania danych instant Bloomberg są zewnętrzne dla platformy Microsoft 365 i muszą zostać ukończone przed utworzeniem łącznika w Centrum zgodności.
 
-- Aby skonfigurować łącznik Instant Bloomberg, musisz użyć kluczy i haseł kluczy dla bardzo dobrej prywatności (PGP) i bezpiecznej powłoki (SSH). Te klucze są używane do konfigurowania witryny Bloomberg SFTP i używane przez łącznik do łączenia się z witryną Bloomberg SFTP w celu importowania danych do Microsoft 365. Klucz PGP służy do konfigurowania szyfrowania danych przesyłanych z witryny Bloomberg SFTP do Microsoft 365. Klucz SSH służy do konfigurowania bezpiecznej powłoki w celu włączenia bezpiecznego zdalnego logowania, gdy łącznik nawiązuje połączenie z witryną Bloomberg SFTP.
+- Aby skonfigurować łącznik Instant Bloomberg, musisz użyć kluczy i haseł kluczy dla bardzo dobrej prywatności (PGP) i bezpiecznej powłoki (SSH). Te klucze są używane do konfigurowania witryny Bloomberg SFTP i używane przez łącznik do łączenia się z witryną Bloomberg SFTP w celu importowania danych do platformy Microsoft 365. Klucz PGP służy do konfigurowania szyfrowania danych przesyłanych z witryny Bloomberg SFTP na platformę Microsoft 365. Klucz SSH służy do konfigurowania bezpiecznej powłoki w celu włączenia bezpiecznego zdalnego logowania, gdy łącznik nawiązuje połączenie z witryną Bloomberg SFTP.
 
   Podczas konfigurowania łącznika możesz użyć kluczy publicznych i haseł kluczy udostępnianych przez firmę Microsoft lub użyć własnych kluczy prywatnych i haseł. Zalecamy użycie kluczy publicznych dostarczonych przez firmę Microsoft. Jeśli jednak organizacja już skonfigurowała witrynę Bloomberg SFTP przy użyciu kluczy prywatnych, możesz utworzyć łącznik przy użyciu tych samych kluczy prywatnych.
 
 - Subskrybuj [bloomberg anywhere](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA). Jest to wymagane, aby można było zalogować się do witryny Bloomberg Anywhere, aby uzyskać dostęp do witryny Bloomberg SFTP, którą należy skonfigurować i skonfigurować.
 
-- Skonfiguruj witrynę Bloomberg SFTP (protokół bezpiecznego transferu plików). Po współpracy z Bloombergiem w celu skonfigurowania witryny SFTP dane z Instant Bloomberg są codziennie przekazywane do witryny SFTP. Łącznik utworzony w kroku 2 łączy się z tą witryną SFTP i przesyła dane czatu do Microsoft 365 skrzynek pocztowych. Protokół SFTP szyfruje również dane czatu Instant Bloomberg wysyłane do skrzynek pocztowych podczas procesu transferu.
+- Skonfiguruj witrynę Bloomberg SFTP (protokół bezpiecznego transferu plików). Po współpracy z Bloombergiem w celu skonfigurowania witryny SFTP dane z Instant Bloomberg są codziennie przekazywane do witryny SFTP. Łącznik utworzony w kroku 2 łączy się z tą witryną SFTP i przesyła dane czatu do skrzynek pocztowych platformy Microsoft 365. Protokół SFTP szyfruje również dane czatu Instant Bloomberg wysyłane do skrzynek pocztowych podczas procesu transferu.
 
   Aby uzyskać informacje o Bloomberg SFTP (zwany również *BB-SFTP*):
 
@@ -72,9 +70,9 @@ Niektóre kroki implementacji wymagane do zarchiwizowania danych instant Bloombe
 
   - Numer portu witryny Bloomberg SFTP
 
-- Łącznik Instant Bloomberg może zaimportować łącznie 200 000 elementów w ciągu jednego dnia. Jeśli w witrynie SFTP znajduje się więcej niż 200 000 elementów, żaden z tych elementów nie zostanie zaimportowany do Microsoft 365.
+- Łącznik Instant Bloomberg może zaimportować łącznie 200 000 elementów w ciągu jednego dnia. Jeśli w witrynie SFTP znajduje się więcej niż 200 000 elementów, żaden z tych elementów nie zostanie zaimportowany do platformy Microsoft 365.
 
-- Użytkownik, który tworzy łącznik Instant Bloomberg w kroku 3 (i pobiera klucze publiczne i adres IP w kroku 1) musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który tworzy łącznik Instant Bloomberg w kroku 3 (i pobiera klucze publiczne i adres IP w kroku 1) musi mieć przypisaną rolę Administracja łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę Administracja łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="set-up-a-connector-using-public-keys"></a>Konfigurowanie łącznika przy użyciu kluczy publicznych
 
@@ -82,7 +80,7 @@ Kroki opisane w tej sekcji pokazują, jak skonfigurować łącznik Instant Bloom
 
 ### <a name="step-1-obtain-pgp-and-ssh-and-public-keys"></a>Krok 1. Uzyskiwanie kluczy PGP i SSH oraz kluczy publicznych
 
-Pierwszym krokiem jest uzyskanie kopii kluczy publicznych dla bardzo dobrej prywatności (PGP) i bezpiecznej powłoki (SSH). Użyjesz tych kluczy w kroku 2, aby skonfigurować witrynę Bloomberg SFTP, aby umożliwić łącznikowi (utworzonemu w kroku 3) łączenie się z witryną SFTP i przesyłanie danych czatu Instant Bloomberg do Microsoft 365 skrzynek pocztowych. W tym kroku uzyskasz również adres IP używany podczas konfigurowania witryny Bloomberg SFTP.
+Pierwszym krokiem jest uzyskanie kopii kluczy publicznych dla bardzo dobrej prywatności (PGP) i bezpiecznej powłoki (SSH). Użyjesz tych kluczy w kroku 2, aby skonfigurować witrynę Bloomberg SFTP, aby umożliwić łącznikowi (utworzonemu w kroku 3) łączenie się z witryną SFTP i przesyłanie błyskawicznych danych czatu bloomberga do skrzynek pocztowych platformy Microsoft 365. W tym kroku uzyskasz również adres IP używany podczas konfigurowania witryny Bloomberg SFTP.
 
 1. Przejdź do strony <https://compliance.microsoft.com> i kliknij pozycję **Łączniki danych** w lewym pasku nawigacyjnym.
 
@@ -102,26 +100,26 @@ Pierwszym krokiem jest uzyskanie kopii kluczy publicznych dla bardzo dobrej pryw
 
    Te pliki zawierają następujące elementy, które są używane do konfigurowania witryny Bloomberg SFTP w kroku 2:
 
-   - Klucz publiczny PGP: ten klucz służy do konfigurowania szyfrowania danych przesyłanych z witryny Bloomberg SFTP do Microsoft 365.
+   - Klucz publiczny PGP: ten klucz służy do konfigurowania szyfrowania danych przesyłanych z witryny Bloomberg SFTP na platformę Microsoft 365.
 
    - Klucz publiczny SSH: ten klucz służy do konfigurowania bezpiecznej powłoki w celu włączenia bezpiecznego zdalnego logowania, gdy łącznik łączy się z witryną Bloomberg SFTP.
 
-   - Adres IP: witryna Bloomberg SFTP jest skonfigurowana do akceptowania żądań połączenia z tego adresu IP. Ten sam adres IP jest używany przez łącznik Instant Bloomberg do nawiązywania połączenia z witryną SFTP i przesyłania danych Instant Bloomberg do Microsoft 365.
+   - Adres IP: witryna Bloomberg SFTP jest skonfigurowana do akceptowania żądań połączenia z tego adresu IP. Ten sam adres IP jest używany przez łącznik Instant Bloomberg do nawiązywania połączenia z witryną SFTP i transferu danych Instant Bloomberg na platformę Microsoft 365.
 
 7. Kliknij **przycisk Anuluj** , aby zamknąć kreatora. Wrócisz do tego kreatora w kroku 3, aby utworzyć łącznik.
 
 ### <a name="step-2-configure-the-bloomberg-sftp-site"></a>Krok 2. Konfigurowanie witryny Bloomberg SFTP
 
-Następnym krokiem jest użycie kluczy publicznych PGP i SSH oraz adresu IP uzyskanego w kroku 1 w celu skonfigurowania szyfrowania PGP i uwierzytelniania SSH dla witryny Bloomberg SFTP. Dzięki temu łącznik Instant Bloomberg utworzony w kroku 3 łączy się z witryną Bloomberg SFTP i przesyła dane Instant Bloomberg do Microsoft 365. Aby skonfigurować witrynę Bloomberg SFTP, musisz współpracować z działem obsługi klienta bloomberga. Skontaktuj się z [pomocą techniczną bloomberga](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) , aby uzyskać pomoc. 
+Następnym krokiem jest użycie kluczy publicznych PGP i SSH oraz adresu IP uzyskanego w kroku 1 w celu skonfigurowania szyfrowania PGP i uwierzytelniania SSH dla witryny Bloomberg SFTP. Dzięki temu łącznik Instant Bloomberg utworzony w kroku 3 łączy się z witryną Bloomberg SFTP i przesyła dane Instant Bloomberg na platformę Microsoft 365. Aby skonfigurować witrynę Bloomberg SFTP, musisz współpracować z działem obsługi klienta bloomberga. Skontaktuj się z [pomocą techniczną bloomberga](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) , aby uzyskać pomoc. 
 
 > [!IMPORTANT]
 > Bloomberg zaleca dołączenie trzech plików pobranych w kroku 1 do wiadomości e-mail i wysłanie ich do zespołu obsługi klienta podczas pracy z nimi w celu skonfigurowania witryny Bloomberg SFTP.
 
 ### <a name="step-3-create-an-instant-bloomberg-connector"></a>Krok 3. Tworzenie łącznika Instant Bloomberg
 
-Ostatnim krokiem jest utworzenie łącznika Instant Bloomberg w portalu zgodności. Łącznik używa podanych informacji, aby nawiązać połączenie z witryną Bloomberg SFTP i przenieść wiadomości czatu do odpowiednich skrzynek pocztowych użytkownika w Microsoft 365.
+Ostatnim krokiem jest utworzenie łącznika Instant Bloomberg w portalu zgodności. Łącznik używa podanych informacji, aby nawiązać połączenie z witryną Bloomberg SFTP i przenieść wiadomości czatu do odpowiednich skrzynek pocztowych użytkownika na platformie Microsoft 365.
 
-1. Przejdź do obszaru <https://compliance.microsoft.com> , a następnie kliknij pozycję **Łączniki** >  **danychInstant Bloomberg**.
+1. Przejdź do obszaru <https://compliance.microsoft.com> , a następnie kliknij pozycję **Łączniki** >  danych **Instant Bloomberg**.
 
 2. Na stronie Opis produktu **Instant Bloomberg** kliknij pozycję **Dodaj łącznik**
 
@@ -145,10 +143,10 @@ Ostatnim krokiem jest utworzenie łącznika Instant Bloomberg w portalu zgodnoś
 
 6. Na stronie **Wybieranie typów danych do zaimportowania** wybierz wymagane typy danych do zaimportowania oprócz pozycji **Komunikaty**
 
-7. Na stronie **Mapowanie błyskawicznych użytkowników bloomberga w celu Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników i w razie potrzeby udostępnij niestandardowe mapowanie użytkowników
+7. Na stronie **Mapowanie błyskawicznych użytkowników bloomberga na użytkowników platformy Microsoft 365** włącz automatyczne mapowanie użytkowników i w razie potrzeby udostępnij niestandardowe mapowanie użytkowników
 
    > [!NOTE]
-   > Łącznik importuje elementy wiadomości czatu do skrzynki pocztowej określonego użytkownika. Nowy folder o nazwie **InstantBloomberg** jest tworzony w skrzynce pocztowej określonego użytkownika i elementy zostaną do niego zaimportowane. Łącznik jest używany przy użyciu wartości właściwości *CorporateEmailAddress* . Każda wiadomość czatu zawiera tę właściwość, a właściwość jest wypełniana adresem e-mail każdego uczestnika wiadomości czatu. Oprócz automatycznego mapowania użytkowników przy użyciu wartości właściwości *CorporateEmailAddress* można również zdefiniować mapowanie niestandardowe, przekazując plik mapowania CSV. Plik mapowania powinien zawierać identyfikator UUID bloomberga i odpowiedni adres skrzynki pocztowej Microsoft 365 dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe, dla każdego elementu czatu łącznik najpierw przyjrzy się niestandardowemu plikowi mapowania. Jeśli nie znajdzie prawidłowego użytkownika Microsoft 365, który odpowiada identyfikatorowi UUID bloomberga użytkownika, łącznik *użyje właściwości CorporateEmailAddress* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 w niestandardowym pliku mapowania lub we właściwości *CorporateEmailAddress* elementu czatu, element nie zostanie zaimportowany.
+   > Łącznik importuje elementy wiadomości czatu do skrzynki pocztowej określonego użytkownika. Nowy folder o nazwie **InstantBloomberg** jest tworzony w skrzynce pocztowej określonego użytkownika i elementy zostaną do niego zaimportowane. Łącznik jest używany przy użyciu wartości właściwości *CorporateEmailAddress* . Każda wiadomość czatu zawiera tę właściwość, a właściwość jest wypełniana adresem e-mail każdego uczestnika wiadomości czatu. Oprócz automatycznego mapowania użytkowników przy użyciu wartości właściwości *CorporateEmailAddress* można również zdefiniować mapowanie niestandardowe, przekazując plik mapowania CSV. Plik mapowania powinien zawierać identyfikator UUID bloomberga i odpowiadający im adres skrzynki pocztowej platformy Microsoft 365 dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe, dla każdego elementu czatu łącznik najpierw przyjrzy się niestandardowemu plikowi mapowania. Jeśli nie znajdzie prawidłowego użytkownika platformy Microsoft 365 odpowiadającego identyfikatorowi UUID bloomberga użytkownika, łącznik *użyje właściwości CorporateEmailAddress* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika platformy Microsoft 365 w niestandardowym pliku mapowania lub we właściwości *CorporateEmailAddress* elementu czatu, element nie zostanie zaimportowany.
 
 7. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ** , aby utworzyć łącznik.
 
@@ -163,7 +161,7 @@ Kroki opisane w tej sekcji pokazują, jak skonfigurować łącznik Instant Bloom
 > [!NOTE]
 > Jeśli twoja organizacja wcześniej skonfigurowała witrynę Bloomberg SFTP do archiwizowania danych komunikatów Bloomberg przy użyciu kluczy prywatnych PGP i SSH, nie musisz konfigurować kolejnej. Tę samą lokację SFTP można określić podczas tworzenia łącznika w kroku 2.
 
-Jeśli Twoja organizacja użyła kluczy prywatnych PGP i SSH do skonfigurowania witryny Bloomberg SFTP, musisz uzyskać adres IP i przekazać go do pomocy technicznej bloomberga. Witryna Bloomberg SFTP musi być skonfigurowana do akceptowania żądań połączenia z tego adresu IP. Ten sam adres IP jest używany przez łącznik Instant Bloomberg do nawiązywania połączenia z witryną SFTP i przesyłania danych Instant Bloomberg do Microsoft 365.
+Jeśli Twoja organizacja użyła kluczy prywatnych PGP i SSH do skonfigurowania witryny Bloomberg SFTP, musisz uzyskać adres IP i przekazać go do pomocy technicznej bloomberga. Witryna Bloomberg SFTP musi być skonfigurowana do akceptowania żądań połączenia z tego adresu IP. Ten sam adres IP jest używany przez łącznik Instant Bloomberg do nawiązywania połączenia z witryną SFTP i transferu danych Instant Bloomberg na platformę Microsoft 365.
 
 Aby uzyskać adres IP:
 
@@ -187,7 +185,7 @@ Aby skonfigurować witrynę Bloomberg SFTP do akceptowania żądań połączeń 
 
 ### <a name="step-2-create-an-instant-bloomberg-connector"></a>Krok 2. Tworzenie łącznika Instant Bloomberg
 
-Po skonfigurowaniu witryny Bloomberg SFTP następnym krokiem jest utworzenie łącznika Instant Bloomberg w portalu zgodności. Łącznik używa podanych informacji, aby nawiązać połączenie z witryną Bloomberg SFTP i przenieść wiadomości e-mail do odpowiednich skrzynek pocztowych użytkownika w Microsoft 365. Aby wykonać ten krok, upewnij się, że masz kopie tych samych kluczy prywatnych i haseł kluczy, których użyto do skonfigurowania witryny Bloomberg SFTP.
+Po skonfigurowaniu witryny Bloomberg SFTP następnym krokiem jest utworzenie łącznika Instant Bloomberg w portalu zgodności. Łącznik używa podanych informacji, aby nawiązać połączenie z witryną Bloomberg SFTP i przenieść wiadomości e-mail do odpowiednich skrzynek pocztowych użytkownika na platformie Microsoft 365. Aby wykonać ten krok, upewnij się, że masz kopie tych samych kluczy prywatnych i haseł kluczy, których użyto do skonfigurowania witryny Bloomberg SFTP.
 
 1. Przejdź do strony <https://compliance.microsoft.com> i kliknij pozycję **Łączniki danych** w lewym pasku nawigacyjnym.
 
@@ -229,10 +227,10 @@ Po skonfigurowaniu witryny Bloomberg SFTP następnym krokiem jest utworzenie ł�
 
     - **Blokada dotyczy tylko użytkowników w postępowaniu sądowym**. Wybierz tę opcję, aby zaimportować dane tylko dla użytkowników, których skrzynki pocztowe zostały wstrzymane w postępowaniu sądowym. Ta opcja importuje dane do skrzynek pocztowych użytkowników z właściwością LitigationHoldEnabled ustawioną na wartość True. Aby uzyskać więcej informacji, zobacz [Tworzenie blokady postępowania sądowego](create-a-litigation-hold.md).
 
-9. Na stronie **Mapowanie błyskawicznych użytkowników bloomberga w celu Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników i w razie potrzeby udostępnij niestandardowe mapowanie użytkowników.
+9. Na stronie **Map instant Bloomberg users to Microsoft 365 users (Mapuj błyskawicznych użytkowników bloomberga na użytkowników platformy Microsoft 365** ) włącz automatyczne mapowanie użytkowników i w razie potrzeby udostępnij niestandardowe mapowanie użytkowników.
 
    > [!NOTE]
-   > Łącznik importuje elementy wiadomości czatu do skrzynki pocztowej określonego użytkownika. Nowy folder o nazwie **InstantBloomberg** jest tworzony w skrzynce pocztowej określonego użytkownika i elementy zostaną do niego zaimportowane. Łącznik jest używany przy użyciu wartości właściwości *CorporateEmailAddress* . Każda wiadomość czatu zawiera tę właściwość, a właściwość jest wypełniana adresem e-mail każdego uczestnika wiadomości czatu. Oprócz automatycznego mapowania użytkowników przy użyciu wartości właściwości *CorporateEmailAddress* można również zdefiniować mapowanie niestandardowe, przekazując plik mapowania CSV. Plik mapowania powinien zawierać identyfikator UUID bloomberga i odpowiedni adres skrzynki pocztowej Microsoft 365 dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe, dla każdego elementu czatu łącznik najpierw przyjrzy się niestandardowemu plikowi mapowania. Jeśli nie znajdzie prawidłowego użytkownika Microsoft 365, który odpowiada identyfikatorowi UUID bloomberga użytkownika, łącznik *użyje właściwości CorporateEmailAddress* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 w niestandardowym pliku mapowania lub we właściwości *CorporateEmailAddress* elementu czatu, element nie zostanie zaimportowany.
+   > Łącznik importuje elementy wiadomości czatu do skrzynki pocztowej określonego użytkownika. Nowy folder o nazwie **InstantBloomberg** jest tworzony w skrzynce pocztowej określonego użytkownika i elementy zostaną do niego zaimportowane. Łącznik jest używany przy użyciu wartości właściwości *CorporateEmailAddress* . Każda wiadomość czatu zawiera tę właściwość, a właściwość jest wypełniana adresem e-mail każdego uczestnika wiadomości czatu. Oprócz automatycznego mapowania użytkowników przy użyciu wartości właściwości *CorporateEmailAddress* można również zdefiniować mapowanie niestandardowe, przekazując plik mapowania CSV. Plik mapowania powinien zawierać identyfikator UUID bloomberga i odpowiadający im adres skrzynki pocztowej platformy Microsoft 365 dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe, dla każdego elementu czatu łącznik najpierw przyjrzy się niestandardowemu plikowi mapowania. Jeśli nie znajdzie prawidłowego użytkownika platformy Microsoft 365 odpowiadającego identyfikatorowi UUID bloomberga użytkownika, łącznik *użyje właściwości CorporateEmailAddress* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika platformy Microsoft 365 w niestandardowym pliku mapowania lub we właściwości *CorporateEmailAddress* elementu czatu, element nie zostanie zaimportowany.
 
 10. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ** , aby utworzyć łącznik.
 

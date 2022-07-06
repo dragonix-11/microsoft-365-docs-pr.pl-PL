@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie niestandardowymi typami informacji poufnych w Centrum zgodności
+title: Zarządzaj niestandardowymi typami informacji poufnych w centrum zgodności
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,31 +17,31 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak modyfikować i usuwać niestandardowe typy informacji poufnych w Centrum zgodności.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0efbb93096fc3c0b61a57319aa2d23a079f684d1
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 5e0b1b91fd19a5e0705ad95affe888a87847caf8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63014892"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621973"
 ---
 # <a name="manage-custom-sensitive-information-types-in-the-compliance-center"></a>Zarządzanie niestandardowymi typami informacji poufnych w Centrum zgodności
 
-Ten artykuł zawiera instrukcje modyfikowania i usuwania istniejącego niestandardowego typu informacji poufnych w Centrum zgodności.
+W tym artykule przedstawiono kroki modyfikowania i usuwania istniejącego niestandardowego typu informacji poufnych w Centrum zgodności.
 
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>Modyfikowanie niestandardowych typów informacji poufnych w Centrum zgodności
 
-1. W Centrum zgodności przejdź do tematu **Typy** \> informacji poufnych klasyfikacji danych i wybierz z listy typ informacji poufnych, który chcesz zmodyfikować, wybierz pozycję **Edytuj**.
+1. W Centrum zgodności przejdź do pozycji Typy **informacji poufnych** **klasyfikacji** \> danych i wybierz typ informacji poufnych z listy, którą chcesz zmodyfikować, wybierz pozycję **Edytuj**.
 
-2. Możesz dodać inne wzorce, z unikatowymi elementami podstawowymi i obsługowymi, poziomami ufności, [](sit-regex-validators-additional-checks.md#sensitive-information-type-additional-checks) sąsiedztwem znaków oraz dodatkowymi testami lub edytowaniem/usuwaniem istniejących.
+2. Możesz dodać inne wzorce z unikatowymi elementami podstawowymi i pomocniczymi, poziomami ufności, bliskością znaków oraz [**dodatkowymi kontrolami**](sit-regex-validators-additional-checks.md#sensitive-information-type-additional-checks) lub edytować/usunąć istniejące.
 
-## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>Usuwanie niestandardowych typów informacji poufnych z Centrum zgodności 
+## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>Usuwanie niestandardowych typów informacji poufnych w Centrum zgodności 
 
 > [!NOTE]
-> Możesz usuwać tylko niestandardowe typy informacji poufnych. nie można usunąć wbudowanych typów informacji poufnych.
+> Można usuwać tylko niestandardowe typy informacji poufnych; Nie można usunąć wbudowanych typów informacji poufnych.
 
 > [!IMPORTANT]
-> Przed usunięciem niestandardowego typu informacji poufnych upewnij się, że żadne zasady DLP Exchange przepływu poczty e-mail (nazywane także regułami transportu) nadal odwołują się do typu informacji poufnych.
+> Przed usunięciem niestandardowego typu informacji poufnych sprawdź, czy żadne zasady DLP ani reguły przepływu poczty programu Exchange (znane również jako reguły transportu) nie odwołują się do typu informacji poufnych.
 
-1. W Centrum zgodności przejdź do tematu **Typy** \> informacji poufnych klasyfikacji danych i wybierz z listy typ informacji poufnych, który chcesz usunąć.
+1. W Centrum zgodności przejdź do pozycji **Typy informacji poufnych** **klasyfikacji** \> danych i wybierz typ informacji poufnych z listy, którą chcesz usunąć.
 
-2. Z otwartego wysuwu wybierz pozycję **Usuń**.
+2. W wyświetlonym menu wysuwnym wybierz pozycję **Usuń**.

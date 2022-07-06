@@ -1,5 +1,5 @@
 ---
-title: Ochrona dostępu użytkownika i urządzenia
+title: Ochroń dostęp użytkowników i urządzeń
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -14,56 +14,56 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Dowiedz się, jak chronić dostęp użytkowników i urządzeń do Microsoft 365 i usług oraz chronić się przed utratą danych.
+description: Dowiedz się, jak chronić dostęp użytkowników i urządzeń do danych i usług platformy Microsoft 365 oraz bronić się przed utratą danych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48f483422fda158c02429aec642f60e05b8c933a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: f8b6b266d037e8bbc185643e530bf7a2f6919038
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679593"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623716"
 ---
-# <a name="protect-user-and-device-access"></a>Ochrona dostępu użytkownika i urządzenia
+# <a name="protect-user-and-device-access"></a>Ochroń dostęp użytkowników i urządzeń
 
-Ochrona dostępu do Twoich Microsoft 365 danych i usług jest kluczowa podczas obrony przed cyberatakami i ochrony przed utratą danych. Te same zabezpieczenia można stosować do innych aplikacji SaaS w Twoim środowisku, a nawet do aplikacji lokalnych opublikowanych za Azure Active Directory proxy aplikacji.
+Ochrona dostępu do danych i usług platformy Microsoft 365 ma kluczowe znaczenie dla obrony przed cyberatakami i ochrony przed utratą danych. Te same zabezpieczenia mogą być stosowane do innych aplikacji SaaS w środowisku, a nawet do aplikacji lokalnych opublikowanych za pomocą usługi Azure Active Directory serwer proxy aplikacji.
   
-## <a name="step-1-review-recommendations"></a>Krok 1. Przejrzyj zalecenia
+## <a name="step-1-review-recommendations"></a>Krok 1. Przegląd zaleceń
 
-Zalecane funkcje ochrony tożsamości i urządzeń, które mają Office 365 dostępu do usług SaaS, innych usług SaaS oraz aplikacji lokalnych opublikowanych za pomocą serwera proxy aplikacji Azure AD.
+Zalecane możliwości ochrony tożsamości i urządzeń uzyskujących dostęp do Office 365, innych usług SaaS i aplikacji lokalnych opublikowanych za pomocą Azure AD serwer proxy aplikacji.
   
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) |  [](https://go.microsoft.com/fwlink/p/?linkid=841657) |  Visio [Więcej języków](https://www.microsoft.com/download/details.aspx?id=55032)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) |  [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) |  [Więcej języków](https://www.microsoft.com/download/details.aspx?id=55032)
   
-## <a name="step-2-protect-administrator-accounts-and-access"></a>Krok 2. Ochrona kont administratora i dostępu
-Konta administracyjne służące do administrowania środowiskiem Microsoft 365 mają podwyższony poziom uprawnień. Są to wartościowe cele dla hakerów i cyberprzestępczych. 
+## <a name="step-2-protect-administrator-accounts-and-access"></a>Krok 2. Ochrona kont administratorów i dostępu
 
-Zacznij od używania kont administratora tylko do administrowania. Administratorzy powinni mieć oddzielne konto użytkownika do regularnego, nieadministracyjnym i używać swojego konta administracyjnego tylko wtedy, gdy jest to konieczne do wykonania zadania skojarzonego z ich funkcją.
+Konta administracyjne używane do administrowania środowiskiem platformy Microsoft 365 obejmują podwyższone uprawnienia. Są to cenne cele dla hakerów i cyberataków.
 
-Konta administratora można chronić za pomocą uwierzytelniania wieloskładnikowego i dostępu warunkowego. Aby uzyskać więcej informacji, zobacz [Chronienie kont administratora](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts). 
+Rozpocznij od używania kont administratora tylko do administrowania. Administratorzy powinni mieć oddzielne konto użytkownika do regularnego, nieadministracyjnyego użytku i używać konta administracyjnego tylko wtedy, gdy jest to konieczne do wykonania zadania skojarzonego z funkcją zadania.
 
-Następnie skonfiguruj zarządzanie dostępem uprzywilejowanym w programie Office 365. Zarządzanie dostępem z uprawnieniami umożliwia szczegółową kontrolę dostępu nad zadaniami administratora z uprawnieniami w Office 365. Pomaga chronić organizację przed naruszeniem zabezpieczeń, które mogą korzystać z istniejących uprzywilejowanych kont administratora z dostępem do poufnych danych lub dostępem do krytycznych ustawień konfiguracji.
+Chroń konta administratorów za pomocą uwierzytelniania wieloskładnikowego i dostępu warunkowego. Aby uzyskać więcej informacji, zobacz [Ochrona kont administratorów](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts). 
 
-- [Omówienie zarządzania dostępem z uprawnieniami](privileged-access-management-overview.md)
-- [Konfigurowanie zarządzania dostępem z uprawnieniami](privileged-access-management-configuration.md)
+Następnie skonfiguruj usługę Microsoft Purview Privileged Access Management. Zarządzanie dostępem uprzywilejowanym umożliwia szczegółową kontrolę dostępu nad uprzywilejowanymi zadaniami administratora w Office 365. Może pomóc chronić organizację przed naruszeniami, które mogą korzystać z istniejących kont administratorów uprzywilejowanych z dostępem do poufnych danych lub dostępem do krytycznych ustawień konfiguracji.
 
-Innym górnym zaleceniem jest korzystanie ze stacji roboczych specjalnie skonfigurowanych do pracy administracyjnej. Są to urządzenia dedykowane, które są używane tylko do zadań administracyjnych. Zobacz [Zabezpieczanie dostępu z uprawnieniami](/windows-server/identity/securing-privileged-access/securing-privileged-access).
+- [Omówienie zarządzania dostępem uprzywilejowanym](privileged-access-management.md)
+- [Konfigurowanie zarządzania dostępem uprzywilejowanym](privileged-access-management-configuration.md)
 
-Na koniec można zminimalizować wpływ niezamierzonego braku dostępu administracyjnego, tworząc co najmniej dwa konta dostępu dla służb ratunkowych w dzierżawie. Zobacz [Zarządzanie kontami dostępu alarmowego w usłudze Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access). 
+Innym najlepszym zaleceniem jest użycie stacji roboczych specjalnie skonfigurowanych do pracy administracyjnej. Są to dedykowane urządzenia, które są używane tylko do zadań administracyjnych. Zobacz [Zabezpieczanie dostępu uprzywilejowanego](/windows-server/identity/securing-privileged-access/securing-privileged-access).
 
-## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Krok 3. Konfigurowanie zalecanych zasad dostępu do urządzenia i tożsamości
-Uwierzytelnianie wieloskładnikowe (MFA) i zasady dostępu warunkowego to zaawansowane narzędzia do ograniczania przed naruszonymi kontami i nieautoryzowanym dostępem. Zalecamy zaimplementowanie zestawu testowanych razem zasad. Aby uzyskać więcej informacji, w tym kroki wdrażania, zobacz [Konfiguracje tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md).
+Na koniec możesz ograniczyć wpływ niezamierzonego braku dostępu administracyjnego, tworząc co najmniej dwa konta dostępu awaryjnego w dzierżawie. Zobacz [Zarządzanie kontami dostępu awaryjnego w Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
- Te zasady wdrażają następujące funkcje:
+## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Krok 3. Konfigurowanie zalecanych zasad dostępu do tożsamości i urządzeń
+
+Zasady uwierzytelniania wieloskładnikowego (MFA) i dostępu warunkowego to zaawansowane narzędzia do ograniczania naruszonych kont i nieautoryzowanego dostępu. Zalecamy zaimplementowanie zestawu zasad, które zostały przetestowane razem. Aby uzyskać więcej informacji, w tym kroki wdrażania, zobacz [Konfiguracje tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md).
+
+ Te zasady implementują następujące możliwości:
+
 - Uwierzytelnianie wieloskładnikowe
 - Dostęp warunkowy
-- Ochrona aplikacji Intune (aplikacja i ochrona danych dla urządzeń)
-- Zgodność urządzenia w usłudze Intune
-- Azure AD Identity Protection
+- Intune ochrony aplikacji (ochrona aplikacji i danych dla urządzeń)
+- zgodność Intune urządzeniami
+- Ochrona tożsamości w usłudze Azure AD
 
-Wdrażanie zgodności urządzenia Intune wymaga rejestracji urządzenia. Zarządzanie urządzeniami umożliwia zagwarantowanie, że są one w dobrej kondycji i zgodne, zanim umożliwią im dostęp do zasobów w Twoim środowisku. Zobacz [Rejestrowanie urządzeń do zarządzania w usłudze Intune.](/mem/intune/user-help/enroll-windows-10-device)
+Implementowanie zgodności urządzeń Intune wymaga rejestracji urządzenia. Zarządzanie urządzeniami pozwala upewnić się, że są one w dobrej kondycji i zgodne przed zezwoleniem im na dostęp do zasobów w środowisku. Zobacz [Rejestrowanie urządzeń do zarządzania w Intune](/mem/intune/user-help/enroll-windows-10-device)
 
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>Krok 4. Konfigurowanie SharePoint dostępu do urządzenia
+## <a name="step-4-configure-sharepoint-device-access-policies"></a>Krok 4. Konfigurowanie zasad dostępu urządzeń programu SharePoint
 
-Firma Microsoft zaleca ochronę zawartości w witrynach SharePoint za pomocą poufnych i ściśle uregulowanych treści za pomocą kontroli dostępu do urządzeń. Aby uzyskać więcej informacji, zobacz [Zalecenia dotyczące zasad dotyczące SharePoint witryn i plików](../security/office-365-security/sharepoint-file-access-policies.md).
-
-
-
+Firma Microsoft zaleca ochronę zawartości w witrynach programu SharePoint za pomocą poufnych i wysoce regulowanych treści za pomocą kontroli dostępu do urządzeń. Aby uzyskać więcej informacji, zobacz [Zalecenia dotyczące zasad dotyczące zabezpieczania witryn i plików programu SharePoint](../security/office-365-security/sharepoint-file-access-policies.md).

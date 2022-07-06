@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Dowiedz się, jak zaprojektować zasady ochrony przed utratą danych (DLP)
-ms.openlocfilehash: 2d7c370ab34eea2c708769674495a2c51f1a3fcf
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 32204659da3adcc2fd868568bf3a7bd909e5f2f9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782044"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623014"
 ---
 # <a name="design-a-data-loss-prevention-policy"></a>Projektowanie zasad ochrony przed utratą danych
 
@@ -30,9 +30,9 @@ Poświęcenie czasu na zaprojektowanie zasad przed jego zaimplementowaniem spowo
 
  if you have to do a lot of tuning to get a policy to yield the intended results can be time consuming .-->
 
-Jeśli dopiero zaczynasz Microsoft 365 DLP, warto zapoznać się z tymi artykułami przed rozpoczęciem projektowania zasad:
+Jeśli dopiero zaczynasz pracę z usługą Microsoft Purview DLP, warto zapoznać się z tymi artykułami przed rozpoczęciem projektowania zasad:
 
-- [Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) — w tym artykule przedstawiono dziedzinę zapobiegania utracie danych i implementację DLP firmy Microsoft
+- [Dowiedz się więcej o Ochrona przed utratą danych w Microsoft Purview](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) — w tym artykule przedstawiono dziedzinę zapobiegania utracie danych i implementację DLP firmy Microsoft
 - [Planowanie zapobiegania utracie danych (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) — korzystając z tego artykułu, wykonasz następujące czynności:
   - [Identyfikowanie uczestników projektu](dlp-overview-plan-for-dlp.md#identify-stakeholders)
   - [Opis kategorii informacji poufnych w celu ochrony](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
@@ -56,7 +56,7 @@ Pamiętaj z [przeglądu konfiguracji zasad DLP](dlp-learn-about-dlp.md#dlp-polic
 
 Oto przykładowy fikcyjny pierwszy projekt instrukcji intencji, która zawiera odpowiedzi na wszystkie cztery pytania:
 
-*"Jesteśmy organizacją z siedzibą w USA i musimy wykrywać Office dokumentów zawierających poufne informacje o służbie zdrowia objęte hippa, które są przechowywane w OneDrive/SharePoint i chronić przed informacjami udostępnianymi w Teams wiadomościach czatu i kanału oraz ograniczyć wszystkim możliwość udostępniania ich nieautoryzowanym osobom trzecim".*
+*"Jesteśmy organizacją z siedzibą w USA i musimy wykrywać dokumenty pakietu Office zawierające poufne informacje o służbie zdrowia objęte hippa przechowywane w usłudze OneDrive/SharePoint oraz chronić przed informacjami udostępnianymi w wiadomościach czatu i kanału usługi Teams oraz ograniczyć wszystkim możliwość udostępniania ich nieautoryzowanym osobom trzecim".*
 
 Podczas opracowywania projektu zasad prawdopodobnie zmodyfikujesz i rozszerzysz instrukcję.
 
@@ -66,9 +66,9 @@ Przeprowadźmy podział przykładowej instrukcji roboczej i zamapujmy ją na pun
 
 |Instrukcja|Udzielono odpowiedzi na pytanie dotyczące konfiguracji i mapowanie konfiguracji|
 |---|---|
-|"Jesteśmy organizacją z siedzibą w USA i musimy wykryć Office dokumenty zawierające poufne informacje o służbie zdrowia objęte hippa ...|- **Co monitorować**: Office dokumentacji, użyj szablonu [amerykańskiej ustawy o ubezpieczeniach zdrowotnych (HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) </br>- **Warunki dopasowania**: (wstępnie skonfigurowane, ale edytowalne) — element zawiera numer US SSN i Drug Enforcement Agency (DEA), Międzynarodową Klasyfikację Chorób (ICD-9-CM), Międzynarodową Klasyfikację Chorób (ICD-10-CM), zawartość jest udostępniana osobom spoza mojej organizacji  </br> — prowadzi konwersacje w celu wyjaśnienia progu wyzwalania wykrywania, takiego jak [poziomy ufności](sensitive-information-type-learn-about.md#more-on-confidence-levels) i [liczba wystąpień](dlp-policy-reference.md#content-contains) (nazywana tolerancją przecieków).|
-|... są przechowywane w OneDrive/SharePoint i chronią przed udostępnianiem tych informacji Teams wiadomościach czatu i kanału...|- **Gdzie monitorować**: [określanie zakresu lokalizacji przez uwzględnienie](dlp-policy-reference.md#locations) lub wykluczenie witryn OneDrive i SharePoint oraz Teams kont czatów/kanałów lub grup dystrybucyjnych.|
-|... i ograniczyć wszystkim możliwość udostępniania tych elementów nieautoryzowanym osobom trzecim".|- **Akcje do wykonania**: [dodaj](dlp-policy-reference.md#actions) *pozycję Ogranicz dostęp lub zaszyfruj zawartość w Microsoft 365 lokalizacjach* </br> — prowadzi konwersację na temat działań, które należy wykonać po wyzwoleniu zasad, w tym działań ochronnych, takich jak ograniczenia udostępniania, akcje uświadamiające, takie jak powiadomienia i alerty, oraz akcje upodmiotowienia użytkowników, takie jak zezwalanie na zastępowanie akcji blokującej przez użytkownika|
+|"Jesteśmy organizacją z siedzibą w USA i musimy wykrywać dokumenty pakietu Office zawierające poufne informacje o służbie zdrowia objęte hippa...|- **Co monitorować**: Dokumentacja pakietu Office, użyj szablonu [amerykańskiej ustawy o ubezpieczeniach zdrowotnych (HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) </br>- **Warunki dopasowania**: (wstępnie skonfigurowane, ale edytowalne) — element zawiera numer US SSN i Drug Enforcement Agency (DEA), Międzynarodową Klasyfikację Chorób (ICD-9-CM), Międzynarodową Klasyfikację Chorób (ICD-10-CM), zawartość jest udostępniana osobom spoza mojej organizacji  </br> — prowadzi konwersacje w celu wyjaśnienia progu wyzwalania wykrywania, takiego jak [poziomy ufności](sensitive-information-type-learn-about.md#more-on-confidence-levels) i [liczba wystąpień](dlp-policy-reference.md#content-contains) (nazywana tolerancją przecieków).|
+|... które są przechowywane w usłudze OneDrive/SharePoint i chronią przed udostępnianiem wiadomości czatu i kanału usługi Teams...|- **Gdzie monitorować**:  [określanie zakresu lokalizacji przez uwzględnienie](dlp-policy-reference.md#locations) lub wykluczenie witryn usługi OneDrive i programu SharePoint oraz kont czatu/kanału usługi Teams lub grup dystrybucyjnych.|
+|... i ograniczyć wszystkim możliwość udostępniania tych elementów nieautoryzowanym osobom trzecim".|- **Akcje do wykonania**: [dodaj](dlp-policy-reference.md#actions) *pozycję Ogranicz dostęp lub zaszyfruj zawartość w lokalizacjach platformy Microsoft 365* </br> — prowadzi konwersację na temat działań, które należy wykonać po wyzwoleniu zasad, w tym działań ochronnych, takich jak ograniczenia udostępniania, akcje uświadamiające, takie jak powiadomienia i alerty, oraz akcje upodmiotowienia użytkowników, takie jak zezwalanie na zastępowanie akcji blokującej przez użytkownika|
 
 Ten przykład nie obejmuje wszystkich punktów konfiguracji zasad DLP. Należy go rozszerzyć. Ale powinno to skłonić Cię do myślenia we właściwym kierunku podczas opracowywania własnych instrukcji intencji zasad DLP.
 

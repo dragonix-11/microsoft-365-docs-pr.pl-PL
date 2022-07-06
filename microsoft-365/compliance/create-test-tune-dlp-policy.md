@@ -19,18 +19,16 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: W tym artykule dowiesz się, jak tworzyć, testować i dostrajać zasady DLP zgodnie z potrzebami organizacji.
-ms.openlocfilehash: 8e4c96a1625e3e11995aed66fff4a289da5d059d
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: dff47d07a582be807d877471fb7621960b776f24
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016971"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624736"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Twórz, testuj i dostrajaj zasady DLP
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Rozwiązanie Microsoft Purview Data Loss Prevention (DLP) pomaga zapobiegać przypadkowemu lub przypadkowemu udostępnianiu informacji poufnych.
+Ochrona przed utratą danych w Microsoft Purview (DLP) pomaga zapobiegać przypadkowemu lub przypadkowemu udostępnianiu informacji poufnych.
 
 DLP sprawdza wiadomości e-mail i pliki pod kątem informacji poufnych, takich jak numer karty kredytowej. Przy użyciu DLP można wykrywać poufne informacje i podejmować działania, takie jak:
 
@@ -42,13 +40,13 @@ DLP sprawdza wiadomości e-mail i pliki pod kątem informacji poufnych, takich j
 
 Członkowie zespołu ds. zgodności, którzy będą tworzyć zasady DLP, potrzebują uprawnień do Centrum zgodności. Domyślnie administrator dzierżawy będzie miał dostęp, aby zapewnić dostęp funkcjonariuszom ds. zgodności i innym osobom. Wykonaj następujące czynności:
   
-1. Utwórz grupę w Microsoft 365 i dodaj do niej funkcjonariuszy zgodności.
+1. Utwórz grupę na platformie Microsoft 365 i dodaj do niej funkcjonariuszy ds. zgodności.
     
-2. Utwórz grupę ról na stronie **Uprawnienia** w portalu zgodności usługi Microsoft Purview. 
+2. Utwórz grupę ról na stronie **Uprawnienia** portal zgodności Microsoft Purview. 
 
 3. Podczas tworzenia grupy ról użyj sekcji **Wybierz role** , aby dodać następującą rolę do grupy ról: **Zarządzanie zgodnością DLP**.
     
-4. Użyj sekcji **Wybieranie członków**, aby dodać utworzoną wcześniej grupę Microsoft 365 do grupy ról.
+4. Użyj sekcji **Wybieranie członków** , aby dodać utworzoną wcześniej grupę platformy Microsoft 365 do grupy ról.
 
 Użyj roli **Zarządzanie zgodnością DLP tylko do wyświetlania** , aby utworzyć grupę ról z uprawnieniami tylko do wyświetlania do zasad DLP i raportów DLP.
 
@@ -62,7 +60,7 @@ W wersji zapoznawczej dostępne są role i grupy ról, które można przetestowa
 
 Oto lista odpowiednich ról w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Role w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- administrator Information Protection
+- Information Protection Administracja
 - analityk Information Protection
 - badacz Information Protection
 - czytelnik Information Protection
@@ -94,9 +92,9 @@ Zobacz [Definicje jednostek typów informacji poufnych](sensitive-information-ty
 
 Gdy ryzyko wycieku danych nie jest do końca oczywiste, trudno jest ustalić, gdzie dokładnie należy zacząć od zaimplementowania DLP. Na szczęście zasady DLP można uruchamiać w "trybie testowym", co pozwala ocenić ich skuteczność i dokładność przed ich włączeniem.
 
-Zasady DLP dla Exchange Online można zarządzać za pośrednictwem centrum administracyjnego Exchange. Można jednak skonfigurować zasady DLP dla wszystkich obciążeń za pośrednictwem portalu zgodności usługi Microsoft Purview, więc tego właśnie użyję na potrzeby pokazów w tym artykule. W portalu zgodności usługi Microsoft Purview zasady DLP znajdziesz w obszarze **Zasady** **ochrony przed utratą** >  danych. Wybierz **pozycję Utwórz zasady,** aby rozpocząć.
+Zasady DLP dla Exchange Online można zarządzać za pośrednictwem centrum administracyjnego programu Exchange. Można jednak skonfigurować zasady DLP dla wszystkich obciążeń za pośrednictwem portal zgodności Microsoft Purview, więc tego właśnie użyję na potrzeby pokazów w tym artykule. W portal zgodności Microsoft Purview zasady DLP znajdziesz w obszarze **Zasady** **ochrony przed utratą** >  danych. Wybierz **pozycję Utwórz zasady,** aby rozpocząć.
 
-Microsoft 365 udostępnia szereg [szablonów zasad DLP, których](what-the-dlp-policy-templates-include.md) można użyć do tworzenia zasad. Załóżmy, że jesteś australijską firmą. Szablony można filtrować w Australii, a następnie wybierać pozycje Finansowe, Medyczne i Zdrowotne oraz Prywatność.
+Platforma Microsoft 365 udostępnia szereg [szablonów zasad DLP, których](what-the-dlp-policy-templates-include.md) można użyć do tworzenia zasad. Załóżmy, że jesteś australijską firmą. Szablony można filtrować w Australii, a następnie wybierać pozycje Finansowe, Medyczne i Zdrowotne oraz Prywatność.
 
 ![Opcja wyboru kraju lub regionu.](../media/DLP-create-test-tune-choose-country.png)
 
@@ -108,7 +106,7 @@ Nadaj nowej zasadom DLP nazwę. Nazwa domyślna będzie zgodna z szablonem zasad
 
 ![Opcja nazwy zasad.](../media/DLP-create-test-tune-name-policy.png)
 
-Wybierz lokalizacje, do których będą stosowane zasady. Zasady DLP mogą mieć zastosowanie do Exchange Online, SharePoint Online i OneDrive dla Firm. Pozostawię te zasady skonfigurowane tak, aby były stosowane do wszystkich lokalizacji.
+Wybierz lokalizacje, do których będą stosowane zasady. Zasady DLP mogą mieć zastosowanie do Exchange Online, usługi SharePoint Online i OneDrive dla Firm. Pozostawię te zasady skonfigurowane tak, aby były stosowane do wszystkich lokalizacji.
 
 ![Opcja wyboru wszystkich lokalizacji.](../media/DLP-create-test-tune-choose-locations.png)
 
@@ -116,9 +114,9 @@ W pierwszym kroku **Ustawienia zasad** po prostu zaakceptuj na razie wartości d
 
 ![Opcje dostosowywania typu zawartości w celu ochrony.](../media/DLP-create-test-tune-default-customization-settings.png)
 
-Po kliknięciu przycisku Dalej** zostanie wyświetlona strona **Ustawienia zasad** z większą ilością opcji dostosowywania. W przypadku zasad, które właśnie testujesz, możesz zacząć wprowadzać pewne zmiany.
+Po kliknięciu przycisku Dalej** zostanie wyświetlona strona **Więcej ustawień zasad** z większą ilością opcji dostosowywania. W przypadku zasad, które właśnie testujesz, możesz zacząć wprowadzać pewne zmiany.
 
-- Na razie wyłączyłem wskazówki dotyczące zasad, co jest rozsądnym krokiem do wykonania, jeśli po prostu testujesz rzeczy i nie chcesz jeszcze wyświetlać niczego użytkownikom. Porady dotyczące zasad zawierają ostrzeżenia dla użytkowników, że mają zamiar naruszać zasady DLP. Na przykład użytkownik Outlook zobaczy ostrzeżenie, że dołączony plik zawiera numery kart kredytowych i spowoduje odrzucenie wiadomości e-mail. Celem porad dotyczących zasad jest zatrzymanie niezgodnego zachowania przed jego wystąpieniem.
+- Na razie wyłączyłem wskazówki dotyczące zasad, co jest rozsądnym krokiem do wykonania, jeśli po prostu testujesz rzeczy i nie chcesz jeszcze wyświetlać niczego użytkownikom. Porady dotyczące zasad zawierają ostrzeżenia dla użytkowników, że mają zamiar naruszać zasady DLP. Na przykład użytkownik programu Outlook zobaczy ostrzeżenie, że dołączony plik zawiera numery kart kredytowych i spowoduje odrzucenie wiadomości e-mail. Celem porad dotyczących zasad jest zatrzymanie niezgodnego zachowania przed jego wystąpieniem.
 - Zmniejszyłam również liczbę wystąpień z 10 do 1, dzięki czemu te zasady wykryje wszelkie udostępnianie australijskich danych osobowych, a nie tylko zbiorcze udostępnianie danych.
 - Do wiadomości e-mail raportu o zdarzeniu dodano również innego adresata.
 
@@ -194,9 +192,9 @@ Po zapisaniu tych zmian w ustawieniach zasad muszę również wrócić do strony
 
 ![Opcja wyświetlania wskazówek dotyczących zasad w trybie testowym.](../media/DLP-create-test-tune-show-policy-tips.png)
 
-Po stronie serwera (lub po stronie chmury, jeśli wolisz), zmiana może nie zostać natychmiast wprowadzona ze względu na różne interwały przetwarzania. Jeśli wprowadzasz zmianę zasad DLP, która będzie wyświetlać użytkownikowi nowe wskazówki dotyczące zasad, użytkownik może nie widzieć, że zmiany zaczęły obowiązywać natychmiast w kliencie Outlook, który sprawdza zmiany zasad co 24 godziny. Jeśli chcesz przyspieszyć testowanie, możesz użyć tej poprawki rejestru, aby [wyczyścić sygnaturę czasową ostatniego pobierania z klucza PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook pobierze najnowsze informacje o zasadach przy następnym ponownym uruchomieniu i rozpoczniesz tworzenie wiadomości e-mail.
+Po stronie serwera (lub po stronie chmury, jeśli wolisz), zmiana może nie zostać natychmiast wprowadzona ze względu na różne interwały przetwarzania. Jeśli wprowadzasz zmianę zasad DLP, która będzie wyświetlać użytkownikowi nowe wskazówki dotyczące zasad, użytkownik może nie widzieć, że zmiany zaczną obowiązywać natychmiast w kliencie programu Outlook, który sprawdza zmiany zasad co 24 godziny. Jeśli chcesz przyspieszyć testowanie, możesz użyć tej poprawki rejestru, aby [wyczyścić sygnaturę czasową ostatniego pobierania z klucza PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Program Outlook pobierze najnowsze informacje o zasadach przy następnym ponownym uruchomieniu i rozpoczęciu tworzenia wiadomości e-mail.
 
-Jeśli masz włączone wskazówki dotyczące zasad, użytkownik zacznie widzieć wskazówki w Outlook i może zgłaszać Ci wyniki fałszywie dodatnie, gdy wystąpią.
+Jeśli masz włączone wskazówki dotyczące zasad, użytkownik zacznie widzieć wskazówki w programie Outlook i może zgłaszać ci wyniki fałszywie dodatnie, gdy wystąpią.
 
 ![Porada dotycząca zasad z opcją zgłaszania wyników fałszywie dodatnich.](../media/DLP-create-test-tune-policy-tip-in-outlook.png)
 
@@ -235,7 +233,7 @@ Jeśli zasady DLP są dokładne i efektywnie wykrywają typy informacji poufnych
 
 ![Opcja włączenia zasad.](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Jeśli czekasz, aby zobaczyć, kiedy zasady zostaną zastosowane, [Połączenie do programu PowerShell Security & Compliance](/powershell/exchange/connect-to-scc-powershell) i uruchom [polecenie cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy), aby wyświetlić element DistributionStatus.
+Jeśli czekasz, aby zobaczyć, kiedy zasady zostaną zastosowane, [połącz się z programem PowerShell & Zgodności zabezpieczeń](/powershell/exchange/connect-to-scc-powershell) i uruchom [polecenie cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) , aby wyświetlić polecenie cmdlet DistributionStatus.
 
  ```powershell
  Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus

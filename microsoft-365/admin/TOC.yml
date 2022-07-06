@@ -374,7 +374,6 @@
       items:
         - name: Metody ochrony danych urządzeń i aplikacji
           href: devices/choose-device-security.md
-        - name: Weryfikowanie ustawień w systemie Android lub iOS
         - name: Funkcja Podstawowa mobilność i zabezpieczenia
           items:
             - name: Omówienie funkcji Podstawowa mobilność i zabezpieczenia

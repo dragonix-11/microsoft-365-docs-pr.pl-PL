@@ -15,25 +15,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: Zapoznaj się z omówieniem etapu oceny i jego roli w określaniu bogactwa problemów podczas trenowania istotności w usłudze Microsoft Purview eDiscovery (Premium).
+description: Zapoznaj się z omówieniem etapu oceny i jego roli w określaniu bogactwa problemów podczas trenowania istotności w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium).
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3bfd6087bbcade2c7e4d9afdcda0f47bbea6f53d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 19d518e116fbd86dc0f781443ba16c21890c4346
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096121"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625572"
 ---
 # <a name="assessment-in-the-relevance-module-in-ediscovery-premium"></a>Ocena w module Istotność w usłudze eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
-Usługa Microsoft Purview eDiscovery (Premium) umożliwia wczesną ocenę, na przykład w przypadku zdefiniowanych problemów i danych zaimportowanych w danym przypadku. eDiscovery (Premium) umożliwia ekspertom podejmowanie decyzji dotyczących przyjętego podejścia i stosowanie tych decyzji do projektu przeglądu dokumentu.
+Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) umożliwia wczesną ocenę, na przykład dla zdefiniowanych problemów i danych zaimportowanych dla danego przypadku. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) umożliwia ekspertom podejmowanie decyzji dotyczących przyjętego podejścia i stosowanie tych decyzji do projektu przeglądu dokumentu.
   
 ## <a name="understanding-assessment"></a>Omówienie oceny
 
-W obszarze Ocena ekspert przegląda losowy zestaw co najmniej 500 plików, które służą do określania bogactwa problemów i tworzenia statystyk, które odzwierciedlają wyniki trenowania. Ocena jest pomyślna, gdy zostanie stwierdzona wystarczająca liczba odpowiednich plików, aby osiągnąć poziom statystyczny, który pomoże w zbierania elektronicznych materiałów dowodowych (Premium) Istotność w celu zapewnienia dokładnych statystyk i skutecznego określenia punktu stabilizacji w procesie trenowania. 
+W obszarze Ocena ekspert przegląda losowy zestaw co najmniej 500 plików, które służą do określania bogactwa problemów i tworzenia statystyk, które odzwierciedlają wyniki trenowania. Ocena jest pomyślna, gdy zostanie znaleziona wystarczająca liczba odpowiednich plików, aby osiągnąć poziom statystyczny, który pomoże istotności zbierania elektronicznych materiałów dowodowych (Premium) w celu zapewnienia dokładnych statystyk i skutecznego określenia punktu stabilizacji w procesie trenowania. 
   
 Im większa liczba odpowiednich plików w zestawie oceny, tym dokładniejsze są statystyki i skuteczność algorytmu stabilności. Liczba odpowiednich plików w plikach oceny zależy od bogactwa problemu. Richness to szacowany procent odpowiednich plików w zestawie istotnych dla problemu. Problemy z wyższym bogactwem szybciej osiągną większą liczbę odpowiednich plików niż problemy z niższym bogactwem. Problemy z bardzo niskim bogactwem (na przykład 2% lub mniej) będą wymagały bardzo dużej oceny ustawionej w celu osiągnięcia znacznej liczby odpowiednich plików.
   

@@ -1,5 +1,5 @@
 ---
-title: Migrowanie starszych wyszukiwań zbierania elektronicznych materiałów dowodowych i archiwizacji do portalu zgodności usługi Microsoft Purview
+title: Migrowanie starszych wyszukiwań zbierania elektronicznych materiałów dowodowych i archiwizacji do portal zgodności Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,20 +15,18 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 3b80db06faea9c76c7df671468b94fc11f0c63df
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 607b66d863c0584ce1bb06c069de7870245cb167
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010093"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622596"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migrowanie starszych wyszukiwań zbierania elektronicznych materiałów dowodowych i archiwizacji do portalu zgodności
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Portal zgodności Microsoft Purview zapewnia ulepszone środowisko użycia zbierania elektronicznych materiałów dowodowych, w tym: wyższą niezawodność, lepszą wydajność i wiele funkcji dostosowanych do przepływów pracy zbierania elektronicznych materiałów dowodowych, w tym przypadki organizowania zawartości według danej kwestii, zestawy przeglądów w celu przeglądu zawartości i analizy, aby pomóc w usuwaniu danych do przeglądu, takich jak zduplikowane grupowanie, wątki wiadomości e-mail, analiza motywów i kodowanie predykcyjne.
 
-Portal zgodności usługi Microsoft Purview zapewnia ulepszone środowisko użycia zbierania elektronicznych elektronicznych materiałów dowodowych, w tym: wyższą niezawodność, lepszą wydajność i wiele funkcji dostosowanych do przepływów pracy zbierania elektronicznych materiałów dowodowych, w tym przypadki organizowania zawartości według materii, zestawy przeglądów w celu przeglądania zawartości i analizy, aby pomóc w usuwaniu danych w celu przeglądu, takiego jak zduplikowane grupowanie, wątki wiadomości e-mail, analiza motywów i kodowanie predykcyjne.
-
-Aby ułatwić klientom korzystanie z nowych i ulepszonych funkcji, ten artykuł zawiera podstawowe wskazówki dotyczące migracji In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych i archiwizacji z <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a> do portalu zgodności.
+Aby ułatwić klientom korzystanie z nowych i ulepszonych funkcji, ten artykuł zawiera podstawowe wskazówki dotyczące migrowania In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych i archiwizacji z <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego programu Exchange</a> do portalu zgodności.
 
 > [!NOTE]
 > Ponieważ istnieje wiele różnych scenariuszy, ten artykuł zawiera ogólne wskazówki dotyczące przenoszenia wyszukiwań i archiwizacji do przypadku zbierania elektronicznych materiałów dowodowych (Standard) w portalu zgodności. Przypadki zbierania elektronicznych materiałów dowodowych nie zawsze są wymagane, ale dodają dodatkową warstwę zabezpieczeń, umożliwiając przypisanie uprawnień do kontrolowania, kto ma dostęp do przypadków zbierania elektronicznych materiałów dowodowych w organizacji.
@@ -37,11 +35,11 @@ Aby ułatwić klientom korzystanie z nowych i ulepszonych funkcji, ten artykuł 
 
 - Musisz zainstalować moduł Exchange Online V2. Aby uzyskać instrukcje, zobacz [Instalowanie i obsługa modułu EXO w wersji 2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-- Aby uruchomić polecenia programu PowerShell opisane w tym artykule, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności. Musisz również być członkiem grupy ról Zarządzanie odnajdywaniem w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>.
+- Aby uruchomić polecenia programu PowerShell opisane w tym artykule, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności. Musisz również być członkiem grupy ról Zarządzanie odnajdywaniem w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym programu Exchange</a>.
 
 - Ten artykuł zawiera wskazówki dotyczące tworzenia blokady zbierania elektronicznych materiałów dowodowych. Zasady przechowywania zostaną zastosowane do skrzynek pocztowych w procesie asynchronicznym. Podczas tworzenia blokady zbierania elektronicznych materiałów dowodowych należy utworzyć zarówno caseHoldPolicy, jak i CaseHoldRule, w przeciwnym razie blokada nie zostanie utworzona, a lokalizacje zawartości nie zostaną wstrzymane.
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-powershell"></a>Krok 1. Połączenie do Exchange Online programu PowerShell i programu PowerShell & zgodności z zabezpieczeniami
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-powershell"></a>Krok 1. Nawiązywanie połączenia z programem PowerShell Exchange Online i programem PowerShell & zgodności z zabezpieczeniami
 
 Pierwszym krokiem jest nawiązanie połączenia z programem Exchange Online programu PowerShell i programu PowerShell & Zgodności zabezpieczeń w tym samym oknie programu PowerShell. Możesz skopiować następujące polecenia, wkleić je do okna programu PowerShell, a następnie uruchomić je. Zostanie wyświetlony monit o podanie poświadczeń.
 
@@ -50,7 +48,7 @@ Connect-IPPSSession
 Connect-ExchangeOnline -UseRPSSession
 ```
 
-Szczegółowe instrukcje można znaleźć [w temacie Połączenie to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and [Połączenie to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) .For detailed instructions (Połączenie to Security & Compliance PowerShell i Połączenie to Exchange Online PowerShell).
+Aby uzyskać szczegółowe instrukcje, zobacz [Connect to Security & Compliance PowerShell and Connect to Exchange Online PowerShell (Łączenie z programem PowerShell & zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell)) i [Connect to Exchange Online PowerShell (Łączenie z programem PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)).
 
 ## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>Krok 2. Pobieranie listy In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych przy użyciu Get-MailboxSearch
 
@@ -85,7 +83,7 @@ Dane wyjściowe tych dwóch poleceń będą podobne do następujących:
 > [!NOTE]
 > Czas trwania blokady In-Place w tym przykładzie jest nieokreślony (*ItemHoldPeriod: Nieograniczony*). Jest to typowe w przypadku scenariuszy zbierania elektronicznych materiałów dowodowych i badań prawnych. Jeśli czas trwania blokady jest inny niż nieokreślony, przyczyna jest prawdopodobna, ponieważ blokada jest używana do przechowywania zawartości w scenariuszu przechowywania. Zamiast używać poleceń cmdlet zbierania elektronicznych materiałów dowodowych w programie PowerShell & zgodności zabezpieczeń w scenariuszach przechowywania, zalecamy zachowanie zawartości za pomocą polecenia [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) i [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) . Wynik użycia tych poleceń cmdlet będzie podobny do użycia poleceń **New-CaseHoldPolicy** i **New-CaseHoldRule**, ale będzie można określić okres przechowywania i akcję przechowywania, na przykład usunięcie zawartości po upływie okresu przechowywania. Ponadto użycie poleceń cmdlet przechowywania nie wymaga skojarzenia blokad przechowywania z przypadkiem zbierania elektronicznych materiałów dowodowych.
 
-## <a name="step-4-create-a-case-in-the-microsoft-purview-compliance-portal"></a>Krok 4. Tworzenie sprawy w portalu zgodności usługi Microsoft Purview
+## <a name="step-4-create-a-case-in-the-microsoft-purview-compliance-portal"></a>Krok 4. Tworzenie sprawy w portal zgodności Microsoft Purview
 
 Aby utworzyć blokadę zbierania elektronicznych materiałów dowodowych, należy utworzyć przypadek zbierania elektronicznych materiałów dowodowych w celu skojarzenia blokady z. Poniższy przykład tworzy przypadek zbierania elektronicznych materiałów dowodowych przy użyciu wybranej nazwy. Właściwości nowego przypadku będą przechowywane w zmiennej do późniejszego użycia. Te właściwości można wyświetlić, `$case | FL` uruchamiając polecenie po utworzeniu sprawy.
 
@@ -139,7 +137,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 Aby upewnić się, że wszystko jest poprawnie skonfigurowane, przejdź do portalu zgodności pod adresem [https://compliance.microsoft.com](https://compliance.microsoft.com)i kliknij pozycję **eDiscovery > Core**.
 
-![Microsoft Purview compliance portal eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
+![portal zgodności Microsoft Purview zbierania elektronicznych materiałów dowodowych.](../media/MigrateLegacyeDiscovery7.png)
 
 Przypadek utworzony w kroku 3 znajduje się na stronie **eDiscovery (Standard** ). Otwórz sprawę, a następnie zwróć uwagę na blokadę utworzoną w kroku 4 na liście na karcie **Przytrzymaj** . Możesz wybrać blokadę, aby wyświetlić szczegóły na stronie wysuwanej, w tym liczbę skrzynek pocztowych, do których zastosowano blokadę, oraz stan dystrybucji.
 
@@ -153,7 +151,7 @@ Jeśli zmigrujesz In-Place wyszukiwanie zbierania elektronicznych materiałów d
 
 ## <a name="more-information"></a>Więcej informacji
 
-- Aby uzyskać więcej informacji na temat In-Place eDiscovery & Holds w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>, zobacz:
+- Aby uzyskać więcej informacji na temat In-Place eDiscovery & Holds w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym programu Exchange</a>, zobacz:
 
   - [Miejscowe zbieranie elektronicznych materiałów dowodowych](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
@@ -175,4 +173,4 @@ Jeśli zmigrujesz In-Place wyszukiwanie zbierania elektronicznych materiałów d
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- Aby uzyskać więcej informacji na temat portalu zgodności, zobacz [Omówienie portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center.md).
+- Aby uzyskać więcej informacji na temat portalu zgodności, zobacz [Omówienie portal zgodności Microsoft Purview](microsoft-365-compliance-center.md).

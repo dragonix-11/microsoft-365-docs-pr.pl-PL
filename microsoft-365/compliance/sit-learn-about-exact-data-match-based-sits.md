@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Dowiedz się więcej o dokładnych typach informacji poufnych zgodnych z danymi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0574c11751898b31b22da4642f2d5dd415991732
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5d4a45e7ecdb143187b9d90fdedbaf1f235c7d52
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415931"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622002"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>Dowiedz się więcej o dokładnych typach informacji poufnych opartych na dopasowaniu danych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [Typy informacji poufnych](sensitive-information-type-learn-about.md) służą do identyfikowania poufnych elementów, dzięki czemu można zapobiec ich nieumyślnemu lub niewłaściwemu udostępnianiu, aby ułatwić lokalizowanie odpowiednich danych w zakresie zbierania elektronicznych materiałów dowodowych oraz stosowanie akcji ładu do niektórych typów informacji. Niestandardowy typ informacji poufnych (SIT) definiuje się na podstawie:
 
@@ -46,7 +44,7 @@ Ale co zrobić, jeśli chcesz niestandardowego typu informacji poufnych (SIT), k
 
 ![Klasyfikacja oparta na protokole EDM.](../media/EDMClassification.png)
 
-Klasyfikacja oparta na protokole EDM umożliwia tworzenie niestandardowych typów informacji poufnych odwołujących się do dokładnych wartości w bazie danych informacji poufnych. Bazę danych można odświeżać codziennie i zawierać do 100 milionów wierszy danych. W miarę jak pracownicy, pacjenci lub klienci przychodzą i odchodzą, a rekordy ulegają zmianie, niestandardowe typy informacji poufnych pozostają aktualne i stosowane. Ponadto można używać klasyfikacji opartej na rozwiązaniu EDM z zasadami, takimi jak [zasady ochrony przed utratą danych Microsoft Purview](dlp-learn-about-dlp.md) lub [zasady Microsoft Cloud App Security plików](/cloud-app-security/data-protection-policies).
+Klasyfikacja oparta na protokole EDM umożliwia tworzenie niestandardowych typów informacji poufnych odwołujących się do dokładnych wartości w bazie danych informacji poufnych. Bazę danych można odświeżać codziennie i zawierać do 100 milionów wierszy danych. W miarę jak pracownicy, pacjenci lub klienci przychodzą i odchodzą, a rekordy ulegają zmianie, niestandardowe typy informacji poufnych pozostają aktualne i stosowane. Ponadto można używać klasyfikacji opartej na rozwiązaniu EDM z zasadami, takimi jak [zasady ochrony przed utratą danych w usłudze Microsoft Purview](dlp-learn-about-dlp.md) lub [zasady Microsoft Cloud App Security plików](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
 > Microsoft Purview Information Protection obsługuje języki podwójnego zestawu znaków bajtowych dla:
@@ -95,12 +93,11 @@ Bliskość — liczba znaków między elementem podstawowym i pomocniczym
 
 ### <a name="you-supply-your-own-schema-and-data"></a>Dostarczasz własny schemat i dane
 
-[Microsoft Purview zawiera ponad 200 funkcji SITS](sensitive-information-type-entity-definitions.md) ze wstępnie zdefiniowanymi schematami, wzorcami regex, słowami kluczowymi i poziomami ufności. Za pomocą interfejsów SIC EDM odpowiadasz za definiowanie schematu, a także pól podstawowych i pomocniczych identyfikujących poufne elementy. Ponieważ schemat i podstawowe i pomocnicze wartości danych są wysoce poufne, szyfrujesz je za pomocą funkcji [skrótu](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) , która zawiera losowo wygenerowaną lub samodzielnie dostarczoną wartość [soli](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) . Te wartości skrótu są następnie przekazywane do usługi, więc dane poufne nigdy nie są otwarte.
+[Usługa Microsoft Purview zawiera ponad 200 funkcji SITS](sensitive-information-type-entity-definitions.md) ze wstępnie zdefiniowanymi schematami, wzorcami regex, słowami kluczowymi i poziomami ufności. Za pomocą interfejsów SIC EDM odpowiadasz za definiowanie schematu, a także pól podstawowych i pomocniczych identyfikujących poufne elementy. Ponieważ schemat i podstawowe i pomocnicze wartości danych są wysoce poufne, szyfrujesz je za pomocą funkcji [skrótu](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) , która zawiera losowo wygenerowaną lub samodzielnie dostarczoną wartość [soli](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) . Te wartości skrótu są następnie przekazywane do usługi, więc dane poufne nigdy nie są otwarte.
 
 ### <a name="primary-and-secondary-support-elements"></a>Podstawowe i pomocnicze elementy pomocy technicznej
 
 Podczas tworzenia EDM SIT definiujesz pole *elementu podstawowego* w pakiecie reguł. Pola podstawowe to elementy, dla których będzie przeszukiwana cała zawartość, i które muszą być zgodne ze zdefiniowanym wzorcem w celu zidentyfikowania. Po znalezieniu elementu podstawowego w zeskanowanych elementach program EDM wyszuka pomocnicze *lub* pomocnicze elementy, które nie muszą być zgodne ze wzorcem i ich bliskość do elementu podstawowego. Program EDM wymaga, aby element podstawowy był najpierw wykrywalny za pośrednictwem istniejącego interfejsu SIT. Zobacz [Definicje jednostek typów informacji poufnych](sensitive-information-type-entity-definitions.md) , aby uzyskać pełną listę dostępnych interfejsów API. Musisz znaleźć jedną z tych, które wykrywają klasę, którą chcesz wykryć w usłudze EDM SIT. Jeśli na przykład schemat EDM SIT ma numer ubezpieczenia społecznego w Stanach Zjednoczonych jako element podstawowy, podczas tworzenia schematu EDM skojarzysz go z numerem [ubezpieczenia społecznego (SSN) SIT w Stanach Zjednoczonych](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) .
-
 
 ## <a name="how-matching-works"></a>Jak działa dopasowywanie
 
@@ -108,6 +105,19 @@ Program EDM znajduje dopasowania, porównując zawartość, którą znajduje, z 
 
 > [!TIP]
 > Powszechną praktyką jest połączenie użycia typów informacji poufnych EDM i zwykłych typów informacji poufnych, na których są one oparte w regułach DLP, z różnymi progami. Na przykład można użyć typu informacji poufnych EDM, który wyszuka numerów ubezpieczenia społecznego i innych danych, ze ścisłymi wymaganiami i niską tolerancją, gdy co najmniej jedno dopasowanie spowoduje alert DLP, i użyć zwykłego typu informacji poufnych, takiego jak wbudowany numer ubezpieczenia społecznego w Stanach Zjednoczonych, aby uzyskać wyższą liczbę.  
+
+## <a name="services-that-edm-supports"></a>Usługi obsługiwane przez program EDM
+
+
+|Usługa  |Lokalizacje  |
+|---------|---------|
+| Ochrona przed utratą danych w Microsoft Purview    | — SharePoint Online </br>- OneDrive dla Firm </br>- Czat w usłudze Teams </br>- Exchange Online </br>— Urządzenia       |
+|Microsoft Defender for Cloud Apps     | — SharePoint Online </br>- OneDrive dla Firm        |
+|Automatyczne etykietowanie (po stronie usługi)     |— SharePoint Online </br>- OneDrive dla Firm </br>- Exchange Online         |
+|Automatyczne etykietowanie (po stronie klienta)     |— Word </br>— Excel </br>— PowerPoint </br>— Klienci klasyczni programu Exchange         |
+|Klucz zarządzany przez klienta     |— SharePoint Online </br>- OneDrive dla Firm </br>- Czat w usłudze Teams </br>- Exchange Online </br>— Word </br>— Excel </br>— PowerPoint </br>— Klienci klasyczni programu Exchange </br>— Urządzenia         |
+|Zbierania elektronicznych materiałów dowodowych     |— SharePoint Online </br>- OneDrive dla Firm </br>- Czat w usłudze Teams </br>- Exchange Online </br>— Word </br>— Excel </br>— PowerPoint </br>— Klienci klasyczni programu Exchange  |
+|Zarządzanie ryzykiem wewnętrznym     |— SharePoint Online </br>- OneDrive dla Firm </br>- Czat w usłudze Teams </br>- Exchange Online </br>— Word </br>— Excel </br>— PowerPoint </br>— Klienci klasyczni programu Exchange      |
 
 ## <a name="see-also"></a>Zobacz też
 

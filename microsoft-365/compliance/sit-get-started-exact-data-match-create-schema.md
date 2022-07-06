@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Twórz schemat dla dokładnych typów informacji poufnych opartych na dopasowaniu danych
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 080bdff37893bcf0d41414c066b51727d2650f7a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d5c2038dd7f3b4a6a96ad5e320e73254b21519f8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017169"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622024"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Twórz schemat dla dokładnych typów informacji poufnych opartych na dopasowaniu danych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Schemat i interfejs EDM SIT można utworzyć, korzystając z kreatora [ręcznego](#create-exact-data-match-schema-manually-and-upload) używania [schematu dokładnego dopasowania danych i wzorca typów informacji poufnych](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard). Można również połączyć oba przy użyciu jednej metody, aby utworzyć schemat, a następnie edytować go przy użyciu drugiej metody.
 
@@ -36,7 +34,7 @@ Jeśli nie znasz rozwiązania SITS opartego na protokole EDM lub ich implementac
 - [Dowiedz się więcej o dokładnych typach informacji poufnych opartych na dopasowaniu danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Wprowadzenie do dokładnych typów informacji poufnych opartych na dopasowaniu danych](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
-Pojedynczy schemat EDM może być używany w wielu typach informacji poufnych, które używają tej samej poufnej tabeli danych. W dzierżawie Microsoft 365 można utworzyć maksymalnie 10 różnych schematów EDM.
+Pojedynczy schemat EDM może być używany w wielu typach informacji poufnych, które używają tej samej poufnej tabeli danych. W dzierżawie platformy Microsoft 365 można utworzyć maksymalnie 10 różnych schematów EDM.
 
 
 
@@ -50,7 +48,7 @@ Za pomocą tego kreatora można uprościć proces tworzenia pliku schematu.
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Użyj kreatora dokładnego schematu dopasowania danych i wzorca typów informacji poufnych
 
-1. W portalu zgodności usługi Microsoft Purview dla dzierżawy przejdź do pozycji **Klasyfikacja** > **danych Dokładne dane są zgodne** > **ze schematami EDM**.
+1. W portal zgodności Microsoft Purview dzierżawy przejdź do obszaru **Klasyfikacja** > **danych Dokładne dane są zgodne** > **ze schematami EDM**.
 
 2. Wybierz **pozycję Utwórz schemat EDM,** aby otworzyć wysuwaną konfigurację kreatora schematu.
 
@@ -80,7 +78,7 @@ Za pomocą tego kreatora można uprościć proces tworzenia pliku schematu.
 
 Jeśli schemat EDM został utworzony w kreatorze schematu EDM, musisz wyeksportować plik schematu EDM w formacie XML. Będzie ona potrzebna w [tabeli skrótów i przekażesz tabelę źródła informacji poufnych, aby dokładnie dopasować dane do fazy typów informacji poufnych](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) .
 
-1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+1. [Połącz się z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 2. Aby wyeksportować plik schematu EDM, użyj tej składni:
 
@@ -153,7 +151,7 @@ Flaga `ignoredDelimiters` nie obsługuje:
       - Użyj nazw kolumn dla wartości *nazw pól* .
       - Użyj *wartości searchable="true"* dla pól, które mają być przeszukiwalne, i pól podstawowych do maksymalnie 5 pól. Co najmniej jedno pole musi być możliwe do przeszukiwania.
 
-      Na przykład następujący plik XML definiuje schemat bazy danych rekordów pacjentów z pięcioma polami określonymi jako możliwe do wyszukiwania: *PatientID*, *MRN*, *SSN*, *Telefon* i *DOB*.
+      Na przykład następujący plik XML definiuje schemat bazy danych rekordów pacjentów z pięcioma polami określonymi jako możliwe do wyszukiwania: *PatientID*, *MRN*, *SSN*, *Phone* i *DOB*.
 
       (Możesz skopiować, zmodyfikować i użyć naszego przykładu).
 
@@ -175,7 +173,7 @@ Flaga `ignoredDelimiters` nie obsługuje:
 
    Po utworzeniu pliku schematu EDM w formacie XML musisz przekazać go do usługi w chmurze.
 
-2. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+2. [Połącz się z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 3. Aby przekazać schemat bazy danych, uruchom następujące polecenie:
 

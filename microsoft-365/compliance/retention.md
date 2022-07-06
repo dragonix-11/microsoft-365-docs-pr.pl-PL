@@ -18,25 +18,23 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania, które ułatwiają zachowanie potrzebnych elementów i usuwanie tego, czego nie potrzebujesz.
-ms.openlocfilehash: 7124d97c56e414a7c5a47488805bb4134426f073
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: c78bcae040ae1c210c58923b924f099a5ec396bc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018035"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622530"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
-> Jeśli widzisz komunikaty dotyczące zasad przechowywania w Teams lub masz pytania dotyczące etykiet przechowywania w aplikacjach, skontaktuj się z działem IT, aby uzyskać informacje o sposobie ich konfigurowania. W międzyczasie pomocne mogą być następujące artykuły:
+> Jeśli widzisz komunikaty dotyczące zasad przechowywania w usłudze Teams lub masz pytania dotyczące etykiet przechowywania w aplikacjach, skontaktuj się z działem IT, aby uzyskać informacje o sposobie ich konfigurowania. W międzyczasie pomocne mogą być następujące artykuły:
 >
-> - [Teams komunikatów dotyczących zasad przechowywania](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
-> - [Stosowanie etykiet przechowywania do plików w SharePoint lub OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
+> - [Komunikaty usługi Teams dotyczące zasad przechowywania](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
+> - [Stosowanie etykiet przechowywania do plików w programie SharePoint lub OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
 > Informacje na tej stronie są przeznaczone dla administratorów IT, którzy mogą tworzyć zasady przechowywania i etykiety przechowywania ze względu na zgodność.
 
@@ -63,29 +61,29 @@ Za pomocą tych dwóch akcji przechowywania można skonfigurować ustawienia prz
 
 Te ustawienia przechowywania działają z zawartością, która pozwala zaoszczędzić dodatkowe obciążenia związane z tworzeniem i konfigurowaniem dodatkowego magazynu, gdy konieczne jest zachowanie zawartości ze względu na zgodność. Ponadto nie trzeba implementować dostosowanych procesów do kopiowania i synchronizowania tych danych.
 
-Skorzystaj z poniższych sekcji, aby dowiedzieć się więcej o tym, jak działają zasady przechowywania i etykiety przechowywania, kiedy z nich korzystać i jak wzajemnie się uzupełniają. Jeśli jednak wszystko jest gotowe do rozpoczęcia i wdrożenia ustawień przechowywania w niektórych typowych scenariuszach, zobacz [Wprowadzenie z zarządzaniem cyklem życia danych](get-started-with-data-lifecycle-management.md).
+Skorzystaj z poniższych sekcji, aby dowiedzieć się więcej o tym, jak działają zasady przechowywania i etykiety przechowywania, kiedy z nich korzystać i jak wzajemnie się uzupełniają. Jeśli jednak wszystko jest gotowe do rozpoczęcia i wdrożenia ustawień przechowywania w niektórych typowych scenariuszach, zobacz [Wprowadzenie do zarządzania cyklem życia danych](get-started-with-data-lifecycle-management.md).
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Jak działają ustawienia przechowywania z zawartością w miejscu
 
 Jeśli zawartość ma przypisane ustawienia przechowywania, ta zawartość pozostaje w pierwotnej lokalizacji. W większości przypadków ludzie nadal pracują ze swoimi dokumentami lub pocztą tak, jakby nic się nie zmieniło. Jeśli jednak edytują lub usuwają zawartość uwzględnioną w zasadach przechowywania, kopia zawartości zostanie automatycznie zachowana.
 
-- W przypadku witryn SharePoint i OneDrive: kopia jest przechowywana w bibliotece **archiwum zachowywania**.
+- W przypadku witryn programu SharePoint i usługi OneDrive: kopia jest przechowywana w bibliotece **archiwum zachowywania** .
 
-- W przypadku Exchange skrzynek pocztowych: kopia jest przechowywana w folderze **Elementy możliwe do odzyskania**.
+- W przypadku skrzynek pocztowych programu Exchange: kopia jest przechowywana w folderze **Elementy możliwe do odzyskania** .
 
-- W przypadku komunikatów Teams i Yammer: kopia jest przechowywana w ukrytym folderze o nazwie **SubstrateHolds** jako podfolder w folderze **elementów do odzyskania** Exchange.
+- W przypadku komunikatów usługi Teams i Yammer: kopia jest przechowywana w ukrytym folderze o nazwie **SubstrateHolds** jako podfolder w folderze **Elementy do odzyskania** programu Exchange.
 
 > [!NOTE]
-> Ponieważ biblioteka archiwizacyjna jest uwzględniona w limitach przydziału magazynu lokacji, może być konieczne zwiększenie magazynu w przypadku używania ustawień przechowywania dla grup SharePoint i Microsoft 365.
+> Ponieważ biblioteka archiwizacyjna jest uwzględniona w limitach przydziału magazynu witryny, może być konieczne zwiększenie magazynu w przypadku korzystania z ustawień przechowywania dla grup programu SharePoint i platformy Microsoft 365.
 >
 Te bezpieczne lokalizacje i zachowana zawartość nie są widoczne dla większości osób. W większości przypadków użytkownicy nie muszą nawet wiedzieć, że ich zawartość podlega ustawieniu przechowywania.
 
 Aby uzyskać bardziej szczegółowe informacje o sposobie działania ustawień przechowywania dla różnych obciążeń, zobacz następujące artykuły:
 
-- [Dowiedz się więcej na temat przechowywania SharePoint i OneDrive](retention-policies-sharepoint.md)
-- [Dowiedz się więcej na temat przechowywania Microsoft Teams](retention-policies-teams.md)
-- [Dowiedz się więcej na temat przechowywania Yammer](retention-policies-yammer.md)
-- [Dowiedz się więcej na temat przechowywania Exchange](retention-policies-exchange.md)
+- [Dowiedz się więcej o przechowywaniu dla programu SharePoint i usługi OneDrive](retention-policies-sharepoint.md)
+- [Dowiedz się więcej o przechowywaniu w usłudze Microsoft Teams](retention-policies-teams.md)
+- [Dowiedz się więcej na temat przechowywania usługi Yammer](retention-policies-yammer.md)
+- [Dowiedz się więcej o przechowywaniu dla programu Exchange](retention-policies-exchange.md)
 
 ## <a name="retention-policies-and-retention-labels"></a>Zasady przechowywania i etykiety przechowywania
 
@@ -93,15 +91,15 @@ Aby przypisać ustawienia przechowywania do zawartości, użyj **zasad przechowy
 
 Użyj zasad przechowywania, aby przypisać te same ustawienia przechowywania zawartości na poziomie lokacji lub skrzynki pocztowej, i użyj etykiety przechowywania, aby przypisać ustawienia przechowywania na poziomie elementu (folder, dokument, poczta e-mail).
 
-Jeśli na przykład wszystkie dokumenty w witrynie SharePoint powinny być przechowywane przez 5 lat, bardziej wydajne jest stosowanie zasad przechowywania niż stosowanie tej samej etykiety przechowywania do wszystkich dokumentów w tej lokacji. Jeśli jednak niektóre dokumenty w tej witrynie powinny być przechowywane przez 5 lat, a inne przechowywane przez 10 lat, zasady przechowywania nie będą w stanie tego zrobić. Jeśli musisz określić ustawienia przechowywania na poziomie elementu, użyj etykiet przechowywania.
+Jeśli na przykład wszystkie dokumenty w witrynie programu SharePoint powinny być przechowywane przez 5 lat, bardziej efektywne jest stosowanie tych zasad przechowywania niż stosowanie tej samej etykiety przechowywania do wszystkich dokumentów w tej witrynie. Jeśli jednak niektóre dokumenty w tej witrynie powinny być przechowywane przez 5 lat, a inne przechowywane przez 10 lat, zasady przechowywania nie będą w stanie tego zrobić. Jeśli musisz określić ustawienia przechowywania na poziomie elementu, użyj etykiet przechowywania.
 
-W przeciwieństwie do zasad przechowywania ustawienia przechowywania z etykiet przechowywania są przenoszone z zawartością, jeśli została przeniesiona do innej lokalizacji w ramach dzierżawy Microsoft 365. Ponadto etykiety przechowywania mają następujące możliwości, których zasady przechowywania nie obsługują:
+W przeciwieństwie do zasad przechowywania ustawienia przechowywania z etykiet przechowywania są przenoszone z zawartością, jeśli została przeniesiona do innej lokalizacji w ramach dzierżawy platformy Microsoft 365. Ponadto etykiety przechowywania mają następujące możliwości, których zasady przechowywania nie obsługują:
 
 - Opcje uruchamiania okresu przechowywania od momentu, gdy zawartość została oznaczona etykietą lub na podstawie zdarzenia, oprócz wieku zawartości lub ostatniej modyfikacji.
 
 - Użyj [klasyfikatorów z możliwością trenowania](classifier-learn-about.md) , aby zidentyfikować zawartość do etykiety.
 
-- Zastosuj etykietę domyślną dla elementów SharePoint lub komunikatów Exchange.
+- Zastosuj etykietę domyślną dla elementów programu SharePoint lub komunikatów programu Exchange.
 
 - Obsługiwane akcje w końcowym okresie przechowywania:
   - [Przegląd dyspozycji](./disposition.md) w celu przejrzenia zawartości przed jej trwałym usunięciem.
@@ -113,24 +111,24 @@ W przeciwieństwie do zasad przechowywania ustawienia przechowywania z etykiet p
 
 Zasady przechowywania mogą być stosowane do następujących lokalizacji:
 
-- Exchange e-mail
-- witryna SharePoint
-- konta OneDrive
+- Poczta e-mail programu Exchange
+- Witryna programu SharePoint
+- Konta usługi OneDrive
 - Grupy Microsoft 365
 - Skype dla firm
-- Exchange folderów publicznych
-- komunikaty kanału Teams
-- Teams czaty
-- Teams wiadomości z kanału prywatnego
-- Yammer komunikaty społeczności
-- Yammer komunikaty użytkowników
+- Foldery publiczne programu Exchange
+- Komunikaty kanału usługi Teams
+- Czaty w usłudze Teams
+- Komunikaty kanału prywatnego usługi Teams
+- Komunikaty społeczności usługi Yammer
+- Komunikaty użytkowników usługi Yammer
 
 > [!NOTE]
-> Teams komunikaty [kanałów zawierają teraz kanały udostępnione](/MicrosoftTeams/shared-channels) (obecnie w wersji zapoznawczej), a także kanały standardowe.
+> Komunikaty kanałów usługi Teams obejmują teraz [kanały udostępnione](/MicrosoftTeams/shared-channels) (obecnie w wersji zapoznawczej), a także kanały standardowe.
 
 Można bardzo efektywnie zastosować pojedyncze zasady do wielu lokalizacji lub do określonych lokalizacji lub użytkowników.
 
-Na początku okresu przechowywania można wybrać, kiedy zawartość została utworzona lub obsługiwana tylko dla plików i SharePoint, OneDrive i Grupy Microsoft 365 lokalizacji, kiedy zawartość została ostatnio zmodyfikowana.
+Na początku okresu przechowywania można wybrać, kiedy zawartość została utworzona lub obsługiwana tylko dla plików oraz lokalizacji programu SharePoint, OneDrive i Grupy Microsoft 365, kiedy zawartość została ostatnio zmodyfikowana.
 
 Elementy dziedziczą ustawienia przechowywania z kontenera określonego w zasadach przechowywania. Jeśli zostaną one następnie przeniesione poza ten kontener, gdy zasady są skonfigurowane do przechowywania zawartości, kopia tego elementu zostanie zachowana w zabezpieczonej lokalizacji obciążenia. Jednak ustawienia przechowywania nie są przenoszone z zawartością w nowej lokalizacji. Jeśli jest to wymagane, użyj etykiet przechowywania zamiast zasad przechowywania.
 
@@ -152,20 +150,20 @@ Etykiety przechowywania umożliwiają:
 
 - **Umożliwianie osobom w organizacji ręcznego stosowania etykiety przechowywania** do zawartości w grupach Outlook i Outlook w sieci Web, OneDrive, SharePoint i Microsoft 365. Użytkownicy często najlepiej wiedzą, z jakim typem zawartości pracują, aby mogli ją sklasyfikować i zastosować odpowiednie ustawienia przechowywania.
 
-- **Zastosuj etykiety przechowywania do zawartości automatycznie**, jeśli są one zgodne z określonymi warunkami, które obejmują załączniki w chmurze, które są udostępniane w wiadomościach e-mail lub Teams lub gdy zawartość zawiera:
+- **Zastosuj etykiety przechowywania do zawartości automatycznie** , jeśli spełnia określone warunki, które obejmują załączniki w chmurze, które są udostępniane w wiadomościach e-mail lub aplikacji Teams, lub gdy zawartość zawiera:
   - Określone typy informacji poufnych.
   - Określone słowa kluczowe, które pasują do utworzonego zapytania.
   - Dopasowanie wzorca klasyfikatora z możliwością trenowania.
 
-- **Rozpocznij okres przechowywania od momentu, gdy zawartość została oznaczona etykietą** dla dokumentów w witrynach SharePoint i kontach OneDrive oraz dla elementów poczty e-mail.
+- **Rozpocznij okres przechowywania od momentu, gdy zawartość została oznaczona etykietą** dla dokumentów w witrynach programu SharePoint i kontach usługi OneDrive oraz dla elementów wiadomości e-mail.
 
 - **Rozpocznij okres przechowywania, gdy wystąpi zdarzenie**, na przykład pracownicy opuszczają organizację lub wygasają umowy.
 
-- **Zastosuj domyślną etykietę przechowywania do biblioteki dokumentów, folderu lub dokumentu ustawionego** w SharePoint, aby wszystkie dokumenty przechowywane w tej lokalizacji dziedziczyć domyślną etykietę przechowywania.
+- **Zastosuj domyślną etykietę przechowywania do biblioteki dokumentów, folderu lub dokumentu ustawionego w programie** SharePoint, aby wszystkie dokumenty przechowywane w tej lokalizacji dziedziczyć domyślną etykietę przechowywania.
 
-- **Oznacz elementy jako rekord jako** część strategii [zarządzania rekordami](records-management.md) . Gdy zawartość oznaczona etykietą pozostanie w Microsoft 365, zostaną nałożone dalsze ograniczenia dotyczące zawartości, która może być potrzebna ze względów prawnych. Aby uzyskać więcej informacji, zobacz [Porównanie ograniczeń dotyczących dozwolonych lub zablokowanych akcji](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+- **Oznacz elementy jako rekord jako** część strategii [zarządzania rekordami](records-management.md) . Gdy ta zawartość oznaczona etykietą pozostanie w usłudze Microsoft 365, zostaną nałożone dalsze ograniczenia dotyczące zawartości, która może być potrzebna ze względów prawnych. Aby uzyskać więcej informacji, zobacz [Porównanie ograniczeń dotyczących dozwolonych lub zablokowanych akcji](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
-Etykiety przechowywania, w przeciwieństwie do [etykiet poufności](sensitivity-labels.md), nie są utrwalane, jeśli zawartość jest przenoszona poza Microsoft 365.
+Etykiety przechowywania, w przeciwieństwie do [etykiet poufności](sensitivity-labels.md), nie są utrwalane, jeśli zawartość została przeniesiona poza platformę Microsoft 365.
 
 #### <a name="classifying-content-without-applying-any-actions"></a>Klasyfikowanie zawartości bez stosowania żadnych akcji
 
@@ -177,7 +175,7 @@ Na przykład można utworzyć i zastosować etykietę przechowywania o nazwie "P
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Używanie etykiety przechowywania jako warunku w zasadach DLP
 
-Etykietę przechowywania można określić jako warunek w zasadach ochrony przed utratą danych (DLP) usługi Microsoft Purview dla dokumentów w SharePoint. Na przykład skonfiguruj zasady DLP, aby zapobiec udostępnianiu dokumentów poza organizacją, jeśli zastosowano do nich określoną etykietę przechowywania.
+Etykietę przechowywania można określić jako warunek w zasadach Ochrona przed utratą danych w Microsoft Purview (DLP) dla dokumentów w programie SharePoint. Na przykład skonfiguruj zasady DLP, aby zapobiec udostępnianiu dokumentów poza organizacją, jeśli zastosowano do nich określoną etykietę przechowywania.
 
 Aby uzyskać więcej informacji, zobacz [Używanie etykiety przechowywania jako warunku w zasadach DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
@@ -204,7 +202,7 @@ Etykiety przechowywania mogą być publikowane w różnych lokalizacjach, w zale
 |Automatycznie stosowane na podstawie słów kluczowych lub zapytania  |Exchange, SharePoint, OneDrive, Grupy Microsoft 365  |
 |Automatyczne stosowanie do załączników w chmurze  |SharePoint, OneDrive, Grupy Microsoft 365  |
 
-Exchange wiadomości z folderów publicznych, Skype, Teams i Yammer nie obsługują etykiet przechowywania. Aby zachować i usunąć zawartość z tych lokalizacji, zamiast tego użyj zasad przechowywania.
+Foldery publiczne programu Exchange, wiadomości Skype, Teams i Yammer nie obsługują etykiet przechowywania. Aby zachować i usunąć zawartość z tych lokalizacji, zamiast tego użyj zasad przechowywania.
 
 #### <a name="only-one-retention-label-at-a-time"></a>Tylko jedna etykieta przechowywania naraz
 
@@ -212,8 +210,8 @@ Wiadomość e-mail lub dokument może mieć jednocześnie zastosowaną tylko jed
 
 - [Zasady automatycznego stosowania etykiet](apply-retention-labels-automatically.md)
 - [Model interpretacji dokumentów dla SharePoint Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
-- [Etykieta domyślna dla SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) lub [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
-- [reguły Outlook](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
+- [Etykieta domyślna programu SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) lub [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- [Reguły programu Outlook](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
 
 W przypadku standardowych etykiet przechowywania (nie oznaczają one elementów jako [rekordu lub rekordu regulacyjnego](records-management.md#records)):
 
@@ -228,8 +226,8 @@ W przypadku standardowych etykiet przechowywania (nie oznaczają one elementów 
 
   Aby uzyskać więcej informacji na temat zachowania etykiety, gdy jest stosowana przy użyciu etykiety domyślnej:
 
-  - Etykieta domyślna dla SharePoint: [zachowanie etykiety podczas używania etykiety domyślnej dla SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-  - Etykieta domyślna dla Outlook: [stosowanie domyślnej etykiety przechowywania do folderu Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+  - Etykieta domyślna dla programu SharePoint: [zachowanie etykiety w przypadku używania etykiety domyślnej dla programu SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+  - Etykieta domyślna dla programu Outlook: [stosowanie domyślnej etykiety przechowywania do folderu programu Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - Jeśli istnieje wiele zasad automatycznego stosowania etykiet, które mogą stosować etykietę przechowywania, a zawartość spełnia warunki wielu zasad, zostanie zastosowana etykieta przechowywania najstarszych zasad automatycznego stosowania etykiet (według daty utworzenia).
 
@@ -237,7 +235,7 @@ Gdy etykiety przechowywania oznaczają elementy jako rekord lub rekord regulacyj
 
 #### <a name="monitoring-retention-labels"></a>Monitorowanie etykiet przechowywania
 
-W portalu zgodności usługi Microsoft Purview wybierz pozycję **Klasyfikacja danych** i stronę **Przegląd** , aby monitorować sposób użycia etykiet przechowywania w dzierżawie i identyfikować lokalizację elementów oznaczonych etykietami. Aby uzyskać więcej informacji, w tym ważne wymagania wstępne, zobacz [Informacje o klasyfikacji danych](data-classification-overview.md).
+Na portal zgodności Microsoft Purview wybierz pozycję **Klasyfikacja danych** i stronę **Przegląd**, aby monitorować sposób użycia etykiet przechowywania w dzierżawie i identyfikować lokalizację elementów oznaczonych etykietami. Aby uzyskać więcej informacji, w tym ważne wymagania wstępne, zobacz [Informacje o klasyfikacji danych](data-classification-overview.md).
 
 Następnie możesz przejść do szczegółów przy użyciu [Eksploratora zawartości](data-classification-content-explorer.md) i [Eksploratora działań](data-classification-activity-explorer.md).
 
@@ -259,13 +257,13 @@ Poniższa tabela ułatwia określenie, czy należy używać zasad przechowywania
 |Możliwości|Zasady przechowywania |Etykieta przechowywania|
 |:-----|:-----|:-----|:-----|
 |Ustawienia przechowywania, które mogą być zachowywane, a następnie usuwane, tylko do zachowania lub tylko do usuwania |Tak |Tak |
-|Obsługiwane obciążenia: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />— grupy Microsoft 365 <br />- Skype dla firm <br />- Teams<br />- Yammer|<br /> Tak <br /> Tak <br /> Tak <br /> Tak <br /> Tak <br /> Tak <br /> Tak | <br /> Tak, z wyjątkiem folderów publicznych <br /> Tak <br /> Tak <br /> Tak <br /> Nie <br /> Nie <br /> Nie |
+|Obsługiwane obciążenia: <br />— Exchange <br />— SharePoint <br />— OneDrive <br />— Grupy platformy Microsoft 365 <br />- Skype dla firm <br />- Teams<br />- Yammer|<br /> Tak <br /> Tak <br /> Tak <br /> Tak <br /> Tak <br /> Tak <br /> Tak | <br /> Tak, z wyjątkiem folderów publicznych <br /> Tak <br /> Tak <br /> Tak <br /> Nie <br /> Nie <br /> Nie |
 |Przechowywanie stosowane automatycznie | Tak | Tak |
 |Automatyczne stosowanie różnych ustawień przechowywania na końcu okresu przechowywania | Nie | Tak |
-|Przechowywanie stosowane na podstawie warunków <br /> — poufne typy informacji, KQL zapytań i słów kluczowych, klasyfikatory z możliwością trenowania, załączniki w chmurze| Nie | Tak |
+|Przechowywanie stosowane na podstawie warunków <br /> — typy informacji poufnych, zapytania KQL i słowa kluczowe, klasyfikatory z możliwością trenowania, załączniki w chmurze| Nie | Tak |
 |Przechowywanie zastosowane ręcznie | Nie | Tak |
 |Interakcja użytkownika końcowego | Nie | Tak |
-|Utrwala się, jeśli zawartość jest przenoszona | Nie | Tak, w ramach dzierżawy Microsoft 365 |
+|Utrwala się, jeśli zawartość jest przenoszona | Nie | Tak, w ramach dzierżawy usługi Microsoft 365 |
 |Deklarowanie elementu jako rekordu| Nie | Tak |
 |Rozpoczynanie okresu przechowywania po oznaczeniu etykietą lub na podstawie zdarzenia | Nie | Tak |
 |Przegląd dyspozycji | Nie| Tak |
@@ -276,7 +274,7 @@ Poniższa tabela ułatwia określenie, czy należy używać zasad przechowywania
 
 **Przypisie:**
 
-<sup>\*</sup>W przypadku etykiet przechowywania, które nie oznaczają zawartości jako rekordu lub rekordu regulacyjnego, zdarzenia inspekcji są ograniczone do sytuacji, gdy element w SharePoint lub OneDrive ma etykietę zastosowaną, zmienioną lub usuniętą. Aby uzyskać szczegółowe informacje dotyczące inspekcji etykiet przechowywania, zobacz sekcję [Auditing retention actions (Akcje przechowywania inspekcji)](#auditing-retention-actions) na tej stronie.
+<sup>\*</sup> W przypadku etykiet przechowywania, które nie oznaczają zawartości jako rekordu lub rekordu regulacyjnego, zdarzenia inspekcji są ograniczone do sytuacji, gdy element w programie SharePoint lub OneDrive ma zastosowaną, zmienioną lub usuniętą etykietę. Aby uzyskać szczegółowe informacje dotyczące inspekcji etykiet przechowywania, zobacz sekcję [Auditing retention actions (Akcje przechowywania inspekcji)](#auditing-retention-actions) na tej stronie.
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>Łączenie zasad przechowywania i etykiet przechowywania
 
@@ -288,30 +286,30 @@ Aby uzyskać więcej informacji na temat sposobu współdziałania zasad przecho
 
 #### <a name="example-for-users-to-override-automatic-deletion"></a>Przykład zastąpienia automatycznego usuwania przez użytkowników
 
-Scenariusz: domyślnie zawartość na kontach OneDrive użytkowników jest automatycznie usuwana po pięciu latach, ale użytkownicy muszą mieć możliwość zastąpienia tej zawartości dla określonych dokumentów.
+Scenariusz: Domyślnie zawartość na kontach użytkowników w usłudze OneDrive jest automatycznie usuwana po pięciu latach, ale użytkownicy muszą mieć możliwość zastąpienia tej zawartości dla określonych dokumentów.
 
-1. Tworzysz i konfigurujesz zasady przechowywania, które automatycznie usuwają zawartość pięć lat po jej ostatniej modyfikacji, i stosujesz zasady do wszystkich kont OneDrive.
+1. Tworzysz i konfigurujesz zasady przechowywania, które automatycznie usuwają zawartość pięć lat po jej ostatniej modyfikacji, i stosujesz zasady do wszystkich kont usługi OneDrive.
 
-2. Tworzysz i konfigurujesz etykietę przechowywania, która przechowuje zawartość na zawsze i dodaje ją do zasad etykiet publikowanych na wszystkich kontach OneDrive. Użytkownikom wyjaśniono, jak ręcznie zastosować tę etykietę do określonych dokumentów, które powinny zostać wykluczone z automatycznego usuwania, jeśli nie zostaną zmodyfikowane po pięciu latach.
+2. Tworzysz i konfigurujesz etykietę przechowywania, która przechowuje zawartość na zawsze i dodaje ją do zasad etykiet publikowanych na wszystkich kontach usługi OneDrive. Użytkownikom wyjaśniono, jak ręcznie zastosować tę etykietę do określonych dokumentów, które powinny zostać wykluczone z automatycznego usuwania, jeśli nie zostaną zmodyfikowane po pięciu latach.
 
 Przykład przechowywania elementów na dłużej**
 
-Scenariusz: domyślnie elementy SharePoint są automatycznie zachowywane, a następnie usuwane po pięciu latach, ale dokumenty w określonych bibliotekach muszą być przechowywane przez dziesięć lat.
+Scenariusz: domyślnie elementy programu SharePoint są automatycznie zachowywane, a następnie usuwane po pięciu latach, ale dokumenty w określonych bibliotekach muszą być przechowywane przez dziesięć lat.
 
-1. Tworzysz i konfigurujesz zasady przechowywania, które automatycznie przechowują, a następnie usuwają zawartość po pięciu latach oraz stosują zasady do wszystkich wystąpień SharePoint i Grupy Microsoft 365.
+1. Tworzysz i konfigurujesz zasady przechowywania, które automatycznie przechowują, a następnie usuwają zawartość po pięciu latach oraz stosują zasady do wszystkich wystąpień programu SharePoint i Grupy Microsoft 365.
 
-2. Tworzysz i konfigurujesz etykietę przechowywania, która automatycznie zachowuje zawartość przez dziesięć lat. Tę etykietę można opublikować dla SharePoint administratorów witryny, aby mogli zastosować ją jako etykietę domyślną, która ma być dziedziczona przez wszystkie elementy w określonych bibliotekach dokumentów.
+2. Tworzysz i konfigurujesz etykietę przechowywania, która automatycznie zachowuje zawartość przez dziesięć lat. Tę etykietę można opublikować dla administratorów witryny programu SharePoint, aby można było zastosować ją jako etykietę domyślną, która ma być dziedziczona przez wszystkie elementy w określonych bibliotekach dokumentów.
 
 #### <a name="example-to-delete-items-in-a-shorter-time-period"></a>Przykład usuwania elementów w krótszym okresie
 
 Scenariusz: domyślnie wiadomości e-mail nie są zachowywane, ale są automatycznie usuwane po dziesięciu latach. Jednak wiadomości e-mail związane z określonym projektem, który ma nazwę kodu wstępnej wersji, muszą zostać automatycznie usunięte po roku.
 
-1. Tworzysz i konfigurujesz zasady przechowywania, które automatycznie usuwają zawartość po dziesięciu latach, i stosujesz zasady do wszystkich Exchange adresatów.
+1. Tworzysz i konfigurujesz zasady przechowywania, które automatycznie usuwają zawartość po dziesięciu latach, i stosujesz zasady do wszystkich adresatów programu Exchange.
 
 2. Tworzysz i konfigurujesz etykietę przechowywania, która automatycznie usuwa zawartość po roku. Opcje stosowania tej etykiety do odpowiednich wiadomości e-mail obejmują:
-    - Tworzysz zasady automatycznego etykietowania, które identyfikują zawartość przy użyciu nazwy kodu projektu jako słowa kluczowego, i stosujesz zasady do wszystkich adresatów Exchange
-    - Publikujesz etykietę i instruujesz użytkowników biorących udział w projekcie, jak utworzyć regułę automatyczną w Outlook, która stosuje tę etykietę
-    - Należy opublikować etykietę i poinstruować użytkowników, aby utworzyli folder w Outlook dla wszystkich wiadomości e-mail związanych z projektem i zastosowali opublikowaną etykietę do folderu, a następnie utworzyli regułę Outlook, aby przenieść wszystkie wiadomości e-mail związane z projektem do tego folderu
+    - Tworzysz zasady automatycznego etykietowania, które identyfikują zawartość przy użyciu nazwy kodu projektu jako słowa kluczowego, i stosujesz zasady do wszystkich adresatów programu Exchange
+    - Publikujesz etykietę i instruujesz użytkowników biorących udział w projekcie, jak utworzyć regułę automatyczną w programie Outlook, która stosuje tę etykietę
+    - Możesz opublikować etykietę i poinstruować użytkowników, aby utworzyli folder w programie Outlook dla wszystkich wiadomości e-mail związanych z projektem i zastosowali opublikowaną etykietę do folderu, a następnie utworzyli regułę programu Outlook, aby przenieść wszystkie wiadomości e-mail związane z projektem do tego folderu
 
 ## <a name="how-long-it-takes-for-retention-settings-to-apply"></a>Jak długo trwa stosowanie ustawień przechowywania
 
@@ -332,13 +330,13 @@ Podczas tworzenia zasad przechowywania lub zasad etykiet przechowywania należy 
 
 - **Zakres adaptacyjny** używa określonego zapytania, więc członkostwo nie jest statyczne, ale dynamiczne, uruchamiając codziennie atrybuty lub właściwości określone dla wybranych lokalizacji. Można użyć wielu zakresów adaptacyjnych z jednymi zasadami.
 
-    Przykład: Wiadomości e-mail i dokumenty OneDrive dla kadry kierowniczej wymagają dłuższego okresu przechowywania niż użytkownicy standardowi. Tworzysz zasady przechowywania z zakresem adaptacyjnym, który używa tytułu zadania atrybutu Azure AD "Executive", a następnie wybiera lokalizacje Exchange poczty e-mail i kont OneDrive dla zasad. Nie ma potrzeby określania adresów e-mail ani adresów URL OneDrive dla tych użytkowników, ponieważ zakres adaptacyjny automatycznie pobiera te wartości. W przypadku nowych menedżerów nie trzeba ponownie konfigurować zasad przechowywania, ponieważ ci nowi użytkownicy z odpowiednimi wartościami dla poczty e-mail i OneDrive są automatycznie odbierane.
+    Przykład: Wiadomości e-mail i dokumenty usługi OneDrive dla kadry kierowniczej wymagają dłuższego okresu przechowywania niż użytkownicy standardowi. Tworzysz zasady przechowywania z zakresem adaptacyjnym, który używa tytułu zadania atrybutu Azure AD "Executive", a następnie wybiera lokalizacje kont poczty e-mail programu Exchange i konta usługi OneDrive dla zasad. Nie trzeba określać adresów e-mail ani adresów URL usługi OneDrive dla tych użytkowników, ponieważ zakres adaptacyjny automatycznie pobiera te wartości. W przypadku nowych menedżerów nie trzeba ponownie konfigurować zasad przechowywania, ponieważ ci nowi użytkownicy z odpowiednimi wartościami dla poczty e-mail i usługi OneDrive są automatycznie odbierane.
 
 - **Zakres statyczny** nie używa zapytań i ma ograniczoną konfigurację, ponieważ może mieć zastosowanie do wszystkich wystąpień określonej lokalizacji lub używać dołączania i wykluczeń dla określonych wystąpień dla danej lokalizacji. Te trzy opcje są czasami określane jako odpowiednio "org-wide", "includes" i "excludes".
 
-    Przykład: Wiadomości e-mail i dokumenty OneDrive dla kadry kierowniczej wymagają dłuższego okresu przechowywania niż użytkownicy standardowi. Tworzysz zasady przechowywania z zakresem statycznym, który wybiera lokalizacje Exchange poczty e-mail i kont OneDrive dla zasad. W Exchange lokalizacji poczty e-mail możesz zidentyfikować grupę zawierającą tylko kierownictwo, dlatego należy określić tę grupę dla zasad przechowywania, a członkostwo w grupie z odpowiednimi adresami e-mail jest pobierane po utworzeniu zasad. W przypadku lokalizacji kont OneDrive należy zidentyfikować, a następnie określić poszczególne adresy URL OneDrive dla każdego kierownictwa. W przypadku nowych menedżerów należy ponownie skonfigurować zasady przechowywania, aby dodać nowe adresy e-mail i adresy URL OneDrive. Należy również zaktualizować adresy URL OneDrive w każdej chwili, gdy nastąpi zmiana nazwy UPN kierownictwa.
+    Przykład: Wiadomości e-mail i dokumenty usługi OneDrive dla kadry kierowniczej wymagają dłuższego okresu przechowywania niż użytkownicy standardowi. Tworzysz zasady przechowywania z zakresem statycznym, który wybiera lokalizacje poczty e-mail programu Exchange i kont usługi OneDrive dla zasad. W przypadku lokalizacji poczty e-mail programu Exchange możesz zidentyfikować grupę zawierającą tylko kierownictwo, dlatego należy określić tę grupę dla zasad przechowywania, a członkostwo w grupie z odpowiednimi adresami e-mail jest pobierane po utworzeniu zasad. W przypadku lokalizacji kont usługi OneDrive należy zidentyfikować, a następnie określić poszczególne adresy URL usługi OneDrive dla każdego kierownictwa. W przypadku nowych menedżerów należy ponownie skonfigurować zasady przechowywania, aby dodać nowe adresy e-mail i adresy URL usługi OneDrive. Musisz również zaktualizować adresy URL usługi OneDrive za każdym razem, gdy nastąpi zmiana nazwy UPN kierownictwa.
 
-    OneDrive adresy URL są szczególnie trudne do niezawodnego określenia, ponieważ domyślnie te adresy URL nie są tworzone, dopóki użytkownik nie uzyskuje dostępu do OneDrive po raz pierwszy. A jeśli nazwa UPN użytkownika zmieni się, o czym możesz nie wiedzieć, jego adres URL OneDrive zostanie automatycznie zmieniony.
+    Adresy URL usługi OneDrive są szczególnie trudne do niezawodnego określenia, ponieważ domyślnie te adresy URL nie są tworzone, dopóki użytkownik nie uzyskuje dostępu do usługi OneDrive po raz pierwszy. A jeśli nazwa UPN użytkownika zmieni się, o czym być może nie wiesz, jego adres URL usługi OneDrive zostanie automatycznie zmieniony.
 
 Zalety korzystania z zakresów adaptacyjnych:
 
@@ -348,7 +346,7 @@ Zalety korzystania z zakresów adaptacyjnych:
 
 - Członkostwo oparte na zapytaniach zapewnia odporność na zmiany biznesowe, które mogą nie być niezawodnie odzwierciedlone w członkostwie w grupach lub procesach zewnętrznych, które opierają się na komunikacji między działami.
 
-- Pojedyncze zasady przechowywania mogą obejmować lokalizacje zarówno dla Microsoft Teams, jak i Yammer, natomiast w przypadku używania zakresu statycznego te lokalizacje wymagają własnych zasad przechowywania.
+- Pojedyncze zasady przechowywania mogą obejmować lokalizacje zarówno dla usługi Microsoft Teams, jak i usługi Yammer, natomiast w przypadku korzystania z zakresu statycznego te lokalizacje wymagają własnych zasad przechowywania.
 
 - Do nieaktywnych skrzynek pocztowych można zastosować określone ustawienia przechowywania. Ta konfiguracja nie jest możliwa w przypadku zakresu statycznego, ponieważ w momencie przypisywania zasad zakresy statyczne nie obsługują konkretnego dołączania adresatów z nieaktywnymi skrzynkami pocztowymi.
 
@@ -369,15 +367,15 @@ Aby obejrzeć zarejestrowane seminarium internetowe (wymaga rejestracji), odwied
 
 ## <a name="policy-lookup"></a>Wyszukiwanie zasad
 
-Można skonfigurować wiele zasad przechowywania dla lokalizacji Microsoft 365, a także wiele zasad etykiet przechowywania publikowanych lub automatycznie stosowanych. Aby znaleźć zasady przechowywania przypisane do określonych użytkowników, witryn i grup Microsoft 365, użyj wyszukiwania **zasad** z rozwiązań do **zarządzania cyklem życia danych** lub **zarządzania rekordami** w portalu zgodności usługi Microsoft Purview.
+Można skonfigurować wiele zasad przechowywania dla lokalizacji platformy Microsoft 365, a także wiele zasad etykiet przechowywania publikowanych lub automatycznie stosowanych. Aby znaleźć zasady przechowywania przypisane do określonych użytkowników, witryn i grup platformy Microsoft 365, użyj wyszukiwania **zasad** z rozwiązań do **zarządzania cyklem życia danych** lub **zarządzania rekordami** w portal zgodności Microsoft Purview.
 
 Przykład:
 
-![Wyszukiwanie zasad w celu znalezienia zasad przechowywania przypisanych do określonych użytkowników, witryn i grup Microsoft 365 ](../media/policy-lookup.png)
+![Wyszukiwanie zasad w celu znalezienia zasad przechowywania przypisanych do określonych użytkowników, witryn i grup platformy Microsoft 365 ](../media/policy-lookup.png)
 
-Musisz określić dokładny adres e-mail użytkownika, dokładny adres URL witryny lub dokładny adres e-mail grupy Microsoft 365. Na przykład nie można używać symboli wieloznacznych ani częściowych dopasowań.
+Musisz określić dokładny adres e-mail użytkownika, dokładny adres URL witryny lub dokładny adres e-mail grupy platformy Microsoft 365. Na przykład nie można używać symboli wieloznacznych ani częściowych dopasowań.
 
-Opcja dla witryn obejmuje konta OneDrive. Aby uzyskać informacje na temat określania adresu URL konta OneDrive użytkownika, zobacz [Pobieranie listy wszystkich adresów URL OneDrive użytkownika w organizacji](/onedrive/list-onedrive-urls).
+Opcja dla witryn obejmuje konta usługi OneDrive. Aby uzyskać informacje na temat określania adresu URL konta usługi OneDrive użytkownika, zobacz [Pobieranie listy wszystkich adresów URL usługi OneDrive użytkownika w organizacji](/onedrive/list-onedrive-urls).
 
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Zasady przechowywania lub co ma pierwszeństwo?
 
@@ -408,12 +406,12 @@ Wyjaśnienie czterech różnych zasad:
 
 1. **Przechowywanie wygrywa nad usunięciem.** Zawartość nie zostanie trwale usunięta, jeśli ma również ustawienia przechowywania, aby ją zachować. Chociaż ta zasada zapewnia zachowanie zawartości ze względu na zgodność, proces usuwania może być nadal inicjowany (inicjowany przez użytkownika lub inicjowany przez system), a w związku z tym może usunąć zawartość z głównego widoku użytkowników. Jednak trwałe usunięcie jest zawieszone. Aby uzyskać więcej informacji na temat sposobu i miejsca przechowywania zawartości, użyj następujących linków dla każdego obciążenia:
 
-    - [Jak działa przechowywanie SharePoint i OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
-    - [Jak przechowywanie działa z Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
-    - [Jak przechowywanie działa z Yammer](retention-policies-yammer.md#how-retention-works-with-yammer)
-    - [Jak działa przechowywanie dla Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)
+    - [Jak działa przechowywanie dla programu SharePoint i usługi OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
+    - [Jak przechowywanie działa w usłudze Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
+    - [Jak działa przechowywanie w usłudze Yammer](retention-policies-yammer.md#how-retention-works-with-yammer)
+    - [Jak działa przechowywanie dla programu Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)
 
-    **Przykład dla tej pierwszej zasady**: wiadomość e-mail podlega zasadom przechowywania dla Exchange, który jest skonfigurowany do usuwania elementów trzy lata po ich utworzeniu, a także ma zastosowaną etykietę przechowywania, która jest skonfigurowana do przechowywania elementów pięć lat po ich utworzeniu.
+    **Przykład dla tej pierwszej zasady**: wiadomość e-mail podlega zasadom przechowywania dla programu Exchange, które są skonfigurowane do usuwania elementów trzy lata po ich utworzeniu, a także ma zastosowaną etykietę przechowywania, która jest skonfigurowana do przechowywania elementów pięć lat po ich utworzeniu.
 
     Wiadomość e-mail jest przechowywana przez pięć lat, ponieważ ta akcja przechowywania ma pierwszeństwo przed usunięciem. Wiadomość e-mail zostanie trwale usunięta pod koniec pięciu lat z powodu akcji usuwania, która została zawieszona, gdy akcja przechowywania obowiązywała.
 
@@ -422,9 +420,9 @@ Wyjaśnienie czterech różnych zasad:
     > [!NOTE]
     > Istnieje możliwość okresu przechowywania wynoszącego 5 lat w zasadach przechowywania lub wygranych etykietach w okresie przechowywania wynoszącym 7 lat w zasadach przechowywania lub etykiecie, ponieważ okres 5 lat jest skonfigurowany do uruchamiania na podstawie czasu ostatniej modyfikacji pliku, a okres 7 lat jest skonfigurowany tak, aby rozpoczynał się od momentu utworzenia pliku.
 
-    **Przykład dla tej drugiej zasady**: Dokumenty w witrynie SharePoint marketingu podlegają dwóm zasadom przechowywania. Pierwsze zasady przechowywania są skonfigurowane dla wszystkich witryn SharePoint do przechowywania elementów przez pięć lat po ich utworzeniu. Drugie zasady przechowywania są skonfigurowane dla określonych witryn SharePoint do przechowywania elementów przez dziesięć lat po ich utworzeniu.
+    **Przykład dla tej drugiej zasady**: Dokumenty w witrynie marketingowej programu SharePoint podlegają dwóm zasadom przechowywania. Pierwsze zasady przechowywania są skonfigurowane dla wszystkich witryn programu SharePoint do przechowywania elementów przez pięć lat po ich utworzeniu. Drugie zasady przechowywania są skonfigurowane dla określonych witryn programu SharePoint do przechowywania elementów przez dziesięć lat po ich utworzeniu.
 
-    Dokumenty w tej witrynie SharePoint marketingu są przechowywane przez dziesięć lat, ponieważ jest to najdłuższy okres przechowywania elementu.
+    Dokumenty w tej witrynie programu SharePoint marketingu są przechowywane przez dziesięć lat, ponieważ jest to najdłuższy okres przechowywania elementu.
 
 3. **Jawne zwycięstwo nad niejawnym usuwaniem.** Gdy konflikty są teraz rozwiązywane na potrzeby przechowywania, pozostają tylko konflikty usuwania:
 
@@ -434,15 +432,15 @@ Wyjaśnienie czterech różnych zasad:
 
         Dokument jest trwale usuwany po siedmiu latach, ponieważ pierwszeństwo ma akcja usuwania z etykiety przechowywania.
 
-    2. Jeśli masz tylko zasady przechowywania: jeśli zasady przechowywania dla lokalizacji korzystają z zakresu adaptacyjnego lub zakresu statycznego obejmującego określone wystąpienia (na przykład określonych użytkowników Exchange wiadomości e-mail), zasady przechowywania mają pierwszeństwo przed zakresem statycznym skonfigurowanym dla wszystkich wystąpień dla tej samej lokalizacji.
+    2. Jeśli masz tylko zasady przechowywania: jeśli zasady przechowywania dla lokalizacji korzystają z zakresu adaptacyjnego lub zakresu statycznego obejmującego określone wystąpienia (na przykład określonych użytkowników poczty e-mail programu Exchange), zasady przechowywania mają pierwszeństwo przed zakresem statycznym skonfigurowanym dla wszystkich wystąpień dla tej samej lokalizacji.
 
-        Zakres statyczny skonfigurowany dla wszystkich wystąpień dla lokalizacji jest czasami określany jako "zasady dla całej organizacji". Na przykład **Exchange wiadomości e-mail** i domyślne ustawienie **Wszyscy adresaci**. Możesz też **SharePoint witryny** i domyślne ustawienie **Wszystkie witryny**. Jeśli zasady przechowywania nie są w całej organizacji, ale zostały skonfigurowane z zakresem adaptacyjnym lub zakresem statycznym obejmującym określone wystąpienia, mają one równe pierwszeństwo na tym poziomie.
+        Zakres statyczny skonfigurowany dla wszystkich wystąpień dla lokalizacji jest czasami określany jako "zasady dla całej organizacji". Na przykład **adres e-mail programu Exchange** i domyślne ustawienie **Wszyscy adresaci**. Lub **witryny programu SharePoint** i domyślne ustawienie **Wszystkie witryny**. Jeśli zasady przechowywania nie są w całej organizacji, ale zostały skonfigurowane z zakresem adaptacyjnym lub zakresem statycznym obejmującym określone wystąpienia, mają one równe pierwszeństwo na tym poziomie.
 
         **Przykład 1 dla tej trzeciej zasady (zasad)**: Wiadomość e-mail podlega dwóm zasadom przechowywania. Pierwsze zasady przechowywania są nieskopowe i usuwają elementy po dziesięciu latach. Drugie zasady przechowywania są ograniczone do określonych skrzynek pocztowych i usuwają elementy po pięciu latach.
 
         Wiadomość e-mail jest trwale usuwana po pięciu latach, ponieważ akcja usuwania z zasad przechowywania o określonym zakresie ma pierwszeństwo przed zasadami przechowywania w całej organizacji.
 
-        **Przykład 2 dla tej trzeciej zasady (zasad)**: Dokument na koncie OneDrive użytkownika podlega dwóm zasadom przechowywania. Pierwsze zasady przechowywania mają zakres obejmujący konto OneDrive tego użytkownika i mają akcję usuwania po 10 latach. Drugie zasady przechowywania mają zakres obejmujący konto OneDrive tego użytkownika i mają akcję usuwania po siedmiu latach.
+        **Przykład 2 dla tej trzeciej zasady (zasad)**: dokument na koncie użytkownika w usłudze OneDrive podlega dwóm zasadom przechowywania. Pierwsze zasady przechowywania mają zakres obejmujący konto usługi OneDrive tego użytkownika i mają akcję usuwania po 10 latach. Drugie zasady przechowywania mają zakres obejmujący konto usługi OneDrive tego użytkownika i mają akcję usuwania po siedmiu latach.
 
         Gdy ten dokument zostanie trwale usunięty, nie można określić na tym poziomie, ponieważ obie zasady przechowywania mają zakres obejmujący określone wystąpienia.
 
@@ -451,7 +449,7 @@ Wyjaśnienie czterech różnych zasad:
     > [!NOTE]
     > Istnieje możliwość, że zasady przechowywania z okresem przechowywania wynoszącym 7 lat wygrywają zasady przechowywania wynoszące 5 lat, ponieważ pierwsze zasady są skonfigurowane do uruchamiania okresu przechowywania na podstawie czasu utworzenia pliku, a drugie zasady przechowywania od momentu ostatniej modyfikacji pliku.
 
-    **Przykład dla tej czwartej zasady**: dokument na koncie OneDrive użytkownika podlega dwóm zasadom przechowywania. Pierwsze zasady przechowywania mają zakres obejmujący konto OneDrive tego użytkownika i mają akcję usuwania wynoszącą 10 lat po utworzeniu pliku. Drugie zasady przechowywania mają zakres obejmujący konto OneDrive tego użytkownika i mają akcję usuwania wynoszącą siedem lat po utworzeniu pliku.
+    **Przykład dla tej czwartej zasady**: dokument na koncie użytkownika w usłudze OneDrive podlega dwóm zasadom przechowywania. Pierwsze zasady przechowywania mają zakres obejmujący konto usługi OneDrive tego użytkownika i mają akcję usuwania 10 lat po utworzeniu pliku. Drugie zasady przechowywania mają zakres obejmujący konto usługi OneDrive tego użytkownika i mają akcję usuwania wynoszącą siedem lat po utworzeniu pliku.
 
     Ten dokument zostanie trwale usunięty po siedmiu latach, ponieważ jest to najkrótszy okres przechowywania elementu z tych dwóch zasad przechowywania w zakresie.
 
@@ -481,7 +479,7 @@ Poniższe przykłady są bardziej złożone, aby zilustrować zasady przechowywa
 
 ## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Używanie blokady zachowywania w celu ograniczenia zmian zasad
 
-Niektóre organizacje mogą wymagać przestrzegania zasad zdefiniowanych przez organy regulacyjne, takie jak reguła 17a-4 Komisji Papierów Wartościowych i Exchange Komisji (SEC), która wymaga, aby po włączeniu zasad przechowywania nie można jej wyłączyć ani zmniejszyć.
+Niektóre organizacje mogą wymagać przestrzegania zasad zdefiniowanych przez organy regulacyjne, takie jak reguła 17a-4 Komisji Papierów Wartościowych i Giełd (SEC), która wymaga, aby po włączeniu zasad przechowywania nie można jej wyłączyć ani zmniejszyć.
 
 Blokada zachowania zapewnia, że organizacja może spełnić takie wymagania prawne, ponieważ blokuje zasady przechowywania lub zasady etykiet przechowywania, dzięki czemu nikt — w tym administrator — nie może wyłączyć zasad, usunąć zasad ani uczynić ich mniej restrykcyjnymi.
 
@@ -495,17 +493,17 @@ Można również zachować zasady, ale zmienić stan lokalizacji na wyłączony 
 
 Dodatkowe informacje dotyczące określonych lokalizacji:
 
-- **SharePoint witryn i kont OneDrive:**
+- **Witryny programu SharePoint i konta usługi OneDrive:**
 
-    Po wydaniu zasad przechowywania dla witryn SharePoint i kont OneDrive każda zawartość, która podlega przechowywaniu z zasad, będzie przechowywana przez 30 dni, aby zapobiec przypadkowej utracie danych. W tym 30-dniowym okresie prolongaty usunięte pliki są nadal zachowywane (pliki są nadal dodawane do biblioteki archiwum zachowywania), ale zadanie czasomierza, które okresowo czyści bibliotekę archiwum konserwacji, jest zawieszone dla tych plików, dzięki czemu można je przywrócić w razie potrzeby.
+    Po wydaniu zasad przechowywania dla witryn programu SharePoint i kont usługi OneDrive każda zawartość, która podlega przechowywaniu z zasad, będzie przechowywana przez 30 dni, aby zapobiec przypadkowej utracie danych. W tym 30-dniowym okresie prolongaty usunięte pliki są nadal zachowywane (pliki są nadal dodawane do biblioteki archiwum zachowywania), ale zadanie czasomierza, które okresowo czyści bibliotekę archiwum konserwacji, jest zawieszone dla tych plików, dzięki czemu można je przywrócić w razie potrzeby.
 
-    Wyjątkiem od tego 30-dniowego okresu prolongaty jest aktualizacja zasad w celu wykluczenia co najmniej jednej lokacji dla SharePoint lub kont dla OneDrive. W tym przypadku zadanie czasomierza usuwa pliki dla tych lokalizacji w bibliotece archiwizowania zachowania bez 30-dniowego opóźnienia.
+    Wyjątkiem od tego 30-dniowego okresu prolongaty jest aktualizacja zasad w celu wykluczenia co najmniej jednej witryny programu SharePoint lub kont w usłudze OneDrive; w takim przypadku zadanie czasomierza usuwa pliki dla tych lokalizacji w bibliotece archiwum konserwacji bez 30-dniowego opóźnienia.
 
-    Aby uzyskać więcej informacji na temat biblioteki Archiwum zachowywania, zobacz [Jak działa przechowywanie dla SharePoint i OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
+    Aby uzyskać więcej informacji na temat biblioteki zachowywania blokady, zobacz [Jak działa przechowywanie w programach SharePoint i OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
     Ze względu na zachowanie w okresie prolongaty, jeśli ponownie włączysz zasady lub zmienisz stan lokalizacji z powrotem na w ciągu 30 dni, zasady zostaną wznowione bez trwałej utraty danych w tym czasie.
 
-- **Exchange wiadomości e-mail i Grupy Microsoft 365**
+- **Poczta e-mail i Grupy Microsoft 365 programu Exchange**
 
   Po wydaniu zasad przechowywania dla skrzynek pocztowych, które są [nieaktywne](inactive-mailboxes-in-office-365.md) w momencie wydania zasad:
 
@@ -513,11 +511,11 @@ Dodatkowe informacje dotyczące określonych lokalizacji:
 
     Jawne zasady przechowywania wymagają zakresu zasad adaptacyjnych lub zakresu zasad statycznych z konfiguracją dołączania, która określa aktywną skrzynkę pocztową w momencie stosowania zasad, a później stała się nieaktywna
 
-  - Jeśli zasady przechowywania są niejawnie stosowane do skrzynki pocztowej, a skonfigurowana akcja przechowywania ma zostać zachowana, zasady przechowywania będą nadal stosowane, a nieaktywna skrzynka pocztowa nigdy nie kwalifikuje się do automatycznego usunięcia. Gdy akcja zachowywania nie ma już zastosowania z powodu wygaśnięcia okresu przechowywania, administrator Exchange może teraz [ręcznie usunąć nieaktywną skrzynkę pocztową](delete-an-inactive-mailbox.md)
+  - Jeśli zasady przechowywania są niejawnie stosowane do skrzynki pocztowej, a skonfigurowana akcja przechowywania ma zostać zachowana, zasady przechowywania będą nadal stosowane, a nieaktywna skrzynka pocztowa nigdy nie kwalifikuje się do automatycznego usunięcia. Jeśli akcja zachowywania nie ma już zastosowania z powodu wygaśnięcia okresu przechowywania, administrator programu Exchange może teraz [ręcznie usunąć nieaktywną skrzynkę pocztową](delete-an-inactive-mailbox.md)
 
-    Zasady niejawnego przechowywania wymagają statycznego zakresu zasad z konfiguracją **Wszyscy adresaci** (dla Exchange poczty e-mail) lub **Wszystkie grupy** (dla Grupy Microsoft 365).
+    Zasady przechowywania niejawnego wymagają statycznego zakresu zasad z konfiguracją **Wszyscy adresaci** (dla poczty e-mail programu Exchange) lub **Wszystkie grupy** (dla Grupy Microsoft 365).
 
-    Aby uzyskać więcej informacji na temat nieaktywnych skrzynek pocztowych z zastosowanymi zasadami przechowywania, zobacz [Nieaktywne skrzynki pocztowe i przechowywanie Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
+    Aby uzyskać więcej informacji na temat nieaktywnych skrzynek pocztowych z zastosowanymi zasadami przechowywania, zobacz [Nieaktywne skrzynki pocztowe i przechowywanie platformy Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 
 ## <a name="auditing-retention-configuration-and-actions"></a>Inspekcja konfiguracji przechowywania i akcji
 
@@ -533,16 +531,16 @@ Aby uzyskać pełną listę zdarzeń inspekcji, zobacz [Działania dotyczące za
 
 Akcje przechowywania rejestrowane jako zdarzenia inspekcji są dostępne tylko dla etykiet przechowywania, a nie dla zasad przechowywania:
 
-- Po zastosowaniu, zmianie lub usunięciu etykiety przechowywania z elementu w SharePoint lub OneDrive:
+- Po zastosowaniu, zmianie lub usunięciu etykiety przechowywania z elementu w programie SharePoint lub usłudze OneDrive:
   - W **obszarze Działania dotyczące plików i stron** wybierz pozycję **Zmieniono etykietę przechowywania dla pliku**
 
-- Gdy element oznaczony etykietą w SharePoint jest oznaczony jako rekord i jest odblokowany lub zablokowany przez użytkownika:
+- Gdy element oznaczony etykietą w programie SharePoint jest oznaczony jako rekord i jest odblokowany lub zablokowany przez użytkownika:
   - W **obszarze Działania dotyczące plików i stron** wybierz pozycję **Zmieniono stan rekordu na odblokowany** i **zmieniono stan rekordu na zablokowany**
 
-- Gdy etykieta przechowywania, która oznacza zawartość jako rekord lub rekord regulacyjny, jest stosowana do elementu w Exchange:
-  - Z **Exchange działań skrzynki pocztowej** wybierz pozycję **Wiadomość oznaczona etykietą jako rekord**
+- Gdy etykieta przechowywania, która oznacza zawartość jako rekord lub rekord regulacyjny, jest stosowana do elementu w programie Exchange:
+  - W **obszarze Działania skrzynki pocztowej programu Exchange** wybierz pozycję **Wiadomość oznaczona etykietą jako rekord**
 
-- Gdy element oznaczony etykietą w SharePoint, OneDrive lub Exchange jest oznaczony jako rekord lub rekord regulacyjny i jest trwale usuwany:
+- Gdy element oznaczony etykietą w programie SharePoint, OneDrive lub Exchange jest oznaczony jako rekord lub rekord regulacyjny i jest trwale usuwany:
   - W **obszarze Działania dotyczące plików i stron** wybierz pozycję **Usunięty plik oznaczony jako rekord**
 
 - Gdy recenzent dyspozycji podejmuje akcję dla elementu, który osiągnął koniec okresu przechowywania:
@@ -550,39 +548,9 @@ Akcje przechowywania rejestrowane jako zdarzenia inspekcji są dostępne tylko d
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Polecenia cmdlet programu PowerShell dla zasad przechowywania i etykiet przechowywania
 
-Aby użyć poleceń cmdlet przechowywania, należy najpierw [nawiązać połączenie z programem PowerShell Office 365 Security & Compliance](/powershell/exchange/connect-to-scc-powershell). Następnie użyj dowolnego z następujących poleceń cmdlet:
+Użyj [programu PowerShell Office 365 Security & Compliance Center](/powershell/exchange/scc-powershell) na potrzeby poleceń cmdlet przechowywania usługi Purview, które obsługują konfigurację na dużą skalę, obsługują skrypty automatyzacji lub mogą być konieczne w przypadku zaawansowanych scenariuszy konfiguracji.
 
-- [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
-
-- [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)
-
-- [Remove-ComplianceTag](/powershell/module/exchange/remove-compliancetag)
-
-- [Set-ComplianceTag](/powershell/module/exchange/set-compliancetag)
-
-- [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage)
-
-- [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage)
-
-- [Get-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/get-recordreviewnotificationtemplateconfig)
-
-- [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)
-
-- [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
-
-- [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
-
-- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig)
-
-- [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
-
-- [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule)
-
-- [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule)
-
-- [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)
-
-- [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
+Aby uzyskać listę dostępnych poleceń cmdlet i określić, które z nich są obsługiwane w różnych lokalizacjach, zobacz [Polecenia cmdlet programu PowerShell dotyczące zasad przechowywania i etykiet przechowywania](retention-cmdlets.md).
 
 ## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>Kiedy używać zasad przechowywania i etykiet przechowywania lub blokad zbierania elektronicznych materiałów dowodowych
 
@@ -590,7 +558,7 @@ Mimo że ustawienia przechowywania i [blokady tworzone z przypadkiem zbierania e
 
 - Ustawienia przechowywania określone w zasadach przechowywania i etykietach przechowywania są przeznaczone dla długoterminowej strategii zarządzania cyklem życia danych w celu przechowywania lub usuwania danych w celu spełnienia wymagań dotyczących zgodności. Zakres jest zwykle szeroki, a głównym celem jest lokalizacja i zawartość, a nie poszczególni użytkownicy. Można skonfigurować początek i koniec okresu przechowywania z opcją automatycznego usuwania zawartości bez dodatkowej interwencji administratora.
 
-- Blokady dla przypadków zbierania elektronicznych materiałów dowodowych (eDiscovery (Standard) lub eDiscovery (Premium) są przeznaczone na ograniczony czas trwania w celu zachowania danych na potrzeby dochodzenia prawnego. Zakres jest specyficzny dla zawartości będącej własnością zidentyfikowanych użytkowników. Rozpoczęcie i zakończenie okresu przechowywania nie jest konfigurowalne, ale zależy od poszczególnych akcji administratora bez opcji automatycznego usuwania zawartości po wydaniu blokady.
+- Blokady zbierania elektronicznych materiałów dowodowych (zbierania elektronicznych materiałów dowodowych (standardowa) lub zbierania elektronicznych materiałów dowodowych (Premium) są przeznaczone na ograniczony czas trwania w celu zachowania danych na potrzeby dochodzenia prawnego. Zakres jest specyficzny dla zawartości będącej własnością zidentyfikowanych użytkowników. Rozpoczęcie i zakończenie okresu przechowywania nie jest konfigurowalne, ale zależy od poszczególnych akcji administratora bez opcji automatycznego usuwania zawartości po wydaniu blokady.
 
 Podsumowanie, aby porównać przechowywanie z blokadami:
 
@@ -618,25 +586,25 @@ Jeśli używasz starszych narzędzi zbierania elektronicznych materiałów dowod
 
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>Używanie zasad przechowywania i etykiet przechowywania zamiast starszych funkcji
 
-Jeśli chcesz proaktywnie przechowywać lub usuwać zawartość w Microsoft 365 na potrzeby zarządzania cyklem życia danych, zalecamy użycie zasad przechowywania i etykiet przechowywania zamiast następujących starszych funkcji.
+Jeśli chcesz proaktywnie przechowywać lub usuwać zawartość w usłudze Microsoft 365 na potrzeby zarządzania cyklem życia danych, zalecamy używanie zasad przechowywania i etykiet przechowywania zamiast następujących starszych funkcji.
 
-Jeśli obecnie używasz tych starszych funkcji, będą one nadal działać równolegle z zasadami przechowywania Microsoft 365 i etykietami przechowywania. Zalecamy jednak, aby w przyszłości używać zasad przechowywania Microsoft 365 i etykiet przechowywania, aby korzystać z jednego rozwiązania do zarządzania przechowywaniem i usuwaniem zawartości w wielu obciążeniach w Microsoft 365.
+Jeśli obecnie używasz tych starszych funkcji, będą one nadal działać równolegle z zasadami przechowywania i etykietami przechowywania platformy Microsoft 365. Zalecamy jednak, aby w przyszłości używać zasad przechowywania i etykiet przechowywania platformy Microsoft 365, aby korzystać z jednego rozwiązania do zarządzania przechowywaniem i usuwaniem zawartości w wielu obciążeniach na platformie Microsoft 365.
 
 **Starsze funkcje z Exchange Online:**
 
 - [Tagi przechowywania i zasady przechowywania](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies), znane również jako [zarządzanie rekordami obsługi komunikatów (MRM) (](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) tylko usuwanie)
 
-  Jeśli jednak używasz następujących funkcji mrm, pamiętaj, że nie są one obecnie obsługiwane przez zasady przechowywania Microsoft 365:
+  Jeśli jednak używasz następujących funkcji mrm, pamiętaj, że nie są one obecnie obsługiwane przez zasady przechowywania platformy Microsoft 365:
 
-  - Zasady archiwum dla [archiwalnych skrzynek pocztowych](enable-archive-mailboxes.md) umożliwiające automatyczne przenoszenie wiadomości e-mail z podstawowej skrzynki pocztowej użytkownika do ich archiwum skrzynki pocztowej po określonym czasie. Zasady archiwum (z dowolnymi ustawieniami) mogą być używane w połączeniu z zasadami przechowywania Microsoft 365, które mają zastosowanie do podstawowej i archiwum skrzynki pocztowej użytkownika.
+  - Zasady archiwum dla [archiwalnych skrzynek pocztowych](enable-archive-mailboxes.md) umożliwiające automatyczne przenoszenie wiadomości e-mail z podstawowej skrzynki pocztowej użytkownika do ich archiwum skrzynki pocztowej po określonym czasie. Zasady archiwum (z dowolnymi ustawieniami) mogą być używane w połączeniu z zasadami przechowywania platformy Microsoft 365, które mają zastosowanie do podstawowej i archiwum skrzynki pocztowej użytkownika.
 
-  - Zasady przechowywania stosowane przez administratora do określonych folderów w skrzynce pocztowej. Zasady przechowywania Microsoft 365 mają zastosowanie do wszystkich folderów w skrzynce pocztowej. Jednak administrator może skonfigurować różne ustawienia przechowywania przy użyciu etykiet przechowywania, które użytkownik może zastosować do folderów w Outlook jako [domyślną etykietę przechowywania](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+  - Zasady przechowywania stosowane przez administratora do określonych folderów w skrzynce pocztowej. Zasady przechowywania usługi Microsoft 365 mają zastosowanie do wszystkich folderów w skrzynce pocztowej. Jednak administrator może skonfigurować różne ustawienia przechowywania przy użyciu etykiet przechowywania, które użytkownik może zastosować do folderów w programie Outlook jako [domyślną etykietę przechowywania](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
 
 - [Wstrzymanie postępowania sądowego](create-a-litigation-hold.md) (tylko przechowywanie)
 
-   Mimo że blokady postępowań sądowych są nadal obsługiwane, zalecamy użycie odpowiednio Microsoft 365 przechowywania lub zbierania elektronicznych materiałów dowodowych[.](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds)
+   Mimo że blokady postępowań sądowych są nadal obsługiwane, zalecamy użycie przechowywania platformy Microsoft 365 lub blokad zbierania elektronicznych materiałów dowodowych, [odpowiednio do potrzeb](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
 
-**Starsze funkcje SharePoint i OneDrive:**
+**Starsze funkcje programu SharePoint i usługi OneDrive:**
 
 - [Zasady usuwania dokumentów](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (tylko usuwanie)
 
@@ -646,14 +614,14 @@ Jeśli obecnie używasz tych starszych funkcji, będą one nadal działać równ
 
 - [Zasady zarządzania informacjami](intro-to-info-mgmt-policies.md) (tylko usuwanie)
 
-Jeśli skonfigurowano SharePoint lokacje pod kątem zasad typów zawartości lub zasad zarządzania informacjami w celu zachowania zawartości listy lub biblioteki, zasady te są ignorowane podczas obowiązywania zasad przechowywania.
+Jeśli skonfigurowano witryny programu SharePoint pod kątem zasad typów zawartości lub zasad zarządzania informacjami w celu zachowania zawartości listy lub biblioteki, zasady te są ignorowane, gdy obowiązują zasady przechowywania.
 
 ## <a name="related-information"></a>Informacje pokrewne
 
 - [Limity usługi SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Limity i specyfikacje dla Microsoft Teams](/microsoftteams/limits-specifications-teams) 
+- [Limity i specyfikacje dla usługi Microsoft Teams](/microsoftteams/limits-specifications-teams) 
 - [Zasoby ułatwiające spełnienie wymagań prawnych dotyczących zarządzania cyklem życia danych i zarządzania rekordami](retention-regulatory-requirements.md)
 
 ## <a name="configuration-guidance"></a>Wskazówki dotyczące konfiguracji
 
-Zobacz [Wprowadzenie z zarządzaniem cyklem życia danych](get-started-with-data-lifecycle-management.md). Ten artykuł zawiera informacje o subskrypcjach, uprawnieniach i łączach do kompleksowych wskazówek dotyczących konfiguracji scenariuszy przechowywania.
+Zobacz [Wprowadzenie do zarządzania cyklem życia danych](get-started-with-data-lifecycle-management.md). Ten artykuł zawiera informacje o subskrypcjach, uprawnieniach i łączach do kompleksowych wskazówek dotyczących konfiguracji scenariuszy przechowywania.

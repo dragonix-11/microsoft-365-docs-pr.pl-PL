@@ -17,23 +17,21 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak zmodyfikować schemat edm w celu użycia konfigurowalnego dopasowania.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f5eb282bd004956d6ca98a9347ef8d832784b55f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a90f81136bf6aa78aa11d732deca19ecd1d59b9c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014789"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622068"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modyfikowanie schematu dokładnego dopasowania danych w celu użycia konfigurowalnego dopasowania
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Klasyfikacja oparta na dokładnym dopasowaniu danych (EDM) umożliwia tworzenie niestandardowych typów informacji poufnych odwołujących się do dokładnych wartości w bazie danych informacji poufnych. Jeśli chcesz zezwolić na warianty dokładnego ciągu, możesz użyć *konfigurowalnego dopasowania* , aby poinformować usługę Microsoft Purview o ignorowaniu wielkości liter i niektórych ograniczników.
 
 > [!IMPORTANT]
 > Ta procedura służy do modyfikowania istniejącego schematu i pliku danych EDM.
 
-1. Odinstaluj **EdmUploadAgent.exe** z komputera używanego do nawiązywania połączenia z Microsoft 365 na potrzeby przekazywania schematu EDM i pliku danych.
+1. Odinstaluj **EdmUploadAgent.exe** z komputera używanego do nawiązywania połączenia z usługą Microsoft 365 na potrzeby przekazywania schematu i pliku danych EDM.
 
 2. Pobierz odpowiedni plik **EdmUploadAgent.exe** dla subskrypcji, korzystając z poniższych linków:
     - [Komercyjne i GCC](https://go.microsoft.com/fwlink/?linkid=2088639) — większość klientów komercyjnych powinna z tego korzystać
@@ -107,10 +105,10 @@ Klasyfikacja oparta na dokładnym dopasowaniu danych (EDM) umożliwia tworzenie 
     - \"
     - \,
 
-6. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+6. [Połącz się z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
     > [!NOTE]
-    > Jeśli Twoja organizacja skonfigurowała [klucz klienta dla Microsoft 365 na poziomie dzierżawy (publiczna wersja zapoznawcza),](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview) dokładne dopasowanie danych automatycznie użyje jej funkcji szyfrowania. Jest to dostępne tylko dla dzierżaw licencjonowanych E5 w chmurze komercyjnej.
+    > Jeśli Twoja organizacja skonfigurowała [klucz klienta dla platformy Microsoft 365 na poziomie dzierżawy (publiczna wersja zapoznawcza),](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview) dokładne dopasowanie danych automatycznie użyje jej funkcji szyfrowania. Jest to dostępne tylko dla dzierżaw licencjonowanych E5 w chmurze komercyjnej.
 
 7. Zaktualizuj schemat, uruchamiając następujące polecenie:
 
@@ -140,6 +138,6 @@ Klasyfikacja oparta na dokładnym dopasowaniu danych (EDM) umożliwia tworzenie 
 - [Dowiedz się więcej o dokładnych typach informacji poufnych opartych na dopasowaniu danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Definicje jednostek typu informacji poufnych](sensitive-information-type-entity-definitions.md)
 - [Niestandardowe typy informacji poufnych](./sensitive-information-type-learn-about.md)
-- [Dowiedz się więcej o zapobieganiu utracie danych w usłudze Microsoft Purview](dlp-learn-about-dlp.md)
+- [Dowiedz się więcej o Ochrona przed utratą danych w Microsoft Purview](dlp-learn-about-dlp.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

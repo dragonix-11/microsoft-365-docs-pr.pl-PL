@@ -18,22 +18,20 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: Użyj wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, aby wykonać docelową kolekcję, która wyszukuje elementy w określonej skrzynce pocztowej lub folderze witryny.
-ms.openlocfilehash: 224da8e651599d1d007684a069b0dbb9d30a6119
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Użyj wyszukiwania zawartości w portal zgodności Microsoft Purview, aby wykonać docelową kolekcję, która wyszukuje elementy w określonej skrzynce pocztowej lub folderze witryny.
+ms.openlocfilehash: ab4fda56e3ccbd04ac8b7b820c4305e9c6e45093
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015545"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623678"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Używanie wyszukiwania zawartości dla kolekcji docelowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Narzędzie do wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview nie zapewnia bezpośredniego sposobu wyszukiwania określonych folderów w Exchange skrzynkach pocztowych lub SharePoint i witrynach OneDrive dla Firm. Można jednak przeszukać określone foldery (nazywane *kolekcją docelową*), określając właściwość identyfikatora folderu dla właściwości poczty e-mail lub ścieżki (DocumentLink) dla witryn w rzeczywistej składni zapytania wyszukiwania. Używanie wyszukiwania zawartości do wykonywania docelowej kolekcji jest przydatne, gdy masz pewność, że elementy reagujące na przypadek lub uprzywilejowane elementy znajdują się w określonej skrzynce pocztowej lub folderze witryny. Skrypt w tym artykule umożliwia uzyskanie identyfikatora folderu dla folderów skrzynki pocztowej lub ścieżki (DocumentLink) dla folderów w witrynie SharePoint i OneDrive dla Firm. Następnie możesz użyć identyfikatora folderu lub ścieżki w zapytaniu wyszukiwania, aby zwrócić elementy znajdujące się w folderze.
+Narzędzie do wyszukiwania zawartości w portal zgodności Microsoft Purview nie zapewnia bezpośredniego sposobu wyszukiwania określonych folderów w skrzynkach pocztowych programu Exchange ani w witrynach programu SharePoint i OneDrive dla Firm. Można jednak przeszukać określone foldery (nazywane *kolekcją docelową*), określając właściwość identyfikatora folderu dla właściwości poczty e-mail lub ścieżki (DocumentLink) dla witryn w rzeczywistej składni zapytania wyszukiwania. Używanie wyszukiwania zawartości do wykonywania docelowej kolekcji jest przydatne, gdy masz pewność, że elementy reagujące na przypadek lub uprzywilejowane elementy znajdują się w określonej skrzynce pocztowej lub folderze witryny. Skrypt w tym artykule umożliwia uzyskanie identyfikatora folderu dla folderów skrzynki pocztowej lub ścieżki (DocumentLink) dla folderów w witrynie programu SharePoint i OneDrive dla Firm. Następnie możesz użyć identyfikatora folderu lub ścieżki w zapytaniu wyszukiwania, aby zwrócić elementy znajdujące się w folderze.
 
 > [!NOTE]
-> Aby zwrócić zawartość znajdującą się w folderze w witrynie SharePoint lub OneDrive dla Firm, skrypt w tym temacie używa właściwości zarządzanej DocumentLink zamiast właściwości Ścieżka. Właściwość DocumentLink jest bardziej niezawodna niż właściwość Path, ponieważ zwróci całą zawartość w folderze, natomiast właściwość Path nie zwróci niektórych plików multimedialnych.
+> Aby zwrócić zawartość znajdującą się w folderze w witrynie programu SharePoint lub OneDrive dla Firm, skrypt w tym temacie używa właściwości zarządzanej DocumentLink zamiast właściwości Ścieżka. Właściwość DocumentLink jest bardziej niezawodna niż właściwość Path, ponieważ zwróci całą zawartość w folderze, natomiast właściwość Path nie zwróci niektórych plików multimedialnych.
 
 ## <a name="before-you-run-a-targeted-collection"></a>Przed uruchomieniem docelowej kolekcji
 
@@ -41,7 +39,7 @@ Narzędzie do wyszukiwania zawartości w portalu zgodności usługi Microsoft Pu
 
 - Musisz również mieć przypisaną rolę Adresaci poczty w organizacji Exchange Online. Jest to wymagane do uruchomienia polecenia cmdlet **Get-MailboxFolderStatistics** , które jest zawarte w skryptze. Domyślnie rola Adresaci poczty jest przypisywana do grup ról Zarządzanie organizacjami i zarządzanie adresatami w Exchange Online. Aby uzyskać więcej informacji na temat przypisywania uprawnień w Exchange Online, zobacz [Zarządzanie członkami grupy ról](/exchange/manage-role-group-members-exchange-2013-help). Można również utworzyć niestandardową grupę ról, przypisać do niej rolę Adresaci poczty, a następnie dodać członków, którzy muszą uruchomić skrypt w kroku 1. Aby uzyskać więcej informacji, zobacz [Zarządzanie grupami ról](/Exchange/permissions-exo/role-groups).
 
-- Skrypt w tym artykule obsługuje nowoczesne uwierzytelnianie. Możesz użyć skryptu w taki sam jak jest, jeśli jesteś Microsoft 365 lub organizacją Microsoft 365 GCC. Jeśli jesteś organizacją Office 365 Niemczech, organizacją Microsoft 365 GCC High lub organizacją Microsoft 365 DoD, musisz edytować skrypt, aby pomyślnie go uruchomić. W szczególności musisz edytować wiersz `Connect-ExchangeOnline` i użyć parametru *ExchangeEnvironmentName* (i odpowiedniej wartości dla typu organizacji), aby nawiązać połączenie z programem Exchange Online programu PowerShell.  Ponadto musisz edytować wiersz `Connect-IPPSSession` i używać parametrów *ConnectionUri* i *AzureADAuthorizationEndpointUri* (i odpowiednich wartości dla typu organizacji), aby nawiązać połączenie z programem PowerShell security & Compliance. Aby uzyskać więcej informacji, zobacz przykłady w [Połączenie, aby Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) i [Połączenie do programu PowerShell & Zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- Skrypt w tym artykule obsługuje nowoczesne uwierzytelnianie. Możesz użyć skryptu w taki sam jak jest, jeśli jesteś organizacją platformy Microsoft 365 lub Microsoft 365 GCC. Jeśli jesteś organizacją Office 365 Niemczech, organizacją microsoft 365 GCC High lub organizacją Microsoft 365 DoD, musisz edytować skrypt, aby pomyślnie go uruchomić. W szczególności musisz edytować wiersz `Connect-ExchangeOnline` i użyć parametru *ExchangeEnvironmentName* (i odpowiedniej wartości dla typu organizacji), aby nawiązać połączenie z programem Exchange Online programu PowerShell.  Ponadto musisz edytować wiersz `Connect-IPPSSession` i używać parametrów *ConnectionUri* i *AzureADAuthorizationEndpointUri* (i odpowiednich wartości dla typu organizacji), aby nawiązać połączenie z programem PowerShell security & Compliance. Aby uzyskać więcej informacji, zobacz przykłady w temacie [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) and [Connect to Security & Compliance PowerShell (Nawiązywanie](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa) połączenia z programem PowerShell & zgodności z zabezpieczeniami).
 
 - Za każdym razem, gdy uruchamiasz skrypt, tworzona jest nowa zdalna sesja programu PowerShell. Oznacza to, że możesz użyć wszystkich dostępnych zdalnych sesji programu PowerShell. Aby temu zapobiec, uruchom następujące polecenia, aby rozłączyć aktywne zdalne sesje programu PowerShell.
 
@@ -49,7 +47,7 @@ Narzędzie do wyszukiwania zawartości w portalu zgodności usługi Microsoft Pu
   Get-PSSession | Remove-PSSession; Disconnect-ExchangeOnline
   ```
 
-    Aby uzyskać więcej informacji, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+    Aby uzyskać więcej informacji, zobacz [Nawiązywanie połączenia z Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Skrypt zawiera minimalną obsługę błędów. Podstawowym celem skryptu jest szybkie wyświetlenie listy identyfikatorów folderów skrzynki pocztowej lub ścieżek lokacji, których można użyć w składni zapytania wyszukiwania wyszukiwania zawartości w celu wykonania docelowej kolekcji.
 
@@ -57,13 +55,13 @@ Narzędzie do wyszukiwania zawartości w portalu zgodności usługi Microsoft Pu
 
 ## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>Krok 1. Uruchamianie skryptu w celu pobrania listy folderów dla skrzynki pocztowej lub witryny
 
-Skrypt uruchomiony w tym pierwszym kroku zwróci listę folderów skrzynki pocztowej lub folderów SharePoint i OneDrive dla Firm oraz odpowiedni identyfikator folderu lub ścieżkę dla każdego folderu. Po uruchomieniu tego skryptu zostanie wyświetlony monit o podanie następujących informacji.
+Skrypt uruchamiany w tym pierwszym kroku zwróci listę folderów skrzynki pocztowej lub folderów programu SharePoint i OneDrive dla Firm oraz odpowiedni identyfikator folderu lub ścieżkę dla każdego folderu. Po uruchomieniu tego skryptu zostanie wyświetlony monit o podanie następujących informacji.
 
-- **Adres e-mail lub adres URL witryny**: wpisz adres e-mail opiekuna, aby zwrócić listę Exchange folderów skrzynki pocztowej i identyfikatorów folderów. Możesz też wpisać adres URL witryny SharePoint lub witryny OneDrive dla Firm, aby zwrócić listę ścieżek dla określonej witryny. Oto kilka przykładów:
+- **Adres e-mail lub adres URL witryny**: wpisz adres e-mail opiekuna, aby zwrócić listę folderów skrzynki pocztowej programu Exchange i identyfikatorów folderów. Możesz też wpisać adres URL witryny programu SharePoint lub witryny OneDrive dla Firm, aby zwrócić listę ścieżek dla określonej witryny. Oto kilka przykładów:
 
-  - **Exchange**:`stacig@contoso.onmicrosoft.com`
+  - **Exchange**: `stacig@contoso.onmicrosoft.com`
 
-  - **SharePoint**:`https://contoso.sharepoint.com/sites/marketing`
+  - **SharePoint**: `https://contoso.sharepoint.com/sites/marketing`
 
   - **OneDrive dla Firm**:`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
@@ -210,7 +208,7 @@ W przykładzie w kroku 2 przedstawiono zapytanie używane do przeszukiwania podf
 
 ### <a name="script-output-for-site-folders"></a>Dane wyjściowe skryptu dla folderów lokacji
 
-Jeśli otrzymujesz ścieżkę właściwości **documentlink** z witryn SharePoint lub OneDrive dla Firm, skrypt łączy się z programem PowerShell security & Compliance, tworzy nowe wyszukiwanie zawartości, które wyszukuje foldery w witrynie, a następnie wyświetla listę folderów znajdujących się w określonej lokacji. Skrypt wyświetla nazwę każdego folderu i dodaje prefiks **linku documentlink** do adresu URL folderu. Ponieważ właściwość **documentlink** jest właściwością z możliwością wyszukiwania, użyjesz `documentlink:<path>` pary property:value w zapytaniu wyszukiwania w kroku 2, aby przeszukać ten folder. Skrypt wyświetla maksymalnie 100 folderów lokacji. Jeśli istnieje więcej niż 100 folderów lokacji, zostaną wyświetlone najnowsze foldery.
+Jeśli otrzymujesz ścieżkę właściwości **documentlink** z programu SharePoint lub witryn OneDrive dla Firm, skrypt nawiązuje połączenie z programem PowerShell security & Compliance, tworzy nowe wyszukiwanie zawartości, które wyszukuje foldery w witrynie, a następnie wyświetla listę folderów znajdujących się w określonej lokacji. Skrypt wyświetla nazwę każdego folderu i dodaje prefiks **linku documentlink** do adresu URL folderu. Ponieważ właściwość **documentlink** jest właściwością z możliwością wyszukiwania, użyjesz `documentlink:<path>` pary property:value w zapytaniu wyszukiwania w kroku 2, aby przeszukać ten folder. Skrypt wyświetla maksymalnie 100 folderów lokacji. Jeśli istnieje więcej niż 100 folderów lokacji, zostaną wyświetlone najnowsze foldery.
 
 Oto przykład danych wyjściowych zwracanych przez skrypt dla folderów lokacji.
 
@@ -236,11 +234,11 @@ Po uruchomieniu skryptu w celu zebrania listy identyfikatorów folderów lub lin
 
 5. Wykonaj jedną z następujących czynności w zależności od tego, czy wyszukujesz folder skrzynki pocztowej, czy folder witryny:
 
-    - Obok **Exchange wiadomości e-mail** kliknij pozycję **Wybierz użytkowników, grupy lub zespoły,** a następnie dodaj tę samą skrzynkę pocztową, którą określono podczas uruchamiania skryptu w kroku 1.
+    - Obok **pozycji Poczta e-mail programu Exchange** kliknij pozycję **Wybierz użytkowników, grupy lub zespoły,** a następnie dodaj tę samą skrzynkę pocztową, którą określono podczas uruchamiania skryptu w kroku 1.
 
       Lub
 
-    - Obok **SharePoint witryn** kliknij pozycję **Wybierz witryny**, a następnie dodaj ten sam adres URL witryny określony podczas uruchamiania skryptu w kroku 1.
+    - Obok **pozycji Witryny programu SharePoint** kliknij pozycję **Wybierz witryny** , a następnie dodaj ten sam adres URL witryny, który został określony podczas uruchamiania skryptu w kroku 1.
 
 6. Po zapisaniu lokalizacji zawartości do wyszukiwania kliknij pozycję **Zapisz & uruchomienia**, wpisz nazwę wyszukiwania zawartości, a następnie kliknij przycisk **Zapisz** , aby rozpocząć wyszukiwanie docelowej kolekcji.
 

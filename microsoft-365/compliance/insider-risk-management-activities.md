@@ -1,6 +1,6 @@
 ---
 title: Badanie działań związanych z zarządzaniem ryzykiem wewnętrznym
-description: Dowiedz się więcej o badaniu działań związanych z zarządzaniem ryzykiem wewnętrznym w Microsoft Purview
+description: Dowiedz się więcej o badaniu działań związanych z zarządzaniem ryzykiem wewnętrznym w usłudze Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, ryzyko wewnętrzne, zarządzanie ryzykiem, zgodność
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -13,16 +13,14 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: a808e2d52692c44364e542cb8cd9e7a2b0c57cac
-ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
+ms.openlocfilehash: 53b56c8e96beb3e68c56fd968ac87e58994bc2ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65759873"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622970"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Badanie działań związanych z zarządzaniem ryzykiem wewnętrznym
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Badanie ryzykownych działań użytkowników jest ważnym pierwszym krokiem minimalizowania ryzyka związanego z informacjami poufnymi w organizacji. Mogą to być działania generujące alerty na podstawie zasad zarządzania ryzykiem wewnętrznym lub ryzyka związane z działaniami wykrytymi przez zasady, ale nie od razu tworzące alert dotyczący zarządzania ryzykiem wewnętrznym dla użytkowników. Tego typu działania można zbadać przy użyciu **raportów aktywności użytkowników (wersja zapoznawcza)** lub **pulpitu nawigacyjnego alertów**.
 

@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Tagowanie dokumentów w zestawie przeglądów pomaga usunąć niepotrzebną zawartość i zidentyfikować odpowiednią zawartość w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 358f62c83cdecd1aee92a2ca56db09b732ea3d9d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2cd1243f520be21cf27c810a5f2dc2e4a033a33f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099614"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623744"
 ---
 # <a name="tag-documents-in-a-review-set-in-ediscovery-premium"></a>Tagowanie dokumentów w zestawie przeglądów w usłudze eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Organizowanie zawartości w zestawie przeglądów jest ważne, aby ukończyć różne przepływy pracy w procesie zbierania elektronicznych materiałów dowodowych. Obejmuje to:
 
@@ -75,7 +73,7 @@ Przed zastosowaniem tagów do elementów w zestawie przeglądów należy utworzy
 
 3. Na stronie **Tagi** wybierz pozycję **Dodaj sekcję**.
 
-4. Wpisz tytuł grupy tagów i opcjonalny opis, a następnie kliknij pozycję **Zapisz**.
+4. Wpisz tytuł grupy tagów i opcjonalny opis, a następnie kliknij przycisk **Zapisz**.
 
 5. Wybierz menu rozwijane z potrójną kropką obok tytułu grupy tagów, a następnie kliknij **pozycję Dodaj pole wyboru** lub **przycisk Dodaj opcję**.
 
@@ -105,7 +103,7 @@ Dzięki strukturze tagów recenzenci mogą stosować tagi do elementów w zestaw
 
       - **Dołącz skojarzone elementy rodzinne**: ta opcja stosuje ten sam tag do skojarzonych elementów rodziny elementów, które są oznaczone tagiem.  *Elementy rodziny* to elementy, które mają tę samą wartość właściwości metadanych **FamilyId** . Na przykład dokument dołączony do wiadomości e-mail udostępnia ten sam identyfikator **FamilyId** co wiadomość e-mail. Jeśli więc ta opcja zostanie wybrana w tym przykładzie, wiadomość e-mail i dokument zostaną oznaczone tagiem, mimo że dokument może nie zostać uwzględniony na liście elementów zestawu przeglądów.
 
-      - **Dołącz skojarzone elementy konwersacji**: ta opcja stosuje ten sam tag do wszystkich elementów, które znajdują się w tej samej Teams lub Yammer konwersacji co elementy, które są oznakowane. *Elementy konwersacji* to elementy, które mają tę samą wartość właściwości metadanych **ConversationId** . Wszystkie komunikaty, wpisy i odpowiedni plik transkrypcji konwersacji mają ten sam **identyfikator Konwersacji**. Jeśli ta opcja jest zaznaczona, wszystkie elementy w tym samym pliku konwersacji (i pliku transkrypcji) są oznaczane tagiem, mimo że niektóre z tych elementów konwersacji mogą nie zostać uwzględnione na liście elementów zestawu przeglądów. Aby uzyskać więcej informacji na temat elementów konwersacji, zobacz sekcję "Grupowanie" w [przepływie pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości w Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
+      - **Dołącz skojarzone elementy konwersacji**: ta opcja stosuje ten sam tag do wszystkich elementów, które znajdują się w tej samej konwersacji usługi Teams lub Yammer, co elementy oznaczone tagiem. *Elementy konwersacji* to elementy, które mają tę samą wartość właściwości metadanych **ConversationId** . Wszystkie komunikaty, wpisy i odpowiedni plik transkrypcji konwersacji mają ten sam **identyfikator Konwersacji**. Jeśli ta opcja jest zaznaczona, wszystkie elementy w tym samym pliku konwersacji (i pliku transkrypcji) są oznaczane tagiem, mimo że niektóre z tych elementów konwersacji mogą nie zostać uwzględnione na liście elementów zestawu przeglądów. Aby uzyskać więcej informacji na temat elementów konwersacji, zobacz sekcję "Grupowanie" w [przepływie pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości w usłudze Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
 
       - **Brak**: ta opcja nie stosuje tagów do elementów rodziny ani elementów konwersacji. Stosuje tagi tylko do elementów, które są zaznaczone lub do wszystkich elementów na liście zestawów przeglądów.
 

@@ -16,16 +16,14 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 571f716a68bcbe9746338aec0fd9a6a3e8e9f0ef
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: d830da841eb67db19e81cdf6a0e079c2161ae9d9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217621"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625198"
 ---
-# <a name="get-started-with-insider-risk-management-settings"></a>Wprowadzenie z ustawieniami zarządzania ryzykiem wewnętrznym
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="get-started-with-insider-risk-management-settings"></a>Wprowadzenie do ustawień zarządzania ryzykiem wewnętrznym
 
 Ustawienia zarządzania ryzykiem wewnętrznym mają zastosowanie do wszystkich zasad zarządzania ryzykiem wewnętrznym, niezależnie od szablonu wybranego podczas tworzenia zasad. Ustawienia są konfigurowane przy użyciu kontroli **ustawień ryzyka niejawnych testerów** znajdującej się w górnej części wszystkich stron zarządzania ryzykiem wewnętrznym. Te ustawienia kontrolują składniki zasad dla następujących obszarów:
 
@@ -36,10 +34,10 @@ Ustawienia zarządzania ryzykiem wewnętrznym mają zastosowanie do wszystkich z
 - [Eksportowanie alertów](#export-alerts)
 - [Priorytetowe grupy użytkowników (wersja zapoznawcza)](#priority-user-groups-preview)
 - [Priorytetowe zasoby fizyczne (wersja zapoznawcza)](#priority-physical-assets-preview)
-- [przepływy Power Automate (wersja zapoznawcza)](#power-automate-flows-preview)
+- [Przepływy usługi Power Automate (wersja zapoznawcza)](#power-automate-flows-preview)
 - [Microsoft Teams (wersja zapoznawcza)](#microsoft-teams-preview)
 - [Analytics](#analytics)
-- [Powiadomienia administratora](#admin-notifications)
+- [powiadomienia Administracja](#admin-notifications)
 
 Przed rozpoczęciem pracy i utworzeniem zasad zarządzania ryzykiem wewnętrznym ważne jest, aby zrozumieć te ustawienia i wybrać poziomy ustawień najlepiej dla potrzeb dotyczących zgodności w organizacji.
 
@@ -50,7 +48,7 @@ Ochrona prywatności użytkowników, którzy mają dopasowania zasad, jest ważn
 - **Pokaż anonimowe wersje nazw użytkowników**: nazwy użytkowników są anonimizowane, aby uniemożliwić administratorom, badaczom danych i recenzentom wyświetlanie osób skojarzonych z alertami zasad. Na przykład użytkownik "Grace Taylor" będzie wyświetlany z losowym pseudonimem, takim jak "AnonIS8-988" we wszystkich obszarach środowiska zarządzania ryzykiem wewnętrznym. Wybranie tego ustawienia powoduje zanonimizowanie wszystkich użytkowników z bieżącymi i wcześniejszymi dopasowaniami zasad i ma zastosowanie do wszystkich zasad. Informacje o profilu użytkownika w alertie o ryzyku wewnętrznym i szczegółach sprawy nie będą dostępne po wybraniu tej opcji. Jednak nazwy użytkowników są wyświetlane podczas dodawania nowych użytkowników do istniejących zasad lub przypisywania użytkowników do nowych zasad. Jeśli zdecydujesz się wyłączyć to ustawienie, nazwy użytkowników będą wyświetlane dla wszystkich użytkowników, którzy mają bieżące lub wcześniejsze dopasowania zasad.
 
     >[!IMPORTANT]
-    >Aby zachować integralność referencyjną dla użytkowników, którzy mają alerty lub przypadki ryzyka wewnętrznego w Microsoft 365 lub innych systemach, anonimizacja nazw użytkowników nie jest zachowywana w przypadku wyeksportowanych alertów. Wyeksportowane alerty będą wyświetlać nazwy użytkowników dla każdego alertu.
+    >Aby zachować integralność referencyjną dla użytkowników, którzy mają alerty lub przypadki związane z ryzykiem wewnętrznym w usłudze Microsoft 365 lub innych systemach, anonimizacja nazw użytkowników nie jest zachowywana w przypadku wyeksportowanych alertów. Wyeksportowane alerty będą wyświetlać nazwy użytkowników dla każdego alertu.
 
 - **Nie pokazuj zanonimizowanych wersji nazw użytkowników**: nazwy użytkowników są wyświetlane dla wszystkich bieżących i przeszłych dopasowań zasad dla alertów i przypadków. Informacje o profilu użytkownika (nazwa, tytuł, alias oraz organizacja lub dział) są wyświetlane dla użytkownika dla wszystkich alertów i przypadków dotyczących zarządzania ryzykiem wewnętrznym.
 
@@ -62,53 +60,53 @@ Szablony zasad ryzyka wewnętrznego definiują typ działań związanych z ryzyk
 
 Alerty są wyzwalane przez zasady, gdy użytkownicy wykonują działania związane ze wskaźnikami zasad, które spełniają wymagany próg. Zarządzanie ryzykiem wewnętrznym używa dwóch typów wskaźników:
 
-- **Wyzwalanie zdarzeń**: zdarzenia, które określają, czy użytkownik jest aktywny w zasadach zarządzania ryzykiem wewnętrznym. Jeśli użytkownik zostanie dodany do zasad zarządzania ryzykiem wewnętrznym nie ma zdarzenia wyzwalającego, działanie użytkownika nie zostanie ocenione przez zasady. Na przykład użytkownik A jest dodawany do zasad utworzonych na podstawie *kradzieży danych przez szablon zasad odchodzących użytkowników*, a zasady i łącznik Microsoft 365 HR są prawidłowo skonfigurowane. Dopóki użytkownik A nie ma daty zakończenia zgłoszonej przez łącznik hr, działania użytkownika A nie są oceniane przez te zasady zarządzania ryzykiem wewnętrznym pod kątem ryzyka. Innym przykładem wyzwalającego zdarzenia jest to, czy użytkownik ma alert zasad DLP *o wysokiej* ważności podczas korzystania z zasad *wycieków danych* .
-- **Wskaźniki zasad**: Wskaźniki zawarte w zasadach zarządzania ryzykiem wewnętrznym używanych do określania oceny ryzyka dla użytkownika w zakresie. Te wskaźniki zasad są aktywowane tylko po wystąpieniu zdarzenia wyzwalającego dla użytkownika. Niektóre przykłady wskaźników zasad dotyczą sytuacji, gdy użytkownik kopiuje dane do osobistych usług magazynu w chmurze lub przenośnych urządzeń magazynujących, jeśli konto użytkownika zostanie usunięte z Azure Active Directory lub jeśli użytkownik udostępnia wewnętrzne pliki i foldery nieautoryzowanym stronom zewnętrznym.
+- **Wyzwalanie zdarzeń**: zdarzenia, które określają, czy użytkownik jest aktywny w zasadach zarządzania ryzykiem wewnętrznym. Jeśli użytkownik zostanie dodany do zasad zarządzania ryzykiem wewnętrznym nie ma zdarzenia wyzwalającego, działanie użytkownika nie zostanie ocenione przez zasady. Na przykład użytkownik A jest dodawany do zasad utworzonych na podstawie *kradzieży danych przez szablon zasad odchodzących użytkowników* , a zasady i łącznik usługi Microsoft 365 HR są prawidłowo skonfigurowane. Dopóki użytkownik A nie ma daty zakończenia zgłoszonej przez łącznik hr, działania użytkownika A nie są oceniane przez te zasady zarządzania ryzykiem wewnętrznym pod kątem ryzyka. Innym przykładem wyzwalającego zdarzenia jest to, czy użytkownik ma alert zasad DLP *o wysokiej* ważności podczas korzystania z zasad *wycieków danych* .
+- **Wskaźniki zasad**: Wskaźniki zawarte w zasadach zarządzania ryzykiem wewnętrznym używanych do określania oceny ryzyka dla użytkownika w zakresie. Te wskaźniki zasad są aktywowane tylko po wystąpieniu zdarzenia wyzwalającego dla użytkownika. Niektóre przykłady wskaźników zasad dotyczą sytuacji, gdy użytkownik kopiuje dane do osobistych usług magazynu w chmurze lub przenośnych urządzeń magazynujących, jeśli konto użytkownika zostało usunięte z usługi Azure Active Directory lub jeśli użytkownik udostępnia wewnętrzne pliki i foldery nieautoryzowanym stronom zewnętrznym.
 
 Niektóre wskaźniki zasad mogą być również używane do dostosowywania zdarzeń wyzwalania dla określonych szablonów zasad. Po skonfigurowaniu w kreatorze zasad dla ogólnych *wycieków danych* lub *wycieków danych według szablonów użytkowników priorytetowych* wskaźniki te umożliwiają większą elastyczność i dostosowywanie zasad oraz gdy użytkownicy są w zakresie zasad. Ponadto można zdefiniować progi poszczególnych działań dla tych wskaźników wyzwalających, aby uzyskać bardziej szczegółową kontrolę w zasadach.
 
 Wskaźniki zasad są podzielone na następujące obszary. Możesz wybrać wskaźniki, aby aktywować i dostosować limity zdarzeń wskaźnika dla każdego poziomu wskaźnika podczas tworzenia zasad ryzyka niejawnego:
 
-- **wskaźniki Office**: obejmują one wskaźniki zasad dla witryn SharePoint, Microsoft Teams i wiadomości e-mail.
-- **Wskaźniki urządzeń**: obejmują one wskaźniki zasad działania, takie jak udostępnianie plików za pośrednictwem sieci lub urządzeń. Wskaźniki obejmują działania obejmujące wszystkie typy plików, z wyłączeniem działania plików wykonywalnych (.exe) i biblioteki linków dynamicznych (.dll). Jeśli wybierzesz *pozycję Wskaźniki urządzenia*, działanie jest przetwarzane dla urządzeń z urządzeniami Windows 10 Build 1809 lub nowszym oraz urządzeniami z systemem macOS (Catalina 10.15 lub nowszym). W przypadku urządzeń z systemem Windows i macOS należy najpierw dołączyć urządzenia do portalu zgodności. Wskaźniki urządzenia obejmują również wykrywanie sygnału przeglądarki, aby ułatwić organizacji wykrywanie i działanie na sygnałach eksfiltracji dla plików nie wykonywalnych wyświetlanych, skopiowanych, udostępnionych lub wydrukowanych w Microsoft Edge i Google Chrome. Aby uzyskać więcej informacji na temat konfigurowania urządzeń Windows na potrzeby integracji z ryzykiem wewnętrznym, zobacz następującą sekcję [Włączanie wskaźników urządzeń i dołączanie urządzeń Windows](insider-risk-management-settings.md#OnboardDevices) w tym artykule. Aby uzyskać więcej informacji na temat konfigurowania urządzeń z systemem macOS do integracji z ryzykiem wewnętrznym, zobacz następującą sekcję Włączanie wskaźników urządzeń i dołączanie urządzeń z systemem macOS w tym artykule. Aby uzyskać więcej informacji na temat wykrywania sygnału w przeglądarce, zobacz [Dowiedz się więcej o wykrywaniu sygnałów w przeglądarce zarządzania ryzykiem wewnętrznym i konfigurowaniu go](insider-risk-management-browser-support.md).
+- **Wskaźniki pakietu Office**: obejmują one wskaźniki zasad dla witryn programu SharePoint, aplikacji Microsoft Teams i wiadomości e-mail.
+- **Wskaźniki urządzeń**: obejmują one wskaźniki zasad działania, takie jak udostępnianie plików za pośrednictwem sieci lub urządzeń. Wskaźniki obejmują działania obejmujące wszystkie typy plików, z wyłączeniem działania plików wykonywalnych (.exe) i biblioteki linków dynamicznych (.dll). Jeśli wybierzesz *pozycję Wskaźniki urządzenia*, działanie jest przetwarzane dla urządzeń z urządzeniami Windows 10 Build 1809 lub nowszym oraz urządzeniami z systemem macOS (Catalina 10.15 lub nowszym). W przypadku urządzeń z systemem Windows i macOS należy najpierw dołączyć urządzenia do portalu zgodności. Wskaźniki urządzenia obejmują również wykrywanie sygnału przeglądarki, aby ułatwić organizacji wykrywanie i działanie na sygnałach eksfiltracji dla plików nie wykonywalnych wyświetlanych, skopiowanych, udostępnionych lub wydrukowanych w przeglądarkach Microsoft Edge i Google Chrome. Aby uzyskać więcej informacji na temat konfigurowania urządzeń z systemem Windows na potrzeby integracji z ryzykiem wewnętrznym, zobacz następującą sekcję [Włączanie wskaźników urządzeń i dołączanie urządzeń z systemem Windows](insider-risk-management-settings.md#OnboardDevices) w tym artykule. Aby uzyskać więcej informacji na temat konfigurowania urządzeń z systemem macOS do integracji z ryzykiem wewnętrznym, zobacz następującą sekcję Włączanie wskaźników urządzeń i dołączanie urządzeń z systemem macOS w tym artykule. Aby uzyskać więcej informacji na temat wykrywania sygnału w przeglądarce, zobacz [Dowiedz się więcej o wykrywaniu sygnałów w przeglądarce zarządzania ryzykiem wewnętrznym i konfigurowaniu go](insider-risk-management-browser-support.md).
 - **Wskaźnik naruszenia zasad zabezpieczeń (wersja zapoznawcza)**: obejmują one wskaźniki z Ochrona punktu końcowego w usłudze Microsoft Defender związane z niezatwierdzone lub złośliwe oprogramowanie instalacji lub pomijanie mechanizmów kontroli zabezpieczeń. Aby otrzymywać alerty w ramach zarządzania ryzykiem wewnętrznym, musisz mieć włączoną aktywną licencję usługi Defender for Endpoint i integrację z ryzykiem wewnętrznym. Aby uzyskać więcej informacji na temat konfigurowania usługi Defender for Endpoint na potrzeby integracji z zarządzaniem ryzykiem wewnętrznym, zobacz [Konfigurowanie zaawansowanych funkcji w Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Wskaźniki dostępu do rekordów kondycji (wersja zapoznawcza)**: obejmują one wskaźniki zasad dostępu do dokumentacji medycznej pacjentów. Na przykład próby uzyskania dostępu do dokumentacji medycznej pacjentów w dziennikach systemu elektronicznej dokumentacji medycznej (EMR) mogą być udostępniane zasadom opieki zdrowotnej w zakresie zarządzania ryzykiem wewnętrznym. Aby otrzymywać tego typu alerty w ramach zarządzania ryzykiem wewnętrznym, musisz mieć skonfigurowany łącznik danych specyficzny dla opieki zdrowotnej i łącznik danych kadr.
 - **Wskaźniki dostępu fizycznego (wersja zapoznawcza)**: obejmują one wskaźniki zasad fizycznego dostępu do poufnych zasobów. Na przykład próby uzyskania dostępu do obszaru z ograniczeniami w fizycznych dziennikach systemu nieprawidłowego działania mogą być udostępniane zasadom zarządzania ryzykiem wewnętrznym. Aby otrzymywać tego typu alerty w ramach zarządzania ryzykiem wewnętrznym, musisz mieć włączone priorytetowe zasoby fizyczne w ramach zarządzania ryzykiem wewnętrznym i skonfigurowanego [łącznika danych fizycznych](import-physical-badging-data.md) . Aby dowiedzieć się więcej na temat konfigurowania dostępu fizycznego, zobacz [sekcję Priorytetowego dostępu fizycznego](#priority-physical-assets-preview) w tym artykule.
-- **wskaźniki Microsoft Defender for Cloud Apps (wersja zapoznawcza)**: obejmują one wskaźniki zasad z udostępnionych alertów z usługi Defender dla Chmury Apps. Automatyczne wykrywanie anomalii w usłudze Defender dla Chmury Apps natychmiast rozpoczyna wykrywanie i sortowanie wyników, co jest ukierunkowane na liczne anomalie behawioralne dla użytkowników oraz maszyn i urządzeń połączonych z siecią. Aby uwzględnić te działania w alertach zasad zarządzania ryzykiem wewnętrznym, wybierz co najmniej jeden wskaźnik w tej sekcji. Aby dowiedzieć się więcej na temat analizy i wykrywania anomalii w usłudze Defender dla Chmury Apps, zobacz [Get behavioral analytics and anomaly detection (Pobieranie analizy behawioralnej i wykrywania anomalii](/cloud-app-security/anomaly-detection-policy)).
+- **wskaźniki Microsoft Defender for Cloud Apps (wersja zapoznawcza)**: obejmują one wskaźniki zasad z udostępnionych alertów z usługi Defender for Cloud Apps. Automatyczne wykrywanie anomalii w usłudze Defender for Cloud Apps natychmiast rozpoczyna wykrywanie i sortowanie wyników, co jest ukierunkowane na liczne anomalie behawioralne dla użytkowników oraz maszyn i urządzeń połączonych z siecią. Aby uwzględnić te działania w alertach zasad zarządzania ryzykiem wewnętrznym, wybierz co najmniej jeden wskaźnik w tej sekcji. Aby dowiedzieć się więcej na temat analizy i wykrywania anomalii w usłudze Defender for Cloud Apps, zobacz [Pobieranie analizy behawioralnej i wykrywania anomalii](/cloud-app-security/anomaly-detection-policy).
 - **Dopalacze oceny ryzyka**: obejmują one podniesienie oceny ryzyka dla aktywności, która jest powyżej zwykłej aktywności użytkownika przez jeden dzień lub dla użytkowników z wcześniejszymi przypadkami rozpoznawanymi jako naruszenie zasad. Włączenie dopalaczy oceny ryzyka zwiększa ocenę ryzyka i prawdopodobieństwo alertów dla tego typu działań. W przypadku działań, które są powyżej zwykłej aktywności użytkownika przez jeden dzień, wyniki są zwiększane, jeśli wykryte działanie odbiega od typowego zachowania użytkownika. W przypadku użytkowników z poprzednimi przypadkami rozpoznawanymi jako naruszenie zasad wyniki są zwiększane, jeśli użytkownik wcześniej rozpoznał więcej niż jeden przypadek jako potwierdzone naruszenie zasad. Dopalacze oceny ryzyka można wybrać tylko wtedy, gdy wybrano co najmniej jeden wskaźnik.
 
 W niektórych przypadkach możesz chcieć ograniczyć wskaźniki zasad ryzyka wewnętrznego stosowane do zasad ryzyka wewnętrznego w organizacji. Wskaźniki zasad dla określonych obszarów można wyłączyć, wyłączając je ze wszystkich zasad ryzyka wewnętrznego. Zdarzenia wyzwalania można modyfikować tylko w przypadku zasad *utworzonych na podstawie ogólnych wycieków danych* lub *wycieków danych za pomocą szablonów użytkowników o priorytecie* . Zasady utworzone na podstawie wszystkich innych szablonów nie mają dostosowywalnych wskaźników wyzwalania ani zdarzeń.
 
-Aby zdefiniować wskaźniki zasad ryzyka wewnętrznego włączone we wszystkich zasadach ryzyka wewnętrznego, przejdź do **pozycji Ustawienia** >  ryzyka **niejawnych testówIndicators** i wybierz co najmniej jeden wskaźnik zasad. Wskaźników wybranych na stronie Ustawienia wskaźników nie można indywidualnie skonfigurować podczas tworzenia lub edytowania zasad ryzyka niejawnego w kreatorze zasad.
+Aby zdefiniować wskaźniki zasad ryzyka wewnętrznego, które są włączone we wszystkich zasadach ryzyka wewnętrznego, przejdź do **pozycji Wskaźniki dotyczące ryzyka** >  niejawnych **testerów** i wybierz co najmniej jeden wskaźnik zasad. Wskaźników wybranych na stronie Ustawienia wskaźników nie można indywidualnie skonfigurować podczas tworzenia lub edytowania zasad ryzyka niejawnego w kreatorze zasad.
 
 > [!NOTE]
 > Pojawienie się nowych użytkowników dodanych ręcznie na **pulpicie nawigacyjnym Użytkownicy** może potrwać kilka godzin. Wyświetlenie działań z poprzednich 90 dni dla tych użytkowników może potrwać do 24 godzin. Aby wyświetlić działania dla użytkowników dodanych ręcznie, wybierz użytkownika na **pulpicie nawigacyjnym Użytkownicy** i otwórz kartę **Aktywność użytkownika** w okienku szczegółów.
 
-### <a name="enable-device-indicators-and-onboard-windows-devices"></a>Włączanie wskaźników urządzeń i dołączanie urządzeń Windows
+### <a name="enable-device-indicators-and-onboard-windows-devices"></a>Włączanie wskaźników urządzeń i dołączanie urządzeń z systemem Windows
 <a name="OnboardDevices"> </a>
 
-Aby umożliwić monitorowanie działań związanych z ryzykiem na urządzeniach Windows i uwzględniać wskaźniki zasad dla tych działań, Windows urządzenia muszą spełniać następujące wymagania i należy wykonać poniższe kroki dołączania.
+Aby umożliwić monitorowanie działań związanych z ryzykiem na urządzeniach z systemem Windows i uwzględniać wskaźniki zasad dla tych działań, urządzenia z systemem Windows muszą spełniać następujące wymagania i należy wykonać następujące kroki dołączania.
 
 #### <a name="step-1-prepare-your-endpoints"></a>Krok 1. Przygotowywanie punktów końcowych
 
 Upewnij się, że urządzenia Windows 10, które planujesz zgłaszać w ramach zarządzania ryzykiem wewnętrznym, spełniają te wymagania.
 
 1. Musi być uruchomiona Windows 10 kompilacji x64 1809 lub nowszej i musi mieć zainstalowaną [aktualizację Windows 10 (kompilacja systemu operacyjnego 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) od 20 lutego 2020 r.
-2. Konto użytkownika używane do logowania się na urządzeniu Windows 10 musi być aktywnym kontem Azure Active Directory (AAD). Urządzenie Windows 10 może być [AAD](/azure/active-directory/devices/concept-azure-ad-join), AAD hybrydowe, przyłączone do usługi Active Directory lub AAD zarejestrowane.
-3. Zainstaluj przeglądarkę Microsoft Edge na urządzeniu punktu końcowego, aby monitorować akcje dotyczące działania przekazywania w chmurze. Zobacz [Pobieranie nowego Microsoft Edge na podstawie Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+2. Konto użytkownika używane do logowania się do urządzenia Windows 10 musi być aktywnym kontem usługi Azure Active Directory (AAD). Urządzenie Windows 10 może być przyłączone do [usługi AAD](/azure/active-directory/devices/concept-azure-ad-join), hybrydowej usługi AAD lub usługi Active Directory lub zarejestrowane w usłudze AAD.
+3. Zainstaluj przeglądarkę Microsoft Edge na urządzeniu punktu końcowego, aby wykryć akcje dotyczące działania przekazywania w chmurze. Zobacz [Pobieranie nowej przeglądarki Microsoft Edge na podstawie Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### <a name="step-2-onboarding-devices"></a>Krok 2. Dołączanie urządzeń
 <a name="OnboardStep2"> </a>
 
-Aby można było monitorować działania związane z zarządzaniem ryzykiem wewnętrznym na urządzeniu, należy włączyć monitorowanie i dołączanie punktów końcowych. Obie akcje są podejmowane w portalu zgodności usługi Microsoft Purview.
+Aby można było wykryć działania związane z zarządzaniem ryzykiem wewnętrznym na urządzeniu, należy włączyć monitorowanie urządzeń i dołączyć je. Obie akcje są podejmowane w portal zgodności Microsoft Purview.
 
 Jeśli chcesz dołączyć urządzenia, które nie zostały jeszcze dołączone, pobierzesz odpowiedni skrypt i wdrożysz go zgodnie z opisem w poniższych krokach.
 
 Jeśli masz już urządzenia dołączone do [Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/), zostaną one już wyświetlone na liście urządzeń zarządzanych. Wykonaj [krok 3. Jeśli masz urządzenia dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender](insider-risk-management-settings.md#OnboardStep3) w następnej sekcji.
 
-W tym scenariuszu wdrażania dołączasz urządzenia, które nie zostały jeszcze dołączone, i po prostu chcesz monitorować działania związane z ryzykiem wewnętrznym na urządzeniach Windows 10.
+W tym scenariuszu wdrażania dołączasz urządzenia, które nie zostały jeszcze dołączone, i po prostu chcesz wykryć działania związane z ryzykiem wewnętrznym na urządzeniach Windows 10.
 
-1. Otwórz [portal zgodności usługi Microsoft Purview](https://compliance.microsoft.com).
+1. Otwórz [portal zgodności Microsoft Purview](https://compliance.microsoft.com).
 2. Otwórz stronę ustawień portalu zgodności i wybierz pozycję **Dołączanie urządzeń**.
 
    > [!NOTE]
@@ -119,7 +117,7 @@ W tym scenariuszu wdrażania dołączasz urządzenia, które nie zostały jeszcz
 5. Wybierz sposób wdrażania na tych kolejnych urządzeniach z listy **Metody wdrażania,** a następnie **pobierz pakiet**.
 6. Postępuj zgodnie z odpowiednimi procedurami w narzędziach [i metodach dołączania dla maszyn Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ten link prowadzi do strony docelowej, na której można uzyskać dostęp do Ochrona punktu końcowego w usłudze Microsoft Defender procedur zgodnych z pakietem wdrożeniowym wybranym w kroku 5:
     - Dołączanie maszyn Windows 10 przy użyciu zasady grupy
-    - Dołączanie maszyn Windows przy użyciu Microsoft Endpoint Configuration Manager
+    - Dołączanie maszyn z systemem Windows przy użyciu programu Microsoft Endpoint Configuration Manager
     - Dołączanie maszyn Windows 10 przy użyciu narzędzi mobile Zarządzanie urządzeniami
     - Dołączanie maszyn Windows 10 przy użyciu skryptu lokalnego
     - Dołączanie nietrwałych maszyn infrastruktury pulpitu wirtualnego (VDI).
@@ -134,14 +132,14 @@ Po zakończeniu i dołączeniu punktu końcowego powinien być widoczny na liśc
 
 Jeśli Ochrona punktu końcowego w usłudze Microsoft Defender jest już wdrożony, a w programie są raporty punktów końcowych, wszystkie te punkty końcowe zostaną wyświetlone na liście urządzeń zarządzanych. Możesz nadal dołączać nowe urządzenia do zarządzania ryzykiem wewnętrznym, aby rozszerzyć zakres, korzystając z sekcji [Krok 2: dołączanie urządzeń](insider-risk-management-settings.md#OnboardStep2) .
 
-1. Otwórz [portal zgodności usługi Microsoft Purview](https://compliance.microsoft.com).
+1. Otwórz [portal zgodności Microsoft Purview](https://compliance.microsoft.com).
 2. Otwórz stronę ustawień portalu zgodności i wybierz pozycję **Włącz monitorowanie urządzenia**.
 3. Wybierz pozycję **Zarządzanie urządzeniami** , aby otworzyć listę **Urządzenia** . Powinna zostać wyświetlona lista urządzeń, które już raportują Ochrona punktu końcowego w usłudze Microsoft Defender.
 4. Wybierz **pozycję Dołączanie** , jeśli chcesz dołączyć więcej urządzeń.
 5. Wybierz sposób wdrażania na tych kolejnych urządzeniach z listy **Metody wdrażania,** a następnie **pobierz pakiet**.
 6. Postępuj zgodnie z odpowiednimi procedurami w narzędziach [i metodach dołączania dla maszyn Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ten link prowadzi do strony docelowej, na której można uzyskać dostęp do Ochrona punktu końcowego w usłudze Microsoft Defender procedur zgodnych z pakietem wdrożeniowym wybranym w kroku 5:
     - Dołączanie maszyn Windows 10 przy użyciu zasady grupy
-    - Dołączanie maszyn Windows przy użyciu Microsoft Endpoint Configuration Manager
+    - Dołączanie maszyn z systemem Windows przy użyciu programu Microsoft Endpoint Configuration Manager
     - Dołączanie maszyn Windows 10 przy użyciu narzędzi mobile Zarządzanie urządzeniami
     - Dołączanie maszyn Windows 10 przy użyciu skryptu lokalnego
     - Dołączanie nietrwałych maszyn infrastruktury pulpitu wirtualnego (VDI).
@@ -153,24 +151,24 @@ Po zakończeniu i dołączeniu punktu końcowego powinien być widoczny w tabeli
 
 ### <a name="enable-device-indicators-and-onboard-macos-devices"></a>Włączanie wskaźników urządzeń i dołączanie urządzeń z systemem macOS
 
-Urządzenia z systemem macOS (Catalina 10.15 lub nowsze) można dołączyć do Microsoft 365 w celu obsługi zasad zarządzania ryzykiem wewnętrznym przy użyciu Intune lub jamf Pro. Aby uzyskać więcej informacji i wskazówek dotyczących konfiguracji, zobacz [Dołączanie urządzeń z systemem macOS do Microsoft 365 omówienie (wersja zapoznawcza)](device-onboarding-macos-overview.md).
+Urządzenia z systemem macOS (Catalina 10.15 lub nowsze) można dołączyć do platformy Microsoft 365, aby obsługiwać zasady zarządzania ryzykiem wewnętrznym przy użyciu Intune lub JAMF Pro. Aby uzyskać więcej informacji i wskazówek dotyczących konfiguracji, zobacz [Dołączanie urządzeń z systemem macOS do platformy Microsoft 365 — omówienie (wersja zapoznawcza)](device-onboarding-macos-overview.md).
 
 ### <a name="indicator-level-settings-preview"></a>Ustawienia poziomu wskaźnika (wersja zapoznawcza)
 
 Podczas tworzenia zasad w kreatorze zasad można skonfigurować sposób, w jaki dzienna liczba zdarzeń o podwyższonym ryzyku powinna wpływać na ocenę ryzyka dla alertów o ryzyku wewnętrznym. Te ustawienia wskaźnika ułatwiają kontrolowanie, jak liczba wystąpień zdarzeń o podwyższonym ryzyku w organizacji powinna wpływać na wynik ryzyka, a więc na powiązaną ważność alertu dla tych zdarzeń. Jeśli wolisz, możesz również zachować domyślne poziomy progów zdarzeń zalecane przez firmę Microsoft dla wszystkich włączonych wskaźników.
 
-Na przykład decydujesz się włączyć wskaźniki SharePoint w ustawieniach zasad ryzyka wewnętrznego i **ustawić niestandardowe progi** dla zdarzeń SharePoint podczas konfigurowania wskaźników dla nowych zasad *przecieków danych* ryzyka wewnętrznego. W kreatorze zasad ryzyka wewnętrznego należy skonfigurować trzy różne dzienne poziomy zdarzeń dla każdego wskaźnika SharePoint, aby wpłynąć na wynik ryzyka dla alertów skojarzonych z tymi zdarzeniami.
+Na przykład decydujesz się włączyć wskaźniki programu SharePoint w ustawieniach zasad ryzyka wewnętrznego i **ustawić niestandardowe progi** dla zdarzeń programu SharePoint podczas konfigurowania wskaźników dla nowych zasad dotyczących ryzyka wewnętrznego *Wycieki danych* . W kreatorze zasad ryzyka dotyczącego informacji poufnych należy skonfigurować trzy różne dzienne poziomy zdarzeń dla każdego wskaźnika programu SharePoint, aby wpływać na wynik ryzyka dla alertów skojarzonych z tymi zdarzeniami.
 
 ![Niestandardowe ustawienia wskaźnika zarządzania ryzykiem wewnętrznym.](../media/insider-risk-custom-indicators.png)
 
 Dla pierwszego dziennego poziomu zdarzeń należy ustawić próg na *poziomie co najmniej 10 zdarzeń dziennie* , aby uzyskać niższy wpływ na wynik ryzyka dla zdarzeń, *20 lub więcej zdarzeń dziennie* dla średniego wpływu na wynik ryzyka dla zdarzeń i *30 lub więcej zdarzeń dziennie* , co ma większy wpływ na wynik ryzyka dla zdarzeń. Te ustawienia oznaczają w praktyce:
 
-- Jeśli istnieje od 1 do 9 zdarzeń SharePoint, które mają miejsce po wyzwoleniu zdarzenia, wyniki ryzyka mają minimalny wpływ i zwykle nie generują alertu.
-- Jeśli istnieje od 10 do 19 zdarzeń SharePoint, które mają miejsce po zdarzeniu wyzwalającym, ocena ryzyka jest z natury niższa, a poziomy ważności alertów zwykle są na niskim poziomie.
-- Jeśli istnieją zdarzenia SharePoint 20–29, które mają miejsce po wyzwoleniu, ocena ryzyka jest z natury wyższa, a poziomy ważności alertów zwykle są na średnim poziomie.
-- Jeśli istnieje co najmniej 30 zdarzeń SharePoint, które mają miejsce po wyzwoleniu, ocena ryzyka jest z natury wyższa, a poziomy ważności alertów zwykle są na wysokim poziomie.
+- Jeśli istnieje od 1 do 9 zdarzeń programu SharePoint, które mają miejsce po wyzwoleniu zdarzenia, wyniki ryzyka mają minimalny wpływ i zwykle nie generują alertu.
+- Jeśli istnieje od 10 do 19 zdarzeń programu SharePoint, które mają miejsce po zdarzeniu wyzwalającym, ocena ryzyka jest z natury niższa, a poziomy ważności alertów zwykle są na niskim poziomie.
+- Jeśli istnieją zdarzenia programu SharePoint 20–29, które mają miejsce po wyzwoleniu, ocena ryzyka jest z natury wyższa, a poziomy ważności alertów zwykle są na średnim poziomie.
+- Jeśli istnieje co najmniej 30 zdarzeń programu SharePoint, które mają miejsce po wyzwoleniu, wynik ryzyka jest z natury wyższy, a poziomy ważności alertów zwykle są na wysokim poziomie.
 
-Inną opcją dla progów zasad jest przypisanie zdarzenia wyzwalającego zasady do działania powyżej zwykłej dziennej aktywności użytkowników. Zamiast definiować określone ustawienia progowe, każdy próg jest dynamicznie dostosowywany dla nietypowych działań wykrytych dla użytkowników zasad w zakresie. Jeśli działanie progowe dla nietypowych działań jest obsługiwane dla pojedynczego wskaźnika, możesz wybrać pozycję **Działanie jest powyżej zwykłego działania użytkownika dla danego dnia** w kreatorze zasad dla tego wskaźnika. Jeśli tej opcji nie ma na liście, dla wskaźnika nie jest dostępne wyzwalanie nietypowych działań. Jeśli **dla wskaźnika jest wyświetlana opcja Działanie powyżej zwykłej aktywności użytkownika dla danego dnia**, ale nie można jej wybrać, musisz włączyć tę opcję w **obszarze Ustawienia** >  ryzyka niejawnego.
+Inną opcją dla progów zasad jest przypisanie zdarzenia wyzwalającego zasady do działania powyżej zwykłej dziennej aktywności użytkowników. Zamiast definiować określone ustawienia progowe, każdy próg jest dynamicznie dostosowywany dla nietypowych działań wykrytych dla użytkowników zasad w zakresie. Jeśli działanie progowe dla nietypowych działań jest obsługiwane dla pojedynczego wskaźnika, możesz wybrać pozycję **Działanie jest powyżej zwykłego działania użytkownika dla danego dnia** w kreatorze zasad dla tego wskaźnika. Jeśli tej opcji nie ma na liście, dla wskaźnika nie jest dostępne wyzwalanie nietypowych działań. Jeśli **dla wskaźnika jest wyświetlana opcja Działanie powyżej zwykłej aktywności użytkownika dla danego dnia**, ale nie można jej wybrać, musisz włączyć tę opcję w obszarze **Wskaźniki zasad dotyczące ustawień** >  ryzyka niejawnych **testerów**.
 
 ## <a name="policy-timeframes"></a>Ramy czasowe zasad
 
@@ -245,11 +243,11 @@ Informacje o alertach dotyczących zarządzania ryzykiem wewnętrznym można eks
 Jeśli Twoja organizacja korzysta z usługi Microsoft Sentinel, możesz również użyć wbudowanego łącznika danych zarządzania ryzykiem wewnętrznym w celu zaimportowania informacji o alertach o ryzyku wewnętrznym do usługi Sentinel. Aby uzyskać więcej informacji, zobacz [Insider Risk Management (IRM) (wersja zapoznawcza)](/azure/sentinel/data-connectors-reference#microsoft-365-insider-risk-management-irm-preview) w artykule dotyczącym usługi Microsoft Sentinel.
 
 >[!IMPORTANT]
->Aby zachować integralność referencyjną dla użytkowników, którzy mają alerty lub przypadki ryzyka wewnętrznego w Microsoft 365 lub innych systemach, anonimizacja nazw użytkowników nie jest zachowywana w przypadku wyeksportowanych alertów. Wyeksportowane alerty będą wyświetlać nazwy użytkowników dla każdego alertu.
+>Aby zachować integralność referencyjną dla użytkowników, którzy mają alerty lub przypadki związane z ryzykiem wewnętrznym w usłudze Microsoft 365 lub innych systemach, anonimizacja nazw użytkowników nie jest zachowywana w przypadku wyeksportowanych alertów. Wyeksportowane alerty będą wyświetlać nazwy użytkowników dla każdego alertu.
 
 Aby użyć interfejsów API do przeglądania informacji o alertach o ryzyku wewnętrznym:
 
-1. Włącz obsługę interfejsu API działań zarządzania Office 365 w **obszarze Zarządzanie** >  ryzykiem niejawnym **Ustawienia** >  **Wyślij alerty**. Domyślnie to ustawienie jest wyłączone dla organizacji Microsoft 365.
+1. Włącz obsługę interfejsu API działania zarządzania Office 365 w **obszarze Ustawienia** >  **zarządzania** >  ryzykiem wewnętrznym **Eksportuj alerty**. Domyślnie to ustawienie jest wyłączone dla organizacji platformy Microsoft 365.
 2. Filtruj typowe działania inspekcji Office 365 według *pozycji SecurityComplianceAlerts*.
 3. *Filtruj pozycję SecurityComplianceAlerts* według kategorii *InsiderRiskManagement*.
 
@@ -268,7 +266,7 @@ Następujące pola i wartości są eksportowane dla alertów zarządzania ryzyki
 | Danych | Dane alertu obejmują unikatowy identyfikator użytkownika, główną nazwę użytkownika oraz datę i godzinę (UTC), gdy użytkownik został wyzwolony do zasad. |
 | Name (Nazwa) | Nazwa zasad dla zasad zarządzania ryzykiem wewnętrznym, które wygenerowały alert. |
 | PolicyId | Identyfikator GUID zasad zarządzania ryzykiem wewnętrznym, które wyzwoliły alert. |
-| Ważności | Ważność alertu. Wartości są *wysokie*, *średnie* lub *niskie*. |
+| Waga | Ważność alertu. Wartości są *wysokie*, *średnie* lub *niskie*. |
 | Źródło | Źródło alertu. Wartość to *Office 365 Zgodność & zabezpieczeń*. |
 | Stan | Stan alertu. Wartości są *aktywne* (*Przegląd potrzeb* w ryzyku wewnętrznym), *Badanie* (*potwierdzone* w ryzyku wewnętrznym), *Rozwiązane* (*rozwiązane* w ryzyku wewnętrznym), *Odrzucone* (*odrzucone* w ryzyku wewnętrznym). |
 | Wersja | Wersja schematu alertów zabezpieczeń i zgodności. |
@@ -276,7 +274,7 @@ Następujące pola i wartości są eksportowane dla alertów zarządzania ryzyki
 Następujące pola i wartości są eksportowane dla alertów zarządzania ryzykiem wewnętrznym dla [wspólnego schematu interfejsu API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
 
 - Userid
-- Identyfikator
+- Id
 - Typ rekordu
 - CreationTime
 - Operacja
@@ -292,15 +290,15 @@ Użytkownicy w organizacji mogą mieć różne poziomy ryzyka w zależności od 
 
 Zamiast otwierać się na przegląd przez wszystkich analityków i badaczy, grupy użytkowników o priorytecie mogą również wymagać ograniczenia działań przeglądowych do określonych użytkowników lub grup ról ryzyka wewnętrznego. Możesz przypisać poszczególnych użytkowników i grupy ról, aby przeglądać użytkowników, alerty, przypadki i raporty dla każdej priorytetowej grupy użytkowników. Grupy użytkowników o priorytecie mogą mieć uprawnienia do przeglądania przypisane do wbudowanych grup ról Insider *Risk Management*, *Insider Risk Management Analysts* i *Insider Risk Management Investigators* , co najmniej jednej z tych grup ról lub do niestandardowego wyboru użytkowników.
 
-Na przykład należy chronić przed wyciekami danych w przypadku wysoce poufnego projektu, w którym użytkownicy mają dostęp do informacji poufnych. Możesz utworzyć grupę *użytkowników* *o priorytecie Poufne Project* Użytkownicy dla użytkowników w organizacji, którzy pracują nad tym projektem. Ponadto ta priorytetowa grupa użytkowników nie powinna mieć użytkowników, alertów, przypadków i raportów skojarzonych z grupą widocznych dla wszystkich domyślnych administratorów zarządzania ryzykiem wewnętrznym, analityków i badaczy. W **Ustawienia** utworzysz grupę Użytkownicy o priorytecie *Poufne Project Użytkownicy* i przypiszesz dwóch użytkowników jako recenzenta, który może wyświetlać dane powiązane z grupami. Korzystając z kreatora zasad i szablonu zasad *Wycieki danych według priorytetu użytkowników*, tworzysz nowe zasady i przypisujesz grupę użytkowników o priorytecie *Poufne Project Użytkownicy* do zasad. Działania badane przez zasady dla członków grupy użytkowników o *priorytecie Poufne Project Użytkownicy* są bardziej wrażliwe na ryzyko, a działania tych użytkowników będą bardziej narażone na generowanie alertu i alerty o wyższych poziomach ważności.
+Na przykład należy chronić przed wyciekami danych w przypadku wysoce poufnego projektu, w którym użytkownicy mają dostęp do informacji poufnych. Możesz utworzyć grupę *użytkowników* o *priorytecie Poufne użytkownicy projektu* dla użytkowników w organizacji, którzy pracują nad tym projektem. Ponadto ta priorytetowa grupa użytkowników nie powinna mieć użytkowników, alertów, przypadków i raportów skojarzonych z grupą widocznych dla wszystkich domyślnych administratorów zarządzania ryzykiem wewnętrznym, analityków i badaczy. W **obszarze Ustawienia** utworzysz grupę użytkowników o priorytecie *Poufne użytkownicy projektu* i przypiszesz dwóch użytkowników jako recenzentów, którzy mogą wyświetlać dane związane z grupami. Korzystając z kreatora zasad i szablonu zasad *Wycieki danych według priorytetu użytkowników* , należy utworzyć nowe zasady i przypisać grupę priorytetowych *użytkowników poufnych użytkowników projektu* do zasad. Działania analizowane przez zasady dla członków grupy *użytkowników o priorytecie Poufni użytkownicy projektu* są bardziej wrażliwe na ryzyko, a działania tych użytkowników będą bardziej skłonne do generowania alertu i alertów o wyższych poziomach ważności.
 
 ### <a name="create-a-priority-user-group"></a>Tworzenie grupy użytkowników o priorytecie
 
-Aby utworzyć nową grupę użytkowników o priorytecie, użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem niejawnym testerów** w portalu zgodności usługi Microsoft Purview. Aby utworzyć grupę użytkowników o priorytecie, musisz być członkiem grupy roli *Insider Risk Management* lub *Insider Risk Management Admin* .
+Aby utworzyć nową grupę użytkowników o priorytecie, użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem niejawnym testerów** w portal zgodności Microsoft Purview. Aby utworzyć grupę użytkowników o priorytecie, musisz być członkiem grupy ról Insider *Risk Management* lub *Insider Risk Management Administracja*.
 
 Wykonaj następujące kroki, aby utworzyć grupę użytkowników o priorytecie:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz pozycję **Ustawienia ryzyka niejawnych testerów**.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz **pozycję Ustawienia ryzyka niejawnych testerów**.
 2. Wybierz stronę **Priorytetowe grupy użytkowników (wersja zapoznawcza** ).
 3. Na stronie **Priorytetowe grupy użytkowników (wersja zapoznawcza)** wybierz pozycję **Utwórz grupę użytkowników o priorytecie** , aby uruchomić kreatora tworzenia grupy.
 4. Na stronie **Nazwa i opis** wypełnij następujące pola:
@@ -316,11 +314,11 @@ Wykonaj następujące kroki, aby utworzyć grupę użytkowników o priorytecie:
 
 ### <a name="update-a-priority-user-group"></a>Aktualizowanie grupy użytkowników o priorytecie
 
-Aby zaktualizować istniejącą grupę użytkowników o priorytecie, użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem niejawnym** w portalu zgodności usługi Microsoft Purview. Aby zaktualizować grupę użytkowników o priorytecie, musisz być członkiem grupy roli *Insider Risk Management* lub *Insider Risk Management Admin* .
+Aby zaktualizować istniejącą grupę użytkowników o priorytecie, użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem wewnętrznym** w portal zgodności Microsoft Purview. Aby zaktualizować grupę użytkowników o priorytecie, musisz być członkiem grupy ról Insider *Risk Management* lub *Insider Risk Management Administracja*.
 
 Wykonaj następujące kroki, aby edytować grupę użytkowników o priorytecie:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz pozycję **Ustawienia ryzyka niejawnych testerów**.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz **pozycję Ustawienia ryzyka niejawnych testerów**.
 2. Wybierz stronę **Priorytetowe grupy użytkowników (wersja zapoznawcza** ).
 3. Wybierz grupę użytkowników o priorytecie, którą chcesz edytować, i wybierz pozycję **Edytuj grupę**.
 4. Na stronie **Nazwa i opis** zaktualizuj pole Opis w razie potrzeby. Nie można zaktualizować nazwy grupy użytkowników o priorytecie. Wybierz przycisk **Dalej**, aby kontynuować.
@@ -332,14 +330,14 @@ Wykonaj następujące kroki, aby edytować grupę użytkowników o priorytecie:
 
 ### <a name="delete-a-priority-user-group"></a>Usuwanie grupy użytkowników o priorytecie
 
-Aby usunąć istniejącą grupę użytkowników o priorytecie, użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem niejawnym** w portalu zgodności usługi Microsoft Purview. Aby usunąć grupę użytkowników o priorytecie, musisz być członkiem grupy roli *Insider Risk Management* lub *Insider Risk Management Admin* .
+Aby usunąć istniejącą grupę użytkowników o priorytecie, użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem niejawnym testerów** w portal zgodności Microsoft Purview. Aby usunąć grupę użytkowników o priorytecie, musisz być członkiem grupy ról Insider *Risk Management* lub *Insider Risk Management Administracja*.
 
 > [!IMPORTANT]
 > Usunięcie grupy użytkowników o priorytecie spowoduje usunięcie jej z wszystkich aktywnych zasad, do których została przypisana. Jeśli usuniesz grupę użytkowników o priorytecie przypisaną do aktywnych zasad, zasady nie będą zawierać żadnych użytkowników w zakresie i będą skutecznie bezczynne i nie będą tworzyć alertów.
 
 Wykonaj następujące kroki, aby usunąć grupę użytkowników o priorytecie:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz pozycję **Ustawienia ryzyka niejawnych testerów**.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz **pozycję Ustawienia ryzyka niejawnych testerów**.
 2. Wybierz stronę **Priorytetowe grupy użytkowników (wersja zapoznawcza** ).
 3. Wybierz grupę użytkowników o priorytecie, którą chcesz edytować, a następnie wybierz pozycję **Usuń** z menu pulpitu nawigacyjnego.
 4. W oknie dialogowym **Usuwanie** wybierz pozycję **Tak** , aby usunąć grupę użytkowników o priorytecie, lub wybierz pozycję **Anuluj** , aby powrócić do pulpitu nawigacyjnego.
@@ -352,88 +350,88 @@ Po włączeniu priorytetowych zasobów fizycznych i [skonfigurowaniu łącznika 
 
 Na przykład organizacja ma system złych zabezpieczeń dla użytkowników, który monitoruje i zatwierdza fizyczny dostęp do normalnych obszarów roboczych i wrażliwych projektów. Masz kilku użytkowników pracujących nad poufnym projektem i ci użytkownicy powrócą do innych obszarów organizacji po zakończeniu projektu. W miarę zbliżania się ukończenia projektu wrażliwego należy upewnić się, że praca nad projektem pozostaje poufna i że dostęp do obszarów projektu jest ściśle kontrolowany.
 
-W programie Microsoft 365 możesz włączyć łącznik fizycznych danych powodujących awarie, aby zaimportować informacje o dostępie z fizycznego systemu, a następnie określić priorytetowe zasoby fizyczne w zarządzaniu ryzykiem wewnętrznym. Importując informacje z systemu powodującego awarie i skorelując informacje o dostępie fizycznym z innymi działaniami dotyczącymi ryzyka zidentyfikowanymi w ramach zarządzania ryzykiem wewnętrznym, zauważasz, że jeden z użytkowników projektu uzyskuje dostęp do biur projektów po normalnych godzinach pracy, a także eksportuje duże ilości danych do osobistej usługi magazynu w chmurze z normalnego obszaru roboczego. To działanie związane z dostępem fizycznym związane z działaniem online może wskazywać na możliwość kradzieży danych, a badacze zgodności i analitycy mogą podjąć odpowiednie działania zgodnie z okolicznościami dla tego użytkownika.
+Aby zaimportować informacje o dostępie z fizycznego systemu złagowania i określić priorytetowe zasoby fizyczne w zarządzaniu ryzykiem wewnętrznym, należy włączyć łącznik danych fizycznych powodujących błędy w zabezpieczeniach fizycznych w usłudze Microsoft 365. Importując informacje z systemu powodującego awarie i skorelując informacje o dostępie fizycznym z innymi działaniami dotyczącymi ryzyka zidentyfikowanymi w ramach zarządzania ryzykiem wewnętrznym, zauważasz, że jeden z użytkowników projektu uzyskuje dostęp do biur projektów po normalnych godzinach pracy, a także eksportuje duże ilości danych do osobistej usługi magazynu w chmurze z normalnego obszaru roboczego. To działanie związane z dostępem fizycznym związane z działaniem online może wskazywać na możliwość kradzieży danych, a badacze zgodności i analitycy mogą podjąć odpowiednie działania zgodnie z okolicznościami dla tego użytkownika.
 
 ![Zasoby fizyczne o priorytecie zarządzania ryzykiem wewnętrznym.](../media/insider-risk-settings-priority-assets.png)
 
 ### <a name="configure-priority-physical-assets"></a>Konfigurowanie priorytetowych zasobów fizycznych
 
-Aby skonfigurować zasoby fizyczne o priorytecie, skonfigurujesz łącznik fizycznego rozwiązywania problemów i użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem wewnętrznym** w portalu zgodności usługi Microsoft Purview. Aby skonfigurować priorytetowe zasoby fizyczne, musisz być członkiem grupy roli *Insider Risk Management* lub *Insider Risk Management Admin*.
+Aby skonfigurować priorytetowe zasoby fizyczne, skonfigurujesz łącznik fizycznego rozwiązywania problemów i użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem wewnętrznym** w portal zgodności Microsoft Purview. Aby skonfigurować priorytetowe zasoby fizyczne, musisz być członkiem grupy ról Insider *Risk Management* lub *Insider Risk Management Administracja*.
 
 Wykonaj następujące kroki, aby skonfigurować priorytetowe zasoby fizyczne:
 
 1. Wykonaj kroki konfiguracji dotyczące zarządzania ryzykiem wewnętrznym w artykule [Wprowadzenie do zarządzania ryzykiem wewnętrznym](insider-risk-management-configure.md) . W kroku 3 upewnij się, że konfigurujesz łącznik fizycznego rozwiązywania problemów.
 
     > [!IMPORTANT]
-    > Aby zasady zarządzania ryzykiem wewnętrznym używały i korelowały dane sygnału związane z odchodzących i zakończonymi użytkownikami z danymi zdarzeń z platform kontroli fizycznej i dostępu, należy również skonfigurować łącznik Microsoft 365 HR. Jeśli włączysz łącznik fizycznego rozwiązywania problemów bez włączania łącznika Microsoft 365 HR, zasady zarządzania ryzykiem wewnętrznym będą przetwarzać zdarzenia tylko dla działań fizycznego dostępu dla użytkowników w organizacji.
+    > Aby zasady zarządzania ryzykiem wewnętrznym używały i korelowały dane sygnału związane z odchodzących i zakończonymi użytkownikami z danymi zdarzeń z platform kontroli fizycznej i dostępu, należy również skonfigurować łącznik usługi Microsoft 365 HR. Jeśli włączysz łącznik fizycznego rozwiązywania problemów bez włączania łącznika usługi Microsoft 365 HR, zasady zarządzania ryzykiem wewnętrznym będą przetwarzać zdarzenia tylko dla działań związanych z dostępem fizycznym dla użytkowników w organizacji.
 
-2. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem niejawnym testerów** i wybierz pozycję **Ustawienia** >  ryzyka niejawnych testerówZasady **fizyczne**.
-3. Na **stronie Priorytetowe zasoby fizyczne** możesz ręcznie dodać identyfikatory zasobów fizycznych, które chcesz monitorować pod kątem zdarzeń zasobów importowanych przez łącznik fizycznego usuwania błędów, lub zaimportować plik .csv wszystkich identyfikatorów zasobów fizycznych zaimportowanych przez łącznik fizyczne nieprawidłowe zabezpieczenia: a) Aby ręcznie dodać identyfikatory zasobów fizycznych, wybierz pozycję **Dodaj priorytetowe zasoby fizyczne**,  wprowadź identyfikator zasobu fizycznego, a następnie wybierz pozycję **Dodaj**. Wprowadź inne identyfikatory zasobów fizycznych, a następnie wybierz pozycję **Dodaj priorytetowe zasoby fizyczne** , aby zapisać wszystkie wprowadzone zasoby.
+2. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz pozycję **Ustawienia** >  ryzyka niejawnych testerów **Priorytetowe zasoby fizyczne**.
+3. Na stronie **Priorytet zasobów fizycznych** można ręcznie dodać identyfikatory zasobów fizycznych, które chcesz wykryć zdarzenia zasobów zaimportowane przez łącznik fizycznego rozwiązywania problemów lub zaimportować plik .csv wszystkich identyfikatorów zasobów fizycznych zaimportowanych przez łącznik fizycznego nieprawidłowego tworzenia zasobów: a) Aby ręcznie dodać identyfikatory zasobów fizycznych, wybierz pozycję **Dodaj priorytetowe zasoby fizyczne**, wprowadź identyfikator zasobu fizycznego,  następnie wybierz pozycję **Dodaj**. Wprowadź inne identyfikatory zasobów fizycznych, a następnie wybierz pozycję **Dodaj priorytetowe zasoby fizyczne** , aby zapisać wszystkie wprowadzone zasoby.
     b) Aby dodać listę identyfikatorów zasobów fizycznych z pliku .csv, wybierz pozycję **Importuj priorytetowe zasoby fizyczne**. W oknie dialogowym eksploratora plików wybierz plik .csv, który chcesz zaimportować, a następnie wybierz pozycję **Otwórz**. Identyfikatory zasobów fizycznych z plików .csv są dodawane do listy.
-4. Przejdź do strony **Wskaźniki zasad** w **Ustawienia**.
+4. Przejdź do strony **Wskaźniki zasad** w **obszarze Ustawienia**.
 5. Na stronie **Wskaźniki zasad** przejdź do sekcji **Wskaźniki dostępu fizycznego** i zaznacz pole wyboru **Dostęp fizyczny po zakończeniu lub nieudanym dostępie do poufnych zasobów**.
 6. Wybierz pozycję **Zapisz** , aby skonfigurować i zakończyć pracę.
 
 ### <a name="delete-a-priority-physical-asset"></a>Usuwanie priorytetowego zasobu fizycznego
 
-Aby usunąć istniejący priorytetowy zasób fizyczny, użyjesz mechanizmów kontroli ustawień w rozwiązaniu do zarządzania ryzykiem niejawnym testerów w portalu zgodności usługi Microsoft Purview. Aby usunąć priorytetowy zasób fizyczny, musisz być członkiem grupy roli Insider Risk Management lub Insider Risk Management Admin.
+Aby usunąć istniejący priorytetowy zasób fizyczny, użyjesz mechanizmów kontroli ustawień w rozwiązaniu do zarządzania ryzykiem wewnętrznym w portal zgodności Microsoft Purview. Aby usunąć priorytetowy zasób fizyczny, musisz być członkiem grupy ról Insider Risk Management lub Insider Risk Management Administracja.
 
 > [!IMPORTANT]
 > Usunięcie priorytetowego zasobu fizycznego powoduje usunięcie go z badania przez wszystkie aktywne zasady, do których został wcześniej dołączony. Alerty generowane przez działania skojarzone z priorytetowym zasobem fizycznym nie są usuwane.
 
 Wykonaj następujące kroki, aby usunąć priorytetowy zasób fizyczny:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem niejawnym testerów** i wybierz pozycję **Ustawienia** >  ryzyka niejawnych testerówZasady **fizyczne**.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz pozycję **Ustawienia** >  ryzyka niejawnych testerów **Priorytetowe zasoby fizyczne**.
 2. Na stronie **Priorytetowe zasoby fizyczne wybierz zasób** , który chcesz usunąć.
 3. Wybierz pozycję **Usuń** w menu akcji, aby usunąć zasób.
 
-## <a name="power-automate-flows-preview"></a>przepływy Power Automate (wersja zapoznawcza)
+## <a name="power-automate-flows-preview"></a>Przepływy usługi Power Automate (wersja zapoznawcza)
 
-[Microsoft Power Automate](/power-automate/getting-started) to usługa przepływu pracy, która automatyzuje akcje w aplikacjach i usługach. Korzystając z przepływów z szablonów lub utworzonych ręcznie, można zautomatyzować typowe zadania skojarzone z tymi aplikacjami i usługami. Po włączeniu przepływów Power Automate na potrzeby zarządzania ryzykiem wewnętrznym można zautomatyzować ważne zadania dla przypadków i użytkowników. Możesz skonfigurować przepływy Power Automate w celu pobierania informacji o użytkownikach, alertach i sprawach oraz udostępniać te informacje uczestnikom projektu i innym aplikacjom, a także automatyzować akcje w zarządzaniu ryzykiem wewnętrznym, takie jak publikowanie w notatkach o przypadku. Power Automate przepływy mają zastosowanie do przypadków i dowolnego użytkownika w zakresie zasad.
+[Microsoft Power Automate](/power-automate/getting-started) to usługa przepływu pracy, która automatyzuje akcje w aplikacjach i usługach. Korzystając z przepływów z szablonów lub utworzonych ręcznie, można zautomatyzować typowe zadania skojarzone z tymi aplikacjami i usługami. Po włączeniu przepływów usługi Power Automate na potrzeby zarządzania ryzykiem wewnętrznym można zautomatyzować ważne zadania dla przypadków i użytkowników. Przepływy usługi Power Automate można skonfigurować w celu pobierania informacji o użytkownikach, alertach i sprawach oraz udostępniania tych informacji uczestnikom projektu i innym aplikacjom, a także automatyzowania akcji w zakresie zarządzania ryzykiem wewnętrznym, takich jak publikowanie w notatkach o przypadku. Przepływy usługi Power Automate mają zastosowanie do przypadków i dowolnego użytkownika w zakresie zasad.
 
-Klienci z subskrypcjami Microsoft 365, które obejmują zarządzanie ryzykiem wewnętrznym, nie potrzebują dodatkowych licencji Power Automate, aby korzystać z zalecanych szablonów Power Automate zarządzania ryzykiem wewnętrznym. Te szablony można dostosować do obsługi organizacji i obejmują podstawowe scenariusze zarządzania ryzykiem wewnętrznym. Jeśli wybierzesz opcję używania funkcji Power Automate w warstwie Premium w tych szablonach, utworzysz szablon niestandardowy przy użyciu łącznika usługi Microsoft Purview lub użyjesz szablonów Power Automate dla innych obszarów zgodności w Microsoft 365, może być potrzebnych więcej Power Automate licencji.
+Klienci z subskrypcjami platformy Microsoft 365, które obejmują zarządzanie ryzykiem wewnętrznym, nie potrzebują dodatkowych licencji usługi Power Automate, aby korzystać z zalecanych szablonów zarządzania ryzykiem wewnętrznym usługi Power Automate. Te szablony można dostosować do obsługi organizacji i obejmują podstawowe scenariusze zarządzania ryzykiem wewnętrznym. Jeśli w tych szablonach wybierzesz opcję korzystania z funkcji usługi Power Automate w warstwie Premium, utworzysz szablon niestandardowy przy użyciu łącznika Usługi Microsoft Purview lub użyjesz szablonów usługi Power Automate dla innych obszarów zgodności w usłudze Microsoft 365, może być potrzebnych więcej licencji usługi Power Automate.
 
-Następujące szablony Power Automate są udostępniane klientom w celu obsługi automatyzacji procesów dla użytkowników i przypadków zarządzania ryzykiem wewnętrznym:
+Następujące szablony usługi Power Automate są udostępniane klientom w celu obsługi automatyzacji procesów dla użytkowników i przypadków zarządzania ryzykiem wewnętrznym:
 
-- **Powiadom użytkowników, gdy zostaną dodani do zasad ryzyka dotyczącego informacji poufnych**: ten szablon jest przeznaczony dla organizacji z wewnętrznymi zasadami, prywatnością lub wymaganiami prawnymi, o których użytkownicy muszą być powiadamiani, gdy podlegają zasadom zarządzania ryzykiem wewnętrznym. Po skonfigurowaniu i wybraniu tego przepływu dla użytkownika na stronie **Użytkownicy** użytkownicy i ich menedżerowie otrzymują wiadomość e-mail po dodaniu użytkownika do zasad zarządzania ryzykiem wewnętrznym. Ten szablon obsługuje również aktualizowanie listy SharePoint hostowanej w witrynie SharePoint, aby ułatwić śledzenie szczegółów komunikatów powiadomień, takich jak data/godzina i adresat wiadomości. Jeśli wybrano anonimowość użytkowników w **ustawieniach prywatności**, przepływy utworzone na podstawie tego szablonu nie będą działać zgodnie z oczekiwaniami, aby zachować prywatność użytkowników. Power Automate przepływy korzystające z tego szablonu są dostępne na **pulpicie nawigacyjnym Użytkownicy**.
-- **Zażądaj od działu kadr lub firmy informacji o użytkowniku w przypadku ryzyka wewnętrznego**: W przypadku działania w sprawie analitycy ryzyka wewnętrznego i badacze mogą wymagać konsultacji z działem kadr lub innymi zainteresowanymi stronami, aby zrozumieć kontekst działań związanych ze sprawą. Po skonfigurowaniu i wybraniu tego przepływu dla danego przypadku analitycy i badacze wysyłają wiadomość e-mail do działu kadr i osób biorących udział w projekcie biznesowym skonfigurowanych dla tego przepływu. Każdy adresat otrzymuje wiadomość ze wstępnie skonfigurowanymi lub dostosowywalnymi opcjami odpowiedzi. Gdy adresaci wybierają opcję odpowiedzi, odpowiedź jest rejestrowana jako notatka o przypadku i zawiera informacje o adresacie i dacie/godzinie. Jeśli wybrano anonimowość użytkowników w **ustawieniach prywatności**, przepływy utworzone na podstawie tego szablonu nie będą działać zgodnie z oczekiwaniami, aby zachować prywatność użytkowników. Power Automate przepływy korzystające z tego szablonu są dostępne na **pulpicie nawigacyjnym Cases**.
+- **Powiadom użytkowników, gdy zostaną dodani do zasad ryzyka dotyczącego informacji poufnych**: ten szablon jest przeznaczony dla organizacji z wewnętrznymi zasadami, prywatnością lub wymaganiami prawnymi, o których użytkownicy muszą być powiadamiani, gdy podlegają zasadom zarządzania ryzykiem wewnętrznym. Po skonfigurowaniu i wybraniu tego przepływu dla użytkownika na stronie **Użytkownicy** użytkownicy i ich menedżerowie otrzymują wiadomość e-mail po dodaniu użytkownika do zasad zarządzania ryzykiem wewnętrznym. Ten szablon obsługuje również aktualizowanie listy programu SharePoint hostowanej w witrynie programu SharePoint, aby ułatwić śledzenie szczegółów komunikatów powiadomień, takich jak data/godzina i adresat wiadomości. Jeśli wybrano anonimowość użytkowników w **ustawieniach prywatności**, przepływy utworzone na podstawie tego szablonu nie będą działać zgodnie z oczekiwaniami, aby zachować prywatność użytkowników. Przepływy usługi Power Automate korzystające z tego szablonu są dostępne na **pulpicie nawigacyjnym Użytkownicy**.
+- **Zażądaj od działu kadr lub firmy informacji o użytkowniku w przypadku ryzyka wewnętrznego**: W przypadku działania w sprawie analitycy ryzyka wewnętrznego i badacze mogą wymagać konsultacji z działem kadr lub innymi zainteresowanymi stronami, aby zrozumieć kontekst działań związanych ze sprawą. Po skonfigurowaniu i wybraniu tego przepływu dla danego przypadku analitycy i badacze wysyłają wiadomość e-mail do działu kadr i osób biorących udział w projekcie biznesowym skonfigurowanych dla tego przepływu. Każdy adresat otrzymuje wiadomość ze wstępnie skonfigurowanymi lub dostosowywalnymi opcjami odpowiedzi. Gdy adresaci wybierają opcję odpowiedzi, odpowiedź jest rejestrowana jako notatka o przypadku i zawiera informacje o adresacie i dacie/godzinie. Jeśli wybrano anonimowość użytkowników w **ustawieniach prywatności**, przepływy utworzone na podstawie tego szablonu nie będą działać zgodnie z oczekiwaniami, aby zachować prywatność użytkowników. Przepływy usługi Power Automate korzystające z tego szablonu są dostępne na **pulpicie nawigacyjnym Przypadki**.
 - **Powiadom menedżera, gdy użytkownik ma alert o ryzyku wewnętrznym**: niektóre organizacje mogą potrzebować natychmiastowego powiadomienia o zarządzaniu, gdy użytkownik ma alert dotyczący zarządzania ryzykiem wewnętrznym. Po skonfigurowaniu i wybraniu tego przepływu menedżer przypadku użytkownika otrzymuje wiadomość e-mail z następującymi informacjami o wszystkich alertach dotyczących przypadków:
     - Odpowiednie zasady dotyczące alertu
     - Data/godzina alertu
     - Poziom ważności alertu
 
-    Przepływ automatycznie aktualizuje zgłoszenie z informacją, że wiadomość została wysłana i że przepływ został aktywowany. Jeśli wybrano anonimowość użytkowników w **ustawieniach prywatności**, przepływy utworzone na podstawie tego szablonu nie będą działać zgodnie z oczekiwaniami, aby zachować prywatność użytkowników. Power Automate przepływy korzystające z tego szablonu są dostępne na **pulpicie nawigacyjnym Cases**.
-- **Tworzenie rekordu w przypadku ryzyka wewnętrznego w usłudze ServiceNow**: ten szablon jest przeznaczony dla organizacji, które chcą używać rozwiązania ServiceNow do śledzenia przypadków zarządzania ryzykiem wewnętrznym.  Gdy w takim przypadku analitycy ryzyka wewnętrznego i śledczy mogą utworzyć rekord dla sprawy w usłudze ServiceNow. Ten szablon można dostosować w celu wypełnienia wybranych pól w usłudze ServiceNow na podstawie wymagań organizacji. Power Automate przepływy korzystające z tego szablonu są dostępne na **pulpicie nawigacyjnym Cases**. Aby uzyskać więcej informacji na temat dostępnych pól usługi ServiceNow, zobacz artykuł [dotyczący łącznika ServiceNow](/connectors/service-now/) .
+    Przepływ automatycznie aktualizuje zgłoszenie z informacją, że wiadomość została wysłana i że przepływ został aktywowany. Jeśli wybrano anonimowość użytkowników w **ustawieniach prywatności**, przepływy utworzone na podstawie tego szablonu nie będą działać zgodnie z oczekiwaniami, aby zachować prywatność użytkowników. Przepływy usługi Power Automate korzystające z tego szablonu są dostępne na **pulpicie nawigacyjnym Przypadki**.
+- **Tworzenie rekordu w przypadku ryzyka wewnętrznego w usłudze ServiceNow**: ten szablon jest przeznaczony dla organizacji, które chcą używać rozwiązania ServiceNow do śledzenia przypadków zarządzania ryzykiem wewnętrznym.  Gdy w takim przypadku analitycy ryzyka wewnętrznego i śledczy mogą utworzyć rekord dla sprawy w usłudze ServiceNow. Ten szablon można dostosować w celu wypełnienia wybranych pól w usłudze ServiceNow na podstawie wymagań organizacji. Przepływy usługi Power Automate korzystające z tego szablonu są dostępne na **pulpicie nawigacyjnym Przypadki**. Aby uzyskać więcej informacji na temat dostępnych pól usługi ServiceNow, zobacz artykuł [dotyczący łącznika ServiceNow](/connectors/service-now/) .
 
-### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>Tworzenie przepływu Power Automate na podstawie szablonu zarządzania ryzykiem wewnętrznym
+### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>Tworzenie przepływu usługi Power Automate na podstawie szablonu zarządzania ryzykiem wewnętrznym
 
-Aby utworzyć przepływ Power Automate na podstawie zalecanego szablonu zarządzania ryzykiem wewnętrznym, użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem wewnętrznym** w portalu zgodności usługi Microsoft Purview lub opcji **Zarządzanie przepływami Power Automate** z **kontrolki Automate** podczas pracy bezpośrednio na **pulpitach nawigacyjnych Przypadków lub Użytkowników**.
+Aby utworzyć przepływ usługi Power Automate na podstawie zalecanego szablonu zarządzania ryzykiem wewnętrznym, użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem wewnętrznym** w portal zgodności Microsoft Purview lub opcji **Zarządzanie przepływami usługi Power Automate** z **kontrolki Automate** podczas pracy bezpośrednio na **pulpitach nawigacyjnych Przypadków lub Użytkowników**.
 
-Aby utworzyć przepływ Power Automate w obszarze ustawień, musisz być członkiem grupy roli Insider *Risk Management* lub *Insider Risk Management Admin*. Aby utworzyć przepływ Power Automate z opcją **Zarządzaj przepływami Power Automate**, musisz być członkiem co najmniej jednej grupy ról zarządzania ryzykiem wewnętrznym.
+Aby utworzyć przepływ usługi Power Automate w obszarze ustawień, musisz być członkiem grupy ról Insider *Risk Management* lub *Insider Risk Management Administracja*. Aby utworzyć przepływ usługi Power Automate za pomocą opcji **Zarządzanie przepływami usługi Power Automate** , musisz być członkiem co najmniej jednej grupy ról zarządzania ryzykiem wewnętrznym.
 
-Wykonaj następujące kroki, aby utworzyć przepływ Power Automate na podstawie zalecanego szablonu zarządzania ryzykiem wewnętrznym:
+Wykonaj następujące kroki, aby utworzyć przepływ usługi Power Automate na podstawie zalecanego szablonu zarządzania ryzykiem wewnętrznym:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz **pozycję Ustawienia ryzyka niejawnych testerów** >  **Power Automate przepływów**. Możesz również uzyskać dostęp ze stron  **Pulpity nawigacyjne Przypadków lub Użytkowników**, wybierając pozycję **AutomateManage** >  **Power Automate przepływów**.
-2. Na stronie **przepływów Power Automate** wybierz zalecany szablon z **sekcji Insider risk management (Szablony zarządzania ryzykiem wewnętrznym), które mogą Ci się podobać** na stronie.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem niejawnych testerów** i wybierz pozycję **Ustawienia ryzyka niejawnych testerów przepływów** > **usługi Power Automate**. Możesz również uzyskać dostęp ze stron **Pulpity** **nawigacyjne Przypadków lub Użytkowników** , wybierając pozycję **Automatyzuj** > **zarządzanie przepływami usługi Power Automate**.
+2. Na stronie **Przepływy usługi Power Automate** wybierz zalecany szablon w sekcji **Szablony zarządzania ryzykiem niejawnym testerów, które mogą Ci się podobać** na stronie.
 3. Przepływ zawiera listę połączeń osadzonych wymaganych dla przepływu i zanotuje, czy są dostępne stany połączenia. W razie potrzeby zaktualizuj wszystkie połączenia, które nie są wyświetlane jako dostępne. Naciśnij przycisk **Kontynuuj**.
-4. Domyślnie zalecane przepływy są wstępnie konfigurowane przy użyciu zalecanych pól danych dotyczących ryzyka wewnętrznego i Microsoft 365 usług wymaganych do wykonania przydzielonego zadania dla przepływu. W razie potrzeby dostosuj składniki przepływu przy użyciu kontrolki **Pokaż opcje zaawansowane** i konfigurując dostępne właściwości składnika przepływu.
+4. Domyślnie zalecane przepływy są wstępnie konfigurowane z zalecanymi polami danych dotyczących ryzyka związanego z wewnętrznymi informacjami i danymi usługi Microsoft 365 wymaganymi do wykonania przydzielonego zadania dla przepływu. W razie potrzeby dostosuj składniki przepływu przy użyciu kontrolki **Pokaż opcje zaawansowane** i konfigurując dostępne właściwości składnika przepływu.
 5. W razie potrzeby dodaj inne kroki do przepływu, wybierając przycisk **Nowy krok** . W większości przypadków nie powinno to być potrzebne w przypadku zalecanych szablonów domyślnych.
 6. Wybierz pozycję **Zapisz wersję roboczą** , aby zapisać przepływ do dalszej konfiguracji, lub wybierz pozycję **Zapisz** , aby ukończyć konfigurację przepływu.
-7. Wybierz pozycję **Zamknij**, aby powrócić do strony **przepływu Power Automate**. Nowy szablon zostanie wyświetlony jako przepływ na kartach **Moje przepływy** i będzie automatycznie dostępny w kontrolce listy rozwijanej **Automate** podczas pracy z przypadkami zarządzania ryzykiem wewnętrznym dla użytkownika tworzącego przepływ.
+7. Wybierz pozycję **Zamknij** , aby powrócić do strony **przepływu usługi Power Automate** . Nowy szablon zostanie wyświetlony jako przepływ na kartach **Moje przepływy** i będzie automatycznie dostępny w kontrolce listy rozwijanej **Automate** podczas pracy z przypadkami zarządzania ryzykiem wewnętrznym dla użytkownika tworzącego przepływ.
 
 > [!IMPORTANT]
 > Jeśli inni użytkownicy w organizacji potrzebują dostępu do przepływu, przepływ musi zostać udostępniony.
 
-### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>Tworzenie niestandardowego przepływu Power Automate na potrzeby zarządzania ryzykiem wewnętrznym
+### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>Tworzenie niestandardowego przepływu usługi Power Automate na potrzeby zarządzania ryzykiem wewnętrznym
 
-Niektóre procesy i przepływy pracy organizacji mogą wykraczać poza zalecane szablony przepływu zarządzania ryzykiem wewnętrznym i może być konieczne utworzenie niestandardowych przepływów Power Automate dla obszarów zarządzania ryzykiem wewnętrznym. Power Automate przepływy są elastyczne i obsługują rozbudowane dostosowania, ale należy podjąć kroki integracji z funkcjami zarządzania ryzykiem wewnętrznym.
+Niektóre procesy i przepływy pracy w organizacji mogą wykraczać poza zalecane szablony przepływu zarządzania ryzykiem wewnętrznym i może być konieczne utworzenie niestandardowych przepływów usługi Power Automate dla obszarów zarządzania ryzykiem wewnętrznym. Przepływy usługi Power Automate są elastyczne i obsługują rozbudowane dostosowania, ale należy podjąć kroki integracji z funkcjami zarządzania ryzykiem wewnętrznym.
 
-Wykonaj następujące kroki, aby utworzyć niestandardowy szablon Power Automate do zarządzania ryzykiem wewnętrznym:
+Wykonaj następujące kroki, aby utworzyć niestandardowy szablon usługi Power Automate na potrzeby zarządzania ryzykiem wewnętrznym:
 
-1. **Sprawdź licencję przepływu Power Automate**: aby utworzyć niestandardowe przepływy Power Automate korzystające z wyzwalaczy zarządzania ryzykiem wewnętrznym, musisz mieć licencję Power Automate. Zalecane szablony przepływu zarządzania ryzykiem wewnętrznym nie wymagają dodatkowych licencji i są uwzględniane w ramach licencji na zarządzanie ryzykiem wewnętrznym.
-2. **Tworzenie zautomatyzowanego przepływu**: utwórz przepływ, który wykonuje co najmniej jedno zadanie po wyzwoleniu przez zdarzenie zarządzania ryzykiem wewnętrznym. Aby uzyskać szczegółowe informacje na temat tworzenia zautomatyzowanego przepływu, zobacz [Tworzenie przepływu w Power Automate](/power-automate/get-started-logic-flow).
+1. **Sprawdź licencję przepływu usługi Power Automate**: Aby utworzyć dostosowane przepływy usługi Power Automate korzystające z wyzwalaczy zarządzania ryzykiem wewnętrznym, musisz mieć licencję usługi Power Automate. Zalecane szablony przepływu zarządzania ryzykiem wewnętrznym nie wymagają dodatkowych licencji i są uwzględniane w ramach licencji na zarządzanie ryzykiem wewnętrznym.
+2. **Tworzenie zautomatyzowanego przepływu**: utwórz przepływ, który wykonuje co najmniej jedno zadanie po wyzwoleniu przez zdarzenie zarządzania ryzykiem wewnętrznym. Aby uzyskać szczegółowe informacje na temat tworzenia zautomatyzowanego przepływu, zobacz [Tworzenie przepływu w usłudze Power Automate](/power-automate/get-started-logic-flow).
 3. **Wybierz łącznik Usługi Microsoft Purview**: wyszukaj i wybierz łącznik Usługi Microsoft Purview. Ten łącznik umożliwia wyzwalacze i akcje zarządzania ryzykiem wewnętrznym. Aby uzyskać więcej informacji na temat łączników, zobacz artykuł [Omówienie dokumentacji łącznika](/connectors/connector-reference/) .
-4. **Wybierz wyzwalacze zarządzania ryzykiem wewnętrznym dla przepływu**: Zarządzanie ryzykiem wewnętrznym ma dwa wyzwalacze dostępne dla niestandardowych przepływów Power Automate:
+4. **Wybierz wyzwalacze zarządzania ryzykiem wewnętrznym dla przepływu**: zarządzanie ryzykiem wewnętrznym ma dwa wyzwalacze dostępne dla niestandardowych przepływów usługi Power Automate:
     - **W przypadku wybranego przypadku zarządzania ryzykiem wewnętrznym**: przepływy z tym wyzwalaczem można wybrać na stronie pulpitu nawigacyjnego Przypadków zarządzania ryzykiem wewnętrznym.
     - **Dla wybranego użytkownika zarządzania ryzykiem wewnętrznym**: przepływy z tym wyzwalaczem można wybrać na stronie pulpitu nawigacyjnego Użytkownicy zarządzania ryzykiem wewnętrznym.
 5. Wybierz akcje zarządzania ryzykiem wewnętrznym dla przepływu: możesz wybrać jedną z kilku akcji, które można uwzględnić w przepływie niestandardowym w celu zarządzania ryzykiem wewnętrznym:
@@ -443,86 +441,86 @@ Wykonaj następujące kroki, aby utworzyć niestandardowy szablon Power Automate
     - Uzyskiwanie alertów dotyczących zarządzania ryzykiem wewnętrznym w danym przypadku
     - Dodawanie noty przypadku dotyczącego zarządzania ryzykiem wewnętrznym
 
-### <a name="share-a-power-automate-flow"></a>Udostępnianie przepływu Power Automate
+### <a name="share-a-power-automate-flow"></a>Udostępnianie przepływu usługi Power Automate
 
-Domyślnie przepływy Power Automate utworzone przez użytkownika są dostępne tylko dla tego użytkownika. Aby inni użytkownicy zarządzania ryzykiem wewnętrznym mieli dostęp i korzystali z przepływu, przepływ musi być współużytkowany przez twórcę przepływu. Aby udostępnić przepływ, użyjesz kontrolek ustawień w **rozwiązaniu do zarządzania ryzykiem niejawnym** w portalu zgodności usługi Microsoft Purview lub opcji **Zarządzaj przepływami Power Automate** z kontrolki Automate podczas pracy bezpośrednio na stronach **pulpitu nawigacyjnego** **Przypadki** lub Użytkownicy. Po udostępnieniu przepływu wszyscy użytkownicy, którym został on udostępniony, mogą uzyskać dostęp do przepływu na liście rozwijanej **Automatyzowanie** kontrolek na **pulpitach nawigacyjnych** **Case** i User.
+Domyślnie przepływy usługi Power Automate utworzone przez użytkownika są dostępne tylko dla tego użytkownika. Aby inni użytkownicy zarządzania ryzykiem wewnętrznym mieli dostęp i korzystali z przepływu, przepływ musi być współużytkowany przez twórcę przepływu. Aby udostępnić przepływ, użyjesz kontrolek ustawień w **rozwiązaniu do zarządzania ryzykiem niejawnym** w portal zgodności Microsoft Purview lub opcji **Zarządzanie przepływami usługi Power Automate** z kontrolki Automate podczas pracy bezpośrednio na stronach **pulpitu nawigacyjnego** **Przypadki** lub Użytkownicy. Po udostępnieniu przepływu wszyscy użytkownicy, którym został on udostępniony, mogą uzyskać dostęp do przepływu na liście rozwijanej **Automatyzowanie** kontrolek na **pulpitach nawigacyjnych** **Case** i User.
 
-Aby udostępnić przepływ Power Automate w obszarze ustawień, musisz być członkiem grupy roli Insider *Risk Management* lub *Insider Risk Management Admin*. Aby udostępnić przepływ Power Automate z opcją **Zarządzaj przepływami Power Automate**, musisz być członkiem co najmniej jednej grupy ról zarządzania ryzykiem wewnętrznym.
+Aby udostępnić przepływ usługi Power Automate w obszarze ustawień, musisz być członkiem grupy ról Insider *Risk Management* lub *Insider Risk Management Administracja*. Aby udostępnić przepływ usługi Power Automate z opcją **Zarządzanie przepływami usługi Power Automate** , musisz być członkiem co najmniej jednej grupy ról zarządzania ryzykiem wewnętrznym.
 
-Wykonaj następujące kroki, aby udostępnić przepływ Power Automate:
+Wykonaj następujące kroki, aby udostępnić przepływ usługi Power Automate:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz **pozycję Ustawienia ryzyka niejawnych testerów** >  **Power Automate przepływów**. Możesz również uzyskać dostęp ze stron  **Pulpity nawigacyjne Przypadków lub Użytkowników**, wybierając pozycję **AutomateManage** >  **Power Automate przepływów**.
-2. Na stronie **przepływów Power Automate** wybierz kartę **Moje przepływy** lub **Przepływy zespołu**.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem niejawnych testerów** i wybierz pozycję **Ustawienia ryzyka niejawnych testerów przepływów** > **usługi Power Automate**. Możesz również uzyskać dostęp ze stron **Pulpity** **nawigacyjne Przypadków lub Użytkowników** , wybierając pozycję **Automatyzuj** > **zarządzanie przepływami usługi Power Automate**.
+2. Na stronie **Przepływy usługi Power Automate** wybierz kartę **Moje przepływy** lub **Przepływy zespołu** .
 3. Wybierz przepływ do udostępnienia, a następnie wybierz pozycję **Udostępnij** z menu opcji przepływu.
 4. Na stronie udostępniania przepływu wprowadź nazwę użytkownika lub grupy, którą chcesz dodać jako właściciela przepływu.
 5. W oknie dialogowym **Użyte połączenie** wybierz przycisk **OK** , aby potwierdzić, że dodany użytkownik lub grupa będzie mieć pełny dostęp do przepływu.
 
-### <a name="edit-a-power-automate-flow"></a>Edytowanie przepływu Power Automate
+### <a name="edit-a-power-automate-flow"></a>Edytowanie przepływu usługi Power Automate
 
-Aby edytować przepływ, użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem niejawnym** w portalu zgodności usługi Microsoft Purview lub opcji **Zarządzaj przepływami Power Automate** z **kontrolki Automate** podczas pracy bezpośrednio na **pulpitach nawigacyjnych Przypadków lub Użytkowników**.
+Aby edytować przepływ, użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem niejawnym** w portal zgodności Microsoft Purview lub opcji **Zarządzanie przepływami usługi Power Automate** z **kontrolki Automate** podczas pracy bezpośrednio na **pulpitach nawigacyjnych** **Przypadki** lub Użytkownicy.
 
-Aby edytować przepływ Power Automate w obszarze ustawień, musisz być członkiem grupy roli Insider *Risk Management* lub *Insider Risk Management Admin*. Aby edytować przepływ Power Automate za pomocą opcji **Zarządzaj przepływami Power Automate**, musisz być członkiem co najmniej jednej grupy ról zarządzania ryzykiem wewnętrznym.
+Aby edytować przepływ usługi Power Automate w obszarze ustawień, musisz być członkiem grupy ról Insider *Risk Management* lub *Insider Risk Management Administracja*. Aby edytować przepływ usługi Power Automate za pomocą opcji **Zarządzanie przepływami usługi Power Automate** , musisz być członkiem co najmniej jednej grupy ról zarządzania ryzykiem wewnętrznym.
 
-Wykonaj następujące kroki, aby edytować przepływ Power Automate:
+Wykonaj następujące kroki, aby edytować przepływ usługi Power Automate:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz **pozycję Ustawienia ryzyka niejawnych testerów** >  **Power Automate przepływów**. Możesz również uzyskać dostęp ze stron  **Pulpity nawigacyjne Przypadków lub Użytkowników**, wybierając pozycję **AutomateManage** >  **Power Automate przepływów**.
-2. Na stronie **przepływów Power Automate** wybierz przepływ do edycji i wybierz pozycję **Edytuj** z menu sterowania przepływem.
-3. Wybierz **wielokropek** >  **Ustawienia** aby zmienić ustawienie składnika przepływu lub **wielokropekUsuj** > , aby usunąć składnik przepływu.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem niejawnych testerów** i wybierz pozycję **Ustawienia ryzyka niejawnych testerów przepływów** > **usługi Power Automate**. Możesz również uzyskać dostęp ze stron **Pulpity** **nawigacyjne Przypadków lub Użytkowników** , wybierając pozycję **Automatyzuj** > **zarządzanie przepływami usługi Power Automate**.
+2. Na stronie **Przepływy usługi Power Automate** wybierz przepływ do edycji i wybierz pozycję **Edytuj** z menu sterowania przepływem.
+3. Wybierz **ustawienia** **wielokropka** > , aby zmienić ustawienie składnika przepływu lub **wielokropek** > **Usuń**, aby usunąć składnik przepływu.
 4. Wybierz pozycję **Zapisz** , a następnie **zamknij** , aby zakończyć edytowanie przepływu.
 
-### <a name="delete-a-power-automate-flow"></a>Usuwanie przepływu Power Automate
+### <a name="delete-a-power-automate-flow"></a>Usuwanie przepływu usługi Power Automate
 
-Aby usunąć przepływ, użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem niejawnym** w portalu zgodności usługi Microsoft Purview lub opcji **Zarządzaj przepływami Power Automate** z **kontrolki Automate** podczas pracy bezpośrednio na **pulpitach nawigacyjnych Przypadków lub Użytkowników**. Po usunięciu przepływu zostanie on usunięty jako opcja dla wszystkich użytkowników.
+Aby usunąć przepływ, użyjesz kontrolek ustawień w rozwiązaniu **do zarządzania ryzykiem niejawnym** w portal zgodności Microsoft Purview lub opcji **Zarządzanie przepływami usługi Power Automate** z **kontrolki Automate** podczas pracy bezpośrednio na **pulpitach nawigacyjnych Przypadków lub Użytkowników**. Po usunięciu przepływu zostanie on usunięty jako opcja dla wszystkich użytkowników.
 
-Aby usunąć przepływ Power Automate w obszarze ustawień, musisz być członkiem grupy roli *Insider Risk Management* lub *Insider Risk Management Admin*. Aby usunąć przepływ Power Automate z opcją **Zarządzaj przepływami Power Automate**, musisz być członkiem co najmniej jednej grupy ról zarządzania ryzykiem wewnętrznym.
+Aby usunąć przepływ usługi Power Automate w obszarze ustawień, musisz być członkiem grupy ról Insider *Risk Management* lub *Insider Risk Management Administracja*. Aby usunąć przepływ usługi Power Automate z opcją **Zarządzanie przepływami usługi Power Automate** , musisz być członkiem co najmniej jednej grupy ról zarządzania ryzykiem wewnętrznym.
 
-Wykonaj następujące kroki, aby usunąć przepływ Power Automate:
+Wykonaj następujące kroki, aby usunąć przepływ usługi Power Automate:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym** i wybierz **pozycję Ustawienia ryzyka niejawnych testerów** >  **Power Automate przepływów**. Możesz również uzyskać dostęp ze stron  **Pulpity nawigacyjne Przypadków lub Użytkowników**, wybierając pozycję **AutomateManage** >  **Power Automate przepływów**.
-2. Na stronie **przepływów Power Automate** wybierz przepływ do usunięcia, a następnie wybierz pozycję **Usuń** z menu sterowania przepływem.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem niejawnych testerów** i wybierz pozycję **Ustawienia ryzyka niejawnych testerów przepływów** > **usługi Power Automate**. Możesz również uzyskać dostęp ze stron **Pulpity** **nawigacyjne Przypadków lub Użytkowników** , wybierając pozycję **Automatyzuj** > **zarządzanie przepływami usługi Power Automate**.
+2. Na stronie **Przepływy usługi Power Automate** wybierz przepływ do usunięcia i wybierz pozycję **Usuń** z menu sterowania przepływem.
 3. W oknie dialogowym potwierdzenia usunięcia wybierz pozycję **Usuń** , aby usunąć przepływ, lub wybierz pozycję **Anuluj** , aby zamknąć akcję usuwania.
 
 ## <a name="microsoft-teams-preview"></a>Microsoft Teams (wersja zapoznawcza)
 
-Analitycy zgodności i badacze mogą łatwo używać Microsoft Teams do współpracy w sprawach dotyczących zarządzania ryzykiem wewnętrznym. Mogą one koordynować i komunikować się z innymi uczestnikami projektu w Microsoft Teams:
+Analitycy zgodności i badacze mogą łatwo używać usługi Microsoft Teams do współpracy w sprawach dotyczących zarządzania ryzykiem wewnętrznym. Mogą koordynować i komunikować się z innymi uczestnikami projektu w usłudze Microsoft Teams, aby:
 
-- Koordynowanie i przeglądanie działań reagowania w przypadku przypadków w prywatnych kanałach Teams
+- Koordynowanie i przeglądanie działań reagowania w przypadku przypadków w prywatnych kanałach usługi Teams
 - Bezpieczne udostępnianie i przechowywanie plików i dowodów związanych z poszczególnymi przypadkami
 - Śledzenie i przeglądanie działań reagowania analityków i badaczy
 
-Po włączeniu Microsoft Teams do zarządzania ryzykiem wewnętrznym dedykowany zespół Microsoft Teams jest tworzony za każdym razem, gdy alert zostanie potwierdzony i zostanie utworzony przypadek. Domyślnie zespół automatycznie obejmuje wszystkich członków grup ról *Insider Risk Management*, *Insider Risk Management Analysts* i *Insider Risk Management Investigators* (maksymalnie 100 początkowych użytkowników). Dodatkowi współautorzy organizacji mogą zostać dodana do zespołu po jego utworzeniu i w razie potrzeby. W przypadku istniejących przypadków utworzonych przed włączeniem Microsoft Teams analitycy i badacze mogą zdecydować się na utworzenie nowego zespołu Microsoft Teams podczas pracy w przypadku w razie potrzeby.  Po rozwiązaniu skojarzonego przypadku w zarządzaniu ryzykiem wewnętrznym zespół zostanie automatycznie zarchiwizowany (przeniesiony do ukrytego i tylko do odczytu).
+Po włączeniu usługi Microsoft Teams do zarządzania ryzykiem wewnętrznym dedykowany zespół usługi Microsoft Teams jest tworzony za każdym razem, gdy alert zostanie potwierdzony i zostanie utworzony przypadek. Domyślnie zespół automatycznie obejmuje wszystkich członków grup ról *Insider Risk Management*, *Insider Risk Management Analysts* i *Insider Risk Management Investigators* (maksymalnie 100 początkowych użytkowników). Dodatkowi współautorzy organizacji mogą zostać dodana do zespołu po jego utworzeniu i w razie potrzeby. W przypadku istniejących przypadków utworzonych przed włączeniem usługi Microsoft Teams analitycy i badacze mogą zdecydować się na utworzenie nowego zespołu usługi Microsoft Teams podczas pracy w razie potrzeby.  Po rozwiązaniu skojarzonego przypadku w zarządzaniu ryzykiem wewnętrznym zespół zostanie automatycznie zarchiwizowany (przeniesiony do ukrytego i tylko do odczytu).
 
-Aby uzyskać więcej informacji na temat korzystania z zespołów i kanałów w Microsoft Teams, zobacz [Omówienie zespołów i kanałów w Microsoft Teams](/MicrosoftTeams/teams-channels-overview).
+Aby uzyskać więcej informacji na temat korzystania z zespołów i kanałów w usłudze Microsoft Teams, zobacz [Omówienie zespołów i kanałów w usłudze Microsoft Teams](/MicrosoftTeams/teams-channels-overview).
 
-Włączenie Microsoft Teams obsługi przypadków jest szybkie i łatwe do skonfigurowania. Aby włączyć Microsoft Teams do zarządzania ryzykiem wewnętrznym, wykonaj następujące kroki:
+Włączanie obsługi aplikacji Microsoft Teams w przypadku przypadków jest szybkie i łatwe do skonfigurowania. Aby włączyć usługę Microsoft Teams na potrzeby zarządzania ryzykiem wewnętrznym, wykonaj następujące kroki:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem niejawnym** > **.**
-2. Wybierz stronę **Microsoft Teams**.
-3. Włącz integrację Microsoft Teams w celu zarządzania ryzykiem wewnętrznym.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do **pozycji Insider risk management Insider risk settings (Ustawienia ryzyka niejawnych testerów****).** > 
+2. Wybierz stronę **Microsoft Teams** .
+3. Włącz integrację z usługą Microsoft Teams na potrzeby zarządzania ryzykiem wewnętrznym.
 4. Wybierz pozycję **Zapisz** , aby skonfigurować i zakończyć pracę.
 
-![Microsoft Teams zarządzania ryzykiem wewnętrznym.](../media/insider-risk-settings-teams.png)
+![Zarządzanie ryzykiem wewnętrznym w usłudze Microsoft Teams.](../media/insider-risk-settings-teams.png)
 
-### <a name="create-a-microsoft-teams-team-for-existing-cases"></a>Tworzenie zespołu Microsoft Teams dla istniejących przypadków
+### <a name="create-a-microsoft-teams-team-for-existing-cases"></a>Tworzenie zespołu usługi Microsoft Teams dla istniejących przypadków
 
-Jeśli włączysz Microsoft Teams obsługę zarządzania ryzykiem wewnętrznym po istniejących przypadkach, musisz ręcznie utworzyć zespół dla każdego przypadku w razie potrzeby. Po włączeniu Microsoft Teams obsługi w ustawieniach zarządzania ryzykiem wewnętrznym nowe przypadki automatycznie utworzy nowy zespół Microsoft Teams.
+Jeśli włączysz obsługę usługi Microsoft Teams na potrzeby zarządzania ryzykiem wewnętrznym po istniejących przypadkach, musisz ręcznie utworzyć zespół dla każdego przypadku w razie potrzeby. Po włączeniu obsługi usługi Microsoft Teams w ustawieniach zarządzania ryzykiem wewnętrznym nowe przypadki automatycznie utworzy nowy zespół usługi Microsoft Teams.
 
-Użytkownicy muszą mieć uprawnienia do tworzenia grup Microsoft 365 w organizacji, aby utworzyć zespół Microsoft Teams na podstawie zgłoszenia. Aby uzyskać więcej informacji na temat zarządzania uprawnieniami do Grupy Microsoft 365, zobacz [Zarządzanie tym, kto może tworzyć Grupy Microsoft 365](../solutions/manage-creation-of-groups.md).
+Użytkownicy muszą mieć uprawnienia do tworzenia grup platformy Microsoft 365 w organizacji w celu utworzenia zespołu usługi Microsoft Teams na podstawie zgłoszenia. Aby uzyskać więcej informacji na temat zarządzania uprawnieniami do Grupy Microsoft 365, zobacz [Zarządzanie tym, kto może tworzyć Grupy Microsoft 365](../solutions/manage-creation-of-groups.md).
 
 Aby utworzyć zespół dla sprawy, użyjesz kontrolki Utwórz zespół firmy Microsoft podczas pracy bezpośrednio w istniejącym przypadku. Wykonaj następujące kroki, aby utworzyć nowy zespół:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie** >  ryzykiem niejawnym **i wybierz** istniejący przypadek.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Przypadki** **zarządzania** >  ryzykiem wewnętrznym i wybierz istniejący przypadek.
 2. W menu akcji sprawy wybierz pozycję **Utwórz zespół firmy Microsoft**.
-3. W polu **Nazwa zespołu** wprowadź nazwę nowego zespołu Microsoft Teams.
+3. W polu **Nazwa zespołu** wprowadź nazwę nowego zespołu usługi Microsoft Teams.
 4. Wybierz pozycję **Utwórz zespół firmy Microsoft** , a następnie wybierz pozycję **Zamknij**.
 
-W zależności od liczby użytkowników przypisanych do grup ról zarządzania ryzykiem wewnętrznym dodanie wszystkich badaczy i analityków do zespołu Microsoft Teams w sprawie może potrwać 15 minut.
+W zależności od liczby użytkowników przypisanych do grup ról zarządzania ryzykiem wewnętrznym dodanie wszystkich badaczy i analityków do zespołu usługi Microsoft Teams może potrwać 15 minut.
 
 ## <a name="analytics"></a>Analytics
 
 Analiza ryzyka dotyczącego informacji poufnych umożliwia przeprowadzenie oceny potencjalnych zagrożeń wewnętrznych w organizacji bez konfigurowania żadnych zasad ryzyka związanego z wewnętrznymi informacjami. Ta ocena może pomóc twojej organizacji zidentyfikować potencjalne obszary o wyższym ryzyku użytkowników i pomóc w określeniu typu i zakresu zasad zarządzania ryzykiem wewnętrznym, które możesz rozważyć skonfigurowanie. Skanowania analityczne oferują następujące korzyści dla Organizacji:
 
-- Łatwe do skonfigurowania: Aby rozpocząć pracę ze skanowaniem analitycznym, możesz wybrać pozycję Uruchom skanowanie po wyświetleniu monitu z zalecenia analizy lub przejść do **pozycji Ustawienia** >  ryzyka niejawnego i włączyć analizę.
+- Łatwe do skonfigurowania: Aby rozpocząć pracę ze skanowaniem analitycznym, możesz wybrać pozycję Uruchom skanowanie po wyświetleniu monitu z zalecenia dotyczącego analizy lub przejść do **obszaru Ustawienia** >  ryzyka niejawnego **i** włączyć analizę.
 - Prywatność zgodnie z projektem: wyniki skanowania i szczegółowe informacje są zwracane jako zagregowane i zanonimizowane działania użytkowników, a poszczególne nazwy użytkowników nie są identyfikowane przez recenzentów.
 - Omówienie potencjalnych zagrożeń dzięki skonsolidowanym szczegółowym analizom: wyniki skanowania mogą pomóc w szybkim zidentyfikowaniu potencjalnych obszarów ryzyka dla użytkowników i zasad, które najlepiej byłoby pomóc w zminimalizowaniu tych zagrożeń.
 
@@ -530,27 +528,27 @@ Zapoznaj się z [wideo Insider Risk Management Analytics](https://www.youtube.co
 
 Analiza skanuje zdarzenia działań związanych z ryzykiem z kilku źródeł, aby ułatwić zidentyfikowanie szczegółowych informacji na temat potencjalnych obszarów ryzyka. W zależności od bieżącej konfiguracji analiza szuka kwalifikujących się działań związanych z ryzykiem w następujących obszarach:
 
-- **Microsoft 365 dzienników inspekcji**: uwzględnione we wszystkich skanowaniach jest to podstawowe źródło identyfikowania większości potencjalnie ryzykownych działań.
+- **Dzienniki inspekcji platformy Microsoft 365**: uwzględnione we wszystkich skanowaniach to podstawowe źródło identyfikowania większości potencjalnie ryzykownych działań.
 - **Exchange Online**: Uwzględnione we wszystkich skanowaniach działanie Exchange Online pomaga zidentyfikować działania, w których dane w załącznikach są przesyłane pocztą e-mail do kontaktów zewnętrznych lub usług.
-- **Azure Active Directory**: We wszystkich skanowaniach Azure Active Directory historia pomaga zidentyfikować ryzykowne działania skojarzone z użytkownikami z usuniętymi kontami użytkowników.
-- **Microsoft 365 łącznika danych hr**: w przypadku skonfigurowania zdarzenia łącznika hr pomagają zidentyfikować ryzykowne działania skojarzone z użytkownikami, którzy mają datę rezygnacji lub zbliżających się dat zakończenia.
+- **Azure Active Directory**: We wszystkich skanowaniach historia usługi Azure Active Directory pomaga identyfikować ryzykowne działania skojarzone z użytkownikami z usuniętymi kontami użytkowników.
+- **Łącznik danych usługi Microsoft 365 HR**: w przypadku skonfigurowania zdarzenia łącznika HR pomagają zidentyfikować ryzykowne działania skojarzone z użytkownikami, którzy mają datę rezygnacji lub zbliżających się terminów zakończenia.
 
 Szczegółowe informacje analityczne ze skanowania są oparte na tych samych sygnałach aktywności związanych z ryzykiem używanych przez zasady zarządzania ryzykiem wewnętrznym i raportują wyniki na podstawie działań użytkownika pojedynczego i sekwencji. Jednak ocena ryzyka dla analizy jest oparta na maksymalnie 10-dniowej aktywności, podczas gdy zasady ryzyka wewnętrznego używają codziennej aktywności w celu uzyskiwania szczegółowych informacji. Po pierwszym włączeniu i uruchomieniu analizy w organizacji zostaną wyświetlone wyniki skanowania na jeden dzień. Jeśli pozostawisz włączoną analizę, zobaczysz wyniki każdego codziennego skanowania dodane do raportów szczegółowych informacji dla maksymalnego zakresu działań z poprzednich 10 dni.
 
 ### <a name="enable-analytics-and-start-your-scan"></a>Włączanie analizy i uruchamianie skanowania
 
-Aby włączyć analizę ryzyka związanego z informacjami poufnymi, musisz być członkiem grupy ról Insider *Risk Management*, *Insider Risk Management* lub *Microsoft 365 Global Admin*.
+Aby włączyć analizę ryzyka dotyczącego informacji poufnych, musisz być członkiem grupy ról *administratora globalnego usługi Microsoft 365*, zarządzania *ryzykiem wewnętrznym*, *Administracja zarządzania ryzykiem wewnętrznym* lub zarządzania ryzykiem wewnętrznym.
 Wykonaj następujące kroki, aby włączyć analizę ryzyka wewnętrznego:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym**.
-2. Wybierz pozycję **Uruchom skanowanie** na **karcie Skanuj w poszukiwaniu zagrożeń wewnętrznych na** karcie Zarządzanie ryzykiem wewnętrznym na karcie **Omówienie** . Spowoduje to włączenie skanowania analizy dla twojej organizacji. Skanowanie w organizacji można również włączyć, przechodząc do **pozycji Ustawienia** >  ryzyka niejawnych **testerówAnaliza** i włączając opcję **Skanuj aktywność użytkownika dzierżawy w celu zidentyfikowania potencjalnych zagrożeń związanych z poufnymi informacjami**.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym**.
+2. Wybierz pozycję **Uruchom skanowanie** na **karcie Skanuj w poszukiwaniu zagrożeń wewnętrznych na** karcie Zarządzanie ryzykiem wewnętrznym na karcie **Omówienie** . Spowoduje to włączenie skanowania analizy dla twojej organizacji. Skanowanie można również włączyć w organizacji, przechodząc do **pozycji Ustawienia** >  ryzyka niejawnych testerów **Analiza** i włączając opcję **Skanuj aktywność użytkownika dzierżawy w celu zidentyfikowania potencjalnych zagrożeń związanych z wewnętrznymi informacjami**.
 3. W okienku **Szczegóły analizy** wybierz pozycję **Uruchom skanowanie** , aby rozpocząć skanowanie w organizacji. Wyniki skanowania analizy mogą potrwać do 48 godzin, zanim szczegółowe informacje będą dostępne jako raporty do przeglądu.
 
 ![Ustawienia analizy zarządzania ryzykiem wewnętrznym.](../media/insider-risk-settings-analytics-enable.png)
 
 ### <a name="viewing-analytics-insights-and-creating-new-policies"></a>Wyświetlanie szczegółowych informacji analitycznych i tworzenie nowych zasad
 
-Po zakończeniu pierwszego skanowania analizy dla organizacji członkowie grupy ról *Administrator zarządzania ryzykiem wewnętrznym* automatycznie otrzymają powiadomienie e-mail i będą mogli wyświetlać wstępne szczegółowe informacje i zalecenia dotyczące potencjalnie ryzykownych działań użytkowników. Codzienne skanowanie jest kontynuowane, chyba że wyłączysz analizę dla swojej organizacji. Powiadomienia e-mail do administratorów są dostarczane dla każdej z trzech kategorii w zakresie analizy (wycieki danych, kradzież i eksfiltracja) po pierwszym wystąpieniu działania w organizacji. Powiadomienia e-mail nie są wysyłane do administratorów w celu wykrywania działań obserwowanych w wyniku codziennego skanowania. Jeśli analiza w **zarządzaniu** >  ryzykiem wewnętrznym **Ustawienia** >  **Analityka** jest wyłączona, a następnie ponownie włączona w organizacji, automatyczne powiadomienia e-mail są resetowane, a wiadomości e-mail są wysyłane do członków grupy ról *administratora zarządzania ryzykiem niejawnym* w celu uzyskiwania nowych szczegółowych informacji skanowania.
+Po zakończeniu pierwszego skanowania analizy dla organizacji członkowie grupy ról *Insider Risk Management Administracja* będą automatycznie otrzymywać powiadomienia e-mail i mogą wyświetlać wstępne szczegółowe informacje i zalecenia dotyczące potencjalnie ryzykownych działań użytkowników. Codzienne skanowanie jest kontynuowane, chyba że wyłączysz analizę dla swojej organizacji. Powiadomienia e-mail do administratorów są dostarczane dla każdej z trzech kategorii w zakresie analizy (wycieki danych, kradzież i eksfiltracja) po pierwszym wystąpieniu działania w organizacji. Powiadomienia e-mail nie są wysyłane do administratorów w celu wykrywania działań obserwowanych w wyniku codziennego skanowania. Jeśli analiza w obszarze **Analiza ustawień** >  **zarządzania** >  ryzykiem wewnętrznym **jest** wyłączona, a następnie ponownie włączona w organizacji, automatyczne powiadomienia e-mail są resetowane, a wiadomości e-mail są wysyłane do członków grupy ról *Administracja Insider Risk Management* w celu uzyskiwania nowych szczegółowych informacji skanowania.
 
 Aby wyświetlić potencjalne zagrożenia dla organizacji, przejdź do karty **Przegląd** i wybierz pozycję **Wyświetl wyniki** na karcie **Analiza ryzyka testerów** . Jeśli skanowanie twojej organizacji nie zostało ukończone, zostanie wyświetlony komunikat informujący o tym, że skanowanie jest nadal aktywne.
 
@@ -559,7 +557,7 @@ Aby wyświetlić potencjalne zagrożenia dla organizacji, przejdź do karty **Pr
 W przypadku ukończonych skanów zobaczysz potencjalne zagrożenia wykryte w organizacji oraz szczegółowe informacje i zalecenia dotyczące rozwiązania tych zagrożeń. Zidentyfikowane zagrożenia i szczegółowe informacje są uwzględniane w raportach pogrupowanych według obszaru, łącznej liczbie użytkowników ze zidentyfikowanymi zagrożeniami, procentie tych użytkowników z potencjalnie ryzykownym działaniem oraz zalecanych zasadach ryzyka wewnętrznego, aby pomóc w zminimalizowaniu tych zagrożeń. Raporty obejmują:
 
 - **Szczegółowe informacje o wyciekach danych**: działania dla wszystkich użytkowników, które mogą obejmować przypadkowe nadmierne dzielenie informacji poza organizacją lub wycieki danych przez użytkowników ze złośliwą intencją.
-- **Szczegółowe informacje o kradzieży danych**: działania dla odchodzących użytkowników lub użytkowników z usuniętymi kontami Azure Active Directory, które mogą obejmować ryzykowne udostępnianie informacji spoza organizacji lub kradzież danych przez użytkowników ze złośliwym zamiarem.
+- **Szczegółowe informacje o kradzieży danych**: działania dla odchodzących użytkowników lub użytkowników z usuniętymi kontami usługi Azure Active Directory, które mogą obejmować ryzykowne udostępnianie informacji spoza organizacji lub kradzież danych przez użytkowników ze złośliwym zamiarem.
 - **Najważniejsze szczegółowe informacje o eksfiltracji**: działania wszystkich użytkowników, które mogą obejmować udostępnianie danych spoza organizacji.
 
 ![Raport przeglądowy analizy zarządzania ryzykiem wewnętrznym.](../media/insider-risk-analytics-overview.png)
@@ -570,28 +568,28 @@ Aby wyświetlić więcej informacji na potrzeby szczegółowych informacji, wybi
 
 ### <a name="turn-off-analytics"></a>Wyłączanie analizy
 
-Aby wyłączyć analizę ryzyka związanego z informacjami poufnymi, musisz być członkiem grupy ról administratora oprogramowania *Insider Risk Management*, *Insider Risk Management* lub Microsoft 365 *Global Admin*. Po wyłączeniu analizy raporty analizy pozostaną statyczne i nie zostaną zaktualizowane pod kątem nowych zagrożeń.
+Aby wyłączyć analizę ryzyka związanego z informacjami poufnymi, musisz być członkiem grupy ról *administratora globalnego* usługi *Insider Risk Management*, *Insider Risk Management Administracja* lub Microsoft 365 Global Admin. Po wyłączeniu analizy raporty analizy pozostaną statyczne i nie zostaną zaktualizowane pod kątem nowych zagrożeń.
 
 Wykonaj następujące kroki, aby wyłączyć analizę ryzyka dotyczącego informacji poufnych:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem wewnętrznym**.
-2. Wybierz pozycję Ustawienia  > **ryzyka niejawneAnaliza** strony.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym**.
+2. Wybierz stronę **Analizy** ustawień  > **ryzyka niejawne**.
 3. Na stronie **Analiza** wyłącz pozycję **Skanuj aktywność użytkownika dzierżawy, aby zidentyfikować potencjalne zagrożenia związane z poufnymi informacjami**.
 
-## <a name="admin-notifications"></a>Powiadomienia administratora
+## <a name="admin-notifications"></a>powiadomienia Administracja
 
-Powiadomienia administratora automatycznie wysyłają powiadomienie e-mail do wybranych grup ról zarządzania ryzykiem wewnętrznym. Możesz włączyć powiadomienia i przypisać grupy ról, które będą otrzymywać powiadomienia dla następujących scenariuszy:
+Administracja powiadomienia automatycznie wysyłają powiadomienie e-mail do wybranych grup ról zarządzania ryzykiem wewnętrznym. Możesz włączyć powiadomienia i przypisać grupy ról, które będą otrzymywać powiadomienia dla następujących scenariuszy:
 
 - Wyślij wiadomość e-mail z powiadomieniem, gdy zostanie wygenerowany pierwszy alert dla nowych zasad. Zasady są sprawdzane co 24 godziny w przypadku alertów po raz pierwszy, a powiadomienia nie są wysyłane w kolejnych alertach dotyczących zasad.
 - Wysyłaj codziennie wiadomość e-mail po wygenerowaniu nowych alertów o wysokiej ważności. Zasady są sprawdzane co 24 godziny pod kątem alertów o wysokiej ważności.
 - Wysyłanie cotygodniowej wiadomości e-mail z podsumowaniem zasad, które mają nierozwiązane ostrzeżenia
 
-Jeśli włączono analizę zarządzania ryzykiem wewnętrznym dla organizacji, członkowie grupy roli *Administrator zarządzania ryzykiem wewnętrznym* automatycznie otrzymają powiadomienie e-mail o początkowych analizach szczegółowych informacji dotyczących wycieków danych, kradzieży i działań eksfiltracji.
+Jeśli włączono analizę zarządzania ryzykiem wewnętrznym dla organizacji, członkowie grupy ról *insider risk management Administracja* automatycznie otrzymują powiadomienie e-mail z powiadomieniem o wstępnej analizie wycieków danych, kradzieży i działań eksfiltracji.
 
 Jeśli wolisz wyłączyć powiadomienia administratora i analizy, wykonaj następujące kroki:
 
-1. W [portalu zgodności usługi Microsoft Purview przejdź do obszaru](https://compliance.microsoft.com) **Zarządzanie ryzykiem niejawnym** > **.**
-2. Wybierz stronę **Powiadomienia administratora** .
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do **pozycji Insider risk management Insider risk settings (Ustawienia ryzyka niejawnych testerów****).** > 
+2. Wybierz stronę **powiadomień Administracja**.
 3. Wyczyść pole wyboru dla następujących opcji:
     - **Wysyłanie wiadomości e-mail z powiadomieniem po wygenerowaniu pierwszego alertu dla nowych zasad**
     - **Wysyłanie powiadomienia e-mail, gdy nowy wgląd jest dostępny w usłudze Analytics**

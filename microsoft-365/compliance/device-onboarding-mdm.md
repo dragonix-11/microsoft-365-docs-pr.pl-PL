@@ -14,54 +14,54 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Użyj narzędzi Zarządzanie urządzeniami mobilnych, aby wdrożyć pakiet konfiguracji na urządzeniach, aby zostały one wdrożone w usłudze.
-ms.openlocfilehash: 9b329ccf86a2364c13ac72bd4348711d72c17ff5
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Użyj narzędzi mobile Zarządzanie urządzeniami, aby wdrożyć pakiet konfiguracji na urządzeniach, aby były one dołączone do usługi.
+ms.openlocfilehash: d5c03c80c9a38d34ab27f888084604372874a64a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634498"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624206"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>Dołączanie urządzeń z systemami Windows 10 i Windows 11 przy użyciu narzędzi do zarządzania urządzeniami przenośnymi
 
 **Dotyczy:**
 
-- [Microsoft 365 punktu końcowego ochrony przed utratą danych (DLP)](./endpoint-dlp-learn-about.md)
-- [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Ochrona przed utratą danych punktu końcowego (DLP)](./endpoint-dlp-learn-about.md)
+- [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md)
 
-Urządzenia można konfigurować za pomocą rozwiązań zarządzania urządzeniami przenośnymi (MDM). Microsoft 365 informacji obsługuje usługi MDM, udostępniając OMA-URIs tworzenia zasad do zarządzania urządzeniami.
+Do konfigurowania urządzeń można używać rozwiązań do zarządzania urządzeniami przenośnymi (MDM). Ochrona informacji na platformie Microsoft 365 obsługuje rozwiązania MDM, udostępniając OMA-URIs do tworzenia zasad zarządzania urządzeniami.
 
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
-Jeśli korzystasz z usługi Microsoft Intune, musisz mieć zarejestrowane mdm urządzenia. W przeciwnym razie ustawienia nie zostaną zastosowane pomyślnie. 
+Jeśli używasz Microsoft Intune, musisz mieć zarejestrowane urządzenie MDM. W przeciwnym razie ustawienia nie zostaną zastosowane pomyślnie. 
 
-Aby uzyskać więcej informacji na temat włączania usługi MDM Microsoft Intune, zobacz [Rejestracja urządzenia (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
+Aby uzyskać więcej informacji na temat włączania zarządzania urządzeniami przenośnymi za pomocą Microsoft Intune, zobacz [Rejestrowanie urządzeń (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
 
-## <a name="onboard-devices-using-microsoft-intune"></a>Urządzenia w urządzeniach w urządzeniu Microsoft Intune
+## <a name="onboard-devices-using-microsoft-intune"></a>Dołączanie urządzeń przy użyciu Microsoft Intune
 
-Postępuj zgodnie z instrukcjami [podanymi Intune](/mem/intune/protect/advanced-threat-protection-configure).
+Postępuj zgodnie z instrukcjami z [Intune](/mem/intune/protect/advanced-threat-protection-configure).
  
 > [!NOTE]
-> - W **zasadach Stan kondycji urządzeń wewnenych** używane są właściwości tylko do odczytu, których nie można rozwiązać.
+> - Zasady **Stan kondycji dołączonych urządzeń** używają właściwości tylko do odczytu i nie można ich skorygować.
 
-## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>Urządzenia wyełowywne i monitorują je przy Zarządzanie urządzeniami urządzeniach przenośnych
+## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>Odłączanie i monitorowanie urządzeń przy użyciu narzędzi mobile Zarządzanie urządzeniami
 
-Ze względów bezpieczeństwa pakiet używany na urządzeniach offboardowych wygaśnie po 30 dniach od daty jego pobrania. Pakiety wynoszące wygasłe wysłane na urządzenie zostaną odrzucone. Podczas pobierania pakietu wynegocjowego zostaniesz o nim powiadomiony(-a) o dacie wygaśnięcia pakietów, a także w nazwie pakietu.
+Ze względów bezpieczeństwa pakiet używany do odłączenia urządzeń wygaśnie 30 dni po pobraniu. Wygasłe pakiety odłączania wysyłane do urządzenia zostaną odrzucone. Podczas pobierania pakietu odłączania otrzymasz powiadomienie o dacie wygaśnięcia pakietów i zostanie on również uwzględniony w nazwie pakietu.
 
 > [!NOTE]
-> Zasad wnoszeń i wynoszeń nie można wdrażać jednocześnie na tym samym urządzeniu, w przeciwnym razie spowoduje to nieprzewidywalne błędy.
+> Zasady dołączania i odłączania nie mogą być wdrażane na tym samym urządzeniu w tym samym czasie, w przeciwnym razie spowoduje to nieprzewidywalne kolizje.
 
-1. Pobierz pakiet wywęszania z <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a>.
+1. Pobierz pakiet odłączania z <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>.
 
-2. W okienku nawigacji wybierz pozycję **Ustawienia** >  **Device onboardingOffboarding** > .
+2. W okienku nawigacji wybierz pozycję **Ustawienia** > **Odłączanie dołączania** >  urządzenia.
 
-3. W polu **Metoda wdrażania** wybierz pozycję **Zarządzanie urządzeniami / Microsoft Intune**.
+3. W polu **Metoda wdrażania** wybierz pozycję **Mobile Zarządzanie urządzeniami/Microsoft Intune**.
 
-4. Kliknij **pozycję Pobierz** pakiet i zapisz .zip pliku.
+4. Kliknij **pozycję Pobierz pakiet** i zapisz plik .zip.
 
-5. Wyodrębnianie zawartości pliku .zip do udostępnionej lokalizacji tylko do odczytu, do której dostęp mogą uzyskać administratorzy sieci, którzy wdrożyą pakiet. Plik powinien mieć nazwę *: DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
+5. Wyodrębnij zawartość pliku .zip do udostępnionej lokalizacji tylko do odczytu, do których mogą uzyskać dostęp administratorzy sieci, którzy wdrożą pakiet. Powinien istnieć plik o nazwie *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
 
-6. Skorzystaj z Microsoft Intune konfiguracji niestandardowej, aby wdrożyć następujące obsługiwane ustawienia OMA-URI.
+6. Użyj Microsoft Intune niestandardowych zasad konfiguracji, aby wdrożyć następujące obsługiwane ustawienia identyfikatora OMA-URI.
 
     ```text
     OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding
@@ -69,17 +69,17 @@ Ze względów bezpieczeństwa pakiet używany na urządzeniach offboardowych wyg
     Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
     ```
 > [!NOTE]
-> Jeśli Ochrona punktu końcowego w usłudze Microsoft Defender jest już skonfigurowany, możesz włączyć dołączanie urządzenia  i krok 6 nie jest już wymagany.
+> Jeśli Ochrona punktu końcowego w usłudze Microsoft Defender jest już skonfigurowany, możesz **włączyć dołączanie urządzenia**, a krok 6 nie jest już wymagany.
 
 > [!NOTE]
-> W **zasadach Stan kondycji urządzeń wynoszonych** używane są właściwości tylko do odczytu, których nie można rozwiązać.
+> Zasady **Stan kondycji urządzeń odłączonych** używają właściwości tylko do odczytu i nie można ich skorygować.
 
 > [!IMPORTANT]
-> Wynoszenie powoduje, że urządzenie przestaje wysyłać dane czujnika do portalu, ale dane z urządzenia, w tym odwołania do wszelkich posiadanych alertów, będą przechowywane przez maksymalnie 6 miesięcy.
+> Odłączanie powoduje, że urządzenie przestaje wysyłać dane czujnika do portalu, ale dane z urządzenia, w tym odwołanie do wszelkich alertów, które miał, zostaną zachowane przez maksymalnie 6 miesięcy.
 
 ## <a name="related-topics"></a>Tematy pokrewne
-- [Na urządzeniach Windows 10 przy użyciu aplikacji zasady grupy](device-onboarding-gp.md)
-- [Urządzenia Windows 10 przy użyciu Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
-- [Dołączanie Windows 10 przy użyciu skryptu lokalnego](device-onboarding-script.md)
+- [Dołączanie urządzeń Windows 10 przy użyciu zasady grupy](device-onboarding-gp.md)
+- [Dołączanie urządzeń Windows 10 przy użyciu programu Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [Dołączanie urządzeń Windows 10 przy użyciu skryptu lokalnego](device-onboarding-script.md)
 - [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)](device-onboarding-vdi.md)
-- [Rozwiązywanie problemów z dołączaniem do zaawansowanej ochrony przed zagrożeniami w u programie Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Rozwiązywanie problemów z dołączaniem zaawansowanej ochrony przed zagrożeniami w usłudze Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

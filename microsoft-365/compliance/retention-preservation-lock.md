@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj blokady zachowania z zasadami przechowywania i zasadami etykiet przechowywania, aby pomóc w spełnieniu wymagań prawnych i ochronie przed nieautoryzowanymi administratorami.
-ms.openlocfilehash: 228d4cd1a7778b5352df6d10d31b7e4c25af915f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 88f875b201dbfdb633985506aee29acf99e2adb7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016289"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622618"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Używanie blokady zachowania w celu ograniczenia zmian zasad przechowywania i zasad etykiet przechowywania
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!IMPORTANT]
 > Obecnie [zakresy zasad adaptacyjnych](retention.md#adaptive-or-static-policy-scopes-for-retention) nie obsługują blokady zachowania.
@@ -58,7 +56,7 @@ Jeśli musisz użyć blokady zachowania, musisz użyć programu PowerShell. Poni
 
 Wszystkie zasady przechowywania z dowolną konfiguracją obsługują blokadę zachowania. Aby zastosować blokadę zachowania dla zasad etykiet przechowywania, musi ona zawierać tylko etykiety, które oznaczają elementy jako rekordy regulacyjne.
 
-1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+1. [Połącz się z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 2. Znajdź nazwę zasad, które chcesz zablokować, uruchamiając polecenie [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy). Przykład:
     

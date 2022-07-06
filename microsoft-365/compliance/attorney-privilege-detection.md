@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie wykrywania uprawnień klienta-adwokata w usłudze eDiscovery (Premium)
+title: Konfigurowanie wykrywania uprawnień klienta-adwokata w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,19 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Użyj modelu wykrywania uprawnień klienta-adwokata, aby użyć opartego na uczeniu maszynowym wykrywania zawartości uprzywilejowanej podczas przeglądania zawartości w przypadku zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview.
-ms.openlocfilehash: 359dccc041a0655ade291a37e511038a50148f7b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Użyj modelu wykrywania uprawnień klienta-adwokata, aby użyć opartego na uczeniu maszynowym wykrywania zawartości uprzywilejowanej podczas przeglądania zawartości w przypadku Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium).
+ms.openlocfilehash: 9f81ff216ecf0045aec69191b3a61916b6ea3081
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094036"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624636"
 ---
-# <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>Konfigurowanie wykrywania uprawnień klienta-adwokata w usłudze eDiscovery (Premium)
+# <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>Konfigurowanie wykrywania uprawnień klienta-adwokata w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Głównym i kosztownym aspektem fazy przeglądu każdego procesu zbierania elektronicznych materiałów dowodowych jest przeglądanie dokumentów pod kątem zawartości uprzywilejowanej. Usługa Microsoft Purview eDiscovery (Premium) zapewnia oparte na uczeniu maszynowym wykrywanie uprzywilejowanej zawartości w celu zwiększenia wydajności tego procesu. Ta funkcja jest nazywana *wykrywaniem uprawnień klienta-adwokata*.
+Głównym i kosztownym aspektem fazy przeglądu każdego procesu zbierania elektronicznych materiałów dowodowych jest przeglądanie dokumentów pod kątem zawartości uprzywilejowanej. Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) zapewnia oparte na uczeniu maszynowym wykrywanie uprzywilejowanej zawartości w celu zwiększenia wydajności tego procesu. Ta funkcja jest nazywana *wykrywaniem uprawnień klienta-adwokata*.
 
 ## <a name="how-does-it-work"></a>Jak to działa?
 
@@ -57,19 +55,19 @@ Aby włączyć model wykrywania uprawnień klienta-adwokata, organizacja musi go
 
 ### <a name="step-1-turn-on-attorney-client-privilege-detection"></a>Krok 1. Włączanie wykrywania uprawnień klienta-adwokata
 
-Osoba, która jest administratorem zbierania elektronicznych materiałów dowodowych w organizacji (członkiem podgrupy administratora zbierania elektronicznych materiałów dowodowych w grupie ról Menedżera zbierania elektronicznych materiałów dowodowych) musi udostępnić model w przypadkach zbierania elektronicznych materiałów dowodowych (Premium).
+Osoba, która jest administratorem zbierania elektronicznych materiałów dowodowych w organizacji (członkiem podgrupy administratora zbierania elektronicznych materiałów dowodowych w grupie ról Menedżera zbierania elektronicznych materiałów dowodowych) musi udostępnić model w sprawach zbierania elektronicznych materiałów dowodowych (Premium).
 
-1. W portalu zgodności usługi Microsoft Purview przejdź do obszaru [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764)a następnie kliknij pozycję **Ustawienia zbierania elektronicznych materiałów dowodowych (Premium**).
+1. W portal zgodności Microsoft Purview przejdź do pozycji [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) a następnie kliknij pozycję **Ustawienia zbierania elektronicznych materiałów dowodowych (Premium).**
 
    ![Wybierz ustawienia zbierania elektronicznych materiałów dowodowych (Premium)](..\media\HistoricalVersions1.png)
 
-2. Na stronie **Ustawienia** wybierz kartę **Analiza**, a następnie przełącz przełącznik **Wykrywanie uprawnień klienta-adwokata** na włączony.
+2. Na stronie **Ustawienia** wybierz kartę **Analiza** , a następnie przełącz przełącznik **Wykrywanie uprawnień klienta-adwokata** na włączony.
 
    ![Kliknij przycisk przełącz, aby włączyć wykrywanie uprawnień klienta-adwokata](..\media\TurnOnAttorneyClientPrivilegeDetection.png)
 
 3. Kliknij przycisk **Zapisz** , aby zapisać zmianę.
 
-### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Krok 2. Upload listę adwokatów (opcjonalnie)
+### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Krok 2. Przekazywanie listy adwokatów (opcjonalnie)
 
 Aby w pełni wykorzystać model wykrywania uprawnień klienta-adwokata i skorzystać z wyników wcześniej opisanego wykrywania **funkcji ma adwokata** lub **potencjalnie uprzywilejowanego** , zalecamy przekazanie listy adresów e-mail dla prawników i pracowników prawnych, którzy pracują dla Twojej organizacji.
 
@@ -77,7 +75,7 @@ Aby przekazać listę adwokatów do użycia przez model wykrywania uprawnień kl
 
 1. Utwórz plik .csv (bez wiersza nagłówka) i dodaj adres e-mail dla każdej odpowiedniej osoby w osobnym wierszu. Zapisz ten plik na komputerze lokalnym.
 
-2. Na stronie **Ustawienia** eDiscovery (Premium) wybierz kartę **Analiza**.
+2. Na stronie **Ustawienia** zbierania elektronicznych materiałów dowodowych (Premium) wybierz kartę **Analiza** .
 
    Zostanie wyświetlona strona **Uprawnienia klienta adwokackiego** , a przełącznik **wykrywania uprawnień klienta-adwokata** jest włączony.
 
@@ -111,7 +109,7 @@ Jednym z podstawowych sposobów sprawdzania wyników wykrywania uprawnień klien
 
 ### <a name="step-2-analyze-a-review-set"></a>Krok 2. Analizowanie zestawu przeglądów
 
-Podczas analizowania dokumentów w zestawie przeglądów zostanie również uruchomiony model wykrywania uprawnień klienta-adwokata, a odpowiednie właściwości (opisane w artykule [Jak to działa?](#how-does-it-work)) zostaną dodane do każdego dokumentu w zestawie przeglądów. Aby uzyskać więcej informacji na temat analizowania danych w zestawie przeglądów, zobacz [Analizowanie danych w zestawie przeglądów w obszarze eDiscovery (Premium)](analyzing-data-in-review-set.md).
+Podczas analizowania dokumentów w zestawie przeglądów zostanie również uruchomiony model wykrywania uprawnień klienta-adwokata, a odpowiednie właściwości (opisane w artykule [Jak to działa?](#how-does-it-work)) zostaną dodane do każdego dokumentu w zestawie przeglądów. Aby uzyskać więcej informacji na temat analizowania danych w zestawie przeglądów, zobacz [Analizowanie danych w zestawie przeglądów w usłudze eDiscovery (Premium)](analyzing-data-in-review-set.md).
 
 ### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>Krok 3. Przeglądanie zawartości uprzywilejowanej przy użyciu grupy tagów inteligentnych
 

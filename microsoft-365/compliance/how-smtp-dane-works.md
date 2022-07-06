@@ -14,16 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Dowiedz się, jak oparte na usłudze SMTP uwierzytelnianie dns jednostek nazwanych (DANE) działa w celu zabezpieczenia komunikacji poczty e-mail między serwerami poczty.
-ms.openlocfilehash: 200dde9c62fb9825ce36eea7416304727bd6b598
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2202cccc3c1feb9f50cc35dbb3e38d6b443675fd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015775"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625154"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Jak działa uwierzytelnianie oparte na usłudze DNS SMTP dla jednostek nazwanych (DANE)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Protokół SMTP jest głównym protokołem używanym do przesyłania komunikatów między serwerami poczty i domyślnie nie jest bezpieczny. Protokół Transport Layer Security (TLS) został wprowadzony wiele lat temu w celu obsługi szyfrowanej transmisji komunikatów za pośrednictwem protokołu SMTP. Jest to powszechnie używane oportunistycznie, a nie jako wymóg, pozostawiając dużo ruchu poczty e-mail w postaci zwykłego tekstu, podatne na przechwycenie przez nikczemnych aktorów. Ponadto protokół SMTP określa adresy IP serwerów docelowych za pośrednictwem publicznej infrastruktury DNS, która jest podatna na fałszowanie i ataki typu man-in-the-middle (MITM). Doprowadziło to do utworzenia wielu nowych standardów w celu zwiększenia bezpieczeństwa wysyłania i odbierania wiadomości e-mail. Jednym z nich jest uwierzytelnianie nazwane jednostek (DANE) oparte na systemie DNS. 
 
@@ -93,7 +91,7 @@ Obecnie dane SMTP dla ruchu przychodzącego nie są obsługiwane w przypadku Exc
 
 Zgodnie ze wskazówkami dotyczącymi implementacji RFC dla SMTP DANE zaleca się utworzenie rekordu TLSA składającego się z pola Użycie certyfikatu ustawionego na 3, pola Selektor ustawionego na 1 i pola Typ dopasowania ustawionego na 1.
 
-## <a name="exchange-online-mail-flow-with-smtp-dane"></a>Exchange Online Flow poczty za pomocą protokołu SMTP DANE
+## <a name="exchange-online-mail-flow-with-smtp-dane"></a>Exchange Online przepływ poczty za pomocą protokołu SMTP DANE
 
 Proces przepływu poczty dla Exchange Online za pomocą protokołu SMTP DANE, pokazany na poniższym wykresie przepływowym, weryfikuje zabezpieczenia domeny i rekordu zasobów za pośrednictwem protokołu DNSSEC, obsługę protokołu TLS na docelowym serwerze poczty oraz że certyfikat docelowego serwera poczty jest zgodny z oczekiwaniami na podstawie skojarzonego rekordu TLSA.
 
@@ -103,7 +101,7 @@ Istnieją tylko dwa scenariusze, w których błąd SMTP DANE spowoduje zablokowa
 
 - Wszystkie rekordy MX dla domeny docelowej mają rekordy TLSA i żaden z certyfikatów serwera docelowego nie jest zgodny z oczekiwanymi danymi rekordu TSLA lub połączenie TLS nie jest obsługiwane przez serwer docelowy.
 
-:::image type="content" source="../media/compliance-trial/mail-flow-smtp-dane.png" alt-text="Exchange przepływu poczty online za pomocą protokołu SMTP DANE" lightbox="../media/compliance-trial/mail-flow-smtp-dane.png":::
+:::image type="content" source="../media/compliance-trial/mail-flow-smtp-dane.png" alt-text="Przepływ poczty online programu Exchange za pomocą protokołu SMTP DANE" lightbox="../media/compliance-trial/mail-flow-smtp-dane.png":::
 
 ## <a name="related-technologies"></a>Powiązane technologie
 
@@ -118,7 +116,7 @@ Istnieją tylko dwa scenariusze, w których błąd SMTP DANE spowoduje zablokowa
 
 Obecnie istnieją cztery kody błędów dane podczas wysyłania wiadomości e-mail z Exchange Online. Firma Microsoft aktywnie aktualizuje tę listę kodów błędów. Błędy będą widoczne w następujących elementach:
 
-1. Portal centrum administracyjnego Exchange za pośrednictwem widoku Szczegóły śledzenia komunikatów.
+1. Portal programu Exchange Administracja Center za pośrednictwem widoku Szczegóły śledzenia komunikatów.
 2. Serwery NDR generowane, gdy komunikat nie jest wysyłany z powodu błędu DANE lub DNSSEC.
 3. Narzędzie analizatora łączności zdalnej [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
@@ -142,14 +140,14 @@ Zwykle oznacza to problem z docelowym serwerem poczty. Po otrzymaniu komunikatu:
 
 1. Sprawdź, czy docelowy adres e-mail został wprowadzony poprawnie.
 2. Ostrzec docelowego administratora poczty e-mail o tym kodzie błędu, aby mógł określić, czy serwer docelowy jest poprawnie skonfigurowany do odbierania komunikatów przy użyciu protokołu TLS.
-3. Spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości w portalu centrum administracyjnego Exchange.
+3. Spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości w portalu programu Exchange Administracja Center.
 
 ### <a name="troubleshooting-57322-certificate-expired"></a>Rozwiązywanie problemów z wygaśnięciem certyfikatu w wersji 5.7.322
 
 Prawidłowy certyfikat X.509, który nie wygasł, musi zostać przedstawiony na serwerze poczty e-mail wysyłającej. Certyfikaty X.509 muszą być odnawiane po ich wygaśnięciu, często co rok. Po otrzymaniu komunikatu:
 
 1. Wyślij alert do docelowego administratora poczty e-mail, który otrzymał ten kod błędu, i podaj ciąg kodu błędu.
-2. Zaczekaj na odnowienie certyfikatu serwera docelowego i zaktualizowanie rekordu TLSA w celu odwołania się do nowego certyfikatu. Następnie spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości w portalu centrum administracyjnego Exchange.
+2. Zaczekaj na odnowienie certyfikatu serwera docelowego i zaktualizowanie rekordu TLSA w celu odwołania się do nowego certyfikatu. Następnie spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia komunikatu w portalu programu Exchange Administracja Center.
 
 ### <a name="troubleshooting-57323-tlsa-invalid"></a>Rozwiązywanie problemów z błędem tlsa 5.7.323
 
@@ -163,7 +161,7 @@ Ten kod błędu jest związany z błędną konfiguracją rekordu TLSA i może by
 Po otrzymaniu komunikatu:
 
 1. Wyślij alert do docelowego administratora poczty e-mail o otrzymaniu tego kodu błędu i podaj mu ciąg kodu błędu.
-2. Zaczekaj czas na sprawdzenie przez docelowego administratora poczty e-mail konfiguracji danych i ważności certyfikatu serwera poczty e-mail. Następnie spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości w portalu centrum administracyjnego Exchange.
+2. Zaczekaj czas na sprawdzenie przez docelowego administratora poczty e-mail konfiguracji danych i ważności certyfikatu serwera poczty e-mail. Następnie spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia komunikatu w portalu programu Exchange Administracja Center.
 
 ### <a name="troubleshooting-57324-dnssec-invalid"></a>Rozwiązywanie problemów z błędem dnssec 5.7.324
 
@@ -172,7 +170,7 @@ Ten kod błędu jest generowany, gdy domena docelowa wskazała, że jest ona aut
 Po otrzymaniu komunikatu:
 
 1. Wyślij alert do docelowego administratora poczty e-mail o otrzymaniu tego kodu błędu i podaj mu ciąg kodu błędu.
-2. Zaczekaj czas, aby docelowy administrator poczty e-mail przejrzał konfigurację DNSSEC swojej domeny. Następnie spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości w portalu centrum administracyjnego Exchange.
+2. Zaczekaj czas, aby docelowy administrator poczty e-mail przejrzał konfigurację DNSSEC swojej domeny. Następnie spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia komunikatu w portalu programu Exchange Administracja Center.
 
 ## <a name="troubleshooting-receiving-emails-with-smtp-dane"></a>Rozwiązywanie problemów z odbieraniem wiadomości e-mail za pomocą protokołu SMTP DANE
 

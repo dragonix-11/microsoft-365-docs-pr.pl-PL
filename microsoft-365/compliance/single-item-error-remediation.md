@@ -16,18 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Błąd przetwarzania w dokumencie można naprawić w zestawie przeglądów w usłudze eDiscovery (Premium) bez konieczności śledzenia procesu korygowania błędów zbiorczych.
-ms.openlocfilehash: e8ace66eefadf5ce959bc01150ba21e232429131
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cb1b7248ff02a4aafce529b764efdf7408a05386
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092354"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622178"
 ---
-# <a name="single-item-error-remediation-in-ediscovery-premium"></a>Korygowanie błędu pojedynczego elementu w funkcji zbierania elektronicznych materiałów dowodowych (Premium)
+# <a name="single-item-error-remediation-in-ediscovery-premium"></a>Korygowanie błędu pojedynczego elementu w zbierania elektronicznych materiałów dowodowych (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Korygowanie błędów daje użytkownikom usługi Microsoft Purview eDiscovery (Premium) możliwość rozwiązywania problemów z danymi, które uniemożliwiają prawidłowe przetwarzanie zawartości zbierania elektronicznych materiałów dowodowych (Premium). Na przykład nie można przetwarzać plików chronionych hasłem, ponieważ te pliki są zablokowane lub szyfrowane. Wcześniej można było korygować błędy tylko zbiorczo przy użyciu [tego przepływu pracy](error-remediation-when-processing-data-in-advanced-ediscovery.md). Ale czasami nie ma sensu korygować błędów w wielu plikach, gdy nie masz pewności, czy którykolwiek z tych plików reaguje na sprawę, którą badasz. Może również nie mieć sensu korygować błędów, zanim będziesz mieć możliwość przejrzenia metadanych pliku (takich jak lokalizacja pliku lub kto miał dostęp), aby ułatwić podejmowanie decyzji dotyczących czasu odpowiedzi. Nowa funkcja o nazwie *korygowanie błędów pojedynczego elementu* daje menedżerom zbierania elektronicznych materiałów dowodowych możliwość wyświetlania metadanych plików z błędem przetwarzania i w razie potrzeby korygowania błędu bezpośrednio w zestawie przeglądów. W tym artykule omówiono sposób identyfikowania, ignorowania i korygowania plików z błędami przetwarzania w zestawie przeglądów.
+Korygowanie błędów daje użytkownikom Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) możliwość rozwiązywania problemów z danymi, które uniemożliwiają prawidłowe przetwarzanie zawartości zbierania elektronicznych materiałów dowodowych (Premium). Na przykład nie można przetwarzać plików chronionych hasłem, ponieważ te pliki są zablokowane lub szyfrowane. Wcześniej można było korygować błędy tylko zbiorczo przy użyciu [tego przepływu pracy](error-remediation-when-processing-data-in-advanced-ediscovery.md). Ale czasami nie ma sensu korygować błędów w wielu plikach, gdy nie masz pewności, czy którykolwiek z tych plików reaguje na sprawę, którą badasz. Może również nie mieć sensu korygować błędów, zanim będziesz mieć możliwość przejrzenia metadanych pliku (takich jak lokalizacja pliku lub kto miał dostęp), aby ułatwić podejmowanie decyzji dotyczących czasu odpowiedzi. Nowa funkcja o nazwie *korygowanie błędów pojedynczego elementu* daje menedżerom zbierania elektronicznych materiałów dowodowych możliwość wyświetlania metadanych plików z błędem przetwarzania i w razie potrzeby korygowania błędu bezpośrednio w zestawie przeglądów. W tym artykule omówiono sposób identyfikowania, ignorowania i korygowania plików z błędami przetwarzania w zestawie przeglądów.
 
 ## <a name="identify-documents-with-errors"></a>Identyfikowanie dokumentów z błędami
 
@@ -55,7 +53,7 @@ Czasami może być konieczne skorygowanie błędu przetwarzania w dokumentach (p
 
 Aby skorygować pojedynczy dokument, wykonaj następujące kroki:
 
-1. Kliknij pozycję **PobierzPobierz**  >  oryginał, aby pobrać kopię pliku na komputer lokalny.
+1. Kliknij **pozycję Pobierz** > **oryginał** , aby pobrać kopię pliku na komputer lokalny.
 
    ![Pobierz dokument z błędem przetwarzania.](../media/SIERimage5.png)
 

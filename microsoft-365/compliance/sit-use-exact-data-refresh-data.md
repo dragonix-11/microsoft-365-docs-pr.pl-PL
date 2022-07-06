@@ -17,20 +17,18 @@ search.appverid:
 - MET150
 description: Odśwież plik tabeli źródła informacji poufnych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a846f22b866b4b8adf75c44e55fde4b9d56b8ac4
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 310663caae55bb9b5e0d07cb38ba9fa4b45e8a73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008850"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621672"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Odświeżanie dokładnego pliku tabeli źródła informacji poufnych zgodnych z danymi poufnymi 
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Bazę danych informacji poufnych można odświeżać maksymalnie 5 razy co 24 godziny. Musisz ponownie przekazać i przekazać tabelę źródła informacji poufnych.
 
-1. Ponownie wyeksportuj poufne dane do aplikacji, takie jak Microsoft Excel, i zapisz plik w formacie .csv, tsv lub rozdzielanym potokiem (|). Zachowaj tę samą nazwę pliku i lokalizację, której użyto podczas poprzedniego skrótu i przekazanego pliku. Zobacz [Eksportowanie danych źródłowych w celu dokładnego dopasowania danych do typu informacji poufnych opartych](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) na danych, aby uzyskać szczegółowe informacje na temat eksportowania poufnych danych i uzyskiwania ich w prawidłowym formacie.
+1. Ponownie wyeksportuj poufne dane do aplikacji, takiej jak Microsoft Excel, i zapisz plik w formacie .csv, tsv lub potoku (|). Zachowaj tę samą nazwę pliku i lokalizację, której użyto podczas poprzedniego skrótu i przekazanego pliku. Zobacz [Eksportowanie danych źródłowych w celu dokładnego dopasowania danych do typu informacji poufnych opartych](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) na danych, aby uzyskać szczegółowe informacje na temat eksportowania poufnych danych i uzyskiwania ich w prawidłowym formacie.
 
       > [!NOTE]
       > Jeśli nie ma żadnych zmian w strukturze (nazwach pól) pliku tabeli źródła informacji poufnych, podczas odświeżania danych nie trzeba wprowadzać żadnych zmian w pliku schematu bazy danych. Jeśli jednak musisz wprowadzić zmiany, pamiętaj, aby odpowiednio edytować schemat bazy danych i pakiet reguł. Zobacz [Zarządzanie dokładnym schematem dopasowania danych](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) , aby uzyskać instrukcje edytowania lub usuwania schematu. Zobacz Create exact data match sensitive information type/rule package for the steps to edit or remove your EDM SIT/rule package ( [Tworzenie dokładnego dopasowania danych do poufnych informacji typu/pakietu reguł](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) ), aby zapoznać się z krokami edytowania lub usuwania pakietu EDM SIT/rule.
@@ -43,7 +41,7 @@ Bazę danych informacji poufnych można odświeżać maksymalnie 5 razy co 24 go
    |---|---|
    |PowerShell|Zobacz dokumentację [scheduledtasks](/powershell/module/scheduledtasks/) i [przykładowy skrypt programu PowerShell](#example-powershell-script-for-task-scheduler) w tym artykule|
    |Interfejs API harmonogramu zadań|Zobacz dokumentację [harmonogramu zadań](/windows/desktop/TaskSchd/using-the-task-scheduler)|
-   |interfejs użytkownika Windows|W Windows kliknij przycisk **Start** i wpisz Harmonogram zadań. Następnie na liście wyników kliknij prawym przyciskiem myszy harmonogram **zadań** i wybierz pozycję **Uruchom jako administrator**.|
+   |Interfejs użytkownika systemu Windows|W systemie Windows kliknij przycisk **Start** i wpisz Harmonogram zadań. Następnie na liście wyników kliknij prawym przyciskiem myszy harmonogram **zadań** i wybierz pozycję **Uruchom jako administrator**.|
 
 ## <a name="example-powershell-script-for-task-scheduler"></a>Przykładowy skrypt programu PowerShell dla harmonogramu zadań
 

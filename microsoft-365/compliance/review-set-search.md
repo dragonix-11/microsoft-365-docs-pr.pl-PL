@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się, jak utworzyć i uruchomić zapytanie w zestawie przeglądów, aby zorganizować zawartość w celu bardziej wydajnego przeglądu w przypadku zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview.
+description: Dowiedz się, jak utworzyć i uruchomić zapytanie w zestawie przeglądów, aby zorganizować zawartość w celu bardziej wydajnego przeglądu w przypadku Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 44f4b9d6aed92a6593f5c6c70322656e4c770c3d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b40ab6818b4063a0b160ab9a41fdded6f7e7d37e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090922"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623766"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Wykonuj zapytania i filtruj zawartość w zestawie do przeglądu
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W większości przypadków warto zagłębić się w zawartość w zestawie przeglądów i zorganizować ją w celu ułatwienia bardziej wydajnego przeglądu. Używanie filtrów i zapytań w zestawie przeglądów pomaga skupić się na podzbiorze dokumentów spełniających kryteria przeglądu.
 
@@ -81,7 +79,7 @@ Istnieje wiele typów filtrów:
 
 - **Opcje wyszukiwania**: filtr opcji wyszukiwania zawiera listę możliwych wartości (każda wartość jest wyświetlana z polem wyboru, które można wybrać) dla określonych pól w przeglądzie. Ten filtr jest używany dla pól, takich jak "Nadawca", gdzie w zestawie przeglądów istnieje skończona liczba możliwych wartości.
 
-- **Słowo kluczowe**: warunek słowa kluczowego to określone wystąpienie warunku wolnego tekstu, którego można użyć do wyszukiwania terminów. W tym typie filtru można również użyć języka zapytań przypominającego KQL. Aby uzyskać więcej informacji, zobacz sekcje Język zapytań i Zaawansowany konstruktor zapytań w tym artykule.
+- **Słowo kluczowe**: warunek słowa kluczowego to określone wystąpienie warunku wolnego tekstu, którego można użyć do wyszukiwania terminów. W tym typie filtru można również użyć języka zapytań przypominającego język KQL. Aby uzyskać więcej informacji, zobacz sekcje Język zapytań i Zaawansowany konstruktor zapytań w tym artykule.
 
 ## <a name="include-and-exclude-filter-relationships"></a>Uwzględnianie i wykluczanie relacji filtru
 
@@ -103,7 +101,7 @@ Aby usunąć zapytanie filtru, otwórz panel filtru i wybierz ikonę kosza obok 
 
 ## <a name="query-language"></a>Język zapytań
 
-Oprócz używania filtrów można również użyć języka zapytań przypominającego KQL w filtrze Słowa kluczowe, aby utworzyć zapytanie wyszukiwania zestawu przeglądów. Język zapytań dla zapytań zestawu przeglądów obsługuje standardowe operatory logiczne, takie jak **AND**, **OR**, **NOT** i **NEAR**. Obsługuje również symbol wieloznaczny (?) z jednym znakiem i wieloznacznym symbolem wieloznacznym (*).
+Oprócz używania filtrów możesz również użyć języka zapytań podobnego do języka KQL w filtrze Słowa kluczowe, aby utworzyć zapytanie wyszukiwania zestawu przeglądów. Język zapytań dla zapytań zestawu przeglądów obsługuje standardowe operatory logiczne, takie jak **AND**, **OR**, **NOT** i **NEAR**. Obsługuje również symbol wieloznaczny (?) z jednym znakiem i wieloznacznym symbolem wieloznacznym (*).
 
 ## <a name="advanced-query-builder"></a>Zaawansowany konstruktor zapytań
 
@@ -131,7 +129,7 @@ Obecnie w zestawie przeglądów nie ma opcji filtru umożliwiającej wyświetlan
 
 3. Zatwierdź nową kolekcję w tym samym zestawie przeglądów. Tym razem jednak dodaj częściowo zaindeksowane elementy z dodatkowych źródeł danych. Ponieważ elementy z kolekcji utworzonej w kroku 1 zostały już dodane do zestawu przeglądów, tylko częściowo zaindeksowane elementy z drugiej kolekcji są dodawane do zestawu przeglądów.
 
-4. Po dodaniu obu kolekcji do zestawu przeglądów przejdź do zestawu przeglądów i wybierz pozycję **ManageLoad sets (Zarządzaj zestawami** >  **ładunków**).
+4. Po dodaniu obu kolekcji do zestawu przeglądów przejdź do zestawu przeglądów i wybierz pozycję **Zarządzaj zestawami** > **obciążenia**.
 
 5. Skopiuj lub **zanotuj identyfikator obciążenia** dla drugiej kolekcji (utworzonej w kroku 2). Nazwa kolekcji jest identyfikowana w kolumnie **Informacje o źródle** .
 

@@ -19,16 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Istnieje wiele typów informacji poufnych, które są gotowe do użycia w zasadach DLP. W tym artykule wymieniono wszystkie te typy informacji poufnych i pokazano, czego szukają zasady DLP podczas wykrywania poszczególnych typów.
-ms.openlocfilehash: af2cbd03de426aa34b9db82691a22684c4c1df0b
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 2d81410b86ca9a90b12dbaa850e36d8803af0d79
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130807"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622442"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definicje jednostek typu informacji poufnych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W tym artykule wymieniono wszystkie definicje jednostek typów informacji poufnych. Każda definicja pokazuje, czego szukają zasady DLP w celu wykrycia każdego typu. Aby dowiedzieć się więcej o typach informacji poufnych, zobacz [Typy informacji poufnych](sensitive-information-type-learn-about.md)
 
@@ -41,7 +39,7 @@ W tym artykule wymieniono wszystkie definicje jednostek typów informacji poufny
 
 ## <a name="aba-routing-number"></a>Numer routingu usługi ABA
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr, które mogą znajdować się w sformatowanym lub niesformatowanym wzorcu
 
@@ -106,7 +104,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 Wszystkie pełne nazwy to jednostka o nazwie bundled. Wykrywa pełne nazwiska osób ze wszystkich obsługiwanych krajów/regionów, w tym Australii, Chin, Japonii, USA i krajów UE. Użyj tego interfejsu SIT, aby wykryć wszystkie możliwe dopasowania pełnych nazw.
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Różnych.
 
@@ -116,7 +114,7 @@ Różnych.
 
 ### <a name="checksum"></a>Suma kontrolna
 
-Nie.
+L.p.
 
 ### <a name="description"></a>Opis
 
@@ -165,7 +163,7 @@ Ponadto wzorce, które człowiek postrzegałby jako wskazujące nazwy, są równ
 
 Wszystkie warunki i postanowienia medyczne to jednostka o nazwie wiązanej, która wykrywa warunki medyczne i medyczne. Wykrywa tylko angielskie terminy. Użyj tego narzędzia SIT, aby wykryć wszystkie możliwe dopasowania warunków i postanowień medycznych.
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Słownik
 
@@ -204,7 +202,7 @@ Ta powiązana nazwana jednostka SIT zawiera te pojedyncze interfejsy API.
 
 Wszystkie adresy fizyczne to jednostka w pakiecie SIT, która wykrywa wzorce związane z adresami fizycznymi ze wszystkich obsługiwanych krajów/regionów.
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Różnych
 
@@ -305,7 +303,7 @@ Ta powiązana nazwana jednostka SIT zawiera następujące pojedyncze interfejsy 
 
 ## <a name="argentina-national-identity-dni-number"></a>Numer tożsamości narodowej Argentyny (DNI)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Osiem cyfr z kropkami lub bez
 
@@ -356,7 +354,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>Argentyna Unikatowy klucz identyfikacji podatkowej (CUIT/CUIL)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr z kreską
 
@@ -441,7 +439,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="australia-bank-account-number"></a>Numer konta bankowego w Australii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 od sześciu do 10 cyfr z numerem oddziału stanu banku lub bez go
 
@@ -516,7 +514,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr z opcjonalnymi ogranicznikami
 
@@ -581,7 +579,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr z ogranicznikami
 
@@ -636,7 +634,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="australia-drivers-license-number"></a>Numer prawa jazdy w Australii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć liter i cyfr
 
@@ -788,7 +786,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="australia-medical-account-number"></a>Numer konta medycznego w Australii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10–11 cyfr
 
@@ -839,7 +837,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="australia-passport-number"></a>Numer paszportu Australii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem lub dziewięć znaków alfanumerycznych
 
@@ -907,7 +905,7 @@ Odbuntowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Aus
 
 ## <a name="australia-tax-file-number"></a>Numer pliku podatkowego Australii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 od ośmiu do dziewięciu cyfr
 
@@ -959,7 +957,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="austria-drivers-license-number"></a>Numer prawa jazdy w Austrii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr bez spacji i ograniczników
 
@@ -1132,7 +1130,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 24-znakowa kombinacja liter, cyfr i znaków specjalnych
 
@@ -1175,7 +1173,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="austria-passport-number"></a>Numer paszportu Austrii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Jedna litera, po której następuje opcjonalne spacja i siedem cyfr
 
@@ -1268,7 +1266,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="austria-social-security-number"></a>Numer ubezpieczenia społecznego w Austrii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 cyfr w określonym formacie
 
@@ -1342,7 +1340,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="austria-tax-identification-number"></a>Numer identyfikacji podatkowej Austrii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr z opcjonalnym łącznikiem i ukośnikiem do przodu
 
@@ -1419,7 +1417,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11-znakowy wzorzec alfanumeryczny
 
@@ -1487,7 +1485,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="azure-documentdb-auth-key"></a>Klucz uwierzytelniania usługi Azure DocumentDB
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Ciąg "DocumentDb", po którym następują znaki i ciągi opisane we wzorcu poniżej.
 
@@ -1538,9 +1536,9 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - testacs.<!--no-hyperlink-->Com
 - s-int.<!--no-hyperlink-->Netto
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Parametry połączenia bazy danych IAAS platformy Azure i parametry połączenia usługi Azure SQL
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Parametry połączenia bazy danych IAAS platformy Azure i parametry połączenia Azure SQL
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Ciąg "Serwer", "serwer" lub "źródło danych", po którym następuje znaki i ciągi opisane we wzorcu poniżej, w tym ciąg "cloudapp.azure.<!--no-hyperlink-->com" lub "cloudapp.azure.<!--no-hyperlink-->net" lub "database.windows.<!--no-hyperlink-->net", a ciąg "Password" lub "password" lub "pwd".
 
@@ -1601,7 +1599,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="azure-iot-connection-string"></a>Parametry połączenia usługi Azure IoT
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Ciąg "Nazwa hosta", po którym następuje znaki i ciągi opisane we wzorcu poniżej, w tym ciągi "azure-devices.<!--no-hyperlink-->net" i "SharedAccessKey".
 
@@ -1662,7 +1660,7 @@ Ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyraże
 
 ## <a name="azure-publish-setting-password"></a>Hasło ustawienia publikowania platformy Azure
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Ciąg "userpwd=", po którym następuje ciąg alfanumeryczny.
 
@@ -1713,7 +1711,7 @@ Ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyraże
 
 ## <a name="azure-redis-cache-connection-string"></a>Parametry połączenia usługi Azure Redis Cache
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Ciąg "redis.cache.windows.<!--no-hyperlink-->net", a następnie znaki i ciągi opisane we wzorcu poniżej, w tym ciąg "password" lub "pwd".
 
@@ -1769,7 +1767,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="azure-sas"></a>Sygnatura dostępu współdzie
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Ciąg "sig", po którym następuje znaki i ciągi opisane we wzorcu poniżej.
 
@@ -1804,7 +1802,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="azure-service-bus-connection-string"></a>Parametry połączenia usługi Azure Service Bus
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Ciąg "EndPoint", po którym następuje znaki i ciągi opisane we wzorcu poniżej, w tym ciągi "servicebus.windows.<!--no-hyperlink-->net" i "SharedAccesKey".
 
@@ -1865,7 +1863,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="azure-storage-account-key"></a>Klucz konta usługi Azure Storage
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Ciąg "DefaultEndpointsProtocol", po którym następuje znaki i ciągi opisane we wzorcu poniżej, w tym ciąg "AccountKey".
 
@@ -1932,7 +1930,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="azure-storage-account-key-generic"></a>Klucz konta usługi Azure Storage (ogólny)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Dowolna kombinacja 86 małych lub wielkich liter, cyfr, ukośnika (/) lub znaku plus (+), poprzedzona znakami lub po nich znakami opisanymi we wzorcu poniżej.
 
@@ -1963,7 +1961,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="belgium-drivers-license-number"></a>Belgijski numer prawa jazdy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 cyfr bez spacji i ograniczników
 
@@ -2134,7 +2132,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="belgium-national-number"></a>Numer krajowy Belgii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr i opcjonalne ograniczniki
 
@@ -2241,7 +2239,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="belgium-passport-number"></a>Belgijski numer paszportu
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dwie litery, po których następuje sześć cyfr bez spacji ani ograniczników
 
@@ -2343,7 +2341,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 12-znakowy wzorzec alfanumeryczny
 
@@ -2420,7 +2418,7 @@ High (Wysoki)
 
 ## <a name="brazil-cpf-number"></a>Numer CPF w Brazylii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr, które zawierają cyfrę wyboru i mogą być sformatowane lub niesformatowane
 
@@ -2486,7 +2484,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="brazil-legal-entity-number-cnpj"></a>Numer brazylijskiej jednostki prawnej (CNPJ)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 14 cyfr zawierających numer rejestracji, numer gałęzi i cyfry wyboru oraz ograniczniki
 
@@ -2560,7 +2558,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="brazil-national-identification-card-rg"></a>Brazylijska krajowa karta identyfikacyjna (RG)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Registro Geral (stary format): Dziewięć cyfr
 
@@ -2629,7 +2627,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="bulgaria-drivers-license-number"></a>Numer prawa jazdy Bułgarii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr bez spacji i ograniczników
 
@@ -2794,7 +2792,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="bulgaria-passport-number"></a>Numer paszportu Bułgarii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr bez spacji i ograniczników
 
@@ -2885,7 +2883,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 cyfr bez spacji i ograniczników
 
@@ -2979,7 +2977,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="canada-bank-account-number"></a>Numer konta bankowego w Kanadzie
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 7 lub 12 cyfr
 
@@ -3055,7 +3053,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="canada-drivers-license-number"></a>Numer prawa jazdy w Kanadzie
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Różni się w zależności od prowincji
 
@@ -3284,7 +3282,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="canada-health-service-number"></a>Numer usługi kondycji Kanady
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
  10 cyfr
 
@@ -3331,7 +3329,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="canada-passport-number"></a>Numer paszportu Kanada
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dwie wielkie litery, po których następuje sześć cyfr
 
@@ -3399,7 +3397,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="canada-personal-health-identification-number-phin"></a>Kanada osobisty numer identyfikacyjny zdrowia (PHIN)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr
 
@@ -3478,7 +3476,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="canada-social-insurance-number"></a>Kanada numer ubezpieczenia społecznego
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr z opcjonalnymi łącznikami lub spacjami
 
@@ -3564,7 +3562,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="chile-identity-card-number"></a>Numer karty tożsamości Chile
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 od siedmiu do ośmiu cyfr oraz ograniczniki cyfry lub litery kontrolnej
 
@@ -3653,7 +3651,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="china-resident-identity-card-prc-number"></a>Numer karty tożsamości rezydenta Chin (ChRL)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 18 cyfr
 
@@ -3713,7 +3711,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="credit-card-number"></a>Numer karty kredytowej
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Od 14 do 19 cyfr, które mogą być sformatowane lub niesformatowane (dddddddd) i które muszą przejść test Luhna.
 
@@ -4020,7 +4018,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="croatia-drivers-license-number"></a>Numer prawa jazdy Chorwacji
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr bez spacji i ograniczników
 
@@ -4184,7 +4182,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 Jednostka ta znajduje się w typie informacji poufnych o krajowym numerze identyfikacyjnym UE. Jest ona dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr
 
@@ -4248,7 +4246,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="croatia-passport-number"></a>Numer paszportu Chorwacji
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr bez spacji i ograniczników
 
@@ -4320,7 +4318,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="croatia-personal-identification-oib-number"></a>Numer identyfikacyjny Chorwacji (OIB)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr
 
@@ -4404,7 +4402,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="cyprus-drivers-license-number"></a>Numer licencji kierowcy cypryjskiego
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 12 cyfr bez spacji i ograniczników
 
@@ -4575,7 +4573,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 cyfr bez spacji i ograniczników
 
@@ -4617,7 +4615,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="cyprus-passport-number"></a>Numer paszportu cypryjskiego
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 jedna litera, po której następuje od 6 do 8 cyfr bez spacji ani ograniczników
 
@@ -4718,7 +4716,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr i jedna litera w określonym wzorcu
 
@@ -4790,7 +4788,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="czech-drivers-license-number"></a>Czeski numer prawa jazdy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dwie litery, po których następuje sześć cyfr
 
@@ -4959,7 +4957,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="czech-passport-number"></a>Czeski numer paszportu
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr bez spacji i ograniczników
 
@@ -5038,7 +5036,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="czech-personal-identity-number"></a>Czeski numer tożsamości osobistej
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr z opcjonalnym ukośnikiem (stary format)
 
@@ -5149,7 +5147,7 @@ Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="denmark-drivers-license-number"></a>Duński numer prawa jazdy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr bez spacji i ograniczników
 
@@ -5311,7 +5309,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="denmark-passport-number"></a>Numer paszportu Danii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr bez spacji i ograniczników
 
@@ -5389,7 +5387,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="denmark-personal-identification-number"></a>Osobisty numer identyfikacyjny Danii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 cyfr zawierających łącznik
 
@@ -5524,7 +5522,7 @@ High (Wysoki)
 
 ## <a name="drug-enforcement-agency-dea-number"></a>Numer Agencji Egzekwowania Narkotyków (DEA)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dwie litery, po których następuje siedem cyfr
 
@@ -5584,7 +5582,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="estonia-drivers-license-number"></a>Numer prawa jazdy Estonii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dwie litery, po których następuje sześć cyfr
 
@@ -5751,7 +5749,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="estonia-passport-number"></a>Numer paszportu Estonii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 jedna litera, po której następuje siedem cyfr bez spacji ani ograniczników
 
@@ -5834,7 +5832,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr bez spacji i ograniczników
 
@@ -5924,7 +5922,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="eu-debit-card-number"></a>Numer karty debetowej UE
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 16 cyfr
 
@@ -6423,7 +6421,7 @@ Te jednostki znajdują się w typie informacji poufnych o numerze identyfikacji 
 
 ## <a name="finland-drivers-license-number"></a>Numer prawa jazdy Finlandii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 cyfr zawierających łącznik
 
@@ -6605,7 +6603,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 20-cyfrowy numer
 
@@ -6659,7 +6657,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="finland-national-id"></a>Identyfikator krajowy Finlandii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 sześć cyfr plus znak wskazujący wiek plus trzy cyfry oraz cyfrę kontrolną
 
@@ -6756,7 +6754,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 Ta jednostka jest dostępna w typie informacji poufnych numeru paszportu UE i jest dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 kombinacja dziewięciu liter i cyfr
 
 ### <a name="pattern"></a>Wzór
@@ -6848,7 +6846,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 Ta jednostka jest dostępna w typie poufnych informacji o numerze prawa jazdy UE i jest dostępna jako samodzielna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 12 cyfr
 
@@ -7016,7 +7014,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 21-cyfrowy numer
 
@@ -7060,7 +7058,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="france-national-id-card-cni"></a>Francuski identyfikator krajowy (CNI)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 12 cyfr
 
@@ -7109,7 +7107,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 Ta jednostka jest dostępna w typie informacji poufnych o numerze paszportu UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr i liter
 
@@ -7209,7 +7207,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="france-social-security-number-insee"></a>Numer ubezpieczenia społecznego We Francji (INSEE)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 15 cyfr
 
@@ -7289,7 +7287,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="france-tax-identification-number"></a>Numer identyfikacyjny podatku we Francji
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 13 cyfr
 
@@ -7373,7 +7371,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 13-znakowy wzorzec alfanumeryczny
 
@@ -7445,7 +7443,7 @@ High (Wysoki)
 
 Ta jednostka typu informacji poufnych jest uwzględniana w typie informacji poufnych numer licencji kierowcy UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 kombinacja 11 cyfr i liter
 
@@ -7634,7 +7632,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="germany-identity-card-number"></a>Numer niemieckiego numeru karty tożsamości
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 od 1 listopada 2010 r.: od dziewięciu do 11 liter i cyfr
 
@@ -7713,7 +7711,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="germany-passport-number"></a>Numer paszportu w Niemczech
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Od 9 do 11 znaków
 
@@ -7808,7 +7806,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="germany-tax-identification-number"></a>Numer identyfikacji podatkowej w Niemczech
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr bez spacji i ograniczników
 
@@ -7891,7 +7889,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11-znakowy wzorzec alfanumeryczny
 
@@ -7951,7 +7949,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 Ta jednostka jest uwzględniona w typie informacji poufnych numeru prawa jazdy UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr bez spacji i ograniczników
 
@@ -8115,7 +8113,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="greece-national-id-card"></a>Krajowa karta tożsamości Grecji
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Kombinacja 7-8 liter i cyfr plus kreska
 
@@ -8176,7 +8174,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="greece-passport-number"></a>Numer paszportu Grecji
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Dwie litery, po których następuje siedem cyfr bez spacji ani ograniczników
 
@@ -8264,7 +8262,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr bez spacji i ograniczników
 
@@ -8325,7 +8323,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Dziewięć cyfr bez spacji i ograniczników
 
@@ -8387,7 +8385,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="hong-kong-identity-card-hkid-number"></a>Numer karty tożsamości (HKID) w Hongkongu
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Kombinacja od 8 do 9 liter i cyfr oraz opcjonalnych nawiasów wokół znaku końcowego
 
@@ -8474,7 +8472,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="hungary-drivers-license-number"></a>Węgierski numer prawa jazdy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Dwie litery, po których następuje sześć cyfr
 
@@ -8639,7 +8637,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="hungary-passport-number"></a>Węgierski numer paszportu
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Dwie litery, po których następuje sześć lub siedem cyfr bez spacji ani ograniczników
 
@@ -8723,7 +8721,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr
 
@@ -8790,7 +8788,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="hungary-social-security-number-taj"></a>Węgierski numer ubezpieczenia społecznego (TAJ)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Dziewięć cyfr bez spacji i ograniczników
 
@@ -8858,7 +8856,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 cyfr bez spacji ani ograniczników
 
@@ -8940,7 +8938,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10-znakowy wzorzec alfanumeryczny
 
@@ -9014,7 +9012,7 @@ High (Wysoki)
 
 ## <a name="india-drivers-license-number"></a>Numer prawa jazdy w Indiach
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 15-znakowy wzorzec alfanumeryczny
 
@@ -9183,7 +9181,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="india-gst-number"></a>Numer GST w Indiach
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 15-znakowy wzorzec alfanumeryczny
 
@@ -9239,7 +9237,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="india-permanent-account-number-pan"></a>Numer konta stałego w Indiach (PAN)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 liter lub cyfr
 
@@ -9292,7 +9290,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="india-unique-identification-aadhaar-number"></a>Unikatowy numer identyfikacyjny Indii (Aadhaar)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 12 cyfr zawierających opcjonalne spacje lub kreski
 
@@ -9348,7 +9346,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="india-voter-id-card"></a>India Voter Id Card
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10-znakowy wzorzec alfanumeryczny
 
@@ -9402,7 +9400,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="indonesia-identity-card-ktp-number"></a>Numer karty tożsamości Indonezji (KTP)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 16 cyfr zawierających opcjonalne kropki
 
@@ -9449,7 +9447,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="international-banking-account-number-iban"></a>Numer międzynarodowego konta bankowego (IBAN)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Kod kraju (dwie litery) plus cyfry kontrolne (dwie cyfry) oraz numer bban (do 30 znaków)
 
@@ -9550,7 +9548,7 @@ Brak
 
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Międzynarodowa klasyfikacja chorób (ICD-10-CM)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Słownik
 
@@ -9594,7 +9592,7 @@ Dowolny termin ze słownika słów kluczowych Dictionary_icd_10_codes, który je
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Międzynarodowa klasyfikacja chorób (ICD-9-CM)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Słownik
 
@@ -9637,7 +9635,7 @@ Dowolny termin ze słownika słów kluczowych Dictionary_icd_9_codes, który jes
 
 ## <a name="ip-address"></a>Adres IP
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 #### <a name="ipv4"></a>IPv4:
 Złożony wzorzec, który uwzględnia sformatowane (okresy) i niesformatowane (bez kropki) wersje adresów IPv4
@@ -9704,7 +9702,7 @@ W przypadku protokołu IPv6 zasady DLP mają dużą pewność, że wykryto tego 
 
 ## <a name="ip-address-v4"></a>Adres IP w wersji 4
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Złożony wzorzec, który uwzględnia sformatowane (okresy) i niesformatowane (bez kropki) wersje adresów IPv4
 
@@ -9750,7 +9748,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="ip-address-v6"></a>Adres IP w wersji 6
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Złożony wzorzec, który uwzględnia sformatowane liczby IPv6 (które obejmują dwukropki)
 
@@ -9796,7 +9794,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="ireland-drivers-license-number"></a>Numer prawa jazdy w Irlandii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Sześć cyfr, po których następuje cztery litery
 
@@ -9961,7 +9959,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="ireland-passport-number"></a>Numer paszportu Irlandii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Dwie litery lub cyfry, po których następuje siedem cyfr bez spacji ani ograniczników
 
@@ -10045,7 +10043,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="ireland-personal-public-service-pps-number"></a>Numer służby publicznej (PPS) w Irlandii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Stary format (do 31 grudnia 2012 r.):
 
@@ -10155,7 +10153,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="israel-bank-account-number"></a>Numer konta bankowego Izraela
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 13 cyfr
 
@@ -10207,7 +10205,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="israel-national-identification-number"></a>Narodowy numer identyfikacyjny Izraela
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr
 
@@ -10264,7 +10262,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 Jednostka tego typu jest uwzględniana w typie informacji poufnych Numer prawa jazdy UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 kombinacja 10 liter i cyfr
 
@@ -10441,7 +10439,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 16-znakowa kombinacja liter i cyfr w określonym wzorcu
 
@@ -10524,7 +10522,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="italy-passport-number"></a>Numer paszportu Włochy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dwie litery lub cyfry, po których następuje siedem cyfr bez spacji ani ograniczników
 
@@ -10624,7 +10622,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 13-znakowy wzorzec alfanumeryczny z opcjonalnymi ogranicznikami
 
@@ -10677,7 +10675,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="japan-bank-account-number"></a>Numer konta bankowego w Japonii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 siedem lub osiem cyfr
 
@@ -10785,7 +10783,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="japan-drivers-license-number"></a>Numer japońskiego prawa jazdy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 12 cyfr
 
@@ -10864,7 +10862,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 13-cyfrowy numer
 
@@ -10928,7 +10926,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 12-cyfrowy numer
 
@@ -10987,7 +10985,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="japan-passport-number"></a>Numer paszportu Japonii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dwie litery, po których następuje siedem cyfr
 
@@ -11037,7 +11035,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="japan-residence-card-number"></a>Numer karty pobytu w Japonii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 12 liter i cyfr
 
@@ -11083,7 +11081,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="japan-resident-registration-number"></a>Numer rejestracyjny rezydenta Japonii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr
 
@@ -11129,7 +11127,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="japan-social-insurance-number-sin"></a>Japoński numer ubezpieczenia społecznego (SIN)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 7–12 cyfr
 
@@ -11205,7 +11203,7 @@ High (Wysoki)
 
 ## <a name="latvia-drivers-license-number"></a>Numer prawa jazdy łotwy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 trzy litery, po których następuje sześć cyfr
 
@@ -11371,7 +11369,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="latvia-passport-number"></a>Numer paszportu łotwy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dwie litery lub cyfry, po których następuje siedem cyfr bez spacji ani ograniczników
 
@@ -11454,7 +11452,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="latvia-personal-code"></a>Kod osobisty Łotwy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr i opcjonalny łącznik
 
@@ -11611,7 +11609,7 @@ High (Wysoki)
 
 ## <a name="lithuania-drivers-license-number"></a>Litewski numer prawa jazdy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr bez spacji i ograniczników
 
@@ -11782,7 +11780,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr bez spacji i ograniczników
 
@@ -11874,7 +11872,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="lithuania-passport-number"></a>Numer paszportu litwy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr lub liter bez spacji lub ograniczników
 
@@ -11951,7 +11949,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="luxemburg-drivers-license-number"></a>Numer prawa jazdy w Luksemburgu
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 sześć cyfr bez spacji i ograniczników
 
@@ -12121,7 +12119,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 13 cyfr bez spacji i ograniczników
 
@@ -12191,7 +12189,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Luksemburski krajowy numer identyfikacyjny (osoby niebędące osobami fizycznymi)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr
 
@@ -12284,7 +12282,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="luxemburg-passport-number"></a>Numer paszportu w Luksemburgu
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr lub liter bez spacji lub ograniczników
 
@@ -12380,7 +12378,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="malaysia-identification-card-number"></a>Numer karty identyfikacyjnej Malezji
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 12 cyfr zawierających opcjonalne łączniki
 
@@ -12448,7 +12446,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="malta-drivers-license-number"></a>Numer prawa jazdy Malty
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Kombinacja dwóch znaków i sześciu cyfr w określonym wzorcu
 
@@ -12624,7 +12622,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 siedem cyfr, po których następuje jedna litera
 
@@ -12684,7 +12682,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="malta-passport-number"></a>Numer paszportu Malta
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 siedem cyfr bez spacji i ograniczników
 
@@ -12766,7 +12764,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="malta-tax-identification-number"></a>Numer identyfikacji podatkowej Malty
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 W przypadku obywateli Malty:
 
@@ -12867,7 +12865,7 @@ High (Wysoki)
 
 ## <a name="medicare-beneficiary-identifier-mbi-card"></a>Karta identyfikatora beneficjenta medicare (MBI)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11-znakowy wzorzec alfanumeryczny
 
@@ -12927,7 +12925,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="mexico-unique-population-registry-code-curp"></a>Meksyk Unikatowy kod rejestru populacji (CURP)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 18-znakowy wzorzec alfanumeryczny
 
@@ -12994,7 +12992,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="netherlands-citizens-service-bsn-number"></a>Numer usługi obywatela Holandii (BSN)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem lub dziewięć cyfr zawierających opcjonalne spacje
 
@@ -13058,7 +13056,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="netherlands-drivers-license-number"></a>Holenderski numer prawa jazdy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 cyfr bez spacji i ograniczników
 
@@ -13224,7 +13222,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="netherlands-passport-number"></a>Numer paszportu holandii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć liter lub cyfr bez spacji ani ograniczników
 
@@ -13310,7 +13308,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr bez spacji i ograniczników
 
@@ -13396,7 +13394,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 14-znakowy wzorzec alfanumeryczny
 
@@ -13461,7 +13459,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Wzorzec od 14 do 16 cyfr z opcjonalnym ogranicznikiem
 
@@ -13526,7 +13524,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 wzorzec alfanumeryczny z ośmioma znakami
 
@@ -13644,7 +13642,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem lub dziewięć cyfr z opcjonalnymi ogranicznikami
 
@@ -13699,7 +13697,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="new-zealand-ministry-of-health-number"></a>Numer ministerstwa zdrowia Nowej Zelandii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 trzy litery i cztery cyfry
 
@@ -13766,7 +13764,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr
 
@@ -13821,7 +13819,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="norway-identification-number"></a>Numer identyfikacyjny Norwegii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr
 
@@ -13884,7 +13882,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="philippines-unified-multi-purpose-identification-number"></a>Filipiny ujednolicony wielozadaniowy numer identyfikacyjny
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 12 cyfr rozdzielonych łącznikami
 
@@ -13930,7 +13928,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="poland-drivers-license-number"></a>Numer polskiego prawa jazdy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 14 cyfr zawierających dwa ukośniki do przodu
 
@@ -14098,7 +14096,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="poland-identity-card"></a>Polski dowód tożsamości
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 trzy litery i sześć cyfr
 
@@ -14142,7 +14140,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="poland-national-id-pesel"></a>Polski identyfikator krajowy (PESEL)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr
 
@@ -14200,7 +14198,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 Ta jednostka typu informacji poufnych jest uwzględniana w typie informacji poufnych numeru paszportu UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dwie litery i siedem cyfr
 
@@ -14305,7 +14303,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 9-cyfrowy lub 14-cyfrowy numer
 
@@ -14374,7 +14372,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr bez spacji ani ograniczników
 
@@ -14437,7 +14435,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="portugal-citizen-card-number"></a>Numer karty obywatela Portugalii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr
 
@@ -14490,7 +14488,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="portugal-drivers-license-number"></a>Numer prawa jazdy Portugalia
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dwa wzorce — dwie litery, po których następuje od 5 do 8 cyfr ze znakami specjalnymi
 
@@ -14674,7 +14672,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="portugal-passport-number"></a>Numer paszportu Portugalii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 jedna litera, po której następuje sześć cyfr bez spacji ani ograniczników
 
@@ -14769,7 +14767,7 @@ Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Po
 
 ## <a name="portugal-tax-identification-number"></a>Numer identyfikacji podatkowej Portugalii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr z opcjonalnymi spacjami
 
@@ -14838,7 +14836,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="romania-drivers-license-number"></a>Numer prawa jazdy Rumunii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 jeden znak, po którym następuje osiem cyfr
 
@@ -15007,7 +15005,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="romania-passport-number"></a>Numer paszportu Rumunii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem lub dziewięć cyfr bez spacji i ograniczników
 
@@ -15090,7 +15088,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 13 cyfr bez spacji i ograniczników
 
@@ -15200,7 +15198,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10-cyfrowy numer
 
@@ -15264,7 +15262,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 liczba dziewięciocyfrowa
 
@@ -15318,7 +15316,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="saudi-arabia-national-id"></a>Identyfikator narodowy Arabii Saudyjskiej
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 cyfr
 
@@ -15360,7 +15358,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>Numer krajowego dowodu rejestracyjnego (NRIC) w Singapurze
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć liter i cyfr
 
@@ -15417,7 +15415,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="slovakia-drivers-license-number"></a>Numer prawa jazdy słowacji
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 jeden znak, po którym następuje siedem cyfr
 
@@ -15584,7 +15582,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="slovakia-passport-number"></a>Numer paszportu Słowacji
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 wzorzec alfanumeryczny o ośmiu lub dziewięciu znakach
 
@@ -15671,7 +15669,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć lub 10 cyfr zawierających opcjonalny ukośnik odwrotny
 
@@ -15770,7 +15768,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze
 
 ## <a name="slovenia-drivers-license-number"></a>Słoweński numer prawa jazdy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr bez spacji i ograniczników
 
@@ -15935,7 +15933,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="slovenia-passport-number"></a>Numer paszportu Słowenii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dwie litery, po których następuje siedem cyfr bez spacji ani ograniczników
 
@@ -16035,7 +16033,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr bez spacji i ograniczników
 
@@ -16109,7 +16107,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 13 cyfr bez spacji i ograniczników
 
@@ -16182,7 +16180,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="south-africa-identification-number"></a>Republika Południowej Afryki — numer identyfikacyjny
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 13 cyfr, które mogą zawierać spacje
 
@@ -16228,7 +16226,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="south-korea-resident-registration-number"></a>Numer rejestracyjny rezydenta Korei Południowej
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 13 cyfr zawierających łącznik
 
@@ -16293,7 +16291,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr, po których następuje jeden znak
 
@@ -16368,7 +16366,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="spain-drivers-license-number"></a>Numer hiszpańskiego prawa jazdy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr, po których następuje jeden znak
 
@@ -16560,7 +16558,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="spain-passport-number"></a>Numer paszportu Hiszpanii
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 ośmio- lub dziewięcioznakowe połączenie liter i cyfr bez spacji i ograniczników
 
@@ -16658,7 +16656,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="spain-social-security-number-ssn"></a>Numer ubezpieczenia społecznego w Hiszpanii (SSN)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11–12 cyfr
 
@@ -16723,7 +16721,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 siedem lub osiem cyfr i jedna lub dwie litery w określonym wzorcu
 
@@ -16828,7 +16826,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="sql-server-connection-string"></a>parametry połączenia SQL Server
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Ciąg "User Id", "User ID", "uid" lub "UserId", a następnie znaki i ciągi opisane we wzorcu poniżej.
 
@@ -16913,7 +16911,7 @@ High (Wysoki)
 
 ## <a name="sweden-drivers-license-number"></a>Szwedzki numer prawa jazdy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 cyfr zawierających łącznik
 
@@ -17088,7 +17086,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="sweden-national-id"></a>Identyfikator krajowy Szwecji
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 lub 12 cyfr i opcjonalny ogranicznik
 
@@ -17154,7 +17152,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="sweden-passport-number"></a>Numer paszportu Szwecji
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 osiem cyfr
 
@@ -17263,7 +17261,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 cyfr i symbol w określonym wzorcu
 
@@ -17340,7 +17338,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="swift-code"></a>Kod SWIFT
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 cztery litery, po których następuje od 5 do 31 liter lub cyfr
 
@@ -17431,7 +17429,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 13-cyfrowy numer
 
@@ -17500,7 +17498,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="taiwan-national-identification-number"></a>Krajowy numer identyfikacyjny Tajwanu
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 jedna litera (w języku angielskim), po której następuje dziewięć cyfr
 
@@ -17563,7 +17561,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="taiwan-passport-number"></a>Numer paszportu Tajwanu
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 - numer paszportu biometrycznego: dziewięć cyfr
 - numer paszportu nie biometrycznego: dziewięć cyfr
@@ -17614,7 +17612,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>Numer certyfikatu rezydenta Tajwanu (ARC/TARC)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 liter i cyfr
 
@@ -17664,7 +17662,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="thai-population-identification-code"></a>Kod identyfikacji populacji tajskiej
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 13 cyfr
 
@@ -17716,7 +17714,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="turkey-national-identification-number"></a>Krajowy numer identyfikacyjny Turcji
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 11 cyfr
 
@@ -17779,7 +17777,7 @@ High (Wysoki)
 
 ## <a name="uk-drivers-license-number"></a>WIELKIEJ BRYTANII. numer prawa jazdy
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Kombinacja 18 liter i cyfr w określonym formacie
 
@@ -17948,7 +17946,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="uk-electoral-roll-number"></a>WIELKIEJ BRYTANII. numer listy wyborczej
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dwie litery, po których następuje od 1 do 4 cyfr
 
@@ -17990,7 +17988,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="uk-national-health-service-number"></a>WIELKIEJ BRYTANII. numer krajowej służby zdrowia
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10–17 cyfr rozdzielonych spacjami
 
@@ -18061,7 +18059,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 Ta jednostka typu informacji poufnych jest uwzględniana w typie informacji poufnych krajowego numeru identyfikacyjnego UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 siedem znaków lub dziewięć znaków rozdzielonych spacjami lub kreskami
 
@@ -18155,7 +18153,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 10 cyfr bez spacji i ograniczników
 
@@ -18208,7 +18206,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="us-bank-account-number"></a>Numer konta bankowego w Stanach Zjednoczonych
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 6–17 cyfr
 
@@ -18271,7 +18269,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="us-drivers-license-number"></a>Numer prawa jazdy w Stanach Zjednoczonych
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 Zależy od stanu
 
@@ -18426,7 +18424,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>Numer identyfikacyjny indywidualnego podatnika w USA (ITIN)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr rozpoczynających się od cyfry "9" i zawierających znak "7" lub "8" jako czwartą cyfrę, opcjonalnie sformatowaną spacjami lub kreskami
 
@@ -18516,7 +18514,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze
 
 ## <a name="us-social-security-number-ssn"></a>Numer ubezpieczenia społecznego (SSN)
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr, które mogą mieć sformatowany lub niesformatowany wzorzec
 
@@ -18594,7 +18592,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="usuk-passport-number"></a>Stany Zjednoczone/Zjednoczone Zjednoczone numer paszportu
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr
 
@@ -18671,7 +18669,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 dziewięć cyfr
 
@@ -18721,7 +18719,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formacie
+### <a name="format"></a>Formatowanie
 
 ośmioznakowy wzorzec alfanumeryczny
 

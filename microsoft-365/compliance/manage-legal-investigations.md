@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie dochodzeniami prawnymi w Microsoft 365
+title: Zarządzanie dochodzeniami prawnymi w usłudze Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,17 +16,15 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: Użyj przypadków zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview, aby zarządzać badaniem prawnym organizacji.
-ms.openlocfilehash: f75d59e58ae51e5cb525044edb775c87b52686d1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Użyj przypadków zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview, aby zarządzać badaniem prawnym organizacji.
+ms.openlocfilehash: 9db3a1e9ad831c74c9468121eaa0800875c74e5a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010071"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623810"
 ---
-# <a name="manage-legal-investigations-in-microsoft-365"></a>Zarządzanie dochodzeniami prawnymi w Microsoft 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="manage-legal-investigations-in-microsoft-365"></a>Zarządzanie dochodzeniami prawnymi w usłudze Microsoft 365
 
 Organizacje mają wiele powodów, aby odpowiedzieć na sprawę prawną z udziałem niektórych menedżerów lub innych pracowników w organizacji. Może to obejmować szybkie znajdowanie i przechowywanie dalszych informacji specyficznych dla badania w wiadomościach e-mail, dokumentach, konwersacjach wiadomości błyskawicznych i innych lokalizacjach zawartości używanych przez osoby w codziennych zadaniach służbowych. Te i wiele innych podobnych działań można wykonywać przy użyciu narzędzi do zbierania elektronicznych elektronicznych materiałów dowodowych w centrum zabezpieczeń i zgodności.
   
@@ -50,19 +48,19 @@ Podobnie jak w poprzedniej sekcji zawierającej skrypty dla scenariuszy wyszukiw
   
 - [Utwórz raport zbierania elektronicznych](create-a-report-on-holds-in-ediscovery-cases.md) materiałów dowodowych zawierający informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych w organizacji.
 
-- [Dodaj skrzynki pocztowe i lokalizacje OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) dla listy użytkowników do blokady zbierania elektronicznych materiałów dowodowych.
+- [Dodaj skrzynki pocztowe i lokalizacje usługi OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) dla listy użytkowników do blokady zbierania elektronicznych materiałów dowodowych.
   
-## <a name="manage-legal-investigations-with-the-ediscovery-premium-solution-in-microsoft-365"></a>Zarządzanie dochodzeniami prawnymi za pomocą rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365
+## <a name="manage-legal-investigations-with-the-ediscovery-premium-solution-in-microsoft-365"></a>Zarządzanie badaniami prawnymi za pomocą rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) na platformie Microsoft 365
 
-Rozwiązanie Microsoft Purview eDiscovery (Premium) w Microsoft 365 bazuje na istniejących funkcjach zbierania elektronicznych materiałów dowodowych i analiz w Office 365. To nowe rozwiązanie o nazwie *eDiscovery (Premium) zapewnia kompleksowy* przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania organizacji. Umożliwia również zespołom prawnym zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej w celu komunikowania się z opiekunami zaangażowanymi w sprawę.
+Rozwiązanie Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) na platformie Microsoft 365 bazuje na istniejących funkcjach zbierania elektronicznych materiałów dowodowych i analiz w Office 365. To nowe rozwiązanie o nazwie *eDiscovery (Premium) zapewnia kompleksowy* przepływ pracy do przechowywania, zbierania, przeglądania, analizowania i eksportowania zawartości, która reaguje na wewnętrzne i zewnętrzne badania organizacji. Umożliwia również zespołom prawnym zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej w celu komunikowania się z opiekunami zaangażowanymi w sprawę.
 
-Funkcja zbierania elektronicznych materiałów dowodowych (Premium) wymaga subskrypcji E5 dla organizacji Microsoft 365 lub Office 365. Aby uzyskać więcej informacji na temat licencjonowania, zobacz [Konfigurowanie zbierania elektronicznych materiałów dowodowych (Premium)](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+Funkcja zbierania elektronicznych materiałów dowodowych (Premium) wymaga subskrypcji E5 dla organizacji platformy Microsoft 365 lub Office 365. Aby uzyskać więcej informacji na temat licencjonowania, zobacz [Konfigurowanie zbierania elektronicznych materiałów dowodowych (Premium).](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)
 
-Oto krótkie omówienie wbudowanego przepływu pracy w usłudze eDiscovery (Premium). Aby uzyskać więcej informacji, zobacz [Zarządzanie przepływem pracy zbierania elektronicznych materiałów dowodowych (Premium).](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)
+Oto krótkie omówienie wbudowanego przepływu pracy w usłudze eDiscovery (Premium). Aby uzyskać więcej informacji, zobacz [Zarządzanie przepływem pracy zbierania elektronicznych materiałów dowodowych (Premium](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)).
 
 - [Utwórz przypadek,](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) aby rozpocząć pracę.
 
-- [Zarządzaj opiekunami](managing-custodians.md), dodając ich do sprawy i wstrzymując zawartość w skrzynce pocztowej, OneDrive koncie i Microsoft Teams są członkami.
+- [Zarządzaj opiekunami](managing-custodians.md) , dodając ich do sprawy i wstrzymując zawartość w skrzynce pocztowej, na koncie usługi OneDrive i w usłudze Microsoft Teams, do której należą.
 
 - [Zarządzaj komunikacją](managing-custodian-communications.md) z opiekunami, automatyzując proces powiadamiania o blokadzie prawnej.
 

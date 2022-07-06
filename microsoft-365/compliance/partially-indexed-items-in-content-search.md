@@ -20,19 +20,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: Dowiedz się więcej o niezainicjowanych elementach w Exchange i SharePoint, które można dołączyć do wyszukiwania zbierania elektronicznych materiałów dowodowych uruchamianego w portal zgodności Microsoft Purview.
-ms.openlocfilehash: 0f3d7d4b2e2a7d4c3c23d89ad6c2b8ba20fd6afb
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Dowiedz się więcej o niezainicjowanych elementach w programach Exchange i SharePoint, które można dołączyć do wyszukiwania zbierania elektronicznych materiałów dowodowych uruchamianego w portal zgodności Microsoft Purview.
+ms.openlocfilehash: e4bca9995dd173ef972522f273765db03dff3524
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468837"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622486"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Częściowo zaindeksowane elementy w środowisku zbierania elektronicznych materiałów dowodowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Wyszukiwanie zbierania elektronicznych materiałów dowodowych Microsoft Purview uruchamiane z portal zgodności Microsoft Purview automatycznie uwzględnia częściowo indeksowane elementy w szacowanych wynikach wyszukiwania podczas uruchamiania wyszukiwania. Częściowo indeksowane elementy są Exchange elementów skrzynki pocztowej i dokumentów w witrynach SharePoint i OneDrive dla Firm, które z jakiegoś powodu nie zostały całkowicie zindeksowane do wyszukiwania. W Exchange częściowo indeksowany element zwykle zawiera plik (typu pliku, który nie może być indeksowany), który jest dołączony do wiadomości e-mail. Oto kilka innych powodów, dla których nie można indeksować elementów do wyszukiwania i są zwracane jako częściowo indeksowane elementy podczas uruchamiania wyszukiwania zbierania elektronicznych materiałów dowodowych:
+Wyszukiwanie Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview uruchamiane z portal zgodności Microsoft Purview automatycznie uwzględnia częściowo indeksowane elementy w szacowanych wynikach wyszukiwania podczas uruchamiania wyszukiwania. Częściowo indeksowane elementy to elementy skrzynki pocztowej programu Exchange i dokumenty w programie SharePoint i witrynach OneDrive dla Firm, które z jakiegoś powodu nie zostały całkowicie zindeksowane do wyszukiwania. W programie Exchange częściowo indeksowany element zwykle zawiera plik (typu pliku, który nie może być indeksowany), który jest dołączony do wiadomości e-mail. Oto kilka innych powodów, dla których nie można indeksować elementów do wyszukiwania i są zwracane jako częściowo indeksowane elementy podczas uruchamiania wyszukiwania zbierania elektronicznych materiałów dowodowych:
   
 - Typ pliku jest nierozpoznany lub nieobsługiwany do indeksowania.
 
@@ -51,23 +49,23 @@ Wyszukiwanie zbierania elektronicznych materiałów dowodowych Microsoft Purview
 > [!NOTE]
 > Większość organizacji ma mniej niż 1% zawartości według woluminu i mniej niż 12% według rozmiaru, który jest częściowo indeksowany. Przyczyną różnicy między woluminem a rozmiarem jest to, że większe pliki mają większe prawdopodobieństwo, że zawierają zawartość, która nie może być całkowicie zindeksowana.
   
-W przypadku badań prawnych organizacja może być zobowiązana do przeglądania częściowo indeksowanych elementów. Można również określić, czy podczas eksportowania wyników wyszukiwania na komputer lokalny mają być uwzględniane częściowo indeksowane elementy, czy też podczas przygotowywania wyników do analizy przy użyciu eDiscovery (Premium). Aby uzyskać więcej informacji, zobacz [Badanie częściowo zaindeksowanych elementów w środowisku zbierania elektronicznych materiałów dowodowych](investigating-partially-indexed-items-in-ediscovery.md).
+W przypadku badań prawnych organizacja może być zobowiązana do przeglądania częściowo indeksowanych elementów. Można również określić, czy podczas eksportowania wyników wyszukiwania na komputer lokalny mają być uwzględniane częściowo indeksowane elementy, czy też podczas przygotowywania wyników do analizy za pomocą zbierania elektronicznych materiałów dowodowych (Premium). Aby uzyskać więcej informacji, zobacz [Badanie częściowo zaindeksowanych elementów w środowisku zbierania elektronicznych materiałów dowodowych](investigating-partially-indexed-items-in-ediscovery.md).
   
 ## <a name="file-types-not-indexed-for-search"></a>Typy plików nie są indeksowane do wyszukiwania
 
-Niektóre typy plików, takie jak pliki Bitmap lub MP3, nie zawierają zawartości, która może być indeksowana. W związku z tym serwery indeksowania wyszukiwania w Exchange i SharePoint nie wykonują indeksowania pełnotekstowego dla tych typów plików. Te typy plików są uważane za nieobsługiwany typ plików. Istnieją również typy plików, dla których indeksowanie pełnotekstowe zostało wyłączone domyślnie lub przez administratora. Nieobsługiwanych i wyłączonych typów plików są oznaczone jako elementy bez certyfikatu w wyszukiwaniach zawartości. Zgodnie z wcześniejszymi instrukcjami częściowo indeksowane elementy mogą być uwzględniane w zestawie wyników wyszukiwania podczas uruchamiania wyszukiwania, eksportowania wyników wyszukiwania na komputer lokalny lub przygotowywania wyników wyszukiwania do zbierania elektronicznych materiałów dowodowych (Premium).
+Niektóre typy plików, takie jak pliki Bitmap lub MP3, nie zawierają zawartości, która może być indeksowana. W związku z tym serwery indeksowania wyszukiwania w programach Exchange i SharePoint nie wykonują indeksowania pełnotekstowego dla tego typu plików. Te typy plików są uważane za nieobsługiwany typ plików. Istnieją również typy plików, dla których indeksowanie pełnotekstowe zostało wyłączone domyślnie lub przez administratora. Nieobsługiwanych i wyłączonych typów plików są oznaczone jako elementy bez certyfikatu w wyszukiwaniach zawartości. Jak wspomniano wcześniej, częściowo indeksowane elementy mogą być uwzględniane w zestawie wyników wyszukiwania podczas uruchamiania wyszukiwania, eksportowania wyników wyszukiwania na komputer lokalny lub przygotowywania wyników wyszukiwania do zbierania elektronicznych materiałów dowodowych (Premium).
   
 Aby uzyskać listę obsługiwanych i wyłączonych formatów plików, zobacz następujące tematy:
   
--  - **formaty Exchange** [File indeksowane przez Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- **Exchange** -  [Formaty plików indeksowane przez usługę Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
--  -  Exchange [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
+- **Exchange** -  [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
 
--  -  SharePoint [Default przeszukane rozszerzenia nazw plików i przeanalizowane typy plików w SharePoint](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- **Programu sharepoint** -  [Domyślne rozszerzenia nazw przeszukanych plików i analizowane typy plików w programie SharePoint](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
   
 ## <a name="messages-and-documents-with-partially-indexed-file-types-can-be-returned-in-search-results"></a>Komunikaty i dokumenty z częściowo indeksowanymi typami plików mogą być zwracane w wynikach wyszukiwania
 
-Nie każda wiadomość e-mail z częściowo zaindeksowanym załącznikiem pliku lub każdym częściowo zaindeksowanym dokumentem SharePoint jest zwracana automatycznie jako częściowo indeksowany element. Dzieje się tak dlatego, że inne właściwości wiadomości lub dokumentu, takie jak właściwość **Podmiot** w wiadomościach e-mail i właściwości **Tytuł** lub **Autor** dokumentów, są indeksowane i dostępne do przeszukiwania. Na przykład wyszukiwanie słowa kluczowego "financial" zwróci elementy z częściowo indeksowanym załącznikiem pliku, jeśli słowo kluczowe pojawi się w temacie wiadomości e-mail lub w nazwie pliku lub tytule dokumentu. Jeśli jednak słowo kluczowe pojawi się tylko w treści pliku, komunikat lub dokument zostaną zwrócone jako częściowo zaindeksowany element.
+Nie każda wiadomość e-mail z częściowo indeksowanym załącznikiem pliku lub każdym częściowo indeksowanym dokumentem programu SharePoint jest zwracana automatycznie jako częściowo indeksowany element. Dzieje się tak dlatego, że inne właściwości wiadomości lub dokumentu, takie jak właściwość **Podmiot** w wiadomościach e-mail i właściwości **Tytuł** lub **Autor** dokumentów, są indeksowane i dostępne do przeszukiwania. Na przykład wyszukiwanie słowa kluczowego "financial" zwróci elementy z częściowo indeksowanym załącznikiem pliku, jeśli słowo kluczowe pojawi się w temacie wiadomości e-mail lub w nazwie pliku lub tytule dokumentu. Jeśli jednak słowo kluczowe pojawi się tylko w treści pliku, komunikat lub dokument zostaną zwrócone jako częściowo zaindeksowany element.
   
 Podobnie komunikaty z częściowo indeksowanymi załącznikami plików i dokumentami częściowo indeksowanego typu pliku są uwzględniane w wynikach wyszukiwania, gdy inne właściwości wiadomości lub dokumentu, które są indeksowane i możliwe do przeszukiwania, są zgodne z kryteriami wyszukiwania. Właściwości wiadomości indeksowane do wyszukiwania obejmują daty wysłania i odebrania, nadawcę i adresata, nazwę pliku załącznika oraz tekst w treści wiadomości. Właściwości dokumentu indeksowane do wyszukiwania obejmują daty utworzone i zmodyfikowane. Dlatego nawet jeśli załącznik wiadomości może być częściowo indeksowanym elementem, komunikat zostanie uwzględniony w regularnych wynikach wyszukiwania, jeśli wartość innych właściwości wiadomości lub dokumentu jest zgodna z kryteriami wyszukiwania.
   
@@ -82,7 +80,7 @@ Twoja organizacja może być wymagana do identyfikowania i przeprowadzania dodat
   
 Należy pamiętać o częściowo zaindeksowanych elementach:
   
-- Po uruchomieniu wyszukiwania zbierania elektronicznych materiałów dowodowych całkowita liczba i rozmiar częściowo zindeksowanych elementów Exchange (zwracanych przez zapytanie wyszukiwania) są wyświetlane w statystykach wyszukiwania na stronie wysuwanej i oznaczone jako **elementy niewyeksplorowane**. Statystyki dotyczące częściowo indeksowanych elementów wyświetlanych na stronie wysuwanej nie obejmują częściowo indeksowanych elementów w witrynach SharePoint ani kontach OneDrive.
+- Po uruchomieniu wyszukiwania zbierania elektronicznych materiałów dowodowych całkowita liczba i rozmiar częściowo zindeksowanych elementów programu Exchange (zwracanych przez zapytanie wyszukiwania) są wyświetlane w statystykach wyszukiwania na stronie wysuwanej i oznaczone jako **elementy niezaindeksowane**. Statystyki dotyczące częściowo indeksowanych elementów wyświetlanych na stronie wysuwanej nie obejmują częściowo indeksowanych elementów w witrynach programu SharePoint ani na kontach usługi OneDrive.
 
 - Jeśli wyszukiwanie, z których eksportujesz wyniki, było wyszukiwaniem określonych lokalizacji zawartości lub wszystkich lokalizacji zawartości w organizacji, wyeksportowane zostaną tylko niezadeksowane elementy z lokalizacji zawartości zawierające elementy zgodne z kryteriami wyszukiwania. Innymi słowy, jeśli w skrzynce pocztowej lub witrynie nie zostaną znalezione żadne wyniki wyszukiwania, żadne niezainicjowane elementy w tej skrzynce pocztowej lub witrynie nie zostaną wyeksportowane. Przyczyną tego jest to, że eksportowanie częściowo indeksowanych elementów z wielu lokalizacji w organizacji może zwiększyć prawdopodobieństwo błędów eksportu i zwiększyć czas potrzebny na wyeksportowanie i pobranie wyników wyszukiwania.
 
@@ -92,7 +90,7 @@ Należy pamiętać o częściowo zaindeksowanych elementach:
 
 - Częściowo zaindeksowane elementy nie są dostępne do wyświetlenia podglądu. Musisz wyeksportować wyniki wyszukiwania, aby wyświetlić częściowo zaindeksowane elementy zwrócone przez wyszukiwanie.
 
-   Ponadto podczas eksportowania wyników wyszukiwania i dołączania częściowo indeksowanych elementów w eksporcie częściowo indeksowane elementy z SharePoint elementów są eksportowane do folderu o nazwie **Uncrawlable**. Podczas eksportowania częściowo indeksowanych elementów Exchange są one eksportowane inaczej w zależności od tego, czy częściowo indeksowane elementy pasują do zapytania wyszukiwania i konfiguracji ustawień eksportu. 
+   Ponadto podczas eksportowania wyników wyszukiwania i dołączania częściowo indeksowanych elementów w eksporcie częściowo indeksowane elementy z elementów programu SharePoint są eksportowane do folderu o nazwie **Uncrawlable**. Podczas eksportowania częściowo indeksowanych elementów programu Exchange są one eksportowane inaczej w zależności od tego, czy częściowo indeksowane elementy pasują do zapytania wyszukiwania i konfiguracji ustawień eksportu. 
 
 - W poniższej tabeli przedstawiono zachowanie eksportu indeksowanych i częściowo indeksowanych elementów oraz to, czy każdy z nich jest uwzględniony dla różnych ustawień konfiguracji eksportu.
 
@@ -105,7 +103,7 @@ Należy pamiętać o częściowo zaindeksowanych elementach:
   
 ## <a name="workaround-for-using-a-date-range-to-exclude-partially-indexed-items"></a>Obejście dotyczące używania zakresu dat do wykluczania częściowo indeksowanych elementów
 
-W obszarze Wyszukiwanie zawartości i Microsoft Purview eDiscovery (Standard) nie można użyć zakresu dat w celu wykluczenia częściowo indeksowanych elementów z zwracanych przez zapytanie wyszukiwania. Innymi słowy, częściowo indeksowane elementy, które wykraczają poza zakres dat, są nadal uwzględniane jako częściowo indeksowane elementy w statystykach wyszukiwania i podczas eksportowania częściowo indeksowanych elementów. W obszarze eDiscovery (Premium) można wykluczyć częściowo indeksowane elementy przy użyciu zakresu dat w zapytaniu wyszukiwania.
+W obszarze Wyszukiwanie zawartości i Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Standardowa) nie można użyć zakresu dat, aby wykluczyć częściowo zaindeksowane elementy z zwracania przez zapytanie wyszukiwania. Innymi słowy, częściowo indeksowane elementy, które wykraczają poza zakres dat, są nadal uwzględniane jako częściowo indeksowane elementy w statystykach wyszukiwania i podczas eksportowania częściowo indeksowanych elementów. W obszarze eDiscovery (Premium) można wykluczyć częściowo indeksowane elementy przy użyciu zakresu dat w zapytaniu wyszukiwania.
 
 Jako obejście tego ograniczenia zalecamy wykonanie poniższej procedury.
 
@@ -136,14 +134,14 @@ Użyj drugiego wyszukiwania utworzonego w kroku 3 i odpowiedniego eksportu, aby 
 
 ## <a name="indexing-limits-for-messages"></a>Limity indeksowania komunikatów
 
-W poniższej tabeli opisano limity indeksowania, które mogą spowodować zwrócenie wiadomości e-mail jako częściowo indeksowanego elementu w wyszukiwaniu zbierania elektronicznych materiałów dowodowych w Microsoft 365.
+W poniższej tabeli opisano limity indeksowania, które mogą spowodować zwrócenie wiadomości e-mail jako częściowo indeksowanego elementu w wyszukiwaniu zbierania elektronicznych materiałów dowodowych na platformie Microsoft 365.
   
-Aby uzyskać listę limitów indeksowania dla dokumentów SharePoint, zobacz [Limity wyszukiwania dla SharePoint Online](/sharepoint/search-limits).
+Aby uzyskać listę limitów indeksowania dokumentów programu SharePoint, zobacz [Limity wyszukiwania dla usługi SharePoint Online](/sharepoint/search-limits).
   
 |**Limit indeksowania**|**Wartość maksymalna**|**Opis**|
 |:-----|:-----|:-----|
-|Maksymalny rozmiar załącznika (z wyłączeniem plików Excel)  <br/> |150 MB  <br/> |Maksymalny rozmiar załącznika wiadomości e-mail, który będzie analizowany pod kątem indeksowania. Wszelkie załączniki, które są większe niż ten limit, nie zostaną przeanalizowane pod kątem indeksowania, a komunikat z załącznikiem zostanie oznaczony jako częściowo zindeksowany.  <br/><br/> **Uwaga:** Analizowanie to proces, w którym usługa indeksowania wyodrębnia tekst z załącznika, usuwa niepotrzebne znaki, takie jak interpunkcja i spacje, a następnie dzieli tekst na słowa (w procesie nazywanym tokenizacją), które są następnie przechowywane w indeksie.           |
-|Maksymalny rozmiar plików Excel  <br/> |4 MB  <br/> |Maksymalny rozmiar pliku Excel znajdujący się w witrynie lub dołączony do wiadomości e-mail, która zostanie przeanalizowana pod kątem indeksowania. Żaden plik Excel, który jest większy niż ten limit, nie zostanie przeanalizowany, a plik lub wiadomość e-mail z załącznikiem pliku zostaną oznaczone jako niewyeksponowane.  <br/> |
+|Maksymalny rozmiar załącznika (z wyłączeniem plików programu Excel)  <br/> |150 MB  <br/> |Maksymalny rozmiar załącznika wiadomości e-mail, który będzie analizowany pod kątem indeksowania. Wszelkie załączniki, które są większe niż ten limit, nie zostaną przeanalizowane pod kątem indeksowania, a komunikat z załącznikiem zostanie oznaczony jako częściowo zindeksowany.  <br/><br/> **Uwaga:** Analizowanie to proces, w którym usługa indeksowania wyodrębnia tekst z załącznika, usuwa niepotrzebne znaki, takie jak interpunkcja i spacje, a następnie dzieli tekst na słowa (w procesie nazywanym tokenizacją), które są następnie przechowywane w indeksie.           |
+|Maksymalny rozmiar plików programu Excel  <br/> |4 MB  <br/> |Maksymalny rozmiar pliku programu Excel znajdującego się w witrynie lub dołączonego do wiadomości e-mail, która zostanie przeanalizowana pod kątem indeksowania. Żaden plik programu Excel, który jest większy niż ten limit, nie zostanie przeanalizowany, a plik lub wiadomość e-mail z załącznikiem pliku zostaną oznaczone jako niewyeksponowane.  <br/> |
 |Maksymalna liczba załączników  <br/> |250  <br/> |Maksymalna liczba plików dołączonych do wiadomości e-mail, które zostaną przeanalizowane pod kątem indeksowania. Jeśli komunikat zawiera więcej niż 250 załączników, pierwsze 250 załączników jest analizowanych i indeksowanych, a komunikat jest oznaczony jako częściowo zindeksowany, ponieważ zawiera dodatkowe załączniki, które nie zostały przeanalizowane.  <br/> |
 |Maksymalna głębokość załącznika  <br/> |30  <br/> |Maksymalna liczba zagnieżdżonych załączników, które są analizowane. Jeśli na przykład do wiadomości e-mail jest dołączona inna wiadomość, a dołączona wiadomość zawiera dołączony dokument programu Word, dokument programu Word i dołączona wiadomość zostaną zindeksowane. To zachowanie będzie kontynuowane dla maksymalnie 30 zagnieżdżonych załączników.  <br/> |
 |Maksymalna liczba dołączonych obrazów  <br/> |0  <br/> |Obraz dołączony do wiadomości e-mail jest pomijany przez analizator i nie jest indeksowany.  <br/> |
@@ -160,9 +158,9 @@ Aby uzyskać listę limitów indeksowania dla dokumentów SharePoint, zobacz [Li
 
 - Jeśli częściowo zaindeksowany element zostanie uwzględniony w wynikach wyszukiwania, ponieważ jest zgodny z kryteriami zapytania wyszukiwania, nie zostanie uwzględniony jako częściowo zaindeksowany element w szacowanych statystykach wyszukiwania. Ponadto nie będzie on uwzględniany w częściowo indeksowanych elementach podczas eksportowania wyników wyszukiwania.
 
-- Mimo że typ pliku jest obsługiwany w przypadku indeksowania i jest indeksowany, mogą wystąpić błędy indeksowania lub wyszukiwania, które spowodują zwrócenie pliku jako częściowo indeksowanego elementu. Na przykład wyszukiwanie dużego pliku Excel może zakończyć się częściowym powodzeniem (ponieważ pierwsze 4 MB jest indeksowane), ale nie powiedzie się, ponieważ przekroczono limit rozmiaru pliku. W takim przypadku jest możliwe, że ten sam plik jest zwracany z wynikami wyszukiwania i jako częściowo zaindeksowany element.
+- Mimo że typ pliku jest obsługiwany w przypadku indeksowania i jest indeksowany, mogą wystąpić błędy indeksowania lub wyszukiwania, które spowodują zwrócenie pliku jako częściowo indeksowanego elementu. Na przykład wyszukiwanie dużego pliku programu Excel może zakończyć się częściowym powodzeniem (ponieważ pierwsze 4 MB jest indeksowane), ale nie powiedzie się, ponieważ przekroczono limit rozmiaru pliku. W takim przypadku jest możliwe, że ten sam plik jest zwracany z wynikami wyszukiwania i jako częściowo zaindeksowany element.
 
-- Pliki zaszyfrowane za pomocą [technologii szyfrowania firmy Microsoft](encryption.md) i dołączone do wiadomości e-mail zgodnej z kryteriami wyszukiwania mogą być przeglądane i będą odszyfrowywane po wyeksportowaniu. Obecnie pliki szyfrowane za pomocą technologii szyfrowania firmy Microsoft (i przechowywane w SharePoint lub OneDrive dla Firm) są częściowo indeksowane. 
+- Pliki zaszyfrowane za pomocą [technologii szyfrowania firmy Microsoft](encryption.md) i dołączone do wiadomości e-mail zgodnej z kryteriami wyszukiwania mogą być przeglądane i będą odszyfrowywane po wyeksportowaniu. Obecnie pliki szyfrowane za pomocą technologii szyfrowania firmy Microsoft (i przechowywane w programie SharePoint lub OneDrive dla Firm) są częściowo indeksowane. 
 
 - Wiadomości e-mail zaszyfrowane za pomocą protokołu S/MIME są częściowo indeksowane. Obejmuje to zaszyfrowane komunikaty z załącznikami plików lub bez tych załączników.
 

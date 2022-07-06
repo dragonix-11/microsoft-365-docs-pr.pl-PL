@@ -1,5 +1,5 @@
 ---
-title: Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu Pro JAMF dla klientów Ochrona punktu końcowego w usłudze Microsoft Defender
+title: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,17 +13,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Dowiedz się, jak dołączać i dołączać urządzenia z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu Pro JAMF dla klientów Ochrona punktu końcowego w usłudze Microsoft Defender
-ms.openlocfilehash: ba2ff7723e54451ace46823fafb5323dcb35069e
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+description: Dowiedz się, jak dołączać i dołączać urządzenia z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu narzędzia JAMF Pro dla klientów Ochrona punktu końcowego w usłudze Microsoft Defender
+ms.openlocfilehash: 97ab1dbccc28cd1f9d14635c2fa351d0295202c1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953388"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622926"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers"></a>Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu Pro JAMF dla klientów Ochrona punktu końcowego w usłudze Microsoft Defender
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers"></a>Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender
 
 Za pomocą narzędzia JAMF Pro można dołączyć urządzenia z systemem macOS do rozwiązań usługi Microsoft Purview.
 
@@ -39,10 +37,10 @@ Za pomocą narzędzia JAMF Pro można dołączyć urządzenia z systemem macOS d
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Upewnij się, że [urządzenia z systemem macOS są zarządzane za pośrednictwem narzędzia JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) i są skojarzone z tożsamością (nazwa UPN przyłączona do usługi Azure AD) za pośrednictwem Połączenie jamf lub Intune.
+- Upewnij się, że [urządzenia z systemem macOS są zarządzane za pośrednictwem narzędzia JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) i są skojarzone z tożsamością (Azure AD połączoną nazwą UPN) za pośrednictwem narzędzia JAMF Connect lub Intune.
 - Instalowanie przeglądarki v95+ Edge na urządzeniach z systemem macOS
 
-## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Dołączanie urządzeń do rozwiązań usługi Microsoft Purview przy użyciu Pro JAMF
+## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Dołączanie urządzeń do rozwiązań usługi Microsoft Purview przy użyciu narzędzia JAMF Pro
 
 Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procesem wielofazowym.
 
@@ -82,19 +80,19 @@ pełny dostęp do dysku     |[fulldisk.mobileconfig](https://github.com/microsof
 
 1. Zaktualizuj istniejący profil pełnego dostępu do dysku przy użyciu pliku **fulldisk.mobileconfig** .
 
-1. Upload plik **fulldisk.mobileconfig** do pliku JAMF. Zapoznaj się [z tematem Wdrażanie niestandardowych profilów konfiguracji przy użyciu Pro JAMF](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+1. Przekaż plik **fulldisk.mobileconfig** do narzędzia JAMF. Zapoznaj się [z tematem Wdrażanie niestandardowych profilów konfiguracji przy użyciu narzędzia JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
 ### <a name="grant-accessibility-access-to-dlp"></a>Udzielanie dostępu ułatwień dostępu do usługi DLP
 
 1. Użyj wcześniej pobranego pliku accessibility.mobileconfig.
 
-1. Upload do narzędzia JAMF zgodnie z opisem w temacie [Wdrażanie niestandardowych profilów konfiguracji przy użyciu narzędzia Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+1. Przekaż do narzędzia JAMF zgodnie z opisem w [temacie Wdrażanie niestandardowych profilów konfiguracji przy użyciu narzędzia Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="check-the-macos-device"></a>Sprawdzanie urządzenia z systemem macOS 
 
 1. Uruchom ponownie urządzenie z systemem macOS.
 
-1. Otwórz **pozycję Preferencje** **systemoweProfile** > .
+1. Otwórz **profile** **preferencji systemowych** > .
 
 1. Powinny zostać wyświetlone następujące elementy:
     - Accessiblity
@@ -108,7 +106,7 @@ pełny dostęp do dysku     |[fulldisk.mobileconfig](https://github.com/microsof
     - Powiadomienia
     - Profil rozszerzenia systemu
 
-## <a name="offboard-macos-devices-using-jamf-pro"></a>Odłączanie urządzeń z systemem macOS przy użyciu Pro JAMF
+## <a name="offboard-macos-devices-using-jamf-pro"></a>Odłączanie urządzeń z systemem macOS przy użyciu narzędzia JAMF Pro
 
 > [!IMPORTANT]
 > Odłączanie powoduje, że urządzenie przestaje wysyłać dane czujnika do portalu, ale dane z urządzenia, w tym odwołanie do wszelkich alertów, które miał, zostaną zachowane przez maksymalnie 6 miesięcy.

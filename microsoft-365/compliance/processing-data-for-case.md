@@ -1,5 +1,5 @@
 ---
-title: Praca z błędami przetwarzania w usłudze eDiscovery (Premium)
+title: Praca z błędami przetwarzania w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -18,20 +18,18 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Omówienie przetwarzania różnych form danych w usłudze eDiscovery (Premium).
-ms.openlocfilehash: cefacd8fc4039e820a4fa899eb16f3cefdb22a87
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8ccc87c7961618f8239c130decfc8d1ff5693180
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090900"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625000"
 ---
-# <a name="work-with-processing-errors-in-ediscovery-premium"></a>Praca z błędami przetwarzania w usłudze eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="work-with-processing-errors-in-ediscovery-premium"></a>Praca z błędami przetwarzania w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 
 *Przetwarzanie* to proces identyfikacji plików, rozszerzania osadzonych dokumentów i załączników, wyodrębniania tekstu i optycznego rozpoznawania znaków (OCR) plików obrazów oraz późniejszego indeksowania tej zawartości.  
 
-Po dodaniu opiekunów i źródeł danych niebędących opiekunami do sprawy na karcie **Źródła** wszystkie częściowo zaindeksowane elementy z Microsoft 365 są przetwarzane w celu ich pełnego przeszukiwania. Podobnie, gdy zawartość jest dodawana do zestawu przeglądów zarówno ze źródeł danych Microsoft 365, jak i innych niż Microsoft 365, ta zawartość jest również przetwarzana.
+Po dodaniu opiekunów i źródeł danych niebędących opiekunami do sprawy na karcie **Źródła** wszystkie częściowo indeksowane elementy z platformy Microsoft 365 są przetwarzane w celu ich pełnego wyszukiwania. Podobnie, gdy zawartość jest dodawana do zestawu przeglądów zarówno ze źródeł danych platformy Microsoft 365, jak i innych niż Microsoft 365, ta zawartość jest również przetwarzana.
 
 Karta **Przetwarzanie** w usłudze eDiscovery (Premium) zapewnia wgląd w stan zaawansowanego indeksowania dla różnych scenariuszy przetwarzania.
 

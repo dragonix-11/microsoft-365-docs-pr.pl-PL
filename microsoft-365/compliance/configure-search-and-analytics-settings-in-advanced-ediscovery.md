@@ -16,19 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: Skonfiguruj ustawienia zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium), które mają zastosowanie do wszystkich zestawów przeglądów w danym przypadku. Obejmuje to ustawienia analizy i optycznego rozpoznawania znaków.
-ms.openlocfilehash: 0ef76833d18b44a2a1c39db41f7d6fa31f99293e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Skonfiguruj ustawienia Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium), które mają zastosowanie do wszystkich zestawów przeglądów w danym przypadku. Obejmuje to ustawienia analizy i optycznego rozpoznawania znaków.
+ms.openlocfilehash: 315448606e99a768bacd8d7d4ac7f858c79c7bed
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097145"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624570"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>Konfigurowanie ustawień wyszukiwania i analizy w usłudze eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Możesz skonfigurować ustawienia dla każdego przypadku zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium), aby kontrolować następujące funkcje.
+Możesz skonfigurować ustawienia dla każdego przypadku Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium), aby kontrolować następujące funkcje.
 
 - Niemal duplikaty i wątki wiadomości e-mail
 
@@ -44,7 +42,7 @@ Aby skonfigurować ustawienia wyszukiwania i analizy dla przypadku:
 
 1. Na stronie **eDiscovery (Premium)** wybierz przypadek.
 
-2. Na karcie **Ustawienia** w obszarze **Analiza & wyszukiwania** kliknij pozycję **Wybierz**.
+2. Na karcie **Ustawienia** w obszarze **Wyszukiwanie & analizy** kliknij pozycję **Wybierz**.
 
    Zostanie wyświetlona strona ustawień przypadku. Te ustawienia są stosowane do wszystkich zestawów przeglądów w przypadku.
 
@@ -74,7 +72,7 @@ W tej sekcji można ustawić parametry motywów. Aby uzyskać więcej informacji
 
 ## <a name="review-set-query"></a>Przejrzyj zapytanie zestawu
 
-Jeśli zaznaczysz pole wyboru **Automatycznie utwórz wyszukiwanie zapisane na potrzeby przeglądu po analizie**, funkcja zbierania elektronicznych materiałów dowodowych (Premium) automatycznie generuje zapytanie zestawu przeglądów o nazwie **For Review.** 
+Jeśli wybierzesz pole wyboru **Automatycznie utwórz wyszukiwanie zapisane na potrzeby przeglądu po analizie** , funkcja eDiscovery (Premium) automatycznie odgeneruje zapytanie zestawu przeglądów o nazwie **For Review.** 
 
 ![Automatycznie wygenerowane zapytanie For Review.](../media/AeDForReviewQuery.png)
 

@@ -17,19 +17,17 @@ search.appverid:
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak zarządzać częściowo indeksowanymi elementami (nazywanymi również elementami niezaindeksowanymi) z Exchange, SharePoint i OneDrive dla Firm w organizacji.
-ms.openlocfilehash: 528693febbb6d02f6ea143d94aaae154d3dfde7e
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+description: Dowiedz się, jak zarządzać częściowo indeksowanymi elementami (nazywanymi również elementami niezaindeksowanymi) z programu Exchange, programu SharePoint i OneDrive dla Firm w organizacji.
+ms.openlocfilehash: 1e048cece931ecefe395a5a26bbfb840c8b831f6
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078749"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625110"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Badanie częściowo zaindeksowanych elementów w środowisku zbierania elektronicznych materiałów dowodowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Wyszukiwanie zbierania elektronicznych materiałów dowodowych uruchamiane z portal zgodności Microsoft Purview automatycznie uwzględnia częściowo indeksowane elementy w szacowanych wynikach wyszukiwania podczas uruchamiania wyszukiwania. Częściowo indeksowane elementy są Exchange elementów skrzynki pocztowej i dokumentów w witrynach SharePoint i OneDrive dla Firm, które z jakiegoś powodu nie zostały całkowicie zindeksowane do wyszukiwania. Większość wiadomości e-mail i dokumentów witryny jest pomyślnie indeksowana, ponieważ mieszczą się one w [limitach indeksowania dla wiadomości e-mail](limits-for-content-search.md#indexing-limits-for-email-messages). Jednak niektóre elementy mogą przekroczyć te limity indeksowania i zostaną częściowo zindeksowane. Poniżej przedstawiono inne powody, dla których nie można indeksować elementów do wyszukiwania i są zwracane jako częściowo indeksowane elementy podczas uruchamiania wyszukiwania zbierania elektronicznych materiałów dowodowych:
+Wyszukiwanie zbierania elektronicznych materiałów dowodowych uruchamiane z portal zgodności Microsoft Purview automatycznie uwzględnia częściowo indeksowane elementy w szacowanych wynikach wyszukiwania podczas uruchamiania wyszukiwania. Częściowo indeksowane elementy to elementy skrzynki pocztowej programu Exchange i dokumenty w programie SharePoint i witrynach OneDrive dla Firm, które z jakiegoś powodu nie zostały całkowicie zindeksowane do wyszukiwania. Większość wiadomości e-mail i dokumentów witryny jest pomyślnie indeksowana, ponieważ mieszczą się one w [limitach indeksowania dla wiadomości e-mail](limits-for-content-search.md#indexing-limits-for-email-messages). Jednak niektóre elementy mogą przekroczyć te limity indeksowania i zostaną częściowo zindeksowane. Poniżej przedstawiono inne powody, dla których nie można indeksować elementów do wyszukiwania i są zwracane jako częściowo indeksowane elementy podczas uruchamiania wyszukiwania zbierania elektronicznych materiałów dowodowych:
   
 - Wiadomości e-mail mają dołączony plik, który nie może być otwarty; Jest to najczęstsza przyczyna częściowo indeksowanych elementów wiadomości e-mail.
 
@@ -47,7 +45,7 @@ Po uruchomieniu wyszukiwania zbierania elektronicznych materiałów dowodowych c
   
 - Jeśli element jest częściowo indeksowany i jest zgodny z zapytaniem wyszukiwania, jest on uwzględniony zarówno w liczbie (i rozmiarze) elementów wyników wyszukiwania, jak i częściowo indeksowanych elementów. Jednak po wyeksportowaniu wyników tego samego wyszukiwania element jest dołączany tylko do zestawu wyników wyszukiwania; nie jest uwzględniony jako częściowo zaindeksowany element.
 
-- Częściowo indeksowane elementy znajdujące się w witrynach SharePoint i OneDrive *nie są* uwzględniane w szacowaniu częściowo indeksowanych elementów wyświetlanych w szczegółowych statystykach wyszukiwania. Jednak częściowo indeksowane elementy można eksportować podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych. Jeśli na przykład wyszukasz tylko witryny, szacowana liczba częściowo zaindeksowanych elementów będzie równa zero.
+- Częściowo indeksowane elementy znajdujące się w witrynach programu SharePoint i OneDrive *nie są* uwzględniane w szacowaniu częściowo indeksowanych elementów wyświetlanych w szczegółowych statystykach wyszukiwania. Jednak częściowo indeksowane elementy można eksportować podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych. Jeśli na przykład wyszukasz tylko witryny, szacowana liczba częściowo zaindeksowanych elementów będzie równa zero.
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Obliczanie stosunku częściowo indeksowanych elementów w organizacji
 
@@ -104,14 +102,14 @@ Poniżej znajduje się lista błędów indeksowania i opis możliwej przyczyny b
 | `attachmentsize` <br/> |Plik dołączony do wiadomości e-mail był zbyt duży i nie można go przetworzyć.  <br/> |
 | `indexingtruncated` <br/> |Podczas pisania przetworzonej wiadomości e-mail do indeksu jedna z właściwości indeksowalnych była zbyt duża i została obcięta. Obcięte właściwości są wymienione w polu Właściwości błędu.  <br/> |
 | `invalidunicode` <br/> |Wiadomość e-mail zawierała tekst, którego nie można przetworzyć jako prawidłowego unicode. Indeksowanie dla tego elementu może być niekompletne.  <br/> |
-| `parserencrypted` <br/> |Zawartość załącznika lub wiadomości e-mail jest szyfrowana i Microsoft 365 nie może odkodować zawartości.  <br/> |
+| `parserencrypted` <br/> |Zawartość załącznika lub wiadomości e-mail jest szyfrowana, a platforma Microsoft 365 nie może odkodować zawartości.  <br/> |
 | `parsererror` <br/> |Wystąpił nieznany błąd podczas analizowania. Zazwyczaj wynika to z usterki oprogramowania lub awarii usługi.  <br/> |
 | `parserinputsize` <br/> |Załącznik był zbyt duży, aby można było obsłużyć analizator, a analizowanie tego załącznika nie nastąpiło lub nie zostało ukończone.  <br/> |
 | `parsermalformed` <br/> |Załącznik został źle sformułowany i nie może być obsługiwany przez analizator. Ten wynik może być spowodowany starymi formatami plików, plikami utworzonymi przez niezgodne oprogramowanie lub wirusami udającymi coś innego niż deklarowane.  <br/> |
 | `parseroutputsize` <br/> |Dane wyjściowe analizy załącznika były zbyt duże i musiały zostać obcięte.  <br/> |
-| `parserunknowntype` <br/> |Załącznik miał typ pliku, który Microsoft 365 nie mógł wykryć.  <br/> |
+| `parserunknowntype` <br/> |Załącznik miał typ pliku, którego platforma Microsoft 365 nie mogła wykryć.  <br/> |
 | `parserunsupportedtype` <br/> |Załącznik miał typ pliku, który Office 365 mógł wykryć, ale analizowanie tego typu pliku nie jest obsługiwane.  <br/> |
-| `propertytoobig` <br/> |Wartość właściwości poczty e-mail w Exchange Store była zbyt duża, aby można było ją pobrać i nie można było przetworzyć wiadomości. Zwykle dotyczy to tylko właściwości treści wiadomości e-mail.  <br/> |
+| `propertytoobig` <br/> |Wartość właściwości poczty e-mail w sklepie Exchange Była zbyt duża, aby można było ją pobrać i nie można było przetworzyć wiadomości. Zwykle dotyczy to tylko właściwości treści wiadomości e-mail.  <br/> |
 | `retrieverrms` <br/> |Pobieranie zawartości nie może odkodować wiadomości chronionej przez usługę RMS.  <br/> |
 | `wordbreakertruncated` <br/> |Podczas indeksowania zidentyfikowano zbyt wiele słów w dokumencie. Przetwarzanie właściwości zostało zatrzymane po osiągnięciu limitu, a właściwość jest obcinana.  <br/> |
 

@@ -20,22 +20,20 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak wygenerować raport zawierający informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: 9db08335ff023172092e7bf8bada7a3976956d29
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 9820eba0e29a510a1881a9349f63c7e2d9650728
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017015"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625484"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Tworzenie raportu dotyczącego blokad w przypadkach zbierania elektronicznych materiałów dowodowych przy użyciu skryptu
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Skrypt w tym artykule umożliwia administratorom zbierania elektronicznych materiałów dowodowych i menedżerom zbierania elektronicznych materiałów dowodowych generowanie raportu zawierającego informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych (Standard) i eDiscovery (Premium) w portalu zgodności usługi Microsoft Purview. Raport zawiera informacje, takie jak nazwa przypadku, z którym jest skojarzona blokada, lokalizacje zawartości, które są wstrzymane, oraz to, czy blokada jest oparta na zapytaniach. Jeśli istnieją przypadki, które nie mają żadnych blokad, skrypt utworzy dodatkowy raport z listą spraw bez blokady.
+Skrypt w tym artykule umożliwia administratorom zbierania elektronicznych materiałów dowodowych i menedżerom zbierania elektronicznych materiałów dowodowych generowanie raportu zawierającego informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych (Standard) i eDiscovery (Premium) w portal zgodności Microsoft Purview. Raport zawiera informacje, takie jak nazwa przypadku, z którym jest skojarzona blokada, lokalizacje zawartości, które są wstrzymane, oraz to, czy blokada jest oparta na zapytaniach. Jeśli istnieją przypadki, które nie mają żadnych blokad, skrypt utworzy dodatkowy raport z listą spraw bez blokady.
 
 Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać szczegółowy opis informacji zawartych w raporcie.
 
-## <a name="admin-requirements-and-script-information"></a>Wymagania administratora i informacje o skryptach
+## <a name="admin-requirements-and-script-information"></a>Administracja wymagania i informacje o skryptach
 
 - Aby wygenerować raport dotyczący wszystkich przypadków zbierania elektronicznych materiałów dowodowych w organizacji, musisz być administratorem zbierania elektronicznych materiałów dowodowych w organizacji. Jeśli jesteś menedżerem zbierania elektronicznych materiałów dowodowych, raport będzie zawierać tylko informacje o przypadkach, do których można uzyskać dostęp. Aby uzyskać więcej informacji na temat uprawnień zbierania elektronicznych materiałów dowodowych, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
 
@@ -43,9 +41,9 @@ Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać szczegół
 
 - Przykładowe skrypty podane w tym temacie nie są obsługiwane w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowe skrypty są dostarczane jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowych skryptów i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
-## <a name="step-1-connect-to-security--compliance-powershell"></a>Krok 1. Połączenie do programu PowerShell zgodności & zabezpieczeń
+## <a name="step-1-connect-to-security--compliance-powershell"></a>Krok 1. Nawiązywanie połączenia z programem PowerShell & zabezpieczeń
 
-Pierwszym krokiem jest nawiązanie połączenia z programem PowerShell security & Compliance dla twojej organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do programu PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
+Pierwszym krokiem jest nawiązanie połączenia z programem PowerShell security & Compliance dla twojej organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Connect to Security & Compliance PowerShell (Łączenie z programem PowerShell & zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell)).
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Krok 2. Uruchamianie skryptu w celu raportowania blokad skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych
 
@@ -203,7 +201,7 @@ Sprawa zawiera raport utworzony podczas uruchamiania skryptu w tym artykule zawi
 
 - Nazwa blokady i nazwa sprawy zbierania elektronicznych materiałów dowodowych, z którą jest skojarzona blokada.
 
-- Czy blokada jest skojarzona ze sprawą zbierania elektronicznych materiałów dowodowych (standardowa), czy zbierania elektronicznych materiałów dowodowych (Premium).
+- Czy blokada jest skojarzona z przypadkiem zbierania elektronicznych materiałów dowodowych (Standardowa), czy zbierania elektronicznych materiałów dowodowych (Premium).
 
 - Czy przypadek zbierania elektronicznych materiałów dowodowych jest aktywny, czy zamknięty.
 
@@ -215,7 +213,7 @@ Sprawa zawiera raport utworzony podczas uruchamiania skryptu w tym artykule zawi
 
 - Jeśli sprawa zostanie zamknięta, osoba, która ją zamknęła, oraz godzina i data jej zamknięcia.
 
-- Skrzynki pocztowe Exchange i SharePoint lokalizacje witryn, które są wstrzymane.
+- Skrzynki pocztowe programu Exchange i lokalizacje witryn programu SharePoint, które są wstrzymane.
 
 - Jeśli blokada jest oparta na zapytaniach, składnia zapytania.
 

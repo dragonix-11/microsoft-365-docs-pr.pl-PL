@@ -15,37 +15,35 @@ search.appverid:
 - MOE150
 - MET150
 description: Źródła danych bez nadzoru można dodać do sprawy zbierania elektronicznych materiałów dowodowych (Premium) i wstrzymać źródło danych. Źródła danych, które nie są chronione, są ponownie indeksowane, więc każda zawartość, która została oznaczona jako częściowo indeksowana, jest ponownie przetwarzana, aby umożliwić jej pełne i szybkie wyszukiwanie.
-ms.openlocfilehash: 86011a0f19dcb8f46041f4c0aa7c91d89e4e2198
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bb5ff8a4a58e62d3f4bf36f7c7e1e9001d829036
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097981"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625132"
 ---
 # <a name="add-non-custodial-data-sources-to-an-ediscovery-premium-case"></a>Dodawanie źródeł danych bez nadzoru do sprawy zbierania elektronicznych materiałów dowodowych (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-W przypadku zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) nie zawsze spełnia ono potrzeby skojarzenia źródła danych Microsoft 365 z opiekunem w tej sprawie. Jednak nadal może być konieczne skojarzenie tych danych ze sprawą, aby można było je przeszukiwać, dodawać do zestawu przeglądów oraz analizować i przeglądać. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) jest nazywana *źródłami danych bez nadzoru* i umożliwia dodawanie danych do sprawy bez konieczności kojarzenia ich z opiekunem. Stosuje również tę samą funkcję zbierania elektronicznych materiałów dowodowych (Premium) do danych nienadzorowania, które są dostępne dla danych skojarzonych z opiekunem. Dwie z najbardziej przydatnych rzeczy, które można zastosować do danych nienadzorujących, to wstrzymanie ich i przetworzenie przy użyciu [indeksowania zaawansowanego](indexing-custodian-data.md).
+W przypadku Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) nie zawsze spełnia ono twoje potrzeby skojarzenia źródła danych platformy Microsoft 365 z opiekunem w tej sprawie. Jednak nadal może być konieczne skojarzenie tych danych ze sprawą, aby można było je przeszukiwać, dodawać do zestawu przeglądów oraz analizować i przeglądać. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) jest nazywana *źródłami danych bez nadzoru* i umożliwia dodawanie danych do sprawy bez konieczności kojarzenia ich z opiekunem. Stosuje również tę samą funkcję zbierania elektronicznych materiałów dowodowych (Premium) do danych nienadzorowania, które są dostępne dla danych skojarzonych z opiekunem. Dwie z najbardziej przydatnych rzeczy, które można zastosować do danych nienadzorujących, to wstrzymanie ich i przetworzenie przy użyciu [indeksowania zaawansowanego](indexing-custodian-data.md).
 
 ## <a name="add-a-non-custodial-data-source"></a>Dodawanie źródła danych bez nadzoru
 
 Wykonaj następujące kroki, aby dodać źródła danych bez nadzoru i zarządzać nimi w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 
-1. Na stronie głównej **eDiscovery (Premium)** kliknij przypadek, do których chcesz dodać dane.
+1. Na stronie głównej **zbierania elektronicznych materiałów dowodowych (Premium)** kliknij przypadek, do których chcesz dodać dane.
 
-2. Kliknij kartę **Źródła danych**, a następnie kliknij pozycję **Dodaj źródło** >  **danychDodaj lokalizacje danych**.
+2. Kliknij kartę **Źródła danych**, a następnie kliknij pozycję **Dodaj źródło** >  danych **Dodaj lokalizacje danych**.
 
-3. Na stronie wysuwanej **Nowe lokalizacje danych nienadzorowania** wybierz źródła danych, które chcesz dodać do sprawy. Możesz dodać wiele skrzynek pocztowych i witryn, rozszerzając sekcje **SharePoint** lub **Exchange**, a następnie klikając pozycję **Edytuj**.
+3. Na stronie wysuwanej **Nowe lokalizacje danych nienadzorowania** wybierz źródła danych, które chcesz dodać do sprawy. Możesz dodać wiele skrzynek pocztowych i witryn, rozwijając sekcje **programu SharePoint** lub **Exchange,** a następnie klikając pozycję **Edytuj**.
 
-   ![Dodaj witryny SharePoint i skrzynki pocztowe Exchange jako źródła danych bez nadzoru.](../media/NonCustodialDataSources1.png)
+   ![Dodaj witryny programu SharePoint i skrzynki pocztowe programu Exchange jako źródła danych bez nadzoru.](../media/NonCustodialDataSources1.png)
 
-   - **SharePoint** — kliknij pozycję **Edytuj**, aby dodać witryny. Wybierz witrynę na liście lub możesz wyszukać witrynę, wpisując adres URL witryny na pasku wyszukiwania. Wybierz witryny, które chcesz dodać jako źródła danych nieobjętych ochroną, a następnie kliknij pozycję **Dodaj**.
+   - **SharePoint** — kliknij pozycję **Edytuj** , aby dodać witryny. Wybierz witrynę na liście lub możesz wyszukać witrynę, wpisując adres URL witryny na pasku wyszukiwania. Wybierz witryny, które chcesz dodać jako źródła danych nieobjętych ochroną, a następnie kliknij pozycję **Dodaj**.
 
-   - **Exchange** — kliknij pozycję **Edytuj**, aby dodać skrzynki pocztowe. Wpisz nazwę lub alias (co najmniej trzy znaki) w polu wyszukiwania dla skrzynek pocztowych lub grup dystrybucyjnych. Wybierz skrzynki pocztowe, które chcesz dodać jako źródła danych nienadzorujące, a następnie kliknij przycisk **Dodaj**.
+   - **Exchange** — kliknij przycisk **Edytuj** , aby dodać skrzynki pocztowe. Wpisz nazwę lub alias (co najmniej trzy znaki) w polu wyszukiwania dla skrzynek pocztowych lub grup dystrybucyjnych. Wybierz skrzynki pocztowe, które chcesz dodać jako źródła danych nienadzorujące, a następnie kliknij przycisk **Dodaj**.
 
    > [!NOTE]
-   > Możesz użyć sekcji **SharePoint** i **Exchange**, aby dodać witryny i skrzynki pocztowe skojarzone z zespołem lub grupą Yammer jako źródła danych bez nadzoru. Musisz oddzielnie dodać skrzynkę pocztową i witrynę skojarzoną z zespołem lub grupą Yammer.<br/><br/> Ponadto dodawanie adresu URL witryny głównej (np`https://contoso-my.sharepoint.com/personal/`. lub `https://contoso-my.sharepoint.com/`) jako źródła danych SharePoint nie jest obsługiwane. Musisz dodać określone witryny.
+   > Sekcje **programu SharePoint** i **programu Exchange** umożliwiają dodawanie witryn i skrzynek pocztowych skojarzonych z zespołem lub grupą usługi Yammer jako źródeł danych bez nadzoru. Musisz oddzielnie dodać skrzynkę pocztową i witrynę skojarzoną z grupą Team lub Yammer.<br/><br/> Ponadto dodawanie adresu URL witryny głównej (np `https://contoso-my.sharepoint.com/personal/` . lub  `https://contoso-my.sharepoint.com/`) jako źródła danych programu SharePoint nie jest obsługiwane. Musisz dodać określone witryny.
 
 4. Po dodaniu źródeł danych bez nadzoru masz możliwość wstrzymania tych lokalizacji. Zaznacz lub usuń zaznaczenie pola wyboru **Wstrzymaj** obok źródła danych, aby umieścić go w stanie wstrzymania.
 
@@ -61,7 +59,7 @@ Po dodaniu źródeł danych bez nadzoru do sprawy zostanie utworzone zadanie o n
 
 Po umieszczeniu blokady w źródle danych bez nadzoru zasady blokady zawierające źródła danych nienadzorujące sprawy zostaną utworzone automatycznie. Po zatrzymaniu innych źródeł danych, które nie są chronione, zostaną one dodane do tych zasad blokady.
 
-1. Otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium) i wybierz kartę **Przytrzymaj**.
+1. Otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium) i wybierz kartę **Przytrzymaj** .
 
 2. Kliknij **pozycję NCDSHold-\<GUID\>**, gdzie wartość identyfikatora GUID jest unikatowa dla przypadku.
 

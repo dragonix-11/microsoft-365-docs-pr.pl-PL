@@ -1,5 +1,5 @@
 ---
-title: Szkolenie dotyczące ładunków w symulacji ataków
+title: Ładunki w szkoleniu z symulacji ataków
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak tworzyć ładunki do trenowania symulacji ataków i zarządzać nimi w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: 38e9e60c50a7bc0dec4e8f9f75845fdc34e4b237
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6cb3f2b2edb3c55063db2640eab1dd888f9aa5b7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487229"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621298"
 ---
 # <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Szkolenie dotyczące ładunków w symulacji ataków w Ochrona usługi Office 365 w usłudze Defender
 
@@ -101,7 +101,7 @@ Po wybraniu ładunku z listy zostanie wyświetlony wysuwany szczegół z następ
    ![Utwórz ładunek na karcie Ładunki dzierżawy w obszarze Ładunki w trenowaniu symulacji ataków w portalu Microsoft 365 Defender.](../../media/attack-sim-training-payload-create.png)
 
    > [!NOTE]
-   > ![Utwórz ikonę ładunku.](../../media/m365-cc-sc-create-icon.png) **Tworzenie ładunku** jest również dostępne na stronie **Wybierz ładunek** kreatora tworzenia symulacji. Aby uzyskać więcej informacji, zobacz [Symulowanie ataku wyłudzania informacji w Ochrona usługi Office 365 w usłudze Defender](attack-simulation-training.md).
+   > ![Utwórz ikonę ładunku.](../../media/m365-cc-sc-create-icon.png) **Tworzenie ładunku** jest również dostępne w kroku **Wybieranie ładunku i strony logowania** kreatora tworzenia symulacji. Aby uzyskać więcej informacji, zobacz [Tworzenie symulacji: Wybieranie ładunku i strona logowania](attack-simulation-training.md#select-a-payload-and-login-page).
    >
    > W dowolnym momencie kreatora tworzenia możesz kliknąć przycisk **Zapisz i zamknąć** , aby zapisać postęp i kontynuować konfigurowanie ładunku później. Możesz wybrać miejsce, w którym zostało przerwane, wybierając powiadomienie na karcie **Ładunki dzierżawy** w **obszarze Ładunki**, a następnie klikając ikonę ![Edytuj ładunek.](../../media/m365-cc-sc-edit-icon.png) **Edytuj ładunek**. Częściowo ukończony ładunek będzie miał wartość **Stan** **— wersja robocza**.
 

@@ -16,22 +16,20 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak za pomocą funkcji statystyk wyszukiwania wyświetlać statystyki dotyczące wyszukiwań zawartości i wyszukiwań skojarzonych z przypadkiem zbierania elektronicznych materiałów dowodowych (Standardowa) w portal zgodności Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cc8e249f62b0dbfbeaa6bcf32e7873ca2ff5b36d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: df1ebeeb7b420be3dbe6ccac6174078008b7f0e8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318077"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623590"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Wyświetlanie statystyk wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Po utworzeniu i uruchomieniu wyszukiwania zawartości lub wyszukiwania skojarzonego z przypadkiem zbierania elektronicznych materiałów dowodowych (Standard) Microsoft Purview można wyświetlić statystyki dotyczące szacowanych wyników wyszukiwania. Obejmuje to podsumowanie wyników wyszukiwania (podobne do podsumowania szacowanych wyników wyszukiwania wyświetlanych na stronie wysuwanego wyszukiwania), statystyki zapytań, takie jak liczba lokalizacji zawartości z elementami pasującymi do zapytania wyszukiwania oraz tożsamość lokalizacji zawartości, które mają najbardziej pasujące elementy.
+Po utworzeniu i uruchomieniu wyszukiwania zawartości lub wyszukiwania skojarzonego ze sprawą Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Standardowa) możesz wyświetlić statystyki dotyczące szacowanych wyników wyszukiwania. Obejmuje to podsumowanie wyników wyszukiwania (podobne do podsumowania szacowanych wyników wyszukiwania wyświetlanych na stronie wysuwanego wyszukiwania), statystyki zapytań, takie jak liczba lokalizacji zawartości z elementami pasującymi do zapytania wyszukiwania oraz tożsamość lokalizacji zawartości, które mają najbardziej pasujące elementy.
   
 Ponadto można użyć listy słów kluczowych, aby skonfigurować wyszukiwanie w celu zwrócenia statystyk dla każdego słowa kluczowego w zapytaniu wyszukiwania. Dzięki temu można porównać liczbę wyników zwracanych przez każde słowo kluczowe w zapytaniu.
   
-Możesz również pobrać statystyki wyszukiwania do pliku CSV. Umożliwia to używanie funkcji filtrowania i sortowania w Excel do porównywania wyników i przygotowywania raportów do wyników wyszukiwania.
+Możesz również pobrać statystyki wyszukiwania do pliku CSV. Dzięki temu można porównać wyniki i przygotować raporty do wyników wyszukiwania za pomocą funkcji filtrowania i sortowania w programie Excel.
   
 ## <a name="get-statistics-for-searches"></a>Pobieranie statystyk dla wyszukiwań
 
@@ -43,7 +41,7 @@ Aby wyświetlić statystyki dotyczące wyszukiwania zawartości lub wyszukiwania
 
      LUB
 
-   - Kliknij **pozycję eDiscoveryeDiscovery** >  **(Standardowa),** wybierz przypadek, a następnie wybierz wyszukiwanie na karcie **Wyszukiwania**, aby wyświetlić stronę wysuwaną.
+   - Kliknij **pozycję eDiscovery** > **eDiscovery (Standardowa),** wybierz przypadek, a następnie wybierz wyszukiwanie na karcie **Wyszukiwania** , aby wyświetlić stronę wysuwaną.
 
 2. Na wysuwanej stronie wybranego wyszukiwania kliknij kartę **Statystyki wyszukiwania** .
   
@@ -69,7 +67,7 @@ W tej sekcji przedstawiono statystyki dotyczące zapytania wyszukiwania oraz lic
 
 ![Raport warunku.](../media/SearchContentReportNoKeywordList.png)
 
-- **Typ lokalizacji**: typ lokalizacji zawartości, do których mają zastosowanie statystyki zapytania. Wartość **Exchange** wskazuje lokalizację skrzynki pocztowej; wartość **SharePoint** wskazuje lokalizację witryny.
+- **Typ lokalizacji**: typ lokalizacji zawartości, do których mają zastosowanie statystyki zapytania. Wartość **programu Exchange** wskazuje lokalizację skrzynki pocztowej; wartość **programu SharePoint** wskazuje lokalizację witryny.
 
 - **Część**: część zapytania wyszukiwania, do których mają zastosowanie statystyki. **Podstawowa** wskazuje całe zapytanie wyszukiwania. **Słowo kluczowe** wskazuje, że statystyki w wierszu dotyczą określonego słowa kluczowego. Jeśli używasz listy słów kluczowych dla zapytania wyszukiwania, statystyki dla każdego składnika zapytania są uwzględniane w tej tabeli. Aby uzyskać więcej informacji, zobacz [Pobieranie statystyk słów kluczowych dla wyszukiwań](#get-keyword-statistics-for-searches).
 

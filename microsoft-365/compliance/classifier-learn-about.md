@@ -19,18 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Klasyfikatory z możliwością trenowania mogą rozpoznawać różne typy zawartości do etykietowania lub aplikacji zasad, dając jej pozytywne i negatywne próbki do obejrzenia.
-ms.openlocfilehash: 03c0c0991188982fbfc4fb9ec908f6e5f4ab3bba
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 0c47d019b3508bdd8d8fba1f1b4303c7f4c9579d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159581"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621210"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Dowiedz się więcej o klasyfikatorach z możliwością szkolenia
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Klasyfikowanie i etykietowanie zawartości, aby można było ją odpowiednio chronić i obsługiwać, jest miejscem początkowym dla dziedziny ochrony informacji. Microsoft 365 ma trzy sposoby klasyfikowania zawartości.
+Klasyfikowanie i etykietowanie zawartości, aby można było ją odpowiednio chronić i obsługiwać, jest miejscem początkowym dla dziedziny ochrony informacji. Platforma Microsoft 365 ma trzy sposoby klasyfikowania zawartości.
 
 ## <a name="manually"></a>Ręcznie
 
@@ -52,12 +50,12 @@ Etykiety poufności i przechowywania można następnie automatycznie stosować, 
 Ta metoda klasyfikacji jest odpowiednia dla zawartości, która nie jest łatwo identyfikowana za pomocą metod ręcznego lub zautomatyzowanego dopasowywania wzorców. Ta metoda klasyfikacji polega bardziej na używaniu klasyfikatora do identyfikowania elementu na podstawie tego, czym jest element, a nie elementów znajdujących się w elemencie (dopasowywanie wzorca). Klasyfikator dowie się, jak zidentyfikować typ zawartości, przeglądając setki przykładów zawartości, którą chcesz sklasyfikować.
 
 > [!NOTE]
-> W wersji zapoznawczej — klasyfikatory z możliwością trenowania można wyświetlić w Eksploratorze zawartości, rozwijając pozycję **Klasyfikatory klasyfikujące możliwość** trenowania w panelu filtrów. Klasyfikatory z możliwością trenowania automatycznie wyświetlają liczbę zdarzeń znalezionych w SharePoint, Teams i OneDrive bez konieczności etykietowania.
+> W wersji zapoznawczej — klasyfikatory z możliwością trenowania można wyświetlić w Eksploratorze zawartości, rozwijając pozycję **Klasyfikatory klasyfikujące możliwość** trenowania w panelu filtrów. Klasyfikatory z możliwością trenowania automatycznie wyświetlają liczbę zdarzeń znalezionych w programach SharePoint, Teams i OneDrive bez konieczności etykietowania.
 > Jeśli nie chcesz używać tej funkcji, musisz wysłać żądanie do pomoc techniczna firmy Microsoft. Spowoduje to wyłączenie wyświetlania poufnych danych, które nie są używane w żadnych zasadach etykietowania w Eksploratorze zawartości. Możesz również wyłączyć skanowanie danych. Jeśli skanowanie jest wyłączone, etykietowanie poufności i zasady DLP z tymi klasyfikatorami nie będą działać
 
 ### <a name="where-you-can-use-classifiers"></a>Gdzie można używać klasyfikatorów
 
-Klasyfikatory są dostępne do użycia jako warunek [Office automatycznego etykietowania z etykietami poufności](apply-sensitivity-label-automatically.md), [automatycznego stosowania zasad etykiet przechowywania na podstawie warunku](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) i [zgodności z komunikacją](communication-compliance.md).
+Klasyfikatory są dostępne do użycia jako warunek [automatycznego etykietowania pakietu Office z etykietami poufności](apply-sensitivity-label-automatically.md), [automatyczne stosowanie zasad etykiet przechowywania na podstawie warunku](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) i [zgodności z komunikacją](communication-compliance.md).
 
 Etykiety poufności mogą używać klasyfikatorów jako warunków. Zobacz [Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md).
 
@@ -71,9 +69,9 @@ Etykiety poufności mogą używać klasyfikatorów jako warunków. Zobacz [Autom
 
 ### <a name="pre-trained-classifiers"></a>Wstępnie wytrenowane klasyfikatory
 
-Microsoft 365 zawiera wiele wstępnie wytrenowanych klasyfikatorów:
+Platforma Microsoft 365 zawiera wiele wstępnie wytrenowanych klasyfikatorów:
 
-- **Dorosły, racy i gory**: wykrywa obrazy tych typów. Obrazy muszą mieć rozmiar od 50 kilobajtów (KB) do 4 megabajtów (MB) i być większe niż 50 x 50 pikseli w wymiarach wysokości x szerokości. Skanowanie i wykrywanie są obsługiwane w przypadku Exchange Online wiadomości e-mail oraz Microsoft Teams kanałów i czatów. Wykrywa zawartość w plikach jpeg, .png, .gif i .bmp.
+- **Dorosły, racy i gory**: wykrywa obrazy tych typów. Obrazy muszą mieć rozmiar od 50 kilobajtów (KB) do 4 megabajtów (MB) i być większe niż 50 x 50 pikseli w wymiarach wysokości x szerokości. Skanowanie i wykrywanie są obsługiwane w przypadku Exchange Online wiadomości e-mail oraz kanałów i czatów usługi Microsoft Teams. Wykrywa zawartość w plikach jpeg, .png, .gif i .bmp.
 
 - **Umowy**: Wykrywa zawartość związaną z umowami prawnymi, takimi jak umowy o zachowaniu poufności, oświadczenia o pracy, umowy pożyczki i dzierżawy, umowy o pracę i umowy o zachowaniu konkurencji. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
@@ -101,7 +99,7 @@ Microsoft 365 zawiera wiele wstępnie wytrenowanych klasyfikatorów:
 
 - **Wznów**: wykrywa dokumenty, .pdf, rtf, .txt elementy, które są tekstowymi kontami osobistymi, edukacyjnymi, zawodowymi, doświadczeniem zawodowym i innymi danymi identyfikacyjnymi wnioskodawcy
 
-- **Kod źródłowy**: wykrywa elementy zawierające zestaw instrukcji i instrukcji napisanych języków programowania komputerowego w GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Wykrywa zawartość w plikach .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . RData, .rds, .rb, .scala, .sc, .sh, .swift files.
+- **Kod źródłowy**: wykrywa elementy zawierające zestaw instrukcji i instrukcji napisanych języków programowania komputerowego w usłudze GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Wykrywa zawartość w plikach .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . RData, .rds, .rb, .scala, .sc, .sh, .swift files.
 
   > [!NOTE]
   > Kod źródłowy jest wytrenowany do wykrywania, kiedy większość tekstu to kod źródłowy. Nie wykrywa tekstu kodu źródłowego, który jest przeplatany zwykłym tekstem.

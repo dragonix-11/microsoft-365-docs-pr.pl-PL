@@ -15,16 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak usunąć niestandardowy typ informacji poufnych przy użyciu programu PowerShell
-ms.openlocfilehash: e935c9340c353561e71e25fdadfec5509da041e5
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: ba29c2f20133b94d87c14f527d454980c41373c9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014745"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621694"
 ---
 # <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>Usuwanie niestandardowego typu informacji poufnych przy użyciu programu PowerShell
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W programie PowerShell security & Compliance istnieją dwie metody usuwania niestandardowych typów informacji poufnych:
 
@@ -33,7 +31,7 @@ W programie PowerShell security & Compliance istnieją dwie metody usuwania nies
 - **Usuń niestandardowy pakiet reguł i wszystkie niestandardowe typy informacji poufnych, które zawiera**: Ta metoda jest udokumentowana w tej sekcji.
 
 > [!NOTE]
-> Przed usunięciem niestandardowego typu informacji poufnych sprawdź, czy żadne zasady DLP ani reguły przepływu poczty Exchange (nazywane również regułami transportu) nie odwołują się do typu informacji poufnych.
+> Przed usunięciem niestandardowego typu informacji poufnych sprawdź, czy żadne zasady DLP ani reguły przepływu poczty programu Exchange (znane również jako reguły transportu) nie odwołują się do typu informacji poufnych.
 
 1. [Zgodność & zabezpieczeń w programie PowerShell](/powershell/exchange/exchange-online-powershell)
 
@@ -67,7 +65,7 @@ W programie PowerShell security & Compliance istnieją dwie metody usuwania nies
      Get-DlpSensitiveInformationType
      ```
 
-     W przypadku niestandardowych typów informacji poufnych wartość właściwości Publisher będzie inna niż Microsoft Corporation.
+     W przypadku niestandardowych typów informacji poufnych wartość właściwości wydawcy będzie inna niż Microsoft Corporation.
 
    - Zastąp \<Name\> ciąg wartością Nazwa typu informacji poufnych (na przykład Identyfikator pracownika) i uruchom polecenie cmdlet [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) , aby sprawdzić, czy typ informacji poufnych nie jest już wyświetlany:
 
@@ -77,7 +75,7 @@ W programie PowerShell security & Compliance istnieją dwie metody usuwania nies
 
 ## <a name="more-information"></a>Więcej informacji
 
-- [Dowiedz się więcej o zapobieganiu utracie danych w usłudze Microsoft Purview](dlp-learn-about-dlp.md)
+- [Dowiedz się więcej o Ochrona przed utratą danych w Microsoft Purview](dlp-learn-about-dlp.md)
 
 - [Definicje jednostek typu informacji poufnych](sensitive-information-type-entity-definitions.md)
 

@@ -21,25 +21,23 @@ ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: Dowiedz się, jak uruchomić skrypt w celu dodania skrzynek pocztowych & OneDrive dla Firm witryn do nowego archiwum skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: 04d41936e437740a39ab73aeafb9ca40b914dd2f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Dowiedz się, jak uruchomić skrypt w celu dodania skrzynek pocztowych & OneDrive dla Firm witryn do nowego archiwum skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview.
+ms.openlocfilehash: ebfe9bf2fc2784e8c590b949912aa15c1b773cc0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012769"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621650"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>Używanie skryptu do dodawania użytkowników do blokady w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Program PowerShell & Zgodności z zabezpieczeniami udostępnia polecenia cmdlet, które umożliwiają automatyzowanie czasochłonnych zadań związanych z tworzeniem przypadków zbierania elektronicznych materiałów dowodowych i zarządzaniem nimi. Obecnie użycie sprawy zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa) w portalu zgodności usługi Microsoft Purview w celu wstrzymania dużej liczby lokalizacji zawartości opiekuna wymaga czasu i przygotowania. Na przykład przed utworzeniem blokady musisz zebrać adres URL dla każdej witryny OneDrive dla Firm, która ma zostać wstrzymana. Następnie dla każdego użytkownika, który chcesz umieścić w zawieszeniu, musisz dodać jego skrzynkę pocztową i witrynę OneDrive dla Firm do blokady. Aby zautomatyzować ten proces, możesz użyć skryptu w tym artykule.
+Program PowerShell & Zgodności z zabezpieczeniami udostępnia polecenia cmdlet, które umożliwiają automatyzowanie czasochłonnych zadań związanych z tworzeniem przypadków zbierania elektronicznych materiałów dowodowych i zarządzaniem nimi. Obecnie użycie przypadku Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Standardowa) w portal zgodności Microsoft Purview do wstrzymania dużej liczby lokalizacji zawartości opiekuna wymaga czasu i przygotowania. Na przykład przed utworzeniem blokady musisz zebrać adres URL dla każdej witryny OneDrive dla Firm, która ma zostać wstrzymana. Następnie dla każdego użytkownika, który chcesz umieścić w zawieszeniu, musisz dodać jego skrzynkę pocztową i witrynę OneDrive dla Firm do blokady. Aby zautomatyzować ten proces, możesz użyć skryptu w tym artykule.
 
 Skrypt wyświetla monit o podanie nazwy domeny Moja witryna organizacji (na przykład `contoso` w adresie URL https://contoso-my.sharepoint.com)nazwa istniejącego przypadku zbierania elektronicznych materiałów dowodowych, nazwa nowego archiwum skojarzonego ze sprawą, lista adresów e-mail użytkowników, których chcesz wstrzymać, oraz zapytanie wyszukiwania do użycia, jeśli chcesz utworzyć blokadę opartą na zapytaniach. Następnie skrypt pobiera adres URL witryny OneDrive dla Firm dla każdego użytkownika na liście, tworzy nowe blokady, a następnie dodaje skrzynkę pocztową i witrynę OneDrive dla Firm dla każdego użytkownika na liście do blokady. Skrypt generuje również pliki dziennika zawierające informacje o nowym blokadzie.
 
 Poniżej przedstawiono kroki, które należy wykonać:
 
-[Krok 1. Instalowanie powłoki zarządzania SharePoint Online](#step-1-install-the-sharepoint-online-management-shell)
+[Krok 1. Instalowanie powłoki zarządzania usługi SharePoint Online](#step-1-install-the-sharepoint-online-management-shell)
 
 [Krok 2. Generowanie listy użytkowników](#step-2-generate-a-list-of-users)
 
@@ -55,19 +53,19 @@ Poniżej przedstawiono kroki, które należy wykonać:
 
 - Skrypt dodaje listę użytkowników do nowego archiwum skojarzonego z istniejącym przypadkiem. Przed uruchomieniem skryptu upewnij się, że przypadek, z którą chcesz skojarzyć blokadę, został utworzony.
 
-- Skrypt w tym artykule obsługuje nowoczesne uwierzytelnianie podczas nawiązywania połączenia z programem PowerShell & Compliance i powłoką zarządzania usługi SharePoint Online. Możesz użyć skryptu w taki sam jak jest, jeśli jesteś Microsoft 365 lub organizacją Microsoft 365 GCC. Jeśli jesteś organizacją Office 365 Niemczech, organizacją Microsoft 365 GCC High lub organizacją Microsoft 365 DoD, musisz edytować skrypt, aby pomyślnie go uruchomić. W szczególności należy edytować wiersz `Connect-IPPSSession` i używać parametrów *ConnectionUri* i *AzureADAuthorizationEndpointUri* (i odpowiednich wartości dla typu organizacji), aby nawiązać połączenie z programem PowerShell security & Compliance. Aby uzyskać więcej informacji, zobacz przykłady w [programie PowerShell Połączenie to Security & Compliance](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- Skrypt w tym artykule obsługuje nowoczesne uwierzytelnianie podczas nawiązywania połączenia z programem PowerShell & Zgodności z zabezpieczeniami i powłoką zarządzania usługi SharePoint Online. Możesz użyć skryptu w taki sam jak jest, jeśli jesteś organizacją platformy Microsoft 365 lub Microsoft 365 GCC. Jeśli jesteś organizacją Office 365 Niemczech, organizacją microsoft 365 GCC High lub organizacją Microsoft 365 DoD, musisz edytować skrypt, aby pomyślnie go uruchomić. W szczególności należy edytować wiersz `Connect-IPPSSession` i używać parametrów *ConnectionUri* i *AzureADAuthorizationEndpointUri* (i odpowiednich wartości dla typu organizacji), aby nawiązać połączenie z programem PowerShell security & Compliance. Aby uzyskać więcej informacji, zobacz przykłady w temacie [Connect to Security & Compliance PowerShell (Łączenie z programem PowerShell & zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)).
 
-- Skrypt automatycznie odłącza się od programu PowerShell & Compliance i powłoki zarządzania usługi SharePoint Online.
+- Skrypt automatycznie rozłącza się z usługami Security & Compliance PowerShell i SharePoint Online Management Shell.
 
 - Skrypt zawiera minimalną obsługę błędów. Jego głównym celem jest szybkie i łatwe umieszczenie skrzynki pocztowej i OneDrive dla Firm lokacji każdego użytkownika.
 
 - Przykładowe skrypty podane w tym temacie nie są obsługiwane w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowe skrypty są dostarczane jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowych skryptów i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
-## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Krok 1. Instalowanie powłoki zarządzania SharePoint Online
+## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Krok 1. Instalowanie powłoki zarządzania usługi SharePoint Online
 
-Pierwszym krokiem jest zainstalowanie powłoki zarządzania SharePoint Online, jeśli nie jest jeszcze zainstalowana na komputerze lokalnym. Nie musisz używać powłoki w tej procedurze, ale musisz ją zainstalować, ponieważ zawiera wymagania wstępne wymagane przez skrypt uruchomiony w kroku 3. Te wymagania wstępne umożliwiają skryptowi komunikowanie się z usługą SharePoint Online w celu pobrania adresów URL witryn OneDrive dla Firm.
+Pierwszym krokiem jest zainstalowanie powłoki zarządzania usługi SharePoint Online, jeśli nie została jeszcze zainstalowana na komputerze lokalnym. Nie musisz używać powłoki w tej procedurze, ale musisz ją zainstalować, ponieważ zawiera wymagania wstępne wymagane przez skrypt uruchomiony w kroku 3. Te wymagania wstępne umożliwiają skryptowi komunikowanie się z usługą SharePoint Online w celu uzyskania adresów URL witryn OneDrive dla Firm.
 
-Przejdź do [obszaru Konfigurowanie środowiska powłoki zarządzania SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) i wykonaj kroki 1 i 2, aby zainstalować powłokę zarządzania SharePoint Online na komputerze lokalnym.
+Przejdź do [pozycji Konfigurowanie środowiska powłoki zarządzania usługi SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) i wykonaj kroki 1 i 2, aby zainstalować powłokę zarządzania usługi SharePoint Online na komputerze lokalnym.
 
 ## <a name="step-2-generate-a-list-of-users"></a>Krok 2. Generowanie listy użytkowników
 
@@ -85,9 +83,9 @@ Po uruchomieniu tego polecenia otwórz plik tekstowy i usuń nagłówek zawieraj
 
 Po uruchomieniu skryptu w tym kroku zostanie wyświetlony monit o podanie następujących informacji. Pamiętaj, aby te informacje były gotowe przed uruchomieniem skryptu.
 
-- **Poświadczenia użytkownika:** Skrypt użyje twoich poświadczeń do nawiązania połączenia z programem PowerShell security & Compliance. Te poświadczenia będą również używane do uzyskiwania dostępu do SharePoint Online w celu uzyskania adresów URL OneDrive dla Firm dla listy użytkowników.
+- **Poświadczenia użytkownika:** Skrypt użyje twoich poświadczeń do nawiązania połączenia z programem PowerShell security & Compliance. Te poświadczenia będą również używane do uzyskiwania dostępu do usługi SharePoint Online w celu uzyskania adresów URL OneDrive dla Firm dla listy użytkowników.
 
-- **Nazwa domeny SharePoint:** skrypt monituje o wprowadzenie tej nazwy, aby można było nawiązać połączenie z <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centrum administracyjnym SharePoint</a>. Używa ona również nazwy domeny dla adresów URL OneDrive w organizacji. Jeśli na przykład adres URL centrum administracyjnego to `https://contoso-admin.sharepoint.com` , a adres URL OneDrive to `https://contoso-my.sharepoint.com`, należy wprowadzić`contoso`, gdy skrypt wyświetli monit o podanie nazwy domeny.
+- **Nazwa domeny programu SharePoint:** Skrypt monituje o wprowadzenie tej nazwy, aby można było nawiązać połączenie z <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centrum administracyjnym programu SharePoint</a>. Używa ona również nazwy domeny dla adresów URL usługi OneDrive w organizacji. Jeśli na przykład adres URL centrum administracyjnego to `https://contoso-admin.sharepoint.com` , a adres URL usługi OneDrive to `https://contoso-my.sharepoint.com`, należy wprowadzić `contoso` , gdy skrypt wyświetli monit o podanie nazwy domeny.
 
 - **Nazwa sprawy:** Nazwa istniejącego przypadku. Skrypt utworzy nowe blokady skojarzone z tym przypadkiem.
 

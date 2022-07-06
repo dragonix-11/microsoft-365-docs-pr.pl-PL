@@ -15,18 +15,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Wprowadzenie tworzenie dokładnych typów informacji poufnych zgodnych z danymi.
+description: Rozpocznij tworzenie dokładnych typów informacji poufnych zgodnych z danymi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 592a4c7342af9ffe5c18d0d25b99b12cd1b3e212
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 27a4f113e401076374ef0e52cd54133e46a21b52
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294674"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622046"
 ---
 # <a name="get-started-with-exact-data-match-based-sensitive-information-types"></a>Wprowadzenie do dokładnych typów informacji poufnych opartych na dopasowaniu danych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Tworzenie i udostępnianie dokładnego typu informacji poufnych (SIT) opartego na danych (EDM) jest procesem wielofazowym. Mogą być używane w zasadach ochrony przed utratą danych w usłudze Microsoft Purview, zbierania elektronicznych materiałów dowodowych i niektórych zadaniach związanych z zarządzaniem zawartością W tym artykule opisano przepływ pracy i linki do procedur dla każdej fazy
 
@@ -58,10 +56,10 @@ Dokładne dopasowanie danych jest dostępne w następujących regionach:
 - Zjednoczone Królestwo
 - Stany Zjednoczone
 - US DoD
-- GCC USA
+- US GCC
 - US GCCH
 
-Aby dowiedzieć się, w jakim regionie dzierżawa hostuje dane w spoczynku, wykonaj procedury opisane w temacie [Where your Microsoft 365 customer data is stored](../enterprise/o365-data-locations.md) and referring to the data center city locations in the same article (Gdzie są przechowywane dane klienta Microsoft 365) i odwołując się do lokalizacji miasta centrum danych w tym samym artykule.
+Aby dowiedzieć się, w jakim regionie dzierżawa hostuje dane w spoczynku, wykonaj procedury opisane w artykule [Where your Microsoft 365 customer data is stored](../enterprise/o365-data-locations.md) and referring to the data center city locations in the same article (Gdzie są przechowywane dane klienta platformy Microsoft 365 i odwołują się do lokalizacji miasta centrum danych) w tym samym artykule.
 
 ## <a name="required-licenses-and-permissions"></a>Wymagane licencje i uprawnienia
 
@@ -86,9 +84,9 @@ Zobacz [opis usługi ochrony przed utratą danych](/office365/servicedescription
 |---|---|
 |[Faza 1. Eksportowanie danych źródłowych pod kątem dokładnego typu informacji poufnych zgodnych z danymi](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|— Odczyt dostępu do poufnych danych|
 |[Faza 2. Tworzenie schematu dla dokładnych typów informacji poufnych opartych na dopasowaniu danych](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|— Dostęp do kreatora typów informacji poufnych w Centrum administracyjne platformy Microsoft 365 </br>— dostęp do [Centrum administracyjne platformy Microsoft 365 za pośrednictwem programu PowerShell & Security & Compliance](/powershell/exchange/connect-to-scc-powershell) |
-|[Faza 3. Skrót i przekazywanie tabeli źródła informacji poufnych w celu dokładnego dopasowania danych do typów informacji poufnych](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|— Niestandardowa grupa zabezpieczeń i konto użytkownika </br>- **Skrót i przekazywanie z jednego komputera**: dostęp administratora lokalnego do komputera z bezpośrednim dostępem do Internetu i hostowanie agenta Upload EDM </br>- **Skrót i przekazywanie z oddzielnych komputerów**: dostęp administratora lokalnego do komputera z bezpośrednim dostępem do Internetu i hostowanie agenta Upload EDM na potrzeby przekazywania i dostępu administratora lokalnego do bezpiecznego komputera w celu hostowania agenta Upload EDM w celu skrótu tabeli źródła informacji poufnych </br>— Odczytywanie dostępu do pliku tabeli źródła informacji poufnych </br> plik schematu |
-|[Faza 4. Tworzenie dokładnego dopasowania danych do informacji poufnych typu/pakietu reguł](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |— Dostęp do portalu zgodności usługi Microsoft Purview |
-|[Testuj dokładny typ informacji poufnych oparty na dopasowaniu danych](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| — Dostęp do portalu zgodności usługi Microsoft Purview
+|[Faza 3. Skrót i przekazywanie tabeli źródła informacji poufnych w celu dokładnego dopasowania danych do typów informacji poufnych](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|— Niestandardowa grupa zabezpieczeń i konto użytkownika </br>- **Skrót i przekazywanie z jednego komputera**: dostęp administratora lokalnego do komputera z bezpośrednim dostępem do Internetu i hostowanie agenta przekazywania EDM </br>- **Skrót i przekazywanie z oddzielnych komputerów**: dostęp administratora lokalnego do komputera z bezpośrednim dostępem do Internetu i hostowanie agenta przekazywania EDM na potrzeby przekazywania i dostępu administratora lokalnego do bezpiecznego komputera w celu hostowania agenta przekazywania EDM w celu skrótu tabeli źródła informacji poufnych </br>— Odczytywanie dostępu do pliku tabeli źródła informacji poufnych </br> plik schematu |
+|[Faza 4. Tworzenie dokładnego dopasowania danych do informacji poufnych typu/pakietu reguł](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |— Dostęp do portal zgodności Microsoft Purview |
+|[Testuj dokładny typ informacji poufnych oparty na dopasowaniu danych](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| — Dostęp do portal zgodności Microsoft Purview
 
 ## <a name="see-also"></a>Zobacz też
 

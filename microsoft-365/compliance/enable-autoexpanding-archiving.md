@@ -19,16 +19,14 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Dla administratorów: dowiedz się, jak włączyć automatyczne rozszerzanie archiwizacji, co zapewnia użytkownikom dodatkowy magazyn dla skrzynek pocztowych Exchange Online. Możesz włączyć automatyczne rozszerzanie archiwizacji dla całej organizacji lub tylko dla określonych użytkowników.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f1155eaf95a8cf814561650acee4784e8c469df
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 16fa0a1a53572d0680160441b237cc7ceb27f712
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012770"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622882"
 ---
 # <a name="enable-auto-expanding-archiving"></a>Włącz automatycznie rozszerzane archiwizowanie
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Możesz użyć funkcji automatycznego rozszerzania archiwizacji Exchange Online, aby włączyć dodatkowe miejsce do magazynowania dla archiwalnych skrzynek pocztowych. Po włączeniu automatycznego rozszerzania archiwizacji dodatkowe miejsce do magazynowania jest automatycznie dodawane do skrzynki pocztowej archiwum użytkownika do momentu osiągnięcia limitu magazynu wynoszącego 1,5 TB. Możesz włączyć automatyczne rozszerzanie archiwizacji dla wszystkich w organizacji lub tylko dla określonych użytkowników. Aby uzyskać więcej informacji na temat automatycznego rozszerzania archiwizacji, zobacz [Dowiedz się więcej na temat automatycznego rozszerzania archiwizacji](autoexpanding-archiving.md).
 
@@ -46,15 +44,15 @@ Możesz użyć funkcji automatycznego rozszerzania archiwizacji Exchange Online,
 
 - Automatyczne rozszerzanie archiwizacji obsługuje również udostępnione skrzynki pocztowe. Aby włączyć archiwum udostępnionej skrzynki pocztowej, wymagana jest licencja Exchange Online Plan 2 lub licencja Exchange Online Plan 1 z licencją Exchange Online — archiwum.
 
-- Automatyczne rozszerzanie archiwizacji uniemożliwia odzyskanie lub przywrócenie [nieaktywnej skrzynki pocztowej](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes). Oznacza to, że jeśli włączysz automatyczne rozszerzanie archiwizacji dla skrzynki pocztowej, a skrzynka pocztowa zostanie nieaktywna w późniejszym terminie, nie będzie można [odzyskać nieaktywnej skrzynki pocztowej](recover-an-inactive-mailbox.md) (konwertując ją na aktywną skrzynkę pocztową) ani [przywrócić](restore-an-inactive-mailbox.md) jej (scalając zawartość z istniejącą skrzynką pocztową). Jeśli automatyczne rozszerzanie archiwizacji jest włączone w nieaktywnej skrzynce pocztowej, jedynym sposobem odzyskania danych jest użycie narzędzia do wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview w celu wyeksportowania danych ze skrzynki pocztowej i zaimportowania ich do innej skrzynki pocztowej. Aby uzyskać więcej informacji, zobacz sekcję "Nieaktywne skrzynki pocztowe i automatyczne rozszerzanie archiwów" w [temacie Dowiedz się więcej o nieaktywnych skrzynkach pocztowych](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
+- Automatyczne rozszerzanie archiwizacji uniemożliwia odzyskanie lub przywrócenie [nieaktywnej skrzynki pocztowej](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes). Oznacza to, że jeśli włączysz automatyczne rozszerzanie archiwizacji dla skrzynki pocztowej, a skrzynka pocztowa zostanie nieaktywna w późniejszym terminie, nie będzie można [odzyskać nieaktywnej skrzynki pocztowej](recover-an-inactive-mailbox.md) (konwertując ją na aktywną skrzynkę pocztową) ani [przywrócić](restore-an-inactive-mailbox.md) jej (scalając zawartość z istniejącą skrzynką pocztową). Jeśli automatyczne rozszerzanie archiwizacji jest włączone w nieaktywnej skrzynce pocztowej, jedynym sposobem odzyskania danych jest użycie narzędzia do wyszukiwania zawartości w portal zgodności Microsoft Purview w celu wyeksportowania danych ze skrzynki pocztowej i zaimportowania ich do innej skrzynki pocztowej. Aby uzyskać więcej informacji, zobacz sekcję "Nieaktywne skrzynki pocztowe i automatyczne rozszerzanie archiwów" w [temacie Dowiedz się więcej o nieaktywnych skrzynkach pocztowych](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
 
-- Nie można użyć centrum administracyjnego Exchange ani portalu zgodności usługi Microsoft Purview, aby włączyć automatyczne rozszerzanie archiwizacji. Musisz użyć Exchange Online programu PowerShell. Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Połączenie to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Nie można użyć centrum administracyjnego programu Exchange ani portal zgodności Microsoft Purview w celu włączenia automatycznego rozszerzania archiwizacji. Musisz użyć Exchange Online programu PowerShell. Aby nawiązać połączenie z programem Exchange Online programu PowerShell, zobacz [Łączenie z programem PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>Włączanie automatycznego rozszerzania archiwizacji dla całej organizacji
 
 Możesz włączyć automatyczne rozszerzanie archiwizacji dla całej organizacji. Po włączeniu tej funkcji automatyczne rozszerzanie archiwizacji zostanie włączone dla istniejących skrzynek pocztowych użytkowników i dla nowo utworzonych skrzynek pocztowych użytkowników. Podczas tworzenia skrzynek pocztowych użytkownika należy włączyć główną skrzynkę pocztową archiwum użytkownika, aby funkcja automatycznego rozszerzania archiwizacji działała dla nowej skrzynki pocztowej użytkownika.
   
-1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Połącz się z usługą Exchange Online w programie PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Uruchom następujące polecenie w programie Exchange Online Programu PowerShell, aby włączyć automatyczne rozszerzanie archiwizacji dla całej organizacji.
 
@@ -74,7 +72,7 @@ Po włączeniu automatycznego rozszerzania archiwizacji dla określonego użytko
 
 To dodatkowe miejsce jest dodawane, aby zapobiec wszelkim problemom z magazynem, które mogą wystąpić przed aprowizowaniem automatycznie rozwijającego się archiwum. Dodatkowe miejsce do  *magazynowania nie jest*  dodawane po włączeniu automatycznego rozszerzania archiwizacji dla całej organizacji, zgodnie z opisem w poprzedniej sekcji.
   
-1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Połącz się z usługą Exchange Online w programie PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Uruchom następujące polecenie w programie Exchange Online Programu PowerShell, aby włączyć automatyczne rozszerzanie archiwizacji dla określonego użytkownika. Jak wyjaśniono wcześniej, skrzynka pocztowa archiwum użytkownika (archiwum główne) musi być włączona, aby można było włączyć automatyczne rozszerzanie archiwizacji dla tego użytkownika.
 
@@ -83,7 +81,7 @@ To dodatkowe miejsce jest dodawane, aby zapobiec wszelkim problemom z magazynem,
     ```
 
 > [!IMPORTANT]
-> W Exchange wdrożenia hybrydowego nie można użyć polecenia **Enable-Mailbox -AutoExpandingArchive**, aby włączyć automatyczne rozszerzanie archiwizacji dla określonego użytkownika, którego podstawowa skrzynka pocztowa jest lokalna i której skrzynka pocztowa archiwum jest oparta na chmurze. Aby włączyć automatyczne rozszerzanie archiwizacji skrzynek pocztowych archiwum opartego na chmurze w Exchange wdrożenia hybrydowego, należy uruchomić polecenie **Set-OrganizationConfig -AutoExpandingArchive** w Exchange Online programie PowerShell, aby umożliwić automatyczne rozszerzanie archiwizacji dla całej organizacji. Jeśli podstawowe i archiwalne skrzynki pocztowe użytkownika są oparte na chmurze, możesz użyć polecenia **Enable-Mailbox -AutoExpandingArchive** , aby włączyć automatyczne rozszerzanie archiwizacji dla danego użytkownika.
+> We wdrożeniu hybrydowym programu Exchange nie można użyć polecenia **Enable-Mailbox -AutoExpandingArchive** w celu włączenia automatycznego rozszerzania archiwizacji dla określonego użytkownika, którego podstawowa skrzynka pocztowa jest lokalna i której archiwum skrzynki pocztowej jest oparte na chmurze. Aby włączyć automatyczne rozszerzanie archiwizacji skrzynek pocztowych archiwum opartego na chmurze we wdrożeniu hybrydowym programu Exchange, należy uruchomić polecenie **Set-OrganizationConfig -AutoExpandingArchive** w Exchange Online programie PowerShell, aby umożliwić automatyczne rozszerzanie archiwizacji dla całej organizacji. Jeśli podstawowe i archiwalne skrzynki pocztowe użytkownika są oparte na chmurze, możesz użyć polecenia **Enable-Mailbox -AutoExpandingArchive** , aby włączyć automatyczne rozszerzanie archiwizacji dla danego użytkownika.
   
 ## <a name="verify-that-auto-expanding-archiving-is-enabled"></a>Sprawdź, czy włączono automatyczne rozszerzanie archiwizacji
 
@@ -127,9 +125,9 @@ Po włączeniu automatycznego rozszerzania archiwizacji należy pamiętać o nas
     Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
     ```
 
-- Automatyczne rozszerzanie archiwizacji jest obsługiwane w przypadku skrzynek pocztowych archiwum opartego na chmurze w Exchange wdrożenia hybrydowego dla użytkowników, którzy mają lokalną podstawową skrzynkę pocztową. Jednak po włączeniu automatycznego rozszerzania archiwizacji dla skrzynki pocztowej archiwum opartej na chmurze nie można odłączyć tej skrzynki pocztowej archiwum z powrotem do lokalnej Exchange organizacji. Automatyczne rozszerzanie archiwizacji nie jest obsługiwane w przypadku lokalnych skrzynek pocztowych w żadnej wersji Exchange Server.
+- Automatyczne rozszerzanie archiwizacji jest obsługiwane w przypadku chmurowych skrzynek pocztowych archiwum we wdrożeniu hybrydowym programu Exchange dla użytkowników, którzy mają lokalną podstawową skrzynkę pocztową. Jednak po włączeniu automatycznego rozszerzania archiwizacji dla skrzynki pocztowej archiwum opartej na chmurze nie można odłączyć tej skrzynki pocztowej archiwum z powrotem do lokalnej organizacji programu Exchange. Automatyczne rozszerzanie archiwizacji nie jest obsługiwane w przypadku lokalnych skrzynek pocztowych w żadnej wersji Exchange Server.
 
-- Aby uzyskać listę klientów Outlook, których użytkownicy mogą używać do uzyskiwania dostępu do elementów w dodatkowej przestrzeni magazynowej w skrzynce pocztowej archiwum, zobacz sekcję "wymagania Outlook dotyczące uzyskiwania dostępu do elementów w automatycznie rozwiniętym archiwum" w [temacie Dowiedz się więcej na temat automatycznego rozszerzania archiwizacji](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
+- Aby uzyskać listę klientów programu Outlook, których użytkownicy mogą używać do uzyskiwania dostępu do elementów w dodatkowym obszarze magazynowania w swojej archiwum skrzynki pocztowej, zobacz sekcję "Wymagania programu Outlook dotyczące uzyskiwania dostępu do elementów w automatycznie rozwiniętym archiwum" w [temacie Dowiedz się więcej na temat automatycznego rozszerzania archiwizacji](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
 
 - Jak wyjaśniono wcześniej, 10 GB jest dodawane do limitu przydziału magazynu podstawowej skrzynki pocztowej archiwum użytkownika (i do folderu Elementy możliwe do odzyskania, jeśli skrzynka pocztowa jest wstrzymana) po uruchomieniu polecenia **Enable-Mailbox -AutoExpandingArchive** . Zapewnia to dodatkowy magazyn do momentu aprowizowania automatycznie rozwiniętej przestrzeni dyskowej (co może potrwać do 30 dni). To dodatkowe miejsce do magazynowania nie jest dodawane po uruchomieniu polecenia **Set-OrganizationConfig -AutoExpandingArchive** , aby umożliwić automatyczne rozszerzanie archiwizacji dla wszystkich skrzynek pocztowych w organizacji. Jeśli włączono automatyczne rozszerzanie archiwizacji dla całej organizacji, ale trzeba dodać dodatkowe 10 GB miejsca do magazynowania dla określonego użytkownika, możesz uruchomić polecenie **Enable-Mailbox -AutoExpandingArchive** w tej skrzynce pocztowej. Zostanie wyświetlony komunikat o błędzie informujący o tym, że automatyczne rozszerzanie archiwizacji zostało już włączone, ale dodatkowe miejsce do magazynowania zostanie dodane do skrzynki pocztowej.
 

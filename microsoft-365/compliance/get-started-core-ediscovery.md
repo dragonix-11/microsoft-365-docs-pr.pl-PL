@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie z przypadkami zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w Microsoft Purview
+title: Rozpoczynanie pracy z przypadkami zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w usłudze Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -17,19 +17,17 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: W tym artykule opisano, jak rozpocząć korzystanie z eDiscovery (Standard) w Microsoft Purview. Po przypisaniu uprawnień do zbierania elektronicznych materiałów dowodowych i utworzeniu sprawy można dodać członków, utworzyć blokady zbierania elektronicznych materiałów dowodowych, a następnie wyszukać i wyeksportować zawartość, która jest odpowiednia dla badania.
-ms.openlocfilehash: c8a3ca883191c450ebc20ddb555018b8b480199b
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+description: W tym artykule opisano, jak rozpocząć korzystanie z eDiscovery (Standard) w usłudze Microsoft Purview. Po przypisaniu uprawnień do zbierania elektronicznych materiałów dowodowych i utworzeniu sprawy można dodać członków, utworzyć blokady zbierania elektronicznych materiałów dowodowych, a następnie wyszukać i wyeksportować zawartość, która jest odpowiednia dla badania.
+ms.openlocfilehash: 2bbd7c0bdeb1a23274deacb5b70e83ba45aacdc5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115878"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624316"
 ---
-# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Wprowadzenie zbierania elektronicznych materiałów dowodowych (standard) w Microsoft Purview
+# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Wprowadzenie do eDiscovery (Standard) w usłudze Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Standard) w Microsoft Purview udostępnia podstawowe narzędzie zbierania elektronicznych materiałów dowodowych, którego organizacje mogą używać do wyszukiwania i eksportowania zawartości w Microsoft 365 i Office 365. Możesz również użyć funkcji zbierania elektronicznych materiałów dowodowych (Standardowa), aby umieścić blokadę zbierania elektronicznych materiałów dowodowych w lokalizacjach zawartości, takich jak skrzynki pocztowe Exchange, witryny SharePoint, konta OneDrive i Microsoft Teams. Do wdrożenia zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) nie jest wymagane żadne zadanie, ale istnieją pewne zadania wstępne, które musi wykonać administrator IT i menedżer zbierania elektronicznych elektronicznych materiałów dowodowych, zanim organizacja będzie mogła rozpocząć wyszukiwanie, eksportowanie i zachowywanie zawartości przy użyciu zbierania elektronicznych materiałów dowodowych (Standard).
+Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Standard) w usłudze Microsoft Purview udostępnia podstawowe narzędzie zbierania elektronicznych materiałów dowodowych, którego organizacje mogą używać do wyszukiwania i eksportowania zawartości na platformie Microsoft 365 i Office 365. Możesz również użyć funkcji zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa), aby umieścić blokadę zbierania elektronicznych materiałów dowodowych w lokalizacjach zawartości, takich jak skrzynki pocztowe programu Exchange, witryny programu SharePoint, konta usługi OneDrive i usługa Microsoft Teams. Do wdrożenia zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) nie jest wymagane żadne zadanie, ale istnieją pewne zadania wstępne, które musi wykonać administrator IT i menedżer zbierania elektronicznych elektronicznych materiałów dowodowych, zanim organizacja będzie mogła rozpocząć wyszukiwanie, eksportowanie i zachowywanie zawartości przy użyciu zbierania elektronicznych materiałów dowodowych (Standard).
 
 W tym artykule omówiono kroki niezbędne do skonfigurowania zbierania elektronicznych materiałów dowodowych (Standard). Obejmuje to zapewnienie właściwego licencjonowania wymaganego do uzyskania dostępu do zbierania elektronicznych materiałów dowodowych (Standard) i wstrzymanie zbierania elektronicznych materiałów dowodowych w lokalizacjach zawartości, a także przypisanie uprawnień do zespołu IT, prawnego i dochodzeniowego w celu uzyskania dostępu do spraw i zarządzania nimi. Ten artykuł zawiera również ogólne omówienie przypadków użycia do wyszukiwania i eksportowania zawartości.
 
@@ -37,11 +35,11 @@ W tym artykule omówiono kroki niezbędne do skonfigurowania zbierania elektroni
 
 Licencjonowanie zbierania elektronicznych materiałów dowodowych (Standardowa) wymaga odpowiedniej subskrypcji organizacji i licencjonowania dla poszczególnych użytkowników.
 
-- **Subskrypcja organizacji:** Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (Standard) w portal zgodności Microsoft Purview i korzystać z funkcji blokady i eksportu, organizacja musi mieć Exchange subskrypcję online plan 2 lub Microsoft 365 E3 lub Office 365 E3 lub nowszą. Microsoft 365 organizacje linii frontu muszą mieć subskrypcję F5.
+- **Subskrypcja organizacji:** Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (Standard) w portal zgodności Microsoft Purview i korzystać z funkcji blokady i eksportu, organizacja musi mieć subskrypcję usługi Exchange Online Plan 2 lub Microsoft 365 E3 lub Office 365 E3 lub nowszą. Organizacje linii frontu platformy Microsoft 365 muszą mieć subskrypcję F5.
 
 - **Licencjonowanie na użytkownika:** Aby umieścić blokadę zbierania elektronicznych materiałów dowodowych w skrzynkach pocztowych i witrynach, użytkownicy muszą mieć przypisaną jedną z następujących licencji, w zależności od subskrypcji organizacji:
 
-  -  Exchange licencji planu 2 w trybie online
+  -  Licencja usługi Exchange Online Plan 2
 
    LUB
    
@@ -53,19 +51,19 @@ Licencjonowanie zbierania elektronicznych materiałów dowodowych (Standardowa) 
 
    LUB
 
-  - Microsoft 365 licencja dodatku Zgodność z usługą Frontline F5 lub F5 Security & Compliance  
+  - Licencja dodatku Microsoft 365 Frontline F5 Compliance lub F5 Security & Compliance  
 
   I
 
-  - licencja Office 365 E1 z licencją dodatku SharePoint Online Plan 2 lub OneDrive dla Firm Plan 2
+  - Office 365 E1 licencji z licencją dodatku SharePoint Online Plan 2 lub OneDrive dla Firm Plan 2
   
   Aby uzyskać informacje na temat przypisywania licencji, zobacz [Przypisywanie licencji do użytkowników](../admin/manage/assign-licenses-to-users.md).
 
 Aby uzyskać informacje i wskazówki dotyczące zabezpieczeń i zgodności:
 
-- Pobierz i zobacz sekcję eDiscovery and auditing (Wykrywanie elektroniczne i inspekcja) w [tabeli Microsoft 365 Comparison (Porównanie Microsoft 365](https://aka.ms/M365EnterprisePlans)).
+- Pobierz i zobacz sekcję eDiscovery and auditing (Wykrywanie elektroniczne i inspekcja) w [tabeli Porównanie platformy Microsoft 365](https://aka.ms/M365EnterprisePlans).
 
-- Zapoznaj się ze [wskazówkami Microsoft 365 dotyczącymi zgodności & zabezpieczeń — opisy usług | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+- Zapoznaj się ze [wskazówkami platformy Microsoft 365 dotyczącymi zgodności & zabezpieczeń — opisy usług | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Krok 2. Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych
 
@@ -73,7 +71,7 @@ Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (w war
 
 Wykonaj następujące kroki, aby dodać użytkowników do grupy ról menedżera zbierania elektronicznych materiałów dowodowych:
 
-1. Przejdź do portalu zgodności i zaloguj się przy użyciu poświadczeń konta administratora w organizacji Microsoft 365 lub Office 365.
+1. Przejdź do portalu zgodności i zaloguj się przy użyciu poświadczeń konta administratora w organizacji platformy Microsoft 365 lub Office 365.
 
 2. Na stronie <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Uprawnienia**</a> wybierz grupę ról **Menedżera zbierania elektronicznych materiałów dowodowych** .
 
@@ -129,7 +127,7 @@ Jeśli utworzysz przypadek w kroku 3 i jesteś jedyną osobą, która będzie u�
 
 1. Na stronie **eDiscovery (Standard)** w portalu zgodności kliknij nazwę przypadku, do którego chcesz dodać członków.
 
-2. Na stronie głównej sprawy wybierz kartę **Ustawienia**, a następnie wybierz pozycję **Dostęp & uprawnienia**.
+2. Na stronie głównej sprawy wybierz kartę **Ustawienia** , a następnie wybierz pozycję **Dostęp & uprawnienia**.
 
 3. Na stronie **wysuwanej Uprawnienia & dostępu** w obszarze **Członkowie** kliknij pozycję **Dodaj** , aby dodać członków do sprawy.
 
@@ -152,7 +150,7 @@ Aby rozpocząć korzystanie z eDiscovery (Standard), oto prosty przepływ pracy 
 
 ![Przepływ pracy zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa).](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[Utwórz blokadę zbierania elektronicznych materiałów dowodowych](create-ediscovery-holds.md)**. Pierwszym krokiem po utworzeniu sprawy jest wstrzymanie ( *nazywane również blokadą zbierania elektronicznych materiałów dowodowych*) w lokalizacjach zawartości osób zainteresowanych badaniem. Lokalizacje zawartości obejmują Exchange skrzynki pocztowe, witryny SharePoint, konta OneDrive oraz skrzynki pocztowe i witryny skojarzone z Microsoft Teams i Grupy Microsoft 365. Chociaż ten krok jest opcjonalny, utworzenie blokady zbierania elektronicznych materiałów dowodowych zachowuje zawartość, która może być istotna dla sprawy podczas badania. Podczas tworzenia blokady zbierania elektronicznych materiałów dowodowych można zachować całą zawartość w określonych lokalizacjach zawartości lub utworzyć blokadę opartą na zapytaniach, aby zachować tylko zawartość zgodną z zapytaniem blokady. Oprócz zachowania zawartości innym dobrym powodem do utworzenia blokad zbierania elektronicznych materiałów dowodowych jest szybkie przeszukiwanie lokalizacji zawartości w stanie wstrzymania (zamiast wybierania każdej lokalizacji do wyszukania) podczas tworzenia i uruchamiania wyszukiwań w następnym kroku. Po zakończeniu badania możesz zwolnić wszystkie utworzone blokady.
+1. **[Utwórz blokadę zbierania elektronicznych materiałów dowodowych](create-ediscovery-holds.md)**. Pierwszym krokiem po utworzeniu sprawy jest wstrzymanie ( *nazywane również blokadą zbierania elektronicznych materiałów dowodowych*) w lokalizacjach zawartości osób zainteresowanych badaniem. Lokalizacje zawartości obejmują skrzynki pocztowe programu Exchange, witryny programu SharePoint, konta usługi OneDrive oraz skrzynki pocztowe i witryny skojarzone z usługą Microsoft Teams i Grupy Microsoft 365. Chociaż ten krok jest opcjonalny, utworzenie blokady zbierania elektronicznych materiałów dowodowych zachowuje zawartość, która może być istotna dla sprawy podczas badania. Podczas tworzenia blokady zbierania elektronicznych materiałów dowodowych można zachować całą zawartość w określonych lokalizacjach zawartości lub utworzyć blokadę opartą na zapytaniach, aby zachować tylko zawartość zgodną z zapytaniem blokady. Oprócz zachowania zawartości innym dobrym powodem do utworzenia blokad zbierania elektronicznych materiałów dowodowych jest szybkie przeszukiwanie lokalizacji zawartości w stanie wstrzymania (zamiast wybierania każdej lokalizacji do wyszukania) podczas tworzenia i uruchamiania wyszukiwań w następnym kroku. Po zakończeniu badania możesz zwolnić wszystkie utworzone blokady.
 
 2. **[Wyszukaj zawartość](search-for-content-in-core-ediscovery.md)**. Po utworzeniu blokad zbierania elektronicznych materiałów dowodowych użyj wbudowanego narzędzia wyszukiwania do przeszukiwania lokalizacji zawartości w stanie wstrzymania. Możesz również wyszukać w innych lokalizacjach zawartości dane, które mogą być istotne dla danego przypadku. Możesz tworzyć i uruchamiać różne wyszukiwania skojarzone ze sprawą. Słowa kluczowe, właściwości i warunki umożliwiają [tworzenie zapytań wyszukiwania zwracających](keyword-queries-and-search-conditions.md) wyniki wyszukiwania z danymi, które najprawdopodobniej są istotne dla danego przypadku. Możesz również:
 
@@ -162,4 +160,4 @@ Aby rozpocząć korzystanie z eDiscovery (Standard), oto prosty przepływ pracy 
 
    - Popraw zapytanie i uruchom ponownie wyszukiwanie.
 
-3. **[Eksportowanie i pobieranie wyników wyszukiwania](export-content-in-core-ediscovery.md)**. Po wyszukaniu i znalezieniu danych istotnych dla badania możesz wyeksportować je z Office 365 do przeglądu przez osoby spoza zespołu dochodzeniowego. Eksportowanie danych jest procesem dwuetapowym. Pierwszym krokiem jest wyeksportowanie wyników wyszukiwania w przypadku braku Office 365. Jest to realizowane przez skopiowanie wyników wyszukiwania do lokalizacji Storage platformy Azure udostępnionej przez firmę Microsoft. Następnym krokiem jest użycie narzędzia eDiscovery Export do pobrania zawartości na komputer lokalny. Oprócz wyeksportowanych plików danych pakiet eksportu zawiera raport eksportu, raport podsumowania i raport o błędach.
+3. **[Eksportowanie i pobieranie wyników wyszukiwania](export-content-in-core-ediscovery.md)**. Po wyszukaniu i znalezieniu danych istotnych dla badania możesz wyeksportować je z Office 365 do przeglądu przez osoby spoza zespołu dochodzeniowego. Eksportowanie danych jest procesem dwuetapowym. Pierwszym krokiem jest wyeksportowanie wyników wyszukiwania w przypadku braku Office 365. Jest to realizowane przez skopiowanie wyników wyszukiwania do lokalizacji usługi Azure Storage udostępnionej przez firmę Microsoft. Następnym krokiem jest użycie narzędzia eDiscovery Export do pobrania zawartości na komputer lokalny. Oprócz wyeksportowanych plików danych pakiet eksportu zawiera raport eksportu, raport podsumowania i raport o błędach.

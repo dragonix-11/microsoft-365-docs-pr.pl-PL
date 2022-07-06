@@ -20,20 +20,18 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: Zamiast eksportować rzeczywiste wyniki wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, możesz wyeksportować raport wyników wyszukiwania. Raport zawiera podsumowanie wyników wyszukiwania i dokument ze szczegółowymi informacjami o każdym wyeksportowanym elemencie.
+description: Zamiast eksportować rzeczywiste wyniki wyszukiwania zawartości w portal zgodności Microsoft Purview, możesz wyeksportować raport wyników wyszukiwania. Raport zawiera podsumowanie wyników wyszukiwania i dokument ze szczegółowymi informacjami o każdym wyeksportowanym elemencie.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 35e0a0b13594a6396ae1f757e3a1fc8a3e952173
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 294ea5ec35e141606c1197613bf5e7dc908a4ac7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093070"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624272"
 ---
 # <a name="export-a-content-search-report"></a>Eksportowanie raportu wyszukiwania zawartości
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Zamiast eksportować pełny zestaw wyników wyszukiwania z wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview (lub z wyszukiwania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa), możesz wyeksportować te same raporty, które są generowane podczas eksportowania rzeczywistych wyników wyszukiwania.
+Zamiast eksportować pełny zestaw wyników wyszukiwania z wyszukiwania zawartości w portal zgodności Microsoft Purview (lub z wyszukiwania skojarzonego z Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview  (Przypadek standardowy) — możesz wyeksportować te same raporty, które są generowane podczas eksportowania rzeczywistych wyników wyszukiwania.
   
 Podczas eksportowania raportu pliki raportu są pobierane do folderu na komputerze lokalnym, który ma taką samą nazwę jak wyszukiwanie zawartości, ale jest dołączany do *_ReportsOnly*. Jeśli na przykład wyszukiwanie zawartości ma nazwę  *ContosoCase0815*, raport zostanie pobrany do folderu o nazwie *ContosoCase0815_ReportsOnly*. Aby zapoznać się z listą dokumentów uwzględnionych w raporcie, zobacz [What's included in the report (Co jest zawarte w raporcie](#whats-included-in-the-report)).
 
@@ -41,20 +39,20 @@ Podczas eksportowania raportu pliki raportu są pobierane do folderu na komputer
 
 - Aby wyeksportować raport wyszukiwania, musisz mieć przypisaną rolę zarządzania wyszukiwaniem zgodności w portalu zgodności. Ta rola jest domyślnie przypisywana do wbudowanych grup ról Menedżera zbierania elektronicznych materiałów dowodowych i zarządzania organizacją. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
 
-- Podczas eksportowania raportu dane są tymczasowo przechowywane w lokalizacji Storage platformy Azure w chmurze firmy Microsoft przed ich pobraniem na komputer lokalny. Upewnij się, że twoja organizacja może nawiązać połączenie z punktem końcowym na platformie Azure, czyli **\*.blob.core.windows.net** (symbol wieloznaczny reprezentuje unikatowy identyfikator eksportu). Dane wyników wyszukiwania są usuwane z lokalizacji usługi Azure Storage dwa tygodnie po ich utworzeniu.
+- Podczas eksportowania raportu dane są tymczasowo przechowywane w lokalizacji usługi Azure Storage w chmurze firmy Microsoft przed ich pobraniem na komputer lokalny. Upewnij się, że twoja organizacja może nawiązać połączenie z punktem końcowym na platformie Azure, czyli **\*.blob.core.windows.net** (symbol wieloznaczny reprezentuje unikatowy identyfikator eksportu). Dane wyników wyszukiwania zostaną usunięte z lokalizacji usługi Azure Storage dwa tygodnie po ich utworzeniu.
 
 - Komputer używany do eksportowania raportu wyszukiwania musi spełniać następujące wymagania systemowe:
   
-  - Najnowsza wersja Windows (32-bitowa lub 64-bitowa)
+  - Najnowsza wersja systemu Windows (32-bitowa lub 64-bitowa)
   
   - Microsoft .NET Framework w wersji 4.7 lub nowszej
   
-- Aby uruchomić narzędzie eksportu elektronicznego zbierania elektronicznych materiałów dowodowych, musisz użyć Microsoft Edge <sup>1</sup>. Eksportowanie wyników wyszukiwania przy użyciu programu Internet Explorer 11 nie jest już <sup>obsługiwane2</sup>.
+- Aby uruchomić narzędzie eksportu zbierania elektronicznych materiałów dowodowych, musisz użyć przeglądarki Microsoft Edge<sup>1</sup> . Eksportowanie wyników wyszukiwania przy użyciu programu Internet Explorer 11 nie jest już obsługiwane<sup>2</sup>.
   
   > [!NOTE]
-  > <sup>1</sup> W wyniku ostatnich zmian Microsoft Edge obsługa ClickOnce nie jest już domyślnie włączona. Aby uzyskać instrukcje dotyczące włączania obsługi ClickOnce w przeglądarce Edge, zobacz [Use the eDiscovery Export Tool in Microsoft Edge (Używanie narzędzia eksportu zbierania elektronicznych](configure-edge-to-export-search-results.md) materiałów dowodowych w Microsoft Edge). Ponadto firma Microsoft nie produkuje rozszerzeń ani dodatków innych firm dla aplikacji ClickOnce. Eksportowanie wyników wyszukiwania przy użyciu nieobsługiwanej przeglądarki z rozszerzeniami lub dodatkami innych firm nie jest obsługiwane.
+  > <sup>1</sup> W wyniku ostatnich zmian w przeglądarce Microsoft Edge obsługa technologii ClickOnce nie jest już domyślnie włączona. Aby uzyskać instrukcje dotyczące włączania obsługi technologii ClickOnce w przeglądarce Edge, zobacz [Korzystanie z narzędzia eksportu zbierania elektronicznych materiałów dowodowych w przeglądarce Microsoft Edge](configure-edge-to-export-search-results.md). Ponadto firma Microsoft nie produkuje rozszerzeń ani dodatków innych firm dla aplikacji ClickOnce. Eksportowanie wyników wyszukiwania przy użyciu nieobsługiwanej przeglądarki z rozszerzeniami lub dodatkami innych firm nie jest obsługiwane.
   > 
-  > <sup>2</sup> Począwszy od sierpnia 2021 r., Microsoft 365 aplikacje i usługi nie będą już obsługiwać programu Internet Explorer 11 (IE11), a użytkownicy mogą mieć obniżoną wydajność lub nie mogą łączyć się z tymi aplikacjami i usługami. Te aplikacje i usługi będą stopniowo wycofywane w nadchodzących tygodniach i miesiącach, aby zapewnić bezproblemowe zakończenie wsparcia. Każda aplikacja i usługa są wycofywane w niezależnych harmonogramach. Aby uzyskać więcej informacji, zobacz ten [wpis w blogu](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
+  > <sup>2</sup> Od sierpnia 2021 r. aplikacje i usługi platformy Microsoft 365 nie będą już obsługiwać programu Internet Explorer 11 (IE11), a użytkownicy mogą mieć obniżone środowisko lub nie mogą łączyć się z tymi aplikacjami i usługami. Te aplikacje i usługi będą stopniowo wycofywane w nadchodzących tygodniach i miesiącach, aby zapewnić bezproblemowe zakończenie wsparcia. Każda aplikacja i usługa są wycofywane w niezależnych harmonogramach. Aby uzyskać więcej informacji, zobacz ten [wpis w blogu](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
 
 - Jeśli szacowany całkowity rozmiar wyników zwracanych przez wyszukiwanie przekracza 2 TB, eksportowanie raportów kończy się niepowodzeniem. Aby pomyślnie wyeksportować raporty, spróbuj zawęzić zakres i ponownie uruchomić wyszukiwanie, aby szacowany rozmiar wyników był mniejszy niż 2 TB.
 
@@ -84,7 +82,7 @@ Pierwszym krokiem jest przygotowanie raportu do pobrania na eksport komputera. P
   
     - **Tylko elementy, które mają nierozpoznany format, są szyfrowane lub nie zostały z innych powodów indeksowane**. Ta opcja eksportuje tylko informacje o elementach bez certyfikatu.
 
-4. Skonfiguruj opcję **Włącz usuwanie duplikowania dla Exchange zawartości**.
+4. Skonfiguruj opcję **Włącz de-duplikację dla zawartości programu Exchange** .
   
    - Jeśli wybierzesz tę opcję, liczba zduplikowanych komunikatów (przed deplikacją i po wycofaniu duplikacji) zostanie uwzględniona w raporcie podsumowania eksportu. Ponadto tylko jedna kopia wiadomości zostanie uwzględniona w pliku manifest.xml. Ale raport wyników eksportu będzie zawierać wiersz dla każdej kopii zduplikowanej wiadomości, dzięki czemu można zidentyfikować skrzynki pocztowe zawierające kopię zduplikowanej wiadomości. Aby uzyskać więcej informacji na temat wyeksportowanych raportów, zobacz [Co jest zawarte w raporcie](#whats-included-in-the-report).
 
@@ -94,7 +92,7 @@ Pierwszym krokiem jest przygotowanie raportu do pobrania na eksport komputera. P
 
 5. Kliknij **pozycję Generuj raport**.
 
-   Raporty wyszukiwania są przygotowywane do pobrania, co oznacza, że dokumenty raportu są przekazywane do lokalizacji Storage platformy Azure w chmurze firmy Microsoft. Może to potrwać kilka minut.
+   Raporty wyszukiwania są przygotowywane do pobrania, co oznacza, że dokumenty raportu są przekazywane do lokalizacji usługi Azure Storage w chmurze firmy Microsoft. Może to potrwać kilka minut.
 
 Zobacz następną sekcję, aby uzyskać instrukcje dotyczące pobierania wyeksportowanych raportów wyszukiwania.
   
@@ -136,13 +134,13 @@ Następnym krokiem jest pobranie raportu z obszaru usługi Azure Storage na komp
 
 Podczas generowania i eksportowania raportu dotyczącego wyników wyszukiwania zawartości są pobierane następujące dokumenty:
   
-- **Podsumowanie eksportu:** Dokument Excel zawierający podsumowanie eksportu. Obejmuje to informacje, takie jak liczba wyszukiwanych źródeł zawartości, liczba wyników wyszukiwania z każdej lokalizacji zawartości, szacowana liczba elementów, rzeczywista liczba elementów, które zostaną wyeksportowane, oraz szacowany i rzeczywisty rozmiar elementów, które zostaną wyeksportowane.
+- **Podsumowanie eksportu:** Dokument programu Excel zawierający podsumowanie eksportu. Obejmuje to informacje, takie jak liczba wyszukiwanych źródeł zawartości, liczba wyników wyszukiwania z każdej lokalizacji zawartości, szacowana liczba elementów, rzeczywista liczba elementów, które zostaną wyeksportowane, oraz szacowany i rzeczywisty rozmiar elementów, które zostaną wyeksportowane.
 
    Jeśli podczas eksportowania raportu zostaną uwzględnione elementy niezawłaszczone, liczba nieweksportowanych elementów zostanie uwzględniona w łącznej liczbie szacowanych wyników wyszukiwania oraz w łącznej liczbie pobranych wyników wyszukiwania (jeśli chcesz wyeksportować wyniki wyszukiwania), które są wymienione w raporcie podsumowania eksportu. Innymi słowy, łączna liczba pobranych elementów jest równa łącznej liczbie szacowanych wyników i łącznej liczbie elementów niewyświetlonych.
   
 - **Manifestu:** Plik manifestu (w formacie XML), który zawiera informacje o każdym elemencie uwzględnionym w wynikach wyszukiwania. Jeśli włączono opcję de-duplikowania, zduplikowane komunikaty nie zostaną uwzględnione w pliku manifestu.
 
-- **Wyniki:** Dokument Excel zawierający wiersz z informacjami o każdym indeksowanym elemencie, który zostanie wyeksportowany z wynikami wyszukiwania. W przypadku poczty e-mail dziennik wyników zawiera informacje o każdej wiadomości, w tym: 
+- **Wyniki:** Dokument programu Excel zawierający wiersz z informacjami o każdym indeksowanym elemencie, który zostanie wyeksportowany z wynikami wyszukiwania. W przypadku poczty e-mail dziennik wyników zawiera informacje o każdej wiadomości, w tym: 
 
   - Lokalizacja wiadomości w źródłowej skrzynce pocztowej (w tym, czy wiadomość znajduje się w podstawowej, czy archiwum skrzynki pocztowej).
 
@@ -152,7 +150,7 @@ Podczas generowania i eksportowania raportu dotyczącego wyników wyszukiwania z
 
   - Nadawca i adresaci wiadomości.
 
-  W przypadku dokumentów z witryn SharePoint i OneDrive dla Firm dziennik wyników zawiera informacje o każdym dokumencie, w tym:
+  W przypadku dokumentów z witryny programu SharePoint i OneDrive dla Firm dziennik wyników zawiera informacje o każdym dokumencie, w tym:
 
   - Adres URL dokumentu.
 
@@ -167,4 +165,4 @@ Podczas generowania i eksportowania raportu dotyczącego wyników wyszukiwania z
   
 - **Trace.log:** Dziennik śledzenia, który zawiera szczegółowe informacje dotyczące rejestrowania procesu eksportowania i może pomóc w odnalezieniu problemów podczas eksportowania. Jeśli otworzysz bilet z pomoc techniczna firmy Microsoft o problemie związanym z eksportowaniem raportów wyszukiwania, może zostać wyświetlony monit o podanie tego dziennika śledzenia.
 
-- **Elementy niewymierne:** Dokument Excel zawierający informacje o wszelkich niewyeksponowanych elementach zawartych w wynikach wyszukiwania. Jeśli podczas generowania raportu wyników wyszukiwania nie uwzględnisz elementów niezaimportowanych, ten raport będzie nadal pobierany, ale będzie pusty.
+- **Elementy niewymierne:** Dokument programu Excel zawierający informacje o wszelkich niewyeksponowanych elementach uwzględnionych w wynikach wyszukiwania. Jeśli podczas generowania raportu wyników wyszukiwania nie uwzględnisz elementów niezaimportowanych, ten raport będzie nadal pobierany, ale będzie pusty.

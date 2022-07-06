@@ -20,20 +20,18 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Filtrowanie uprawnień wyszukiwania umożliwia menedżerom zbierania elektronicznych materiałów dowodowych wyszukiwanie tylko podzestawu skrzynek pocztowych i witryn w organizacji.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 067e1a3c785d624579af80f92476d2641266f4dc
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 4ebd42882c7b914fe661df589382482d9f0595bc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018058"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625022"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Konfigurowanie filtrowania uprawnień dla zbierania elektronicznych materiałów dowodowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Filtrowanie uprawnień wyszukiwania umożliwia menedżerowi zbierania elektronicznych materiałów dowodowych wyszukiwanie tylko podzestawu skrzynek pocztowych i witryn w organizacji. Możesz również użyć filtrowania uprawnień, aby umożliwić temu sameemu menedżerowi zbierania elektronicznych materiałów dowodowych wyszukiwanie tylko zawartości skrzynki pocztowej lub witryny spełniającej określone kryteria wyszukiwania. Na przykład możesz zezwolić menedżerowi zbierania elektronicznych materiałów dowodowych na wyszukiwanie tylko skrzynek pocztowych użytkowników w określonej lokalizacji lub dziale. Można to zrobić, tworząc filtr, który używa obsługiwanego filtru adresatów, aby ograniczyć skrzynki pocztowe, które mogą być wyszukiwane przez określonego użytkownika lub grupę użytkowników. Możesz również utworzyć filtr określający zawartość skrzynki pocztowej, której może wyszukać użytkownik. Odbywa się to przez utworzenie filtru, który używa właściwości komunikatu z możliwością wyszukiwania. Podobnie można zezwolić menedżerowi zbierania elektronicznych materiałów dowodowych na wyszukiwanie tylko określonych witryn programu SharePoint w organizacji. Można to zrobić, tworząc filtr, który ogranicza, która witryna może być przeszukiwana. Można również utworzyć filtr określający zawartość witryny, którą można przeszukiwać. Odbywa się to przez utworzenie filtru, który używa właściwości witryny z możliwością wyszukiwania.
 
-Filtrowanie uprawnień wyszukiwania umożliwia menedżerowi zbierania elektronicznych materiałów dowodowych wyszukiwanie tylko podzestawu skrzynek pocztowych i witryn w organizacji. Możesz również użyć filtrowania uprawnień, aby umożliwić temu sameemu menedżerowi zbierania elektronicznych materiałów dowodowych wyszukiwanie tylko zawartości skrzynki pocztowej lub witryny spełniającej określone kryteria wyszukiwania. Na przykład możesz zezwolić menedżerowi zbierania elektronicznych materiałów dowodowych na wyszukiwanie tylko skrzynek pocztowych użytkowników w określonej lokalizacji lub dziale. Można to zrobić, tworząc filtr, który używa obsługiwanego filtru adresatów, aby ograniczyć skrzynki pocztowe, które mogą być wyszukiwane przez określonego użytkownika lub grupę użytkowników. Możesz również utworzyć filtr określający zawartość skrzynki pocztowej, której może wyszukać użytkownik. Odbywa się to przez utworzenie filtru, który używa właściwości komunikatu z możliwością wyszukiwania. Podobnie można zezwolić menedżerowi zbierania elektronicznych materiałów dowodowych na wyszukiwanie tylko określonych witryn SharePoint w organizacji. Można to zrobić, tworząc filtr, który ogranicza, która witryna może być przeszukiwana. Można również utworzyć filtr określający zawartość witryny, którą można przeszukiwać. Odbywa się to przez utworzenie filtru, który używa właściwości witryny z możliwością wyszukiwania.
-
-Filtry uprawnień wyszukiwania są stosowane podczas wyszukiwania zawartości przy użyciu wyszukiwania zawartości, zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) i zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) w portalu zgodności usługi Microsoft Purview. Gdy filtr uprawnień wyszukiwania jest stosowany do określonego użytkownika, ten użytkownik może wykonać następujące akcje związane z wyszukiwaniem:
+Filtry uprawnień wyszukiwania są stosowane podczas wyszukiwania zawartości przy użyciu wyszukiwania zawartości, Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (standardowa) i Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview ( Premium) w portal zgodności Microsoft Purview. Gdy filtr uprawnień wyszukiwania jest stosowany do określonego użytkownika, ten użytkownik może wykonać następujące akcje związane z wyszukiwaniem:
 
 - Szukaj zawartości
 
@@ -43,7 +41,7 @@ Filtry uprawnień wyszukiwania są stosowane podczas wyszukiwania zawartości pr
 
 - Przeczyszczanie elementów zwracanych przez wyszukiwanie
 
-Możesz również użyć filtrowania uprawnień wyszukiwania, aby utworzyć granice logiczne (nazywane *granicami zgodności*) w organizacji kontrolującej lokalizacje zawartości użytkowników (takie jak skrzynki pocztowe, witryny SharePoint i konta OneDrive), które mogą wyszukiwać konkretni menedżerowie zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji, zobacz [Konfigurowanie granic zgodności dla badań zbierania elektronicznych materiałów dowodowych](set-up-compliance-boundaries.md).
+Możesz również użyć filtrowania uprawnień wyszukiwania, aby utworzyć granice logiczne (nazywane *granicami zgodności*) w organizacji kontrolującej lokalizacje zawartości użytkownika (takie jak skrzynki pocztowe, witryny programu SharePoint i konta usługi OneDrive), które mogą wyszukiwać określone menedżerowie zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji, zobacz [Konfigurowanie granic zgodności dla badań zbierania elektronicznych materiałów dowodowych](set-up-compliance-boundaries.md).
   
 Następujące cztery polecenia cmdlet w programie PowerShell security & Compliance umożliwiają konfigurowanie filtrów uprawnień wyszukiwania i zarządzanie nimi:
   
@@ -65,11 +63,11 @@ Następujące cztery polecenia cmdlet w programie PowerShell security & Complian
 
 - Filtrowanie uprawnień wyszukiwania ma zastosowanie do nieaktywnych skrzynek pocztowych, co oznacza, że możesz użyć filtrowania zawartości skrzynki pocztowej i skrzynki pocztowej, aby ograniczyć liczbę osób, które mogą przeszukiwać nieaktywną skrzynkę pocztową. Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać dodatkowe informacje na temat filtrowania uprawnień i nieaktywnych skrzynek pocztowych.
 
-- Filtrowanie uprawnień wyszukiwania nie może służyć do ograniczania tego, kto może przeszukiwać foldery publiczne w Exchange.
+- Filtrowanie uprawnień wyszukiwania nie może służyć do ograniczania tego, kto może przeszukiwać foldery publiczne w programie Exchange.
 
 - Nie ma limitu liczby filtrów uprawnień wyszukiwania, które można utworzyć w organizacji. Jednak zapytanie wyszukiwania może mieć maksymalnie 100 warunków. W takim przypadku warunek jest definiowany jako coś, co jest połączone z zapytaniem przez operator logiczny (na przykład **AND**, **OR** i **NEAR**). Limit liczby warunków obejmuje samo zapytanie wyszukiwania oraz wszystkie filtry uprawnień wyszukiwania, które są stosowane do użytkownika, który uruchamia wyszukiwanie. W związku z tym, tym więcej filtrów uprawnień wyszukiwania masz (zwłaszcza jeśli te filtry są stosowane do tego samego użytkownika lub grupy użytkowników), tym większe prawdopodobieństwo przekroczenia maksymalnej liczby warunków wyszukiwania. Aby uniemożliwić organizacji osiągnięcie limitu warunków, zachowaj maksymalną liczbę filtrów uprawnień do wyszukiwania w organizacji, aby spełnić wymagania biznesowe. Aby uzyskać więcej informacji, zobacz [Konfigurowanie granic zgodności dla badań zbierania elektronicznych materiałów dowodowych](set-up-compliance-boundaries.md#frequently-asked-questions).
 
-## <a name="connect-to-exchange-online-and-security--compliance-powershell-in-a-single-session"></a>Połączenie do programu PowerShell Exchange Online i security & Compliance w jednej sesji
+## <a name="connect-to-exchange-online-and-security--compliance-powershell-in-a-single-session"></a>Nawiązywanie połączenia z programem PowerShell Exchange Online i security & Compliance w jednej sesji
 
 Przed pomyślnym uruchomieniem skryptu w tej sekcji należy pobrać i zainstalować moduł Exchange Online programu PowerShell w wersji 2. Aby uzyskać informacje, zobacz [Informacje o module Exchange Online programu PowerShell w wersji 2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
@@ -93,9 +91,9 @@ Skąd wiesz, czy to zadziałało? Po uruchomieniu skryptu dostępne są poleceni
 
 Aby rozwiązać problemy z błędami połączenia programu PowerShell, zobacz:
 
-- [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
+- [Połącz się z usługą Exchange Online w programie PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
 
-- [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+- [Nawiązywanie połączenia z programem PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
 
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
 
@@ -115,9 +113,9 @@ Parametr  _FilterName_ określa nazwę filtru uprawnień. Ta nazwa jest używana
 
 Parametr  _Filtry_ określa kryteria wyszukiwania dla filtru zabezpieczeń zgodności. Można utworzyć trzy różne typy filtrów:  
 
-- **Filtrowanie skrzynki pocztowej lub OneDrive:** ten typ filtru określa skrzynki pocztowe i konta OneDrive, które mogą przeszukiwać przypisani użytkownicy (określone przez parametr _Użytkownicy_). Ten typ filtru jest nazywany filtrem *lokalizacji zawartości* , ponieważ definiuje lokalizacje zawartości, które użytkownik może przeszukiwać. Składnia tego typu filtru to **Mailbox_** _MailboxPropertyName_, gdzie _MailboxPropertyName_ określa właściwość skrzynki pocztowej używaną do określania zakresu skrzynek pocztowych i kont OneDrive, które można przeszukiwać. Na przykład filtr `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` skrzynki pocztowej umożliwia użytkownikowi przypisanemu do tego filtru przeszukiwanie tylko skrzynek pocztowych i kont OneDrive, które mają wartość "OttawaUsers" we właściwości CustomAttribute10.
+- **Filtrowanie skrzynki pocztowej lub usługi OneDrive:** Ten typ filtru określa skrzynki pocztowe i konta usługi OneDrive, które mogą wyszukiwać przypisani użytkownicy (określona przez parametr  _Użytkownicy_ ). Ten typ filtru jest nazywany filtrem *lokalizacji zawartości* , ponieważ definiuje lokalizacje zawartości, które użytkownik może przeszukiwać. Składnia tego typu filtru to **Mailbox_** _MailboxPropertyName_, gdzie  _MailboxPropertyName_ określa właściwość skrzynki pocztowej używaną do określania zakresu skrzynek pocztowych i kont usługi OneDrive, które można przeszukiwać. Na przykład filtr  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` skrzynki pocztowej umożliwia użytkownikowi przypisanemu do tego filtru przeszukiwanie tylko skrzynek pocztowych i kont usługi OneDrive, które mają wartość "OttawaUsers" we właściwości CustomAttribute10.
 
-  Dowolna obsługiwana właściwość adresata z możliwością filtrowania może być używana dla właściwości _MailboxPropertyName_ w skrzynce pocztowej lub filtrze OneDrive. W poniższej tabeli wymieniono cztery powszechnie używane właściwości adresatów używane do tworzenia skrzynki pocztowej lub filtru OneDrive. Tabela zawiera również przykład użycia właściwości w filtrze.
+  Dowolna obsługiwana właściwość adresata z możliwością filtrowania może być używana dla właściwości  _MailboxPropertyName_ w skrzynce pocztowej lub filtrze usługi OneDrive. W poniższej tabeli wymieniono cztery powszechnie używane właściwości adresatów używane do tworzenia skrzynki pocztowej lub filtru usługi OneDrive. Tabela zawiera również przykład użycia właściwości w filtrze.
 
   |Nazwa właściwości  |Przykład  |
   |---------|---------|
@@ -127,27 +125,27 @@ Parametr  _Filtry_ określa kryteria wyszukiwania dla filtru zabezpieczeń zgodn
   |Department |`"Mailbox_Department -eq 'Finance'"`        |
   |||
 
-- **Filtrowanie zawartości skrzynki pocztowej:** Ten typ filtru jest stosowany do zawartości, którą można przeszukiwać. Ten typ filtru jest nazywany *filtrem zawartości* , ponieważ określa zawartość skrzynki pocztowej lub właściwości poczty e-mail, które mogą wyszukiwać przypisani użytkownicy. Składnia tego typu filtru jest **MailboxContent_** _SearchablePropertyName gdzie _SearchablePropertyName_ określa właściwość Keyword Query Language (KQL), którą można określić w wyszukiwaniu. Na przykład filtr `"MailboxContent_Recipients  -like 'contoso.com'"` zawartości skrzynki pocztowej umożliwia użytkownikowi przypisanemu do tego filtru wyszukiwanie tylko wiadomości wysyłanych do adresatów w domenie contoso.com. Aby uzyskać listę właściwości wiadomości e-mail z możliwością wyszukiwania, zobacz [Zapytania dotyczące słów kluczowych i warunki wyszukiwania dla zbierania elektronicznych materiałów dowodowych](keyword-queries-and-search-conditions.md#searchable-email-properties).
+- **Filtrowanie zawartości skrzynki pocztowej:** Ten typ filtru jest stosowany do zawartości, którą można przeszukiwać. Ten typ filtru jest nazywany *filtrem zawartości* , ponieważ określa zawartość skrzynki pocztowej lub właściwości poczty e-mail, które mogą wyszukiwać przypisani użytkownicy. Składnia tego typu filtru to **MailboxContent_** _SearchablePropertyName gdzie  _SearchablePropertyName_ określa właściwość KQL (Keyword Query Language), którą można określić w wyszukiwaniu. Na przykład filtr `"MailboxContent_Recipients  -like 'contoso.com'"` zawartości skrzynki pocztowej umożliwia użytkownikowi przypisanemu do tego filtru wyszukiwanie tylko wiadomości wysyłanych do adresatów w domenie contoso.com. Aby uzyskać listę właściwości wiadomości e-mail z możliwością wyszukiwania, zobacz [Zapytania dotyczące słów kluczowych i warunki wyszukiwania dla zbierania elektronicznych materiałów dowodowych](keyword-queries-and-search-conditions.md#searchable-email-properties).
 
   > [!IMPORTANT]
   > Pojedynczy filtr wyszukiwania nie może zawierać filtru skrzynki pocztowej ani filtru zawartości skrzynki pocztowej. Aby połączyć je w jednym filtrze, należy użyć [listy filtrów](#using-a-filters-list-to-combine-filter-types).  Jednak filtr może zawierać bardziej złożone zapytanie tego samego typu. Na przykład `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`
 
-- **Filtrowanie zawartości witryny i witryny:** Istnieją dwa filtry związane z SharePoint i OneDrive, których można użyć do określenia zawartości witryny lub witryny, którą mogą przeszukiwać przypisani użytkownicy.
+- **Filtrowanie zawartości witryny i witryny:** Istnieją dwa filtry związane z programem SharePoint i OneDrive, których można użyć do określenia zawartości witryny lub witryny, którą mogą przeszukiwać przypisani użytkownicy.
 
   - **Site_**_SearchableSiteProperty_
   
   - **SiteContent_**_SearchableSiteProperty_
   
-   Te dwa filtry są wymienne. Na przykład `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` i  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` zwróć te same wyniki. Aby uzyskać listę właściwości witryny z możliwością wyszukiwania, zobacz [Zapytania słów kluczowych i warunki wyszukiwania dla eDiscovery](keyword-queries-and-search-conditions.md#searchable-site-properties) Aby uzyskać bardziej kompletną listę, zobacz [Omówienie właściwości przeszukanych i zarządzanych w SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Właściwości oznaczone wartością **Tak** w kolumnie **Queryable** mogą służyć do tworzenia filtru zawartości witryny lub witryny.  
+   Te dwa filtry są wymienne. Na przykład `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` i  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` zwróć te same wyniki. Aby uzyskać listę właściwości witryny z możliwością wyszukiwania, zobacz [Zapytania dotyczące słów kluczowych i warunki wyszukiwania dla eDiscovery](keyword-queries-and-search-conditions.md#searchable-site-properties)  Aby uzyskać bardziej kompletną listę, zobacz [Omówienie przeszukanych i zarządzanych właściwości w programie SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Właściwości oznaczone wartością **Tak** w kolumnie **Queryable** mogą służyć do tworzenia filtru zawartości witryny lub witryny.  
 
   > [!IMPORTANT]
   > Skonfigurowanie filtru lokacji przy użyciu jednej z obsługiwanych właściwości nie oznacza, że właściwość lokacji w filtrze będzie propagowana do wszystkich dokumentów w tej witrynie. Oznacza to, że użytkownik nadal jest odpowiedzialny za wypełnianie określonych pól właściwości skojarzonych z dokumentami w tej witrynie, aby filtr witryny działał i przechwycił odpowiednią zawartość. Jeśli na przykład użytkownik ma zastosowany filtr zabezpieczeń "Site_RefineableString00 -eq 'abc'", a następnie użytkownik uruchamia wyszukiwanie przy użyciu zapytania kluczowego "xyz". Filtr zabezpieczeń jest dołączany do zapytania, a rzeczywiste uruchomione zapytanie to "xyz **AND RefineableString0:'abc'**". Użytkownik musi upewnić się, że dokumenty w witrynie rzeczywiście mają wartości w polu RefineableString00 jako "abc". Jeśli nie, zapytanie wyszukiwania nie zwróci żadnych wyników.
 
 Podczas konfigurowania parametru *Filtry* dla filtrów uprawnień wyszukiwania należy pamiętać o następujących kwestiach:
 
-- W przeciwieństwie do skrzynek pocztowych nie ma filtru lokalizacji zawartości dla witryn, mimo że filtr *witryny* wygląda jak filtr lokalizacji. Wszystkie filtry dla SharePoint i OneDrive są filtrami zawartości (dlatego filtry *Site_* i *SiteContent_* są wymienne), ponieważ właściwości związane z witryną, takie jak *Ścieżka*, są ostemplowane bezpośrednio w dokumentach. Dlaczego tak się dzieje? Jest to wynikiem sposobu, w jaki SharePoint jest zaprojektowany. W SharePoint nie ma "obiektu lokacji" z właściwościami, tak jak w przypadku Exchange skrzynek pocztowych. W związku z tym *właściwość Path* jest ostemplowana w dokumencie i zawiera adres URL witryny, w której znajduje się dokument. Dlatego filtr *witryny* jest uważany za filtr zawartości, a nie filtr lokalizacji zawartości.
+- W przeciwieństwie do skrzynek pocztowych nie ma filtru lokalizacji zawartości dla witryn, mimo że filtr *witryny* wygląda jak filtr lokalizacji. Wszystkie filtry dla programów SharePoint i OneDrive są filtrami zawartości (dlatego *filtry Site_* i *SiteContent_* są wymienne), ponieważ właściwości związane z witryną, takie jak *Ścieżka* , są ostemplowane bezpośrednio w dokumentach. Dlaczego tak się dzieje? Jest to wynikiem sposobu projektowania programu SharePoint. W programie SharePoint nie ma "obiektu lokacji" z właściwościami, tak jak w przypadku skrzynek pocztowych programu Exchange. W związku z tym *właściwość Path* jest ostemplowana w dokumencie i zawiera adres URL witryny, w której znajduje się dokument. Dlatego filtr *witryny* jest uważany za filtr zawartości, a nie filtr lokalizacji zawartości.
 
-- Musisz utworzyć filtr uprawnień wyszukiwania, aby jawnie uniemożliwić użytkownikom wyszukiwanie lokalizacji zawartości w określonej usłudze (na przykład uniemożliwienie użytkownikom przeszukiwania dowolnej Exchange skrzynki pocztowej lub witryny SharePoint). Innymi słowy, utworzenie filtru uprawnień wyszukiwania, który umożliwia użytkownikowi przeszukiwanie wszystkich witryn SharePoint w organizacji, nie uniemożliwia temu użytkownikowi przeszukiwania skrzynek pocztowych. Aby na przykład umożliwić administratorom SharePoint przeszukiwanie tylko SharePoint witryn, należy utworzyć filtr uniemożliwiający przeszukiwanie skrzynek pocztowych. Podobnie, aby umożliwić administratorom Exchange przeszukiwanie tylko skrzynek pocztowych, należy utworzyć filtr uniemożliwiający im wyszukiwanie witryn.
+- Musisz utworzyć filtr uprawnień wyszukiwania, aby jawnie uniemożliwić użytkownikom wyszukiwanie lokalizacji zawartości w określonej usłudze (na przykład uniemożliwienie użytkownikowi przeszukiwania dowolnej skrzynki pocztowej programu Exchange lub dowolnej witryny programu SharePoint). Innymi słowy, utworzenie filtru uprawnień wyszukiwania, który umożliwia użytkownikowi przeszukiwanie wszystkich witryn programu SharePoint w organizacji, nie uniemożliwia temu użytkownikowi przeszukiwania skrzynek pocztowych. Aby na przykład zezwolić administratorom programu SharePoint na wyszukiwanie tylko witryn programu SharePoint, należy utworzyć filtr uniemożliwiający im wyszukiwanie skrzynek pocztowych. Podobnie, aby umożliwić administratorom programu Exchange wyszukiwanie tylko skrzynek pocztowych, należy utworzyć filtr uniemożliwiający im wyszukiwanie witryn.
 
 ### <a name="users"></a>*Użytkownicy*
 
@@ -181,34 +179,34 @@ Należy pamiętać o używaniu listy filtrów:
 
 Poniżej przedstawiono przykłady użycia polecenia cmdlet **New-ComplianceSecurityFilter** do utworzenia filtru uprawnień wyszukiwania.
 
-W tym przykładzie członkowie grupy ról "Menedżerowie odnajdywania w USA" mogą przeszukiwać tylko skrzynki pocztowe i konta OneDrive w Stany Zjednoczone.
+W tym przykładzie członkowie grupy ról "Us Discovery Managers" mogą przeszukiwać tylko skrzynki pocztowe i konta usługi OneDrive w Stany Zjednoczone.
   
 ```powershell
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryOrRegion  -eq 'United States'"
 ```
   
-Ten przykład umożliwia użytkownikowi annb@contoso.com wykonywanie akcji wyszukiwania tylko dla skrzynek pocztowych i kont OneDrive w Kanadzie. Ten filtr zawiera trzycyfrowy kod kraju liczbowego dla Kanady z iso 3166-1.
+Ten przykład umożliwia użytkownikowi annb@contoso.com wykonywanie akcji wyszukiwania tylko dla skrzynek pocztowych i kont usługi OneDrive w Kanadzie. Ten filtr zawiera trzycyfrowy kod kraju liczbowego dla Kanady z iso 3166-1.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'"
 ```
 
-Ten przykład umożliwia użytkownikom donh i suzanf wyszukiwanie tylko skrzynek pocztowych i kont OneDrive, które mają wartość "Marketing" dla właściwości CustomAttribute1 skrzynki pocztowej.
+Ten przykład umożliwia użytkownikom donh i suzanf przeszukiwanie tylko skrzynek pocztowych i kont usługi OneDrive o wartości "Marketing" dla właściwości skrzynki pocztowej CustomAttribute1.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'"
 ```
 
-W tym przykładzie członkowie grupy ról "Fourth Coffee eDiscovery Managers" mogą przeszukiwać tylko skrzynki pocztowe i konta OneDrive, które mają wartość "FourthCoffee" dla właściwości Skrzynka pocztowa działu. Filtr umożliwia również członkom grupy ról wyszukiwanie dokumentów w witrynie Fourth Coffee SharePoint.
+W tym przykładzie członkowie grupy ról "Fourth Coffee eDiscovery Managers" mogą wyszukiwać tylko skrzynki pocztowe i konta usługi OneDrive o wartości "FourthCoffee" dla właściwości Skrzynka pocztowa działu. Filtr umożliwia również członkom grupy ról wyszukiwanie dokumentów w witrynie Czwarta kawa programu SharePoint.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee' -or SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'"
 ```
 
 > [!NOTE]
-> W poprzednim przykładzie należy uwzględnić dodatkowy filtr zawartości witryny (`SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'`), aby członkowie grupy ról mogli wyszukiwać dokumenty na kontach OneDrive. Jeśli ten filtr nie zostanie uwzględniony, filtr zezwoli tylko członkom grupy ról na wyszukiwanie dokumentów znajdujących się w `https://contoso.sharepoint.com/sites/FourthCoffee`programie .
+> W poprzednim przykładzie należy uwzględnić dodatkowy filtr zawartości witryny (`SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'`), aby członkowie grupy ról mogli wyszukiwać dokumenty na kontach usługi OneDrive. Jeśli ten filtr nie zostanie uwzględniony, filtr zezwoli tylko członkom grupy ról na wyszukiwanie dokumentów znajdujących się w `https://contoso.sharepoint.com/sites/FourthCoffee`programie .
 
-W tym przykładzie członkowie grupy ról menedżera zbierania elektronicznych materiałów dowodowych mogą przeszukiwać tylko skrzynki pocztowe i OneDrive konta członków grupy dystrybucyjnej Użytkownicy Ottawy. Polecenie cmdlet Get-DistributionGroup w programie Exchange Online programu PowerShell służy do znajdowania członków grupy Użytkownicy Ottawy.
+W tym przykładzie członkowie grupy ról menedżera zbierania elektronicznych materiałów dowodowych mogą przeszukiwać tylko skrzynki pocztowe i konta usługi OneDrive członków grupy dystrybucyjnej Użytkownicy ottawy. Polecenie cmdlet Get-DistributionGroup w programie Exchange Online programu PowerShell służy do znajdowania członków grupy Użytkownicy Ottawy.
   
 ```powershell
 $DG = Get-DistributionGroup "Ottawa Users"
@@ -218,7 +216,7 @@ $DG = Get-DistributionGroup "Ottawa Users"
 New-ComplianceSecurityFilter -FilterName DGFilter  -Users eDiscoveryManager -Filters "Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"
 ```
 
-Ten przykład uniemożliwia dowolnemu użytkownikowi wykonywanie akcji wyszukiwania w skrzynkach pocztowych i OneDrive kontach członków grupy dystrybucyjnej zespołu wykonawczego. Oznacza to, że użytkownicy mogą usuwać zawartość z tych skrzynek pocztowych. Polecenie cmdlet Get-DistributionGroup w programie Exchange Online programu PowerShell służy do znajdowania członków grupy zespołu wykonawczego.
+Ten przykład uniemożliwia dowolnemu użytkownikowi wykonywanie akcji wyszukiwania na skrzynkach pocztowych i kontach usługi OneDrive członków grupy dystrybucyjnej zespołu wykonawczego. Oznacza to, że użytkownicy mogą usuwać zawartość z tych skrzynek pocztowych. Polecenie cmdlet Get-DistributionGroup w programie Exchange Online programu PowerShell służy do znajdowania członków grupy zespołu wykonawczego.
 
 ```powershell
 $DG = Get-DistributionGroup "Executive Team"
@@ -228,7 +226,7 @@ $DG = Get-DistributionGroup "Executive Team"
 New-ComplianceSecurityFilter -FilterName NoExecutivesPreview  -Users All -Filters "Mailbox_MemberOfGroup -ne '$($DG.DistinguishedName)'" 
 ```
 
-W tym przykładzie członkowie niestandardowej grupy ról OneDrive eDiscovery Managers mogą wyszukiwać tylko zawartość na kontach OneDrive w organizacji.
+W tym przykładzie członkowie niestandardowej grupy ról menedżerów zbierania elektronicznych materiałów dowodowych usługi OneDrive mogą wyszukiwać tylko zawartość na kontach usługi OneDrive w organizacji.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName OneDriveOnly  -Users "OneDrive eDiscovery Managers" -Filters "SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'"
@@ -246,7 +244,7 @@ Podobnie jak w poprzednim przykładzie, ten przykład ogranicza użytkownika do 
 New-ComplianceSecurityFilter -FilterName DocumentDateRestrictionFilter -Users donh@contoso.com -Filters "SiteContent_LastModifiedTime -ge '01-01-2015' -and SiteContent_LastModifiedTime -le '12-31-2015'" 
 ```
 
-Ten przykład uniemożliwia członkom grupy ról "menedżerowie OneDrive odnajdywania" wykonywanie akcji wyszukiwania w dowolnej skrzynce pocztowej w organizacji.
+Ten przykład uniemożliwia członkom grupy ról "Menedżerowie odnajdywania w usłudze OneDrive" wykonywanie akcji wyszukiwania w dowolnej skrzynce pocztowej w organizacji.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName NoEXO -Users "OneDrive Discovery Managers" -Filters "Mailbox_Alias -notlike '*'"
@@ -286,16 +284,16 @@ Możesz również użyć parametru  _Użytkownicy_ , aby określić grupę ról 
 
 Parametr  _Filtry_ określa kryteria wyszukiwania dla filtru zabezpieczeń zgodności. Można utworzyć trzy różne typy filtrów:
 
-- **Filtrowanie skrzynki pocztowej i OneDrive:** ten typ filtru określa skrzynki pocztowe i konta OneDrive, które mogą przeszukiwać przypisani użytkownicy (określone przez parametr _Użytkownicy_). Składnia tego typu filtru to **Mailbox_** _MailboxPropertyName_, gdzie  _MailboxPropertyName_ określa właściwość skrzynki pocztowej używaną do określania zakresu skrzynek pocztowych, które można przeszukiwać. Na przykład filtr  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` skrzynki pocztowej umożliwia użytkownikowi przypisanemu do tego filtru wyszukiwanie tylko skrzynek pocztowych o wartości "OttawaUsers" we właściwości CustomAttribute10.  Dla właściwości  _MailboxPropertyName_ można użyć dowolnej obsługiwanej właściwości adresata z możliwością filtrowania. Aby uzyskać listę obsługiwanych właściwości, zobacz [Właściwości możliwe do filtrowania dla parametru -RecipientFilter](/powershell/exchange/recipientfilter-properties).
+- **Filtrowanie skrzynek pocztowych i usługi OneDrive:** Ten typ filtru określa skrzynki pocztowe i konta usługi OneDrive, które mogą wyszukiwać przypisani użytkownicy (określona przez parametr  _Użytkownicy_ ). Składnia tego typu filtru to **Mailbox_** _MailboxPropertyName_, gdzie  _MailboxPropertyName_ określa właściwość skrzynki pocztowej używaną do określania zakresu skrzynek pocztowych, które można przeszukiwać. Na przykład filtr  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` skrzynki pocztowej umożliwia użytkownikowi przypisanemu do tego filtru wyszukiwanie tylko skrzynek pocztowych o wartości "OttawaUsers" we właściwości CustomAttribute10.  Dla właściwości  _MailboxPropertyName_ można użyć dowolnej obsługiwanej właściwości adresata z możliwością filtrowania. Aby uzyskać listę obsługiwanych właściwości, zobacz [Właściwości możliwe do filtrowania dla parametru -RecipientFilter](/powershell/exchange/recipientfilter-properties).
 
-- **Filtrowanie zawartości skrzynki pocztowej:** Ten typ filtru jest stosowany do zawartości, którą można przeszukiwać. Określa zawartość skrzynki pocztowej, która może być wyszukiwana przez przypisanych użytkowników. Składnia tego typu filtru to **MailboxContent_**_SearchablePropertyName_, gdzie _searchablePropertyName_ określa właściwość Keyword Query Language (KQL), którą można określić w wyszukiwaniu. Na przykład filtr `"MailboxContent_Recipients  -like 'contoso.com'"` zawartości skrzynki pocztowej umożliwia użytkownikowi przypisanemu do tego filtru wyszukiwanie tylko wiadomości wysyłanych do adresatów w domenie contoso.com.  Aby uzyskać listę właściwości wiadomości e-mail z możliwością wyszukiwania, zobacz [Zapytania dotyczące słów kluczowych i warunki wyszukiwania dla zbierania elektronicznych materiałów dowodowych](keyword-queries-and-search-conditions.md).
+- **Filtrowanie zawartości skrzynki pocztowej:** Ten typ filtru jest stosowany do zawartości, którą można przeszukiwać. Określa zawartość skrzynki pocztowej, która może być wyszukiwana przez przypisanych użytkowników. Składnia tego typu filtru to **MailboxContent_**_SearchablePropertyName_, gdzie  _searchablePropertyName_ określa właściwość KQL (Keyword Query Language), którą można określić w wyszukiwaniu. Na przykład filtr `"MailboxContent_Recipients  -like 'contoso.com'"` zawartości skrzynki pocztowej umożliwia użytkownikowi przypisanemu do tego filtru wyszukiwanie tylko wiadomości wysyłanych do adresatów w domenie contoso.com.  Aby uzyskać listę właściwości wiadomości e-mail z możliwością wyszukiwania, zobacz [Zapytania dotyczące słów kluczowych i warunki wyszukiwania dla zbierania elektronicznych materiałów dowodowych](keyword-queries-and-search-conditions.md).
 
-- **Filtrowanie zawartości witryny i witryny:** Istnieją dwa filtry SharePoint i OneDrive dla Firm związane z witryną, których można użyć do określenia zawartości witryny lub witryny, którą mogą przeszukiwać przypisani użytkownicy:
+- **Filtrowanie zawartości witryny i witryny:** Istnieją dwa filtry związane z witryną programu SharePoint i OneDrive dla Firm, których można użyć do określenia zawartości witryny lub witryny, którą mogą przeszukiwać przypisani użytkownicy:
 
   - **Site_** *SearchableSiteProperty* 
   - **SiteContent** _ *SearchableSiteProperty*
   
-  Te dwa filtry są wymienne. Na przykład  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` i  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` zwróć te same wyniki. Aby uzyskać listę właściwości witryny z możliwością wyszukiwania, zobacz [Omówienie właściwości przeszukanych i zarządzanych w SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Właściwości oznaczone wartością **Tak** w kolumnie **Queryable** mogą służyć do tworzenia filtru zawartości witryny lub witryny.
+  Te dwa filtry są wymienne. Na przykład  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` i  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` zwróć te same wyniki. Aby uzyskać listę właściwości witryny z możliwością wyszukiwania, zobacz [Omówienie właściwości przeszukanych i zarządzanych w programie SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Właściwości oznaczone wartością **Tak** w kolumnie **Queryable** mogą służyć do tworzenia filtru zawartości witryny lub witryny.
 
 ### <a name="examples-of-changing-search-permissions-filters"></a>Przykłady zmiany filtrów uprawnień wyszukiwania
 
@@ -353,11 +351,11 @@ Filtr **Remove-ComplianceSecurityFilter** służy do usuwania filtru wyszukiwani
 
 - **Czy filtrowanie uprawnień wyszukiwania działa w przypadku nieaktywnych skrzynek pocztowych?** Tak, możesz użyć filtrów zawartości skrzynki pocztowej i skrzynki pocztowej, aby ograniczyć liczbę osób, które mogą wyszukiwać nieaktywne skrzynki pocztowe w organizacji. Podobnie jak w przypadku zwykłej skrzynki pocztowej, nieaktywną skrzynkę pocztową należy skonfigurować przy użyciu właściwości adresata, która jest używana do tworzenia filtru uprawnień. W razie potrzeby możesz użyć polecenia **Get-Mailbox -InactiveMailboxOnly** , aby wyświetlić właściwości nieaktywnych skrzynek pocztowych. Aby uzyskać więcej informacji, zobacz [Tworzenie nieaktywnych skrzynek pocztowych i zarządzanie nimi](create-and-manage-inactive-mailboxes.md).
   
-- **Czy filtrowanie uprawnień wyszukiwania działa w przypadku folderów publicznych?** Nie. Jak wyjaśniono wcześniej, filtrowanie uprawnień wyszukiwania nie może służyć do ograniczania tego, kto może przeszukiwać foldery publiczne w Exchange. Na przykład elementów w lokalizacjach folderów publicznych nie można wykluczyć z wyników wyszukiwania za pomocą filtru uprawnień.
+- **Czy filtrowanie uprawnień wyszukiwania działa w przypadku folderów publicznych?** L.p. Jak wyjaśniono wcześniej, filtrowanie uprawnień wyszukiwania nie może służyć do ograniczania tego, kto może przeszukiwać foldery publiczne w programie Exchange. Na przykład elementów w lokalizacjach folderów publicznych nie można wykluczyć z wyników wyszukiwania za pomocą filtru uprawnień.
 
-- **Czy zezwolenie użytkownikowi na przeszukiwanie wszystkich lokalizacji zawartości w określonej usłudze uniemożliwia również wyszukiwanie lokalizacji zawartości w innej usłudze?** Nie. Jak wyjaśniono wcześniej, należy utworzyć filtr uprawnień wyszukiwania, aby jawnie uniemożliwić użytkownikom wyszukiwanie lokalizacji zawartości w określonej usłudze (na przykład uniemożliwienie użytkownikom przeszukiwania dowolnej Exchange skrzynki pocztowej lub witryny SharePoint). Innymi słowy, utworzenie filtru uprawnień wyszukiwania, który umożliwia użytkownikowi przeszukiwanie wszystkich witryn SharePoint w organizacji, nie uniemożliwia temu użytkownikowi przeszukiwania skrzynek pocztowych. Aby na przykład umożliwić administratorom SharePoint przeszukiwanie tylko SharePoint witryn, należy utworzyć filtr uniemożliwiający przeszukiwanie skrzynek pocztowych. Podobnie, aby umożliwić administratorom Exchange przeszukiwanie tylko skrzynek pocztowych, należy utworzyć filtr uniemożliwiający im wyszukiwanie witryn.
+- **Czy zezwolenie użytkownikowi na przeszukiwanie wszystkich lokalizacji zawartości w określonej usłudze uniemożliwia również wyszukiwanie lokalizacji zawartości w innej usłudze?** L.p. Jak wyjaśniono wcześniej, należy utworzyć filtr uprawnień wyszukiwania, aby jawnie uniemożliwić użytkownikom wyszukiwanie lokalizacji zawartości w określonej usłudze (na przykład uniemożliwienie użytkownikom przeszukiwania dowolnej skrzynki pocztowej programu Exchange lub dowolnej witryny programu SharePoint). Innymi słowy, utworzenie filtru uprawnień wyszukiwania, który umożliwia użytkownikowi przeszukiwanie wszystkich witryn programu SharePoint w organizacji, nie uniemożliwia temu użytkownikowi przeszukiwania skrzynek pocztowych. Aby na przykład zezwolić administratorom programu SharePoint na wyszukiwanie tylko witryn programu SharePoint, należy utworzyć filtr uniemożliwiający im wyszukiwanie skrzynek pocztowych. Podobnie, aby umożliwić administratorom programu Exchange wyszukiwanie tylko skrzynek pocztowych, należy utworzyć filtr uniemożliwiający im wyszukiwanie witryn.
 
-- **Czy filtry uprawnień wyszukiwania są liczone względem limitów znaków zapytania wyszukiwania?** Tak. Filtry uprawnień wyszukiwania są liczone względem limitu znaków dla zapytań wyszukiwania. Aby uzyskać więcej informacji, zobacz [Limity w zakresie zbierania elektronicznych materiałów dowodowych (Premium)](limits-ediscovery20.md).
+- **Czy filtry uprawnień wyszukiwania są liczone względem limitów znaków zapytania wyszukiwania?** Tak. Filtry uprawnień wyszukiwania są liczone względem limitu znaków dla zapytań wyszukiwania. Aby uzyskać więcej informacji, zobacz [Limity w funkcji zbierania elektronicznych materiałów dowodowych (Premium).](limits-ediscovery20.md)
 
 **Jaka jest maksymalna liczba filtrów uprawnień wyszukiwania, które można utworzyć w organizacji?**
   
@@ -381,6 +379,6 @@ Możliwe, że samo zapytanie wyszukiwania może składać się z wielu warunków
 
 Ponadto liczba filtrów uprawnień wyszukiwania dołączonych do zapytania zależy od użytkownika, który uruchamia wyszukiwanie. Gdy określony użytkownik uruchamia wyszukiwanie, filtry uprawnień wyszukiwania, które są stosowane do użytkownika (który jest zdefiniowany przez parametr *Użytkownicy* w filtrze) są dołączane do zapytania. Organizacja może mieć setki filtrów uprawnień wyszukiwania, ale jeśli do tych samych użytkowników zostanie zastosowanych więcej niż 100 filtrów, prawdopodobnie limit 100 warunków zostanie przekroczony, gdy ci użytkownicy będą uruchamiać wyszukiwania.
 
-Jest jeszcze jedna rzecz, o której należy pamiętać o limicie warunku. Liczba określonych witryn SharePoint uwzględnionych w filtrach zapytań wyszukiwania lub uprawnień wyszukiwania również jest liczona względem tego limitu. 
+Jest jeszcze jedna rzecz, o której należy pamiętać o limicie warunku. Liczba określonych witryn programu SharePoint uwzględnionych w filtrach zapytań wyszukiwania lub uprawnień wyszukiwania również jest liczona względem tego limitu. 
 
 Aby uniemożliwić organizacji osiągnięcie limitu warunków, zachowaj maksymalną liczbę filtrów uprawnień do wyszukiwania w organizacji, aby spełnić wymagania biznesowe.

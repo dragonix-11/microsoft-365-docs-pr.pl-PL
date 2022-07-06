@@ -20,20 +20,18 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: W tym artykule dowiesz się, jak tworzyć zasady DLP przy użyciu jednego z szablonów zawartych w Office 365.
-ms.openlocfilehash: 952a552210b00061717c24db5de5e5a47b84d72b
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 67d21d3e5a057960a4d3fa92bfaa709345cf38ff
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754681"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624592"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Twórz zasady DLP na podstawie szablonu
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Najprostszym, najbardziej typowym sposobem rozpoczęcia pracy z zasadami DLP jest użycie jednego z szablonów zawartych w portal zgodności Microsoft Purview. Możesz użyć jednego z tych szablonów w następującym stanie, w jakim jest, lub dostosować reguły w celu spełnienia określonych wymagań dotyczących zgodności organizacji.
 
-Microsoft 365 zawiera ponad 40 gotowych do użycia szablonów, które mogą pomóc w spełnieniu szerokiego zakresu typowych potrzeb związanych z przepisami i zasadami biznesowymi. Zobacz; [Szablony zasad](dlp-policy-reference.md#policy-templates) dla pełnej listy. 
+Platforma Microsoft 365 zawiera ponad 40 gotowych do użycia szablonów, które mogą pomóc w spełnieniu szerokiego zakresu typowych wymagań dotyczących zasad regulacyjnych i biznesowych. Zobacz; [Szablony zasad](dlp-policy-reference.md#policy-templates) dla pełnej listy. 
 
 Szablon można dostosować, modyfikując dowolne z istniejących reguł lub dodając nowe. Możesz na przykład dodać nowe typy poufnych informacji do reguły, zmodyfikować liczby w regule, aby utrudnić lub ułatwić wyzwalanie, umożliwić użytkownikom zastąpienie akcji w regule przez podanie uzasadnienia biznesowego lub zmianę sposobu wysyłania powiadomień i raportów o zdarzeniach. Szablon zasad DLP jest elastycznym punktem wyjścia dla wielu typowych scenariuszy zgodności.
 
@@ -43,17 +41,17 @@ Możesz również wybrać szablon niestandardowy, który nie ma reguł domyślny
 
 Członkowie zespołu ds. zgodności, którzy będą tworzyć zasady DLP, potrzebują uprawnień do Centrum zgodności. Domyślnie administrator dzierżawy będzie miał dostęp, aby zapewnić dostęp funkcjonariuszom ds. zgodności i innym osobom. Wykonaj następujące czynności:
   
-1. Utwórz grupę w Microsoft 365 i dodaj do niej funkcjonariuszy zgodności.
+1. Utwórz grupę na platformie Microsoft 365 i dodaj do niej funkcjonariuszy ds. zgodności.
     
 2. Utwórz grupę ról na stronie **Uprawnienia** portal zgodności Microsoft Purview. 
 
 3. Podczas tworzenia grupy ról użyj sekcji **Wybierz role** , aby dodać następującą rolę do grupy ról: **Zarządzanie zgodnością DLP**.
     
-4. Użyj sekcji **Wybieranie członków**, aby dodać utworzoną wcześniej grupę Microsoft 365 do grupy ról.
+4. Użyj sekcji **Wybieranie członków** , aby dodać utworzoną wcześniej grupę platformy Microsoft 365 do grupy ról.
 
 Użyj roli **Zarządzanie zgodnością DLP tylko do wyświetlania** , aby utworzyć grupę ról z uprawnieniami tylko do wyświetlania do zasad DLP i raportów DLP.
 
-Aby uzyskać więcej informacji, zobacz [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
+Aby uzyskać więcej informacji, zobacz [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md).
   
 Te uprawnienia są wymagane do utworzenia i zastosowania zasad DLP, aby nie wymuszać zasad.
 
@@ -61,14 +59,14 @@ Te uprawnienia są wymagane do utworzenia i zastosowania zasad DLP, aby nie wymu
 
 W wersji zapoznawczej dostępne są role i grupy ról, które można przetestować, aby dostosować mechanizmy kontroli dostępu.
 
-Oto lista odpowiednich ról w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
+Oto lista odpowiednich ról. Aby dowiedzieć się więcej na ich temat, zobacz [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md)
 
 - Information Protection Administracja
 - analityk Information Protection
 - badacz Information Protection
 - czytelnik Information Protection
 
-Oto lista odpowiednich grup ról, które są w wersji zapoznawczej. Aby dowiedzieć się więcej na ten temat, zobacz [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)
+Oto lista odpowiednich grup ról. Aby dowiedzieć się więcej na ten temat, zobacz [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md)
 
 - Information Protection
 - administratorzy Information Protection
@@ -82,8 +80,6 @@ Oto lista odpowiednich grup ról, które są w wersji zapoznawczej. Aby dowiedzi
 
 2. W portal zgodności Microsoft Purview \> lewej nawigacji \> Rozwiązania **Zasady** \> **zapobiegania** \> **utracie** \> danych **+ Tworzenie zasad**.
 
-    ![Utwórz przycisk zasad.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
-          
 3. Wybierz szablon zasad DLP, który chroni typy poufnych informacji, których potrzebujesz \> **Dalej**.
 
 4. Nadaj zasadom \> nazwę **Dalej**.
@@ -103,13 +99,13 @@ Oto lista odpowiednich grup ról, które są w wersji zapoznawczej. Aby dowiedzi
    - Wybierz pozycję **Wszystkie lokalizacje w Office 365** \> **Dalej**.
    - Wybierz **pozycję Pozwól mi wybrać określone lokalizacje** \> **Dalej**. W tym przykładzie wybierz tę opcję.
 
-   Aby uwzględnić lub wykluczyć całą lokalizację, taką jak wszystkie Exchange wiadomości e-mail lub wszystkie konta OneDrive, włącz lub wyłącz **stan** tej lokalizacji.
+   Aby dołączyć lub wykluczyć całą lokalizację, taką jak wszystkie konta poczty e-mail programu Exchange lub wszystkie konta usługi OneDrive, włącz lub wyłącz **stan** tej lokalizacji.
 
-   Aby uwzględnić tylko określone witryny SharePoint lub konta OneDrive dla Firm, przełącz **pozycję Stan** na włączone, a następnie kliknij linki w obszarze **Dołącz**, aby wybrać określone witryny lub konta. Po zastosowaniu zasad do lokacji reguły skonfigurowane w tych zasadach są automatycznie stosowane do wszystkich podwitryn tej witryny.
+   Aby uwzględnić tylko określone witryny programu SharePoint lub konta OneDrive dla Firm, przełącz pozycję **Stan** na włączone, a następnie kliknij linki w obszarze **Dołącz**, aby wybrać określone witryny lub konta. Po zastosowaniu zasad do lokacji reguły skonfigurowane w tych zasadach są automatycznie stosowane do wszystkich podwitryn tej witryny.
 
    ![Opcje lokalizacji, w których można zastosować zasady DLP.](../media/all-locations.png)
 
-   W tym przykładzie, aby chronić poufne informacje przechowywane na wszystkich kontach OneDrive dla Firm, wyłącz **stan** zarówno dla **Exchange poczty e-mail**, jak i **witryn SharePoint**, a następnie pozostaw **stan** włączony dla **kont OneDrive**.
+   W tym przykładzie, aby chronić poufne informacje przechowywane na wszystkich kontach OneDrive dla Firm, wyłącz **stan** zarówno dla poczty **e-mail programu Exchange**, jak i **witryn programu SharePoint**, a następnie pozostaw **stan** włączony dla **kont usługi OneDrive**.
 
 7. Wybierz **pozycję Przejrzyj i dostosuj ustawienia domyślne z szablonu** \> **Dalej**.
 
@@ -121,7 +117,7 @@ Oto lista odpowiednich grup ról, które są w wersji zapoznawczej. Aby dowiedzi
     1. Exchange
     1. SharePoint
     1. OneDrive
-    1. Teams wiadomości czatu i kanału 
+    1. Wiadomości na czacie i kanale w usłudze Teams 
 
 10. Wybierz przycisk **Dalej**.
 

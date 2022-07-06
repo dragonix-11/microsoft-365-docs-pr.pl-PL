@@ -15,25 +15,23 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak utworzyć i zaimportować niestandardowy typ informacji poufnych dla zasad w Centrum zgodności.
-ms.openlocfilehash: 8678b7c218844d9963bd610b66e8b6c2c2647dea
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b71893afad2d68f9820f23e60ae9c3b15531f976
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014525"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625594"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Tworzenie niestandardowego typu informacji poufnych przy użyciu programu PowerShell
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W tym artykule przedstawiono sposób tworzenia pliku *pakietu reguł* XML, który definiuje niestandardowe [typy informacji poufnych](sensitive-information-type-entity-definitions.md). W tym artykule opisano niestandardowy typ informacji poufnych, który identyfikuje identyfikator pracownika. Przykładowego kodu XML w tym artykule można użyć jako punktu początkowego dla własnego pliku XML.
 
 Aby uzyskać więcej informacji na temat typów informacji poufnych, zobacz [Informacje o typach informacji poufnych](sensitive-information-type-learn-about.md).
 
-Po utworzeniu dobrze sformułowanego pliku XML możesz przekazać go do Microsoft 365 przy użyciu programu PowerShell. Następnie możesz użyć niestandardowego typu informacji poufnych w zasadach. Możesz przetestować jego skuteczność w wykrywaniu poufnych informacji zgodnie z oczekiwaniami.
+Po utworzeniu dobrze sformułowanego pliku XML możesz go przekazać na platformę Microsoft 365 przy użyciu programu PowerShell. Następnie możesz użyć niestandardowego typu informacji poufnych w zasadach. Możesz przetestować jego skuteczność w wykrywaniu poufnych informacji zgodnie z oczekiwaniami.
 
 > [!NOTE]
-> Jeśli nie potrzebujesz szczegółowej kontrolki zapewnianej przez program PowerShell, możesz utworzyć niestandardowe typy informacji poufnych w portalu zgodności usługi Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowego typu informacji poufnych](create-a-custom-sensitive-information-type.md).
+> Jeśli nie potrzebujesz szczegółowej kontrolki zapewnianej przez program PowerShell, możesz utworzyć niestandardowe typy informacji poufnych w portal zgodności Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowego typu informacji poufnych](create-a-custom-sensitive-information-type.md).
 
 ## <a name="important-disclaimer"></a>Ważne zastrzeżenie
 
@@ -233,7 +231,7 @@ W tym przykładzie jednostka pracownika `ID` już używa `IdMatch` tego elementu
 
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>Dodatkowe wzorce, takie jak daty lub adresy [wbudowane funkcje]
 
-Typy informacji poufnych mogą również używać wbudowanych funkcji do identyfikowania dowodów potwierdzających. Na przykład data, data UE, data wygaśnięcia lub adres USA. Microsoft 365 nie obsługuje przekazywania własnych funkcji niestandardowych. Jednak podczas tworzenia niestandardowego typu informacji poufnych jednostka może odwoływać się do wbudowanych funkcji.
+Typy informacji poufnych mogą również używać wbudowanych funkcji do identyfikowania dowodów potwierdzających. Na przykład data, data UE, data wygaśnięcia lub adres USA. Platforma Microsoft 365 nie obsługuje przekazywania własnych funkcji niestandardowych. Jednak podczas tworzenia niestandardowego typu informacji poufnych jednostka może odwoływać się do wbudowanych funkcji.
 
 Na przykład wskaźnik identyfikatora pracownika ma datę zatrudnienia, więc ta jednostka niestandardowa może używać wbudowanej `Func_us_date` funkcji do identyfikowania daty w formacie powszechnie używanym w Stanach Zjednoczonych.
 
@@ -327,7 +325,7 @@ Oprócz funkcji confidenceLevel dla każdego wzorca jednostka ma atrybut recomme
 
 ## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>Czy chcesz obsługiwać inne języki w interfejsie użytkownika Centrum zgodności? [LocalizedStrings, element]
 
-Jeśli zespół ds. zgodności używa portalu zgodności usługi Microsoft Purview do tworzenia zasad w różnych ustawieniach regionalnych i w różnych językach, możesz podać zlokalizowane wersje nazwy i opisu niestandardowego typu informacji poufnych. Gdy zespół ds. zgodności używa Microsoft 365 w obsługiwanym języku, zobaczy zlokalizowaną nazwę w interfejsie użytkownika.
+Jeśli zespół ds. zgodności używa portal zgodności Microsoft Purview do tworzenia zasad w różnych ustawieniach regionalnych i w różnych językach, możesz podać zlokalizowane wersje nazwy i opisu niestandardowego typu informacji poufnych. Gdy zespół ds. zgodności używa platformy Microsoft 365 w obsługiwanym języku, zobaczy zlokalizowaną nazwę w interfejsie użytkownika.
 
 ![Liczba wystąpień i konfiguracja dokładności dopasowania.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
@@ -343,7 +341,7 @@ Na koniec początek każdego pakietu RulePackage zawiera pewne ogólne informacj
 
 Co najważniejsze, musisz wygenerować identyfikator GUID dla pakietu RulePack. Powyżej wygenerowano identyfikator GUID dla jednostki; Jest to drugi identyfikator GUID pakietu RulePack. Istnieje kilka sposobów generowania identyfikatorów GUID, ale można to łatwo zrobić w programie PowerShell, wpisując ciąg [guid]::NewGuid().
 
-Element Version jest również ważny. Podczas przekazywania pakietu reguł po raz pierwszy Microsoft 365 zwraca numer wersji. Później, jeśli zaktualizujesz pakiet reguł i przekażesz nową wersję, zaktualizuj numer wersji lub Microsoft 365 nie wdrożysz pakietu reguł.
+Element Version jest również ważny. Podczas przekazywania pakietu reguł po raz pierwszy platforma Microsoft 365 zwraca numer wersji. Później, jeśli zaktualizujesz pakiet reguł i przekażesz nową wersję, zaktualizuj numer wersji lub platforma Microsoft 365 nie wdroży pakietu reguł.
 
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
@@ -372,7 +370,7 @@ Po zakończeniu element RulePack powinien wyglądać następująco.
 
 ## <a name="validators"></a>Walidatory
 
-Microsoft 365 uwidacznia procesory funkcji dla często używanych interfejsów SIC jako modułów walidatorów. Oto ich lista.
+Platforma Microsoft 365 uwidacznia procesory funkcji dla często używanych interfejsów SIC jako moduły walidacji. Oto ich lista.
 
 ### <a name="list-of-currently-available-validators"></a>Lista aktualnie dostępnych modułów walidatorów
 
@@ -418,7 +416,7 @@ W poniższym przykładzie wyrażenie regularne — Regex_credit_card_AdditionalD
 </Entity>
 ```
 
-Microsoft 365 udostępnia dwa ogólne moduły sprawdzania poprawności
+Platforma Microsoft 365 udostępnia dwa ogólne moduły sprawdzania poprawności
 
 ### <a name="checksum-validator"></a>Sprawdzanie poprawności sumy kontrolnej
 
@@ -452,9 +450,9 @@ W tym przykładzie moduł sprawdzania poprawności daty jest zdefiniowany dla cz
 
 ## <a name="changes-for-exchange-online"></a>Zmiany dotyczące Exchange Online
 
-Wcześniej można było użyć Exchange Online programu PowerShell do zaimportowania niestandardowych typów informacji poufnych dla programu DLP. Teraz niestandardowe typy informacji poufnych mogą być używane zarówno w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>, jak i w Centrum zgodności. W ramach tego udoskonalenia należy użyć programu PowerShell security & Compliance do zaimportowania niestandardowych typów informacji poufnych — nie można ich już importować z programu Exchange Online programu PowerShell. Niestandardowe typy informacji poufnych będą nadal działać tak samo jak wcześniej. Jednak może upłynąć do jednej godziny, zanim zmiany wprowadzone w niestandardowych typach informacji poufnych w Centrum zgodności pojawią się w centrum administracyjnym Exchange.
+Wcześniej można było użyć Exchange Online programu PowerShell do zaimportowania niestandardowych typów informacji poufnych dla programu DLP. Teraz niestandardowe typy informacji poufnych mogą być używane zarówno w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym programu Exchange</a> , jak i w Centrum zgodności. W ramach tego udoskonalenia należy użyć programu PowerShell security & Compliance do zaimportowania niestandardowych typów informacji poufnych — nie można ich już importować z programu Exchange Online programu PowerShell. Niestandardowe typy informacji poufnych będą nadal działać tak samo jak wcześniej. Jednak może upłynąć do jednej godziny, zanim zmiany wprowadzone w niestandardowych typach informacji poufnych w Centrum zgodności pojawią się w centrum administracyjnym programu Exchange.
 
-Należy pamiętać, że w Centrum zgodności użyj polecenia cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** , aby przekazać pakiet reguł. (Wcześniej w centrum administracyjnym Exchange użyto polecenia cmdlet **ClassificationRuleCollection**).
+Należy pamiętać, że w Centrum zgodności użyj polecenia cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** , aby przekazać pakiet reguł. (Wcześniej w centrum administracyjnym programu Exchange było używane polecenie cmdlet  **ClassificationRuleCollection**).
 
 ## <a name="upload-your-rule-package"></a>Przekazywanie pakietu reguł
 
@@ -462,7 +460,7 @@ Aby przekazać pakiet reguł, wykonaj następujące czynności:
 
 1. Zapisz go jako plik .xml z kodowaniem Unicode.
 
-2. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/exchange-online-powershell)
+2. [Nawiązywanie połączenia z programem PowerShell zgodności & zabezpieczeń](/powershell/exchange/exchange-online-powershell)
 
 3. Należy stosować następującą składnię:
 
@@ -495,7 +493,7 @@ Aby przekazać pakiet reguł, wykonaj następujące czynności:
      Get-DlpSensitiveInformationType
      ```
 
-     W przypadku niestandardowych typów informacji poufnych wartość właściwości Publisher będzie inna niż Microsoft Corporation.
+     W przypadku niestandardowych typów informacji poufnych wartość właściwości wydawcy będzie inna niż Microsoft Corporation.
 
    - Zastąp \<Name\> wartością Nazwa typu informacji poufnych (przykład: Identyfikator pracownika) i uruchom polecenie cmdlet [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) :
 
@@ -559,9 +557,9 @@ Jeśli niestandardowy typ informacji poufnych zawiera problem, który może mie�
 
 ## <a name="recrawl-your-content-to-identify-the-sensitive-information"></a>Przeszukuj ponownie zawartość, aby zidentyfikować informacje poufne
 
-Microsoft 365 używa przeszukiwarki do identyfikowania i klasyfikowania poufnych informacji w zawartości witryny. Zawartość w witrynach SharePoint Online i OneDrive dla Firm jest automatycznie ponownie przeszukiwana po każdej aktualizacji. Aby jednak zidentyfikować nowy niestandardowy typ informacji poufnych w całej istniejącej zawartości, ta zawartość musi zostać ponownie zszokowana.
+Platforma Microsoft 365 używa przeszukiwarki do identyfikowania i klasyfikowania poufnych informacji w zawartości witryny. Zawartość w usłudze SharePoint Online i witrynach OneDrive dla Firm jest automatycznie ponownie kopiowana za każdym razem, gdy jest aktualizowana. Aby jednak zidentyfikować nowy niestandardowy typ informacji poufnych w całej istniejącej zawartości, ta zawartość musi zostać ponownie zszokowana.
 
-W Microsoft 365 nie można ręcznie zażądać ponownego zszyfrowania całej organizacji, ale możesz ręcznie zażądać ponownego zszukania zbioru witryn, listy lub biblioteki. Aby uzyskać więcej informacji, zobacz [Ręczne przeszukiwanie żądań i ponowne indeksowanie witryny, biblioteki lub listy](/sharepoint/crawl-site-content).
+W usłudze Microsoft 365 nie można ręcznie zażądać ponownego zszyfrowania całej organizacji, ale możesz ręcznie zażądać ponownego zszyfrowania zbioru witryn, listy lub biblioteki. Aby uzyskać więcej informacji, zobacz [Ręczne przeszukiwanie żądań i ponowne indeksowanie witryny, biblioteki lub listy](/sharepoint/crawl-site-content).
 
 ## <a name="reference-rule-package-xml-schema-definition"></a>Odwołanie: Definicja schematu XML pakietu reguł
 
@@ -912,6 +910,6 @@ Możesz skopiować ten znacznik, zapisać go jako plik XSD i użyć go do zweryf
 
 ## <a name="more-information"></a>Więcej informacji
 
-- [Dowiedz się więcej o zapobieganiu utracie danych w usłudze Microsoft Purview](dlp-learn-about-dlp.md)
+- [Dowiedz się więcej o Ochrona przed utratą danych w Microsoft Purview](dlp-learn-about-dlp.md)
 - [Definicje jednostek typu informacji poufnych](sensitive-information-type-entity-definitions.md)
 - [Funkcje typu informacji poufnych](sit-functions.md)

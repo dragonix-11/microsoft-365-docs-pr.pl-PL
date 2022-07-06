@@ -16,16 +16,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Te procedury umożliwiają korzystanie z nazwanych jednostek w zasadach ochrony przed utratą danych
-ms.openlocfilehash: 85d3d11704ea238f6c1acff64193d8aaba8994b8
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 0cdf544eddf873f3bbf761bd613641433dd2da6b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637191"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623717"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>Używaj nazwanych obiektów w zasadach zapobiegania utracie danych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Przed rozpoczęciem korzystania z nich zapoznaj się z artykułem [Dowiedz się więcej o nazwanych jednostkach](named-entities-learn.md) .
 
@@ -44,11 +42,11 @@ Konto używane do tworzenia i edytowania zasad ochrony przed utratą danych (DLP
 
 Do wykrywania i ochrony poufnych elementów w tych lokalizacjach można używać nazwanych interfejsów SIC jednostek i rozszerzonych zasad:
 
-- witryny SharePoint
-- konta OneDrive
-- Teams wiadomości czatu i kanału
+- Witryny programu SharePoint
+- Konta usługi OneDrive
+- Wiadomości na czacie i kanale w usłudze Teams
 - Urządzenia (urządzenia Windows 10 i 11 urządzeń punktu końcowego)
-- skrzynki pocztowe Exchange
+- Skrzynki pocztowe programu Exchange
 - Microsoft Defender for Cloud Apps
 
 Nazwane jednostki SIC i rozszerzone zasady nie są obsługiwane w następujących celach:
@@ -62,8 +60,8 @@ Aby utworzyć lub edytować zasady DLP, użyj procedur w [sekcji Tworzenie, test
 
 ## <a name="workloads-and-services-that-support-named-entities"></a>Obciążenia i usługi obsługujące nazwane jednostki
 
-- **Microsoft 365 eDiscovery** obsługuje używanie nazwanych jednostek w usługach Substrate.
-- **Microsoft Defender for Cloud Apps** obsługuje używanie nazwanych jednostek w zasadach Defender dla Chmury Apps w portalu aplikacji Defender dla Chmury.
+- **Usługa Microsoft 365 eDiscovery** obsługuje korzystanie z nazwanych jednostek w usługach Substrate.
+- **Microsoft Defender for Cloud Apps** obsługuje używanie nazwanych jednostek w zasadach usługi Defender for Cloud Apps w portalu aplikacji usługi Defender for Cloud.
 - **Usługa Insider Risk Management** obsługuje korzystanie z nazwanych jednostek w usługach Substrate.
 - **Usługa Records Management** obsługuje używanie nazwanych jednostek.
 - **Dokładne typy informacji poufnych dopasowania danych** obsługuje użycie nazwanych jednostek.
@@ -74,15 +72,15 @@ Aby utworzyć lub edytować zasady DLP, użyj procedur w [sekcji Tworzenie, test
 
 |Obciążenie/usługi  |Obsługa jednostek nazwanych  |
 |---------|---------|
-|porada dotycząca zasad klientów Office Win32    |Nieobsługiwane  |
-|porada dotycząca zasad klientów Office WAC    |Obsługiwane         |
+|Porada dotycząca zasad klientów usługi Office Win32    |Nieobsługiwane  |
+|Porada dotycząca zasad klienta funkcji Office WAC    |Obsługiwane         |
 |Porada dotycząca zasad OWA     |Nieobsługiwane         |
-|Porada dotycząca zasad Outlook     |Nieobsługiwane |
+|Porada dotycząca zasad programu Outlook     |Nieobsługiwane |
 |Punkty końcowe (Windows 10 i 11 urządzeń)     |Obsługiwane  |
-|reguły transportu Exchange     |Obsługiwane |
+|Reguły transportu exchange     |Obsługiwane |
 |OneDrive dla Firm danych magazynowanych     |Obsługiwane         |
-|SharePoint Dane w trybie online magazynowane     |Obsługiwane         |
-|Teams danych magazynowanych     |Obsługiwane         |
+|Magazyn danych usługi SharePoint Online     |Obsługiwane         |
+|Dane w spoczynku usługi Teams     |Obsługiwane         |
 |Dane w spoczynku wiadomości e-mail     |Obsługiwane w przypadku dzierżaw z planem usługi ochrony prywatności         |
 |Microsoft Defender for Cloud Apps     |Obsługiwane         |
 
@@ -90,14 +88,14 @@ Aby utworzyć lub edytować zasady DLP, użyj procedur w [sekcji Tworzenie, test
 
 |Obciążenie/usługi |Obsługa jednostek nazwanych  |
 |---------|---------|
-|Office klientów Win32 w trybie offline   |Obsługiwane, użytkownik musi wybrać etykietę i ręcznie zastosować |
-|Klienci online Office Win32 online|Obsługiwane przy użyciu starego schematu ufności |
+|Klienci usługi Office Win32 w trybie offline   |Obsługiwane, użytkownik musi wybrać etykietę i ręcznie zastosować |
+|Online klienci usługi Office Win32 w trybie online|Obsługiwane przy użyciu starego schematu ufności |
 |Outlook online   |Obsługiwane przy użyciu starego schematu ufności  |
-|klient Office WAC     |Obsługiwane |
+|Klient WAC pakietu Office     |Obsługiwane |
 |OWA     |Obsługiwane |
-|transport Exchange     |Obsługiwane |
+|Transport wymiany     |Obsługiwane |
 |OneDrive dla Firm danych magazynowanych     |Obsługiwane |
-|SharePoint Dane w trybie online magazynowane|Obsługiwane|
+|Magazyn danych usługi SharePoint Online|Obsługiwane|
 |Skaner usługi Azure Information Protection (AIP)|Nieobsługiwane|
 
 ## <a name="known-issues"></a>Znane problemy
@@ -122,7 +120,7 @@ Poniżej przedstawiono niektóre rozwiązania, których można użyć podczas tw
 - Za pomocą [symulacji automatycznego etykietowania](apply-sensitivity-label-automatically.md#learn-about-simulation-mode) można przetestować dokładność nazwanych jednostek SIC. Uruchom symulację przy użyciu nazwanej jednostki SIT, aby zobaczyć, które elementy są zgodne z zasadami. Dzięki tym informacjom można dostosować dokładność, dostosowując liczbę wystąpień i poziomy ufności w zasadach niestandardowych lub rozszerzonych warunkach szablonu. Przed wdrożeniem zasad DLP lub automatycznego etykietowania zawierających nazwane jednostki w środowisku produkcyjnym można iterować symulacje do momentu, gdy dokładność będzie odpowiednia. Oto omówienie przepływu:
 
 1. Zidentyfikuj interfejs SIT lub kombinację interfejsów SIC, które chcesz przetestować w trybie symulacji, niestandardowe lub sklonowane i edytowane.
-1. Zidentyfikuj lub utwórz etykietę poufności, która ma zostać zastosowana, gdy zasady automatycznego etykietowania wyszukują dopasowanie w Exchange, SharePoint witrynach lub kontach OneDrive.
+1. Zidentyfikuj lub utwórz etykietę poufności do zastosowania, gdy zasady automatycznego etykietowania wyszukują dopasowanie na kontach programu Exchange, witryn programu SharePoint lub kontach usługi OneDrive.
 1. Utwórz zasady automatycznego etykietowania poufności korzystające z interfejsu SIT z kroku 1 i z tymi samymi warunkami i wyjątkami, które będą używane w zasadach DLP
 1. Uruchamianie symulacji zasad
 1. Wyświetlanie wyników

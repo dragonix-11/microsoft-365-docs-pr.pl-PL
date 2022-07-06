@@ -1,5 +1,5 @@
 ---
-title: Używanie Microsoft 365 ochrony przed utratą danych w środowisku lokalnym
+title: Korzystaj z lokalnego skanera w celu zapobiegania utracie danych
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,70 +18,70 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Dowiedz się, jak używać ochrony przed utratą Microsoft 365 w skanerze lokalnym do skanowania danych w spoczynku i implementowania akcji zabezpieczających dla lokalnych udziałów plików i lokalnych SharePoint folderów i bibliotek dokumentów.
-ms.openlocfilehash: d726bfccf7dff2e95e3ccf996544f1db26bf09a2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak za pomocą lokalnego skanera zapobiegać utracie danych skanować dane magazynowane i implementować akcje ochronne dla lokalnych udziałów plików oraz lokalnych folderów programu SharePoint i bibliotek dokumentów.
+ms.openlocfilehash: ae5ffce9e664ada6e7476bb02b40f4a5c279d441
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988031"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624184"
 ---
-# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Używanie skanera Microsoft 365 ochrony przed utratą danych
+# <a name="use-the-data-loss-prevention-on-premises-scanner"></a>Używanie lokalnego skanera zapobiegania utracie danych
 
-Aby ułatwić Ci zapoznanie się z funkcjami lokalnymi funkcji DLP i ich działaniami w zasadach DLP, poniżej znajdziesz kilka scenariuszy do obserwowania.
+Aby ułatwić zapoznanie się z Ochrona przed utratą danych w Microsoft Purview funkcji lokalnych i sposobem ich wyświetlania w zasadach DLP, przygotowaliśmy kilka scenariuszy, które należy wykonać.
 
 > [!IMPORTANT]
-> Te lokalne scenariusze ochrony przed dlp nie są oficjalnymi procedurami tworzenia i dostosowywania zasad DLP. Aby pracować z zasadami ochrony przed zasadami DLP w sytuacjach ogólnych, zapoznaj się z poniższymi tematami:
+> Te lokalne scenariusze DLP nie są oficjalnymi procedurami tworzenia i dostrajania zasad DLP. Zapoznaj się z poniższymi tematami, gdy musisz pracować z zasadami DLP w ogólnych sytuacjach:
 >
-> - [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md)
+> - [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
 > - [Wprowadzenie do domyślnych zasad DLP](get-started-with-the-default-dlp-policy.md)
-> - [Tworzenie zasad DLP na podstawie szablonu](create-a-dlp-policy-from-a-template.md)
-> - [Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md)
+> - [Twórz zasady DLP na podstawie szablonu](create-a-dlp-policy-from-a-template.md)
+> - [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md)
 
-### <a name="scenario-discover-files-matching-dlp-rules"></a>Scenariusz: Odnajdowanie plików zgodnych z regułami DLP
+### <a name="scenario-discover-files-matching-dlp-rules"></a>Scenariusz: odnajdywanie plików pasujących do reguł DLP
 
-Dane z lokalnych powierzchni skanera dlp w kilku obszarach
+Dane z lokalnych powierzchni skanera DLP w kilku obszarach
 
-#### <a name="activity-explorer"></a>Eksplorator aktywności
+#### <a name="activity-explorer"></a>Eksplorator działań
 
- Zasady DLP firmy Microsoft w przypadku rozwiązań lokalnych wykrywają dopasowania reguł DLP i raportują je w [Eksploratorze aktywności](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer).
+ Usługa Microsoft DLP dla środowiska lokalnego wykrywa dopasowania reguł DLP i zgłasza je do [Eksploratora aktywności](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer).
 
-#### <a name="microsoft-365-audit-log"></a>Microsoft 365 inspekcji
+#### <a name="microsoft-365-audit-log"></a>Dziennik inspekcji platformy Microsoft 365
 
-Dopasowania reguł DLP są dostępne w interfejsie użytkownika dziennika inspekcji — [](search-the-audit-log-in-security-and-compliance.md) zobacz Przeszukiwanie dziennika inspekcji w centrum zgodności lub dostępnego za pomocą programu PowerShell [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
+Dopasowania reguł DLP są dostępne w interfejsie użytkownika dziennika inspekcji. Zobacz [Przeszukiwanie dziennika inspekcji w portal zgodności Microsoft Purview](search-the-audit-log-in-security-and-compliance.md) lub dostępne w programie [PowerShell Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
 #### <a name="aip"></a>AIP
 
-Odnajdowanie danych jest dostępne w raporcie lokalnym w formacie csv, który jest przechowywany w obszarze:
+Dane odnajdywania są dostępne w raporcie lokalnym w formacie csv, który jest przechowywany w następujących obszarach:
 
-**%localappdata%\Microsoft\MSIP\Scanner\Reports\DetailedReport_%timestamp%.csv raport**.
+**%localappdata%\Microsoft\MSIP\Scanner\Reports\DetailedReport_%timestamp%.csv raportu**.
 
  Poszukaj następujących kolumn:
 
 - Tryb DLP
-- Stan ochrony przed kodem DLP
+- Stan DLP
 - Komentarz DLP
 - Nazwa reguły DLP
 - Akcje DLP
 - Właściciel
-- Bieżące uprawnienia systemu plików NTFS (SDDL)
-- Zastosowane uprawnienia systemu plików NTFS (SDDL)
+- Bieżące uprawnienia NTFS (SDDL)
+- Zastosowane uprawnienia NTFS (SDDL)
 - Typ uprawnień NTFS
 
 ### <a name="scenario-enforce-dlp-rule"></a>Scenariusz: wymuszanie reguły DLP
 
-Jeśli chcesz wymusić reguły DLP dotyczące zeskanowanych plików, wymuś to wymuszanie musi być włączone zarówno w zadaniu skanowania zawartości w programie AIP, jak i na poziomie zasad w funkcji DLP.
+Jeśli chcesz wymusić reguły DLP dla zeskanowanych plików, wymuszanie musi być włączone zarówno w zadaniu skanowania zawartości w usłudze AIP, jak i na poziomie zasad w programie DLP.
 
-#### <a name="configure-dlp-to-enforce-policy-actions"></a>Konfigurowanie ochrony przed zasadami w celu wymuszania akcji zasad
+#### <a name="configure-dlp-to-enforce-policy-actions"></a>Konfigurowanie DLP w celu wymuszania akcji zasad
 
-1. Otwórz stronę [Ochrona przed utratą](https://compliance.microsoft.com/datalossprevention?viewid=policies) danych i wybierz zasady DLP, które są kierowane do lokalnych repozytoriów lokalizacji skonfigurowanych w UAD.
+1. Otwórz [stronę Zapobieganie utracie danych](https://compliance.microsoft.com/datalossprevention?viewid=policies) i wybierz zasady DLP przeznaczone dla repozytoriów lokalizacji lokalnych skonfigurowanych w usłudze AIP.
 2. Edytuj zasady.
-3. Na stronie **Test lub włącz zasady** wybierz pozycję **Tak, włącz ją od razu**.
+3. Na stronie **Testowanie lub włącz zasady** wybierz pozycję **Tak, włącz ją od razu**.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Dowiedz się więcej o lokalnym skanerze dlp](dlp-on-premises-scanner-learn.md)
+- [Dowiedz się więcej o lokalnym skanerze DLP](dlp-on-premises-scanner-learn.md)
 - [Wprowadzenie do lokalnego skanera DLP](dlp-on-premises-scanner-get-started.md)
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md)
-- [Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md)
-- [Wprowadzenie do Eksploratora aktywności](data-classification-activity-explorer.md)
+- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
+- [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md)
+- [Wprowadzenie do Eksploratora działań](data-classification-activity-explorer.md)
