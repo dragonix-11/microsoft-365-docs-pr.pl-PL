@@ -21,24 +21,22 @@ description: Użyj portal zgodności Microsoft Purview, aby przeszukać ujednoli
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 76cee49b8f37f946f9aa8e67bf40e8642f242fac
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 90a40127dd1a9efbf6334e8207ad35a6e5bd2231
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128828"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628666"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Przeszukiwanie dziennika inspekcji w portalu zgodności
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Jeśli tak, możesz użyć narzędzia do wyszukiwania dzienników inspekcji w portal zgodności Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań platformy Microsoft 365 jest przechwytywanych, rejestrowanych i przechowywanych w ujednoliconym dzienniku inspekcji organizacji. Użytkownicy w organizacji mogą używać narzędzia do wyszukiwania dzienników inspekcji, aby wyszukiwać, wyświetlać i eksportować (do pliku CSV) rekordy inspekcji dla tych operacji.
 
-Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Jeśli tak, możesz użyć narzędzia do wyszukiwania dzienników inspekcji w portal zgodności Microsoft Purview, aby przeszukać ujednolicony dziennik inspekcji, aby wyświetlić aktywność użytkowników i administratorów w organizacji. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Użytkownicy w organizacji mogą używać narzędzia do wyszukiwania dzienników inspekcji, aby wyszukiwać, wyświetlać i eksportować (do pliku CSV) rekordy inspekcji dla tych operacji.
+## <a name="microsoft-365-services-that-support-auditing"></a>Usługi platformy Microsoft 365 obsługujące inspekcję
 
-## <a name="microsoft-365-services-that-support-auditing"></a>usługi Microsoft 365 obsługujące inspekcję
+Dlaczego ujednolicony dziennik inspekcji? Ponieważ w dzienniku inspekcji można wyszukiwać działania wykonywane w różnych usługach platformy Microsoft 365. W poniższej tabeli wymieniono usługi i funkcje platformy Microsoft 365 (w kolejności alfabetycznej), które są obsługiwane przez ujednolicony dziennik inspekcji.
 
-Dlaczego ujednolicony dziennik inspekcji? Ponieważ można przeszukiwać dziennik inspekcji pod kątem działań wykonywanych w różnych usługach Microsoft 365. W poniższej tabeli wymieniono usługi i funkcje Microsoft 365 (w kolejności alfabetycznej), które są obsługiwane przez ujednolicony dziennik inspekcji.
-
-| Microsoft 365 usługi lub funkcji | Typy rekordów|
+| Usługa lub funkcja platformy Microsoft 365 | Typy rekordów|
 |:---------|:---------|
 | Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon |
 | Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
@@ -85,7 +83,7 @@ W poprzedniej tabeli zidentyfikowano również wartość typu rekordu używaną 
 
 Przed rozpoczęciem przeszukiwania dziennika inspekcji przeczytaj następujące elementy.
 
-- Wyszukiwanie dzienników inspekcji jest domyślnie włączone dla organizacji Microsoft 365 i Office 365 przedsiębiorstw. Aby sprawdzić, czy wyszukiwanie dzienników inspekcji jest włączone, możesz uruchomić następujące polecenie w programie Exchange Online programu PowerShell:
+- Wyszukiwanie dzienników inspekcji jest domyślnie włączone dla platformy Microsoft 365 i Office 365 organizacji przedsiębiorstwa. Aby sprawdzić, czy wyszukiwanie dzienników inspekcji jest włączone, możesz uruchomić następujące polecenie w programie Exchange Online programu PowerShell:
 
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
@@ -93,18 +91,18 @@ Przed rozpoczęciem przeszukiwania dziennika inspekcji przeczytaj następujące 
 
   Wartość `True` właściwości *UnifiedAuditLogIngestionEnabled* wskazuje, że wyszukiwanie dziennika inspekcji jest włączone. Aby uzyskać więcej informacji, zobacz [Włączanie lub wyłączanie wyszukiwania dzienników inspekcji](turn-audit-log-search-on-or-off.md).
 
-- Aby przeszukać dziennik inspekcji, musisz mieć przypisaną rolę dzienników inspekcji lub dzienników inspekcji View-Only w Exchange Online. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie **Uprawnienia** w centrum administracyjnym Exchange. Administratorzy globalni w Office 365 i Microsoft 365 są automatycznie dodawani jako członkowie grupy ról Zarządzanie organizacją w Exchange Online. Aby umożliwić użytkownikowi przeszukiwanie dziennika inspekcji z minimalnym poziomem uprawnień, możesz utworzyć niestandardową grupę ról w Exchange Online, dodać rolę View-Only Dzienniki inspekcji lub Dzienniki inspekcji, a następnie dodać użytkownika jako członka nowej grupy ról. Aby uzyskać więcej informacji, zobacz [Zarządzanie grupami ról w Exchange Online](/Exchange/permissions-exo/role-groups).
+- Aby przeszukać dziennik inspekcji, musisz mieć przypisaną rolę dzienników inspekcji lub dzienników inspekcji View-Only w Exchange Online. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie **Uprawnienia** w Centrum administracyjnym programu Exchange. Administratorzy globalni w Office 365 i microsoft 365 są automatycznie dodawani jako członkowie grupy ról Zarządzanie organizacją w Exchange Online. Aby umożliwić użytkownikowi przeszukiwanie dziennika inspekcji z minimalnym poziomem uprawnień, możesz utworzyć niestandardową grupę ról w Exchange Online, dodać rolę View-Only Dzienniki inspekcji lub Dzienniki inspekcji, a następnie dodać użytkownika jako członka nowej grupy ról. Aby uzyskać więcej informacji, zobacz [Zarządzanie grupami ról w Exchange Online](/Exchange/permissions-exo/role-groups).
 
   > Jeśli przypiszesz użytkownikowi rolę dzienników inspekcji lub dzienników inspekcji View-Only na stronie **Uprawnienia** w portalu zgodności, nie będzie mógł przeszukiwać dziennika inspekcji. Musisz przypisać uprawnienia w Exchange Online. Dzieje się tak, ponieważ podstawowe polecenie cmdlet używane do przeszukiwania dziennika inspekcji jest Exchange Online poleceniem cmdlet.
 
 - Gdy inspekcja działania jest wykonywana przez użytkownika lub administratora, rekord inspekcji jest generowany i przechowywany w dzienniku inspekcji organizacji. Czas, przez który rekord inspekcji jest przechowywany (i można go przeszukiwać w dzienniku inspekcji) zależy od twojej subskrypcji Office 365 lub Microsoft 365 Enterprise, a w szczególności od typu licencji przypisanej do określonych użytkowników.
 
-  - W przypadku użytkowników, którzy mają przypisaną licencję Office 365 E5 lub Microsoft 365 E5 (lub użytkowników z licencją Zgodność platformy Microsoft 365 E5 lub Microsoft 365 E5 zbierania elektronicznych materiałów dowodowych i licencji dodatku Inspekcja), należy przeprowadzać inspekcję rekordów dla Działania Azure Active Directory, Exchange i SharePoint są domyślnie zachowywane przez jeden rok. Organizacje mogą również tworzyć zasady przechowywania dzienników inspekcji, aby zachować rekordy inspekcji dla działań w innych usługach przez okres do jednego roku. Aby uzyskać więcej informacji, zobacz [Zarządzanie zasadami przechowywania dzienników inspekcji](audit-log-retention-policies.md).
+  - W przypadku użytkowników, którzy mają przypisaną licencję Office 365 E5 lub Microsoft 365 E5 (lub użytkowników z Zgodność platformy Microsoft 365 E5 lub Microsoft 365 E5  Licencja dodatku zbierania elektronicznych materiałów dowodowych i inspekcji), rekordy inspekcji aktywności usługi Azure Active Directory, Exchange i SharePoint są domyślnie przechowywane przez jeden rok. Organizacje mogą również tworzyć zasady przechowywania dzienników inspekcji, aby zachować rekordy inspekcji dla działań w innych usługach przez okres do jednego roku. Aby uzyskać więcej informacji, zobacz [Zarządzanie zasadami przechowywania dzienników inspekcji](audit-log-retention-policies.md).
 
     > [!NOTE]
     > Jeśli Twoja organizacja uczestniczyła w programie prywatnej wersji zapoznawczej na potrzeby rocznego przechowywania rekordów inspekcji, czas przechowywania rekordów inspekcji wygenerowanych przed ogólną datą wdrożenia dostępności nie zostanie zresetowany.
 
-  - W przypadku użytkowników, do których przypisano dowolną inną licencję Office 365 lub Microsoft 365 E5, rekordy inspekcji są przechowywane przez 90 dni. Aby uzyskać listę subskrypcji Office 365 i Microsoft 365 obsługujących ujednolicone rejestrowanie inspekcji, zobacz [opis usługi portalu zabezpieczeń i zgodności](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+  - W przypadku użytkowników, do których przypisano dowolną inną licencję (inną niż E5) Office 365 lub licencję platformy Microsoft 365, rekordy inspekcji są przechowywane przez 90 dni. Aby uzyskać listę Office 365 i subskrypcji platformy Microsoft 365 obsługujących ujednolicone rejestrowanie inspekcji, zobacz [opis usługi portalu zabezpieczeń i zgodności](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
     > Nawet jeśli domyślnie włączono inspekcję skrzynek pocztowych, można zauważyć, że zdarzenia inspekcji skrzynki pocztowej dla niektórych użytkowników nie są odnalezione podczas przeszukiwania dzienników inspekcji w portalu zgodności lub za pośrednictwem interfejsu API działania zarządzania Office 365. Aby uzyskać więcej informacji, zobacz [Więcej informacji na temat rejestrowania inspekcji skrzynki pocztowej](enable-mailbox-auditing.md#more-information).
@@ -125,19 +123,19 @@ Przed rozpoczęciem przeszukiwania dziennika inspekcji przeczytaj następujące 
 
 - Jak wspomniano wcześniej, podstawowym poleceniem cmdlet używanym do przeszukiwania dziennika inspekcji jest polecenie cmdlet Exchange Online, czyli **Search-UnifiedAuditLog**. Oznacza to, że można użyć tego polecenia cmdlet do przeszukiwania dziennika inspekcji zamiast używania narzędzia wyszukiwania na stronie **Inspekcja** w portalu zgodności. To polecenie cmdlet należy uruchomić w programie Exchange Online programie PowerShell. Aby uzyskać więcej informacji, zobacz [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
-  Aby uzyskać informacje na temat eksportowania wyników wyszukiwania zwróconych przez polecenie cmdlet **Search-UnifiedAuditLog** do pliku CSV, zobacz sekcję "Wskazówki eksportowania i wyświetlania dziennika inspekcji" w temacie [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
+  Aby uzyskać informacje na temat eksportowania wyników wyszukiwania zwróconych przez polecenie cmdlet **Search-UnifiedAuditLog** do pliku CSV, zobacz sekcję "Porady dotyczące eksportowania i wyświetlania dziennika inspekcji" w temacie [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
 - Jeśli chcesz programowo pobierać dane z dziennika inspekcji, zalecamy użycie interfejsu API działania zarządzania Office 365 zamiast skryptu programu PowerShell. Interfejs API działania zarządzania Office 365 to usługa internetowa REST, która umożliwia opracowywanie rozwiązań do monitorowania operacji, zabezpieczeń i zgodności dla organizacji. Aby uzyskać więcej informacji, zobacz [dokumentację interfejsu API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- Azure Active Directory (Azure AD) jest usługą katalogową dla Microsoft 365. Ujednolicony dziennik inspekcji zawiera działania użytkownika, grupy, aplikacji, domeny i katalogu wykonywane w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> lub w portalu zarządzania platformy Azure. Aby uzyskać pełną listę zdarzeń Azure AD, zobacz [Azure Active Directory Zdarzenia raportu inspekcji](/azure/active-directory/reports-monitoring/concept-audit-logs).
+- Usługa Azure Active Directory (Azure AD) to usługa katalogowa dla platformy Microsoft 365. Ujednolicony dziennik inspekcji zawiera działania użytkownika, grupy, aplikacji, domeny i katalogu wykonywane w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> lub w portalu zarządzania platformy Azure. Aby uzyskać pełną listę zdarzeń Azure AD, zobacz [Zdarzenia raportu inspekcji usługi Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
-- Firma Microsoft nie gwarantuje określonego czasu po wystąpieniu zdarzenia, aby odpowiedni rekord inspekcji został zwrócony w wynikach wyszukiwania dziennika inspekcji. W przypadku usług podstawowych (takich jak Exchange, SharePoint, OneDrive i Teams) dostępność rekordów inspekcji zwykle wynosi od 60 do 90 minut po wystąpieniu zdarzenia. W przypadku innych usług dostępność rekordów inspekcji może być dłuższa. Jednak niektóre problemy, które są nieuniknione (takie jak awaria serwera) mogą wystąpić poza usługą inspekcji, która opóźnia dostępność rekordów inspekcji. Z tego powodu firma Microsoft nie zobowiązuje się do określonego czasu.
+- Firma Microsoft nie gwarantuje określonego czasu po wystąpieniu zdarzenia, aby odpowiedni rekord inspekcji został zwrócony w wynikach wyszukiwania dziennika inspekcji. W przypadku usług podstawowych (takich jak Exchange, SharePoint, OneDrive i Teams) dostępność rekordów inspekcji jest zwykle od 60 do 90 minut po wystąpieniu zdarzenia. W przypadku innych usług dostępność rekordów inspekcji może być dłuższa. Jednak niektóre problemy, które są nieuniknione (takie jak awaria serwera) mogą wystąpić poza usługą inspekcji, która opóźnia dostępność rekordów inspekcji. Z tego powodu firma Microsoft nie zobowiązuje się do określonego czasu.
 
-- Rejestrowanie inspekcji dla Power BI nie jest domyślnie włączone. Aby wyszukać działania Power BI w dzienniku inspekcji, musisz włączyć inspekcję w portalu administracyjnym Power BI. Aby uzyskać instrukcje, zobacz sekcję "Dzienniki inspekcji" w [portalu administracyjnym Power BI](/power-bi/service-admin-portal#audit-logs).
+- Rejestrowanie inspekcji dla usługi Power BI nie jest domyślnie włączone. Aby wyszukać działania usługi Power BI w dzienniku inspekcji, musisz włączyć inspekcję w portalu administracyjnym usługi Power BI. Aby uzyskać instrukcje, zobacz sekcję "Dzienniki inspekcji" w [portalu administracyjnym usługi Power BI](/power-bi/service-admin-portal#audit-logs).
 
 ## <a name="search-the-audit-log"></a>Przeszukaj dziennik inspekcji
 
-Oto proces przeszukiwania dziennika inspekcji w Microsoft 365.
+Oto proces przeszukiwania dziennika inspekcji na platformie Microsoft 365.
 
 [Krok 1. Uruchamianie wyszukiwania dziennika inspekcji](#step-1-run-an-audit-log-search)
 
@@ -150,7 +148,7 @@ Oto proces przeszukiwania dziennika inspekcji w Microsoft 365.
 1. Przejdź do i <https://compliance.microsoft.com> zaloguj się.
 
     > [!TIP]
-    > Użyj prywatnej sesji przeglądania (nie zwykłej sesji), aby uzyskać dostęp do portalu zgodności, ponieważ uniemożliwi to użycie poświadczeń, za pomocą których aktualnie zalogowano się. Naciśnij **klawisze CTRL+SHIFT+N**, aby otworzyć sesję przeglądania InPrivate w Microsoft Edge lub sesję przeglądania prywatnego w przeglądarce Google Chrome (nazywaną oknem incognito).
+    > Użyj prywatnej sesji przeglądania (nie zwykłej sesji), aby uzyskać dostęp do portalu zgodności, ponieważ uniemożliwi to użycie poświadczeń, za pomocą których aktualnie zalogowano się. Naciśnij **klawisze CTRL+SHIFT+N** , aby otworzyć sesję przeglądania InPrivate w przeglądarce Microsoft Edge lub prywatną sesję przeglądania w przeglądarce Google Chrome (nazywaną oknem incognito).
 
 2. W lewym okienku portalu zgodności kliknij pozycję **Inspekcja**.
 
@@ -186,13 +184,13 @@ Oto proces przeszukiwania dziennika inspekcji w Microsoft 365.
 
    ![Liczba wyników jest wyświetlana po zakończeniu wyszukiwania.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
-#### <a name="tips-for-searching-the-audit-log"></a>Wskazówki przeszukiwania dziennika inspekcji
+#### <a name="tips-for-searching-the-audit-log"></a>Porady dotyczące przeszukiwania dziennika inspekcji
 
 - Możesz wybrać określone działania do wyszukania, klikając nazwę działania. Możesz też wyszukać wszystkie działania w grupie (takie jak **działania plików i folderów**), klikając nazwę grupy. Jeśli wybrano działanie, możesz je kliknąć, aby anulować wybór. Możesz również użyć pola wyszukiwania, aby wyświetlić działania zawierające wpisane słowo kluczowe.
 
   ![Kliknij nazwę grupy działań, aby wybrać wszystkie działania.](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
-- Musisz wybrać pozycję **Pokaż wyniki dla wszystkich działań na** liście **Działania**, aby wyświetlić zdarzenia z dziennika inspekcji Exchange administratora. Zdarzenia z tego dziennika inspekcji wyświetlają nazwę polecenia cmdlet (na przykład **Set-Mailbox**) w kolumnie **Działanie** w wynikach. Aby uzyskać więcej informacji, kliknij kartę **Inspekcja działań** w tym temacie, a następnie kliknij pozycję **Exchange działania administratora**.
+- Musisz wybrać pozycję **Pokaż wyniki dla wszystkich działań na** liście **Działania** , aby wyświetlić zdarzenia z dziennika inspekcji administratora programu Exchange. Zdarzenia z tego dziennika inspekcji wyświetlają nazwę polecenia cmdlet (na przykład **Set-Mailbox**) w kolumnie **Działanie** w wynikach. Aby uzyskać więcej informacji, kliknij kartę **Inspekcja działań** w tym temacie, a następnie kliknij pozycję **Działania administratora programu Exchange**.
 
   Podobnie istnieją pewne działania inspekcji, które nie mają odpowiedniego elementu na liście **Działania** . Jeśli znasz nazwę operacji dla tych działań, możesz wyszukać wszystkie działania, a następnie filtrować operacje po wyeksportowaniu wyników wyszukiwania do pliku CSV.
 
@@ -211,11 +209,11 @@ Wyniki zawierają następujące informacje o każdym zdarzeniu zwracanym przez w
 - **Adres IP**: adres IP urządzenia, które było używane podczas rejestrowania działania. Adres IP jest wyświetlany w formacie adresu IPv4 lub IPv6.
 
    > [!NOTE]
-  > W przypadku niektórych usług wartością wyświetlaną w tym polu może być adres IP zaufanej aplikacji (na przykład Office w sieci Web aplikacji) wywołujący do usługi w imieniu użytkownika, a nie adres IP urządzenia używanego przez osobę, która wykonała działanie. Ponadto w przypadku działań administratora (lub działań wykonywanych przez konto systemowe) dla zdarzeń związanych z Azure Active Directory adres IP nie jest rejestrowany, a wartość wyświetlana w tym polu to `null`.
+  > W przypadku niektórych usług wartością wyświetlaną w tym polu może być adres IP zaufanej aplikacji (na przykład Office w sieci Web aplikacji) wywołujący do usługi w imieniu użytkownika, a nie adres IP urządzenia używanego przez osobę, która wykonała działanie. Ponadto w przypadku działań administratora (lub działań wykonywanych przez konto systemowe) dla zdarzeń związanych z usługą Azure Active Directory adres IP nie jest rejestrowany, a wartość wyświetlana w tym polu to `null`.
 
 - **Użytkownik**: użytkownik (lub konto usługi), który wykonał akcję, która wyzwoliła zdarzenie.
 
-- **Działanie**: działanie wykonywane przez użytkownika. Ta wartość odpowiada działaniom wybranym na liście rozwijanej **Działania** . W przypadku zdarzenia z dziennika inspekcji administratora Exchange wartość w tej kolumnie jest Exchange polecenia cmdlet.
+- **Działanie**: działanie wykonywane przez użytkownika. Ta wartość odpowiada działaniom wybranym na liście rozwijanej **Działania** . W przypadku zdarzenia z dziennika inspekcji administratora programu Exchange wartość w tej kolumnie to polecenie cmdlet programu Exchange.
 
 - **Element**: obiekt, który został utworzony lub zmodyfikowany w wyniku odpowiedniego działania. Na przykład plik, który został wyświetlony lub zmodyfikowany, lub zaktualizowane konto użytkownika. Nie wszystkie działania mają wartość w tej kolumnie.
 
@@ -230,7 +228,7 @@ Aby wyświetlić więcej szczegółów dotyczących zdarzenia, kliknij rekord zd
 
 ### <a name="step-3-export-the-search-results-to-a-file"></a>Krok 3. Eksportowanie wyników wyszukiwania do pliku
 
-Wyniki wyszukiwania dziennika inspekcji można wyeksportować do pliku wartości rozdzielanej przecinkami (CSV) na komputerze lokalnym. Możesz otworzyć ten plik w Microsoft Excel i użyć funkcji, takich jak wyszukiwanie, sortowanie, filtrowanie i dzielenie pojedynczej kolumny (zawierającej wiele właściwości) na wiele kolumn.
+Wyniki wyszukiwania dziennika inspekcji można wyeksportować do pliku wartości rozdzielanej przecinkami (CSV) na komputerze lokalnym. Możesz otworzyć ten plik w programie Microsoft Excel i użyć funkcji, takich jak wyszukiwanie, sortowanie, filtrowanie i dzielenie pojedynczej kolumny (zawierającej wiele właściwości) na wiele kolumn.
 
 1. Uruchom wyszukiwanie w dzienniku inspekcji, a następnie popraw kryteria wyszukiwania do momentu uzyskania żądanych wyników.
 
@@ -245,17 +243,17 @@ Wyniki wyszukiwania dziennika inspekcji można wyeksportować do pliku wartości
 
 #### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Więcej informacji na temat eksportowania i wyświetlania wyników wyszukiwania dzienników inspekcji
 
-- Po pobraniu wszystkich wyników wyszukiwania plik CSV zawiera kolumny **CreationDate**, **UserIds**, **Operations** i **AuditData**. **Kolumna AuditData** zawiera dodatkowe informacje o każdym zdarzeniu (podobnie jak szczegółowe informacje wyświetlane na stronie wysuwanej podczas wyświetlania wyników wyszukiwania w portalu zgodności). Dane w tej kolumnie składają się z obiektu JSON, który zawiera wiele właściwości z rekordu dziennika inspekcji. Każda para *właściwości:value* w obiekcie JSON jest oddzielona przecinkami. Narzędzie przekształcania JSON w Edytor Power Query w Excel umożliwia podzielenie kolumny **AuditData** na wiele kolumn, dzięki czemu każda właściwość obiektu JSON ma własną kolumnę. Umożliwia to sortowanie i filtrowanie co najmniej jednej z tych właściwości. Aby uzyskać instrukcje krok po kroku dotyczące przekształcania obiektu JSON przy użyciu Edytor Power Query, zobacz [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md).
+- Po pobraniu wszystkich wyników wyszukiwania plik CSV zawiera kolumny **CreationDate**, **UserIds**, **Operations** i **AuditData**. **Kolumna AuditData** zawiera dodatkowe informacje o każdym zdarzeniu (podobnie jak szczegółowe informacje wyświetlane na stronie wysuwanej podczas wyświetlania wyników wyszukiwania w portalu zgodności). Dane w tej kolumnie składają się z obiektu JSON, który zawiera wiele właściwości z rekordu dziennika inspekcji. Każda para *właściwości:value* w obiekcie JSON jest oddzielona przecinkami. Narzędzie przekształcania JSON w Edytor Power Query w programie Excel umożliwia podzielenie kolumny **AuditData** na wiele kolumn, dzięki czemu każda właściwość obiektu JSON ma własną kolumnę. Umożliwia to sortowanie i filtrowanie co najmniej jednej z tych właściwości. Aby uzyskać instrukcje krok po kroku dotyczące przekształcania obiektu JSON przy użyciu Edytor Power Query, zobacz [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md).
 
   Po podzieleniu kolumny **AuditData** można filtrować kolumnę **Operacje** , aby wyświetlić szczegółowe właściwości określonego typu działania.
 
-- Po pobraniu wszystkich wyników z zapytania wyszukiwania zawierającego zdarzenia z różnych usług **kolumna AuditData** w pliku CSV zawiera różne właściwości w zależności od usługi, w której wykonano akcję. Na przykład wpisy z dzienników inspekcji Exchange i Azure AD obejmują właściwość o nazwie **ResultStatus**, która wskazuje, czy akcja zakończyła się pomyślnie, czy nie. Ta właściwość nie jest uwzględniana w przypadku zdarzeń w SharePoint. Podobnie SharePoint zdarzenia mają właściwość identyfikującą adres URL witryny dla działań związanych z plikami i folderami. Aby wyeliminować to zachowanie, rozważ użycie różnych wyszukiwań w celu wyeksportowania wyników działań z jednej usługi.
+- Po pobraniu wszystkich wyników z zapytania wyszukiwania zawierającego zdarzenia z różnych usług **kolumna AuditData** w pliku CSV zawiera różne właściwości w zależności od usługi, w której wykonano akcję. Na przykład wpisy z programu Exchange i dzienników inspekcji Azure AD obejmują właściwość o nazwie **ResultStatus**, która wskazuje, czy akcja zakończyła się pomyślnie, czy nie. Ta właściwość nie jest uwzględniana w przypadku zdarzeń w programie SharePoint. Podobnie zdarzenia programu SharePoint mają właściwość, która identyfikuje adres URL witryny dla działań związanych z plikami i folderami. Aby wyeliminować to zachowanie, rozważ użycie różnych wyszukiwań w celu wyeksportowania wyników działań z jednej usługi.
 
   Aby zapoznać się z opisem wielu właściwości wymienionych w kolumnie **AuditData** w pliku CSV podczas pobierania wszystkich wyników, a każda z nich ma zastosowanie, zobacz [Szczegółowe właściwości w dzienniku inspekcji](detailed-properties-in-the-office-365-audit-log.md).
 
 ## <a name="audited-activities"></a>Działania poddane inspekcji
 
-W tabelach w tej sekcji opisano działania, które są poddawane inspekcji w Microsoft 365. Te zdarzenia można wyszukać, wyszukując dziennik inspekcji w portalu zabezpieczeń i zgodności.
+W tabelach w tej sekcji opisano działania, które są poddawane inspekcji na platformie Microsoft 365. Te zdarzenia można wyszukać, wyszukując dziennik inspekcji w portalu zabezpieczeń i zgodności.
 
 Te tabele grupują powiązane działania lub działania z określonej usługi. Tabele zawierają przyjazną nazwę wyświetlaną na liście rozwijanej **Działania** oraz nazwę odpowiedniej operacji, która jest wyświetlana w szczegółowych informacjach rekordu inspekcji i w pliku CSV podczas eksportowania wyników wyszukiwania. Aby uzyskać opisy szczegółowych informacji, zobacz [Szczegółowe właściwości w dzienniku inspekcji](detailed-properties-in-the-office-365-audit-log.md).
 
@@ -269,7 +267,7 @@ Kliknij jeden z poniższych linków, aby przejść do określonej tabeli.
         [Działania folderów](#folder-activities)
     :::column-end:::
     :::column:::
-        [działania listy SharePoint](#sharepoint-list-activities)
+        [Działania listy programu SharePoint](#sharepoint-list-activities)
     :::column-end:::
 :::row-end:::
 
@@ -290,7 +288,7 @@ Kliknij jeden z poniższych linków, aby przejść do określonej tabeli.
         [Działania administracji lokacji](#site-administration-activities)
     :::column-end:::
     :::column:::
-        [działania Exchange skrzynki pocztowej](#exchange-mailbox-activities)
+        [Działania skrzynki pocztowej programu Exchange](#exchange-mailbox-activities)
     :::column-end:::
     :::column:::
         [Działania administracyjne użytkowników](#user-administration-activities)
@@ -323,34 +321,34 @@ Kliknij jeden z poniższych linków, aby przejść do określonej tabeli.
 
 :::row:::
     :::column:::
-        [działania Power BI](#power-bi-activities)
+        [Działania usługi Power BI](#power-bi-activities)
     :::column-end:::
     :::column:::
         [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
     :::column:::
-        [działania Microsoft Teams](#microsoft-teams-activities)
+        [Działania usługi Microsoft Teams](#microsoft-teams-activities)
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        [Microsoft Teams działania w zakresie opieki zdrowotnej](#microsoft-teams-healthcare-activities)
+        [Działania usługi Microsoft Teams Healthcare](#microsoft-teams-healthcare-activities)
     :::column-end:::
     :::column:::
-        [działania Microsoft Teams Shifts](#microsoft-teams-shifts-activities)
+        [Działania usługi Microsoft Teams Shifts](#microsoft-teams-shifts-activities)
     :::column-end:::
     :::column:::
-        [działania Yammer](#yammer-activities)
+        [Działania usługi Yammer](#yammer-activities)
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        [Działania firmy Microsoft Power Automate](#microsoft-power-automate-activities)
+        [Działania usługi Microsoft Power Automate](#microsoft-power-automate-activities)
     :::column-end:::
     :::column:::
-        [Działania firmy Microsoft Power Apps](#microsoft-power-apps-activities)
+        [Działania usługi Microsoft Power Apps](#microsoft-power-apps-activities)
     :::column-end:::
     :::column:::
         [działania Microsoft Stream](#microsoft-stream-activities)
@@ -401,7 +399,7 @@ Kliknij jeden z poniższych linków, aby przejść do określonej tabeli.
         [Działania raportu](#report-activities)
     :::column-end:::
     :::column:::
-        [działania administratora Exchange](#exchange-admin-audit-log)
+        [Działania administratora programu Exchange](#exchange-admin-audit-log)
     :::column-end:::
 :::row-end:::
 
@@ -436,16 +434,16 @@ W poniższej tabeli opisano działania dotyczące plików i stron w usłudze Sha
 |Usunięty plik z kosza drugiego etapu|FileDeletedSecondStageRecycleBin|Użytkownik usuwa plik z kosza drugiego etapu lokacji.|
 |Usunięty plik oznaczony jako rekord|RecordDelete|Usunięto dokument lub wiadomość e-mail oznaczoną jako rekord. Element jest uważany za rekord, gdy etykieta przechowywania, która oznacza elementy jako rekord, jest stosowana do zawartości.|
 |Wykryta niezgodność poufności dokumentu|DocumentSensitivityMismatchDetected|Użytkownik przekazuje dokument do witryny chronionej etykietą poufności, a dokument ma etykietę poufności o wyższym priorytecie niż etykieta poufności zastosowana do witryny. Na przykład dokument z etykietą Poufne jest przekazywany do witryny z etykietą Ogólne. <br/><br/> To zdarzenie nie jest wyzwalane, jeśli dokument ma etykietę poufności o niższym priorytecie niż etykieta poufności zastosowana do witryny. Na przykład dokument z etykietą Ogólne jest przekazywany do witryny z etykietą Poufne. Aby uzyskać więcej informacji na temat priorytetu etykiet poufności, zobacz [Priorytet etykiety (kolejność ma znaczenie)](sensitivity-labels.md#label-priority-order-matters).|
-|Wykryto złośliwe oprogramowanie w pliku|FileMalwareDetected|SharePoint aparat antywirusowy wykrywa złośliwe oprogramowanie w pliku.|
+|Wykryto złośliwe oprogramowanie w pliku|FileMalwareDetected|Aparat antywirusowy programu SharePoint wykrywa złośliwe oprogramowanie w pliku.|
 |Odrzucone wyewidencjonowania pliku|FileCheckOutDiscarded|Użytkownik odrzuca (lub cofa) wyewidencjonowany plik. Oznacza to, że wszelkie zmiany wprowadzone w pliku podczas wyewidencjonowania są odrzucane i nie są zapisywane w wersji dokumentu w bibliotece dokumentów.|
 |Pobrany plik|FileDownloaded|Użytkownik pobiera dokument z witryny.|
 |Zmodyfikowany plik|FileModified|Konto użytkownika lub konta systemowego modyfikuje zawartość lub właściwości dokumentu w witrynie. System czeka pięć minut, zanim zarejestruje inne zdarzenie FileModified, gdy ten sam użytkownik modyfikuje zawartość lub właściwości tego samego dokumentu.|
 |(brak)|FileModifiedExtended|Jest to związane z działaniem "Zmodyfikowany plik" (FileModified). Zdarzenie FileModifiedExtended jest rejestrowane, gdy ta sama osoba stale modyfikuje plik przez dłuższy czas (do 3 godzin). <br/><br/> Celem rejestrowania zdarzeń FileModifiedExtended jest zmniejszenie liczby zdarzeń FileModified, które są rejestrowane, gdy plik jest stale modyfikowany. Pomaga to zmniejszyć szum wielu rekordów FileModified dla tego, co jest zasadniczo tym samym działaniem użytkownika, i pozwala skupić się na początkowym (i ważniejszym) zdarzeniu FileModified.|
 |Przeniesiony plik|Plikprzesuwany|Użytkownik przenosi dokument z bieżącej lokalizacji w lokacji do nowej lokalizacji.|
-|(brak)|PlikPrzegląd|Użytkownik wyświetla podgląd plików w witrynie SharePoint lub OneDrive dla Firm. Te zdarzenia zwykle występują w dużych ilościach na podstawie jednego działania, takiego jak wyświetlanie galerii obrazów.|
-|Wykonane zapytanie wyszukiwania|SearchQueryPerformed|Konto użytkownika lub systemu wykonuje wyszukiwanie w SharePoint lub OneDrive dla Firm. Niektóre typowe scenariusze, w których konto usługi wykonuje zapytanie wyszukiwania, obejmują stosowanie zasad przechowywania zbierania elektronicznych materiałów dowodowych i przechowywania do witryn i kont OneDrive oraz automatyczne stosowanie etykiet przechowywania lub poufności do zawartości witryny.|
-|Odtwarzanie pliku | FileRecycled | Użytkownik przenosi plik do kosza SharePoint. |
-|Odtwarzanie folderu | FolderRecycled | Użytkownik przenosi folder do kosza SharePoint. |
+|(brak)|PlikPrzegląd|Użytkownik wyświetla podgląd plików w witrynie programu SharePoint lub OneDrive dla Firm. Te zdarzenia zwykle występują w dużych ilościach na podstawie jednego działania, takiego jak wyświetlanie galerii obrazów.|
+|Wykonane zapytanie wyszukiwania|SearchQueryPerformed|Konto użytkownika lub systemu wykonuje wyszukiwanie w programie SharePoint lub OneDrive dla Firm. Niektóre typowe scenariusze, w których konto usługi wykonuje zapytanie wyszukiwania, obejmują stosowanie zasad przechowywania zbierania elektronicznych materiałów dowodowych i przechowywania do witryn i kont usługi OneDrive oraz automatyczne stosowanie etykiet przechowywania lub poufności do zawartości witryny.|
+|Odtwarzanie pliku | FileRecycled | Użytkownik przenosi plik do Kosza programu SharePoint. |
+|Odtwarzanie folderu | FolderRecycled | Użytkownik przenosi folder do Kosza programu SharePoint. |
 |Odtworzono wszystkie wersje pomocnicze pliku|FileVersionsAllMinorsRecycled|Użytkownik usuwa wszystkie wersje pomocnicze z historii wersji pliku. Usunięte wersje są przenoszone do kosza witryny.|
 |Odtworzono wszystkie wersje pliku|FileVersionsAllRecycled|Użytkownik usuwa wszystkie wersje z historii wersji pliku. Usunięte wersje są przenoszone do kosza witryny.|
 |Odtworzona wersja pliku|FileVersionRecycled|Użytkownik usuwa wersję z historii wersji pliku. Usunięta wersja zostanie przeniesiona do kosza witryny.|
@@ -465,11 +463,11 @@ Nie znamy scenariuszy, w których akcje inne niż użytkownika generują zdarzen
 
 **Czy wywołania OneDriveMpc-Transform_Thumbnail są zawsze celowo wyzwalane przez użytkownika?**
 
-Nie. Jednak podobne zdarzenia można rejestrować w wyniku wstępnego pobrania przeglądarki.
+L.p. Jednak podobne zdarzenia można rejestrować w wyniku wstępnego pobrania przeglądarki.
 
 **Jeśli zobaczymy zdarzenie FilePreviewed pochodzące z adresu IP zarejestrowanego przez firmę Microsoft, czy oznacza to, że podgląd został wyświetlony na ekranie urządzenia użytkownika?**
 
-Nie. Zdarzenie mogło zostać zarejestrowane w wyniku wstępnego pobrania przeglądarki.
+L.p. Zdarzenie mogło zostać zarejestrowane w wyniku wstępnego pobrania przeglądarki.
 
 **Czy istnieją scenariusze, w których użytkownik wyświetlający podgląd dokumentu generuje zdarzenia FileAccessed?**
 
@@ -477,15 +475,15 @@ Zdarzenia FilePreviewed i FileAccessed wskazują, że wywołanie użytkownika do
 
 #### <a name="the-appsharepoint-user-in-audit-records"></a>Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji
 
-W rekordach inspekcji niektórych działań dotyczących plików (i innych działań związanych z SharePoint) można zauważyć, że użytkownik, który wykonał działanie (zidentyfikowane w polach Użytkownik i UserId) jest app@sharepoint. Oznacza to, że "użytkownik", który wykonał działanie, był aplikacją. W takim przypadku aplikacji udzielono uprawnień w SharePoint do wykonywania akcji w całej organizacji (takich jak przeszukiwanie witryny SharePoint lub konta OneDrive) w imieniu użytkownika, administratora lub usługi. Ten proces udzielania uprawnień aplikacji jest nazywany *SharePoint dostępu tylko do aplikacji*. Oznacza to, że uwierzytelnianie przedstawione SharePoint w celu wykonania akcji zostało wykonane przez aplikację, a nie przez użytkownika. Dlatego app@sharepoint użytkownik jest identyfikowany w niektórych rekordach inspekcji. Aby uzyskać więcej informacji, zobacz [Udzielanie dostępu przy użyciu SharePoint App-Only](/sharepoint/dev/solution-guidance/security-apponly-azureacs).
+W rekordach inspekcji dla niektórych działań dotyczących plików (i innych działań związanych z programem SharePoint) możesz zauważyć, że użytkownik, który wykonał działanie (zidentyfikowane w polach User i UserId) jest app@sharepoint. Oznacza to, że "użytkownik", który wykonał działanie, był aplikacją. W takim przypadku aplikacji udzielono uprawnień w programie SharePoint do wykonywania akcji w całej organizacji (takich jak wyszukiwanie witryny programu SharePoint lub konta usługi OneDrive) w imieniu użytkownika, administratora lub usługi. Ten proces udzielania uprawnień aplikacji jest nazywany dostępem *tylko do aplikacji programu SharePoint* . Oznacza to, że uwierzytelnianie przedstawione programowi SharePoint w celu wykonania akcji zostało wykonane przez aplikację, a nie przez użytkownika. Dlatego app@sharepoint użytkownik jest identyfikowany w niektórych rekordach inspekcji. Aby uzyskać więcej informacji, zobacz [Udzielanie dostępu przy użyciu programu SharePoint App-Only](/sharepoint/dev/solution-guidance/security-apponly-azureacs).
 
-Na przykład app@sharepoint jest często identyfikowany jako użytkownik zdarzeń "Wykonywane zapytanie wyszukiwania" i "Dostęp do pliku". Dzieje się tak dlatego, że aplikacja z dostępem SharePoint App-Only w organizacji wykonuje zapytania wyszukiwania i uzyskuje dostęp do plików podczas stosowania zasad przechowywania do witryn i kont OneDrive.
+Na przykład app@sharepoint jest często identyfikowany jako użytkownik zdarzeń "Wykonywane zapytanie wyszukiwania" i "Dostęp do pliku". Dzieje się tak dlatego, że aplikacja z dostępem App-Only programu SharePoint w organizacji wykonuje zapytania wyszukiwania i uzyskuje dostęp do plików podczas stosowania zasad przechowywania do witryn i kont usługi OneDrive.
 
 Poniżej przedstawiono kilka innych scenariuszy, w których app@sharepoint można zidentyfikować w rekordzie inspekcji jako użytkownik, który wykonał działanie:
 
-- Grupy Microsoft 365. Gdy użytkownik lub administrator tworzy nową grupę, są generowane rekordy inspekcji na potrzeby tworzenia zbioru witryn, aktualizowania list i dodawania członków do grupy SharePoint. Te zadania są wykonywane w imieniu użytkownika, który utworzył grupę.
+- Grupy Microsoft 365. Gdy użytkownik lub administrator tworzy nową grupę, są generowane rekordy inspekcji na potrzeby tworzenia zbioru witryn, aktualizowania list i dodawania członków do grupy programu SharePoint. Te zadania są wykonywane w imieniu użytkownika, który utworzył grupę.
 
-- Microsoft Teams. Podobnie jak Grupy Microsoft 365, rekordy inspekcji są generowane na potrzeby tworzenia zbioru witryn, aktualizowania list i dodawania członków do grupy SharePoint podczas tworzenia zespołu.
+- Microsoft Teams. Podobnie jak Grupy Microsoft 365, rekordy inspekcji są generowane na potrzeby tworzenia zbioru witryn, aktualizowania list i dodawania członków do grupy programu SharePoint podczas tworzenia zespołu.
 
 - Funkcje zgodności. Gdy administrator implementuje funkcje zgodności, takie jak zasady przechowywania, blokady zbierania elektronicznych materiałów dowodowych i automatyczne stosowanie etykiet poufności.
 
@@ -493,11 +491,11 @@ W tych i innych scenariuszach zauważysz również, że wiele rekordów inspekcj
 
 ### <a name="folder-activities"></a>Działania folderów
 
-W poniższej tabeli opisano działania folderów w usłudze SharePoint Online i OneDrive dla Firm. Jak wyjaśniono wcześniej, rekordy inspekcji dla niektórych działań SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Temat Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji](#the-appsharepoint-user-in-audit-records).
+W poniższej tabeli opisano działania folderów w usłudze SharePoint Online i OneDrive dla Firm. Jak wyjaśniono wcześniej, rekordy inspekcji niektórych działań programu SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Temat Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji](#the-appsharepoint-user-in-audit-records).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
-|Skopiowany folder|Folder skopiowany|Użytkownik kopiuje folder z witryny do innej lokalizacji w SharePoint lub OneDrive dla Firm.|
+|Skopiowany folder|Folder skopiowany|Użytkownik kopiuje folder z witryny do innej lokalizacji w programie SharePoint lub OneDrive dla Firm.|
 |Utworzony folder|FolderUtwórz|Użytkownik tworzy folder w witrynie.|
 |Usunięty folder|FolderDeleted|Użytkownik usuwa folder z witryny.|
 |Usunięty folder z kosza|FolderDeletedFirstStageRecycleBin|Użytkownik usuwa folder z kosza w witrynie.|
@@ -507,37 +505,37 @@ W poniższej tabeli opisano działania folderów w usłudze SharePoint Online i 
 |Zmieniono nazwę folderu|FolderRenamed|Użytkownik zmienia nazwę folderu w witrynie.|
 |Przywrócony folder|FolderRestored|Użytkownik przywraca usunięty folder z kosza w witrynie.|
 
-### <a name="sharepoint-list-activities"></a>działania listy SharePoint
+### <a name="sharepoint-list-activities"></a>Działania listy programu SharePoint
 
-W poniższej tabeli opisano działania związane z interakcją użytkowników z listami i elementami listy w usłudze SharePoint Online. Jak wyjaśniono wcześniej, rekordy inspekcji dla niektórych działań SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Temat Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji](#the-appsharepoint-user-in-audit-records).
+W poniższej tabeli opisano działania związane z interakcją użytkowników z listami i elementami listy w usłudze SharePoint Online. Jak wyjaśniono wcześniej, rekordy inspekcji niektórych działań programu SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Temat Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji](#the-appsharepoint-user-in-audit-records).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
-|Utworzona lista|ListCreated|Użytkownik utworzył listę SharePoint.|
-|Utworzona kolumna listy|ListColumnCreated|Użytkownik utworzył kolumnę listy SharePoint. Kolumna listy to kolumna dołączona do co najmniej jednej listy SharePoint.|
-|Utworzony typ zawartości listy|ListContentTypeCreated|Użytkownik utworzył typ zawartości listy. Typ zawartości listy to typ zawartości dołączony do co najmniej jednej listy SharePoint.|
-|Utworzony element listy|ListItemCreated|Użytkownik utworzył element na istniejącej liście SharePoint.|
-|Utworzona kolumna witryny|SiteColumnCreated|Użytkownik utworzył kolumnę witryny SharePoint. Kolumna witryny to kolumna, która nie jest dołączona do listy. Kolumna witryny to również struktura metadanych, która może być używana przez dowolną listę w danej sieci Web.|
+|Utworzona lista|ListCreated|Użytkownik utworzył listę programu SharePoint.|
+|Utworzona kolumna listy|ListColumnCreated|Użytkownik utworzył kolumnę listy programu SharePoint. Kolumna listy to kolumna dołączona do co najmniej jednej listy programu SharePoint.|
+|Utworzony typ zawartości listy|ListContentTypeCreated|Użytkownik utworzył typ zawartości listy. Typ zawartości listy to typ zawartości dołączony do co najmniej jednej listy programu SharePoint.|
+|Utworzony element listy|ListItemCreated|Użytkownik utworzył element na istniejącej liście programu SharePoint.|
+|Utworzona kolumna witryny|SiteColumnCreated|Użytkownik utworzył kolumnę witryny programu SharePoint. Kolumna witryny to kolumna, która nie jest dołączona do listy. Kolumna witryny to również struktura metadanych, która może być używana przez dowolną listę w danej sieci Web.|
 |Typ zawartości utworzonej witryny|Utworzony typ zawartości witryny|Użytkownik utworzył typ zawartości witryny. Typ zawartości witryny to typ zawartości dołączony do witryny nadrzędnej.|
-|Usunięta lista|ListDeleted|Użytkownik usunął listę SharePoint.|
-|Usunięta kolumna listy|Usunięto kolumnę listy|Użytkownik usunął kolumnę listy SharePoint.|
+|Usunięta lista|ListDeleted|Użytkownik usunął listę programu SharePoint.|
+|Usunięta kolumna listy|Usunięto kolumnę listy|Użytkownik usunął kolumnę listy programu SharePoint.|
 |Usunięty typ zawartości listy|ListContentTypeDeleted|Użytkownik usunął typ zawartości listy.|
-|Usunięty element listy|Usunięto element listy|Użytkownik usunął element listy SharePoint.|
-|Usunięta kolumna witryny|SiteColumnDeleted|Użytkownik usunął kolumnę witryny SharePoint.|
+|Usunięty element listy|Usunięto element listy|Użytkownik usunął element listy programu SharePoint.|
+|Usunięta kolumna witryny|SiteColumnDeleted|Użytkownik usunął kolumnę witryny programu SharePoint.|
 |Typ zawartości usuniętej witryny|SiteContentTypeDeleted|Użytkownik usunął typ zawartości witryny.|
-|Element listy z recyklingu|ListItemRecycled|Użytkownik przeniósł element listy SharePoint do Kosza.|
-|Przywrócona lista|ListRestored|Użytkownik przywrócił listę SharePoint z Kosza.|
-|Przywrócony element listy|ListItemRestored|Użytkownik przywrócił element listy SharePoint z Kosza.|
-|Zaktualizowana lista|ListUpdated|Użytkownik zaktualizował listę SharePoint, modyfikując co najmniej jedną właściwość.|
-|Zaktualizowana kolumna listy|ListColumnUpdated|Użytkownik zaktualizował kolumnę listy SharePoint, modyfikując co najmniej jedną właściwość.|
+|Element listy z recyklingu|ListItemRecycled|Użytkownik przeniósł element listy programu SharePoint do Kosza.|
+|Przywrócona lista|ListRestored|Użytkownik przywrócił listę programu SharePoint z Kosza.|
+|Przywrócony element listy|ListItemRestored|Użytkownik przywrócił element listy programu SharePoint z Kosza.|
+|Zaktualizowana lista|ListUpdated|Użytkownik zaktualizował listę programu SharePoint, modyfikując co najmniej jedną właściwość.|
+|Zaktualizowana kolumna listy|ListColumnUpdated|Użytkownik zaktualizował kolumnę listy programu SharePoint, modyfikując co najmniej jedną właściwość.|
 |Zaktualizowany typ zawartości listy|ListContentTypeUpdated|Użytkownik zaktualizował typ zawartości listy, modyfikując co najmniej jedną właściwość.|
-|Zaktualizowany element listy|ListItemUpdated|Użytkownik zaktualizował element listy SharePoint, modyfikując co najmniej jedną właściwość.|
-|Zaktualizowana kolumna witryny|SiteColumnUpdated|Użytkownik zaktualizował kolumnę witryny SharePoint, modyfikując co najmniej jedną właściwość.|
+|Zaktualizowany element listy|ListItemUpdated|Użytkownik zaktualizował element listy programu SharePoint, modyfikując co najmniej jedną właściwości.|
+|Zaktualizowana kolumna witryny|SiteColumnUpdated|Użytkownik zaktualizował kolumnę witryny programu SharePoint, modyfikując co najmniej jedną właściwość.|
 |Zaktualizowany typ zawartości witryny|SiteContentTypeUpdated|Użytkownik zaktualizował typ zawartości witryny, modyfikując co najmniej jedną właściwość.|
 
 ### <a name="sharing-and-access-request-activities"></a>Działania dotyczące udostępniania i uzyskiwania dostępu do żądań
 
-W poniższej tabeli opisano działania związane z udostępnianiem i uzyskiwaniem dostępu użytkowników w usłudze SharePoint Online i OneDrive dla Firm. W przypadku udostępniania zdarzeń kolumna **Szczegóły** w obszarze **Wyniki** identyfikuje nazwę użytkownika lub grupy, którym element został udostępniony, oraz to, czy ten użytkownik lub grupa jest członkiem lub gościem w organizacji. Aby uzyskać więcej informacji, zobacz [Używanie inspekcji udostępniania w dzienniku inspekcji](use-sharing-auditing.md).
+W poniższej tabeli opisano działania związane z udostępnianiem użytkowników i uzyskiwaniem dostępu do nich w usłudze SharePoint Online i OneDrive dla Firm. W przypadku udostępniania zdarzeń kolumna **Szczegóły** w obszarze **Wyniki** identyfikuje nazwę użytkownika lub grupy, którym element został udostępniony, oraz to, czy ten użytkownik lub grupa jest członkiem lub gościem w organizacji. Aby uzyskać więcej informacji, zobacz [Używanie inspekcji udostępniania w dzienniku inspekcji](use-sharing-auditing.md).
 
 > [!NOTE]
 > Użytkownicy mogą być  *członkami*  lub  *gośćmi*  na podstawie właściwości UserType obiektu użytkownika. Członek jest zwykle pracownikiem, a gość jest zwykle współpracownikiem spoza organizacji. Gdy użytkownik zaakceptuje zaproszenie do udostępniania (i nie jest jeszcze częścią organizacji), konto gościa zostanie utworzone dla niego w katalogu organizacji. Gdy użytkownik-gość ma konto w katalogu, zasoby mogą być udostępniane mu bezpośrednio (bez konieczności zaproszenia).
@@ -557,7 +555,7 @@ W poniższej tabeli opisano działania związane z udostępnianiem i uzyskiwanie
 |Żądanie odmowy dostępu|AccessRequestDenied|Żądanie dostępu do witryny, folderu lub dokumentu zostało odrzucone.|
 |Usunięto link do udostępniania firmy|CompanyLinkRemoved|Użytkownik usunął link do zasobu dla całej firmy. Link nie może już służyć do uzyskiwania dostępu do zasobu.|
 |Usunięto link anonimowy|AnonymousLinkRemoved|Użytkownik usunął anonimowy link do zasobu. Link nie może już służyć do uzyskiwania dostępu do zasobu.|
-|Udostępniony plik, folder lub witryna|Zestaw udostępniania|Użytkownik (członek lub gość) udostępnił plik, folder lub witrynę w SharePoint lub OneDrive dla Firm użytkownikowi w katalogu organizacji. Wartość w kolumnie **Szczegóły** dla tego działania określa nazwę użytkownika, któremu został udostępniony zasób, oraz to, czy ten użytkownik jest członkiem, czy gościem. <br/><br/> Temu działaniu często towarzyszy drugie zdarzenie opisujące sposób udzielenia użytkownikowi dostępu do zasobu. Na przykład dodanie użytkownika do grupy, która ma dostęp do zasobu.|
+|Udostępniony plik, folder lub witryna|Zestaw udostępniania|Użytkownik (członek lub gość) udostępnił plik, folder lub witrynę w programie SharePoint lub OneDrive dla Firm użytkownikowi w katalogu organizacji. Wartość w kolumnie **Szczegóły** dla tego działania określa nazwę użytkownika, któremu został udostępniony zasób, oraz to, czy ten użytkownik jest członkiem, czy gościem. <br/><br/> Temu działaniu często towarzyszy drugie zdarzenie opisujące sposób udzielenia użytkownikowi dostępu do zasobu. Na przykład dodanie użytkownika do grupy, która ma dostęp do zasobu.|
 |Zaktualizowane żądanie dostępu|AccessRequestUpdated|Zaktualizowano żądanie dostępu do elementu.|
 |Zaktualizowano link anonimowy|AnonymousLinkUpdated|Użytkownik zaktualizował anonimowy link do zasobu. Zaktualizowane pole jest uwzględniane we właściwości EventData podczas eksportowania wyników wyszukiwania.|
 |Zaktualizowane zaproszenie do udostępniania|SharingInvitationUpdated|Zaproszenie do udostępniania zewnętrznego zostało zaktualizowane.|
@@ -577,19 +575,19 @@ W poniższej tabeli wymieniono działania synchronizacji plików w usłudze Shar
 |:-----|:-----|:-----|
 |Zezwalanie komputerowi na synchronizowanie plików|ManagedSyncClientAllowed|Użytkownik pomyślnie ustanawia relację synchronizacji z witryną. Relacja synchronizacji powiodła się, ponieważ komputer użytkownika jest członkiem domeny, która została dodana do listy domen (nazywanych *listą bezpiecznych adresatów*), które mogą uzyskiwać dostęp do bibliotek dokumentów w organizacji. <br/><br/> Aby uzyskać więcej informacji na temat tej funkcji, zobacz [Używanie poleceń cmdlet programu PowerShell do włączania synchronizacja usługi OneDrive dla domen znajdujących się na liście bezpiecznych adresatów](/powershell/module/sharepoint-online/).|
 |Zablokowane synchronizowanie plików przez komputer|UnmanagedSyncClientBlocked|Użytkownik próbuje ustanowić relację synchronizacji z lokacją z komputera, który nie jest członkiem domeny organizacji lub jest członkiem domeny, która nie została dodana do listy domen (nazywanych  *listą bezpiecznych adresatów),*  która może uzyskiwać dostęp do bibliotek dokumentów w organizacji. Relacja synchronizacji jest niedozwolona, a komputer użytkownika nie może synchronizować, pobierać ani przekazywać plików w bibliotece dokumentów. <br/><br/> Aby uzyskać informacje o tej funkcji, zobacz [Używanie poleceń cmdlet programu PowerShell do włączania synchronizacja usługi OneDrive dla domen znajdujących się na liście bezpiecznych adresatów](/powershell/module/sharepoint-online/).|
-|Pobrane pliki na komputer|FileSyncDownloadedFull|Użytkownik pobiera plik na swój komputer z biblioteki dokumentów SharePoint lub OneDrive dla Firm przy użyciu aplikacji synchronizacja usługi OneDrive (OneDrive.exe).|
+|Pobrane pliki na komputer|FileSyncDownloadedFull|Użytkownik pobiera plik na swój komputer z biblioteki dokumentów programu SharePoint lub OneDrive dla Firm przy użyciu aplikacji synchronizacja usługi OneDrive (OneDrive.exe).|
 |Pobrane zmiany pliku na komputerze|FileSyncDownloadedPartial|To zdarzenie zostało przestarzałe wraz ze starą aplikacją synchronizacji OneDrive dla Firm (Groove.exe).|
-|Przekazane pliki do biblioteki dokumentów|FileSyncUploadedFull|Użytkownik przekazuje nowy plik lub zmiany do pliku w bibliotece dokumentów SharePoint lub OneDrive dla Firm przy użyciu aplikacji synchronizacja usługi OneDrive (OneDrive.exe).|
+|Przekazane pliki do biblioteki dokumentów|FileSyncUploadedFull|Użytkownik przekazuje nowy plik lub zmiany do pliku w bibliotece dokumentów programu SharePoint lub OneDrive dla Firm przy użyciu aplikacji synchronizacja usługi OneDrive (OneDrive.exe).|
 |Przekazane zmiany pliku do biblioteki dokumentów|FileSyncUploadedPartial|To zdarzenie zostało przestarzałe wraz ze starą aplikacją synchronizacji OneDrive dla Firm (Groove.exe).|
 
 ### <a name="site-permissions-activities"></a>Działania dotyczące uprawnień witryny
 
-W poniższej tabeli wymieniono zdarzenia związane z przypisywaniem uprawnień w SharePoint i używaniem grup do udzielania (i odwoływania) dostępu do witryn. Jak wyjaśniono wcześniej, rekordy inspekcji dla niektórych działań SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Temat Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji](#the-appsharepoint-user-in-audit-records).
+W poniższej tabeli wymieniono zdarzenia związane z przypisywaniem uprawnień w programie SharePoint i używaniem grup do udzielania (i odwoływania) dostępu do witryn. Jak wyjaśniono wcześniej, rekordy inspekcji niektórych działań programu SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Temat Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji](#the-appsharepoint-user-in-audit-records).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
-|Dodano administratora zbioru witryn|SiteCollectionAdminAdded|Administrator lub właściciel zbioru witryn dodaje osobę jako administratora zbioru witryn dla witryny. Administratorzy zbioru witryn mają uprawnienia pełnej kontroli dla zbioru witryn i wszystkich podwitryn. To działanie jest również rejestrowane, gdy administrator zapewnia sobie dostęp do konta OneDrive użytkownika (edytując profil użytkownika w centrum administracyjnym SharePoint lub [za pomocą Centrum administracyjne platformy Microsoft 365](/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)).|
-|Dodano użytkownika lub grupę do grupy SharePoint|AddedToGroup|Użytkownik dodał członka lub gościa do grupy SharePoint. Mogło to być zamierzone działanie lub wynik innego działania, takiego jak zdarzenie udostępniania.|
+|Dodano administratora zbioru witryn|SiteCollectionAdminAdded|Administrator lub właściciel zbioru witryn dodaje osobę jako administratora zbioru witryn dla witryny. Administratorzy zbioru witryn mają uprawnienia pełnej kontroli dla zbioru witryn i wszystkich podwitryn. To działanie jest również rejestrowane, gdy administrator daje sobie dostęp do konta użytkownika w usłudze OneDrive (edytując profil użytkownika w centrum administracyjnym programu SharePoint lub [przy użyciu Centrum administracyjne platformy Microsoft 365](/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)).|
+|Dodano użytkownika lub grupę do grupy programu SharePoint|AddedToGroup|Użytkownik dodał członka lub gościa do grupy programu SharePoint. Mogło to być zamierzone działanie lub wynik innego działania, takiego jak zdarzenie udostępniania.|
 |Przerwane dziedziczenie poziomu uprawnień|PermissionLevelsInheritanceBroken|Element został zmieniony tak, aby nie dziedziczył już poziomów uprawnień po elemencie nadrzędnym.|
 |Podział dziedziczenia udostępniania|SharingInheritanceBroken|Element został zmieniony tak, aby nie dziedziczył już uprawnień do udostępniania po jego elemencie nadrzędnym.|
 |Utworzona grupa|GroupAdded|Administrator lub właściciel witryny tworzy grupę dla witryny lub wykonuje zadanie, które powoduje utworzenie grupy. Na przykład przy pierwszym utworzeniu linku do udostępniania pliku grupa systemowa jest dodawana do OneDrive dla Firm lokacji użytkownika. To zdarzenie może być również wynikiem utworzenia przez użytkownika linku z uprawnieniami do edycji do udostępnionego pliku.|
@@ -597,53 +595,53 @@ W poniższej tabeli wymieniono zdarzenia związane z przypisywaniem uprawnień w
 |Zmodyfikowane ustawienie żądania dostępu|WebRequestAccessModified|Ustawienia żądania dostępu zostały zmodyfikowane w witrynie.|
 |Zmodyfikowane ustawienie "Członkowie mogą udostępniać"|WebMembersCanShareModified|Ustawienie **Członkowie mogą udostępnić** została zmodyfikowana w witrynie.|
 |Zmodyfikowany poziom uprawnień w zbiorze witryn|PermissionLevelModified|Poziom uprawnień został zmieniony w zbiorze witryn.|
-|Zmodyfikowane uprawnienia witryny|SitePermissionsModified|Administrator witryny lub właściciel (lub konto systemowe) zmienia poziom uprawnień przypisany do grupy w witrynie. To działanie jest również rejestrowane, jeśli wszystkie uprawnienia zostaną usunięte z grupy. <br/><br/> **UWAGA**: Ta operacja została wycofana w usłudze SharePoint Online. Aby znaleźć powiązane zdarzenia, możesz wyszukać inne działania związane z uprawnieniami, takie jak **Dodano administratora zbioru witryn**, **Dodano użytkownika lub grupę do grupy SharePoint**, **Zezwalaj użytkownikowi na tworzenie grup**, **Utworzono grupę** i **Usunięto grupę.**|
+|Zmodyfikowane uprawnienia witryny|SitePermissionsModified|Administrator witryny lub właściciel (lub konto systemowe) zmienia poziom uprawnień przypisany do grupy w witrynie. To działanie jest również rejestrowane, jeśli wszystkie uprawnienia zostaną usunięte z grupy. <br/><br/> **UWAGA**: Ta operacja została wycofana w usłudze SharePoint Online. Aby znaleźć powiązane zdarzenia, możesz wyszukać inne działania związane z uprawnieniami, takie jak **Dodano administratora zbioru witryn**, **Dodano użytkownika lub grupę do grupy programu SharePoint**, **Zezwoliliśmy użytkownikowi na tworzenie grup**, **Utworzono grupę** i **Usunięto grupę.**|
 |Usunięto poziom uprawnień z zbioru witryn|PermissionLevelRemoved|Poziom uprawnień został usunięty z zbioru witryn.|
-|Usunięto administratora zbioru witryn|SiteCollectionAdminRemoved|Administrator lub właściciel zbioru witryn usuwa osobę jako administratora zbioru witryn dla witryny. To działanie jest również rejestrowane, gdy administrator usunie się z listy administratorów zbioru witryn dla konta OneDrive użytkownika (edytując profil użytkownika w centrum administracyjnym SharePoint).  Aby zwrócić to działanie w wynikach wyszukiwania dziennika inspekcji, należy wyszukać wszystkie działania.|
-|Usunięto użytkownika lub grupę z grupy SharePoint|RemovedFromGroup|Użytkownik usunął członka lub gościa z grupy SharePoint. Mogło to być zamierzone działanie lub wynik innego działania, takiego jak zdarzenie bez udostępniania.|
+|Usunięto administratora zbioru witryn|SiteCollectionAdminRemoved|Administrator lub właściciel zbioru witryn usuwa osobę jako administratora zbioru witryn dla witryny. To działanie jest również rejestrowane, gdy administrator usunie się z listy administratorów zbioru witryn dla konta użytkownika w usłudze OneDrive (edytując profil użytkownika w centrum administracyjnym programu SharePoint).  Aby zwrócić to działanie w wynikach wyszukiwania dziennika inspekcji, należy wyszukać wszystkie działania.|
+|Usunięto użytkownika lub grupę z grupy programu SharePoint|RemovedFromGroup|Użytkownik usunął członka lub gościa z grupy programu SharePoint. Mogło to być zamierzone działanie lub wynik innego działania, takiego jak zdarzenie bez udostępniania.|
 |Żądane uprawnienia administratora witryny|SiteAdminChangeRequest|Użytkownik żąda dodania jako administrator zbioru witryn dla zbioru witryn. Administratorzy zbioru witryn mają uprawnienia pełnej kontroli dla zbioru witryn i wszystkich podwitryn.|
 |Przywrócone dziedziczenie udostępniania|SharingInheritanceReset|Wprowadzono zmianę, dzięki czemu element dziedziczy uprawnienia do udostępniania po jego elemencie nadrzędnym.|
 |Zaktualizowana grupa|GroupUpdated|Administrator lub właściciel witryny zmienia ustawienia grupy dla witryny. Może to obejmować zmianę nazwy grupy, osób, które mogą wyświetlać lub edytować członkostwo w grupie oraz sposobu obsługi żądań członkostwa.|
 
 ### <a name="site-administration-activities"></a>Działania administracji lokacji
 
-W poniższej tabeli wymieniono zdarzenia wynikające z zadań administracji lokacji w usłudze SharePoint Online. Jak wyjaśniono wcześniej, rekordy inspekcji dla niektórych działań SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Temat Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji](#the-appsharepoint-user-in-audit-records).
+W poniższej tabeli wymieniono zdarzenia wynikające z zadań administracji lokacji w usłudze SharePoint Online. Jak wyjaśniono wcześniej, rekordy inspekcji niektórych działań programu SharePoint wskazują, app@sharepoint użytkownik wykonał działanie w imieniu użytkownika lub administratora, który zainicjował akcję. Aby uzyskać więcej informacji, zobacz [Temat Użytkownik programu SharePoint aplikacji\@w rekordach inspekcji](#the-appsharepoint-user-in-audit-records).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
-|Dodano dozwoloną lokalizację danych|AllowedDataLocationAdded|Administrator SharePoint lub administrator globalny dodał dozwoloną lokalizację danych w środowisku z wieloma lokalizacjami geograficznymi.|
-|Dodano zwolnionego agenta użytkownika|ExemptUserAgentSet|Administrator SharePoint lub administrator globalny dodał agenta użytkownika do listy zwolnionych agentów użytkowników w centrum administracyjnym SharePoint.|
-|Dodano administratora lokalizacji geograficznej|GeoAdminAdded|Administrator SharePoint lub administrator globalny dodał użytkownika jako administratora geograficznego lokalizacji.|
+|Dodano dozwoloną lokalizację danych|AllowedDataLocationAdded|Program SharePoint lub administrator globalny dodał dozwoloną lokalizację danych w środowisku z wieloma lokalizacjami geograficznymi.|
+|Dodano zwolnionego agenta użytkownika|ExemptUserAgentSet|Program SharePoint lub administrator globalny dodał agenta użytkownika do listy zwolnionych agentów użytkowników w centrum administracyjnym programu SharePoint.|
+|Dodano administratora lokalizacji geograficznej|GeoAdminAdded|Program SharePoint lub administrator globalny dodał użytkownika jako administratora geograficznego lokalizacji.|
 |Zezwalanie użytkownikowi na tworzenie grup|AllowGroupCreationSet|Administrator lub właściciel witryny dodaje do witryny poziom uprawnień, który umożliwia użytkownikowi przypisanemu do tej lokacji utworzenie grupy dla tej witryny.|
-|Anulowane przenoszenie geograficzne lokacji|SiteGeoMoveCancelled|Administrator SharePoint lub administrator globalny pomyślnie anuluje przenoszenie geograficzne lokacji SharePoint lub OneDrive. Funkcja Multi-Geo umożliwia organizacji obejmującą wiele obszarów geograficznych centrum danych firmy Microsoft, które są nazywane obszarami geograficznymi. Aby uzyskać więcej informacji, zobacz [Multi-Geo Capabilities in OneDrive and SharePoint Online (Możliwości wielu obszarów geograficznych w OneDrive i SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)).|
-|Zmieniono zasady udostępniania|SharingPolicyChanged|Administrator SharePoint lub administrator globalny zmienił zasady udostępniania SharePoint przy użyciu Centrum administracyjne platformy Microsoft 365, centrum administracyjnego SharePoint lub powłoki zarządzania usługi SharePoint Online. Wszelkie zmiany ustawień w zasadach udostępniania w organizacji zostaną zarejestrowane. Zmienione zasady są identyfikowane w polu **ModifiedProperties** we szczegółowych właściwościach rekordu zdarzenia.|
-|Zmienione zasady dostępu do urządzeń|DeviceAccessPolicyChanged|Administrator SharePoint lub administrator globalny zmienił zasady dotyczące urządzeń niezarządzanych w organizacji. Te zasady kontrolują dostęp do SharePoint, OneDrive i Microsoft 365 z urządzeń, które nie są przyłączone do organizacji. Skonfigurowanie tych zasad wymaga subskrypcji Enterprise Mobility + Security. Aby uzyskać więcej informacji, zobacz artykuł[Sterowanie dostępem z urządzeń niezarządzanych](/sharepoint/control-access-from-unmanaged-devices).|
-|Zmieniono zwolnionych agentów użytkowników|CustomizeExemptUsers|Administrator SharePoint lub administrator globalny dostosował listę zwolnionych agentów użytkowników w centrum administracyjnym SharePoint. Możesz określić agentów użytkowników, którzy mają zostać wykluczeni z otrzymywania całej strony internetowej do indeksowania. Oznacza to, że gdy agent użytkownika określony jako wykluczony napotka formularz programu InfoPath, formularz zostanie zwrócony jako plik XML, a nie cała strona internetowa. Dzięki temu indeksowanie formularzy programu InfoPath jest szybsze.|
-|Zmienione zasady dostępu do sieci|NetworkAccessPolicyChanged|Administrator SharePoint lub administrator globalny zmienił zasady dostępu oparte na lokalizacji (nazywane również granicą zaufanej sieci) w centrum administracyjnym SharePoint lub przy użyciu programu PowerShell SharePoint Online. Ten typ zasad kontroluje, kto może uzyskiwać dostęp do SharePoint i OneDrive zasobów w organizacji na podstawie określonych przez Ciebie zakresów autoryzowanych adresów IP. Aby uzyskać więcej informacji, zobacz [Kontrolowanie dostępu do SharePoint Online i OneDrive danych na podstawie lokalizacji sieciowej](/sharepoint/control-access-based-on-network-location).|
-|Ukończono przenoszenie geograficzne lokacji|SiteGeoMoveCompleted|Pomyślnie ukończono przenoszenie geograficzne witryny zaplanowane przez administratora globalnego w organizacji. Funkcja Multi-Geo umożliwia organizacji obejmującą wiele obszarów geograficznych centrum danych firmy Microsoft, które są nazywane obszarami geograficznymi. Aby uzyskać więcej informacji, zobacz [Multi-Geo Capabilities in OneDrive and SharePoint Online (Możliwości wielu obszarów geograficznych w OneDrive i SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)).|
-|Utworzono połączenie wysłane do|SendToConnectionAdded|Administrator SharePoint lub administrator globalny tworzy nowe połączenie Wyślij do na stronie zarządzania rekordami w centrum administracyjnym SharePoint. Połączenie Wyślij do określa ustawienia repozytorium dokumentów lub centrum rekordów. Podczas tworzenia połączenia Wyślij do organizator zawartości może przesyłać dokumenty do określonej lokalizacji.|
-|Utworzony zbiór witryn|SiteCollectionCreated|Administrator SharePoint lub administrator globalny tworzy zbiór witryn w organizacji SharePoint Online lub użytkownik aprowizuje swoją witrynę OneDrive dla Firm.|
-|Usunięto oddzieloną witrynę centrum|HubSiteOrphanHubDeleted|Administrator SharePoint lub administrator globalny usunął lokację centrum sierocego, czyli lokację centrum, która nie ma żadnych skojarzonych z nią witryn. Oddzielone centrum jest prawdopodobnie spowodowane usunięciem oryginalnej lokacji centrum.|
-|Usunięto połączenie wysłane do|SendToConnectionRemoved|Administrator SharePoint lub administrator globalny usuwa połączenie Wyślij do na stronie zarządzania rekordami w centrum administracyjnym SharePoint.|
+|Anulowane przenoszenie geograficzne lokacji|SiteGeoMoveCancelled|Program SharePoint lub administrator globalny pomyślnie anuluje przenoszenie geograficzne witryny programu SharePoint lub usługi OneDrive. Funkcja Multi-Geo umożliwia organizacji obejmującą wiele obszarów geograficznych centrum danych firmy Microsoft, które są nazywane obszarami geograficznymi. Aby uzyskać więcej informacji, zobacz [Funkcje wielu obszarów geograficznych w usłudze OneDrive i usłudze SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
+|Zmieniono zasady udostępniania|SharingPolicyChanged|Program SharePoint lub administrator globalny zmienił zasady udostępniania programu SharePoint przy użyciu Centrum administracyjne platformy Microsoft 365, centrum administracyjnego programu SharePoint lub powłoki zarządzania usługi SharePoint Online. Wszelkie zmiany ustawień w zasadach udostępniania w organizacji zostaną zarejestrowane. Zmienione zasady są identyfikowane w polu **ModifiedProperties** we szczegółowych właściwościach rekordu zdarzenia.|
+|Zmienione zasady dostępu do urządzeń|DeviceAccessPolicyChanged|Program SharePoint lub administrator globalny zmienił zasady dotyczące urządzeń niezarządzanych dla organizacji. Te zasady kontrolują dostęp do programów SharePoint, OneDrive i Microsoft 365 z urządzeń, które nie są przyłączone do organizacji. Skonfigurowanie tych zasad wymaga subskrypcji Enterprise Mobility + Security. Aby uzyskać więcej informacji, zobacz artykuł[Sterowanie dostępem z urządzeń niezarządzanych](/sharepoint/control-access-from-unmanaged-devices).|
+|Zmieniono zwolnionych agentów użytkowników|CustomizeExemptUsers|Program SharePoint lub administrator globalny dostosował listę zwolnionych agentów użytkowników w centrum administracyjnym programu SharePoint. Możesz określić agentów użytkowników, którzy mają zostać wykluczeni z otrzymywania całej strony internetowej do indeksowania. Oznacza to, że gdy agent użytkownika określony jako wykluczony napotka formularz programu InfoPath, formularz zostanie zwrócony jako plik XML, a nie cała strona internetowa. Dzięki temu indeksowanie formularzy programu InfoPath jest szybsze.|
+|Zmienione zasady dostępu do sieci|NetworkAccessPolicyChanged|Program SharePoint lub administrator globalny zmienił zasady dostępu oparte na lokalizacji (nazywane również granicą zaufanej sieci) w centrum administracyjnym programu SharePoint lub przy użyciu programu PowerShell usługi SharePoint Online. Ten typ zasad kontroluje, kto może uzyskiwać dostęp do zasobów programu SharePoint i usługi OneDrive w organizacji na podstawie określonych przez Ciebie zakresów autoryzowanych adresów IP. Aby uzyskać więcej informacji, zobacz [Kontrolowanie dostępu do danych usługi SharePoint Online i OneDrive na podstawie lokalizacji sieciowej](/sharepoint/control-access-based-on-network-location).|
+|Ukończono przenoszenie geograficzne lokacji|SiteGeoMoveCompleted|Pomyślnie ukończono przenoszenie geograficzne witryny zaplanowane przez administratora globalnego w organizacji. Funkcja Multi-Geo umożliwia organizacji obejmującą wiele obszarów geograficznych centrum danych firmy Microsoft, które są nazywane obszarami geograficznymi. Aby uzyskać więcej informacji, zobacz [Funkcje wielu obszarów geograficznych w usłudze OneDrive i usłudze SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
+|Utworzono połączenie wysłane do|SendToConnectionAdded|Program SharePoint lub administrator globalny tworzy nowe połączenie Wyślij do na stronie zarządzania rekordami w centrum administracyjnym programu SharePoint. Połączenie Wyślij do określa ustawienia repozytorium dokumentów lub centrum rekordów. Podczas tworzenia połączenia Wyślij do organizator zawartości może przesyłać dokumenty do określonej lokalizacji.|
+|Utworzony zbiór witryn|SiteCollectionCreated|Program SharePoint lub administrator globalny tworzy zbiór witryn w organizacji usługi SharePoint Online lub użytkownik aprowizuje swoją witrynę OneDrive dla Firm.|
+|Usunięto oddzieloną witrynę centrum|HubSiteOrphanHubDeleted|Administrator programu SharePoint lub administrator globalny usunął oddzieloną witrynę centrum, która jest witryną centrum, która nie ma żadnych skojarzonych z nią witryn. Oddzielone centrum jest prawdopodobnie spowodowane usunięciem oryginalnej lokacji centrum.|
+|Usunięto połączenie wysłane do|SendToConnectionRemoved|Program SharePoint lub administrator globalny usuwa połączenie Wyślij do na stronie zarządzania rekordami w centrum administracyjnym programu SharePoint.|
 |Usunięta witryna|SiteDeleted|Administrator witryny usuwa witrynę.|
 |Włączona wersja zapoznawcza dokumentu|PreviewModeEnabledSet|Administrator witryny włącza podgląd dokumentów dla witryny.|
-|Włączony starszy przepływ pracy|LegacyWorkflowEnabledSet|Administrator lub właściciel witryny dodaje typ zawartości zadania przepływu pracy SharePoint 2013 do witryny. Administratorzy globalni mogą również włączyć przepływy pracy dla całej organizacji w centrum administracyjnym SharePoint.|
-|Włączone Office na żądanie|Zestaw OfficeOnDemand|Administrator witryny umożliwia Office na żądanie, co umożliwia użytkownikom dostęp do najnowszej wersji aplikacji klasycznych Office. Office na żądanie jest włączona w centrum administracyjnym SharePoint i wymaga subskrypcji Microsoft 365 zawierającej pełne, zainstalowane aplikacje Office.|
+|Włączony starszy przepływ pracy|LegacyWorkflowEnabledSet|Administrator lub właściciel witryny dodaje typ zawartości zadania przepływu pracy programu SharePoint 2013 do witryny. Administratorzy globalni mogą również włączyć przepływy pracy dla całej organizacji w centrum administracyjnym programu SharePoint.|
+|Włączony pakiet Office na żądanie|Zestaw OfficeOnDemand|Administrator witryny włącza pakiet Office on Demand, który umożliwia użytkownikom dostęp do najnowszej wersji aplikacji klasycznych pakietu Office. Pakiet Office on Demand jest włączony w centrum administracyjnym programu SharePoint i wymaga subskrypcji platformy Microsoft 365 zawierającej pełne, zainstalowane aplikacje pakietu Office.|
 |Włączone źródło wyników wyszukiwania osób|PeopleResultsScopeSet|Administrator witryny tworzy źródło wyników dla osób wyszukuje witrynę.|
-|Włączone kanały informacyjne RSS|NewsFeedEnabledSet|Administrator lub właściciel witryny włącza kanały informacyjne RSS dla witryny. Administratorzy globalni mogą włączyć kanały informacyjne RSS dla całej organizacji w centrum administracyjnym SharePoint.|
+|Włączone kanały informacyjne RSS|NewsFeedEnabledSet|Administrator lub właściciel witryny włącza kanały informacyjne RSS dla witryny. Administratorzy globalni mogą włączyć kanały informacyjne RSS dla całej organizacji w centrum administracyjnym programu SharePoint.|
 |Przyłączona lokacja do lokacji centrum|HubSiteJoined|Właściciel witryny kojarzy swoją witrynę z lokacją centrum.|
 |Zmodyfikowany limit przydziału zbioru witryn|SiteCollectionQuotaModified|Administrator witryny modyfikuje przydział zbioru witryn.|
-|Zarejestrowana witryna centrum|HubSiteRegistered|Administrator SharePoint lub administrator globalny tworzy witrynę centrum. Wyniki są takie, że witryna jest zarejestrowana jako lokacja centrum.|
-|Usunięto dozwoloną lokalizację danych|AllowedDataLocationDeleted|Administrator SharePoint lub administrator globalny usunął dozwoloną lokalizację danych w środowisku z wieloma lokalizacjami geograficznymi.|
-|Usunięto administratora lokalizacji geograficznej|GeoAdminDeleted|Administrator SharePoint lub administrator globalny usunął użytkownika jako administratora geograficznego lokalizacji.|
+|Zarejestrowana witryna centrum|HubSiteRegistered|Program SharePoint lub administrator globalny tworzy witrynę centrum. Wyniki są takie, że witryna jest zarejestrowana jako lokacja centrum.|
+|Usunięto dozwoloną lokalizację danych|AllowedDataLocationDeleted|Program SharePoint lub administrator globalny usunęli dozwoloną lokalizację danych w środowisku z wieloma lokalizacjami geograficznymi.|
+|Usunięto administratora lokalizacji geograficznej|GeoAdminDeleted|Administrator programu SharePoint lub administrator globalny usunął użytkownika jako administratora geograficznego lokalizacji.|
 |Zmieniono nazwę witryny|SiteRenamed|Administrator witryny lub właściciel zmienia nazwę witryny|
-|Zaplanowane przenoszenie geograficzne lokacji|SiteGeoMoveScheduled|Administrator SharePoint lub administrator globalny pomyślnie planuje przeniesienie geograficzne SharePoint lub OneDrive lokacji. Funkcja Multi-Geo umożliwia organizacji obejmującą wiele obszarów geograficznych centrum danych firmy Microsoft, które są nazywane obszarami geograficznymi. Aby uzyskać więcej informacji, zobacz [Multi-Geo Capabilities in OneDrive and SharePoint Online (Możliwości wielu obszarów geograficznych w OneDrive i SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)).|
-|Ustawianie witryny hosta|HostSiteSet|Administrator SharePoint lub administrator globalny zmienia wyznaczoną witrynę w celu hostowania witryn osobistych lub OneDrive dla Firm.|
-|Ustawianie limitu przydziału magazynu dla lokalizacji geograficznej|GeoQuotaAllocated|Administrator SharePoint lub administrator globalny skonfigurował przydział magazynu dla lokalizacji geograficznej w środowisku z wieloma obszarami geograficznymi.|
+|Zaplanowane przenoszenie geograficzne lokacji|SiteGeoMoveScheduled|Program SharePoint lub administrator globalny pomyślnie planuje przeniesienie geograficzne witryny programu SharePoint lub oneDrive. Funkcja Multi-Geo umożliwia organizacji obejmującą wiele obszarów geograficznych centrum danych firmy Microsoft, które są nazywane obszarami geograficznymi. Aby uzyskać więcej informacji, zobacz [Funkcje wielu obszarów geograficznych w usłudze OneDrive i usłudze SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
+|Ustawianie witryny hosta|HostSiteSet|Program SharePoint lub administrator globalny zmienia wyznaczoną witrynę w celu hostowania witryn osobistych lub OneDrive dla Firm.|
+|Ustawianie limitu przydziału magazynu dla lokalizacji geograficznej|GeoQuotaAllocated|Program SharePoint lub administrator globalny skonfigurował limit przydziału magazynu dla lokalizacji geograficznej w środowisku z wieloma lokalizacjami geograficznymi.|
 |Witryna połączona z witryny centrum|HubSiteUnjoined|Właściciel witryny odłącza swoją witrynę od lokacji centrum.|
-|Niezarejestrowana lokacja centrum|HubSiteUnregistered|Administrator SharePoint lub administrator globalny wyrejestruje lokację jako lokację centrum. Gdy lokacja koncentratora jest wyrejestrowana, nie działa już jako lokacja centrum.|
+|Niezarejestrowana lokacja centrum|HubSiteUnregistered|Program SharePoint lub administrator globalny wyrejestrowuje witrynę jako witrynę centrum. Gdy lokacja koncentratora jest wyrejestrowana, nie działa już jako lokacja centrum.|
 
-### <a name="exchange-mailbox-activities"></a>działania Exchange skrzynki pocztowej
+### <a name="exchange-mailbox-activities"></a>Działania skrzynki pocztowej programu Exchange
 
 W poniższej tabeli wymieniono działania, które mogą być rejestrowane przez rejestrowanie inspekcji skrzynki pocztowej. Działania skrzynki pocztowej wykonywane przez właściciela skrzynki pocztowej, delegowanego użytkownika lub administratora są automatycznie rejestrowane w dzienniku inspekcji przez maksymalnie 90 dni. Administrator może wyłączyć rejestrowanie inspekcji skrzynki pocztowej dla wszystkich użytkowników w organizacji. W takim przypadku żadne akcje skrzynki pocztowej dla żadnego użytkownika nie są rejestrowane. Aby uzyskać więcej informacji, zobacz [Zarządzanie inspekcją skrzynek pocztowych](enable-mailbox-auditing.md).
 
@@ -651,33 +649,33 @@ W poniższej tabeli wymieniono działania, które mogą być rejestrowane przez 
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
-|Elementy skrzynki pocztowej z dostępem|MailItemsAccessed|Wiadomości były odczytywane lub uzyskiwane w skrzynce pocztowej. Rekordy inspekcji dla tego działania są wyzwalane na jeden z dwóch sposobów: gdy klient poczty (na przykład Outlook) wykonuje operację powiązania na komunikatach lub gdy protokoły poczty (takie jak Exchange ActiveSync lub IMAP) synchronizują elementy w folderze poczty. To działanie jest rejestrowane tylko dla użytkowników z licencją Office 365 lub Microsoft 365 E5. Analizowanie rekordów inspekcji dla tego działania jest przydatne podczas badania naruszonego konta e-mail. Aby uzyskać więcej informacji, zobacz sekcję "Inspekcja (Premium) zdarzeń" w sekcji [Inspekcja (Premium)](advanced-audit.md#audit-premium-events). |
-|Dodano uprawnienia delegowanych skrzynek pocztowych|Add-MailboxPermission|Administrator przypisył uprawnienie do skrzynki pocztowej funkcji FullAccess użytkownikowi (znanemu jako pełnomocnik) do skrzynki pocztowej innej osoby. Uprawnienie FullAccess umożliwia pełnomocnikowi otwieranie skrzynki pocztowej innej osoby oraz odczytywanie zawartości skrzynki pocztowej i zarządzanie nią. Rekord inspekcji dla tego działania jest również generowany, gdy konto systemowe w usłudze Microsoft 365 okresowo wykonuje zadania konserwacji w imieniu organizacji. Typowym zadaniem wykonywanym przez konto systemowe jest aktualizowanie uprawnień dla systemowych skrzynek pocztowych. Aby uzyskać więcej informacji, zobacz [Konta systemowe w rekordach inspekcji Exchange skrzynki pocztowej](#system-accounts-in-exchange-mailbox-audit-records).|
+|Elementy skrzynki pocztowej z dostępem|MailItemsAccessed|Wiadomości były odczytywane lub uzyskiwane w skrzynce pocztowej. Rekordy inspekcji dla tego działania są wyzwalane na jeden z dwóch sposobów: gdy klient poczty (taki jak Outlook) wykonuje operację powiązania w wiadomościach lub gdy protokoły poczty (takie jak Exchange ActiveSync lub IMAP) synchronizują elementy w folderze poczty. To działanie jest rejestrowane tylko dla użytkowników z licencją Office 365 lub Microsoft 365 E5. Analizowanie rekordów inspekcji dla tego działania jest przydatne podczas badania naruszonego konta e-mail. Aby uzyskać więcej informacji, zobacz sekcję "Audit (Premium) events" (Inspekcja (Premium) w sekcji [Inspekcja (Premium).](advanced-audit.md#audit-premium-events) |
+|Dodano uprawnienia delegowanych skrzynek pocztowych|Add-MailboxPermission|Administrator przypisył uprawnienie do skrzynki pocztowej funkcji FullAccess użytkownikowi (znanemu jako pełnomocnik) do skrzynki pocztowej innej osoby. Uprawnienie FullAccess umożliwia pełnomocnikowi otwieranie skrzynki pocztowej innej osoby oraz odczytywanie zawartości skrzynki pocztowej i zarządzanie nią. Rekord inspekcji dla tego działania jest również generowany, gdy konto systemowe w usłudze Microsoft 365 okresowo wykonuje zadania konserwacji w imieniu organizacji. Typowym zadaniem wykonywanym przez konto systemowe jest aktualizowanie uprawnień dla systemowych skrzynek pocztowych. Aby uzyskać więcej informacji, zobacz [Konta systemowe w rekordach inspekcji skrzynki pocztowej programu Exchange](#system-accounts-in-exchange-mailbox-audit-records).|
 |Dodano lub usunięto użytkownika z delegowaniem dostępu do folderu kalendarza|UpdateCalendarDelegation|Użytkownik został dodany lub usunięty jako pełnomocnik do kalendarza skrzynki pocztowej innego użytkownika. Delegowanie kalendarza daje innej osobie w tej samej organizacji uprawnienia do zarządzania kalendarzem właściciela skrzynki pocztowej.|
 |Dodano uprawnienia do folderu|DodajfolderPermissions|Dodano uprawnienie folderu. Uprawnienia folderu określają, którzy użytkownicy w organizacji mogą uzyskiwać dostęp do folderów w skrzynce pocztowej i wiadomości znajdujących się w tych folderach.|
 |Skopiowano komunikaty do innego folderu|Kopii|Wiadomość została skopiowana do innego folderu.|
 |Utworzony element skrzynki pocztowej|Tworzenie|Element jest tworzony w folderze Kalendarz, Kontakty, Notatki lub Zadania w skrzynce pocztowej. Na przykład zostanie utworzone nowe żądanie spotkania. Tworzenie, wysyłanie lub odbieranie komunikatu nie jest poddawane inspekcji. Ponadto tworzenie folderu skrzynki pocztowej nie jest poddawane inspekcji.|
-|Utworzono nową regułę skrzynki odbiorczej w Outlook aplikacji internetowej|New-InboxRule|Właściciel skrzynki pocztowej lub inny użytkownik z dostępem do skrzynki pocztowej utworzył regułę skrzynki odbiorczej w aplikacji internetowej Outlook.|
+|Utworzono nową regułę skrzynki odbiorczej w aplikacji internetowej Outlook|New-InboxRule|Właściciel skrzynki pocztowej lub inny użytkownik z dostępem do skrzynki pocztowej utworzył regułę skrzynki odbiorczej w aplikacji internetowej Outlook.|
 |Usunięte komunikaty z folderu Elementy usunięte|SoftDelete|Komunikat został trwale usunięty lub usunięty z folderu Elementy usunięte. Te elementy są przenoszone do folderu Elementy możliwe do odzyskania. Komunikaty są również przenoszone do folderu Elementy możliwe do odzyskania po wybraniu go przez użytkownika i naciśnięciu klawiszy **Shift+Delete**.|
 |Komunikat oznaczony etykietą jako rekord|ApplyRecordLabel|Wiadomość została sklasyfikowana jako rekord. Dzieje się tak, gdy etykieta przechowywania, która klasyfikuje zawartość jako rekord, jest ręcznie lub automatycznie stosowana do komunikatu.|
 |Przeniesiono komunikaty do innego folderu|Przenieść|Wiadomość została przeniesiona do innego folderu.|
 |Przeniesione komunikaty do folderu Elementy usunięte|MoveToDeletedItems|Komunikat został usunięty i przeniesiony do folderu Elementy usunięte.|
 |Zmodyfikowane uprawnienie folderu|UpdateFolderPermissions|Zmieniono uprawnienie folderu. Uprawnienia folderu określają, którzy użytkownicy w organizacji mogą uzyskiwać dostęp do folderów skrzynki pocztowej i wiadomości w folderze.|
-|Zmodyfikowana reguła skrzynki odbiorczej z Outlook aplikacji internetowej|Set-InboxRule|Właściciel skrzynki pocztowej lub inny użytkownik z dostępem do skrzynki pocztowej zmodyfikował regułę skrzynki odbiorczej przy użyciu aplikacji internetowej Outlook.|
+|Zmodyfikowana reguła skrzynki odbiorczej z aplikacji internetowej Outlook|Set-InboxRule|Właściciel skrzynki pocztowej lub inny użytkownik z dostępem do skrzynki pocztowej zmodyfikował regułę skrzynki odbiorczej przy użyciu aplikacji internetowej Outlook.|
 |Przeczyszczane wiadomości ze skrzynki pocztowej|HardDelete|Wiadomość została usunięta z folderu Elementy możliwe do odzyskania (trwale usunięta ze skrzynki pocztowej).|
 |Usunięto uprawnienia delegowanych skrzynek pocztowych|Remove-MailboxPermission|Administrator usunął uprawnienie FullAccess (przypisane do pełnomocnika) ze skrzynki pocztowej danej osoby. Po usunięciu uprawnienia FullAccess pełnomocnik nie może otworzyć skrzynki pocztowej innej osoby ani uzyskać do niej dostępu.|
 |Usunięto uprawnienia z folderu|RemoveFolderPermissions|Usunięto uprawnienie folderu. Uprawnienia folderu określają, którzy użytkownicy w organizacji mogą uzyskiwać dostęp do folderów w skrzynce pocztowej i wiadomości znajdujących się w tych folderach.|
-|Wysłana wiadomość|Wyślij|Wiadomość została wysłana, przekazana lub przekazana dalej. To działanie jest rejestrowane tylko dla użytkowników z licencją Office 365 lub Microsoft 365 E5. Aby uzyskać więcej informacji, zobacz sekcję "Inspekcja (Premium) zdarzeń" w sekcji [Inspekcja (Premium)](advanced-audit.md#audit-premium-events).|
+|Wysłana wiadomość|Wyślij|Wiadomość została wysłana, przekazana lub przekazana dalej. To działanie jest rejestrowane tylko dla użytkowników z licencją Office 365 lub Microsoft 365 E5. Aby uzyskać więcej informacji, zobacz sekcję "Audit (Premium) events" (Inspekcja (Premium) w sekcji [Inspekcja (Premium).](advanced-audit.md#audit-premium-events)|
 |Wysłano wiadomość przy użyciu uprawnień Wyślij jako|SendAs|Wiadomość została wysłana przy użyciu uprawnienia SendAs. Oznacza to, że inny użytkownik wysłał wiadomość tak, jakby pochodziła od właściciela skrzynki pocztowej.|
 |Wysłano wiadomość przy użyciu uprawnień Wyślij w imieniu|SendOnBehalf|Wiadomość została wysłana przy użyciu uprawnienia SendOnBehalf. Oznacza to, że inny użytkownik wysłał wiadomość w imieniu właściciela skrzynki pocztowej. Wiadomość wskazuje adresatowi, któremu wiadomość została wysłana w imieniu użytkownika i który faktycznie wysłał wiadomość.|
-|Zaktualizowano reguły skrzynki odbiorczej z klienta Outlook|UpdateInboxRules|Właściciel skrzynki pocztowej lub inny użytkownik z dostępem do skrzynki pocztowej utworzonej, zmodyfikowanej lub usuniętej reguły skrzynki odbiorczej przy użyciu klienta Outlook.|
+|Zaktualizowane reguły skrzynki odbiorczej z klienta programu Outlook|UpdateInboxRules|Właściciel skrzynki pocztowej lub inny użytkownik z dostępem do skrzynki pocztowej utworzonej, zmodyfikowanej lub usuniętej reguły skrzynki odbiorczej przy użyciu klienta programu Outlook.|
 |Zaktualizowano komunikat|Aktualizacja|Komunikat lub jego właściwości zostały zmienione.|
 |Użytkownik zalogowany do skrzynki pocztowej|MailboxLogin|Użytkownik zalogował się do swojej skrzynki pocztowej.|
 |Etykieta komunikatu jako rekordu||Użytkownik zastosował etykietę przechowywania do wiadomości e-mail i ta etykieta jest skonfigurowana do oznaczania elementu jako rekordu. |
 
-#### <a name="system-accounts-in-exchange-mailbox-audit-records"></a>Konta systemowe w rekordach inspekcji Exchange skrzynki pocztowej
+#### <a name="system-accounts-in-exchange-mailbox-audit-records"></a>Konta systemowe w rekordach inspekcji skrzynki pocztowej programu Exchange
 
-W rekordach inspekcji dla niektórych działań skrzynki pocztowej (zwłaszcza **Add-MailboxPermissions**) można zauważyć, że użytkownik, który wykonał działanie (i jest identyfikowany w polach Użytkownik i UserId) jest NT AUTHORITY\SYSTEM lub NT AUTHORITY\SYSTEM(Microsoft.Exchange. Servicehost). Oznacza to, że "użytkownik", który wykonał działanie, był kontem systemowym w usłudze Exchange w chmurze firmy Microsoft. To konto systemowe często wykonuje zadania konserwacji zaplanowanej w imieniu organizacji. Na przykład typowe inspekcji działania wykonywane przez NT AUTHORITY\SYSTEM (Microsoft.Exchange. Konto ServiceHost) ma zaktualizować uprawnienia do skrzynki pocztowej DiscoverySearchMailbox, która jest systemową skrzynką pocztową. Celem tej aktualizacji jest sprawdzenie, czy uprawnienie FullAccess (które jest domyślne) jest przypisane do grupy ról Zarządzania odnajdywaniem dla usługi DiscoverySearchMailbox.The purpose of this update is to verify that the FullAccess permission (czyli default) issigned to the Discovery Management role group for the DiscoverySearchMailbox. Dzięki temu administratorzy zbierania elektronicznych materiałów dowodowych mogą wykonywać niezbędne zadania w swojej organizacji.
+W rekordach inspekcji dla niektórych działań skrzynki pocztowej (zwłaszcza **Add-MailboxPermissions**) można zauważyć, że użytkownik, który wykonał działanie (i jest identyfikowany w polach Użytkownik i UserId) to NT AUTHORITY\SYSTEM lub NT AUTHORITY\SYSTEM(Microsoft.Exchange.Servicehost). Oznacza to, że "użytkownik", który wykonał działanie, był kontem systemowym w usłudze Exchange w chmurze firmy Microsoft. To konto systemowe często wykonuje zadania konserwacji zaplanowanej w imieniu organizacji. Na przykład typowym działaniem inspekcji wykonywanym przez konto NT AUTHORITY\SYSTEM(Microsoft.Exchange.ServiceHost) jest zaktualizowanie uprawnień do skrzynki pocztowej DiscoverySearchMailbox, która jest systemową skrzynką pocztową. Celem tej aktualizacji jest sprawdzenie, czy uprawnienie FullAccess (które jest domyślne) jest przypisane do grupy ról Zarządzania odnajdywaniem dla usługi DiscoverySearchMailbox.The purpose of this update is to verify that the FullAccess permission (czyli default) issigned to the Discovery Management role group for the DiscoverySearchMailbox. Dzięki temu administratorzy zbierania elektronicznych materiałów dowodowych mogą wykonywać niezbędne zadania w swojej organizacji.
 
 Inne konto użytkownika systemu, które może zostać zidentyfikowane w rekordzie inspekcji **add-mailboxPermission** jest Administrator@apcprd03.prod.outlook.com. To konto usługi jest również zawarte w rekordach inspekcji skrzynki pocztowej związanych z weryfikowaniem i aktualizowaniem uprawnienia FullAccess jest przypisywane do grupy ról Zarządzanie odnajdywaniem dla skrzynki pocztowej systemu DiscoverySearchMailbox. W szczególności rekordy inspekcji identyfikujące konto Administrator@apcprd03.prod.outlook.com są zwykle wyzwalane, gdy personel pomocy technicznej firmy Microsoft uruchamia narzędzie diagnostyczne roli RBAC w imieniu organizacji.
 
@@ -692,16 +690,16 @@ Poniższa tabela zawiera listę działań administracyjnych użytkowników, któ
 |:-----|:-----|:-----|
 |Dodano użytkownika|Dodaj użytkownika.|Utworzono konto użytkownika.|
 |Zmieniono licencję użytkownika|Zmień licencję użytkownika.|Licencja przypisana do użytkownika, co się zmieniło. Aby zobaczyć, jakie licencje zostały wprowadzone, zobacz odpowiednie **zaktualizowane działanie użytkownika** .|
-|Zmieniono hasło użytkownika|Zmień hasło użytkownika.|Użytkownik zmienia swoje hasło. Samoobsługowe resetowanie hasła musi być włączone (dla wszystkich lub wybranych użytkowników) w organizacji, aby umożliwić użytkownikom resetowanie hasła. Aktywność samoobsługowego resetowania haseł można również śledzić w Azure Active Directory. Aby uzyskać więcej informacji, zobacz [Opcje raportowania dotyczące zarządzania hasłami Azure AD](/azure/active-directory/authentication/howto-sspr-reporting).
+|Zmieniono hasło użytkownika|Zmień hasło użytkownika.|Użytkownik zmienia swoje hasło. Samoobsługowe resetowanie hasła musi być włączone (dla wszystkich lub wybranych użytkowników) w organizacji, aby umożliwić użytkownikom resetowanie hasła. Możesz również śledzić samoobsługowe działanie resetowania haseł w usłudze Azure Active Directory. Aby uzyskać więcej informacji, zobacz [Opcje raportowania dotyczące zarządzania hasłami Azure AD](/azure/active-directory/authentication/howto-sspr-reporting).
 |Usunięty użytkownik|Usuń użytkownika.|Konto użytkownika zostało usunięte.|
 |Resetowanie hasła użytkownika|Resetowanie hasła użytkownika.|Administrator resetuje hasło użytkownika.|
-|Ustaw właściwość, która wymusza zmianę hasła przez użytkownika|Ustaw wymuszanie zmiany hasła użytkownika.|Administrator ustawi właściwość, która wymusza zmianę hasła przy następnym logowaniu użytkownika do Microsoft 365.|
+|Ustaw właściwość, która wymusza zmianę hasła przez użytkownika|Ustaw wymuszanie zmiany hasła użytkownika.|Administrator ustawi właściwość, która wymusza zmianę hasła podczas następnego logowania użytkownika na platformie Microsoft 365.|
 |Ustawianie właściwości licencji|Ustaw właściwości licencji.|Administrator modyfikuje właściwości licencji przypisanej do użytkownika.|
-|Zaktualizowany użytkownik|Zaktualizuj użytkownika.|Administrator zmienia co najmniej jedną właściwości konta użytkownika. Aby uzyskać listę właściwości użytkownika, które można zaktualizować, zobacz sekcję "Aktualizowanie atrybutów użytkownika" w [Azure Active Directory Inspekcja zdarzeń raportu](/azure/active-directory/reports-monitoring/concept-audit-logs).|
+|Zaktualizowany użytkownik|Zaktualizuj użytkownika.|Administrator zmienia co najmniej jedną właściwości konta użytkownika. Aby uzyskać listę właściwości użytkownika, które można zaktualizować, zobacz sekcję "Aktualizowanie atrybutów użytkownika" w sekcji [Zdarzenia raportu inspekcji usługi Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).|
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD działań administracyjnych grupy
 
-Poniższa tabela zawiera listę działań administracyjnych grupy, które są rejestrowane, gdy administrator lub użytkownik tworzy lub zmienia grupę Microsoft 365 lub gdy administrator tworzy grupę zabezpieczeń przy użyciu [Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) lub portalu zarządzania platformy Azure. Aby uzyskać więcej informacji na temat grup w Microsoft 365, zobacz [Wyświetlanie, tworzenie i usuwanie grup w Centrum administracyjne platformy Microsoft 365](../admin/create-groups/create-groups.md).
+Poniższa tabela zawiera listę działań administracyjnych grupy, które są rejestrowane, gdy administrator lub użytkownik tworzy lub zmienia grupę platformy Microsoft 365 lub gdy administrator tworzy grupę zabezpieczeń przy użyciu [Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) lub portalu zarządzania platformy Azure. Aby uzyskać więcej informacji na temat grup w usłudze Microsoft 365, zobacz [Wyświetlanie, tworzenie i usuwanie grup w Centrum administracyjne platformy Microsoft 365](../admin/create-groups/create-groups.md).
 
 > [!NOTE]
 > Nazwy operacji wymienione w kolumnie **Operacja** w poniższej tabeli zawierają kropkę ( `.` ). Okres należy uwzględnić w nazwie operacji, jeśli określisz operację w poleceniu programu PowerShell podczas przeszukiwania dziennika inspekcji, tworzenia zasad przechowywania inspekcji, tworzenia zasad alertów lub tworzenia alertów aktywności. Pamiętaj również, aby użyć podwójnego cudzysłowu (`" "`), aby zawierać nazwę operacji.
@@ -740,9 +738,9 @@ W poniższej tabeli wymieniono Azure AD działań administracyjnych ról, które
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
-|Dodawanie elementu członkowskiego do roli|Dodaj element członkowski do roli.|Dodano użytkownika do roli administratora w Microsoft 365.|
-|Usunięto użytkownika z roli katalogu|Usuń członka z roli.|Usunięto użytkownika z roli administratora w Microsoft 365.|
-|Ustawianie informacji kontaktowych firmy|Ustaw informacje kontaktowe firmy.|Zaktualizowano preferencje kontaktów na poziomie firmy dla organizacji. Obejmuje to adresy e-mail związane z subskrypcją wysyłane przez Microsoft 365 oraz powiadomienia techniczne dotyczące usług.|
+|Dodawanie elementu członkowskiego do roli|Dodaj element członkowski do roli.|Dodano użytkownika do roli administratora w usłudze Microsoft 365.|
+|Usunięto użytkownika z roli katalogu|Usuń członka z roli.|Usunięto użytkownika z roli administratora w usłudze Microsoft 365.|
+|Ustawianie informacji kontaktowych firmy|Ustaw informacje kontaktowe firmy.|Zaktualizowano preferencje kontaktów na poziomie firmy dla organizacji. Obejmuje to adresy e-mail dotyczące subskrypcji wysyłane przez usługę Microsoft 365 oraz powiadomienia techniczne dotyczące usług.|
 
 ### <a name="directory-administration-activities"></a>Działania administracji katalogowej
 
@@ -757,7 +755,7 @@ W poniższej tabeli wymieniono Azure AD działania związane z katalogiem i dome
 |Dodano partnera do katalogu|Dodaj partnera do firmy.|Dodano partnera (administratora delegowanego) do organizacji.|
 |Usunięto domenę z firmy|Usuń domenę z firmy.|Usunięto domenę z organizacji.|
 |Usunięto partnera z katalogu|Usuń partnera z firmy.|Usunięto partnera (administratora delegowanego) z organizacji.|
-|Ustawianie informacji o firmie|Ustaw informacje o firmie.|Zaktualizowano informacje o firmie dla organizacji. Obejmuje to adresy e-mail związane z subskrypcją wysyłane przez Microsoft 365 oraz powiadomienia techniczne dotyczące usług Microsoft 365.|
+|Ustawianie informacji o firmie|Ustaw informacje o firmie.|Zaktualizowano informacje o firmie dla organizacji. Obejmuje to adresy e-mail związane z subskrypcją wysyłane przez usługę Microsoft 365 oraz powiadomienia techniczne dotyczące usług Microsoft 365.|
 |Ustawianie uwierzytelniania domeny|Ustaw uwierzytelnianie domeny.|Zmieniono ustawienie uwierzytelniania domeny dla organizacji.|
 |Zaktualizowano ustawienia federacji dla domeny|Ustaw ustawienia federacji w domenie.|Zmieniono ustawienia federacji (udostępniania zewnętrznego) dla organizacji.|
 |Ustawianie zasad haseł|Ustaw zasady haseł.|Zmieniono ograniczenia długości i znaków haseł użytkowników w organizacji.|
@@ -783,17 +781,17 @@ W dzienniku inspekcji są rejestrowane działania związane z wyszukiwaniem zawa
 Aby uzyskać listę i szczegółowy opis zarejestrowanych działań zbierania elektronicznych materiałów dowodowych, zobacz [Wyszukiwanie działań zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
-> Wyświetlenie w wynikach wyszukiwania zdarzeń wynikających z działań wymienionych w obszarze Działania zbierania **elektronicznych** materiałów dowodowych i **działań zbierania elektronicznych materiałów dowodowych (Premium)** na liście rozwijanej **Działania**. Z drugiej strony wyświetlenie odpowiednich zdarzeń z działań poleceń cmdlet zbierania elektronicznych materiałów dowodowych trwa do 24 godzin.
+> Wyświetlenie w wynikach wyszukiwania zdarzeń, które wynikają z działań wymienionych w obszarze działania zbierania **elektronicznych** materiałów dowodowych i **działań zbierania elektronicznych materiałów dowodowych (Premium)** na liście rozwijanej **Działania** . Z drugiej strony wyświetlenie odpowiednich zdarzeń z działań poleceń cmdlet zbierania elektronicznych materiałów dowodowych trwa do 24 godzin.
 
 ### <a name="ediscovery-premium-activities"></a>Działania zbierania elektronicznych materiałów dowodowych (Premium)
 
 Możesz również wyszukać w dzienniku inspekcji działania w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium). Opis tych działań można znaleźć w sekcji "Działania zbierania elektronicznych materiałów dowodowych (Premium) w [temacie Wyszukiwanie działań zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-premium-activities).
 
-### <a name="power-bi-activities"></a>działania Power BI
+### <a name="power-bi-activities"></a>Działania usługi Power BI
 
-W dzienniku inspekcji można wyszukiwać działania w Power BI. Aby uzyskać informacje o działaniach Power BI, zobacz sekcję "Działania poddane inspekcji przez Power BI" w [temacie Korzystanie z inspekcji w organizacji](/power-bi/service-admin-auditing#activities-audited-by-power-bi).
+W dzienniku inspekcji można wyszukiwać działania w usłudze Power BI. Aby uzyskać informacje o działaniach usługi Power BI, zobacz sekcję "Działania poddane inspekcji przez usługę Power BI" w [temacie Korzystanie z inspekcji w organizacji](/power-bi/service-admin-auditing#activities-audited-by-power-bi).
 
-Rejestrowanie inspekcji dla Power BI nie jest domyślnie włączone. Aby wyszukać działania Power BI w dzienniku inspekcji, musisz włączyć inspekcję w portalu administracyjnym Power BI. Aby uzyskać instrukcje, zobacz sekcję "Dzienniki inspekcji" w [portalu administracyjnym Power BI](/power-bi/service-admin-portal#audit-logs).
+Rejestrowanie inspekcji dla usługi Power BI nie jest domyślnie włączone. Aby wyszukać działania usługi Power BI w dzienniku inspekcji, musisz włączyć inspekcję w portalu administracyjnym usługi Power BI. Aby uzyskać instrukcje, zobacz sekcję "Dzienniki inspekcji" w [portalu administracyjnym usługi Power BI](/power-bi/service-admin-portal#audit-logs).
 
 ### <a name="workplace-analytics-activities"></a>Działania związane z analizą miejsca pracy
 
@@ -810,57 +808,57 @@ Usługa Workplace Analytics zapewnia wgląd w sposób współpracy grup w całej
 |Zaktualizowane ustawienie dostępu do danych|UpdatedDataAccessSetting|Administracja zaktualizowane ustawienia dostępu do danych.|
 |Zaktualizowane ustawienie prywatności|AktualizacjaPrivacySetting|Administracja zaktualizowane ustawienia prywatności, na przykład minimalny rozmiar grupy.|
 |Przekazane dane organizacji|UploadedOrgData|Administracja przekazany plik danych organizacji.|
-|Zalogowany użytkownik<sup>*</sup>| UserLoggedIn |Użytkownik zalogował się do swojego konta użytkownika Microsoft 365.|
-|Użytkownik wylogowany<sup>*</sup>| UserLoggedOff |Użytkownik wylogowył się ze swojego konta użytkownika Microsoft 365.
+|Zalogowany użytkownik<sup>*</sup>| UserLoggedIn |Użytkownik zalogował się do konta użytkownika platformy Microsoft 365.|
+|Użytkownik wylogowany<sup>*</sup>| UserLoggedOff |Użytkownik wyloguje się ze swojego konta użytkownika platformy Microsoft 365.
 |Wyświetlone eksplorowanie|ViewedExplore|Wizualizacje przeglądane przez analityków na co najmniej jednej karcie Eksploruj stronę.|
 
 > [!NOTE]
-> <sup>*</sup>Są to Azure Active Directory działania logowania i logowania. Te działania są rejestrowane, nawet jeśli nie masz włączonej usługi Workplace Analytics w organizacji. Aby uzyskać więcej informacji na temat działań związanych z logowaniem [użytkowników, zobacz Logowanie w Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
+> <sup>*</sup>Są to działania logowania i logowania w usłudze Azure Active Directory. Te działania są rejestrowane, nawet jeśli nie masz włączonej usługi Workplace Analytics w organizacji. Aby uzyskać więcej informacji na temat działań związanych z logowaniem [użytkowników, zobacz Logowanie się w usłudze Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
-### <a name="microsoft-teams-activities"></a>działania Microsoft Teams
+### <a name="microsoft-teams-activities"></a>Działania usługi Microsoft Teams
 
-Dziennik inspekcji można przeszukiwać pod kątem działań użytkowników i administratorów w Microsoft Teams. Teams jest obszarem roboczym wyśrodkowanym na czacie w Microsoft 365. Łączy rozmowy, spotkania, pliki i notatki zespołu w jednym miejscu. Aby uzyskać opisy działań Teams, które są poddawane inspekcji, zobacz [Wyszukiwanie w dzienniku inspekcji zdarzeń w Microsoft Teams](/microsoftteams/audit-log-events#teams-activities).
+Dziennik inspekcji można przeszukiwać pod kątem działań użytkowników i administratorów w usłudze Microsoft Teams. Teams to obszar roboczy skoncentrowany na czatach na platformie Microsoft 365. Łączy rozmowy, spotkania, pliki i notatki zespołu w jednym miejscu. Opisy działań usługi Teams, które są poddawane inspekcji, można znaleźć w temacie [Wyszukiwanie w dzienniku inspekcji zdarzeń w usłudze Microsoft Teams](/microsoftteams/audit-log-events#teams-activities).
 
-### <a name="microsoft-teams-healthcare-activities"></a>Microsoft Teams działania w zakresie opieki zdrowotnej
+### <a name="microsoft-teams-healthcare-activities"></a>Działania usługi Microsoft Teams Healthcare
 
-Jeśli Twoja organizacja używa [aplikacji Pacjenci](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) w Microsoft Teams, możesz wyszukać w dzienniku inspekcji działania związane z aplikacją Pacjenci. Jeśli środowisko jest skonfigurowane do obsługi aplikacji Pacjenci, dodatkowa grupa działań dla tych działań jest dostępna na liście selektora **Działania** .
+Jeśli Twoja organizacja korzysta z [aplikacji Pacjenci w usłudze](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) Microsoft Teams, możesz wyszukać w dzienniku inspekcji działania związane z aplikacją Pacjenci. Jeśli środowisko jest skonfigurowane do obsługi aplikacji Pacjenci, dodatkowa grupa działań dla tych działań jest dostępna na liście selektora **Działania** .
 
-![Microsoft Teams działań opieki zdrowotnej na liście selektorów działań.](../media/TeamsHealthcareAuditActivities.png)
+![Lista działań usługi Microsoft Teams Healthcare na liście selektorów działań.](../media/TeamsHealthcareAuditActivities.png)
 
 Aby uzyskać opis działań aplikacji Pacjenci, zobacz [Dzienniki inspekcji dla aplikacji Pacjenci](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
-### <a name="microsoft-teams-shifts-activities"></a>działania Microsoft Teams Shifts
+### <a name="microsoft-teams-shifts-activities"></a>Działania usługi Microsoft Teams Shifts
 
-Jeśli Twoja organizacja korzysta z aplikacji Shifts w Microsoft Teams, możesz wyszukać w dzienniku inspekcji działania związane z aplikacją Shifts. Jeśli środowisko jest skonfigurowane do obsługi aplikacji Shifts, dodatkowa grupa działań dla tych działań jest dostępna na liście **selektora działania** .
+Jeśli Twoja organizacja korzysta z aplikacji Shifts w usłudze Microsoft Teams, możesz wyszukać w dzienniku inspekcji działania związane z aplikacją Shifts. Jeśli środowisko jest skonfigurowane do obsługi aplikacji Shifts, dodatkowa grupa działań dla tych działań jest dostępna na liście **selektora działania** .
 
-Aby uzyskać opis działań aplikacji Shifts, zobacz [Wyszukiwanie w dzienniku inspekcji zdarzeń w Microsoft Teams](/microsoftteams/audit-log-events#shifts-in-teams-activities).
+Opis działań aplikacji Shifts można znaleźć w temacie [Wyszukiwanie w dzienniku inspekcji zdarzeń w usłudze Microsoft Teams](/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
-### <a name="yammer-activities"></a>działania Yammer
+### <a name="yammer-activities"></a>Działania usługi Yammer
 
-W poniższej tabeli wymieniono działania użytkownika i administratora w Yammer, które są rejestrowane w dzienniku inspekcji. Aby zwrócić działania związane z Yammer z dziennika inspekcji, musisz wybrać pozycję **Pokaż wyniki dla wszystkich działań** na liście **Działania**. Użyj pól zakresu dat i listy **Użytkownicy** , aby zawęzić wyniki wyszukiwania.
+W poniższej tabeli wymieniono działania użytkownika i administratora w usłudze Yammer, które są rejestrowane w dzienniku inspekcji. Aby zwrócić działania związane z usługą Yammer z dziennika inspekcji, musisz wybrać pozycję **Pokaż wyniki dla wszystkich działań** na liście **Działania** . Użyj pól zakresu dat i listy **Użytkownicy** , aby zawęzić wyniki wyszukiwania.
 
 > [!NOTE]
-> Niektóre działania inspekcji Yammer są dostępne tylko w obszarze Inspekcja (Premium). Oznacza to, że użytkownicy muszą mieć przypisaną odpowiednią licencję, zanim te działania zostaną zarejestrowane w dzienniku inspekcji. Aby uzyskać więcej informacji o działaniach dostępnych tylko w obszarze Inspekcja (Premium), zobacz [Audit (Premium) in Microsoft 365 (Inspekcja (Premium) w Microsoft 365](advanced-audit.md#audit-premium-events). Aby zapoznać się z wymaganiami dotyczącymi licencjonowania inspekcji (Premium), zobacz [Auditing solutions in Microsoft 365 (Rozwiązania inspekcji w Microsoft 365](auditing-solutions-overview.md#licensing-requirements)). <br/><br/>W poniższej tabeli działania inspekcji (Premium) są wyróżnione gwiazdką (*).
+> Niektóre działania inspekcji usługi Yammer są dostępne tylko w obszarze Inspekcja (Premium). Oznacza to, że użytkownicy muszą mieć przypisaną odpowiednią licencję, zanim te działania zostaną zarejestrowane w dzienniku inspekcji. Aby uzyskać więcej informacji o działaniach dostępnych tylko w obszarze Inspekcja (Premium), zobacz [Audit (Premium) in Microsoft 365 (Audit (Premium) in Microsoft 365 (Inspekcja (Premium) w usłudze Microsoft 365](advanced-audit.md#audit-premium-events). Aby zapoznać się z wymaganiami dotyczącymi licencjonowania inspekcji (Premium), zobacz [Auditing solutions in Microsoft 365 (Rozwiązania do inspekcji na platformie Microsoft 365](auditing-solutions-overview.md#licensing-requirements)). <br/><br/>W poniższej tabeli działania inspekcji (Premium) są wyróżnione gwiazdką (*).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
 |Zmienione zasady przechowywania danych|SoftDeleteSettingsUpdated|Zweryfikowany administrator aktualizuje ustawienie zasad przechowywania danych sieciowych do usunięcia twardego lub nietrwałego. Tę operację mogą wykonać tylko zweryfikowali administratorzy.|
-|Zmieniono konfigurację sieci|NetworkConfigurationUpdated|Sieć lub zweryfikowany administrator zmienia konfigurację sieci Yammer. Obejmuje to ustawienie interwału eksportowania danych i włączania czatu.|
+|Zmieniono konfigurację sieci|NetworkConfigurationUpdated|Sieć lub zweryfikowany administrator zmienia konfigurację sieci usługi Yammer. Obejmuje to ustawienie interwału eksportowania danych i włączania czatu.|
 |Zmieniono ustawienia profilu sieciowego|ProcessProfileFields|Sieć lub zweryfikowany administrator zmienia informacje wyświetlane w profilach elementów członkowskich dla sieci użytkowników sieci.|
 |Zmieniono tryb zawartości prywatnej|NadzorcaAdminToggled|Zweryfikowany administrator włącza lub wyłącza  *tryb zawartości prywatnej*  . Ten tryb umożliwia administratorowi wyświetlanie wpisów w grupach prywatnych i wyświetlanie prywatnych wiadomości między poszczególnymi użytkownikami (lub grupami użytkowników). Tylko zweryfikowane administratorzy mogą wykonać tę operację.|
-|Zmieniono konfigurację zabezpieczeń|NetworkSecurityConfigurationUpdated|Zweryfikowany administrator aktualizuje konfigurację zabezpieczeń sieci Yammer. Obejmuje to ustawienie zasad wygasania haseł i ograniczeń dotyczących adresów IP. Tę operację mogą wykonać tylko zweryfikowali administratorzy.|
+|Zmieniono konfigurację zabezpieczeń|NetworkSecurityConfigurationUpdated|Zweryfikowany administrator aktualizuje konfigurację zabezpieczeń sieci usługi Yammer. Obejmuje to ustawienie zasad wygasania haseł i ograniczeń dotyczących adresów IP. Tę operację mogą wykonać tylko zweryfikowali administratorzy.|
 |Utworzony plik|FileCreated|Użytkownik przekazuje plik.|
 |Utworzona grupa|GroupCreation (Tworzenie grupy)|Użytkownik tworzy grupę.|
 |Utworzono komunikat<sup>*</sup>|MessageCreated|Użytkownik tworzy komunikat.|
-|Usunięto grupę|GroupDeletion|Grupa jest usuwana z Yammer.|
+|Usunięto grupę|GroupDeletion|Grupa jest usuwana z usługi Yammer.|
 |Usunięto komunikat|MessageDeleted|Użytkownik usuwa komunikat.|
 |Pobrany plik|FileDownloaded|Użytkownik pobiera plik.|
-|Wyeksportowane dane|DataExport|Zweryfikowany administrator eksportuje Yammer danych sieciowych. Tę operację mogą wykonać tylko zweryfikowali administratorzy.|
+|Wyeksportowane dane|DataExport|Zweryfikowany administrator eksportuje dane sieciowe usługi Yammer. Tę operację mogą wykonać tylko zweryfikowali administratorzy.|
 |Nie można uzyskać dostępu do społeczności<sup>*</sup>|CommunityAccessFailure|Użytkownik nie mógł uzyskać dostępu do społeczności.|
 |Nie można uzyskać dostępu do pliku<sup>*</sup>|FileAccessFailure|Użytkownik nie może uzyskać dostępu do pliku.|
 |Nie można uzyskać dostępu do komunikatu<sup>*</sup>|MessageAccessFailure|Użytkownik nie może uzyskać dostępu do komunikatu.|
 |Plik udostępniony|FileShared|Użytkownik udostępnia plik innemu użytkownikowi.|
-|Zawieszony użytkownik sieci|NetworkUserSuspended|Sieć lub zweryfikowany administrator wstrzymuje (dezaktywuje) użytkownika z Yammer.|
+|Zawieszony użytkownik sieci|NetworkUserSuspended|Sieć lub zweryfikowany administrator wstrzymuje (dezaktywuje) użytkownika z usługi Yammer.|
 |Zawieszony użytkownik|UserSuspension|Konto użytkownika jest zawieszone (dezaktywowane).|
 |Zaktualizowany opis pliku|FileUpdateDescription|Użytkownik zmienia opis pliku.|
 |Zaktualizowana nazwa pliku|FileUpdateName|Użytkownik zmienia nazwę pliku.|
@@ -868,13 +866,13 @@ W poniższej tabeli wymieniono działania użytkownika i administratora w Yammer
 |Wyświetlony plik|FileVisited|Użytkownik wyświetla plik.|
 |Wyświetlony komunikat<sup>*</sup>|MessageViewed|Użytkownik wyświetla komunikat.|
 
-### <a name="microsoft-power-automate-activities"></a>Działania firmy Microsoft Power Automate
+### <a name="microsoft-power-automate-activities"></a>Działania usługi Microsoft Power Automate
 
-W dzienniku inspekcji można wyszukiwać działania w Power Automate (dawniej nazywanych Microsoft Flow). Działania te obejmują tworzenie, edytowanie i usuwanie przepływów oraz zmienianie uprawnień przepływu. Aby uzyskać informacje na temat inspekcji działań Power Automate, zobacz blog [Power Automate zdarzenia inspekcji dostępne teraz w portalu zgodności](https://flow.microsoft.com/blog/security-and-compliance-center).
+W dzienniku inspekcji można wyszukiwać działania w usłudze Power Automate (dawniej o nazwie Microsoft Flow). Działania te obejmują tworzenie, edytowanie i usuwanie przepływów oraz zmienianie uprawnień przepływu. Aby uzyskać informacje o inspekcji działań usługi Power Automate, zobacz blog  [Zdarzenia inspekcji usługi Power Automate dostępne teraz w portalu zgodności](https://flow.microsoft.com/blog/security-and-compliance-center).
 
-### <a name="microsoft-power-apps-activities"></a>Działania firmy Microsoft Power Apps
+### <a name="microsoft-power-apps-activities"></a>Działania usługi Microsoft Power Apps
 
-Dziennik inspekcji można przeszukiwać pod kątem działań związanych z aplikacją w Power Apps. Te działania obejmują tworzenie, uruchamianie i publikowanie aplikacji. Przypisywanie uprawnień do aplikacji jest również poddawane inspekcji. Aby uzyskać opis wszystkich działań Power Apps, zobacz [Rejestrowanie aktywności dla Power Apps](/power-platform/admin/logging-powerapps#what-events-are-audited).
+W dzienniku inspekcji można wyszukiwać działania związane z aplikacjami w usłudze Power Apps. Te działania obejmują tworzenie, uruchamianie i publikowanie aplikacji. Przypisywanie uprawnień do aplikacji jest również poddawane inspekcji. Aby uzyskać opis wszystkich działań usługi Power Apps, zobacz [Rejestrowanie aktywności w usłudze Power Apps](/power-platform/admin/logging-powerapps#what-events-are-audited).
 
 ### <a name="microsoft-stream-activities"></a>działania Microsoft Stream
 
@@ -886,7 +884,7 @@ W poniższej tabeli wymieniono działania w Eksploratorze zawartości, które s�
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
-|Element, do który uzyskano dostęp|LabelContentExplorerAccessedItem|Administrator (lub użytkownik należący do grupy ról Podgląd zawartości Eksploratora zawartości) używa Eksploratora zawartości do wyświetlania wiadomości e-mail lub SharePoint/OneDrive dokumentu.|
+|Element, do który uzyskano dostęp|LabelContentExplorerAccessedItem|Administrator (lub użytkownik będący członkiem grupy ról Podgląd zawartości Eksploratora zawartości) używa Eksploratora zawartości do wyświetlania wiadomości e-mail lub dokumentu programu SharePoint/OneDrive.|
 
 ### <a name="quarantine-activities"></a>Działania kwarantanny
 
@@ -907,18 +905,18 @@ Tabele w tej sekcji dotyczące działań użytkownika i administratora w Microso
 Jeśli działanie formularzy jest wykonywane przez współautora lub anonimowego użytkownika odpowiadającego, zostanie ono zarejestrowane nieco inaczej. Aby uzyskać więcej informacji, zobacz sekcję [Forms activities performed by coauthors and anonymous responders (Działania formularzy wykonywane przez współautorów i osoby odpowiadające anonimowe](#forms-activities-performed-by-coauthors-and-anonymous-responders) ).
 
 > [!NOTE]
-> Niektóre działania inspekcji formularzy są dostępne tylko w obszarze Inspekcja (Premium). Oznacza to, że użytkownicy muszą mieć przypisaną odpowiednią licencję, zanim te działania zostaną zarejestrowane w dzienniku inspekcji. Aby uzyskać więcej informacji o działaniach dostępnych tylko w obszarze Inspekcja (Premium), zobacz [Audit (Premium) in Microsoft 365 (Inspekcja (Premium) w Microsoft 365](advanced-audit.md#audit-premium-events). Aby zapoznać się z wymaganiami dotyczącymi licencjonowania inspekcji (Premium), zobacz [Auditing solutions in Microsoft 365 (Rozwiązania inspekcji w Microsoft 365](auditing-solutions-overview.md#licensing-requirements)). <br/><br/>W poniższej tabeli działania inspekcji (Premium) są wyróżnione gwiazdką (*).
+> Niektóre działania inspekcji formularzy są dostępne tylko w obszarze Inspekcja (Premium). Oznacza to, że użytkownicy muszą mieć przypisaną odpowiednią licencję, zanim te działania zostaną zarejestrowane w dzienniku inspekcji. Aby uzyskać więcej informacji o działaniach dostępnych tylko w obszarze Inspekcja (Premium), zobacz [Audit (Premium) in Microsoft 365 (Audit (Premium) in Microsoft 365 (Inspekcja (Premium) w usłudze Microsoft 365](advanced-audit.md#audit-premium-events). Aby zapoznać się z wymaganiami dotyczącymi licencjonowania inspekcji (Premium), zobacz [Auditing solutions in Microsoft 365 (Rozwiązania do inspekcji na platformie Microsoft 365](auditing-solutions-overview.md#licensing-requirements)). <br/><br/>W poniższej tabeli działania inspekcji (Premium) są wyróżnione gwiazdką (*).
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
 |Utworzony komentarz|CreateComment|Właściciel formularza dodaje komentarz lub ocenę do quizu.|
-|Utworzony formularz|CreateForm|Właściciel formularza tworzy nowy formularz. <br><br>Właściwość DataMode:string wskazuje, że bieżący formularz jest ustawiony na synchronizację z nowym lub istniejącym skoroszytem Excel, jeśli wartość właściwości jest równa DataSync. Właściwość ExcelWorkbookLink:string wskazuje skojarzony identyfikator skoroszytu Excel bieżącego formularza.|
-|Edytowany formularz|EditForm|Właściciel formularza edytuje formularz, taki jak tworzenie, usuwanie lub edytowanie pytania. Właściwość *EditOperation:string* wskazuje nazwę operacji edycji. Możliwe operacje to:<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>— UploadFormImage/Bing/Onedrive <br/>— UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage zawiera dowolne miejsce w formularzach, które użytkownik może przekazać obraz, na przykład w zapytaniu lub jako motyw w tle.|
+|Utworzony formularz|CreateForm|Właściciel formularza tworzy nowy formularz. <br><br>Właściwość DataMode:string wskazuje, że bieżący formularz jest ustawiony na synchronizację z nowym lub istniejącym skoroszytem programu Excel, jeśli wartość właściwości jest równa DataSync. Właściwość ExcelWorkbookLink:string wskazuje skojarzony identyfikator skoroszytu programu Excel bieżącego formularza.|
+|Edytowany formularz|EditForm|Właściciel formularza edytuje formularz, taki jak tworzenie, usuwanie lub edytowanie pytania. Właściwość *EditOperation:string* wskazuje nazwę operacji edycji. Możliwe operacje to:<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>- UploadFormImage/Bing/Onedrive <br/>— UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage zawiera dowolne miejsce w formularzach, które użytkownik może przekazać obraz, na przykład w zapytaniu lub jako motyw w tle.|
 |Formularz przeniesiony|MoveForm|Właściciel formularza przenosi formularz. <br><br>Właściwość DestinationUserId:string wskazuje identyfikator użytkownika osoby, która przeniosła formularz. Właściwość NewFormId:string to nowy identyfikator nowo skopiowanego formularza. Właściwość IsDelegateAccess:boolean wskazuje, że bieżąca akcja przenoszenia formularza jest wykonywana za pośrednictwem strony delegata administratora.|
 |Usunięty formularz|DeleteForm|Właściciel formularza usuwa formularz. Obejmuje to softdelete (opcja usuwania używana i formularz przeniesiony do kosza) i HardDelete (Kosz jest opróżniany).|
 |Wyświetlony formularz (czas projektowania)|ViewForm|Właściciel formularza otwiera istniejący formularz do edycji. <br><br>Właściwość AccessDenied:boolean wskazuje, że dostęp do bieżącego formularza został odrzucony z powodu sprawdzania uprawnień. Właściwość FromSummaryLink:boolean wskazuje, że bieżące żądanie pochodzi ze strony linku podsumowania.|
 |Formularz w wersji zapoznawczej|Wersja zapoznawcza|Właściciel formularza wyświetla podgląd formularza przy użyciu funkcji Preview.|
-|Wyeksportowany formularz|ExportForm|Właściciel formularza eksportuje wyniki do Excel. <br><br>Właściwość ExportFormat:string wskazuje, czy plik Excel to Pobierz, czy Online.|
+|Wyeksportowany formularz|ExportForm|Właściciel formularza eksportuje wyniki do programu Excel. <br><br>Właściwość ExportFormat:string wskazuje, czy plik programu Excel to Pobierz, czy Online.|
 |Formularz dozwolonego udziału do kopiowania|AllowShareFormForCopy|Właściciel formularza tworzy link szablonu do udostępniania formularza innym użytkownikom. To zdarzenie jest rejestrowane, gdy właściciel formularza kliknie, aby wygenerować adres URL szablonu.|
 |Niedozwolony formularz udziału do kopiowania|DisallowShareFormForCopy|Właściciel formularza usuwa link szablonu.|
 |Dodano współautora formularza|AddFormCoauthor|Użytkownik używa linku do współpracy, aby ułatwić projektowanie/wyświetlanie odpowiedzi. To zdarzenie jest rejestrowane, gdy użytkownik używa adresu URL kolabu (a nie po pierwszym wygenerowaniu adresu URL collab).|
@@ -934,7 +932,7 @@ Jeśli działanie formularzy jest wykonywane przez współautora lub anonimowego
 |Link do usuniętego podsumowania|DeleteSummaryLink|Właściciel formularza usuwa link wyników podsumowania.|
 |Zaktualizowany stan wyłudzania informacji o formularzu|UpdatePhishingStatus|To zdarzenie jest rejestrowane za każdym razem, gdy została zmieniona szczegółowa wartość stanu zabezpieczeń wewnętrznych, niezależnie od tego, czy zmieniono ostateczny stan zabezpieczeń (na przykład formularz jest teraz zamknięty, czy otwarty). Oznacza to, że mogą zostać wyświetlone zduplikowane zdarzenia bez ostatecznej zmiany stanu zabezpieczeń. Możliwe wartości stanu dla tego zdarzenia to:<br/>- Zdjąć <br/>- Take Down by Administracja <br/>- odblokowane Administracja <br/>— Automatyczne blokowanie <br/>— Automatyczne odblokowywanie <br/>- Zgłoszone przez klienta <br/>- Resetowanie zgłoszonego klienta|
 |Zaktualizowany stan wyłudzania informacji przez użytkownika|UpdateUserPhishingStatus|To zdarzenie jest rejestrowane za każdym razem, gdy wartość stanu zabezpieczeń użytkownika została zmieniona. Wartość stanu użytkownika w rekordzie inspekcji jest **potwierdzona jako Phisher** , gdy użytkownik utworzył formularz wyłudzania informacji, który został zdjęty przez zespół ds. bezpieczeństwa usługi Microsoft Online. Jeśli administrator odblokuje użytkownika, wartość stanu użytkownika jest ustawiona na **wartość Resetuj jako normalny użytkownik**.|
-|Wysłane formularze Pro zaproszenia|ProInvitation|Użytkownik klika, aby aktywować Pro wersji próbnej.|
+|Wysłane formularze Pro — zaproszenie|ProInvitation|Użytkownik klika, aby aktywować wersję próbną pro.|
 |Zaktualizowane ustawienie formularza<sup>*</sup> |UpdateFormSetting|Właściciel formularza aktualizuje jedno lub wiele ustawień formularza. <br><br>Właściwość FormSettingName:string wskazuje zaktualizowaną nazwę ustawień poufnych. Właściwość NewFormSettings:string wskazuje nazwę zaktualizowanych ustawień i nową wartość. Właściwość thankYouMessageContainsLink:boolean wskazuje zaktualizowany komunikat podziękowania zawiera link url.|
 |Zaktualizowane ustawienie użytkownika|UpdateUserSetting|Właściciel formularza aktualizuje ustawienie użytkownika. <br><br>Właściwość UserSettingName:string wskazuje nazwę ustawienia i nową wartość|
 |Formularze wymienione<sup>*</sup>|ListForms|Właściciel formularza wyświetla listę formularzy. <br><br>Właściwość ViewType:string wskazuje, na który widok patrzy właściciel formularza: Wszystkie formularze, Udostępnione mi lub Formularze grupy|
@@ -946,10 +944,10 @@ Jeśli działanie formularzy jest wykonywane przez współautora lub anonimowego
 |Dodano określoną odpowiedź<sup>*</sup>|AddSpecificResponder|Właściciel formularza dodaje nowego użytkownika lub grupę do listy określonych odpowiedzi.|
 |Usunięto określoną odpowiedź<sup>*</sup>|RemoveSpecificResponder|Właściciel formularza usuwa użytkownika lub grupę z listy określonych odpowiedzi.|
 |Wyłączona współpraca<sup>*</sup>|DisableCollaboration|Właściciel formularza wyłącza ustawienie współpracy w formularzu.|
-|Włączono współpracę Office 365 kontem służbowym<sup>*</sup>|EnableWorkOrSchoolCollaboration|Właściciel formularza włącza ustawienie umożliwiające użytkownikom z kontem Microsoft 365 służbowym wyświetlanie i edytowanie formularza.|
+|Włączono współpracę Office 365 kontem służbowym<sup>*</sup>|EnableWorkOrSchoolCollaboration|Właściciel formularza włącza ustawienie umożliwiające użytkownikom korzystającym z konta służbowego platformy Microsoft 365 wyświetlanie i edytowanie formularza.|
 |Włączone osoby we współpracy w mojej organizacji<sup>*</sup>|EnableSameOrgCollaboration|Właściciel formularza włącza ustawienie umożliwiające użytkownikom w bieżącej organizacji wyświetlanie i edytowanie formularza.|
 |Włączono współpracę konkretnych osób<sup>*</sup>|EnableSpecificCollaboaration|Właściciel formularza włącza ustawienie zezwalające tylko określonym osobom lub określonym grupom w bieżącej organizacji na wyświetlanie i edytowanie formularza.|
-|Połączony ze skoroszytem Excel<sup>*</sup>|ConnectToExcelWorkbook|Formularz został połączony ze skoroszytem Excel. <br><br>Właściwość ExcelWorkbookLink:string wskazuje skojarzony identyfikator skoroszytu Excel bieżącego formularza.|
+|Połączone ze skoroszytem programu Excel<sup>*</sup>|ConnectToExcelWorkbook|Formularz został połączony ze skoroszytem programu Excel. <br><br>Właściwość ExcelWorkbookLink:string wskazuje skojarzony identyfikator skoroszytu programu Excel bieżącego formularza.|
 |Tworzenie kolekcji|KolekcjaUtwórz|Właściciel formularza utworzył kolekcję.|
 |Zaktualizowano kolekcję|CollectionUpdated|Właściciel formularza zaktualizował właściwość kolekcji.|
 |Usunięto kolekcję z Kosza|CollectionHardDeleted|Właściciel formularza na stałe usunął kolekcję z Kosza.|
@@ -979,12 +977,12 @@ W poniższej tabeli wymieniono zdarzenia wynikające z [używania etykiet poufno
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
-|Zastosowana etykieta poufności do witryny|SensitivityLabelApplied|Etykieta poufności została zastosowana do witryny SharePoint lub Teams.|
-|Usunięto etykietę poufności z witryny|SensitivityLabelRemoved|Etykieta poufności została usunięta z witryny SharePoint lub Teams.|
-|Zastosowana etykieta poufności do pliku|FileSensitivityLabelApplied|Etykieta poufności została zastosowana do dokumentu przy użyciu aplikacji Microsoft 365, Office w sieci Web. lub zasady automatycznego etykietowania.|
-|Zmieniono etykietę poufności stosowaną do pliku|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|Do dokumentu została zastosowana inna etykieta poufności. <br /><br>Operacje dla tego działania różnią się w zależności od sposobu zmiany etykiety:<br /> - Office w sieci Web lub zasady automatycznego etykietowania (FileSensitivityLabelChanged) <br /> — aplikacje Microsoft 365 (SensitivityLabelUpdated)|
-|Zmieniono etykietę poufności w witrynie|SensitivityLabelChanged|Inna etykieta poufności została zastosowana do witryny SharePoint lub Teams.|
-|Usunięto etykietę poufności z pliku|FileSensitivityLabelRemoved|Etykieta poufności została usunięta z dokumentu przy użyciu Microsoft 365 aplikacji, Office w sieci Web, zasad automatycznego etykietowania lub polecenia cmdlet [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile).|
+|Zastosowana etykieta poufności do witryny|SensitivityLabelApplied|Etykieta poufności została zastosowana do witryny programu SharePoint lub aplikacji Teams.|
+|Usunięto etykietę poufności z witryny|SensitivityLabelRemoved|Etykieta poufności została usunięta z witryny programu SharePoint lub aplikacji Teams.|
+|Zastosowana etykieta poufności do pliku|FileSensitivityLabelApplied|Etykieta poufności została zastosowana do dokumentu przy użyciu aplikacji platformy Microsoft 365, Office w sieci Web. lub zasady automatycznego etykietowania.|
+|Zmieniono etykietę poufności stosowaną do pliku|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|Do dokumentu została zastosowana inna etykieta poufności. <br /><br>Operacje dla tego działania różnią się w zależności od sposobu zmiany etykiety:<br /> - Office w sieci Web lub zasady automatycznego etykietowania (FileSensitivityLabelChanged) <br /> — Aplikacje platformy Microsoft 365 (SensitivityLabelUpdated)|
+|Zmieniono etykietę poufności w witrynie|SensitivityLabelChanged|Do witryny programu SharePoint lub aplikacji Teams zastosowano inną etykietę poufności.|
+|Usunięto etykietę poufności z pliku|FileSensitivityLabelRemoved|Etykieta poufności została usunięta z dokumentu przy użyciu aplikacji platformy Microsoft 365, Office w sieci Web, zasad automatycznego etykietowania lub polecenia cmdlet [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile).|
 
 ### <a name="retention-policy-and-retention-label-activities"></a>Działania dotyczące zasad przechowywania i etykiet przechowywania
 
@@ -1009,7 +1007,7 @@ W poniższej tabeli opisano działania konfiguracji [zasad przechowywania i etyk
 
 ### <a name="briefing-email-activities"></a>Działania dotyczące wiadomości e-mail z briefingu
 
-W poniższej tabeli wymieniono działania w wiadomości e-mail z informacją, które są rejestrowane w dzienniku inspekcji Microsoft 365. Aby uzyskać więcej informacji na temat wiadomości e-mail z informacjami o briefingu, zobacz:
+W poniższej tabeli wymieniono działania w wiadomości e-mail z informacją, które są rejestrowane w dzienniku inspekcji platformy Microsoft 365. Aby uzyskać więcej informacji na temat wiadomości e-mail z informacjami o briefingu, zobacz:
 
 - [Omówienie wiadomości e-mail z briefingu](/Briefing/be-overview)
 
@@ -1022,7 +1020,7 @@ W poniższej tabeli wymieniono działania w wiadomości e-mail z informacją, kt
 
 ### <a name="myanalytics-activities"></a>Działania myAnalytics
 
-W poniższej tabeli wymieniono działania w usłudze MyAnalytics, które są rejestrowane w dzienniku inspekcji Microsoft 365. Aby uzyskać więcej informacji na temat usługi MyAnalytics, zobacz [MyAnalytics for admins (MyAnalytics for admins](/workplace-analytics/myanalytics/overview/mya-for-admins)).
+W poniższej tabeli wymieniono działania w usłudze MyAnalytics, które są rejestrowane w dzienniku inspekcji platformy Microsoft 365. Aby uzyskać więcej informacji na temat usługi MyAnalytics, zobacz [MyAnalytics for admins (MyAnalytics for admins](/workplace-analytics/myanalytics/overview/mya-for-admins)).
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:-----|:-----|:-----|
@@ -1031,13 +1029,13 @@ W poniższej tabeli wymieniono działania w usłudze MyAnalytics, które są rej
 
 ### <a name="information-barriers-activities"></a>Działania związane z barierami informacyjnymi
 
-W poniższej tabeli wymieniono działania w barierach informacyjnych, które są rejestrowane w dzienniku inspekcji Microsoft 365. Aby uzyskać więcej informacji na temat barier informacyjnych, zobacz [Dowiedz się więcej o barierach informacyjnych w Microsoft 365](information-barriers.md).
+W poniższej tabeli wymieniono działania w barierach informacyjnych, które są rejestrowane w dzienniku inspekcji platformy Microsoft 365. Aby uzyskać więcej informacji na temat barier informacyjnych, zobacz [Dowiedz się więcej o barierach informacyjnych w usłudze Microsoft 365](information-barriers.md).
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:----------------|:------------|:--------------|
-| Dodano segmenty do witryny | SegmentyAdded | Administrator SharePoint, administrator globalny lub właściciel witryny dodał co najmniej jeden segment barier informacyjnych do witryny. |
-| Zmieniono segmenty witryny | SegmentsChanged | Administrator SharePoint lub administrator globalny zmienił co najmniej jeden segment barier informacyjnych dla witryny. |
-| Usunięto segmenty z witryny | SegmentyRemoved | Administrator SharePoint lub administrator globalny usunął co najmniej jeden segment barier informacyjnych z witryny. |
+| Dodano segmenty do witryny | SegmentyAdded | Administrator globalny lub właściciel witryny programu SharePoint dodał do witryny co najmniej jeden segment bariery informacyjnej. |
+| Zmieniono segmenty witryny | SegmentsChanged | Program SharePoint lub administrator globalny zmienił co najmniej jeden segment barier informacyjnych dla witryny. |
+| Usunięto segmenty z witryny | SegmentyRemoved | Program SharePoint lub administrator globalny usunęli co najmniej jeden segment barier informacyjnych z witryny. |
 
 ### <a name="disposition-review-activities"></a>Działania przeglądu dyspozycji
 
@@ -1052,7 +1050,7 @@ W poniższej tabeli wymieniono działania wykonywane przez recenzenta dyspozycji
 
 ### <a name="communication-compliance-activities"></a>Działania dotyczące zgodności komunikacji
 
-Poniższa tabela zawiera listę działań zgodności komunikacji, które są rejestrowane w dzienniku inspekcji Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o zgodności komunikacji w Microsoft 365](communication-compliance.md).
+Poniższa tabela zawiera listę działań zgodności komunikacji, które są rejestrowane w dzienniku inspekcji platformy Microsoft 365. Aby uzyskać więcej informacji, zobacz [Learn about communication compliance in Microsoft 365 (Informacje o zgodności komunikacji na platformie Microsoft 365](communication-compliance.md)).
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:-----|:-----|:-----|
@@ -1062,36 +1060,36 @@ Poniższa tabela zawiera listę działań zgodności komunikacji, które są rej
 
 ### <a name="report-activities"></a>Działania raportu
 
-W poniższej tabeli wymieniono działania dotyczące raportów użycia, które są rejestrowane w dzienniku inspekcji Microsoft 365.
+W poniższej tabeli wymieniono działania dotyczące raportów użycia, które są rejestrowane w dzienniku inspekcji platformy Microsoft 365.
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:-----|:-----|:-----|
 |Zaktualizowane ustawienia prywatności raportu użycia|UpdateUsageReportsPrivacySetting|Administracja zaktualizowane ustawienia prywatności dla raportów użycia. |
 
-### <a name="exchange-admin-audit-log"></a>dziennik inspekcji administratora Exchange
+### <a name="exchange-admin-audit-log"></a>Dziennik inspekcji administratora programu Exchange
 
-Exchange rejestrowanie inspekcji administratora (domyślnie włączone w Microsoft 365) rejestruje zdarzenie w dzienniku inspekcji, gdy administrator (lub użytkownik, któremu przypisano uprawnienia administracyjne) wprowadza zmianę w organizacji Exchange Online. Zmiany wprowadzone przy użyciu centrum administracyjnego Exchange lub przez uruchomienie polecenia cmdlet w programie Exchange Online programu PowerShell są rejestrowane w dzienniku inspekcji administratora Exchange. Polecenia cmdlet rozpoczynające się czasownikami **Get-**, **Search-lub** **Test nie** są rejestrowane w dzienniku inspekcji. Aby uzyskać bardziej szczegółowe informacje na temat rejestrowania inspekcji administratora w Exchange, zobacz [Rejestrowanie inspekcji administratora](/exchange/administrator-audit-logging-exchange-2013-help).
+Rejestrowanie inspekcji administratora programu Exchange (domyślnie włączone w usłudze Microsoft 365) rejestruje zdarzenie w dzienniku inspekcji, gdy administrator (lub użytkownik, któremu przypisano uprawnienia administracyjne) wprowadza zmianę w organizacji Exchange Online. Zmiany wprowadzone przy użyciu centrum administracyjnego programu Exchange lub przez uruchomienie polecenia cmdlet w Exchange Online programu PowerShell są rejestrowane w dzienniku inspekcji administratora programu Exchange. Polecenia cmdlet rozpoczynające się czasownikami **Get-**, **Search-lub** **Test nie** są rejestrowane w dzienniku inspekcji. Aby uzyskać bardziej szczegółowe informacje na temat rejestrowania inspekcji administratora w programie Exchange, zobacz [Rejestrowanie inspekcji administratora](/exchange/administrator-audit-logging-exchange-2013-help).
 
 > [!IMPORTANT]
-> Niektóre Exchange Online poleceń cmdlet, które nie są rejestrowane w dzienniku inspekcji Exchange administratora (lub w dzienniku inspekcji). Wiele z tych poleceń cmdlet jest związanych z utrzymaniem usługi Exchange Online i jest uruchamianych przez personel centrum danych firmy Microsoft lub konta usług. Te polecenia cmdlet nie są rejestrowane, ponieważ powodują dużą liczbę "hałaśliwych" zdarzeń inspekcji. Jeśli istnieje polecenie cmdlet Exchange Online, które nie jest poddawane inspekcji, prześlij żądanie zmiany projektu (DCR) do pomoc techniczna firmy Microsoft.
+> Niektóre Exchange Online polecenia cmdlet, które nie są rejestrowane w dzienniku inspekcji administratora programu Exchange (lub w dzienniku inspekcji). Wiele z tych poleceń cmdlet jest związanych z utrzymaniem usługi Exchange Online i jest uruchamianych przez personel centrum danych firmy Microsoft lub konta usług. Te polecenia cmdlet nie są rejestrowane, ponieważ powodują dużą liczbę "hałaśliwych" zdarzeń inspekcji. Jeśli istnieje polecenie cmdlet Exchange Online, które nie jest poddawane inspekcji, prześlij żądanie zmiany projektu (DCR) do pomoc techniczna firmy Microsoft.
 
-Poniżej przedstawiono kilka wskazówek dotyczących wyszukiwania działań administratora Exchange podczas przeszukiwania dziennika inspekcji:
+Poniżej przedstawiono kilka wskazówek dotyczących wyszukiwania działań administratora programu Exchange podczas przeszukiwania dziennika inspekcji:
 
-- Aby zwrócić wpisy z dziennika inspekcji Exchange administratora, musisz wybrać pozycję **Pokaż wyniki dla wszystkich działań na** liście **Działania**. Użyj pól zakresu dat i listy **Użytkownicy**, aby zawęzić wyniki wyszukiwania poleceń cmdlet uruchamianych przez określonego administratora Exchange w określonym zakresie dat.
+- Aby zwrócić wpisy z dziennika inspekcji administratora programu Exchange, musisz wybrać pozycję **Pokaż wyniki dla wszystkich działań** na liście **Działania** . Użyj pól zakresu dat i listy **Użytkownicy** , aby zawęzić wyniki wyszukiwania poleceń cmdlet uruchamianych przez określonego administratora programu Exchange w określonym zakresie dat.
 
-- Aby wyświetlić zdarzenia z dziennika inspekcji Exchange administratora, kliknij kolumnę **Działanie**, aby posortować nazwy poleceń cmdlet w kolejności alfabetycznej.
+- Aby wyświetlić zdarzenia z dziennika inspekcji administratora programu Exchange, kliknij kolumnę **Działanie** , aby posortować nazwy poleceń cmdlet w kolejności alfabetycznej.
 
 - Aby uzyskać informacje o tym, jakie polecenie cmdlet zostało uruchomione, które parametry i wartości parametrów zostały użyte oraz jakie obiekty zostały naruszone, możesz wyeksportować wyniki wyszukiwania, wybierając opcję **Pobierz wszystkie wyniki** . Aby uzyskać więcej informacji, zobacz [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md).
 
-- Możesz również użyć `Search-UnifiedAuditLog -RecordType ExchangeAdmin` polecenia w programie Exchange Online programu PowerShell, aby zwrócić tylko rekordy inspekcji z dziennika inspekcji Exchange administratora. Może upłynąć do 30 minut po uruchomieniu polecenia cmdlet Exchange, aby odpowiedni wpis dziennika inspekcji został zwrócony w wynikach wyszukiwania. Aby uzyskać więcej informacji, zobacz [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog). Aby uzyskać informacje na temat eksportowania wyników wyszukiwania zwróconych przez polecenie cmdlet **Search-UnifiedAuditLog** do pliku CSV, zobacz sekcję "Wskazówki eksportowania i wyświetlania dziennika inspekcji" w temacie [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
+- Możesz również użyć `Search-UnifiedAuditLog -RecordType ExchangeAdmin` polecenia w programie Exchange Online programu PowerShell, aby zwrócić tylko rekordy inspekcji z dziennika inspekcji administratora programu Exchange. Może upłynąć do 30 minut po uruchomieniu polecenia cmdlet programu Exchange, aby odpowiedni wpis dziennika inspekcji został zwrócony w wynikach wyszukiwania. Aby uzyskać więcej informacji, zobacz [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog). Aby uzyskać informacje na temat eksportowania wyników wyszukiwania zwróconych przez polecenie cmdlet **Search-UnifiedAuditLog** do pliku CSV, zobacz sekcję "Porady dotyczące eksportowania i wyświetlania dziennika inspekcji" w temacie [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
-- Zdarzenia można również wyświetlać w dzienniku inspekcji administratora Exchange przy użyciu centrum administracyjnego Exchange lub uruchamiając dziennik **Search-AdminAuditLog** w programie Exchange Online programu PowerShell. Jest to dobry sposób na wyszukiwanie działań wykonywanych przez administratorów Exchange Online. Aby uzyskać instrukcje, zobacz:
+- Zdarzenia można również wyświetlać w dzienniku inspekcji administratora programu Exchange przy użyciu centrum administracyjnego programu Exchange lub uruchamiając dziennik **Search-AdminAuditLog** w programie Exchange Online programu PowerShell. Jest to dobry sposób na wyszukiwanie działań wykonywanych przez administratorów Exchange Online. Aby uzyskać instrukcje, zobacz:
 
   - [Wyświetlanie dziennika inspekcji administratora](/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)
 
   - [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog)
 
-   Należy pamiętać, że te same działania administratora Exchange są rejestrowane zarówno w dzienniku inspekcji Exchange administratora, jak i w dzienniku inspekcji.
+   Należy pamiętać, że te same działania administratora programu Exchange są rejestrowane zarówno w dzienniku inspekcji administratora programu Exchange, jak i w dzienniku inspekcji.
 
 ### <a name="encrypted-message-portal-activities"></a>Działania zaszyfrowanego portalu wiadomości
 
@@ -1110,7 +1108,7 @@ Każdy wpis inspekcji dla śledzonego komunikatu będzie zawierać następujące
 
 ### <a name="systemsync-activities"></a>Działania narzędzia SystemSync
 
-W poniższej tabeli wymieniono działania programu SystemSync, które są rejestrowane w dzienniku inspekcji Microsoft 365.
+W poniższej tabeli wymieniono działania programu SystemSync, które są rejestrowane w dzienniku inspekcji platformy Microsoft 365.
 
 |**Przyjazna nazwa**|**Operacja**|**Opis**|
 |:-----|:-----|:-----|
@@ -1122,11 +1120,11 @@ W poniższej tabeli wymieniono działania programu SystemSync, które są rejest
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-**Czym różnią się usługi Microsoft 365, które są obecnie poddawane inspekcji?**
+**Jakie są różne usługi platformy Microsoft 365, które są obecnie poddawane inspekcji?**
 
-Najczęściej używane usługi, takie jak Exchange Online, SharePoint Online, OneDrive dla Firm, Azure Active Directory, Microsoft Teams, Dynamics 365, Ochrona usługi Office 365 w usłudze Defender i Power BI są poddawane inspekcji. Zobacz [początek tego artykułu](search-the-audit-log-in-security-and-compliance.md) , aby uzyskać listę usług, które są poddawane inspekcji.
+Najczęściej używane usługi, takie jak Exchange Online, SharePoint Online, OneDrive dla Firm, Azure Active Directory, Microsoft Teams, Dynamics 365, Ochrona usługi Office 365 w usłudze Defender i Power BI, są poddawane inspekcji. Zobacz [początek tego artykułu](search-the-audit-log-in-security-and-compliance.md) , aby uzyskać listę usług, które są poddawane inspekcji.
 
-**Jakie działania są poddawane inspekcji przez usługę inspekcji w Microsoft 365?**
+**Jakie działania są poddawane inspekcji przez usługę inspekcji na platformie Microsoft 365?**
 
 Zobacz sekcję [Inspekcja działań](#audited-activities) w tym artykule, aby zapoznać się z listą i opisem działań, które są poddawane inspekcji.
 
@@ -1140,7 +1138,7 @@ Jak wyjaśniono wcześniej, rekordy inspekcji działań wykonywanych przez użyt
 
 **Czy mogę programowo uzyskiwać dostęp do danych inspekcji?**
 
-Tak. Interfejs API działania zarządzania Office 365 służy do programowego pobierania dzienników inspekcji.  Aby rozpocząć, zobacz [Wprowadzenie z interfejsami API zarządzania Office 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
+Tak. Interfejs API działania zarządzania Office 365 służy do programowego pobierania dzienników inspekcji.  Aby rozpocząć, zobacz [Wprowadzenie do interfejsów API zarządzania Office 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 **Czy istnieją inne sposoby uzyskiwania dzienników inspekcji innych niż korzystanie z portalu zabezpieczeń i zgodności lub interfejsu API działania zarządzania Office 365?**
 
@@ -1158,7 +1156,7 @@ W większości usług inspekcja jest domyślnie włączona po początkowym włą
 
 **Czy usługa inspekcji obsługuje cofanie duplikowania rekordów?**
 
-Nie. Potok usługi inspekcji znajduje się niemal w czasie rzeczywistym i w związku z tym nie może obsługiwać cofania duplikowania.
+L.p. Potok usługi inspekcji znajduje się niemal w czasie rzeczywistym i w związku z tym nie może obsługiwać cofania duplikowania.
 
 **Gdzie są przechowywane dane inspekcji?**
 
@@ -1166,6 +1164,6 @@ Obecnie przeprowadzamy inspekcję wdrożeń potoków w regionach NA (Ameryka Pó
 
 **Czy inspekcja danych jest szyfrowana?**
 
-Dane inspekcji są przechowywane w Exchange skrzynkach pocztowych (danych magazynowanych) w tym samym regionie, w którym wdrożono ujednolicony potok inspekcji. Dane skrzynki pocztowej magazynowane nie są szyfrowane przez Exchange. Jednak szyfrowanie na poziomie usługi szyfruje wszystkie dane skrzynki pocztowej, ponieważ serwery Exchange w centrach danych firmy Microsoft są szyfrowane za pośrednictwem BitLocker. Aby uzyskać więcej informacji, zobacz [szyfrowanie Microsoft 365 dla Skype dla firm, OneDrive dla Firm, SharePoint Online i Exchange Online](/compliance/assurance/assurance-encryption-for-microsoft-365-services).
+Dane inspekcji są przechowywane w skrzynkach pocztowych programu Exchange (dane magazynowane) w tym samym regionie, w którym wdrożono ujednolicony potok inspekcji. Dane skrzynki pocztowej magazynowane nie są szyfrowane przez program Exchange. Jednak szyfrowanie na poziomie usługi szyfruje wszystkie dane skrzynki pocztowej, ponieważ serwery programu Exchange w centrach danych firmy Microsoft są szyfrowane za pośrednictwem BitLocker. Aby uzyskać więcej informacji, zobacz [Microsoft 365 Encryption for Skype dla firm, OneDrive dla Firm, SharePoint Online i Exchange Online](/compliance/assurance/assurance-encryption-for-microsoft-365-services).
 
 Przesyłane dane poczty są zawsze szyfrowane.

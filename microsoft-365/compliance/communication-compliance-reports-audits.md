@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 998f074529089f5c0309f6799900a628915d3959
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 27c166f3c9df0dead57f977b00cab41eb82347ad
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893399"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630508"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Używanie raportów i inspekcji zgodności komunikacji
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="reports"></a>Raporty
 
@@ -93,12 +91,11 @@ Użyj opcji *Eksportuj* , aby utworzyć plik .csv zawierający szczegóły rapor
 
     - **Wiadomość e-mail**: wykryto typy informacji poufnych w wiadomościach e-mail programu Exchange.
     - **Teams**: typy informacji poufnych wykryte w kanałach usługi Microsoft Teams i wiadomościach czatu.
-    - **Skype dla firm**: wykryto typy informacji poufnych w komunikacji programu Skype dla firm.
     - **Yammer**: typy informacji poufnych wykryte w skrzynkach odbiorczych usługi Yammer, wpisach, czatach i odpowiedziach.
     - **Źródła innych firm**: wykryto poufne typy informacji dla działań skojarzonych z łącznikami innych firm skonfigurowanymi w organizacji. Aby wyświetlić podział źródeł innych firm dla określonego typu informacji poufnych w raporcie, umieść wskaźnik myszy nad wartością typu informacji poufnych w kolumnie źródła innej firmy.
     - **Inne**: Typy informacji poufnych używane do wewnętrznego przetwarzania systemu. Wybranie lub usunięcie zaznaczenia tego źródła raportu nie wpłynie na żadne wartości.
 
-### <a name="message-details-report-preview"></a>Raport szczegółów komunikatu (wersja zapoznawcza)
+### <a name="message-details-report"></a>Raport szczegółów komunikatu
 
 Utwórz niestandardowe raporty i przejrzyj szczegóły komunikatów zawartych w określonych zasadach na karcie **Zasady** . Te raporty mogą służyć do wszystkich przeglądów komunikatów i tworzenia migawki raportu dla stanu komunikatów w dostosowywalnym okresie. Po utworzeniu raportu możesz wyświetlić i pobrać raport szczegółów jako plik .csv na karcie **Raporty szczegółów wiadomości** .
 
@@ -106,7 +103,7 @@ Utwórz niestandardowe raporty i przejrzyj szczegóły komunikatów zawartych w 
 
 Aby utworzyć nowy raport szczegółów komunikatu, wykonaj następujące kroki:
 
-1. Zaloguj się do portalu zgodności usługi Microsoft Purview przy użyciu konta należącego do grupy ról *Badacze zgodności komunikacji* .
+1. Zaloguj się do portal zgodności Microsoft Purview przy użyciu konta należącego do grupy ról *Badacze zgodności komunikacji*.
 2. Przejdź do karty **Zasady** , wybierz zasady, a następnie wybierz pozycję **Utwórz raport szczegółów komunikatu**.
 3. W okienku **Tworzenie raportu szczegółów komunikatu** wprowadź nazwę raportu w polu **Nazwa raportu** .
 4. W **obszarze Wybierz zakres dat** wybierz *datę rozpoczęcia* i *datę zakończenia* raportu.
@@ -146,7 +143,7 @@ W niektórych przypadkach należy przekazać informacje audytorom regulacyjnym l
 > [!IMPORTANT]
 > Aby zdarzenia zgodności z komunikacją były rejestrowane, należy włączyć inspekcję dla organizacji. Aby włączyć inspekcję, zobacz [Włączanie dziennika inspekcji](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Gdy działania wyzwalają zdarzenia przechwycone w dzienniku inspekcji platformy Microsoft 365, wyświetlenie tych zdarzeń w zasadach zgodności komunikacji może potrwać do 48 godzin.
 
-Aby wyświetlić działania aktualizacji zasad zgodności komunikacji, wybierz kontrolkę **Eksportuj aktualizacje zasad** na stronie głównej dla wszystkich zasad. Aby eksportować działania aktualizacji, musisz mieć przypisane role *administratora globalnego* lub *administratora zgodności komunikacji* . Ta akcja generuje plik inspekcji w formacie .csv, który zawiera następujące informacje:
+Aby wyświetlić działania aktualizacji zasad zgodności komunikacji, wybierz kontrolkę **Eksportuj aktualizacje zasad** na stronie głównej dla wszystkich zasad. Aby eksportować działania aktualizacji,  musisz mieć przypisane role *Administracja globalnej Administracja lub zgodności z komunikacją*. Ta akcja generuje plik inspekcji w formacie .csv, który zawiera następujące informacje:
 
 |**Pole**|**Szczegóły**|
 |:-----|:-----|
@@ -155,7 +152,7 @@ Aby wyświetlić działania aktualizacji zasad zgodności komunikacji, wybierz k
 | **Operacje** | Operacje aktualizacji wykonywane na zasadach. |
 | **AuditData** | To pole jest głównym źródłem danych dla wszystkich działań związanych z aktualizacją zasad. Wszystkie działania aktualizacji są rejestrowane i oddzielone ogranicznikami przecinków. |
 
-Aby wyświetlić działania przeglądu zgodności komunikacji dla zasad, wybierz kontrolkę **Eksportuj działania przeglądu** na stronie **Przegląd** dla określonych zasad. Aby eksportować działania przeglądu, musisz mieć przypisane role *administratora globalnego* lub *administratora zgodności komunikacji* . Ta akcja generuje plik inspekcji w formacie .csv, który zawiera następujące informacje:
+Aby wyświetlić działania przeglądu zgodności komunikacji dla zasad, wybierz kontrolkę **Eksportuj działania przeglądu** na stronie **Przegląd** dla określonych zasad. Aby wyeksportować  działania przeglądu, musisz mieć przypisane role *Administracja Globalna Administracja lub Zgodność z komunikacją*. Ta akcja generuje plik inspekcji w formacie .csv, który zawiera następujące informacje:
 
 |**Pole**|**Szczegóły**|
 |:-----|:-----|
@@ -188,7 +185,7 @@ Dopasowania zasad zgodności komunikacji są przechowywane w skrzynce pocztowej 
 
 Aby sprawdzić rozmiar skrzynki pocztowej nadzoru dla zasad, wykonaj następujące kroki:
 
-1. Użyj polecenia cmdlet [Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) w module programu PowerShell v2 usługi Exchange Online, aby nawiązać połączenie z programem PowerShell usługi Exchange Online przy użyciu nowoczesnego uwierzytelniania.
+1. Użyj polecenia cmdlet [Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) w module Exchange Online Programu PowerShell w wersji 2, aby nawiązać połączenie z programem Exchange Online programu PowerShell przy użyciu nowoczesnego uwierzytelniania.
 2. Uruchom następujące polecenie w programie PowerShell:
 
     ```PowerShell

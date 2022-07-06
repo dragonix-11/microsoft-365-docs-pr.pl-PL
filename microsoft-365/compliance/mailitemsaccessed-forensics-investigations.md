@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Użyj akcji inspekcji skrzynki pocztowej MailItemsAccessed, aby przeprowadzić badania kryminalistyczne kont użytkowników, których zabezpieczenia zostały naruszone.
-ms.openlocfilehash: 5ff3c078dfd29b5b44bfac5f04b329bf014507ea
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a2c6d8030ba90f213f665036157b3efe0c267e80
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090944"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629470"
 ---
-# <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>Używanie inspekcji usługi Microsoft Purview (Premium) do badania kont, których zabezpieczenia zostały naruszone
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>Używanie Inspekcja w Microsoft Purview (Premium) do badania kont, których zabezpieczenia zostały naruszone
 
 Konto użytkownika z naruszeniem zabezpieczeń (nazywane również *przejęciem konta*) jest typem ataku, gdy osoba atakująca uzyskuje dostęp do konta użytkownika i działa jako użytkownik. Tego typu ataki czasami powodują więcej szkód, niż osoba atakująca mogła chcieć. Podczas badania naruszonych kont e-mail należy założyć, że naruszono więcej danych poczty, niż może to wskazywać śledzenie rzeczywistej obecności osoby atakującej. W zależności od typu danych w wiadomościach e-mail należy założyć, że poufne informacje zostały naruszone lub zostaną nałożone grzywny prawne, chyba że możesz udowodnić, że poufne informacje nie zostały ujawnione. Na przykład, organizacje regulowane HIPAA twarz znaczne grzywny, jeśli istnieją dowody, że informacje o zdrowiu pacjenta (PHI) zostały ujawnione. W takich przypadkach osoby atakujące prawdopodobnie nie będą zainteresowane phi, ale organizacje nadal muszą zgłaszać naruszenia danych, chyba że mogą udowodnić inaczej.
 
@@ -33,13 +31,13 @@ Aby ułatwić badanie naruszonych kont e-mail, przeprowadzamy teraz inspekcję d
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>Akcja inspekcji skrzynki pocztowej MailItemsAccessed
 
-Nowa akcja MailItemsAccessed jest częścią nowej funkcji [Inspekcja (Premium](advanced-audit.md)). Jest to część [inspekcji Exchange skrzynki pocztowej](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) i jest domyślnie włączona dla użytkowników, którzy mają przypisaną licencję Office 365 lub Microsoft 365 E5 lub dla organizacji z subskrypcją dodatku Zgodność platformy Microsoft 365 E5.
+Nowa akcja MailItemsAccessed jest częścią nowej funkcji [Inspekcja (Premium](advanced-audit.md) ). Jest to część [inspekcji skrzynki pocztowej programu Exchange](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) i jest domyślnie włączona dla użytkowników, którzy mają przypisaną licencję Office 365 lub Microsoft 365 E5 lub dla organizacji z subskrypcją dodatku Zgodność platformy Microsoft 365 E5.
 
 Akcja inspekcji skrzynki pocztowej MailItemsAccessed obejmuje wszystkie protokoły poczty: POP, IMAP, MAPI, EWS, Exchange ActiveSync i REST. Obejmuje ona również oba typy uzyskiwania dostępu do poczty: *synchronizacja* i *powiązanie*.
 
 ### <a name="auditing-sync-access"></a>Inspekcja dostępu do synchronizacji
 
-Operacje synchronizacji są rejestrowane tylko wtedy, gdy do skrzynki pocztowej jest uzyskiwana wersja klasyczna klienta Outlook dla Windows lub Mac. Podczas operacji synchronizacji klienci zazwyczaj pobierają duży zestaw elementów poczty z chmury na komputer lokalny. Ilość inspekcji operacji synchronizacji jest ogromna. Dlatego zamiast generować rekord inspekcji dla każdego zsynchronizowanego elementu poczty, generujemy zdarzenie inspekcji folderu poczty zawierającego elementy, które zostały zsynchronizowane, i zakładamy, że *wszystkie* elementy poczty w zsynchronizowanej folderze zostały naruszone. Typ dostępu jest rejestrowany w polu OperationProperties rekordu inspekcji.
+Operacje synchronizacji są rejestrowane tylko wtedy, gdy do skrzynki pocztowej jest uzyskiwana wersja klasyczna klienta programu Outlook dla systemu Windows lub Mac. Podczas operacji synchronizacji klienci zazwyczaj pobierają duży zestaw elementów poczty z chmury na komputer lokalny. Ilość inspekcji operacji synchronizacji jest ogromna. Dlatego zamiast generować rekord inspekcji dla każdego zsynchronizowanego elementu poczty, generujemy zdarzenie inspekcji folderu poczty zawierającego elementy, które zostały zsynchronizowane, i zakładamy, że *wszystkie* elementy poczty w zsynchronizowanej folderze zostały naruszone. Typ dostępu jest rejestrowany w polu OperationProperties rekordu inspekcji.
 
 Zobacz krok 2 w sekcji [Use MailItemsAccessed audit records for forensic investigations (Używanie rekordów inspekcji MailItemsAccessed na potrzeby badań kryminalistycznych](#use-mailitemsaccessed-audit-records-for-forensic-investigations) ), aby zapoznać się z przykładem wyświetlania typu dostępu do synchronizacji w rekordzie inspekcji.
 
@@ -171,7 +169,7 @@ Zduplikowane rekordy inspekcji dla tych samych operacji powiązania, które wyst
 |ClientIPAddress|Adres IP komputera klienckiego.|
 |ClientInfoString|Protokół klienta, klient używany do uzyskiwania dostępu do skrzynki pocztowej.|
 |Element nadrzędny|Pełna ścieżka folderu elementu poczty, do których uzyskano dostęp.|
-|Logon_type|Typ logowania użytkownika, który wykonał akcję. Typy logowania (i odpowiadająca im wartość wyliczenia) to Właściciel (0), Administrator (1) lub Delegat (2).|
+|Logon_type|Typ logowania użytkownika, który wykonał akcję. Typy logowania (i odpowiadająca im wartość wyliczenia) to Owner (0), Administracja (1) lub Delegate (2).|
 |MailAccessType|Niezależnie od tego, czy dostęp jest operacją powiązania, czy operacją synchronizacji.|
 |MailboxUPN|Nazwa UPN skrzynki pocztowej, w której znajduje się odczytywana wiadomość.|
 |Użytkownik|Nazwa UPN użytkownika czytającego komunikat.|
@@ -188,8 +186,8 @@ Często osoba atakująca może uzyskiwać dostęp do skrzynki pocztowej w tym sa
 
 |Rekord inspekcji 1|Rekord inspekcji 2|Rekord inspekcji 3|
 |---|---|---|
-|ClientIPAddress1<br/>**SessionId2**|ClientIPAddress2<br/>**SessionId2**|ClientIPAddress1<br/>**SessionId3**|
-|InternetMessageIdA<br/>InternetMessageIdD<br/>InternetMessageIdE<br/>InternetMessageIdF<br/>|InternetMessageIdA<br/>InternetMessageIdC|InternetMessageIdB|
+|ClientIPAddress **1**<br/>SessionId **2**|ClientIPAddress **2**<br/>SessionId **2**|ClientIPAddress **1**<br/>SessionId **3**|
+|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B**|
 |
 
 Jeśli dowolna z właściwości wymienionych w tabeli w [poprzedniej sekcji](#filtering-of-duplicate-audit-records) jest inna, zostanie wygenerowany oddzielny rekord inspekcji w celu śledzenia nowego kontekstu. Dostępy zostaną posortowane do oddzielnych rekordów inspekcji w zależności od kontekstu, w którym miało miejsce działanie.

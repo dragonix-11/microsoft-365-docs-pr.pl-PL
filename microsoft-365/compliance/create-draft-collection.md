@@ -16,16 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Kolekcja robocza to wyszukiwanie zbierania elektronicznych materiałów dowodowych źródeł danych bez nadzoru w przypadku zbierania elektronicznych materiałów dowodowych (Premium), które zwraca oszacowanie wyszukiwania zgodne z zapytaniem wyszukiwania kolekcji. Możesz przejrzeć statystyki wyszukiwania, wyświetlić podgląd próbkowania elementów oraz poprawić i ponownie uruchomić kolekcję przed zatwierdzeniem wyników w zestawie przeglądów.
-ms.openlocfilehash: 50fb63658541c07a312a502dbbe7d68a26467d14
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 979573503e448a731c487018b525d6ddb1d7d08f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096099"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630174"
 ---
 # <a name="create-a-draft-collection-in-ediscovery-premium"></a>Tworzenie kolekcji roboczej w usłudze eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po zidentyfikowaniu opiekunów i wszelkich źródeł danych niebędących opiekunami w tej sprawie możesz zidentyfikować i zlokalizować odpowiedni zestaw dokumentów. Można to zrobić za pomocą narzędzia Kolekcje do wyszukiwania źródeł danych pod kątem odpowiedniej zawartości. Można to zrobić, tworząc kolekcję, która wyszukuje określone źródła danych pod kątem zawartości zgodnej z kryteriami wyszukiwania. Możesz utworzyć *kolekcję roboczą*, która jest oszacowaniem znalezionych elementów, lub możesz utworzyć kolekcję, która automatycznie dodaje elementy do zestawu przeglądów. Podczas tworzenia kolekcji roboczej można wyświetlać informacje o szacowanych wynikach dopasowanych do zapytania wyszukiwania, takie jak całkowita liczba i rozmiar znalezionych elementów, różne źródła danych, w których zostały znalezione, oraz statystyki dotyczące zapytania wyszukiwania. Możesz również wyświetlić podgląd przykładu elementów, które zostały zwrócone przez kolekcję. Korzystając z tych statystyk, możesz zmienić zapytanie wyszukiwania i ponownie uruchomić kolekcję roboczą, aby zawęzić wyniki. Gdy wyniki kolekcji będą zadowalające, możesz zatwierdzić kolekcję w zestawie przeglądów. Po zatwierdzeniu kolekcji roboczej elementy zwracane przez kolekcję są dodawane do zestawu przeglądów do przeglądania, analizy i eksportowania.
 
@@ -37,13 +35,13 @@ Po zidentyfikowaniu opiekunów i wszelkich źródeł danych niebędących opieku
 
   - [Dodaj źródła danych bez opiekunów do sprawy](non-custodial-data-sources.md)
 
-- Możesz przeszukać dodatkowe źródła danych (te, które nie zostały dodane do sprawy jako lokalizacje opieki lub bez opieki) w projekcie kolekcji pod kątem zawartości, która może być istotna dla sprawy. Te źródła danych mogą obejmować skrzynki pocztowe, witryny SharePoint i Teams. Jeśli ta sytuacja ma zastosowanie do Twojego przypadku, skompiluj listę tych źródeł danych, aby można było dodać je do kolekcji.
+- Możesz przeszukać dodatkowe źródła danych (te, które nie zostały dodane do sprawy jako lokalizacje opieki lub bez opieki) w projekcie kolekcji pod kątem zawartości, która może być istotna dla sprawy. Te źródła danych mogą obejmować skrzynki pocztowe, witryny programu SharePoint i aplikacje Teams. Jeśli ta sytuacja ma zastosowanie do Twojego przypadku, skompiluj listę tych źródeł danych, aby można było dodać je do kolekcji.
 
 ## <a name="create-a-draft-collection"></a>Tworzenie kolekcji roboczej
 
-1. W portalu zgodności usługi Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), a następnie wybierz kartę **Kolekcje**.
+1. W portal zgodności Microsoft Purview otwórz przypadek eDiscovery (Premium), a następnie wybierz kartę **Kolekcje**.
 
-2. Na stronie **Kolekcje** wybierz pozycję **Nowa** **kolekcjaStandard** >  kolekcja.
+2. Na stronie **Kolekcje** wybierz pozycję **Nowa kolekcja** > **Kolekcja Standardowa**.
 
 3. Wpisz nazwę (wymagane) i opis (opcjonalnie) dla kolekcji. Po utworzeniu kolekcji nie można zmienić nazwy, ale można zmodyfikować opis.
 
@@ -61,16 +59,16 @@ Po zidentyfikowaniu opiekunów i wszelkich źródeł danych niebędących opieku
 
 6. Na stronie **Dodatkowe źródła danych** możesz wybrać inne skrzynki pocztowe i witryny do wyszukiwania w ramach kolekcji. Tego typu źródła danych nie zostały dodane jako lokalizacje danych bez nadzoru w tym przypadku. Dostępne są również dwie opcje wyszukiwania dodatkowych źródeł danych:
 
-   - Aby wyszukać we wszystkich lokalizacjach zawartości określoną usługę (Exchange skrzynki pocztowe, witryny SharePoint i OneDrive lub Exchange foldery publiczne), kliknij odpowiedni przełącznik **Wybierz wszystko** w kolumnie **Stan**. Ta opcja spowoduje przeszukanie wszystkich lokalizacji zawartości w wybranej usłudze.
+   - Aby wyszukać wszystkie lokalizacje zawartości dla określonej usługi (skrzynki pocztowe programu Exchange, witryny programu SharePoint i usługi OneDrive lub foldery publiczne programu Exchange), kliknij odpowiedni przełącznik **Wybierz wszystko** w kolumnie **Stan** . Ta opcja spowoduje przeszukanie wszystkich lokalizacji zawartości w wybranej usłudze.
 
-   - Aby wyszukać określoną lokalizację zawartości dla usługi, kliknij odpowiedni przełącznik **Wybierz wszystkie** w kolumnie **Stan**, a następnie kliknij pozycję **Użytkownicy, grupy lub zespoły** (dla Exchange skrzynek pocztowych) lub **Wybierz witryny** dla witryn (SharePoint i OneDrive witryn), aby wyszukać określone lokalizacje zawartości.
+   - Aby wyszukać określoną lokalizację zawartości dla usługi, kliknij odpowiedni przełącznik **Wybierz wszystkie** w kolumnie **Stan** , a następnie kliknij pozycję **Użytkownicy, grupy lub zespoły** (dla skrzynek pocztowych programu Exchange) lub **Wybierz witryny** (witryny programu SharePoint i oneDrive), aby wyszukać określone lokalizacje zawartości.
 
 7. Na stronie **Warunki** możesz utworzyć zapytanie wyszukiwania służące do zbierania elementów ze źródeł danych zidentyfikowanych na poprzednich stronach kreatora. Możesz wyszukiwać słowa kluczowe, pary właściwości:wartości lub użyć listy słów kluczowych. Możesz również dodać różne warunki wyszukiwania, aby zawęzić zakres kolekcji. Aby uzyskać więcej informacji, zobacz [Tworzenie zapytań wyszukiwania dla kolekcji](building-search-queries.md).
 
 8. Na stronie **Zapisz jako wersję roboczą lub dodaj do przeglądu zestawu** wybierz pozycję **Zapisz kolekcję jako wersję roboczą**.
 
    > [!NOTE]
-   > Inna opcja na tej stronie umożliwia zbieranie elementów i dodawanie ich bezpośrednio do zestawu przeglądów. Zamiast tworzyć kolekcję roboczą, dla których można przeglądać statystyki i wyświetlać podgląd przykładowych wyników kolekcji, ta opcja pomija ten proces i automatycznie dodaje kolekcję do zestawu przeglądów. Jeśli wybierzesz drugą opcję dodawania kolekcji do zestawu przeglądów, masz dodatkowe ustawienia do skonfigurowania, takie jak zbieranie całych wątków konwersacji czatu w Microsoft Teams i Yammer oraz zbieranie załączników w chmurze (*nazywanych również nowoczesnymi załącznikami*). Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Zatwierdzanie kolekcji roboczej do zestawu przeglądów](commit-draft-collection.md).
+   > Inna opcja na tej stronie umożliwia zbieranie elementów i dodawanie ich bezpośrednio do zestawu przeglądów. Zamiast tworzyć kolekcję roboczą, dla których można przeglądać statystyki i wyświetlać podgląd przykładowych wyników kolekcji, ta opcja pomija ten proces i automatycznie dodaje kolekcję do zestawu przeglądów. Jeśli wybierzesz drugą opcję dodawania kolekcji do zestawu przeglądów, masz dodatkowe ustawienia do skonfigurowania, takie jak zbieranie całych wątków konwersacji czatu w usłudze Microsoft Teams i Yammer oraz zbieranie załączników w chmurze ( *nazywanych również nowoczesnymi załącznikami*). Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Zatwierdzanie kolekcji roboczej do zestawu przeglądów](commit-draft-collection.md).
 
 9. Na stronie **Przeglądanie kolekcji** możesz przejrzeć i zaktualizować ustawienia kolekcji skonfigurowane na poprzednich stronach.
 
@@ -106,11 +104,11 @@ Oto lista czynności, które można wykonać na stronie wysuwanej kolekcji:
 
 - Wybierz kartę **Źródła danych** , aby wyświetlić listę opiekunów i źródeł danych bez nadzoru), które zostały przeszukane w kolekcji. Wszystkie dodatkowe lokalizacje zawartości, które były wyszukiwane, są wyświetlane w obszarze **Lokalizacje** na karcie **Podsumowanie** .
 
-- Wybierz kartę **Statystyki wyszukiwania** , aby wyświetlić statystyki dotyczące kolekcji. Obejmuje to całkowitą liczbę i rozmiar elementów znalezionych w każdej usłudze (na przykład Exchange skrzynki pocztowe lub SharePoint lokacje) oraz raport warunków, który wyświetla statystyki dotyczące liczby elementów zwracanych przez różne składniki zapytania wyszukiwania używanego przez kolekcję. Aby uzyskać więcej informacji, zobacz [Statystyki kolekcji i raporty](collection-statistics-reports.md).
+- Wybierz kartę **Statystyki wyszukiwania** , aby wyświetlić statystyki dotyczące kolekcji. Obejmuje to całkowitą liczbę i rozmiar elementów znalezionych w każdej usłudze (na przykład skrzynki pocztowe programu Exchange lub witryny programu SharePoint) oraz raport warunku, który wyświetla statystyki dotyczące liczby elementów zwracanych przez różne składniki zapytania wyszukiwania używanego przez kolekcję. Aby uzyskać więcej informacji, zobacz [Statystyki kolekcji i raporty](collection-statistics-reports.md).
 
 - Kliknij **pozycję Przejrzyj przykład** (znajdujący się w dolnej części strony wysuwanej), aby wyświetlić podgląd przykładu elementów zwróconych przez kolekcję.
 
-- Zatwierdź kolekcję roboczą w zestawie przeglądów (klikając pozycję **ActionsEdit** >  collection). Oznacza to ponowne uruchomienie kolekcji (przy użyciu bieżących ustawień) i dodanie elementów zwróconych przez kolekcję do zestawu przeglądów. Jak wyjaśniono wcześniej, podczas dodawania kolekcji do zestawu przeglądów można również skonfigurować dodatkowe ustawienia (takie jak wątki konwersacji i załączniki oparte na chmurze). Aby uzyskać więcej informacji i instrukcje krok po kroku, zobacz [Zatwierdzanie kolekcji roboczej w zestawie przeglądów](commit-draft-collection.md).
+- Zatwierdź kolekcję roboczą w zestawie przeglądów (klikając pozycję **Akcje Edytuj** > **kolekcję**). Oznacza to ponowne uruchomienie kolekcji (przy użyciu bieżących ustawień) i dodanie elementów zwróconych przez kolekcję do zestawu przeglądów. Jak wyjaśniono wcześniej, podczas dodawania kolekcji do zestawu przeglądów można również skonfigurować dodatkowe ustawienia (takie jak wątki konwersacji i załączniki oparte na chmurze). Aby uzyskać więcej informacji i instrukcje krok po kroku, zobacz [Zatwierdzanie kolekcji roboczej w zestawie przeglądów](commit-draft-collection.md).
 
 ## <a name="manage-a-draft-collection"></a>Zarządzanie kolekcją roboczą
 

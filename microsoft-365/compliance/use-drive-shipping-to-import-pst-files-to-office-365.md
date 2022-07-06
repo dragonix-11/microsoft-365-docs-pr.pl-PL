@@ -18,23 +18,21 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
-description: Administrator może dowiedzieć się, jak zbiorczo importować pliki PST, aby Microsoft 365 skrzynki pocztowe, kopiując pliki PST na dysk twardy, a następnie wysyłając je do firmy Microsoft.
-ms.openlocfilehash: 4f3c38c203b98fd4448657edfac6ee9b72a515be
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Administracja mogą dowiedzieć się, jak zbiorczo importować pliki PST do skrzynek pocztowych platformy Microsoft 365, kopiując pliki PST na dysk twardy, a następnie wysyłając je do firmy Microsoft.
+ms.openlocfilehash: ac8b24c04823bf3635b7762d160cee71a356ebfd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095449"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626078"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Importowanie plików PST organizacji przy użyciu wysyłania dysków
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-**Ten artykuł jest przeznaczony dla administratorów. Czy próbujesz zaimportować pliki PST do własnej skrzynki pocztowej? Zobacz [Importowanie wiadomości e-mail, kontaktów i kalendarza z pliku pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+**Ten artykuł jest przeznaczony dla administratorów. Czy próbujesz zaimportować pliki PST do własnej skrzynki pocztowej? Zobacz [Importowanie wiadomości e-mail, kontaktów i kalendarza z pliku pst programu Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
 Użyj usługi Office 365 Import i wyślij dysk do zbiorczego importowania plików PST do skrzynek pocztowych użytkowników. Wysyłka dysku oznacza skopiowanie plików PST na dysk twardy, a następnie fizyczne wysłanie dysku do firmy Microsoft. Gdy firma Microsoft otrzyma dysk twardy, pracownicy centrum danych kopiują dane z dysku twardego do obszaru magazynowania w chmurze firmy Microsoft. Następnie możesz przyciąć dane PST zaimportowane do docelowych skrzynek pocztowych, ustawiając filtry kontrolujące importowane dane. Po uruchomieniu zadania importowania usługa Import importuje dane PST z obszaru magazynowania do skrzynek pocztowych użytkowników. Importowanie plików PST do skrzynek pocztowych użytkowników przy użyciu wysyłania dysków jest jednym ze sposobów migrowania poczty e-mail organizacji do Office 365.
   
-Poniżej przedstawiono kroki wymagane do użycia wysyłki dysku w celu zaimportowania plików PST do Microsoft 365 skrzynek pocztowych:
+Poniżej przedstawiono kroki wymagane do użycia wysyłki dysku do importowania plików PST do skrzynek pocztowych platformy Microsoft 365:
   
 [Krok 1. Pobieranie narzędzia do importowania PST](#step-1-download-the-pst-import-tool)
 
@@ -55,7 +53,7 @@ Aby uzyskać często zadawane pytania dotyczące importowania plików PST do Off
   
 ## <a name="before-you-import-pst-files"></a>Przed zaimportowaniem plików PST
 
-- Musisz mieć przypisaną rolę eksportu importu skrzynki pocztowej w Exchange Online, aby utworzyć zadania importu w portalu zgodności usługi Microsoft Purview i zaimportować pliki PST do skrzynek pocztowych użytkowników. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę Import eksportu skrzynki pocztowej można dodać do grupy ról Zarządzanie organizacją. Możesz też utworzyć grupę ról, przypisać rolę Importuj eksport skrzynki pocztowej, a następnie dodać siebie jako członka. Aby uzyskać więcej informacji, zobacz sekcje "Dodawanie roli do grupy ról" lub "Tworzenie grupy ról" w sekcji [Zarządzanie grupami ról](/Exchange/permissions-exo/role-groups).
+- Musisz mieć przypisaną rolę Import eksportu skrzynki pocztowej w Exchange Online, aby utworzyć zadania importu w portal zgodności Microsoft Purview i zaimportować pliki PST do skrzynek pocztowych użytkowników. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę Import eksportu skrzynki pocztowej można dodać do grupy ról Zarządzanie organizacją. Możesz też utworzyć grupę ról, przypisać rolę Importuj eksport skrzynki pocztowej, a następnie dodać siebie jako członka. Aby uzyskać więcej informacji, zobacz sekcje "Dodawanie roli do grupy ról" lub "Tworzenie grupy ról" w sekcji [Zarządzanie grupami ról](/Exchange/permissions-exo/role-groups).
 
     Oprócz roli Importuj eksport skrzynki pocztowej musisz również mieć przypisaną rolę Adresaci poczty w Exchange Online. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie organizacjami i Zarządzanie adresatami w Exchange Online.
 
@@ -71,9 +69,9 @@ Aby uzyskać często zadawane pytania dotyczące importowania plików PST do Off
     > [!IMPORTANT]
     > Zewnętrzne dyski twarde z wbudowaną kartą USB nie są obsługiwane przez usługę Office 365 Import. Ponadto nie można użyć dysku wewnątrz obudowy zewnętrznego dysku twardego. Nie wysyłaj zewnętrznych dysków twardych. 
   
-- Dysk twardy, na który kopiujesz pliki PST, musi być szyfrowany za pomocą funkcji BitLocker. Narzędzie WAImportExport.exe uruchomione w kroku 2 pomoże Ci skonfigurować funkcję BitLocker. Generuje również klucz szyfrowania funkcji BitLocker używany przez personel centrum danych firmy Microsoft do uzyskiwania dostępu do dysku w celu przekazania plików PST do obszaru usługi Azure Storage w chmurze firmy Microsoft.
+- Dysk twardy kopiowany do plików PST musi być zaszyfrowany za pomocą BitLocker. Narzędzie WAImportExport.exe uruchomione w kroku 2 pomoże Ci skonfigurować BitLocker. Generuje również klucz szyfrowania BitLocker używany przez personel centrum danych firmy Microsoft do uzyskiwania dostępu do dysku w celu przekazania plików PST do obszaru usługi Azure Storage w chmurze firmy Microsoft.
     
-- Wysyłka dysku jest dostępna za pośrednictwem usługi Microsoft Enterprise Agreement (EA). Wysyłka dysku nie jest dostępna za pośrednictwem umowy Microsoft Products and Services Agreement (MPSA).
+- Wysyłka dysku jest dostępna za pośrednictwem usługi Microsoft Enterprise Agreement (EA). Wysyłka dysku nie jest dostępna za pośrednictwem Microsoft Products and Services Agreement (MPSA).
     
 - Koszt importowania plików PST do skrzynek pocztowych platformy Microsoft 365 przy użyciu wysyłki dysków wynosi 2 USD za GB danych. Jeśli na przykład zostanie dostarczony dysk twardy zawierający 1000 GB (1 TB) plików PST, koszt to 2000 USD. Możesz współpracować z partnerem w celu uiszczenia opłaty importowej. Aby uzyskać informacje na temat znajdowania partnera, zobacz [Znajdowanie partnera lub odsprzedawcy firmy Microsoft](../admin/manage/find-your-partner-or-reseller.md).
     
@@ -87,18 +85,18 @@ Aby uzyskać często zadawane pytania dotyczące importowania plików PST do Off
     
 - Dysk twardy dostarczany firmie Microsoft może przekraczać granice międzynarodowe. W takim przypadku odpowiadasz za upewnienie się, że dysk twardy i jego dane są importowane i/lub eksportowane zgodnie z obowiązującymi przepisami. Przed wysłaniem dysku twardego skontaktuj się z doradcami, aby sprawdzić, czy dysk i dane mogą być legalnie dostarczane do zidentyfikowanego centrum danych firmy Microsoft. Pomaga to zapewnić, że dotrze ona do firmy Microsoft w odpowiednim czasie.
     
-- Ta procedura obejmuje kopiowanie i zapisywanie klucza szyfrowania funkcji BitLocker. Pamiętaj, aby podjąć środki ostrożności w celu ochrony tych kluczy, tak jak w przypadku ochrony haseł lub innych informacji związanych z zabezpieczeniami. Możesz na przykład zapisać je w dokumencie Microsoft Word chronionym hasłem lub zapisać je na zaszyfrowanym dysku USB. Zobacz sekcję [Więcej informacji](#more-information) , aby zapoznać się z przykładem tych kluczy. 
+- Ta procedura obejmuje kopiowanie i zapisywanie klucza szyfrowania BitLocker. Pamiętaj, aby podjąć środki ostrożności w celu ochrony tych kluczy, tak jak w przypadku ochrony haseł lub innych informacji związanych z zabezpieczeniami. Możesz na przykład zapisać je w dokumencie programu Microsoft Word chronionym hasłem lub zapisać je na zaszyfrowanym dysku USB. Zobacz sekcję [Więcej informacji](#more-information) , aby zapoznać się z przykładem tych kluczy. 
     
-- Po zaimportowaniu plików PST do Microsoft 365 skrzynki pocztowej ustawienie przechowywania dla skrzynki pocztowej jest włączone na czas nieokreślony. Oznacza to, że zasady przechowywania przypisane do skrzynki pocztowej nie zostaną przetworzone, dopóki nie wyłączysz blokady przechowywania lub nie ustawisz daty wyłączenia blokady. Dlaczego to robimy? Jeśli wiadomości zaimportowane do skrzynki pocztowej są stare, mogą zostać trwale usunięte (przeczyszczane), ponieważ ich okres przechowywania wygasł na podstawie ustawień przechowywania skonfigurowanych dla skrzynki pocztowej. Umieszczenie skrzynki pocztowej w blokadzie przechowywania daje właścicielowi skrzynki pocztowej czas na zarządzanie tymi nowo zaimportowanymi wiadomościami lub daje czas na zmianę ustawień przechowywania skrzynki pocztowej. Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać sugestie dotyczące zarządzania blokadą przechowywania. 
+- Po zaimportowaniu plików PST do skrzynki pocztowej platformy Microsoft 365 ustawienie przechowywania dla skrzynki pocztowej jest włączone przez czas nieokreślony. Oznacza to, że zasady przechowywania przypisane do skrzynki pocztowej nie zostaną przetworzone, dopóki nie wyłączysz blokady przechowywania lub nie ustawisz daty wyłączenia blokady. Dlaczego to robimy? Jeśli wiadomości zaimportowane do skrzynki pocztowej są stare, mogą zostać trwale usunięte (przeczyszczane), ponieważ ich okres przechowywania wygasł na podstawie ustawień przechowywania skonfigurowanych dla skrzynki pocztowej. Umieszczenie skrzynki pocztowej w blokadzie przechowywania daje właścicielowi skrzynki pocztowej czas na zarządzanie tymi nowo zaimportowanymi wiadomościami lub daje czas na zmianę ustawień przechowywania skrzynki pocztowej. Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać sugestie dotyczące zarządzania blokadą przechowywania. 
     
-- Domyślnie maksymalny rozmiar wiadomości, który może zostać odebrany przez skrzynkę pocztową Microsoft 365, wynosi 35 MB. Dzieje się tak, ponieważ wartość domyślna właściwości  *MaxReceiveSize*  dla skrzynki pocztowej jest ustawiona na 35 MB. Jednak limit maksymalnego rozmiaru odbierania komunikatów w Microsoft 365 wynosi 150 MB. Jeśli więc zaimportujesz plik PST zawierający element większy niż 35 MB, usługa Office 365 Import automatycznie zmieni wartość właściwości *MaxReceiveSize* w docelowej skrzynce pocztowej na 150 MB. Dzięki temu do skrzynek pocztowych użytkowników można importować wiadomości o rozmiarze do 150 MB. 
+- Domyślnie maksymalny rozmiar wiadomości, który może zostać odebrany przez skrzynkę pocztową platformy Microsoft 365, wynosi 35 MB. Dzieje się tak, ponieważ wartość domyślna właściwości  *MaxReceiveSize*  dla skrzynki pocztowej jest ustawiona na 35 MB. Jednak limit maksymalnego rozmiaru odbierania komunikatów w usłudze Microsoft 365 wynosi 150 MB. Jeśli więc zaimportujesz plik PST zawierający element większy niż 35 MB, usługa Office 365 Import automatycznie zmieni wartość właściwości *MaxReceiveSize* w docelowej skrzynce pocztowej na 150 MB. Dzięki temu do skrzynek pocztowych użytkowników można importować wiadomości o rozmiarze do 150 MB. 
     
     > [!TIP]
     > Aby zidentyfikować rozmiar odbierania wiadomości dla skrzynki pocztowej, możesz uruchomić to polecenie w programie Exchange Online programu PowerShell: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`. 
   
 - Pliki PST można zaimportować do nieaktywnej skrzynki pocztowej w Office 365. W tym celu należy określić identyfikator GUID nieaktywnej skrzynki pocztowej w parametrze  `Mailbox` w pliku mapowania importu PST. Aby uzyskać więcej informacji [, zobacz Krok 3. Tworzenie pliku mapowania importu PST](#step-3-create-the-pst-import-mapping-file) . 
     
-- W Exchange wdrożenia hybrydowego można zaimportować pliki PST do chmurowej skrzynki pocztowej archiwum dla użytkownika, którego podstawowa skrzynka pocztowa jest lokalna. Można to zrobić, wykonując następujące czynności w pliku mapowania importu PST:
+- We wdrożeniu hybrydowym programu Exchange można zaimportować pliki PST do chmurowej skrzynki pocztowej archiwum dla użytkownika, którego podstawowa skrzynka pocztowa jest lokalna. Można to zrobić, wykonując następujące czynności w pliku mapowania importu PST:
     
   - W parametrze określ adres e-mail lokalnej skrzynki pocztowej  `Mailbox` użytkownika. 
     
@@ -111,7 +109,7 @@ Aby uzyskać często zadawane pytania dotyczące importowania plików PST do Off
 Pierwszym krokiem jest pobranie narzędzia, którego użyjesz w kroku 2, aby skopiować pliki PST na dysk twardy.
   
 > [!IMPORTANT]
-> Aby pomyślnie zaimportować pliki PST przy użyciu metody wysyłki dysku, należy użyć narzędzia Azure Import/Export w wersji 1 (WAimportExportV1). Wersja 2 narzędzia azure Import/Export nie jest obsługiwana, a użycie go spowoduje nieprawidłowe przygotowanie dysku twardego do zadania importowania. Pamiętaj, aby pobrać narzędzie azure Import/Export z portalu zgodności usługi Microsoft Purview, wykonując procedury opisane w tym kroku. 
+> Aby pomyślnie zaimportować pliki PST przy użyciu metody wysyłki dysku, musisz użyć narzędzia Azure Import/Export w wersji 1 (WAimportExportV1). Wersja 2 narzędzia Azure Import/Export nie jest obsługiwana, a użycie go spowoduje nieprawidłowe przygotowanie dysku twardego do zadania importowania. Pamiętaj, aby pobrać narzędzie Azure Import/Export z portal zgodności Microsoft Purview, wykonując procedury opisane w tym kroku. 
   
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
 
@@ -130,7 +128,7 @@ Pierwszym krokiem jest pobranie narzędzia, którego użyjesz w kroku 2, aby sko
   
 6. Na stronie **Importuj dane** wykonaj następujące czynności:     
     
-    **Pobierz narzędzie azure Import/Export**, aby pobrać i zainstalować narzędzie Azure Import/Export (wersja 1).
+    **Pobierz narzędzie Azure Import/Export** , aby pobrać i zainstalować narzędzie Azure Import/Export (wersja 1).
     
     - W oknie podręcznym kliknij pozycję **Zapisz** \> **jako** , aby zapisać plik WaImportExportV1.zip w folderze na komputerze lokalnym.
     
@@ -142,7 +140,7 @@ Pierwszym krokiem jest pobranie narzędzia, którego użyjesz w kroku 2, aby sko
 
 ## <a name="step-2-copy-the-pst-files-to-the-hard-drive"></a>Krok 2. Kopiowanie plików PST na dysk twardy
 
-Następnym krokiem jest użycie narzędzia WAImportExport.exe do kopiowania plików PST na dysk twardy. To narzędzie szyfruje dysk twardy za pomocą funkcji BitLocker, kopiuje pliki PST na dysk twardy i tworzy plik dziennika, który przechowuje informacje o procesie kopiowania. Aby wykonać ten krok, pliki PST muszą znajdować się w udziale plików lub na serwerze plików w organizacji. Jest to znany jako katalog źródłowy w poniższej procedurze.
+Następnym krokiem jest użycie narzędzia WAImportExport.exe do kopiowania plików PST na dysk twardy. To narzędzie szyfruje dysk twardy za pomocą BitLocker, kopiuje pst do dysku twardego i tworzy plik dziennika, który przechowuje informacje o procesie kopiowania. Aby wykonać ten krok, pliki PST muszą znajdować się w udziale plików lub na serwerze plików w organizacji. Jest to znany jako katalog źródłowy w poniższej procedurze.
 
  Jak wspomniano wcześniej, każdy plik PST skopiowany na dysk twardy nie powinien być większy niż 20 GB. Pliki PST większe niż 20 GB mogą mieć wpływ na wydajność procesu importowania PST rozpoczętego w kroku 6.
   
@@ -165,13 +163,13 @@ Następnym krokiem jest użycie narzędzia WAImportExport.exe do kopiowania plik
     
     |**Parametr**|**Opis**|**Przykład**|
     |:-----|:-----|:-----|
-    | `/j:` <br/> |Określa nazwę pliku dziennika. Ten plik jest zapisywany w tym samym folderze, w którym znajduje się narzędzie WAImportExport.exe. Każdy dysk twardy dostarczany do firmy Microsoft musi mieć jeden plik dziennika. Za każdym razem, gdy uruchamiasz WAImportTool.exe, aby skopiować pliki PST na dysk twardy, informacje będą dołączane do pliku dziennika dla tego dysku.  <br/> Pracownicy centrum danych firmy Microsoft korzystają z informacji w pliku dziennika, aby skojarzyć dysk twardy z zadaniem importu utworzonym w kroku 4 oraz przekazać pliki PST do obszaru usługi Azure Storage w chmurze firmy Microsoft.  <br/> | `/j:PSTHDD1.jrn` <br/> |
+    | `/j:` <br/> |Określa nazwę pliku dziennika. Ten plik jest zapisywany w tym samym folderze, w którym znajduje się narzędzie WAImportExport.exe. Każdy dysk twardy dostarczany do firmy Microsoft musi mieć jeden plik dziennika. Za każdym razem, gdy uruchamiasz WAImportTool.exe, aby skopiować pliki PST na dysk twardy, informacje będą dołączane do pliku dziennika dla tego dysku.  <br/> Pracownicy centrum danych firmy Microsoft korzystają z informacji w pliku dziennika, aby skojarzyć dysk twardy z zadaniem importowania utworzonym w kroku 4 oraz przekazać pliki PST do obszaru usługi Azure Storage w chmurze firmy Microsoft.  <br/> | `/j:PSTHDD1.jrn` <br/> |
     | `/t:` <br/> |Określa literę dysku twardego po nawiązaniu połączenia z komputerem lokalnym.  <br/> | `/t:h` <br/> |
     | `/id:` <br/> |Określa nazwę sesji kopiowania. Sesja jest definiowana za każdym razem, gdy uruchamiasz narzędzie WAImportExport.exe, aby skopiować pliki na dysk twardy. Pliki PST są kopiowane do folderu o nazwie z nazwą sesji określoną przez ten parametr.  <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |Określa katalog źródłowy w organizacji, który zawiera pliki PST, które zostaną skopiowane podczas sesji. Pamiętaj, aby otoczyć wartość tego parametru podwójnym cudzysłowem (" ").  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
-    | `/dstdir:` <br/> |Określa katalog docelowy w obszarze Storage platformy Azure w chmurze firmy Microsoft, w którym zostaną przekazane usługi PST. Należy użyć wartości  `ingestiondata/`. Pamiętaj, aby otoczyć wartość tego parametru podwójnym cudzysłowem (" ").  <br/> Opcjonalnie możesz również dodać dodatkową ścieżkę pliku do wartości tego parametru. Na przykład można użyć ścieżki pliku katalogu źródłowego na dysku twardym (przekonwertowanego na format adresu URL), który jest określony w parametrze  `/srcdir:` . Na przykład  `\\FILESERVER01\PSTs` zmieniono wartość na  `FILESERVER01/PSTs`. W takim przypadku nadal musisz dołączyć  `ingestiondata` ścieżkę pliku. W tym przykładzie wartość parametru  `/dstdir:` to  `"ingestiondata/FILESERVER01/PSTs"`.  <br/> Jedną z przyczyn dodania dodatkowej ścieżki pliku jest to, czy masz pliki PSTs o tej samej nazwie pliku.  <br/> > [!NOTE]> Jeśli uwzględnisz opcjonalną nazwę ścieżki, przestrzeń nazw pliku PST po przekazaniu do obszaru usługi Azure Storage zawiera nazwę ścieżki i nazwę pliku PST, na przykład `FILESERVER01/PSTs/annb.pst`. Jeśli nie uwzględnisz nazwy ścieżki, przestrzeń nazw jest tylko nazwą pliku PST; na przykład  `annb.pst`.           | `/dstdir:"ingestiondata/"` <br/> Lub  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
+    | `/dstdir:` <br/> |Określa katalog docelowy w obszarze usługi Azure Storage w chmurze firmy Microsoft, do którego zostaną przekazane usługi PST. Należy użyć wartości  `ingestiondata/`. Pamiętaj, aby otoczyć wartość tego parametru podwójnym cudzysłowem (" ").  <br/> Opcjonalnie możesz również dodać dodatkową ścieżkę pliku do wartości tego parametru. Na przykład można użyć ścieżki pliku katalogu źródłowego na dysku twardym (przekonwertowanego na format adresu URL), który jest określony w parametrze  `/srcdir:` . Na przykład  `\\FILESERVER01\PSTs` zmieniono wartość na  `FILESERVER01/PSTs`. W takim przypadku nadal musisz dołączyć  `ingestiondata` ścieżkę pliku. W tym przykładzie wartość parametru  `/dstdir:` to  `"ingestiondata/FILESERVER01/PSTs"`.  <br/> Jedną z przyczyn dodania dodatkowej ścieżki pliku jest to, czy masz pliki PSTs o tej samej nazwie pliku.  <br/> > [!NOTE]> Jeśli uwzględnisz opcjonalną nazwę ścieżki, przestrzeń nazw pliku PST po przekazaniu do obszaru usługi Azure Storage zawiera nazwę ścieżki i nazwę pliku PST; na przykład  `FILESERVER01/PSTs/annb.pst`. Jeśli nie uwzględnisz nazwy ścieżki, przestrzeń nazw jest tylko nazwą pliku PST; na przykład  `annb.pst`.           | `/dstdir:"ingestiondata/"` <br/> Lub  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/blobtype:` <br/> |Określa typ obiektów blob w obszarze usługi Azure Storage do zaimportowania plików PST. Do importowania plików PST użyj wartości **BlockBlob**. Ten parametr jest wymagany.   <br/> | `/blobtype:BlockBlob` <br/> |
-    | `/encrypt` <br/> |Ten przełącznik włącza funkcję BitLocker dla dysku twardego. Ten parametr jest wymagany przy pierwszym uruchomieniu narzędzia WAImportExport.exe.  <br/> Klucz szyfrowania funkcji BitLocker jest kopiowany do pliku dziennika i pliku dziennika utworzonego w przypadku użycia parametru  `/logfile:` . Jak wyjaśniono wcześniej, plik dziennika jest zapisywany w tym samym folderze, w którym znajduje się narzędzie WAImportExport.exe.  <br/> | `/encrypt` <br/> |
+    | `/encrypt` <br/> |Ten przełącznik włącza BitLocker dla dysku twardego. Ten parametr jest wymagany przy pierwszym uruchomieniu narzędzia WAImportExport.exe.  <br/> Klucz szyfrowania BitLocker jest kopiowany do pliku dziennika i pliku dziennika, który jest tworzony, jeśli używasz parametru `/logfile:` . Jak wyjaśniono wcześniej, plik dziennika jest zapisywany w tym samym folderze, w którym znajduje się narzędzie WAImportExport.exe.  <br/> | `/encrypt` <br/> |
     | `/logdir:` <br/> |Ten opcjonalny parametr określa folder do zapisania plików dziennika. Jeśli nie zostanie określony, pliki dziennika są zapisywane w tym samym folderze, w którym znajduje się narzędzie WAImportExport.exe. Pamiętaj, aby otoczyć wartość tego parametru podwójnym cudzysłowem (" ").  <br/> | `/logdir:"c:\users\admin\desktop\PstImportLogs"` <br/> |
    
     Oto przykład składni narzędzia WAImportExport.exe przy użyciu rzeczywistych wartości dla każdego parametru:
@@ -200,7 +198,7 @@ Gdy pracownicy centrum danych firmy Microsoft przekażą pliki PST z dysku tward
   
 1. [Pobierz kopię pliku mapowania importu PST](https://go.microsoft.com/fwlink/p/?LinkId=544717).
     
-2. Otwórz lub zapisz plik CSV na komputerze lokalnym. W poniższym przykładzie przedstawiono ukończony plik mapowania importu PST (otwarty w Notatniku). Znacznie łatwiej jest użyć Microsoft Excel do edytowania pliku CSV.
+2. Otwórz lub zapisz plik CSV na komputerze lokalnym. W poniższym przykładzie przedstawiono ukończony plik mapowania importu PST (otwarty w Notatniku). Znacznie łatwiej jest edytować plik CSV za pomocą programu Microsoft Excel.
 
     ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
@@ -219,14 +217,14 @@ Gdy pracownicy centrum danych firmy Microsoft przekażą pliki PST z dysku tward
     Pierwszy wiersz lub wiersz nagłówka pliku CSV zawiera listę parametrów, które będą używane przez usługę importu PST do importowania plików PST do skrzynek pocztowych użytkownika. Każda nazwa parametru jest oddzielona przecinkiem. Każdy wiersz w wierszu nagłówka reprezentuje wartości parametrów importowania pliku PST do określonej skrzynki pocztowej. Potrzebny jest wiersz dla każdego pliku PST skopiowanego na dysk twardy. Pamiętaj, aby zastąpić dane symboli zastępczych w pliku mapowania rzeczywistymi danymi.
 
     > [!NOTE]
-    > Nie zmieniaj niczego w wierszu nagłówka, w tym parametrów SharePoint; zostaną one zignorowane podczas procesu importowania PST. 
+    > Nie zmieniaj niczego w wierszu nagłówka, w tym parametrów programu SharePoint; zostaną one zignorowane podczas procesu importowania PST. 
   
 3. Użyj informacji w poniższej tabeli, aby wypełnić plik CSV wymaganymi informacjami.
     
     |**Parametr**|**Opis**|**Przykład**|
     |:-----|:-----|:-----|
     | `Workload` <br/> |Określa usługę, do którą zostaną zaimportowane dane. Aby zaimportować pliki PST do skrzynek pocztowych użytkownika, użyj polecenia  `Exchange`.  <br/> | `Exchange` <br/> |
-    | `FilePath` <br/> | Określa lokalizację folderu w obszarze Storage platformy Azure, do których zostaną skopiowane pliki PST, gdy dysk twardy zostanie wysłany do firmy Microsoft.  <br/>  To, co dodajesz w tej kolumnie w pliku CSV, zależy od tego, co określono w parametrze  `/dstdir:` w poprzednim kroku. Jeśli w lokalizacji źródłowej znajdują się podfoldery, wartość parametru `FilePath` musi zawierać ścieżkę względną podfolderu, na przykład /folder1/user1/.  <br/>  Jeśli użyto  `/dstdir:"ingestiondata/"`polecenia , pozostaw ten parametr pusty w pliku CSV.  <br/>  Jeśli dołączono opcjonalną nazwę ścieżki dla wartości parametru  `/dstdir:` (na przykład  `/dstdir:"ingestiondata/FILESERVER01/PSTs"`, użyj tej nazwy ścieżki (bez uwzględnienia "ingestiondata") dla tego parametru w pliku CSV. Wartość tego parametru uwzględnia wielkość liter.  <br/>  Tak czy inaczej,  *nie*  uwzględniaj wartości "ingestiondata" w wartości parametru  `FilePath` . Pozostaw ten parametr pusty lub określ tylko opcjonalną nazwę ścieżki.  <br/> > [!IMPORTANT]> Przypadku nazwy ścieżki pliku musi być taki sam przypadek, jak określono w parametrze  `/dstdir:` w poprzednim kroku. Jeśli na przykład użyto  `"ingestiondata/FILESERVER01/PSTs"` nazwy podfolderu w poprzednim kroku, ale użyto  `fileserver01/psts` go w  `FilePath` parametrze w pliku CSV, importowanie pliku PST zakończy się niepowodzeniem. Pamiętaj, aby używać tego samego przypadku w obu wystąpieniach.           |(pozostaw puste)  <br/> Lub  <br/>  `FILESERVER01/PSTs` <br/> |
+    | `FilePath` <br/> | Określa lokalizację folderu w obszarze usługi Azure Storage, do których zostaną skopiowane pliki PST, gdy dysk twardy zostanie wysłany do firmy Microsoft.  <br/>  To, co dodajesz w tej kolumnie w pliku CSV, zależy od tego, co określono w parametrze  `/dstdir:` w poprzednim kroku. Jeśli w lokalizacji źródłowej znajdują się podfoldery, wartość parametru `FilePath` musi zawierać ścieżkę względną podfolderu, na przykład /folder1/user1/.  <br/>  Jeśli użyto  `/dstdir:"ingestiondata/"`polecenia , pozostaw ten parametr pusty w pliku CSV.  <br/>  Jeśli dołączono opcjonalną nazwę ścieżki dla wartości parametru  `/dstdir:` (na przykład  `/dstdir:"ingestiondata/FILESERVER01/PSTs"`, użyj tej nazwy ścieżki (bez uwzględnienia "ingestiondata") dla tego parametru w pliku CSV. Wartość tego parametru uwzględnia wielkość liter.  <br/>  Tak czy inaczej,  *nie*  uwzględniaj wartości "ingestiondata" w wartości parametru  `FilePath` . Pozostaw ten parametr pusty lub określ tylko opcjonalną nazwę ścieżki.  <br/> > [!IMPORTANT]> Przypadku nazwy ścieżki pliku musi być taki sam przypadek, jak określono w parametrze  `/dstdir:` w poprzednim kroku. Jeśli na przykład użyto  `"ingestiondata/FILESERVER01/PSTs"` nazwy podfolderu w poprzednim kroku, ale użyto  `fileserver01/psts` go w  `FilePath` parametrze w pliku CSV, importowanie pliku PST zakończy się niepowodzeniem. Pamiętaj, aby używać tego samego przypadku w obu wystąpieniach.           |(pozostaw puste)  <br/> Lub  <br/>  `FILESERVER01/PSTs` <br/> |
     | `Name` <br/> |Określa nazwę pliku PST, który zostanie zaimportowany do skrzynki pocztowej użytkownika. Wartość tego parametru uwzględnia wielkość liter.  <br/> > [!IMPORTANT]> Przypadek nazwy pliku PST w pliku CSV musi być taki sam jak plik PST przekazany do lokalizacji usługi Azure Storage w kroku 2. Jeśli na przykład używasz  `annb.pst` parametru  `Name` w pliku CSV, ale nazwa rzeczywistego pliku PST to  `AnnB.pst`, importowanie tego pliku PST zakończy się niepowodzeniem. Upewnij się, że nazwa PST w pliku CSV używa tego samego przypadku co rzeczywisty plik PST.           | `annb.pst` <br/> |
     | `Mailbox` <br/> |Określa adres e-mail skrzynki pocztowej, do którą zostanie zaimportowany plik PST. Nie można określić folderu publicznego, ponieważ usługa importowania PST nie obsługuje importowania plików PST do folderów publicznych.  <br/> Aby zaimportować plik PST do nieaktywnej skrzynki pocztowej, należy określić identyfikator GUID skrzynki pocztowej dla tego parametru. Aby uzyskać ten identyfikator GUID, uruchom następujące polecenie programu PowerShell w Exchange Online:`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> > [!NOTE]> Czasami możesz mieć wiele skrzynek pocztowych z tym samym adresem e-mail, gdzie jedna skrzynka pocztowa jest aktywną skrzynką pocztową, a druga skrzynka pocztowa jest w stanie nietrwałym (lub nieaktywnym). W takich sytuacjach należy określić identyfikator GUID skrzynki pocztowej, aby jednoznacznie zidentyfikować skrzynkę pocztową, do której ma zostać zaimportowany plik PST. Aby uzyskać ten identyfikator GUID dla aktywnych skrzynek pocztowych, uruchom następujące polecenie programu PowerShell:  `Get-Mailbox <identity of active mailbox> | FL Guid`. Aby uzyskać identyfikator GUID dla skrzynek pocztowych usuniętych nietrwale (lub nieaktywnych), uruchom następujące polecenie:  `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`.           | `annb@contoso.onmicrosoft.com` <br/> Lub  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | Określa, czy zaimportować plik PST do skrzynki pocztowej archiwum użytkownika. Dostępne są dwie opcje:  <br/> **FALSE** Importuje plik PST do podstawowej skrzynki pocztowej użytkownika.  <br/> **TRUE** Importuje plik PST do archiwum skrzynki pocztowej użytkownika. Przyjęto założenie, że [skrzynka pocztowa archiwum użytkownika jest włączona](enable-archive-mailboxes.md). Jeśli ten parametr zostanie ustawiony na  `TRUE` wartość , a skrzynka pocztowa archiwum użytkownika nie zostanie włączona, importowanie tego użytkownika zakończy się niepowodzeniem. Jeśli importowanie jednego użytkownika zakończy się niepowodzeniem (ponieważ jego archiwum nie jest włączone i ta właściwość jest ustawiona na  `TRUE`), nie będzie to miało wpływu na innych użytkowników w zadaniu importu.  <br/>  Jeśli ten parametr pozostanie pusty, plik PST zostanie zaimportowany do podstawowej skrzynki pocztowej użytkownika.  <br/> **Uwaga:** Aby zaimportować plik PST do skrzynki pocztowej archiwum opartej na chmurze dla użytkownika, którego podstawowa skrzynka pocztowa jest lokalna, wystarczy określić  `TRUE` ten parametr i określić adres e-mail lokalnej skrzynki pocztowej użytkownika dla parametru  `Mailbox` .  <br/> | `FALSE` <br/> Lub  <br/>  `TRUE` <br/> |
@@ -238,7 +236,7 @@ Gdy pracownicy centrum danych firmy Microsoft przekażą pliki PST z dysku tward
 
 ## <a name="step-4-create-a-pst-import-job-in-office-365"></a>Krok 4. Tworzenie zadania importu PST w Office 365
 
-Następnym krokiem jest utworzenie zadania importu PST w usłudze Import w Office 365. Jak wyjaśniono wcześniej, należy przesłać plik mapowania importu PST utworzony w kroku 3. Po utworzeniu zadania usługa Import użyje informacji w pliku mapowania, aby zaimportować pliki PST do określonej skrzynki pocztowej użytkownika po skopiowaniu plików PST z dysku twardego do obszaru usługi Azure Storage i utworzeniu i uruchomieniu zadania importu.
+Następnym krokiem jest utworzenie zadania importu PST w usłudze Import w Office 365. Jak wyjaśniono wcześniej, należy przesłać plik mapowania importu PST utworzony w kroku 3. Po utworzeniu zadania usługa Import użyje informacji w pliku mapowania do zaimportowania plików PST do określonej skrzynki pocztowej użytkownika po skopiowaniu plików PST z dysku twardego do obszaru usługi Azure Storage i utworzeniu i uruchomieniu zadania importu.
   
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
 
@@ -326,7 +324,7 @@ Po wysłaniu dysku twardego do firmy Microsoft wykonaj poniższą procedurę na 
   
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
 
-2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Zarządzanie cyklem** >  życia **danychImportuj**.
+2. W okienku nawigacji po lewej stronie portalu zgodności kliknij pozycję **Zarządzanie cyklem** >  życia danych **Importuj**.
 
 3. Na karcie **Import** kliknij zadanie wysyłki dysku, dla których chcesz wprowadzić numer śledzenia.
 
@@ -348,7 +346,7 @@ Po wysłaniu dysku twardego do firmy Microsoft wykonaj poniższą procedurę na 
 
 Po odebraniu dysku twardego przez firmę Microsoft stan zadania importowania na stronie **Importowanie plików PST** zmieni się na **Odebrane dyski**. Pracownicy centrum danych używają informacji zawartych w pliku dziennika do przekazywania plików PST do obszaru usługi Azure Storage dla organizacji. W tym momencie stan zmieni się na **Importuj w toku**. Jak wspomniano wcześniej, przekazanie plików PST zajmie od 7 do 10 dni roboczych od otrzymania dysku twardego.
   
-Po przekazaniu plików PST na platformę Azure stan zostanie zmieniony na **Analiza w toku**. Oznacza to, że Microsoft 365 analizuje dane w plikach PST (w bezpieczny i bezpieczny sposób) w celu zidentyfikowania wieku elementów i różnych typów komunikatów zawartych w plikach PST. Po zakończeniu analizy i przygotowaniu danych do zaimportowania stan zadania importu zostanie zmieniony na **Ukończono analizę**. W tym momencie możesz zaimportować wszystkie dane zawarte w plikach PST lub przyciąć importowane dane, ustawiając filtry kontrolujące importowane dane.
+Po przekazaniu plików PST na platformę Azure stan zostanie zmieniony na **Analiza w toku**. Oznacza to, że platforma Microsoft 365 analizuje dane w plikach PST (w bezpieczny i bezpieczny sposób) w celu zidentyfikowania wieku elementów i różnych typów komunikatów zawartych w plikach PST. Po zakończeniu analizy i przygotowaniu danych do zaimportowania stan zadania importu zostanie zmieniony na **Ukończono analizę**. W tym momencie możesz zaimportować wszystkie dane zawarte w plikach PST lub przyciąć importowane dane, ustawiając filtry kontrolujące importowane dane.
   
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
 
@@ -378,26 +376,26 @@ Po przekazaniu plików PST na platformę Azure stan zostanie zmieniony na **Anal
 
     Stan zadania importowania jest wyświetlany na stronie **Importowanie plików PST** . Kliknij ![ikonę Odśwież.](../media/O365-MDM-Policy-RefreshIcon.gif) **Odśwież** , aby zaktualizować informacje o stanie wyświetlane w kolumnie **Stan** . Kliknij zadanie importu, aby wyświetlić stronę wysuwanego stanu, która wyświetla informacje o stanie każdego importowanego pliku PST. Po zakończeniu importowania i zaimportowaniu plików PST do skrzynek pocztowych użytkownika stan zostanie zmieniony na **Ukończono**.
 
-## <a name="view-a-list-of-the-pst-files-uploaded-to-microsoft-365"></a>Wyświetl listę plików PST przekazanych do Microsoft 365
+## <a name="view-a-list-of-the-pst-files-uploaded-to-microsoft-365"></a>Wyświetlanie listy plików PST przekazanych do platformy Microsoft 365
 
-Możesz zainstalować i użyć Eksplorator usługi Microsoft Azure Storage (czyli bezpłatnego narzędzia typu open source), aby wyświetlić listę plików PST, które zostały przekazane (przez personel centrum danych firmy Microsoft) do obszaru usługi Azure Storage dla Twojej organizacji. Można to zrobić, aby sprawdzić, czy pliki PST z dysków twardych wysłanych do firmy Microsoft zostały pomyślnie przekazane do obszaru usługi Azure Storage.
+Możesz zainstalować i użyć Eksplorator usługi Microsoft Azure Storage (czyli bezpłatnego narzędzia open source), aby wyświetlić listę plików PST przekazanych (przez personel centrum danych firmy Microsoft) do obszaru usługi Azure Storage dla Twojej organizacji. Można to zrobić, aby sprawdzić, czy pliki PST z dysków twardych wysłanych do firmy Microsoft zostały pomyślnie przekazane do obszaru usługi Azure Storage.
   
 > [!IMPORTANT]
-> Nie można użyć Eksplorator usługi Azure Storage do przekazywania ani modyfikowania plików PST. Jedyną obsługiwaną metodą importowania plików PST do Microsoft 365 jest użycie narzędzia AzCopy. Ponadto nie można usunąć plików PST przekazanych do obiektu blob platformy Azure. Jeśli spróbujesz usunąć plik PST, zostanie wyświetlony błąd dotyczący braku wymaganych uprawnień. Wszystkie pliki PST są automatycznie usuwane z obszaru usługi Azure Storage. Jeśli nie ma żadnych zadań importowania w toku, wszystkie pliki PST w kontenerze ** ingestiondata ** zostaną usunięte 30 dni po utworzeniu ostatniego zadania importu.
+> Nie można użyć Eksplorator usługi Azure Storage do przekazywania ani modyfikowania plików PST. Jedyną obsługiwaną metodą importowania plików PST do platformy Microsoft 365 jest użycie narzędzia AzCopy. Ponadto nie można usunąć plików PST przekazanych do obiektu blob platformy Azure. Jeśli spróbujesz usunąć plik PST, zostanie wyświetlony błąd dotyczący braku wymaganych uprawnień. Wszystkie pliki PST są automatycznie usuwane z obszaru usługi Azure Storage. Jeśli nie ma żadnych zadań importowania w toku, wszystkie pliki PST w kontenerze ** ingestiondata ** zostaną usunięte 30 dni po utworzeniu ostatniego zadania importu.
   
-Wykonaj następujące kroki, aby uzyskać adres URL sygnatury dostępu współdzielonego dla organizacji. Ten adres URL jest kombinacją adresu URL sieci dla lokalizacji Storage platformy Azure w chmurze firmy Microsoft dla organizacji i klucza SAS. Ten klucz zapewnia uprawnienia niezbędne do uzyskania dostępu do lokalizacji usługi Azure Storage organizacji.
+Wykonaj następujące kroki, aby uzyskać adres URL sygnatury dostępu współdzielonego dla organizacji. Ten adres URL jest kombinacją adresu URL sieci dla lokalizacji usługi Azure Storage w chmurze firmy Microsoft dla organizacji i klucza SAS. Ten klucz zapewnia uprawnienia niezbędne do uzyskania dostępu do lokalizacji usługi Azure Storage w organizacji.
 
 Aby zainstalować Eksplorator usługi Azure Storage i nawiązać połączenie z obszarem usługi Azure Storage:
 
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu poświadczeń konta administratora w organizacji.
 
-2. W lewym okienku portalu zgodności kliknij pozycję **Zarządzanie cyklem** >  życia **danychImportuj**.
+2. W lewym okienku portalu zgodności kliknij pozycję **Importuj zarządzanie cyklem** >  życia danych.
 
 3. Na karcie **Import** kliknij pozycję Dodaj ikonę ![.](../media/ITPro-EAC-AddIcon.gif) **Nowe zadanie importu**.
 
 4. W kreatorze zadań importowania wpisz nazwę zadania importu PST, a następnie kliknij przycisk **Dalej**. Użyj małych liter, cyfr, łączników i podkreślenia. Nie można używać wielkich liter ani dołączać spacji w nazwie.
 
-5. Na stronie **Wybierz typ zadania importowania** kliknij **pozycję Upload danych**, a następnie kliknij przycisk **Dalej**.
+5. Na stronie **Wybierz typ zadania importowania** kliknij pozycję **Przekaż dane**, a następnie kliknij przycisk **Dalej**.
 
 6. W kroku 2 kliknij pozycję **Pokaż adres URL sygnatury dostępu współdzielonego przekazywania sieci**.
 
@@ -410,17 +408,17 @@ Aby zainstalować Eksplorator usługi Azure Storage i nawiązać połączenie z 
 
 9. Pobierz i zainstaluj [narzędzie Eksplorator usługi Microsoft Azure Storage](https://go.microsoft.com/fwlink/p/?LinkId=544842).
 
-10. Uruchom Eksplorator usługi Microsoft Azure Storage, kliknij prawym przyciskiem myszy pozycję **konta Storage** w okienku po lewej stronie, a następnie kliknij pozycję **Połączenie do usługi Azure Storage**.
+10. Uruchom Eksplorator usługi Microsoft Azure Storage, kliknij prawym przyciskiem myszy pozycję **Konta magazynu** w okienku po lewej stronie, a następnie kliknij pozycję **Połącz z usługą Azure Storage**.
 
-    ![Kliknij prawym przyciskiem myszy pozycję konta Storage, a następnie kliknij pozycję Połączenie do usługi Azure Storage.](../media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+    ![Kliknij prawym przyciskiem myszy pozycję Konta magazynu, a następnie kliknij pozycję Połącz z usługą Azure Storage.](../media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
   
 11. Kliknij **pozycję Użyj identyfikatora URI sygnatury dostępu współdzielonego (SAS) lub parametrów połączenia** , a następnie kliknij przycisk **Dalej**.
 
 12. Kliknij **pozycję Użyj identyfikatora URI sygnatury** dostępu współdzielonego, wklej adres URL sygnatury dostępu współdzielonego uzyskany w kroku 1 w polu w obszarze **Identyfikator URI**, a następnie kliknij przycisk **Dalej**.
 
-13. Na stronie **Podsumowanie połączenia** możesz przejrzeć informacje o połączeniu, a następnie kliknąć pozycję **Połączenie**.
+13. Na stronie **Podsumowanie połączenia** możesz przejrzeć informacje o połączeniu, a następnie kliknąć pozycję **Połącz**.
 
-    Kontener **ingestiondata** jest otwarty. Zawiera pliki PST z dysku twardego. Kontener **ingestiondata** znajduje się w obszarze **kontenerów obiektów blob** **kont** \> Storage **(sas-attached services**\>).
+    Kontener **ingestiondata** jest otwarty. Zawiera pliki PST z dysku twardego. Kontener **ingestiondata** znajduje się w obszarze **Kontenery obiektów blob** **kont** \> magazynu **(sas-attached services).** \>
 
     ![Eksplorator usługi Azure Storage wyświetla listę przekazanych plików PST.](../media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
   
@@ -430,14 +428,14 @@ Aby zainstalować Eksplorator usługi Azure Storage i nawiązać połączenie z 
 
 ## <a name="troubleshooting-tips"></a>Porady dotyczące rozwiązywania problemów
 
-- **Co się stanie, jeśli zadanie importu zakończy się niepowodzeniem z powodu błędów w pliku mapowania csv importu PST?** Jeśli zadanie importu nie powiedzie się z powodu błędów w pliku mapowania, nie trzeba przełączyć dysku twardego do firmy Microsoft, aby utworzyć zadanie importowania. Dzieje się tak dlatego, że pliki PST z dysku twardego przesłane do zadania importowania wysyłki dysku zostały już przekazane do obszaru Storage platformy Azure dla organizacji. W takim przypadku wystarczy naprawić błędy w pliku mapowania csv importu PST, a następnie utworzyć nowe zadanie importu "przekazywanie sieci" i przesłać poprawiony plik mapowania CSV. Aby utworzyć i uruchomić nowe zadanie importu przekazywania sieci, zobacz [Krok 5: Tworzenie zadania importu PST w Microsoft 365](use-network-upload-to-import-pst-files.md#step-5-create-a-pst-import-job) i [Krok 6: Filtrowanie danych i uruchamianie zadania importu PST](use-network-upload-to-import-pst-files.md#step-6-filter-data-and-start-the-pst-import-job) w temacie "Używanie przekazywania sieci do importowania plików PST do Office 365". 
+- **Co się stanie, jeśli zadanie importu zakończy się niepowodzeniem z powodu błędów w pliku mapowania csv importu PST?** Jeśli zadanie importu nie powiedzie się z powodu błędów w pliku mapowania, nie trzeba przełączyć dysku twardego do firmy Microsoft, aby utworzyć zadanie importowania. Dzieje się tak dlatego, że pliki PST z dysku twardego przesłane do zadania importowania wysyłki dysku zostały już przekazane do obszaru usługi Azure Storage dla Organizacji. W takim przypadku wystarczy naprawić błędy w pliku mapowania csv importu PST, a następnie utworzyć nowe zadanie importu "przekazywanie sieci" i przesłać poprawiony plik mapowania CSV. Aby utworzyć i uruchomić nowe zadanie importowania przekazywania sieci, zobacz [Krok 5: Tworzenie zadania importu PST na platformie Microsoft 365](use-network-upload-to-import-pst-files.md#step-5-create-a-pst-import-job) i [krok 6: filtrowanie danych i uruchamianie zadania importu PST](use-network-upload-to-import-pst-files.md#step-6-filter-data-and-start-the-pst-import-job) w temacie "Używanie przekazywania sieci do importowania plików PST do Office 365". 
     
     > [!NOTE]
     > Aby ułatwić rozwiązywanie problemów z plikiem mapowania pliku CSV importu PST, użyj narzędzia [Eksplorator usługi Azure Storage](#view-a-list-of-the-pst-files-uploaded-to-microsoft-365), aby wyświetlić strukturę folderów w kontenerze **ingestiondata** dla plików PST z dysku twardego, które zostały przekazane do obszaru magazynu platformy Azure. Błędy pliku mapowania są zwykle spowodowane nieprawidłową wartością parametru FilePath. Ten parametr określa lokalizację pliku PST w obszarze magazynu platformy Azure. Zobacz opis parametru FilePath w tabeli w [kroku 3](#step-3-create-the-pst-import-mapping-file). Jak wyjaśniono wcześniej, lokalizacja plików PST w obszarze magazynu platformy Azure została określona przez  `/dstdir:` parametr podczas uruchamiania narzędzia WAImportExport.exe w [kroku 2](#step-2-copy-the-pst-files-to-the-hard-drive). 
   
 ## <a name="more-information"></a>Więcej informacji
 
-- Wysyłka dysków to skuteczny sposób importowania dużych ilości archiwalnych danych komunikatów, aby Microsoft 365 korzystać z funkcji zgodności dostępnych dla organizacji. Po zaimportowaniu danych archiwalnych do skrzynek pocztowych użytkowników można:
+- Wysyłanie dysków to skuteczny sposób importowania dużych ilości archiwalnych danych komunikatów do platformy Microsoft 365 w celu skorzystania z funkcji zgodności dostępnych dla Organizacji. Po zaimportowaniu danych archiwalnych do skrzynek pocztowych użytkowników można:
 
   - Włącz [archiwalne skrzynki pocztowe](enable-archive-mailboxes.md) i [automatyczne rozszerzanie archiwizacji](enable-autoexpanding-archiving.md) , aby zapewnić użytkownikom więcej miejsca do magazynowania skrzynki pocztowej dla danych. 
 
@@ -445,7 +443,7 @@ Aby zainstalować Eksplorator usługi Azure Storage i nawiązać połączenie z 
 
   - Użyj narzędzi zbierania [elektronicznych materiałów dowodowych](search-for-content.md) firmy Microsoft, aby przeszukać dane. 
 
-  - Zastosuj [zasady przechowywania Microsoft 365](retention.md), aby kontrolować, jak długo dane są przechowywane i jakie działania należy podjąć po upływie okresu przechowywania. 
+  - Zastosuj [zasady przechowywania platformy Microsoft 365](retention.md) , aby kontrolować, jak długo dane są przechowywane i jakie działania należy podjąć po upływie okresu przechowywania. 
 
   - Wyszukaj w [dzienniku inspekcji](search-the-audit-log-in-security-and-compliance.md) zdarzenia związane z danymi. 
 
@@ -453,7 +451,7 @@ Aby zainstalować Eksplorator usługi Azure Storage i nawiązać połączenie z 
 
   - Ochrona organizacji przed [utratą danych](dlp-learn-about-dlp.md) poufnych informacji. 
 
-- Oto przykład bezpiecznego klucza konta magazynu i klucza szyfrowania funkcji BitLocker. Ten przykład zawiera również składnię polecenia WAImportExport.exe uruchamianego w celu skopiowania plików PST na dysk twardy. Pamiętaj, aby podjąć środki ostrożności, aby chronić je tak samo, jak w przypadku ochrony haseł lub innych informacji związanych z zabezpieczeniami.
+- Oto przykład bezpiecznego klucza konta magazynu i klucza szyfrowania BitLocker. Ten przykład zawiera również składnię polecenia WAImportExport.exe uruchamianego w celu skopiowania plików PST na dysk twardy. Pamiętaj, aby podjąć środki ostrożności, aby chronić je tak samo, jak w przypadku ochrony haseł lub innych informacji związanych z zabezpieczeniami.
 
     ```text
     Secure storage account key: 

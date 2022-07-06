@@ -1,6 +1,6 @@
 ---
 title: Bariery informacyjne
-description: Dowiedz się, jak skonfigurować bariery informacyjne w Microsoft Purview.
+description: Dowiedz się, jak skonfigurować bariery informacyjne w usłudze Microsoft Purview.
 keywords: Microsoft 365, Microsoft Purview, zgodność, bariery informacyjne
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -16,20 +16,18 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: aaba1c642d4615d3eb5163736450f3f8f3c27062
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: 21ad4f0cc6614bed3c579a8025d83200446fec18
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396184"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627244"
 ---
 # <a name="information-barriers"></a>Bariery informacyjne
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Platforma Microsoft 365 umożliwia komunikację i współpracę między grupami i organizacjami oraz obsługuje sposoby ograniczania komunikacji i współpracy między określonymi grupami użytkowników w razie potrzeby. Może to obejmować sytuacje lub scenariusze, w których chcesz ograniczyć komunikację i współpracę między dwiema grupami, aby uniknąć konfliktu interesów w organizacji. Może to również obejmować sytuacje, w których konieczne jest ograniczenie komunikacji i współpracy między niektórymi osobami w organizacji w celu ochrony informacji wewnętrznych.
 
-Microsoft 365 umożliwia komunikację i współpracę między grupami i organizacjami oraz obsługuje sposoby ograniczania komunikacji i współpracy między określonymi grupami użytkowników w razie potrzeby. Może to obejmować sytuacje lub scenariusze, w których chcesz ograniczyć komunikację i współpracę między dwiema grupami, aby uniknąć konfliktu interesów w organizacji. Może to również obejmować sytuacje, w których konieczne jest ograniczenie komunikacji i współpracy między niektórymi osobami w organizacji w celu ochrony informacji wewnętrznych.
-
-Microsoft Purview Bariery informacyjne (IB) są obsługiwane w usługach Microsoft Teams, SharePoint Online i OneDrive dla Firm. Administrator zgodności lub administrator IB może zdefiniować zasady umożliwiające lub uniemożliwiające komunikację między grupami użytkowników w Microsoft Teams. Zasady IB mogą być używane w takich sytuacjach:
+Bariery informacyjne usługi Microsoft Purview (IB) są obsługiwane w usługach Microsoft Teams, SharePoint Online i OneDrive dla Firm. Administrator zgodności lub administrator IB może zdefiniować zasady umożliwiające lub uniemożliwiające komunikację między grupami użytkowników w usłudze Microsoft Teams. Zasady IB mogą być używane w takich sytuacjach:
 
 - Użytkownik w grupie przedsiębiorców dnia nie powinien komunikować się ani udostępniać plików zespołowi ds. marketingu
 - Personel finansowy pracujący nad poufnymi informacjami firmy nie powinien komunikować się ani udostępniać plików określonym grupom w organizacji

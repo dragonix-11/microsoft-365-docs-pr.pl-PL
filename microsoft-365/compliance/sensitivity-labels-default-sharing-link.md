@@ -16,29 +16,27 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Użyj etykiet poufności, aby skonfigurować domyślny typ łącza udostępniania dla witryn i dokumentów w SharePoint i OneDrive.
-ms.openlocfilehash: 0c72d35399a0185bbd8cf58b5eac58241a695b72
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Użyj etykiet poufności, aby skonfigurować domyślny typ łącza udostępniania dla witryn i dokumentów w programach SharePoint i OneDrive.
+ms.openlocfilehash: ca4b74c2fb25c4f1f1ef96b8ae0241481358797d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012323"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628578"
 ---
-# <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>Użyj etykiet poufności, aby skonfigurować domyślny typ łącza udostępniania dla witryn i dokumentów w SharePoint i OneDrive
+# <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>Użyj etykiet poufności, aby skonfigurować domyślny typ łącza udostępniania dla witryn i dokumentów w programach SharePoint i OneDrive
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Jako dodatkową konfigurację ustawień wyświetlanych w portalu zgodności usługi Microsoft Purview dla [etykiet poufności](sensitivity-labels.md) można użyć tych etykiet, aby skonfigurować ustawienia domyślnego typu linku udostępniania dla witryny SharePoint lub konta OneDrive oraz dla poszczególnych dokumentów. Te ustawienia są wybierane automatycznie, ale nie są bardzo widoczne dla użytkowników po wybraniu przycisku **Udostępnij** w aplikacjach Office. Na przykład:
+Jako dodatkową konfigurację ustawień widocznych w portal zgodności Microsoft Purview [etykiet poufności](sensitivity-labels.md) możesz użyć tych etykiet, aby skonfigurować ustawienia domyślnego typu linku udostępniania dla witryny programu SharePoint lub konta usługi OneDrive oraz dla poszczególnych dokumentów. Te ustawienia są wybierane automatycznie, ale nie są bardzo widoczne dla użytkowników po wybraniu przycisku **Udostępnij** w aplikacjach pakietu Office. Na przykład:
 
 ![Przykładowy domyślny link do udostępniania— okno dialogowe.](../media/default-sharing-link-example.png)
 
 Domyślny typ łącza udostępniania ustawia zakres (kto) i uprawnienia (wyświetlanie lub edytowanie), które są automatycznie wybierane, gdy użytkownicy udostępniają pliki i foldery. Mimo że użytkownicy zawsze mogą zastąpić te ustawienia domyślne przed wysłaniem linku udostępniania, ustawienia, które wybierzesz, zapewniają bezpieczny punkt odniesienia. Zazwyczaj użytkownicy nie zmieniają ustawień przed udostępnieniem.
 
-Na poziomie witryny (SharePoint lokacji lub konta OneDrive) etykiety poufności stanowią wygodną alternatywę dla ustawienia domyślnego typu łącza udostępniania, który można skonfigurować dla witryny w centrum administracyjnym SharePoint. Aby uzyskać więcej informacji, zobacz [Zmienianie domyślnego typu linku dla witryny](/sharepoint/change-default-sharing-link) z dokumentacji SharePoint.
+Na poziomie witryny (witryny programu SharePoint lub konta usługi OneDrive) etykiety poufności stanowią wygodną alternatywę dla ustawienia domyślnego typu łącza udostępniania, który można skonfigurować dla witryny w centrum administracyjnym programu SharePoint. Aby uzyskać więcej informacji, zobacz [Zmienianie domyślnego typu linku dla witryny](/sharepoint/change-default-sharing-link) z dokumentacji programu SharePoint.
 
-Ta konfiguracja na poziomie lokacji działa dobrze w przypadku SharePoint lokacji z dokumentami o tym samym poziomie poufności. Jeśli jednak witryny zawierają dokumenty o wyższym poziomie poufności, które wymagają bardziej restrykcyjnych ustawień, możesz skonfigurować etykietę poufności z różnymi ustawieniami domyślnego typu łącza udostępniania, a następnie zastosować tę etykietę do dokumentów.
+Ta konfiguracja na poziomie witryny działa dobrze w przypadku witryn programu SharePoint, które mają dokumenty o tym samym poziomie poufności. Jeśli jednak witryny zawierają dokumenty o wyższym poziomie poufności, które wymagają bardziej restrykcyjnych ustawień, możesz skonfigurować etykietę poufności z różnymi ustawieniami domyślnego typu łącza udostępniania, a następnie zastosować tę etykietę do dokumentów.
 
 W tym scenariuszu, w którym witryna ma domyślne ustawienia typu łącza udostępniania, a dokument w tej witrynie ma inne domyślne ustawienia typu łącza, bardziej restrykcyjne ustawienia zakresu zostaną zastosowane w momencie, gdy użytkownik wybierze opcję udostępniania dokumentu. Przykład:
 
@@ -46,7 +44,7 @@ W tym scenariuszu, w którym witryna ma domyślne ustawienia typu łącza udost�
 
 - Domyślny typ łącza udostępniania dla witryny jest ograniczony do określonych osób z uprawnieniami do edycji. Dokument w tej witrynie jest oznaczony etykietą z domyślnym typem łącza udostępniania ustawionym dla każdego w organizacji z uprawnieniami do wyświetlania. Gdy użytkownik udostępni ten dokument, wybrany domyślny typ łącza udostępniania będzie ograniczony do określonych osób z uprawnieniami do edycji.
 
-Konfigurowanie domyślnego typu łącza dla dokumentów może być również odpowiednie bez ustawienia na poziomie lokacji. Na przykład chociaż witryny SharePoint są zwykle zorganizowane w celu hostowania tego samego typu dokumentów, nie dotyczy to OneDrive kont. Użytkownicy zazwyczaj zapisują szeroką gamę plików do OneDrive, często w tym kombinację dokumentów osobistych i biznesowych. Ustawienie domyślnego typu linku dla wszystkich dokumentów dla konta OneDrive użytkownika prawdopodobnie nie jest praktyczne, ale poszczególne dokumenty nadal mogą korzystać z tych ustawień. Przykład:
+Konfigurowanie domyślnego typu łącza dla dokumentów może być również odpowiednie bez ustawienia na poziomie lokacji. Na przykład chociaż witryny programu SharePoint są zwykle zorganizowane w celu hostowania tego samego typu dokumentów, nie dotyczy to kont usługi OneDrive. Użytkownicy zazwyczaj zapisują szeroką gamę plików w usłudze OneDrive, często w tym wiele dokumentów osobistych i biznesowych. Ustawienie domyślnego typu łącza dla wszystkich dokumentów dla konta użytkownika w usłudze OneDrive prawdopodobnie nie jest praktyczne, ale poszczególne dokumenty nadal mogą korzystać z tych ustawień. Przykład:
 
 - Dokumenty oznaczone etykietą **Wysoce poufne** mają domyślny typ linku udostępniania, który ogranicza udostępnianie do określonych osób, a nie do kogokolwiek w organizacji.
 - Dokumenty z etykietą **Ogólne** mają domyślny typ linku udostępniania, który ogranicza udostępnianie do osób w organizacji.
@@ -56,12 +54,12 @@ Konfigurowanie domyślnego typu łącza dla dokumentów może być również odp
 
 Aby zastosować domyślny typ łącza udostępniania dla witryn, etykiety poufności muszą być włączone dla kontenerów. Jeśli ta funkcja nie jest jeszcze włączona dla dzierżawy, zobacz [Jak włączyć etykiety poufności dla kontenerów i zsynchronizować etykiety](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels).
 
-Aby zastosować domyślny typ łącza udostępniania dla dokumentów w SharePoint i OneDrive, należy włączyć etykiety poufności dla tych usług. Jeśli ta funkcja nie jest jeszcze włączona dla dzierżawy, zobacz [Jak włączyć etykiety poufności dla SharePoint i OneDrive (zgoda)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
+Aby zastosować domyślny typ łącza udostępniania dla dokumentów w programach SharePoint i OneDrive, należy włączyć etykiety poufności dla tych usług. Jeśli ta funkcja nie jest jeszcze włączona dla dzierżawy, zobacz [Jak włączyć etykiety poufności dla programu SharePoint i usługi OneDrive (zgoda)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
 
 W sesji programu PowerShell należy [nawiązać połączenie z programem PowerShell Office 365 Security & Compliance](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell), aby skonfigurować ustawienia domyślnego typu łącza udostępniania.
 
 > [!NOTE]
-> Chociaż nie jest to wymagane, najłatwiej jest najpierw [utworzyć i skonfigurować etykiety poufności w portalu zgodności usługi Microsoft Purview](create-sensitivity-labels.md), a następnie zmodyfikować te etykiety przy użyciu ustawień, które konfigurują domyślny typ łącza udostępniania.
+> Chociaż nie jest to wymagane, najłatwiej jest najpierw [utworzyć i skonfigurować etykiety poufności w portal zgodności Microsoft Purview](create-sensitivity-labels.md), a następnie zmodyfikować te etykiety przy użyciu ustawień, które konfigurują domyślny typ łącza udostępniania.
 
 ## <a name="how-to-configure-settings-for-the-default-sharing-link-type"></a>Jak skonfigurować ustawienia domyślnego typu linku udostępniania
 
@@ -92,7 +90,9 @@ Przykłady programu PowerShell, w których identyfikator GUID etykiety poufnośc
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
     ````
 
-Aby skonfigurować ustawienia domyślnego typu łącza udostępniania dla witryny, [zakres etykiety poufności](sensitivity-labels.md#label-scopes) musi zawierać **grupy & witryn** podczas tworzenia etykiety poufności w portalu zgodności usługi Microsoft Purview. Po jego utworzeniu zobaczysz, że jest ona wyświetlana jako **Witryna, UnifiedGroup** w kolumnie **Zakres** na stronie **Etykiety** , a ustawienie *ContentType* programu PowerShell również wyświetla tę samą wartość. W przypadku dokumentów zakres musi zawierać **pliki & wiadomości e-mail**, które są wyświetlane jako **Plik, Wiadomość e-mail**. Następnie:
+Aby uzyskać więcej informacji na temat określania ustawień zaawansowanych programu [PowerShell, zobacz Porady programu PowerShell dotyczące określania ustawień zaawansowanych](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+
+Aby skonfigurować ustawienia domyślnego typu łącza udostępniania dla witryny, [zakres etykiety poufności](sensitivity-labels.md#label-scopes) musi zawierać **grupy & lokacje** podczas tworzenia etykiety poufności w portal zgodności Microsoft Purview. Po jego utworzeniu zobaczysz, że jest ona wyświetlana jako **Witryna, UnifiedGroup** w kolumnie **Zakres** na stronie **Etykiety** , a ustawienie *ContentType* programu PowerShell również wyświetla tę samą wartość. W przypadku dokumentów zakres musi zawierać **pliki & wiadomości e-mail**, które są wyświetlane jako **Plik, Wiadomość e-mail**. Następnie:
 
 - Gdy zakres obejmuje **grupy & lokacje**, można zastosować etykietę do witryny, która ustawia domyślny typ łącza udostępniania dla tej witryny. Aby uzyskać informacje na temat stosowania etykiety poufności do lokacji, zobacz [Jak stosować etykiety poufności do kontenerów](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
 
@@ -100,18 +100,3 @@ Aby skonfigurować ustawienia domyślnego typu łącza udostępniania dla witryn
 
 > [!TIP]
 > Można również określić, że etykieta jest domyślną etykietą poufności, która ma być stosowana dla nowych witryn lub nowych dokumentów, jako [ustawienie zasad etykiety](sensitivity-labels.md#what-label-policies-can-do).
-
-### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Porady programu PowerShell dotyczące określania ustawień zaawansowanych
-
-Mimo że można określić etykietę poufności według jej nazwy, zalecamy użycie identyfikatora GUID etykiety, aby uniknąć potencjalnych pomyłek związanych z określaniem nazwy etykiety lub nazwy wyświetlanej. Aby znaleźć identyfikator GUID i potwierdzić zakres etykiety:
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid, ContentType
-````
-
-Aby usunąć jedno z tych ustawień zaawansowanych z etykiety poufności, użyj tej samej składni parametrów AdvancedSettings, ale określ wartość ciągu o wartości null. Przykład:
-
-````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
-````
-

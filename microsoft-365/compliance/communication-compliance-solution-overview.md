@@ -1,7 +1,7 @@
 ---
-title: Zgodność komunikacji w Microsoft 365
-description: Dowiedz się, jak skonfigurować zgodność komunikacji w programie Microsoft 365.
-keywords: Microsoft 365, ryzyko niejawnego programu testów, zgodność
+title: Zgodność w komunikacji
+description: Dowiedz się, jak skonfigurować zgodność komunikacji w usłudze Microsoft Purview.
+keywords: Microsoft 365, ryzyko wewnętrzne, zgodność
 ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -16,29 +16,29 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 68670139062f4589d61d32521568b9bd00e5dc0f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e24401762906f66592d12efa42c5305a2c3d6d2e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "62989737"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626452"
 ---
-# <a name="communication-compliance-in-microsoft-365"></a>Zgodność komunikacji w Microsoft 365
+# <a name="communication-compliance"></a>Zgodność w komunikacji
 
-Ochrona informacji poufnych oraz wykrywanie incydentów nękania w miejscu pracy i działanie na nich to istotny element zgodności z wewnętrznymi zasadami i standardami. Zgodność komunikacji w programie Microsoft 365 pozwala zminimalizować te zagrożenia, pomagając szybko wykrywać, przechwytywać i podjąć działania naprawcze dotyczące poczty e-mail Microsoft Teams komunikacji. Należą do nich nieodpowiednia komunikacja zawierająca wulgarne, zagrożenia, molestowanie i komunikacja, w których są przekazywane poufne informacje w organizacji i poza nią.
+Ochrona poufnych informacji oraz wykrywanie i działanie w przypadku przypadków molestowania w miejscu pracy jest ważnym elementem zgodności z wewnętrznymi zasadami i standardami. Zgodność w komunikacji w Microsoft Purview pomaga zminimalizować te zagrożenia, pomagając szybko wykrywać, przechwytywać i podejmować działania korygowania dotyczące poczty e-mail i komunikacji w usłudze Microsoft Teams. Obejmują one niewłaściwą komunikację zawierającą wulgaryzmy, groźby oraz nękanie i komunikację, które udostępniają poufne informacje wewnątrz organizacji i poza nią.
 
-## <a name="configure-communication-compliance-for-microsoft-365"></a>Konfigurowanie zgodności komunikacji dla Microsoft 365
+## <a name="configure-communication-compliance"></a>Konfigurowanie zgodności komunikacji
 
-Aby skonfigurować zgodność komunikacji dla organizacji, należy wykonać następujące czynności:
+Aby skonfigurować zgodność komunikacji dla organizacji, wykonaj następujące kroki:
 
-![Kroki zgodności związane z komunikacją w zakresie rozwiązania ryzyka w niejawnym programie testów.](../media/ir-solution-cc-steps.png)
+![Kroki zgodności rozwiązania do komunikacji z ryzykiem wewnętrznym.](../media/ir-solution-cc-steps.png)
 
-1. Informacje na temat [zgodności komunikacji w](communication-compliance.md) programie Microsoft 365
-2. Planowanie zgodności [komunikacji i licencjonowanie](communication-compliance-plan.md) [weryfikuj](communication-compliance-configure.md#subscriptions-and-licensing)
+1. Dowiedz się więcej o [zgodności komunikacji](communication-compliance.md)
+2. Planowanie [zgodności komunikacji](communication-compliance-plan.md) i [weryfikowanie licencjonowania](communication-compliance-configure.md#subscriptions-and-licensing)
 3. Konfigurowanie [wymagań wstępnych](communication-compliance-configure.md#step-2-required-enable-the-audit-log) i [uprawnień](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 4. Tworzenie i konfigurowanie [zasad zgodności komunikacji](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
 
-## <a name="more-information-about-communication-compliance"></a>Więcej informacji na temat zgodności komunikacji
+## <a name="more-information-about-communication-compliance"></a>Więcej informacji o zgodności komunikacji
 
-- [Badanie i rozwiązywanie problemów z alertami](communication-compliance-investigate-remediate.md)
-- [Analiza przypadku — firma Contoso szybko konfiguruje nieodpowiednie zasady dotyczące zawartości Microsoft Teams, Exchange i komunikacji Yammer wiadomości](communication-compliance-case-study.md)
+- [Badanie i korygowanie alertów](communication-compliance-investigate-remediate.md)
+- [Analiza przypadku — firma Contoso szybko konfiguruje nieodpowiednie zasady zawartości dla komunikacji w usługach Microsoft Teams, Exchange i Yammer](communication-compliance-case-study.md)

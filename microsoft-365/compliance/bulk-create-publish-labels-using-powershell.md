@@ -18,21 +18,19 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak za pomocą programu PowerShell tworzyć i publikować etykiety przechowywania z poziomu wiersza polecenia niezależnie od portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: fb39e3dee9f1bd0492c443e4a3c5f5c878808990
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: Dowiedz się, jak za pomocą programu PowerShell tworzyć i publikować etykiety przechowywania z poziomu wiersza polecenia niezależnie od portal zgodności Microsoft Purview.
+ms.openlocfilehash: c94c2c77ffc948aa55aa7f230e471957fdb2701f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043508"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626782"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Tworzenie i publikowanie etykiet przechowywania przy użyciu programu PowerShell
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Po podjęciu decyzji o użyciu [etykiet przechowywania](retention.md), które ułatwiają przechowywanie lub usuwanie dokumentów i wiadomości e-mail w Microsoft 365, być może wiesz, że istnieje wiele i prawdopodobnie setki etykiet przechowywania do tworzenia i publikowania. Zalecaną metodą tworzenia etykiet przechowywania na dużą skalę jest użycie [planu plików](file-plan-manager.md) z portalu zgodności usługi Microsoft Purview. Można jednak również użyć programu [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
+Po podjęciu decyzji o użyciu [etykiet przechowywania](retention.md) , które ułatwiają przechowywanie lub usuwanie dokumentów i wiadomości e-mail na platformie Microsoft 365, być może wiesz, że istnieje wiele i prawdopodobnie setki etykiet przechowywania do tworzenia i publikowania. Zalecaną metodą tworzenia etykiet przechowywania na dużą skalę jest użycie [planu plików](file-plan-manager.md) z portal zgodności Microsoft Purview. Można jednak również użyć programu [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
 
 Skorzystaj z informacji, plików szablonów i przykładów oraz skryptu w tym artykule, aby ułatwić zbiorcze tworzenie etykiet przechowywania i publikowanie ich w zasadach etykiet przechowywania. Następnie etykiety przechowywania mogą być [stosowane przez administratorów i użytkowników](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
 
@@ -40,7 +38,7 @@ Podane instrukcje nie obsługują etykiet przechowywania, które są automatyczn
 
 Przegląd:
 
-1. W Excel utwórz listę etykiet przechowywania i listę ich zasad etykiet przechowywania.
+1. W programie Excel utwórz listę etykiet przechowywania i listę ich zasad etykiet przechowywania.
 
 2. Użyj programu PowerShell, aby utworzyć etykiety przechowywania i zasady etykiet przechowywania na tych listach.
 
@@ -50,7 +48,7 @@ Przykładowe skrypty podane w tym artykule nie są obsługiwane w ramach żadneg
 
 ## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>Krok 1. Tworzenie pliku .csv dla etykiet przechowywania
 
-1. Skopiuj następujący przykładowy plik .csv dla szablonu i przykładowe wpisy dla czterech różnych etykiet przechowywania i wklej je do Excel.
+1. Skopiuj następujący przykładowy plik .csv szablonu i przykładowe wpisy dla czterech różnych etykiet przechowywania i wklej je do programu Excel.
 
 2. Konwertowanie tekstu na kolumny: Karta \> **Dane** **Tekst na kolumny** \> **rozdzielane** \> **przecinkami** \> **ogólne**
 
@@ -76,7 +74,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 ## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>Krok 2. Tworzenie pliku .csv dla zasad etykiet przechowywania
 
-1. Skopiuj następujący przykładowy plik .csv szablonu i przykładowe wpisy dla trzech różnych zasad etykiet przechowywania i wklej je do Excel.
+1. Skopiuj następujący przykładowy plik .csv szablonu i przykładowe wpisy dla trzech różnych zasad etykiet przechowywania i wklej je w programie Excel.
 
 2. Konwertowanie tekstu na kolumny: Karta \> **Dane** **Tekst na kolumny** \> **rozdzielane** \> **przecinkami** \> **ogólne**
 
@@ -101,7 +99,7 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 ## <a name="step-3-create-the-powershell-script"></a>Krok 3. Tworzenie skryptu programu PowerShell
 
-1. Skopiuj i wklej następujący skrypt programu PowerShell do Notatnik.
+1. Skopiuj i wklej następujący skrypt programu PowerShell do Notatnika.
 
 2. Zapisz plik przy użyciu rozszerzenia nazwy pliku **.ps1** w łatwej do znalezienia lokalizacji. Przykład: `<path>CreateRetentionSchedule.ps1`
 
@@ -736,7 +734,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>Krok 4. Uruchamianie skryptu programu PowerShell
 
-Najpierw [Połączenie do programu PowerShell & zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell).
+Najpierw [połącz się z programem PowerShell & Security Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 Następnie uruchom skrypt, który tworzy i publikuje etykiety przechowywania:
 

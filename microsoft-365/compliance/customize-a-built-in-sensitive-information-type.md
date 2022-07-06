@@ -18,18 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak utworzyć niestandardowy typ informacji poufnych, który umożliwi korzystanie z reguł spełniających potrzeby organizacji.
-ms.openlocfilehash: 69a9808cda2d30cc350da40f6c4f677598c6a000
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 14fb645a4b7f58f609995bc71edae24090c83cc7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016421"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630990"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Dostosuj wbudowany typ informacji poufnych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Podczas wyszukiwania poufnych informacji w zawartości należy opisać te informacje w tak zwanej *regule*. Usługa Microsoft Purview Data Loss Prevention (DLP) zawiera reguły dotyczące najczęściej używanych typów informacji poufnych, których można używać od razu. Aby korzystać z tych reguł, należy je uwzględnić w zasadach. Może się okazać, że chcesz dostosować te wbudowane reguły do konkretnych potrzeb organizacji i możesz to zrobić, tworząc niestandardowy typ informacji poufnych. W tym temacie przedstawiono sposób dostosowywania pliku XML zawierającego istniejącą kolekcję reguł w celu wykrycia szerszego zakresu potencjalnych informacji o kartach kredytowych.
+Podczas wyszukiwania poufnych informacji w zawartości należy opisać te informacje w tak zwanej *regule*. Ochrona przed utratą danych w Microsoft Purview (DLP) zawiera reguły dla najczęściej używanych typów informacji poufnych, których można używać od razu. Aby korzystać z tych reguł, należy je uwzględnić w zasadach. Może się okazać, że chcesz dostosować te wbudowane reguły do konkretnych potrzeb organizacji i możesz to zrobić, tworząc niestandardowy typ informacji poufnych. W tym temacie przedstawiono sposób dostosowywania pliku XML zawierającego istniejącą kolekcję reguł w celu wykrycia szerszego zakresu potencjalnych informacji o kartach kredytowych.
 
 Możesz skorzystać z tego przykładu i zastosować go do innych wbudowanych typów informacji poufnych. Aby uzyskać listę domyślnych typów informacji poufnych i definicji XML, zobacz [Definicje jednostek typów informacji poufnych](sensitive-information-type-entity-definitions.md).
 
@@ -159,7 +157,7 @@ Teraz masz coś, co wygląda podobnie do następującego kodu XML. Ponieważ pak
 
 ## <a name="remove-the-corroborative-evidence-requirement-from-a-sensitive-information-type"></a>Usuwanie wymogu dowodu potwierdzającego z typu informacji poufnych
 
-Teraz, gdy masz nowy typ informacji poufnych, który możesz przekazać do portalu zgodności usługi Microsoft Purview, następnym krokiem jest zwiększenie szczegółowości reguły. Zmodyfikuj regułę tak, aby wyszukiwała tylko 16-cyfrowy numer, który przekazuje sumę kontrolną, ale nie wymaga dodatkowych (potwierdzających) dowodów, takich jak słowa kluczowe. W tym celu należy usunąć część kodu XML, która szuka dowodów potwierdzających. Dowody potwierdzające są bardzo pomocne w zmniejszaniu wyników fałszywie dodatnich. W takim przypadku zwykle istnieją pewne słowa kluczowe lub data wygaśnięcia w pobliżu numeru karty kredytowej. Jeśli usuniesz te dowody, dostosuj również pewność, że znaleziono numer karty kredytowej, obniżając `confidenceLevel`wartość , która w tym przykładzie wynosi 85.
+Teraz, gdy masz nowy typ informacji poufnych, który możesz przekazać do portal zgodności Microsoft Purview, następnym krokiem jest uczynienie reguły bardziej szczegółową. Zmodyfikuj regułę tak, aby wyszukiwała tylko 16-cyfrowy numer, który przekazuje sumę kontrolną, ale nie wymaga dodatkowych (potwierdzających) dowodów, takich jak słowa kluczowe. W tym celu należy usunąć część kodu XML, która szuka dowodów potwierdzających. Dowody potwierdzające są bardzo pomocne w zmniejszaniu wyników fałszywie dodatnich. W takim przypadku zwykle istnieją pewne słowa kluczowe lub data wygaśnięcia w pobliżu numeru karty kredytowej. Jeśli usuniesz te dowody, dostosuj również pewność, że znaleziono numer karty kredytowej, obniżając `confidenceLevel`wartość , która w tym przykładzie wynosi 85.
 
 ```xml
 <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
@@ -203,7 +201,7 @@ Aby przekazać regułę, należy wykonać następujące czynności.
 
 1. Zapisz go jako plik .xml z kodowaniem Unicode. Jest to ważne, ponieważ reguła nie będzie działać, jeśli plik zostanie zapisany przy użyciu innego kodowania.
 
-2. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+2. [Połącz się z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 3. W programie PowerShell wpisz następujące polecenie.
 
@@ -239,7 +237,7 @@ Są to definicje terminów napotkanych podczas tej procedury.
 |IdMatch|Jest to identyfikator, który wzorzec próbuje dopasować — na przykład numer karty kredytowej.|
 |Listy słów kluczowych|Plik XML odwołuje się również do elementów `keyword_cc_verification` i `keyword_cc_name`, które są listami słów kluczowych, z których szukamy dopasowań w obrębie `patternsProximity` jednostki. Nie są one obecnie wyświetlane w kodzie XML.|
 |Wzór|Wzorzec zawiera listę tego, czego szuka poufny typ. Obejmuje to słowa kluczowe, rejestry i funkcje wewnętrzne, które wykonują zadania, takie jak weryfikowanie sum kontrolnych. Typy informacji poufnych mogą mieć wiele wzorców z unikatowymi ufnościami. Jest to przydatne podczas tworzenia poufnego typu informacji, który zwraca wysoką pewność siebie w przypadku znalezienia dowodów potwierdzających i mniejszą pewność siebie, jeśli znaleziono niewiele dowodów potwierdzających lub ich nie znaleziono.|
-|Wzorzec confidenceLevel|Jest to poziom pewności, że aparat DLP znalazł dopasowanie. Ten poziom ufności jest skojarzony z dopasowaniem wzorca, jeśli zostały spełnione wymagania wzorca. Jest to miara ufności, którą należy wziąć pod uwagę podczas korzystania z reguł przepływu poczty Exchange (nazywanych również regułami transportu).|
+|Wzorzec confidenceLevel|Jest to poziom pewności, że aparat DLP znalazł dopasowanie. Ten poziom ufności jest skojarzony z dopasowaniem wzorca, jeśli zostały spełnione wymagania wzorca. Jest to miara ufności, którą należy wziąć pod uwagę podczas korzystania z reguł przepływu poczty programu Exchange (nazywanych również regułami transportu).|
 |patternsProximity|Gdy znajdziemy, co wygląda jak wzorzec numeru karty kredytowej, to bliskość tej liczby, `patternsProximity` w której będziemy szukać dowodów potwierdzających.|
 |recommendedConfidence|Jest to poziom ufności zalecany dla tej reguły. Zalecane zaufanie dotyczy jednostek i koligacji. W przypadku jednostek ta liczba nigdy nie jest oceniana `confidenceLevel` względem wzorca. Jest to jedynie sugestia ułatwiająca wybranie poziomu ufności, jeśli chcesz go zastosować. W przypadku koligacji `confidenceLevel` wzorzec musi być wyższy niż `recommendedConfidence` liczba wywołania akcji reguły przepływu poczty. Jest `recommendedConfidence` to domyślny poziom ufności używany w regułach przepływu poczty, który wywołuje akcję. Jeśli chcesz, możesz ręcznie zmienić regułę przepływu poczty, która ma być wywoływana na podstawie poziomu ufności wzorca.|
 |

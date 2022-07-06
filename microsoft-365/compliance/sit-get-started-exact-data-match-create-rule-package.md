@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Twórz dokładny typ/pakiet reguł informacji poufnych opartych na dopasowaniu danych
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff493f7af88d377bcf008d13752969107cfd65e7
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 16da97f249eff856fd1b0e671d71d813b3cbac73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017191"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628512"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Twórz dokładny typ/pakiet reguł informacji poufnych opartych na dopasowaniu danych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Możesz utworzyć dokładny typ informacji poufnych dopasowania danych (EDM) przy użyciu [schematu EDM i kreatora SIT](#use-the-edm-schema-and-sit-wizard) w Centrum zgodności lub [ręcznie](#create-a-rule-package-manually) utworzyć plik XML pakietu reguł. Można również połączyć oba przy użyciu jednej metody, aby utworzyć schemat, a następnie edytować go przy użyciu drugiej metody.
 
@@ -60,7 +58,7 @@ Zobacz [Definicje jednostek typów informacji poufnych](sensitive-information-ty
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Użyj kreatora dokładnego schematu dopasowania danych i wzorca typów informacji poufnych
 
-1. W portalu zgodności usługi Microsoft Purview dla dzierżawy przejdź do pozycji **Klasyfikacja** > **danych Dokładne dopasowania danych**.
+1. W portal zgodności Microsoft Purview dzierżawy przejdź do pozycji **Klasyfikacja** > **danych Dokładne dopasowania danych**.
 
 2. Wybierz **typy informacji poufnych EDM** i **Utwórz typ informacji poufnych EDM** , aby otworzyć kreatora konfiguracji typów informacji poufnych.
 
@@ -107,7 +105,7 @@ Będzie to zgodne z każdym pojedynczym słowem lub numerem w dowolnym dokumenci
 
 **Adresy e-mail**: Adresy e-mail mogą być łatwe do zidentyfikowania, ale ponieważ są tak powszechne w zawartości, mogą powodować znaczne obciążenie systemu, jeśli są używane jako pole podstawowe. Użyj ich tylko jako dowodów pomocniczych. Jeśli muszą być one używane jako podstawowe dowody, spróbuj zdefiniować niestandardowy typ informacji poufnych, który używa logiki do wykluczania ich użycia jako `From` lub `To` pól w wiadomościach e-mail, oraz wykluczyć te z adresem e-mail firmy, aby zmniejszyć liczbę niepotrzebnych ciągów, które muszą być dopasowane.
 
-**liczby Telefon**: liczby Telefon mogą mieć różne formaty, w tym prefiksy kraju, kody kierunkowe i separatory. Aby zmniejszyć liczbę fałszywych negatywów przy zachowaniu minimalnego obciążenia, należy użyć ich tylko jako elementów pomocniczych, wykluczyć wszystkie prawdopodobne separatory, takie jak nawiasy i kreski, i uwzględnić tylko w poufnej tabeli danych część, która będzie zawsze obecna pod numerem telefonu.
+**Numery telefonów**: Numery telefonów mogą być dostępne w wielu różnych formatach, w tym lub z wyjątkiem prefiksów kraju, kodów kierunkowych i separatorów. Aby zmniejszyć liczbę fałszywych negatywów przy zachowaniu minimalnego obciążenia, należy użyć ich tylko jako elementów pomocniczych, wykluczyć wszystkie prawdopodobne separatory, takie jak nawiasy i kreski, i uwzględnić tylko w poufnej tabeli danych część, która będzie zawsze obecna pod numerem telefonu.
 
 **Imiona i nazwiska** osób: nie używaj nazw osób jako elementów podstawowych, jeśli używasz typu informacji poufnych opartego na wyrażeniu regularnym jako elementu klasyfikacji dla tego typu EDM, ponieważ trudno je odróżnić od typowych słów.
 
@@ -143,7 +141,7 @@ Ta procedura pokazuje, jak utworzyć plik w formacie XML nazywanym pakietem regu
 > [!NOTE]
 > Jeśli mapowany interfejs SIT może wykrywać wielowyrazowe dowody potwierdzające, elementy pomocnicze zdefiniowane w ręcznie utworzonym pakiecie reguł mogą zostać zamapowane na sit. Na przykład nazwa `John Smith` nie byłaby zgodna z elementem pomocniczym, ponieważ porównalibyśmy `John` zawartość i `Smith` znaleźliśmy ją oddzielnie z terminem `John Smith` przekazanym w jednym z pól, jeśli to pole dowodu potwierdzającego nie zostało zamapowane na funkcję SIT, która może wykryć ten wzorzec.
 >
-> W dzierżawie Microsoft 365 istnieje limit 10 pakietów reguł. Ponieważ pakiet reguł może zawierać dowolną liczbę typów informacji poufnych, można uniknąć tworzenia nowego pakietu reguł za każdym razem, gdy chcesz zdefiniować nowy typ informacji poufnych przy użyciu tej metody, zamiast tego wyeksportować istniejący pakiet reguł i dodać typy informacji poufnych do kodu XML przed ponownym przekazaniem.
+> W dzierżawie platformy Microsoft 365 istnieje limit 10 pakietów reguł. Ponieważ pakiet reguł może zawierać dowolną liczbę typów informacji poufnych, można uniknąć tworzenia nowego pakietu reguł za każdym razem, gdy chcesz zdefiniować nowy typ informacji poufnych przy użyciu tej metody, zamiast tego wyeksportować istniejący pakiet reguł i dodać typy informacji poufnych do kodu XML przed ponownym przekazaniem.
 
 1. Utwórz pakiet reguł w formacie XML (z kodowaniem Unicode), podobnie jak w poniższym przykładzie. (Możesz skopiować, zmodyfikować i użyć naszego przykładu).
 

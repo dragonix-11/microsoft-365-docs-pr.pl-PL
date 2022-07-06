@@ -17,16 +17,14 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 00c7e809fd878b677947dc1db2a55c612ef04997
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ddc55ef097a02c4005e2dcae2ca19fd673cc4c62
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097057"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631078"
 ---
 # <a name="create-a-litigation-hold"></a>Twórz archiwizację w związku z postępowaniem sądowym
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Skrzynkę pocztową można wstrzymać, aby zachować całą zawartość skrzynki pocztowej, w tym usunięte elementy i oryginalne wersje zmodyfikowanych elementów. Po umieszczeniu skrzynki pocztowej użytkownika w blokadzie postępowania sądowego zawartość w archiwum skrzynki pocztowej użytkownika (jeśli jest włączona) jest również zachowywana. Podczas tworzenia blokady można określić czas przechowywania (nazywany również *blokadą czasową*), aby usunięte i zmodyfikowane elementy były przechowywane przez określony okres, a następnie trwale usuwane ze skrzynki pocztowej. Możesz też zachować zawartość przez czas nieokreślony (nazywaną *nieskończoną blokadą*) lub do momentu usunięcia blokady postępowania sądowego. Jeśli określisz okres przechowywania, jest on obliczany na podstawie daty odebrania wiadomości lub utworzenia elementu skrzynki pocztowej. 
   
@@ -51,7 +49,7 @@ Aby umieścić skrzynkę pocztową Exchange Online w stanie wstrzymania postępo
 
 Poniżej przedstawiono kroki, aby umieścić skrzynkę pocztową w blokadzie postępowania sądowego przy użyciu Centrum administracyjne platformy Microsoft 365.
 
-1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Centrum administracyjne platformy Microsoft 365</a>, a następnie kliknij pozycję **UżytkownicyAktywni** >  użytkownicy.
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Centrum administracyjne platformy Microsoft 365</a>, a następnie kliknij pozycję **Użytkownicy** > **aktywni użytkownicy**.
 
 2. Wybierz użytkownika, który chcesz umieścić w blokadzie postępowania sądowego.
 
@@ -63,9 +61,9 @@ Poniżej przedstawiono kroki, aby umieścić skrzynkę pocztową w blokadzie pos
 
     1. **Czas przechowywania (dni)**: użyj tego pola, aby utworzyć blokadę opartą na czasie i określić, jak długo elementy skrzynki pocztowej są przechowywane, gdy skrzynka pocztowa zostanie wstrzymana. Czas trwania jest obliczany na podstawie daty odebrania lub utworzenia elementu skrzynki pocztowej. Gdy czas przechowywania wygaśnie dla określonego elementu, ten element nie będzie już zachowywany. Jeśli to pole pozostanie puste, elementy zostaną zachowane na czas nieokreślony lub do momentu usunięcia blokady. Użyj dni, aby określić czas trwania.
 
-    2. **Uwaga widoczna dla użytkownika**: użyj tego pola, aby poinformować użytkownika, że jego skrzynka pocztowa jest w stanie wstrzymania postępowania sądowego. Uwaga zostanie wyświetlona na stronie Informacje o koncie w skrzynce pocztowej użytkownika, jeśli używa Outlook 2010 lub nowszej. Aby uzyskać dostęp do tej strony, użytkownicy mogą kliknąć pozycję **Plik** w Outlook.
+    2. **Uwaga widoczna dla użytkownika**: użyj tego pola, aby poinformować użytkownika, że jego skrzynka pocztowa jest w stanie wstrzymania postępowania sądowego. Uwaga zostanie wyświetlona na stronie Informacje o koncie w skrzynce pocztowej użytkownika, jeśli korzysta z programu Outlook 2010 lub nowszego. Aby uzyskać dostęp do tej strony, użytkownicy mogą kliknąć pozycję **Plik** w programie Outlook.
 
-    3. **Strona sieci Web z większą ilością informacji dla użytkownika**: użyj tego pola, aby skierować użytkownika do witryny internetowej, aby uzyskać więcej informacji o blokadzie postępowania sądowego. Ten adres URL jest wyświetlany na stronie Informacje o koncie w skrzynce pocztowej użytkownika, jeśli używa Outlook 2010 lub nowszej. Aby uzyskać dostęp do tej strony, użytkownicy mogą kliknąć pozycję **Plik** w Outlook.
+    3. **Strona sieci Web z większą ilością informacji dla użytkownika**: użyj tego pola, aby skierować użytkownika do witryny internetowej, aby uzyskać więcej informacji o blokadzie postępowania sądowego. Ten adres URL jest wyświetlany na stronie Informacje o koncie w skrzynce pocztowej użytkownika, jeśli używa programu Outlook 2010 lub nowszego. Aby uzyskać dostęp do tej strony, użytkownicy mogą kliknąć pozycję **Plik** w programie Outlook.
 
 . Kliknij **pozycję Zapisz zmiany** na stronie wysuwanej **Blokada postępowania sądowego** , aby utworzyć blokadę.
 
@@ -97,9 +95,9 @@ Aby uzyskać więcej informacji, zobacz [Set-Mailbox (Set-Mailbox](/powershell/m
 
 ## <a name="how-does-litigation-hold-work"></a>Jak działa postępowanie sądowe?
 
-W normalnym przepływie pracy usuniętego elementu element skrzynki pocztowej jest przenoszony do podfolderu Deletions w folderze Elementy możliwe do odzyskania, gdy użytkownik trwale go usunie (Shift + Delete) lub usunie go z folderu Elementy usunięte. Zasady usuwania (czyli tag przechowywania skonfigurowany z akcją Usuwania przechowywania) również przenosi elementy do podfolderu Usuwania po upływie okresu przechowywania. Gdy użytkownik przeczyści element w folderze Elementy możliwe do odzyskania lub gdy okres przechowywania usuniętego elementu wygaśnie dla elementu, zostanie on przeniesiony do podfolderu Przeczyszczanie w folderze Elementy możliwe do odzyskania i oznaczony do trwałego usunięcia. Zostanie on usunięty z Exchange następnym razem, gdy skrzynka pocztowa zostanie przetworzona przez asystenta folderów zarządzanych (MFA).
+W normalnym przepływie pracy usuniętego elementu element skrzynki pocztowej jest przenoszony do podfolderu Deletions w folderze Elementy możliwe do odzyskania, gdy użytkownik trwale go usunie (Shift + Delete) lub usunie go z folderu Elementy usunięte. Zasady usuwania (czyli tag przechowywania skonfigurowany z akcją Usuwania przechowywania) również przenosi elementy do podfolderu Usuwania po upływie okresu przechowywania. Gdy użytkownik przeczyści element w folderze Elementy możliwe do odzyskania lub gdy okres przechowywania usuniętego elementu wygaśnie dla elementu, zostanie on przeniesiony do podfolderu Przeczyszczanie w folderze Elementy możliwe do odzyskania i oznaczony do trwałego usunięcia. Zostanie ona przeczyszczona z programu Exchange przy następnym przetworzeniu skrzynki pocztowej przez asystenta folderów zarządzanych (MFA).
 
-Gdy skrzynka pocztowa zostanie wstrzymana, elementy w podfoldecie Przeczyszczanie zostaną zachowane przez czas przechowywania określony przez blokadę postępowania sądowego. Czas przechowywania jest obliczany na podstawie oryginalnej daty odebrania lub utworzenia elementu i określa czas przechowywania elementów w podfoldecie Przeczyszczanie. Gdy czas przechowywania wygaśnie dla elementu w podfolderze Przeczyszczanie, element zostanie oznaczony do trwałego usunięcia i zostanie usunięty z Exchange następnym razem, gdy skrzynka pocztowa zostanie przetworzona przez usługę MFA. Jeśli w skrzynce pocztowej zostanie umieszczona blokada bezterminowa, elementy nigdy nie zostaną usunięte z podfolderu Przeczyszczanie.
+Gdy skrzynka pocztowa zostanie wstrzymana, elementy w podfoldecie Przeczyszczanie zostaną zachowane przez czas przechowywania określony przez blokadę postępowania sądowego. Czas przechowywania jest obliczany na podstawie oryginalnej daty odebrania lub utworzenia elementu i określa czas przechowywania elementów w podfoldecie Przeczyszczanie. Gdy czas przechowywania wygaśnie dla elementu w podfolderze Przeczyszczanie, element zostanie oznaczony do trwałego usunięcia i zostanie usunięty z programu Exchange przy następnym przetworzeniu skrzynki pocztowej przez usługę MFA. Jeśli w skrzynce pocztowej zostanie umieszczona blokada bezterminowa, elementy nigdy nie zostaną usunięte z podfolderu Przeczyszczanie.
 
 Na poniższej ilustracji przedstawiono podfoldery w folderach Elementy do odzyskania i w procesie przepływu pracy przechowywania.
 

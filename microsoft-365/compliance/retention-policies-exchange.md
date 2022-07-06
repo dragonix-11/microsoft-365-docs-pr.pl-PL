@@ -1,5 +1,5 @@
 ---
-title: Dowiedz się więcej na temat przechowywania Exchange
+title: Dowiedz się więcej o przechowywaniu dla programu Exchange
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,54 +16,52 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak działa przechowywanie dla Exchange.
-ms.openlocfilehash: b49a21f5358bb8d4b25c1b164d30180f1fa265d9
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+description: Dowiedz się, jak działa przechowywanie w programie Exchange.
+ms.openlocfilehash: 1b4c255e2a228801ece0c98d0ac8686b3582ab30
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285951"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626012"
 ---
-# <a name="learn-about-retention-for-exchange"></a>Dowiedz się więcej na temat przechowywania Exchange
+# <a name="learn-about-retention-for-exchange"></a>Dowiedz się więcej o przechowywaniu dla programu Exchange
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Informacje zawarte w tym artykule uzupełniają informacje [na temat przechowywania](retention.md) , ponieważ zawierają informacje specyficzne dla programu Exchange.  W przypadku innych obciążeń zobacz:
 
-Informacje zawarte w tym artykule [uzupełniają informacje na temat przechowywania](retention.md), ponieważ zawierają informacje specyficzne dla Exchange.  W przypadku innych obciążeń zobacz:
-
-- [Dowiedz się więcej na temat przechowywania SharePoint i OneDrive](retention-policies-sharepoint.md)
-- [Dowiedz się więcej na temat przechowywania Microsoft Teams](retention-policies-teams.md)
-- [Dowiedz się więcej na temat przechowywania Yammer](retention-policies-yammer.md)
+- [Dowiedz się więcej o przechowywaniu dla programu SharePoint i usługi OneDrive](retention-policies-sharepoint.md)
+- [Dowiedz się więcej o przechowywaniu w usłudze Microsoft Teams](retention-policies-teams.md)
+- [Dowiedz się więcej na temat przechowywania usługi Yammer](retention-policies-yammer.md)
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Co jest dołączone do przechowywania i usuwania
 
-Następujące Exchange elementów ze skrzynek pocztowych użytkownika i udostępnionych skrzynek pocztowych można przechowywać i usuwać przy użyciu zasad przechowywania i etykiet przechowywania: Wiadomości e-mail (w tym odebrane wiadomości, wersje robocze, wysłane wiadomości) z załącznikami, zadaniami, gdy mają datę zakończenia i notatki. 
+Następujące elementy programu Exchange ze skrzynek pocztowych użytkownika i udostępnionych skrzynek pocztowych można przechowywać i usuwać przy użyciu zasad przechowywania i etykiet przechowywania: Wiadomości e-mail (w tym odebrane wiadomości, wersje robocze, wysłane wiadomości) z załącznikami, zadaniami, gdy mają datę zakończenia i notatki. 
 
 Elementy kalendarza, które mają datę końcową, są obsługiwane w przypadku zasad przechowywania, ale nie są obsługiwane w przypadku etykiet przechowywania.
 
 Kontakty oraz wszystkie zadania i elementy kalendarza, które nie mają daty zakończenia, nie są obsługiwane.
 
-Inne elementy przechowywane w skrzynce pocztowej, takie jak wiadomości Skype i Teams, nie są uwzględniane w zasadach przechowywania ani etykietach dla Exchange. Te elementy mają własne zasady przechowywania.
+Inne elementy przechowywane w skrzynce pocztowej, takie jak wiadomości Skype i Teams, nie są uwzględniane w zasadach przechowywania ani etykietach programu Exchange. Te elementy mają własne zasady przechowywania.
 
 Skrzynki pocztowe muszą mieć co najmniej 10 MB danych, zanim zostaną zastosowane ustawienia przechowywania, a etykiety przechowywania mogą być do nich publikowane.
 
-## <a name="how-retention-works-for-exchange"></a>Jak działa przechowywanie dla Exchange
+## <a name="how-retention-works-for-exchange"></a>Jak działa przechowywanie dla programu Exchange
 
 Zarówno skrzynka pocztowa, jak i folder publiczny używają [folderu Elementy możliwe do odzyskania](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) do przechowywania elementów. Tylko osoby, które mają przypisane uprawnienia do zbierania elektronicznych materiałów dowodowych, mogą wyświetlać elementy w folderze Elementy możliwe do odzyskania innego użytkownika.
   
 Gdy użytkownik usunie komunikat w folderze innym niż folder Elementy usunięte, domyślnie komunikat zostanie przeniesiony do folderu Elementy usunięte. Użytkownik może jednak usunąć nietrwale element (Shift+Delete) w dowolnym folderze, który pomija folder Elementy usunięte i przenosi element bezpośrednio do folderu Elementy możliwe do odzyskania.
   
-Po zastosowaniu ustawień przechowywania do Exchange danych zadanie czasomierza okresowo ocenia elementy w folderze Elementy możliwe do odzyskania. Jeśli element nie jest zgodny z regułami co najmniej jednej zasady przechowywania lub etykiety przechowywania w celu zachowania elementu, zostanie on trwale usunięty (nazywany również twardym usunięciem) z folderu Elementy możliwe do odzyskania.
+Po zastosowaniu ustawień przechowywania do danych programu Exchange zadanie czasomierza okresowo ocenia elementy w folderze Elementy możliwe do odzyskania. Jeśli element nie jest zgodny z regułami co najmniej jednej zasady przechowywania lub etykiety przechowywania w celu zachowania elementu, zostanie on trwale usunięty (nazywany również twardym usunięciem) z folderu Elementy możliwe do odzyskania.
 
 > [!NOTE]
 > Ze względu na [pierwszą zasadę przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) trwałe usunięcie jest zawsze zawieszone, jeśli ten sam element musi zostać zachowany z powodu innych zasad przechowywania lub etykiety przechowywania lub jest objęty blokadą zbierania elektronicznych materiałów dowodowych ze względów prawnych lub śledczych.
 
-Uruchomienie zadania czasomierza może potrwać do siedmiu dni, a lokalizacja Exchange musi zawierać co najmniej 10 MB.
+Uruchomienie zadania czasomierza może potrwać do siedmiu dni, a lokalizacja programu Exchange musi zawierać co najmniej 10 MB.
   
 Gdy użytkownik próbuje zmienić właściwości elementu skrzynki pocztowej — na przykład temat, treść, załączniki, nadawców i adresatów albo datę wysłania lub odebrania wiadomości — kopia oryginalnego elementu jest zapisywana w folderze Elementy możliwe do odzyskania, zanim zmiana zostanie zatwierdzona. Ta akcja jest wykonywana dla każdej kolejnej zmiany. Po zakończeniu okresu przechowywania kopie w folderze Elementy możliwe do odzyskania zostaną trwale usunięte.
 
-Po zastosowaniu ustawień przechowywania do Exchange zawartości ścieżki, które pobiera zawartość, zależą od tego, czy ustawienia przechowywania mają być zachowywane i usuwane, tylko do zachowania, czy usuwania.
+Po zastosowaniu ustawień przechowywania do zawartości programu Exchange ścieżki, które pobiera zawartość, zależą od tego, czy ustawienia przechowywania mają zostać zachowane i usunięte, czy tylko zachować, czy usunąć.
 
 Gdy ustawienia przechowywania mają zostać zachowane i usunięte:
 
@@ -89,7 +87,7 @@ Jeśli ustawienia przechowywania są tylko do zachowania lub tylko do usuwania, 
 
 ## <a name="user-notification-of-expiry-date"></a>Powiadomienie użytkownika o dacie wygaśnięcia
 
-Zasady przechowywania dla Exchange, w przeciwieństwie do zasad przechowywania dla innych obciążeń Microsoft 365, mają obecność użytkownika, wyświetlając w górnej części każdej wiadomości e-mail nazwę zasad przechowywania, która ma najkrótszą datę wygaśnięcia elementu, oraz obliczoną datę wygaśnięcia dla tego elementu. Użytkownicy nie widzą tego powiadomienia, jeśli zasady przechowywania nie usuwają elementów (tylko do zachowania).
+Zasady przechowywania dla programu Exchange, w przeciwieństwie do zasad przechowywania dla innych obciążeń platformy Microsoft 365, mają obecność użytkownika, wyświetlając u góry każdej wiadomości e-mail nazwę zasad przechowywania, która ma najkrótszą datę wygaśnięcia elementu, oraz obliczoną datę wygaśnięcia tego elementu. Użytkownicy nie widzą tego powiadomienia, jeśli zasady przechowywania nie usuwają elementów (tylko do zachowania).
 
 Jeśli etykieta przechowywania jest stosowana do wiadomości e-mail, nazwa tej etykiety i odpowiadająca jej data wygaśnięcia są zawsze wyświetlane i zastąpią nazwę i datę z wszelkich zasad przechowywania stosowanych do skrzynki pocztowej.
 
@@ -97,15 +95,15 @@ Pamiętaj, że w tym kontekście datą wygaśnięcia daty usunięcia wiadomości
 
 ## <a name="when-a-user-leaves-the-organization"></a>Gdy użytkownik opuszcza organizację 
 
-Jeśli użytkownik opuści organizację, a skrzynka pocztowa użytkownika zostanie uwzględniona w zasadach przechowywania, skrzynka pocztowa stanie się nieaktywną skrzynką pocztową po usunięciu konta Microsoft 365 użytkownika. Zawartość nieaktywnej skrzynki pocztowej nadal podlega wszelkim zasadom przechowywania, które zostały umieszczone w skrzynce pocztowej przed jej nieaktywnością, a zawartość jest dostępna dla wyszukiwania zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji, zobacz [Nieaktywne skrzynki pocztowe w Exchange Online](inactive-mailboxes-in-office-365.md).
+Jeśli użytkownik opuści organizację, a skrzynka pocztowa użytkownika zostanie uwzględniona w zasadach przechowywania, skrzynka pocztowa stanie się nieaktywną skrzynką pocztową po usunięciu konta microsoft 365 użytkownika. Zawartość nieaktywnej skrzynki pocztowej nadal podlega wszelkim zasadom przechowywania, które zostały umieszczone w skrzynce pocztowej przed jej nieaktywnością, a zawartość jest dostępna dla wyszukiwania zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji, zobacz [Nieaktywne skrzynki pocztowe w Exchange Online](inactive-mailboxes-in-office-365.md).
 
-Jeśli ustawienia przechowywania nie mają już zastosowania, ponieważ dane zostały trwale usunięte lub okres przechowywania wygasł, administrator Exchange może teraz [usunąć nieaktywną skrzynkę pocztową](delete-an-inactive-mailbox.md). W tym scenariuszu nieaktywna skrzynka pocztowa nie jest automatycznie usuwana.
+Gdy ustawienia przechowywania nie mają już zastosowania, ponieważ dane zostały trwale usunięte lub okres przechowywania wygasł, administrator programu Exchange może teraz [usunąć nieaktywną skrzynkę pocztową](delete-an-inactive-mailbox.md). W tym scenariuszu nieaktywna skrzynka pocztowa nie jest automatycznie usuwana.
 
 ## <a name="configuration-guidance"></a>Wskazówki dotyczące konfiguracji
 
-Jeśli dopiero zaczynasz konfigurować przechowywanie w Microsoft 365, zobacz [Wprowadzenie z zarządzaniem cyklem życia danych](get-started-with-data-lifecycle-management.md).
+Jeśli dopiero zaczynasz konfigurować przechowywanie w usłudze Microsoft 365, zobacz [Wprowadzenie do zarządzania cyklem życia danych](get-started-with-data-lifecycle-management.md).
 
-Jeśli wszystko jest gotowe do skonfigurowania zasad przechowywania lub etykiety przechowywania dla Exchange, zobacz następujące instrukcje:
+Jeśli wszystko jest gotowe do skonfigurowania zasad przechowywania lub etykiety przechowywania dla programu Exchange, zobacz następujące instrukcje:
 - [Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md)
 - [Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md)
 - [Automatyczne stosowanie etykiety przechowywania do zawartości](apply-retention-labels-automatically.md)

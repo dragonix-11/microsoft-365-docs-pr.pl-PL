@@ -15,16 +15,14 @@ search.appverid:
 - MET150
 recommendations: false
 description: dowiedz się więcej o warunkach i wyjątkach zasad dlp
-ms.openlocfilehash: cd252002f2fcef3e3935dd44b1333e801bcba46d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9e1c27e8b4aa79da94fd035bbeb15912b1618be8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090456"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629932"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Warunki, wyjątki i akcje zasad DLP
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Warunki i wyjątki w zasadach DLP identyfikują poufne elementy, do których są stosowane zasady. Akcje definiują, co się dzieje w wyniku spełnienia warunku wyjątku.
 
@@ -32,7 +30,7 @@ Warunki i wyjątki w zasadach DLP identyfikują poufne elementy, do których są
 - Wyjątki definiują, co należy wykluczyć.
 - Akcje definiują, co się dzieje w wyniku spełnienia warunku lub wyjątku
 
-Większość warunków i wyjątków ma jedną właściwość, która obsługuje co najmniej jedną wartość. Jeśli na przykład zasady DLP są stosowane do Exchange wiadomości e-mail, warunek **Nadawca** wymaga nadawcy wiadomości. Niektóre warunki mają dwie właściwości. Na przykład **nagłówek komunikatu A zawiera dowolny z tych warunków wyrazów** wymaga jednej właściwości do określenia pola nagłówka komunikatu, a drugiej właściwości określającej tekst do wyszukania w polu nagłówka. Niektóre warunki lub wyjątki nie mają żadnych właściwości. Na przykład **warunek Załącznik jest chroniony hasłem** po prostu szuka załączników w wiadomościach chronionych hasłem.
+Większość warunków i wyjątków ma jedną właściwość, która obsługuje co najmniej jedną wartość. Jeśli na przykład zasady DLP są stosowane do wiadomości e-mail programu Exchange, warunek **Nadawca** wymaga nadawcy wiadomości. Niektóre warunki mają dwie właściwości. Na przykład **nagłówek komunikatu A zawiera dowolny z tych warunków wyrazów** wymaga jednej właściwości do określenia pola nagłówka komunikatu, a drugiej właściwości określającej tekst do wyszukania w polu nagłówka. Niektóre warunki lub wyjątki nie mają żadnych właściwości. Na przykład **warunek Załącznik jest chroniony hasłem** po prostu szuka załączników w wiadomościach chronionych hasłem.
 
 Akcje zwykle wymagają dodatkowych właściwości. Na przykład gdy reguła zasad DLP przekierowuje komunikat, należy określić miejsce przekierowania komunikatu.
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
@@ -68,66 +66,66 @@ Aby skonfigurować lokalizację adresu nadawcy na poziomie reguły DLP, parametr
 
 - **Nagłówek lub koperta** (`HeaderOrEnvelope`) Sprawdź nadawców w nagłówku wiadomości i kopercie wiadomości.
 
-|warunek lub wyjątek w DLP|parametry warunku/wyjątku w programie Microsoft 365 programu PowerShell|typ właściwości|Opis|
+|warunek lub wyjątek w DLP|condition/exception parameters in Security & Compliance PowerShell (Parametry warunku/wyjątku w programie PowerShell & zabezpieczeń)|typ właściwości|Opis|
 |---|---|---|---|
-|Nadawca jest|warunek: *Od* <br/><br/> wyjątek: *ExceptIfFromom*|Adresy|Wiadomości wysyłane przez określone skrzynki pocztowe, użytkowników poczty, kontakty poczty lub grupy Microsoft 365 w organizacji.|
-|Nadawca jest członkiem |*FromMemberOf* <br/><br/> *ExceptIfFromMemberOf*|Adresy|Wiadomości wysyłane przez członka określonej grupy dystrybucyjnej, grupy zabezpieczeń z obsługą poczty lub grupy Microsoft 365.|
+|Nadawca jest|warunek: *Od* <br/><br/> wyjątek: *ExceptIfFromom*|Adresy|Wiadomości wysyłane przez określone skrzynki pocztowe, użytkowników poczty, kontakty poczty lub grupy platformy Microsoft 365 w organizacji.|
+|Nadawca jest członkiem |*FromMemberOf* <br/><br/> *ExceptIfFromMemberOf*|Adresy|Wiadomości wysyłane przez członka określonej grupy dystrybucyjnej, grupy zabezpieczeń z obsługą poczty lub grupy platformy Microsoft 365.|
 |Adres IP nadawcy jest|warunek: *SenderIPRanges*<br/><br/> wyjątek: *ExceptIfSenderIPRanges*|IpAddressRanges|Komunikaty, w których adres IP nadawcy jest zgodny z określonym adresem IP lub mieści się w określonym zakresie adresów IP.|
 |Adres nadawcy zawiera wyrazy|warunek: *FromAddressContainsWords* <br/><br/> wyjątek: *ExceptIfFromAddressContainsWords*|Słowy|Wiadomości zawierające określone wyrazy na adresie e-mail nadawcy.|
 |Adres nadawcy pasuje do wzorców|warunek: *FromAddressMatchesPatterns* <br/><br/> wyjątek: *ExceptFromAddressMatchesPatterns*|Wzorców|Wiadomości, w których adres e-mail nadawcy zawiera wzorce tekstowe zgodne z określonymi wyrażeniami regularnymi.|
-|Domena nadawcy jest|warunek: *SenderDomainIs* <br/><br/> wyjątek: *ExceptIfSenderDomainIs*|Nazwa_domeny|Wiadomości, w których domena adresu e-mail nadawcy jest zgodna z określoną wartością. Jeśli musisz znaleźć domeny nadawcy *zawierające* określoną domenę (na przykład dowolną poddomenę domeny), użyj warunku **Dopasowania adresu nadawcy** (*FromAddressMatchesPatterns*) i określ domenę przy użyciu składni: "\.domaincom\.$".|
+|Domena nadawcy jest|warunek: *SenderDomainIs* <br/><br/> wyjątek: *ExceptIfSenderDomainIs*|Nazwa_domeny|Wiadomości, w których domena adresu e-mail nadawcy jest zgodna z określoną wartością. Jeśli musisz znaleźć domeny nadawcy *zawierające* określoną domenę (na przykład dowolną poddomenę domeny), użyj warunku **Dopasowania adresu nadawcy** (*FromAddressMatchesPatterns*) i określ domenę przy użyciu składni: "\.domain\.com$".|
 |Zakres nadawcy|warunek: *FromScope* <br/><br/> wyjątek: *ExceptIfFromScope*|UserScopeFromom|Komunikaty wysyłane przez nadawców wewnętrznych lub zewnętrznych.|
 |Określone właściwości nadawcy obejmują dowolne z tych wyrazów|warunek: *SenderADAttributeContainsWords* <br/><br/> wyjątek: *ExceptIfSenderADAttributeContainsWords*|Pierwsza właściwość: `ADAttribute` <br/><br/> Druga właściwość: `Words`|Komunikaty, w których określony atrybut usługi Active Directory nadawcy zawiera dowolne z określonych słów.|
 |Określone właściwości nadawcy są zgodne z tymi wzorcami tekstowymi|warunek: *SenderADAttributeMatchesPatterns* <br/><br/> wyjątek: *ExceptIfSenderADAttributeMatchesPatterns*|Pierwsza właściwość: `ADAttribute` <br/><br/> Druga właściwość: `Patterns`|Komunikaty, w których określony atrybut usługi Active Directory nadawcy zawiera wzorce tekstowe zgodne z określonymi wyrażeniami regularnymi.|
 
 ### <a name="recipients"></a>Adresatów
 
-|warunek lub wyjątek w DLP|parametry warunku/wyjątku w programie Microsoft 365 programu PowerShell|typ właściwości|Opis|
+|warunek lub wyjątek w DLP|condition/exception parameters in Security & Compliance PowerShell (Parametry warunku/wyjątku w programie PowerShell & zabezpieczeń)|typ właściwości|Opis|
 |---|---|---|---|
 |Adresat jest|warunek: *SentTo* <br/><br/> wyjątek: *ExceptIfSentTo*|Adresy|Wiadomości, w których jednym z adresatów jest określona skrzynka pocztowa, użytkownik poczty lub kontakt pocztowy w organizacji. Adresaci mogą znajdować się w polach **Do**, **DW** lub **BCC** wiadomości.|
 |Domena adresata jest|warunek: *RecipientDomainIs* <br/><br/> wyjątek: *ExceptIfRecipientDomainIs*|Nazwa_domeny|Wiadomości, w których domena adresu e-mail adresata jest zgodna z określoną wartością.|
 |Adres odbiorcy zawiera wyrazy|warunek: *AnyOfRecipientAddressContainsWords* <br/><br/> wyjątek: *ExceptIfAnyOfRecipientAddressContainsWords*|Słowy|Wiadomości zawierające określone wyrazy na adres e-mail adresata. <br/><br/>**Uwaga**: ten warunek nie uwzględnia komunikatów wysyłanych do adresów proxy adresatów. Pasuje tylko do wiadomości wysyłanych na podstawowy adres e-mail adresata.|
 |Adres odbiorcy pasuje do wzorców|warunek: *AnyOfRecipientAddressMatchesPatterns* <br/><br/> wyjątek: *ExceptIfAnyOfRecipientAddressMatchesPatterns*|Wzorców|Wiadomości, w których adres e-mail adresata zawiera wzorce tekstowe zgodne z określonymi wyrażeniami regularnymi. <br/><br/> **Uwaga**: ten warunek nie uwzględnia komunikatów wysyłanych do adresów proxy adresatów. Pasuje tylko do wiadomości wysyłanych na podstawowy adres e-mail adresata.|
-|Wysłane do członka|warunek: *SentToMemberOf* <br/><br/> wyjątek: *ExceptIfSentToMemberOf*|Adresy|Wiadomości zawierające adresatów będących członkami określonej grupy dystrybucyjnej, grupy zabezpieczeń z obsługą poczty lub grupy Microsoft 365. Grupa może znajdować się w polach **Do**, **DW** lub **Bcc** komunikatu.|
+|Wysłane do członka|warunek: *SentToMemberOf* <br/><br/> wyjątek: *ExceptIfSentToMemberOf*|Adresy|Wiadomości zawierające adresatów będących członkami określonej grupy dystrybucyjnej, grupy zabezpieczeń z obsługą poczty lub grupy platformy Microsoft 365. Grupa może znajdować się w polach **Do**, **DW** lub **Bcc** komunikatu.|
 |Określone właściwości adresata obejmują dowolne z tych wyrazów |*AdresatADAttributeContainsWords* <br/><br/> *ExceptIfRecipientADAttributeContainsWords*|Pierwsza właściwość: `ADAttribute` <br/><br/> Druga właściwość: `Words`|Komunikaty, w których określony atrybut usługi Active Directory adresata zawiera dowolne z określonych wyrazów. <br/><br/> Należy pamiętać, że atrybut **Country** wymaga dwuliterowej wartości kodu kraju (na przykład DE dla Niemiec).|
 |Określone właściwości adresata są zgodne z tymi wzorcami tekstowymi |*AdresatADAttributeMatchesPatterns* <br/><br/> *ExceptIfRecipientADAttributeMatchesPatterns*|Pierwsza właściwość: `ADAttribute` <br/><br/> Druga właściwość: `Patterns`|Komunikaty, w których określony atrybut usługi Active Directory adresata zawiera wzorce tekstowe zgodne z określonymi wyrażeniami regularnymi.|
 
 ### <a name="message-subject-or-body"></a>Temat lub treść wiadomości
 
-|warunek lub wyjątek w DLP|parametry warunku/wyjątku w programie Microsoft 365 programu PowerShell|typ właściwości|Opis|
+|warunek lub wyjątek w DLP|condition/exception parameters in Security & Compliance PowerShell (Parametry warunku/wyjątku w programie PowerShell & zabezpieczeń)|typ właściwości|Opis|
 |---|---|---|---|
 |Temat zawiera wyrazy lub frazy|warunek: *SubjectContainsWords* <br/> wyjątek: *ExceptIf SubjectContainsWords*|Słowy|Komunikaty, które mają określone wyrazy w polu Temat.|
 |Temat pasuje do wzorców|warunek: *SubjectMatchesPatterns* <br/> wyjątek: *ExceptIf SubjectMatchesPatterns*|Wzorców|Komunikaty, w których pole Temat zawiera wzorce tekstowe zgodne z określonymi wyrażeniami regularnymi.|
-|Zawartość zawiera|warunek: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Komunikaty lub dokumenty zawierające poufne informacje zdefiniowane przez zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview.|
+|Zawartość zawiera|warunek: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Komunikaty lub dokumenty zawierające informacje poufne zdefiniowane przez zasady Ochrona przed utratą danych w Microsoft Purview (DLP).|
 |Temat lub treść pasują do wzorca|warunek: *SubjectOrBodyMatchesPatterns* <br/> wyjątek: *ExceptIfSubjectOrBodyMatchesPatterns*|Wzorców|Komunikaty, w których pole tematu lub treść wiadomości zawierają wzorce tekstowe zgodne z określonymi wyrażeniami regularnymi.|
 |Temat lub treść zawiera wyrazy|warunek: *SubjectOrBodyContainsWords* <br/> wyjątek: *ExceptIfSubjectOrBodyContainsWords*|Słowy|Komunikaty z określonymi wyrazami w polu tematu lub treści komunikatu|
 |
 
 ### <a name="attachments"></a>Załączniki
 
-|warunek lub wyjątek w DLP|parametry warunku/wyjątku w programie Microsoft 365 programu PowerShell|typ właściwości|Opis|
+|warunek lub wyjątek w DLP|condition/exception parameters in Security & Compliance PowerShell (Parametry warunku/wyjątku w programie PowerShell & zabezpieczeń)|typ właściwości|Opis|
 |---|---|---|---|
-|Załącznik jest chroniony hasłem|warunek: *DocumentIsPasswordProtected* <br/><br/> wyjątek: *ExceptIfDocumentIsPasswordProtected*|Brak|Komunikaty, w których załącznik jest chroniony hasłem (dlatego nie można go skanować). Wykrywanie haseł działa tylko w przypadku dokumentów Office, plików .zip i plików 7z.|
+|Załącznik jest chroniony hasłem|warunek: *DocumentIsPasswordProtected* <br/><br/> wyjątek: *ExceptIfDocumentIsPasswordProtected*|brak|Komunikaty, w których załącznik jest chroniony hasłem (dlatego nie można go skanować). Wykrywanie haseł działa tylko w przypadku dokumentów pakietu Office, plików .zip i plików 7z.|
 |Rozszerzenie pliku załącznika to|warunek: *ContentExtensionMatchesWords* <br/><br/> wyjątek: *ExceptIfContentExtensionMatchesWords*|Słowy|Komunikaty, w których rozszerzenie pliku załącznika pasuje do dowolnego z określonych wyrazów.|
 |Nie można skanować zawartości załącznika wiadomości e-mail|warunek: *DocumentIsUnsupported* <br/><br/>wyjątek: *ExceptIf DocumentIsUnsupported*|nie dotyczy|Komunikaty, w których załącznik nie jest natywnie rozpoznawany przez Exchange Online.|
 |Zawartość załącznika wiadomości e-mail nie została ukończona podczas skanowania|warunek: *ProcessingLimitExceeded* <br/><br/> wyjątek: *ExceptIfProcessingLimitExceeded*|nie dotyczy|Komunikaty, w których aparat reguł nie mógł ukończyć skanowania załączników. Ten warunek służy do tworzenia reguł, które współpracują ze sobą w celu identyfikowania i przetwarzania komunikatów, w których nie można w pełni skanować zawartości.|
 |Nazwa dokumentu zawiera wyrazy|warunek: *DocumentNameMatchesWords* <br/><br/> wyjątek: *ExceptIfDocumentNameMatchesWords*|Słowy|Komunikaty, w których nazwa pliku załącznika jest zgodna z dowolnym z określonych wyrazów.|
 |Nazwa dokumentu jest zgodna z wzorcami|warunek: *DocumentNameMatchesPatterns* <br/><br/> wyjątek: *ExceptIfDocumentNameMatchesPatterns*|Wzorców|Komunikaty, w których nazwa pliku załącznika zawiera wzorce tekstowe zgodne z określonymi wyrażeniami regularnymi.|
-|Właściwość dokumentu jest|warunek: *ContentPropertyContainsWords* <br/><br/> wyjątek: *ExceptIfContentPropertyContainsWords*|Słowy|Komunikaty lub dokumenty, w których rozszerzenie pliku załącznika pasuje do dowolnego z określonych wyrazów.|
+|Właściwość dokumentu jest|warunek: *ContentPropertyContainsWords* <br/><br/> wyjątek: *ExceptIfContentPropertyContainsWords*|Słowy|Komunikaty z dokumentami, w których właściwość niestandardowa załącznika jest zgodna z daną wartością.|
 |Rozmiar dokumentu jest równy lub większy niż|warunek: *DocumentSizeOver* <br/><br/> wyjątek: *ExceptIfDocumentSizeOver*|Rozmiar|Komunikaty, w których dowolny załącznik jest większy lub równy określonej wartości.|
 |Zawartość załącznika zawiera dowolne z tych słów|warunek: *DocumentContainsWords* <br/><br/> wyjątek: *ExceptIfDocumentContainsWords*|`Words`|Komunikaty, w których załącznik zawiera określone wyrazy.|
 |Zawartość załączników pasuje do tych wzorców tekstowych|warunek: *DocumentMatchesPatterns* <br/><br/> wyjątek: *ExceptIfDocumentMatchesPatterns*|`Patterns`|Komunikaty, w których załącznik zawiera wzorce tekstowe zgodne z określonymi wyrażeniami regularnymi.|
 
 ### <a name="message-headers"></a>Nagłówki komunikatów
 
-|warunek lub wyjątek w DLP|parametry warunku/wyjątku w programie Microsoft 365 programu PowerShell|typ właściwości|Opis|
+|warunek lub wyjątek w DLP|condition/exception parameters in Security & Compliance PowerShell (Parametry warunku/wyjątku w programie PowerShell & zabezpieczeń)|typ właściwości|Opis|
 |---|---|---|---|
 |Nagłówek zawiera wyrazy lub frazy|warunek: *HeaderContainsWords* <br/><br/> wyjątek: *ExceptIfHeaderContainsWords*|Tabela skrótów|Komunikaty zawierające określone pole nagłówka i wartość tego pola nagłówka zawierają określone wyrazy.|
 |Nagłówek pasuje do wzorców|warunek: *HeaderMatchesPatterns* <br/><br/> wyjątek: *ExceptIfHeaderMatchesPatterns*|Tabela skrótów|Komunikaty zawierające określone pole nagłówka i wartość tego pola nagłówka zawierają określone wyrażenia regularne.|
 
 ### <a name="message-properties"></a>Właściwości komunikatu
 
-|warunek lub wyjątek w DLP|parametry warunku/wyjątku w programie Microsoft 365 programu PowerShell|typ właściwości|Opis|
+|warunek lub wyjątek w DLP|condition/exception parameters in Security & Compliance PowerShell (Parametry warunku/wyjątku w programie PowerShell & zabezpieczeń)|typ właściwości|Opis|
 |---|---|---|---|
 |Z ważnością|warunek: *WithImportance* <br/><br/> wyjątek: *ExceptIfWithImportance*|Znaczenie|Komunikaty oznaczone określonym poziomem ważności.|
 |Zestaw znaków zawartości zawiera wyrazy|warunek: *ContentCharacterSetContainsWords* <br/><br/> *ExceptIfContentCharacterSetContainsWords*|Zestawy znaków|Komunikaty, które mają dowolną z określonych nazw zestawów znaków.|
@@ -139,7 +137,7 @@ Aby skonfigurować lokalizację adresu nadawcy na poziomie reguły DLP, parametr
 
 W tej tabeli opisano akcje dostępne w programie DLP.
 
-|akcja w programie DLP|parametry akcji w programie Microsoft 365 PowerShell|typ właściwości|Opis|
+|akcja w programie DLP|parametry akcji w programie PowerShell security & Compliance|typ właściwości|Opis|
 |---|---|---|---|
 |Ustaw nagłówek|SetHeader|Pierwsza właściwość: *Nazwa nagłówka* <br/><br/> Druga właściwość: *Wartość nagłówka*|Parametr SetHeader określa akcję reguły DLP, która dodaje lub modyfikuje pole nagłówka i wartość w nagłówku komunikatu. Ten parametr używa składni "HeaderName:HeaderValue". Można określić wiele par nazw nagłówków i wartości rozdzielonych przecinkami|
 |Usuń nagłówek|RemoveHeader|Pierwsza właściwość: *MessageHeaderField*<br/><br/> Druga właściwość: *String*|Parametr RemoveHeader określa akcję reguły DLP, która usuwa pole nagłówka z nagłówka komunikatu. Ten parametr używa składni "HeaderName" lub "HeaderName:HeaderValue". Można określić wiele nazw nagłówków lub nazw nagłówków i par wartości rozdzielonych przecinkami|

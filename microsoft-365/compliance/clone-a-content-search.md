@@ -17,19 +17,17 @@ search.appverid:
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
-description: Użyj skryptu programu PowerShell w tym artykule, aby szybko sklonować istniejące wyszukiwanie zawartości w portalu zgodności usługi Microsoft Purview w Microsoft 365.
-ms.openlocfilehash: f5ec0433e445256865033b71082c92889972f827
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Użyj skryptu programu PowerShell w tym artykule, aby szybko sklonować istniejące wyszukiwanie zawartości w portal zgodności Microsoft Purview na platformie Microsoft 365.
+ms.openlocfilehash: 806705202865d97136713dba4afb263b605ef0f8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017449"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628820"
 ---
 # <a name="clone-a-content-search"></a>Klonowanie wyszukiwania zawartości
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Tworzenie wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview w Microsoft 365, które wyszukuje wiele skrzynek pocztowych lub SharePoint i witryn OneDrive dla Firm, może trochę potrwać. Określanie witryn do wyszukiwania może być również podatne na błędy, jeśli błędnie określisz adres URL. Aby uniknąć tych problemów, możesz użyć skryptu Windows PowerShell w tym artykule, aby szybko sklonować istniejące wyszukiwanie zawartości. Podczas klonowania wyszukiwania jest tworzone nowe wyszukiwanie (o innej nazwie), które zawiera te same właściwości (takie jak lokalizacje zawartości i zapytanie wyszukiwania) co oryginalne wyszukiwanie. Następnie możesz edytować nowe wyszukiwanie, zmieniając zapytanie słowa kluczowego lub zakres dat i uruchamiając je.
+Tworzenie wyszukiwania zawartości w portal zgodności Microsoft Purview na platformie Microsoft 365, które wyszukuje wiele skrzynek pocztowych lub witryn programu SharePoint i OneDrive dla Firm, może trochę potrwać. Określanie witryn do wyszukiwania może być również podatne na błędy, jeśli błędnie określisz adres URL. Aby uniknąć tych problemów, możesz użyć skryptu Windows PowerShell w tym artykule, aby szybko sklonować istniejące wyszukiwanie zawartości. Podczas klonowania wyszukiwania jest tworzone nowe wyszukiwanie (o innej nazwie), które zawiera te same właściwości (takie jak lokalizacje zawartości i zapytanie wyszukiwania) co oryginalne wyszukiwanie. Następnie możesz edytować nowe wyszukiwanie, zmieniając zapytanie słowa kluczowego lub zakres dat i uruchamiając je.
 
 Dlaczego warto klonować wyszukiwania zawartości?
 
@@ -43,13 +41,13 @@ Dlaczego warto klonować wyszukiwania zawartości?
 
 - Musisz zainstalować moduł Exchange Online V2. Aby uzyskać instrukcje, zobacz [Instalowanie i obsługa modułu EXO w wersji 2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-- Aby uruchomić skrypt opisany w tym temacie, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview.
+- Aby uruchomić skrypt opisany w tym temacie, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview.
 
 - Skrypt zawiera minimalną obsługę błędów. Podstawowym celem skryptu jest szybkie sklonowanie wyszukiwania zawartości.
 
 - Skrypt tworzy nowe wyszukiwanie zawartości, ale nie uruchamia go.
 
-- Ten skrypt uwzględnia, czy klonowanie wyszukiwania zawartości jest skojarzone z przypadkiem zbierania elektronicznych materiałów dowodowych. Jeśli wyszukiwanie jest skojarzone ze sprawą, nowe wyszukiwanie będzie również skojarzone z tym samym przypadkiem. Jeśli istniejące wyszukiwanie nie jest skojarzone ze sprawą, nowe wyszukiwanie zostanie wyświetlone na stronie **wyszukiwania zawartości** w portalu zgodności usługi Microsoft Purview.
+- Ten skrypt uwzględnia, czy klonowanie wyszukiwania zawartości jest skojarzone z przypadkiem zbierania elektronicznych materiałów dowodowych. Jeśli wyszukiwanie jest skojarzone ze sprawą, nowe wyszukiwanie będzie również skojarzone z tym samym przypadkiem. Jeśli istniejące wyszukiwanie nie jest skojarzone ze sprawą, nowe wyszukiwanie zostanie wyświetlone na stronie **wyszukiwania zawartości** w portal zgodności Microsoft Purview.
 
 - Przykładowy skrypt podany w tym temacie nie jest obsługiwany w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowy skrypt jest dostarczany jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowego skryptu i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
@@ -57,7 +55,7 @@ Dlaczego warto klonować wyszukiwania zawartości?
 
 Skrypt w tym kroku utworzy nowe wyszukiwanie zawartości przez sklonowanie istniejącego. Po uruchomieniu tego skryptu zostanie wyświetlony monit o podanie następujących informacji:
 
-- **Poświadczenia użytkownika** — skrypt będzie używać poświadczeń w celu nawiązania połączenia z programem PowerShell security & Compliance. Jak wspomniano wcześniej, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview, aby uruchomić skrypt.
+- **Poświadczenia użytkownika** — skrypt będzie używać poświadczeń w celu nawiązania połączenia z programem PowerShell security & Compliance. Jak wspomniano wcześniej, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview, aby uruchomić skrypt.
 
 - **Nazwa istniejącego wyszukiwania** — jest to wyszukiwanie zawartości, które chcesz sklonować.
 
@@ -113,7 +111,7 @@ Aby sklonować wyszukiwanie:
    }
    ```
 
-2. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell). W tym samym oknie programu PowerShell przejdź do folderu, w którym zapisano skrypt.
+2. [Połącz się z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell). W tym samym oknie programu PowerShell przejdź do folderu, w którym zapisano skrypt.
 
 3. Uruchom skrypt; na przykład:
 
@@ -126,11 +124,11 @@ Aby sklonować wyszukiwanie:
      - Nazwa istniejącego wyszukiwania.
      - Nazwa nowego wyszukiwania.
 
-     Skrypt tworzy nowe wyszukiwanie zawartości, ale nie uruchamia go. Dzięki temu możesz edytować i uruchomić wyszukiwanie w następnym kroku. Właściwości nowego wyszukiwania można wyświetlić, uruchamiając polecenie cmdlet **Get-ComplianceSearch** lub przechodząc do strony **Wyszukiwanie zawartości** lub **eDiscovery** w portalu zgodności usługi Microsoft Purview, w zależności od tego, czy nowe wyszukiwanie jest skojarzone ze sprawą.
+     Skrypt tworzy nowe wyszukiwanie zawartości, ale nie uruchamia go. Dzięki temu możesz edytować i uruchomić wyszukiwanie w następnym kroku. Właściwości nowego wyszukiwania można wyświetlić, uruchamiając polecenie cmdlet **Get-ComplianceSearch** lub przechodząc do strony **Wyszukiwanie zawartości** lub **eDiscovery** w portal zgodności Microsoft Purview, w zależności od tego, czy nowe wyszukiwanie jest skojarzone ze sprawą.
 
-## <a name="step-2-edit-and-run-the-cloned-search-in-the-microsoft-purview-compliance-portal"></a>Krok 2. Edytowanie i uruchamianie sklonowanego wyszukiwania w portalu zgodności usługi Microsoft Purview
+## <a name="step-2-edit-and-run-the-cloned-search-in-the-microsoft-purview-compliance-portal"></a>Krok 2. Edytowanie i uruchamianie sklonowanego wyszukiwania w portal zgodności Microsoft Purview
 
-Po uruchomieniu skryptu w celu sklonowania istniejącego wyszukiwania zawartości następnym krokiem jest przejście do portalu zgodności usługi Microsoft Purview w celu edytowania i uruchomienia nowego wyszukiwania. Jak wspomniano wcześniej, możesz edytować wyszukiwanie, zmieniając zapytanie wyszukiwania słów kluczowych i dodając lub usuwając warunki wyszukiwania. Więcej informacji można znaleźć w następujących artykułach:
+Po uruchomieniu skryptu w celu sklonowania istniejącego wyszukiwania zawartości następnym krokiem jest przejście do portal zgodności Microsoft Purview w celu edytowania i uruchomienia nowego wyszukiwania. Jak wspomniano wcześniej, możesz edytować wyszukiwanie, zmieniając zapytanie wyszukiwania słów kluczowych i dodając lub usuwając warunki wyszukiwania. Więcej informacji można znaleźć w następujących artykułach:
 
 - [Wyszukiwanie zawartości w Office 365](content-search.md)
 

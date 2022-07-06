@@ -1,5 +1,5 @@
 ---
-title: Szyfrowanie w Microsoft 365
+title: Szyfrowanie w usłudze Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -20,18 +20,16 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Dzięki Office 365 zawartość jest szyfrowana w spoczynku i przesyłana przy użyciu najsilniejszego szyfrowania, protokołów i dostępnych technologii. Zapoznaj się z omówieniem szyfrowania w Office 365.
-ms.openlocfilehash: 5b7b0f9fecbcbb6150eb56e19757c954aeb3e812
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: e26ade7021434461e72e24b7aa8176888d9c21d0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637478"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629646"
 ---
 # <a name="encryption"></a>Szyfrowanie
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Szyfrowanie jest ważną częścią strategii ochrony plików i ochrony informacji. Ten artykuł zawiera omówienie szyfrowania dla Office 365. Uzyskaj pomoc dotyczącą zadań szyfrowania, takich jak konfigurowanie szyfrowania dla organizacji i jak chronić hasła Office dokumentów.
+Szyfrowanie jest ważną częścią strategii ochrony plików i ochrony informacji. Ten artykuł zawiera omówienie szyfrowania dla Office 365. Uzyskaj pomoc dotyczącą zadań szyfrowania, takich jak konfigurowanie szyfrowania dla organizacji i sposób ochrony hasłem dokumentów pakietu Office.
   
 - Aby uzyskać informacje o certyfikatach i technologiach, takich jak protokół TLS, zobacz [Informacje techniczne dotyczące szyfrowania w Office 365](technical-reference-details-about-encryption.md).
 
@@ -47,7 +45,7 @@ W tym samym czasie można mieć wiele warstw szyfrowania. Możesz na przykład s
   
 ## <a name="encryption-for-data-at-rest-and-data-in-transit"></a>Szyfrowanie danych magazynowanych i danych podczas przesyłania
 
- **Przykłady danych magazynowanych** obejmują pliki przekazane do biblioteki SharePoint, dane Project Online, dokumenty przekazane podczas spotkania Skype dla firm, wiadomości e-mail i załączniki przechowywane w folderach w skrzynce pocztowej oraz pliki przekazane do OneDrive dla Firm.
+ **Przykłady danych magazynowanych** obejmują pliki przekazane do biblioteki programu SharePoint, Project Online dane, dokumenty przekazane na spotkaniu Skype dla firm, wiadomości e-mail i załączniki przechowywane w folderach w skrzynce pocztowej oraz pliki przekazane do OneDrive dla Firm.
   
  **Przykłady danych przesyłanych** obejmują wiadomości e-mail, które są w trakcie dostarczania, lub konwersacje, które odbywają się na spotkaniu online. W Office 365 dane są przesyłane za każdym razem, gdy urządzenie użytkownika komunikuje się z serwerem firmy Microsoft lub gdy serwer firmy Microsoft komunikuje się z innym serwerem.
   
@@ -55,20 +53,20 @@ Dzięki Office 365 wiele warstw i rodzajów szyfrowania współdziała ze sobą 
   
 |**Rodzaje zawartości**|**Technologie szyfrowania**|**Zasoby, aby dowiedzieć się więcej**|
 |:-----|:-----|:-----|
-|Pliki na urządzeniu. Te pliki mogą obejmować wiadomości e-mail zapisane w folderze, Office dokumenty zapisane na komputerze, tablecie lub telefonie albo dane zapisane w chmurze firmy Microsoft.  <br/> |BitLocker w centrach danych firmy Microsoft. BitLocker mogą być również używane na maszynach klienckich, takich jak komputery Windows i tablety  <br/> Rozproszony menedżer kluczy (DKM) w centrach danych firmy Microsoft  <br/> Klucz klienta dla Microsoft 365  <br/> |[Windows Centrum IT: BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centrum zaufania firmy Microsoft: szyfrowanie](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Seria kontroli zabezpieczeń w chmurze: szyfrowanie danych magazynowanych](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Jak usługa Exchange Online zabezpiecza Twoje tajne wpisy poczty e-mail](exchange-online-secures-email-secrets.md) <br/> [Szyfrowanie usługi przy użyciu klucza klienta](customer-key-overview.md) <br/> |
-|Pliki przesyłane między użytkownikami. Te pliki mogą zawierać dokumenty Office lub SharePoint elementy listy udostępnione użytkownikom.  <br/> |Protokół TLS dla plików przesyłane  <br/> |[Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype dla firm Online: zabezpieczenia i archiwizacja](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features) <br/> |
-|Wiadomość e-mail przesyłana między adresatami. Ta wiadomość e-mail zawiera wiadomości e-mail hostowane przez Exchange Online.  <br/> |Szyfrowanie wiadomości w Microsoft Purview z usługami Azure Rights Management, S/MIME i TLS na potrzeby przesyłania wiadomości e-mail  <br/> |[Szyfrowanie komunikatów](ome.md) <br/> [Szyfrowanie wiadomości e-mail w Office 365](email-encryption.md) <br/> [Jak usługa Exchange Online używa protokołu TLS do zabezpieczania połączeń poczty e-mail w usłudze Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
-|Czaty, wiadomości i pliki przesyłane między adresatami przy użyciu Microsoft Teams. <br/> |Teams używa protokołu TLS i MTLS do szyfrowania wiadomości błyskawicznych. Ruch multimediów jest szyfrowany przy użyciu protokołu Secure RTP (SRTP). Teams używa zgodnych algorytmów FIPS (Federal Information Processing Standard) do wymiany kluczy szyfrowania. <br/> |[Szyfrowanie dla Teams](/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
+|Pliki na urządzeniu. Te pliki mogą obejmować wiadomości e-mail zapisane w folderze, dokumenty pakietu Office zapisane na komputerze, tablecie lub telefonie albo dane zapisane w chmurze firmy Microsoft.  <br/> |BitLocker w centrach danych firmy Microsoft. BitLocker mogą być również używane na maszynach klienckich, takich jak komputery z systemem Windows i tablety  <br/> Rozproszony menedżer kluczy (DKM) w centrach danych firmy Microsoft  <br/> Klucz klienta dla platformy Microsoft 365  <br/> |[Centrum IT systemu Windows: BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centrum zaufania firmy Microsoft: szyfrowanie](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Seria kontroli zabezpieczeń w chmurze: szyfrowanie danych magazynowanych](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Jak usługa Exchange Online zabezpiecza Twoje tajne wpisy poczty e-mail](exchange-online-secures-email-secrets.md) <br/> [Szyfrowanie usługi przy użyciu klucza klienta](customer-key-overview.md) <br/> |
+|Pliki przesyłane między użytkownikami. Te pliki mogą zawierać dokumenty pakietu Office lub elementy listy programu SharePoint udostępnione użytkownikom.  <br/> |Protokół TLS dla plików przesyłane  <br/> |[Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype dla firm Online: zabezpieczenia i archiwizacja](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features) <br/> |
+|Wiadomość e-mail przesyłana między adresatami. Ta wiadomość e-mail zawiera wiadomości e-mail hostowane przez Exchange Online.  <br/> |Szyfrowanie wiadomości w Microsoft Purview z usługą Azure Rights Management, protokołem S/MIME i protokołem TLS na potrzeby przesyłania wiadomości e-mail  <br/> |[Szyfrowanie komunikatów](ome.md) <br/> [Szyfrowanie wiadomości e-mail w Office 365](email-encryption.md) <br/> [Jak usługa Exchange Online używa protokołu TLS do zabezpieczania połączeń poczty e-mail w usłudze Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
+|Czaty, wiadomości i pliki przesyłane między adresatami przy użyciu usługi Microsoft Teams. <br/> |Usługa Teams używa protokołu TLS i MTLS do szyfrowania wiadomości błyskawicznych. Ruch multimediów jest szyfrowany przy użyciu protokołu Secure RTP (SRTP). Usługa Teams używa zgodnych algorytmów FIPS (Federal Information Processing Standard) do wymiany kluczy szyfrowania. <br/> |[Szyfrowanie dla usługi Teams](/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
 
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>Co zrobić, jeśli potrzebuję większej kontroli nad szyfrowaniem, aby spełnić wymagania dotyczące zabezpieczeń i zgodności?
 
-Microsoft 365 udostępnia rozwiązania zarządzane przez firmę Microsoft do szyfrowania woluminów, szyfrowania plików i szyfrowania skrzynek pocztowych w Office 365. Ponadto firma Microsoft udostępnia rozwiązania szyfrowania, które można zarządzać i kontrolować. Te rozwiązania szyfrowania są oparte na platformie Azure.
+Platforma Microsoft 365 udostępnia rozwiązania zarządzane przez firmę Microsoft do szyfrowania woluminów, szyfrowania plików i szyfrowania skrzynek pocztowych w Office 365. Ponadto firma Microsoft udostępnia rozwiązania szyfrowania, które można zarządzać i kontrolować. Te rozwiązania szyfrowania są oparte na platformie Azure.
   
 Aby dowiedzieć się więcej, zobacz następujące zasoby:
   
 - [Co to jest usługa Azure Rights Management?](/information-protection/understand-explore/what-is-azure-rms)
 
-- [Aktywowanie Rights Management w centrum administracyjnym](../enterprise/activate-rms-in-microsoft-365.md)
+- [Aktywowanie usługi Rights Management w centrum administracyjnym](../enterprise/activate-rms-in-microsoft-365.md)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -82,14 +80,14 @@ Aby dowiedzieć się więcej, zobacz następujące zasoby:
 |:-----|:-----|
 |Konfigurowanie szyfrowania dla mojej organizacji|[Konfigurowanie szyfrowania w Office 365 Enterprise](set-up-encryption.md)|
 |Wyświetlanie szczegółów dotyczących certyfikatów, technologii i zestawów szyfrowania TLS|[Szczegóły techniczne dotyczące szyfrowania](technical-reference-details-about-encryption.md)|
-|Praca z zaszyfrowanymi wiadomościami na urządzeniu przenośnym|[Wyświetlanie zaszyfrowanych komunikatów na urządzeniu Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) [Wyświetl zaszyfrowane wiadomości w iPhone lub iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)|
-|Szyfrowanie dokumentu przy użyciu ochrony hasłem. (Ochrona hasłem nie jest obsługiwana w przeglądarce. Używaj klasycznych wersji programu Word, Excel i PowerPoint do ochrony hasłem). |[Dodaj lub usuń ochronę w dokumencie, skoroszycie lub prezentacji](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826). Wybierz sekcję **Dodawanie ochrony** , a następnie zobacz **Szyfrowanie przy użyciu hasła**.|
+|Praca z zaszyfrowanymi wiadomościami na urządzeniu przenośnym|[Wyświetlanie zaszyfrowanych wiadomości na urządzeniu z systemem Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb)[Wyświetlanie zaszyfrowanych wiadomości na telefonie iPhone lub urządzeniu iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)|
+|Szyfrowanie dokumentu przy użyciu ochrony hasłem. (Ochrona hasłem nie jest obsługiwana w przeglądarce. Używanie klasycznych wersji programów Word, Excel i PowerPoint do ochrony hasłem). |[Dodaj lub usuń ochronę w dokumencie, skoroszycie lub prezentacji](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826). Wybierz sekcję **Dodawanie ochrony** , a następnie zobacz **Szyfrowanie przy użyciu hasła**.|
 |Usuwanie szyfrowania z dokumentu|[Dodaj lub usuń ochronę w dokumencie, skoroszycie lub prezentacji](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826). Wybierz sekcję **Usuń ochronę** , a następnie zobacz **Usuwanie szyfrowania haseł**.  |
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Planowanie Microsoft 365 możliwości zabezpieczeń i ochrony informacji](plan-for-security-and-compliance.md)
+[Planowanie możliwości zabezpieczeń i ochrony informacji na platformie Microsoft 365](plan-for-security-and-compliance.md)
 
-[Najlepsze rozwiązania dotyczące zabezpieczania Microsoft 365 dla planów biznesowych](/office365/admin/security-and-compliance/secure-your-business-data)
+[Najlepsze rozwiązania dotyczące zabezpieczania planów platformy Microsoft 365 dla firm](/office365/admin/security-and-compliance/secure-your-business-data)
 
 [Microsoft Stream szyfrowanie i przepływ odtwarzania na poziomie wideo](/stream/network-overview#video-level-encryption-and-playback-flow)

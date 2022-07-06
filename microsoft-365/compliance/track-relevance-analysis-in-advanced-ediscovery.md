@@ -1,5 +1,5 @@
 ---
-title: Śledzenie analizy istotności w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
+title: Śledzenie analizy istotności w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,19 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
-description: Dowiedz się, jak wyświetlać i interpretować stan trenowania istotności i wyniki dotyczące problemów ze sprawami zbierania elektronicznych materiałów dowodowych (Premium).
-ms.openlocfilehash: dd2eecbcd347125b1728851d873068b37f82aced
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak wyświetlać i interpretować stan trenowania istotności i wyniki dotyczące problemów ze sprawami w usłudze eDiscovery (Premium).
+ms.openlocfilehash: dce726553d5664714f9c479113ae00abd91aafff
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093992"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627354"
 ---
-# <a name="track-relevance-analysis-in-ediscovery-premium"></a>Śledzenie analizy istotności w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="track-relevance-analysis-in-ediscovery-premium"></a>Śledzenie analizy istotności w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
   
-W usłudze Microsoft Purview eDiscovery (Premium) na karcie Śledzenie istotności jest wyświetlana obliczona ważność trenowania istotności wykonywanego na karcie Tag i wskazuje następny krok do wykonania w procesie trenowania iteracyjnego w obszarze Istotność. 
+W Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) na karcie Śledzenie istotności jest wyświetlana obliczona ważność trenowania istotności wykonywanego na karcie Tag i wskazuje następny krok do wykonania w procesie trenowania iteracyjnego w obszarze Istotność. 
   
 ## <a name="tracking-relevance-training-status"></a>Śledzenie stanu trenowania istotności
 
@@ -61,7 +59,7 @@ W usłudze Microsoft Purview eDiscovery (Premium) na karcie Śledzenie istotnoś
 
 ### <a name="reaching-stable-training-levels"></a>Osiąganie stabilnych poziomów trenowania
 
-Gdy pliki oceny osiągną stabilny poziom trenowania, funkcja zbierania elektronicznych materiałów dowodowych (Premium) jest gotowa do obliczeń usługi Batch.
+Po osiągnięciu przez pliki oceny stabilnego poziomu trenowania funkcja eDiscovery (Premium) jest gotowa do obliczeń usługi Batch.
   
 > [!NOTE]
 > Zwykle po trzech stabilnych przykładach trenowania następnym krokiem jest "Obliczenie usługi Batch". Mogą wystąpić wyjątki, na przykład gdy wprowadzono zmiany tagowania plików z wcześniejszych przykładów lub gdy pliki inicjujące zostały dodane. 
@@ -110,7 +108,7 @@ Na karcie **Śledzenie istotności \>** rozwiń wiersz problemu, a następnie ob
   
 ### <a name="keywords"></a>Słowa kluczowe
 
-Słowo kluczowe jest unikatowym ciągiem, słowem, frazą lub sekwencją wyrazów w pliku zidentyfikowanym przez funkcję eDiscovery (Premium) jako znaczący wskaźnik istotności pliku. Kolumny "Dołącz" zawierają słowo kluczowe i wagi w plikach oznaczonych jako Odpowiednie, a kolumny "Wyklucz" zawierają słowa kluczowe i wagi w plikach oznaczonych jako Nieistotne.
+Słowo kluczowe to unikatowy ciąg, wyraz, fraza lub sekwencja wyrazów w pliku zidentyfikowanym przez funkcję zbierania elektronicznych materiałów dowodowych (Premium) jako znaczący wskaźnik istotności pliku. Kolumny "Dołącz" zawierają słowo kluczowe i wagi w plikach oznaczonych jako Odpowiednie, a kolumny "Wyklucz" zawierają słowa kluczowe i wagi w plikach oznaczonych jako Nieistotne.
   
 Funkcja zbierania elektronicznych materiałów dowodowych (Premium) przypisuje ujemne lub dodatnie wartości wagi słowa kluczowego. Im wyższa waga, tym większe prawdopodobieństwo, że plik, w którym pojawia się słowo kluczowe, zostanie przypisany wyższy wynik istotności podczas obliczania usługi Batch.
   
@@ -130,7 +128,7 @@ Okienko **Postęp trenowania** zawiera wykres postępu trenowania i wskaźnik ja
 
 - **Ostrzeżenie**: Wiele plików może być oznakowanych niespójnie. (Wyświetlane czerwone światło)
 
-**Wykres postępu trenowania**: pokazuje stopień stabilności trenowania istotności po wielu cyklach trenowania istotności w porównaniu z wartością F-measure. Gdy przechodzimy od lewej do prawej strony wykresu, interwał ufności zmniejsza się i jest używany wraz z miarą F przez funkcję eDiscovery (Premium) Istotność, aby określić stabilność, gdy wyniki trenowania istotności zostaną zoptymalizowane.
+**Wykres postępu trenowania**: pokazuje stopień stabilności trenowania istotności po wielu cyklach trenowania istotności w porównaniu z wartością F-measure. Gdy przechodzimy od lewej do prawej strony wykresu, interwał ufności zmniejsza się i jest używany wraz z miarą F przez funkcję eDiscovery (Premium) Relevance, aby określić stabilność, gdy wyniki trenowania istotności zostaną zoptymalizowane.
   
 > [!NOTE]
 > Istotność używa F2, metryki miary F, w której funkcja Recall otrzymuje dwa razy większą wagę niż precyzja. W przypadku przypadków o wysokim bogactwie (ponad 25%), w przypadku istotności jest używana wartość F1 (stosunek 1:1). Współczynnik miarY F można skonfigurować w ustawieniach **zaawansowanych** **konfiguracji** \> istotności.
@@ -154,7 +152,7 @@ Okienko **wyników obliczeń usługi Batch** zawiera liczbę plików, które zos
   
 ### <a name="training-statistics"></a>Statystyki trenowania
 
-W okienku **Statystyki trenowania** są wyświetlane statystyki i wykresy na podstawie wyników trenowania istotności zbierania elektronicznych materiałów dowodowych (Premium). 
+W okienku **Statystyki trenowania** są wyświetlane statystyki i wykresy oparte na wynikach trenowania istotności zbierania elektronicznych materiałów dowodowych (Premium). 
   
 ![Istotność Śledź statystyki trenowania.](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   

@@ -1,5 +1,5 @@
 ---
-title: Dowiedz się Microsoft 365 ochrony przed utratą danych w środowisku lokalnym
+title: Dowiedz się więcej na temat lokalnego skanera ochrony przed utratą danych
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,77 +18,77 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Microsoft 365 ochrony przed utratą danych w środowisku lokalnym obejmuje monitorowanie działań dotyczących plików i akcji zabezpieczających dla tych plików do lokalnych udziałów plików i SharePoint folderów i bibliotek dokumentów. Pliki są skanowane i chronione za pomocą skanera Azure Information Protection (AIP)
-ms.openlocfilehash: c696d4c4e8504d07ce69554c6ff52f264b8ba491
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Lokalny skaner zapobiegania utracie danych rozszerza monitorowanie działań dotyczących plików i akcji ochronnych dla tych plików na lokalne udziały plików oraz foldery programu SharePoint i biblioteki dokumentów. Pliki są skanowane i chronione przez skaner usługi Azure Information Protection (AIP)
+ms.openlocfilehash: 8edf472fe65380b708a833864ccceedadb240191
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988361"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629822"
 ---
-# <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Dowiedz się więcej Microsoft 365 ochrony przed utratą danych w środowisku lokalnym
+# <a name="learn-about-the-data-loss-prevention-on-premises-scanner"></a>Dowiedz się więcej o lokalnym skanerze zapobiegania utracie danych
 
-Lokalny skaner firmy Microsoft do ochrony przed utratą danych jest częścią pakietu funkcji ochrony przed utratą danych (DLP, data loss prevention) firmy Microsoft 365, który umożliwia odnajdowanie i chronianie poufnych elementów w Microsoft 365 usługach internetowych. Aby uzyskać więcej informacji na temat wszystkich usług firmy Microsoft w zakresie ochrony przed utratą danych, zobacz [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md).
+Skaner lokalny zapobiegania utracie danych jest częścią pakietu funkcji Ochrona przed utratą danych w Microsoft Purview (DLP), których można użyć do odnajdywania i ochrony poufnych elementów w usługach Microsoft 365. Aby uzyskać więcej informacji na temat wszystkich ofert DLP firmy Microsoft, zobacz [Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md).
 
-Skaner lokalny **DLP** przeszukuje lokalne dane w udziałach plików oraz w bibliotekach dokumentów i folderach programu SharePoint pod SharePoint poufnych elementów, które w przypadku wycieków stanowią zagrożenie dla organizacji lub stanowią zagrożenie dla naruszenia zasad zgodności. Zapewnia to widoczność i kontrolę potrzebną do prawidłowego zabezpieczania i zabezpieczania poufnych elementów oraz zapobiegania ryzykownych zachowaniach, które mogłyby je naruszone. Skaner lokalnym DLP wykrywa informacje poufne przy użyciu wbudowanych lub niestandardowych [](sensitive-information-type-entity-definitions.md) typów informacji poufnych [](create-a-custom-sensitive-information-type.md) [, etykiet](sensitivity-labels.md) wrażliwości lub właściwości pliku. Informacje o tym, co użytkownicy robią z poufnymi elementami, są [](data-classification-activity-explorer.md) widoczne w Eksploratorze [aktywności](create-test-tune-dlp-policy.md) i można na ich podstawie wymuszać akcje zabezpieczające.
+**Lokalny skaner DLP** przeszuka lokalne dane magazynowane w udziałach plików i bibliotekach dokumentów programu SharePoint i folderach dla poufnych elementów, które w przypadku wycieku stanowią zagrożenie dla organizacji lub mogą stanowić zagrożenie naruszenia zasad zgodności. Zapewnia to widoczność i kontrolę, których potrzebujesz, aby upewnić się, że elementy poufne są prawidłowo używane i chronione oraz aby zapobiec ryzykownemu zachowaniu, które może je naruszyć. Lokalny skaner DLP wykrywa poufne informacje przy użyciu [wbudowanych](sensitive-information-type-entity-definitions.md) lub niestandardowych typów [informacji poufnych](create-a-custom-sensitive-information-type.md) , [etykiet poufności](sensitivity-labels.md) lub właściwości pliku. Informacje o tym, co użytkownicy robią z poufnymi elementami, są widoczne w [Eksploratorze aktywności](data-classification-activity-explorer.md) i można wymusić akcje ochronne na tych elementach za pośrednictwem [zasad DLP](create-test-tune-dlp-policy.md).
 
-## <a name="the-dlp-on-premises-scanner-relies-on-azure-information-protection-scanner"></a>Skaner lokalne DLP korzysta ze skanera usługi Azure Information Protection
+## <a name="the-dlp-on-premises-scanner-relies-on-azure-information-protection-scanner"></a>Lokalny skaner DLP opiera się na skanerze usługi Azure Information Protection
 
-Skaner lokalnym DLP korzysta z pełnej implementacji skanera Azure Information Protection (AIP) do monitorowania, oznaczania i ochrony poufnych elementów. Jeśli nie znasz skanera AIP, zdecydowanie zalecamy jego zapoznanie się z nim. Zobacz następujące artykuły:
+Lokalny skaner DLP opiera się na pełnej implementacji skanera usługi Azure Information Protection (AIP) do monitorowania, etykietowania i ochrony poufnych elementów. Jeśli nie znasz skanera usługi AIP, zdecydowanie zalecamy zapoznanie się z nim. Zobacz następujące artykuły:
 
 - [Co to jest usługa Azure Information Protection](/azure/information-protection/what-is-information-protection)
-- [Co to jest ujednolicony skaner etykiet usługi Azure Information Protection](/azure/information-protection/deploy-aip-scanner)
-- [Wymagania dotyczące instalowania i wdrażania ujednoliconego skanera etykiet usługi Azure Information Protection](/azure/information-protection/deploy-aip-scanner-prereqs)
-- [Samouczek: instalowanie ujednoliconego skanera etykiet usługi Azure Information Protection (AIP)](/azure/information-protection/tutorial-install-scanner)
-- [Konfigurowanie i instalowanie ujednoliconego skanera etykiet usługi Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)
-- [Ujednolicony klient etykiet usługi Azure Information Protection — historia wersji i zasady pomocy technicznej](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
+- [Co to jest skaner ujednoliconego etykietowania usługi Azure Information Protection](/azure/information-protection/deploy-aip-scanner)
+- [Wymagania dotyczące instalowania i wdrażania skanera ujednoliconego etykietowania usługi Azure Information Protection](/azure/information-protection/deploy-aip-scanner-prereqs)
+- [Samouczek: instalowanie skanera ujednoliconego etykietowania usługi Azure Information Protection (AIP)](/azure/information-protection/tutorial-install-scanner)
+- [Konfigurowanie i instalowanie skanera ujednoliconego etykietowania usługi Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)
+- [Klient ujednoliconego etykietowania platformy Azure Information Protection — historia wersji i zasady pomocy technicznej](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
 
-## <a name="dlp-on-premises-scanner-actions"></a>Akcje skanera lokalnego DLP
+## <a name="dlp-on-premises-scanner-actions"></a>Akcje lokalnego skanera DLP
 
-Program DLP w skanerze lokalnym wykrywa pliki za pomocą jednej z tych czterech metod:
+Lokalny skaner DLP wykrywa pliki za pomocą jednej z tych czterech metod:
 
 - typy informacji poufnych
-- etykiety wrażliwości
-- rozszerzenie pliku
-- Właściwości dokumentów niestandardowych tylko Office plikach 
+- etykiety poufności
+- Formatem
+- właściwości dokumentu niestandardowego tylko w plikach pakietu Office 
 
-Gdy wykryty plik stwarza potencjalne ryzyko, jeśli wycieknie lub naruszenie zasad zgodności, skaner lokalnym DLP może podjąć jedną z tych czterech czynności.
+Jeśli wykryty plik stwarza potencjalne ryzyko w przypadku wycieku lub naruszenia zasad zgodności, lokalny skaner DLP może wykonać jedną z tych czterech akcji.
 
 |Akcja |Opis  |
 |---------|---------|
-|**Blokowanie tym osobom dostępu do pliku przechowywanego w skanerze lokalnym — Wszyscy** | Jeśli to działanie jest wymuszane, ta akcja blokuje dostęp do wszystkich kont oprócz właściciela zawartości, ostatniego konta, które zmodyfikował element i administratora. W tym celu usuwa wszystkie konta z systemu plików NTFS/programu SharePoint uprawnień na poziomie pliku z wyjątkiem właściciela pliku, właściciela repozytorium (ustawionego w ustawieniu Ustaw [](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) właściciela repozytorium w zadaniu skanowania zawartości), ostatniego modyfikatora (można zidentyfikować tylko w programie SharePoint) i administratora. Konto skanera jest również udzielane prawa do fc do pliku.|
-|**Blokowanie tym osobom dostępu do pliku przechowywanego w skanerze lokalnym — blokowanie dostępu dla całej organizacji (publiczny)**    |W przypadku wymuszenia ta akcja usuwa identyfikatory **_EVERYONE_*_, _*_NT AUTHORITY\authenticated users_*_, i _*_Domain Users_** (Użytkownicy domeny) z listy kontroli dostępu do plików. Tylko użytkownicy i grupy, którym jawnie przyznano prawa do pliku lub folderu nadrzędnego, będą mogli uzyskać dostęp do pliku.|
-|**Ustawianie uprawnień do pliku**|Jeśli ta akcja jest wymuszana, wymusza na pliku dziedziczenie uprawnień swojego folderu nadrzędnego. Domyślnie ta akcja zostanie wymuszona tylko wtedy, gdy uprawnienia w folderze nadrzędnym są bardziej restrykcyjne niż uprawnienia już dostępne w pliku. Jeśli na przykład wartość ACL pliku jest ustawiona tak, aby zezwalać tylko określonym użytkownikom_, a folder nadrzędny jest skonfigurowany do zezwalania na grupę ***_*_Domain Users_ _ (Użytkownicy domeny), uprawnienia do folderu nadrzędnego nie zostaną odziedziczone przez plik *. Możesz zastąpić to zachowanie, wybierając pozycję _* Dziedzicz, nawet jeśli uprawnienia nadrzędne są mniej restrykcyjne**.|
-|**Usuwanie pliku z nieprawidłowej lokalizacji**|Jeśli ta akcja zostanie wymuszona, oryginalny plik zostanie zastąpiony rozszerzeniem .txt i umieszcza kopię oryginalnego pliku w folderze kwarantanny. 
+|**Zablokuj tym osobom dostęp do pliku przechowywanego w skanerze lokalnym — wszyscy** | W przypadku wymuszania ta akcja blokuje dostęp do wszystkich kont z wyjątkiem właściciela zawartości, ostatniego konta, które zmodyfikowało element, i administratora. Robi to przez usunięcie wszystkich kont z uprawnień NTFS/SharePoint na poziomie pliku z wyjątkiem właściciela pliku, właściciela repozytorium (ustawionego w ustawieniu [Ustaw właściciela repozytorium](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) w zadaniu skanowania zawartości), ostatniego modyfikatora (można zidentyfikować tylko w programie SharePoint) i administratora. Konto skanera ma również uprawnienia do fc w pliku.|
+|**Zablokuj tym osobom dostęp do pliku przechowywanego w skanerze lokalnym — blokuj dostęp całej organizacji (publiczny)**    |W przypadku wymuszania ta akcja usuwa identyfikatory **_SID Everyone_*_, _*_NT AUTHORITY\authenticated users_*_i _*_Domain Users_** z listy kontroli dostępu do plików (ACL). Tylko użytkownicy i grupy, którym jawnie przyznano prawa do pliku lub folderu nadrzędnego, będą mogli uzyskać dostęp do pliku.|
+|**Ustawianie uprawnień do pliku**|W przypadku wymuszania ta akcja wymusza dziedziczenie uprawnień folderu nadrzędnego przez plik. Ta akcja będzie wymuszana tylko wtedy, gdy uprawnienia do folderu nadrzędnego są bardziej restrykcyjne niż uprawnienia, które znajdują się już w pliku. Jeśli na przykład lista ACL w pliku ma zezwalać tylko **_określonym użytkownikom_*_ i folder nadrzędny jest skonfigurowany do zezwalania* na grupę _ _Użytkownicy_ *domeny_, uprawnienia folderu nadrzędnego nie będą dziedziczone przez plik. To zachowanie można zastąpić, wybierając opcję _* Inherit, nawet jeśli uprawnienia nadrzędne są mniej restrykcyjne**.|
+|**Usuwanie pliku z nieprawidłowej lokalizacji**|W przypadku wymuszania ta akcja zastępuje oryginalny plik plikiem wycinka rozszerzeniem .txt i umieszcza kopię oryginalnego pliku w folderze kwarantanny. 
 
-## <a name="whats-different-in-the-on-premises-scanner"></a>Co się dzieje w skanerze lokalnym
+## <a name="whats-different-in-the-on-premises-scanner"></a>Co się różni w skanerze lokalnym
 
-Istnieje kilka dodatkowych pojęć, o których należy pamiętać przed rozpoczęciem pracy ze skanerem lokalnym.
+Istnieje kilka dodatkowych pojęć, o których należy pamiętać, zanim przejdziesz do skanera lokalnego.
 
-### <a name="aip-repositories-and-content-scan-jobs"></a>Repozytoria AIP i zadania skanowania zawartości
+### <a name="aip-repositories-and-content-scan-jobs"></a>Repozytoria usługi AIP i zadania skanowania zawartości
 
-Musisz utworzyć zadania skanowania zawartości programu AIP i zidentyfikować repozytoria hostują pliki, które mają być oceniane przez aparat DLP. Upewnij się, że w utworzonej zadaniu skanowania zawartości programu AIP zostały włączyć reguły DLP.
+Musisz utworzyć zadania skanowania zawartości usługi AIP i zidentyfikować repozytoria hostujące pliki, które mają być oceniane przez aparat DLP. Upewnij się, że reguły DLP zostały włączone w utworzonym zadaniu skanowania zawartości usługi AIP.
 
 ### <a name="policy-tips"></a>Porady dotyczące zasad
 
 [Porady dotyczące zasad](use-notifications-and-policy-tips.md) nie są dostępne w skanerze lokalnym.
 
 
-### <a name="viewing-dlp-on-premises-scanner-events"></a>Wyświetlanie zdarzeń skanera lokalnego DLP
+### <a name="viewing-dlp-on-premises-scanner-events"></a>Wyświetlanie lokalnych zdarzeń skanera DLP
 
-Dane skanera lokalnego DLP można wyświetlić w Eksploratorze aktywności Centrum zgodności usługi [M365](data-classification-activity-explorer.md). 
+Lokalne dane skanera DLP są wyświetlane w [eksploratorze działań](data-classification-activity-explorer.md) Centrum zgodności M365. 
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po instrukcje dotyczące lokalnego skanera DLP należy wykonać następujące czynności:
+Teraz, gdy już wiesz już o lokalnym skanerze DLP, następne kroki to:
 
 1. [Wprowadzenie do lokalnego skanera DLP](dlp-on-premises-scanner-get-started.md)
-2. [Używanie lokalnego skanera funkcji DLP](dlp-on-premises-scanner-use.md)
+2. [Korzystanie ze skanera lokalnego DLP](dlp-on-premises-scanner-use.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Wprowadzenie do lokalnego skanera przed utratą danych firmy Microsoft](dlp-on-premises-scanner-get-started.md)
-- [Korzystanie ze skanera lokalnego firmy Microsoft do ochrony przed utratą danych](dlp-on-premises-scanner-use.md)
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md)
-- [Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md)
-- [Wprowadzenie do Eksploratora aktywności](data-classification-activity-explorer.md)
+- [Wprowadzenie do lokalnego skanera zapobiegania utracie danych](dlp-on-premises-scanner-get-started.md)
+- [Używanie lokalnego skanera zapobiegania utracie danych](dlp-on-premises-scanner-use.md)
+- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
+- [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md)
+- [Wprowadzenie do Eksploratora działań](data-classification-activity-explorer.md)

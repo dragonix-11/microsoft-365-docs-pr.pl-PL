@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak edytować lub usunąć dokładny schemat dopasowania danych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29cfefbd6bf9bb9f92fe5ed7664575ec75adfa12
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: fb8a9d014bb4654ce39b0bb6312f8b20cd6d781e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014679"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629150"
 ---
 # <a name="manage-your-exact-data-match-schema"></a>Zarządzaj schematem dokładnego dopasowania danych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="editing-the-schema-for-edm-based-classification-manually"></a>Ręczne edytowanie schematu klasyfikacji opartej na protokole EDM
 
@@ -37,7 +35,7 @@ Jeśli chcesz wprowadzić zmiany w schemacie EDM, na przykład plik **edm.xml** 
 
 1. Edytuj **plikedm.xml** (jest to plik omówiony w sekcji [Tworzenie schematu dla dokładnych typów informacji poufnych opartych na dopasowaniu danych](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types).
 
-2. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+2. [Połącz się z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 3. Aby zaktualizować schemat bazy danych, uruchom następujące polecenie:
 
@@ -65,7 +63,7 @@ Jeśli chcesz wprowadzić zmiany w schemacie EDM, na przykład plik **edm.xml** 
 
 Jeśli chcesz usunąć schemat używany do klasyfikacji opartej na programie EDM, wykonaj następujące kroki:
 
-1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+1. [Połącz się z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 2. Uruchom następujące polecenie, zastępując nazwę magazynu danych "rekordami pacjentów" tą, którą chcesz usunąć (na przykład używając magazynu patientrecords):
 

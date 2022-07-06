@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Dowiedz się, jak przywrócić (lub scalić) zawartość nieaktywnej skrzynki pocztowej do istniejącej skrzynki pocztowej.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 66f9e75a76b4fb1bda0f9ae0f70cfe12c816d2bb
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 7c1a976013f522e45b4e96d6b28653fa860fe16f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438230"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629228"
 ---
 # <a name="restore-an-inactive-mailbox"></a>Przywróć nieaktywną skrzynkę pocztową
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Nieaktywna skrzynka pocztowa (która jest typem nietrwałej skrzynki pocztowej) jest używana do przechowywania poczty e-mail byłego pracownika po opuszczeniu organizacji. Jeśli inny pracownik przejmuje obowiązki związane z pracą odchodzących pracowników lub jeśli ten pracownik wróci do organizacji, istnieją dwa sposoby udostępniania zawartości nieaktywnej skrzynki pocztowej użytkownikowi:
 
@@ -44,7 +42,7 @@ Zobacz sekcję [Więcej informacji](#more-information) w tym artykule, aby uzysk
 
 ## <a name="requirements-to-restore-an-inactive-mailbox"></a>Wymagania dotyczące przywracania nieaktywnej skrzynki pocztowej
 
-- Aby przywrócić nieaktywną skrzynkę pocztową, należy użyć Exchange Online programu PowerShell. Nie można użyć centrum administracyjnego Exchange (EAC) ani portal zgodności Microsoft Purview dla tej procedury. Aby uzyskać instrukcje krok po kroku dotyczące używania Exchange Online programu PowerShell, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Aby przywrócić nieaktywną skrzynkę pocztową, należy użyć Exchange Online programu PowerShell. Nie można użyć centrum administracyjnego programu Exchange (EAC) ani portal zgodności Microsoft Purview dla tej procedury. Aby uzyskać instrukcje krok po kroku dotyczące korzystania z programu Exchange Online programu PowerShell, zobacz [Nawiązywanie połączenia z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Uruchom następujące polecenie w programie Exchange Online programu PowerShell, aby uzyskać informacje o tożsamości dla nieaktywnych skrzynek pocztowych w organizacji.
 
@@ -152,7 +150,7 @@ Jeśli nieaktywna skrzynka pocztowa ma archiwum skrzynki pocztowej, można równ
   Get-Mailbox -InactiveMailboxOnly | Format-List Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **Użyj zasad przechowywania Microsoft 365 lub blokady postępowania sądowego lub do zachowania nieaktywnej zawartości skrzynki pocztowej.** Jeśli chcesz zachować stan nieaktywnej skrzynki pocztowej po jej przywróceniu, możesz zastosować [zasady przechowywania Microsoft 365](retention.md) do docelowej skrzynki pocztowej lub umieścić docelową skrzynkę pocztową w [blokadzie postępowania sądowego](create-a-litigation-hold.md) przed przywróceniem nieaktywnej skrzynki pocztowej. Uniemożliwi to trwałe usunięcie wszystkich elementów z nieaktywnej skrzynki pocztowej po ich przywróceniu do docelowej skrzynki pocztowej.
+- **Użyj zasad przechowywania platformy Microsoft 365 lub blokady postępowania sądowego lub do zachowania nieaktywnej zawartości skrzynki pocztowej.** Jeśli chcesz zachować stan nieaktywnej skrzynki pocztowej po jej przywróceniu, możesz zastosować [zasady przechowywania usługi Microsoft 365](retention.md) do docelowej skrzynki pocztowej lub umieścić docelową skrzynkę pocztową w [blokadzie postępowania sądowego](create-a-litigation-hold.md) przed przywróceniem nieaktywnej skrzynki pocztowej. Uniemożliwi to trwałe usunięcie wszystkich elementów z nieaktywnej skrzynki pocztowej po ich przywróceniu do docelowej skrzynki pocztowej.
 
 - **Przed przywróceniem nieaktywnej skrzynki pocztowej włącz przechowywanie w docelowej skrzynce pocztowej.** Ponieważ elementy skrzynki pocztowej z nieaktywnej skrzynki pocztowej mogą być stare, warto rozważyć włączenie przechowywania w docelowej skrzynce pocztowej przed przywróceniem nieaktywnej skrzynki pocztowej. Po wstrzymaniu skrzynki pocztowej zasady przechowywania przypisane do niej nie zostaną przetworzone, dopóki blokada przechowywania nie zostanie usunięta lub do czasu wygaśnięcia okresu przechowywania. Daje to właścicielowi docelowej skrzynki pocztowej czas na zarządzanie starymi wiadomościami z nieaktywnej skrzynki pocztowej. W przeciwnym razie zasady przechowywania mogą usuwać stare elementy (lub przenosić elementy do skrzynki pocztowej archiwum, jeśli jest włączona), które wygasły na podstawie ustawień przechowywania skonfigurowanych dla docelowej skrzynki pocztowej. Aby uzyskać więcej informacji, zobacz [Umieszczanie skrzynki pocztowej w blokadzie przechowywania w Exchange Online](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
 

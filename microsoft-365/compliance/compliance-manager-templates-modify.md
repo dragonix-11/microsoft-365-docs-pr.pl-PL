@@ -1,5 +1,5 @@
 ---
-title: Modyfikowanie szablonów oceny w programie Microsoft Compliance Manager
+title: Modyfikowanie szablonów oceny w programie Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,25 +17,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak modyfikować szablony oceny w programie Microsoft Compliance Manager.
-ms.openlocfilehash: 589e13e766e35d38eed985a0e7bb9e21544c370d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Dowiedz się, jak modyfikować szablony oceny w programie Microsoft Purview Compliance Manager.
+ms.openlocfilehash: f21ff61f6bb06f00d1db8381e3760e7c4b5343aa
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758536"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630416"
 ---
-# <a name="modify-assessment-templates-in-microsoft-compliance-manager"></a>Modyfikowanie szablonów oceny w programie Microsoft Compliance Manager
+# <a name="modify-assessment-templates-in-microsoft-purview-compliance-manager"></a>Modyfikowanie szablonów oceny w programie Microsoft Purview Compliance Manager
 
-Podczas pracy z ocenami w Menedżerze zgodności możesz zmodyfikować utworzony szablon oceny. Proces jest podobny do procesu [tworzenia szablonu](compliance-manager-templates-create.md), ponieważ przekażesz sformatowany plik Excel z danymi szablonu.
+Podczas pracy z ocenami w Menedżerze zgodności możesz zmodyfikować utworzony szablon oceny. Proces jest podobny do procesu [tworzenia szablonu](compliance-manager-templates-create.md) , ponieważ przekażesz sformatowany plik programu Excel z danymi szablonu.
 
 Istnieją jednak szczegóły, o których należy pamiętać podczas formatowania pliku ze zmianami istniejących danych szablonu. **Zalecamy dokładne przejrzenie tych instrukcji, aby upewnić się, że nie zastąpisz żadnych istniejących danych, które chcesz zachować.**
 
-Aby dowiedzieć się więcej na temat formatu tego arkusza kalkulacyjnego, zobacz [Formatowanie danych szablonu przy użyciu Excel](compliance-manager-templates-format-excel.md).
+Aby dowiedzieć się więcej na temat formatu tego arkusza kalkulacyjnego, zobacz [Formatowanie danych szablonu za pomocą programu Excel](compliance-manager-templates-format-excel.md).
 
-## <a name="format-your-excel-file-to-modify-an-existing-template"></a>Formatowanie pliku Excel w celu zmodyfikowania istniejącego szablonu
+## <a name="format-your-excel-file-to-modify-an-existing-template"></a>Formatowanie pliku programu Excel w celu zmodyfikowania istniejącego szablonu
 
-Na stronie **szablonów oceny** wybierz szablon, który chcesz zmodyfikować, aby wyświetlić jego stronę szczegółów. Następnie wybierz pozycję **Eksportuj do Excel**. Plik Excel ze wszystkimi danymi szablonu zostanie pobrany. Zapisz plik na komputerze lokalnym.
+Na stronie **szablonów oceny** wybierz szablon, który chcesz zmodyfikować, aby wyświetlić jego stronę szczegółów. Następnie wybierz pozycję **Eksportuj do programu Excel**. Plik programu Excel ze wszystkimi danymi szablonu zostanie pobrany. Zapisz plik na komputerze lokalnym.
 
 Aby pracować z tym plikiem, przejdź do poniższej sekcji, aby szybko znaleźć potrzebne instrukcje:
 
@@ -100,11 +100,11 @@ Po zaimportowaniu arkusza kalkulacyjnego z powrotem do szablonu kontrolka zostan
 
 ## <a name="modify-template-info-in-compliance-manager"></a>Modyfikowanie informacji o szablonie w Menedżerze zgodności
 
-Po ukończeniu i zapisaniu pliku Excel wykonaj następujące kroki.
+Po zakończeniu i zapisaniu pliku programu Excel wykonaj następujące kroki.
 
 1. Otwórz ponownie stronę szablonu oceny i wybierz szablon. Na stronie szczegółów szablonu wybierz pozycję **Modyfikuj szablon** , aby zainicjować kreatora modyfikacji.
-2. Na ekranie **Upload pliku** wybierz pozycję **Przeglądaj**, aby znaleźć i przekazać plik Excel.
-3. Jeśli nie ma żadnych problemów z plikiem, na następnym ekranie zostanie wyświetlona nazwa przekazanego pliku. Wybierz pozycję **Dalej**, aby kontynuować (jeśli chcesz zmienić plik, wybierz pozycję **Upload inny plik**).
+2. Na ekranie **Przekazywanie pliku** wybierz pozycję **Przeglądaj** , aby znaleźć i przekazać plik programu Excel.
+3. Jeśli nie ma żadnych problemów z plikiem, na następnym ekranie zostanie wyświetlona nazwa przekazanego pliku. Wybierz pozycję **Dalej** , aby kontynuować (jeśli chcesz zmienić plik, wybierz pozycję **Przekaż inny plik**).
     - Jeśli wystąpił problem z plikiem, u góry znajduje się komunikat o błędzie wyjaśniający, co jest nie tak. Musisz naprawić plik i przekazać go ponownie. Błędy spowodują nieprawidłowe formatowanie arkusza kalkulacyjnego lub nieprawidłowe informacje w niektórych polach.
 
 4. Na ekranie **Przeglądanie i zakończenie** jest wyświetlana liczba akcji i kontrolek poprawy oraz maksymalny wynik szablonu. Gdy wszystko będzie gotowe do zatwierdzenia, wybierz pozycję **Dalej**.
@@ -113,4 +113,4 @@ Po ukończeniu i zapisaniu pliku Excel wykonaj następujące kroki.
 Szablon będzie teraz zawierać wprowadzone zmiany. Wszystkie oceny korzystające z tego zmodyfikowanego szablonu będą teraz wyświetlać oczekujące aktualizacje i musisz zaakceptować aktualizacje ocen, aby odzwierciedlić zmiany wprowadzone w szablonie. Dowiedz się więcej o [aktualizacjach ocen](compliance-manager-assessments.md#accept-updates-to-assessments).
 
 > [!NOTE]
-> Jeśli używasz Menedżera zgodności w języku innym niż angielski, podczas eksportowania szablonu do Excel zostanie wyświetlony tekst w języku angielskim. Tytuły akcji (zarówno akcji poprawy, jak i, w stosownych przypadkach, akcji firmy Microsoft) muszą być rozpoznawane przez kontrolki w języku angielskim. Jeśli wprowadzisz zmiany w tytule akcji, pamiętaj o zapisaniu go w języku angielskim, aby plik został poprawnie zaimportowany.
+> Jeśli używasz Menedżera zgodności w języku innym niż angielski, podczas eksportowania szablonu do programu Excel zostanie wyświetlony tekst w języku angielskim. Tytuły akcji (zarówno akcji poprawy, jak i, w stosownych przypadkach, akcji firmy Microsoft) muszą być rozpoznawane przez kontrolki w języku angielskim. Jeśli wprowadzisz zmiany w tytule akcji, pamiętaj o zapisaniu go w języku angielskim, aby plik został poprawnie zaimportowany.

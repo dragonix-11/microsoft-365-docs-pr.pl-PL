@@ -19,22 +19,20 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Użyj funkcji wyszukiwania zawartości i skryptu w tym artykule, aby wyszukać w skrzynkach pocztowych i witrynach OneDrive dla Firm grupę użytkowników.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 838e565d385077416d1001afc02e1aceeebb5188
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 02ee9790d35eca411a9e27607a7e99ca962ddf05
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011637"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629172"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Wyszukiwanie zawartości umożliwia wyszukanie listy użytkowników w skrzynce pocztowej i witrynie OneDrive dla Firm
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Program PowerShell & Zgodności z zabezpieczeniami udostępnia szereg poleceń cmdlet, które umożliwiają automatyzowanie czasochłonnych zadań związanych zbierania elektronicznych materiałów dowodowych. Obecnie tworzenie wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview w celu wyszukiwania dużej liczby lokalizacji zawartości opiekuna wymaga czasu i przygotowania. Przed utworzeniem wyszukiwania należy zebrać adres URL dla każdej OneDrive dla Firm witryny, a następnie dodać każdą skrzynkę pocztową i witrynę OneDrive dla Firm do wyszukiwania. W przyszłych wersjach będzie to łatwiejsze do wykonania w portalu zgodności. Do tego czasu możesz użyć skryptu w tym artykule, aby zautomatyzować ten proces. Ten skrypt wyświetla monit o podanie nazwy domeny witryny MySite organizacji (na przykład **contoso** w adresie URL `https://contoso-my.sharepoint.com`), listy adresów e-mail użytkownika, nazwy nowego wyszukiwania zawartości i zapytania wyszukiwania do użycia. Skrypt pobiera adres URL OneDrive dla Firm dla każdego użytkownika na liście, a następnie tworzy i uruchamia wyszukiwanie zawartości, które wyszukuje skrzynkę pocztową i witrynę OneDrive dla Firm dla każdego użytkownika na liście przy użyciu podanej kwerendy wyszukiwania.
+Program PowerShell & Zgodności z zabezpieczeniami udostępnia szereg poleceń cmdlet, które umożliwiają automatyzowanie czasochłonnych zadań związanych zbierania elektronicznych materiałów dowodowych. Obecnie tworzenie wyszukiwania zawartości w portal zgodności Microsoft Purview przeszukiwania dużej liczby lokalizacji zawartości opiekuna wymaga czasu i przygotowania. Przed utworzeniem wyszukiwania należy zebrać adres URL dla każdej OneDrive dla Firm witryny, a następnie dodać każdą skrzynkę pocztową i witrynę OneDrive dla Firm do wyszukiwania. W przyszłych wersjach będzie to łatwiejsze do wykonania w portalu zgodności. Do tego czasu możesz użyć skryptu w tym artykule, aby zautomatyzować ten proces. Ten skrypt wyświetla monit o podanie nazwy domeny witryny MySite organizacji (na przykład **contoso** w adresie URL `https://contoso-my.sharepoint.com`), listy adresów e-mail użytkownika, nazwy nowego wyszukiwania zawartości i zapytania wyszukiwania do użycia. Skrypt pobiera adres URL OneDrive dla Firm dla każdego użytkownika na liście, a następnie tworzy i uruchamia wyszukiwanie zawartości, które wyszukuje skrzynkę pocztową i witrynę OneDrive dla Firm dla każdego użytkownika na liście przy użyciu podanej kwerendy wyszukiwania.
 
 ## <a name="permissions-and-script-information"></a>Informacje o uprawnieniach i skryptach
 
-- Aby uruchomić skrypt w kroku 3, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności i administratorem globalnym usługi SharePoint Online.
+- Aby uruchomić skrypt w kroku 3, musisz być członkiem grupy ról Menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności i administratorem globalnym usługi SharePoint Online.
 
 - Pamiętaj, aby zapisać listę użytkowników utworzonych w kroku 2 i skrypt w kroku 3 w tym samym folderze. Ułatwi to uruchamianie skryptu.
 
@@ -42,15 +40,15 @@ Program PowerShell & Zgodności z zabezpieczeniami udostępnia szereg poleceń c
 
 - Przykładowe skrypty podane w tym temacie nie są obsługiwane w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowe skrypty są dostarczane jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowych skryptów i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
-## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Krok 1. Instalowanie powłoki zarządzania SharePoint Online
+## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Krok 1. Instalowanie powłoki zarządzania usługi SharePoint Online
 
-Pierwszym krokiem jest zainstalowanie powłoki zarządzania SharePoint Online. Nie musisz używać powłoki w tej procedurze, ale musisz ją zainstalować, ponieważ zawiera wymagania wstępne wymagane przez skrypt uruchomiony w kroku 3. Te wymagania wstępne umożliwiają skryptowi komunikowanie się z usługą SharePoint Online w celu pobrania adresów URL witryn OneDrive dla Firm.
+Pierwszym krokiem jest zainstalowanie powłoki zarządzania usługi SharePoint Online. Nie musisz używać powłoki w tej procedurze, ale musisz ją zainstalować, ponieważ zawiera wymagania wstępne wymagane przez skrypt uruchomiony w kroku 3. Te wymagania wstępne umożliwiają skryptowi komunikowanie się z usługą SharePoint Online w celu uzyskania adresów URL witryn OneDrive dla Firm.
 
-Przejdź do [obszaru Konfigurowanie środowiska powłoki zarządzania SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) i wykonaj kroki 1 i 2, aby zainstalować powłokę zarządzania SharePoint Online.
+Przejdź do [obszaru Konfigurowanie środowiska powłoki zarządzania usługi SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) i wykonaj kroki 1 i 2, aby zainstalować powłokę zarządzania usługi SharePoint Online.
 
 ## <a name="step-2-generate-a-list-of-users"></a>Krok 2. Generowanie listy użytkowników
 
-Skrypt w kroku 3 utworzy wyszukiwanie zawartości, aby wyszukać listę użytkowników w skrzynkach pocztowych i kontach OneDrive. Możesz po prostu wpisać adresy e-mail w pliku tekstowym lub uruchomić polecenie w programie PowerShell, aby uzyskać listę adresów e-mail i zapisać je w pliku (znajdującym się w tym samym folderze, w jakim zapiszesz skrypt w kroku 3).
+Skrypt w kroku 3 utworzy wyszukiwanie zawartości, aby wyszukać listę użytkowników w skrzynkach pocztowych i kontach usługi OneDrive. Możesz po prostu wpisać adresy e-mail w pliku tekstowym lub uruchomić polecenie w programie PowerShell, aby uzyskać listę adresów e-mail i zapisać je w pliku (znajdującym się w tym samym folderze, w jakim zapiszesz skrypt w kroku 3).
 
 Oto [polecenie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), które można uruchomić, aby uzyskać listę adresów e-mail dla wszystkich użytkowników w organizacji i zapisać je w pliku tekstowym o nazwie `Users.txt`.
 
@@ -64,7 +62,7 @@ Po uruchomieniu tego polecenia otwórz plik i usuń nagłówek zawierający nazw
 
 Po uruchomieniu skryptu w tym kroku zostanie wyświetlony monit o podanie następujących informacji. Pamiętaj, aby te informacje były gotowe przed uruchomieniem skryptu.
 
-- **Poświadczenia użytkownika** — skrypt użyje poświadczeń w celu uzyskania dostępu do SharePoint Online w celu uzyskania adresów URL OneDrive dla Firm i nawiązania połączenia z programem PowerShell security & Compliance.
+- **Poświadczenia użytkownika** — skrypt użyje poświadczeń w celu uzyskania dostępu do usługi SharePoint Online w celu uzyskania adresów URL OneDrive dla Firm i nawiązania połączenia z programem PowerShell security & Compliance.
 
 - **Nazwa domeny witryny MySite** — domena MySite to domena, która zawiera wszystkie witryny OneDrive dla Firm w organizacji. Jeśli na przykład adres URL domeny witryny MySite to **https://contoso-my.sharepoint.com**, należy wprowadzić  `contoso` , gdy skrypt wyświetli monit o podanie nazwy domeny witryny MySite.
 

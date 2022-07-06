@@ -11,47 +11,45 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: Dowiedz się więcej o domyślnych etykietach i zasadach Microsoft Purview Information Protection do klasyfikowania i ochrony poufnej zawartości.
-ms.openlocfilehash: a17ba3e87e219d19d8f88f413bf446664aa094a2
-ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
+ms.openlocfilehash: 46718c5f3ecb79cf112012064d0fbf688e21f6d0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65444185"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629426"
 ---
 # <a name="default-labels-and-policies-to-protect-your-data"></a>Domyślne etykiety i zasady ochrony danych
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Uprawnieni klienci mogą aktywować domyślne etykiety i zasady dla Microsoft Purview Information Protection: 
 
 - Etykiety poufności i zasady etykiet poufności
 - Automatyczne etykietowanie po stronie klienta
 - Automatyczne etykietowanie po stronie usługi
-- Zasady ochrony przed utratą danych (DLP) dla Teams i urządzeń
+- Zasady ochrony przed utratą danych (DLP) dla aplikacji Teams i urządzeń
 
-Te domyślne konfiguracje ułatwiają szybkie rozpoczęcie pracy z Microsoft Purview Information Protection dla Microsoft 365. Można ich używać w taki sam sposób, jak jest, wprowadzić tylko kilka zmian lub w pełni dostosować je do własnych wymagań biznesowych. 
+Te domyślne konfiguracje ułatwiają szybkie rozpoczęcie pracy z Microsoft Purview Information Protection dla platformy Microsoft 365. Można ich używać w taki sam sposób, jak jest, wprowadzić tylko kilka zmian lub w pełni dostosować je do własnych wymagań biznesowych. 
 
-Uprawnienia obejmują klientów, którzy mają [bezpłatną wersję próbną dla Microsoft Purview](compliance-easy-trials.md) i niektórych klientów, którzy mają już plan Microsoft 365 E5:
+Uprawnienia obejmują klientów, którzy mają [bezpłatną wersję próbną dla usługi Microsoft Purview](compliance-easy-trials.md), oraz niektórych klientów, którzy mają już plan Microsoft 365 E5:
 
-- **Nowi klienci**: Jeśli masz Microsoft Purview przez mniej niż 30 dni, dzierżawa może aktywować wszystkie wymienione konfiguracje domyślne. Zawsze można je wyłączyć, usunąć lub edytować.
+- **Nowi klienci**: jeśli masz usługę Microsoft Purview przez mniej niż 30 dni, dzierżawa może aktywować wszystkie wymienione konfiguracje domyślne. Zawsze można je wyłączyć, usunąć lub edytować.
 
-- **Istniejący klienci**: Jeśli masz Microsoft Purview przez ponad 30 dni, możesz aktywować konfiguracje domyślne, jeśli jeszcze nie skonfigurowano odpowiednika:
+- **Istniejący klienci**: jeśli masz usługę Microsoft Purview przez ponad 30 dni, możesz aktywować konfiguracje domyślne, jeśli jeszcze nie skonfigurowano odpowiednika:
 
     | Konfiguracja domyślna| Równoważne |
     |:-----|:-----|
     |Etykiety poufności i zasady etykiet poufności | Opublikowane etykiety poufności |
-    |Automatyczne etykietowanie po stronie klienta | Co najmniej jedna etykieta poufności skonfigurowana do automatycznego stosowania (lub zalecenia dla użytkowników) w aplikacjach Office|
+    |Automatyczne etykietowanie po stronie klienta | Co najmniej jedna etykieta poufności skonfigurowana do automatycznego stosowania (lub zalecenia dla użytkowników) w aplikacjach pakietu Office|
     |Automatyczne etykietowanie po stronie usługi | Co najmniej jedna włączona zasada automatycznego etykietowania|
-    |DLP dla Teams | Co najmniej jedna zasada DLP dla Teams|
+    |DLP for Teams | Co najmniej jedna zasada DLP dla usługi Teams|
     |DLP dla urządzeń | Co najmniej jedna zasada DLP dla urządzeń|
 
 ## <a name="activate-the-default-labels-and-policies"></a>Aktywowanie domyślnych etykiet i zasad
 
 Aby uzyskać te wstępnie skonfigurowane etykiety i zasady: 
 
-1. Z [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **RozwiązaniaProtekcje** >  **ochrony przed informacją**
+1. Z [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) wybierz pozycję **Rozwiązania** > **Ochrona informacji**
     
     Jeśli ta opcja nie zostanie od razu wyświetlona, najpierw wybierz pozycję **Pokaż wszystko** w okienku nawigacji. 
     
@@ -61,13 +59,13 @@ Aby uzyskać te wstępnie skonfigurowane etykiety i zasady:
     
     Jeśli te informacje nie są wyświetlane z opcją aktywacji, obecnie nie kwalifikujesz się do automatycznego tworzenia etykiet poufności i zasad. Możesz spróbować sprawdzić później, czy ten stan uległ zmianie, lub użyć poniższych informacji o ustawieniach, aby ręcznie utworzyć te same etykiety i zasady.
 
-3. Teraz włącz etykiety poufności dla SharePoint i OneDrive. Ten krok jest wymaganiem wstępnym do używania etykiet poufności w zasadach Office dla sieci web i automatycznego etykietowania dla SharePoint i OneDrive.
+3. Teraz włącz etykiety poufności dla programów SharePoint i OneDrive. Ten krok jest wymaganiem wstępnym do używania etykiet poufności w Office dla sieci web i zasad automatycznego etykietowania dla programu SharePoint i usługi OneDrive.
    
-    Użyj następującego baneru w górnej części karty **Information Protection Przegląd**, a następnie wybierz pozycję **Włącz teraz**. Jeśli nie widzisz tego transparentu, etykiety poufności dla SharePoint i OneDrive zostały już włączone dla dzierżawy.
+    Użyj następującego baneru w górnej części karty **Information Protection Przegląd**, a następnie wybierz pozycję **Włącz teraz**. Jeśli ten baner nie jest widoczny, etykiety poufności dla programu SharePoint i usługi OneDrive zostały już włączone dla dzierżawy.
     
-    ![Włącz etykiety poufności dla baneru SharePoint i OneDrive.](../media/turn-on-mip-labels.png)
+    ![Włącz etykiety poufności dla transparentu programu SharePoint i usługi OneDrive.](../media/turn-on-mip-labels.png)
     
-    Aby uzyskać więcej informacji na temat tej funkcji, zobacz [Włączanie etykiet poufności dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+    Aby uzyskać więcej informacji na temat tej funkcji, zobacz [Włączanie etykiet poufności dla plików pakietu Office w programach SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## <a name="default-sensitivity-labels"></a>Domyślne etykiety poufności
 
@@ -77,17 +75,17 @@ Jeśli nie masz opublikowanych etykiet poufności, utworzymy dla Ciebie następu
 |Nazwa etykiety|Opis etykiety dla użytkowników|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
 |Personal|Dane inne niż biznesowe tylko do użytku osobistego.|**Zakres**: plik, adres e-mail <br /><br />**Oznaczanie zawartości**: Nie<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
-|Publiczny|Dane biznesowe, które są specjalnie przygotowane i zatwierdzone do użytku publicznego.|**Zakres**: plik, adres e-mail <br /><br />**Oznaczanie zawartości**: Nie<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
+|Publiczne|Dane biznesowe, które są specjalnie przygotowane i zatwierdzone do użytku publicznego.|**Zakres**: plik, adres e-mail <br /><br />**Oznaczanie zawartości**: Nie<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
 |Ogólne|Dane biznesowe, które nie są przeznaczone do użytku publicznego. W razie potrzeby można to jednak udostępnić partnerom zewnętrznym. Przykłady obejmują wewnętrzny katalog telefoniczny firmy, wykresy organizacyjne, standardy wewnętrzne i większość komunikacji wewnętrznej.|**Zakres**: plik, adres e-mail <br /><br />**Oznaczanie zawartości**: Nie<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
 |Ogólne <br /> \ Każdy (nieograniczony)|Dane organizacji, które nie są przeznaczone do użytku publicznego, ale w razie potrzeby mogą być udostępniane partnerom zewnętrznym. Przykłady obejmują konwersacje klientów, które nie zawierają poufnych informacji ani opublikowanych materiałów marketingowych.|**Zakres**: plik, adres e-mail <br /><br />**Oznaczanie zawartości**: Nie<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
 |Ogólne <br /> \ Wszyscy pracownicy (nieograniczone)|Dane organizacji, które nie są przeznaczone do użytku publicznego. Jeśli chcesz udostępnić tę zawartość partnerom zewnętrznym, potwierdź innym właścicielom danych, że można udostępnić tę zawartość, a następnie zmień etykietę na Ogólne \ Każda (nieograniczona) . Przykłady obejmują wewnętrzny katalog telefoniczny firmy, wykresy organizacyjne, standardy wewnętrzne i większość komunikacji wewnętrznej.|**Zakres**: plik, adres e-mail <br /><br />**Oznaczanie zawartości**: Nie<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
 |Poufne|Poufne dane biznesowe, które mogą spowodować szkody w firmie, jeśli są udostępniane nieautoryzowanym osobom. Przykłady obejmują kontrakty, raporty zabezpieczeń, podsumowania prognoz i dane konta sprzedaży.|**Zakres**: plik, adres e-mail <br /><br />**Oznaczanie zawartości**: Nie<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
 |Poufne <br /> \ Każdy (nieograniczony)|Poufne dane, które nie muszą być szyfrowane. Użyj tej opcji z ostrożnością i odpowiednim uzasadnieniem biznesowym.|Ta etykieta jest wybrana do [automatycznego etykietowania po stronie klienta](#client-side-auto-labeling) i [automatycznego etykietowania po stronie usługi](#service-side-auto-labeling).<br /><br /> **Zakres**: plik, adres e-mail <br /><br />**Oznaczanie zawartości**: stopka: sklasyfikowana jako poufna<br /><br />**Automatyczne etykietowanie**: zaleca się stosowanie etykiety przez użytkowników <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
 |Poufne <br /> \ Wszyscy pracownicy|Poufne dane, które wymagają ochrony, co umożliwia wszystkim pracownikom pełne uprawnienia. Właściciele danych mogą śledzić i odwoływać zawartość.|Ta etykieta jest wybrana do [automatycznego etykietowania po stronie klienta](#client-side-auto-labeling) i [automatycznego etykietowania po stronie usługi](#service-side-auto-labeling).<br /><br /> **Zakres**: plik, adres e-mail <br /><br />**Szyfrowanie**: Wszyscy użytkownicy i grupy w organizacji: Co-Author<br /><br />**Oznaczanie zawartości**: stopka: sklasyfikowana jako poufna<br /><br />**Automatyczne etykietowanie**: zaleca się stosowanie etykiety przez użytkowników <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak |
-|Poufne <br /> \ Zaufane osoby|Poufne dane, które mogą być udostępniane zaufanym osobom w organizacji i poza nią. Te osoby mogą również ponownie udostępniać dane w razie potrzeby.|**Zakres**: plik, adres e-mail <br /><br />**Szyfrowanie**: zezwalaj użytkownikom na przypisywanie uprawnień: <br /> - Encrypt-Only dla Outlook <br />— monituj użytkowników w programach Word, PowerPoint i Excel<br /><br />**Oznaczanie zawartości**: stopka: sklasyfikowana jako poufna<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
+|Poufne <br /> \ Zaufane osoby|Poufne dane, które mogą być udostępniane zaufanym osobom w organizacji i poza nią. Te osoby mogą również ponownie udostępniać dane w razie potrzeby.|**Zakres**: plik, adres e-mail <br /><br />**Szyfrowanie**: zezwalaj użytkownikom na przypisywanie uprawnień: <br /> - Encrypt-Only dla programu Outlook <br />— Monituj użytkowników w programach Word, PowerPoint i Excel<br /><br />**Oznaczanie zawartości**: stopka: sklasyfikowana jako poufna<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
 |Wysoce poufne|Bardzo poufne dane biznesowe, które mogłyby spowodować uszkodzenie firmy, gdyby zostały udostępnione nieautoryzowanym osobom. Przykłady obejmują informacje o pracownikach i klientach, hasła, kod źródłowy i wstępnie ogłoszone raporty finansowe.|**Zakres**: plik, adres e-mail <br /><br />**Znakowanie zawartości**: Znak wodny: WYSOCE POUFNE<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
 |Wysoce poufne <br /> \ Wszyscy pracownicy|Wysoce poufne dane, które umożliwiają wszystkim pracownikom wyświetlanie, edytowanie i odpowiadanie na uprawnienia do tej zawartości. Właściciele danych mogą śledzić i odwoływać zawartość.|**Zakres**: plik, adres e-mail <br /><br />**Szyfrowanie**: Wszyscy użytkownicy i grupy w organizacji: Co-Author<br /><br />**Oznaczanie zawartości**: stopka: sklasyfikowana jako wysoce poufna<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
-|Wysoce poufne <br /> \ Określone osoby |Wysoce poufne dane, które wymagają ochrony i mogą być wyświetlane tylko przez określone osoby i z wybranym poziomem uprawnień.|**Zakres**: plik, adres e-mail <br /><br />**Szyfrowanie**: zezwalaj użytkownikom na przypisywanie uprawnień: <br />— Nie przekazuj dalej dla Outlook <br />— monituj użytkowników w programach Word, PowerPoint i Excel<br /><br />**Oznaczanie zawartości**: stopka: sklasyfikowana jako wysoce poufna<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
+|Wysoce poufne <br /> \ Określone osoby |Wysoce poufne dane, które wymagają ochrony i mogą być wyświetlane tylko przez określone osoby i z wybranym poziomem uprawnień.|**Zakres**: plik, adres e-mail <br /><br />**Szyfrowanie**: zezwalaj użytkownikom na przypisywanie uprawnień: <br />— Nie przekazuj dalej dla programu Outlook <br />— Monituj użytkowników w programach Word, PowerPoint i Excel<br /><br />**Oznaczanie zawartości**: stopka: sklasyfikowana jako wysoce poufna<br /><br />**Automatyczne etykietowanie**: Nie <br /><br />**Ustawienia grupy**: Nie<br /><br />**Ustawienia witryny**: Nie <br /><br />**Automatyczne etykietowanie kolumn bazy danych**: Brak|
 
 > [!NOTE]
 > Nazwy etykiet i opisy są automatycznie dostępne dla następujących ustawień regionalnych: angielski usa, chiński uproszczony i tradycyjny, francuski, niemiecki, włoski, japoński, koreański, portugalski brazylijski, rosyjski i hiszpański.
@@ -103,54 +101,75 @@ Jeśli chcesz edytować te domyślne etykiety poufności, zobacz [Tworzenie i ko
 Domyślne zasady etykiet poufności umożliwiają użytkownikom rozpoczęcie etykietowania dokumentów i wiadomości e-mail etykietami poufności. Ma następującą konfigurację:
 
 - Publikowanie etykiet domyślnych dla wszystkich użytkowników w dzierżawie
-- Etykieta domyślna **generalall** \  **employees (unrestricted)** dla nieoznaczonych dokumentów i wiadomości e-mail
+- Etykieta domyślna **ogólne** \ **wszyscy pracownicy (nieograniczony)** dla nieoznakowanych dokumentów i wiadomości e-mail
 - Użytkownicy muszą uzasadnić usunięcie etykiety lub obniżenie jej klasyfikacji
 
 Aby uzyskać więcej informacji na temat tych ustawień zasad i innych dostępnych ustawień zasad, zobacz [Co mogą zrobić zasady etykiet](sensitivity-labels.md#what-label-policies-can-do).
 
 Jeśli chcesz edytować te domyślne ustawienia zasad, zobacz [Publikowanie etykiet poufności, tworząc zasady etykiet](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
-Gdy te etykiety są używane w aplikacjach Office w Windows, macOS, iOS i Android, użytkownicy widzą nowe etykiety w ciągu czterech godzin i w ciągu jednej godziny dla programu Word, Excel i PowerPoint w sieci Web podczas odświeżania przeglądarki. Może jednak być konieczne zezwolenie na replikację zmian do wszystkich aplikacji i usług przez maksymalnie 24 godziny.
+W przypadku używania tych etykiet w aplikacjach pakietu Office w systemach Windows, macOS, iOS i Android użytkownicy widzą nowe etykiety w ciągu czterech godzin i w ciągu jednej godziny dla programów Word, Excel i PowerPoint w sieci Web podczas odświeżania przeglądarki. Może jednak być konieczne zezwolenie na replikację zmian do wszystkich aplikacji i usług przez maksymalnie 24 godziny.
 
 ## <a name="client-side-auto-labeling"></a>Automatyczne etykietowanie po stronie klienta
 
 Domyślna konfiguracja automatycznego etykietowania po stronie klienta automatycznie zaleca użytkownikom stosowanie etykiety poufności w przypadku wykrycia numerów kart kredytowych w dokumentach lub wiadomościach e-mail, z którymi pracują. Jako zalecenie, a nie automatycznie stosowane, ta konfiguracja służy jako dobry pierwszy krok do wyróżniania zawartości i wprowadza użytkowników do praktyki etykietowania dokumentów i wiadomości e-mail.
 
-Automatyczne etykietowanie po stronie klienta działa tylko w przypadku dokumentów i wiadomości e-mail używanych przez aplikacje Office Word, Excel, PowerPoint i Outlook. 
+Automatyczne etykietowanie po stronie klienta działa tylko w przypadku dokumentów i wiadomości e-mail używanych przez aplikacje pakietu Office Word, Excel, PowerPoint i Outlook. 
 
 Domyślne automatyczne etykietowanie po stronie klienta ma następującą konfigurację: 
 
-- Jeśli w dokumencie lub wiadomości e-mail znajduje się od 1 do 9 wystąpień numerów kart kredytowych, zaleca się, aby użytkownik zastosował etykietę poufności **ConfidentialAnyone** \  **(nieograniczone)** 
+- Jeśli w dokumencie lub wiadomości e-mail znajduje się od 1 do 9 wystąpień numerów kart kredytowych, zaleca się, aby użytkownik zastosował etykietę poufności **Poufne** \ **osoby (nieograniczone)** 
 
-- Jeśli w dokumencie lub wiadomości e-mail znajduje się co najmniej 10 wystąpień numerów kart kredytowych, zaleca się, aby użytkownik zastosował etykietę poufności **PoufneWszystki** \  **pracownicy** 
+- Jeśli w dokumencie lub wiadomości e-mail znajduje się co najmniej 10 wystąpień numerów kart kredytowych, zaleca się, aby użytkownik zastosował etykietę poufności **Poufne** \ **Wszyscy pracownicy** 
 
 > [!NOTE]
 > Jeśli wykryliśmy, że masz opublikowane własne etykiety poufności, zostanie wyświetlony monit o wybranie jednej z własnych etykiet do automatycznego etykietowania i skonfigurowanie ich dla Ciebie.
 
-Jeśli chcesz edytować konfigurację automatycznego etykietowania po stronie klienta, zobacz [How to configure auto-labeling for Office apps (Jak skonfigurować automatyczne etykietowanie dla aplikacji Office](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)).
+Jeśli chcesz edytować konfigurację automatycznego etykietowania po stronie klienta, zobacz [Jak skonfigurować automatyczne etykietowanie dla aplikacji pakietu Office](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps).
 
 ## <a name="service-side-auto-labeling"></a>Automatyczne etykietowanie po stronie usługi 
 
-Automatyczne etykietowanie po stronie usługi ułatwia etykietowanie poufnych dokumentów magazynowanych i wiadomości e-mail przesyłanych. Domyślne zasady automatycznego etykietowania po stronie usługi tworzą zasady w trybie symulacji dla dokumentów przechowywanych we wszystkich witrynach SharePoint lub OneDrive oraz wszystkich wiadomości e-mail wysyłanych za pośrednictwem Exchange Online. W trybie symulacji elementy nie są oznaczane etykietami, dopóki zasady nie zostaną włączone. Tryb symulacji umożliwia wyświetlenie podglądu elementów, które zostaną oznaczone etykietą po włączeniu zasad, dzięki czemu masz pewność co do funkcji etykietowania przed wdrożeniem zasad w dzierżawie na potrzeby rzeczywistego etykietowania. 
+Automatyczne etykietowanie po stronie usługi ułatwia etykietowanie poufnych dokumentów magazynowanych i wiadomości e-mail przesyłanych. Domyślne zasady automatycznego etykietowania po stronie usługi tworzą zasady uruchamiane w trybie symulacji dla dokumentów przechowywanych we wszystkich witrynach programu SharePoint lub OneDrive oraz wszystkich wiadomości e-mail wysyłanych za pośrednictwem Exchange Online. 
 
-Domyślne automatyczne etykietowanie po stronie usługi ma następującą konfigurację: 
+W trybie symulacji elementy nie są oznaczane etykietami, dopóki zasady nie zostaną włączone. Zasady można włączyć ręcznie lub jeśli nie zmienisz ustawienia domyślnego, zasady zostaną automatycznie włączone, jeśli nie zostaną wprowadzone żadne zmiany zasad w ciągu określonej liczby dni od zakończenia symulacji.
 
-- Jeśli w dokumencie lub wiadomości e-mail znajduje się od 1 do 9 wystąpień numerów kart kredytowych, zastosuj etykietę poufności **ConfidentialAnyone** \  **(nieograniczone)**
+> [!NOTE]
+> Automatyczne włączanie zasad automatycznego etykietowania jest nowe i stopniowo wdrażane dla nowych zasad automatycznego etykietowania. Ta konfiguracja może nie być widoczna natychmiast lub dla wszystkich zasad.
 
-- Jeśli w dokumencie lub wiadomości e-mail znajduje się co najmniej 10 wystąpień numerów kart kredytowych, zastosuj etykietę poufności **PoufneWszysci** \  **pracownicy** 
+W większości przypadków liczba dni przed automatycznym włączeniem zasad bez edycji wynosi 7. Jednak dla nowych klientów od 23 czerwca 2022 r. początkowa liczba dni to 25, a następnie 7 po edycji zasad.
+
+Tryb symulacji umożliwia wyświetlenie podglądu elementów, które zostaną oznaczone etykietą po włączeniu zasad, dzięki czemu masz pewność co do funkcji etykietowania przed wdrożeniem zasad w dzierżawie na potrzeby rzeczywistego etykietowania. 
+
+Domyślne zasady automatycznego etykietowania po stronie usługi mają następującą konfigurację: 
+
+Dla wszystkich klientów:
+
+- Jeśli w dokumencie lub wiadomości e-mail znajduje się od 1 do 9 wystąpień numerów kart kredytowych, zastosuj etykietę poufności **Poufna** \ **osoba (nieograniczona)**
+    
+- Jeśli w dokumencie lub wiadomości e-mail znajduje się co najmniej 10 wystąpień numerów kart kredytowych, zastosuj etykietę poufności **Poufne** \ **Wszyscy pracownicy** 
 
 > [!NOTE]
 > Jeśli wykryliśmy, że masz opublikowane własne etykiety poufności, zostanie wyświetlony monit o wybranie jednej z własnych etykiet dla zasad automatycznego etykietowania.
 
-Po zakończeniu symulacji przejrzyj wyniki i jeśli są one zadowalające, włącz zasady.
+Dla nowych klientów od 23 czerwca 2022 r. dzierżawa platformy Microsoft 365 znajduje się w regionie USA:
+
+- Jeśli w dokumencie lub wiadomości e-mail znajduje się od 1 do 9 wystąpień danych osobowych i pełnych nazwisk w Stanach Zjednoczonych, zastosuj etykietę poufności **Poufne** \ **osoby (nieograniczone)**
+
+- Jeśli w dokumencie lub wiadomości e-mail znajduje się co najmniej 10 wystąpień danych osobowych i pełnych nazwisk w Stanach Zjednoczonych, zastosuj etykietę poufności **Poufne** \ **Wszyscy pracownicy** 
+
+Nowi klienci od 23 czerwca 2022 r. mają dwie zasady automatycznego etykietowania dla każdego ustawienia. Jedna zasada dotyczy lokalizacji programu Exchange, a druga dla lokalizacji programu SharePoint i usługi OneDrive. Mimo że zasady są tworzone w tym samym czasie, symulacja nie jest natychmiast włączona dla programu SharePoint i usługi OneDrive:
+- Lokalizacja programu Exchange: zasady automatycznego etykietowania są tworzone i natychmiast uruchamiane symulacje.
+- Lokalizacje programu SharePoint i usługi OneDrive: zasady automatycznego etykietowania są tworzone, ale czekają 25 dni, zanim automatycznie rozpoczną symulację. To opóźnienie daje czas na utworzenie i zapisanie plików w tych lokalizacjach. 
+
+Po zakończeniu symulacji przejrzyj wyniki i jeśli są one zadowalające, włącz zasady. Powoli wdrażane od 23 czerwca 2022 r. domyślnie zasady zostaną automatycznie włączone, jeśli nie zostaną edytowane w określonym okresie (początkowo 25 dni dla nowych klientów, w przeciwnym razie 7 dni).
 
 Aby uzyskać więcej informacji na temat trybu symulacji, zobacz [Dowiedz się więcej o trybie symulacji](apply-sensitivity-label-automatically.md#learn-about-simulation-mode).
 
-Jeśli chcesz edytować zasady automatycznego etykietowania po stronie usługi, zobacz [Jak skonfigurować zasady automatycznego etykietowania dla SharePoint, OneDrive i Exchange](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange).
+Jeśli chcesz edytować zasady automatycznego etykietowania po stronie usługi, zobacz [Jak skonfigurować zasady automatycznego etykietowania dla programów SharePoint, OneDrive i Exchange](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange).
 
-## <a name="dlp-for-teams"></a>DLP dla Teams
+## <a name="dlp-for-teams"></a>DLP for Teams
 
-Domyślne zasady DLP dla Teams wykrywają obecność numerów kart kredytowych we wszystkich Teams czatach i komunikatach kanałów. Po wykryciu tych poufnych informacji administratorzy otrzymają powiadomienie o alertach o niskiej ważności.
+Domyślne zasady DLP dla usługi Teams wykrywają obecność numerów kart kredytowych we wszystkich czatach i komunikatach kanału usługi Teams. Po wykryciu tych poufnych informacji administratorzy otrzymają powiadomienie o alertach o niskiej ważności.
 
 Te zasady są dyskretne dla użytkowników bez widocznej wskazówki dotyczącej zasad i nie są blokowane żadne komunikaty, ale administratorzy będą mieć rekordy poufnych informacji udostępnionych w tych komunikatach. W razie potrzeby możesz edytować ustawienia, aby zmienić tę konfigurację domyślną.
 
@@ -160,7 +179,7 @@ Jeśli chcesz edytować zasady DLP, zobacz [Tworzenie, testowanie i dostrajanie 
 
 ## <a name="dlp-for-devices"></a>DLP dla urządzeń
 
-Domyślne zasady DLP dla urządzeń wykrywają obecność numerów kart kredytowych na urządzeniach Windows 10, które zostały dołączone do Microsoft Purview. Następnie przeprowadza inspekcję (nie blokuje) następujących akcji: 
+Domyślne zasady DLP dla urządzeń wykrywają obecność numerów kart kredytowych na urządzeniach Windows 10, które zostały dołączone do usługi Microsoft Purview. Następnie przeprowadza inspekcję (nie blokuje) następujących akcji: 
 
 - Przekazywanie do domen usług w chmurze lub uzyskiwanie dostępu przez niedozwolone przeglądarki
 
@@ -188,4 +207,4 @@ Aby dowiedzieć się więcej o etykietach poufności, zapobieganiu utracie danyc
 
 - [Dowiedz się więcej o etykietach poufności](sensitivity-labels.md)
 - [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
-- [Ochrona danych za pomocą Microsoft Purview](information-protection.md)
+- [Ochrona danych za pomocą usługi Microsoft Purview](information-protection.md)

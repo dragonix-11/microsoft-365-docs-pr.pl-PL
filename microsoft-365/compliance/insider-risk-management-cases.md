@@ -1,6 +1,6 @@
 ---
 title: Przypadki zarządzania ryzykiem wewnętrznym
-description: Dowiedz się więcej o przypadkach zarządzania ryzykiem wewnętrznym w Microsoft Purview
+description: Dowiedz się więcej o przypadkach zarządzania ryzykiem wewnętrznym w usłudze Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, ryzyko wewnętrzne, zarządzanie ryzykiem, zgodność
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -13,16 +13,14 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 916fb67d8fb2376a1a59d3d2aa61a8e7d041f194
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 678d500b5d523c2b656f4f30fa4ef4a4ed5015a7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469387"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628710"
 ---
 # <a name="insider-risk-management-cases"></a>Przypadki zarządzania ryzykiem wewnętrznym
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Przypadki są sednem zarządzania ryzykiem wewnętrznym i umożliwiają głębokie badanie i działanie w przypadku problemów generowanych przez wskaźniki ryzyka zdefiniowane w zasadach. Przypadki są tworzone ręcznie na podstawie alertów w sytuacjach, w których konieczne jest podjęcie dalszych działań w celu rozwiązania problemu związanego ze zgodnością dla użytkownika. Każdy przypadek jest ograniczony do pojedynczego użytkownika, a wiele alertów dla użytkownika można dodać do istniejącego przypadku lub do nowego przypadku.
 
@@ -101,7 +99,7 @@ Karta **Przegląd przypadku** zawiera również sekcję **Alerty** , która zawi
 Karta **Alerty** zawiera podsumowanie bieżących alertów uwzględnionych w tym przypadku. Nowe alerty mogą zostać dodane do istniejącego przypadku i zostaną dodane do kolejki **alertów** w miarę ich przypisywania. Kolejka zawiera następujące atrybuty alertów:
 
 - Stan
-- Ważności
+- Waga
 - Wykryto czas
 
 Wybierz alert z kolejki, aby wyświetlić stronę **szczegółów alertu** .
@@ -109,7 +107,7 @@ Wybierz alert z kolejki, aby wyświetlić stronę **szczegółów alertu** .
 Użyj kontrolki wyszukiwania, aby wyszukać nazwy alertów pod kątem określonego tekstu, a następnie użyj filtru alertów do sortowania przypadków według następujących atrybutów:
 
 - Stan
-- Ważności
+- Waga
 - Wykryto godzinę, datę rozpoczęcia i datę zakończenia
 
 Użyj kontrolki filtru, aby filtrować alerty według kilku atrybutów, w tym:
@@ -165,12 +163,12 @@ Aby dodać współautora do sprawy:
 1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Przypadki**.
 2. Wybierz przypadek, a następnie wybierz kartę **Współautorzy** .
 3. Wybierz pozycję **Dodaj współautora**.
-4. W oknie dialogowym **Dodawanie współautora** zacznij wpisywać nazwę użytkownika, którego chcesz dodać, a następnie wybierz użytkownika z listy sugerowanych użytkowników. Ta lista jest generowana na podstawie Azure Active Directory subskrypcji dzierżawy.
+4. W oknie dialogowym **Dodawanie współautora** zacznij wpisywać nazwę użytkownika, którego chcesz dodać, a następnie wybierz użytkownika z listy sugerowanych użytkowników. Ta lista jest generowana na podstawie usługi Azure Active Directory subskrypcji dzierżawy.
 5. Wybierz pozycję **Dodaj** , aby dodać użytkownika jako współautora, lub wybierz pozycję **Anuluj** , aby zamknąć okno dialogowe bez dodawania użytkownika jako współautora.
 
 ## <a name="case-actions"></a>Akcje sprawy
 
-Badacze ryzyka mogą podjąć działania w sprawie w jednej z kilku metod, w zależności od ważności sprawy, historii ryzyka użytkownika i wytycznych dotyczących ryzyka organizacji. W niektórych sytuacjach może być konieczne eskalowanie sprawy do użytkownika lub badania danych w celu współpracy z innymi obszarami organizacji i dokładniejszego poznania działań związanych z ryzykiem. Zarządzanie ryzykiem wewnętrznym jest ściśle zintegrowane z innymi rozwiązaniami Microsoft Purview, które ułatwiają kompleksowe zarządzanie rozwiązaniami.
+Badacze ryzyka mogą podjąć działania w sprawie w jednej z kilku metod, w zależności od ważności sprawy, historii ryzyka użytkownika i wytycznych dotyczących ryzyka organizacji. W niektórych sytuacjach może być konieczne eskalowanie sprawy do użytkownika lub badania danych w celu współpracy z innymi obszarami organizacji i dokładniejszego poznania działań związanych z ryzykiem. Zarządzanie ryzykiem wewnętrznym jest ściśle zintegrowane z innymi rozwiązaniami usługi Microsoft Purview, które ułatwiają kompleksowe zarządzanie rozwiązaniami.
 
 ### <a name="send-email-notice"></a>Wysyłanie powiadomienia e-mail
 
@@ -188,7 +186,7 @@ Aby wysłać powiadomienie do użytkownika przypisanego do sprawy:
 
 ### <a name="escalate-for-investigation"></a>Eskalowanie w celu zbadania
 
-Eskaluj sprawę do badania użytkownika w sytuacjach, w których wymagana jest dodatkowa kontrola prawna dla działania użytkownika związanego z ryzykiem. Ta eskalacja otwiera nowy przypadek zbierania elektronicznych materiałów dowodowych Microsoft Purview (Premium) w organizacji Microsoft 365. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zapewnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania prawne organizacji. Umożliwia również zespołowi prawnemu zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej w celu komunikowania się z opiekunami zaangażowanymi w sprawę. Eskalowanie do sprawy zbierania elektronicznych materiałów dowodowych (Premium) z przypadku zarządzania ryzykiem wewnętrznym pomaga zespołowi prawnemu podjąć odpowiednie działania i zarządzać zachowaniem zawartości. Aby dowiedzieć się więcej na temat przypadków zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
+Eskaluj sprawę do badania użytkownika w sytuacjach, w których wymagana jest dodatkowa kontrola prawna dla działania użytkownika związanego z ryzykiem. Ta eskalacja otwiera nową sprawę Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) w organizacji platformy Microsoft 365. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) udostępnia kompleksowy przepływ pracy umożliwiający zachowanie, zbieranie, przeglądanie, analizowanie i eksportowanie zawartości, która odpowiada na wewnętrzne i zewnętrzne badania prawne organizacji. Umożliwia również zespołowi prawnemu zarządzanie całym przepływem pracy powiadomień o blokadzie prawnej w celu komunikowania się z opiekunami zaangażowanymi w sprawę. Eskalowanie do sprawy zbierania elektronicznych materiałów dowodowych (Premium) z przypadku zarządzania ryzykiem wewnętrznym pomaga zespołowi prawnemu podjąć odpowiednie działania i zarządzać zachowaniem zawartości. Aby dowiedzieć się więcej na temat przypadków zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Omówienie Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium)](overview-ediscovery-20.md).
 
 Aby eskalować sprawę do badania użytkownika:
 
@@ -198,34 +196,34 @@ Aby eskalować sprawę do badania użytkownika:
 4. Przejrzyj pola powiadomień i zaktualizuj je odpowiednio. Wprowadzone tutaj wartości zastąpią wartości szablonu.
 5. Wybierz pozycję **Potwierdź** , aby utworzyć przypadek badania użytkownika, lub wybierz pozycję **Anuluj** , aby zamknąć okno dialogowe bez tworzenia nowego przypadku badania użytkownika.
 
-Po eskalacji sprawy zarządzania ryzykiem wewnętrznym do nowego przypadku badania użytkownika możesz przejrzeć nową sprawę w obszarze **eDiscoveryAdvanced** >  w portal zgodności Microsoft Purview.
+Po eskalacji przypadku zarządzania ryzykiem wewnętrznym do nowego przypadku badania użytkownika możesz przejrzeć nowy przypadek w obszarze **eDiscovery** > **Advanced** w portal zgodności Microsoft Purview.
 
-### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Uruchamianie zautomatyzowanych zadań przy użyciu przepływów Power Automate dla sprawy
+### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Uruchamianie zautomatyzowanych zadań za pomocą przepływów usługi Power Automate w tym przypadku
 
-Korzystając z zalecanych przepływów Power Automate, badacze ryzyka i analitycy mogą szybko podjąć działania w celu:
+Korzystając z zalecanych przepływów usługi Power Automate, badacze ryzyka i analitycy mogą szybko podjąć działania w celu:
 
 - Żądanie informacji od działu kadr lub firmy na temat użytkownika w przypadku ryzyka związanego z wewnętrznym dostępem
 - Powiadamianie menedżera, gdy użytkownik ma alert o ryzyku wewnętrznym
 - Tworzenie rekordu w przypadku zarządzania ryzykiem wewnętrznym w usłudze ServiceNow
 - Powiadamianie użytkowników o dodaniu ich do zasad ryzyka dotyczącego informacji poufnych
 
-Aby uruchamiać przepływy Power Automate lub zarządzać nimi w przypadku zarządzania ryzykiem wewnętrznym:
+Aby uruchamiać przepływy usługi Power Automate lub zarządzać nimi w przypadku zarządzania ryzykiem wewnętrznym:
 
 1. Wybierz pozycję **Automatyzuj** na pasku narzędzi akcji sprawy. 
-2. Wybierz przepływ Power Automate do uruchomienia, a następnie wybierz pozycję **Uruchom przepływ**. 
+2. Wybierz przepływ usługi Power Automate do uruchomienia, a następnie wybierz pozycję **Uruchom przepływ**. 
 3. Po zakończeniu przepływu wybierz pozycję **Gotowe**.
 
-Aby dowiedzieć się więcej na temat przepływów Power Automate na potrzeby zarządzania ryzykiem wewnętrznym, zobacz [Wprowadzenie do ustawień zarządzania ryzykiem wewnętrznym](insider-risk-management-settings.md#power-automate-flows-preview).
+Aby dowiedzieć się więcej na temat przepływów usługi Power Automate na potrzeby zarządzania ryzykiem wewnętrznym, zobacz [Wprowadzenie do ustawień zarządzania ryzykiem wewnętrznym](insider-risk-management-settings.md#power-automate-flows-preview).
 
-### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Wyświetlanie lub tworzenie zespołu Microsoft Teams dla sprawy
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Wyświetlanie lub tworzenie zespołu usługi Microsoft Teams w tej sprawie
 
-Po włączeniu integracji Microsoft Teams zarządzania ryzykiem wewnętrznym w ustawieniach zespół Microsoft Teams jest tworzony automatycznie za każdym razem, gdy alert zostanie potwierdzony i zostanie utworzony przypadek. Badacze ryzyka i analitycy mogą szybko otworzyć Microsoft Teams i przejść bezpośrednio do zespołu w celu zgłoszenia, wybierając pozycję **Wyświetl zespół Microsoft Teams** na pasku narzędzi akcji sprawy.
+Po włączeniu integracji usługi Microsoft Teams w celu zarządzania ryzykiem wewnętrznym w ustawieniach zespół usługi Microsoft Teams jest tworzony automatycznie za każdym razem, gdy alert zostanie potwierdzony i zostanie utworzony przypadek. Badacze ryzyka i analitycy mogą szybko otworzyć usługę Microsoft Teams i przejść bezpośrednio do zespołu w celu zgłoszenia sprawy, wybierając pozycję **Wyświetl zespół usługi Microsoft Teams** na pasku narzędzi akcji sprawy.
 
-W przypadku spraw otwartych przed włączeniem integracji z zespołem firmy Microsoft badacze ryzyka i analitycy mogą utworzyć nowy zespół Microsoft Teams dla danego przypadku, wybierając pozycję **Utwórz zespół Microsoft Teams** na pasku narzędzi akcji sprawy.
+W przypadku spraw otwartych przed włączeniem integracji z zespołem firmy Microsoft badacze ryzyka i analitycy mogą utworzyć nowy zespół usługi Microsoft Teams dla danego przypadku, wybierając pozycję **Utwórz zespół usługi Microsoft Teams** na pasku narzędzi do akcji sprawy.
 
 Po rozwiązaniu sprawy skojarzony zespół firmy Microsoft zostanie automatycznie zarchiwizowany (ukryty i przekształcony w tryb tylko do odczytu).
 
-Aby dowiedzieć się więcej na temat Microsoft Teams na potrzeby zarządzania ryzykiem wewnętrznym, zobacz [Wprowadzenie do ustawień zarządzania ryzykiem wewnętrznym](insider-risk-management-settings.md#microsoft-teams-preview).
+Aby dowiedzieć się więcej o usłudze Microsoft Teams na potrzeby zarządzania ryzykiem wewnętrznym, zobacz [Wprowadzenie do ustawień zarządzania ryzykiem wewnętrznym](insider-risk-management-settings.md#microsoft-teams-preview).
 
 ### <a name="resolve-the-case"></a>Rozwiązywanie problemu
 

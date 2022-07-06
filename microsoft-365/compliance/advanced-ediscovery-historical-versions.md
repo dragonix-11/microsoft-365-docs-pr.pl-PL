@@ -15,31 +15,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Użyj wersji historycznych w usłudze eDiscovery (Premium), aby zbierać zawartość ze wszystkich wersji dokumentów przechowywanych w SharePoint i OneDrive.
-ms.openlocfilehash: 2b71d79fae15b5bc8bafbf32fc189dad9b314d40
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Użyj wersji historycznych w usłudze eDiscovery (Premium), aby zbierać zawartość ze wszystkich wersji dokumentów przechowywanych w programach SharePoint i OneDrive.
+ms.openlocfilehash: 3706da8c9383dfdd3d6b41f309f8b84920648842
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092552"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627740"
 ---
 # <a name="set-up-historical-versions-in-ediscovery-premium-preview"></a>Konfigurowanie wersji historycznych w usłudze eDiscovery (Premium) (wersja zapoznawcza)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Funkcja historycznych wersji zbierania elektronicznych materiałów dowodowych (Premium) umożliwia menedżerom zbierania elektronicznych materiałów dowodowych w organizacji wyszukiwanie i zbieranie zawartości ze wszystkich wersji dokumentów przechowywanych w usłudze SharePoint Online i OneDrive dla Firm. Następnie możesz dodać tę zawartość do zestawu przeglądów do analizy i przeglądu. Ułatwia to znajdowanie i przeglądanie zawartości z określonej wersji dokumentu, która może być istotna dla sprawy lub badania, nawet jeśli najnowsza wersja tego samego dokumentu nie zawiera odpowiednich informacji.
 
-Funkcja wersji historycznych w usłudze eDiscovery (Premium) umożliwia menedżerom zbierania elektronicznych materiałów dowodowych w organizacji wyszukiwanie i zbieranie zawartości ze wszystkich wersji dokumentów przechowywanych w SharePoint Online i OneDrive dla Firm. Następnie możesz dodać tę zawartość do zestawu przeglądów do analizy i przeglądu. Ułatwia to znajdowanie i przeglądanie zawartości z określonej wersji dokumentu, która może być istotna dla sprawy lub badania, nawet jeśli najnowsza wersja tego samego dokumentu nie zawiera odpowiednich informacji.
+Aby obsługiwać możliwość obsługi wersji historycznych w usłudze eDiscovery (Premium), administratorzy programu SharePoint muszą włączyć przechowywanie wersji witryn w swojej organizacji. Następnie, gdy użytkownicy modyfikują dokumenty w programie SharePoint lub OneDrive, niejawne regularne wersje są tworzone podczas zapisywania dokumentu (lub automatycznego zapisywania). Przechowywanie wersji programu SharePoint umożliwia śledzenie działania wykonywanego na elementach programu SharePoint (w tym dokumentów, zdarzeń i zadań). Ta możliwość przechowywania wersji pozostawia ślad inspekcji, który może dostarczyć dowodów w dochodzeniach prawnych. Te starsze wersje dokumentu są dostępne dla organizacji, która może być zobowiązana do udostępniania takich wersji, które mają poufną lub istotną zawartość podczas odnajdywania przez sąd w sprawach prawnych.
 
-Aby obsługiwać możliwość obsługi wersji historycznych w usłudze eDiscovery (Premium), administratorzy SharePoint muszą włączyć przechowywanie wersji witryn w organizacji. Następnie, gdy użytkownicy modyfikują dokumenty w SharePoint lub OneDrive, niejawne regularne wersje są tworzone podczas zapisywania dokumentu (lub automatycznego zapisywania). SharePoint przechowywanie wersji umożliwia śledzenie działania wykonywanego na SharePoint elementach (w tym dokumentach, zdarzeniach i zadaniach). Ta możliwość przechowywania wersji pozostawia ślad inspekcji, który może dostarczyć dowodów w dochodzeniach prawnych. Te starsze wersje dokumentu są dostępne dla organizacji, która może być zobowiązana do udostępniania takich wersji, które mają poufną lub istotną zawartość podczas odnajdywania przez sąd w sprawach prawnych.
-
-Gdy administrator zbierania elektronicznych materiałów dowodowych włącza wersje historyczne dla organizacji, a następnie aktywuje je dla określonych witryn SharePoint, usługa wypychania zawartości SharePoint przeszukiwa wszystkie główne i pomocnicze wersje dokumentów w uaktywnionych witrynach, a następnie wysyła te wersje do indeksowania. Po zakończeniu procesu przeszukiwania i indeksowania dokumenty i ich wersje są dostępne do wyszukiwania zbierania elektronicznych materiałów dowodowych. Jeśli dostęp do określonej wersji będzie możliwy (według historii wersji), ta wersja będzie odnajdywalna w wyszukiwaniu kolekcji zbierania elektronicznych materiałów dowodowych (Premium).
+Gdy administrator zbierania elektronicznych materiałów dowodowych włączy wersje historyczne dla organizacji, a następnie aktywuje je dla określonych witryn programu SharePoint, usługa wypychania zawartości programu SharePoint przeszuka wszystkie główne i pomocnicze wersje dokumentów w uaktywnionych witrynach, a następnie wysyła te wersje do indeksowania. Po zakończeniu procesu przeszukiwania i indeksowania dokumenty i ich wersje są dostępne do wyszukiwania zbierania elektronicznych materiałów dowodowych. Jeśli dostęp do określonej wersji będzie możliwy (według historii wersji), ta wersja będzie odnajdywalna w wyszukiwaniu kolekcji zbierania elektronicznych materiałów dowodowych (Premium).
 
 ## <a name="set-up-historical-versions"></a>Konfiguruj wersje historyczne
 
-Aby włączyć wersje historyczne w usłudze eDiscovery (Premium), organizacja musi ją włączyć, a następnie aktywować określone witryny, aby wszystkie wersje dokumentów przechowywanych w tych witrynach były indeksowane do wyszukiwania. Przed skonfigurowanie funkcji eDiscovery (Premium) dla wersji historycznych należy włączyć obsługę wersji w SharePoint.
+Aby włączyć wersje historyczne w usłudze eDiscovery (Premium), organizacja musi ją włączyć, a następnie aktywować określone witryny, aby wszystkie wersje dokumentów przechowywanych w tych witrynach były indeksowane do wyszukiwania. Przed skonfigurowanie funkcji zbierania elektronicznych materiałów dowodowych (Premium) dla wersji historycznych należy włączyć obsługę obsługi wersji w programie SharePoint.
 
-### <a name="step-1-turn-on-versioning-in-sharepoint"></a>Krok 1. Włączanie obsługi wersji w SharePoint
+### <a name="step-1-turn-on-versioning-in-sharepoint"></a>Krok 1. Włączanie przechowywania wersji w programie SharePoint
 
-Pierwszym krokiem jest włączenie obsługi wersji w usłudze SharePoint Online, aby wszystkie wersje dokumentu zostały zachowane. Aby uzyskać instrukcje, zobacz [Versioning in SharePoint (Przechowywanie wersji w SharePoint](/microsoft-365/community/versioning-basics-best-practices)).
+Pierwszym krokiem jest włączenie obsługi wersji w usłudze SharePoint Online, aby wszystkie wersje dokumentu zostały zachowane. Aby uzyskać instrukcje, zobacz [Przechowywanie wersji w programie SharePoint](/microsoft-365/community/versioning-basics-best-practices).
 
 ### <a name="step-2-turn-on-historical-versions"></a>Krok 2. Włączanie wersji historycznych
 
@@ -48,11 +46,11 @@ Następnym krokiem jest włączenie wersji historycznych w usłudze eDiscovery (
 > [!IMPORTANT]
 > Po włączeniu wersji historycznych nie będzie można wyłączyć ich w publicznej wersji zapoznawczej. Będzie można go wyłączyć po wydaniu wersji historycznych w celu zapewnienia ogólnej dostępności.
 
-1. W portalu zgodności usługi Microsoft Purview przejdź do obszaru [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764)a następnie kliknij pozycję **Ustawienia zbierania elektronicznych materiałów dowodowych (Premium**).
+1. W portal zgodności Microsoft Purview przejdź do pozycji [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) a następnie kliknij pozycję **Ustawienia zbierania elektronicznych materiałów dowodowych (Premium).**
 
    ![Wybierz ustawienia zbierania elektronicznych materiałów dowodowych (Premium)](..\media\HistoricalVersions1.png)
 
-2. Na stronie **Ustawienia** wybierz kartę **Wersje historyczne (wersja zapoznawcza**), a następnie przełącz przełącznik **Dzierżawa wersji historycznych** na włączony.
+2. Na stronie **Ustawienia** wybierz kartę **Wersje historyczne (wersja zapoznawcza),** a następnie przełącz przełącznik **Kontrola dzierżawy wersji historycznych** na włączone.
 
    ![Włącz przełącznik, aby włączyć wersje historyczne](..\media\HistoricalVersions2.png)
 
@@ -60,18 +58,18 @@ Następnym krokiem jest włączenie wersji historycznych w usłudze eDiscovery (
 
 3. Kliknij przycisk **Tak** , aby włączyć wersje historyczne.
 
-### <a name="step-3-activate-sharepoint-sites"></a>Krok 3. Aktywowanie witryn SharePoint
+### <a name="step-3-activate-sharepoint-sites"></a>Krok 3. Aktywowanie witryn programu SharePoint
 
-Po włączeniu wersji historycznych dla organizacji ostatnim krokiem jest aktywowanie SharePoint witryn do obsługi wersji historycznych. Po aktywowaniu witryny (przez dodanie jej do listy witryn na **karcie Wersje historyczne** ) witryna jest ponownie przeszukowana, a wszystkie wersje dokumentów przechowywanych w tej witrynie są indeksowane do wyszukiwania.
+Po włączeniu wersji historycznych dla organizacji ostatnim krokiem jest aktywowanie witryn programu SharePoint w celu obsługi wersji historycznych. Po aktywowaniu witryny (przez dodanie jej do listy witryn na **karcie Wersje historyczne** ) witryna jest ponownie przeszukowana, a wszystkie wersje dokumentów przechowywanych w tej witrynie są indeksowane do wyszukiwania.
 
 > [!NOTE]
 > Istnieje limit 100 aktywacji witryn na organizację podczas publicznej wersji zapoznawczej wersji historycznych. Aktywacja jest liczona do tego limitu za każdym razem, gdy włączasz lub wyłączasz witrynę dla wersji historycznych. Jeśli włączysz wiele witryn, każda witryna zostanie zliczona jako pojedyncza aktywacja. Łączna liczba aktywacji jest wyświetlana na **karcie Wersje historyczne** .
 
-1. Na karcie **Wersje historyczne** na stronie **Ustawienia** eDiscovery (Premium) kliknij przycisk **Włącz**, aby aktywować witryny dla wersji historycznych.
+1. Na **karcie Wersje historyczne** na stronie **Ustawienia** zbierania elektronicznych materiałów dowodowych (Premium) kliknij przycisk **Włącz** , aby aktywować witryny dla wersji historycznych.
 
    ![Kliknij przycisk Włącz, aby aktywować witryny dla wersji historycznych](..\media\HistoricalVersions3.png)  
 
-   Zostanie wyświetlona strona wysuwana zawierająca listę wszystkich witryn SharePoint w organizacji.
+   Zostanie wyświetlona strona wysuwana zawierająca listę wszystkich witryn programu SharePoint w organizacji.
 
 2. Wybierz witrynę do aktywowania, a następnie kliknij przycisk **Włącz** , aby aktywować ją dla wersji historycznych. Możesz użyć pola wyszukiwania, aby wyszukać określoną witrynę.
 

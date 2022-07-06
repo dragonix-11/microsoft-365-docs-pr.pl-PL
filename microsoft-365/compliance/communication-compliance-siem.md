@@ -19,24 +19,22 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f111fbd831f36cd8f1647e4b99565a24372387b8
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 4d9ee561e033e98919063d1f344aa3207a6bb6cd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953875"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626540"
 ---
 # <a name="communication-compliance-with-siem-solutions"></a>Zgodność w komunikacji z rozwiązaniami SIEM
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 [Zgodność z komunikacją](communication-compliance.md) to rozwiązanie ryzyka związanego z informacjami poufnymi w usłudze Microsoft Purview, które pomaga zminimalizować ryzyko komunikacji, pomagając wykrywać, przechwytywać i działać na nieodpowiednich komunikatach w organizacji. Rozwiązania do zarządzania informacjami o zabezpieczeniach i zdarzeniami (SIEM), takie jak [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) lub [Splunk](https://www.splunk.com/) , są często używane do agregowania i śledzenia zagrożeń w organizacji.
 
-Typowym zapotrzebowaniem organizacji jest zintegrowanie alertów zgodności z komunikacją i tych rozwiązań SIEM. Dzięki tej integracji organizacje mogą wyświetlać alerty zgodności komunikacji w rozwiązaniu SIEM, a następnie korygować alerty w ramach przepływu pracy zgodności komunikacji i środowiska użytkownika. Na przykład pracownik wysyła obraźliwy komunikat do innego pracownika i ten komunikat jest wykrywany przez monitorowanie zasad zgodności komunikacji pod kątem nieodpowiedniej zawartości. Te zdarzenia są śledzone w usłudze Microsoft 365 Audit (znanej również jako "ujednolicony dziennik inspekcji") przez rozwiązanie zgodności z komunikacją i importowane do rozwiązania SIEM. Alert jest następnie wyzwalany w rozwiązaniu SIEM dla organizacji na podstawie zdarzeń monitorowanych w Microsoft 365 Inspekcja, które są skojarzone z alertami zgodności komunikacji. Śledczy są powiadamiani o alercie w rozwiązaniach SIEM, a następnie badają i korygują alert w rozwiązaniu zgodności z komunikacją.
+Typowym zapotrzebowaniem organizacji jest zintegrowanie alertów zgodności z komunikacją i tych rozwiązań SIEM. Dzięki tej integracji organizacje mogą wyświetlać alerty zgodności komunikacji w rozwiązaniu SIEM, a następnie korygować alerty w ramach przepływu pracy zgodności komunikacji i środowiska użytkownika. Na przykład pracownik wysyła obraźliwy komunikat do innego pracownika i ten komunikat jest wykrywany przez monitorowanie zasad zgodności komunikacji pod kątem nieodpowiedniej zawartości. Te zdarzenia są śledzone w usłudze Microsoft 365 Audit (znanej również jako "ujednolicony dziennik inspekcji") przez rozwiązanie zgodności z komunikacją i importowane do rozwiązania SIEM. Alert jest następnie wyzwalany w rozwiązaniu SIEM dla organizacji na podstawie zdarzeń monitorowanych w usłudze Microsoft 365 Audit, które są skojarzone z alertami zgodności komunikacji. Śledczy są powiadamiani o alercie w rozwiązaniach SIEM, a następnie badają i korygują alert w rozwiązaniu zgodności z komunikacją.
 
 ## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Alerty zgodności komunikacji w usłudze Microsoft 365 Audit
 
-Wszystkie dopasowania zasad zgodności komunikacji są przechwytywane w Microsoft 365 Audit. W poniższych przykładach przedstawiono szczegóły dotyczące wybranych działań dopasowania zasad zgodności komunikacji:
+Wszystkie dopasowania zasad zgodności komunikacji są przechwytywane w usłudze Microsoft 365 Audit. W poniższych przykładach przedstawiono szczegóły dotyczące wybranych działań dopasowania zasad zgodności komunikacji:
 
 **Przykład wpisu dziennika inspekcji dla dopasowania szablonu zasad nieodpowiedniej zawartości:**
 
@@ -54,7 +52,7 @@ IsValid: True
 ObjectState: Unchanged
 ```
 
-**Przykład wpisu dziennika inspekcji Microsoft 365 dla zasad z niestandardowym dopasowaniem słów kluczowych (niestandardowy typ informacji poufnych):**
+**Przykład wpisu dziennika inspekcji platformy Microsoft 365 dla zasad z niestandardowym dopasowaniem słów kluczowych (niestandardowy typ informacji poufnych):**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -71,11 +69,11 @@ ObjectState: Unchanged
 ```
 
 > [!NOTE]
-> Obecnie może wystąpić do 24-godzinne opóźnienie między czasem rejestrowania dopasowania zasad w Microsoft 365 Audit a czasem, w którym można badać dopasowania zasad w zgodności z komunikacją.
+> Obecnie może wystąpić do 24-godzinne opóźnienie między czasem rejestrowania dopasowania zasad w usłudze Microsoft 365 Audit a czasem, w którym można badać dopasowania zasad w zgodności z komunikacją.
 
 ## <a name="configure-communication-compliance-and-microsoft-sentinel-integration"></a>Konfigurowanie zgodności komunikacji i integracji z usługą Microsoft Sentinel
 
-Jeśli używasz usługi Microsoft Sentinel do agregowania dopasowań zasad zgodności komunikacji, usługa Sentinel używa Microsoft 365 Audit jako źródła danych. Aby zintegrować alerty zgodności komunikacji z usługą Sentinel, wykonaj następujące kroki:
+Jeśli używasz usługi Microsoft Sentinel do agregowania dopasowań zasad zgodności komunikacji, usługa Sentinel używa usługi Microsoft 365 Audit jako źródła danych. Aby zintegrować alerty zgodności komunikacji z usługą Sentinel, wykonaj następujące kroki:
 
 1. [Dołącz do usługi Microsoft Sentinel](/azure/sentinel/quickstart-onboard). W ramach procesu dołączania skonfigurujesz źródła danych.
 2. Skonfiguruj [łącznik danych Microsoft Office 365](/azure/sentinel/data-connectors-reference#microsoft-office-365) usługi Microsoft Sentinel i w obszarze konfiguracji łącznika wybierz pozycję *Exchange*.
@@ -87,14 +85,14 @@ Jeśli używasz usługi Microsoft Sentinel do agregowania dopasowań zasad zgodn
 
     *| OfficeActivity | where OfficeWorkload == "Exchange" and Operation == "SupervisionRuleMatch" and UserId == "User1@Contoso.com" | sortuj według timegenerated*
 
-Aby uzyskać więcej informacji na temat dzienników inspekcji Microsoft 365 dla Office 365 zebranych przez usługę Microsoft Sentinel, zobacz [Dokumentacja dzienników usługi Azure Monitor](/azure/azure-monitor/reference/tables/OfficeActivity).
+Aby uzyskać więcej informacji na temat dzienników inspekcji platformy Microsoft 365 dla Office 365 zebranych przez usługę Microsoft Sentinel, zobacz [Dokumentacja dzienników usługi Azure Monitor](/azure/azure-monitor/reference/tables/OfficeActivity).
 
 ## <a name="configure-communication-compliance-and-splunk-integration"></a>Konfigurowanie zgodności komunikacji i integracji splunk
 
 Aby zintegrować alerty zgodności komunikacji z rozwiązaniem Splunk, wykonaj następujące kroki:
 
 1. Instalowanie [dodatku Splunk dla Microsoft Office 365](https://docs.splunk.com/Documentation/AddOns/released/MSO365/ConfigureinputsmanagementAPI)
-2. Konfigurowanie aplikacji integracji w usłudze Azure AD dla dodatku Splunk dla Microsoft Office 365
+2. Konfigurowanie aplikacji integracji w Azure AD dla dodatku Splunk dla Microsoft Office 365
 3. Skonfiguruj zapytania wyszukiwania w rozwiązaniu Splunk. Użyj następującego przykładu wyszukiwania, aby zidentyfikować wszystkie alerty zgodności komunikacji:
 
     *index=\* sourcetype="o365:management:activity" Workload=Exchange Operation=SupervisionRuleMatch*
@@ -110,11 +108,11 @@ W poniższej tabeli przedstawiono przykładowe wyniki wyszukiwania dla różnych
 | Typy zasad | Przykładowe wyniki wyszukiwania |
 | :------------------ | :--------------------------------------- |
 | Zasady wykrywające niestandardową listę słów kluczowych typu informacji poufnych | { <br> CreationTime: 2021-09-17T16:29:57 <br> Identyfikator: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: prawda <br> Objectid: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> Operacja: SupervisionRuleMatch <br> Identyfikator organizacji: d6a06676-95e8-4632-b949-44bc00f0793f <br> Typ rekordu: 68 <br> ResultStatus: {"ItemClass":"IPM. Uwaga","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> Typ użytkownika: 0 <br> Wersja: 1 <br> Obciążenie: Exchange <br> } |
-| Zasady wykrywające nieodpowiedni język | { <br> CreationTime: 2021-09-17T23:44:35 <br> Identyfikator: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: prawda <br> Objectid: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Operacja: SupervisionRuleMatch <br> Identyfikator organizacji: d6a06676-95e8-4632-b949-44bc00f0793f <br> Typ rekordu: 68 <br> ResultStatus: {"ItemClass":"IPM.Yammer. Wiadomość","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> Typ użytkownika: 0 <br> Wersja: 1 <br> }  |
+| Zasady wykrywające nieodpowiedni język | { <br> CreationTime: 2021-09-17T23:44:35 <br> Identyfikator: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: prawda <br> Objectid: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Operacja: SupervisionRuleMatch <br> Identyfikator organizacji: d6a06676-95e8-4632-b949-44bc00f0793f <br> Typ rekordu: 68 <br> ResultStatus: {"ItemClass":"IPM. Yammer.Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> Typ użytkownika: 0 <br> Wersja: 1 <br> }  |
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>Konfigurowanie zgodności komunikacji z innymi rozwiązaniami SIEM
 
-Aby pobrać dopasowania zasad zgodności komunikacji z Microsoft 365 Audit, możesz użyć programu PowerShell lub [interfejsu API zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
+Aby pobrać dopasowania zasad zgodności komunikacji z inspekcji platformy Microsoft 365, możesz użyć programu PowerShell lub [interfejsu API zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
 W przypadku korzystania z programu PowerShell można użyć jednego z tych parametrów z poleceniem cmdlet **Search-UnifiedAuditLog** do filtrowania zdarzeń dziennika inspekcji pod kątem działań związanych ze zgodnością komunikacji.
 
@@ -136,5 +134,5 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Compl
 ## <a name="resources"></a>Zasoby
 
 - [Inspekcja zgodności komunikacji](communication-compliance-reports-audits.md#audit)
-- [Microsoft Purview Audit (Premium)](advanced-audit.md)
+- [Inspekcja w Microsoft Purview (Premium)](advanced-audit.md)
 - [Dokumentacja dotycząca interfejsu API działań związanych z zarządzaniem w usłudze Office 365](/office/office-365-management-api/office-365-management-activity-api-reference)

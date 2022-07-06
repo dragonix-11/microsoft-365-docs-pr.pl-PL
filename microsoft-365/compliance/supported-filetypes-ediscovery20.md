@@ -1,5 +1,5 @@
 ---
-title: Obsługiwane typy plików zbierania elektronicznych materiałów dowodowych (Premium)
+title: Obsługiwane typy plików w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -14,20 +14,18 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Lista obsługiwanych typów plików w Microsoft 365 eDiscovery (Premium), w tym typy plików obrazów obsługiwane przez funkcję OCR w funkcji eDiscovery (Premium).
+description: Lista obsługiwanych typów plików w usłudze Microsoft 365 eDiscovery (Premium), w tym typy plików obrazów obsługiwane przez funkcje OCR w środowisku eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 422200b3015ff86566507cbe3f63bc2a75a84bea
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: faa367800653e320621336e98f9e8fc684b222ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095801"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631034"
 ---
-# <a name="supported-file-types-in-ediscovery-premium"></a>Obsługiwane typy plików zbierania elektronicznych materiałów dowodowych (Premium)
+# <a name="supported-file-types-in-ediscovery-premium"></a>Obsługiwane typy plików w usłudze eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Usługa Microsoft Purview eDiscovery (Premium) obsługuje wiele typów plików na wielu różnych poziomach. Typy plików pomocy technicznej zostały opisane w poniższych tabelach w tym artykule. Ta lista nie jest finalizowana i dodamy nowe typy plików w miarę kontynuowania testowania walidacji. Te tabele wskazują, czy typ pliku jest obsługiwany w przypadku wyodrębniania tekstu (i optycznego rozpoznawania znaków lub wyodrębniania tekstu OCR dla plików obrazów), który można wyświetlać w natywnej przeglądarce, a także obsługiwać w podglądzie adnotacji w usłudze eDiscovery (Premium).
+Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) obsługuje wiele typów plików na wielu różnych poziomach. Typy plików pomocy technicznej zostały opisane w poniższych tabelach w tym artykule. Ta lista nie jest finalizowana i dodamy nowe typy plików w miarę kontynuowania testowania walidacji. Te tabele wskazują, czy typ pliku jest obsługiwany do wyodrębniania tekstu (i optycznego rozpoznawania znaków lub wyodrębniania tekstu OCR dla plików obrazów), który można wyświetlać w natywnej przeglądarce, a także obsługiwać w podglądzie adnotacji w środowisku eDiscovery (Premium).
 
 ## <a name="archive--container"></a>Archiwum/kontener
 
@@ -292,7 +290,7 @@ Usługa Microsoft Purview eDiscovery (Premium) obsługuje wiele typów plików n
 |application/vnd.wordperfect; version=6.x|Tak|Tak|Tak|Nie|Nie|.wpd|
 |
 
-## <a name="word-pro"></a>Pro programu Word
+## <a name="word-pro"></a>Word Pro
 
 <br>
 

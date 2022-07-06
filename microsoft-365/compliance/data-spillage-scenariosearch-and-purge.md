@@ -14,16 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Użyj zbierania elektronicznych materiałów dowodowych i narzędzi wyszukiwania, aby zarządzać zdarzeniem wycieku danych w organizacji i reagować na nie.
-ms.openlocfilehash: 9be20d6c8eab99206a5510be6f21d3ca24114e0e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b65d6057921d310c3e22e5494218271c7693c162
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65086958"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630196"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Seria rozwiązań zbierania elektronicznych materiałów dowodowych: scenariusz rozlania danych — wyszukiwanie i przeczyszczanie
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  **Co to jest wyciek danych i dlaczego warto się tym zająć?** Wyciek danych występuje, gdy poufny dokument jest uwalniany do niezaufanego środowiska. Po wykryciu zdarzenia wycieku danych ważne jest, aby szybko ocenić rozmiar i lokalizację wycieku, zbadać działania użytkowników wokół niego, a następnie trwale oczyścić rozlane dane z systemu.
   
@@ -33,7 +31,7 @@ Jesteś głównym oficerem ds. zabezpieczeń informacji w firmie Contoso. Otrzym
   
 ### <a name="scope-of-this-article"></a>Zakres tego artykułu
 
-Ten dokument zawiera listę instrukcji dotyczących trwałego usuwania komunikatu z Microsoft 365, aby nie był dostępny ani możliwy do odzyskania. Aby usunąć wiadomość i umożliwić jej odzyskanie do czasu wygaśnięcia okresu przechowywania usuniętego elementu, zobacz [Wyszukiwanie i usuwanie wiadomości e-mail w organizacji](search-for-and-delete-messages-in-your-organization.md).
+Ten dokument zawiera listę instrukcji dotyczących trwałego usuwania komunikatu z platformy Microsoft 365, aby nie był dostępny ani możliwy do odzyskania. Aby usunąć wiadomość i umożliwić jej odzyskanie do czasu wygaśnięcia okresu przechowywania usuniętego elementu, zobacz [Wyszukiwanie i usuwanie wiadomości e-mail w organizacji](search-for-and-delete-messages-in-your-organization.md).
   
 ## <a name="workflow-for-managing-data-spillage-incidents"></a>Przepływ pracy do zarządzania zdarzeniami wycieku danych
 
@@ -52,13 +50,13 @@ Poniżej przedstawiono sposób zarządzania zdarzeniem wycieku danych:
 
 ## <a name="things-to-know-before-you-start"></a>Co należy wiedzieć przed rozpoczęciem
 
-- Przepływ pracy rozlania danych opisany w tym artykule nie usuwa wiadomości czatu w Microsoft Teams. Aby wyszukać i usunąć Teams wiadomości czatu, zobacz [Wyszukiwanie i przeczyszczanie wiadomości czatu w Teams](search-and-delete-Teams-chat-messages.md).
+- Przepływ pracy rozlania danych opisany w tym artykule nie usuwa komunikatów czatów w usłudze Microsoft Teams. Aby wyszukać i usunąć wiadomości czatu w usłudze Teams, zobacz [Wyszukiwanie i przeczyszczanie wiadomości czatu w usłudze Teams](search-and-delete-Teams-chat-messages.md).
 
 - Gdy skrzynka pocztowa jest wstrzymana, usunięta wiadomość pozostaje w folderze Elementy możliwe do odzyskania do czasu wygaśnięcia okresu przechowywania lub zwolnienia blokady. [W kroku 6](#step-6-prepare-the-mailboxes) opisano sposób usuwania blokady ze skrzynek pocztowych. Przed usunięciem blokady skontaktuj się z działami zarządzania rekordami lub działami prawnymi. Organizacja może mieć zasady określające, czy skrzynka pocztowa jest wstrzymana, czy zdarzenie wycieku danych ma priorytet. 
 
 - Aby kontrolować, które skrzynki pocztowe użytkowników mogą wyszukiwać osoby, które mogą uzyskiwać dostęp do sprawy i zarządzać nimi, możesz skonfigurować granice zgodności i utworzyć niestandardową grupę ról opisaną w [kroku 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries). W tym celu musisz być członkiem grupy ról Zarządzanie organizacją lub mieć przypisaną rolę zarządzania rolami. Jeśli Ty lub administrator w organizacji już ustawiłeś granice zgodności, możesz pominąć krok 1.
 
-- Aby utworzyć przypadek, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych lub być członkiem niestandardowej grupy ról przypisanej do roli Zarządzania sprawami. Jeśli nie jesteś członkiem, poproś administratora Microsoft 365 o [dodanie Cię do grupy ról menedżera zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
+- Aby utworzyć przypadek, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych lub być członkiem niestandardowej grupy ról przypisanej do roli Zarządzania sprawami. Jeśli nie jesteś członkiem, poproś administratora platformy Microsoft 365 o [dodanie Cię do grupy ról menedżera zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
 
 - Aby utworzyć i uruchomić wyszukiwanie zawartości, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych lub mieć przypisaną rolę zarządzania wyszukiwaniem zgodności. Aby usunąć komunikaty, musisz być członkiem grupy ról Zarządzanie organizacją lub mieć przypisaną rolę zarządzania wyszukiwaniem i przeczyszczaniem. Aby uzyskać informacje na temat dodawania użytkowników do grupy ról, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](./assign-ediscovery-permissions.md).
 
@@ -66,7 +64,7 @@ Poniżej przedstawiono sposób zarządzania zdarzeniem wycieku danych:
 
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>(Opcjonalnie) Krok 1. Zarządzanie tym, kto może uzyskać dostęp do sprawy i ustawianie granic zgodności
 
-W zależności od praktyki organizacyjnej należy kontrolować, kto może uzyskiwać dostęp do przypadku zbierania elektronicznych materiałów dowodowych używanego do badania zdarzenia wycieku danych i skonfigurowania granic zgodności. Najprostszym sposobem na to jest dodanie badaczy jako członków istniejącej grupy ról w portalu zgodności usługi Microsoft Purview, a następnie dodanie grupy ról jako członka sprawy zbierania elektronicznych materiałów dowodowych. Aby uzyskać informacje o wbudowanych grupach ról zbierania elektronicznych materiałów dowodowych i sposobie dodawania członków do sprawy zbierania elektronicznych materiałów dowodowych, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
+W zależności od praktyki organizacyjnej należy kontrolować, kto może uzyskiwać dostęp do przypadku zbierania elektronicznych materiałów dowodowych używanego do badania zdarzenia wycieku danych i skonfigurowania granic zgodności. Najprostszym sposobem na to jest dodanie badaczy jako członków istniejącej grupy ról w portal zgodności Microsoft Purview, a następnie dodanie grupy ról jako członka sprawy zbierania elektronicznych materiałów dowodowych. Aby uzyskać informacje o wbudowanych grupach ról zbierania elektronicznych materiałów dowodowych i sposobie dodawania członków do sprawy zbierania elektronicznych materiałów dowodowych, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
   
 Możesz również utworzyć nową grupę ról, która będzie zgodna z potrzebami organizacji. Na przykład może być konieczne, aby grupa badaczy wycieków danych w organizacji uzyskiwała dostęp do wszystkich przypadków wycieku danych i współpracowała nad nimi. Można to zrobić, tworząc grupę ról "Data Spillage Investigator", przypisując odpowiednie role (Export, RMS Decrypt, Review, Preview, Compliance Search i Case Management), dodając badaczy wycieków danych do grupy ról, a następnie dodając grupę ról jako członka sprawy zbierania elektronicznych materiałów dowodowych. Aby uzyskać szczegółowe instrukcje dotyczące tego sposobu, zobacz [Konfigurowanie granic zgodności dla badań zbierania elektronicznych materiałów dowodowych w Office 365](set-up-compliance-boundaries.md). 
   
@@ -74,7 +72,7 @@ Możesz również utworzyć nową grupę ról, która będzie zgodna z potrzebam
 
 Przypadek zbierania elektronicznych materiałów dowodowych zapewnia skuteczny sposób zarządzania badaniem wycieku danych. Możesz dodać członków do grupy ról utworzonej w kroku 1, dodać grupę ról jako członka nowej sprawy zbierania elektronicznych materiałów dowodowych, przeprowadzić iteracyjne wyszukiwania w celu znalezienia rozlanych danych, wyeksportować raport do udostępnienia, śledzić stan sprawy, a następnie w razie potrzeby odwołać się do szczegółów sprawy. Rozważ ustanowienie konwencji nazewnictwa dla przypadków zbierania elektronicznych materiałów dowodowych używanych do zdarzeń związanych z wyciekiem danych i podaj jak najwięcej informacji w nazwie i opisie sprawy, aby w razie potrzeby można było zlokalizować i odwołać się do nich w przyszłości.
   
-Aby utworzyć nowy przypadek, możesz użyć zbierania elektronicznych materiałów dowodowych w centrum zabezpieczeń i zgodności. Zobacz "Create a new case" in [Wprowadzenie with eDiscovery (Standard) (Tworzenie nowego przypadku) w Wprowadzenie zbierania elektronicznych materiałów dowodowych (Standard)](get-started-core-ediscovery.md#step-3-create-a-ediscovery-standard-case).
+Aby utworzyć nowy przypadek, możesz użyć zbierania elektronicznych materiałów dowodowych w centrum zabezpieczeń i zgodności. Zobacz "Tworzenie nowego przypadku" w [temacie Wprowadzenie do zbierania elektronicznych materiałów dowodowych (Standard)](get-started-core-ediscovery.md#step-3-create-a-ediscovery-standard-case).
   
 ## <a name="step-3-search-for-the-spilled-data"></a>Krok 3. Wyszukiwanie rozlanych danych
 
@@ -93,7 +91,7 @@ Jeśli masz więcej niż 1000 skrzynek pocztowych lub więcej niż 100 wiadomoś
 
 Po znalezieniu wiadomości e-mail zawierającej rozlane dane sprawdź adresatów wiadomości, aby ustalić, czy została udostępniona zewnętrznie. Aby dalej śledzić komunikat, możesz zbierać informacje o nadawcy i zakresy dat, aby można było używać dzienników śledzenia komunikatów. Ten proces został opisany w [kroku 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
-Po zweryfikowaniu wyników wyszukiwania możesz udostępnić swoje wyniki innym osobom na potrzeby przeglądu pomocniczego. Osoby, które zostały przypisane do sprawy w kroku 1, mogą przejrzeć zawartość sprawy zarówno w sekcji eDiscovery, jak i Microsoft Purview eDiscovery (Premium) i zatwierdzić ustalenia sprawy. Raport można również wygenerować bez eksportowania rzeczywistej zawartości. Możesz również użyć tego samego raportu jako dowodu usunięcia, który został opisany w [kroku 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
+Po zweryfikowaniu wyników wyszukiwania możesz udostępnić swoje wyniki innym osobom na potrzeby przeglądu pomocniczego. Osoby, które zostały przypisane do sprawy w kroku 1, mogą przejrzeć zawartość sprawy zarówno w sekcji eDiscovery, jak i Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) i zatwierdzić ustalenia sprawy. Raport można również wygenerować bez eksportowania rzeczywistej zawartości. Możesz również użyć tego samego raportu jako dowodu usunięcia, który został opisany w [kroku 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
   
  **Aby wygenerować raport statystyczny:**
   
@@ -185,7 +183,7 @@ Podczas usuwania rozlanych danych należy pamiętać o następujących limitach:
 - Jednocześnie można usunąć maksymalnie 10 elementów na skrzynkę pocztową. Ponieważ możliwość wyszukiwania i usuwania wiadomości ma być narzędziem reagowania na zdarzenia, ten limit pomaga zapewnić szybkie usunięcie wiadomości ze skrzynek pocztowych. Ta funkcja nie jest przeznaczona do czyszczenia skrzynek pocztowych użytkowników.
 
 > [!IMPORTANT]
-> Nie można usunąć elementów wiadomości e-mail w zestawie przeglądów w przypadku zbierania elektronicznych materiałów dowodowych (Premium), korzystając z procedur opisanych w tym artykule. Dzieje się tak dlatego, że elementy w zestawie przeglądów są kopiami elementów w usłudze na żywo, które są kopiowane i przechowywane w lokalizacji Storage platformy Azure. Oznacza to, że nie zostaną one zwrócone przez wyszukiwanie zawartości utworzone w kroku 3. Aby usunąć elementy w zestawie przeglądów, należy usunąć przypadek zbierania elektronicznych materiałów dowodowych (Premium), który zawiera zestaw przeglądów. Aby uzyskać więcej informacji, zobacz [Zamykanie lub usuwanie sprawy zbierania elektronicznych materiałów dowodowych (Premium](close-or-delete-case.md)).
+> Nie można usunąć elementów wiadomości e-mail w zestawie przeglądów w przypadku zbierania elektronicznych materiałów dowodowych (Premium) przy użyciu procedur opisanych w tym artykule. Dzieje się tak dlatego, że elementy w zestawie przeglądów to kopie elementów w usłudze live, które są kopiowane i przechowywane w lokalizacji usługi Azure Storage. Oznacza to, że nie zostaną one zwrócone przez wyszukiwanie zawartości utworzone w kroku 3. Aby usunąć elementy w zestawie przeglądów, musisz usunąć przypadek zbierania elektronicznych materiałów dowodowych (Premium), który zawiera zestaw przeglądów. Aby uzyskać więcej informacji, zobacz [Zamykanie lub usuwanie przypadku zbierania elektronicznych materiałów dowodowych (Premium](close-or-delete-case.md)).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Krok 8. Weryfikowanie, dostarczanie dowodu usunięcia i inspekcji
 

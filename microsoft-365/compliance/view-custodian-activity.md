@@ -15,33 +15,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Użyj narzędzia do zarządzania opiekunami zbierania elektronicznych materiałów dowodowych (Premium), aby łatwo uzyskać dostęp do działania i wyszukać opiekunów w Twoim przypadku.
+description: Użyj narzędzia do zarządzania opiekunami zbierania elektronicznych materiałów dowodowych (Premium), aby łatwo uzyskać dostęp do działania i wyszukać opiekunów w Twojej sprawie.
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 6f55ad389fe24e87e693e6523c7008713c6bc54b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3ead391eee7fc35a66a0d9472278ee75878de4df
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096573"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627002"
 ---
 # <a name="view-custodian-audit-activity"></a>Wyświetlaj aktywność inspekcji opiekuna
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Usługa Microsoft Purview eDiscovery (Premium) jest teraz zintegrowana z istniejącym narzędziem do wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview. Korzystając z tego osadzonego środowiska, możesz użyć narzędzia do zarządzania opiekunami zbierania elektronicznych materiałów dowodowych (Premium), aby ułatwić badanie, łatwo uzyskując dostęp do działań i przeszukując działania opiekunów w Twojej sprawie.
+Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) jest teraz zintegrowana z istniejącym narzędziem do wyszukiwania dzienników inspekcji w portal zgodności Microsoft Purview. Korzystając z tego osadzonego środowiska, możesz użyć narzędzia do zarządzania opiekunami zbierania elektronicznych materiałów dowodowych (Premium), aby ułatwić badanie, łatwo uzyskując dostęp do działań i przeszukując ich opiekunów w twojej sprawie.
 
 ## <a name="get-permissions"></a>Uzyskiwanie uprawnień
 
-Aby przeszukać dziennik inspekcji, musisz mieć przypisaną rolę dzienników inspekcji lub dzienników inspekcji View-Only w Exchange Online. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie Uprawnienia w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. Aby umożliwić użytkownikowi przeszukiwanie dziennika inspekcji zbierania elektronicznych materiałów dowodowych (Premium) z minimalnym poziomem uprawnień, możesz utworzyć niestandardową grupę ról w Exchange Online, dodać rolę dzienników inspekcji View-Only lub dzienników inspekcji, a następnie dodać użytkownika jako członka nowej grupy ról. Aby uzyskać więcej informacji, zobacz Zarządzanie grupami ról w Exchange Online.
+Aby przeszukać dziennik inspekcji, musisz mieć przypisaną rolę dzienników inspekcji lub dzienników inspekcji View-Only w Exchange Online. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie Uprawnienia w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centrum administracyjnym programu Exchange</a>. Aby umożliwić użytkownikowi przeszukiwanie dziennika inspekcji zbierania elektronicznych materiałów dowodowych (Premium) z minimalnym poziomem uprawnień, możesz utworzyć niestandardową grupę ról w Exchange Online, dodać rolę dzienników inspekcji lub dzienników inspekcji View-Only, a następnie dodać użytkownika jako członka nowej grupy ról. Aby uzyskać więcej informacji, zobacz Zarządzanie grupami ról w Exchange Online.
 
 > [!IMPORTANT]
 > Jeśli przypiszesz użytkownikowi rolę View-Only Dzienniki inspekcji lub Dzienniki inspekcji na stronie Uprawnienia w portalu zgodności, nie będzie mógł przeszukiwać dziennika inspekcji. Musisz przypisać uprawnienia w Exchange Online. Dzieje się tak, ponieważ podstawowe polecenie cmdlet używane do przeszukiwania dziennika inspekcji jest Exchange Online poleceniem cmdlet.
 
 ## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>Krok 1. Wyszukaj w dzienniku inspekcji działania wykonywane przez opiekuna
 
-1. Przejdź do **obszaru eDiscovery > eDiscovery (Premium)** i otwórz sprawę.
+1. Przejdź do  **obszaru eDiscovery > eDiscovery (Premium)** i otwórz sprawę.
   
 2. Kliknij kartę **Źródła** .
   
@@ -74,7 +72,7 @@ Wyniki zawierają następujące informacje o każdym zdarzeniu zwracanym przez w
 
 - **Użytkownik**: użytkownik (lub konto usługi), który wykonał akcję, która wyzwoliła zdarzenie.
 
-- **Działanie**: działanie wykonywane przez użytkownika. Ta wartość odpowiada działaniom wybranym na liście rozwijanej Działania. W przypadku zdarzenia z dziennika inspekcji administratora Exchange wartość w tej kolumnie jest Exchange polecenia cmdlet.
+- **Działanie**: działanie wykonywane przez użytkownika. Ta wartość odpowiada działaniom wybranym na liście rozwijanej Działania. W przypadku zdarzenia z dziennika inspekcji administratora programu Exchange wartość w tej kolumnie to polecenie cmdlet programu Exchange.
 
 - **Element**: obiekt, który został utworzony lub zmodyfikowany w wyniku odpowiedniego działania. Na przykład plik, który został wyświetlony lub zmodyfikowany, lub zaktualizowane konto użytkownika. Nie wszystkie działania mają wartość w tej kolumnie.
 
@@ -98,7 +96,7 @@ Aby filtrować wyniki:
 
 ## <a name="export-the-search-results-to-a-file"></a>Eksportowanie wyników wyszukiwania do pliku
 
-Wyniki wyszukiwania dziennika inspekcji można wyeksportować do pliku wartości rozdzielanej przecinkami (CSV) na komputerze lokalnym. Możesz otworzyć ten plik w Microsoft Excel i użyć funkcji, takich jak wyszukiwanie, sortowanie, filtrowanie i dzielenie pojedynczej kolumny (zawierającej komórki wielowartościowe) na wiele kolumn.
+Wyniki wyszukiwania dziennika inspekcji można wyeksportować do pliku wartości rozdzielanej przecinkami (CSV) na komputerze lokalnym. Możesz otworzyć ten plik w programie Microsoft Excel i użyć funkcji, takich jak wyszukiwanie, sortowanie, filtrowanie i dzielenie pojedynczej kolumny (zawierającej komórki wielowartościowe) na wiele kolumn.
 
 1. Uruchom wyszukiwanie w dzienniku inspekcji, a następnie popraw kryteria wyszukiwania do momentu uzyskania żądanych wyników.
   

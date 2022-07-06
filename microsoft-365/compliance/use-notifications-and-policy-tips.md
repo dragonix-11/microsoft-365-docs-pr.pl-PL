@@ -22,18 +22,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak dodać poradę dotyczącą zasad do zasad ochrony przed utratą danych (DLP), aby powiadomić użytkownika, że pracuje z zawartością, która powoduje konflikt z zasadami DLP.
-ms.openlocfilehash: 13387890ca1096115c5c933627ae674aaad15581
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 19ec7b5e359b32cc38310c51c6674968aecc666f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863635"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630946"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Wyślij powiadomienia e-mail i pokaż porady dotyczące zasad dla zasad DLP
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Zasady Microsoft Purview ochrony przed utratą danych (DLP) umożliwiają identyfikowanie, monitorowanie i ochronę poufnych informacji w Office 365. Chcesz, aby osoby w organizacji, które pracują z danymi poufnymi, pozostały zgodne z zasadami DLP, ale nie chcesz niepotrzebnie blokować im wykonywania pracy. W tym miejscu mogą pomóc powiadomienia e-mail i porady dotyczące zasad.
+Zasady ochrony przed utratą danych (DLP) usługi Microsoft Purview umożliwiają identyfikowanie, monitorowanie i ochronę poufnych informacji w Office 365. Chcesz, aby osoby w organizacji, które pracują z danymi poufnymi, pozostały zgodne z zasadami DLP, ale nie chcesz niepotrzebnie blokować im wykonywania pracy. W tym miejscu mogą pomóc powiadomienia e-mail i porady dotyczące zasad.
 
 ![Pasek komunikatów zawiera poradę dotyczącą zasad w Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
@@ -43,23 +41,21 @@ Podczas tworzenia zasad DLP można skonfigurować powiadomienia użytkownika do 
 
 - Wyświetl poradę dotyczącą zasad dla zawartości, która powoduje konflikt z zasadami DLP:
 
-  - W przypadku wiadomości e-mail w Outlook w sieci Web i Outlook 2013 r. lub nowszym porada dotycząca zasad jest wyświetlana w górnej części wiadomości powyżej adresatów podczas tworzenia wiadomości.
+  - W przypadku wiadomości e-mail w programach Outlook w sieci Web i Outlook 2013 i nowszych porada dotycząca zasad jest wyświetlana w górnej części wiadomości nad adresatami podczas tworzenia wiadomości.
 
-  - W przypadku dokumentów na koncie OneDrive dla Firm lub w witrynie SharePoint Online porada dotycząca zasad jest wskazywana przez ikonę ostrzeżenia wyświetlaną w elemencie. Aby wyświetlić więcej informacji, możesz wybrać element, a następnie wybrać ikonę okienka **Informacje o informacjach**![.](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) w prawym górnym rogu strony, aby otworzyć okienko szczegółów.
+  - W przypadku dokumentów na koncie OneDrive dla Firm lub w witrynie usługi SharePoint Online porada dotycząca zasad jest wskazywana przez ikonę ostrzeżenia wyświetlaną w elemencie. Aby wyświetlić więcej informacji, możesz wybrać element, a następnie wybrać ikonę okienka **Informacje o informacjach**![.](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) w prawym górnym rogu strony, aby otworzyć okienko szczegółów.
 
-  - W przypadku dokumentów Excel, PowerPoint i Word przechowywanych w witrynie OneDrive dla Firm lub witrynie SharePoint Online, które są uwzględnione w zasadach DLP, porada dotycząca zasad jest wyświetlana na pasku komunikatów i w widoku Backstage (**Informacje menu**\> **Plik**).
+  - W przypadku dokumentów programu Excel, Programu PowerPoint i programu Word przechowywanych w witrynie OneDrive dla Firm lub witrynie usługi SharePoint Online, która jest uwzględniona w zasadach DLP, porada dotycząca zasad jest wyświetlana na pasku komunikatów i w widoku Backstage (**Informacje o** menu \>**Plik**).
 
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Dodawanie powiadomień użytkowników do zasad DLP
 
-Podczas tworzenia zasad DLP można włączyć **powiadomienia użytkownika**. Gdy powiadomienia użytkowników są włączone, Microsoft 365 wysyła powiadomienia e-mail i wskazówki dotyczące zasad. Możesz dostosować, do kogo wysyłane są wiadomości e-mail z powiadomieniami, tekst wiadomości e-mail i tekst porad zasad.
+Podczas tworzenia zasad DLP można włączyć **powiadomienia użytkownika**. Gdy powiadomienia użytkowników są włączone, platforma Microsoft 365 wysyła zarówno powiadomienia e-mail, jak i wskazówki dotyczące zasad. Możesz dostosować, do kogo wysyłane są wiadomości e-mail z powiadomieniami, tekst wiadomości e-mail i tekst porad zasad.
 
 1. Przejdź do [portal zgodności Microsoft Purview](https://compliance.microsoft.com/permissions).
 
 2. Zaloguj się przy użyciu konta służbowego.
 
 3. W portal zgodności Microsoft Purview \> lewej nawigacji \> **Zasady** \> zapobiegania \> **utracie danych** **+ Tworzenie zasad**.
-
-    ![Utwórz przycisk zasad.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 
 4. Wybierz szablon zasad DLP, który chroni typy poufnych informacji, które chcesz chronić \> **dalej**.
 
@@ -73,9 +69,9 @@ Podczas tworzenia zasad DLP można włączyć **powiadomienia użytkownika**. Gd
 
    - Wybierz **pozycję Pozwól mi wybrać określone lokalizacje** \> **Dalej**.
 
-   Aby uwzględnić lub wykluczyć całą lokalizację, taką jak wszystkie Exchange wiadomości e-mail lub wszystkie konta OneDrive, włącz lub wyłącz **stan** tej lokalizacji.
+   Aby dołączyć lub wykluczyć całą lokalizację, taką jak wszystkie konta poczty e-mail programu Exchange lub wszystkie konta usługi OneDrive, włącz lub wyłącz **stan** tej lokalizacji.
 
-   Aby uwzględnić tylko określone witryny SharePoint lub konta OneDrive, przełącz pozycję **Stan** na włączone, a następnie kliknij linki w obszarze **Dołącz**, aby wybrać określone witryny lub konta.
+   Aby uwzględnić tylko określone witryny programu SharePoint lub konta usługi OneDrive, przełącz pozycję **Stan** na włączone, a następnie kliknij linki w obszarze **Dołącz** , aby wybrać określone witryny lub konta.
 
 7. Wybierz pozycję **Użyj ustawień** \> zaawansowanych **Dalej**.
 
@@ -112,7 +108,7 @@ Powiadomienia mają wiersz tematu, który rozpoczyna się od podjętej akcji, ta
 
 Domyślnie powiadomienia wyświetlają tekst podobny do poniższego dla elementu w witrynie. Tekst powiadomienia jest konfigurowany oddzielnie dla każdej reguły, więc wyświetlany tekst różni się w zależności od tego, która reguła jest dopasowana.
 
-|Jeśli reguła zasad DLP to robi...|Następnie domyślne powiadomienie dla dokumentów SharePoint lub OneDrive dla Firm informuje o tym...|Następnie domyślne powiadomienie dla komunikatów Outlook informuje o tym...|
+|Jeśli reguła zasad DLP to robi...|Następnie domyślne powiadomienie dla programu SharePoint lub dokumentów OneDrive dla Firm informuje o tym...|Następnie zostanie wyświetlone domyślne powiadomienie dla komunikatów programu Outlook...|
 |---|---|---|
 |Wysyła powiadomienie, ale nie zezwala na zastąpienie|Ten element powoduje konflikt z zasadami w organizacji.|Wiadomość e-mail powoduje konflikt z zasadami w organizacji.|
 |Blokuje dostęp, wysyła powiadomienie i zezwala na zastępowanie|Ten element powoduje konflikt z zasadami w organizacji. Jeśli ten konflikt nie zostanie rozwiązany, dostęp do tego pliku może zostać zablokowany.|Wiadomość e-mail powoduje konflikt z zasadami w organizacji. Wiadomość nie została dostarczona do wszystkich adresatów.|
@@ -127,8 +123,9 @@ Możesz również użyć następujących tokenów, aby dostosować powiadomienie
 |Tokenu|Opis|
 |---|---|
 |%%AppliedActions%%|Akcje zastosowane do zawartości.|
-|%%ContentURL%%|Adres URL dokumentu w witrynie SharePoint Online lub witrynie OneDrive dla Firm.|
+|%%ContentURL%%|Adres URL dokumentu w witrynie usługi SharePoint Online lub w witrynie OneDrive dla Firm.|
 |%%MatchedConditions%%|Warunki, które zostały dopasowane przez zawartość. Użyj tego tokenu, aby poinformować użytkowników o możliwych problemach z zawartością.|
+|%%BlockedMessageInfo%%|Szczegóły zablokowanej wiadomości. Użyj tego tokenu, aby poinformować użytkowników o szczegółach zablokowanej wiadomości.|
 
 ![Komunikat powiadomienia pokazujący, gdzie są wyświetlane tokeny.](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
 
@@ -184,15 +181,15 @@ Poniżej przedstawiono kilka szczegółowych informacji na temat używania porad
 |Powiadom + Blokuj + AllowOverride + Fałszywie dodatni + Z uzasadnieniem     |Blokuj         |Tak         |Tak         |
 
 
-## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>Porady dotyczące zasad dotyczących witryn OneDrive dla Firm i witryn SharePoint Online
+## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>Porady dotyczące zasad dotyczących witryn OneDrive dla Firm i witryn usługi SharePoint Online
 
-Gdy dokument w witrynie OneDrive dla Firm lub witrynie SharePoint Online jest zgodny z regułą w zasadach DLP, a ta reguła używa wskazówek dotyczących zasad, wskazówki dotyczące zasad zawierają specjalne ikony w dokumencie:
+Gdy dokument w witrynie OneDrive dla Firm lub witrynie usługi SharePoint Online jest zgodny z regułą w zasadach DLP, a ta reguła używa wskazówek dotyczących zasad, wskazówki dotyczące zasad zawierają specjalne ikony w dokumencie:
 
 1. Jeśli reguła wysyła powiadomienie o pliku, zostanie wyświetlona ikona ostrzeżenia.
 
 2. Jeśli reguła zablokuje dostęp do dokumentu, zostanie wyświetlona zablokowana ikona.
 
-   ![Ikony porad dotyczących zasad dla dokumentów na koncie OneDrive.](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
+   ![Ikony porad dotyczących zasad w dokumentach na koncie usługi OneDrive.](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
 
 Aby wykonać akcję w dokumencie, możesz wybrać element\>, wybierając ikonę okienka **Informacje o informacjach**![.](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) w prawym górnym rogu strony, aby otworzyć okienko \> szczegółów **Wyświetl poradę zasad**.
 
@@ -218,9 +215,9 @@ Domyślnie porady dotyczące zasad wyświetlają tekst podobny do poniższego dl
 
 Tekst porad dotyczących zasad można dostosować niezależnie od powiadomienia e-mail. W przeciwieństwie do tekstu niestandardowego dla powiadomień e-mail (zobacz powyższą sekcję), tekst niestandardowy porad dotyczących zasad nie akceptuje kodu HTML ani tokenów. Zamiast tego tekst niestandardowy dla porad dotyczących zasad to zwykły tekst tylko z limitem 256 znaków.
 
-## <a name="policy-tips-in-outlook-on-the-web-and-outlook-2013-and-later"></a>Porady dotyczące zasad w Outlook w sieci Web i Outlook 2013 r. i nowszych
+## <a name="policy-tips-in-outlook-on-the-web-and-outlook-2013-and-later"></a>Porady dotyczące zasad w Outlook w sieci Web i programie Outlook 2013 i nowszych wersjach
 
-Podczas tworzenia nowej wiadomości e-mail w Outlook w sieci Web i Outlook 2013 r. i nowszych zobaczysz poradę dotyczącą zasad, jeśli dodasz zawartość zgodną z regułą w zasadach DLP, a ta reguła będzie używać wskazówek dotyczących zasad. Porada dotycząca zasad jest wyświetlana w górnej części wiadomości nad adresatami podczas tworzenia wiadomości.
+Podczas tworzenia nowej wiadomości e-mail w programach Outlook w sieci Web i Outlook 2013 i nowszych zobaczysz poradę dotyczącą zasad, jeśli dodasz zawartość zgodną z regułą w zasadach DLP, a ta reguła będzie używać wskazówek dotyczących zasad. Porada dotycząca zasad jest wyświetlana w górnej części wiadomości nad adresatami podczas tworzenia wiadomości.
 
 ![Porada dotycząca zasad w górnej części utworzonego komunikatu.](../media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
 
@@ -236,25 +233,25 @@ Jeśli wskazówki dotyczące zasad są skonfigurowane \> tak, aby zezwalały na 
 
 Należy pamiętać, że po dodaniu poufnych informacji do wiadomości e-mail może wystąpić opóźnienie między dodaniem informacji poufnych a wyświetlenia poradą dotyczącą zasad. Gdy wiadomości e-mail są szyfrowane za pomocą Szyfrowanie wiadomości w Microsoft Purview, a zasady używane do ich wykrywania używają wskazówek dotyczących zasad wykrywania warunków szyfrowania, nie będą wyświetlane.
 
-### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 r. i nowsze obsługują wyświetlanie wskazówek dotyczących zasad tylko dla niektórych warunków
+### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Program Outlook 2013 lub nowszy obsługuje wyświetlanie wskazówek dotyczących zasad tylko dla niektórych warunków
 
-Obecnie Outlook 2013 r. i nowsze obsługuje wyświetlanie wskazówek dotyczących zasad tylko dla następujących warunków:
+Obecnie program Outlook 2013 i nowsze obsługują wyświetlanie wskazówek dotyczących zasad tylko dla następujących warunków:
 
 - Zawartość zawiera
 - Zawartość jest udostępniana
 
-Należy pamiętać, że wyjątki są uznawane za warunki, a wszystkie te warunki działają w Outlook, gdzie będą one zgodne z zawartością i wymuszają akcje ochronne dotyczące zawartości. Jednak wyświetlanie porad dotyczących zasad użytkownikom nie jest jeszcze obsługiwane. 
+Należy pamiętać, że wyjątki są uznawane za warunki, a wszystkie te warunki działają w programie Outlook, gdzie będą one zgodne z zawartością i wymuszają akcje ochronne dotyczące zawartości. Jednak wyświetlanie porad dotyczących zasad użytkownikom nie jest jeszcze obsługiwane. 
 
 > [!NOTE]
-> Outlook nie obsługuje wyświetlania wskazówek dotyczących zasad dotyczących polies DLP, które są stosowane do dynamicznej grupy dystrybucyjnej lub grup zabezpieczeń z obsługą poczty e-mail. 
+> Program Outlook nie obsługuje wyświetlania wskazówek dotyczących zasad dotyczących polies DLP, które są stosowane do dynamicznej grupy dystrybucyjnej lub grup zabezpieczeń bez obsługi poczty e-mail. 
 
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-microsoft-purview-compliance-portal"></a>Porady dotyczące zasad w centrum administracyjnym Exchange a portalu Microsoft Purview Compliance
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-microsoft-purview-compliance-portal"></a>Porady dotyczące zasad w centrum administracyjnym programu Exchange a portalu zgodności usługi Microsoft Purview
 
-Porady dotyczące zasad mogą współpracować z zasadami DLP i regułami przepływu poczty utworzonymi w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> lub z zasadami DLP utworzonymi w portalu zgodności, ale nie obie. Dzieje się tak, ponieważ te zasady są przechowywane w różnych lokalizacjach, ale wskazówki dotyczące zasad mogą być rysowane tylko z jednej lokalizacji.
+Porady dotyczące zasad mogą działać z zasadami DLP i regułami przepływu poczty utworzonymi w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym programu Exchange</a> lub z zasadami DLP utworzonymi w portalu zgodności, ale nie z obydwoma. Dzieje się tak, ponieważ te zasady są przechowywane w różnych lokalizacjach, ale wskazówki dotyczące zasad mogą być rysowane tylko z jednej lokalizacji.
 
-Jeśli w centrum administracyjnym Exchange skonfigurowano wskazówki dotyczące zasad, żadne wskazówki dotyczące zasad skonfigurowane w portalu zgodności nie będą wyświetlane użytkownikom w Outlook w sieci Web i Outlook 2013 r. i nowszych, dopóki nie wyłączysz porad w centrum administracyjnym Exchange. Dzięki temu bieżące reguły przepływu poczty Exchange (nazywane również regułami transportu) będą nadal działać do momentu przełączenia się do portalu zgodności.
+Jeśli w centrum administracyjnym programu Exchange skonfigurowano porady dotyczące zasad, żadne wskazówki dotyczące zasad skonfigurowane w portalu zgodności nie będą wyświetlane użytkownikom w programach Outlook w sieci Web i Outlook 2013 i nowszych, dopóki nie wyłączysz porad w Centrum administracyjnym programu Exchange. Dzięki temu bieżące reguły przepływu poczty programu Exchange (nazywane również regułami transportu) będą nadal działać do momentu przełączenia się do portalu zgodności.
 
-Pamiętaj, że porady dotyczące zasad mogą być rysowane tylko z jednej lokalizacji, ale powiadomienia e-mail są zawsze wysyłane, nawet jeśli używasz zasad DLP zarówno w portalu zgodności, jak i w centrum administracyjnym Exchange.
+Pamiętaj, że porady dotyczące zasad mogą być rysowane tylko z jednej lokalizacji, ale powiadomienia e-mail są zawsze wysyłane, nawet jeśli używasz zasad DLP zarówno w portalu zgodności, jak i w centrum administracyjnym programu Exchange.
 
 ### <a name="default-text-for-policy-tips-in-email"></a>Tekst domyślny wskazówek dotyczących zasad w wiadomości e-mail
 
@@ -266,18 +263,18 @@ Domyślnie porady dotyczące zasad wyświetlają tekst podobny do poniższego w 
 |Blokuje dostęp, wysyła powiadomienie i zezwala na zastępowanie|Wiadomość e-mail powoduje konflikt z zasadami w organizacji.|
 |Blokuje dostęp i wysyła powiadomienie|Wiadomość e-mail powoduje konflikt z zasadami w organizacji.|
 
-## <a name="policy-tips-in-excel-powerpoint-and-word"></a>Porady dotyczące zasad w Excel, PowerPoint i programie Word
+## <a name="policy-tips-in-excel-powerpoint-and-word"></a>Porady dotyczące zasad w programach Excel, PowerPoint i Word
 
-Gdy użytkownicy pracują z poufną zawartością w klasycznych wersjach Excel, PowerPoint i Word, porady dotyczące zasad mogą powiadamiać ich w czasie rzeczywistym, że zawartość powoduje konflikt z zasadami DLP. Wymaga to następujących czynności:
+Gdy użytkownicy pracują z poufną zawartością w wersjach klasycznych programów Excel, PowerPoint i Word, porady dotyczące zasad mogą powiadamiać ich w czasie rzeczywistym, że zawartość jest w konflikcie z zasadami DLP. Wymaga to następujących czynności:
 
-- Dokument Office jest przechowywany w witrynie OneDrive dla Firm lub witrynie SharePoint Online.
+- Dokument pakietu Office jest przechowywany w witrynie OneDrive dla Firm lub witrynie usługi SharePoint Online.
 
 - Witryna jest uwzględniona w zasadach DLP skonfigurowanych do korzystania z porad dotyczących zasad.
 
-Office programy klasyczne automatycznie synchronizują zasady DLP bezpośrednio z Office 365, a następnie skanują dokumenty, aby upewnić się, że nie powodują konfliktu z zasadami DLP i wyświetlają wskazówki dotyczące zasad w czasie rzeczywistym.
+Programy klasyczne pakietu Office automatycznie synchronizują zasady DLP bezpośrednio z Office 365, a następnie skanują dokumenty, aby upewnić się, że nie powodują konfliktu z zasadami DLP i wyświetlają wskazówki dotyczące zasad w czasie rzeczywistym.
 
 > [!NOTE]
-> Office aplikacje klasyczne samodzielnie skanują dokumenty, aby ustalić, czy powinny być wyświetlane wskazówki dotyczące zasad DLP; nie zawierają wskazówek dotyczących zasad, które SharePoint witryny online lub witryny OneDrive dla Firm, które zostały już określone, powinny być wyświetlane w pliku. W związku z tym w aplikacjach klasycznych, które są widoczne w witrynach SharePoint Online lub witrynach OneDrive dla Firm, nie zawsze jest wyświetlana porada dotycząca zasad DLP. Natomiast aplikacje Office w internecie zawierają tylko wskazówki dotyczące zasad DLP, które SharePoint witryny online lub witryny OneDrive dla Firm, powinny być wyświetlane.
+> Aplikacje klasyczne pakietu Office skanują same dokumenty, aby ustalić, czy powinny być wyświetlane wskazówki dotyczące zasad DLP; Nie pokazują one wskazówek dotyczących zasad, że witryny usługi SharePoint Online lub witryny OneDrive dla Firm, które zostały już określone, powinny być wyświetlane w pliku. W związku z tym w aplikacjach klasycznych, które są widoczne w witrynach usługi SharePoint Online lub witrynach OneDrive dla Firm, nie zawsze jest wyświetlana porada dotycząca zasad DLP. Natomiast aplikacje pakietu Office w Internecie zawierają tylko wskazówki dotyczące zasad DLP, które powinny być wyświetlane w witrynach usługi SharePoint Online lub witrynach OneDrive dla Firm, które zostały już określone.
 
 W zależności od sposobu konfigurowania wskazówek dotyczących zasad w zasadach DLP użytkownicy mogą po prostu zignorować poradę dotyczącą zasad, zastąpić zasady uzasadnieniem biznesowym lub bez niej albo zgłosić wynik fałszywie dodatni.
 
@@ -293,7 +290,7 @@ Jeśli porady dotyczące zasad w zasadach DLP są skonfigurowane przy użyciu ty
 
 ![Opcje na poradę zasad w backstage w Excel 2016.](../media/5b3857ba-907e-456e-ae43-888b594c049c.png)
 
-W każdym z tych Office programów klasycznych użytkownicy mogą wyłączyć porady dotyczące zasad. Jeśli ta opcja jest wyłączona, wskazówki dotyczące zasad, które są prostymi powiadomieniami, nie będą wyświetlane na pasku komunikatów ani w widoku Backstage (na karcie **Plik** ). Jednak wskazówki dotyczące zasad dotyczące blokowania i zastępowania nadal będą wyświetlane i nadal będą otrzymywać powiadomienie e-mail. Ponadto wyłączenie porad dotyczących zasad nie zwalnia dokumentu z żadnych zasad DLP, które zostały do niego zastosowane.
+W każdym z tych programów klasycznych pakietu Office użytkownicy mogą wyłączyć porady dotyczące zasad. Jeśli ta opcja jest wyłączona, wskazówki dotyczące zasad, które są prostymi powiadomieniami, nie będą wyświetlane na pasku komunikatów ani w widoku Backstage (na karcie **Plik** ). Jednak wskazówki dotyczące zasad dotyczące blokowania i zastępowania nadal będą wyświetlane i nadal będą otrzymywać powiadomienie e-mail. Ponadto wyłączenie porad dotyczących zasad nie zwalnia dokumentu z żadnych zasad DLP, które zostały do niego zastosowane.
 
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Tekst domyślny porad dotyczących zasad w Excel 2016, PowerPoint 2016 i Word 2016
 
@@ -305,7 +302,7 @@ Domyślnie porady dotyczące zasad wyświetlają tekst podobny do poniższego na
 |Blokuje dostęp, wysyła powiadomienie i zezwala na zastępowanie|Ten plik powoduje konflikt z zasadami w organizacji. Jeśli ten konflikt nie zostanie rozwiązany, dostęp do tego pliku może zostać zablokowany. Aby uzyskać więcej informacji, przejdź do menu **Plik** .|
 |Blokuje dostęp i wysyła powiadomienie|Ten plik powoduje konflikt z zasadami w organizacji. Jeśli ten konflikt nie zostanie rozwiązany, dostęp do tego pliku może zostać zablokowany. Aby uzyskać więcej informacji, przejdź do menu **Plik** .|
 
-### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>Tekst niestandardowy dla porad dotyczących zasad w Excel, PowerPoint i programie Word
+### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>Tekst niestandardowy dla porad dotyczących zasad w programach Excel, PowerPoint i Word
 
 Tekst porad dotyczących zasad można dostosować niezależnie od powiadomienia e-mail. W przeciwieństwie do tekstu niestandardowego dla powiadomień e-mail (zobacz powyższą sekcję), tekst niestandardowy porad dotyczących zasad nie akceptuje kodu HTML ani tokenów. Zamiast tego tekst niestandardowy dla porad dotyczących zasad to zwykły tekst tylko z limitem 256 znaków.
 

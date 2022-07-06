@@ -15,24 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się, jak dodać lub usunąć członków, którzy mogą uzyskać dostęp do sprawy podczas zarządzania przypadkiem zbierania elektronicznych materiałów dowodowych (Premium).
+description: Dowiedz się, jak dodać lub usunąć członków, którzy mogą uzyskać dostęp do sprawy podczas zarządzania sprawą zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 85a8673e7e3c31ab12cda0109f6c06762adeabf3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0b3ed53ee897e88d70a7b1322999e5b81de8ed81
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091880"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627718"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Dodaj członków do sprawy lub ich usuń
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Możesz dodać lub usunąć członków, aby zarządzać tym, kto może uzyskać dostęp do sprawy. Zanim jednak członek będzie mógł uzyskać dostęp do sprawy zbierania elektronicznych materiałów dowodowych (Premium) (i wykonywać zadania w tym przypadku), musisz dodać użytkownika do grupy ról Menedżera zbierania elektronicznych materiałów dowodowych na stronie **Uprawnienia** w portalu zgodności usługi Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](./assign-ediscovery-permissions.md).
+Możesz dodać lub usunąć członków, aby zarządzać tym, kto może uzyskać dostęp do sprawy. Zanim jednak członek będzie mógł uzyskać dostęp do sprawy zbierania elektronicznych materiałów dowodowych (Premium) (i wykonywać zadania w tym przypadku), musisz dodać użytkownika do grupy ról Menedżera zbierania **elektronicznych materiałów** dowodowych na stronie Uprawnienia w portal zgodności Microsoft Purview. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](./assign-ediscovery-permissions.md).
 
 1. Na stronie **eDiscovery (Premium)** przejdź do sprawy, do którą chcesz dodać członka.
 
-2. Kliknij kartę **Ustawienia**, a następnie kliknij pozycję **Wybierz** na kafelku **Uprawnienia & dostępu**.
+2. Kliknij kartę **Ustawienia** , a następnie kliknij pozycję **Wybierz** na kafelku **Uprawnienia & dostępu** .
 
 3. W obszarze **Zarządzanie członkami** kliknij pozycję **Dodaj** , aby dodać członków do sprawy. Możesz również dodać grupę ról do sprawy, klikając pozycję  **Dodaj** w obszarze **Zarządzanie grupami ról**.
 

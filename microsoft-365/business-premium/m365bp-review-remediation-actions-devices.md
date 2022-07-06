@@ -15,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 73790afedc78961562b592d1eb4decd4a8f1b0d4
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 2c86ff14326315596318e5fce11c7c26c5c22f85
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490404"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630858"
 ---
 # <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Przeglądanie akcji korygowania w Microsoft 365 Business Premium
 
@@ -32,9 +32,8 @@ Przykłady akcji korygowania obejmują wysyłanie pliku do kwarantanny, zatrzymy
 
 **W tym artykule opisano**:
 
-- [Jak używać centrum akcji](#how-to-use-your-action-center)
-
-- [Typy akcji korygowania](#types-of-remediation-actions)
+- [Jak używać centrum akcji](#how-to-use-your-action-center).
+- [Typy akcji korygowania](#types-of-remediation-actions).
 
 
 ## <a name="how-to-use-your-action-center"></a>Jak używać centrum akcji

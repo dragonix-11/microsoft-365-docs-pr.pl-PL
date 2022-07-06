@@ -15,19 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: W obszarze eDiscovery (Premium) można dodać pracowników wystawiających certyfikaty w całej organizacji, aby w dowolnym przypadku w organizacji można było dodać ich do dowolnej komunikacji dotyczącej opieki.
-ms.openlocfilehash: 894da37088599d1c8b0f9d473bf64311a09cc566
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: W usłudze eDiscovery (Premium) można dodać pracowników wystawiających certyfikaty w całej organizacji, aby w dowolnym przypadku w organizacji można było dodać ich do dowolnej komunikacji w zakresie opieki.
+ms.openlocfilehash: 0a3383f9f725a7d5afacd1cab504eefc97b91fd3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093641"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627696"
 ---
 # <a name="manage-issuing-officers-in-ediscovery-premium"></a>Zarządzanie urzędnikami wystawiającym certyfikaty w usłudze eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Gdy ty lub inne osoby utworzysz powiadomienie o blokadzie lub inny typ komunikacji, który jest wysyłany do użytkownika, który jest opiekunem w przypadku, musisz określić urzędnika wystawiającego. Powiadomienie jest wysyłane do opiekuna w imieniu określonego urzędnika wystawiającego. Na przykład paralegal w organizacji może być odpowiedzialny za tworzenie i wysyłanie powiadomień blokady do opiekunów w przypadku. W tym scenariuszu paralegal może określić adwokata w organizacji jako wystawiającego. KtoTo można określić jako urzędnika wystawiającego? Istnieją dwa typy użytkowników, którzy mogą zostać wybrani jako inspektor wystawiający do komunikacji z opiekunem:
+Gdy ty lub inne osoby utworzysz powiadomienie o blokadzie lub inny typ komunikacji, który jest wysyłany do użytkownika, który jest opiekunem w przypadku, musisz określić urzędnika wystawiającego. Powiadomienie jest wysyłane do opiekuna w imieniu określonego urzędnika wystawiającego. Na przykład paralegal w organizacji może być odpowiedzialny za tworzenie i wysyłanie powiadomień blokady do opiekunów w przypadku. W tym scenariuszu paralegal może określić adwokata w organizacji jako wystawiającego. Kogo można określić jako urzędnika wystawiającego? Istnieją dwa typy użytkowników, którzy mogą zostać wybrani jako inspektor wystawiający do komunikacji z opiekunem:
 
 - Każdy członek konkretnego przypadku, którego komunikat jest wysyłany w imieniu użytkownika.
 
@@ -37,19 +35,19 @@ W tym artykule wyjaśniono, jak dodawać i usuwać użytkowników z listy urzęd
 
 ## <a name="before-you-add-an-issuing-officer"></a>Przed dodaniem urzędnika wystawiającego
 
-- Aby dodać lub usunąć urzędników wystawiających certyfikaty, musisz być administratorem zbierania elektronicznych materiałów dowodowych w organizacji. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview](assign-ediscovery-permissions.md)  
+- Aby dodać lub usunąć urzędników wystawiających certyfikaty, musisz być administratorem zbierania elektronicznych materiałów dowodowych w organizacji. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview](assign-ediscovery-permissions.md)  
 
-- Użytkownik dodany jako urzędnik wystawiający certyfikaty musi mieć aktywną skrzynkę pocztową w organizacji Microsoft 365.
+- Użytkownik dodany jako urzędnik wystawiający certyfikaty musi mieć aktywną skrzynkę pocztową w organizacji platformy Microsoft 365.
 
-- Twoja organizacja może mieć maksymalnie 15 urzędników wystawiających certyfikaty. Członkowie sprawy, których można określić jako urzędnika wystawiającego certyfikaty, nie są wliczane do tego limitu. Ten limit ma zastosowanie tylko do liczby użytkowników, których można dodać do strony **Wystawiający oficerowie** w usłudze eDiscovery (Premium).
+- Twoja organizacja może mieć maksymalnie 15 urzędników wystawiających certyfikaty. Członkowie sprawy, których można określić jako urzędnika wystawiającego certyfikaty, nie są wliczane do tego limitu. Ten limit dotyczy tylko liczby użytkowników, których można dodać do strony **Wystawiający oficerowie** w usłudze eDiscovery (Premium).
 
 ## <a name="add-an-issuing-officer"></a>Dodawanie urzędnika wystawiającego
 
-1. W portalu zgodności przejdź do obszaru [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) a następnie kliknij pozycję **Ustawienia zbierania elektronicznych materiałów dowodowych (Premium**).
+1. W portalu zgodności przejdź do obszaru [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) a następnie kliknij pozycję **Ustawienia zbierania elektronicznych materiałów dowodowych (Premium).**
 
    ![Wybierz ustawienia zbierania elektronicznych materiałów dowodowych (Premium)](..\media\HistoricalVersions1.png)
 
-2. Na stronie **Ustawienia** wybierz kartę **Wystawiający oficerowie**, aby wyświetlić stronę **Zarządzanie urzędnikami wystawiającym**.
+2. Na stronie **Ustawienia** wybierz kartę **Wystawiający oficerowie** , aby wyświetlić stronę **Zarządzanie urzędnikami wystawiającym certyfikaty** .
 
    ![Strona ustawień urzędników wystawiających.](..\media\AeDIssuingOfficers1.png)
 
@@ -59,9 +57,9 @@ Po dodaniu użytkowników jako osoby wystawiające certyfikaty ty lub inni użyt
 
 ## <a name="remove-an-issuing-officer"></a>Usuwanie urzędnika wystawiającego
 
-1. W portalu zgodności przejdź do obszaru [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) a następnie kliknij pozycję **Ustawienia zbierania elektronicznych materiałów dowodowych (Premium**).
+1. W portalu zgodności przejdź do obszaru [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) a następnie kliknij pozycję **Ustawienia zbierania elektronicznych materiałów dowodowych (Premium).**
 
-2. Na stronie **Ustawienia** wybierz kartę **Wystawiający oficerowie**.
+2. Na stronie **Ustawienia** wybierz kartę **Wystawiający oficerowie** .
 
 3. Wybierz co najmniej jednego użytkownika na liście urzędników wystawiających, a następnie kliknij przycisk **Usuń**.
 

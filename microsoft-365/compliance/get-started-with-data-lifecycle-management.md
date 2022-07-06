@@ -19,22 +19,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Chcesz rozpocząć zarządzanie danymi organizacji, ale nie wiesz, od czego zacząć? Przeczytaj niektóre wskazówki nakazowe, aby rozpocząć pracę.
-ms.openlocfilehash: 6fe80e32096fc4394ba15786ef378f4b7997af2b
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
+ms.openlocfilehash: 97890f7d873cf19ddc1050cc77f20aa2408c18af
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864465"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629678"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Wprowadzenie do zarządzania cyklem życia danych
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Chcesz rozpocząć zarządzanie danymi organizacji, zachowując zawartość, którą musisz przechowywać, i usuwając zawartość, której nie masz? Aby rozpocząć pracę, skorzystaj z poniższych wskazówek dotyczących zarządzanie cyklem życia danych Microsoft Purview (dawniej Microsoft Information Governance):
 
-1. **Dowiedz się, jak działa przechowywanie i usuwanie** w Microsoft 365, a następnie zidentyfikuj obciążenia, które wymagają zasad przechowywania i czy musisz utworzyć etykiety przechowywania dla wyjątków: [Dowiedz się więcej o przechowywaniu](retention.md)
+1. **Dowiedz się, jak działa przechowywanie i usuwanie** na platformie Microsoft 365, a następnie zidentyfikuj obciążenia, które wymagają zasad przechowywania i czy musisz utworzyć etykiety przechowywania dla wyjątków: [Dowiedz się więcej o przechowywaniu](retention.md)
     
     > [!NOTE]
     > Jeśli musisz zarządzać elementami o wysokiej wartości dla wymagań biznesowych, prawnych lub regulacyjnych dotyczących przechowywania rekordów: użyj etykiet przechowywania z [zarządzaniem rekordami](records-management.md) , a nie zarządzaniem cyklem życia danych.
@@ -59,13 +57,13 @@ Chcesz rozpocząć zarządzanie danymi organizacji, zachowując zawartość, kt�
 
 Wiele różnych subskrypcji obsługuje możliwości zarządzania cyklem życia danych.
 
-Aby wyświetlić opcje licencjonowania użytkowników w celu skorzystania z funkcji Microsoft Purview, zobacz [wskazówki dotyczące licencjonowania Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Aby zapoznać się z funkcjami wymienionymi na tej stronie, zobacz sekcję [zarządzanie cyklem życia danych Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management) i powiązane [pobieranie plików PDF](https://go.microsoft.com/fwlink/?linkid=2139145), aby zapoznać się z wymaganiami dotyczącymi licencjonowania na poziomie funkcji.
+Aby wyświetlić opcje licencjonowania użytkowników w celu skorzystania z funkcji usługi Microsoft Purview, zobacz [wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Aby zapoznać się z funkcjami wymienionymi na tej stronie, zobacz sekcję [zarządzanie cyklem życia danych Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management) i powiązane [pobieranie plików PDF](https://go.microsoft.com/fwlink/?linkid=2139145), aby zapoznać się z wymaganiami dotyczącymi licencjonowania na poziomie funkcji.
 
 ## <a name="permissions"></a>Uprawnienia
 
-Zobacz następującą sekcję, aby uzyskać informacje o rolach i grupach ról, aby zarządzać przechowywaniem Microsoft 365.
+Zobacz następującą sekcję, aby uzyskać informacje o rolach i grupach ról do zarządzania przechowywaniem platformy Microsoft 365.
 
-W przypadku uprawnień do zarządzania skrzynkami pocztowymi na potrzeby archiwizacji, nieaktywnych skrzynek pocztowych i importowania zwykle wymagają one Exchange uprawnień, takich jak rola Adresaci poczty. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie adresatami i Zarządzanie organizacją. Aby uzyskać dokładne wymagania dotyczące uprawnień dla każdego zadania zarządzania, zapoznaj się z dokumentacją dołączącą do instrukcji administratora.
+W przypadku uprawnień do zarządzania skrzynkami pocztowymi na potrzeby archiwizacji, nieaktywnych skrzynek pocztowych i importowania zwykle wymagają one uprawnień programu Exchange, takich jak rola Adresaci poczty. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie adresatami i Zarządzanie organizacją. Aby uzyskać dokładne wymagania dotyczące uprawnień dla każdego zadania zarządzania, zapoznaj się z dokumentacją dołączącą do instrukcji administratora.
 
 ### <a name="permissions-for-retention-policies-and-retention-labels"></a>Uprawnienia do zasad przechowywania i etykiet przechowywania
 
@@ -83,7 +81,7 @@ Poniższa tabela ułatwia mapowanie wymagań biznesowych na najbardziej typowe s
 
 |Chcę...|Dokumentacji|
 |----------------|---------------|
-|Wydajne przechowywanie lub usuwanie danych dla usług Microsoft 365: <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Grupy Microsoft 365 <br />- Teams <br />- Yammer <br />- Skype dla firm |[Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md)|
+|Wydajne przechowywanie lub usuwanie danych dla usług Microsoft 365: <br />— Exchange  <br />— SharePoint  <br />— OneDrive  <br />- Grupy Microsoft 365 <br />- Teams <br />- Yammer <br />- Skype dla firm |[Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md)|
 |Zapewnianie użytkownikom dodatkowego magazynu skrzynek pocztowych |[Włączanie archiwalnych skrzynek pocztowych w portal zgodności Microsoft Purview](enable-archive-mailboxes.md)|
 |Zachowywanie danych skrzynki pocztowej po opuszczeniu organizacji przez pracowników |[Twórz nieaktywne skrzynki pocztowe i zarządzaj nimi](create-and-manage-inactive-mailboxes.md)|
 |Przekazywanie danych skrzynki pocztowej z plików PST |[Użyj przekazywania sieciowego w celu importu plików PST](use-network-upload-to-import-pst-files.md)|
@@ -93,15 +91,15 @@ Jeśli masz scenariusz, który wymaga zarządzania danymi poszczególnych elemen
 
 ## <a name="end-user-documentation"></a>Dokumentacja użytkownika końcowego
 
-Zapoznaj się z następującą sekcją, aby uzyskać informacje na temat dokumentacji użytkownika końcowego, aby obsługiwać przechowywanie Microsoft 365.
+Zapoznaj się z następującą sekcją, aby uzyskać informacje na temat dokumentacji użytkownika końcowego, aby obsługiwać przechowywanie na platformie Microsoft 365.
 
-Możliwości zarządzania cyklem życia danych dla nieaktywnych skrzynek pocztowych i importowania plików PST nie wymagają dokumentacji użytkownika końcowego, ponieważ są to tylko operacje administratora. Aby ułatwić użytkownikom zrozumienie ich archiwalnych skrzynek pocztowych i interakcję z nimi w Outlook po włączeniu tej funkcji, zobacz [Zarządzanie magazynem poczty e-mail przy użyciu skrzynek pocztowych archiwum online](https://support.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
+Możliwości zarządzania cyklem życia danych dla nieaktywnych skrzynek pocztowych i importowania plików PST nie wymagają dokumentacji użytkownika końcowego, ponieważ są to tylko operacje administratora. Aby ułatwić użytkownikom zrozumienie ich archiwalnych skrzynek pocztowych w programie Outlook i interakcję z nimi po włączeniu tej funkcji, zobacz [Zarządzanie magazynem poczty e-mail przy użyciu skrzynek pocztowych archiwum online](https://support.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ### <a name="end-user-documentation-for-retention-and-deletion"></a>Dokumentacja użytkownika końcowego dotycząca przechowywania i usuwania
 
-Większość zasad przechowywania działa dyskretnie w tle bez interakcji z użytkownikiem, dlatego wymaga małej dokumentacji dla użytkowników. Zasady przechowywania dla Teams informują użytkowników o usunięciu ich komunikatów za pomocą linku do [Teams komunikatów dotyczących zasad przechowywania](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+Większość zasad przechowywania działa dyskretnie w tle bez interakcji z użytkownikiem, dlatego wymaga małej dokumentacji dla użytkowników. Zasady przechowywania aplikacji Teams informują użytkowników o usunięciu ich komunikatów za pomocą linku do [komunikatów usługi Teams dotyczących zasad przechowywania](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 
-Jeśli jednak uzupełnisz zasady przechowywania etykietami przechowywania, etykiety te mają interfejs użytkownika w aplikacjach Microsoft 365. Przed wdrożeniem tych etykiet w sieci produkcyjnej upewnij się, że podasz informacje i instrukcje dla użytkowników końcowych i działu pomocy technicznej. Aby ułatwić użytkownikom stosowanie etykiet przechowywania w SharePoint i OneDrive, zobacz [Stosowanie etykiet przechowywania do plików w SharePoint lub OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
+Jeśli jednak uzupełnisz zasady przechowywania etykietami przechowywania, etykiety te będą mieć interfejs użytkownika w aplikacjach platformy Microsoft 365. Przed wdrożeniem tych etykiet w sieci produkcyjnej upewnij się, że podasz informacje i instrukcje dla użytkowników końcowych i działu pomocy technicznej. Aby ułatwić użytkownikom stosowanie etykiet przechowywania w programach SharePoint i OneDrive, zobacz [Stosowanie etykiet przechowywania do plików w programie SharePoint lub OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
 Najbardziej efektywną dokumentacją użytkownika końcowego zawsze będą dostosowane wskazówki i instrukcje podane dla wybranych nazw etykiet przechowywania i konfiguracji. Zobacz następującą stronę i pliki do pobrania, których możesz użyć, aby pomóc w szkoleniu użytkowników: [Szkolenie użytkowników końcowych dla etykiet przechowywania](https://microsoft.github.io/ComplianceCxE/enduser/retention/).
 

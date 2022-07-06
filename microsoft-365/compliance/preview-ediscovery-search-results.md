@@ -19,23 +19,21 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Wyświetl podgląd przykładu wyników zwróconych przez wyszukiwanie zawartości lub wyszukiwanie zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: acbfebc5935666299dc6a717d70f9c426a6d61cd
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Wyświetl podgląd przykładu wyników zwróconych przez wyszukiwanie zawartości lub wyszukiwanie zbierania elektronicznych materiałów dowodowych (Standard) w portal zgodności Microsoft Purview.
+ms.openlocfilehash: f369148c6f898c4150d0c86f898640f71ab367a0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099636"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628600"
 ---
 # <a name="preview-ediscovery-search-results"></a>Eksportowanie wyników wyszukiwania w ramach zbierania elektronicznych materiałów dowodowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Po uruchomieniu wyszukiwania zawartości lub wyszukiwania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa) możesz wyświetlić podgląd przykładu wyników zwróconych przez wyszukiwanie. Podgląd elementów zwracanych przez zapytanie wyszukiwania może pomóc w określeniu, czy wyszukiwanie zwraca wyniki, których oczekujesz, lub jeśli chcesz zmienić zapytanie wyszukiwania i ponownie uruchomić wyszukiwanie.
+Po uruchomieniu wyszukiwania zawartości lub wyszukiwania skojarzonego ze sprawą Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Standardowa) możesz wyświetlić podgląd przykładu wyników zwróconych przez wyszukiwanie. Podgląd elementów zwracanych przez zapytanie wyszukiwania może pomóc w określeniu, czy wyszukiwanie zwraca wyniki, których oczekujesz, lub jeśli chcesz zmienić zapytanie wyszukiwania i ponownie uruchomić wyszukiwanie.
 
 Aby wyświetlić podgląd przykładu wyników zwróconych przez wyszukiwanie:
 
-1. W portalu zgodności usługi Microsoft Purview przejdź do strony wyszukiwania zawartości lub zgłoszenia zbierania elektronicznych materiałów dowodowych (Standard).
+1. W portal zgodności Microsoft Purview przejdź do strony wyszukiwania zawartości lub zgłoszenia zbierania elektronicznych materiałów dowodowych (Standardowa).
 
 2. Wybierz pozycję Wyszukaj, aby wyświetlić stronę wysuwaną.
 

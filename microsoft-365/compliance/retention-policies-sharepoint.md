@@ -1,5 +1,5 @@
 ---
-title: Dowiedz się więcej na temat przechowywania SharePoint i OneDrive
+title: Dowiedz się więcej o przechowywaniu dla programu SharePoint i usługi OneDrive
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,42 +16,40 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak działa przechowywanie dla SharePoint i OneDrive.
-ms.openlocfilehash: 8515b84f21677644be821ca129ab02083121ab84
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Dowiedz się, jak działa przechowywanie dla programu SharePoint i usługi OneDrive.
+ms.openlocfilehash: 3fb316c0780ccb5c854e12dae8bde450c877f1d2
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468859"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629194"
 ---
-# <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Dowiedz się więcej na temat przechowywania SharePoint i OneDrive
+# <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Dowiedz się więcej o przechowywaniu dla programu SharePoint i usługi OneDrive
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Informacje zawarte w tym artykule [uzupełniają informacje na temat przechowywania](retention.md), ponieważ zawierają informacje specyficzne dla SharePoint i OneDrive.
+Informacje zawarte w tym artykule uzupełniają informacje [na temat przechowywania](retention.md) , ponieważ zawierają informacje specyficzne dla programu SharePoint i usługi OneDrive.
 
 W przypadku innych obciążeń zobacz:
 
-- [Dowiedz się więcej na temat przechowywania Microsoft Teams](retention-policies-teams.md)
-- [Dowiedz się więcej na temat przechowywania Yammer](retention-policies-yammer.md)
-- [Dowiedz się więcej na temat przechowywania Exchange](retention-policies-exchange.md)
+- [Dowiedz się więcej o przechowywaniu w usłudze Microsoft Teams](retention-policies-teams.md)
+- [Dowiedz się więcej na temat przechowywania usługi Yammer](retention-policies-yammer.md)
+- [Dowiedz się więcej o przechowywaniu dla programu Exchange](retention-policies-exchange.md)
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Co jest dołączone do przechowywania i usuwania
 
-Wszystkie pliki przechowywane w witrynach SharePoint lub OneDrive można przechowywać, stosując zasady przechowywania lub etykietę przechowywania. 
+Wszystkie pliki przechowywane w witrynach programu SharePoint lub OneDrive można przechowywać, stosując zasady przechowywania lub etykietę przechowywania. 
 
 Można usunąć następujące pliki:
 
-- W przypadku korzystania z zasad przechowywania: wszystkie pliki w bibliotekach dokumentów, które obejmują wszystkie automatycznie utworzone SharePoint biblioteki dokumentów, takie jak **zasoby witryny**.
+- W przypadku korzystania z zasad przechowywania: wszystkie pliki w bibliotekach dokumentów, które obejmują wszystkie automatycznie utworzone biblioteki dokumentów programu SharePoint, takie jak **zasoby witryny**.
     
 - Gdy używasz etykiet przechowywania: wszystkie pliki we wszystkich bibliotekach dokumentów i wszystkie pliki na poziomie głównym, które nie znajdują się w folderze.
     
 > [!TIP]
 > Jeśli używasz [zapytania z zasadami automatycznego stosowania etykiety przechowywania](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), możesz wykluczyć określone biblioteki dokumentów, używając następującego wpisu: `NOT(DocumentLink:"<URL to document library>")`
 
-Elementy listy nie są obsługiwane przez zasady przechowywania, ale są obsługiwane przez etykiety przechowywania z wyjątkiem elementów na listach systemowych. Są to ukryte listy używane przez SharePoint do zarządzania systemem i obejmują katalog stron wzorcowych, wykaz rozwiązań i źródła danych. Gdy etykiety przechowywania są stosowane do obsługiwanych elementów listy, zawsze będą zachowywane zgodnie z ustawieniami przechowywania, ale nie zostaną usunięte, jeśli są ukryte przed wyszukiwaniem.
+Elementy listy nie są obsługiwane przez zasady przechowywania, ale są obsługiwane przez etykiety przechowywania z wyjątkiem elementów na listach systemowych. Są to ukryte listy używane przez program SharePoint do zarządzania systemem i obejmują katalog stron wzorcowych, wykaz rozwiązań i źródła danych. Gdy etykiety przechowywania są stosowane do obsługiwanych elementów listy, zawsze będą zachowywane zgodnie z ustawieniami przechowywania, ale nie zostaną usunięte, jeśli są ukryte przed wyszukiwaniem.
 
 Po zastosowaniu etykiety przechowywania do obsługiwanego elementu listy zawierającego załącznik dokumentu:
 - W przypadku standardowej etykiety przechowywania (nie deklaruje elementu jako rekordu):
@@ -61,12 +59,12 @@ Po zastosowaniu etykiety przechowywania do obsługiwanego elementu listy zawiera
 
 Ustawienia przechowywania z zasad przechowywania i etykiet przechowywania nie mają zastosowania do organizowania struktur, które obejmują biblioteki, listy i foldery.
 
-W przypadku zasad przechowywania i zasad automatycznego stosowania etykiet: SharePoint lokacje muszą być indeksowane w celu zastosowania ustawień przechowywania. Jeśli jednak elementy w bibliotekach dokumentów SharePoint są skonfigurowane tak, aby nie były wyświetlane w wynikach wyszukiwania, ta konfiguracja nie wyklucza plików z ustawień przechowywania.
+W przypadku zasad przechowywania i zasad automatycznego stosowania etykiet: witryny programu SharePoint muszą być indeksowane w celu zastosowania ustawień przechowywania. Jeśli jednak elementy w bibliotekach dokumentów programu SharePoint są skonfigurowane tak, aby nie były wyświetlane w wynikach wyszukiwania, ta konfiguracja nie wyklucza plików z ustawień przechowywania.
 
 
-## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Jak działa przechowywanie SharePoint i OneDrive
+## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Jak działa przechowywanie dla programu SharePoint i usługi OneDrive
 
-Aby przechowywać zawartość, która musi zostać zachowana, SharePoint i OneDrive utworzyć bibliotekę archiwum zachowywania, jeśli nie istnieje dla tej witryny. Biblioteka Archiwum zachowywania nie jest przeznaczona do interaktywnego użycia, ale zamiast tego automatycznie przechowuje pliki, gdy jest to potrzebne ze względu na zgodność. Działa w następujący sposób:
+Aby przechowywać zawartość, która musi zostać zachowana, program SharePoint i usługa OneDrive tworzą bibliotekę archiwum zachowywania, jeśli nie istnieje dla witryny. Biblioteka Archiwum zachowywania nie jest przeznaczona do interaktywnego użycia, ale zamiast tego automatycznie przechowuje pliki, gdy jest to potrzebne ze względu na zgodność. Działa w następujący sposób:
 
 Gdy użytkownik zmienia lub usuwa element, który podlega przechowywaniu, sprawdza, czy zawartość została zmieniona od czasu zastosowania ustawień przechowywania. Jeśli jest to pierwsza zmiana od czasu zastosowania ustawień przechowywania, zawartość jest kopiowana do biblioteki archiwum zachowywania, co umożliwia użytkownikowi zmianę lub usunięcie oryginalnej zawartości.
 
@@ -80,7 +78,7 @@ Użytkownicy widzą również komunikat o błędzie, jeśli spróbują usunąć 
 
 - Ustawienie zarządzania rekordami, które umożliwia użytkownikom usuwanie elementów oznaczonych etykietą, jest wyłączone.
     
-    Aby sprawdzić lub zmienić to ustawienie, przejdź do rozwiązania do **zarządzania rekordami** w ustawieniach **zarządzania rekordami** >  portal zgodności Microsoft Purview > **Zarządzanie rekordamiWystawienia zarządzaniaRetention** >  **etykietyUsuń** >  elementów. Istnieją oddzielne ustawienia dla SharePoint i OneDrive.
+    Aby sprawdzić lub zmienić to ustawienie, przejdź do rozwiązania do **zarządzania rekordami** w **ustawieniach zarządzania rekordami** **zarządzania rekordami** >  portal zgodności Microsoft Purview > Usuwanie  > **elementów** etykiet **przechowywania** > . Istnieją oddzielne ustawienia dla programu SharePoint i usługi OneDrive.
     
     Alternatywnie, jeśli nie masz dostępu do rozwiązania do **zarządzania rekordami** , możesz użyć opcji *AllowFilesWithKeepLabelToBeDeletedSPO* i *AllowFilesWithKeepLabelToBeDeletedODB* z [get-PnPTenant](https://pnp.github.io/powershell/cmdlets/Get-PnPTenant.html) i [Set-PnPTenant](https://pnp.github.io/powershell/cmdlets/Set-PnPTenant.html).
 
@@ -90,11 +88,11 @@ Użytkownicy widzą również komunikat o błędzie, jeśli spróbują usunąć 
 
 - Etykieta przechowywania oznacza elementy jako [rekord regulacyjny](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked), co zawsze uniemożliwia edytowanie lub usuwanie elementu.
 
-Po przypisaniu ustawień przechowywania do zawartości na koncie OneDrive lub w witrynie SharePoint ścieżki, które pobiera zawartość, zależą od tego, czy ustawienia przechowywania mają być zachowywane i usuwane, tylko do zachowania, czy usuwania.
+Po przypisaniu ustawień przechowywania do zawartości na koncie usługi OneDrive lub w witrynie programu SharePoint ścieżki, które pobiera zawartość, zależą od tego, czy ustawienia przechowywania mają być zachowywane i usuwane, tylko do zachowania, czy usuwania.
 
 Gdy ustawienia przechowywania mają zostać zachowane i usunięte:
 
-![Diagram cyklu życia zawartości w SharePoint i OneDrive.](../media/Retention_Diagram_of_retention_flow_in_sites.png)
+![Diagram cyklu życia zawartości w programach SharePoint i OneDrive.](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 1. **Jeśli zawartość zostanie zmodyfikowana lub usunięta** w okresie przechowywania, kopia oryginalnej zawartości, jaka istniała po przypisaniu ustawień przechowywania, zostanie utworzona w bibliotece archiwum zachowywania. W tym miejscu zadanie czasomierza identyfikuje elementy, których okres przechowywania wygasł. Te elementy są przenoszone do kosza drugiego etapu, gdzie są trwale usuwane z końcem 93 dni. Kosz drugiego etapu nie jest widoczny dla użytkowników końcowych (jest to tylko kosz pierwszego etapu), ale administratorzy zbioru witryn mogą wyświetlać i przywracać zawartość z tego miejsca.
 
@@ -122,7 +120,7 @@ Jeśli ustawienia przechowywania są tylko do zachowania lub tylko do usuwania, 
 
 ## <a name="how-retention-works-with-cloud-attachments"></a>Jak przechowywanie działa z załącznikami w chmurze
 
-Załączniki w chmurze to osadzone linki do plików udostępnianych przez użytkowników, które mogą być zachowywane i usuwane, gdy użytkownicy udostępniają je w Outlook wiadomościach e-mail i wiadomościach Teams. Po [automatycznym zastosowaniu etykiety przechowywania do załączników w chmurze](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) etykieta przechowywania jest stosowana do kopii udostępnionego pliku, który jest przechowywany w bibliotece archiwum zachowywania.
+Załączniki w chmurze to osadzone linki do plików udostępnianych przez użytkowników, które mogą być zachowywane i usuwane, gdy użytkownicy udostępniają je w wiadomościach e-mail i wiadomościach usługi Teams w programie Outlook. Po [automatycznym zastosowaniu etykiety przechowywania do załączników w chmurze](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) etykieta przechowywania jest stosowana do kopii udostępnionego pliku, który jest przechowywany w bibliotece archiwum zachowywania.
 
 W tym scenariuszu zalecamy skonfigurowanie ustawienia etykiety w celu rozpoczęcia okresu przechowywania na podstawie tego, kiedy element jest oznaczony etykietą. Jeśli skonfigurujesz okres przechowywania na podstawie czasu utworzenia lub ostatniej modyfikacji elementu, ta data zostanie pobrana z oryginalnego pliku w momencie udostępniania. Jeśli zostanie skonfigurowany początek przechowywania po ostatniej modyfikacji, to ustawienie nie będzie miało wpływu na tę kopię w bibliotece archiwum konserwacji.
 
@@ -132,19 +130,19 @@ Jeśli oryginalny plik zostanie ponownie udostępniony, ale nie zostanie zmodyfi
 
 Ponieważ etykieta przechowywania nie jest stosowana do oryginalnego pliku, plik z etykietą nigdy nie jest modyfikowany ani usuwany przez użytkownika. Plik z etykietą pozostaje w bibliotece archiwum zachowywania, dopóki zadanie czasomierza nie wykaż, że jego okres przechowywania wygasł. Jeśli ustawienia przechowywania są skonfigurowane do usuwania elementów, plik jest następnie przenoszony do kosza drugiego etapu, gdzie jest trwale usuwany z końcem 93 dni:
 
-![Jak działa przechowywanie załączników w chmurze przechowywanych w SharePoint i OneDrive](../media/retention-diagram-of-retention-flow-cloud-attachments.png)
+![Jak działa przechowywanie załączników w chmurze przechowywanych w programach SharePoint i OneDrive](../media/retention-diagram-of-retention-flow-cloud-attachments.png)
 
 Kopia przechowywana w bibliotece archiwum zachowywania jest zwykle tworzona w ciągu godziny od udostępnionego załącznika w chmurze.
 
-## <a name="how-retention-works-with-onenote-content"></a>Jak przechowywanie działa z zawartością OneNote
+## <a name="how-retention-works-with-onenote-content"></a>Jak przechowywanie działa z zawartością programu OneNote
 
-W przypadku zastosowania zasad przechowywania do lokalizacji zawierającej OneNote zawartości lub etykietę przechowywania do folderu OneNote w tle różne strony i sekcje OneNote to pojedyncze pliki dziedziczące ustawienia przechowywania. Oznacza to, że każda sekcja na stronie zostanie indywidualnie zachowana i usunięta zgodnie z określonymi ustawieniami przechowywania.
+Po zastosowaniu zasad przechowywania do lokalizacji zawierającej zawartość programu OneNote lub etykietę przechowywania do folderu programu OneNote w tle różne strony i sekcje programu OneNote to pojedyncze pliki dziedziczące ustawienia przechowywania. Oznacza to, że każda sekcja na stronie zostanie indywidualnie zachowana i usunięta zgodnie z określonymi ustawieniami przechowywania.
 
-Na tylko strony i sekcje mają wpływ określone ustawienia przechowywania. Na przykład mimo że dla każdego notesu jest **widoczna data modyfikacji**, ta data nie jest używana przez Microsoft 365 przechowywania.
+Na tylko strony i sekcje mają wpływ określone ustawienia przechowywania. Na przykład mimo że dla każdego notesu jest **widoczna data modyfikacji** , ta data nie jest używana przez przechowywanie w usłudze Microsoft 365.
 
 ## <a name="how-retention-works-with-document-versions"></a>Jak przechowywanie działa z wersjami dokumentów
 
-Przechowywanie wersji jest funkcją wszystkich list dokumentów i bibliotek w SharePoint i OneDrive. Domyślnie przechowywanie wersji zachowuje co najmniej 500 wersji głównych, chociaż można zwiększyć ten limit. Aby uzyskać więcej informacji, zobacz [Włączanie i konfigurowanie przechowywania wersji dla listy lub biblioteki](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) oraz [Jak działa przechowywanie wersji na listach i bibliotekach](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
+Przechowywanie wersji to funkcja wszystkich list dokumentów i bibliotek w programach SharePoint i OneDrive. Domyślnie przechowywanie wersji zachowuje co najmniej 500 wersji głównych, chociaż można zwiększyć ten limit. Aby uzyskać więcej informacji, zobacz [Włączanie i konfigurowanie przechowywania wersji dla listy lub biblioteki](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) oraz [Jak działa przechowywanie wersji na listach i bibliotekach](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
 Jeśli dokument z wersjami podlega ustawieniu przechowywania w celu zachowania tej zawartości, wersje skopiowane do biblioteki Archiwum zachowania istnieją jako osobny element. Jeśli ustawienia przechowywania są skonfigurowane do usunięcia na końcu okresu przechowywania:
 
@@ -162,7 +160,7 @@ Tak nie jest w przypadku etykiet przechowywania, gdy zawartość nie podlega zas
 
 **SharePoint**:
 
-Gdy użytkownik opuszcza organizację, nie ma to wpływu na zawartość utworzoną przez tego użytkownika, ponieważ SharePoint jest uważana za środowisko współpracy, w przeciwieństwie do skrzynki pocztowej użytkownika lub konta OneDrive.
+Gdy użytkownik opuszcza organizację, nie ma to wpływu na zawartość utworzoną przez tego użytkownika, ponieważ program SharePoint jest uważany za środowisko współpracy, w przeciwieństwie do skrzynki pocztowej użytkownika lub konta usługi OneDrive.
 
 **OneDrive**:
 
@@ -172,9 +170,9 @@ Gdy okres przechowywania wygaśnie, a ustawienia przechowywania obejmowały akcj
 
 ## <a name="configuration-guidance"></a>Wskazówki dotyczące konfiguracji
 
-Jeśli dopiero zaczynasz konfigurować przechowywanie w Microsoft 365, zobacz [Wprowadzenie z zarządzaniem cyklem życia danych](get-started-with-data-lifecycle-management.md).
+Jeśli dopiero zaczynasz konfigurować przechowywanie w usłudze Microsoft 365, zobacz [Wprowadzenie do zarządzania cyklem życia danych](get-started-with-data-lifecycle-management.md).
 
-Jeśli wszystko jest gotowe do skonfigurowania zasad przechowywania lub etykiety przechowywania dla Exchange, zobacz następujące instrukcje:
+Jeśli wszystko jest gotowe do skonfigurowania zasad przechowywania lub etykiety przechowywania dla programu Exchange, zobacz następujące instrukcje:
 - [Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md)
 - [Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md)
 - [Automatyczne stosowanie etykiety przechowywania do zawartości](apply-retention-labels-automatically.md)

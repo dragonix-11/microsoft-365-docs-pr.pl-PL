@@ -14,33 +14,31 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: Dowiedz się, jak administratorzy mogą skonfigurować & za pomocą łącznika natywnego do importowania danych ze strony firmy LinkedIn do Microsoft 365.
-ms.openlocfilehash: 352e33ed4c78dd57533312e3f7c37bb3357216f3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak administratorzy mogą skonfigurować & za pomocą łącznika natywnego do importowania danych ze strony firmy LinkedIn na platformę Microsoft 365.
+ms.openlocfilehash: d018237a7cd0d4171be8a9f104ee4ccd745f2228
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095977"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630637"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Konfigurowanie łącznika do archiwizowania danych linkedin
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Użyj łącznika w portal zgodności Microsoft Purview, aby zaimportować i zarchiwizować dane ze stron firmy LinkedIn. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z kontem dla określonej strony firmy LinkedIn raz na 24 godziny. Łącznik konwertuje wiadomości opublikowane na stronie Firmy na wiadomość e-mail, a następnie importuje te elementy do skrzynki pocztowej na platformie Microsoft 365.
 
-Użyj łącznika w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane ze stron firmy LinkedIn. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z kontem dla określonej strony firmy LinkedIn raz na 24 godziny. Łącznik konwertuje komunikaty opublikowane na stronie firmy na wiadomość e-mail, a następnie importuje te elementy do skrzynki pocztowej w Microsoft 365.
-
-Po zapisaniu danych strony firmy LinkedIn w skrzynce pocztowej można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, wyszukiwanie zawartości, In-Place archiwizowanie, inspekcja i zasady przechowywania Microsoft 365 do danych linkedin. Możesz na przykład wyszukać te elementy przy użyciu funkcji wyszukiwania zawartości lub skojarzyć skrzynkę pocztową magazynu z opiekunem w przypadku zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium). Utworzenie łącznika do importowania i archiwizowania danych linkedin w Microsoft 365 może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Po zapisaniu danych strony firmy LinkedIn w skrzynce pocztowej można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, wyszukiwanie zawartości, archiwizowanie In-Place, inspekcja i zasady przechowywania usługi Microsoft 365 do danych linkedin. Możesz na przykład wyszukać te elementy przy użyciu funkcji wyszukiwania zawartości lub skojarzyć skrzynkę pocztową magazynu z opiekunem w przypadku Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium). Utworzenie łącznika do importowania i archiwizowania danych linkedin na platformie Microsoft 365 może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="before-you-set-up-a-connector"></a>Przed skonfigurowaniem łącznika
 
-- Użytkownikowi tworzącemu łącznik strony firmy LinkedIn musi zostać przypisana rola administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który tworzy łącznik strony firmy LinkedIn, musi mieć przypisaną rolę łącznika danych Administracja. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę Administracja łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Musisz mieć poświadczenia logowania (adres e-mail lub numer telefonu i hasło) konta użytkownika LinkedIn, które jest administratorem strony firmy LinkedIn, którą chcesz zarchiwizować. Te poświadczenia są używane do logowania się do usługi LinkedIn podczas konfigurowania łącznika.
 
-- Łącznik LinkedIn może zaimportować łącznie 200 000 elementów w ciągu jednego dnia. Jeśli w ciągu dnia jest więcej niż 200 000 elementów LinkedIn, żaden z tych elementów nie zostanie zaimportowany do Microsoft 365.
+- Łącznik LinkedIn może zaimportować łącznie 200 000 elementów w ciągu jednego dnia. Jeśli w ciągu dnia będzie więcej niż 200 000 elementów LinkedIn, żaden z tych elementów nie zostanie zaimportowany na platformę Microsoft 365.
 
 ## <a name="create-a-linkedin-connector"></a>Tworzenie łącznika linkedin
 
-1. Przejdź do strony<https://compliance.microsoft.com>, a następnie kliknij pozycję **Łączniki** >  **danychŁącz strony firmy**.
+1. Przejdź do strony<https://compliance.microsoft.com>, a następnie kliknij pozycję **Łączniki** >  danych **Strony firmy LinkedIn**.
 
 2. Na stronie produktu **strony firmy LinkedIn** kliknij pozycję **Dodaj łącznik**.
 
@@ -60,7 +58,7 @@ Po zapisaniu danych strony firmy LinkedIn w skrzynce pocztowej można zastosowa�
 
 6. Wybierz stronę firmy, z których chcesz zarchiwizować elementy, a następnie kliknij przycisk **Dalej**.
 
-7. Na stronie **Wybieranie lokalizacji magazynu** kliknij w polu, wybierz adres e-mail skrzynki pocztowej Microsoft 365, do których zostaną zaimportowane elementy LinkedIn, a następnie kliknij przycisk **Dalej**. Elementy są importowane do folderu skrzynki odbiorczej w tej skrzynce pocztowej.
+7. Na stronie **Wybieranie lokalizacji magazynu** kliknij w polu, wybierz adres e-mail skrzynki pocztowej platformy Microsoft 365, do którą zostaną zaimportowane elementy LinkedIn, a następnie kliknij przycisk **Dalej**. Elementy są importowane do folderu skrzynki odbiorczej w tej skrzynce pocztowej.
 
 8. Kliknij **przycisk Dalej** , aby przejrzeć ustawienia łącznika, a następnie kliknij przycisk **Zakończ** , aby ukończyć konfigurację łącznika.
 
@@ -70,4 +68,4 @@ Aby wyświetlić więcej szczegółów, wybierz łącznik na liście na stronie 
 
 ## <a name="more-information"></a>Więcej informacji
 
-Elementy linkedin są importowane do podfolderu LinkedIn w skrzynce odbiorczej skrzynki pocztowej magazynu w Microsoft 365. Są one wyświetlane jako wiadomości e-mail.
+Elementy linkedin są importowane do podfolderu LinkedIn w skrzynce odbiorczej skrzynki pocztowej magazynu w usłudze Microsoft 365. Są one wyświetlane jako wiadomości e-mail.

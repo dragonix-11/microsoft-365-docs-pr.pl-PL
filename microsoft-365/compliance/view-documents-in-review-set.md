@@ -13,20 +13,18 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Wybierz sposób wyświetlania zawartości w środowisku zbierania elektronicznych materiałów dowodowych (Premium), takich jak tekst, adnotaty, konwertowanie lub widok natywny.
+description: Wybierz sposób wyświetlania zawartości w środowisku zbierania elektronicznych materiałów dowodowych (Premium), takich jak tekst, adnotaty, konwertowane lub natywne.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d21ee5f24b12f010ba9869ca1dfe9af9251ab64c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c5373734b0442d872f5c98ce40876c7be8d95990
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093531"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627024"
 ---
 # <a name="view-documents-in-a-review-set-in-ediscovery-premium"></a>Wyświetlanie dokumentów w zestawie przeglądów w usłudze eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-eDiscovery (Premium) wyświetla zawartość za pośrednictwem kilku osób przeglądających, z których każdy ma różne cele. Różnych osób przeglądających można użyć, klikając dowolny dokument w zestawie przeglądów. Obecnie dostępne są następujące osoby przeglądające:
+Funkcja zbierania elektronicznych materiałów dowodowych (Premium) wyświetla zawartość za pośrednictwem kilku osób przeglądających, z których każda ma różne cele. Różnych osób przeglądających można użyć, klikając dowolny dokument w zestawie przeglądów. Obecnie dostępne są następujące osoby przeglądające:
 
 - Metadane pliku
 - Widok natywny
@@ -42,7 +40,7 @@ Ten panel można włączyć/wyłączyć, aby wyświetlić różne metadane skoja
 
 ## <a name="native-view"></a>Widok natywny
 
-Przeglądarka natywna wyświetla najbogatszy widok dokumentu. Obsługuje setki typów plików i ma na celu wyświetlenie możliwie najprawdziwszego środowiska natywnego. W przypadku Microsoft Office plików przeglądarka używa internetowej wersji aplikacji Office do wyświetlania zawartości, takiej jak komentarze do dokumentów, formuły Excel, ukryte wiersze/kolumny i notatki PowerPoint.
+Przeglądarka natywna wyświetla najbogatszy widok dokumentu. Obsługuje setki typów plików i ma na celu wyświetlenie możliwie najprawdziwszego środowiska natywnego. W przypadku plików pakietu Microsoft Office przeglądarka używa internetowej wersji aplikacji pakietu Office do wyświetlania zawartości, takiej jak komentarze do dokumentów, formuły programu Excel, ukryte wiersze/kolumny i notatki programu PowerPoint.
 
 ![Widok natywny
 ](../media/Reviewimage3.png)

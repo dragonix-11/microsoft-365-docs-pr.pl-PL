@@ -15,23 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Pulpit nawigacyjny zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) umożliwia zestawy przeglądów, aby szybko przeanalizować swoje ciało w celu zidentyfikowania trendów lub kluczowych statystyk, które pomogą Ci opracować strategię przeglądu.
-ms.openlocfilehash: 00d4c6648d74fdf459965ed410dd43c73e698c23
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Skorzystaj z pulpitu nawigacyjnego Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium), aby uzyskać zestawy przeglądów, aby szybko przeanalizować swoje ciało w celu zidentyfikowania trendów lub kluczowych statystyk, które pomogą Ci opracować strategię przeglądu.
+ms.openlocfilehash: 225cc0d732023322b87e0e04c2cca1455fb0ff87
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097871"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629062"
 ---
 # <a name="ediscovery-premium-dashboard-for-review-sets"></a>Pulpit nawigacyjny zbierania elektronicznych materiałów dowodowych (Premium) na potrzeby zestawów przeglądów
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-W niektórych przypadkach w usłudze Microsoft Purview eDiscovery (Premium) może istnieć duża liczba dokumentów i wiadomości e-mail, które należy przejrzeć. Przed rozpoczęciem procesu przeglądu możesz szybko przeanalizować swoje ciało, aby zidentyfikować trendy lub kluczowe statystyki, które pomogą Ci opracować strategię przeglądu. W tym celu możesz użyć pulpitu nawigacyjnego zbierania elektronicznych elektronicznych materiałów dowodowych (Premium) na potrzeby zestawów przeglądów, aby szybko przeanalizować swoje ciało.
+W niektórych przypadkach w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) może istnieć duża liczba dokumentów i wiadomości e-mail, które należy przejrzeć. Przed rozpoczęciem procesu przeglądu możesz szybko przeanalizować swoje ciało, aby zidentyfikować trendy lub kluczowe statystyki, które pomogą Ci opracować strategię przeglądu. W tym celu możesz użyć pulpitu nawigacyjnego zbierania elektronicznych materiałów dowodowych (Premium) na potrzeby zestawów przeglądów, aby szybko przeanalizować swoje ciało.
 
 ## <a name="step-1-create-a-widget-on-the-review-set-dashboard"></a>Krok 1. Tworzenie widżetu na pulpicie nawigacyjnym zestawu przeglądów
 
-1. W portalu zgodności usługi Microsoft Purview przejdź do obszaru **eDiscovery > eDiscovery (Premium),** aby wyświetlić listę przypadków w organizacji.
+1. W portal zgodności Microsoft Purview przejdź do obszaru **eDiscovery > eDiscovery (Premium),** aby wyświetlić listę przypadków w organizacji.
   
 2. Wybierz istniejący przypadek.
   
@@ -39,7 +37,7 @@ W niektórych przypadkach w usłudze Microsoft Purview eDiscovery (Premium) moż
   
 4. Na liście rozwijanej **Indywidualne wyniki** kliknij pozycję **Widok profilu wyszukiwania**. 
 
-   ![DashbordPivot.](../media/dashboardpivot.png)
+   ![DashboardPivot.](../media/dashboardpivot.png)
 
    Zostanie wyświetlona strona **Widok profilu wyszukiwania** . podczas pierwszego wyświetlania tej strony zostaną wyświetlone trzy domyślne widżety.
 
@@ -59,7 +57,7 @@ W niektórych przypadkach w usłudze Microsoft Purview eDiscovery (Premium) moż
 
     a. Wpisz nazwę widżetu, która jest wyświetlana na pasku tytułu widżetu. Nazwa widżetu jest wymagana, ale warto zidentyfikować dane widżetu.
 
-    b. Wybierz właściwość z listy rozwijanej **Wybieranie tabeli przestawnej** , która będzie używana dla danych widżetu. Elementy na tej liście są właściwościami, które można przeszukiwać dla elementów w zestawie przeglądów. Opis tych właściwości można znaleźć [w temacie Document metadata fields in eDiscovery (Premium) (Pola metadanych dokumentu w Premium).](document-metadata-fields-in-Advanced-eDiscovery.md) Opcje tabeli przestawnej dla widżetu są wyświetlane w kolumnie **Nazwa pola z możliwością wyszukiwania** w tym temacie.
+    b. Wybierz właściwość z listy rozwijanej **Wybieranie tabeli przestawnej** , która będzie używana dla danych widżetu. Elementy na tej liście są właściwościami, które można przeszukiwać dla elementów w zestawie przeglądów. Opis tych właściwości można znaleźć [w temacie Document metadata fields in eDiscovery (Premium) (Pola metadanych dokumentu w usłudze eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md)). Opcje tabeli przestawnej dla widżetu są wyświetlane w kolumnie **Nazwa pola z możliwością wyszukiwania** w tym temacie.
 
     c. Wybierz typ wykresu, aby wyświetlić dane z wybranej właściwości tabeli przestawnej.
 
@@ -69,7 +67,7 @@ W niektórych przypadkach w usłudze Microsoft Purview eDiscovery (Premium) moż
 
 1. Kliknij **przycisk ...** na pasku tytułu widżetu, a następnie kliknij przycisk **Zastosuj warunek**.
 
-   ![Pulpitu nawigacyjnego.](../media/searchprofilehome.png)
+   ![Strona główna pulpitu nawigacyjnego.](../media/searchprofilehome.png)
 
 2. Na stronie wysuwanej kliknij element na kluczu widżetu lub wykresie widżetu, aby utworzyć filtr.
 

@@ -16,25 +16,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: Dowiedz się więcej o limitach dotyczących funkcji wyszukiwania zawartości i zbierania elektronicznych materiałów dowodowych (Standard) w portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: f20c33781b8dd9f92091e1b0c459137a4edd33ed
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Dowiedz się więcej na temat limitów dotyczących funkcji wyszukiwania zawartości i zbierania elektronicznych materiałów dowodowych (Standard) w portal zgodności Microsoft Purview.
+ms.openlocfilehash: 79078818ca3975dcbfee0ce72b93f1c3d6039802
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014877"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629536"
 ---
 # <a name="limits-for-ediscovery-search"></a>Limity wyszukiwania zbierania elektronicznych materiałów dowodowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Różne limity są stosowane do narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview. Obejmuje to wyszukiwania uruchamiane na stronie **wyszukiwania zawartości** i wyszukiwania skojarzone ze sprawą zbierania elektronicznych materiałów dowodowych na stronie **zbierania elektronicznych materiałów dowodowych (Standardowa** ). Te limity pomagają utrzymać kondycję i jakość usług dostarczanych organizacjom. Istnieją również ograniczenia związane z indeksowaniem wiadomości e-mail w Exchange Online wyszukiwania. Nie można modyfikować limitów wyszukiwania zbierania elektronicznych materiałów dowodowych ani indeksowania wiadomości e-mail, ale należy pamiętać o nich, aby uwzględnić te limity podczas planowania, uruchamiania i rozwiązywania problemów z wyszukiwaniami zbierania elektronicznych materiałów dowodowych.
 
-Różne limity są stosowane do narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview. Obejmuje to wyszukiwania uruchamiane na stronie **wyszukiwania zawartości** i wyszukiwania skojarzone ze sprawą zbierania elektronicznych materiałów dowodowych na stronie **zbierania elektronicznych materiałów dowodowych (Standardowa** ). Te limity pomagają utrzymać kondycję i jakość usług dostarczanych organizacjom. Istnieją również ograniczenia związane z indeksowaniem wiadomości e-mail w Exchange Online wyszukiwania. Nie można modyfikować limitów wyszukiwania zbierania elektronicznych materiałów dowodowych ani indeksowania wiadomości e-mail, ale należy pamiętać o nich, aby uwzględnić te limity podczas planowania, uruchamiania i rozwiązywania problemów z wyszukiwaniami zbierania elektronicznych materiałów dowodowych.
-
-Aby uzyskać limity związane z narzędziem Microsoft Purview eDiscovery (Premium), zobacz [Limity w zakresie zbierania elektronicznych materiałów dowodowych (Premium)](limits-ediscovery20.md)
+Aby uzyskać limity związane z narzędziem Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium), zobacz [Limity w zakresie zbierania elektronicznych materiałów dowodowych (Premium)](limits-ediscovery20.md)
 
 ## <a name="search-limits"></a>Limity wyszukiwania
 
-W poniższej tabeli wymieniono limity wyszukiwania podczas korzystania z narzędzia do wyszukiwania zawartości w portalu zgodności oraz wyszukiwania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standardowa).
+W poniższej tabeli wymieniono limity wyszukiwania w przypadku korzystania z narzędzia do wyszukiwania zawartości w portalu zgodności oraz wyszukiwań skojarzonych ze sprawą Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Standardowa).
 
 <br>
 
@@ -49,8 +47,8 @@ W poniższej tabeli wymieniono limity wyszukiwania podczas korzystania z narzęd
 |Maksymalna liczba elementów na skrzynkę pocztową użytkownika wyświetlana na stronie podglądu podczas wyświetlania podglądu wyników wyszukiwania zawartości.|100|
 |Maksymalna liczba elementów znalezionych we wszystkich skrzynkach pocztowych użytkownika, które mogą być wyświetlane na stronie w wersji zapoznawczej podczas wyświetlania podglądu wyników wyszukiwania. Zostaną wyświetlone najnowsze elementy.|1000 <sup>2</sup>|
 |Maksymalna liczba skrzynek pocztowych użytkownika, które można wyświetlić w wersji zapoznawczej wyników wyszukiwania. Jeśli istnieje ponad 1000 skrzynek pocztowych zawierających zawartość zgodną z zapytaniem wyszukiwania, co najwyżej tylko 1000 pierwszych skrzynek pocztowych z największą ilością wyników wyszukiwania będzie dostępnych w wersji zapoznawczej.|1,000|
-|Maksymalna liczba elementów znalezionych w witrynach SharePoint i OneDrive dla Firm, które są wyświetlane na stronie podglądu podczas wyświetlania podglądu wyników wyszukiwania. Zostaną wyświetlone najnowsze elementy.|200|
-|Maksymalna liczba witryn (w SharePoint i OneDrive dla Firm), które można wyświetlić w podglądzie wyników wyszukiwania. Jeśli istnieje ponad 200 witryn zawierających zawartość zgodną z zapytaniem wyszukiwania, tylko 200 pierwszych witryn z największą liczbą wyników wyszukiwania będzie dostępnych w wersji zapoznawczej.|200|
+|Maksymalna liczba elementów znalezionych w programie SharePoint i witrynach OneDrive dla Firm, które są wyświetlane na stronie w wersji zapoznawczej podczas wyświetlania podglądu wyników wyszukiwania. Zostaną wyświetlone najnowsze elementy.|200|
+|Maksymalna liczba witryn (w programie SharePoint i OneDrive dla Firm), które można wyświetlić w podglądzie wyników wyszukiwania. Jeśli istnieje ponad 200 witryn zawierających zawartość zgodną z zapytaniem wyszukiwania, tylko 200 pierwszych witryn z największą liczbą wyników wyszukiwania będzie dostępnych w wersji zapoznawczej.|200|
 |Maksymalna liczba elementów na skrzynkę pocztową folderu publicznego wyświetlana na stronie podglądu podczas wyświetlania podglądu wyników wyszukiwania zawartości.|100|
 |Maksymalna liczba elementów znalezionych we wszystkich skrzynkach pocztowych folderów publicznych, które są wyświetlane na stronie podglądu podczas wyświetlania podglądu wyników wyszukiwania zawartości.|200|
 |Maksymalna liczba skrzynek pocztowych folderów publicznych, które można wyświetlić w podglądzie wyników wyszukiwania. Jeśli istnieje ponad 500 publicznych skrzynek pocztowych zawierających zawartość zgodną z zapytaniem wyszukiwania, tylko 500 pierwszych skrzynek pocztowych folderów publicznych z największą ilością wyników wyszukiwania będzie dostępnych w wersji zapoznawczej.|500|
@@ -66,7 +64,7 @@ W poniższej tabeli wymieniono limity wyszukiwania podczas korzystania z narzęd
 >
 > <sup>2</sup> Celem strony w wersji zapoznawczej jest pokazanie ograniczonej próbki wyników. Nawet w przypadku ogromnych wyszukiwań z tysiącami wyników liczba elementów wyświetlanych na stronie w wersji zapoznawczej może i często będzie znacznie mniejsza niż maksymalna możliwa wartość 1000. Aby wyświetlić pełne wyniki wyszukiwania, musisz wyeksportować wyniki.
 >
-> <sup>3</sup> Podczas wyszukiwania lokalizacji SharePoint i OneDrive dla Firm znaki w adresach URL wyszukiwanych witryn są liczone do tego limitu.
+> <sup>3</sup> Podczas wyszukiwania lokalizacji programu SharePoint i OneDrive dla Firm znaki w adresach URL wyszukiwanych witryn są liczone do tego limitu.
 >
 > <sup>4</sup> W przypadku zapytań innych niż frazy (wartość słowa kluczowego, która nie używa podwójnego cudzysłowu) używamy specjalnego indeksu prefiksu. Informuje nas to, że słowo występuje w dokumencie, ale nie w miejscu, w którym występuje w dokumencie. Aby wykonać zapytanie frazy (wartość słowa kluczowego z podwójnym cudzysłowem), musimy porównać pozycję w dokumencie dla wyrazów w frazie. Oznacza to, że nie możemy używać indeksu prefiksu dla zapytań fraz. W takim przypadku wewnętrznie rozwiniemy zapytanie o wszystkie możliwe wyrazy, do których rozwija się prefiks; na przykład `"time*"` można rozwinąć do `"time OR timer OR times OR timex OR timeboxed OR ..."`. 10 000 to maksymalna liczba wariantów, do których wyraz może się rozwinąć, a nie liczba dokumentów pasujących do zapytania. Nie ma górnego limitu terminów innych niż frazy.
 
@@ -102,8 +100,8 @@ W poniższej tabeli wymieniono limity podczas eksportowania wyników wyszukiwani
 |Maksymalna liczba współbieżnych eksportów, które mogą być uruchamiane w tym samym czasie w organizacji <p> **Uwaga:** Uruchamianie eksportu **Tylko raport** jest liczona względem łącznej liczby równoczesnych eksportów dla organizacji. Jeśli trzech użytkowników wykonuje 3 eksporty, można wykonać tylko jeden eksport. Niezależnie od tego, czy eksportuje raport, czy wyniki wyszukiwania, nie można wykonywać żadnych innych eksportów, dopóki nie zostanie ukończony.|10|
 |Maksymalna liczba eksportów, które pojedynczy użytkownik może uruchomić w dowolnym momencie|3|
 |Maksymalna liczba skrzynek pocztowych dla wyników wyszukiwania, które można pobrać za pomocą narzędzia eksportu zbierania elektronicznych materiałów dowodowych|100,000|
-|Maksymalny rozmiar pliku PST, który można wyeksportować <p> **Uwaga:** Jeśli wyniki wyszukiwania ze skrzynki pocztowej użytkownika są większe niż 10 GB, wyniki wyszukiwania dla skrzynki pocztowej zostaną wyeksportowane w co najmniej dwóch oddzielnych plikach PST. Jeśli zdecydujesz się wyeksportować wszystkie wyniki wyszukiwania w jednym pliku PST, plik PST zostanie rozlany na dodatkowe pliki PST, jeśli całkowity rozmiar wyników wyszukiwania będzie większy niż 10 GB. Jeśli chcesz zmienić ten rozmiar domyślny, możesz edytować rejestr Windows na komputerze używanym do eksportowania wyników wyszukiwania. Zobacz [Zmienianie rozmiaru plików PST podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych](change-the-size-of-pst-files-when-exporting-results.md). Wyniki wyszukiwania z określonej skrzynki pocztowej nie zostaną podzielone między wiele plików PST, chyba że zawartość z pojedynczej skrzynki pocztowej będzie większa niż 10 GB. Jeśli wybrano opcję wyeksportowania wyników wyszukiwania w jednym pliku PST zawierającym wszystkie komunikaty w jednym folderze, a wyniki wyszukiwania są większe niż 10 GB, elementy są nadal uporządkowane w kolejności chronologicznej, więc zostaną rozlane na dodatkowe pliki PST na podstawie daty wysłania.|10 GB|
-|Oceń, z jaką wyniki wyszukiwania ze skrzynek pocztowych i witryn są przekazywane do lokalizacji Storage platformy Azure udostępnionej przez firmę Microsoft.|Maksymalnie 2 GB na godzinę|
+|Maksymalny rozmiar pliku PST, który można wyeksportować <p> **Uwaga:** Jeśli wyniki wyszukiwania ze skrzynki pocztowej użytkownika są większe niż 10 GB, wyniki wyszukiwania dla skrzynki pocztowej zostaną wyeksportowane w co najmniej dwóch oddzielnych plikach PST. Jeśli zdecydujesz się wyeksportować wszystkie wyniki wyszukiwania w jednym pliku PST, plik PST zostanie rozlany na dodatkowe pliki PST, jeśli całkowity rozmiar wyników wyszukiwania będzie większy niż 10 GB. Jeśli chcesz zmienić ten rozmiar domyślny, możesz edytować rejestr systemu Windows na komputerze używanym do eksportowania wyników wyszukiwania. Zobacz [Zmienianie rozmiaru plików PST podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych](change-the-size-of-pst-files-when-exporting-results.md). Wyniki wyszukiwania z określonej skrzynki pocztowej nie zostaną podzielone między wiele plików PST, chyba że zawartość z pojedynczej skrzynki pocztowej będzie większa niż 10 GB. Jeśli wybrano opcję wyeksportowania wyników wyszukiwania w jednym pliku PST zawierającym wszystkie komunikaty w jednym folderze, a wyniki wyszukiwania są większe niż 10 GB, elementy są nadal uporządkowane w kolejności chronologicznej, więc zostaną rozlane na dodatkowe pliki PST na podstawie daty wysłania.|10 GB|
+|Oceń, z jaką wyniki wyszukiwania ze skrzynek pocztowych i witryn są przekazywane do lokalizacji usługi Azure Storage udostępnionej przez firmę Microsoft.|Maksymalnie 2 GB na godzinę|
 
 ## <a name="indexing-limits-for-email-messages"></a>Limity indeksowania wiadomości e-mail
 
@@ -138,7 +136,7 @@ Istnieją dodatkowe limity związane z różnymi aspektami wyszukiwania zawarto�
 
 Aby uzyskać informacje o wyszukiwaniach zawartości, zobacz:
 
-- [Wyszukiwanie zawartości w Microsoft 365](content-search.md)
+- [Wyszukiwanie zawartości na platformie Microsoft 365](content-search.md)
 
 - [Wyszukiwanie zawartości w przypadku zbierania elektronicznych materiałów dowodowych (standardowa)](search-for-content-in-core-ediscovery.md)
 

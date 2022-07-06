@@ -11,25 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych z usługi MS SQL Database. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: f7cf8a049599a3a709b535871b85fc6e73e6b732
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych z usługi MS SQL Database. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm na platformie Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
+ms.openlocfilehash: 19730f4c1ae6f6f89917b4b64546757a57f78814
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317123"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626914"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>Konfigurowanie łącznika do archiwizowania danych z usługi MS SQL Database
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Użyj łącznika Veritas w portal zgodności Microsoft Purview, aby zaimportować i zarchiwizować dane z usługi MS SQL Database do skrzynek pocztowych użytkowników w organizacji platformy Microsoft 365. Usługa Veritas udostępnia łącznik usługi MS SQL Database Importer skonfigurowany do przechwytywania elementów z bazy danych przy użyciu pliku konfiguracji XML i importowania tych elementów do platformy Microsoft 365. Łącznik konwertuje zawartość z usługi MS SQL Database na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników na platformie Microsoft 365.
 
-Użyj łącznika veritas w portal zgodności Microsoft Purview, aby zaimportować i zarchiwizować dane z usługi MS SQL Database do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik usługi MS SQL Database Importer skonfigurowany do przechwytywania elementów z bazy danych przy użyciu pliku konfiguracji XML i importowania tych elementów do Microsoft 365. Łącznik konwertuje zawartość z usługi MS SQL Database na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
-
-Po zapisaniu zawartości z usługi MS SQL Database przechowywanej w skrzynkach pocztowych użytkownika można zastosować funkcje Microsoft Purview, takie jak blokada postępowania sądowego, wykrywanie elektroniczne, zasady przechowywania i etykiety przechowywania. Użycie łącznika ms SQL Database do importowania i archiwizowania danych w Microsoft 365 może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Po zapisaniu zawartości z ms SQL Database w skrzynkach pocztowych użytkownika można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, wykrywanie elektroniczne, zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w usłudze Microsoft 365 przy użyciu łącznika ms SQL Database może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-the-ms-sql-data"></a>Omówienie archiwizacji danych MS SQL
 
-W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowania danych MS SQL w Microsoft 365.
+W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowania danych MS SQL na platformie Microsoft 365.
 
 ![Archiwizowanie przepływu pracy dla danych MS SQL.](../media/MSSQLDatabaseConnectorWorkflow.png)
 
@@ -37,7 +35,7 @@ W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowani
 
 2. Raz na 24 godziny elementy SQL Database MS są kopiowane do witryny Veritas Merge1. Łącznik konwertuje również tę zawartość na format wiadomości e-mail.
 
-3. Łącznik usługi MS SQL Database Importer tworzony w portalu zgodności, codziennie łączy się z witryną Veritas Merge1 i przesyła komunikaty do bezpiecznej lokalizacji Storage platformy Azure w chmurze firmy Microsoft.
+3. Łącznik usługi MS SQL Database Importer tworzony w portalu zgodności codziennie łączy się z witryną Veritas Merge1 i przesyła komunikaty do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft.
 
 4. Łącznik importuje konwertowane elementy ms SQL Database do skrzynek pocztowych określonych użytkowników przy użyciu wartości właściwości *Email* automatycznego mapowania użytkownika zgodnie z opisem w [kroku 3](#step-3-map-users-and-complete-the-connector-setup). Podfolder w folderze Skrzynka odbiorcza o nazwie **MS SQL Database Importer** jest tworzony w skrzynkach pocztowych użytkownika, a elementy są importowane do tego folderu. Łącznik określa skrzynkę pocztową do zaimportowania elementów przy użyciu wartości właściwości *Poczta e-mail* . Każdy element z SQL Database MS zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika elementu.
 
@@ -45,15 +43,15 @@ W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowani
 
 - Utwórz konto veritas merge1 dla łączników firmy Microsoft. Aby utworzyć konto, skontaktuj się z [pomocą techniczną veritas](https://www.veritas.com/content/support/). Musisz zalogować się do tego konta podczas tworzenia łącznika w kroku 1.
 
-- Użytkownik, który utworzy łącznik usługi MS SQL Database Importer w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownikowi, który utworzy łącznik usługi MS SQL Database Importer w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę Administracja łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę Administracja łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
+- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą platformy Microsoft 365 i w związku z tym nie są objęte zobowiązaniami microsoft purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
 ## <a name="step-1-set-up-the-ms-sql-database-importer-connector"></a>Krok 1. Konfigurowanie łącznika programu MS SQL Database Importer
 
 Pierwszym krokiem jest dostęp do strony **Łączniki danych** w portalu zgodności i utworzenie łącznika dla SQL Database MS.
 
-1. Przejdź do strony [https://compliance.microsoft.com](https://compliance.microsoft.com), a następnie kliknij pozycję **Łączniki** >  **danychMS SQL Database Importer**.
+1. Przejdź do strony [https://compliance.microsoft.com](https://compliance.microsoft.com), a następnie kliknij pozycję **Łączniki** >  danych **MS SQL Database Importer**.
 
 2. Na stronie **Opis produktu MS SQL Database Importer** kliknij pozycję **Dodaj nowy łącznik**.
 
@@ -73,7 +71,7 @@ Po kliknięciu **przycisku Zapisz & Zakończ** zostanie wyświetlona strona **Ma
 
 Aby zamapować użytkowników i ukończyć konfigurację łącznika, wykonaj następujące kroki:
 
-1. Na stronie **Mapowanie użytkowników usługi MS SQL Database Importer na Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników. Elementy SQL Database ms obejmują właściwość o nazwie *Email* zawierającą adresy e-mail dla użytkowników w organizacji. Jeśli łącznik może skojarzyć ten adres z użytkownikiem Microsoft 365, elementy zostaną zaimportowane do skrzynki pocztowej tego użytkownika.
+1. Na stronie **Mapowanie użytkowników usługi MS SQL Database Importer do użytkowników platformy Microsoft 365** włącz automatyczne mapowanie użytkowników. Elementy SQL Database ms obejmują właściwość o nazwie *Email* zawierającą adresy e-mail dla użytkowników w organizacji. Jeśli łącznik może skojarzyć ten adres z użytkownikiem platformy Microsoft 365, elementy zostaną zaimportowane do skrzynki pocztowej tego użytkownika.
 
 2. Kliknij **przycisk Dalej**, przejrzyj ustawienia i przejdź do strony **Łączniki danych** , aby zobaczyć postęp procesu importowania nowego łącznika.
 

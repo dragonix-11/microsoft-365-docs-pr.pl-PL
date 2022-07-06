@@ -14,28 +14,26 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-description: Administratorzy mogą skonfigurować łącznik danych w celu importowania danych pracowników z systemu zasobów ludzkich (HR) organizacji w celu Microsoft 365. Dzięki temu dane kadrowe w zasadach zarządzania ryzykiem wewnętrznym ułatwiają wykrywanie działań określonych użytkowników, które mogą stanowić wewnętrzne zagrożenie dla organizacji.
-ms.openlocfilehash: cfde990b002d05962b3b7489f1adc9f5122af7c5
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+description: Administratorzy mogą skonfigurować łącznik danych w celu importowania danych pracowników z systemu zasobów ludzkich (HR) organizacji do platformy Microsoft 365. Dzięki temu dane kadrowe w zasadach zarządzania ryzykiem wewnętrznym ułatwiają wykrywanie działań określonych użytkowników, które mogą stanowić wewnętrzne zagrożenie dla organizacji.
+ms.openlocfilehash: 6dd788b1e10648a1102294eb641188416e455c20
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078573"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629624"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Konfigurowanie łącznika w celu importowania danych kadr
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Łącznik danych można skonfigurować w portal zgodności Microsoft Purview w celu zaimportowania danych zasobów ludzkich związanych ze zdarzeniami, takimi jak rezygnacja użytkownika lub zmiana poziomu zadania użytkownika. Dane kadrowe mogą być następnie używane przez [rozwiązanie do zarządzania ryzykiem wewnętrznym](insider-risk-management.md) w celu generowania wskaźników ryzyka, które mogą ułatwić tożsamość możliwej złośliwej aktywności lub kradzieży danych przez użytkowników w organizacji.
 
-Konfigurowanie łącznika dla danych kadr, których mogą używać zasady zarządzania ryzykiem wewnętrznym do generowania wskaźników ryzyka, polega na utworzeniu pliku CSV zawierającego dane hr, utworzeniu aplikacji w Azure Active Directory, która jest używana do uwierzytelniania, utworzeniu łącznika danych kadr w portalu zgodności, a następnie uruchomieniu skryptu (zgodnie z harmonogramem), który pozyskuje dane kadr w plikach CSV do chmury firmy Microsoft, aby były dostępne  rozwiązania do zarządzania ryzykiem wewnętrznym.
+Konfigurowanie łącznika dla danych kadr, których mogą używać zasady zarządzania ryzykiem wewnętrznym do generowania wskaźników ryzyka, polega na utworzeniu pliku CSV zawierającego dane hr, utworzeniu aplikacji w usłudze Azure Active Directory używanej do uwierzytelniania, utworzeniu łącznika danych kadr w portalu zgodności, a następnie uruchomieniu skryptu (zgodnie z harmonogramem), który pozyskuje dane kadr w plikach CSV do chmury firmy Microsoft, aby były dostępne rozwiązania do zarządzania ryzykiem wewnętrznym.
 
 > [!IMPORTANT]
 > Nowa wersja łącznika hr jest teraz dostępna w publicznej wersji zapoznawczej. Aby utworzyć nowy łącznik hr lub zaimportować dane dla [nowego scenariusza profilu pracownika](#csv-file-for-employee-profile-data-preview) dla scenariusza zasad opieki zdrowotnej na potrzeby zarządzania ryzykiem wewnętrznym, przejdź do strony **Łączniki danych** w portalu zgodności, wybierz kartę **Łączniki** , a następnie kliknij **pozycję Dodaj łącznik > HR (wersja zapoznawcza),** aby rozpocząć konfigurowanie. Istniejące łączniki hr będą nadal działać bez żadnych zakłóceń.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Określanie scenariuszy kadr i danych do zaimportowania do Microsoft 365. Pomoże to określić, ile plików CSV i łączników HR należy utworzyć, oraz jak generować i tworzyć strukturę plików CSV. Importowane dane kadr są określane przez zasady zarządzania ryzykiem wewnętrznym, które chcesz zaimplementować. Aby uzyskać więcej informacji, zobacz Krok 1.
+- Określanie scenariuszy kadr i danych do zaimportowania na platformę Microsoft 365. Pomoże to określić, ile plików CSV i łączników HR należy utworzyć, oraz jak generować i tworzyć strukturę plików CSV. Importowane dane kadr są określane przez zasady zarządzania ryzykiem wewnętrznym, które chcesz zaimplementować. Aby uzyskać więcej informacji, zobacz Krok 1.
 
 - Określ sposób pobierania lub eksportowania danych z systemu kadr organizacji (i regularnie) i dodaj je do plików CSV utworzonych w kroku 1. Skrypt uruchamiany w kroku 4 przekaże dane hr w plikach CSV do chmury firmy Microsoft.
 
@@ -43,11 +41,11 @@ Konfigurowanie łącznika dla danych kadr, których mogą używać zasady zarzą
 
 - Przykładowy skrypt uruchomiony w kroku 4 przekaże dane kadr do chmury firmy Microsoft, aby można było ich używać w rozwiązaniu do zarządzania ryzykiem wewnętrznym. Ten przykładowy skrypt nie jest obsługiwany w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowy skrypt jest dostarczany jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowego skryptu i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
-- Ten łącznik jest dostępny w środowiskach GCC w chmurze Microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem. Aby uzyskać instrukcje krok po kroku dotyczące konfigurowania łącznika hr w środowisku GCC, zobacz [Konfigurowanie łącznika w celu importowania danych kadr w us government](import-hr-data-US-government.md).
+- Ten łącznik jest dostępny w środowiskach GCC w chmurze microsoft 365 us government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą platformy Microsoft 365 i w związku z tym nie są objęte zobowiązaniami microsoft purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem. Aby uzyskać instrukcje krok po kroku dotyczące konfigurowania łącznika hr w środowisku GCC, zobacz [Konfigurowanie łącznika w celu importowania danych kadr w us government](import-hr-data-US-government.md).
 
 ## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>Krok 1. Przygotowywanie pliku CSV z danymi hr
 
-Pierwszym krokiem jest utworzenie pliku CSV zawierającego dane hr, które łącznik zaimportuje do Microsoft 365. Te dane zostaną wykorzystane przez rozwiązanie ryzyka wewnętrznego do generowania potencjalnych wskaźników ryzyka. Dane dla następujących scenariuszy kadr można zaimportować do Microsoft 365:
+Pierwszym krokiem jest utworzenie pliku CSV zawierającego dane hr, które łącznik zaimportuje do platformy Microsoft 365. Te dane zostaną wykorzystane przez rozwiązanie ryzyka wewnętrznego do generowania potencjalnych wskaźników ryzyka. Dane dla następujących scenariuszy kadr można zaimportować do platformy Microsoft 365:
 
 - Rezygnacja pracownika. Informacje o pracownikach, którzy opuścili organizację.
 
@@ -82,7 +80,7 @@ W przypadku każdego scenariusza kadr należy podać odpowiednie dane kadrowe w 
 Po utworzeniu pliku CSV z wymaganymi danymi hr zapisz go na komputerze lokalnym, na który uruchamiany jest skrypt w kroku 4. Należy również zaimplementować strategię aktualizacji, aby upewnić się, że plik CSV zawsze zawiera najbardziej aktualne informacje, dzięki czemu niezależnie od tego, jak uruchamiasz skrypt, najbardziej aktualne dane kadr zostaną przekazane do chmury firmy Microsoft i dostępne dla rozwiązania do zarządzania ryzykiem wewnętrznym.
 
 > [!IMPORTANT]
-> Nazwy kolumn opisane w poniższych sekcjach nie są wymaganymi parametrami, ale tylko przykładami. W plikach CSV można użyć dowolnej nazwy kolumny. Jednak nazwy kolumn używane w pliku CSV *muszą* być mapowane na typ danych podczas tworzenia łącznika hr w kroku 3. Należy również pamiętać, że przykładowe pliki CSV w poniższych sekcjach są wyświetlane w widoku Notatnika. Znacznie łatwiej jest wyświetlać i edytować pliki CSV w Microsoft Excel.
+> Nazwy kolumn opisane w poniższych sekcjach nie są wymaganymi parametrami, ale tylko przykładami. W plikach CSV można użyć dowolnej nazwy kolumny. Jednak nazwy kolumn używane w pliku CSV *muszą* być mapowane na typ danych podczas tworzenia łącznika hr w kroku 3. Należy również pamiętać, że przykładowe pliki CSV w poniższych sekcjach są wyświetlane w widoku Notatnika. Znacznie łatwiej jest wyświetlać i edytować pliki CSV w programie Microsoft Excel.
 
 W poniższych sekcjach opisano wymagane dane CSV dla każdego scenariusza kadr.
 
@@ -244,9 +242,9 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 Na podstawie systemów kadr organizacji i sposobu eksportowania danych kadr do pliku CSV może być konieczne utworzenie wielu plików CSV zawierających jeden typ danych HR. W takim przypadku nadal można utworzyć jeden łącznik hr do importowania danych z różnych plików CSV. W tym celu wystarczy dodać kolumnę HRScenario do pliku CSV i określić typ danych hr. Następnie można uruchomić skrypt dla każdego pliku CSV, ale użyć tego samego identyfikatora zadania dla łącznika. Zobacz [Krok 4](#step-4-run-the-sample-script-to-upload-your-hr-data).
 
-## <a name="step-2-create-an-app-in-azure-active-directory"></a>Krok 2. Tworzenie aplikacji w Azure Active Directory
+## <a name="step-2-create-an-app-in-azure-active-directory"></a>Krok 2. Tworzenie aplikacji w usłudze Azure Active Directory
 
-Następnym krokiem jest utworzenie i zarejestrowanie nowej aplikacji w Azure Active Directory (Azure AD). Aplikacja będzie odpowiadać łącznikowi HR utworzonemu w kroku 3. Utworzenie tej aplikacji umożliwi Azure AD uwierzytelnianie łącznika hr podczas jego uruchamiania i próby uzyskania dostępu do organizacji. Ta aplikacja będzie również używana do uwierzytelniania skryptu uruchamianego w kroku 4 w celu przekazania danych kadr do chmury firmy Microsoft. Podczas tworzenia tej aplikacji Azure AD zapisz następujące informacje. Te wartości będą używane w krokach 3 i 4.
+Następnym krokiem jest utworzenie i zarejestrowanie nowej aplikacji w usłudze Azure Active Directory (Azure AD). Aplikacja będzie odpowiadać łącznikowi HR utworzonemu w kroku 3. Utworzenie tej aplikacji umożliwi Azure AD uwierzytelnianie łącznika hr podczas jego uruchamiania i próby uzyskania dostępu do organizacji. Ta aplikacja będzie również używana do uwierzytelniania skryptu uruchamianego w kroku 4 w celu przekazania danych kadr do chmury firmy Microsoft. Podczas tworzenia tej aplikacji Azure AD zapisz następujące informacje. Te wartości będą używane w krokach 3 i 4.
 
 - Azure AD identyfikator aplikacji (nazywany również *identyfikatorem aplikacji* lub *identyfikatorem klienta*)
 
@@ -258,7 +256,7 @@ Aby uzyskać instrukcje krok po kroku dotyczące tworzenia aplikacji w Azure AD,
 
 ## <a name="step-3-create-the-hr-connector"></a>Krok 3. Tworzenie łącznika hr
 
-Następnym krokiem jest utworzenie łącznika hr w portalu zgodności. Po uruchomieniu skryptu w kroku 4 utworzony łącznik hr pozyskuje dane kadr z pliku CSV do organizacji Microsoft 365. Przed utworzeniem łącznika upewnij się, że masz listę scenariuszy kadr i odpowiednie nazwy kolumn CSV dla każdego z nich. Podczas konfigurowania łącznika należy mapować dane wymagane dla każdego scenariusza na rzeczywiste nazwy kolumn w pliku CSV. Alternatywnie możesz przekazać przykładowy plik CSV podczas konfigurowania łącznika, a kreator pomoże zamapować nazwę kolumn na wymagane typy danych.
+Następnym krokiem jest utworzenie łącznika hr w portalu zgodności. Po uruchomieniu skryptu w kroku 4 utworzony łącznik hr pozyskuje dane kadr z pliku CSV do organizacji platformy Microsoft 365. Przed utworzeniem łącznika upewnij się, że masz listę scenariuszy kadr i odpowiednie nazwy kolumn CSV dla każdego z nich. Podczas konfigurowania łącznika należy mapować dane wymagane dla każdego scenariusza na rzeczywiste nazwy kolumn w pliku CSV. Alternatywnie możesz przekazać przykładowy plik CSV podczas konfigurowania łącznika, a kreator pomoże zamapować nazwę kolumn na wymagane typy danych.
 
 Po wykonaniu tego kroku skopiuj identyfikator zadania wygenerowany podczas tworzenia łącznika. Identyfikator zadania będzie używany podczas uruchamiania skryptu.
 
@@ -300,7 +298,7 @@ Po wykonaniu tego kroku skopiuj identyfikator zadania wygenerowany podczas tworz
 
    1. **Identyfikator zadania.** Ten identyfikator zadania będzie potrzebny do uruchomienia skryptu w następnym kroku. Możesz skopiować go z tej strony lub ze strony wysuwanej łącznika.
 
-   2. **Łącze do przykładowego skryptu.** Kliknij **link tutaj**, aby przejść do witryny GitHub, aby uzyskać dostęp do przykładowego skryptu (link otwiera nowe okno). Pozostaw to okno otwarte, aby można było skopiować skrypt w kroku 4. Alternatywnie możesz dodać zakładkę do miejsca docelowego lub skopiować adres URL, aby uzyskać do niego dostęp ponownie po uruchomieniu skryptu. Ten link jest również dostępny na stronie wysuwanego łącznika.
+   2. **Łącze do przykładowego skryptu.** Kliknij **link tutaj** , aby przejść do witryny GitHub, aby uzyskać dostęp do przykładowego skryptu (link otwiera nowe okno). Pozostaw to okno otwarte, aby można było skopiować skrypt w kroku 4. Alternatywnie możesz dodać zakładkę do miejsca docelowego lub skopiować adres URL, aby uzyskać do niego dostęp ponownie po uruchomieniu skryptu. Ten link jest również dostępny na stronie wysuwanego łącznika.
 
 9. Kliknij pozycję **Gotowe**.
 
@@ -316,7 +314,7 @@ Możesz również kliknąć pozycję **Edytuj**, aby zmienić identyfikator apli
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Krok 4. Uruchamianie przykładowego skryptu w celu przekazania danych kadr
 
-Ostatnim krokiem konfigurowania łącznika hr jest uruchomienie przykładowego skryptu, który przekaże dane kadr w pliku CSV (utworzonym w kroku 1) do chmury firmy Microsoft. W szczególności skrypt przekazuje dane do łącznika hr. Po uruchomieniu skryptu łącznik hr utworzony w kroku 3 importuje dane kadrowe do organizacji Microsoft 365, do której mogą uzyskiwać dostęp inne narzędzia zgodności, takie jak rozwiązanie do zarządzania ryzykiem niejawnych testerów. Po uruchomieniu skryptu rozważ zaplanowanie zadania, aby uruchamiać je automatycznie codziennie, aby najbardziej aktualne dane dotyczące kończania pracy pracowników były przekazywane do chmury firmy Microsoft. Zobacz [Planowanie automatycznego uruchamiania skryptu](#optional-step-6-schedule-the-script-to-run-automatically).
+Ostatnim krokiem konfigurowania łącznika hr jest uruchomienie przykładowego skryptu, który przekaże dane kadr w pliku CSV (utworzonym w kroku 1) do chmury firmy Microsoft. W szczególności skrypt przekazuje dane do łącznika hr. Po uruchomieniu skryptu łącznik hr utworzony w kroku 3 importuje dane kadrowe do organizacji platformy Microsoft 365, do której mogą uzyskiwać dostęp inne narzędzia zgodności, takie jak rozwiązanie do zarządzania ryzykiem niejawnych testerów. Po uruchomieniu skryptu rozważ zaplanowanie zadania, aby uruchamiać je automatycznie codziennie, aby najbardziej aktualne dane dotyczące kończania pracy pracowników były przekazywane do chmury firmy Microsoft. Zobacz [Planowanie automatycznego uruchamiania skryptu](#optional-step-6-schedule-the-script-to-run-automatically).
 
 1. Przejdź do okna, które zostało otwarte w poprzednim kroku, aby uzyskać dostęp do witryny GitHub przy użyciu przykładowego skryptu. Możesz też otworzyć witrynę z zakładki lub użyć skopiowanego adresu URL. Możesz również uzyskać dostęp do skryptu [tutaj](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1).
 
@@ -326,7 +324,7 @@ Ostatnim krokiem konfigurowania łącznika hr jest uruchomienie przykładowego s
 
 4. W razie potrzeby zmodyfikuj przykładowy skrypt dla organizacji.
 
-5. Zapisz plik tekstowy jako plik skryptu Windows PowerShell przy użyciu sufiksu nazwy `.ps1`pliku , na przykład `HRConnector.ps1`. Alternatywnie możesz użyć nazwy pliku GitHub dla skryptu, czyli `upload_termination_records.ps1`.
+5. Zapisz plik tekstowy jako plik skryptu Windows PowerShell przy użyciu sufiksu nazwy `.ps1`pliku , na przykład `HRConnector.ps1`. Alternatywnie możesz użyć nazwy pliku usługi GitHub dla skryptu, czyli `upload_termination_records.ps1`.
 
 6. Otwórz wiersz polecenia na komputerze lokalnym i przejdź do katalogu, w którym zapisano skrypt.
 
@@ -340,8 +338,8 @@ Ostatnim krokiem konfigurowania łącznika hr jest uruchomienie przykładowego s
 
    | Parametr | Opis |
    |:-----|:-----|:-----|
-   |`tenantId`|Jest to identyfikator organizacji Microsoft 365 uzyskany w kroku 2. Identyfikator dzierżawy organizacji można również uzyskać w bloku **Przegląd** w centrum administracyjnym Azure AD. Służy to do identyfikowania organizacji.|
-   |`appId` |Jest to identyfikator aplikacji Azure AD dla aplikacji utworzonej w Azure AD w kroku 2. Jest to używane przez Azure AD do uwierzytelniania, gdy skrypt próbuje uzyskać dostęp do organizacji Microsoft 365. | 
+   |`tenantId`|Jest to identyfikator organizacji platformy Microsoft 365 uzyskany w kroku 2. Identyfikator dzierżawy organizacji można również uzyskać w bloku **Przegląd** w centrum administracyjnym Azure AD. Służy to do identyfikowania organizacji.|
+   |`appId` |Jest to identyfikator aplikacji Azure AD dla aplikacji utworzonej w Azure AD w kroku 2. Jest to używane przez Azure AD do uwierzytelniania, gdy skrypt próbuje uzyskać dostęp do organizacji platformy Microsoft 365. | 
    |`appSecret`|Jest to Azure AD wpis tajny aplikacji utworzonej w Azure AD w kroku 2. Jest to również używane do uwierzytelniania.|
    |`jobId`|Jest to identyfikator zadania dla łącznika hr utworzonego w kroku 3. Służy to do kojarzenia danych kadr przekazywanych do chmury firmy Microsoft z łącznikiem HR.|
    |`filePath`|Jest to ścieżka pliku (przechowywana w tym samym systemie co skrypt) utworzona w kroku 1. Staraj się unikać spacji w ścieżce pliku; W przeciwnym razie użyj pojedynczych cudzysłowów.|
@@ -380,9 +378,9 @@ Jeśli skrypt nie został uruchomiony w kroku 4, w obszarze **Ostatni import** z
 
 Aby upewnić się, że najnowsze dane kadrowe organizacji są dostępne dla narzędzi takich jak rozwiązanie do zarządzania ryzykiem wewnętrznym, zalecamy zaplanowanie automatycznego uruchamiania skryptu cyklicznie, na przykład raz dziennie. Wymaga to również zaktualizowania danych kadr w pliku CSV zgodnie z podobnym (jeśli nie tym samym) harmonogramem, tak aby zawierała najnowsze informacje o pracownikach, którzy opuszczają organizację. Celem jest przekazanie najbardziej aktualnych danych kadrowych, aby łącznik HR mógł udostępnić je rozwiązaniu do zarządzania ryzykiem wewnętrznym.
 
-Możesz użyć aplikacji Harmonogram zadań w Windows, aby codziennie automatycznie uruchamiać skrypt.
+Aplikacja Harmonogram zadań w systemie Windows umożliwia automatyczne uruchamianie skryptu każdego dnia.
 
-1. Na komputerze lokalnym kliknij przycisk **Windows Start**, a następnie wpisz **Harmonogram zadań**.
+1. Na komputerze lokalnym kliknij przycisk **Start** systemu Windows, a następnie wpisz **Harmonogram zadań**.
 
 2. Kliknij aplikację **Harmonogram zadań** , aby ją otworzyć.
 
@@ -398,7 +396,7 @@ Możesz użyć aplikacji Harmonogram zadań w Windows, aby codziennie automatycz
 
 6. Wybierz kartę **Wyzwalacze** , kliknij pozycję **Nowy**, a następnie wykonaj następujące czynności:
 
-   1. W **obszarze Ustawienia** wybierz opcję **Codziennie**, a następnie wybierz datę i godzinę, aby uruchomić skrypt po raz pierwszy. Skrypt będzie uruchamiany codziennie o tej samej określonej godzinie.
+   1. W obszarze **Ustawienia** wybierz opcję **Codziennie** , a następnie wybierz datę i godzinę, aby uruchomić skrypt po raz pierwszy. Skrypt będzie uruchamiany codziennie o tej samej określonej godzinie.
 
    1. W obszarze **Ustawienia zaawansowane** upewnij się, że **zaznaczono** pole wyboru Włączone.
 

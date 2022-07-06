@@ -15,25 +15,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
-description: Eksportuj dokumenty w zestawie przeglądów do konta usługi Azure Storage, a następnie użyj Eksplorator usługi Azure Storage, aby pobrać je na komputer lokalny.
-ms.openlocfilehash: e0dfe3eb37ea440c93dc7753c7c4206d8d33c1f3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Eksportuj dokumenty w zestawie przeglądów na konto usługi Azure Storage, a następnie użyj Eksplorator usługi Azure Storage, aby pobrać je na komputer lokalny.
+ms.openlocfilehash: 87e7f04f2e21becb5320c3bca999d7e0ff4900b2
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098631"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626496"
 ---
-# <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Eksportowanie dokumentów w zestawie przeglądów do konta usługi Azure Storage
+# <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Eksportowanie dokumentów w zestawie przeglądów na konto usługi Azure Storage
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Podczas eksportowania dokumentów z zestawu przeglądów w przypadku zbierania elektronicznych materiałów dowodowych (Premium) można je wyeksportować na konto usługi Azure Storage zarządzane przez organizację. Jeśli użyjesz tej opcji, dokumenty zostaną przekazane do lokalizacji Storage platformy Azure. Po ich wyeksportowaniu można uzyskać dostęp do dokumentów (i pobrać je na komputer lokalny lub inną lokalizację) przy użyciu Eksplorator usługi Azure Storage. Ten artykuł zawiera instrukcje dotyczące eksportowania dokumentów na konto usługi Azure Storage oraz korzystania z Eksplorator usługi Azure Storage w celu nawiązania połączenia z lokalizacją Storage platformy Azure w celu pobrania wyeksportowanych dokumentów. Aby uzyskać więcej informacji na temat Eksplorator usługi Azure Storage, zobacz [Korzystanie z Eksplorator usługi Azure Storage](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+Podczas eksportowania dokumentów z zestawu przeglądów w przypadku zbierania elektronicznych materiałów dowodowych (Premium) możesz wyeksportować je na konto usługi Azure Storage zarządzane przez organizację. Jeśli użyjesz tej opcji, dokumenty zostaną przekazane do lokalizacji usługi Azure Storage. Po ich wyeksportowaniu można uzyskać dostęp do dokumentów (i pobrać je na komputer lokalny lub inną lokalizację) przy użyciu Eksplorator usługi Azure Storage. Ten artykuł zawiera instrukcje dotyczące eksportowania dokumentów do konta usługi Azure Storage oraz korzystania z Eksplorator usługi Azure Storage w celu nawiązania połączenia z lokalizacją usługi Azure Storage w celu pobrania wyeksportowanych dokumentów. Aby uzyskać więcej informacji na temat Eksplorator usługi Azure Storage, zobacz [Korzystanie z Eksplorator usługi Azure Storage](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="before-you-export-documents-from-a-review-set"></a>Przed wyeksportowaniem dokumentów z zestawu przeglądów
 
-- Należy podać token sygnatury dostępu współdzielonego (SAS) dla konta usługi Azure Storage oraz adres URL określonego kontenera na koncie magazynu w celu wyeksportowania dokumentów z zestawu przeglądów. Pamiętaj, aby mieć je pod ręką (na przykład skopiowane do pliku tekstowego) podczas wykonywania kroku 2
+- Należy podać token sygnatury dostępu współdzielonego (SAS) dla konta usługi Azure Storage i adres URL określonego kontenera na koncie magazynu w celu wyeksportowania dokumentów z zestawu przeglądów. Pamiętaj, aby mieć je pod ręką (na przykład skopiowane do pliku tekstowego) podczas wykonywania kroku 2
 
-  - **Token sygnatury** dostępu współdzielonego: upewnij się, że token SAS jest przeznaczony dla konta usługi Azure Storage (a nie dla kontenera). Token sygnatury dostępu współdzielonego dla konta można wygenerować w usłudze Azure Storage. W tym celu przejdź do konta usługi Azure Storage i wybierz pozycję **Udostępnij sygnaturę dostępu** w obszarze ustawień **Ustawienia** w bloku konta magazynu. Użyj ustawień domyślnych i zezwalaj na wszystkie typy zasobów podczas generowania tokenu SAS.
+  - **Token sygnatury** dostępu współdzielonego: upewnij się, że token SAS jest przeznaczony dla konta usługi Azure Storage (a nie dla kontenera). Token sygnatury dostępu współdzielonego dla konta można wygenerować w usłudze Azure Storage. W tym celu przejdź do konta usługi Azure Storage i wybierz pozycję **Udostępnij podpis dostępu** w obszarze **Ustawienia** ustawień w bloku konta magazynu. Użyj ustawień domyślnych i zezwalaj na wszystkie typy zasobów podczas generowania tokenu SAS.
 
   - **Adres URL kontenera**: musisz utworzyć kontener, na który mają zostać przekazane dokumenty zestawu przeglądów, a następnie pobrać kopię adresu URL kontenera; na przykład `https://ediscoverydata.blob.core.windows.net/exportdata`. Aby uzyskać adres URL, przejdź do kontenera w usłudze Azure Storage i wybierz pozycję **Właściwości** w sekcji **Ustawienia** w bloku kontenera.
 
@@ -41,17 +39,17 @@ Podczas eksportowania dokumentów z zestawu przeglądów w przypadku zbierania e
 
 ## <a name="step-1-export-the-documents-from-a-review-set"></a>Krok 1. Eksportowanie dokumentów z zestawu przeglądów
 
-Pierwszym krokiem jest utworzenie zadania eksportu w celu wyeksportowania dokumentów z zestawu przeglądów. Aby uzyskać bardziej szczegółowe instrukcje dotyczące wszystkich opcji eksportu, zobacz [Eksportowanie dokumentów z zestawu przeglądów](export-documents-from-review-set.md). Poniższa procedura wyróżnia ustawienia eksportowania dokumentów do konta usługi Azure Storage w organizacji.
+Pierwszym krokiem jest utworzenie zadania eksportu w celu wyeksportowania dokumentów z zestawu przeglądów. Aby uzyskać bardziej szczegółowe instrukcje dotyczące wszystkich opcji eksportu, zobacz [Eksportowanie dokumentów z zestawu przeglądów](export-documents-from-review-set.md). Poniższa procedura wyróżnia ustawienia eksportowania dokumentów na konto usługi Azure Storage w organizacji.
 
-1. W portalu zgodności usługi Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), wybierz kartę **Zestawy przeglądów**, a następnie wybierz zestaw przeglądów, który chcesz wyeksportować.
+1. W portal zgodności Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), wybierz kartę **Zestawy przeglądów**, a następnie wybierz zestaw przeglądów, który chcesz wyeksportować.
 
-2. W zestawie przeglądów kliknij pozycję **ActionExport** > .
+2. W zestawie przeglądów kliknij pozycję **Eksport akcji** > .
 
 3. Na wysuwanej stronie **Opcje eksportu** wpisz nazwę (wymagane) i opis (opcjonalnie) eksportu.
 
 4. Skonfiguruj ustawienia w sekcjach dokumenty, metadane, zawartość i opcje. Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Eksportowanie dokumentów z zestawu przeglądów](export-documents-from-review-set.md).
 
-5. W sekcji **Opcje danych wyjściowych** wybierz opcję **Skrócona struktura katalogów wyeksportowana do konta usługi Azure Storage**.
+5. W sekcji **Opcje danych wyjściowych** wybierz opcję **Skrócona struktura katalogów wyeksportowana na konto usługi Azure Storage** .
 
 6. Wklej adres URL kontenera i token SAS dla konta magazynu w odpowiednich polach.
 
@@ -61,9 +59,9 @@ Pierwszym krokiem jest utworzenie zadania eksportu w celu wyeksportowania dokume
 
 ## <a name="step-2-obtain-the-sas-url-from-the-export-job"></a>Krok 2. Uzyskiwanie adresu URL sygnatury dostępu współdzielonego z zadania eksportu
 
-Następnym krokiem jest uzyskanie adresu URL sygnatury dostępu współdzielonego wygenerowanego po utworzeniu zadania eksportu w kroku 1. Adres URL sygnatury dostępu współdzielonego służy do nawiązywania połączenia z kontenerem na koncie usługi Azure Storage, na które wyeksportowano dokumenty zestawu przeglądów.
+Następnym krokiem jest uzyskanie adresu URL sygnatury dostępu współdzielonego wygenerowanego po utworzeniu zadania eksportu w kroku 1. Adres URL sygnatury dostępu współdzielonego służy do nawiązywania połączenia z kontenerem na koncie usługi Azure Storage, na które wyeksportowano zestaw dokumentów przeglądu.
 
-1. Na stronie **eDiscovery (Premium)** przejdź do sprawy, a następnie kliknij kartę **Eksporty**.
+1. Na stronie **eDiscovery (Premium)** przejdź do sprawy, a następnie kliknij kartę **Eksportuj** .
 
 2. Na **karcie Eksporty** kliknij zadanie eksportu, które chcesz pobrać. Jest to zadanie eksportu utworzone w kroku 1.
 
@@ -74,17 +72,17 @@ Następnym krokiem jest uzyskanie adresu URL sygnatury dostępu współdzieloneg
    > [!TIP]
    > Adres URL sygnatury dostępu współdzielonego wyświetlany w zadaniu eksportowania to łączenie adresu URL kontenera i tokenu SAS dla konta usługi Azure Storage. Możesz skopiować go z zadania eksportu lub utworzyć samodzielnie, łącząc adres URL i token SAS.
 
-## <a name="step-3-connect-to-the-azure-storage-container"></a>Krok 3. Połączenie do kontenera usługi Azure Storage
+## <a name="step-3-connect-to-the-azure-storage-container"></a>Krok 3. Nawiązywanie połączenia z kontenerem usługi Azure Storage
 
 Ostatnim krokiem jest użycie Eksplorator usługi Azure Storage i adresu URL sygnatury dostępu współdzielonego w celu nawiązania połączenia z kontenerem na koncie usługi Azure Storage i pobrania wyeksportowanych dokumentów na komputer lokalny.
 
 1. Uruchom pobrany i zainstalowany Eksplorator usługi Azure Storage.
 
-2. Kliknij ikonę **Otwórz Połączenie okno dialogowe**.
+2. Kliknij ikonę **Otwórz okno dialogowe Połącz** .
 
    ![Kliknij ikonę Dodaj konto.](../media/AzureStorageConnect.png)
 
-3. Na stronie **Połączenie do usługi Azure Storage** kliknij pozycję **Kontener obiektów blob**.
+3. Na stronie **Łączenie z usługą Azure Storage** kliknij pozycję **Kontener obiektów blob**.
 
 4. Na stronie **Wybieranie metody uwierzytelniania** wybierz opcję **Sygnatura dostępu współdzielonego (SAS),** a następnie kliknij przycisk **Dalej**.
 
@@ -94,9 +92,9 @@ Ostatnim krokiem jest użycie Eksplorator usługi Azure Storage i adresu URL syg
 
     Zwróć uwagę, że nazwa kontenera jest wyświetlana w polu **Nazwa wyświetlana** . Możesz edytować tę nazwę.
 
-6. Kliknij przycisk **Dalej**, aby wyświetlić stronę **podsumowania,** a następnie kliknij pozycję **Połączenie**.
+6. Kliknij przycisk **Dalej** , aby wyświetlić stronę **podsumowania,** a następnie kliknij pozycję **Połącz**.
 
-    Węzeł **Kontenery obiektów blob** (w obszarze **Storage Accounts** > **(Attached Containers)** \> jest otwarty.
+    Węzeł **Kontenery obiektów blob** (w obszarze **Konta** >  magazynu **(Dołączone kontenery)** \> jest otwarty.
 
     ![Wyeksportuj zadania w węźle Kontenery obiektów blob.](../media/AzureStorageConnect5.png)
 

@@ -15,17 +15,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak uzyskiwać dostęp do statystyk i raportów dla kolekcji roboczych i kolekcji, które zostały zatwierdzone do zestawu przeglądów w usłudze Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: 54d5fde3ee9d75a0ad592a81d04b860267c16eeb
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak uzyskiwać dostęp do statystyk i raportów dla kolekcji roboczych i kolekcji, które zostały zatwierdzone do zestawu przeglądów w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium).
+ms.openlocfilehash: 1f9047a047e5c2c4abd01f0cac39ab6cb97e27da
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092464"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626848"
 ---
-# <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Zbieranie statystyk i raportów w usłudze Microsoft Purview eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Statystyki kolekcji i raporty w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium)
 
 Po utworzeniu kolekcji roboczej możesz wyświetlić statystyki dotyczące pobranych elementów, takich jak lokalizacje zawartości zawierające najwięcej elementów spełniających kryteria wyszukiwania i liczbę elementów zwróconych przez zapytanie wyszukiwania. Możesz również wyświetlić podgląd podzestawu wyników.
 
@@ -51,7 +49,7 @@ W tej sekcji przedstawiono graficzne podsumowanie szacowanych elementów zwróco
 
 W tej sekcji przedstawiono statystyki dotyczące zapytania wyszukiwania kolekcji oraz liczbę szacowanych elementów, które pasowały do różnych części zapytania wyszukiwania. Te statystyki umożliwiają analizowanie liczby elementów odpowiadających poszczególnym składnikom zapytania wyszukiwania. Może to pomóc uściślić kryteria wyszukiwania dla kolekcji i w razie potrzeby zawęzić zakres kolekcji.
 
-- **Typ lokalizacji**: typ lokalizacji zawartości, do których mają zastosowanie statystyki zapytania. Wartość **Exchange** wskazuje lokalizację skrzynki pocztowej; wartość **SharePoint** wskazuje lokalizację witryny.
+- **Typ lokalizacji**: typ lokalizacji zawartości, do których mają zastosowanie statystyki zapytania. Wartość **programu Exchange** wskazuje lokalizację skrzynki pocztowej; wartość **programu SharePoint** wskazuje lokalizację witryny.
 
 - **Część**: część zapytania wyszukiwania, do których mają zastosowanie statystyki. **Podstawowa** wskazuje całe zapytanie wyszukiwania. **Słowo kluczowe** wskazuje, że statystyki w wierszu dotyczą określonego słowa kluczowego. Jeśli używasz listy słów kluczowych w przypadku zapytania wyszukiwania w kolekcji, statystyki dla każdego składnika zapytania są uwzględniane w tej tabeli.
 
@@ -96,7 +94,7 @@ Ta sekcja karty **Podsumowanie** zawiera statystyki i inne informacje o elementa
  
    Element nadrzędny może zawierać wiele elementów podrzędnych. Na przykład wiadomość e-mail jest elementem nadrzędnym, jeśli zawiera dołączony plik lub załącznik w chmurze. W takim przypadku dołączony plik lub plik docelowy załącznika w chmurze jest uważany za element podrzędny. Po zatwierdzeniu kolekcji elementy nadrzędne i wszystkie odpowiednie elementy podrzędne (takie jak dołączone pliki i załączniki w chmurze) są dodawane do zestawu przeglądów jako pojedyncze elementy lub pliki.
 
-- **Elementy podrzędne**. Liczba elementów podrzędnych dodanych do zestawu przeglądów. Tylko elementy podrzędne, które są załącznikami plików i załącznikami w chmurze, są dodawane do zestawu przeglądów jako pojedyncze pliki. Inne typy elementów podrzędnych, takie jak podpisy poczty e-mail i obrazy, są wyodrębniane z elementu nadrzędnego, a następnie przetwarzane przez optyczne rozpoznawanie znaków (OCR) w celu wyodrębnienia dowolnego tekstu z elementu podrzędnego. Tekst wyodrębniony z tych typów elementów podrzędnych jest następnie dodawany do elementu nadrzędnego, dzięki czemu można go wyświetlić w zestawie przeglądów. Nie dodając elementów podrzędnych do zestawu przeglądów jako oddzielnego pliku, funkcja zbierania elektronicznych materiałów dowodowych (Premium) pomaga usprawnić proces przeglądu, ograniczając liczbę potencjalnie nieistotnych elementów w zestawie przeglądów.
+- **Elementy podrzędne**. Liczba elementów podrzędnych dodanych do zestawu przeglądów. Tylko elementy podrzędne, które są załącznikami plików i załącznikami w chmurze, są dodawane do zestawu przeglądów jako pojedyncze pliki. Inne typy elementów podrzędnych, takie jak podpisy poczty e-mail i obrazy, są wyodrębniane z elementu nadrzędnego, a następnie przetwarzane przez optyczne rozpoznawanie znaków (OCR) w celu wyodrębnienia dowolnego tekstu z elementu podrzędnego. Tekst wyodrębniony z tych typów elementów podrzędnych jest następnie dodawany do elementu nadrzędnego, dzięki czemu można go wyświetlić w zestawie przeglądów. Nie dodając elementów podrzędnych do zestawu przeglądów jako oddzielnego pliku, funkcja eDiscovery (Premium) pomaga usprawnić proces przeglądu, ograniczając liczbę potencjalnie nieistotnych elementów w zestawie przeglądów.
 
 - **Unikatowe elementy**. Liczba unikatowych elementów dodanych do zestawu przeglądów. Unikatowe elementy są unikatowe dla zestawu przeglądów. Wszystkie elementy są unikatowe, gdy pierwsza kolekcja zostanie dodana do nowego zestawu przeglądów, ponieważ w zestawie przeglądów nie było żadnych poprzednich elementów.
 
@@ -130,16 +128,16 @@ Po uruchomieniu kolekcji roboczej oszacowanie liczby elementów (i ich całkowit
 
 - **Opcje konfiguracji kolekcji**. Po zatwierdzeniu kolekcji roboczej do zestawu przeglądów należy uwzględnić wątki konwersacji, załączniki w chmurze i wersje dokumentów. Żaden z tych elementów dodanych do zestawu przeglądów nie jest uwzględniony w oszacowaniach kolekcji roboczej. Są one identyfikowane i zbierane tylko podczas zatwierdzania kolekcji. Wybranie tych opcji najprawdopodobniej zwiększy liczbę elementów dodanych do zestawu przeglądów. 
 
-    Na przykład wiele wersji dokumentów SharePoint nie jest uwzględnionych w szacowaniu dla kolekcji roboczej. Jeśli jednak wybierzesz opcję uwzględnienia wszystkich wersji dokumentu podczas zatwierdzania kolekcji roboczej, rzeczywista liczba (i całkowity rozmiar) elementów dodanych do zestawu przeglądów wzrośnie.
+    Na przykład wiele wersji dokumentów programu SharePoint nie jest uwzględnionych w oszacowaniu dla kolekcji roboczej. Jeśli jednak wybierzesz opcję uwzględnienia wszystkich wersji dokumentu podczas zatwierdzania kolekcji roboczej, rzeczywista liczba (i całkowity rozmiar) elementów dodanych do zestawu przeglądów wzrośnie.
 
     Aby uzyskać więcej informacji na temat tych opcji, zobacz [Commit a draft collection to a review set (Zatwierdzanie kolekcji roboczej do zestawu przeglądów](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-ediscovery-premium)).
 
 Poniżej przedstawiono inne powody, dla których szacowane wyniki kolekcji roboczej mogą różnić się od rzeczywistych zatwierdzonych wyników.
 
-- **Sposób szacowania wyników dla kolekcji roboczych**. Oszacowanie wyników wyszukiwania zwracanych przez kolekcję roboczą to tylko oszacowanie (a nie rzeczywista liczba) elementów spełniających kryteria zapytania kolekcji. Aby skompilować oszacowanie elementów wiadomości e-mail, z bazy danych Exchange jest wymagana lista identyfikatorów wiadomości spełniających kryteria wyszukiwania. Jednak po zatwierdzeniu kolekcji do zestawu przeglądów kolekcja jest uruchamiana ponownie, a rzeczywiste komunikaty są pobierane z bazy danych Exchange. Różnice mogą więc wynikać ze sposobu określania szacowanej liczby elementów i rzeczywistej liczby elementów.
+- **Sposób szacowania wyników dla kolekcji roboczych**. Oszacowanie wyników wyszukiwania zwracanych przez kolekcję roboczą to tylko oszacowanie (a nie rzeczywista liczba) elementów spełniających kryteria zapytania kolekcji. Aby skompilować oszacowanie elementów wiadomości e-mail, z bazy danych programu Exchange jest wymagana lista identyfikatorów wiadomości spełniających kryteria wyszukiwania. Jednak po zatwierdzeniu kolekcji do zestawu przeglądów kolekcja jest uruchamiana ponownie, a rzeczywiste komunikaty są pobierane z bazy danych programu Exchange. Różnice mogą więc wynikać ze sposobu określania szacowanej liczby elementów i rzeczywistej liczby elementów.
 
 - **Zmiany zachodzą między godziną szacowania i zatwierdzania kolekcji roboczych**. Po zatwierdzeniu kolekcji roboczej do zestawu przeglądów wyszukiwanie jest uruchamiane ponownie w celu zebrania najnowszych elementów w indeksie wyszukiwania spełniających kryteria wyszukiwania. Możliwe, że dodatkowe elementy zostały utworzone, wysłane lub usunięte, które spełniają kryteria wyszukiwania w czasie między ostatnim uruchomieniem kolekcji roboczej a zobowiązaniem kolekcji roboczej do zestawu przeglądów. Istnieje również możliwość, że elementy, które znajdowały się w indeksie wyszukiwania podczas szacowania wyników kolekcji roboczej, nie są już dostępne, ponieważ zostały usunięte ze źródła danych przed zatwierdzeniem kolekcji. Jednym ze sposobów rozwiązania tego problemu jest określenie zakresu dat dla kolekcji. Innym sposobem jest wstrzymanie lokalizacji zawartości, aby elementy były zachowywane i nie mogły być czyszczone.
 
-- **Elementy bez certyfikatu**. Jeśli kolekcja robocza zawierała przeszukiwanie wszystkich Exchange skrzynek pocztowych lub wszystkich witryn SharePoint, do zestawu przeglądów zostaną dodane tylko niezadeksowane elementy z lokalizacji zawartości, które zawierają elementy zgodne z kryteriami kolekcji. Innymi słowy, jeśli w skrzynce pocztowej lub witrynie nie zostaną znalezione żadne wyniki, żadne niezainicjowane elementy w tej skrzynce pocztowej lub witrynie nie zostaną dodane do zestawu przeglądów. Jednak niezainicjowane elementy ze wszystkich lokalizacji zawartości (nawet te, które nie zawierają elementów zgodnych z zapytaniem kolekcji) zostaną uwzględnione w szacowanych wynikach kolekcji.
+- **Elementy bez certyfikatu**. Jeśli kolekcja robocza zawierała przeszukiwanie wszystkich skrzynek pocztowych programu Exchange lub wszystkich witryn programu SharePoint, do zestawu przeglądów zostaną dodane tylko niezainicjowane elementy z lokalizacji zawartości zawierające elementy zgodne z kryteriami kolekcji. Innymi słowy, jeśli w skrzynce pocztowej lub witrynie nie zostaną znalezione żadne wyniki, żadne niezainicjowane elementy w tej skrzynce pocztowej lub witrynie nie zostaną dodane do zestawu przeglądów. Jednak niezainicjowane elementy ze wszystkich lokalizacji zawartości (nawet te, które nie zawierają elementów zgodnych z zapytaniem kolekcji) zostaną uwzględnione w szacowanych wynikach kolekcji.
 
     Alternatywnie, jeśli wersja robocza kolekcji zawierała określone lokalizacje zawartości (co oznacza, że określone skrzynki pocztowe lub witryny określone na stronie **Dodatkowe lokalizacje** w kreatorze kolekcji roboczej), nieweksportowane elementy (które nie są wykluczone przez kryteria zbierania) z lokalizacji zawartości określonych w wyszukiwaniu zostaną wyeksportowane. W tym przypadku szacowana liczba nieweksportowanych elementów i liczba nieweksportowanych elementów dodawanych do zestawu przeglądów powinna być taka sama.

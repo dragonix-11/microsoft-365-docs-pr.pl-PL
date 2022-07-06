@@ -12,23 +12,21 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 ms.topic: article
-description: Włącz ustawienie, które umożliwia współtworzenie i automatyczne zapisywanie w aplikacjach klasycznych dla dokumentów oznaczonych etykietami i zaszyfrowanych w SharePoint i OneDrive.
-ms.openlocfilehash: 72935a58931c1458466f145c17a9e423e6b6d31c
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+description: Włącz ustawienie, które umożliwia współtwoerowanie i automatyczne zapisywanie w aplikacjach klasycznych dla dokumentów oznaczonych etykietami i zaszyfrowanych w programach SharePoint i OneDrive.
+ms.openlocfilehash: e82249f3d42eb71345bb998d16a6c2a24e11130c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286995"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628644"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Włączanie współtworzyła pliki zaszyfrowane przy użyciu etykiet poufności
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Włącz ustawienie, aby obsługiwać [współtworzynie](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) aplikacji klasycznych pakietu Office, dzięki czemu gdy dokumenty są oznaczone etykietami poufności i szyfrowane [, wielu](sensitivity-labels.md) użytkowników może edytować te dokumenty w tym samym czasie.
 
-Włącz ustawienie, aby obsługiwać [współtworzynie](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) aplikacji klasycznych Office, tak aby po oznaczeniu i zaszyfrowaniu dokumentów za pomocą [etykiet poufności](sensitivity-labels.md) wielu użytkowników może edytować te dokumenty w tym samym czasie.
-
-Bez włączenia tego ustawienia dla dzierżawy użytkownicy muszą wyewidencjonować zaszyfrowany dokument przechowywany w SharePoint lub OneDrive podczas korzystania z Office aplikacji klasycznych. W związku z tym nie mogą współpracować w czasie rzeczywistym. Mogą też używać Office w sieci Web, gdy [etykiety poufności są włączone dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Bez włączenia tego ustawienia dla dzierżawy użytkownicy muszą wyewidencjonować zaszyfrowany dokument przechowywany w programie SharePoint lub OneDrive podczas korzystania z aplikacji klasycznych pakietu Office. W związku z tym nie mogą współpracować w czasie rzeczywistym. Mogą też używać Office w sieci Web, gdy [etykiety poufności są włączone dla plików pakietu Office w programach SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 Ponadto włączenie tej funkcji powoduje obsługę funkcji [automatycznego zapisywania](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) dla tych plików oznaczonych etykietami i zaszyfrowanych.
 
@@ -41,7 +39,7 @@ Aby przeczytać ogłoszenie o wersji, zobacz wpis w blogu [Współtworzenie Micr
 > 
 > Nie włączaj tego ustawienia, jeśli używasz żadnych aplikacji, usług, skryptów lub narzędzi, które odczytują lub zapisują metadane etykietowania w starej lokalizacji.
 
-Przed włączeniem ustawienia umożliwiającego współtworzenie Office aplikacji klasycznych należy zrozumieć, że ta akcja wprowadza zmiany w metadanych etykietowania, które są zapisywane i odczytywane z Office plików.
+Przed włączeniem ustawienia umożliwiającego współtwoerowanie aplikacji klasycznych pakietu Office należy pamiętać, że ta akcja wprowadza zmiany w metadanych etykietowania, które są zapisywane i odczytywane z plików pakietu Office.
 
 Metadane etykietowania zawierają informacje identyfikujące dzierżawę i zastosowany etykietę poufności. Zmiana wprowadzana przez to ustawienie to format metadanych i lokalizacja plików programu Word, Excel i PowerPoint. Nie musisz podejmować żadnych działań w przypadku zaszyfrowanych plików lub wiadomości e-mail, ponieważ zmiana metadanych dla zaszyfrowanych plików jest zgodna z poprzednimi wersjami i nie ma żadnych zmian w wiadomościach e-mail. Należy jednak pamiętać o zmianach metadanych dla zaszyfrowanych plików, które można automatycznie uaktualnić, ale nie są zgodne z poprzednimi wersjami.
 
@@ -51,7 +49,7 @@ Ta zmiana dotyczy zarówno plików, które są nowo oznaczone, jak i plików, kt
 
 Więcej informacji na temat tej zmiany metadanych można znaleźć w następujących zasobach:
 
-- Wpis w blogu: [Nadchodzące zmiany w Storage metadanych Microsoft Information Protection](https://techcommunity.microsoft.com/t5/microsoft-security-and/upcoming-changes-to-microsoft-information-protection-metadata/ba-p/1904418)
+- Wpis w blogu: [Nadchodzące zmiany w usłudze Microsoft Information Protection Metadata Storage](https://techcommunity.microsoft.com/t5/microsoft-security-and/upcoming-changes-to-microsoft-information-protection-metadata/ba-p/1904418)
 
 - Open Specifications: [2.6.3 LabelInfo versus Custom Document Properties (Specyfikacje otwierania: 2.6.3 LabelInfo i właściwości dokumentu niestandardowego)](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
@@ -61,9 +59,9 @@ Z powodu tych zmian nie włączaj tego ustawienia, jeśli masz w organizacji jak
 
 - Dokument wyświetla użytkownikom nieaktualną etykietę.
 
-- Współtworzenie i automatyczne zapisywanie nie będą działać w przypadku dokumentu oznaczonego etykietą i zaszyfrowanego, jeśli inny użytkownik otworzy go w aplikacji klasycznej Office, która nie obsługuje nowych metadanych etykietowania. Należy pamiętać, że ten scenariusz może również wystąpić w przypadku użytkowników spoza organizacji, jeśli użytkownicy zewnętrzni i zaproszeni goście mają otwarty plik.
+- Współtwoerowanie i automatyczne zapisywanie nie będzie działać dla dokumentu oznaczonego etykietą i zaszyfrowanego, jeśli inny użytkownik otworzy go w aplikacji klasycznej pakietu Office, która nie obsługuje nowych metadanych etykietowania. Należy pamiętać, że ten scenariusz może również wystąpić w przypadku użytkowników spoza organizacji, jeśli użytkownicy zewnętrzni i zaproszeni goście mają otwarty plik.
 
-- Reguła przepływu poczty Exchange Online, która [identyfikuje etykiety jako właściwości niestandardowe w załącznikach Office](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) nie może zaszyfrować wiadomości e-mail i załącznika lub niepoprawnie je szyfruje.
+- Reguła przepływu poczty Exchange Online, która [identyfikuje etykiety jako właściwości niestandardowe w załącznikach pakietu Office](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization), nie może zaszyfrować wiadomości e-mail i załącznika lub niepoprawnie je szyfruje.
 
 Zapoznaj się z poniższą sekcją, aby uzyskać listę aplikacji i usług obsługujących to ustawienie oraz zmiany metadanych etykietowania.
 
@@ -73,10 +71,10 @@ Przed włączeniem tej funkcji upewnij się, że znasz następujące wymagania w
 
 - Aby włączyć tę funkcję, musisz być administratorem globalnym.
 
-- Etykiety poufności muszą być [włączone dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) dla dzierżawy. Jeśli ta funkcja nie jest jeszcze włączona, zostanie ona automatycznie włączona po wybraniu ustawienia, aby włączyć współtworowanie plików z etykietami poufności.
+- Etykiety poufności muszą być [włączone dla plików pakietu Office w programie SharePoint i usłudze OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) dla dzierżawy. Jeśli ta funkcja nie jest jeszcze włączona, zostanie ona automatycznie włączona po wybraniu ustawienia, aby włączyć współtworowanie plików z etykietami poufności.
 
 - Aplikacje Microsoft 365 dla przedsiębiorstw:
-    - **Windows**: minimalna wersja 2107 z bieżącego kanału lub miesięcznego kanału Enterprise lub minimalna wersja 2202 z kanału Semi-Annual Enterprise (wersja zapoznawcza)
+    - **Windows**: minimalna wersja 2107 z bieżącego kanału lub miesięcznego kanału enterprise lub minimalna wersja 2202 z kanału Semi-Annual Enterprise (wersja zapoznawcza)
     - **macOS**: minimalna wersja 16.51
     - **iOS**: teraz w wersji zapoznawczej po [wybraniu](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) minimalnej wersji 2.58
     - **Android**: teraz w wersji zapoznawczej po [wybraniu](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) minimalnej wersji 16.0.14931
@@ -86,19 +84,19 @@ Przed włączeniem tej funkcji upewnij się, że znasz następujące wymagania w
     - **Klient i skaner ujednoliconego etykietowania platformy Azure Information Protection:**
         - Minimalna wersja [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) , którą można zainstalować z [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
     
-    - **aplikacja synchronizacja usługi OneDrive dla Windows lub macOS:**
+    - **aplikacja synchronizacja usługi OneDrive dla systemu Windows lub macOS:**
         - Minimalna wersja 19.002.0121.0008
     
     - **Ochrona przed utratą danych punktu końcowego (Endpoint DLP):**
         - Windows 10 1809 z 4601383 KB
         - Windows 10 1903 i 1909 z kb 4601380
         - Windows 10 2004 r. z 4601382 KB
-        - Windows wersje późniejsze niż Windows 10 2004 r. są obsługiwane bez aktualizacji KB
+        - Wersje systemu Windows nowsze niż Windows 10 2004 są obsługiwane bez aktualizacji KB
     
     - **Aplikacje i usługi korzystające z zestawu Microsoft Information Protection SDK:** 
         - Minimalna wersja wersji 1.7 
 
-Microsoft 365 usługi automatycznie obsługują nowe metadane etykietowania po włączeniu tej funkcji. Przykład:
+Usługi Platformy Microsoft 365 automatycznie obsługują nowe metadane etykietowania po włączeniu tej funkcji. Przykład:
 
 - [Zasady automatycznego etykietowania](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [Zasady DLP, które używają etykiet poufności jako warunków](dlp-sensitivity-label-as-condition.md)
@@ -116,16 +114,16 @@ Przed włączeniem ustawienia dzierżawy dla współtworzyła pliki zaszyfrowane
 
 - Ze względu na [zmiany metadanych etykietowania](#metadata-changes-for-sensitivity-labels) wszystkie aplikacje, usługi i narzędzia operacyjne w dzierżawie muszą obsługiwać nowe metadane etykietowania w celu zapewnienia spójnego i niezawodnego środowiska etykietowania.
     
-    Specyficzne dla Excel: Metadane etykiety poufności, która nie stosuje szyfrowania, można usunąć z pliku, jeśli ktoś edytuje i zapisze ten plik przy użyciu wersji Excel, która nie obsługuje zmian metadanych etykiet poufności.
+    Specyficzne dla programu Excel: Metadane etykiety poufności, która nie stosuje szyfrowania, mogą zostać usunięte z pliku, jeśli ktoś dokona edycji i zapisze ten plik przy użyciu wersji programu Excel, która nie obsługuje zmian metadanych etykiet poufności.
 
-- Obsługa aplikacji Office dla systemów iOS i Android jest obecnie dostępna w [wersji zapoznawczej](https://office.com/insider).
+- Obsługa aplikacji pakietu Office dla systemów iOS i Android jest obecnie dostępna w [wersji zapoznawczej](https://office.com/insider).
 
-- Współtworzenie i automatyczne zapisywanie nie są obsługiwane i nie działają w przypadku dokumentów oznaczonych etykietami i szyfrowanych Office, które używają dowolnej z [następujących konfiguracji szyfrowania](encryption-sensitivity-labels.md#configure-encryption-settings):
-    - **Zezwalaj użytkownikom na przypisywanie uprawnień, gdy zastosują etykietę** i pole wyboru **W programie Word, PowerPoint i Excel, zostanie wybrany monit o określenie uprawnień**. Ta konfiguracja jest czasami określana jako "uprawnienia zdefiniowane przez użytkownika".
+- Współtwoerowanie i automatyczne zapisywanie nie są obsługiwane i nie działają w przypadku dokumentów pakietu Office oznaczonych etykietami i zaszyfrowanych, które używają dowolnej z [następujących konfiguracji do szyfrowania](encryption-sensitivity-labels.md#configure-encryption-settings):
+    - **Zezwalaj użytkownikom na przypisywanie uprawnień po zastosowaniu etykiety** i zaznaczeniu pola wyboru **W programach Word, PowerPoint i Excel zostanie wybrany monit o określenie uprawnień** . Ta konfiguracja jest czasami określana jako "uprawnienia zdefiniowane przez użytkownika".
     - **Dostęp użytkownika do zawartości wygasa** jest ustawiony na wartość inną niż **Nigdy**.
     - **Wybrano opcję Podwójne szyfrowanie kluczy** .
     
-    W przypadku etykiet z dowolną z tych konfiguracji szyfrowania etykiety są wyświetlane w aplikacjach Office. Jednak gdy użytkownicy wybierają te etykiety i nikt inny nie edytuje dokumentu, zostanie wyświetlony komunikat o tym, że współtworzenie i autozapisanie nie będą dostępne. Jeśli ktoś edytuje dokument, użytkownicy zobaczą komunikat, że etykiet nie można zastosować.
+    W przypadku etykiet z dowolną z tych konfiguracji szyfrowania etykiety są wyświetlane w aplikacjach pakietu Office. Jednak gdy użytkownicy wybierają te etykiety i nikt inny nie edytuje dokumentu, zostanie wyświetlony komunikat o tym, że współtworzenie i autozapisanie nie będą dostępne. Jeśli ktoś edytuje dokument, użytkownicy zobaczą komunikat, że etykiet nie można zastosować.
 
 - Jeśli używasz klienta ujednoliconego etykietowania usługi Azure Information Protection: zapoznaj się z dokumentacją tego klienta etykietowania, aby uzyskać [więcej wymagań lub ograniczeń](/azure/information-protection/known-issues#known-issues-for-co-authoring). 
     > [!NOTE]
@@ -138,9 +136,9 @@ Przed włączeniem ustawienia dzierżawy dla współtworzyła pliki zaszyfrowane
 
 Jeśli to ustawienie zostało już włączone w okresie zapoznawczym, nie są potrzebne żadne dalsze działania i można pominąć tę procedurę.
 
-1. Zaloguj się do [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com) jako administrator globalny dzierżawy.
+1. Zaloguj się do [portal zgodności Microsoft Purview](https://compliance.microsoft.com) jako administrator globalny dzierżawy.
 
-2. W okienku nawigacji wybierz pozycję **Ustawienia** >  **Tworzenie dla plików z plikami poufności**.
+2. W okienku nawigacji wybierz pozycję **Ustawienia** > **Współtworzył pliki z plikami poufności**.
 
 2. Na stronie **Współtworzenie plików z etykietami poufności** przeczytaj opis podsumowania, wymagania wstępne, oczekiwania i ostrzeżenie, że nie można wyłączyć tego ustawienia po jego włączeniu.
     
@@ -165,8 +163,8 @@ Jeśli inżynier pomocy technicznej wyłączy to ustawienie dla dzierżawy:
 
 - W przypadku aplikacji i usług obsługujących nowe metadane etykietowania powrót do oryginalnego formatu i lokalizacji metadanych po odczytaniu lub zapisaniu etykiet.
 
-- Nowy format metadanych i lokalizacja dla dokumentów Office, które były używane podczas włączania ustawienia, nie zostaną skopiowane do oryginalnego formatu i lokalizacji. W rezultacie te informacje dotyczące etykietowania niezaszyfrowanych plików programu Word, Excel i PowerPoint zostaną utracone.
+- Nowy format metadanych i lokalizacja dokumentów pakietu Office, które były używane podczas włączania ustawienia, nie zostaną skopiowane do oryginalnego formatu i lokalizacji. W rezultacie te informacje dotyczące etykietowania niezaszyfrowanych plików programu Word, Excel i PowerPoint zostaną utracone.
 
 - Współtwoerowanie i automatyczne zapisywanie nie działają już w dzierżawie w przypadku dokumentów oznaczonych etykietami i zaszyfrowanych.
 
-- Etykiety poufności pozostają włączone dla plików Office w OneDrive i SharePoint.
+- Etykiety poufności pozostają włączone dla plików pakietu Office w usłudze OneDrive i programie SharePoint.

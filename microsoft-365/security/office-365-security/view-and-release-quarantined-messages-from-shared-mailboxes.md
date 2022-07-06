@@ -13,16 +13,15 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-ROBOTS: NOINDEX
 description: Użytkownicy mogą dowiedzieć się, jak wyświetlać komunikaty poddane kwarantannie i działać na nich, które zostały wysłane do udostępnionych skrzynek pocztowych, do których mają uprawnienia.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2613d3b8be200db3a9107355a27b0dd79ce537d3
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: a37ed03535bd3f3b48aca81c7bf7adeb3c660b46
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647343"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629018"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Wyświetlanie i zwalnianie komunikatów poddanych kwarantannie z udostępnionych skrzynek pocztowych
 
@@ -50,7 +49,9 @@ Teraz automatyczne aplikacje nie są już wymagane, aby użytkownicy mogli zarz�
 
 - Obecnie przycisk **Blokuj nadawcę** nie jest dostępny w wysuwaniu **Szczegóły** dla wiadomości objętych kwarantanną, które zostały wysłane do udostępnionej skrzynki pocztowej.
 
-- Jeśli w przypadku operacji kwarantanny dla udostępnionych skrzynek pocztowych używasz zagnieżdżonych grup zabezpieczeń do udzielania dostępu do udostępnionej skrzynki pocztowej, zalecamy nie więcej niż dwa poziomy zagnieżdżonych grup. Na przykład grupa A jest członkiem grupy B, która jest członkiem grupy C. Aby przypisać uprawnienia do udostępnionej skrzynki pocztowej, nie należy dodawać użytkownika do grupy A, a następnie przypisywać grupy C do udostępnionej skrzynki pocztowej.  
+- Jeśli w przypadku operacji kwarantanny dla udostępnionych skrzynek pocztowych używasz zagnieżdżonych grup zabezpieczeń do udzielania dostępu do udostępnionej skrzynki pocztowej, zalecamy nie więcej niż dwa poziomy zagnieżdżonych grup. Na przykład grupa A jest członkiem grupy B, która jest członkiem grupy C. Aby przypisać uprawnienia do udostępnionej skrzynki pocztowej, nie należy dodawać użytkownika do grupy A, a następnie przypisywać grupy C do udostępnionej skrzynki pocztowej.
+
+- Od lipca 2022 r. użytkownicy z podstawowymi adresami SMTP, które różnią się od nazw głównych użytkowników (UPN), powinni mieć dostęp do wiadomości objętych kwarantanną dla udostępnionej skrzynki pocztowej.
 
 - Aby zarządzać komunikatami poddanymi kwarantannie dla udostępnionej skrzynki pocztowej w [programie Exchange Online programie PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), użytkownik końcowy będzie musiał użyć polecenia cmdlet [Get-QuarantineMessage z udostępnionym](/powershell/module/exchange/get-quarantinemessage) adresem e-mail skrzynki pocztowej dla wartości parametru _RecipientAddress_ w celu zidentyfikowania wiadomości. Przykład:
 

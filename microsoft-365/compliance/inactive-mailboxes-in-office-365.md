@@ -1,5 +1,5 @@
 ---
-title: Informacje o nieaktywnych skrzynkach pocztowych
+title: Dowiedz się więcej o nieaktywnych skrzynkach pocztowych
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,120 +20,120 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak zachować zawartość skrzynki pocztowej dla byłych pracowników, przekształcając skrzynkę pocztową w nieaktywną skrzynkę pocztową.
-ms.openlocfilehash: 72d048bc99876c0f252feffe3159d3ce01303028
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 981675f64015e0320805e2be8e955cbd6d98769a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63010645"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627222"
 ---
-# <a name="learn-about-inactive-mailboxes"></a>Informacje o nieaktywnych skrzynkach pocztowych
+# <a name="learn-about-inactive-mailboxes"></a>Dowiedz się więcej o nieaktywnych skrzynkach pocztowych
 
-Być może po opuszczeniu organizacji będzie konieczne zachowanie poczty e-mail byłych pracowników. W zależności od wymagań przechowywania w organizacji może być konieczne zachowanie zawartości skrzynki pocztowej przez kilka miesięcy lub lat po zakończeniu zatrudnienia lub zachowanie zawartości skrzynki pocztowej przez czas nieograniczony. Niezależnie od tego, jak długo chcesz przechowywać wiadomości e-mail, możesz utworzyć nieaktywne skrzynki pocztowe, aby zachować skrzynki pocztowe byłych pracowników.
+Organizacja może wymagać zachowania poczty e-mail byłych pracowników po opuszczeniu organizacji. W zależności od wymagań dotyczących przechowywania w organizacji może być konieczne zachowanie zawartości skrzynki pocztowej przez kilka miesięcy lub lat po zakończeniu zatrudnienia lub może być konieczne zachowanie zawartości skrzynki pocztowej na czas nieokreślony. Niezależnie od tego, jak długo trzeba zachować pocztę e-mail, możesz utworzyć nieaktywne skrzynki pocztowe, aby zachować skrzynkę pocztową byłych pracowników.
 
 ## <a name="what-are-inactive-mailboxes"></a>Co to są nieaktywne skrzynki pocztowe?
 
-Gdy pracownik odchodzi z organizacji (lub przechodzi na dłuższy czas nieobecności), możesz usunąć jego Microsoft 365 konta. Dane skrzynki pocztowej pracownika są zachowywane przez 30 dni od usunięcia konta. W tym okresie nadal można odzyskać dane skrzynki pocztowej, przywracając konto. Po 30 dniach dane zostaną trwale usunięte.
+Gdy pracownik opuszcza organizację (lub przechodzi na dłuższy urlop), możesz usunąć jego konto platformy Microsoft 365. Dane skrzynki pocztowej pracownika są przechowywane przez 30 dni po usunięciu konta. W tym okresie nadal można odzyskać dane skrzynki pocztowej, cofając usunięcie konta. Po 30 dniach dane zostaną trwale usunięte.
 
-Jeśli jednak do skrzynki pocztowej zastosowano hold przed usunięciem konta Microsoft 365, zostanie ona przekonwertowana na nieaktywną skrzynkę pocztową. Poniższe sekcje zawierają informacje o blokadych, które można stosować przy Microsoft 365 przechowywania i zbierania elektronicznych materiałów dowodowych.
+Jeśli jednak do skrzynki pocztowej zostanie zastosowana blokada przed usunięciem konta platformy Microsoft 365, skrzynka pocztowa zostanie przekonwertowana na nieaktywną skrzynkę pocztową. Poniższe sekcje zawierają informacje o blokadach, które można zastosować w przypadku przechowywania i zbierania elektronicznych materiałów dowodowych platformy Microsoft 365.
 
-Nieaktywne skrzynki pocztowe są przydatne, gdy organizacja musi zachować zawartość skrzynek pocztowych byłych pracowników ze względów prawnych lub z innych powodów. Wszelkie typy blokowania wymienione w tym dokumencie wymuszają nieaktywność skrzynki pocztowej po usunięciu obiektu użytkownika, jednak zalecamy zastosowanie zasad przechowywania lub etykiet przechowywania programu [Microsoft 365, potwierdzenia](#confirming-a-hold-is-applied-to-a-mailbox) zastosowania hold'a, Microsoft 365 następnie usunięcie odpowiedniego konta programu Microsoft 365. W tym momencie zawartość nieaktywnej skrzynki pocztowej jest zachowywana przez okres przechowywania określony przed usunięciem konta użytkownika. Nadal można odzyskać odpowiednie konto użytkownika przez 30 dni, jednak po 30 dniach skrzynka pocztowa jest zachowywana w programie Microsoft 365 jako nieaktywna skrzynka pocztowa do momentu usunięcia zasad przechowywania lub etykiet przechowywania.
+Nieaktywne skrzynki pocztowe są przydatne, gdy organizacja musi zachować zawartość skrzynki pocztowej byłych pracowników z przyczyn prawnych lub innych. Mimo że dowolny typ blokady wymieniony w tym dokumencie wymusi nieaktywność skrzynki pocztowej po usunięciu obiektu użytkownika, zalecamy wykonanie tej czynności przez zastosowanie zasad przechowywania lub etykiet przechowywania platformy Microsoft 365, [potwierdzenie zastosowania blokady](#confirming-a-hold-is-applied-to-a-mailbox), a następnie usunięcie odpowiedniego konta platformy Microsoft 365. W tym momencie zawartość nieaktywnej skrzynki pocztowej jest przechowywana przez czas trwania okresu przechowywania określonego przed usunięciem konta użytkownika. Nadal można odzyskać odpowiednie konto użytkownika przez okres 30 dni, jednak po 30 dniach skrzynka pocztowa jest przechowywana w usłudze Microsoft 365 jako nieaktywna skrzynka pocztowa do momentu usunięcia zasad przechowywania lub etykiet przechowywania.
 
 > [!IMPORTANT]
-> Jak wspomniano wcześniej, zalecamy używanie przechowywania Microsoft 365 do tworzenia nieaktywnych skrzynek pocztowych:
-> - In-Place w centrum administracyjnym usługi Exchange zostały wycofane. Od 1 lipca 2020 r. nie można utworzyć nowych In-Place w programie Exchange Online. Od 1 października 2020 r. nie można już zmieniać czasu trwania blokady w miejscu. Nieaktywną skrzynkę pocztową, do In-Place wstrzymywanie wiadomości, można usunąć tylko przez usunięcie In-Place wiadomości. Istniejące nieaktywne skrzynki pocztowe, In-Place wstrzymają, będą zachowywane do momentu usunięcia go. Aby uzyskać więcej informacji na In-Place wycofanie, zobacz Wycofanie starszych narzędzi [zbierania elektronicznych materiałów dowodowych](legacy-ediscovery-retirement.md).
+> Jak wspomniano wcześniej, zalecamy użycie przechowywania platformy Microsoft 365 w celu utworzenia nieaktywnej skrzynki pocztowej:
+> - In-Place Blokady w centrum administracyjnym programu Exchange są teraz wycofywane. Od 1 lipca 2020 r. nie można utworzyć nowych blokad In-Place w Exchange Online. Od 1 października 2020 r. nie można już zmienić czasu trwania blokady miejscowej. Każdą nieaktywną skrzynkę pocztową z zastosowaną blokadą In-Place można usunąć tylko przez usunięcie blokady In-Place. Istniejące nieaktywne skrzynki pocztowe znajdujące się w In-Place Blokada będą nadal zachowywane do momentu usunięcia blokady. Aby uzyskać więcej informacji na temat wycofywania In-Place, zobacz [Wycofywanie starszych narzędzi zbierania elektronicznych materiałów dowodowych](legacy-ediscovery-retirement.md).
 > 
-> - [Zawieszenie w procesów](create-a-litigation-hold.md) sądowych jest obsługiwane jako metoda alternatywna w celu przechowywania zawartości w skrzynce pocztowej i jej nieaktywności po usunięciu konta użytkownika. Jednak w przypadku starszej technologii zalecamy używanie przechowywania Microsoft 365 przechowywania.
+> - [Blokada postępowania sądowego](create-a-litigation-hold.md) pozostaje obsługiwana jako alternatywna metoda przechowywania zawartości w skrzynce pocztowej i uniemożliwiania jej działania po usunięciu konta użytkownika. Jednak jako starsza technologia zalecamy użycie przechowywania na platformie Microsoft 365.
 
-W przypadku wielu blokady w tej samej zawartości obowiązuje zasada przechowywania [](retention.md#the-principles-of-retention-or-what-takes-precedence) i zawartość jest zachowywana przez najdłuższy okres.
+Jeśli istnieje wiele blokad tej samej zawartości, [zasada przechowywania ma zastosowanie](retention.md#the-principles-of-retention-or-what-takes-precedence) , a zawartość jest przechowywana przez najdłuższy okres.
 
-### <a name="confirming-a-hold-is-applied-to-a-mailbox"></a>Potwierdzanie zastosowania wstrzymywania do skrzynki pocztowej
+### <a name="confirming-a-hold-is-applied-to-a-mailbox"></a>Potwierdzanie zastosowania blokady do skrzynki pocztowej
 
-Niezależnie od tego, czy zastosujemy zasady przechowywania Microsoft 365, etykiety przechowywania, zbierania elektronicznych materiałów dowodowych, Zawieszenie w związku z postępowaniem sądowym, czy masz istniejące zawieszenie w związku z In-Place, możesz sprawdzić, czy zawieszenie zostało pomyślnie zastosowane do skrzynki pocztowej za pomocą programu PowerShell. Jeśli ostatnio skonfigurowano hold, może być konieczne zaczekaj, aż zostanie on zastosowany do skrzynki pocztowej.
+Niezależnie od tego, czy stosujesz zasady przechowywania platformy Microsoft 365, etykiety przechowywania, blokadę zbierania elektronicznych materiałów dowodowych, blokadę postępowania sądowego czy istniejącą blokadę In-Place, możesz potwierdzić, że blokada została pomyślnie zastosowana do skrzynki pocztowej przy użyciu programu PowerShell. Jeśli blokada została ostatnio skonfigurowana, może być konieczne poczekanie na zastosowanie jej do skrzynki pocztowej.
 
-Aby zapobiec przypadkowemu lub niezamierzonemu usunięciu, zalecamy potwierdzenie wstrzymywania przed usunięciem konta użytkownika. Jeśli to nie zostanie zastosowane, skrzynka pocztowa nie zostanie przekonwertowana na nieaktywną skrzynkę pocztową.
+Aby zapobiec przypadkowemu lub niezamierzonemu usunięciu, zalecamy potwierdzenie blokady przed usunięciem konta użytkownika. Jeśli blokada nie zostanie zastosowana, skrzynka pocztowa nie zostanie przekonwertowana na nieaktywną skrzynkę pocztową.
 
-Aby uzyskać instrukcje, [zobacz Jak zidentyfikować typy blokowania umieszczonego w Exchange Online pocztowej](identify-a-hold-on-an-exchange-online-mailbox.md).
+Aby uzyskać instrukcje, zobacz [How to identify the type of hold placed on an Exchange Online mailbox (Jak zidentyfikować typ blokady umieszczonej w Exchange Online skrzynce pocztowej](identify-a-hold-on-an-exchange-online-mailbox.md)).
 
-## <a name="inactive-mailboxes-and-microsoft-365-retention"></a>Nieaktywne skrzynki pocztowe i Microsoft 365 przechowywania
+## <a name="inactive-mailboxes-and-microsoft-365-retention"></a>Nieaktywne skrzynki pocztowe i przechowywanie usługi Microsoft 365
 
-Jeśli zasady przechowywania usługi Microsoft 365 zostały zastosowane do skrzynki pocztowej lub co najmniej jeden element poczty e-mail w skrzynce pocztowej ma etykietę przechowywania, Microsoft 365 konto użytkownika zostanie usunięte, skrzynka pocztowa zostanie przekonwertowana na nieaktywną skrzynkę pocztową. Aby nieaktywne skrzynki pocztowe zostały utworzone:
+Jeśli zasady przechowywania usługi Microsoft 365 zostaną zastosowane do skrzynki pocztowej lub co najmniej jeden element poczty e-mail w skrzynce pocztowej ma zastosowaną etykietę przechowywania, a następnie zostanie usunięte konto użytkownika platformy Microsoft 365, skrzynka pocztowa zostanie przekonwertowana na nieaktywną skrzynkę pocztową. Aby utworzyć nieaktywną skrzynkę pocztową:
 
-- Ustawienia przechowywania należy skonfigurować tak, aby [zachowywać zawartość lub zachowywać zawartość, a następnie ją usuwać](retention-settings.md#settings-for-retaining-and-deleting-content). Jeśli akcja przechowywania jest skonfigurowana tak, aby usuwać tylko zawartość, skrzynka pocztowa nie stanie się nieaktywna po usunięciu konta użytkownika. W przypadku nieaktywnych skrzynek pocztowych zalecamy używanie opcji zachowaj, a następnie usuń.
+- Ustawienia przechowywania muszą być skonfigurowane tak [, aby zachować zawartość lub zachować, a następnie usunąć zawartość](retention-settings.md#settings-for-retaining-and-deleting-content). Jeśli akcja przechowywania jest skonfigurowana do usuwania tylko zawartości, skrzynka pocztowa nie stanie się nieaktywna po usunięciu konta użytkownika. W przypadku nieaktywnych skrzynek pocztowych zalecamy użycie opcji zachowaj, a następnie usuń.
 
-- Ustawienia przechowywania należy stosować do lokalizacji [przechowywania skojarzonej](retention-settings.md#locations) z skrzynką pocztową usługi Exchange pocztowej:
-    - Exchange-mail
-    - Microsoft 365 grupy
+- Ustawienia przechowywania muszą być stosowane do [lokalizacji przechowywania](retention-settings.md#locations) skojarzonej ze skrzynką pocztową programu Exchange:
+    - Poczta e-mail programu Exchange
+    - Grupy Microsoft 365
     - Skype dla firm
-    - Exchange folderów publicznych
-    - Teams wiadomości na kanale
-    - Teams czatów
-    - Teams wiadomości z kanału prywatnego
-    - Yammer wiadomości od społeczności
-    - Yammer wiadomości od użytkowników
+    - Foldery publiczne programu Exchange
+    - Komunikaty kanału usługi Teams
+    - Czaty w usłudze Teams
+    - Komunikaty kanału prywatnego usługi Teams
+    - Komunikaty społeczności usługi Yammer
+    - Komunikaty użytkowników usługi Yammer
 
 Aby uzyskać więcej informacji na temat przechowywania przez firmę Microsoft, zobacz [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md).
 
-Jeśli Microsoft 365 przechowywania jest używane do tworzenia nieaktywnych skrzynek pocztowych, ustawienia przechowywania z zasad przechowywania lub etykiet przechowywania będą nadal stosowane do nieaktywnej skrzynki pocztowej. Oznacza to, że jeśli w ustawieniach przechowywania skonfigurowano przechowywanie i usuwanie zawartości, elementy zostaną przeniesione do folderu Elementy do odzyskania po wygaśnięciu czasu trwania przechowywania, a następnie później usunięte z nieaktywnej skrzynki pocztowej. Jeśli ustawienia przechowywania nie zostały skonfigurowane jako elementy usunięte, elementy, które nie zostały trwale usunięte przez użytkownika (zanim skrzynka pocztowa została nieaktywna), nie zostaną przeniesione do folderu Elementy do odzyskania i będą przechowywane przez czas nieograniczony, gdy skrzynka pocztowa stanie się nieaktywna.
+Jeśli przechowywanie usługi Microsoft 365 jest używane do tworzenia nieaktywnej skrzynki pocztowej, ustawienia przechowywania z zasad przechowywania lub etykiet przechowywania będą nadal stosowane do nieaktywnej skrzynki pocztowej. Oznacza to, że jeśli ustawienia przechowywania są skonfigurowane do przechowywania, a następnie usuwania zawartości, elementy zostaną przeniesione do folderu Elementy możliwe do odzyskania po upływie czasu przechowywania, a następnie ostatecznie czyszczone z nieaktywnej skrzynki pocztowej. Jeśli ustawienia przechowywania nie są skonfigurowane do usuwania elementów, elementy, które nie zostały trwale usunięte przez użytkownika (zanim skrzynka pocztowa została nieaktywna) nie zostaną przeniesione do folderu Elementy możliwe do odzyskania i zostaną zachowane przez czas nieokreślony, gdy skrzynka pocztowa stanie się nieaktywna.
 
 > [!TIP]
-> Właściwość *ComplianceTagHoldApplied* pozwala określić, czy skrzynka pocztowa ma elementy, do których zastosowano co najmniej jedną etykietę przechowywania w celu zachowania, czy przechowywania i usuwania zawartości. Aby uzyskać więcej informacji, zobacz [Identyfikowanie skrzynek pocztowych w holdie, ponieważ etykieta przechowywania została zastosowana do folderu lub elementu](identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item).
+> Możesz użyć właściwości *ComplianceTagHoldApplied* , aby określić, czy skrzynka pocztowa ma elementy, które mają co najmniej jedną etykietę przechowywania zastosowaną do przechowywania lub przechowywania, a następnie usuwania zawartości. Aby uzyskać więcej informacji, zobacz [Identyfikowanie zablokowanych skrzynek pocztowych, ponieważ etykieta przechowywania została zastosowana do folderu lub elementu](identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item).
 
-### <a name="using-adaptive-policy-scopes-to-manage-retention-of-inactive-mailboxes"></a>Korzystanie z adaptacyjnych zakresów zasad w celu zarządzania przechowywaniem nieaktywnych skrzynek pocztowych
+### <a name="using-adaptive-policy-scopes-to-manage-retention-of-inactive-mailboxes"></a>Zarządzanie przechowywaniem nieaktywnych skrzynek pocztowych przy użyciu zakresów zasad adaptacyjnych
 
-W [przypadku adaptacyjnych zakresów zasad](retention.md#adaptive-or-static-policy-scopes-for-retention) możesz zastosować ustawienia przechowywania konkretnie do nieaktywnych skrzynek pocztowych. Zalety tej konfiguracji to:
+Dzięki [adaptacyjnym zakresom zasad](retention.md#adaptive-or-static-policy-scopes-for-retention) można zastosować ustawienia przechowywania w szczególności do nieaktywnych skrzynek pocztowych. Zalety tej konfiguracji obejmują:
 
-- Możesz spełnić przepisy lub zasady organizacji, które wymagają różnych okresów przechowywania dla aktywnych pracowników i byłych pracowników.
+- Możesz spełnić wymagania organizacji dotyczące przepisów lub zasad, które wymagają różnych okresów przechowywania dla aktywnych pracowników i byłych pracowników.
 
-- Ustawienia przechowywania można skonfigurować w taki sposób, aby zawartość skrzynki pocztowej była zachowywana tylko przez okres niezbędny do spełnienia wymagań organizacji dla byłych pracowników.
+- Ustawienia przechowywania można skonfigurować tak, aby zachować zawartość skrzynki pocztowej tylko tak długo, jak to konieczne, aby spełnić wymagania organizacji dotyczące byłych pracowników.
 
-- Możesz szybko określić zasady przechowywania przypisane do nieaktywnych skrzynek pocztowych w Twojej organizacji, co ułatwi w razie potrzeby zmianę ustawień przechowywania. 
+- Można szybko zidentyfikować zasady przechowywania przypisane do nieaktywnych skrzynek pocztowych w organizacji, co ułatwia zmianę ustawień przechowywania w razie potrzeby. 
 
-- Łatwiej jest trwale usunąć nieaktywną skrzynkę pocztową, ponieważ można ją usunąć z zasad[](retention-settings.md#to-configure-an-adaptive-scope), konfigurując adaptacyjny zakres w celu jej wykluczenia na podstawie atrybutów lub właściwości nieaktywnej skrzynki pocztowej. W przeciwnym razie należy użyć [programu Exchange Online PowerShell](delete-an-inactive-mailbox.md#remove-an-inactive-mailbox-from-a-retention-policy) przed [usunięciem skrzynki pocztowej](delete-an-inactive-mailbox.md#before-you-delete-an-inactive-mailbox).
+- Łatwiej jest trwale usunąć nieaktywną skrzynkę pocztową, ponieważ można ją usunąć z zasad, [konfigurując zakres adaptacyjny](retention-settings.md#to-configure-an-adaptive-scope) , aby ją wykluczyć, na podstawie atrybutów lub właściwości nieaktywnej skrzynki pocztowej. W przeciwnym razie należy użyć [Exchange Online programu PowerShell](delete-an-inactive-mailbox.md#remove-an-inactive-mailbox-from-a-retention-policy) przed [usunięciem skrzynki pocztowej](delete-an-inactive-mailbox.md#before-you-delete-an-inactive-mailbox).
 
 > [!NOTE]
-> W zależności od konfiguracji adaptacyjnego zakresu zasad nieaktywne skrzynki pocztowe mogą być uwzględniane lub nie.  Aby w szczególności kierować lub wykluczać nieaktywne skrzynki pocztowe z adaptacyjnego zakresu zasad, zobacz informacje o Exchange e-mail i folderach [Exchange publicznych](retention-settings.md#locations).
+> W zależności od konfiguracji zakresu zasad adaptacyjnych nieaktywne skrzynki pocztowe mogą być dołączane lub nie.  Aby w szczególności określić element docelowy lub wykluczyć nieaktywne skrzynki pocztowe z zakresu zasad adaptacyjnych, zobacz [informacje o konfiguracji dla poczty e-mail programu Exchange i folderów publicznych programu Exchange](retention-settings.md#locations).
 
-### <a name="using-static-policy-scopes-and-inactive-mailboxes"></a>Używanie zakresów statycznych zasad i nieaktywnych skrzynek pocztowych
+### <a name="using-static-policy-scopes-and-inactive-mailboxes"></a>Używanie zakresów zasad statycznych i nieaktywnych skrzynek pocztowych
 
-Jeśli nie używasz zakresów [adaptacyjnych zasad z przechowywaniem](retention.md#adaptive-or-static-policy-scopes-for-retention) Microsoft 365[, a zamiast](retention.md#adaptive-or-static-policy-scopes-for-retention) tego użyj zakresu statycznego, rozważ następujące kwestie:
+Jeśli nie używasz [zakresów zasad adaptacyjnych](retention.md#adaptive-or-static-policy-scopes-for-retention) z przechowywaniem platformy Microsoft 365, a zamiast tego używasz [zakresu statycznego](retention.md#adaptive-or-static-policy-scopes-for-retention), rozważ następujące kwestie:
 
-- Zakresy statycznych zasad obejmują nieaktywne skrzynki pocztowe,  jeśli używasz domyślnej konfiguracji Wszyscy adresaci, ale nie są obsługiwani w przypadku określonych dołączeń [lub wykluczeń](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). Jeśli jednak uwzględnisz lub wykluczysz adresata, który ma aktywną skrzynkę pocztową w momencie stosowania zasad, a skrzynka pocztowa zostanie później nieaktywna, ustawienia przechowywania będą nadal stosowane lub wykluczane. W tym scenariuszu [obowiązują określone limity dołączania i wykluczeń](retention-limits.md) .
+- Zakresy zasad statycznych obejmują nieaktywne skrzynki pocztowe w przypadku korzystania z domyślnej konfiguracji **Wszyscy adresaci** , ale nie są obsługiwane w [przypadku określonych wklęsłych lub wykluczeń](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). Jeśli jednak uwzględnisz lub wykluczysz adresata, który ma aktywną skrzynkę pocztową w momencie zastosowania zasad, a skrzynka pocztowa później stanie się nieaktywna, ustawienia przechowywania będą nadal stosowane lub wykluczane. W tym scenariuszu nadal obowiązują [określone limity dołączania i wykluczeń](retention-limits.md) .
     
     > [!NOTE]
-    > Oznacza to również, że Microsoft 365 nowych ustawień przechowywania przy użyciu zakresu statycznego zastosowanego do domyślnego wyboru Wszyscy adresaci  będą automatycznie uwzględniać wszystkie istniejące nieaktywne skrzynki pocztowe.
+    > Oznacza to również, że wszystkie nowe ustawienia przechowywania platformy Microsoft 365 korzystające z zakresu statycznego, który jest stosowany do domyślnego wyboru **Wszystkich adresatów** , będą automatycznie uwzględniać wszystkie istniejące nieaktywne skrzynki pocztowe.
 
-- Jeśli zmienisz domyślną pozycję Wszyscy adresaci tak, aby uwzględniali konkretnych adresatów, ustawienia przechowywania tych zasad nie będą już stosowane do żadnych nieaktywnych skrzynek pocztowych, które stają się teraz uprawnione do automatycznego usuwania.
+- Jeśli zmienisz domyślny wybór **opcji Wszyscy adresaci** w celu uwzględnienia określonych adresatów, ustawienia przechowywania zasad nie będą już stosowane do żadnych nieaktywnych skrzynek pocztowych, które teraz kwalifikują się do automatycznego usunięcia.
 
-- Jeśli chcesz zwolnić zasady przechowywania, które są stosowane do nieaktywnej skrzynki pocztowej, zobacz [Zwalnianie zasad przechowywania](retention.md#releasing-a-policy-for-retention).
+- Jeśli chcesz zwolnić zasady przechowywania stosowane do nieaktywnej skrzynki pocztowej, zobacz [Zwalnianie zasad przechowywania](retention.md#releasing-a-policy-for-retention).
 
 > [!CAUTION]
-> Gdy używasz przechowywania Microsoft 365, aby nieaktywnych skrzynek pocztowych, nie zmieniaj ani nie usuwaj głównej nazwy użytkownika (UPN) skrzynki pocztowej przed usunięciem odpowiedniego konta użytkownika. Ponadto nie zmieniaj podstawowego adresu SMTP (pochodzących z głównej sieci pocztowej) ani nie usuwaj tego adresu e-mail z listy pomocniczych adresów SMTP skojarzonych ze skrzynką pocztową, zanim zdez będzie to nieaktywność skrzynki pocztowej.
+> Jeśli używasz przechowywania usługi Microsoft 365 do nieaktywnej skrzynki pocztowej, nie zmieniaj ani nie usuwaj głównej nazwy użytkownika (UPN) dla skrzynki pocztowej przed usunięciem odpowiedniego konta użytkownika. Ponadto nie zmieniaj podstawowego adresu SMTP (pochodzącego od nazwy UPN) ani nie usuwaj tego adresu e-mail z listy dodatkowych adresów SMTP skojarzonych ze skrzynką pocztową przed nieaktywną skrzynką pocztową.
 > 
-> Jeśli zmienisz upn lub adresy e-mail (które były przypisane do skrzynki pocztowej w momencie stosowania ustawień przechowywania), a następnie usuniesz konto użytkownika w celu jej nieaktywności, nie będzie można usunąć nieaktywnej skrzynki pocztowej, jeśli nie będzie już konieczne jej zachowywanie. Dzieje się tak, ponieważ nie można usunąć nieaktywnej skrzynki pocztowej z zasad przy użyciu upn lub adresu e-mail (w celu zidentyfikowania nieaktywnej skrzynki pocztowej) innej niż ta, która istniała, gdy ustawienia przechowywania zostały początkowo zastosowane do skrzynki pocztowej. Aby uzyskać więcej informacji na temat usuwania nieaktywnych skrzynek pocztowych, zobacz [Usuwanie nieaktywnej skrzynki pocztowej w programie Office 365](delete-an-inactive-mailbox.md).
+> Jeśli zmienisz nazwę UPN lub adresy e-mail (które zostały przypisane do skrzynki pocztowej w momencie zastosowania ustawień przechowywania), a następnie usuniesz konto użytkownika, aby skrzynka pocztowa była nieaktywna, nie będzie można usunąć nieaktywnej skrzynki pocztowej, jeśli nie będzie już konieczne jej zachowanie. Dzieje się tak dlatego, że nie można usunąć nieaktywnej skrzynki pocztowej z zasad przy użyciu nazwy UPN lub adresu e-mail (w celu zidentyfikowania nieaktywnej skrzynki pocztowej), która różni się od tych, które istniały podczas początkowego stosowania ustawień przechowywania do skrzynki pocztowej. Aby uzyskać więcej informacji na temat usuwania nieaktywnych skrzynek pocztowych, zobacz [Usuwanie nieaktywnej skrzynki pocztowej w Office 365](delete-an-inactive-mailbox.md).
 
-## <a name="inactive-mailboxes-and-ediscovery-case-holds"></a>Nieaktywne skrzynki pocztowe i zbierania elektronicznych materiałów dowodowych
+## <a name="inactive-mailboxes-and-ediscovery-case-holds"></a>Nieaktywne skrzynki pocztowe i sprawa zbierania elektronicznych materiałów dowodowych są przechowywane
 
-Jeśli w skrzynce pocztowej zostanie umieszczona w skrzynce pocztowej skojarzona ze sprawą zbierania elektronicznych materiałów dowodowych w programie Centrum zgodności platformy Microsoft 365, a następnie skrzynka pocztowa lub konto użytkownika zostanie usunięte, stanie się ona nieaktywną skrzynką pocztową.[](./get-started-core-ediscovery.md) Nie zalecamy jednak używania funkcji zbierania elektronicznych materiałów dowodowych w celu nieaktywności skrzynki pocztowej. Jest tak dlatego, że sprawy zbierania elektronicznych materiałów dowodowych są przeznaczone dla określonych spraw związanych z problemami prawnie. W pewnym momencie sprawa sądowa prawdopodobnie zakończy się, a blokady skojarzone z tą sprawą zostaną usunięte, a sprawa zbierania elektronicznych materiałów dowodowych zostanie zamknięta. W rzeczywistości jeśli z sprawę zbierania elektronicznych materiałów dowodowych zostanie skojarzona nieaktywna skrzynka pocztowa umieszczona w zbierania elektronicznych materiałów dowodowych, wówczas sprawa zbierania elektronicznych materiałów dowodowych zostanie zamknięta (lub usunięta), nieaktywna skrzynka pocztowa zostanie trwale usunięta. Ponadto nie można utworzyć opartego na czasie zbierania elektronicznych materiałów dowodowych. Oznacza to, że zawartość nieaktywnej skrzynki pocztowej jest zachowywana w nieskończoność lub do momentu usunięcia zawieszonego konta i usunięcia nieaktywnej skrzynki pocztowej. W związku z tym zalecamy przechowywanie Microsoft 365 nieaktywnych skrzynek pocztowych.
+Jeśli blokada skojarzona z [przypadkiem zbierania elektronicznych](./get-started-core-ediscovery.md) materiałów dowodowych w portal zgodności Microsoft Purview zostanie umieszczona w skrzynce pocztowej, a następnie skrzynka pocztowa lub konto użytkownika zostaną usunięte, skrzynka pocztowa stanie się nieaktywną skrzynką pocztową. Nie zalecamy jednak używania blokad zbierania elektronicznych materiałów dowodowych w celu nieaktywności skrzynki pocztowej. Dzieje się tak dlatego, że sprawy zbierania elektronicznych materiałów dowodowych są przeznaczone dla konkretnych, ograniczonych czasowo spraw związanych z problemem prawnym. W pewnym momencie sprawa prawna prawdopodobnie zakończy się, a blokady związane ze sprawą zostaną usunięte, a sprawa zbierania elektronicznych materiałów dowodowych zostanie zamknięta. W rzeczywistości, jeśli blokada umieszczona w nieaktywnej skrzynce pocztowej jest skojarzona ze sprawą zbierania elektronicznych materiałów dowodowych, a następnie blokada zostanie zwolniona lub sprawa zbierania elektronicznych materiałów dowodowych zostanie zamknięta (lub usunięta), nieaktywna skrzynka pocztowa zostanie trwale usunięta. Ponadto nie można utworzyć blokady zbierania elektronicznych materiałów dowodowych na podstawie czasu. Oznacza to, że zawartość w nieaktywnej skrzynce pocztowej jest przechowywana na zawsze lub do momentu usunięcia blokady i usunięcia nieaktywnej skrzynki pocztowej. W związku z tym zalecamy używanie przechowywania platformy Microsoft 365 dla nieaktywnych skrzynek pocztowych.
 
-Aby uzyskać więcej informacji na temat różnic między przechowywaniem zbierania elektronicznych materiałów dowodowych Microsoft 365 przechowywania, zobacz Kiedy używać zasad przechowywania i etykiet przechowywania lub zbierania [elektronicznych materiałów dowodowych](retention.md#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
+Aby uzyskać więcej informacji na temat różnic między blokadami zbierania elektronicznych materiałów dowodowych a przechowywaniem w usłudze Microsoft 365, zobacz [Kiedy używać zasad przechowywania i etykiet przechowywania lub blokad zbierania elektronicznych materiałów dowodowych](retention.md#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
 
-## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>Nieaktywne skrzynki pocztowe i automatyczne rozwijanie archiwów
+## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>Nieaktywne skrzynki pocztowe i automatycznie rozwijające się archiwa
 
-Nie można odzyskać ani przywrócić nieaktywnej skrzynki pocztowej skonfigurowanej przy użyciu archiwum rozszerzające się automatycznie. W sytuacjach, w których konieczne jest odzyskanie danych z nieaktywnej skrzynki pocztowej z archiwum rozwijanej automatycznie, zalecamy wyeksportowanie danych ze skrzynki pocztowej przy użyciu narzędzia do przeszukiwania zawartości, a następnie zaimportowanie ich do innej skrzynki pocztowej. Aby uzyskać instrukcje krok po kroku dotyczące wyszukiwania nieaktywnej skrzynki pocztowej i eksportowania wyników wyszukiwania, zobacz:
+Nie można odzyskać ani przywrócić nieaktywnej skrzynki pocztowej skonfigurowanej przy użyciu automatycznie rozwijającego się archiwum. W sytuacjach, w których konieczne jest odzyskanie danych z nieaktywnej skrzynki pocztowej z automatycznie rozszerzającym się archiwum, zalecamy wyeksportowanie danych ze skrzynki pocztowej przy użyciu narzędzia do wyszukiwania zawartości, a następnie zaimportowanie ich do innej skrzynki pocztowej. Aby uzyskać instrukcje krok po kroku dotyczące przeszukiwania nieaktywnej skrzynki pocztowej i eksportowania wyników wyszukiwania, zobacz:
 
-- [Przeszukiwanie zawartości](content-search.md)
+- [Wyszukiwanie zawartości](content-search.md)
 
 - [Eksportowanie wyników wyszukiwania zawartości](export-search-results.md)
 
-## <a name="inactive-mailboxes-and-exchange-mrm-retention-policies"></a>Nieaktywne skrzynki pocztowe i Exchange przechowywania MRM
+## <a name="inactive-mailboxes-and-exchange-mrm-retention-policies"></a>Nieaktywne skrzynki pocztowe i zasady przechowywania programu Exchange MRM
 
-Stosowanie zasad Exchange przechowywania (funkcji Zarządzanie rekordami wiadomości lub MRM w programie Exchange Online) nie powoduje utworzenia nieaktywnej skrzynki pocztowej po usunięciu konta użytkownika.
+Zastosowanie zasad przechowywania programu Exchange (funkcja Zarządzanie rekordami obsługi komunikatów lub MRM w Exchange Online) nie powoduje utworzenia nieaktywnej skrzynki pocztowej po usunięciu konta użytkownika.
 
-Jeśli jednak te zasady przechowywania MRM zostały zastosowane do skrzynki pocztowej przed jej nieaktywnym działaniem, wszelkie zasady usuwania (tagi przechowywania MRM  skonfigurowane przy użyciu akcji Usuń) będą nadal przetwarzane w nieaktywnej skrzynce pocztowej. Oznacza to, że elementy otagowane przy użyciu zasad usuwania mrm zostaną przeniesione do [folderu](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) Elementy do odzyskania po wygaśnięciu okresu przechowywania. Te elementy są czyszowane z nieaktywnej skrzynki pocztowej po wygaśnięciu czasu trwania blokowania. Jeśli nie określono czasu trwania zawieszania dla nieaktywnej skrzynki pocztowej, elementy w folderze Odzyskiwanie elementów będą zachowywane przez czas nieograniczony.
+Jeśli jednak te zasady przechowywania mrm zostały zastosowane do skrzynki pocztowej przed jej nieaktywnym działaniem, wszelkie zasady usuwania (tagi przechowywania mrm skonfigurowane za pomocą akcji **Usuń** ) będą nadal przetwarzane w nieaktywnej skrzynce pocztowej. Oznacza to, że elementy oznaczone zasadami usuwania mrm zostaną przeniesione do [folderu Elementy możliwe do odzyskania](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) po upływie okresu przechowywania. Te elementy są usuwane z nieaktywnej skrzynki pocztowej po wygaśnięciu czasu przechowywania. Jeśli czas przechowywania nie zostanie określony dla nieaktywnej skrzynki pocztowej, elementy w folderze Odzyskiwanie elementów zostaną zachowane przez czas nieokreślony.
 
-Natomiast wszelkie zasady archiwizacji (tagi przechowywania MRM skonfigurowane za pomocą akcji **MoveToArchive** ) zawarte w zasadach przechowywania MRM przypisanych do nieaktywnej skrzynki pocztowej są ignorowane. Oznacza to, że elementy w nieaktywnej skrzynce pocztowej otagowane przy użyciu zasad archiwizacji pozostają w podstawowej skrzynce pocztowej po wygaśnięciu okresu przechowywania. Nie są one przenoszone do archiwaowej skrzynki pocztowej ani do folderu Elementy do odzyskania w archiwaowej skrzynce pocztowej. Będą one przechowywane przez czas nieograniczony.
+Z drugiej strony wszystkie zasady archiwum (tagi przechowywania mrm skonfigurowane za pomocą akcji **MoveToArchive** ), które są uwzględnione w zasadach przechowywania mrm przypisanych do nieaktywnej skrzynki pocztowej, są ignorowane. Oznacza to, że elementy w nieaktywnej skrzynce pocztowej oznaczone zasadami archiwum pozostają w podstawowej skrzynce pocztowej po upływie okresu przechowywania. Nie są one przenoszone do skrzynki pocztowej archiwum ani do folderu Elementy możliwe do odzyskania w skrzynce pocztowej archiwum. Zostaną one zachowane na czas nieokreślony.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby nieaktywnych skrzynek pocztowych i zarządzać nimi, na przykład odzyskiwaniem, przywracaniem i usuwaniem, zobacz Tworzenie nieaktywnych skrzynek [pocztowych i zarządzanie nimi](create-and-manage-inactive-mailboxes.md).
+Aby sprawić, by skrzynka pocztowa była nieaktywna i zarządzać nią, na przykład odzyskiwaniem, przywracaniem i usuwaniem, zobacz [Tworzenie nieaktywnych skrzynek pocztowych i zarządzanie nimi](create-and-manage-inactive-mailboxes.md).

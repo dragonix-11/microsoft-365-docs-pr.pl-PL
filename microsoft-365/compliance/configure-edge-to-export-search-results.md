@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z narzędzia eksportu zbierania elektronicznych materiałów dowodowych w Microsoft Edge
+title: Korzystanie z narzędzia do eksportowania zbierania elektronicznych materiałów dowodowych w przeglądarce Microsoft Edge
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -12,23 +12,21 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Musisz włączyć obsługę ClickOnce, aby używać najnowszej wersji Microsoft Edge do pobierania wyników wyszukiwania z usługi Content Search i eDiscovery w centrum zabezpieczeń i zgodności.
-ms.openlocfilehash: 13556b08a0eaec5ed11bdaf09014a3988cd56829
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Musisz włączyć obsługę technologii ClickOnce, aby używać najnowszej wersji przeglądarki Microsoft Edge do pobierania wyników wyszukiwania z usługi Content Search i eDiscovery w centrum zabezpieczeń i zgodności.
+ms.openlocfilehash: f93ab1da1b76d435cc1ce684aa459b4c131dfff8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092442"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630394"
 ---
-# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Korzystanie z narzędzia eksportu zbierania elektronicznych materiałów dowodowych w Microsoft Edge
+# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Korzystanie z narzędzia do eksportowania zbierania elektronicznych materiałów dowodowych w przeglądarce Microsoft Edge
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+W wyniku ostatnich zmian w najnowszej wersji przeglądarki Microsoft Edge obsługa technologii ClickOnce nie jest już domyślnie włączona. Aby kontynuować korzystanie z narzędzia do eksportowania zbierania elektronicznych materiałów dowodowych do pobierania wyników wyszukiwania zawartości lub zbierania elektronicznych materiałów dowodowych, musisz użyć programu [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) lub włączyć obsługę technologii ClickOnce w najnowszej wersji przeglądarki Microsoft Edge.
 
-W wyniku ostatnich zmian w najnowszej wersji Microsoft Edge obsługa ClickOnce nie jest już domyślnie włączona. Aby kontynuować korzystanie z narzędzia eksportu zbierania elektronicznych materiałów dowodowych do pobierania wyników wyszukiwania zawartości lub zbierania elektronicznych materiałów dowodowych, należy użyć programu [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) lub włączyć obsługę ClickOnce w najnowszej wersji Microsoft Edge.
+## <a name="enable-clickonce-support-in-microsoft-edge"></a>Włączanie obsługi technologii ClickOnce w przeglądarce Microsoft Edge
 
-## <a name="enable-clickonce-support-in-microsoft-edge"></a>Włączanie obsługi ClickOnce w Microsoft Edge
-
-1. W Microsoft Edge przejdź do **edge://flags/#edge-click-once**.
+1. W przeglądarce Microsoft Edge przejdź do **edge://flags/#edge-click-once**.
 
 2. Jeśli istniejąca wartość jest ustawiona na **wartość Domyślna** lub **Wyłączona** na liście rozwijanej, zmień ją na **Włączone**.
 
@@ -38,7 +36,7 @@ W wyniku ostatnich zmian w najnowszej wersji Microsoft Edge obsługa ClickOnce n
 
    ![Kliknij przycisk Uruchom ponownie.](../media/ClickOnceimage2.png)
 
-**Uwaga:** Organizacje mogą używać zasady grupy, aby wyłączyć obsługę ClickOnce. Aby sprawdzić, czy istnieją zasady organizacyjne dotyczące ClickOnce pomocy technicznej, przejdź do **edge://policy**. Poniższy zrzut ekranu pokazuje, że ClickOnce jest włączona w całej organizacji. Jeśli ta wartość zasad jest ustawiona na **wartość false**, należy skontaktować się z administratorem w organizacji.
+**Uwaga:** Organizacje mogą używać zasady grupy, aby wyłączyć obsługę technologii ClickOnce. Aby sprawdzić, czy istnieją zasady organizacyjne dotyczące obsługi technologii ClickOnce, przejdź do **edge://policy**. Poniższy zrzut ekranu pokazuje, że clickonce jest włączone w całej organizacji. Jeśli ta wartość zasad jest ustawiona na **wartość false**, należy skontaktować się z administratorem w organizacji.
 
 ![Lista zasad organizacyjnych usługi Edge.](../media/ClickOnceimage3.png)
 
@@ -62,4 +60,4 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 
 - [Eksportowanie wyników wyszukiwania zawartości](export-search-results.md)
 
-- [Jak włączyć flagi eksperymentu w Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
+- [Jak włączyć flagi eksperymentu w przeglądarce Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)

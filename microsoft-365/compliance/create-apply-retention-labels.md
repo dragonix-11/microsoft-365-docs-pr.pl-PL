@@ -18,25 +18,23 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrukcje publikowania etykiet przechowywania, dzięki czemu można je zastosować w aplikacjach, aby zachować to, czego potrzebujesz, i usunąć to, czego nie potrzebujesz.
-ms.openlocfilehash: b96d5f3df440db58aff63bffca11523f7c09d8ee
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 54e2a7f5f9776438ad36d51d43b38ed379cb35d0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128926"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630350"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Ten scenariusz jest obsługiwany dla wszystkich konfiguracji etykiet przechowywania, w tym [rekordów regulacyjnych](records-management.md#records).
 
 Poniższe informacje ułatwiają [publikowanie etykiet przechowywania](retention.md), a następnie stosowanie ich do dokumentów i wiadomości e-mail.
 
-Etykiety przechowywania pomagają zachować potrzebne elementy i usuwać elementy na poziomie elementu (dokument lub wiadomość e-mail). Są one również używane do deklarowania elementu jako rekordu w ramach rozwiązania [do zarządzania rekordami](records-management.md) dla danych Microsoft 365.
+Etykiety przechowywania pomagają zachować potrzebne elementy i usuwać elementy na poziomie elementu (dokument lub wiadomość e-mail). Są one również używane do deklarowania elementu jako rekordu w ramach rozwiązania [do zarządzania rekordami](records-management.md) dla danych platformy Microsoft 365.
 
 Udostępnianie etykiet przechowywania osobom w organizacji w celu klasyfikowania zawartości jest procesem dwuetapowym: 
 
@@ -76,7 +74,7 @@ Przed utworzeniem zasad etykiet przechowywania zdecyduj, czy będą **to zasady 
 
 5. W zależności od wybranego zakresu:
     
-    - Jeśli wybrano pozycję **Adaptacyjne**: na stronie **Wybieranie zakresów i lokalizacji zasad adaptacyjnych** wybierz pozycję **Dodaj zakresy** i wybierz co najmniej jeden utworzony zakres adaptacyjny. Następnie wybierz co najmniej jedną lokalizację. Lokalizacje, które można wybrać, zależą od [dodanych typów zakresów](retention-settings.md#configuration-information-for-adaptive-scopes) . Jeśli na przykład dodano tylko typ zakresu **Użytkownika**, będzie można wybrać **Exchange wiadomości e-mail**, ale nie **SharePoint witryn**. 
+    - Jeśli wybrano pozycję **Adaptacyjne**: na stronie **Wybieranie zakresów i lokalizacji zasad adaptacyjnych** wybierz pozycję **Dodaj zakresy** i wybierz co najmniej jeden utworzony zakres adaptacyjny. Następnie wybierz co najmniej jedną lokalizację. Lokalizacje, które można wybrać, zależą od [dodanych typów zakresów](retention-settings.md#configuration-information-for-adaptive-scopes) . Jeśli na przykład dodano tylko typ zakresu **Użytkownika**, będzie można wybrać pozycję **Poczta e-mail programu Exchange** , ale nie **witryny programu SharePoint**. 
     
     - Jeśli **wybrano pozycję Statyczne**: na stronie **Wybieranie lokalizacji** włącz lub wyłącz dowolną lokalizację. Dla każdej lokalizacji można pozostawić ją domyślną, aby [zastosować zasady do całej lokalizacji](retention-settings.md#a-policy-that-applies-to-entire-locations) lub [określić opcje dołączania i wykluczania](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
     
@@ -86,35 +84,35 @@ Aby edytować istniejące zasady etykiet przechowywania (typ zasad to **Publikuj
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Gdy etykiety przechowywania staną się dostępne do zastosowania
 
-Jeśli publikujesz etykiety przechowywania w SharePoint lub OneDrive, te etykiety są zwykle wyświetlane, aby użytkownicy wybierali je w ciągu jednego dnia. Jednak poczekaj do siedmiu dni. 
+Jeśli publikujesz etykiety przechowywania w programie SharePoint lub OneDrive, etykiety te są zwykle wyświetlane, aby użytkownicy wybierali je w ciągu jednego dnia. Jednak poczekaj do siedmiu dni. 
 
-Jeśli publikujesz etykiety przechowywania w Exchange, wyświetlanie etykiet przechowywania dla użytkowników może potrwać do siedmiu dni. Podobnie jak w przypadku wszystkich ustawień przechowywania dla Exchange, skrzynka pocztowa musi zawierać co najmniej 10 MB danych.
+Jeśli publikujesz etykiety przechowywania w programie Exchange, wyświetlenie tych etykiet przechowywania dla użytkowników może potrwać do siedmiu dni. Podobnie jak w przypadku wszystkich ustawień przechowywania dla programu Exchange, skrzynka pocztowa musi zawierać co najmniej 10 MB danych.
 
 ![Diagram przedstawiający, kiedy opublikowane etykiety wchodzą w życie.](../media/retention-labels-published-timings.png)
 
 Jeśli etykiety nie są wyświetlane po siedmiu dniach, sprawdź **stan** zasad etykiety, wybierając je na stronie **Zasady etykiet** w portal zgodności Microsoft Purview. Jeśli zobaczysz **(błąd)** uwzględniony w stanie i w szczegółach lokalizacji zobaczysz komunikat, że wdrożenie zasad trwa dłużej niż oczekiwano lub spróbuj ponownie wdrożyć zasady, spróbuj uruchomić polecenie [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) lub [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) , aby ponowić próbę dystrybucji zasad:
 
-1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+1. [Połącz się z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 2. Uruchom jedno z następujących poleceń:
     
-    - W przypadku lokalizacji zasad **Teams wiadomości kanału prywatnego** **Yammer komunikaty użytkowników** i **Yammer komunikaty społeczności**:
+    - W przypadku lokalizacji zasad **komunikaty kanału prywatnego usługi Teams**, **komunikaty użytkowników usługi Yammer** i **komunikaty społeczności usługi Yammer**:
     
         ```PowerShell
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - W przypadku wszystkich innych lokalizacji zasad, takich jak **Exchange poczty e-mail**, **witryn SharePoint**, **wiadomości kanałów Teams** itp.:
+    - W przypadku wszystkich innych lokalizacji zasad, takich jak **poczta e-mail programu Exchange**, **witryny programu SharePoint**, **wiadomości kanału usługi Teams** itp.:
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
 
-### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Jak sprawdzić stan etykiet przechowywania opublikowanych w Exchange
+### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Jak sprawdzić stan etykiet przechowywania opublikowanych w programie Exchange
 
 W Exchange Online etykiety przechowywania są udostępniane użytkownikom końcowym przez proces uruchamiany co siedem dni. Za pomocą programu PowerShell można zobaczyć, kiedy ten proces został ostatnio uruchomiony i w związku z tym określić, kiedy zostanie uruchomiony ponownie.
   
-1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połącz się z usługą Exchange Online w programie PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Uruchom te polecenia.
     

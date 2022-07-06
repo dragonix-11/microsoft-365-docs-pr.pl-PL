@@ -15,18 +15,16 @@ ms.collection:
 - SPO_Content
 - m365initiative-compliance
 description: Zidentyfikuj polecenia cmdlet programu PowerShell do przechowywania, które obsługują konfigurację na dużą skalę, automatyzację lub mogą być potrzebne w przypadku zaawansowanych scenariuszy konfiguracji.
-ms.openlocfilehash: 5e31fb7b92dbc1dc83af8f7047041a7d0b4b23b2
-ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
+ms.openlocfilehash: 23dda0c7e5cdc2ce52c2dfca8e5ab575d5653b99
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66612156"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625990"
 ---
 # <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Polecenia cmdlet programu PowerShell dla zasad przechowywania i etykiet przechowywania
 
 >*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Poniższe sekcje służą do identyfikowania głównych poleceń cmdlet programu PowerShell, które są dostępne dla zasad przechowywania i etykiet przechowywania, które mogą być potrzebne do konfiguracji na dużą skalę, zautomatyzowanych skryptów lub zaawansowanych scenariuszy konfiguracji. Aby uzyskać pełną listę poleceń cmdlet, zobacz [listę policy-and-compliance-retention](/powershell/module/exchange#policy-and-compliance-retention) z dokumentacji programu PowerShell.
 

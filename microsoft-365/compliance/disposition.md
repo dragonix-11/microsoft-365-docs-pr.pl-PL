@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorowanie usuwania zawartości i zarządzanie nią w przypadku używania przeglądu dyspozycji lub elementów oznaczonych jako rekordy są automatycznie usuwane zgodnie z skonfigurowanymi ustawieniami.
-ms.openlocfilehash: 34ac1a9d3b62cd0806318582f7baef76947d7670
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: d72cc68bb093c3b49c7f79847916c5cbc5fe5a2d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463269"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630108"
 ---
 # <a name="disposition-of-content"></a>Dyspozycja zawartości
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Użyj strony **Dyspozycja** z **zarządzania rekordami** w portal zgodności Microsoft Purview, aby zarządzać przeglądami dyspozycji i wyświetlać metadane [rekordów](records-management.md#records), które zostały automatycznie usunięte po zakończeniu okresu przechowywania.
 
@@ -51,9 +49,9 @@ Dodatkowo:
 
 - Aby wyświetlić zawartość elementów podczas procesu dyspozycji, dodaj użytkowników do grupy ról **Podgląd zawartości Eksploratora zawartości** . Jeśli użytkownicy nie mają uprawnień z tej grupy ról, nadal mogą wybrać akcję przeglądu dyspozycji, aby ukończyć przegląd dyspozycji, ale muszą to zrobić bez możliwości wyświetlania zawartości elementu w okienku mini-podglądu w portal zgodności Microsoft Purview.
 
-- Domyślnie każda osoba uzyskująca dostęp do strony **Dyspozycja** widzi tylko elementy, które są przypisane do przeglądu. Aby administrator zarządzania rekordami wyświetlał wszystkie elementy przypisane do wszystkich użytkowników oraz wszystkie etykiety przechowywania skonfigurowane do przeglądu dyspozycji: Przejdź do **pozycji Ustawienia** >  zarządzania **rekordamiWybierz**, a następnie włącz grupę zabezpieczeń z włączoną obsługą poczty zawierającą konta administratorów.
+- Domyślnie każda osoba uzyskująca dostęp do strony **Dyspozycja** widzi tylko elementy, które są przypisane do przeglądu. Aby administrator zarządzania rekordami widział wszystkie elementy przypisane do wszystkich użytkowników oraz wszystkie etykiety przechowywania skonfigurowane do przeglądu dyspozycji: Przejdź do **pozycji Ustawienia** >  zarządzania rekordami **Dyspozycja**, aby wybrać, a następnie włączyć grupę zabezpieczeń z włączoną obsługą poczty zawierającą konta administratorów.
     
-    Microsoft 365 grupy i grupy zabezpieczeń, które nie obsługują poczty, nie obsługują tej funkcji i nie są wyświetlane na liście do wybrania. Jeśli chcesz utworzyć nową grupę zabezpieczeń z obsługą poczty, użyj linku do <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>, aby utworzyć nową grupę. 
+    Grupy i grupy zabezpieczeń platformy Microsoft 365, które nie obsługują poczty, nie obsługują tej funkcji i nie są wyświetlane na liście do wybrania. Jeśli chcesz utworzyć nową grupę zabezpieczeń z obsługą poczty, użyj linku do <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>, aby utworzyć nową grupę. 
     
     > [!IMPORTANT]
     > Po włączeniu grupy nie można jej zmienić w portal zgodności Microsoft Purview. Zobacz następną sekcję, aby dowiedzieć się, jak włączyć inną grupę przy użyciu programu PowerShell.
@@ -88,7 +86,7 @@ Gdy przegląd dyspozycji zostanie wyzwolony po zakończeniu okresu przechowywani
 
 Możesz dostosować wiadomość e-mail z powiadomieniem otrzymywaną przez recenzentów, w tym instrukcje w różnych językach. W przypadku obsługi wielu języków należy samodzielnie określić tłumaczenia, a ten tekst niestandardowy jest wyświetlany wszystkim recenzentom niezależnie od ich ustawień regionalnych.
 
-Użytkownicy otrzymują początkowe powiadomienie e-mail na etykietę na końcu okresu przechowywania elementu z przypomnieniem na etykietę raz w tygodniu o wszystkich przypisanych im przeglądach dyspozycji. Mogą kliknąć link w wiadomościach e-mail z powiadomieniami i przypomnieniami, aby przejść bezpośrednio do strony **Zarządzanie rekordamiDisposition** >  w portal zgodności Microsoft Purview, aby przejrzeć zawartość i podjąć akcję. Recenzenci mogą również przejść do tej strony **Dyspozycja** w portal zgodności Microsoft Purview. Następnie:
+Użytkownicy otrzymują początkowe powiadomienie e-mail na etykietę na końcu okresu przechowywania elementu z przypomnieniem na etykietę raz w tygodniu o wszystkich przypisanych im przeglądach dyspozycji. Mogą kliknąć link w wiadomościach e-mail z powiadomieniami i przypomnieniami, aby przejść bezpośrednio do strony **Dyspozycja zarządzania rekordami** >  w portal zgodności Microsoft Purview, aby przejrzeć zawartość i podjąć akcję. Recenzenci mogą również przejść do tej strony **Dyspozycja** w portal zgodności Microsoft Purview. Następnie:
 
 - Recenzenci widzą tylko przeglądy dyspozycji, które są do nich przypisane, podczas gdy administratorzy, którzy są dodawani do wybranej grupy zabezpieczeń dla menedżera rekordów, widzą wszystkie przeglądy dyspozycji.
 
@@ -98,7 +96,7 @@ Użytkownicy otrzymują początkowe powiadomienie e-mail na etykietę na końcu 
    - **Szczegóły** dotyczące wyświetlania indeksowanych właściwości, miejsca jego lokalizacji, tego, kto go utworzył, kiedy, kto ostatnio je zmodyfikował i kiedy.
    - **Historia** przedstawiająca historię wszelkich dotychczasowych akcji przeglądu dyspozycji z komentarzami recenzentów, jeśli są dostępne.
 
-Przegląd dyspozycji może obejmować zawartość w Exchange skrzynkach pocztowych, witrynach SharePoint i kontach OneDrive. Zawartość oczekująca na przegląd dyspozycji w tych lokalizacjach jest trwale usuwana dopiero po tym, jak recenzent na ostatnim etapie dyspozycji zdecyduje się trwale usunąć zawartość.
+Przegląd dyspozycji może obejmować zawartość w skrzynkach pocztowych programu Exchange, witrynach programu SharePoint i kontach usługi OneDrive. Zawartość oczekująca na przegląd dyspozycji w tych lokalizacjach jest trwale usuwana dopiero po tym, jak recenzent na ostatnim etapie dyspozycji zdecyduje się trwale usunąć zawartość.
 
 > [!NOTE]
 > Skrzynka pocztowa musi mieć co najmniej 10 MB danych, aby obsługiwać przeglądy dyspozycji.
@@ -132,7 +130,7 @@ Po wybraniu opcji **Rozpocznij przegląd dyspozycji** wybierz pozycję **+ Utwó
 
 Wybierz **pozycję + Dodaj etap** i nadaj etapowi nazwę na potrzeby identyfikacji. Następnie określ recenzentów dla tego etapu.
 
-W przypadku recenzentów określ maksymalnie 10 pojedynczych użytkowników lub grupy zabezpieczeń z obsługą poczty e-mail. grupy Microsoft 365 ([wcześniej Office 365 grupy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) nie są obsługiwane dla tej opcji.
+W przypadku recenzentów określ maksymalnie 10 pojedynczych użytkowników lub grupy zabezpieczeń z obsługą poczty e-mail. Grupy platformy Microsoft 365 ([dawniej Office 365 grupy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) nie są obsługiwane w przypadku tej opcji.
 
 Jeśli potrzebujesz więcej niż jednej osoby do przejrzenia elementu na końcu okresu przechowywania, wybierz pozycję **Dodaj kolejny etap** i powtórz proces konfiguracji dla wymaganej liczby etapów z maksymalnie pięcioma etapami. 
 
@@ -189,7 +187,7 @@ Jak widać w pokazanym przykładzie, obsługiwane akcje to:
   
 - **Zatwierdź usuwanie**:
     - Gdy ta akcja zostanie wybrana do tymczasowego etapu przeglądu dyspozycji (skonfigurowano wiele etapów): element przechodzi do następnego etapu dyspozycji.
-    - Gdy ta akcja jest wybrana do końcowego etapu przeglądu dyspozycji lub jest tylko jeden etap dyspozycji: element jest oznaczony jako kwalifikujący się do trwałego usunięcia, które zadanie czasomierza następnie działa w ciągu 7 dni. Dokładny czas trwałego usunięcia elementu zależy od obciążenia. Aby uzyskać więcej informacji, zobacz [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) and [How retention works for Exchange (Jak działa przechowywanie dla SharePoint i OneDrive) oraz How retention works for Exchange (Jak działa przechowywanie dla Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)).
+    - Gdy ta akcja jest wybrana do końcowego etapu przeglądu dyspozycji lub jest tylko jeden etap dyspozycji: element jest oznaczony jako kwalifikujący się do trwałego usunięcia, które zadanie czasomierza następnie działa w ciągu 7 dni. Dokładny czas trwałego usunięcia elementu zależy od obciążenia. Aby uzyskać więcej informacji, zobacz [Jak działa przechowywanie dla programów SharePoint i OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) oraz [Jak działa przechowywanie w programie Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
 
 - **Etykieta ponownie**:
     - Po wybraniu tej akcji element kończy proces przeglądu dyspozycji dla oryginalnej etykiety. Element podlega następnie ustawieniu przechowywania nowo wybranej etykiety przechowywania.
@@ -228,4 +226,4 @@ Po wybraniu etykiety przechowywania na stronie **Dyspozycja** karta **Oczekując
 
 W przypadku oczekujących dyspozycji zakres czasu jest oparty na dacie wygaśnięcia. W przypadku usuniętych elementów zakres czasu jest oparty na dacie usunięcia.
   
-Możesz wyeksportować informacje o elementach w obu widokach jako plik .csv, który można następnie sortować i zarządzać przy użyciu Excel.
+Możesz wyeksportować informacje o elementach w obu widokach jako plik .csv, który można następnie sortować i zarządzać przy użyciu programu Excel.

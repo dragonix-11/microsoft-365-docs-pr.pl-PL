@@ -1,5 +1,5 @@
 ---
-title: Włączanie szyfrowania i odszyfrowywania wiadomości
+title: Włączanie szyfrowania i odszyfrowywania komunikatów
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,19 +13,19 @@ ms.localizationpriority: medium
 ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
 ms.collection:
 - M365-security-compliance
-description: Szyfrowanie wiadomości usługi Office 365 umożliwia użytkownikom poczty e-mail wysyłanie zaszyfrowanych wiadomości do osób spoza firmy. Jako administrator możesz włączyć funkcję Szyfrowanie wiadomości usługi Office 365, tworząc reguły przepływu poczty e-mail (nazywane także regułami transportu), które ustawiają warunki szyfrowania.
-ms.openlocfilehash: 086ddd06d90990da7b9260fcdac10acb7b22de3e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Szyfrowanie wiadomości w Microsoft Purview umożliwia użytkownikom poczty e-mail wysyłanie zaszyfrowanych wiadomości do osób spoza organizacji. Jako administrator możesz włączyć Szyfrowanie wiadomości w Microsoft Purview, tworząc reguły przepływu poczty (nazywane również regułami transportu), które ustawiają warunki szyfrowania.
+ms.openlocfilehash: 1440d2c1bcc60b68b3aae02cdba5ca7dec8737db
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984388"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627310"
 ---
-# <a name="enable-message-encryption-and-decryption"></a>Włączanie szyfrowania i odszyfrowywania wiadomości
+# <a name="enable-message-encryption-and-decryption"></a>Włączanie szyfrowania i odszyfrowywania komunikatów
 
-Szyfrowanie wiadomości usługi Office 365 umożliwia użytkownikom poczty e-mail wysyłanie zaszyfrowanych wiadomości do osób spoza firmy. Jako administrator możesz włączyć funkcję Szyfrowanie wiadomości usługi Office 365, tworząc reguły przepływu poczty e-mail (nazywane także regułami transportu), które ustawiają warunki szyfrowania. Gdy jeden z twoich użytkowników wyśle wiadomość, która jest taka, która jest taka jak reguła, wiadomość jest szyfrowana.
+Szyfrowanie wiadomości w Microsoft Purview umożliwia użytkownikom poczty e-mail wysyłanie zaszyfrowanych wiadomości do osób spoza organizacji. Jako administrator możesz włączyć Szyfrowanie wiadomości w Microsoft Purview, tworząc reguły przepływu poczty (nazywane również regułami transportu), które ustawiają warunki szyfrowania. Gdy jeden z użytkowników wyśle komunikat zgodny z warunkami reguły, komunikat zostanie zaszyfrowany.
   
-Aby dowiedzieć się, jak tworzyć reguły przepływu poczty dla szyfrowania, zobacz [Definiowanie reguł do szyfrowania lub odszyfrowywania wiadomości e-mail](./define-mail-flow-rules-to-encrypt-email.md).
+Aby dowiedzieć się, jak tworzyć reguły przepływu poczty na potrzeby szyfrowania, zobacz [Definiowanie reguł szyfrowania lub odszyfrowywania wiadomości e-mail](./define-mail-flow-rules-to-encrypt-email.md).
   
 ## <a name="see-also"></a>Zobacz też
 

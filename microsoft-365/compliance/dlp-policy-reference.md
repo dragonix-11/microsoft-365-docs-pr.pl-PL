@@ -19,18 +19,16 @@ ms.collection:
 recommendations: false
 description: Informacje o składniku zasad DLP i konfiguracji
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: b62289cfe4d18b4c6e2e79bb9a308f8b88978451
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0d49cb1287453cb815bf1fe1ea01b6312c26d879
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015797"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626584"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Dokumentacja zasad ochrony przed utratą danych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview mają wiele składników do skonfigurowania. Aby utworzyć skuteczne zasady, musisz zrozumieć, jaki jest cel poszczególnych składników i jak jego konfiguracja zmienia zachowanie zasad. Ten artykuł zawiera szczegółową anatomię zasad DLP.
+zasady Ochrona przed utratą danych w Microsoft Purview (DLP) mają wiele składników do skonfigurowania. Aby utworzyć skuteczne zasady, musisz zrozumieć, jaki jest cel poszczególnych składników i jak jego konfiguracja zmienia zachowanie zasad. Ten artykuł zawiera szczegółową anatomię zasad DLP.
 
 ## <a name="policy-templates"></a>Szablony zasad 
 
@@ -105,34 +103,34 @@ Zasady DLP mogą znajdować i chronić elementy zawierające poufne informacje w
 
 |Lokalizacja  |Uwzględnij/wyklucz zakres  |Stan danych  |Dodatkowe wymagania wstępne |
 |---------|---------|---------|---------|
-|Exchange wiadomości e-mail online |grupa dystrybucyjna | dane w ruchu| Nie |
-|SharePoint witryn online   |Witryn       | dane magazynowane </br> dane w użyciu | Nie|
+|Poczta e-mail programu Exchange online |grupa dystrybucyjna | dane w ruchu| Nie |
+|Witryny online programu SharePoint   |Witryn       | dane magazynowane </br> dane w użyciu | Nie|
 |konta OneDrive dla Firm| konto lub grupa dystrybucyjna |dane magazynowane </br> dane w użyciu|Nie|
-|Teams wiadomości czatu i kanału     | konto lub grupa dystrybucyjna |dane w ruchu </br> dane w użyciu |  Nie       |
+|Wiadomości na czacie i kanale w usłudze Teams     | konto lub grupa dystrybucyjna |dane w ruchu </br> dane w użyciu |  Nie       |
 |Microsoft Defender for Cloud Apps   | wystąpienie aplikacji w chmurze       |dane magazynowane         | - [Używanie zasad ochrony przed utratą danych dla aplikacji w chmurze innych niż Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Urządzeń  |użytkownik lub grupa         |dane magazynowane </br>  dane w użyciu </br>  dane w ruchu         |- [Dowiedz się więcej o zapobieganiu utracie danych punktu końcowego](endpoint-dlp-learn-about.md) </br>- [Wprowadzenie z zapobieganiem utracie danych punktu końcowego](endpoint-dlp-getting-started.md) </br>- [Konfigurowanie ustawień serwera proxy urządzenia i połączenia internetowego dla Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|Repozytoria lokalne (udziały plików i SharePoint)    |Repozytorium         | dane magazynowane         | - [Dowiedz się więcej o lokalnym skanerze zapobiegania utracie danych](dlp-on-premises-scanner-learn.md) </br> - [Wprowadzenie z lokalnym skanerem zapobiegania utracie danych](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|Urządzeń  |użytkownik lub grupa         |dane magazynowane </br>  dane w użyciu </br>  dane w ruchu         |- [Dowiedz się więcej o zapobieganiu utracie danych punktu końcowego](endpoint-dlp-learn-about.md) </br>- [Wprowadzenie do zapobiegania utracie danych punktu końcowego](endpoint-dlp-getting-started.md) </br>- [Konfigurowanie ustawień serwera proxy urządzenia i połączenia internetowego dla Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|Repozytoria lokalne (udziały plików i program SharePoint)    |Repozytorium         | dane magazynowane         | - [Dowiedz się więcej o lokalnym skanerze zapobiegania utracie danych](dlp-on-premises-scanner-learn.md) </br> - [Wprowadzenie do lokalnego skanera zapobiegania utracie danych](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 |PowerBI| Obszarów roboczych | dane w użyciu | Nie|
 
-Jeśli zdecydujesz się uwzględnić określone grupy dystrybucyjne w Exchange, zasady DLP będą ograniczone tylko do członków tej grupy. Podobnie wykluczenie grupy dystrybucyjnej spowoduje wykluczenie wszystkich członków tej grupy dystrybucyjnej z oceny zasad. Możesz wybrać zakres zasad do elementów członkowskich list dystrybucyjnych, dynamicznych grup dystrybucyjnych i grup zabezpieczeń. Zasady DLP mogą zawierać nie więcej niż 50 takich wkluczeń i wykluczeń.
+Jeśli zdecydujesz się uwzględnić określone grupy dystrybucyjne w programie Exchange, zasady DLP będą ograniczone tylko do członków tej grupy. Podobnie wykluczenie grupy dystrybucyjnej spowoduje wykluczenie wszystkich członków tej grupy dystrybucyjnej z oceny zasad. Możesz wybrać zakres zasad do elementów członkowskich list dystrybucyjnych, dynamicznych grup dystrybucyjnych i grup zabezpieczeń. Zasady DLP mogą zawierać nie więcej niż 50 takich wkluczeń i wykluczeń.
 
-Jeśli zdecydujesz się dołączyć lub wykluczyć określone witryny SharePoint lub konta OneDrive, zasady DLP mogą zawierać nie więcej niż 100 takich dołączań i wykluczeń. Chociaż ten limit istnieje, możesz przekroczyć ten limit, stosując zasady dla całej organizacji lub zasady, które mają zastosowanie do całych lokalizacji.
+Jeśli zdecydujesz się dołączyć lub wykluczyć określone witryny programu SharePoint lub konta usługi OneDrive, zasady DLP mogą zawierać nie więcej niż 100 takich wkluczeń i wykluczeń. Chociaż ten limit istnieje, możesz przekroczyć ten limit, stosując zasady dla całej organizacji lub zasady, które mają zastosowanie do całych lokalizacji.
 
-Jeśli zdecydujesz się dołączyć lub wykluczyć określone OneDrive kont lub grup, zasady DLP mogą zawierać nie więcej niż 100 kont użytkowników lub 50 grup jako dołączenie lub wykluczenie.
+Jeśli zdecydujesz się dołączyć lub wykluczyć określone konta lub grupy usługi OneDrive, zasady DLP mogą zawierać nie więcej niż 100 kont użytkowników lub 50 grup jako dołączenie lub wykluczenie.
 
 ### <a name="location-support-for-how-content-can-be-defined"></a>Obsługa lokalizacji dla sposobu definiowania zawartości
 
 Zasady DLP wykrywają poufne elementy, dopasowując je do typu informacji poufnych (SIT), etykiety poufności lub etykiety przechowywania. Każda lokalizacja obsługuje różne metody definiowania poufnej zawartości. Po połączeniu lokalizacji w zasadach sposób definiowania zawartości może zmienić się od sposobu jej definiowania przez pojedynczą lokalizację. 
 
 > [!IMPORTANT]
-> Po wybraniu wielu lokalizacji dla zasad wartość "nie" dla kategorii definicji zawartości ma pierwszeństwo przed wartością "tak". Na przykład po wybraniu tylko SharePoint witryn zasady będą obsługiwać wykrywanie poufnych elementów przez co najmniej jeden element SIT, etykietę poufności lub etykietę przechowywania. Jednak po wybraniu SharePoint witryn ***i*** Teams lokalizacji komunikatów czatu i kanału zasady będą obsługiwać tylko wykrywanie poufnych elementów przez usługę SIT.
+> Po wybraniu wielu lokalizacji dla zasad wartość "nie" dla kategorii definicji zawartości ma pierwszeństwo przed wartością "tak". Na przykład po wybraniu tylko witryn programu SharePoint zasady będą obsługiwać wykrywanie poufnych elementów przez co najmniej jeden element SIT, etykietę poufności lub etykietę przechowywania. Jednak po wybraniu witryn programu SharePoint ***oraz*** lokalizacji komunikatów czatu i kanału usługi Teams zasady będą obsługiwać tylko wykrywanie poufnych elementów przez usługę SIT.
 
 |Lokalizacja| Zawartość może być definiowana przez usługę SIT| Zawartość może być zdefiniowana etykietą poufności| Zawartość można zdefiniować za pomocą etykiety przechowywania|
 |---------|---------|---------|---------|
-|Exchange wiadomości e-mail online|Tak| Tak| Nie|
-|SharePoint witryn online| Tak| Tak| Tak|
+|Poczta e-mail programu Exchange online|Tak| Tak| Nie|
+|Witryny online programu SharePoint| Tak| Tak| Tak|
 |konta OneDrive dla Firm| Tak| Tak| Tak|
-|Teams wiadomości czatu i kanału | Tak| Nie| Nie|
+|Komunikaty na czacie i kanale w usłudze Teams | Tak| Nie| Nie|
 |Urządzeń |Tak | Tak|  Nie|
 |Microsoft Defender for Cloud Apps | Tak| Tak| Tak|
 |Repozytoria lokalne| Tak| Tak| Nie|
@@ -182,7 +180,7 @@ Reguły 1, 2 i 4 zostaną ocenione, ale nie zostaną zastosowane. W tym przykła
 
 Reguła umożliwia spełnienie określonego wymagania dotyczącego ochrony, a następnie użycie zasad DLP w celu zgrupowania wspólnych wymagań dotyczących ochrony, takich jak wszystkie reguły wymagane do zapewnienia zgodności z określonym rozporządzeniem.
   
-Na przykład mogą istnieć zasady DLP, które ułatwiają wykrywanie obecności informacji podlegających ustawie HIPAA (Health Insurance Portability and Accountability Act). Te zasady DLP mogą pomóc w ochronie danych HIPAA (co) we wszystkich witrynach SharePoint Online i wszystkich witrynach OneDrive dla Firm (gdzie), znajdując dowolny dokument zawierający te poufne informacje udostępniane osobom spoza organizacji (warunki), a następnie blokując dostęp do dokumentu i wysyłając powiadomienie (akcje). Te wymagania są przechowywane jako pojedyncze reguły i grupowane razem jako zasady DLP, aby uprościć zarządzanie i raportowanie.
+Na przykład mogą istnieć zasady DLP, które ułatwiają wykrywanie obecności informacji podlegających ustawie HIPAA (Health Insurance Portability and Accountability Act). Te zasady DLP mogą pomóc w ochronie danych HIPAA (co) we wszystkich witrynach usługi SharePoint Online i we wszystkich witrynach OneDrive dla Firm (gdzie), znajdując dowolny dokument zawierający te poufne informacje udostępniane osobom spoza organizacji (warunki), a następnie blokując dostęp do dokumentu i wysyłając powiadomienie (akcje). Te wymagania są przechowywane jako pojedyncze reguły i grupowane razem jako zasady DLP, aby uprościć zarządzanie i raportowanie.
   
 ![Diagram pokazuje, że zasady DLP zawierają lokalizacje i reguły](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
@@ -210,7 +208,7 @@ Wszystkie inne reguły są oceniane, ale ich akcje nie są wymuszane. Dzienniki 
 Warunki są inkluzywne i są miejscem definiowania, czego chcesz szukać reguły i kontekstu, w którym te elementy są używane. Informują regułę &#8212;, gdy znajdziesz element, który wygląda *następująco* i jest używany w *ten* sposób, &#8212; jest to dopasowanie, a pozostałe akcje w zasadach powinny zostać wykonane. Warunki umożliwiają przypisanie różnych akcji do różnych poziomów ryzyka. Na przykład zawartość poufna udostępniana wewnętrznie może być mniejsza i wymagać mniejszej liczby akcji niż zawartość poufna udostępniana osobom spoza organizacji.
 
 > [!NOTE]
-> Użytkownicy, którzy mają konta niebędące gośćmi w usłudze Active Directory lub dzierżawie Azure Active Directory organizacji hosta, są uważane za osoby w organizacji. 
+> Użytkownicy, którzy mają konta niebędące gośćmi w dzierżawie usługi Active Directory lub Azure Active Directory organizacji hosta, są uważane za osoby w organizacji. 
 
 #### <a name="content-contains"></a>Zawartość zawiera
 
@@ -233,10 +231,10 @@ SIC mają wstępnie zdefiniowany [**poziom ufności**](https://www.microsoft.com
 
 Dostępne opcje kontekstu zmieniają się w zależności od wybranej lokalizacji. Jeśli wybierzesz wiele lokalizacji, dostępne są tylko wspólne warunki, które mają wspólne lokalizacje.
 
-##### <a name="conditions-exchange-supports"></a>Obsługa warunków Exchange
+##### <a name="conditions-exchange-supports"></a>Warunki obsługiwane przez program Exchange
 
 - Zawartość zawiera
-- Zawartość jest udostępniana z Microsoft 365
+- Zawartość jest udostępniana z platformy Microsoft 365
 - Zawartość jest odbierana z
 - Adres IP nadawcy jest
 - Czy nadawca przesłaniał poradę dotyczącą zasad
@@ -275,10 +273,10 @@ Dostępne opcje kontekstu zmieniają się w zależności od wybranej lokalizacji
 - Typ komunikatu to
 - Ważność komunikatu jest
 
-##### <a name="conditions-sharepoint-supports"></a>Warunki, SharePoint obsługuje
+##### <a name="conditions-sharepoint-supports"></a>Warunki obsługiwane przez program SharePoint
  
 - Zawartość zawiera
-- Zawartość jest udostępniana z Microsoft 365
+- Zawartość jest udostępniana z platformy Microsoft 365
 - Dokument utworzony przez
 - Dokument utworzony przez członka
 - Nazwa dokumentu zawiera wyrazy lub frazy
@@ -287,10 +285,10 @@ Dostępne opcje kontekstu zmieniają się w zależności od wybranej lokalizacji
 - Właściwość dokumentu jest
 - Rozszerzenie pliku jest
 
-##### <a name="conditions-onedrive-accounts-supports"></a>Warunki, OneDrive konta obsługują
+##### <a name="conditions-onedrive-accounts-supports"></a>Warunki obsługi kont usługi OneDrive
 
 - Zawartość zawiera
-- Zawartość jest udostępniana z Microsoft 365
+- Zawartość jest udostępniana z platformy Microsoft 365
 - Dokument utworzony przez
 - Dokument utworzony przez członka
 - Nazwa dokumentu zawiera wyrazy lub frazy
@@ -299,10 +297,10 @@ Dostępne opcje kontekstu zmieniają się w zależności od wybranej lokalizacji
 - Właściwość dokumentu jest
 - Rozszerzenie pliku jest
 
-##### <a name="conditions-teams-chat-and-channel-messages-supports"></a>Warunki Teams wiadomości czatu i kanału obsługują
+##### <a name="conditions-teams-chat-and-channel-messages-supports"></a>Obsługa komunikatów czatu i kanału aplikacji Conditions Teams
 
 - Zawartość zawiera
-- Zawartość jest udostępniana z Microsoft 365
+- Zawartość jest udostępniana z platformy Microsoft 365
 - Nadawca jest 
 - Domena nadawcy jest 
 - Domena adresata jest 
@@ -316,7 +314,7 @@ Dostępne opcje kontekstu zmieniają się w zależności od wybranej lokalizacji
 ##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Obsługa warunków Microsoft Defender for Cloud Apps
 
 - Zawartość zawiera
-- Zawartość jest udostępniana z Microsoft 365
+- Zawartość jest udostępniana z platformy Microsoft 365
 
 ##### <a name="conditions-on-premises-repositories-supports"></a>Repozytoria warunków lokalnych obsługują
 
@@ -368,21 +366,21 @@ wyjątek:
 
 ### <a name="actions"></a>Działania 
 
-Każdy element, który przechodzi przez filtry uwzględniające ***warunki** _ i _*_wyjątki wyłączne_*_ , będzie miał wszystkie _*_akcje_*_ zdefiniowane w regule. Musisz skonfigurować wymagane opcje, aby obsługiwać akcję. Jeśli na przykład wybierzesz opcję Exchange z akcją _ *Ogranicz dostęp lub zaszyfruj zawartość w Microsoft 365 lokalizacjach**, musisz wybrać jedną z następujących opcji:
+Każdy element, który przechodzi przez filtry uwzględniające ***warunki** _ i _*_wyjątki wyłączne_*_ , będzie miał wszystkie _*_akcje_*_ zdefiniowane w regule. Musisz skonfigurować wymagane opcje, aby obsługiwać akcję. Jeśli na przykład wybierzesz pozycję Exchange z akcją _ *Ogranicz dostęp lub zaszyfruj zawartość w lokalizacjach platformy Microsoft 365**, musisz wybrać jedną z następujących opcji:
 
-- Blokowanie użytkownikom dostępu do zawartości udostępnionych SharePoint, OneDrive i Teams
+- Blokowanie użytkownikom dostępu do udostępnionej zawartości programu SharePoint, usługi OneDrive i aplikacji Teams
     - Blokuj wszystkich. Tylko właściciel zawartości, ostatni modyfikator i administrator witryny będą nadal mieć dostęp
     - Blokuj tylko osoby spoza organizacji. Użytkownicy w organizacji będą nadal mieć dostęp.
-- Szyfrowanie wiadomości e-mail (dotyczy tylko zawartości w Exchange)
+- Szyfrowanie wiadomości e-mail (dotyczy tylko zawartości w programie Exchange)
 
 Akcje dostępne w regule zależą od wybranych lokalizacji. Jeśli wybierzesz tylko jedną lokalizację dla zasad, do których mają zostać zastosowane, dostępne akcje zostaną wymienione poniżej.
 
 > [!IMPORTANT]
-> W przypadku SharePoint Online i OneDrive dla Firm lokalizacji dokumenty będą aktywnie blokowane bezpośrednio po wykryciu informacji poufnych, niezależnie od tego, czy dokument jest udostępniony, czy nie, dla wszystkich użytkowników zewnętrznych, podczas gdy użytkownicy wewnętrzni będą nadal mieli dostęp do dokumentu.
+> W przypadku usługi SharePoint Online i OneDrive dla Firm lokalizacji dokumenty będą aktywnie blokowane bezpośrednio po wykryciu informacji poufnych, niezależnie od tego, czy dokument jest udostępniony, czy nie, dla wszystkich użytkowników zewnętrznych, podczas gdy użytkownicy wewnętrzni będą nadal mieli dostęp do dokumentu.
 
-#### <a name="exchange-location-actions"></a>akcje lokalizacji Exchange
+#### <a name="exchange-location-actions"></a>Akcje lokalizacji programu Exchange
 
-- Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacjach
+- Ograniczanie dostępu lub szyfrowanie zawartości w lokalizacjach platformy Microsoft 365
 - Ustawianie nagłówków
 - Usuń nagłówek
 - Przekierowywanie komunikatu do określonych użytkowników
@@ -397,27 +395,27 @@ Akcje dostępne w regule zależą od wybranych lokalizacji. Jeśli wybierzesz ty
 - Modyfikowanie tematu wiadomości e-mail
 - Dodawanie zastrzeżenia HTML
 
-#### <a name="sharepoint-sites-location-actions"></a>akcje lokalizacji lokacji SharePoint
+#### <a name="sharepoint-sites-location-actions"></a>Akcje lokalizacji witryn programu SharePoint
 
-- Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacjach
+- Ograniczanie dostępu lub szyfrowanie zawartości w lokalizacjach platformy Microsoft 365
 
-#### <a name="onedrive-account-location-actions"></a>akcje lokalizacji konta OneDrive
+#### <a name="onedrive-account-location-actions"></a>Akcje lokalizacji konta usługi OneDrive
 
-- Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacjach
+- Ograniczanie dostępu lub szyfrowanie zawartości w lokalizacjach platformy Microsoft 365
 
-#### <a name="teams-chat-and-channel-messages-actions"></a>Teams akcji wiadomości czatu i kanału
+#### <a name="teams-chat-and-channel-messages-actions"></a>Akcje czatu i komunikatów kanału w usłudze Teams
 
-- Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacjach
+- Ograniczanie dostępu lub szyfrowanie zawartości w lokalizacjach platformy Microsoft 365
 
 #### <a name="devices-actions"></a>Akcje urządzeń
 
-- Inspekcja lub ograniczanie działań na urządzeniach Windows
+- Inspekcja lub ograniczanie działań na urządzeniach z systemem Windows
 
 Aby użyć tych ustawień, należy skonfigurować opcje w **ustawieniach DLP** i zasadach, w których mają być używane. Aby uzyskać więcej informacji, zobacz [Ograniczone aplikacje i grupy aplikacji](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) .
 
 Lokalizacja urządzeń udostępnia wiele działań podrzędnych (warunków) i akcji. Aby dowiedzieć się więcej, zobacz [Działania punktu końcowego, które można monitorować i podejmować działania](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
-Po wybraniu opcji **Inspekcja lub ograniczanie działań na urządzeniach Windows** można ograniczyć działania użytkownika według domeny usługi lub przeglądarki oraz określić zakres akcji wykonywanych przez program DLP:
+Po wybraniu opcji **Inspekcja lub ograniczanie działań na urządzeniach z systemem Windows** można ograniczyć działania użytkowników według domeny usługi lub przeglądarki oraz określić zakres akcji wykonywanych przez usługę DLP:
 
 - Wszystkie aplikacje
 - Przez listę aplikacji z ograniczeniami, które definiujesz
@@ -457,7 +455,7 @@ Aby uzyskać więcej informacji, zobacz [Ograniczone aplikacje i grupy aplikacji
 
 #### <a name="microsoft-defender-for-cloud-apps-actions"></a>akcje Microsoft Defender for Cloud Apps
 
-- Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacjach
+- Ograniczanie dostępu lub szyfrowanie zawartości w lokalizacjach platformy Microsoft 365
 - Ograniczanie aplikacji innych firm
 
 #### <a name="on-premises-repositories-actions"></a>Akcje repozytoriów lokalnych
@@ -471,9 +469,9 @@ Aby uzyskać więcej informacji, zobacz [Ograniczone aplikacje i grupy aplikacji
 
 #### <a name="actions-available-when-you-combine-locations"></a>Akcje dostępne podczas łączenia lokalizacji
 
-Jeśli wybierzesz Exchange i dowolną inną pojedynczą lokalizację, do których mają zostać zastosowane zasady,
+Jeśli wybierzesz pozycję Exchange i dowolną inną pojedynczą lokalizację, do których mają zostać zastosowane zasady,
 
-- Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacjach
+- Ograniczanie dostępu lub szyfrowanie zawartości w lokalizacjach platformy Microsoft 365
 
 i
 
@@ -481,9 +479,9 @@ i
 
 akcje będą dostępne.
 
-Jeśli wybierzesz co najmniej dwie lokalizacje inne niż Exchange, do których mają zostać zastosowane zasady,
+Jeśli wybierzesz co najmniej dwie lokalizacje spoza programu Exchange, do których mają zostać zastosowane zasady,
 
-- Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacjach
+- Ograniczanie dostępu lub szyfrowanie zawartości w lokalizacjach platformy Microsoft 365
 
 I
 
@@ -491,15 +489,15 @@ I
 
 akcje będą dostępne.
 
-Jeśli na przykład wybierzesz opcję Exchange i Urządzenia jako lokalizacje, te akcje będą dostępne:
+Jeśli na przykład wybierzesz pozycję Exchange i Urządzenia jako lokalizacje, te akcje będą dostępne:
 
-- Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacjach
-- Inspekcja lub ograniczanie działań na urządzeniach Windows
+- Ograniczanie dostępu lub szyfrowanie zawartości w lokalizacjach platformy Microsoft 365
+- Inspekcja lub ograniczanie działań na urządzeniach z systemem Windows
 
 Jeśli wybierzesz pozycję Urządzenia i Microsoft Defender for Cloud Apps, te akcje będą dostępne:
 
-- Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacjach
-- Inspekcja lub ograniczanie działań na urządzeniach Windows
+- Ograniczanie dostępu lub szyfrowanie zawartości w lokalizacjach platformy Microsoft 365
+- Inspekcja lub ograniczanie działań na urządzeniach z systemem Windows
 - Ograniczanie aplikacji innych firm
 
 To, czy akcja wchodzi w życie, czy nie, zależy od sposobu konfigurowania trybu zasad. Możesz uruchomić zasady w trybie testowym z lub bez wyświetlania wskazówek dotyczących zasad, wybierając **opcję Przetestuj je jako pierwszą** . Zasady należy uruchomić już po godzinie od jej utworzenia, wybierając opcję **Włącz od razu** lub możesz po prostu je zapisać i wrócić do niej później, wybierając opcję **Nie wyłączaj** . 
@@ -521,13 +519,31 @@ for where they are used/expected behavior-->
 
 Gdy użytkownik podejmie próbę wykonania akcji na poufnym elemencie w kontekście spełniającym warunki i wyjątki reguły, możesz poinformować go o tym za pośrednictwem wiadomości e-mail z powiadomieniami użytkownika i w wyskakującym okienku porad dotyczących zasad kontekstowych. Te powiadomienia są przydatne, ponieważ zwiększają świadomość i ułatwiają informowanie użytkowników o zasadach DLP organizacji.
 
-Na przykład zawartość, taka jak skoroszyt Excel w witrynie OneDrive dla Firm, która zawiera dane osobowe i jest udostępniana gościowi.
+Na przykład zawartość, taka jak skoroszyt programu Excel w witrynie OneDrive dla Firm, która zawiera dane osobowe i jest udostępniana gościowi.
 
 ![Pasek komunikatów zawiera poradę dotyczącą zasad w Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
 > [!IMPORTANT]
 > - Wiadomości e-mail z powiadomieniami są wysyłane bez ochrony.
-> - Powiadomienia e-mail są obsługiwane tylko dla usług Microsoft 365.
+> - Powiadomienia e-mail są obsługiwane tylko w przypadku usług Platformy Microsoft 365.
+
+#### <a name="email-notifications-support-by-selected-location"></a>Obsługa powiadomień e-mail według wybranej lokalizacji
+
+|Wybrana lokalizacja  |Obsługiwane powiadomienia e-mail  |
+|---------|---------|
+|Urządzeń     |- Nieobsługiwane         |
+|Exchange + Devices     |— Obsługiwane w programie Exchange </br>— Nieobsługiwane w przypadku urządzeń  |
+|Exchange    |- Obsługiwane        |
+|SharePoint + Urządzenia  |— obsługiwane w programie SharePoint </br>— Nieobsługiwane w przypadku urządzeń         |
+|SharePoint    |- Obsługiwane |
+|Exchange + SharePoint    |— Obsługiwane w programie Exchange </br>— obsługiwane w programie SharePoint  |
+|Urządzenia + SharePoint + Exchange    |— Nieobsługiwane w przypadku urządzeń </br>— obsługiwane w programie SharePoint </br> Obsługiwane dla programu Exchange |
+|Teams    |- Nieobsługiwane |
+|OneDrive dla Firm   |- Obsługiwane         |
+|OneDrive dla Firm + urządzenia     |— Obsługiwane w przypadku OneDrive dla Firm </br>— Nieobsługiwane w przypadku urządzeń         |
+|Power-BI|- Nieobsługiwane|
+|Microsoft Defender for Cloud Apps|- Nieobsługiwane|
+|Repozytoria lokalne|- Nieobsługiwane|
 
 Możesz również dać użytkownikom możliwość [zastąpienia zasad](#user-overrides), aby nie były blokowane, jeśli mają prawidłową potrzebę biznesową lub jeśli zasady wykrywają wynik fałszywie dodatni.
 
@@ -536,8 +552,11 @@ Opcje konfiguracji powiadomień użytkownika i porad dotyczących zasad różni�
 - Exchange
 - SharePoint
 - OneDrive
-- czat Teams i kanał
+- Czat i kanał usługi Teams
 - Defender for Cloud Apps
+
+
+
 
 
 Możesz włączyć/wyłączyć powiadomienia użytkowników dla różnych aplikacji firmy Microsoft. Zobacz [Informacje na temat porad dotyczących zasad ochrony przed utratą danych](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
@@ -548,9 +567,9 @@ Możesz włączyć/wyłączyć powiadomienia użytkowników dla różnych aplika
 
 i dostosuj tekst wiadomości e-mail, temat i tekst porad zasad.
 
-![Opcje konfiguracji porad dotyczących powiadomień użytkowników i zasad, które są dostępne dla Exchange, SharePoint, OneDrive, czatu Teams i kanału oraz aplikacji Defender dla Chmury](../media/dlp-user-notification-non-devices.png)
+![Opcje konfiguracji porad dotyczących powiadomień użytkowników i zasad dostępne dla programów Exchange, SharePoint, OneDrive, Teams Chat i Channel oraz Usługi Defender for Cloud Apps](../media/dlp-user-notification-non-devices.png)
 
-Jeśli wybrano tylko pozycję Urządzenia, zostaną wyświetlone wszystkie te same opcje, które są dostępne dla Exchange, SharePoint, OneDrive, Teams czatu i kanału i aplikacji Defender dla Chmury, a także opcję dostosowania tytułu powiadomień i zawartości wyświetlanej na Windows 10 Urządzenia.
+Jeśli wybrano tylko urządzenia, otrzymasz wszystkie te same opcje, które są dostępne dla programów Exchange, SharePoint, OneDrive, Teams Chat i Channel i Defender for Cloud Apps oraz opcję dostosowania tytułu i zawartości powiadomień, które są wyświetlane na urządzeniu Windows 10.
 
 ![Opcje konfiguracji powiadomień użytkownika i porad dotyczących zasad, które są dostępne dla urządzeń](../media/dlp-user-notification-devices.png)  
 
@@ -572,7 +591,7 @@ Tytuł i treść tekstu można dostosować przy użyciu tych parametrów. Tekst 
 |kopiowanie do udziału sieciowego     |*zapisywanie w udziale sieciowym*         |
 |Drukowania     |*Drukowanie*         |
 |wklejanie ze schowka  |*wklejanie ze schowka*         |
-|kopiowanie za pośrednictwem połączenia Bluetooth   |*przenoszenie za pośrednictwem Bluetooth*         |
+|kopiowanie za pośrednictwem połączenia Bluetooth   |*transferowanie za pośrednictwem połączenia Bluetooth*         |
 |otwieranie za pomocą aplikacji, która nie jest dozwolona     |*otwieranie przy użyciu tej aplikacji*         |
 |kopiowanie do pulpitu zdalnego (RDP)     |*przenoszenie do pulpitu zdalnego*         |
 |przekazywanie do niedozwolonej witryny internetowej     |*przekazywanie do tej witryny*         |
@@ -618,9 +637,22 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 > The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 -->
 
+#### <a name="blocking-and-notifications-in-sharepoint-online-and-onedrive-for-business"></a>Blokowanie i powiadomienia w usłudze SharePoint Online i OneDrive dla Firm
+
+W tej tabeli przedstawiono blokowanie DLP i zachowanie powiadomień dla zasad, które są ograniczone do usługi SharePoint Online i OneDrive dla Firm.
+
+|Warunki  |Konfiguracja akcji |Konfiguracja powiadomień użytkownika|Konfiguracja raportów o zdarzeniach |Blokowanie i zachowanie powiadomień|
+|---------|---------|---------|---------|---------|
+|- **Zawartość jest udostępniana z platformy Microsoft 365** </br>- **z osobami spoza mojej organizacji**     |Nie skonfigurowano żadnych akcji         |- **Powiadomienia użytkowników** ustawione **na Włączone** </br>- **Powiadom użytkowników w usłudze Office 365 z wybraną poradą dotyczącą zasad** </br>- **Powiadom użytkownika, który wysłał, udostępnił lub ostatnio zmodyfikował zawartość,** zostanie wybrany         |- **Wysyłanie alertu do administratorów w przypadku ustawienia dopasowania reguły** na **wartość Włączone** </br>- **Wysyłanie alertu za każdym razem, gdy działanie pasuje do reguły ustawionej** **na Włączone** </br>- **Użyj raportów zdarzeń poczty e-mail, aby powiadomić Cię o ustawieniu dopasowania zasad** **na wartość Włączone**         |— Powiadomienia będą wysyłane tylko wtedy, gdy plik zostanie udostępniony użytkownikowi zewnętrznemu, a użytkownik zewnętrzny uzyska dostęp do pliku.  |
+|- **Zawartość jest udostępniana z platformy Microsoft 365** </br>- **tylko z osobami w mojej organizacji**        | Nie skonfigurowano żadnych akcji         |-  **Powiadomienia użytkowników** ustawione **na Włączone**   </br>- **Powiadom użytkowników w usłudze Office 365 z wybraną poradą dotyczącą zasad**  </br>- **Powiadom użytkownika, który wysłał, udostępnił lub ostatnio zmodyfikował zawartość,** zostanie wybrany    |  - **Wysyłanie alertu do administratorów w przypadku ustawienia dopasowania reguły** na **wartość Włączone** </br>- **Wysyłanie alertu za każdym razem, gdy działanie jest zgodne z regułą** </br>- **Użyj raportów zdarzeń poczty e-mail, aby powiadomić Cię o ustawieniu dopasowania zasad** **na wartość Włączone**       |— Powiadomienia są wysyłane po przekazaniu pliku |
+|- **Zawartość jest udostępniana z platformy Microsoft 365** </br>- **z osobami spoza mojej organizacji**    | - **Ograniczanie dostępu lub szyfrowanie zawartości w lokalizacjach platformy Microsoft 365 jest zaznaczone** </br>- **Blokuj użytkownikom możliwość odbierania wiadomości e-mail lub uzyskiwania dostępu do udostępnionych plików programu SharePoint, OndeDrive i Teams** </br>- **Wybrano opcję Blokuj tylko osoby spoza organizacji**          |- **Powiadomienia użytkowników** ustawione **na Włączone** </br>- **Powiadom użytkowników w usłudze Office 365 z wybraną poradą dotyczącą zasad** </br>- **Powiadom użytkownika, który wysłał, udostępnił lub ostatnio zmodyfikował zawartość,** zostanie wybrany  |  - **Wysyłanie alertu do administratorów w przypadku ustawienia dopasowania reguły** na **wartość Włączone** </br>- **Wysyłanie alertu za każdym razem, gdy działanie jest zgodne z regułą** </br>- **Użyj raportów zdarzeń poczty e-mail, aby powiadomić Cię o ustawieniu dopasowania zasad** **na wartość Włączone**             | — Dostęp do pliku poufnego jest blokowany zaraz po jego przekazaniu </br>— Powiadomienia wysyłane, gdy zawartość jest udostępniana z platformy Microsoft 365 osobom spoza mojej organizacji         |
+|- **Zawartość jest udostępniana z platformy Microsoft 365** </br>- **z osobami spoza mojej organizacji** |  - **Ograniczanie dostępu lub szyfrowanie zawartości w lokalizacjach platformy Microsoft 365 jest zaznaczone** </br>- **Blokuj użytkownikom możliwość odbierania wiadomości e-mail lub uzyskiwania dostępu do udostępnionych plików programu SharePoint, OndeDrive i Teams** </br>- **Wybierz pozycję Blokuj wszystkich**        | - **Powiadomienia użytkowników** ustawione **na Włączone** </br>- **Powiadom użytkowników w usłudze Office 365 z wybraną poradą dotyczącą zasad** </br>- **Powiadom użytkownika, który wysłał, udostępnił lub ostatnio zmodyfikował zawartość,** zostanie wybrany         | - **Wysyłanie alertu do administratorów w przypadku ustawienia dopasowania reguły** na **wartość Włączone** </br>- **Wysyłanie alertu za każdym razem, gdy działanie jest zgodne z regułą** </br>- **Użyj raportów zdarzeń poczty e-mail, aby powiadomić Cię o ustawieniu dopasowania zasad** **na wartość Włączone**        |Powiadomienia są wysyłane, gdy plik jest udostępniany użytkownikowi zewnętrznego, a użytkownik zewnętrzny uzyskuje dostęp do tego pliku.         |
+|- **Zawartość jest udostępniana z platformy Microsoft 365** </br>- **z osobami spoza mojej organizacji**     |- **Ograniczanie dostępu lub szyfrowanie zawartości w lokalizacjach platformy Microsoft 365 jest zaznaczone** </br>- **Blokuj tylko osoby, które otrzymały dostęp do zawartości za pośrednictwem opcji "Każda osoba z linkiem"** jest zaznaczona.         |  - **Powiadomienia użytkowników** ustawione **na Włączone** </br>- **Powiadom użytkowników w usłudze Office 365 z wybraną poradą dotyczącą zasad**.  </br>- **Powiadom użytkownika, który wysłał, udostępnił lub ostatnio zmodyfikował zawartość,** zostanie wybrany     |- **Wysyłanie alertu do administratorów w przypadku ustawienia dopasowania reguły** na **wartość Włączone**   </br>- **Wysyłanie alertu za każdym razem, gdy działanie jest zgodne z regułą** </br>- **Użyj raportów zdarzeń poczty e-mail, aby powiadomić Cię o ustawieniu dopasowania zasad** **na wartość Włączone**       |Powiadomienia są wysyłane natychmiast po przekazaniu pliku         |
+
+
 ### <a name="user-overrides"></a>Przesłonięcia użytkownika
 
-Celem **zastąpienia użytkownika** jest zapewnienie użytkownikom sposobu obejścia, z uzasadnieniem, blokowania akcji zasad DLP dla poufnych elementów w Exchange, SharePoint, OneDrive lub Teams, aby mogli kontynuować swoją pracę. Przesłonięcia użytkowników są włączane tylko wtedy, gdy włączono **powiadamianie użytkowników w usługach Office 365 z poradą dotyczącą zasad**, dlatego przesłonięcia użytkownika idą w parze z poradami dotyczącymi powiadomień i zasad. 
+Celem **zastąpienia użytkownika** jest zapewnienie użytkownikom sposobu obejścia, z uzasadnieniem, akcji blokowania zasad DLP dla poufnych elementów w programach Exchange, SharePoint, OneDrive lub Teams, aby mogli kontynuować swoją pracę. Przesłonięcia użytkowników są włączane tylko wtedy, gdy włączono **powiadamianie użytkowników w usługach Office 365 z poradą dotyczącą zasad**, dlatego przesłonięcia użytkownika idą w parze z poradami dotyczącymi powiadomień i zasad. 
 
 ![Opcje zastępowania przez użytkownika zasad DLP](../media/dlp-user-overrides.png)
 
@@ -657,7 +689,7 @@ Alerty mogą być wysyłane za każdym razem, gdy działanie jest zgodne z regu�
 
 ![wysyłanie alertu za każdym razem, gdy reguła dopasowuje lub agreguje w czasie mniejszą liczbę raportów](../media/dlp-incident-reports-aggregation.png)
 
-DLP skanuje pocztę e-mail inaczej niż SharePoint online lub OneDrive dla Firm elementów. W usłudze SharePoint Online i OneDrive dla Firm usługa DLP skanuje istniejące elementy, a także nowe i generuje raport o zdarzeniu za każdym razem, gdy zostanie znalezione dopasowanie. W Exchange Online usługa DLP skanuje nowe wiadomości e-mail i generuje raport tylko wtedy, gdy istnieje dopasowanie zasad. DLP ***nie*** skanuje ani nie pasuje do wcześniej istniejących elementów poczty e-mail przechowywanych w skrzynce pocztowej lub archiwum.
+Usługa DLP skanuje pocztę e-mail inaczej niż usługa SharePoint Online lub OneDrive dla Firm elementów. W usłudze SharePoint Online i OneDrive dla Firm usługa DLP skanuje istniejące elementy, a także nowe i generuje raport o zdarzeniach za każdym razem, gdy zostanie znalezione dopasowanie. W Exchange Online usługa DLP skanuje nowe wiadomości e-mail i generuje raport tylko wtedy, gdy istnieje dopasowanie zasad. DLP ***nie*** skanuje ani nie pasuje do wcześniej istniejących elementów poczty e-mail przechowywanych w skrzynce pocztowej lub archiwum.
 
 ### <a name="additional-options"></a>Opcje dodatkowe
 

@@ -13,24 +13,22 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 74194d4bca71350c180799e071936b75044a6b4e
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 631df77a6f10c15dafcb78e58a715a029d32bb73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663695"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627552"
 ---
 # <a name="double-key-encryption"></a>Podwójne szyfrowanie kluczy
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-> *Dotyczy: Microsoft Purview Szyfrowanie podwójnym kluczem, [Microsoft Purview](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/)*
+> *Dotyczy: podwójne szyfrowanie kluczy w usłudze Microsoft Purview, [Microsoft Purview](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/)*
 >
-> *Instrukcje dotyczące: [klient ujednoliconego etykietowania usługi Azure Information Protection dla Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *Instrukcje dla: [Klient ujednoliconego etykietowania platformy Azure Information Protection dla systemu Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 > *Opis usługi dla: [Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Szyfrowanie podwójnym kluczem (DKE) używa dwóch kluczy razem w celu uzyskania dostępu do chronionej zawartości. Firma Microsoft przechowuje jeden klucz w Microsoft Azure, a drugi klucz. Możesz zachować pełną kontrolę nad jednym z kluczy przy użyciu usługi Double Key Encryption. Ochronę stosuje się przy użyciu klienta ujednoliconego etykietowania usługi Azure Information Protection do wysoce wrażliwej zawartości.
+Szyfrowanie podwójnym kluczem (DKE) używa dwóch kluczy razem w celu uzyskania dostępu do chronionej zawartości. Firma Microsoft przechowuje jeden klucz na platformie Microsoft Azure, a Ty jesteś w posiadaniu drugiego klucza. Możesz zachować pełną kontrolę nad jednym z kluczy przy użyciu usługi Double Key Encryption. Ochronę stosuje się przy użyciu klienta ujednoliconego etykietowania usługi Azure Information Protection do wysoce wrażliwej zawartości.
 
 Usługa Double Key Encryption obsługuje wdrożenia w chmurze i lokalne. Te wdrożenia pomagają zapewnić, że zaszyfrowane dane pozostaną nieprzezroczysty wszędzie tam, gdzie przechowujesz chronione dane.
 
@@ -44,7 +42,7 @@ Szyfrowanie podwójnym kluczem jest przeznaczone dla najbardziej poufnych danych
 - Microsoft Delve
 - Zbierania elektronicznych materiałów dowodowych
 - Wyszukiwanie i indeksowanie zawartości
-- Office Web Apps w tym funkcji współtworzenia
+- Web Apps pakietu Office, w tym funkcje współtworzenia
 
 Wszystkie zewnętrzne aplikacje lub usługi, które nie są zintegrowane z usługą DKE za pośrednictwem zestawu SDK Microsoft Information Protection (MIP), nie będą w stanie wykonywać akcji na zaszyfrowanych danych.
 
@@ -60,21 +58,21 @@ Jeśli Twoje organizacje mają dowolne z następujących wymagań, możesz uży�
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>Wymagania systemowe i licencyjne dotyczące usługi DKE
 
-**Szyfrowanie podwójnym kluczem** jest dostarczane z Microsoft 365 E5. Jeśli nie masz licencji Microsoft 365 E5, możesz utworzyć konto [próbne](https://aka.ms/M365E5ComplianceTrial). Aby uzyskać więcej informacji na temat tych licencji, zobacz [Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+**Szyfrowanie podwójnym kluczem** jest dostarczane z Microsoft 365 E5. Jeśli nie masz licencji Microsoft 365 E5, możesz utworzyć konto [próbne](https://aka.ms/M365E5ComplianceTrial). Aby uzyskać więcej informacji na temat tych licencji, zobacz [Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure Information Protection**. Usługa DKE współpracuje z etykietami poufności i wymaga usługi Azure Information Protection.
 
 Etykiety poufności DKE są udostępniane użytkownikom końcowym za pośrednictwem przycisku poufności w kliencie ujednoliconego etykietowania usługi AIP w usłudze Office Desktop Apps. Zainstaluj te wymagania wstępne na każdym komputerze klienckim, na którym chcesz chronić chronione dokumenty i korzystać z nich.
 
-**Microsoft Office Aplikacje dla przedsiębiorstw** w wersji 2009 lub nowszej (wersje klasyczne programu Word, PowerPoint i Excel) na Windows.
+**Aplikacje pakietu Microsoft Office dla przedsiębiorstw** w wersji 2009 lub nowszej (wersje klasyczne programów Word, PowerPoint i Excel) w systemie Windows.
 
 **Azure Information Protection Unified Labeling Client** w wersji 2.7.93.0 lub nowszej. Pobierz i zainstaluj klienta Unified Labeling z [centrum pobierania firmy Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
 
 ## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>Obsługiwane środowiska do przechowywania i wyświetlania zawartości chronionej przez funkcję DKE
 
-**Obsługiwane aplikacje**. [Aplikacje Microsoft 365 dla przedsiębiorstw](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) klientów na Windows, w tym programu Word, Excel i PowerPoint.
+**Obsługiwane aplikacje**. [Aplikacje Microsoft 365 dla przedsiębiorstw](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) klientów w systemie Windows, w tym programów Word, Excel i PowerPoint.
 
-**Obsługa zawartości online**. Dokumenty i pliki chronione za pomocą funkcji podwójnego szyfrowania kluczy można przechowywać w trybie online zarówno w usłudze Microsoft SharePoint, jak i w OneDrive dla Firm. Przed przekazaniem do tych lokalizacji należy oznaczyć i chronić dokumenty i pliki przy użyciu usługi DKE przy użyciu obsługiwanych aplikacji. Zaszyfrowaną zawartość można udostępniać pocztą e-mail, ale nie można wyświetlać zaszyfrowanych dokumentów i plików w trybie online. Zamiast tego należy wyświetlić chronioną zawartość przy użyciu obsługiwanych aplikacji klasycznych i klientów na komputerze lokalnym.
+**Obsługa zawartości online**. Dokumenty i pliki chronione za pomocą szyfrowania podwójnym kluczem można przechowywać w trybie online zarówno w programie Microsoft SharePoint, jak i w OneDrive dla Firm. Przed przekazaniem do tych lokalizacji należy oznaczyć i chronić dokumenty i pliki przy użyciu usługi DKE przy użyciu obsługiwanych aplikacji. Zaszyfrowaną zawartość można udostępniać pocztą e-mail, ale nie można wyświetlać zaszyfrowanych dokumentów i plików w trybie online. Zamiast tego należy wyświetlić chronioną zawartość przy użyciu obsługiwanych aplikacji klasycznych i klientów na komputerze lokalnym.
 
 ## <a name="overview-of-deploying-dke"></a>Omówienie wdrażania usługi DKE
 
@@ -84,7 +82,7 @@ Wykonaj te ogólne kroki, aby skonfigurować usługę DKE. Po wykonaniu tych kro
 
 2. Utwórz etykietę z podwójnym szyfrowaniem kluczy. W portal zgodności Microsoft Purview przejdź do obszaru **Ochrona informacji** i utwórz nową etykietę z funkcją podwójnego szyfrowania kluczy. Zobacz [Ograniczanie dostępu do zawartości przy użyciu etykiet poufności w celu zastosowania szyfrowania](./encryption-sensitivity-labels.md).
 
-3. Użyj etykiet podwójnego szyfrowania kluczy. Chroń dane, wybierając etykietę Podwójny klucz szyfrowany na wstążce Czułość w Microsoft Office.
+3. Użyj etykiet podwójnego szyfrowania kluczy. Chroń dane, wybierając etykietę Podwójny klucz szyfrowany na wstążce Poufność w pakiecie Microsoft Office.
 
 Istnieje kilka sposobów wykonania niektórych kroków wdrażania szyfrowania podwójnym kluczem. Ten artykuł zawiera szczegółowe instrukcje umożliwiające mniej doświadczonym administratorom pomyślne wdrożenie usługi. Jeśli dobrze ci się to przydaje, możesz użyć własnych metod.
 
@@ -92,12 +90,11 @@ Istnieje kilka sposobów wykonania niektórych kroków wdrażania szyfrowania po
 
 Ten artykuł i wideo dotyczące wdrażania używają platformy Azure jako miejsca docelowego wdrożenia dla usługi DKE. Jeśli wdrażasz w innej lokalizacji, musisz podać własne wartości.
 
-Obejrzyj [film dotyczący wdrażania podwójnego szyfrowania kluczy](https://youtu.be/vDWfHN_kygg) , aby zapoznać się z szczegółowym omówieniem pojęć w tym artykule. Ukończenie filmu trwa około 18 minut.
 
 Wykonaj te ogólne kroki, aby skonfigurować szyfrowanie podwójnego klucza dla organizacji.
 
 1. [Instalowanie wymagań wstępnych dotyczących oprogramowania dla usługi DKE](#install-software-prerequisites-for-the-dke-service)
-1. [Klonowanie repozytorium GitHub szyfrowania podwójnym kluczem](#clone-the-dke-github-repository)
+1. [Klonowanie repozytorium GitHub z podwójnym szyfrowaniem kluczy](#clone-the-dke-github-repository)
 1. [Modyfikowanie ustawień aplikacji](#modify-application-settings)
 1. [Generowanie kluczy testowych](#generate-test-keys)
 1. [Tworzenie projektu](#build-the-project)
@@ -108,7 +105,7 @@ Wykonaj te ogólne kroki, aby skonfigurować szyfrowanie podwójnego klucza dla 
 1. [Włączanie funkcji DKE w kliencie](#enable-dke-in-your-client)
 1. [Migrowanie chronionych plików z etykiet HYOK do etykiet DKE](#migrate-protected-files-from-hyok-labels-to-dke-labels)
 
-Po zakończeniu możesz szyfrować dokumenty i pliki przy użyciu usługi DKE. Aby uzyskać informacje, zobacz [Stosowanie etykiet poufności do plików i wiadomości e-mail w Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
+Po zakończeniu możesz szyfrować dokumenty i pliki przy użyciu usługi DKE. Aby uzyskać informacje, zobacz [Stosowanie etykiet poufności do plików i wiadomości e-mail w pakiecie Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
 ### <a name="install-software-prerequisites-for-the-dke-service"></a>Instalowanie wymagań wstępnych dotyczących oprogramowania dla usługi DKE
 
@@ -120,7 +117,7 @@ Zainstaluj te wymagania wstępne na komputerze, na którym chcesz zainstalować 
 
 - Język C# dla Visual Studio Code
 
-- NuGet Menedżer pakietów
+- Menedżer pakietów NuGet
 
 **Zasoby usługi Git**. Pobierz i zainstaluj jedną z następujących opcji.
 
@@ -145,14 +142,14 @@ Poniższe instrukcje są przeznaczone dla niedoświadczonych użytkowników git 
     Przykład:
 
    > [!div class="mx-imgBorder"]
-   > ![Sklonuj repozytorium usługi Double Key Encryption z GitHub.](../media/dke-clone.png)
+   > ![Sklonuj repozytorium usługi podwójnego szyfrowania kluczy z usługi GitHub.](../media/dke-clone.png)
 
 3. W Visual Studio Code wybierz pozycję **Wyświetl** \> **paletę poleceń** i wybierz pozycję **Git: Klonuj**. Aby przejść do opcji na liście, rozpocznij wpisywanie `git: clone` , aby filtrować wpisy, a następnie wybierz je z listy rozwijanej. Przykład:
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Code opcję GIT:Clone.](../media/dke-vscode-clone.png)
 
-4. W polu tekstowym wklej adres URL skopiowany z usługi Git i wybierz pozycję **Klonuj z GitHub**.
+4. W polu tekstowym wklej adres URL skopiowany z usługi Git i wybierz pozycję **Klonuj z usługi GitHub**.
 
 5. W wyświetlonym oknie dialogowym **Wybieranie folderu** przejdź do i wybierz lokalizację do przechowywania repozytorium. W wierszu polecenia wybierz pozycję **Otwórz**.
 
@@ -249,10 +246,10 @@ Ustawienia dzierżawy i klucza usługi DKE znajdują się w pliku **appsettings.
 > [!NOTE]
 > Jeśli chcesz włączyć zewnętrzny dostęp B2B do magazynu kluczy, musisz również uwzględnić te dzierżawy zewnętrzne jako część listy prawidłowych wystawców.
 
-Znajdź element `JwtAudience`. Zastąp `<yourhostname>` element nazwą hosta maszyny, na której zostanie uruchomiona usługa DKE. Przykład:
+Znajdź element `JwtAudience`. Zastąp `<yourhostname>` element nazwą hosta maszyny, na której zostanie uruchomiona usługa DKE. Na przykład: "https://dkeservice.contoso.com"
 
   > [!IMPORTANT]
-  > Wartość musi `JwtAudience` *być dokładnie* zgodna z nazwą hosta. Podczas debugowania można użyć polecenia **localhost:5001** . Jednak po zakończeniu debugowania należy zaktualizować tę wartość do nazwy hosta serwera.
+  > Wartość musi `JwtAudience` *być dokładnie* zgodna z nazwą hosta.  
 
 - `TestKeys:Name`. Wprowadź nazwę klucza. Przykład: `TestKey1`
 - `TestKeys:Id`. Utwórz identyfikator GUID i wprowadź go jako `TestKeys:ID` wartość. Na przykład `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. Aby losowo wygenerować identyfikator GUID, możesz użyć witryny takiej jak [generator identyfikatorów GUID online](https://guidgenerator.com/) .
@@ -267,7 +264,7 @@ Po zdefiniowaniu ustawień aplikacji możesz wygenerować publiczne i prywatne k
 
 Aby wygenerować klucze:
 
-1. Z poziomu Windows menu Start uruchom wiersz polecenia OpenSSL.
+1. Z menu Start systemu Windows uruchom wiersz polecenia OpenSSL.
 
 1. Przejdź do folderu, w którym chcesz zapisać klucze testowe. Pliki utworzone przez wykonanie kroków w tym zadaniu są przechowywane w tym samym folderze.
 
@@ -361,17 +358,8 @@ Użyj następujących instrukcji, aby skompilować projekt DKE lokalnie:
 
    Jeśli występują czerwone błędy, sprawdź dane wyjściowe konsoli. Upewnij się, że wszystkie poprzednie kroki zostały wykonane poprawnie, a poprawne wersje kompilacji są obecne.
 
-4. Wybierz pozycję **Uruchom** \> **debugowanie uruchamiania** , aby debugować proces. Jeśli zostanie wyświetlony monit o wybranie środowiska, wybierz pozycję **.NET Core**.
 
-   Debuger platformy .NET Core zwykle uruchamia program .`https://localhost:5001` Aby wyświetlić klucz testowy, przejdź do `https://localhost:5001` strony i dołącz ukośnik (/) i nazwę klucza. Przykład:
-
-   ```https
-   https://localhost:5001/TestKey1
-   ```
-
-   Klucz powinien być wyświetlany w formacie JSON.
-
-Konfiguracja została ukończona. Przed opublikowaniem magazynu kluczy w pliku appsettings.json dla ustawienia JwtAudience upewnij się, że wartość nazwy hosta jest dokładnie zgodna z nazwą hosta App Service. Być może zmieniono go na localhost, aby rozwiązać problem z kompilacją.
+Konfiguracja została ukończona. Przed opublikowaniem magazynu kluczy w pliku appsettings.json dla ustawienia JwtAudience upewnij się, że wartość nazwy hosta jest dokładnie zgodna z nazwą hosta App Service. 
 
 ### <a name="deploy-the-dke-service-and-publish-the-key-store"></a>Wdrażanie usługi DKE i publikowanie magazynu kluczy
 
@@ -385,7 +373,7 @@ W przypadku wdrożeń pilotażowych można wdrażać na platformie Azure i od ra
 
 Aby opublikować magazyn kluczy, utworzysz wystąpienie Azure App Service do hostowania wdrożenia DKE. Następnie opublikujesz wygenerowane klucze na platformie Azure.
 
-1. W przeglądarce zaloguj się do [portalu Microsoft Azure](https://ms.portal.azure.com) i przejdź do obszaru **Dodaj usługi App Services** > .
+1. W przeglądarce zaloguj się do [Azure Portal firmy Microsoft](https://ms.portal.azure.com) i przejdź do pozycji **Dodaj usługi App Services** > .
 
 2. Wybierz subskrypcję i grupę zasobów i zdefiniuj szczegóły wystąpienia.
 
@@ -404,13 +392,13 @@ Aby opublikować magazyn kluczy, utworzysz wystąpienie Azure App Service do hos
 
    - [Publikowanie za pośrednictwem narzędzia ZipDeployUI](#publish-via-zipdeployui)
    - [Publikowanie za pośrednictwem protokołu FTP](#publish-via-ftp)
-   - [Publikowanie za pośrednictwem Visual Studio 2019 r. lub nowszego](/aspnet/core/tutorials/)
+   - [Publikowanie za pośrednictwem programu Visual Studio 2019 lub nowszego](/aspnet/core/tutorials/)
 
 #### <a name="publish-via-zipdeployui"></a>Publikowanie za pośrednictwem narzędzia ZipDeployUI
 
 1. Przejdź do `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`.
 
-   Przykład: `https://dkeservice.scm.azurewebsites.net/ZipDeployUI`
+   Przykład: `https://dkeservice.contoso.scm.azurewebsites.net/ZipDeployUI`
 
 2. W bazie kodu magazynu kluczy przejdź do folderu **customer-key-store\src\customer-key-store** i sprawdź, czy ten folder zawiera plik **customerkeystore.csproj** .
 
@@ -428,7 +416,7 @@ Usługa DKE została wdrożona i możesz przejść do utworzonych kluczy testowy
 
 #### <a name="publish-via-ftp"></a>Publikowanie za pośrednictwem protokołu FTP
 
-1. Połączenie do utworzonego [powyżej](#deploy-the-dke-service-and-publish-the-key-store) App Service.
+1. Połącz się z utworzonym [powyżej](#deploy-the-dke-service-and-publish-the-key-store) App Service.
 
    W przeglądarce przejdź do obszaru: **Azure Portal** >  **App Service** >  **Deployment Center****Manual Deployment** >  FTP **Dashboard (Pulpit nawigacyjny** **FTP** >  w centrum  >  wdrażania ręcznego).
 
@@ -467,7 +455,7 @@ src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
 Przykład:
 
 ```powershell
-key_store_tester.ps1 https://mydkeservice.com/mykey
+key_store_tester.ps1 https://dkeservice.contoso.com/TestKey1
 ```
 
 Upewnij się, że w danych wyjściowych nie są wyświetlane żadne błędy. Gdy wszystko będzie gotowe, [zarejestruj magazyn kluczy](#register-your-key-store).
@@ -480,15 +468,13 @@ Poniższe kroki umożliwiają zarejestrowanie usługi DKE. Rejestrowanie usługi
 
 Aby zarejestrować usługę DKE:
 
-1. W przeglądarce otwórz [portal Microsoft Azure](https://ms.portal.azure.com/) i przejdź do pozycji **Rejestracje aplikacji** **tożsamości** \> **wszystkich usług**\>.
+1. W przeglądarce otwórz [Azure Portal firmy Microsoft](https://ms.portal.azure.com/) i przejdź do pozycji Wszystkie **rejestracje aplikacji** **tożsamości** \> **usług**\>.
 
 2. Wybierz pozycję **Nowa rejestracja** i wprowadź zrozumiałą nazwę.
 
 3. Wybierz typ konta z wyświetlonych opcji.
 
-   Jeśli używasz Microsoft Azure z domeną nie niestandardową, taką jak **onmicrosoft.com**, wybierz pozycję **Konta tylko w tym katalogu organizacyjnym (tylko firma Microsoft — pojedyncza dzierżawa).**
-
-   Przykład:
+    Przykład:
 
    > [!div class="mx-imgBorder"]
    > ![Nowa rejestracja aplikacji.](../media/dke-app-registration.png)
@@ -507,14 +493,13 @@ Aby zarejestrować usługę DKE:
 
    - Wprowadzony adres URL musi być zgodny z nazwą hosta, w której wdrożono usługę DKE.
    - Domena musi być [zweryfikowaną domeną](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains).
-   - Jeśli testujesz lokalnie przy użyciu Visual Studio, użyj polecenia `https://localhost:5001`.
-   - We wszystkich przypadkach schemat musi być **https**.
+    - We wszystkich przypadkach schemat musi być **https**.
 
-   Upewnij się, że nazwa hosta jest dokładnie zgodna z nazwą hosta App Service. Być może zmieniono go, aby `localhost` rozwiązać problem z kompilacją. W **pliku appsettings.json** ta wartość jest nazwą hosta ustawioną dla `JwtAudience`pliku .
+   Upewnij się, że nazwa hosta jest dokładnie zgodna z nazwą hosta App Service.
 
 9. W obszarze **Przyznawanie niejawne** zaznacz pole wyboru **Tokeny identyfikatorów** .
 
-10. Wybierz pozycję **Zapisz** , aby zapisać zmiany.
+10. Wybierz opcję **Zapisz**, aby zapisać zmiany.
 
 11. W okienku po lewej stronie wybierz **pozycję Uwidaczniaj interfejs API** obok pozycji Identyfikator URI aplikacji, wprowadź adres URL App Service, w tym nazwę hosta i domenę, a następnie wybierz pozycję **Ustaw**.
 
@@ -534,7 +519,7 @@ Aby zarejestrować usługę DKE:
 
     W nowej aplikacji klienckiej:
 
-    1. Zdefiniuj identyfikator klienta jako `d3590ed6-52b3-4102-aeff-aad2292ab01c`. Ta wartość jest identyfikatorem klienta Microsoft Office i umożliwia Office uzyskanie tokenu dostępu dla magazynu kluczy.
+    1. Zdefiniuj identyfikator klienta jako `d3590ed6-52b3-4102-aeff-aad2292ab01c`. Ta wartość jest identyfikatorem klienta pakietu Microsoft Office i umożliwia pakietowi Office uzyskanie tokenu dostępu dla magazynu kluczy.
 
     2. W obszarze **Autoryzowane zakresy** wybierz **zakres user_impersonation** .
 
@@ -562,7 +547,7 @@ Wszystkie dodane etykiety DKE zaczną być wyświetlane dla użytkowników w naj
 
 ### <a name="enable-dke-in-your-client"></a>Włączanie funkcji DKE w kliencie
 
-Jeśli jesteś Office niejawnym testerem, usługa DKE jest włączona. W przeciwnym razie włącz funkcję DKE dla klienta, dodając następujące klucze rejestru:
+Jeśli jesteś niejawnym testerem pakietu Office, funkcja DKE jest włączona. W przeciwnym razie włącz funkcję DKE dla klienta, dodając następujące klucze rejestru:
 
 ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]

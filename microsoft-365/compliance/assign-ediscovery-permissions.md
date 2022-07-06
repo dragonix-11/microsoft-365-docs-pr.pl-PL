@@ -1,5 +1,5 @@
 ---
-title: Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview
+title: Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,35 +16,33 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Przypisz uprawnienia wymagane do wykonywania zadań związanych zbierania elektronicznych materiałów dowodowych przy użyciu portalu zgodności usługi Microsoft Purview.
+description: Przypisz uprawnienia wymagane do wykonywania zadań związanych zbierania elektronicznych materiałów dowodowych przy użyciu portal zgodności Microsoft Purview.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: facd219019aa7ad2bd6325da25a2e4da3db660b1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: f8ba8873523372d599e6a40bccb5a1312b2bfe67
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013381"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628908"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w portalu zgodności
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Jeśli chcesz, aby użytkownicy korzystali z dowolnego [narzędzia związanego zbierania elektronicznych materiałów dowodowych](ediscovery.md) w portalu zgodności usługi Microsoft Purview, musisz przypisać im odpowiednie uprawnienia. Najprostszym sposobem na to jest dodanie odpowiedniej grupy ról na stronie **Uprawnienia** w portalu zgodności. W tym temacie opisano uprawnienia wymagane do wykonywania zadań zbierania elektronicznych materiałów dowodowych.
+Jeśli chcesz, aby użytkownicy korzystali z dowolnego narzędzia [związanego zbierania elektronicznych materiałów dowodowych](ediscovery.md) w portal zgodności Microsoft Purview, musisz przypisać im odpowiednie uprawnienia. Najprostszym sposobem na to jest dodanie odpowiedniej grupy ról na stronie **Uprawnienia** w portalu zgodności. W tym temacie opisano uprawnienia wymagane do wykonywania zadań zbierania elektronicznych materiałów dowodowych.
 
 > [!TIP]
 > Możesz wyświetlić własne uprawnienia na stronie przeglądu zbierania elektronicznych materiałów dowodowych (Premium) w portalu zgodności. Aby uprawnienia były wyświetlane, musisz mieć przypisaną co najmniej jedną rolę.
 
 Podstawowa grupa ról związana zbierania elektronicznych materiałów dowodowych w portalu zgodności nosi nazwę **eDiscovery Manager**. W tej grupie ról znajdują się dwie podgrupy.
   
-- **eDiscovery Manager** — menedżer zbierania elektronicznych materiałów dowodowych może używać narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych do wyszukiwania lokalizacji zawartości w organizacji i wykonywania różnych akcji związanych z wyszukiwaniem, takich jak podgląd i eksport wyników wyszukiwania. Członkowie mogą również tworzyć przypadki i zarządzać nimi w usługach Microsoft Purview eDiscovery (Standard) i Microsoft Purview eDiscovery (Premium), dodawać i usuwać członków do sprawy, tworzyć blokady spraw, uruchamiać wyszukiwania skojarzone ze sprawą i uzyskiwać dostęp do danych przypadków. Menedżerowie zbierania elektronicznych materiałów dowodowych mogą uzyskiwać dostęp tylko do utworzonych przypadków i zarządzać nimi. Nie mogą uzyskiwać dostępu do spraw utworzonych przez innych menedżerów zbierania elektronicznych materiałów dowodowych ani zarządzać nimi.
+- **eDiscovery Manager** — menedżer zbierania elektronicznych materiałów dowodowych może używać narzędzi wyszukiwania zbierania elektronicznych materiałów dowodowych do wyszukiwania lokalizacji zawartości w organizacji i wykonywania różnych akcji związanych z wyszukiwaniem, takich jak podgląd i eksport wyników wyszukiwania. Członkowie mogą również tworzyć przypadki i zarządzać nimi w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Standardowa) i Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview  (Premium), dodawanie i usuwanie członków do sprawy, tworzenie blokad przypadków, uruchamianie wyszukiwań skojarzonych ze sprawą i uzyskiwanie dostępu do danych przypadków. Menedżerowie zbierania elektronicznych materiałów dowodowych mogą uzyskiwać dostęp tylko do utworzonych przypadków i zarządzać nimi. Nie mogą uzyskiwać dostępu do spraw utworzonych przez innych menedżerów zbierania elektronicznych materiałów dowodowych ani zarządzać nimi.
   
 - **Administrator zbierania** elektronicznych materiałów dowodowych — administrator zbierania elektronicznych materiałów dowodowych jest członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych i może wykonywać te same zadania związane z wyszukiwaniem zawartości i zarządzaniem sprawami, które może wykonywać menedżer zbierania elektronicznych materiałów dowodowych. Ponadto administrator zbierania elektronicznych materiałów dowodowych może:
   
   - Uzyskaj dostęp do wszystkich przypadków wymienionych na stronach **eDiscovery (Standard)** i **eDiscovery (Premium)** w portalu zgodności.
 
-  - Dane przypadków dostępu zbierania elektronicznych materiałów dowodowych (Premium) w dowolnym przypadku w organizacji.
+  - Uzyskiwanie dostępu do danych przypadków w usłudze eDiscovery (Premium) w dowolnym przypadku w organizacji.
   
   - Zarządzaj dowolnym przypadkiem zbierania elektronicznych materiałów dowodowych po dodaniu się jako członek sprawy.
   
@@ -53,7 +51,7 @@ Podstawowa grupa ról związana zbierania elektronicznych materiałów dowodowyc
   Aby uzyskać więcej informacji, zobacz [Więcej informacji](#more-information) z powodów, dla których mogą być potrzebne administratorzy zbierania elektronicznych materiałów dowodowych w organizacji.
 
 > [!NOTE]
-> Aby analizować dane użytkownika przy użyciu eDiscovery (Premium), użytkownik (opiekun danych) musi mieć przypisaną licencję Office 365 E5 lub Microsoft 365 E5. Alternatywnie użytkownicy z licencją Office 365 E1 lub licencją Office 365 lub Microsoft 365 E3 mogą mieć przypisaną licencję dodatku Zgodność platformy Microsoft 365 E5 lub Microsoft 365 zbierania elektronicznych materiałów dowodowych i inspekcji. Administratorzy, urzędnicy ds. zgodności lub pracownicy prawni, którzy są przypisani do spraw jako członkowie i używają eDiscovery (Premium) do zbierania, wyświetlania i analizowania danych, nie potrzebują licencji E5. Aby uzyskać więcej informacji na temat licencjonowania zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Subskrypcje i licencjonowanie w usłudze eDiscovery (Premium)](overview-ediscovery-20.md#subscriptions-and-licensing).
+> Aby analizować dane użytkownika przy użyciu eDiscovery (Premium), użytkownik (opiekun danych) musi mieć przypisaną licencję Office 365 E5 lub Microsoft 365 E5. Alternatywnie użytkownicy z licencją Office 365 E1 lub licencją Office 365 lub Microsoft 365 E3 mogą mieć przypisaną licencję dodatku Zgodność platformy Microsoft 365 E5 lub Microsoft 365 eDiscovery and Audit. Administratorzy, urzędnicy ds. zgodności lub pracownicy prawni, którzy są przypisani do spraw jako członkowie i używają eDiscovery (Premium) do zbierania, wyświetlania i analizowania danych, nie potrzebują licencji E5. Aby uzyskać więcej informacji na temat licencjonowania zbierania elektronicznych materiałów dowodowych (Premium), zobacz [Subskrypcje i licencjonowanie w usłudze eDiscovery (Premium)](overview-ediscovery-20.md#subscriptions-and-licensing).
   
 ## <a name="before-you-assign-permissions"></a>Przed przypisaniem uprawnień
 
@@ -111,39 +109,39 @@ Więcej informacji można znaleźć w następujących artykułach:
 
 - [Zacznij od zbierania elektronicznych materiałów dowodowych (wersja standardowa)](get-started-core-ediscovery.md)
 
-- [Wprowadzenie zbierania elektronicznych materiałów dowodowych (Premium)](get-started-with-advanced-ediscovery.md)
+- [Wprowadzenie do zbierania elektronicznych materiałów dowodowych (Premium)](get-started-with-advanced-ediscovery.md)
 
 ### <a name="communication"></a>Komunikacja
 
 Ta rola umożliwia użytkownikom zarządzanie całą komunikacją z opiekunami zidentyfikowanymi w przypadku zbierania elektronicznych materiałów dowodowych (Premium). Obejmuje to tworzenie powiadomień o blokadzie, przypomnienia o blokadzie i eskalacje do zarządzania. Użytkownik może również śledzić potwierdzenie blokady powiadomień i zarządzać dostępem do portalu opiekuna, który jest używany przez każdego opiekuna do śledzenia komunikacji w przypadkach, w których zostały zidentyfikowane jako opiekun.
 
-Aby uzyskać więcej informacji, zobacz [Praca z komunikacją w usłudze eDiscovery (Premium)](managing-custodian-communications.md).
+Aby uzyskać więcej informacji, zobacz [Work with communications in eDiscovery (Premium) (Praca z komunikacją w usłudze eDiscovery (Premium)](managing-custodian-communications.md)).
 
 ### <a name="compliance-search"></a>Wyszukiwanie zgodności
 
-Ta rola umożliwia użytkownikom uruchamianie narzędzia do wyszukiwania zawartości w portalu zgodności w celu wyszukiwania skrzynek pocztowych i folderów publicznych, witryn SharePoint Online, witryn OneDrive dla Firm, konwersacji Skype dla firm, grup Microsoft 365 i Microsoft Teams oraz Yammer grup. Ta rola umożliwia użytkownikowi uzyskanie oszacowania wyników wyszukiwania i utworzenie raportów eksportu, ale inne role są potrzebne do zainicjowania akcji wyszukiwania zawartości, takich jak podgląd, eksportowanie lub usuwanie wyników wyszukiwania.
+Ta rola umożliwia użytkownikom uruchamianie narzędzia do wyszukiwania zawartości w portalu zgodności w celu wyszukiwania skrzynek pocztowych i folderów publicznych, witryn usługi SharePoint Online, witryn OneDrive dla Firm, konwersacji Skype dla firm, grup platformy Microsoft 365, aplikacji Microsoft Teams i grup usługi Yammer. Ta rola umożliwia użytkownikowi uzyskanie oszacowania wyników wyszukiwania i utworzenie raportów eksportu, ale inne role są potrzebne do zainicjowania akcji wyszukiwania zawartości, takich jak podgląd, eksportowanie lub usuwanie wyników wyszukiwania.
 
 W obszarze Wyszukiwanie zawartości i eDiscovery (Standard) użytkownicy, którym przypisano rolę wyszukiwania zgodności, ale nie mają roli Podgląd, mogą wyświetlić podgląd wyników wyszukiwania, w którym akcja w wersji zapoznawczej została zainicjowana przez użytkownika, któremu przypisano rolę podglądu. Użytkownik bez roli podglądu może wyświetlać podgląd wyników przez maksymalnie dwa tygodnie po utworzeniu początkowej akcji w wersji zapoznawczej.
 
 Podobnie użytkownicy wyszukiwania zawartości i eDiscovery (Standardowa), którym przypisano rolę Wyszukiwania zgodności, ale nie mają roli Eksportuj, mogą pobrać wyniki wyszukiwania, w którym akcja eksportu została zainicjowana przez użytkownika, któremu przypisano rolę Eksportuj. Użytkownik bez roli Eksportuj może pobrać wyniki wyszukiwania przez maksymalnie dwa tygodnie po utworzeniu początkowej akcji eksportu. Następnie nie mogą pobrać wyników, chyba że ktoś z rolą Eksportuj ponownie uruchomi eksport.
 
-Dwutygodniowy okres prolongaty na potrzeby podglądu i eksportowania wyników wyszukiwania (bez odpowiednich ról wyszukiwania i eksportu) nie ma zastosowania do zbierania elektronicznych materiałów dowodowych (Premium). Użytkownikom należy przypisać role podglądu i eksportu, aby wyświetlać podgląd i eksportować zawartość zbierania elektronicznych materiałów dowodowych (Premium).
+Dwutygodniowy okres prolongaty na potrzeby podglądu i eksportowania wyników wyszukiwania (bez odpowiednich ról wyszukiwania i eksportu) nie ma zastosowania do zbierania elektronicznych materiałów dowodowych (Premium). Użytkownikom należy przypisać role podglądu i eksportu, aby wyświetlić podgląd i wyeksportować zawartość w środowisku zbierania elektronicznych materiałów dowodowych (Premium).
 
 ### <a name="custodian"></a>Opiekun
 
-Ta rola umożliwia użytkownikom identyfikowanie opiekunów w sprawach zbierania elektronicznych materiałów dowodowych (Premium) i zarządzanie nimi oraz korzystanie z informacji z Azure Active Directory i innych źródeł w celu znalezienia źródeł danych skojarzonych z opiekunami. Użytkownik może skojarzyć inne źródła danych, takie jak skrzynki pocztowe, witryny SharePoint i Teams z opiekunami w danym przypadku. Użytkownik może również wstrzymać prawne źródła danych skojarzone z opiekunami, aby zachować zawartość w kontekście sprawy.
+Ta rola umożliwia użytkownikom identyfikowanie opiekunów w sprawach zbierania elektronicznych materiałów dowodowych (Premium) i zarządzanie nimi oraz używanie informacji z usługi Azure Active Directory i innych źródeł do znajdowania źródeł danych skojarzonych z opiekunami. Użytkownik może skojarzyć inne źródła danych, takie jak skrzynki pocztowe, witryny programu SharePoint i aplikacje Teams, z opiekunami w danym przypadku. Użytkownik może również wstrzymać prawne źródła danych skojarzone z opiekunami, aby zachować zawartość w kontekście sprawy.
 
-Aby uzyskać więcej informacji, zobacz [Praca z opiekunami w zakresie zbierania elektronicznych materiałów dowodowych (Premium)](managing-custodians.md).
+Aby uzyskać więcej informacji, zobacz [Praca z opiekunami w zakresie zbierania elektronicznych materiałów dowodowych (Premium).](managing-custodians.md)
 
 ### <a name="export"></a>Eksportowanie
 
-Rola umożliwia użytkownikom eksportowanie wyników wyszukiwania zawartości na komputer lokalny. Umożliwia również przygotowanie wyników wyszukiwania do analizy w obszarze zbierania elektronicznych materiałów dowodowych (Premium).
+Rola umożliwia użytkownikom eksportowanie wyników wyszukiwania zawartości na komputer lokalny. Umożliwia również przygotowanie wyników wyszukiwania do analizy w środowisku zbierania elektronicznych materiałów dowodowych (Premium).
 
-Aby uzyskać więcej informacji na temat eksportowania wyników wyszukiwania, zobacz [Eksportowanie wyników wyszukiwania z portalu zgodności usługi Microsoft Purview](export-search-results.md).
+Aby uzyskać więcej informacji na temat eksportowania wyników wyszukiwania, zobacz [Eksportowanie wyników wyszukiwania z portal zgodności Microsoft Purview](export-search-results.md).
 
 ### <a name="hold"></a>Przytrzymaj
 
-Ta rola umożliwia użytkownikom umieszczanie zawartości w skrzynkach pocztowych, folderach publicznych, witrynach, Skype dla firm konwersacjach i grupach Microsoft 365. Gdy zawartość jest wstrzymana, właściciele zawartości mogą nadal modyfikować lub usuwać oryginalną zawartość, ale zawartość zostanie zachowana do momentu usunięcia blokady lub do czasu wygaśnięcia czasu przechowywania.
+Ta rola umożliwia użytkownikom umieszczanie zawartości w skrzynkach pocztowych, folderach publicznych, witrynach, Skype dla firm konwersacjach i grupach platformy Microsoft 365. Gdy zawartość jest wstrzymana, właściciele zawartości mogą nadal modyfikować lub usuwać oryginalną zawartość, ale zawartość zostanie zachowana do momentu usunięcia blokady lub do czasu wygaśnięcia czasu przechowywania.
 
 Aby uzyskać więcej informacji na temat blokad, zobacz:
 
@@ -157,11 +155,11 @@ Ta rola umożliwia użytkownikom wyświetlanie listy elementów zwróconych z wy
 
 ### <a name="review"></a>Przegląd
 
-Ta rola umożliwia użytkownikom dostęp do zestawów przeglądów w [usłudze eDiscovery (Premium)](overview-ediscovery-20.md). Użytkownicy, którym przypisano tę rolę, mogą wyświetlać i otwierać listę przypadków na stronie **eDiscovery > Advanced** w portalu zgodności, do których należą. Gdy użytkownik uzyskuje dostęp do sprawy zbierania elektronicznych materiałów dowodowych (Premium), może wybrać pozycję **Zestawy przeglądów**, aby uzyskać dostęp do danych przypadków. Ta rola nie zezwala użytkownikowi na wyświetlanie podglądu wyników wyszukiwania kolekcji skojarzonego ze sprawą ani wykonywanie innych zadań wyszukiwania lub zarządzania sprawami. Użytkownicy z tą rolą mogą uzyskiwać dostęp tylko do danych w zestawie przeglądów.
+Ta rola umożliwia użytkownikom dostęp do zestawów przeglądów w usłudze [eDiscovery (Premium).](overview-ediscovery-20.md) Użytkownicy, którym przypisano tę rolę, mogą wyświetlać i otwierać listę przypadków na stronie **eDiscovery > Advanced** w portalu zgodności, do których należą. Gdy użytkownik uzyskuje dostęp do sprawy zbierania elektronicznych materiałów dowodowych (Premium), może wybrać pozycję **Przejrzyj zestawy** , aby uzyskać dostęp do danych przypadków. Ta rola nie zezwala użytkownikowi na wyświetlanie podglądu wyników wyszukiwania kolekcji skojarzonego ze sprawą ani wykonywanie innych zadań wyszukiwania lub zarządzania sprawami. Użytkownicy z tą rolą mogą uzyskiwać dostęp tylko do danych w zestawie przeglądów.
 
 ### <a name="rms-decrypt"></a>Odszyfrowywanie usługi RMS
 
-Ta rola umożliwia użytkownikom wyświetlanie wiadomości e-mail chronionych prawami podczas podglądu wyników wyszukiwania i eksportowania odszyfrowanych wiadomości e-mail chronionych prawami. Ta rola umożliwia również użytkownikom wyświetlanie (i eksportowanie) pliku zaszyfrowanego za pomocą [technologii szyfrowania firmy Microsoft](encryption.md) , gdy zaszyfrowany plik jest dołączony do wiadomości e-mail dołączonej do wyników wyszukiwania zbierania elektronicznych materiałów dowodowych. Ponadto ta rola umożliwia użytkownikom przeglądanie zaszyfrowanych załączników wiadomości e-mail i wykonywanie zapytań o nie, które są dodawane do zestawu przeglądów w usłudze eDiscovery (Premium). Aby uzyskać więcej informacji na temat odszyfrowywania w usłudze eDiscovery, zobacz [Odszyfrowywanie w narzędziach do zbierania elektronicznych materiałów dowodowych Microsoft 365](ediscovery-decryption.md).
+Ta rola umożliwia użytkownikom wyświetlanie wiadomości e-mail chronionych prawami podczas podglądu wyników wyszukiwania i eksportowania odszyfrowanych wiadomości e-mail chronionych prawami. Ta rola umożliwia również użytkownikom wyświetlanie (i eksportowanie) pliku zaszyfrowanego za pomocą [technologii szyfrowania firmy Microsoft](encryption.md) , gdy zaszyfrowany plik jest dołączony do wiadomości e-mail dołączonej do wyników wyszukiwania zbierania elektronicznych materiałów dowodowych. Ponadto ta rola umożliwia użytkownikom przeglądanie i wykonywanie zapytań dotyczących zaszyfrowanych załączników wiadomości e-mail, które są dodawane do zestawu przeglądów w usłudze eDiscovery (Premium). Aby uzyskać więcej informacji na temat odszyfrowywania w usłudze eDiscovery, zobacz [Odszyfrowywanie w narzędziach do zbierania elektronicznych materiałów dowodowych platformy Microsoft 365](ediscovery-decryption.md).
 
 ### <a name="search-and-purge"></a>Wyszukiwanie i przeczyszczanie
 
@@ -169,7 +167,7 @@ Ta rola umożliwia użytkownikom zbiorcze usuwanie danych zgodnych z kryteriami 
 
 ## <a name="adding-role-groups-as-members-of-ediscovery-cases"></a>Dodawanie grup ról jako członków spraw zbierania elektronicznych materiałów dowodowych
 
-Grupy ról można dodawać jako członków przypadków zbierania elektronicznych materiałów dowodowych (standard) i eDiscovery (Premium), aby członkowie grup ról mogli uzyskiwać dostęp do zadań i wykonywać je w przypisanych przypadkach. Role przypisane do grupy ról definiują, co mogą robić członkowie grupy ról. Następnie dodanie grupy ról jako członka sprawy umożliwia członkom dostęp do tych zadań i wykonywanie ich w określonym przypadku. Aby uzyskać więcej informacji na temat dodawania grup ról jako członków przypadków, zobacz:
+Grupy ról można dodawać jako członków przypadków zbierania elektronicznych materiałów dowodowych (standardowa) i zbierania elektronicznych materiałów dowodowych (Premium), aby członkowie grup ról mogli uzyskiwać dostęp do zadań i wykonywać zadania w przypisanych przypadkach. Role przypisane do grupy ról definiują, co mogą robić członkowie grupy ról. Następnie dodanie grupy ról jako członka sprawy umożliwia członkom dostęp do tych zadań i wykonywanie ich w określonym przypadku. Aby uzyskać więcej informacji na temat dodawania grup ról jako członków przypadków, zobacz:
 
 - [Zacznij od zbierania elektronicznych materiałów dowodowych (wersja standardowa)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
 
@@ -197,7 +195,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
   - Jeśli osoba, która jest jedynym członkiem sprawy zbierania elektronicznych materiałów dowodowych, opuszcza organizację, nikt (w tym członkowie grupy ról zarządzania organizacją lub inny członek grupy ról menedżera zbierania elektronicznych materiałów dowodowych) nie może uzyskać dostępu do tego przypadku zbierania elektronicznych materiałów dowodowych, ponieważ nie jest członkiem sprawy. W takiej sytuacji nie będzie możliwości uzyskania dostępu do danych w tym przypadku. Ponieważ jednak administrator zbierania elektronicznych materiałów dowodowych może uzyskać dostęp do wszystkich przypadków zbierania elektronicznych materiałów dowodowych w organizacji, może wyświetlić sprawę i dodać siebie lub innego menedżera zbierania elektronicznych materiałów dowodowych jako członka sprawy.
 
-  - Ponieważ administrator zbierania elektronicznych materiałów dowodowych może wyświetlać i uzyskiwać dostęp do wszystkich przypadków zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) i zbierania elektronicznych materiałów dowodowych (Premium), może przeprowadzać inspekcję i nadzorować wszystkie przypadki oraz skojarzone wyszukiwania zgodności. Może to pomóc w zapobieganiu wszelkim niewłaściwym użyciu wyszukiwań zgodności lub przypadków zbierania elektronicznych materiałów dowodowych. Ponieważ administratorzy zbierania elektronicznych materiałów dowodowych mogą uzyskiwać dostęp do potencjalnie poufnych informacji w wynikach wyszukiwania zgodności, należy ograniczyć liczbę osób, które są administratorami zbierania elektronicznych materiałów dowodowych.
+  - Ponieważ administrator zbierania elektronicznych materiałów dowodowych może wyświetlać i uzyskiwać dostęp do wszystkich przypadków zbierania elektronicznych materiałów dowodowych (Standard) i eDiscovery (Premium), może przeprowadzać inspekcję i nadzorować wszystkie przypadki oraz skojarzone wyszukiwania zgodności. Może to pomóc w zapobieganiu wszelkim niewłaściwym użyciu wyszukiwań zgodności lub przypadków zbierania elektronicznych materiałów dowodowych. Ponieważ administratorzy zbierania elektronicznych materiałów dowodowych mogą uzyskiwać dostęp do potencjalnie poufnych informacji w wynikach wyszukiwania zgodności, należy ograniczyć liczbę osób, które są administratorami zbierania elektronicznych materiałów dowodowych.
 
 - **Czy mogę dodać grupę jako członka grupy ról menedżera zbierania elektronicznych materiałów dowodowych?** Jak wyjaśniono wcześniej, można dodać grupę zabezpieczeń z obsługą poczty jako członka podgrupy menedżerów zbierania elektronicznych materiałów dowodowych w grupie ról Menedżera zbierania elektronicznych materiałów dowodowych przy użyciu polecenia cmdlet **Add-RoleGroupMember** w programie PowerShell security & Compliance. Na przykład możesz uruchomić następujące polecenie, aby dodać grupę zabezpieczeń obsługującą pocztę do grupy ról menedżera zbierania elektronicznych materiałów dowodowych. 
 
@@ -205,7 +203,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange grupy dystrybucyjne i Grupy Microsoft 365 nie są obsługiwane. Należy użyć grupy zabezpieczeń z obsługą poczty, którą można utworzyć w programie Exchange Online programie PowerShell, uruchamiając polecenie `New-DistributionGroup -Type Security`. Możesz również utworzyć grupę zabezpieczeń obsługującą pocztę (i dodać członków) w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> lub w [Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Po utworzeniu nowej grupy zabezpieczeń z obsługą poczty może upłynąć do 60 minut, aby dodać ją do grupy ról Menedżerowie zbierania elektronicznych materiałów dowodowych.
+    Grupy dystrybucji programu Exchange i Grupy Microsoft 365 nie są obsługiwane. Należy użyć grupy zabezpieczeń z obsługą poczty, którą można utworzyć w programie Exchange Online programie PowerShell, uruchamiając polecenie `New-DistributionGroup -Type Security`. Możesz również utworzyć grupę zabezpieczeń obsługującą pocztę (i dodać członków) w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym programu Exchange</a> lub w [Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Po utworzeniu nowej grupy zabezpieczeń z obsługą poczty może upłynąć do 60 minut, aby dodać ją do grupy ról Menedżerowie zbierania elektronicznych materiałów dowodowych.
 
     Ponadto, jak wspomniano wcześniej, nie można utworzyć grupy zabezpieczeń z obsługą poczty elektronicznej jako administratora zbierania elektronicznych materiałów dowodowych przy użyciu polecenia cmdlet **Add-eDiscoveryCaseAdmin** w programie PowerShell Security & Compliance. Jako administratorów zbierania elektronicznych materiałów dowodowych można dodawać tylko poszczególnych użytkowników.
 

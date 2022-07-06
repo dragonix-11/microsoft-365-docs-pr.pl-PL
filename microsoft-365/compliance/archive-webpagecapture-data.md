@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie łącznika do archiwizowania danych strony internetowej w Microsoft 365
+title: Konfigurowanie łącznika do archiwizowania danych stron internetowych na platformie Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -11,25 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania strony internetowej Przechwytywanie danych z usługi Veritas w Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365, dzięki czemu można używać funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania w celu zarządzania danymi innych firm w organizacji.
-ms.openlocfilehash: 1509cf4694fec8a3fdf8bf4e375a27267ab41a11
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania strony internetowej Przechwytywanie danych z usługi Veritas na platformie Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w usłudze Microsoft 365, dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania w celu zarządzania danymi innych firm w organizacji.
+ms.openlocfilehash: f73f7fd0328b1e64437ea4ccb52259f461b4d41d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317055"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630613"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Konfigurowanie łącznika do archiwizowania danych strony internetowej
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Użyj łącznika Veritas w portal zgodności Microsoft Purview, aby zaimportować i zarchiwizować dane ze stron internetowych do skrzynek pocztowych użytkowników w organizacji platformy Microsoft 365. Usługa Veritas udostępnia łącznik [przechwytywania stron sieci Web](https://globanet.com/webpage-capture) , który przechwytuje określone strony internetowe (i linki na tych stronach) w określonej witrynie internetowej lub całej domenie. Łącznik konwertuje zawartość strony internetowej na format PDF, PNG lub plik niestandardowy, a następnie dołącza przekonwertowane pliki do wiadomości e-mail, a następnie importuje te elementy poczty e-mail do skrzynek pocztowych użytkowników na platformie Microsoft 365.
 
-Użyj łącznika Veritas w portal zgodności Microsoft Purview, aby zaimportować i zarchiwizować dane ze stron internetowych do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [przechwytywania stron sieci Web](https://globanet.com/webpage-capture) , który przechwytuje określone strony internetowe (i linki na tych stronach) w określonej witrynie internetowej lub całej domenie. Łącznik konwertuje zawartość strony internetowej na format PDF, PNG lub plik niestandardowy, a następnie dołącza przekonwertowane pliki do wiadomości e-mail, a następnie importuje te elementy poczty e-mail do skrzynek pocztowych użytkownika w Microsoft 365.
-
-Po zapisaniu zawartości strony internetowej w skrzynkach pocztowych użytkowników można zastosować funkcje Microsoft Purview, takie jak blokada postępowania sądowego, zbierania elektronicznych materiałów dowodowych oraz zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika przechwytywania strony internetowej może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Po zapisaniu zawartości strony internetowej w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, pozyskiwanie elektronicznych materiałów dowodowych oraz zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w usłudze Microsoft 365 przy użyciu łącznika przechwytywania strony internetowej może pomóc organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-webpage-data"></a>Omówienie archiwizowania danych strony internetowej
 
-W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowania zawartości strony internetowej w Microsoft 365.
+W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowania zawartości strony internetowej na platformie Microsoft 365.
 
 ![Przepływ pracy archiwizacji danych strony internetowej.](../media/WebPageCaptureConnectorWorkflow.png)
 
@@ -37,7 +35,7 @@ W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowani
 
 2. Raz na 24 godziny elementy źródeł strony internetowej są kopiowane do witryny Veritas Merge1. Łącznik konwertuje również i dołącza zawartość strony internetowej do wiadomości e-mail.
 
-3. Łącznik przechwytywania strony internetowej tworzony w portalu zgodności, codziennie łączy się z witryną Veritas Merge1 i przesyła elementy strony internetowej do bezpiecznej lokalizacji Storage platformy Azure w chmurze firmy Microsoft.
+3. Łącznik przechwytywania strony internetowej tworzony w portalu zgodności, codziennie łączy się z witryną Veritas Merge1 i przesyła elementy strony internetowej do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft.
 
 4. Łącznik importuje przekonwertowane elementy strony internetowej do skrzynek pocztowych określonych użytkowników przy użyciu wartości właściwości *Poczta e-mail* automatycznego mapowania użytkownika zgodnie z opisem w [kroku 3](#step-3-map-users-and-complete-the-connector-setup). Podfolder w folderze Skrzynka odbiorcza o nazwie **Webpage Capture** jest tworzony w skrzynkach pocztowych użytkownika, a elementy strony internetowej są importowane do tego folderu. Łącznik wykonuje to przy użyciu wartości właściwości *Poczta e-mail* . Każdy element strony internetowej zawiera tę właściwość, która jest wypełniana adresami e-mail podanymi podczas konfigurowania łącznika przechwytywania strony internetowej w [kroku 2](#step-2-configure-the-webpage-capture-connector-on-the-veritas-merge1-site).
 
@@ -47,15 +45,15 @@ W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowani
 
 - Aby skonfigurować niestandardowy format pliku w celu konwertowania elementów strony internetowej, musisz współpracować z obsługą usługi Veritas. Aby uzyskać więcej informacji, zobacz [Merge1 Third-Party Connectors User Guide (Scal1 łączniki innych firm](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf)).
 
-- Użytkownik, który utworzy łącznik przechwytywania strony internetowej w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownikowi, który utworzy łącznik przechwytywania strony internetowej w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę Administracja łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę Administracja łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
+- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą platformy Microsoft 365 i w związku z tym nie są objęte zobowiązaniami microsoft purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
 ## <a name="step-1-set-up-the-webpage-capture-connector"></a>Krok 1. Konfigurowanie łącznika przechwytywania strony internetowej
 
 Pierwszym krokiem jest uzyskanie dostępu do **łączników danych** i utworzenie łącznika dla danych źródłowych strony sieci Web.
 
-1. Przejdź do strony [https://compliance.microsoft.com](https://compliance.microsoft.com/), a następnie kliknij pozycję **Łączniki** >  **danychWychwyć stronę internetową**.
+1. Przejdź do strony [https://compliance.microsoft.com](https://compliance.microsoft.com/) internetowej **Łączniki danych**, a następnie kliknij pozycję **Przechwytywanie strony sieci Web** łączników  >  danych.
 
 2. Na **stronie Internetowej Przechwytywanie** opisu produktu kliknij pozycję **Dodaj łącznik**.
 
@@ -75,7 +73,7 @@ Po kliknięciu **przycisku Zapisz & Zakończ** zostanie wyświetlona strona **Ma
 
 Aby zamapować użytkowników i ukończyć konfigurację łącznika w portalu zgodności, wykonaj poniższe kroki:
 
-1. Na **stronie Mapowanie strony sieci Web Przechwytywanie użytkowników do Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników. Elementy przechwytywania strony internetowej obejmują właściwość o nazwie *Email* zawierającą adresy e-mail dla użytkowników w organizacji. Jeśli łącznik może skojarzyć ten adres z użytkownikiem Microsoft 365, elementy zostaną zaimportowane do skrzynki pocztowej tego użytkownika.
+1. Na **stronie Mapowanie strony internetowej Przechwytywanie użytkowników do użytkowników platformy Microsoft 365** włącz automatyczne mapowanie użytkowników. Elementy przechwytywania strony internetowej obejmują właściwość o nazwie *Email* zawierającą adresy e-mail dla użytkowników w organizacji. Jeśli łącznik może skojarzyć ten adres z użytkownikiem platformy Microsoft 365, elementy zostaną zaimportowane do skrzynki pocztowej tego użytkownika.
 
 2. Kliknij **przycisk Dalej**, przejrzyj ustawienia i przejdź do strony **Łączniki danych** , aby zobaczyć postęp procesu importowania nowego łącznika.
 
