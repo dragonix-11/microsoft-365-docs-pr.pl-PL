@@ -4,8 +4,10 @@
   items:
     - name: Omówienie
       items:
-        - name: Microsoft 365 Defender
+        - name: Co to jest usługa Microsoft 365 Defender?
           href: microsoft-365-defender.md
+        - name: Portal usługi Microsoft 365 Defender
+          href: microsoft-365-defender-portal.md
         - name: Co nowego w usłudze Microsoft 365 Defender
           href: whats-new.md
         - name: Usługi Microsoft 365 Defender
@@ -38,7 +40,7 @@
       items:
         - name: Omówienie
           href: eval-overview.md
-        - name: Krok nr 1. Tworzenie środowiska Eval
+        - name: Krok nr 1. Tworzenie środowiska ewaluacyjnego
           href: eval-create-eval-environment.md
         - name: Krok nr 2. Defender for Identity
           items:
