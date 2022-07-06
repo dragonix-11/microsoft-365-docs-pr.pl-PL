@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview Alerty i zasady alertów programu Compliance Manager
+title: Alerty i zasady alertów programu Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak tworzyć alerty dla działań w programie Microsoft Purview Compliance Manager, które mogą mieć wpływ na wynik zgodności.
-ms.openlocfilehash: c69e56c693a2994a93b1faccfe6f69fa317d8390
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 499d1f005b67b2a9583d7138ce784b2e7ae1c8ad
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839454"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642245"
 ---
-# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Microsoft Purview Alerty i zasady alertów programu Compliance Manager
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Alerty i zasady alertów programu Microsoft Purview Compliance Manager
 
 **W tym artykule:** Dowiedz się, jak **ustawić alerty** dla niektórych działań w Menedżerze zgodności, jak zarządzać alertami i jak **tworzyć zasady alertów** na potrzeby definiowania warunków alertów.
 
@@ -41,7 +39,7 @@ Wszystkie alerty są wyświetlane na karcie **Alerty** w obszarze Zarządzanie z
 ## <a name="understanding-the-alerts-and-alert-policies-pages"></a>Omówienie stron Alerty i zasady alertów
 
 > [!IMPORTANT]
-> Użytkownicy muszą mieć rolę **czytelnika zabezpieczeń** w Azure Active Directory (AD), aby uzyskać dostęp do stron **Alerty** i **zasady alertów** w Menedżerze zgodności. Dodatkowe role menedżera zabezpieczeń i zgodności są potrzebne do pracy z alertami i zasadami alertów. Uzyskaj szczegółowe informacje poniżej w [obszarze Uprawnienia zasad alertów](#alert-policy-permissions).
+> Użytkownicy muszą mieć rolę **czytelnika zabezpieczeń** w usłudze Azure Active Directory (AD), aby uzyskać dostęp do stron **Alerty** i **zasady alertów** w Menedżerze zgodności. Dodatkowe role menedżera zabezpieczeń i zgodności są potrzebne do pracy z alertami i zasadami alertów. Uzyskaj szczegółowe informacje poniżej w [obszarze Uprawnienia zasad alertów](#alert-policy-permissions).
 
 ### <a name="alert-policies-page"></a>Strona zasad alertów
 

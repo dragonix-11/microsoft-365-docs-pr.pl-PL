@@ -17,16 +17,14 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Dowiedz się, jak karta Zdecyduj w usłudze eDiscovery (Premium) udostępnia dane, które mogą pomóc w określeniu prawidłowego rozmiaru zestawu przeglądów plików sprawy.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50acdd36a536c417485d441e14c5d155f9de2f94
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: abf5ef38f253a99709ad3cb3c02793e36db5e8fd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621789"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642047"
 ---
 # <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>Decyzje oparte na istotności skutkują zbierania elektronicznych materiałów dowodowych (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 W module Istotność w usłudze eDiscovery (Premium) karta Zdecyduj zawiera dodatkowe informacje dotyczące wyświetlania i używania statystyk dotyczących podejmowania decyzji w celu określenia rozmiaru zestawu przeglądów plików sprawy.
   
@@ -38,7 +36,7 @@ Ta karta zawiera następujące składniki:
   
 - **Problem**: W tym miejscu możesz wybrać interesujący cię problem z listy.
 
-- **Współczynnik recenzowania i wycofywania**: porównanie przeglądu zbierania elektronicznych materiałów dowodowych (Premium) zgodnie z wynikami istotności. Punkt odcięcia na wykresie reprezentuje procent plików do przejrzenia, zamapowany na wynik istotności. Jest to używane w fazie testu istotności i jako próg eksportu na potrzeby uboju. Domyślnym punktem odcięcia dla liczby plików do przejrzenia jest punkt, w którym równowaga między odwołaniem a dokładnością jest optymalna. Rzeczywisty punkt odcięcia powinien być określany przez użytkownika w zależności od celów, kompromisu kosztowego (%review) i ryzyka (%recall). Za pomocą suwaka można dostosować punkt odcięcia i zobaczyć wpływ na wykres i parametry, podczas dostosowywania procentu odpowiednich plików do pobrania i przed zweryfikowaniem decyzji.
+- **Współczynnik recenzowania**: porównanie przeglądu zbierania elektronicznych materiałów dowodowych (Premium) zgodnie z wynikami istotności. Punkt odcięcia na wykresie reprezentuje procent plików do przejrzenia, zamapowany na wynik istotności. Jest to używane w fazie testu istotności i jako próg eksportu na potrzeby uboju. Domyślnym punktem odcięcia dla liczby plików do przejrzenia jest punkt, w którym równowaga między odwołaniem a dokładnością jest optymalna. Rzeczywisty punkt odcięcia powinien być określany przez użytkownika w zależności od celów, kompromisu kosztowego (%review) i ryzyka (%recall). Za pomocą suwaka można dostosować punkt odcięcia i zobaczyć wpływ na wykres i parametry, podczas dostosowywania procentu odpowiednich plików do pobrania i przed zweryfikowaniem decyzji.
 
 - **Parametry**: Przejrzyj, Przywołuj, Następne odpowiednie i Łączne parametry kosztu to skumulowane statystyki obliczeniowe dotyczące zestawu przeglądów w odniesieniu do kolekcji dla całego przypadku. Definicje tych parametrów są następujące:
 

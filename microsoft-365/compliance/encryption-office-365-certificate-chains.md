@@ -16,33 +16,31 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: Wyświetl pełną listę certyfikatów głównych i urzędów certyfikacji w Microsoft 365.
-ms.openlocfilehash: a15c22218d481f62e1363e3ef4d521bd59283f10
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Wyświetl pełną listę certyfikatów głównych i urzędów certyfikacji na platformie Microsoft 365.
+ms.openlocfilehash: e131aa1c56890289735fd7605db7ace95d24fd7a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468003"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641795"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Łańcuchy szyfrowania platformy Microsoft 365
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft 365 korzysta z wielu różnych dostawców certyfikatów. Poniżej opisano pełną listę znanych certyfikatów głównych Microsoft 365, które klienci mogą napotkać podczas uzyskiwania dostępu do Microsoft 365. Aby uzyskać informacje na temat certyfikatów, które mogą być konieczne do zainstalowania we własnej infrastrukturze, zobacz [Planowanie certyfikatów SSL innych firm dla Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md). Poniższe informacje o certyfikacie dotyczą wszystkich wystąpień chmury światowej i krajowej Microsoft 365.
+Platforma Microsoft 365 korzysta z wielu różnych dostawców certyfikatów. Poniżej opisano pełną listę znanych certyfikatów głównych platformy Microsoft 365, które klienci mogą napotkać podczas uzyskiwania dostępu do platformy Microsoft 365. Aby uzyskać informacje na temat certyfikatów, które mogą być konieczne do zainstalowania we własnej infrastrukturze, zobacz [Planowanie certyfikatów SSL innych firm dla platformy Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md). Poniższe informacje o certyfikacie dotyczą wszystkich wystąpień chmury ogólnoświatowej i krajowej platformy Microsoft 365.
 
 Ostatnia aktualizacja: **25.04.2022**
 
 > [!NOTE]
-> Aby uzyskać informacje o certyfikatach, które dotyczą klientów **DOD i GCC High**, zobacz [Microsoft 365 łańcuchy szyfrowania — DOD i GCC High](encryption-office-365-certificate-chains-itar.md).
+> Aby uzyskać informacje o certyfikatach, które dotyczą klientów **DOD i GCC High** , zobacz [Łańcuchy szyfrowania platformy Microsoft 365 — DOD i GCC High](encryption-office-365-certificate-chains-itar.md).
 
 | **Typ certyfikatu** | **Pobieranie P7b** | **Punkty końcowe listy CRL** | **Punkty końcowe OCSP** | **Punkty końcowe AIA** |
 | --- | --- | --- | --- | --- |
-| Publicznie zaufane certyfikaty główne | [Microsoft 365 główny pakiet certyfikatów (P7B)](https://download.microsoft.com/download/4/a/b/4ab1c940-826b-444b-b287-b7a902e68da0/m365_root_certs_20220331.p7b) | crl.globalsign.net<br>www.d-trust.net | nd. | nd. |
-| Publicznie zaufane certyfikaty pośrednie | [Microsoft 365 pakiet certyfikatów pośrednich (P7B)](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
+| Publicznie zaufane certyfikaty główne | [Pakiet certyfikatów głównych platformy Microsoft 365 (P7B)](https://download.microsoft.com/download/4/a/b/4ab1c940-826b-444b-b287-b7a902e68da0/m365_root_certs_20220331.p7b) | crl.globalsign.net<br>www.d-trust.net | nd. | nd. |
+| Publicznie zaufane certyfikaty pośrednie | [Microsoft 365 Intermediate Certificate Bundle (P7B)](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
 
 Rozwiń sekcje główne i pośrednie poniżej, aby wyświetlić dodatkowe szczegóły dotyczące dostawców certyfikatów.
 
-## <a name="microsoft-365-root-certificate-details"></a>**Microsoft 365 szczegóły certyfikatu głównego**
+## <a name="microsoft-365-root-certificate-details"></a>**Szczegóły certyfikatu głównego platformy Microsoft 365**
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
@@ -164,7 +162,7 @@ Rozwiń sekcje główne i pośrednie poniżej, aby wyświetlić dodatkowe szczeg
 
 ### <a name="entrustnet-certification-authority-2048"></a>**urząd certyfikacji Entrust.net (2048)**
 
-| **Temat** | CN=Entrust.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS2048\_ incorp. przez ref. (limit s liab.)<br>O=Entrust.net |
+| **Temat** | CN=Entrust.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS\_2048 incorp. przez ref. (limit s liab.)<br>O=Entrust.net |
 | --- | --- |
 | **Serial Number** (Numer seryjny) | 38:63:DE:F8 |
 | **Długość klucza publicznego** | RSA 2048 bitów (e 65537) |
@@ -247,7 +245,7 @@ Rozwiń sekcje główne i pośrednie poniżej, aby wyświetlić dodatkowe szczeg
 | **Odcisk palca (SHA-256)** | 9ACFAB7E43C8D80D06B262A94DEEEE4B4659989C3D0CAF19BAF6405E41AB7DF |
 | **Przypięcie (SHA-256)** | JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg= |
 
-## <a name="microsoft-365-intermediate-certificate-details"></a>**Microsoft 365 szczegóły certyfikatu pośredniego**
+## <a name="microsoft-365-intermediate-certificate-details"></a>**Szczegóły certyfikatu pośredniego platformy Microsoft 365**
 
 ### <a name="cnnic-sha256-ssl"></a>**CNNIC SHA256 SSL**
 
@@ -450,7 +448,7 @@ Rozwiń sekcje główne i pośrednie poniżej, aby wyświetlić dodatkowe szczeg
 
 | **Temat** | CN=Entrust Certification Authority — L1C<br>OU=&quot;(c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa jest włączona przez odwołanie<br>O=&quot;Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Emitenta** | CN=Entrust.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS2048\_ incorp. przez ref. (limity liab.)<br>O=Entrust.net |
+| **Emitenta** | CN=Entrust.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS\_2048 incorp. przez ref. (limity liab.)<br>O=Entrust.net |
 | **Serial Number** (Numer seryjny) | 4C:0E:8C:39 |
 | **Długość klucza publicznego** | RSA 2048 bitów (e 65537) |
 | **Algorytm podpisu** | sha1RSA |
@@ -607,9 +605,9 @@ Rozwiń sekcje główne i pośrednie poniżej, aby wyświetlić dodatkowe szczeg
 | **Adresy URL listy CRL** | http://crl.identrust.com/DSTROOTCAX3CRL.crl |
 | **Adresy URL OCSP** | http://isrg.trustid.ocsp.identrust.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft Azure urzędu wystawiania protokołu TLS 01**
+### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Urząd certyfikacji wystawiający protokół TLS platformy Microsoft Azure 01**
 
-| **Temat** | CN=Microsoft Azure urząd wystawiający protokół TLS 01<br>O=Microsoft Corporation<br>C=US |
+| **Temat** | CN=Microsoft Azure TLS Issuing CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **Emitenta** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **Serial Number** (Numer seryjny) | 0A:AF:A6:C5:CA:63:C4:51:41:EA:3B:E1:F7:C7:53:17 |
@@ -624,9 +622,9 @@ Rozwiń sekcje główne i pośrednie poniżej, aby wyświetlić dodatkowe szczeg
 | **Adresy URL listy CRL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **Adresy URL OCSP** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft Azure urzędu wystawiania protokołu TLS 02**
+### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft Azure TLS Issuing CA 02**
 
-| **Temat** | CN=Microsoft Azure urząd wystawiający protokół TLS 02<br>O=Microsoft Corporation<br>C=US |
+| **Temat** | CN=Microsoft Azure TLS Issuing CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **Emitenta** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **Serial Number** (Numer seryjny) | 0C:6A:E9:7C:CE:D5:99:83:86:90:A0:0A:9E:A5:32:14 |
@@ -641,9 +639,9 @@ Rozwiń sekcje główne i pośrednie poniżej, aby wyświetlić dodatkowe szczeg
 | **Adresy URL listy CRL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **Adresy URL OCSP** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft Azure urzędu wystawiania protokołu TLS 05**
+### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft Azure TLS Issuing CA 05**
 
-| **Temat** | CN=Microsoft Azure urząd wystawiający protokół TLS 05<br>O=Microsoft Corporation<br>C=US |
+| **Temat** | CN=Microsoft Azure TLS Issuing CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **Emitenta** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **Serial Number** (Numer seryjny) | 0D:7B:ED:E9:7D:82:09:96:7A:52:63:1B:8B:DD:18:BD |
@@ -658,9 +656,9 @@ Rozwiń sekcje główne i pośrednie poniżej, aby wyświetlić dodatkowe szczeg
 | **Adresy URL listy CRL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **Adresy URL OCSP** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure urzędu wystawiania protokołu TLS 06**
+### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS Issuing CA 06**
 
-| **Temat** | CN=Microsoft Azure urząd wystawiający protokół TLS 06<br>O=Microsoft Corporation<br>C=US |
+| **Temat** | CN=Microsoft Azure TLS Issuing CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **Emitenta** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **Serial Number** (Numer seryjny) | 02:E7:91:71:FB:80:21:E9:3F:E2:D9:83:83:4C:50:C0 |

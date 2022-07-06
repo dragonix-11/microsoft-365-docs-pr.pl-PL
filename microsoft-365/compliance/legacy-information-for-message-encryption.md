@@ -20,20 +20,18 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak przenieść starsze pliki do Office 365 szyfrowania komunikatów (OME) dla organizacji.
-ms.openlocfilehash: 2d994e2c521f11a70c6946e2f1a9a3a1a5766ba3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b34ccbcf077238ba3caee9da3b337cd0d32cf458
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014911"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642530"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Starsze informacje dotyczące szyfrowania wiadomości usługi Office 365
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Jeśli organizacja nie została jeszcze przeniesiona do Szyfrowanie wiadomości w Microsoft Purview, ale już wdrożono protokół OME, informacje zawarte w tym artykule dotyczą Twojej organizacji. Firma Microsoft zaleca, aby zaplanować przejście do Szyfrowanie wiadomości w Microsoft Purview, gdy tylko będzie to uzasadnione dla Twojej organizacji. Aby uzyskać instrukcje, zobacz [Konfigurowanie Szyfrowanie wiadomości w Microsoft Purview](set-up-new-message-encryption-capabilities.md). Jeśli chcesz dowiedzieć się więcej na temat sposobu szyfrowania nowych komunikatów, zobacz [Szyfrowanie komunikatów](ome.md). W pozostałej części tego artykułu opisano zachowanie OME przed wydaniem Szyfrowanie wiadomości w Microsoft Purview.
 
-Jeśli twoja organizacja nie została jeszcze przeniesiona do usługi Microsoft Purview Message Encryption, ale już wdrożono protokół OME, informacje zawarte w tym artykule dotyczą Twojej organizacji. Firma Microsoft zaleca, aby zaplanować przejście do usługi Microsoft Purview Message Encryption, gdy tylko będzie to uzasadnione dla Twojej organizacji. Aby uzyskać instrukcje, zobacz [Konfigurowanie szyfrowania komunikatów usługi Microsoft Purview](set-up-new-message-encryption-capabilities.md). Jeśli chcesz dowiedzieć się więcej na temat sposobu szyfrowania nowych komunikatów, zobacz [Szyfrowanie komunikatów](ome.md). W pozostałej części tego artykułu opisano zachowanie OME przed wydaniem usługi Microsoft Purview Message Encryption.
-
-Dzięki Office 365 szyfrowaniu wiadomości organizacja może wysyłać i odbierać zaszyfrowane wiadomości e-mail między osobami w organizacji i poza nią. Office 365 szyfrowanie wiadomości współpracuje z Outlook.com, Yahoo, Gmail i innymi usługami poczty e-mail. Szyfrowanie wiadomości e-mail pomaga zapewnić, że tylko zamierzoni adresaci mogą wyświetlać zawartość wiadomości.
+Dzięki Office 365 szyfrowaniu wiadomości organizacja może wysyłać i odbierać zaszyfrowane wiadomości e-mail między osobami w organizacji i poza nią. Office 365 szyfrowanie wiadomości współpracuje z usługami Outlook.com, Yahoo, Gmail i innymi usługami poczty e-mail. Szyfrowanie wiadomości e-mail pomaga zapewnić, że tylko zamierzoni adresaci mogą wyświetlać zawartość wiadomości.
 
 Oto kilka przykładów:
 
@@ -45,33 +43,33 @@ Oto kilka przykładów:
 
 ## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Jak działa szyfrowanie komunikatów Office 365 bez nowych możliwości
 
-Office 365 Message Encryption to usługa online oparta na Microsoft Azure Rights Management (Azure RMS). Dzięki usłudze Azure RMS administratorzy mogą definiować reguły przepływu poczty w celu określenia warunków szyfrowania. Na przykład reguła może wymagać szyfrowania wszystkich komunikatów skierowanych do określonego adresata.
+Office 365 Message Encryption to usługa online oparta na usłudze Microsoft Azure Rights Management (Azure RMS). Dzięki usłudze Azure RMS administratorzy mogą definiować reguły przepływu poczty w celu określenia warunków szyfrowania. Na przykład reguła może wymagać szyfrowania wszystkich komunikatów skierowanych do określonego adresata.
 
-Gdy ktoś wyśle w Exchange Online wiadomość e-mail zgodną z regułą szyfrowania, wiadomość zostanie wysłana z załącznikiem HTML. Adresat otwiera załącznik HTML i jest zgodny z instrukcjami, aby wyświetlić zaszyfrowaną wiadomość w portalu szyfrowania wiadomości Office 365. Odbiorca może wybrać wyświetlanie wiadomości, logując się przy użyciu konta Microsoft, służbowego lub szkolnego skojarzonego z Office 365 lub używając jednorazowego kodu dostępu. Obie opcje pomagają zagwarantować, że tylko zamierzony adresat może wyświetlić zaszyfrowaną wiadomość. Ten proces bardzo różni się w przypadku szyfrowania komunikatów usługi Microsoft Purview.
+Gdy ktoś wyśle w Exchange Online wiadomość e-mail zgodną z regułą szyfrowania, wiadomość zostanie wysłana z załącznikiem HTML. Adresat otwiera załącznik HTML i jest zgodny z instrukcjami, aby wyświetlić zaszyfrowaną wiadomość w portalu szyfrowania wiadomości Office 365. Odbiorca może wybrać wyświetlanie wiadomości, logując się przy użyciu konta Microsoft, służbowego lub szkolnego skojarzonego z Office 365 lub używając jednorazowego kodu dostępu. Obie opcje pomagają zagwarantować, że tylko zamierzony adresat może wyświetlić zaszyfrowaną wiadomość. Ten proces jest bardzo różny dla Szyfrowanie wiadomości w Microsoft Purview.
 
 Poniższy diagram zawiera podsumowanie fragmentu wiadomości e-mail w procesie szyfrowania i odszyfrowywania.
 
 ![Diagram przedstawiający ścieżkę zaszyfrowanej wiadomości e-mail.](../media/O365-Office365MessageEncryption-Concept.png)
 
-Aby uzyskać więcej informacji, zobacz [Informacje o usłudze dotyczące starszej wersji Office 365 szyfrowania komunikatów przed wydaniem szyfrowania komunikatów usługi Microsoft Purview](legacy-information-for-message-encryption.md#LegacyServiceInfo).
+Aby uzyskać więcej informacji, zobacz [Informacje o usłudze dotyczące starszej Office 365 szyfrowania komunikatów przed wydaniem Szyfrowanie wiadomości w Microsoft Purview](legacy-information-for-message-encryption.md#LegacyServiceInfo).
 
-## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-microsoft-purview-message-encryption"></a>Definiowanie reguł przepływu poczty dla szyfrowania wiadomości Office 365, które nie korzystają z szyfrowania komunikatów usługi Microsoft Purview
+## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-microsoft-purview-message-encryption"></a>Definiowanie reguł przepływu poczty dla szyfrowania wiadomości Office 365, które nie używają Szyfrowanie wiadomości w Microsoft Purview
 
-Aby włączyć szyfrowanie wiadomości Office 365 bez nowych możliwości, administratorzy Exchange Online i Exchange Online Protection definiują reguły przepływu poczty Exchange. Te reguły określają, w jakich warunkach wiadomości e-mail powinny być szyfrowane, a także warunki usuwania szyfrowania wiadomości. Po ustawieniu akcji szyfrowania dla reguły usługa wykonuje akcję na wszystkich komunikatach zgodnych z warunkami reguły przed wysłaniem komunikatów.
+Aby włączyć szyfrowanie wiadomości Office 365 bez nowych możliwości, administratorzy Exchange Online i Exchange Online Protection definiują reguły przepływu poczty programu Exchange. Te reguły określają, w jakich warunkach wiadomości e-mail powinny być szyfrowane, a także warunki usuwania szyfrowania wiadomości. Po ustawieniu akcji szyfrowania dla reguły usługa wykonuje akcję na wszystkich komunikatach zgodnych z warunkami reguły przed wysłaniem komunikatów.
 
 Reguły przepływu poczty są elastyczne, co umożliwia łączenie warunków, dzięki czemu można spełnić określone wymagania dotyczące zabezpieczeń w jednej regule. Można na przykład utworzyć regułę szyfrowania wszystkich komunikatów zawierających określone słowa kluczowe i adresowanych do adresatów zewnętrznych. Office 365 szyfrowanie komunikatów szyfruje również odpowiedzi od adresatów zaszyfrowanych wiadomości e-mail i można utworzyć regułę, która odszyfrowuje te odpowiedzi jako wygodę dla użytkowników poczty e-mail. Dzięki temu użytkownicy w organizacji nie będą musieli logować się do portalu szyfrowania, aby wyświetlić odpowiedzi.
 
-Aby uzyskać więcej informacji na temat tworzenia reguł przepływu poczty Exchange, zobacz [Define Rules for Office 365 Message Encryption (Definiowanie reguł szyfrowania wiadomości Office 365](define-mail-flow-rules-to-encrypt-email.md)).
+Aby uzyskać więcej informacji na temat tworzenia reguł przepływu poczty programu Exchange, zobacz [Define Rules for Office 365 Message Encryption (Definiowanie reguł szyfrowania wiadomości Office 365](define-mail-flow-rules-to-encrypt-email.md)).
 
-### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-microsoft-purview-message-encryption"></a>Używanie umowy EAC do tworzenia reguły przepływu poczty na potrzeby szyfrowania wiadomości e-mail bez szyfrowania komunikatów usługi Microsoft Purview
+### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-microsoft-purview-message-encryption"></a>Użyj umowy EAC, aby utworzyć regułę przepływu poczty do szyfrowania wiadomości e-mail bez Szyfrowanie wiadomości w Microsoft Purview
 
 1. W przeglądarce internetowej przy użyciu konta służbowego, któremu przyznano uprawnienia administratora globalnego, [zaloguj się do Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Wybierz kafelek **Administrator** .
+2. Wybierz kafelek **Administracja**.
 
-3. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję **Centra** \> administracyjne <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję **Administracja centers** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
-4. W usłudze EAC przejdź do pozycji **Reguły** **przepływu poczty** \> i wybierz pozycję **Nowa** ![ikona.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Utwórz nową regułę**. Aby uzyskać więcej informacji na temat korzystania z usługi EAC, zobacz [centrum administracyjne Exchange w Exchange Online](/exchange/exchange-admin-center).
+4. W usłudze EAC przejdź do pozycji **Reguły** **przepływu poczty** \> i wybierz pozycję **Nowa** ![ikona.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Utwórz nową regułę**. Aby uzyskać więcej informacji na temat korzystania z usługi EAC, zobacz [Centrum administracyjne programu Exchange w Exchange Online](/exchange/exchange-admin-center).
 
 5. W **polu Nazwa** wpisz nazwę reguły, na przykład Szyfruj pocztę dla DrToniRamos@hotmail.com.
 
@@ -97,7 +95,7 @@ Aby uzyskać więcej informacji na temat tworzenia reguł przepływu poczty Exch
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Używanie Exchange Online programu PowerShell do tworzenia reguły przepływu poczty na potrzeby szyfrowania wiadomości e-mail bez nowych możliwości protokołu OME
 
-1. Połącz się z usługą Exchange Online w programie PowerShell. Aby uzyskać więcej informacji, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Połącz się z usługą Exchange Online w programie PowerShell. Aby uzyskać więcej informacji, zobacz [Nawiązywanie połączenia z Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Utwórz regułę przy użyciu polecenia cmdlet **New-TransportRule** i ustaw parametr _ApplyOME_ na `$true`wartość .
 
@@ -115,19 +113,19 @@ Aby uzyskać więcej informacji na temat tworzenia reguł przepływu poczty Exch
 
    Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Polecenie New-TransportRule](/powershell/module/exchange/New-TransportRule).
 
-### <a name="remove-encryption-from-email-replies-encrypted-without-microsoft-purview-message-encryption"></a>Usuwanie szyfrowania z odpowiedzi e-mail zaszyfrowanych bez szyfrowania komunikatów usługi Microsoft Purview
+### <a name="remove-encryption-from-email-replies-encrypted-without-microsoft-purview-message-encryption"></a>Usuwanie szyfrowania z odpowiedzi e-mail zaszyfrowanych bez Szyfrowanie wiadomości w Microsoft Purview
 
 Gdy użytkownicy poczty e-mail wysyłają zaszyfrowane wiadomości, adresaci tych wiadomości mogą odpowiadać zaszyfrowanymi odpowiedziami. Możesz utworzyć reguły przepływu poczty, aby automatycznie usuwać szyfrowanie z odpowiedzi, aby użytkownicy poczty e-mail w organizacji nie musieli logować się do portalu szyfrowania, aby je wyświetlić. Aby zdefiniować te reguły, możesz użyć poleceń cmdlet eac lub Exchange Online programu PowerShell. Możesz odszyfrować komunikaty wysyłane z organizacji lub wiadomości, które są odpowiedziami na wiadomości wysyłane z organizacji. Nie można odszyfrować zaszyfrowanych komunikatów pochodzących spoza organizacji.
 
-#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-microsoft-purview-message-encryption"></a>Użyj umowy EAC, aby utworzyć regułę usuwania szyfrowania z odpowiedzi e-mail zaszyfrowanych bez szyfrowania komunikatów usługi Microsoft Purview
+#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-microsoft-purview-message-encryption"></a>Użyj umowy EAC, aby utworzyć regułę usuwania szyfrowania z odpowiedzi e-mail zaszyfrowanych bez Szyfrowanie wiadomości w Microsoft Purview
 
 1. W przeglądarce internetowej, używając konta służbowego, któremu przyznano uprawnienia administratora, [zaloguj się do Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Wybierz kafelek **Administrator** .
+2. Wybierz kafelek **Administracja**.
 
-3. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję **Centra** \> administracyjne <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. W Centrum administracyjne platformy Microsoft 365 wybierz pozycję **Administracja centers** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
-4. W usłudze EAC przejdź do pozycji **Reguły** **przepływu poczty** \> i wybierz pozycję **Nowa** ![ikona.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Utwórz nową regułę**. Aby uzyskać więcej informacji na temat korzystania z usługi EAC, zobacz [centrum administracyjne Exchange w Exchange Online](/exchange/exchange-admin-center).
+4. W usłudze EAC przejdź do pozycji **Reguły** **przepływu poczty** \> i wybierz pozycję **Nowa** ![ikona.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Utwórz nową regułę**. Aby uzyskać więcej informacji na temat korzystania z usługi EAC, zobacz [Centrum administracyjne programu Exchange w Exchange Online](/exchange/exchange-admin-center).
 
 5. W **polu Nazwa** wpisz nazwę reguły, na przykład Usuń szyfrowanie z poczty przychodzącej.
 
@@ -139,7 +137,7 @@ Gdy użytkownicy poczty e-mail wysyłają zaszyfrowane wiadomości, adresaci tyc
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Użyj Exchange Online programu PowerShell, aby utworzyć regułę usuwania szyfrowania z odpowiedzi e-mail zaszyfrowanych bez nowych możliwości OME
 
-1. Połącz się z usługą Exchange Online w programie PowerShell. Aby uzyskać więcej informacji, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Połącz się z usługą Exchange Online w programie PowerShell. Aby uzyskać więcej informacji, zobacz [Nawiązywanie połączenia z Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Utwórz regułę przy użyciu polecenia cmdlet **New-TransportRule** i ustaw parametr _RemoveOME_ na `$true`wartość .
 
@@ -182,7 +180,7 @@ Poniższy przykład przedstawia niestandardowe logo firmy ContosoPharma w załą
 
 ### <a name="to-customize-encryption-email-messages-and-the-encryption-portal-with-your-organizations-brand"></a>Aby dostosować szyfrowanie wiadomości e-mail i portalu szyfrowania przy użyciu marki organizacji
 
-1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połącz się z usługą Exchange Online w programie PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Użyj polecenia cmdlet Set-OMEConfiguration zgodnie z opisem tutaj: [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) lub skorzystaj z poniższej tabeli, aby uzyskać wskazówki.
 
@@ -197,7 +195,7 @@ Poniższy przykład przedstawia niestandardowe logo firmy ContosoPharma w załą
 
 ### <a name="to-remove-brand-customizations-from-encryption-email-messages-and-the-encryption-portal"></a>Aby usunąć dostosowania marki z szyfrowania wiadomości e-mail i portalu szyfrowania
 
-1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połącz się z usługą Exchange Online w programie PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Użyj polecenia cmdlet Set-OMEConfiguration zgodnie z opisem tutaj: [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration). Aby usunąć dostosowania markowe organizacji z wartości DisclaimerText, EmailText i PortalText, ustaw wartość na pusty ciąg . `""` Dla wszystkich wartości obrazu, takich jak Logo, ustaw wartość na `"$null"`.
 
@@ -213,32 +211,32 @@ Poniższy przykład przedstawia niestandardowe logo firmy ContosoPharma w załą
 ## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>Informacje o usłudze dotyczące starszej wersji szyfrowania komunikatów Office 365 przed wydaniem nowych funkcji OME
 <a name="LegacyServiceInfo"> </a>
 
-Poniższa tabela zawiera szczegółowe informacje techniczne dotyczące usługi szyfrowania komunikatów Office 365 przed wydaniem usługi Microsoft Purview Message Encryption.
+Poniższa tabela zawiera szczegółowe informacje techniczne dotyczące usługi szyfrowania komunikatów Office 365 przed wydaniem Szyfrowanie wiadomości w Microsoft Purview.
 
 |Szczegóły usługi|Opis|
 |---|---|
 |Wymagania dotyczące urządzeń klienckich|Zaszyfrowane komunikaty można wyświetlać na dowolnym urządzeniu klienckim, o ile załącznik HTML można otworzyć w nowoczesnej przeglądarce, która obsługuje wpis formularza.|
-|Algorytm szyfrowania i zgodność ze standardami FIPS (Federal Information Processing Standards)|Office 365 szyfrowanie komunikatów używa tych samych kluczy szyfrowania co Windows azure information Rights Management (IRM) i obsługuje tryb kryptograficzny 2 (klucz 2K dla RSA i klucz 256 bitów dla systemów SHA-1). Aby uzyskać więcej informacji na temat podstawowych trybów kryptograficznych usługi IRM, zobacz [Tryby kryptograficzne usług AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10)).|
+|Algorytm szyfrowania i zgodność ze standardami FIPS (Federal Information Processing Standards)|Office 365 szyfrowanie komunikatów używa tych samych kluczy szyfrowania co usługa Windows Azure Information Rights Management (IRM) i obsługuje tryb kryptograficzny 2 (klucz 2K dla RSA i klucz 256 bitów dla systemów SHA-1). Aby uzyskać więcej informacji na temat podstawowych trybów kryptograficznych usługi IRM, zobacz [Tryby kryptograficzne usług AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10)).|
 |Obsługiwane typy komunikatów|Office 365 szyfrowanie komunikatów jest obsługiwane tylko w przypadku elementów, które mają identyfikator klasy komunikatów programu **IPM. Uwaga**. Aby uzyskać więcej informacji, zobacz [Typy elementów i klasy komunikatów](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
 |Limity rozmiaru komunikatów|Office 365 szyfrowanie komunikatów może szyfrować komunikaty o maksymalnie 25 megabajtach. Aby uzyskać więcej informacji na temat limitów rozmiaru komunikatów, zobacz [Exchange Online Limity](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).|
 |zasady przechowywania wiadomości e-mail Exchange Online|Exchange Online nie przechowuje zaszyfrowanych komunikatów.|
-|Obsługa języka szyfrowania komunikatów Office 365|szyfrowanie komunikatów Office 365 obsługuje języki Microsoft 365 w następujący sposób: <p> Przychodzące wiadomości e-mail i dołączone pliki HTML są zlokalizowane na podstawie ustawień języka nadawcy. <p> Portal wyświetlania jest zlokalizowany na podstawie ustawień przeglądarki adresata. <p> Treść (zawartość) zaszyfrowanej wiadomości nie jest zlokalizowana.|
+|Obsługa języka szyfrowania komunikatów Office 365|Office 365 Szyfrowanie komunikatów obsługuje języki platformy Microsoft 365 w następujący sposób: <p> Przychodzące wiadomości e-mail i dołączone pliki HTML są zlokalizowane na podstawie ustawień języka nadawcy. <p> Portal wyświetlania jest zlokalizowany na podstawie ustawień przeglądarki adresata. <p> Treść (zawartość) zaszyfrowanej wiadomości nie jest zlokalizowana.|
 |Informacje o ochronie prywatności dla portalu OME i aplikacji przeglądarki OME|[Zasady zachowania poufności informacji w portalu szyfrowania wiadomości Office 365](https://privacy.microsoft.com/privacystatement) zawierają szczegółowe informacje o tym, co firma Microsoft robi, a czego nie robi z twoimi informacjami prywatnymi.|
 
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>Często zadawane pytania dotyczące starszej wersji OME
 <a name="LegacyServiceInfo"> </a>
 
-Masz pytania dotyczące szyfrowania komunikatów Office 365? Oto kilka odpowiedzi. Jeśli nie możesz znaleźć potrzebnych informacji, zapoznaj się z [forami microsoft tech Community, aby uzyskać Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365).
+Masz pytania dotyczące szyfrowania komunikatów Office 365? Oto kilka odpowiedzi. Jeśli nie możesz znaleźć potrzebnych informacji, sprawdź [fora Microsoft Tech Community, aby uzyskać Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365).
 
  **P. Moi użytkownicy wysyłają zaszyfrowane wiadomości e-mail do adresatów spoza naszej organizacji. Czy istnieje coś, co muszą zrobić adresaci zewnętrzni, aby odczytywać wiadomości e-mail i odpowiadać na nie zaszyfrowane za pomocą Office 365 szyfrowania wiadomości?**
 
-Adresaci spoza organizacji, którzy odbierają Microsoft 365 zaszyfrowanych wiadomości, mogą wyświetlać je na jeden z dwóch sposobów:
+Adresaci spoza organizacji, którzy odbierają zaszyfrowane wiadomości platformy Microsoft 365, mogą wyświetlać je na jeden z dwóch sposobów:
 
 - Logując się przy użyciu konta Microsoft lub konta służbowego skojarzonego z Office 365.
 
 - Przy użyciu jednorazowego kodu dostępu.
 
- **P. Czy Microsoft 365 szyfrowane komunikaty są przechowywane w chmurze, czy na serwerach firmy Microsoft?**
+ **P. Czy zaszyfrowane komunikaty platformy Microsoft 365 są przechowywane w chmurze, czy na serwerach firmy Microsoft?**
 
 Nie, zaszyfrowane wiadomości są przechowywane w systemie poczty e-mail adresata, a gdy odbiorca otworzy wiadomość, jest ona tymczasowo publikowana do wyświetlania na serwerach firmy Microsoft. Komunikaty nie są tam przechowywane.
 
@@ -254,7 +252,7 @@ Licencja jest wymagana dla każdego użytkownika w organizacji, który wysyła z
 
 Nie, adresaci zewnętrzni nie wymagają subskrypcji do odczytywania zaszyfrowanych wiadomości ani odpowiadania na nie.
 
- **P. Czym różni się Office 365 szyfrowanie komunikatów od usług Rights Management Services (RMS)?**
+ **P. Czym Office 365 szyfrowanie komunikatów różni się od usług Rights Management Services (RMS)?**
 
 Usługa RMS udostępnia funkcje usługi Information Rights Protection dla wewnętrznych wiadomości e-mail organizacji, udostępniając wbudowane szablony, takie jak: Nie przekazuj dalej i Poufne dla firmy. Office 365 szyfrowanie wiadomości obsługuje szyfrowanie wiadomości e-mail dla wiadomości wysyłanych do adresatów zewnętrznych, a także adresatów wewnętrznych.
 
@@ -264,7 +262,7 @@ Protokół S/MIME jest zasadniczo technologią szyfrowania po stronie klienta i 
 
  **P. Czy mogę odczytywać zaszyfrowane wiadomości za pośrednictwem urządzeń przenośnych?**
 
-Tak, możesz wyświetlać komunikaty na Android i iOS, pobierając aplikacje przeglądarki OME ze sklepu Google Play i sklepu Apple App Store. Otwórz załącznik HTML w aplikacji OME Viewer, a następnie postępuj zgodnie z instrukcjami, aby otworzyć zaszyfrowaną wiadomość. W przypadku innych urządzeń przenośnych możesz otworzyć załącznik HTML, o ile klient poczty obsługuje wpis formularza.
+Tak, możesz wyświetlać komunikaty w systemach Android i iOS, pobierając aplikacje przeglądarki OME ze sklepu Google Play i sklepu Apple App Store. Otwórz załącznik HTML w aplikacji OME Viewer, a następnie postępuj zgodnie z instrukcjami, aby otworzyć zaszyfrowaną wiadomość. W przypadku innych urządzeń przenośnych możesz otworzyć załącznik HTML, o ile klient poczty obsługuje wpis formularza.
 
  **P. Czy odpowiedzi i wiadomości przesyłane dalej są szyfrowane?**
 
@@ -278,7 +276,7 @@ Przychodząca wiadomość e-mail i zawartość HTML są zlokalizowane na podstaw
 
 Office 365 szyfrowanie komunikatów używa usług Rights Management Services (RMS) jako infrastruktury szyfrowania. Używana metoda szyfrowania zależy od miejsca uzyskania kluczy usługi RMS używanych do szyfrowania i odszyfrowywania komunikatów.
 
-- Jeśli używasz Microsoft Azure usługi RMS do uzyskania kluczy, używany jest tryb kryptograficzny 2. Tryb kryptograficzny 2 to zaktualizowana i ulepszona implementacja kryptograficzna usług AD RMS. Obsługuje ona RSA 2048 na potrzeby podpisu i szyfrowania oraz obsługuje algorytm SHA-256 dla podpisu.
+- Jeśli używasz usługi Microsoft Azure RMS do uzyskania kluczy, używany jest tryb kryptograficzny 2. Tryb kryptograficzny 2 to zaktualizowana i ulepszona implementacja kryptograficzna usług AD RMS. Obsługuje ona RSA 2048 na potrzeby podpisu i szyfrowania oraz obsługuje algorytm SHA-256 dla podpisu.
 
 - Jeśli używasz usługi RMS usługi Active Directory (AD) do uzyskania kluczy, używany jest tryb kryptograficzny 1 lub tryb kryptograficzny 2. Używana metoda zależy od lokalnego wdrożenia usług AD RMS. Tryb kryptograficzny 1 to oryginalna implementacja kryptograficzna usług AD RMS. Obsługuje ona usługę RSA 1024 na potrzeby podpisu i szyfrowania oraz obsługuje algorytm SHA-1 dla podpisu. Ten tryb jest nadal obsługiwany przez wszystkie bieżące wersje usługi RMS.
 
@@ -288,25 +286,25 @@ Aby uzyskać więcej informacji, zobacz [Tryby kryptograficzne usług AD RMS](/p
 
 Gdy zaszyfrowana odpowiedź jest wysyłana z portalu szyfrowania lub za pośrednictwem aplikacji OME Viewer, adres e-mail wysyłania jest ustawiony na Office365@messaging.microsoft.com, ponieważ zaszyfrowana wiadomość jest wysyłana za pośrednictwem punktu końcowego firmy Microsoft. Pomaga to zapobiec oznaczaniu zaszyfrowanych wiadomości jako spamu. Wyświetlana nazwa w wiadomości e-mail i adres w portalu szyfrowania nie są zmieniane z powodu tego etykietowania. Ponadto to etykietowanie dotyczy tylko wiadomości wysyłanych za pośrednictwem portalu, a nie za pośrednictwem innego klienta poczty e-mail.
 
- **P. Jestem subskrybentem Exchange Hosted Encryption (EHE). Gdzie mogę dowiedzieć się więcej na temat uaktualniania do Office 365 szyfrowania komunikatów?**
+ **P. Jestem subskrybentem programu Exchange Hosted Encryption (EHE). Gdzie mogę dowiedzieć się więcej na temat uaktualniania do Office 365 szyfrowania komunikatów?**
 
-Wszyscy klienci EHE zostali uaktualnione do Office 365 szyfrowania komunikatów. Aby uzyskać więcej informacji, odwiedź [centrum uaktualniania szyfrowania hostowanego Exchange](../security/office-365-security/exchange-online-protection-overview.md).
+Wszyscy klienci EHE zostali uaktualnione do Office 365 szyfrowania komunikatów. Aby uzyskać więcej informacji, odwiedź [Centrum uaktualniania hostowanego szyfrowania programu Exchange](../security/office-365-security/exchange-online-protection-overview.md).
 
  **P. Czy muszę otworzyć adresy URL, adresy IP lub porty w zaporze mojej organizacji, aby obsługiwać szyfrowanie komunikatów Office 365?**
 
-Tak. Musisz dodać adresy URL dla Exchange Online do listy dozwolonych dla organizacji, aby włączyć uwierzytelnianie dla komunikatów zaszyfrowanych za pomocą Office 365 szyfrowania komunikatów. Aby uzyskać listę adresów URL Exchange Online, zobacz [Microsoft 365 adresy URL i zakresy adresów IP](../enterprise/urls-and-ip-address-ranges.md).
+Tak. Musisz dodać adresy URL dla Exchange Online do listy dozwolonych dla organizacji, aby włączyć uwierzytelnianie dla komunikatów zaszyfrowanych za pomocą Office 365 szyfrowania komunikatów. Aby uzyskać listę adresów URL Exchange Online, zobacz Adresy [URL i zakresy adresów IP platformy Microsoft 365](../enterprise/urls-and-ip-address-ranges.md).
 
- **P. Do ilu adresatów mogę wysłać wiadomość zaszyfrowaną Microsoft 365?**
+ **P. Do ilu adresatów mogę wysłać zaszyfrowaną wiadomość platformy Microsoft 365?**
 
 Limit adresatów wynosi 500 adresatów na wiadomość lub, po połączeniu po rozszerzeniu listy dystrybucyjnej, 11 980 znaków w polu **Do** wiadomości, w zależności od tego, co nastąpi wcześniej.
 
  **P. Czy można odwołać wiadomość wysłaną do określonego adresata?**
 
-Nie. Nie można odwołać wiadomości do określonej osoby po jej wysłaniu.
+L.p. Nie można odwołać wiadomości do określonej osoby po jej wysłaniu.
 
  **P. Czy mogę wyświetlić raport z zaszyfrowanymi wiadomościami, które zostały odebrane i przeczytane?**
 
-Nie ma raportu, który pokazuje, czy była wyświetlana zaszyfrowana wiadomość, ale dostępne są Microsoft 365 raporty, które można wykorzystać do określenia liczby wiadomości zgodnych z określoną regułą przepływu poczty (znaną również jako reguła transportu).
+Nie ma raportu, który pokazuje, czy była wyświetlana zaszyfrowana wiadomość, ale dostępne są raporty platformy Microsoft 365, których można użyć do określenia liczby wiadomości zgodnych z określoną regułą przepływu poczty (znaną również jako reguła transportu).
 
  **P. Co firma Microsoft robi z informacjami, które udostępniam za pośrednictwem portalu OME i aplikacji OME Viewer?**
 

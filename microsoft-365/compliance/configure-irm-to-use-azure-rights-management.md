@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Ten artykuł zawiera informacje o nowych możliwościach aplikacji Szyfrowanie wiadomości usługi Office 365 (OME).
-ms.openlocfilehash: ec60ceb2843c03f3d91c95c2c4eca2d56e393a44
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Ten artykuł zawiera informacje o Szyfrowanie wiadomości w Microsoft Purview.
+ms.openlocfilehash: 978d6356531da6b29bfe7b557cb419ba2958f040
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983173"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642223"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Konfigurowanie usługi IRM do korzystania z usługi Azure Rights Management
 
-Wraz z wydaniem nowych funkcji usługi Szyfrowanie wiadomości usługi Office 365 (OME) nie musisz już osobno  skonfigurować usługi IRM. Firma Microsoft nie zaleca konfigurowania nowych wdrożeń przy użyciu starszych usług OME i IRM z usługą Azure Rights Management. Aby uzyskać więcej informacji na temat nowych funkcji OME, zobacz często zadawane [Szyfrowanie wiadomości usługi Office 365 OME](./ome-faq.yml). Aby rozpocząć korzystanie z nowych funkcji OME w organizacji, zobacz Konfigurowanie nowych funkcji usługi Szyfrowanie wiadomości usługi Office 365 [wbudowanych w usługę Azure Information Protection](./set-up-new-message-encryption-capabilities.md).
+Wraz z wydaniem Szyfrowanie wiadomości w Microsoft Purview nie trzeba już oddzielnie konfigurować usługi IRM. Firma Microsoft nie zaleca konfigurowania nowych wdrożeń przy użyciu starszych rozwiązań OME i IRM w usłudze Azure Rights Management. Aby uzyskać więcej informacji na temat Szyfrowanie wiadomości w Microsoft Purview, zobacz [Często zadawane pytania dotyczące szyfrowania komunikatów](./ome-faq.yml). Jeśli wszystko jest gotowe do rozpoczęcia korzystania z Szyfrowanie wiadomości w Microsoft Purview w organizacji, zobacz [Konfigurowanie Szyfrowanie wiadomości w Microsoft Purview](./set-up-new-message-encryption-capabilities.md).

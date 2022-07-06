@@ -18,28 +18,26 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
-description: Dodawanie alertów dotyczących działań i zarządzanie nimi w portalu zgodności usługi Microsoft Purview, dzięki czemu Microsoft 365 będzie wysyłać powiadomienia e-mail, gdy użytkownicy wykonują określone działania
-ms.openlocfilehash: b08c23ec80562418112266d03c58f4b764a128ba
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Dodawanie alertów dotyczących działań i zarządzanie nimi w portal zgodności Microsoft Purview, aby platforma Microsoft 365 wysyłała powiadomienia e-mail, gdy użytkownicy wykonują określone działania
+ms.openlocfilehash: a2f93ed9c0c73dfb6886e0860e63ec38e49294a5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018102"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642267"
 ---
 # <a name="create-activity-alerts"></a>Tworzenie alertów aktywności
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Możesz utworzyć alert działania, który wyśle Ci powiadomienie e-mail, gdy użytkownicy będą wykonywać określone działania w Office 365. Alerty dotyczące działań są podobne do wyszukiwania zdarzeń w dzienniku inspekcji, z tą różnicą, że otrzymasz wiadomość e-mail, gdy wystąpi zdarzenie dla działania, dla których utworzono alert.
 
- **Dlaczego warto używać alertów aktywności zamiast przeszukiwania dziennika inspekcji?** Mogą istnieć pewne rodzaje działań lub działań wykonywanych przez określonych użytkowników, o których naprawdę chcesz wiedzieć. Zamiast pamiętać o przeszukiwaniu dziennika inspekcji dla tych działań, możesz użyć alertów aktywności, aby Microsoft 365 wysłać wiadomość e-mail, gdy użytkownicy wykonują te działania. Możesz na przykład utworzyć alert aktywności, aby powiadomić Użytkownika, gdy użytkownik usunie pliki w SharePoint, lub utworzyć alert w celu powiadomienia, gdy użytkownik trwale usunie wiadomości ze swojej skrzynki pocztowej. Wysłane do Ciebie powiadomienie e-mail zawiera informacje o tym, które działanie zostało wykonane, oraz o użytkowniku, który go wykonał.
+ **Dlaczego warto używać alertów aktywności zamiast przeszukiwania dziennika inspekcji?** Mogą istnieć pewne rodzaje działań lub działań wykonywanych przez określonych użytkowników, o których naprawdę chcesz wiedzieć. Zamiast pamiętać o przeszukiwaniu dziennika inspekcji dla tych działań, możesz użyć alertów aktywności, aby usługa Microsoft 365 wysyłała wiadomość e-mail, gdy użytkownicy wykonują te działania. Możesz na przykład utworzyć alert aktywności, aby powiadomić Użytkownika, gdy użytkownik usunie pliki w programie SharePoint, lub utworzyć alert, aby powiadomić Cię, gdy użytkownik trwale usunie wiadomości ze swojej skrzynki pocztowej. Wysłane do Ciebie powiadomienie e-mail zawiera informacje o tym, które działanie zostało wykonane, oraz o użytkowniku, który go wykonał.
 
 > [!NOTE]
 > Alerty aktywności są przestarzałe. Zalecamy rozpoczęcie korzystania z zasad alertów w centrum zabezpieczeń i zgodności zamiast tworzenia nowych alertów dotyczących działań. Zasady alertów zapewniają dodatkowe funkcje, takie jak możliwość tworzenia zasad alertów, które wyzwalają alert, gdy dowolny użytkownik wykonuje określone działanie, oraz wyświetlanie alertów na stronie **Wyświetlanie alertów** w Centrum zabezpieczeń i zgodności. Aby uzyskać więcej informacji, zobacz [Zasady alertów](alert-policies.md).
 
 ## <a name="confirm-roles-and-configure-audit-logging"></a>Potwierdzanie ról i konfigurowanie rejestrowania inspekcji
 
-- Aby zarządzać alertami aktywności, musisz mieć przypisaną rolę Konfiguracja organizacji w portalu zgodności usługi Microsoft Purview. Domyślnie ta rola jest przypisywana do grup ról Administrator zgodności i Zarządzanie organizacją. Aby uzyskać więcej informacji na temat dodawania członków do grup ról, zobacz [Udzielanie użytkownikom dostępu do portalu zgodności usługi Microsoft Purview](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Aby zarządzać alertami aktywności, musisz mieć przypisaną rolę Konfiguracja organizacji w portal zgodności Microsoft Purview. Domyślnie ta rola jest przypisywana do grup ról Administrator zgodności i Zarządzanie organizacją. Aby uzyskać więcej informacji na temat dodawania członków do grup ról, zobacz [Udzielanie użytkownikom dostępu do portal zgodności Microsoft Purview](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 - Przed rozpoczęciem korzystania z alertów aktywności użytkownik (lub inny administrator) musi najpierw włączyć rejestrowanie inspekcji dla swojej organizacji. W tym celu kliknij pozycję **Rozpocznij rejestrowanie aktywności użytkownika i administratora** na stronie **Alerty dotyczące działań** . (Jeśli nie widzisz tego linku, inspekcja została już włączona dla Twojej organizacji). Inspekcję można również włączyć na stronie **wyszukiwania dzienników inspekcji** w portalu zgodności (przejdź do sekcji **Inspekcja**). Musisz to zrobić tylko raz dla swojej organizacji.
 
@@ -111,7 +109,7 @@ Aby ponownie włączyć alert aktywności, po prostu powtórz te kroki i kliknij
     > [!TIP]
     > Możesz utworzyć alert aktywności dla tylko jednego działania wykonywanego przez dowolnego użytkownika. Możesz też utworzyć alert aktywności, który śledzi wiele działań wykonywanych przez co najmniej jednego użytkownika.
 
-    W poniższej tabeli wymieniono niektóre typowe działania związane z dokumentami w SharePoint lub OneDrive dla Firm.
+    W poniższej tabeli wymieniono niektóre typowe działania związane z dokumentami w programie SharePoint lub OneDrive dla Firm.
 
     | Gdy użytkownik to robi... | Tworzenie alertu dla tego działania | Grupa działań |
     |:-----|:-----|:-----|
@@ -125,8 +123,8 @@ Aby ponownie włączyć alert aktywności, po prostu powtórz te kroki i kliknij
 
     | Gdy użytkownik to robi... | Tworzenie alertu dla tego działania | Grupa działań |
     |:-----|:-----|:-----|
-    |Trwale usuwa (przeczyszcza) wiadomość e-mail ze skrzynki pocztowej.  |Przeczyszczane wiadomości ze skrzynki pocztowej  | działania Exchange skrzynki pocztowej  |
-    |Wysyła wiadomość e-mail z udostępnionej skrzynki pocztowej.  |Wysłano wiadomość przy użyciu uprawnień Wyślij jako  <br/> I  <br/> Wysłano wiadomość przy użyciu uprawnień Wyślij w imieniu  | działania Exchange skrzynki pocztowej  |
+    |Trwale usuwa (przeczyszcza) wiadomość e-mail ze skrzynki pocztowej.  |Przeczyszczane wiadomości ze skrzynki pocztowej  | Działania skrzynki pocztowej programu Exchange  |
+    |Wysyła wiadomość e-mail z udostępnionej skrzynki pocztowej.  |Wysłano wiadomość przy użyciu uprawnień Wyślij jako  <br/> I  <br/> Wysłano wiadomość przy użyciu uprawnień Wyślij w imieniu  | Działania skrzynki pocztowej programu Exchange  |
 
 - Możesz również użyć poleceń cmdlet **New-ActivityAlert** i **Set-ActivityAlert** w programie PowerShell Security & Compliance do tworzenia i edytowania alertów dotyczących działań. Jeśli używasz tych poleceń cmdlet do tworzenia lub edytowania alertów aktywności, pamiętaj o następujących kwestiach:
 

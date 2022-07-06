@@ -17,18 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Dowiedz się, jak zbierać informacje diagnostyczne zbierania elektronicznych materiałów dowodowych dla pomoc techniczna firmy Microsoft przypadku.
-ms.openlocfilehash: f5dba88a598a73441c67e3eaa08a59b7258ea712
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 46c85e822daf82cc88e6bf89ceea97dede3e2276
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014437"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641817"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Zbieraj informacje diagnostyczne dotyczące zbierania elektronicznych materiałów dowodowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Czasami inżynierowie pomoc techniczna firmy Microsoft wymagają konkretnych informacji o problemie podczas otwierania zgłoszenia do pomocy technicznej związanego zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Standard) lub microsoft Purview eDiscovery (Premium). Ten artykuł zawiera wskazówki dotyczące gromadzenia informacji diagnostycznych, które ułatwiają inżynierom pomocy technicznej badanie i rozwiązywanie problemów. Zazwyczaj nie trzeba zbierać tych informacji, dopóki nie zostanie o to poproszony inżynier pomoc techniczna firmy Microsoft.
+Czasami inżynierowie pomoc techniczna firmy Microsoft wymagają konkretnych informacji o problemie podczas otwierania zgłoszenia do pomocy technicznej związanego z Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Standardowa) lub Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium). Ten artykuł zawiera wskazówki dotyczące gromadzenia informacji diagnostycznych, które ułatwiają inżynierom pomocy technicznej badanie i rozwiązywanie problemów. Zazwyczaj nie trzeba zbierać tych informacji, dopóki nie zostanie o to poproszony inżynier pomoc techniczna firmy Microsoft.
 
 > [!IMPORTANT]
 > Dane wyjściowe poleceń cmdlet i informacji diagnostycznych opisanych w tym artykule mogą zawierać poufne informacje na temat sporów sądowych lub wewnętrznych dochodzeń w organizacji. Przed wysłaniem nieprzetworzonych informacji diagnostycznych do pomoc techniczna firmy Microsoft należy przejrzeć informacje i zredagować wszelkie poufne informacje (takie jak nazwy lub inne informacje dotyczące stron sporu sądowego lub dochodzenia), zastępując je `XXXXXXX`. Użycie tej metody będzie również wskazywać inżynierowi pomoc techniczna firmy Microsoft, że informacje zostały zredagowane.
@@ -42,7 +40,7 @@ Aby uruchomić następujące polecenia cmdlet, [połącz się z programem PowerS
 Po przejrzeniu wygenerowanego pliku tekstowego i zredagowaniu poufnych informacji wyślij go do inżyniera pomoc techniczna firmy Microsoft pracującego nad Twoją sprawą.
 
 > [!NOTE]
-> Możesz również uruchomić polecenia w tej sekcji, aby zebrać informacje diagnostyczne dotyczące wyszukiwań i eksportów wymienionych na stronie **wyszukiwania zawartości** w portalu zgodności usługi Microsoft Purview.
+> Możesz również uruchomić polecenia w tej sekcji, aby zebrać informacje diagnostyczne dotyczące wyszukiwań i eksportów wymienionych na stronie **wyszukiwania zawartości** w portal zgodności Microsoft Purview.
 
 ### <a name="collect-information-about-searches"></a>Zbieranie informacji o wyszukiwaniach
 
@@ -82,13 +80,13 @@ Karta **Ustawienia** w przypadku zbierania elektronicznych materiałów dowodowy
 
 1. Przejdź do portalu zgodności i wybierz pozycję **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
 
-2. Wybierz przypadek, a następnie kliknij kartę **Ustawienia**.
+2. Wybierz przypadek, a następnie kliknij kartę **Ustawienia** .
 
 3. W obszarze **Informacje o wielkości liter** kliknij **pozycję Wybierz**.
 
 4. Na stronie wysuwanej kliknij pozycję **Akcje** > **Kopiuj informacje o pomocy technicznej** , aby skopiować informacje do schowka.
 
-5. Otwórz plik tekstowy (w Notatnik), a następnie wklej informacje w pliku tekstowym.
+5. Otwórz plik tekstowy (w Notatniku), a następnie wklej informacje w pliku tekstowym.
 
 6. Zapisz plik tekstowy i nadaj mu nazwę podobną `AeD Diagnostic Info YYYY.MM.DD` (na przykład `AeD Diagnostic Info 2020.11.03`).
 

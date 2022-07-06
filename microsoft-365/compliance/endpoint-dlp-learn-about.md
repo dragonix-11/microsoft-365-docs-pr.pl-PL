@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Ochrona przed utratą danych punktu końcowego rozszerza monitorowanie działań plików i akcji ochronnych dla tych plików na punkty końcowe. Pliki są widoczne w rozwiązaniach zgodności '
-ms.openlocfilehash: 015e219d1b3ed41605ae3b331488d8dec6e7751f
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: d711a61c1c61df94311dfd409e94330bb8696d88
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530909"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641751"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Dowiedz się więcej o ochronie przed utratą danych punktu końcowego
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Możesz użyć Ochrona przed utratą danych w Microsoft Purview (DLP) do monitorowania akcji wykonywanych na elementach, które zostały uznane za wrażliwe, i aby zapobiec niezamierzonemu udostępnianiu tych elementów. Aby uzyskać więcej informacji na temat ochrony przed [utratą danych, zobacz Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md).
 

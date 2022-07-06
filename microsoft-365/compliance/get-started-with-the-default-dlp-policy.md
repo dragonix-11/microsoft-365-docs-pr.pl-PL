@@ -19,16 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak za pomocą raportu uściślić domyślne zasady ochrony przed utratą danych (DLP) w organizacji.
-ms.openlocfilehash: 893aae6dfbc4e5c9fcf48a8eec53694352ead4f2
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: d47568f009745edaa8205ce65b4de9b481f58139
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753457"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641499"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Wprowadzenie do domyślnych zasad DLP
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Przed utworzeniem pierwszych zasad Ochrona przed utratą danych w Microsoft Purview (DLP) DLP pomaga chronić poufne informacje przy użyciu zasad domyślnych. Te domyślne zasady i zalecenia (pokazane poniżej) pomagają chronić poufną zawartość, powiadamiając Cię o udostępnieniu wiadomości e-mail lub dokumentów zawierających numer karty kredytowej osobie spoza organizacji. To zalecenie zostanie wyświetlone na stronie **głównej** portal zgodności Microsoft Purview. 
   
@@ -44,7 +42,7 @@ Szczegółowy raport pokazuje, kiedy i ile zawartości zawierającej numery kart
   
 Aby chronić poufne informacje, domyślne zasady DLP:
   
-- Wykrywa, kiedy zawartość Exchange, SharePoint i OneDrive zawierająca co najmniej jeden numer karty kredytowej jest udostępniana osobom spoza organizacji.
+- Wykrywa, kiedy zawartość w programach Exchange, SharePoint i OneDrive, która zawiera co najmniej jeden numer karty kredytowej, jest udostępniana osobom spoza organizacji.
     
 - Przedstawia poradę dotyczącą zasad i wysyła powiadomienie e-mail do użytkowników podczas próby udostępnienia tych poufnych informacji osobom spoza organizacji. Aby uzyskać więcej informacji na temat tych opcji, zobacz [Wysyłanie powiadomień e-mail i pokaż wskazówki dotyczące zasad dotyczących zasad DLP](use-notifications-and-policy-tips.md).
     
@@ -62,7 +60,7 @@ Aby uzyskać więcej informacji na temat raportów o zdarzeniach lub ograniczani
   
 Jeśli chcesz zmienić te opcje później, możesz w dowolnym momencie edytować domyślne zasady DLP — zobacz następną sekcję.
   
-![Ustawienia dla widżetu o nazwie Dalej chroń udostępnioną zawartość.](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![Ustawienia widżetu o nazwie Dalej chroń zawartość udostępnioną.](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>Edytowanie domyślnych zasad DLP
 
@@ -78,7 +76,7 @@ Widżet o nazwie **Dalej chroń udostępnioną zawartość** zostanie wyświetlo
   
 Ten widżet jest wyświetlany tylko wtedy, gdy:
   
-- Brak zasad ochrony przed utratą danych w centrum administracyjnym portal zgodności Microsoft Purview lub Exchange. Ten widżet ma ułatwić rozpoczęcie pracy z DLP, więc nie jest wyświetlany, jeśli masz już zasady DLP.
+- Brak zasad ochrony przed utratą danych w portal zgodności Microsoft Purview lub centrum administracyjnym programu Exchange. Ten widżet ma ułatwić rozpoczęcie pracy z DLP, więc nie jest wyświetlany, jeśli masz już zasady DLP.
     
 - Zawartość zawierająca co najmniej jedną kartę kredytową została udostępniona osobie spoza organizacji w ciągu ostatnich 30 dni.
     

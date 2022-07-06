@@ -14,33 +14,31 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Dowiedz się, jak chronić poufne informacje przy użyciu Microsoft Purview zasad i narzędzi ochrony przed utratą danych i zapoznaj się z cyklem życia DLP.
-ms.openlocfilehash: 1d05eb2ae7b7071a79448596832eb6594ab680ef
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+description: Dowiedz się, jak chronić poufne informacje przy użyciu zasad i narzędzi ochrony przed utratą danych w usłudze Microsoft Purview i zapoznać się z cyklem życia DLP.
+ms.openlocfilehash: 2bcc82f0609f617219d626f8180e7f4c9df51060
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669699"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641915"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Dowiedz się więcej o ochronie przed utratą danych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Organizacje mają pod kontrolą poufne informacje, takie jak dane finansowe, dane zastrzeżone, numery kart kredytowych, dokumentacja kondycji lub numery ubezpieczenia społecznego. Aby chronić te poufne dane i zmniejszyć ryzyko, potrzebują sposobu, aby uniemożliwić użytkownikom niewłaściwe udostępnianie ich osobom, które nie powinny ich mieć. Ta praktyka jest nazywana zapobieganiem utracie danych (DLP).
 
-W Microsoft Purview zaimplementujesz zapobieganie utracie danych, definiując i stosując zasady DLP. Za pomocą zasad DLP można identyfikować, monitorować i automatycznie chronić poufne elementy w różnych obszarach:
+W usłudze Microsoft Purview można zaimplementować ochronę przed utratą danych, definiując i stosując zasady DLP. Za pomocą zasad DLP można identyfikować, monitorować i automatycznie chronić poufne elementy w różnych obszarach:
 
-- usługi Microsoft 365, takie jak Teams, Exchange, SharePoint i OneDrive
-- Office aplikacje, takie jak Word, Excel i PowerPoint
+- Usługi platformy Microsoft 365, takie jak Teams, Exchange, SharePoint i OneDrive
+- Aplikacje pakietu Office, takie jak Word, Excel i PowerPoint
 - punkty końcowe Windows 10, Windows 11 i macOS (Catalina 10.15 i nowsze)
 - aplikacje w chmurze spoza firmy Microsoft
-- lokalnych udziałów plików i lokalnych SharePoint.
+- lokalnych udziałów plików i lokalnego programu SharePoint.
 
 DLP wykrywa poufne elementy przy użyciu głębokiej analizy zawartości, a nie tylko przez proste skanowanie tekstu. Zawartość jest analizowana pod kątem podstawowych dopasowań danych do słów kluczowych, oceny wyrażeń regularnych, wewnętrznej weryfikacji funkcji i pomocniczych dopasowań danych znajdujących się w pobliżu podstawowego dopasowania danych. Poza tym DLP używa również algorytmów uczenia maszynowego i innych metod do wykrywania zawartości zgodnej z zasadami DLP.
 
-## <a name="dlp-is-part-of-the-larger-microsoft-purview-offering"></a>DLP jest częścią większej oferty Microsoft Purview
+## <a name="dlp-is-part-of-the-larger-microsoft-purview-offering"></a>DLP jest częścią większej oferty usługi Microsoft Purview
 
-DLP to tylko jedno z Microsoft Purview narzędzi, których użyjesz, aby chronić poufne elementy wszędzie tam, gdzie mieszkają lub podróżują. Należy zrozumieć inne narzędzia w zestawie narzędzi Microsoft Purview, sposób ich wzajemnej współpracy i lepszą współpracę.  Zobacz [Microsoft Purview narzędzia](protect-information.md), aby dowiedzieć się więcej o procesie ochrony informacji.
+DLP to tylko jedno z narzędzi usługi Microsoft Purview, które ułatwia ochronę poufnych elementów wszędzie tam, gdzie mieszkają lub podróżują. Należy zrozumieć inne narzędzia w zestawie narzędzi Usługi Microsoft Purview, sposób ich wzajemnej współpracy i lepszą współpracę.  Zobacz [Narzędzia usługi Microsoft Purview](protect-information.md) , aby dowiedzieć się więcej o procesie ochrony informacji.
 
 ## <a name="protective-actions-of-dlp-policies"></a>Działania ochronne zasad DLP
 
@@ -50,9 +48,9 @@ Zasady DLP to sposób monitorowania działań wykonywanych przez użytkowników 
 - zablokuj udostępnianie i za pośrednictwem porady dotyczącej zasad zezwalaj użytkownikowi na zastąpienie bloku i przechwytywanie uzasadnienia użytkowników
 - blokowanie udostępniania bez opcji zastąpienia
 - W przypadku danych magazynowanych poufne elementy można zablokować i przenieść do bezpiecznej lokalizacji kwarantanny
-- w przypadku Teams czatu informacje poufne nie będą wyświetlane
+- w przypadku czatu w usłudze Teams poufne informacje nie będą wyświetlane
 
-Wszystkie monitorowane działania DLP są domyślnie rejestrowane w [dzienniku inspekcji Microsoft 365](search-the-audit-log-in-security-and-compliance.md) i kierowane do [Eksploratora działań](data-classification-activity-explorer.md). Gdy użytkownik wykonuje akcję spełniającą kryteria zasad DLP i masz skonfigurowane alerty, usługa DLP udostępnia alerty na [pulpicie nawigacyjnym zarządzania alertami DLP](dlp-configure-view-alerts-policies.md).
+Wszystkie monitorowane działania DLP są domyślnie rejestrowane w [dzienniku inspekcji platformy Microsoft 365](search-the-audit-log-in-security-and-compliance.md) i kierowane do [Eksploratora działań](data-classification-activity-explorer.md). Gdy użytkownik wykonuje akcję spełniającą kryteria zasad DLP i masz skonfigurowane alerty, usługa DLP udostępnia alerty na [pulpicie nawigacyjnym zarządzania alertami DLP](dlp-configure-view-alerts-policies.md).
 
 ## <a name="dlp-lifecycle"></a>Cykl życia DLP
 
@@ -71,7 +69,7 @@ Monitorowanie i ochrona DLP są natywne dla aplikacji używanych codziennie prze
 
 **Planowanie technologii dla DLP**
 
-Należy pamiętać, że DLP jako technologia może monitorować i chronić dane magazynowane, dane używane i dane w ruchu w usługach Microsoft 365, Windows 10, Windows 11 i macOS (Catalina 10.15 lub nowszych) urządzeniach, lokalnych udziałach plików i lokalnych SharePoint. Istnieją implikacje dotyczące planowania dla różnych lokalizacji, typu danych, które chcesz monitorować i chronić, oraz akcji, które należy wykonać w przypadku dopasowania zasad.
+Należy pamiętać, że DLP jako technologia może monitorować i chronić dane magazynowane, dane używane i dane w ruchu na urządzeniach z usługami Microsoft 365, Windows 10, Windows 11 i macOS (Catalina 10.15 lub nowszym), lokalnych udziałach plików i lokalnym programie SharePoint. Istnieją implikacje dotyczące planowania dla różnych lokalizacji, typu danych, które chcesz monitorować i chronić, oraz akcji, które należy wykonać w przypadku dopasowania zasad.
 
 **Planowanie procesów biznesowych dla DLP**
 
@@ -88,15 +86,15 @@ Pomyślna implementacja DLP jest tak samo zależna od trenowania i aklimatyzacji
 Zasady DLP można stosować do danych magazynowanych, używanych danych i danych w ruchu w lokalizacjach, takich jak:
 
 - Exchange Online e-mail
-- witryny SharePoint Online
-- konta OneDrive
-- Teams wiadomości czatu i kanału
-- Microsoft Cloud App Security
-- urządzenia Windows 10, Windows 11 i macOS (Catalina 10.15 lub nowsze)
+- Witryny usługi SharePoint Online
+- Konta usługi OneDrive
+- Wiadomości na czacie i kanale w usłudze Teams
+- Microsoft Defender for Cloud Apps
+- urządzenia Windows 10, Windows 11 i macOS (Catalina 10.15 i nowsze)
 - Repozytoria lokalne
 - Witryny usługi PowerBI
 
-Każdy z nich ma inne wymagania wstępne. Poufne elementy w niektórych lokalizacjach, takie jak Exchange online, można włączyć pod parasol DLP, konfigurując tylko zasady, które mają do nich zastosowanie. Inne, takie jak lokalne repozytoria plików, wymagają wdrożenia skanera usługi Azure Information Protection (AIP). Przed aktywowaniem jakichkolwiek akcji blokujących należy przygotować środowisko, tworzyć wersje robocze zasad kodu i dokładnie je przetestować.
+Każdy z nich ma inne wymagania wstępne. Poufne elementy w niektórych lokalizacjach, takie jak exchange online, mogą być objęte parasolem DLP, konfigurując zasady, które mają zastosowanie do nich. Inne, takie jak lokalne repozytoria plików, wymagają wdrożenia skanera usługi Azure Information Protection (AIP). Przed aktywowaniem jakichkolwiek akcji blokujących należy przygotować środowisko, tworzyć wersje robocze zasad kodu i dokładnie je przetestować.
 
 ### <a name="deploy-your-policies-in-production"></a>Wdrażanie zasad w środowisku produkcyjnym
 
@@ -145,11 +143,11 @@ Możesz elastycznie tworzyć i konfigurować zasady DLP. Możesz zacząć od wst
 
 Lokalizacji | include/exclude by|
 |---------|---------|
-|Exchange e-mail| grupy dystrybucyjne|
-|witryny SharePoint |Witryn |
-|konta OneDrive |konta lub grupy dystrybucyjne |
-|Teams wiadomości czatu i kanału |konto lub grupa dystrybucyjna |
-|urządzenia Windows 10, Windows 11 i macOS (Catalina 10.15 lub nowsze) |użytkownik lub grupa |
+|Poczta e-mail programu Exchange| grupy dystrybucyjne|
+|Witryny programu SharePoint |Witryn |
+|Konta usługi OneDrive |konta lub grupy dystrybucyjne |
+|Wiadomości na czacie i kanale w usłudze Teams |konto lub grupa dystrybucyjna |
+|urządzenia Windows 10, Windows 11 i macOS (Catalina 10.15 i nowsze) |użytkownik lub grupa |
 |Microsoft Cloud App Security |Wystąpienie |
 |Repozytoria lokalne| ścieżka pliku repozytorium|
 
@@ -162,9 +160,9 @@ Lokalizacji | include/exclude by|
 4. **Wybierz akcję do wykonania po spełnieniu warunków zasad** — akcje zależą od lokalizacji, w której odbywa się działanie.  Oto kilka przykładów:
 
 - SharePoint/Exchange/OneDrive: blokuj osobom spoza organizacji dostęp do zawartości. Pokaż użytkownikowi poradę i wyślij mu powiadomienie e-mail z informacją o tym, że podejmuje on akcję, która jest zabroniona przez zasady DLP.
-- Teams czatu i kanału: blokuj udostępnianie poufnych informacji w czacie lub kanale
+- Czat i kanał usługi Teams: blokowanie udostępniania poufnych informacji w czacie lub kanale
 - Windows 10, Windows 11 i macOS (Catalina 10.15 lub nowsze) Urządzenia: Inspekcja lub ograniczanie kopiowania poufnego elementu na wymienne urządzenie USB
-- Office Aplikacje: pokaż wyskakujące okienko z powiadomieniem użytkownika o tym, że korzysta z ryzykownego zachowania i blokuje lub blokuje, ale zezwala na zastąpienie.
+- Aplikacje pakietu Office: pokaż wyskakujące okienko informujące użytkownika, że angażuje się w ryzykowne zachowanie i blokuje lub blokuje, ale zezwala na zastępowanie.
 - Lokalne udziały plików: przenieś plik z miejsca przechowywania do folderu kwarantanny
 
 > [!NOTE]
@@ -176,17 +174,17 @@ All DLP policies are created and maintained in the Microsoft Purview center. See
 
 Po utworzeniu zasad DLP w Centrum zgodności są one przechowywane w centralnym magazynie zasad, a następnie synchronizowane z różnymi źródłami zawartości, w tym:
 
-- Exchange Online, a stamtąd do Outlook w sieci Web i Outlook.
+- Exchange Online, a stamtąd do Outlook w sieci Web i Outlooka.
 - OneDrive dla Firm witryn.
-- SharePoint witryny online.
-- Office programów klasycznych (Excel, PowerPoint i Word).
-- Microsoft Teams kanałów i wiadomości czatu.
+- Witryny usługi SharePoint Online.
+- Programy klasyczne pakietu Office (Excel, PowerPoint i Word).
+- Kanały i wiadomości czatu w usłudze Microsoft Teams.
 
 Po zsynchronizowanym z odpowiednimi lokalizacjami zasady zaczynają oceniać zawartość i wymuszać akcje.
 
 ## <a name="viewing-policy-application-results"></a>Wyświetlanie wyników aplikacji zasad
 
-DLP raportuje ogromną ilość informacji na temat Microsoft Purview z monitorowania, dopasowań zasad i akcji oraz działań użytkowników. Musisz korzystać z tych informacji i działać na nich, aby dostosować zasady i klasyfikować akcje podejmowane w przypadku poufnych elementów. Dane telemetryczne najpierw trafiają do [portal zgodności Microsoft Purview Dzienniki inspekcji](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal), są przetwarzane i trafiają do różnych narzędzi raportowania. Każde narzędzie raportowania ma inny cel.
+DLP raportuje ogromną ilość informacji w usłudze Microsoft Purview z monitorowania, dopasowań zasad i akcji oraz działań użytkowników. Musisz korzystać z tych informacji i działać na nich, aby dostosować zasady i klasyfikować akcje podejmowane w przypadku poufnych elementów. Dane telemetryczne najpierw trafiają do [portal zgodności Microsoft Purview Dzienniki inspekcji](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal), są przetwarzane i trafiają do różnych narzędzi raportowania. Każde narzędzie raportowania ma inny cel.
 
 ### <a name="dlp-alerts-dashboard"></a>Pulpit nawigacyjny alertów DLP
 
@@ -214,9 +212,9 @@ Karta Eksplorator działań na stronie DLP ma wstępnie ustawiony filtr *działa
 
 ![zrzut ekranu przedstawiający eksploratora działań o zakresie DLPRuleMatch.](../media/dlp-activity-explorer.png)
 
-Aby uzyskać więcej informacji, zobacz [Wprowadzenie z eksploratorem działań](data-classification-activity-explorer.md)
+Aby uzyskać więcej informacji, zobacz [Wprowadzenie do eksploratora działań](data-classification-activity-explorer.md)
 
-Aby dowiedzieć się więcej na temat Microsoft Purview DLP, zobacz:
+Aby dowiedzieć się więcej o programie Microsoft Purview DLP, zobacz:
 
 - [Dowiedz się więcej o ochronie przed utratą danych punktu końcowego](endpoint-dlp-learn-about.md)
 - [Dowiedz się więcej o domyślnych zasadach ochrony przed utratą danych w usłudze Microsoft Teams (wersja zapoznawcza)](dlp-teams-default-policy.md)
@@ -224,7 +222,7 @@ Aby dowiedzieć się więcej na temat Microsoft Purview DLP, zobacz:
 - [Dowiedz się więcej o rozszerzeniu zgodności firmy Microsoft](dlp-chrome-learn-about.md)
 - [Dowiedz się więcej o pulpicie nawigacyjnym alertów ochrony przed utratą danych](dlp-alerts-dashboard-learn.md)
 
-Aby dowiedzieć się, jak używać ochrony przed utratą danych w celu zachowania zgodności z przepisami dotyczącymi prywatności danych, zobacz [Wdrażanie ochrony informacji dla przepisów dotyczących prywatności danych za pomocą Microsoft Purview](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
+Aby dowiedzieć się, jak używać ochrony przed utratą danych w celu zachowania zgodności z przepisami dotyczącymi prywatności danych, zobacz [Wdrażanie ochrony informacji dla przepisów dotyczących prywatności danych za pomocą usługi Microsoft Purview](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
 
 ## <a name="licensing-and-subscriptions"></a>Licencjonowanie i subskrypcje
 

@@ -14,18 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Użyj filtru oceny przewidywania, aby wyświetlić elementy, które model kodowania predykcyjnego są przewidywane jako odpowiednie lub nieistotne.
-ms.openlocfilehash: 64abac8b9f53baa9afb869d77296089544919fea
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7a05b85fa81396da2c9d66eddb68b542b7eb8eba
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096617"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642409"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Stosowanie filtru wyniku przewidywania do zestawu przeglądów (wersja zapoznawcza)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Po utworzeniu modelu kodowania predykcyjnego w usłudze Microsoft Purview eDiscovery (Premium) i wytrenowaniu go do punktu, w którym jest on stabilny, można zastosować filtr oceny przewidywania, aby wyświetlić elementy zestawu przeglądów, które został określony przez model, są istotne (lub nieistotne). Podczas tworzenia modelu tworzony jest również odpowiedni filtr wyników przewidywania. Ten filtr umożliwia wyświetlanie elementów, do których przypisano wynik przewidywania w określonym zakresie. Ogólnie rzecz biorąc, wyniki przewidywania od **0** do **0,5** są przypisywane do elementów, które model przewidział, nie są istotne. Elementy przypisane do wyników przewidywania z **zakresu od .5** do **1.0** są elementami, które model przewidział, są istotne.
+Po utworzeniu modelu kodowania predykcyjnego w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) i wytrenowaniu go do punktu, w którym jest on stabilny, można zastosować filtr wyników przewidywania, aby wyświetlić elementy zestawu przeglądów, które został określony przez model, są istotne (lub nieistotne). Podczas tworzenia modelu tworzony jest również odpowiedni filtr wyników przewidywania. Ten filtr umożliwia wyświetlanie elementów, do których przypisano wynik przewidywania w określonym zakresie. Ogólnie rzecz biorąc, wyniki przewidywania od **0** do **0,5** są przypisywane do elementów, które model przewidział, nie są istotne. Elementy przypisane do wyników przewidywania z **zakresu od .5** do **1.0** są elementami, które model przewidział, są istotne.
 
 Poniżej przedstawiono dwa sposoby użycia filtru wyniku przewidywania:
 
@@ -41,7 +39,7 @@ Poniżej przedstawiono dwa sposoby użycia filtru wyniku przewidywania:
 
 ## <a name="apply-a-prediction-score-filter"></a>Stosowanie filtru wyniku przewidywania
 
-1. W portalu zgodności usługi Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), wybierz kartę **Zestawy przeglądów**, a następnie otwórz zestaw przeglądów.
+1. W portal zgodności Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), wybierz kartę **Zestawy przeglądów**, a następnie otwórz zestaw przeglądów.
 
    ![Kliknij pozycję Filtry, aby wyświetlić stronę wysuwaną Filtry.](..\media\PredictionScoreFilter0.png)   
 

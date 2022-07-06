@@ -13,31 +13,29 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: ''
-ms.openlocfilehash: 1f94f49f93310ea4b40d588c7c43ecce7ec535cc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się więcej na temat wykonywania pierwszej rundy trenowania na potrzeby kodowania predykcyjnego.
+ms.openlocfilehash: 509e47372655691130be9a4621c973b5e6575f80
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091462"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642355"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Trenowanie modelu kodowania predykcyjnego (wersja zapoznawcza)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Po utworzeniu modelu kodowania predykcyjnego w usłudze Microsoft Purview eDiscovery (Premium) następnym krokiem jest przeprowadzenie pierwszej rundy trenowania w celu wytrenowania modelu na temat istotnej i nieistotnej zawartości w zestawie przeglądów. Po zakończeniu pierwszej rundy trenowania możesz wykonać kolejne rundy szkoleniowe, aby zwiększyć zdolność modelu do przewidywania odpowiedniej i nieistotnej zawartości.
+Po utworzeniu modelu kodowania predykcyjnego w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) następnym krokiem jest przeprowadzenie pierwszej rundy trenowania w celu wytrenowania modelu na podstawie istotnej i nieistotnej zawartości w zestawie przeglądów. Po zakończeniu pierwszej rundy trenowania możesz wykonać kolejne rundy szkoleniowe, aby zwiększyć zdolność modelu do przewidywania odpowiedniej i nieistotnej zawartości.
 
 Aby przejrzeć przepływ pracy kodowania predykcyjnego, zobacz [Learn about predictive coding in eDiscovery (Premium) (Informacje o kodowaniu predykcyjnym w usłudze eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
 
 ## <a name="before-you-train-a-model"></a>Przed wytrenowania modelu
 
-- Podczas rundy szkoleniowej oznacz elementy jako **istotne** lub **nieistotne** na podstawie istotności zawartości w dokumencie. Nie opieraj decyzji na wartościach w polach metadanych. Na przykład w przypadku wiadomości e-mail lub Teams konwersacji nie należy opierać decyzji o etykietowaniu na uczestnikach wiadomości.
+- Podczas rundy szkoleniowej oznacz elementy jako **istotne** lub **nieistotne** na podstawie istotności zawartości w dokumencie. Nie opieraj decyzji na wartościach w polach metadanych. Na przykład w przypadku wiadomości e-mail lub konwersacji w usłudze Teams nie należy opierać decyzji o etykietowaniu na uczestnikach wiadomości.
 
 ## <a name="train-a-model-for-the-first-time"></a>Trenowanie modelu po raz pierwszy
 
-1. W portalu zgodności usługi Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), a następnie wybierz kartę **Zestawy przeglądów**.
+1. W portal zgodności Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), a następnie wybierz kartę **Zestawy przeglądów**.
 
-2. Otwórz zestaw przeglądów, a następnie kliknij pozycję **AnalizaZarządzanie** >  **kodowaniem predykcyjnym (wersja zapoznawcza).**
+2. Otwórz zestaw przeglądów, a następnie kliknij pozycję **Analiza** > **Zarządzaj kodowaniem predykcyjnym (wersja zapoznawcza).**
 
 3. Na stronie **Modele kodowania predykcyjnego (wersja zapoznawcza)** wybierz model, który chcesz wytrenować.
 

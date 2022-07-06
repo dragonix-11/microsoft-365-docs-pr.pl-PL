@@ -20,16 +20,14 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Przygotowywanie i wdrażanie DLP w lokalizacjach usługi PowerBI.
-ms.openlocfilehash: f831d42898e491258a53423c1d59b9f50c0b289d
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: e94ab7bce1fefc7ab370425a269f6e304aee165f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616942"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641852"
 ---
 # <a name="get-started-with-data-loss-prevention-policies-for-power-bi-preview"></a>Wprowadzenie do zasad ochrony przed utratą danych dla Power BI (wersja zapoznawcza)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Aby ułatwić organizacjom wykrywanie i ochronę poufnych danych, [zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview obsługują](/microsoft-365/compliance/dlp-learn-about-dlp) usługę Power BI. Gdy zestaw danych usługi PowerBI spełnia kryteria zasad DLP, można wyzwolić alert wyjaśniający charakter poufnej zawartości. Ten alert jest również zarejestrowany na karcie **Alerty** dotyczące ochrony przed utratą danych w portalu zgodności firmy Microsoft na potrzeby monitorowania i zarządzania przez administratorów. Ponadto alerty e-mail mogą być wysyłane do administratorów i określonych użytkowników.
 

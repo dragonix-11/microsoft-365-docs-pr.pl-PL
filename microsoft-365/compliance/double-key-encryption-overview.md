@@ -1,6 +1,6 @@
 ---
-title: Omówienie szyfrowania dwukluczowych i często zadawane pytania
-description: Często zadawane pytania dotyczące szyfrowania podwójnych klawiszy dla Microsoft 365.
+title: Omówienie szyfrowania podwójnego klucza i często zadawane pytania
+description: Często zadawane pytania dotyczące szyfrowania podwójnym kluczem.
 author: kccross
 ms.author: krowley
 manager: laurawi
@@ -12,69 +12,69 @@ ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 269937e78ffee6956df5a4dc8dc978fa30043912
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c42104ccb74aba71b143d1ee31b0ed5893d9396f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320987"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641839"
 ---
-# <a name="double-key-encryption-frequently-asked-questions"></a>Szyfrowanie dwukluczowych często zadawanych pytań
+# <a name="double-key-encryption-frequently-asked-questions"></a>Często zadawane pytania dotyczące podwójnego szyfrowania kluczy
 
-Masz pytanie na temat działania szyfrowania dwucyfrowego? Tu znajdziesz odpowiedź.
+Masz pytanie dotyczące sposobu działania funkcji podwójnego szyfrowania kluczy? Sprawdź odpowiedź tutaj.
 
-## <a name="what-is-double-key-encryption-for-microsoft-365-dke"></a>Co to jest szyfrowanie przy Microsoft 365 (DKE)?
+## <a name="what-is-double-key-encryption-dke"></a>Co to jest szyfrowanie podwójnym kluczem (DKE)?
 
-Szyfrowanie dwukluczowych danych dla Microsoft 365 umożliwia klientom ochronę bardzo ważnych danych w celu spełnienia wyspecjalizowanych wymagań. Ułatwia klientom zachowanie pełnej kontroli nad ich kluczami szyfrowania. Używa dwóch klawiszy do ochrony danych. jeden klucz w kontrolce i drugi bezpiecznie przechowywany w Microsoft Azure. Wyświetlanie danych chronionych za pomocą szyfrowania dwukrotnie wymaga dostępu do obu kluczy. Ponieważ firma Microsoft może uzyskać dostęp tylko do jednego z tych kluczy, chronione dane pozostają niedostępne dla firmy Microsoft, zapewniając pełną kontrolę nad prywatnością i zabezpieczeniami danych.  
+Szyfrowanie podwójnym kluczem umożliwia klientom ochronę wysoce poufnych danych w celu spełnienia wyspecjalizowanych wymagań. Ułatwia to zachowanie pełnej kontroli nad kluczami szyfrowania. Używa dwóch kluczy do ochrony danych; jeden klucz w kontrolce i drugi klucz przechowywany bezpiecznie na platformie Microsoft Azure. Wyświetlanie danych chronionych za pomocą szyfrowania podwójnym kluczem wymaga dostępu do obu kluczy. Ponieważ firma Microsoft może uzyskać dostęp tylko do jednego z tych kluczy, chronione dane pozostają niedostępne dla firmy Microsoft, zapewniając pełną kontrolę nad prywatnością i bezpieczeństwem danych.  
 
-Usługę szyfrowania dwukluczowych używaną do żądania klucza możesz hostować w wybranej lokalizacji (na lokalnym serwerze zarządzania kluczami lub w chmurze). Usługa jest utrzymywana tak samo jak każda inna aplikacja. Szyfrowanie dwukluczowych umożliwia kontrolowanie dostępu do usługi szyfrowania dwukluczowych. Dane o wysokiej poufnej ochronie możesz przechowywać lokalnie lub przenosić do chmury. Możesz mieć pewność, że uniemożliwisz dostęp innej firmy, ponieważ będziesz mieć pełną kontrolę nad swoim kluczem. Szyfrowanie podwójnym kluczem umożliwia przechowywanie danych i klucza w tej samej lokalizacji.
+Możesz hostować usługę szyfrowania podwójnym kluczem używaną do żądania klucza w wybranej lokalizacji (lokalny serwer zarządzania kluczami lub w chmurze). Usługa jest utrzymywana tak, jak w przypadku każdej innej aplikacji. Szyfrowanie podwójnym kluczem umożliwia kontrolowanie dostępu do usługi podwójnego szyfrowania kluczy. Możesz przechowywać wysoce poufne dane lokalnie lub przenieść je do chmury. Możesz mieć pewność, że uniemożliwisz dostęp innym firmom, ponieważ zachowujesz pełną kontrolę nad kluczem. Podwójne szyfrowanie kluczy umożliwia przechowywanie danych i klucza w tej samej lokalizacji.
 
-DKE ułatwia spełnianie wymagań prawnych w ramach kilku przepisów i standardów, takich jak Ogólne Rozporządzenie o Ochronie Danych (RODO), ustawę HIPAA , ustawę o przenoszeniu i odpowiedzialności ubezpieczenia społecznego, ustawę Gramm-Leach-Bliley Act (GLBA), prawo lokalizacji danych w Rosji — nie prawo federalne. 242-FZ, federalna aktu prywatności Australii 1988 i nowozelandzkiej ustawy o ochronie prywatności 1993.
+DKE pomaga spełnić wymagania prawne w kilku przepisach i standardach, takich jak ogólne rozporządzenie o ochronie danych (RODO), ustawy o przenośności i odpowiedzialności ubezpieczeń zdrowotnych (HIPAA), gramm-Leach-Bliley Act (GLBA), rosyjskiej ustawy o lokalizacji danych – prawo federalne nr. 242-FZ, australijska federalna ustawa o ochronie prywatności z 1988 r. i nowozelandzka ustawa o ochronie prywatności z 1993 r.
 
-## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>Czy mogę używać szyfrowania dwucyfrowego Microsoft Office wbudowanych etykiet wrażliwości?
+## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>Czy mogę używać szyfrowania podwójnym kluczem z wbudowanym etykietowaniem poufności pakietu Microsoft Office?
 
-Do ochrony dokumentów za pomocą szyfrowania dwukluczowych należy użyć ujednoliconego klienta etykiet usługi Azure Information Protection. Obecnie nie można używać wbudowanych Microsoft Office etykiet wrażliwości.
+Aby chronić dokumenty za pomocą szyfrowania podwójnym kluczem, należy użyć klienta ujednoliconego etykietowania usługi Azure Information Protection. Obecnie nie można używać wbudowanego etykietowania poufności pakietu Microsoft Office.
 
-## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>Jakich Aplikacje Microsoft 365 używać z użyciem funkcji DKE?
+## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>Jakiego Aplikacje Microsoft 365 mogę użyć z funkcją DKE?
 
-Za pomocą etykiet funkcji DKE można chronić dokumenty za pomocą wersji klasycznych programu Word, Excel i PowerPoint na Windows. Upewnij się, że korzystasz z programu *.12711 lub nowszego (wersje klasyczne programu Word, PowerPoint i Excel) na Windows.
+Etykiety DKE umożliwiają ochronę dokumentów przy użyciu klasycznych wersji programów Word, Excel i PowerPoint w systemie Windows. Upewnij się, że używasz programu *.12711 lub nowszego (wersje klasyczne programów Word, PowerPoint i Excel) w systemie Windows.
 
-## <a name="how-is-double-key-encryption-different-from-the-existing-hold-your-own-key-hyok-solution"></a>Czym różni się szyfrowanie podwójnym kluczem od istniejącego rozwiązania hold your own key (HYOK)?
+## <a name="how-is-double-key-encryption-different-from-the-existing-hold-your-own-key-hyok-solution"></a>Czym różni się szyfrowanie podwójnego klucza od istniejącego rozwiązania do przechowywania własnego klucza (HYOK)?
 
-Szyfrowanie przy użyciu dwóch klawiszy szyfruje dane za pomocą dwóch kluczy. Klucz szyfrowania znajduje się w Twojej kontrolce, a drugi klucz jest przechowywany w Microsoft Azure, co pozwala na przeniesienie zaszyfrowanych danych do chmury. Program HYOK chroni zawartość za pomocą tylko jednego klucza, a klucz jest zawsze w środowisku lokalnym.  
+Funkcja podwójnego szyfrowania kluczy szyfruje dane za pomocą dwóch kluczy. Klucz szyfrowania znajduje się w twojej kontroli, a drugi klucz jest przechowywany na platformie Microsoft Azure, co umożliwia przenoszenie zaszyfrowanych danych do chmury. Funkcja HYOK chroni zawartość tylko jednym kluczem, a klucz jest zawsze lokalny.  
 
-## <a name="can-double-key-encrypted-documents-be-shared-externally"></a>Czy można udostępniać dokumenty w postaci zaszyfrowanej podwójnie na zewnątrz?
+## <a name="can-double-key-encrypted-documents-be-shared-externally"></a>Czy dokumenty z podwójnym kluczem szyfrowane mogą być udostępniane zewnętrznie?
 
-Dokumenty szyfrowane przy użyciu dwóch kluczy można udostępniać użytkownikom w osobnej dzierżawie, o ile:
+Dokumenty z podwójnym kluczem szyfrowane można udostępniać użytkownikom w osobnej dzierżawie, o ile użytkownicy:
 
-- Uzyskaj wymagane uprawnienia, aby uzyskać dostęp do klucza w usłudze szyfrowania dwucyfrowego.
+- Uzyskaj wymagane uprawnienie dostępu do klucza w usłudze podwójnego szyfrowania kluczy.
 
-- Miej wymagane uprawnienia dostępu do klucza w programie Microsoft Azure.
+- Uzyskaj wymagane uprawnienie dostępu do klucza na platformie Microsoft Azure.
 
-## <a name="what-happens-to-documents-that-are-protected-with-hyok"></a>Co się dzieje z dokumentami chronionymi za pomocą hyok?
+## <a name="what-happens-to-documents-that-are-protected-with-hyok"></a>Co się dzieje z dokumentami chronionymi za pomocą funkcji HYOK?
 
-Wdrażanie szyfrowania dwukluczowych nie ma wpływu na istniejącą konfigurację HYOK. Jednak zalecamy rozpoczęcie korzystania z szyfrowania dwukluczowych równolegle z funkcją HYOK.
+Wdrożenie szyfrowania podwójnego klucza nie wpłynie na istniejącą konfigurację rozwiązania HYOK. Zalecamy jednak rozpoczęcie korzystania z szyfrowania podwójnym kluczem równolegle z funkcją HYOK.
 
-## <a name="can-i-run-double-key-encryption-in-my-non-microsoft-air-gapped-environment"></a>Czy mogę korzystać z szyfrowania dwukrotnie w środowisku niegędnym przez firmę Microsoft?
+## <a name="can-i-run-double-key-encryption-in-my-non-microsoft-air-gapped-environment"></a>Czy mogę uruchomić szyfrowanie podwójnym kluczem w środowisku innym niż microsoft air-gapped?
 
-Usługa DKE nie obsługuje tych środowisk, ponieważ usługa wymaga dostępu do Microsoft Azure.
+Usługa DKE nie obsługuje tych środowisk, ponieważ usługa wymaga dostępu do platformy Microsoft Azure.
 
-## <a name="where-can-i-store-double-key-encrypted-documents"></a>Gdzie można przechowywać dokumenty zaszyfrowane przy użyciu dwóch kluczy?
+## <a name="where-can-i-store-double-key-encrypted-documents"></a>Gdzie można przechowywać dokumenty zaszyfrowane podwójnym kluczem?
 
-Dokumenty w postaci zaszyfrowanej dwukrotnie można przechowywać lokalnie lub w chmurze. W chmurze możesz przenieść zaszyfrowaną zawartość do usługi SharePoint Online i OneDrive dla Firm. Firma Microsoft nie ma dostępu do klucza prywatnego, więc zaszyfrowane dane pozostają nieprzezroczyste dla firmy Microsoft. Oznacza to również, że nie można wyświetlać zaszyfrowanych dokumentów w trybie online w Office Web Apps.
+Dokumenty z podwójnym kluczem szyfrowane można przechowywać lokalnie lub w chmurze. W chmurze możesz przenieść zaszyfrowaną zawartość do usługi SharePoint Online i OneDrive dla Firm. Ponieważ firma Microsoft nie ma dostępu do Twojego klucza prywatnego, zaszyfrowane dane pozostają nieprzejrzysty dla firmy Microsoft. Oznacza to również, że nie można wyświetlać zaszyfrowanych dokumentów online w usłudze Office Web Apps.
 
-## <a name="what-regions-and-languages-is-double-key-encryption-available-in-is-double-key-encryption-available-worldwide"></a>W jakich regionach i językach jest dostępne szyfrowanie dwucyfrowe? Czy szyfrowanie podwójnie klucza jest dostępne na całym świecie?
+## <a name="what-regions-and-languages-is-double-key-encryption-available-in-is-double-key-encryption-available-worldwide"></a>W jakich regionach i językach jest dostępne podwójne szyfrowanie kluczy? Czy szyfrowanie podwójnym kluczem jest dostępne na całym świecie?
 
-Etykiety DKE są zlokalizowane na tych samych językach, co inne etykiety wrażliwości w Microsoft Information Protection. Szyfrowanie dwukluczowych jest dostępne na całym świecie.
+Etykiety DKE są zlokalizowane w tych samych językach, co inne etykiety poufności w Microsoft Purview Information Protection. Szyfrowanie podwójnym kluczem jest dostępne na całym świecie.
 
-## <a name="can-i-convert-a-non-dke-label-to-a-dke-label"></a>Czy mogę przekonwertować etykietę niezabędaną DKE na etykietę DKE?
+## <a name="can-i-convert-a-non-dke-label-to-a-dke-label"></a>Czy można przekonwertować etykietę inną niż DKE na etykietę DKE?
 
-L.p. Nie można dodać etykiety DKE po jej utworzeniu. Zamiast tego podczas tworzenia etykiety należy wybrać pozycję Użyj szyfrowania dwucyfrowego i podać adres URL usługi szyfrowania dwukluczowych.
+L.p. Nie można dodać funkcji DKE do etykiety po jej utworzeniu. Zamiast tego należy wybrać opcję **Użyj szyfrowania podwójnym kluczem** i podać adres URL usługi Double Key Encryption podczas tworzenia etykiety.
 
-## <a name="how-do-i-roll-my-dke-keys"></a>Jak mogę przewęczyć klawisze DKE?
+## <a name="how-do-i-roll-my-dke-keys"></a>Jak mogę rzutować klucze DKE?
 
-Aby uzyskać instrukcje dotyczące obracania (nazywanego również obracanie i rekeying) klucza przechowywanego na platformie Azure, zobacz Operacje dla klucza dzierżawy [usługi Azure Information Protection](/azure/information-protection/operations-customer-managed-tenant-key).
+Aby uzyskać instrukcje dotyczące stopniowania (nazywanego również rotacją lub ponownym kluczem) klucza przechowywanego na platformie Azure, zobacz [Operacje dla klucza dzierżawy usługi Azure Information Protection](/azure/information-protection/operations-customer-managed-tenant-key).
 
-Zobacz [Dzierżawa i ustawienia klucza,](double-key-encryption.md#tenant-and-key-settings) aby uzyskać informacje na temat tworzenia nowego klucza dla usługi DKE.
+Zobacz [Ustawienia dzierżawy i klucza](double-key-encryption.md#tenant-and-key-settings) , aby uzyskać informacje na temat tworzenia nowego klucza dla usługi DKE.
 
-Podczas tworzenia klucza należy skonfigurować nazwę i identyfikator GUID. Następnie w przypadku obracania klucza należy zachować stary rekord z nazwą i identyfikatorem GUID, ale dodać nowy rekord o tej samej nazwie, ale z innym identyfikatorem GUID. Nowy klucz zostanie ustawiony jako aktywny, dzięki czemu interfejs API klucza publicznego zacznie go zwracać w celu nowego szyfrowania. Oba klucze są dostępne do odszyfrowania, dzięki czemu można odszyfrować nową zawartość i starą zawartość.
+Podczas tworzenia klucza należy skonfigurować nazwę i identyfikator GUID. Następnie, jeśli obrócisz klucz, zachowasz stary rekord z nazwą i identyfikatorem GUID, ale dodasz nowy rekord o tej samej nazwie, ale z innym identyfikatorem GUID. Nowy klucz zostanie ustawiony jako aktywny, dzięki czemu interfejs API klucza publicznego zacznie zwracać go do nowego szyfrowania. Oba klucze są dostępne do odszyfrowywania, dzięki czemu można odszyfrować nową zawartość i starą zawartość.
