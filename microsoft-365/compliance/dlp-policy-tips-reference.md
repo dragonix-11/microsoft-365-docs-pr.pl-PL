@@ -19,18 +19,16 @@ ms.collection:
 recommendations: false
 description: Dowiedz się, jak dodać poradę dotyczącą zasad do zasad ochrony przed utratą danych (DLP), powiadamiając użytkownika o pracy z zawartością powodującą konflikt z zasadami DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: f9702916831839ac384cd262854fd0a88f90a8ea
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 04743bdabba4089a7cfdbb46fbb25d427927f6c0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953666"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638350"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Dokumentacja dotycząca porad dotyczących zasad ochrony przed utratą danych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Porady dotyczące zasad DLP w Outlook dostęp do sieci Web są obsługiwane dla wszystkich warunków, wyjątków i akcji mających zastosowanie do obciążenia Exchange w zasadach DLP, z wyjątkiem następujących:
+Porady dotyczące zasad DLP w programie Outlook Web Access są obsługiwane dla wszystkich warunków, wyjątków i akcji mających zastosowanie do obciążenia programu Exchange w zasadach DLP, z wyjątkiem następujących:
 
 **Warunki:**
 
@@ -64,18 +62,18 @@ Porady dotyczące zasad DLP w Outlook dostęp do sieci Web są obsługiwane dla 
 - Temat wstępnej wiadomości e-mail
 - Usuwanie szyfrowania komunikatów usługi O365 i ochrony praw
 
-## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>Outlook 2013 r. i nowsze obsługuje wyświetlanie wskazówek dotyczących zasad tylko dla niektórych warunków i wyjątków
+## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>Program Outlook 2013 i nowsze obsługuje wyświetlanie wskazówek dotyczących zasad tylko dla niektórych warunków i wyjątków
 
-Obecnie Outlook 2013 r. i nowsze obsługuje wyświetlanie wskazówek dotyczących zasad, które nie zawierają żadnych warunków ani wyjątków oprócz wymienionych poniżej warunków i odpowiadających im wyjątków:
+Obecnie program Outlook 2013 i nowsze obsługują wyświetlanie wskazówek dotyczących zasad, które nie zawierają żadnego warunku lub wyjątku oprócz wymienionych poniżej warunków i odpowiadających im wyjątków:
 
 - Zawartość zawiera (działa tylko w przypadku typów informacji poufnych. Etykiety poufności nie są obsługiwane)
 - Zawartość jest udostępniana
 
-Należy pamiętać, że wszystkie warunki działają w przypadku wiadomości e-mail utworzonych w Outlook aplikacji klienckiej, gdzie będą one zgodne z zawartością i wymuszają akcje ochronne dotyczące zawartości. Jednak wyświetlanie porad dotyczących zasad dla użytkowników nie jest obsługiwane w przypadku żadnych warunków, które są używane poza tymi wymienionymi powyżej.
+Należy pamiętać, że wszystkie warunki działają w przypadku wiadomości e-mail utworzonych w aplikacji klienckiej programu Outlook, gdzie będą one zgodne z zawartością i wymuszają akcje ochronne dotyczące zawartości. Jednak wyświetlanie porad dotyczących zasad dla użytkowników nie jest obsługiwane w przypadku żadnych warunków, które są używane poza tymi wymienionymi powyżej.
 
-## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 r. i nowsze oraz Office obsługę aplikacji na pulpicie z poradami dotyczącymi zasad tylko dla niektórych typów informacji poufnych
+## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Obsługa aplikacji Outlook 2013 i nowszych oraz aplikacji pakietu Office w programie Desktop z poradami dotyczącymi zasad tylko dla niektórych typów informacji poufnych
 
-Lista dostępnych poufnych typów informacji, które zostaną wykryte w celu wyświetlenia wskazówek dotyczących zasad DLP w Outlook na komputerze (2013 lub nowszym) i aplikacjach Office (Word, Excel, PowerPoint) na pulpicie, to:
+Lista dostępnych poufnych typów informacji, które zostaną wykryte w celu wyświetlenia porad dotyczących zasad DLP w programie Outlook on Desktop (2013 lub nowszym) i aplikacjach pakietu Office (Word, Excel, PowerPoint) w programie Desktop, to następujące elementy:
 
 - Numer routingu ABA
 - Numer tożsamości narodowej Argentyny (DNI)
@@ -98,7 +96,7 @@ Lista dostępnych poufnych typów informacji, które zostaną wykryte w celu wy�
 - Brazylia National ID Card (RG)
 - Numer konta bankowego w Kanadzie
 - Kanada Numer prawa jazdy
-- Kanada — numer Usługa kondycji
+- Numer usługi kondycji Kanady
 - Kanada Numer paszportu
 - Kanada Osobisty numer identyfikacyjny zdrowia (PHIN)
 - Kanada Numer ubezpieczenia społecznego
@@ -133,7 +131,7 @@ Lista dostępnych poufnych typów informacji, które zostaną wykryte w celu wy�
 - Numer międzynarodowego konta bankowego (IBAN)
 - Międzynarodowa klasyfikacja chorób (ICD-10-CM)  
 - Międzynarodowa klasyfikacja chorób (ICD-9-CM)  
-- IP Address (Adres IP)
+- Adres IP
 - Numer służby publicznej (PPS) w Irlandii 
 - Numer konta bankowego Izrael
 - Identyfikator narodowy Izraela
@@ -169,7 +167,7 @@ Lista dostępnych poufnych typów informacji, które zostaną wykryte w celu wy�
 - Turecki krajowy numer identyfikacyjny
 - WIELKIEJ BRYTANII. Numer prawa jazdy
 - WIELKIEJ BRYTANII. Numer listy wyborczej
-- WIELKIEJ BRYTANII. Numer Usługa kondycji krajowego
+- WIELKIEJ BRYTANII. Numer krajowej służby zdrowia
 - WIELKIEJ BRYTANII. Numer ubezpieczenia narodowego (NINO)
 - Stany Zjednoczone /Zjednoczone Zjednoczone Numer paszportu
 - Numer konta bankowego w Stanach Zjednoczonych
@@ -218,7 +216,7 @@ Lista wbudowanych typów informacji poufnych, które zostaną wykryte w dokument
 - Bułgaria — jednolity numer cywilny 
 - Numer konta bankowego w Kanadzie 
 - Kanada Numer prawa jazdy 
-- Kanada — numer Usługa kondycji 
+- Numer usługi kondycji Kanady 
 - Kanada Numer paszportu 
 - Kanada Osobisty numer identyfikacyjny zdrowia (PHIN) 
 - Kanada Numer ubezpieczenia społecznego 
@@ -286,7 +284,7 @@ Lista wbudowanych typów informacji poufnych, które zostaną wykryte w dokument
 - Numer międzynarodowego konta bankowego (IBAN) 
 - Międzynarodowa klasyfikacja chorób (ICD-10-CM) 
 - Międzynarodowa klasyfikacja chorób (ICD-9-CM) 
-- IP Address (Adres IP) 
+- Adres IP 
 - Irlandzki numer prawa jazdy 
 - Numer paszportu Irlandii 
 - Numer służby publicznej (PPS) w Irlandii 
@@ -376,7 +374,7 @@ Lista wbudowanych typów informacji poufnych, które zostaną wykryte w dokument
 - Turecki krajowy numer identyfikacyjny 
 - WIELKIEJ BRYTANII. Numer prawa jazdy 
 - WIELKIEJ BRYTANII. Numer listy wyborczej 
-- WIELKIEJ BRYTANII. Numer Usługa kondycji krajowego 
+- WIELKIEJ BRYTANII. Numer krajowej służby zdrowia 
 - WIELKIEJ BRYTANII. Numer ubezpieczenia narodowego (NINO) 
 - WIELKIEJ BRYTANII. Unikatowy numer referencyjny podatnika 
 - Stany Zjednoczone /Zjednoczone Zjednoczone Numer paszportu 
@@ -394,16 +392,16 @@ Należy pamiętać, że oprócz powyższych wbudowanych typów informacji poufny
 |**Aplikacja i platforma**|**Obsługa porad dotyczących zasad DLP**|**Obsługiwane typy informacji poufnych**|**Obsługiwane predykaty i akcje**|**Komentarze**|
 |:--|:--|:--|:--|:--|
 |**Outlook w sieci Web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Wszystkie|Podzbiór||
-|**Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Podzbiór|Podzbiór|Zobacz [Outlook 2013 i nowsze wersje pomocy technicznej zawierają wskazówki dotyczące zasad tylko dla niektórych warunków i wyjątków](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) oraz [Outlook 2013 r. i nowszych oraz Office aplikacji na pulpicie z poradami dotyczącymi zasad tylko dla niektórych typów informacji poufnych](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types), aby uzyskać szczegółowe informacje na temat obsługi typów informacji poufnych oraz warunków i akcji DLP obsługiwanych w celu wyświetlania wskazówek dotyczących zasad DLP dotyczących Outlook  Win32.|
-|**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Brak|Brak|Porady dotyczące zasad DLP nie są obsługiwane w Outlook urządzeniach przenośnych|
-|**klient sieci Web SharePoint Online/OneDrive dla Firm**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Wszystkie|wszystkie predykaty i akcje SPO/ODB w DLP||
-|**klient SharePoint Win32/ OneDrive dla Firm Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Brak|Brak|Porady dotyczące zasad DLP nie są obsługiwane w aplikacjach klienckich SharePoint ani OneDrive klasycznych|
+|**Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Podzbiór|Podzbiór|Zobacz [Outlook 2013 i nowsze funkcje pomocy technicznej pokazujące wskazówki dotyczące zasad tylko dla niektórych warunków i wyjątków](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) oraz [outlook 2013 i nowsze i aplikacje pakietu Office w programie Desktop z poradami dotyczącymi zasad tylko dla niektórych typów informacji poufnych](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) , aby uzyskać szczegółowe informacje na temat obsługi typów informacji poufnych oraz warunków i akcji DLP obsługiwanych w przypadku wyświetlania wskazówek dotyczących zasad DLP w programie Outlook Win32.|
+|**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|brak|brak|Porady dotyczące zasad DLP nie są obsługiwane w programie Outlook dla urządzeń przenośnych|
+|**Klient sieci Web usługi SharePoint Online/OneDrive dla Firm**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Wszystkie|wszystkie predykaty i akcje SPO/ODB w DLP||
+|**Klient Win32/OneDrive dla Firm Win32 programu SharePoint**|:::image type="icon" source="../media/crsmrk.png" border="false":::|brak|brak|Porady dotyczące zasad DLP nie są obsługiwane w aplikacjach klienckich programu SharePoint lub OneDrive|
 |**Word, Excel, PowerPoint Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Wszystkie|wszystkie predykaty i akcje SPO/ODB w DLP|Porada dotycząca zasad DLP jest obsługiwana, jeśli dokument jest hostowany w aplikacji internetowej SPO lub ODB, a zasady DLP są już ostemplowane.|
-|**Word, Excel, klient PowerPoint Mobile**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Brak|Brak|Porady dotyczące zasad DLP nie są obsługiwane w aplikacjach mobilnych dla Office.|
-|**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Wszystkie|wszystkie Teams predykaty w zasadach DLP|Porady dotyczące zasad będą wyświetlane, gdy komunikat zostanie oflagowany jako "Ta wiadomość została oflagowana. Co mogę zrobić?" Po kliknięciu linku użytkownik może przejrzeć wykryte i zastąpione typy informacji poufnych lub zgłosić problem, jeśli jest to dozwolone przez administratora. Pamiętaj, że dla plików nie są wyświetlane żadne wskazówki dotyczące zasad. Gdy adresat próbuje uzyskać dostęp do dokumentu, może uzyskać odmowę dostępu, jeśli nie jest dozwolony.|
+|**Word, Excel, klient PowerPoint Mobile**|:::image type="icon" source="../media/crsmrk.png" border="false":::|brak|brak|Porady dotyczące zasad DLP nie są obsługiwane w aplikacjach mobilnych dla pakietu Office.|
+|**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Wszystkie|wszystkie predykaty usługi Teams w zasadach DLP|Porady dotyczące zasad będą wyświetlane, gdy komunikat zostanie oflagowany jako "Ta wiadomość została oflagowana. Co mogę zrobić?" Po kliknięciu linku użytkownik może przejrzeć wykryte i zastąpione typy informacji poufnych lub zgłosić problem, jeśli jest to dozwolone przez administratora. Pamiętaj, że dla plików nie są wyświetlane żadne wskazówki dotyczące zasad. Gdy adresat próbuje uzyskać dostęp do dokumentu, może uzyskać odmowę dostępu, jeśli nie jest dozwolony.|
 |**Urządzenia punktu końcowego Win32**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Podzbiór|wszystkie predykaty i akcje DLP punktu końcowego w zasadach DLP|Zobacz [Zapobieganie utracie danych w punkcie końcowym obsługuje porady dotyczące zasad tylko dla niektórych typów informacji poufnych](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
 |**Urządzenia z systemem macOS**|tylko domyślne porady|Wszystkie|Podzbiór|Zasady zapobiegania utracie danych są wymuszane na urządzeniach z systemem macOS. Porady dotyczące zasad niestandardowych nie są obsługiwane.|
-|**Aplikacje w chmurze innych firm**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Brak|Brak|Porady dotyczące zasad ochrony przed utratą danych nie są obsługiwane w aplikacjach w chmurze innych firm|
-|**Lokalnie**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Brak|Brak||
-|**Klient programu Word, Excel, PowerPoint Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Podzbiór|Podzbiór|Zobacz [Outlook 2013 r. i nowszych oraz Office aplikacji w pomocy technicznej aplikacji klasycznych z poradami dotyczącymi zasad tylko dla niektórych typów informacji poufnych](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) dla listy obsługiwanych typów informacji poufnych</br></br>Porady dotyczące zasad dla aplikacji klienckich WXP będą działać w przypadku dokumentów przechowywanych w witrynach SharePoint Online lub OneDrive dla Firm dla wszystkich zasad DLP, które mają dokładnie poniższe lub podzestaw warunków lub akcji w zasadach DLP:</br> <ul><li>Zawartość zawiera typy informacji poufnych</li><li>Zakres dostępu (zawartość jest współużytkowana wewnętrznie/zewnętrznie)</li><li>Powiadamianie użytkownika (porady dotyczące zasad/powiadomienia użytkowników)</li><li>Blokuj wszystkich</li><li>Raporty o zdarzeniach</li></ul></br> Jeśli istnieje jakikolwiek inny warunek lub akcja, porada dotycząca zasad DLP dla tych zasad nie będzie wyświetlana w aplikacjach klasycznych programu Word, Excel lub PowerPoint.</br>Aby uzyskać więcej informacji[, zobacz Porady dotyczące zasad w Excel, PowerPoint i programie Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)|
+|**Aplikacje w chmurze innych firm**|:::image type="icon" source="../media/crsmrk.png" border="false":::|brak|brak|Porady dotyczące zasad ochrony przed utratą danych nie są obsługiwane w aplikacjach w chmurze innych firm|
+|**Lokalnie**|:::image type="icon" source="../media/crsmrk.png" border="false":::|brak|brak||
+|**Word, Excel, PowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Podzbiór|Podzbiór|Zobacz [Outlook 2013 i nowsze aplikacje pakietu Office w programie Desktop z poradami dotyczącymi zasad tylko dla niektórych typów informacji poufnych](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) dla listy obsługiwanych typów informacji poufnych</br></br>Porady dotyczące zasad dla aplikacji klienckich WXP będą działać w przypadku dokumentów przechowywanych w usłudze SharePoint Online lub witrynach OneDrive dla Firm dla wszystkich zasad DLP, które mają dokładnie poniższy lub podzbiór warunków lub akcji w zasadach DLP:</br> <ul><li>Zawartość zawiera typy informacji poufnych</li><li>Zakres dostępu (zawartość jest współużytkowana wewnętrznie/zewnętrznie)</li><li>Powiadamianie użytkownika (porady dotyczące zasad/powiadomienia użytkowników)</li><li>Blokuj wszystkich</li><li>Raporty o zdarzeniach</li></ul></br> Jeśli istnieje jakikolwiek inny warunek lub akcja, porada dotycząca zasad DLP dla tych zasad nie będzie wyświetlana w aplikacjach klasycznych programu Word, Excel lub PowerPoint.</br>Aby uzyskać więcej informacji[, zobacz Porady dotyczące zasad w programach Excel, PowerPoint i Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)|
 ||||||

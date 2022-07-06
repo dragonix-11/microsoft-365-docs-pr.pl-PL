@@ -1,5 +1,5 @@
 ---
-title: Tworzenie szablonów ocen w Menedżerze zgodności firmy Microsoft
+title: Tworzenie szablonów oceny w programie Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,32 +17,32 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak tworzyć szablony dla ocen w Menedżerze zgodności firmy Microsoft. Tworzenie i modyfikowanie szablonów przy użyciu Excel pliku.
-ms.openlocfilehash: 1c7ccbe01d3411ace40cfe6ccdbe4fcb4d90480b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak tworzyć szablony dla ocen w programie Microsoft Purview Compliance Manager. Tworzenie i modyfikowanie szablonów przy użyciu sformatowanego pliku programu Excel.
+ms.openlocfilehash: f7198d9b7bb9c30d388924d9c1b16a79e86bb8ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316187"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638669"
 ---
-# <a name="create-an-assessment-template-in-microsoft-compliance-manager"></a>Tworzenie szablonu oceny w Menedżerze zgodności firmy Microsoft
+# <a name="create-an-assessment-template-in-microsoft-purview-compliance-manager"></a>Tworzenie szablonu oceny w programie Microsoft Purview Compliance Manager
 
-Aby utworzyć własny nowy szablon na potrzeby niestandardowych ocen w Menedżerze zgodności, użyj specjalnie sformatowanych arkuszy Excel kalkulacyjnych do zbierania niezbędnych danych kontrolnych. Po zakończeniu pracy z arkuszem kalkulacyjnym zaimportujesz go do Menedżera zgodności.
+Aby utworzyć własny nowy szablon dla ocen niestandardowych w Menedżerze zgodności, użyjesz specjalnie sformatowanego arkusza kalkulacyjnego programu Excel do zmontowania niezbędnych danych kontrolnych. Po ukończeniu arkusza kalkulacyjnego zaimportujesz go do Menedżera zgodności.
 
-Aby uzyskać informacje na temat formatowania arkusza kalkulacyjnego, zobacz Formatowanie danych [szablonu oceny za pomocą Excel](compliance-manager-templates-format-excel.md).
+Aby dowiedzieć się więcej na temat formatowania arkusza kalkulacyjnego, zobacz [Formatowanie danych szablonu oceny w programie Excel](compliance-manager-templates-format-excel.md).
 
 ## <a name="required-roles"></a>Wymagane role
 
-Tylko użytkownicy, którzy mają rolę administratora globalnego lub administratora zgodności, mogą tworzyć i modyfikować szablony. Dowiedz się więcej o [rolach i uprawnieniach](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+Szablony mogą tworzyć i modyfikować tylko użytkownicy z rolą administratora globalnego lub administratora programu Compliance Manager. Dowiedz się więcej o [rolach i uprawnieniach](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-## <a name="create-new-template-in-compliance-manager"></a>Tworzenie nowego szablonu w Menedżerze zgodności
+## <a name="create-new-template-in-compliance-manager"></a>Tworzenie nowego szablonu w menedżerze zgodności
 
-1. Przejdź do strony **szablonów oceniania** w Menedżerze zgodności.
-2. Wybierz **pozycję Utwórz nowy szablon**. Zostanie otwarty kreator tworzenia szablonów.
-3. Wybierz typ szablonu, który chcesz utworzyć. W tym przypadku wybierz pozycję **Utwórz szablon niestandardowy, a** następnie wybierz pozycję **Dalej**.
-4. Na **ekranie Upload** pliku wybierz pozycję Przeglądaj, aby  znaleźć i przekazać sformatowany plik Excel zawierający wszystkie wymagane dane szablonu.
-5. Jeśli nie będzie żadnych problemów z plikiem, zostanie wyświetlona nazwa przekazanego pliku. Wybierz przycisk **Dalej**, aby kontynuować. (Jeśli chcesz zmienić plik, wybierz **Upload inny plik**).
-    - W przypadku wystąpienia błędu w pliku u góry zostanie wyświetlony komunikat o błędzie informujący o tym, co się stało. Musisz naprawić plik i przekazać go ponownie. Błędy będą się pojawiać, jeśli arkusz kalkulacyjny został nieprawidłowo sformatowany lub w niektórych polach występują nieprawidłowe informacje.
-6. Ekran **Recenzja i zakończenie** zawiera liczbę akcji udoskonalania i kontrolek oraz maksymalną liczbę wyników dla szablonu. Gdy wszystko będzie gotowe do zatwierdzenia, wybierz **pozycję Utwórz szablon.** (Jeśli chcesz wprowadzić zmiany, wybierz pozycję **Wstecz**).
-7. Ostatni ekran potwierdza, że został utworzony nowy szablon. Wybierz **pozycję Gotowe** , aby zamknąć kreatora.
-8. Zostanie do Ciebie przyjedzie strona ze szczegółami nowego szablonu, na której możesz [utworzyć ocenę](compliance-manager-assessments.md#create-assessments).
+1. Przejdź do strony **szablonów oceny** w Menedżerze zgodności.
+2. Wybierz pozycję **Utwórz nowy szablon**. Zostanie otwarty kreator tworzenia szablonu.
+3. Wybierz typ szablonu, który chcesz utworzyć. W takim przypadku wybierz pozycję **Utwórz szablon niestandardowy**, a następnie wybierz pozycję **Dalej**.
+4. Na ekranie **Przekazywanie pliku** wybierz pozycję **Przeglądaj** , aby znaleźć i przekazać sformatowany plik programu Excel zawierający wszystkie wymagane dane szablonu.
+5. Jeśli nie ma żadnych problemów z plikiem, zostanie wyświetlona nazwa przekazanego pliku. Wybierz przycisk **Dalej**, aby kontynuować. (Jeśli musisz zmienić plik, wybierz pozycję **Przekaż inny plik**).
+    - Jeśli wystąpił błąd z plikiem, u góry znajduje się komunikat o błędzie wyjaśniający, co jest nie tak. Musisz naprawić plik i przekazać go ponownie. Błędy spowodują nieprawidłowe formatowanie arkusza kalkulacyjnego lub nieprawidłowe informacje w niektórych polach.
+6. Na ekranie **Przeglądanie i zakończenie** jest wyświetlana liczba akcji i kontrolek poprawy oraz maksymalny wynik szablonu. Gdy wszystko będzie gotowe do zatwierdzenia, wybierz pozycję **Utwórz szablon.** (Jeśli musisz wprowadzić zmiany, wybierz pozycję **Wstecz**).
+7. Ostatni ekran potwierdza, że został utworzony nowy szablon. Wybierz pozycję **Gotowe** , aby zamknąć kreatora.
+8. Zostanie wyświetlona strona szczegółów nowego szablonu, na której można [utworzyć ocenę](compliance-manager-assessments.md#create-assessments).

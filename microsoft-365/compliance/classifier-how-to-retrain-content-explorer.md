@@ -1,5 +1,5 @@
 ---
-title: Jak ponownie przeszkolenie klasyfikatora w Eksploratorze zawartości
+title: Jak ponownie wytrenować klasyfikator w eksploratorze zawartości
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,104 +14,104 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak przekazać opinię przeszkolnym klasyfikatorowi w Eksploratorze zawartości.
-ms.openlocfilehash: bbc724b94997a4668115314df0c627dcfa5ddc77
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Dowiedz się, jak przekazać opinię klasyfikatorowi trenowalnemu w Eksploratorze zawartości.
+ms.openlocfilehash: bde570b8bbb104d7f89523eb12bd8b9ac9210ad7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021289"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637444"
 ---
-# <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Jak ponownie przeszkolenie klasyfikatora w Eksploratorze zawartości
+# <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Jak ponownie wytrenować klasyfikator w eksploratorze zawartości
 
-Przeszkolny Microsoft 365 klasyfikator to narzędzie, które może pomóc w rozpoznawczym typach zawartości, dając mu przykłady do oglądu. Po przeszkoleniu możesz za jego pomocą identyfikować elementy do stosowania etykiet wrażliwości Office, zasad zgodności komunikacji i zasad przechowywania etykiet przechowywania.
+Klasyfikator trenowalny platformy Microsoft 365 to narzędzie, które można wytrenować w celu rozpoznawania różnych typów zawartości, udostępniając przykłady do obejrzenia. Po wytrenowaniu można go używać do identyfikowania elementów do stosowania etykiet poufności pakietu Office, zasad zgodności komunikacji i zasad etykiet przechowywania.
 
-W tym artykule pokazano, jak zwiększyć wydajność niestandardowych przeszkolnych klasyfikatorów przez przekazywanie im dodatkowych opinii.
+W tym artykule pokazano, jak zwiększyć wydajność niestandardowych klasyfikatorów z możliwością trenowania, przekazując im dodatkową opinię.
 
-Aby dowiedzieć się więcej o różnych typach klasyfikatorów, zobacz [Informacje o przeszkolnych klasyfikatorach](classifier-learn-about.md).
+Aby dowiedzieć się więcej na temat różnych typów klasyfikatorów, zobacz [Learn about trainable classifiers (Dowiedz się więcej o klasyfikatorach z możliwością trenowania](classifier-learn-about.md)).
 
-Ten klip wideo zawiera krótkie podsumowanie procesu dostosowywania i ponownego sprawdzania. Aby uzyskać szczegółowe informacje, nadal musisz przeczytać ten pełny artykuł.
+Obejrzyj to wideo, aby zapoznać się z krótkim podsumowaniem procesu dostrajania i ponownego trenowania. Aby uzyskać szczegółowe informacje, nadal musisz przeczytać ten pełny artykuł.
 
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
 
 > [!NOTE]
-> Nie można ponownie przeszkolić wstępnie przeszkolonych klasyfikatorów.
+> Nie można ponownie wytrenować wstępnie wytrenowanych klasyfikatorów.
 
 ## <a name="permissions"></a>Uprawnienia
 
-Aby uzyskać dostęp do klasyfikatorów w centrum Microsoft 365 zgodności:
+Aby uzyskać dostęp do klasyfikatorów w portal zgodności Microsoft Purview:
 
-- Rola administratora zgodności lub administrator danych zgodności jest wymagana w celu przeszkolinia klasyfikatora
+- rola administratora zgodności lub administrator danych zgodności jest wymagana do szkolenia klasyfikatora
 
-Do używania klasyfikatorów w tych scenariuszach potrzebne są konta z tymi uprawnieniami:
+Konta z tymi uprawnieniami będą potrzebne do używania klasyfikatorów w następujących scenariuszach:
 
-- Scenariusz zasad etykiet przechowywania: Role zarządzania rekordami i zarządzania przechowywaniem 
+- Scenariusz zasad przechowywania etykiet: Role zarządzania rekordami i zarządzania przechowywaniem 
 
 ## <a name="overall-workflow"></a>Ogólny przepływ pracy
 
 > [!IMPORTANT]
-> W Eksploratorze zawartości możesz przekazać opinię na temat automatycznego stosowania zasad etykiet przechowywania Exchange elementów i stosować klasyfikator jako warunek. **Jeśli nie masz zasad przechowywania, które automatycznie stosuje etykietę przechowywania do elementów Exchange i używa specyfikatora jako warunku, zatrzymaj się tutaj.**
+> W Eksploratorze zawartości możesz przekazać opinię dotyczącą zasad automatycznego stosowania etykiet przechowywania do elementów programu Exchange i używać klasyfikatora jako warunku. **Jeśli nie masz zasad przechowywania, które automatycznie stosują etykietę przechowywania do elementów programu Exchange i używają klasyfikatora jako warunku, zatrzymaj się tutaj.**
 
-Gdy używasz klasyfikatorów, możesz zwiększyć dokładność klasyfikacji, które są przez nie klasyfikowane. Możesz to zrobić, oceniając jakość klasyfikacji wykonanych dla elementów, które zostały zidentyfikowane jako zgodne lub nie. Po 30 ocenach klasyfikatora przyjmuje on te opinie i automatycznie ponownie dostosowuje się do siebie.
+Podczas korzystania z klasyfikatorów warto zwiększyć precyzję klasyfikacji, które tworzą. Można to zrobić, oceniając jakość klasyfikacji wykonanych dla elementów, które określił jako zgodne lub niezgodne. Po dokonaniu 30 ocen klasyfikatora przyjmuje tę opinię i automatycznie ponownie się trenuje.
 
-Aby dowiedzieć się więcej o ogólnym przepływie pracy ponownego szkolenia klasyfikatora, zobacz Przepływ przetwarzania [ponownego szkolenia klasyfikatora](classifier-learn-about.md#retraining-classifiers).
+Aby dowiedzieć się więcej na temat ogólnego przepływu pracy ponownego trenowania klasyfikatora, zobacz [Przepływ procesu ponownego trenowania klasyfikatora](classifier-learn-about.md#retraining-classifiers).
 
 > [!NOTE]
-> Zanim będzie można przeszkolić klasyfikatora, musi on być już opublikowany i w użyciu.
+> Klasyfikator musi być już opublikowany i używany, zanim będzie można go ponownie wytrenować.
 
-## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Jak ponownie przeszkolenie klasyfikatora w Eksploratorze zawartości
+## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Jak ponownie wytrenować klasyfikator w eksploratorze zawartości
 
-1. Zaloguj się w celu Centrum zgodności platformy Microsoft 365 dostępu za pomocą roli administratora zgodności lub administratora zabezpieczeń i otwórz **Centrum zgodności platformy Microsoft 365** >  KlasyfikacjaDanychSkontentu > . 
-2. Na liście **Filtruj według etykiet, typów informacji** lub kategorii rozwiń kategorię **Klasyfikatorzy do przeszkoli.**
+1. Zaloguj się do portal zgodności Microsoft Purview z dostępem administratora zgodności lub administratora zabezpieczeń i otwórz **Eksploratora zawartości** **klasyfikacji** >  **portal zgodności Microsoft Purview** >  Data. 
+2. Na liście **Filtruj etykiety, typy informacji lub kategorie** rozwiń węzeł **Klasyfikatory trainable**.
 
 > [!IMPORTANT]
-> Może upłynie do ośmiu dni, aż elementy zagregowane pojawią się pod nagłówkiem klasyfikatorów przeszkolnych.
+> Może upłynąć do ośmiu dni, aż zagregowane elementy pojawią się pod nagłówkiem klasyfikatorów klasyfikujących możliwość trenowania.
 
-3. Wybierz przeszkoliwny klasyfikator użyty w zasadach automatycznego stosowania etykiet przechowywania. Jest to przeszkolny klasyfikator, na temat który chcesz przekazać opinię.
+3. Wybierz klasyfikator trenowalny użyty w zasadach automatycznego stosowania etykiet przechowywania. Jest to klasyfikator trenowalny, na który przekażesz opinię.
 
 > [!NOTE]
-> Jeśli element zawiera wpis w kolumnie **Etykieta** przechowywania, oznacza to, że element został sklasyfikowany jako .`match`  Jeśli element nie ma wpisu w kolumnie Etykieta przechowywania,  oznacza to, że został sklasyfikowany jako .`close match` Możesz ulepszyć dokładność klasyfikatora, podając opinie na temat `close match` elementów. 
+> Jeśli element ma wpis w kolumnie **Etykieta przechowywania** , oznacza to, że element został sklasyfikowany jako `match`.  Jeśli element nie ma wpisu w kolumnie **Etykieta przechowywania** , oznacza to, że został sklasyfikowany jako `close match`. Precyzję klasyfikatora można zwiększyć najbardziej, przekazując opinie na `close match` temat elementów. 
 
 4. Wybierz element i otwórz go.
  
  > [!TIP]
-> Możesz przekazać opinię na temat wielu elementów jednocześnie, wybierając je wszystkie, a następnie wybierając **pozycję Popraw klasyfikację** na pasku poleceń.
+> Możesz przekazać opinię na temat wielu elementów jednocześnie, wybierając je wszystkie, a następnie wybierając pozycję **Ulepsz klasyfikację** na pasku poleceń.
 
-5. Wybierz pozycję **Podaj opinię**.
-6. Jeśli element **jest** naprawdę dodatni, w okienku Szczegółowa opinia wybierz pozycję **Dopasuj**.  Jeśli element jest fałszywie dodatni, czyli został nieprawidłowo uwzględniony w kategorii, wybierz pozycję **Nie dopasowano**.
-7. Jeśli istnieje inny klasyfikator, który będzie bardziej odpowiedni dla elementu, możesz wybrać go z listy Zaproponuj **innych klasyfikatorów** przeszkolnych. Spowoduje to wyzwolenie innego specyfikatora do oceny elementu.
-8. Wybierz **pozycję Wyślij opinię** , aby wysłać ocenę `match`klasyfikacji , `not a match` i zaproponować innych przeszkolnych klasyfikatorów. Po podaniem 30 wystąpień opinii dla klasyfikatora zostanie on automatycznie ponownie przeszkoliny. Ponowne przeszkolenie może trwać od jednej do czterech godzin. Klasyfikatory mogą być przeszkolone tylko dwa razy dziennie.
+5. Wybierz **pozycję Przekaż opinię**.
+6. Jeśli element jest prawdziwie pozytywny, w okienku **Szczegółowe opinie** wybierz pozycję **Dopasuj**.  Jeśli element jest fałszywie dodatni, to jest niepoprawnie uwzględniony w kategorii, wybierz **pozycję Nie dopasuj**.
+7. Jeśli istnieje inny klasyfikator, który byłby bardziej odpowiedni dla elementu, możesz wybrać go z listy **Sugerowanie innych klasyfikatorów z możliwością trenowania** . Spowoduje to wyzwolenie innego klasyfikatora w celu oceny elementu.
+8. Wybierz pozycję **Wyślij opinię** , aby wysłać ocenę `match`klasyfikacji , `not a match` i zasugeruj inne klasyfikatory z możliwością trenowania. Po przekazaniu klasyfikatorowi 30 wystąpień opinii zostanie automatycznie ponownie wytrenowany. Ponowne trenowanie może potrwać od jednej do czterech godzin. Klasyfikatory można ponownie trenować tylko dwa razy dziennie.
 
 > [!IMPORTANT]
-> Te informacje są przekierowywczane do klasyfikatora w Twojej dzierżawie, **ale nie są powrót do firmy Microsoft**.
+> Te informacje trafiają do klasyfikatora w dzierżawie, **ale nie wracają do firmy Microsoft**.
 
-9. Otwórz **klasyfikatorów typu Trainable**.
-10. Klasyfikator użyty w zasadach zgodności komunikacji zostanie wyświetlony pod **nagłówkiem Ponowne szkolenie** .
+9. Otwórz **klasyfikatory trainable**.
+10. Klasyfikator użyty w zasadach zgodności usługi Communications zostanie wyświetlony w nagłówku **Ponowne trenowanie** .
 
-![klasyfikator w stanie ponownego treningu.](../media/classifier-retraining.png)
+![klasyfikatora w stanie ponownego trenowania.](../media/classifier-retraining.png)
 
-11. Po zakończeniu ponownego szkolenia wybierz klasyfikatora, aby otworzyć omówienie ponownego szkolenia.
+11. Po zakończeniu ponownego trenowania wybierz klasyfikator, aby otworzyć przegląd ponownego trenowania.
 
-![Omówienie wyników ponownego szkolenia klasyfikatora.](../media/classifier-retraining-overview.png)
+![omówienie wyników ponownego trenowania klasyfikatora.](../media/classifier-retraining-overview.png)
 
-12. Przejrzyj zalecane działanie i porównania przewidywań przeszkolonych i obecnie opublikowanych wersji specyfikatora.
-13. Jeśli wyniki ponownego szkolenia są zadowałe, wybierz pozycję **Opublikuj ponownie**.
-14. Jeśli nie podoba Ci się wynik ponownego treningu, możesz przekazać dodatkową opinię klasyfikatorowi w interfejsie Eksploratora zawartości i rozpocząć kolejny cykl ponownego treningu lub nic nie robić — w takim przypadku obecnie opublikowana wersja klasyfikatora nadal będzie używana. 
+12. Przejrzyj zalecaną akcję i porównania przewidywania ponownie wytrenowanych i aktualnie opublikowanych wersji klasyfikatora.
+13. Jeśli wyniki ponownego trenowania są zadowalające, wybierz pozycję **Opublikuj ponownie**.
+14. Jeśli wyniki ponownego trenowania nie są zadowalające, możesz przekazać dodatkową opinię klasyfikatorowi w interfejsie Eksploratora zawartości i rozpocząć kolejny cykl ponownego trenowania lub nie wykonywać żadnych czynności w takim przypadku, gdy obecnie opublikowana wersja klasyfikatora będzie nadal używana. 
 
-## <a name="details-on-republishing-recommendations"></a>Szczegółowe informacje na temat zaleceń dotyczących ponownego rozpowszechniania
+## <a name="details-on-republishing-recommendations"></a>Szczegóły dotyczące ponownego publikowania zaleceń
 
-Oto nieco informacji na temat formułowania zalecenia dotyczącego ponownego publikowania przeszkolonego klasyfikatora lub zaproponowania dalszego ponownego treningu. Wymaga to nieco lepszego zrozumienia sposobu pracy klasyfikatorów, które można przeszkolić.
+Poniżej przedstawiono niewiele informacji na temat sposobu formułowania zalecenia dotyczącego ponownego opublikowania ponownie wytrenowanego klasyfikatora lub zasugerowania dalszego ponownego trenowania. Wymaga to nieco dokładniejszego zrozumienia sposobu działania klasyfikatorów z możliwością trenowania.
 
-Po zakończeniu ponownego szkolenia oceniamy wydajność klasyfikatora zarówno w przypadku elementów z opinią, jak i wszystkich elementów pierwotnie używanych do przeszkolenia klasyfikatora. 
+Po ponownym trenowaniu oceniamy wydajność klasyfikatora zarówno dla elementów z opinią, jak i wszystkich elementów pierwotnie używanych do trenowania klasyfikatora. 
 
-- W przypadku wbudowanych modeli elementy służące do przeszkolinia klasyfikatora to elementy używane przez firmę Microsoft do tworzenia modelu.
-- W przypadku modeli niestandardowych elementy używane w pierwotnym szkoleniu klasyfikatora są z witryn dodanych do testowania i przeglądania.
+- W przypadku modeli wbudowanych elementy używane do trenowania klasyfikatora są elementami używanymi przez firmę Microsoft do kompilowania modelu.
+- W przypadku modeli niestandardowych elementy używane w oryginalnym trenowaniu klasyfikator pochodzą z witryn dodanych do testowania i przeglądania.
 
-Porównujemy numery wydajności obu zestawów elementów dla przeszkolonego i opublikowanego klasyfikatora, aby udzielić zalecenia dotyczącego tego, czy istnieje ulepszenie w celu ponownego opublikowania. 
+Porównujemy numery wydajności dla obu zestawów elementów dla ponownie wytrenowanego i opublikowanego klasyfikatora, aby przedstawić zalecenie dotyczące tego, czy nastąpiła poprawa w celu ponownego opublikowania. 
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Dowiedz się więcej o przeszkolnych klasyfikatorach](classifier-learn-about.md)
-- [Domyślne rozszerzenia nazw plików przeszukanych i typy plików analizowanych w programie SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [Dowiedz się więcej o klasyfikatorach z możliwością szkolenia](classifier-learn-about.md)
+- [Domyślne rozszerzenia nazw plików przeszukanych i analizowane typy plików w programie SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

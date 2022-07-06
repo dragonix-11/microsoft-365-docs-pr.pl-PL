@@ -19,23 +19,21 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Dowiedz się, dlaczego szacowane i rzeczywiste wyniki wyszukiwania mogą się różnić w przypadku wyszukiwań uruchamianych za pomocą narzędzi zbierania elektronicznych materiałów dowodowych w Office 365.
-ms.openlocfilehash: 694d850d568aee4965530317f9bbc9f95727338c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: db7026672af0e3abfcee524757a63c9747ff06e7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092784"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638571"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Różnice między szacowanymi i rzeczywistymi wynikami wyszukiwania zbierania elektronicznych materiałów dowodowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Ten artykuł dotyczy wyszukiwań, które można uruchomić przy użyciu jednego z następujących Microsoft 365 narzędzi zbierania elektronicznych materiałów dowodowych: 
+Ten artykuł dotyczy wyszukiwań, które można uruchomić przy użyciu jednego z następujących narzędzi zbierania elektronicznych materiałów dowodowych platformy Microsoft 365: 
 
 - Wyszukiwanie zawartości
 - Zbieranie elektronicznych materiałów dowodowych (wersja standardowa)
 
-Po uruchomieniu wyszukiwania zbierania elektronicznych materiałów dowodowych używane narzędzie zwróci oszacowanie liczby elementów (i ich całkowitego rozmiaru) zgodnych z kryteriami wyszukiwania. Na przykład po uruchomieniu wyszukiwania w portalu zgodności usługi Microsoft Purview szacowane wyniki wyszukiwania są wyświetlane na stronie wysuwanej dla wybranego wyszukiwania.
+Po uruchomieniu wyszukiwania zbierania elektronicznych materiałów dowodowych używane narzędzie zwróci oszacowanie liczby elementów (i ich całkowitego rozmiaru) zgodnych z kryteriami wyszukiwania. Na przykład po uruchomieniu wyszukiwania w portal zgodności Microsoft Purview szacowane wyniki wyszukiwania są wyświetlane na stronie wysuwanej dla wybranego wyszukiwania.
   
 ![Szacowanie wyników wyświetlanych na stronie wysuwanego wyszukiwania.](../media/EstimatedSearchResults1.png)
   
@@ -55,7 +53,7 @@ Jak jednak zauważysz na poprzednim zrzucie ekranu raportu Podsumowanie eksportu
   
 Oto kilka przyczyn tych różnic:
   
-- **Sposób szacowania wyników**. Oszacowanie wyników wyszukiwania polega tylko na tym, że oszacowanie (a nie rzeczywista liczba) elementów spełniających kryteria zapytania wyszukiwania. Aby skompilować oszacowanie elementów Exchange, lista identyfikatorów komunikatów spełniających kryteria wyszukiwania jest żądana z bazy danych Exchange przez używane narzędzie zbierania elektronicznych materiałów dowodowych. Jednak po wyeksportowaniu wyników wyszukiwania wyszukiwanie jest uruchamiane ponownie, a rzeczywiste komunikaty są pobierane z bazy danych Exchange. Dlatego te różnice mogą wynikać ze sposobu określania szacowanej liczby elementów i rzeczywistej liczby elementów.
+- **Sposób szacowania wyników**. Oszacowanie wyników wyszukiwania polega tylko na tym, że oszacowanie (a nie rzeczywista liczba) elementów spełniających kryteria zapytania wyszukiwania. Aby skompilować oszacowanie elementów programu Exchange, lista identyfikatorów komunikatów spełniających kryteria wyszukiwania jest żądana z bazy danych programu Exchange przez używane narzędzie zbierania elektronicznych materiałów dowodowych. Jednak po wyeksportowaniu wyników wyszukiwania wyszukiwanie jest uruchamiane ponownie, a rzeczywiste komunikaty są pobierane z bazy danych programu Exchange. Dlatego te różnice mogą wynikać ze sposobu określania szacowanej liczby elementów i rzeczywistej liczby elementów.
 
 - **Zmiany zachodzą między godziną szacowania i eksportowania wyników wyszukiwania**. Podczas eksportowania wyników wyszukiwania wyszukiwanie jest ponownie uruchamiane w celu zebrania najnowszych elementów w indeksie wyszukiwania spełniających kryteria wyszukiwania. Istnieje możliwość utworzenia, wysłania lub odebrania dodatkowych elementów spełniających kryteria wyszukiwania w czasie między zebraniami szacowanych wyników wyszukiwania a wyeksportowaniem wyników wyszukiwania. Istnieje również możliwość, że elementy znajdujące się w indeksie wyszukiwania, gdy wyniki wyszukiwania zostały oszacowane, nie są już dostępne, ponieważ zostały usunięte z lokalizacji zawartości przed wyeksportowaniem wyników wyszukiwania. Jednym ze sposobów rozwiązania tego problemu jest określenie zakresu dat dla wyszukiwania zbierania elektronicznych materiałów dowodowych. Innym sposobem jest wstrzymanie lokalizacji zawartości, aby elementy były zachowywane i nie mogły być czyszczone.
 
@@ -63,7 +61,7 @@ Oto kilka przyczyn tych różnic:
 
   - Zwiększenie liczby elementów podczas korzystania z zapytania daty. Zazwyczaj przyczyną są następujące dwie rzeczy:
 
-  - Przechowywanie wersji w SharePoint. Jeśli dokument zostanie usunięty z witryny, która jest wstrzymana, a wersja dokumentu jest włączona, wszystkie wersje usuniętego dokumentu zostaną zachowane.
+  - Przechowywanie wersji w programie SharePoint. Jeśli dokument zostanie usunięty z witryny, która jest wstrzymana, a wersja dokumentu jest włączona, wszystkie wersje usuniętego dokumentu zostaną zachowane.
 
   - Elementy kalendarza. Akceptowanie i odrzucanie komunikatów oraz cykliczne spotkania będą automatycznie kontynuować tworzenie nowych elementów w tle ze starymi datami.
 
@@ -81,23 +79,23 @@ Oto kilka przyczyn tych różnic:
 
     Przyczyną nieeksportowania niezaimportowanych elementów z każdej lokalizacji w organizacji jest to, że może to zwiększyć prawdopodobieństwo wystąpienia błędów eksportu i zwiększyć czas potrzebny na wyeksportowanie i pobranie wyników wyszukiwania.
 
-- **Elementy niezaimportowane w SharePoint i OneDrive nie są uwzględniane w szacunkach wyszukiwania**. Elementy bez certyfikatu z witryn SharePoint i kont OneDrive dla Firm nie są uwzględniane w szacowanych wynikach wyszukiwania. Dzieje się tak, ponieważ indeks SharePoint nie zawiera danych dla elementów niewyświetlonych. W szacowaniu wyszukiwania są uwzględniane tylko elementy niezaimportowane ze skrzynek pocztowych. Jeśli jednak podczas eksportowania wyników wyszukiwania zostaną uwzględnione elementy niezawłaszczone, uwzględnione zostaną elementy niezawłaszczone w SharePoint i OneDrive, co zwiększy liczbę faktycznie wyeksportowanych elementów. Spowoduje to różnice między szacowanymi wynikami (które nie obejmują elementów niezaimportowanych w witrynach SharePoint i OneDrive) a rzeczywistymi pobranymi elementami. Reguła dotycząca eksportowania niezainicjowanych elementów tylko z lokalizacji zawartości, które zawierają elementy zgodne z kryteriami wyszukiwania, nadal ma zastosowanie w tej sytuacji.
+- **Elementy bez certyfikatu w programach SharePoint i OneDrive nie są uwzględniane w szacunkach wyszukiwania**. Elementy niezaimportowane z witryn programu SharePoint i kont OneDrive dla Firm nie są uwzględniane w szacowanych wynikach wyszukiwania. Dzieje się tak, ponieważ indeks programu SharePoint nie zawiera danych dla elementów bez certyfikatu. W szacowaniu wyszukiwania są uwzględniane tylko elementy niezaimportowane ze skrzynek pocztowych. Jeśli jednak podczas eksportowania wyników wyszukiwania zostaną uwzględnione elementy niezaimportowane w programach SharePoint i OneDrive, co zwiększy liczbę faktycznie wyeksportowanych elementów. Spowoduje to różnice między szacowanymi wynikami (które nie obejmują elementów niezaimportowanych w witrynach programu SharePoint i usługi OneDrive) a rzeczywistymi pobranymi elementami. Reguła dotycząca eksportowania niezainicjowanych elementów tylko z lokalizacji zawartości, które zawierają elementy zgodne z kryteriami wyszukiwania, nadal ma zastosowanie w tej sytuacji.
 
-- **Wersje dokumentów w SharePoint i OneDrive**. Podczas wyszukiwania SharePoint witryn i kont OneDrive wiele wersji dokumentu nie jest uwzględnianych w liczbie szacowanych wyników wyszukiwania. Masz jednak możliwość uwzględnienia wszystkich wersji dokumentów podczas eksportowania wyników wyszukiwania. Jeśli podczas eksportowania wyników wyszukiwania uwzględnisz wersje dokumentów, liczba rzeczywista (i całkowity rozmiar) wyeksportowanych elementów zostanie zwiększona.
+- **Wersje dokumentów w programach SharePoint i OneDrive**. Podczas wyszukiwania witryn programu SharePoint i kont usługi OneDrive wiele wersji dokumentu nie jest uwzględnianych w liczbie szacowanych wyników wyszukiwania. Masz jednak możliwość uwzględnienia wszystkich wersji dokumentów podczas eksportowania wyników wyszukiwania. Jeśli podczas eksportowania wyników wyszukiwania uwzględnisz wersje dokumentów, liczba rzeczywista (i całkowity rozmiar) wyeksportowanych elementów zostanie zwiększona.
 
-- **SharePoint folderów**. Jeśli foldery w SharePoint pasują do zapytania wyszukiwania, na przykład wyszukiwanie według daty, oszacowanie wyszukiwania będzie zawierać liczbę folderów z zakresem dat ostatniej modyfikacji (ale nie elementów w tych folderach). Podczas eksportowania wyników wyszukiwania elementy w folderze są eksportowane, ale rzeczywisty folder nie jest eksportowany. W rezultacie liczba wyeksportowanych elementów będzie większa niż liczba szacowanych wyników wyszukiwania. Jeśli folder jest pusty, liczba wyeksportowanych rzeczywistych wyników wyszukiwania zostanie zmniejszona o jeden element, ponieważ rzeczywisty folder nie jest eksportowany.
-
-   > [!NOTE]
-   > Podczas uruchamiania wyszukiwania opartego na zapytaniach można wykluczyć foldery SharePoint, dodając następujący warunek do zapytania: `NOT(ContentType:folder)`.
-
-- **SharePoint list**. Jeśli nazwa listy SharePoint jest zgodna z zapytaniem wyszukiwania, oszacowanie wyszukiwania będzie zawierać liczbę wszystkich elementów na liście. Podczas eksportowania wyników wyszukiwania lista (i elementy listy) jest eksportowana jako pojedynczy plik CSV. Spowoduje to zmniejszenie rzeczywistej liczby faktycznie wyeksportowanych elementów. Jeśli lista zawiera załączniki, załączniki zostaną wyeksportowane jako oddzielne dokumenty, co zwiększy również liczbę wyeksportowanych elementów.
+- **Foldery programu SharePoint**. Jeśli foldery w programie SharePoint pasują do zapytania wyszukiwania, na przykład wyszukiwanie według daty, oszacowanie wyszukiwania będzie zawierać liczbę tych folderów z zakresem dat ostatniej modyfikacji (ale nie elementów w tych folderach). Podczas eksportowania wyników wyszukiwania elementy w folderze są eksportowane, ale rzeczywisty folder nie jest eksportowany. W rezultacie liczba wyeksportowanych elementów będzie większa niż liczba szacowanych wyników wyszukiwania. Jeśli folder jest pusty, liczba wyeksportowanych rzeczywistych wyników wyszukiwania zostanie zmniejszona o jeden element, ponieważ rzeczywisty folder nie jest eksportowany.
 
    > [!NOTE]
-   > Podczas uruchamiania wyszukiwania opartego na zapytaniach można wykluczyć listy SharePoint, dodając następujący warunek do zapytania: `NOT(ContentType:list)`.
+   > Podczas uruchamiania wyszukiwania opartego na zapytaniach można wykluczyć foldery programu SharePoint, dodając następujący warunek do zapytania: `NOT(ContentType:folder)`.
 
-- **Nieprzetworzone formaty plików a wyeksportowane formaty plików**. W przypadku Exchange elementów szacowany rozmiar wyników wyszukiwania jest obliczany przy użyciu nieprzetworzonych Exchange rozmiarów komunikatów. Jednak wiadomości e-mail są eksportowane w pliku PST lub jako pojedyncze wiadomości (sformatowane jako pliki EML). Obie te opcje eksportu używają innego formatu pliku niż nieprzetworzone komunikaty Exchange, co powoduje, że całkowity wyeksportowany rozmiar pliku jest inny niż szacowany rozmiar pliku.
+- **Listy programu SharePoint**. Jeśli nazwa listy programu SharePoint jest zgodna z zapytaniem wyszukiwania, oszacowanie wyszukiwania będzie zawierać liczbę wszystkich elementów na liście. Podczas eksportowania wyników wyszukiwania lista (i elementy listy) jest eksportowana jako pojedynczy plik CSV. Spowoduje to zmniejszenie rzeczywistej liczby faktycznie wyeksportowanych elementów. Jeśli lista zawiera załączniki, załączniki zostaną wyeksportowane jako oddzielne dokumenty, co zwiększy również liczbę wyeksportowanych elementów.
 
-- **De-duplikowanie elementów Exchange podczas eksportowania**. W przypadku Exchange elementów anulowanie duplikowania zmniejsza liczbę eksportowanych elementów. Podczas eksportowania można anulować duplikowanie wyników wyszukiwania. W przypadku Exchange wiadomości oznacza to, że eksportowane jest tylko jedno wystąpienie wiadomości, nawet jeśli ta wiadomość może znajdować się w wielu skrzynkach pocztowych. Szacowane wyniki wyszukiwania obejmują każde wystąpienie komunikatu. Jeśli więc wybierzesz opcję anulowania duplikowania podczas eksportowania wyników wyszukiwania, rzeczywista liczba eksportowanych elementów może być znacznie mniejsza niż szacowana liczba elementów.
+   > [!NOTE]
+   > Podczas uruchamiania wyszukiwania opartego na zapytaniach można wykluczyć listy programu SharePoint, dodając następujący warunek do zapytania: `NOT(ContentType:list)`.
+
+- **Nieprzetworzone formaty plików a wyeksportowane formaty plików**. W przypadku elementów programu Exchange szacowany rozmiar wyników wyszukiwania jest obliczany przy użyciu nieprzetworzonych rozmiarów komunikatów programu Exchange. Jednak wiadomości e-mail są eksportowane w pliku PST lub jako pojedyncze wiadomości (sformatowane jako pliki EML). Obie te opcje eksportu używają innego formatu pliku niż nieprzetworzone komunikaty programu Exchange, co powoduje, że całkowity wyeksportowany rozmiar pliku jest inny niż szacowany rozmiar pliku.
+
+- **Usuwanie duplikowania elementów programu Exchange podczas eksportowania**. W przypadku elementów programu Exchange anulowanie duplikowania zmniejsza liczbę wyeksportowanych elementów. Podczas eksportowania można anulować duplikowanie wyników wyszukiwania. W przypadku komunikatów programu Exchange oznacza to, że eksportowane jest tylko jedno wystąpienie wiadomości, nawet jeśli ta wiadomość może znajdować się w wielu skrzynkach pocztowych. Szacowane wyniki wyszukiwania obejmują każde wystąpienie komunikatu. Jeśli więc wybierzesz opcję anulowania duplikowania podczas eksportowania wyników wyszukiwania, rzeczywista liczba eksportowanych elementów może być znacznie mniejsza niż szacowana liczba elementów.
 
 Raport wyników wyszukiwania (plik Results.csv) zawiera wpis dla każdej zduplikowanej wiadomości i identyfikuje źródłową skrzynkę pocztową, w której znajduje się zduplikowana wiadomość. Pomaga to zidentyfikować wszystkie skrzynki pocztowe zawierające zduplikowaną wiadomość.
 

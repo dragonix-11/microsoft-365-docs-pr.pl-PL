@@ -10,19 +10,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-description: Użyj narzędzia Do zbierania elektronicznych materiałów dowodowych wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, aby szybko znaleźć wiadomości e-mail w skrzynkach pocztowych Exchange, dokumentach w witrynach SharePoint i lokalizacjach OneDrive oraz konwersacje dotyczące wiadomości błyskawicznych w Skype dla firm.
-ms.openlocfilehash: cf5c6b61e9b4cc041d9f8e315321c63c78415a63
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Użyj narzędzia do zbierania elektronicznych materiałów dowodowych wyszukiwania zawartości w portal zgodności Microsoft Purview, aby szybko znaleźć wiadomości e-mail w skrzynkach pocztowych programu Exchange, dokumentach w witrynach programu SharePoint i lokalizacjach usługi OneDrive oraz konwersacje wiadomości błyskawicznych w Skype dla firm.
+ms.openlocfilehash: 42084e764ffaf93f59e0225194db331c2ac952db
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66009436"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637866"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Wyszukiwanie zawartości przy użyciu narzędzia do wyszukiwania zawartości
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Użyj narzędzia do wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, aby szybko znaleźć wiadomości e-mail w Exchange skrzynkach pocztowych, dokumentach w witrynach SharePoint i lokalizacjach OneDrive oraz w konwersacjach wiadomości błyskawicznych w Skype dla firm. Narzędzie do wyszukiwania zawartości umożliwia wyszukiwanie wiadomości e-mail, dokumentów i konwersacji wiadomości błyskawicznych w narzędziach do współpracy, takich jak Microsoft Teams i Grupy Microsoft 365.
+Użyj narzędzia do wyszukiwania zawartości w portal zgodności Microsoft Purview, aby szybko znaleźć wiadomości e-mail w skrzynkach pocztowych programu Exchange, dokumentach w witrynach programu SharePoint i lokalizacjach usługi OneDrive oraz konwersacjach wiadomości błyskawicznych w Skype dla firm. Narzędzie do wyszukiwania zawartości umożliwia wyszukiwanie wiadomości e-mail, dokumentów i konwersacji wiadomości błyskawicznych w narzędziach do współpracy, takich jak Microsoft Teams i Grupy Microsoft 365.
   
 ## <a name="search-for-content"></a>Szukaj zawartości
 
@@ -36,11 +34,11 @@ Pierwszym krokiem jest rozpoczęcie korzystania z narzędzia wyszukiwania zawart
 
 - [Skonfiguruj filtrowanie uprawnień wyszukiwania](permissions-filtering-for-content-search.md) , aby menedżer zbierania elektronicznych materiałów dowodowych mógł przeszukiwać tylko podzbiór skrzynek pocztowych lub witryn w organizacji
 
-- [Wyszukiwanie w chmurowych skrzynkach pocztowych](search-cloud-based-mailboxes-for-on-premises-users.md) użytkowników lokalnych w Microsoft 365
+- [Wyszukiwanie chmurowych skrzynek pocztowych](search-cloud-based-mailboxes-for-on-premises-users.md) dla użytkowników lokalnych na platformie Microsoft 365
 
 - [Wyświetl statystyki słów kluczowych](view-keyword-statistics-for-content-search.md) dla wyników wyszukiwania, a następnie w razie potrzeby uściślij zapytanie
 
-- [Wyszukaj dane innych firm zaimportowane](use-content-search-to-search-third-party-data-that-was-imported.md) do Microsoft 365
+- [Wyszukaj dane innych firm](use-content-search-to-search-third-party-data-that-was-imported.md) zaimportowane przez organizację na platformę Microsoft 365
 
 - [Zachowaj adresatów programu Bcc](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) , aby można było ich wyszukać
 
@@ -62,7 +60,7 @@ Wyszukiwanie zawartości jest łatwe w użyciu, ale jest również zaawansowanym
 
 - [Szacowane i rzeczywiste wyniki wyszukiwania](differences-between-estimated-and-actual-ediscovery-search-results.md) oraz przyczyny, dla których mogą występować różnice między nimi podczas eksportowania i pobierania wyników wyszukiwania
 
-- [Częściowo indeksowane elementy w Exchange i SharePoint](partially-indexed-items-in-content-search.md) oraz sposób ich dołączania lub wykluczania podczas eksportowania i pobierania wyników wyszukiwania
+- [Częściowo indeksowane elementy w programach Exchange i SharePoint](partially-indexed-items-in-content-search.md) oraz sposób ich dołączania lub wykluczania podczas eksportowania i pobierania wyników wyszukiwania
 
 - [Badanie częściowo indeksowanych elementów](investigating-partially-indexed-items-in-ediscovery.md) i określanie narażenia organizacji na nie
 
@@ -74,7 +72,7 @@ Czasami trzeba wykonywać bardziej zaawansowane, złożone i powtarzalne zadania
 
 - [Wyszukaj określone skrzynki pocztowe i foldery lokacji (nazywane](use-content-search-for-targeted-collections.md)  *docelową* kolekcją), gdy masz pewność, że elementy reagujące na przypadek znajdują się w tym folderze
 
-- [Wyszukaj listę użytkowników w skrzynce pocztowej i lokalizacji OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)
+- [Wyszukaj listę użytkowników w skrzynce pocztowej i lokalizacji usługi OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)
 
 - [Tworzenie, raportowanie i usuwanie wielu wyszukiwań w](create-report-on-and-delete-multiple-content-searches.md) celu szybkiego i wydajnego identyfikowania i usuwania danych wyszukiwania
 

@@ -19,22 +19,20 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Poznaj podstawowe kroki tworzenia słownika słów kluczowych w centrum Office 365 Security & Compliance Center.
-ms.openlocfilehash: d00ba4a93c6ead4ecde75ac5415ccac08812feb3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 82d6a1292b5ac8c13471df8e1b2c298c8cf262b3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013337"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637378"
 ---
 # <a name="create-a-keyword-dictionary"></a>Twórz słownik słów kluczowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Usługa Microsoft Purview Data Loss Prevention (DLP) może identyfikować, monitorować i chronić poufne elementy. Identyfikowanie poufnych elementów czasami wymaga wyszukania słów kluczowych, szczególnie w przypadku identyfikowania zawartości ogólnej (takiej jak komunikacja związana z opieką zdrowotną) lub nieodpowiedniego lub jawnego języka. Mimo że listy słów kluczowych można tworzyć w typach informacji poufnych, listy słów kluczowych mają ograniczony rozmiar i wymagają modyfikacji kodu XML w celu ich utworzenia lub edytowania. Słowniki słów kluczowych zapewniają prostsze zarządzanie słowami kluczowymi i w znacznie większej skali, obsługując do 1 MB terminów (po kompresji) w słowniku i obsługują dowolny język. Limit dzierżawy wynosi również 1 MB po kompresji. 1 MB limitu po kompresji oznacza, że wszystkie słowniki połączone w dzierżawie mogą mieć blisko 1 milion znaków.
+Ochrona przed utratą danych w Microsoft Purview (DLP) może identyfikować, monitorować i chronić poufne elementy. Identyfikowanie poufnych elementów czasami wymaga wyszukania słów kluczowych, szczególnie w przypadku identyfikowania zawartości ogólnej (takiej jak komunikacja związana z opieką zdrowotną) lub nieodpowiedniego lub jawnego języka. Mimo że listy słów kluczowych można tworzyć w typach informacji poufnych, listy słów kluczowych mają ograniczony rozmiar i wymagają modyfikacji kodu XML w celu ich utworzenia lub edytowania. Słowniki słów kluczowych zapewniają prostsze zarządzanie słowami kluczowymi i w znacznie większej skali, obsługując do 1 MB terminów (po kompresji) w słowniku i obsługują dowolny język. Limit dzierżawy wynosi również 1 MB po kompresji. 1 MB limitu po kompresji oznacza, że wszystkie słowniki połączone w dzierżawie mogą mieć blisko 1 milion znaków.
 
 ## <a name="keyword-dictionary-limits"></a>Limity słownika słów kluczowych
 
-Istnieje limit 50 typów informacji poufnych opartych na słowniku słów kluczowych, które można utworzyć dla dzierżawy. Aby dowiedzieć się, ile słowników słów kluczowych masz w dzierżawie, połącz się przy użyciu procedur w [Połączenie z programem PowerShell Security & Compliance](/powershell/exchange/connect-to-scc-powershell), aby nawiązać połączenie z dzierżawą i uruchomić ten skrypt programu PowerShell.
+Istnieje limit 50 typów informacji poufnych opartych na słowniku słów kluczowych, które można utworzyć dla dzierżawy. Aby dowiedzieć się, ile słowników słów kluczowych masz w dzierżawie, połącz się przy użyciu procedur w temacie [Połącz z programem PowerShell & Zgodności](/powershell/exchange/connect-to-scc-powershell) zabezpieczeń, aby nawiązać połączenie z dzierżawą i uruchomić ten skrypt programu PowerShell.
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"
@@ -76,7 +74,7 @@ Remove-Item $rawFile
 
 Słowa kluczowe słownika mogą pochodzić z różnych źródeł, najczęściej z pliku (na przykład listy .csv lub .txt) zaimportowanej w usłudze lub za pomocą polecenia cmdlet programu PowerShell, z listy wprowadzonej bezpośrednio w poleceniu cmdlet programu PowerShell lub z istniejącego słownika. Podczas tworzenia słownika słów kluczowych należy wykonać te same podstawowe kroki:
 
-1. Użyj <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">*Portalu zgodności usługi Microsoft Purview</a> lub połącz się z  **portalem zgodności usługi Microsoft Purview programu PowerShell**.
+1. Użyj *<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a> lub połącz się z **programem portal zgodności Microsoft Purview programu PowerShell**.
 
 2. **Zdefiniuj lub załaduj słowa kluczowe z zamierzonego źródła**. Kreator i polecenie cmdlet akceptują rozdzielaną przecinkami listę słów kluczowych w celu utworzenia niestandardowego słownika słów kluczowych, więc ten krok będzie się nieznacznie różnić w zależności od tego, skąd pochodzą słowa kluczowe. Po załadowaniu są one kodowane i konwertowane na tablicę bajtów przed ich zaimportowaniem.
 
@@ -86,7 +84,7 @@ Słowa kluczowe słownika mogą pochodzić z różnych źródeł, najczęściej 
 
 Wykonaj następujące kroki, aby utworzyć i zaimportować słowa kluczowe dla słownika niestandardowego:
 
-1. Połączenie do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a>.
+1. Połącz się z <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>.
 
 2. Przejdź do **pozycji Klasyfikacje > typy informacji poufnych**.
 
@@ -112,11 +110,11 @@ Wykonaj następujące kroki, aby utworzyć i zaimportować słowa kluczowe dla s
 
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Tworzenie słownika słów kluczowych na podstawie pliku przy użyciu programu PowerShell
 
-Często podczas tworzenia dużego słownika należy używać słów kluczowych z pliku lub listy wyeksportowanej z innego źródła. W takim przypadku utworzysz słownik słów kluczowych zawierający listę nieodpowiednich języków do wyświetlania w zewnętrznej wiadomości e-mail. Najpierw należy [Połączenie do programu PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
+Często podczas tworzenia dużego słownika należy używać słów kluczowych z pliku lub listy wyeksportowanej z innego źródła. W takim przypadku utworzysz słownik słów kluczowych zawierający listę nieodpowiednich języków do wyświetlania w zewnętrznej wiadomości e-mail. Najpierw należy [nawiązać połączenie z programem PowerShell & zgodności zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 1. Skopiuj słowa kluczowe do pliku tekstowego i upewnij się, że każde słowo kluczowe znajduje się w osobnym wierszu.
 
-2. Zapisz plik tekstowy przy użyciu kodowania Unicode. W Notatnik \> **zapisz jako** \> **kodowanie** \> **Unicode**.
+2. Zapisz plik tekstowy przy użyciu kodowania Unicode. W Notatniku \> **Zapisz jako** \> **kodowanie** \> **Unicode**.
 
 3. Przeczytaj plik do zmiennej, uruchamiając następujące polecenie cmdlet:
 
@@ -176,7 +174,7 @@ Wklej tożsamość do pliku XML niestandardowego typu informacji poufnych i prze
 ```
 
 > [!NOTE]
-> Microsoft 365 Information Protection obsługuje języki zestawu znaków dwu bajtowych dla:
+> Usługa Microsoft 365 Information Protection obsługuje języki dwu bajtowego zestawu znaków dla:
 >
 > - Chiński (uproszczony)
 > - Chiński (tradycyjny)

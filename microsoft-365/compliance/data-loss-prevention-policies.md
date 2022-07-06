@@ -25,24 +25,22 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: materiały referencyjne dotyczące zapobiegania utracie danych
-ms.openlocfilehash: b7546d41310942a0e6eab99511a78c594822ee2a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5a52d79a073a9735d5c32ce3a9646ccacf1a0dcb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017291"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636474"
 ---
 # <a name="data-loss-prevention-reference"></a>Dokumentacja zapobiegania utracie danych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!IMPORTANT]
-> Ten temat referencyjny nie jest już głównym zasobem informacji o zapobieganiu utracie danych (DLP) w usłudze Microsoft Purview. Zestaw zawartości DLP jest aktualizowany i zmieniany w strukturze. Tematy omówione w tym artykule zostaną przeniesione do nowych, zaktualizowanych artykułów. Aby uzyskać więcej informacji na temat ochrony przed [utratą danych, zobacz Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md).
+> Jest to temat referencyjny, który nie jest już głównym zasobem informacji Ochrona przed utratą danych w Microsoft Purview (DLP). Zestaw zawartości DLP jest aktualizowany i zmieniany w strukturze. Tematy omówione w tym artykule zostaną przeniesione do nowych, zaktualizowanych artykułów. Aby uzyskać więcej informacji na temat ochrony przed [utratą danych, zobacz Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> Niedawno dodano możliwości zapobiegania utracie danych do Microsoft Teams wiadomości czatu i kanału dla użytkowników licencjonowanych na Office 365 Advanced Compliance, która jest dostępna jako opcja autonomiczna i jest uwzględniona w Office 365 E5 i Zgodność platformy Microsoft 365 E5. Aby dowiedzieć się więcej na temat wymagań dotyczących licencjonowania, zobacz [Microsoft 365 Tenant-Level Services Licensing Guidance (Wskazówki dotyczące licencjonowania usług Microsoft 365 Tenant-Level](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)).
+> Możliwości zapobiegania utracie danych zostały niedawno dodane do wiadomości czatu i kanału usługi Microsoft Teams dla użytkowników licencjonowanych na Office 365 Advanced Compliance, które są dostępne jako opcja autonomiczna i są uwzględnione w Office 365 E5 i Zgodność platformy Microsoft 365 E5. Aby dowiedzieć się więcej na temat wymagań dotyczących licencjonowania, zobacz [Wskazówki dotyczące licencjonowania usług Tenant-Level Services platformy Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 
 
@@ -73,9 +71,9 @@ With a DLP policy, you can:
 -->
 ## <a name="create-and-manage-dlp-policies"></a>Tworzenie zasad DLP i zarządzanie nimi
 
-Zasady DLP można tworzyć i zarządzać nimi na stronie zapobiegania utracie danych w portalu zgodności usługi Microsoft Purview.
+Zasady DLP można tworzyć i zarządzać nimi na stronie zapobiegania utracie danych w portal zgodności Microsoft Purview.
 
-![Strona zapobiegania utracie danych w portalu zgodności usługi Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Strona zapobiegania utracie danych w portal zgodności Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -377,16 +375,16 @@ Jeśli używasz wcześniej utworzonej i opublikowanej [etykiety przechowywania](
 
 - Etykieta przechowywania musi zostać utworzona i opublikowana przed podjęciem próby użycia jej jako warunku w zasadach DLP.
 - Synchronizacja opublikowanych etykiet przechowywania może potrwać od jednego do siedmiu dni. Aby uzyskać więcej informacji, zobacz [Kiedy etykiety przechowywania stają się dostępne do zastosowania](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) dla etykiet przechowywania opublikowanych w zasadach przechowywania oraz [Jak długo trwa stosowanie etykiet przechowywania](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) dla etykiet przechowywania, które są automatycznie publikowane.
-- Używanie etykiety przechowywania w zasadach **jest obsługiwane tylko w przypadku elementów w SharePoint i OneDrive***.
+- Używanie etykiety przechowywania w zasadach **jest obsługiwane tylko w przypadku elementów w programach SharePoint i OneDrive***.
 
   ![Etykiety jako warunek.](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
   Możesz użyć etykiety przechowywania w zasadach DLP, jeśli masz elementy, które są w trakcie przechowywania i dyspozycji, a także chcesz zastosować do nich inne kontrolki, na przykład:
 
-  - Opublikowano etykietę przechowywania o nazwie **rok podatkowy 2018**, która stosowana do dokumentów podatkowych z 2018 r., które są przechowywane w SharePoint zachowuje je przez 10 lat, a następnie je usuwa. Nie chcesz również, aby te elementy były udostępniane poza organizacją, co można zrobić z zasadami DLP.
+  - Opublikowano etykietę przechowywania o nazwie **rok podatkowy 2018**, która stosowana do dokumentów podatkowych z 2018 r., które są przechowywane w programie SharePoint, zachowuje je przez 10 lat, a następnie je usuwa. Nie chcesz również, aby te elementy były udostępniane poza organizacją, co można zrobić z zasadami DLP.
 
   > [!IMPORTANT]
-  > Ten błąd zostanie wyświetlony, jeśli określisz etykietę przechowywania jako warunek w zasadach DLP, a także uwzględnisz Exchange i/lub Teams jako lokalizację: **"Ochrona zawartości oznaczonej etykietą w wiadomościach e-mail i wiadomościach zespołów nie jest obsługiwana. Usuń poniższą etykietę lub wyłącz Exchange i Teams jako lokalizację".** Dzieje się tak, ponieważ transport Exchange nie ocenia metadanych etykiet podczas przesyłania i dostarczania komunikatów.
+  > Ten błąd zostanie wyświetlony, jeśli określisz etykietę przechowywania jako warunek w zasadach DLP, a także uwzględnisz program Exchange i/lub Teams jako lokalizację: **"Ochrona zawartości oznaczonej etykietą w wiadomościach e-mail i wiadomościach zespołów nie jest obsługiwana. Usuń poniższą etykietę lub wyłącz opcję Exchange i Teams jako lokalizację."** Dzieje się tak, ponieważ transport programu Exchange nie ocenia metadanych etykiet podczas przesyłania i dostarczania komunikatów.
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Używanie etykiety poufności jako warunku w zasadach DLP
 
@@ -440,7 +438,7 @@ Aby szybko przejść do sekcji, kliknij element w górnej części nawigacji edy
 
 Pierwszym krokiem tworzenia zasad DLP jest wybranie informacji do ochrony. Zaczynając od szablonu DLP, można zapisać pracę tworzenia nowego zestawu reguł od podstaw i dowiedzieć się, które typy informacji powinny być uwzględniane domyślnie. Następnie możesz dodać lub zmodyfikować te wymagania, aby dostosować regułę zgodnie z określonymi wymaganiami organizacji.
 
-Wstępnie skonfigurowany szablon zasad DLP może pomóc w wykrywaniu określonych typów informacji poufnych, takich jak dane HIPAA, dane PCI-DSS, dane Gramm-Leach-Bliley Act, a nawet dane osobowe specyficzne dla ustawień regionalnych (P.I.). Aby ułatwić znajdowanie i ochronę typowych typów informacji poufnych, szablony zasad zawarte w Microsoft 365 zawierają już najbardziej typowe typy informacji poufnych niezbędne do rozpoczęcia pracy.
+Wstępnie skonfigurowany szablon zasad DLP może pomóc w wykrywaniu określonych typów informacji poufnych, takich jak dane HIPAA, dane PCI-DSS, dane Gramm-Leach-Bliley Act, a nawet dane osobowe specyficzne dla ustawień regionalnych (P.I.). Aby ułatwić znajdowanie i ochronę typowych typów informacji poufnych, szablony zasad zawarte w usłudze Microsoft 365 zawierają już najbardziej typowe typy informacji poufnych niezbędne do rozpoczęcia pracy.
 
 ![Lista szablonów dla zasad ochrony przed utratą danych ze szczególnym uwzględnieniem szablonu amerykańskiej ustawy Patriot Act.](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
 
@@ -493,24 +491,24 @@ DLP wykrywa poufne informacje przy użyciu głębokiej analizy zawartości (nie 
 
 ### <a name="policies-are-synced"></a>Zasady są synchronizowane
 
-Po utworzeniu zasad DLP w portalu zgodności usługi Microsoft Purview są one przechowywane w centralnym magazynie zasad, a następnie synchronizowane z różnymi źródłami zawartości, w tym:
+Po utworzeniu zasad DLP w portal zgodności Microsoft Purview są one przechowywane w centralnym magazynie zasad, a następnie synchronizowane z różnymi źródłami zawartości, w tym:
 
-- Exchange Online, a stamtąd do Outlook w sieci Web i Outlook.
+- Exchange Online, a stamtąd do Outlook w sieci Web i Outlooka.
 
 - OneDrive dla Firm witryn.
 
-- SharePoint witryny online.
+- Witryny usługi SharePoint Online.
 
-- Office programów klasycznych (Excel, PowerPoint i Word).
+- Programy klasyczne pakietu Office (Excel, PowerPoint i Word).
 
-- Microsoft Teams kanałów i wiadomości czatu.
+- Kanały i wiadomości czatu w usłudze Microsoft Teams.
 
 Po zsynchronizowanym z odpowiednimi lokalizacjami zasady zaczynają oceniać zawartość i wymuszać akcje.
 <!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
 
 ### <a name="policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites"></a>Ocena zasad w witrynach OneDrive dla Firm i SharePoint Online
 
-We wszystkich witrynach SharePoint Online i witrynach OneDrive dla Firm dokumenty stale się zmieniają — są one stale tworzone, edytowane, udostępniane itd. Oznacza to, że dokumenty mogą w dowolnym momencie powodować konflikty lub stać się zgodne z zasadami DLP. Na przykład osoba może przekazać dokument, który nie zawiera poufnych informacji do witryny zespołu, ale później inna osoba może edytować ten sam dokument i dodawać do niego informacje poufne.
+We wszystkich witrynach usługi SharePoint Online i witrynach OneDrive dla Firm dokumenty stale się zmieniają — są one stale tworzone, edytowane, udostępniane itd. Oznacza to, że dokumenty mogą w dowolnym momencie powodować konflikty lub stać się zgodne z zasadami DLP. Na przykład osoba może przekazać dokument, który nie zawiera poufnych informacji do witryny zespołu, ale później inna osoba może edytować ten sam dokument i dodawać do niego informacje poufne.
 
 Z tego powodu zasady DLP często sprawdzają dokumenty pod kątem dopasowań zasad w tle. Można to traktować jako asynchroniczną ocenę zasad.
 <!-- what is the frequency? looks like it is tied to the search crawl schedule -->
@@ -524,40 +522,40 @@ Gdy użytkownicy dodają lub zmieniają dokumenty w swoich witrynach, wyszukiwar
 <!-- conflict with a DLP policy is bad wording -->
 Na koniec dokumenty mogą powodować konflikt z zasadami DLP, ale mogą również stać się zgodne z zasadami DLP. Jeśli na przykład dana osoba doda numery kart kredytowych do dokumentu, może to spowodować automatyczne zablokowanie dostępu do dokumentu przez zasady DLP. Jeśli jednak osoba później usunie poufne informacje, akcja (w tym przypadku blokowanie) zostanie automatycznie cofnięta przy następnym ocenie dokumentu względem zasad.
 
-DLP ocenia dowolną zawartość, która może być indeksowana. Aby uzyskać więcej informacji na temat typów plików przeszukiwanych domyślnie, zobacz [Domyślne rozszerzenia nazw plików przeszukanych i analizowane typy plików na serwerze SharePoint](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
+DLP ocenia dowolną zawartość, która może być indeksowana. Aby uzyskać więcej informacji na temat typów plików, które są przeszukiwane domyślnie, zobacz [Domyślne rozszerzenia nazw przeszukanych plików i analizowane typy plików w programie SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Aby zapobiec udostępnianiu dokumentów, zanim zasady DLP będą mogły je analizować, udostępnianie nowych plików w SharePoint może zostać zablokowane do momentu indeksowania zawartości. Aby uzyskać szczegółowe informacje, zobacz [Domyślne oznaczanie nowych plików jako poufnych](/sharepoint/sensitive-by-default) .
+> Aby zapobiec udostępnianiu dokumentów, zanim zasady DLP będą mogły je analizować, udostępnianie nowych plików w programie SharePoint może być blokowane do momentu indeksowania jego zawartości. Aby uzyskać szczegółowe informacje, zobacz [Domyślne oznaczanie nowych plików jako poufnych](/sharepoint/sensitive-by-default) .
 
-### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Ocena zasad w Exchange Online, Outlook i Outlook w sieci Web
+### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Ocena zasad w programach Exchange Online, Outlook i Outlook w sieci Web
 
-Podczas tworzenia zasad DLP, które obejmują Exchange Online jako lokalizację, zasady są synchronizowane z portalu zgodności usługi Microsoft Purview z Exchange Online, a następnie z Exchange Online do Outlook w sieci Web i Outlook.
+Podczas tworzenia zasad DLP, które obejmują Exchange Online jako lokalizację, zasady są synchronizowane z portal zgodności Microsoft Purview do Exchange Online, a następnie z Exchange Online do Outlook w sieci Web  i Outlook.
 
-Gdy komunikat jest tworzony w Outlook, użytkownik może zobaczyć wskazówki dotyczące zasad, ponieważ tworzone treści są oceniane pod kątem zasad DLP. Po wysłaniu wiadomości jest ona oceniana pod kątem zasad DLP jako normalna część przepływu poczty, a także reguły przepływu poczty Exchange (nazywane również regułami transportu) i zasady DLP utworzone w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. Zasady DLP skanują zarówno komunikat, jak i wszelkie załączniki.
+Gdy komunikat jest tworzony w programie Outlook, użytkownik może zobaczyć wskazówki dotyczące zasad, ponieważ tworzona zawartość jest oceniana pod kątem zasad DLP. A po wysłaniu wiadomości jest ona oceniana pod kątem zasad DLP jako normalna część przepływu poczty, wraz z regułami przepływu poczty programu Exchange (znanymi również jako reguły transportu) i zasadami DLP utworzonymi w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym programu Exchange</a>. Zasady DLP skanują zarówno komunikat, jak i wszelkie załączniki.
 
-### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Ocena zasad w programach klasycznych Office
+### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Ocena zasad w programach klasycznych pakietu Office
 
 <!-- same capability to identify sensitive information line conflates sensitive information types and such -->
-Excel, PowerPoint i Word obejmują tę samą możliwość identyfikowania poufnych informacji i stosowania zasad DLP co SharePoint Online i OneDrive dla Firm. Te Office programy synchronizują swoje zasady DLP bezpośrednio z centralnego magazynu zasad, a następnie stale oceniają zawartość pod kątem zasad DLP, gdy użytkownicy pracują z dokumentami otwartymi z witryny, która jest uwzględniona w zasadach DLP.
+Programy Excel, PowerPoint i Word obejmują tę samą możliwość identyfikowania poufnych informacji i stosowania zasad DLP co usługa SharePoint Online i OneDrive dla Firm. Te programy pakietu Office synchronizują zasady DLP bezpośrednio z centralnego magazynu zasad, a następnie stale oceniają zawartość pod kątem zasad DLP, gdy użytkownicy pracują z dokumentami otwartymi z witryny, która jest uwzględniona w zasadach DLP.
 
-Ocena zasad DLP w Office ma na celu niewpływanie na wydajność programów ani na produktywność osób pracujących nad zawartością. Jeśli pracują nad dużym dokumentem lub komputer użytkownika jest zajęty, wyświetlenie porady dotyczącej zasad może potrwać kilka sekund.
+Ocena zasad DLP w pakiecie Office nie ma wpływu na wydajność programów ani produktywność osób pracujących nad zawartością. Jeśli pracują nad dużym dokumentem lub komputer użytkownika jest zajęty, wyświetlenie porady dotyczącej zasad może potrwać kilka sekund.
 
-### <a name="policy-evaluation-in-microsoft-teams"></a>Ocena zasad w Microsoft Teams
+### <a name="policy-evaluation-in-microsoft-teams"></a>Ocena zasad w usłudze Microsoft Teams
  <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
 
-Podczas tworzenia zasad DLP, które obejmują Microsoft Teams jako lokalizację, zasady są synchronizowane z portalu zgodności usługi Microsoft Purview z kontami użytkowników oraz Microsoft Teams kanałami i wiadomościami rozmów. W zależności od sposobu konfigurowania zasad DLP, gdy ktoś próbuje udostępnić poufne informacje w Microsoft Teams wiadomości czatu lub kanału, wiadomość może zostać zablokowana lub odwołana. Ponadto dokumenty zawierające poufne informacje i udostępniane gościom (użytkownikom zewnętrznym) nie będą otwierane dla tych użytkowników. Aby dowiedzieć się więcej, zobacz [Zapobieganie utracie danych i Microsoft Teams](dlp-microsoft-teams.md).
+Podczas tworzenia zasad DLP, które obejmują usługę Microsoft Teams jako lokalizację, zasady są synchronizowane z portal zgodności Microsoft Purview z kontami użytkowników oraz kanałami i wiadomościami czatu w usłudze Microsoft Teams. W zależności od sposobu konfigurowania zasad DLP, gdy ktoś próbuje udostępnić poufne informacje w czacie lub wiadomości kanału usługi Microsoft Teams, wiadomość może zostać zablokowana lub odwołana. Ponadto dokumenty zawierające poufne informacje i udostępniane gościom (użytkownikom zewnętrznym) nie będą otwierane dla tych użytkowników. Aby dowiedzieć się więcej, zobacz [Zapobieganie utracie danych i Microsoft Teams](dlp-microsoft-teams.md).
 
 ## <a name="permissions"></a>Uprawnienia
 
-Domyślnie administratorzy globalni, administratorzy zabezpieczeń i administratorzy zgodności będą mieli dostęp do tworzenia i stosowania zasad DLP. Inni członkowie zespołu ds. zgodności, którzy będą tworzyć zasady DLP, potrzebują uprawnień do portalu zgodności usługi Microsoft Purview. Domyślnie administrator dzierżawy będzie miał dostęp do tej lokalizacji i może udzielić urzędnikom ds. zgodności i innym osobom dostępu do portalu zgodności usługi Microsoft Purview bez udzielania im wszystkich uprawnień administratora dzierżawy. W tym celu zalecamy wykonanie następujących czynności:
+Domyślnie administratorzy globalni, administratorzy zabezpieczeń i administratorzy zgodności będą mieli dostęp do tworzenia i stosowania zasad DLP. Inni członkowie zespołu ds. zgodności, którzy będą tworzyć zasady DLP, potrzebują uprawnień do portal zgodności Microsoft Purview. Domyślnie administrator dzierżawy będzie miał dostęp do tej lokalizacji i może udzielić funkcjonariuszom ds. zgodności i innym osobom dostępu do portal zgodności Microsoft Purview bez udzielania im wszystkich uprawnień administratora dzierżawy. W tym celu zalecamy wykonanie następujących czynności:
 
-1. Utwórz grupę w Microsoft 365 i dodaj do niej funkcjonariuszy zgodności.
+1. Utwórz grupę na platformie Microsoft 365 i dodaj do niej funkcjonariuszy ds. zgodności.
 
-2. Utwórz grupę ról na stronie **Uprawnienia** w portalu zgodności usługi Microsoft Purview.
+2. Utwórz grupę ról na stronie **Uprawnienia** portal zgodności Microsoft Purview.
 
 3. Podczas tworzenia grupy ról użyj sekcji **Wybierz role** , aby dodać następującą rolę do grupy ról: **Zarządzanie zgodnością DLP**.
 
-4. Użyj sekcji **Wybieranie członków**, aby dodać utworzoną wcześniej grupę Microsoft 365 do grupy ról.
+4. Użyj sekcji **Wybieranie członków** , aby dodać utworzoną wcześniej grupę platformy Microsoft 365 do grupy ról.
 
 Możesz również utworzyć grupę ról z uprawnieniami tylko do wyświetlania dla zasad DLP i raportów DLP, udzielając roli **Zarządzanie zgodnością DLP tylko do wyświetlania** .
 
@@ -567,15 +565,15 @@ Te uprawnienia są wymagane tylko do utworzenia i zastosowania zasad DLP. Wymusz
 
 ## <a name="find-the-dlp-cmdlets"></a>Znajdowanie poleceń cmdlet DLP
 
-Aby użyć większości poleceń cmdlet dla portalu zgodności usługi Microsoft Purview, należy wykonać następujące czynności:
+Aby użyć większości poleceń cmdlet dla portal zgodności Microsoft Purview, musisz:
 
-1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
+1. [Połącz się z programem PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
 
 2. Użyj dowolnego z tych [poleceń cmdlet policy-and-compliance-dlp](/powershell/module/exchange/export-dlppolicycollection).
 
-Jednak raporty DLP wymagają ściągania danych z różnych Microsoft 365, w tym Exchange Online. Z tego powodu ***polecenia cmdlet raportów DLP są dostępne w Exchange Online programie PowerShell — a nie w portalu zgodności usługi Microsoft Purview programu PowerShell***. W związku z tym, aby używać poleceń cmdlet dla raportów DLP, należy:
+Jednak raporty DLP wymagają ściągania danych z całej platformy Microsoft 365, w tym Exchange Online. Z tego powodu ***polecenia cmdlet raportów DLP są dostępne w Exchange Online programie PowerShell — nie w programie portal zgodności Microsoft Purview programu PowerShell***. W związku z tym, aby używać poleceń cmdlet dla raportów DLP, należy:
 
-1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połącz się z usługą Exchange Online w programie PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Użyj dowolnego z tych poleceń cmdlet dla raportów DLP:
 

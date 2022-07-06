@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Wyszukaj zawartość, która może być istotna dla sprawy zbierania elektronicznych materiałów dowodowych (standardowa).
-ms.openlocfilehash: d0c565e46860329c4dc6dac741fb0312ddccfd2c
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 1c51475602e3a0807932501325e12d93a89fcba3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318929"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638130"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Wyszukiwanie zawartości w przypadku zbierania elektronicznych materiałów dowodowych (standardowa)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Po utworzeniu Microsoft Purview przypadku zbierania elektronicznych materiałów dowodowych (Standardowa) i umieszczeniu osób interesujących się sprawą możesz utworzyć i uruchomić co najmniej jedno wyszukiwanie zawartości istotnej dla sprawy. Wyszukiwania skojarzone ze sprawą zbierania elektronicznych materiałów dowodowych (standardowa) nie są wyświetlane na stronie **wyszukiwania zawartości** w portal zgodności Microsoft Purview. Te wyszukiwania są wyświetlane na stronie **Wyszukiwania** w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa), z których są skojarzone wyszukiwania. Oznacza to również, że do wyszukiwań skojarzonych ze sprawą mogą uzyskiwać dostęp tylko członkowie sprawy.
+Po utworzeniu sprawy Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Standardowa) i umieszczeniu osób interesujących się sprawą można utworzyć i uruchomić co najmniej jedno wyszukiwanie zawartości istotnej dla sprawy. Wyszukiwania skojarzone ze sprawą zbierania elektronicznych materiałów dowodowych (standardowa) nie są wyświetlane na stronie **wyszukiwania zawartości** w portal zgodności Microsoft Purview. Te wyszukiwania są wyświetlane na stronie **Wyszukiwania** w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa), z których są skojarzone wyszukiwania. Oznacza to również, że do wyszukiwań skojarzonych ze sprawą mogą uzyskiwać dostęp tylko członkowie sprawy.
 
 Aby utworzyć wyszukiwanie zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa):
   
@@ -48,13 +46,13 @@ Aby utworzyć wyszukiwanie zbierania elektronicznych materiałów dowodowych (w 
 
     ![Wybierz lokalizacje zawartości, które mają zostać wstrzymane.](../media/ContentSearchLocations.png)
   
-   1. **Exchange skrzynki pocztowe**: ustaw przełącznik **na Włączone**, a następnie kliknij pozycję **Wybierz użytkowników, grupy lub zespoły,** aby określić skrzynki pocztowe, które mają zostać wstrzymane. Użyj pola wyszukiwania, aby znaleźć skrzynki pocztowe użytkowników i grupy dystrybucyjne (aby zatrzymać skrzynki pocztowe członków grupy), aby zostać wstrzymane. Możesz również wyszukać skrzynkę pocztową skojarzoną z zespołem firmy Microsoft (w poszukiwaniu wiadomości kanału), grupę Office 365 i grupę Yammer. Aby uzyskać więcej informacji na temat danych aplikacji przechowywanych w skrzynkach pocztowych, zobacz [Zawartość przechowywana w skrzynkach pocztowych na potrzeby zbierania elektronicznych materiałów dowodowych](what-is-stored-in-exo-mailbox.md).
+   1. **Skrzynki pocztowe programu Exchange**: ustaw przełącznik **na Włączone** , a następnie kliknij pozycję **Wybierz użytkowników, grupy lub zespoły,** aby określić skrzynki pocztowe, które mają zostać wstrzymane. Użyj pola wyszukiwania, aby znaleźć skrzynki pocztowe użytkowników i grupy dystrybucyjne (aby zatrzymać skrzynki pocztowe członków grupy), aby zostać wstrzymane. Możesz również wyszukać skrzynkę pocztową skojarzoną z zespołem firmy Microsoft (w poszukiwaniu wiadomości kanału), grupę Office 365 i grupę usługi Yammer. Aby uzyskać więcej informacji na temat danych aplikacji przechowywanych w skrzynkach pocztowych, zobacz [Zawartość przechowywana w skrzynkach pocztowych na potrzeby zbierania elektronicznych materiałów dowodowych](what-is-stored-in-exo-mailbox.md).
 
-   2. **SharePoint witryn**: ustaw przełącznik **na Wł**., a następnie kliknij pozycję **Wybierz witryny**, aby określić, SharePoint witryny i konta OneDrive, które mają zostać wstrzymane. Wpisz adres URL każdej witryny, która ma zostać wstrzymana. Możesz również dodać adres URL witryny SharePoint dla zespołu firmy Microsoft, grupy Office 365 lub grupy Yammer.
+   2. **Witryny programu SharePoint**: ustaw przełącznik **na Wł.,** a następnie kliknij pozycję **Wybierz witryny** , aby określić witryny programu SharePoint i konta usługi OneDrive, które mają zostać wstrzymane. Wpisz adres URL każdej witryny, która ma zostać wstrzymana. Możesz również dodać adres URL witryny programu SharePoint dla zespołu firmy Microsoft, grupy Office 365 lub grupy usługi Yammer.
   
-   3. **Exchange folderów publicznych**: ustaw przełącznik **na Wł**., aby wstrzymać wszystkie foldery publiczne w organizacji Exchange Online. Nie można wybrać określonych folderów publicznych do wstrzymania. Pozostaw przełącznik wyłączony, jeśli nie chcesz wstrzymać folderów publicznych.
+   3. **Foldery publiczne programu Exchange**: ustaw przełącznik **na Włączone**, aby wstrzymać wszystkie foldery publiczne w organizacji Exchange Online. Nie można wybrać określonych folderów publicznych do wstrzymania. Pozostaw przełącznik wyłączony, jeśli nie chcesz wstrzymać folderów publicznych.
   
-   4. Zaznacz to pole wyboru, aby wyszukać zawartość Teams dla użytkowników lokalnych. Jeśli na przykład przeszukasz wszystkie Exchange skrzynki pocztowe w organizacji i to pole wyboru zostanie zaznaczone, magazyn oparty na chmurze używany do przechowywania Teams danych czatu dla użytkowników lokalnych zostanie uwzględniony w zakresie wyszukiwania. Aby uzyskać więcej informacji, zobacz [Wyszukiwanie Teams danych czatu dla użytkowników lokalnych](search-cloud-based-mailboxes-for-on-premises-users.md).
+   4. Zaznacz to pole wyboru, aby wyszukać zawartość usługi Teams dla użytkowników lokalnych. Jeśli na przykład przeszukasz wszystkie skrzynki pocztowe programu Exchange w organizacji i to pole wyboru zostanie zaznaczone, magazyn w chmurze używany do przechowywania danych czatu usługi Teams dla użytkowników lokalnych zostanie uwzględniony w zakresie wyszukiwania. Aby uzyskać więcej informacji, zobacz [Wyszukiwanie danych czatu w usłudze Teams dla użytkowników lokalnych](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 7. Na stronie **Definiowanie warunków wyszukiwania** wpisz zapytanie słowa kluczowego i w razie potrzeby dodaj warunki do zapytania wyszukiwania.
 
@@ -79,6 +77,6 @@ Po zakończeniu wyszukiwania możesz wyświetlić podgląd wyników wyszukiwania
 
 - Po kliknięciu pozycji **Wybierz użytkowników, grupy lub zespoły w** celu określenia skrzynek pocztowych do wyszukania wyświetlany selektor skrzynki pocztowej jest pusty. Jest to z założenia w celu zwiększenia wydajności. Aby dodać adresatów do tej listy, kliknij pozycję **Wybierz użytkowników, grupy lub zespoły**, wpisz nazwę (co najmniej trzy znaki) w polu wyszukiwania, zaznacz pole wyboru obok nazwy, a następnie kliknij pozycję **Wybierz**.
 
-- Do listy skrzynek pocztowych do wyszukiwania można dodawać nieaktywne skrzynki pocztowe, Microsoft Teams, grupy Yammer, grupy Office 365 i grupy dystrybucyjne. Dynamiczne grupy dystrybucji nie są obsługiwane. Jeśli dodasz Microsoft Teams, Yammer grupy lub grupy Office 365, zostanie przeszukana skrzynka pocztowa grupy lub zespołu. Skrzynki pocztowe członków grupy nie będą przeszukiwane.
+- Do listy skrzynek pocztowych do wyszukiwania można dodawać nieaktywne skrzynki pocztowe, microsoft teams, grupy usługi Yammer, grupy Office 365 i grupy dystrybucyjne. Dynamiczne grupy dystrybucji nie są obsługiwane. Jeśli dodasz usługę Microsoft Teams, grupy usługi Yammer lub grupy Office 365, zostanie przeszukana skrzynka pocztowa grupy lub zespołu. Skrzynki pocztowe członków grupy nie będą przeszukiwane.
 
-- Aby dodać witryny do wyszukiwania, włącz przełącznik, a następnie kliknij pozycję **Wybierz witryny**. Wpisz adres URL każdej witryny, którą chcesz wyszukać. Możesz również dodać adres URL witryny SharePoint dla zespołu firmy Microsoft, grupy Yammer lub grupy Office 365.
+- Aby dodać witryny do wyszukiwania, włącz przełącznik, a następnie kliknij pozycję **Wybierz witryny**. Wpisz adres URL każdej witryny, którą chcesz wyszukać. Możesz również dodać adres URL witryny programu SharePoint dla zespołu firmy Microsoft, grupy usługi Yammer lub grupy Office 365.

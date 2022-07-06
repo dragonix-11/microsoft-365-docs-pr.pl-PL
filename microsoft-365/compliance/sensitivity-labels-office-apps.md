@@ -16,18 +16,16 @@ search.appverid:
 - MET150
 description: Informacje dla administratorów IT dotyczące zarządzania etykietami poufności w aplikacjach pakietu Office dla komputerów stacjonarnych, urządzeń przenośnych i sieci Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f46b142755b02b069a17b189b465779654f67412
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: c0557f53ee50189969f7e2225cabd74354b28055
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556795"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640483"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Zarządzanie etykietami poufności w aplikacjach Office
 
 >*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po [opublikowaniu](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) etykiet poufności z portal zgodności Microsoft Purview zaczynają one pojawiać się w aplikacjach pakietu Office, aby użytkownicy mogli klasyfikować i chronić dane podczas ich tworzenia lub edytowania.
 

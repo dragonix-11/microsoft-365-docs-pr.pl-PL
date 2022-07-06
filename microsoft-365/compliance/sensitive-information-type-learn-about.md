@@ -16,16 +16,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Ten artykuł zawiera omówienie typów informacji poufnych oraz sposobu wykrywania poufnych informacji, takich jak numer ubezpieczenia społecznego, karty kredytowej lub konta bankowego w celu identyfikacji poufnych elementów
-ms.openlocfilehash: d814bd413fc95a02bc35ab05a804c544d9b84b1e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 34c40c99cf759341ece1948164a5f7d904996b44
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014239"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639385"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Dowiedz się więcej o typach informacji poufnych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Identyfikowanie i klasyfikowanie poufnych elementów, które znajdują się pod kontrolą organizacji, jest pierwszym krokiem w [dziedzinie Information Protection](./information-protection.md).  Usługa Microsoft Purview udostępnia trzy sposoby identyfikowania elementów, dzięki czemu można je sklasyfikować:
 
@@ -39,7 +37,7 @@ Firma Microsoft udostępnia dużą liczbę wstępnie skonfigurowanych interfejs�
 
 ## <a name="sensitive-information-types-are-used-in"></a>Typy informacji poufnych są używane w
 
-- [Zasady ochrony przed utratą danych w usłudze Microsoft Purview](dlp-learn-about-dlp.md)
+- [zasady Ochrona przed utratą danych w Microsoft Purview](dlp-learn-about-dlp.md)
 - [Etykiety wrażliwości](sensitivity-labels.md)
 - [Etykiety przechowywania](retention.md)
 - [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md)
@@ -206,6 +204,6 @@ Możesz wybrać jedną z kilku opcji tworzenia niestandardowych typów informacj
 - [Tworzenie niestandardowego typu informacji poufnych](create-a-custom-sensitive-information-type.md)
 - [Tworzenie niestandardowego typu informacji poufnych w programie PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
-Aby dowiedzieć się, jak używać typów informacji poufnych w celu zachowania zgodności z przepisami dotyczącymi prywatności danych, zobacz [Wdrażanie ochrony informacji dla przepisów dotyczących prywatności danych za pomocą Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
+Aby dowiedzieć się, jak używać typów informacji poufnych w celu zachowania zgodności z przepisami dotyczącymi prywatności danych, zobacz [Wdrażanie ochrony informacji dla przepisów dotyczących prywatności danych za pomocą usługi Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

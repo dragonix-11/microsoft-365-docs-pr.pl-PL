@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Użyj Edytora komunikacji, aby zmienić tekst i scalić zmienne pól podczas formatowania zawartości.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b44f6090f4a8bc9b09bb7934477741effc30ff6e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 910d25b80775284b8b12d803e722579d987558cd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098411"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636970"
 ---
 # <a name="use-the-communications-editor"></a>Korzystaj z edytora komunikacji
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Podczas definiowania zawartości portalu, powiadomień o blokadzie prawnej i powiązanych przypomnień/eskalacji możesz użyć Edytora komunikacji do formatowania i dynamicznego dostosowywania zawartości.
 

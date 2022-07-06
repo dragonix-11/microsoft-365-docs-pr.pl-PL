@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się, jak używać portalu Przesyłania w portalu Microsoft 365 Defender do przesyłania podejrzanych wiadomości e-mail, podejrzanych wiadomości phishingowych, spamu i innych potencjalnie szkodliwych wiadomości, adresów URL i załączników wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
+description: Administratorzy mogą dowiedzieć się, jak używać portalu Przesyłania w portalu Microsoft 365 Defender w celu przesyłania do firmy Microsoft legalnych wiadomości e-mail z zablokowanymi, podejrzanymi wiadomościami e-mail, podejrzanymi wiadomościami phishingowymi, spamem, innymi potencjalnie szkodliwymi wiadomościami, adresami URL i załącznikami wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 280b609f39431759216ab4e40cfb5d01752b6514
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 17083a248e31d5ae1eff3c088497f071bcac643b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487702"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639451"
 ---
-# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Przesyłanie do firmy Microsoft podejrzanych wiadomości spamowych, adresów URL i plików przy użyciu portalu Przesyłania
+# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Użyj portalu Przesłane, aby przesłać do firmy Microsoft wiadomość e-mail z podejrzeniem spamu, phish, adresów URL, legalnych wiadomości e-mail i załączników wiadomości e-mail
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 

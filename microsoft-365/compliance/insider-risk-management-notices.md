@@ -1,7 +1,7 @@
 ---
-title: Szablony informacji o zarządzaniu ryzykiem w niejawnym programie testów
-description: Informacje o szablonach informacji o zarządzaniu ryzykiem w programie Microsoft 365
-keywords: Microsoft 365, zarządzanie ryzykiem w niejawnym programie testów, zarządzanie ryzykiem, zgodność
+title: Szablony powiadomień dotyczących zarządzania ryzykiem wewnętrznym
+description: Dowiedz się więcej o szablonach powiadomień dotyczących zarządzania ryzykiem wewnętrznym w usłudze Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, ryzyko wewnętrzne, zarządzanie ryzykiem, zgodność
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -13,28 +13,28 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: cfa9628861e592b1e8cf235fe5c68e538be354ba
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 7af1152d1393aaaf9eeb242c78b280cf0e9d80e6
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "62996843"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639803"
 ---
-# <a name="insider-risk-management-notice-templates"></a>Szablony informacji o zarządzaniu ryzykiem w niejawnym programie testów
+# <a name="insider-risk-management-notice-templates"></a>Szablony powiadomień dotyczących zarządzania ryzykiem wewnętrznym
 
-Szablony powiadomiń o zarządzaniu ryzykiem w ramach niejawnego programu testów umożliwiają automatyczne wysyłanie wiadomości e-mail do użytkowników po utworzeniu sprawy dotyczącej działań, które wygenerowały dopasowanie zasad i potwierdzone alerty. W przypadku większości alertów generującej przypadki akcje użytkownika są wynikiem błędów lub niezamierzonych działań bez określonych intencji. Powiadomienia mogą służyć jako proste przypomnienia dla użytkowników, aby zachować większą ostrożność, zawierać linki do informacji na temat odświeżanego szkolenia lub do zasobów zasad firmy. Powiadomienia mogą być ważną częścią wewnętrznego programu szkoleniowego ds. zgodności i ułatwiają tworzenie udokumentowanych dzienników inspekcji dla użytkowników z działaniami cyklicznego ryzyka.
+Szablony powiadomień dotyczących zarządzania ryzykiem wewnętrznym umożliwiają automatyczne wysyłanie wiadomości e-mail do użytkowników w przypadku utworzenia przypadku dla działań, które wygenerowały dopasowanie zasad i potwierdzony alert. W przypadku większości alertów, które generują przypadki, akcje użytkownika są wynikiem błędów lub nieumyślnych działań bez złej intencji. Powiadomienia służą użytkownikom jako proste przypomnienia, aby zachować większą ostrożność, udostępniać linki do informacji na potrzeby szkolenia odświeżania lub do zasobów zasad firmowych. Powiadomienia mogą być ważną częścią wewnętrznego programu szkoleń dotyczących zgodności i mogą pomóc w utworzeniu udokumentowanego szlaku inspekcji dla użytkowników z cyklicznymi działaniami ryzyka.
 
-Utwórz szablony powiadomienia, jeśli chcesz wysłać do użytkowników wiadomość e-mail z powiadomieniem o przypomnieniu o dopasowaniach zasad w ramach procesu rozwiązywania problemów. Powiadomienia można wysyłać tylko na adres e-mail użytkownika skojarzonego z przeglądaną konkretną sprawą. Wybierając szablon powiadomienia do zastosowania do dopasowania zasad, możesz zaakceptować wartości pól zdefiniowane w tym szablonie lub zastąpić pola w razie potrzeby
+Utwórz szablony powiadomień, jeśli chcesz wysłać użytkownikom powiadomienie o przypomnieniu e-mail dotyczące dopasowań zasad w ramach procesu rozwiązywania przypadków. Powiadomienia mogą być wysyłane tylko na adres e-mail użytkownika skojarzony z rozpatrywanym konkretnym przypadkiem. Podczas wybierania szablonu powiadomienia, który ma zostać zastosowany do dopasowania zasad, można zaakceptować wartości pól zdefiniowane w szablonie lub zastąpić pola zgodnie z potrzebami
 
-## <a name="notice-templates-dashboard"></a>Pulpit nawigacyjny szablonów z powiadomieniami
+## <a name="notice-templates-dashboard"></a>Pulpit nawigacyjny szablonów powiadomień
 
-Na **pulpicie nawigacyjnym** Szablony powiadomienia jest wyświetlana lista skonfigurowanych szablonów zawiadomień oraz możliwość tworzenia nowych szablonów z powiadomieniami. Szablony z powiadomieniami są wyświetlane w kolejności odwrotnej do daty z pierwszym szablonem powiadomienia o najnowszej dacie.
+Pulpit **nawigacyjny szablonów powiadomień** wyświetla listę skonfigurowanych szablonów powiadomień i umożliwia tworzenie nowych szablonów powiadomień. Szablony powiadomień są wymienione w kolejności odwrotnej daty z najnowszym szablonem powiadomienia wymienionym jako pierwszy.
 
-![Pulpit nawigacyjny szablonów szablonów informacji o zarządzaniu ryzykiem w niejawnym programie testów.](../media/insider-risk-notices-dashboard.png)
+![Pulpit nawigacyjny szablonu powiadomienia dotyczącego zarządzania ryzykiem wewnętrznym.](../media/insider-risk-notices-dashboard.png)
 
-## <a name="html-for-notices"></a>Html na uwagi
+## <a name="html-for-notices"></a>KOD HTML dla powiadomień
 
-Jeśli chcesz utworzyć więcej niż zwykłą wiadomość e-mail opartą na tekście na powiadomieniach, możesz utworzyć bardziej szczegółową wiadomość, używając kodu HTML w polu treści wiadomości szablonu powiadomienia. W poniższym przykładzie przedstawiono format treści wiadomości dla podstawowego szablonu wiadomości e-mail opartego na języku HTML:
+Jeśli chcesz utworzyć więcej niż prostą tekstową wiadomość e-mail dla powiadomień, możesz utworzyć bardziej szczegółową wiadomość przy użyciu kodu HTML w polu treść wiadomości szablonu powiadomienia. Poniższy przykład zawiera format treści wiadomości dla podstawowego szablonu powiadomień e-mail opartego na języku HTML:
 
 ```HTML
 <!DOCTYPE html>
@@ -50,44 +50,44 @@ Jeśli chcesz utworzyć więcej niż zwykłą wiadomość e-mail opartą na tek�
 ```
 
 > [!NOTE]
-> Implementacja atrybutu href HTML w szablonach informacji o zarządzaniu ryzykiem w niejawnym programie testów obsługuje obecnie tylko pojedynczy cudzysłów zamiast podwójnego cudzysłowu na odwołania do adresów URL.
+> Implementacja atrybutu href HTML w szablonach powiadomień dotyczących zarządzania ryzykiem wewnętrznym obsługuje obecnie tylko pojedyncze cudzysłowy zamiast podwójnego cudzysłowu dla odwołań do adresów URL.
 
 ## <a name="create-a-new-notice-template"></a>Tworzenie nowego szablonu powiadomienia
 
-Aby utworzyć nowy szablon powiadomienia o zarządzaniu ryzykiem w niejawnym programie testów, skorzystaj z narzędzia  do tworzenia informacji w rozwiązaniu do zarządzania ryzykiem w niejawnym programie testów w Centrum zgodności platformy Microsoft 365.
+Aby utworzyć nowy szablon powiadomienia dotyczącego zarządzania ryzykiem wewnętrznym, użyjesz narzędzia do tworzenia powiadomień w rozwiązaniu **do zarządzania ryzykiem wewnętrznym** w portal zgodności Microsoft Purview.
 
-Wykonaj poniższe czynności, aby utworzyć nowy szablon powiadomienia o zarządzaniu ryzykiem w niejawnym programie testów:
+Wykonaj następujące kroki, aby utworzyć nowy szablon powiadomienia dotyczącego zarządzania ryzykiem wewnętrznym:
 
-1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com) do strony Zarządzanie **ryzykiem w niejawnym programie testów** i wybierz **kartę Powiadomienia o szablonach**.
-2. Wybierz **pozycję Utwórz szablon powiadomienia** , aby otworzyć narzędzie do tworzenia zawiadomienia.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Szablony powiadomień**.
+2. Wybierz pozycję **Utwórz szablon powiadomienia** , aby otworzyć narzędzie do tworzenia powiadomień.
 3. Na stronie **Tworzenie nowego szablonu powiadomienia** wypełnij następujące pola:
-    - **Nazwa szablonu**: Wprowadź przyjazną nazwę powiadomienia. Ta nazwa jest wyświetlana na liście powiadomień na pulpicie nawigacyjnym powiadomień i na liście powiadomień podczas wysyłania powiadomień o przypadku.
-    - **Wyślij od**: Wprowadź adres e-mail nadawcy powiadomienia. Ten adres zostanie wyświetlony w **polu Od:** we wszystkich powiadomieniach wysyłanych do użytkowników, chyba że zmieni się podczas wysyłania powiadomienia o przypadku.
-    - **Pola DW i UDW** : Opcjonalni użytkownicy lub grupy, którzy mają zostać powiadomieni o dopasowanych zasadach, wybranych z usługi Active Directory dla Twojej subskrypcji.
-    - **Temat**: Informacje wyświetlane w wierszu tematu wiadomości, obsługują znaki tekstowe.
-    - **Treść wiadomości**: Informacje wyświetlane w treści wiadomości, obsługujące tekst lub wartości HTML.
-4. Wybierz **pozycję Utwórz** , aby utworzyć i zapisać szablon powiadomienia, lub pozycję **Anuluj** , aby zamknąć bez zapisywania szablonu powiadomienia.
+    - **Nazwa szablonu**: wprowadź przyjazną nazwę powiadomienia. Ta nazwa jest wyświetlana na liście powiadomień na pulpicie nawigacyjnym powiadomień i na liście wyboru powiadomień podczas wysyłania powiadomień ze sprawy.
+    - **Wyślij od**: wprowadź adres e-mail nadawcy dla powiadomienia. Ten adres będzie wyświetlany w polu **Od:** we wszystkich powiadomieniach wysyłanych do użytkowników, chyba że zostanie on zmieniony podczas wysyłania powiadomienia ze sprawy.
+    - **Pola DW i BCC** : opcjonalni użytkownicy lub grupy, którzy mają być powiadamiani o dopasowaniu zasad, wybrani z usługi Active Directory dla subskrypcji.
+    - **Temat**: Informacje wyświetlane w wierszu tematu wiadomości obsługują znaki tekstowe.
+    - **Treść komunikatu**: informacje wyświetlane w treści wiadomości obsługują wartości tekstowe lub HTML.
+4. Wybierz pozycję **Utwórz** , aby utworzyć i zapisać szablon powiadomienia, lub wybierz pozycję **Anuluj** , aby zamknąć bez zapisywania szablonu powiadomienia.
 
 ## <a name="update-a-notice-template"></a>Aktualizowanie szablonu powiadomienia
 
-Aby zaktualizować istniejący szablon powiadomienia o zarządzaniu ryzykiem niejawnego programu testów, wykonaj następujące czynności:
+Aby zaktualizować istniejący szablon powiadomienia o zarządzaniu ryzykiem wewnętrznym, wykonaj następujące kroki:
 
-1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com) do strony Zarządzanie **ryzykiem w niejawnym programie testów** i wybierz **kartę Powiadomienia o szablonach**.
-2. Na pulpicie nawigacyjnym z powiadomieniami wybierz szablon powiadomienia, którym chcesz zarządzać.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Szablony powiadomień**.
+2. Na pulpicie nawigacyjnym powiadomień wybierz szablon powiadomienia, który chcesz zarządzać.
 3. Na stronie szczegółów powiadomienia wybierz pozycję **Edytuj**
-4. Na **stronie Edycja** możesz edytować następujące pola:
-    - **Nazwa szablonu**: Wprowadź nową przyjazną nazwę powiadomienia. Ta nazwa jest wyświetlana na liście powiadomień na pulpicie nawigacyjnym powiadomień i na liście powiadomień podczas wysyłania powiadomień o przypadku.
-    - **Wyślij od**: Zaktualizuj adres e-mail nadawcy powiadomienia. Ten adres zostanie wyświetlony w **polu Od:** we wszystkich powiadomieniach wysyłanych do użytkowników, chyba że zmieni się podczas wysyłania powiadomienia o przypadku.
-    - **Pola DW i UDW** : Zaktualizuj opcjonalnych użytkowników lub grupy, aby były o nich powiadamiane o dopasowaniu zasad wybranym z usługi Active Directory dla Twojej subskrypcji.
-    - **Temat**. Zaktualizuj informacje wyświetlane w wierszu tematu wiadomości, obsługujące znaki tekstowe.
-    - **Treść wiadomości**: Zaktualizuj informacje wyświetlane w treści wiadomości, obsługują wartości tekstowe lub HTML.
-5. Wybierz **pozycję Zapisz** , aby zaktualizować i zapisać powiadomienie, lub pozycję **Anuluj** , aby zamknąć bez zapisywania szablonu powiadomienia.
+4. Na stronie **Edytuj** można edytować następujące pola:
+    - **Nazwa szablonu**: wprowadź nową przyjazną nazwę powiadomienia. Ta nazwa jest wyświetlana na liście powiadomień na pulpicie nawigacyjnym powiadomień i na liście wyboru powiadomień podczas wysyłania powiadomień ze sprawy.
+    - **Wyślij od**: zaktualizuj adres e-mail nadawcy dla powiadomienia. Ten adres będzie wyświetlany w polu **Od:** we wszystkich powiadomieniach wysyłanych do użytkowników, chyba że zostanie on zmieniony podczas wysyłania powiadomienia ze sprawy.
+    - Pola **DW i BCC**: zaktualizuj opcjonalnych użytkowników lub grupy, aby były powiadamiane o dopasowaniu zasad wybranych w usłudze Active Directory dla subskrypcji.
+    - **Temat**: Zaktualizuj informacje wyświetlane w wierszu tematu wiadomości, obsługuje znaki tekstowe.
+    - **Treść komunikatu**: zaktualizuj informacje wyświetlane w treści wiadomości, obsługuje wartości tekstowe lub HTML.
+5. Wybierz pozycję **Zapisz** , aby zaktualizować i zapisać powiadomienie, lub wybierz pozycję **Anuluj** , aby zamknąć bez zapisywania szablonu powiadomienia.
 
 ## <a name="delete-a-notice-template"></a>Usuwanie szablonu powiadomienia
 
-Aby usunąć istniejący szablon powiadomienia o zarządzaniu ryzykiem w ramach niejawnego programu testów, wykonaj następujące czynności:
+Aby usunąć istniejący szablon powiadomienia o zarządzaniu ryzykiem wewnętrznym, wykonaj następujące kroki:
 
-1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com) do strony Zarządzanie **ryzykiem w niejawnym programie testów** i wybierz **kartę Powiadomienia o szablonach**.
-2. Na pulpicie nawigacyjnym z powiadomieniami wybierz szablon powiadomienia, który chcesz usunąć.
-3. Wybierz **ikonę Usuń** na pasku narzędzi.
-4. Aby usunąć szablon powiadomienia, w oknie **dialogowym** usuwania wybierz pozycję Tak. Aby anulować usuwanie, wybierz pozycję **Anuluj**.
+1. W [portal zgodności Microsoft Purview](https://compliance.microsoft.com) przejdź do obszaru **Zarządzanie ryzykiem wewnętrznym** i wybierz kartę **Szablony powiadomień**.
+2. Na pulpicie nawigacyjnym powiadomień wybierz szablon powiadomienia, który chcesz usunąć.
+3. Wybierz ikonę **Usuń** na pasku narzędzi.
+4. Aby usunąć szablon powiadomienia, wybierz pozycję **Tak** w oknie dialogowym usuwania. Aby anulować usunięcie, wybierz pozycję **Anuluj**.

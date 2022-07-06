@@ -16,33 +16,31 @@ ms.collection:
 search.appverid:
 - MET150
 description: Jako administrator i jako nadawca wiadomości możesz odwołać niektóre wiadomości e-mail, które zostały zaszyfrowane za pomocą zaawansowanego szyfrowania wiadomości usługi Microsoft Purview.
-ms.openlocfilehash: 79d09c13755c0c73e4d68598e83ac41344b9281a
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: b27ea41d1d91b825450d39ade96afdef04c0fdea
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187948"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639429"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Odwoływanie wiadomości e-mail zaszyfrowanych za pomocą zaawansowanego szyfrowania wiadomości
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Odwołanie wiadomości e-mail jest oferowane w ramach zaawansowanego szyfrowania komunikatów usługi Microsoft Purview. Zaawansowane szyfrowanie komunikatów w usłudze Microsoft Purview jest zawarte w [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (cennik pracowników organizacji non-profit), Office 365 Enterprise E5 (cennik personelu organizacji non-profit) i Office 365 Education A5. Aby użyć funkcji odwołania i wygaśnięcia zaawansowanego szyfrowania komunikatów, włącz opcję **szyfrowania Premium w Office 365** w licencji E5.
+Odwołanie wiadomości e-mail jest oferowane w ramach zaawansowanego szyfrowania komunikatów usługi Microsoft Purview. Zaawansowane szyfrowanie komunikatów w usłudze Microsoft Purview jest zawarte w [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (cennik pracowników organizacji non-profit), Office 365 Enterprise E5 (cennik personelu organizacji non-profit) i Office 365 Education A5. Aby użyć funkcji odwołania i wygaśnięcia zaawansowanego szyfrowania komunikatów, włącz opcję **Szyfrowanie Premium w Office 365** w licencji E5.
 
 Jeśli Twoja organizacja ma subskrypcję, która nie obejmuje zaawansowanego szyfrowania komunikatów w usłudze Microsoft Purview, możesz ją kupić za pomocą dodatku Zgodność platformy Microsoft 365 E5 SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik personelu organizacji non-profit) lub dodatek Office 365 Advanced Compliance jednostki SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik pracowników organizacji non-profit) lub jednostek SKU Office 365.
 
 Ten artykuł jest częścią większej serii artykułów na temat [Office 365 szyfrowania komunikatów](ome.md).
 
-Jeśli wiadomość została zaszyfrowana przy użyciu zaawansowanego szyfrowania komunikatów usługi Microsoft Purview i jesteś administratorem Microsoft 365 lub jesteś nadawcą wiadomości, możesz odwołać wiadomość pod pewnymi warunkami. Administratorzy odwołują komunikaty przy użyciu programu PowerShell. Jako nadawca odwołasz wiadomość wysłaną bezpośrednio z Outlook w sieci Web. W tym artykule opisano okoliczności, w których możliwe jest odwołanie i jak to zrobić.
+Jeśli wiadomość została zaszyfrowana przy użyciu zaawansowanego szyfrowania komunikatów usługi Microsoft Purview i jesteś administratorem platformy Microsoft 365 lub jesteś nadawcą wiadomości, możesz odwołać tę wiadomość pod pewnymi warunkami. Administratorzy odwołują komunikaty przy użyciu programu PowerShell. Jako nadawca odwołasz wiadomość wysłaną bezpośrednio z Outlook w sieci Web. W tym artykule opisano okoliczności, w których możliwe jest odwołanie i jak to zrobić.
 
 > [!NOTE]
 > Aby zagwarantować, że możliwość śledzenia i odwoływania komunikatów OME jest dostępna, należy dodać niestandardowy szablon znakowania. Zobacz [Dodawanie marki organizacji do zaszyfrowanych komunikatów](add-your-organization-brand-to-encrypted-messages.md)
   
 ## <a name="encrypted-emails-that-you-can-revoke"></a>Zaszyfrowane wiadomości e-mail, które można odwołać
 
-Administratorzy i nadawcy wiadomości mogą odwołać zaszyfrowane wiadomości e-mail, jeśli adresat otrzymał wiadomość e-mail opartą na linkach. Jeśli odbiorca otrzymał natywne środowisko wbudowane w obsługiwanym kliencie Outlook, nie można odwołać komunikatu.
+Administratorzy i nadawcy wiadomości mogą odwołać zaszyfrowane wiadomości e-mail, jeśli adresat otrzymał wiadomość e-mail opartą na linkach. Jeśli odbiorca otrzymał natywne środowisko wbudowane w obsługiwanym kliencie programu Outlook, nie można odwołać komunikatu.
 
-To, czy odbiorca otrzymuje środowisko oparte na linkach, czy środowisko wbudowane, zależy od typu tożsamości adresata: Office 365 i adresaci konta Microsoft (na przykład outlook.com użytkownicy) uzyskują wbudowane środowisko w obsługiwanych Outlook klientów. Wszystkie inne typy adresatów, takie jak adresaci Gmail i Yahoo, otrzymują środowisko oparte na linkach.
+To, czy odbiorca otrzymuje środowisko oparte na linkach, czy środowisko wbudowane, zależy od typu tożsamości adresata: Office 365 i adresaci konta Microsoft (na przykład outlook.com użytkownicy) uzyskują wbudowane środowisko w obsługiwanych klientach programu Outlook. Wszystkie inne typy adresatów, takie jak adresaci Gmail i Yahoo, otrzymują środowisko oparte na linkach.
 
 Administratorzy i nadawcy wiadomości mogą odwoływać wiadomości szyfrowane przy użyciu szyfrowania stosowanego bezpośrednio z Outlook w sieci Web. Na przykład komunikaty szyfrowane za pomocą opcji Szyfruj tylko.
 
@@ -58,7 +56,7 @@ Po odwołaniu wiadomości e-mail adresat otrzymuje błąd podczas uzyskiwania do
 
 Możesz odwołać wiadomość e-mail wysłaną do jednego adresata korzystającego z konta społecznościowego, takiego jak gmail.com lub yahoo.com. Innymi słowy, możesz odwołać wiadomość e-mail wysłaną do jednego adresata, który otrzymał środowisko oparte na linkach.
 
-Nie można odwołać wiadomości e-mail wysłanej do adresata korzystającego z konta służbowego z Office 365 lub Microsoft 365 lub użytkownika korzystającego z konta Microsoft, na przykład konta outlook.com. 
+Nie można odwołać wiadomości e-mail wysłanej do adresata korzystającego z konta służbowego z Office 365, platformy Microsoft 365 lub użytkownika korzystającego z konta Microsoft, na przykład konta outlook.com. 
 
 Aby odwołać wysłaną zaszyfrowaną wiadomość, wykonaj te kroki
 
@@ -76,7 +74,7 @@ Aby odwołać wysłaną zaszyfrowaną wiadomość, wykonaj te kroki
 
 ## <a name="how-to-revoke-an-encrypted-message-as-an-administrator"></a>Jak odwołać zaszyfrowaną wiadomość jako administrator
 
-Microsoft 365 administratorzy wykonaj następujące ogólne kroki, aby odwołać kwalifikującą się zaszyfrowaną wiadomość e-mail:
+Administratorzy platformy Microsoft 365 wykonaj następujące ogólne kroki, aby odwołać kwalifikującą się zaszyfrowaną wiadomość e-mail:
 
 - Pobierz identyfikator wiadomości e-mail.
 - Sprawdź, czy możesz odwołać komunikat.
@@ -110,7 +108,7 @@ Aby sprawdzić, czy można odwołać komunikat, sprawdź, czy pole Stan odwołan
 
 Aby sprawdzić, czy można odwołać określoną wiadomość e-mail przy użyciu Windows PowerShell, wykonaj te kroki.
 
-1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, zobacz [Connect to Exchange Online PowerShell (Nawiązywanie połączenia z programem PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)).
 
 2. Uruchom polecenie cmdlet Get-OMEMessageStatus w następujący sposób:
 
@@ -138,7 +136,7 @@ Aby odwołać komunikat przy użyciu Centrum zgodności zabezpieczeń &amp;
 
 Aby odwołać wiadomość e-mail przy użyciu Windows PowerShell, użyj polecenia cmdlet Set-OMEMessageRevocation.
 
-1. Przy użyciu konta służbowego z uprawnieniami administratora globalnego w organizacji [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, [połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Uruchom polecenie cmdlet Set-OMEMessageRevocation w następujący sposób:
 

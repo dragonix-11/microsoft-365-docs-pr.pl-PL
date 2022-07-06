@@ -12,26 +12,24 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Dowiedz się, jak rzucić klucze główne klienta przechowywane na platformie Azure Key Vault używane z kluczem klienta. Usługi obejmują pliki Exchange Online, Skype dla firm, SharePoint Online, OneDrive dla Firm i Teams.
-ms.openlocfilehash: f34e79ee772df1a88058625c0b2df5f62413bcfd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 474df9b4776df09b4a46ca002f506155606bdb52
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017339"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636496"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Tocz lub obracaj klucz klienta lub klucz dostępności
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!CAUTION]
-> Klucz szyfrowania używany z kluczem klienta jest rzutowany tylko wtedy, gdy wymagania dotyczące zabezpieczeń lub zgodności wymagają wprowadzenia klucza. Ponadto nie usuwaj żadnych kluczy, które są lub były skojarzone z zasadami. Podczas przerzucania kluczy zawartość zostanie zaszyfrowana przy użyciu poprzednich kluczy. Na przykład aktywne skrzynki pocztowe będą często ponownie szyfrowane, nieaktywne, odłączone i wyłączone skrzynki pocztowe mogą nadal być szyfrowane przy użyciu poprzednich kluczy. SharePoint Online wykonuje kopie zapasowe zawartości na potrzeby przywracania i odzyskiwania, więc zawartość może nadal być archiwizowana przy użyciu starszych kluczy.
+> Klucz szyfrowania używany z kluczem klienta jest rzutowany tylko wtedy, gdy wymagania dotyczące zabezpieczeń lub zgodności wymagają wprowadzenia klucza. Ponadto nie usuwaj żadnych kluczy, które są lub były skojarzone z zasadami. Podczas przerzucania kluczy zawartość zostanie zaszyfrowana przy użyciu poprzednich kluczy. Na przykład aktywne skrzynki pocztowe będą często ponownie szyfrowane, nieaktywne, odłączone i wyłączone skrzynki pocztowe mogą nadal być szyfrowane przy użyciu poprzednich kluczy. Usługa SharePoint Online wykonuje kopie zapasowe zawartości do celów przywracania i odzyskiwania, więc zawartość może nadal być archiwizna przy użyciu starszych kluczy.
 
 ## <a name="about-rolling-the-availability-key"></a>Informacje o wprowadzaniu klucza dostępności
 
-Firma Microsoft nie ujawnia klientom bezpośredniej kontroli nad kluczem dostępności. Na przykład możesz rzutować (obracać) tylko klucze, które należy do Ciebie w usłudze Azure Key Vault. Microsoft 365 rzutuje klucze dostępności zgodnie z harmonogramem zdefiniowanym wewnętrznie. Nie ma umowy dotyczącej poziomu usług (SLA) dla tych kluczowych rzutów. Microsoft 365 obraca klucz dostępności przy użyciu kodu usługi Microsoft 365 w zautomatyzowanym, nieręcznego procesie. Administratorzy firmy Microsoft mogą zainicjować proces rzutowania. Klucz jest wdrażany przy użyciu zautomatyzowanych mechanizmów bez bezpośredniego dostępu do magazynu kluczy. Dostęp do magazynu kluczy tajnych klucza dostępności nie jest aprowizowany dla administratorów firmy Microsoft. Stopniowe użycie klucza dostępności wykorzystuje ten sam mechanizm używany do początkowego generowania klucza. Aby uzyskać więcej informacji na temat klucza dostępności, zobacz [Omówienie klucza dostępności](customer-key-availability-key-understand.md).
+Firma Microsoft nie ujawnia klientom bezpośredniej kontroli nad kluczem dostępności. Na przykład możesz rzutować (obracać) tylko klucze, które należy do Ciebie w usłudze Azure Key Vault. Platforma Microsoft 365 wprowadza klucze dostępności zgodnie z harmonogramem zdefiniowanym wewnętrznie. Nie ma umowy dotyczącej poziomu usług (SLA) dla tych kluczowych rzutów. Platforma Microsoft 365 obraca klucz dostępności przy użyciu kodu usługi Microsoft 365 w zautomatyzowanym, nieręcznego procesie. Administratorzy firmy Microsoft mogą zainicjować proces rzutowania. Klucz jest wdrażany przy użyciu zautomatyzowanych mechanizmów bez bezpośredniego dostępu do magazynu kluczy. Dostęp do magazynu kluczy tajnych klucza dostępności nie jest aprowizowany dla administratorów firmy Microsoft. Stopniowe użycie klucza dostępności wykorzystuje ten sam mechanizm używany do początkowego generowania klucza. Aby uzyskać więcej informacji na temat klucza dostępności, zobacz [Omówienie klucza dostępności](customer-key-availability-key-understand.md).
 
 > [!IMPORTANT]
-> Exchange Online i Skype dla firm klucze dostępności mogą być skutecznie wdrażane przez klientów tworzących nowy program DEP, ponieważ dla każdego utworzonego programu DEP jest generowany unikatowy klucz dostępności. Klucze dostępności dla plików SharePoint Online, OneDrive dla Firm i Teams istnieją na poziomie lasu i są współużytkowane przez dostawców USŁUG i klientów, co oznacza, że wdrażanie odbywa się tylko zgodnie z harmonogramem zdefiniowanym wewnętrznie przez firmę Microsoft. Aby zminimalizować ryzyko nieusunięć klucza dostępności przy każdym utworzeniu nowego programu DEP, SharePoint, OneDrive i Teams przerzucania klucza pośredniego dzierżawy (TIK), klucza opakowanego przez klucz główny klienta i klucz dostępności za każdym razem, gdy zostanie utworzony nowy program DEP.
+> Exchange Online i Skype dla firm klucze dostępności mogą być skutecznie wdrażane przez klientów tworzących nowy program DEP, ponieważ dla każdego utworzonego programu DEP jest generowany unikatowy klucz dostępności. Klucze dostępności dla plików usługi SharePoint Online, OneDrive dla Firm i Teams istnieją na poziomie lasu i są współużytkowane przez dostawców USŁUG i klientów, co oznacza, że wprowadzanie odbywa się tylko zgodnie z harmonogramem zdefiniowanym wewnętrznie przez firmę Microsoft. Aby ograniczyć ryzyko nieusunięć klucza dostępności za każdym razem, gdy zostanie utworzony nowy program DEP, program SharePoint, usługa OneDrive i usługa Teams przerzucą klucz pośredni dzierżawy (TIK), klucz opakowany przez klucz główny klienta i klucz dostępności, za każdym razem, gdy zostanie utworzony nowy program DEP.
 
 ## <a name="request-a-new-version-of-each-existing-root-key-you-want-to-roll"></a>Zażądaj nowej wersji każdego istniejącego klucza głównego, który chcesz wdrożyć
 
@@ -85,9 +83,9 @@ Aby poinstruować klienta, aby używał nowego klucza do szyfrowania skrzynek po
 
 2. Aby sprawdzić wartość właściwości DataEncryptionPolicyID dla skrzynki pocztowej, wykonaj kroki opisane w [artykule Określanie programu DEP przypisanego do skrzynki pocztowej](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox). Wartość tej właściwości zmienia się, gdy usługa zastosuje zaktualizowany klucz.
   
-## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Aktualizowanie kluczy dla plików SharePoint Online, OneDrive dla Firm i Teams
+## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Aktualizowanie kluczy dla plików usługi SharePoint Online, OneDrive dla Firm i Teams
 
-SharePoint Online umożliwia przerzucenie tylko jednego klucza naraz. Jeśli chcesz rzucić oba klucze w magazynie kluczy, poczekaj na ukończenie pierwszej operacji. Firma Microsoft zaleca rozłożenie operacji w celu uniknięcia tego problemu. Po wdrożeniu jednego z kluczy usługi Azure Key Vault skojarzonych z programem DEP używanym z usługą SharePoint Online i OneDrive dla Firm należy zaktualizować program DEP, aby wskazywał nowy klucz. Nie powoduje to rotacji klucza dostępności.
+Usługa SharePoint Online umożliwia przerzucenie tylko jednego klucza naraz. Jeśli chcesz rzucić oba klucze w magazynie kluczy, poczekaj na ukończenie pierwszej operacji. Firma Microsoft zaleca rozłożenie operacji w celu uniknięcia tego problemu. Po wdrożeniu jednego z kluczy usługi Azure Key Vault skojarzonych z programem DEP używanym z usługą SharePoint Online i OneDrive dla Firm należy zaktualizować program DEP, aby wskazywał nowy klucz. Nie powoduje to rotacji klucza dostępności.
 
 1. Uruchom polecenie cmdlet Update-SPODataEncryptionPolicy w następujący sposób:
   
@@ -95,7 +93,7 @@ SharePoint Online umożliwia przerzucenie tylko jednego klucza naraz. Jeśli chc
    Update-SPODataEncryptionPolicy  <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
    ```
 
-   Mimo że to polecenie cmdlet uruchamia operację rzutowania kluczy dla SharePoint Online i OneDrive dla Firm, akcja nie kończy się natychmiast.
+   Mimo że to polecenie cmdlet uruchamia operację rzutowania kluczy dla usługi SharePoint Online i OneDrive dla Firm, akcja nie kończy się natychmiast.
 
 2. Aby wyświetlić postęp operacji rzutowania kluczy, uruchom polecenie cmdlet Get-SPODataEncryptionPolicy w następujący sposób:
 

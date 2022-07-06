@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 61541cf74640035845ac04889834d12ea6730ad8
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 604938426dfd8818647a5fa7b71069b4527ec877
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530336"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636452"
 ---
 # <a name="protect-your-network"></a>Chroń sieć
 
@@ -144,20 +144,6 @@ Użytkownik odwiedza witrynę internetową:
 W początkowej formie oprogramowanie wymuszające okup jest zagrożeniem towarowym, wstępnie zaprogramowanym i skoncentrowanym na ograniczonych, konkretnych wynikach (na przykład szyfrowaniu komputera). Jednak oprogramowanie wymuszające okup przekształciło się w zaawansowane zagrożenie oparte na człowieku, adaptacyjne i skoncentrowane na większej skali i bardziej rozpowszechnionych wynikach; takich jak przechowywanie zasobów lub danych całej organizacji dla okupu.
 
 Obsługa serwerów poleceń i kontroli (C2) jest kluczowym elementem tej ewolucji oprogramowania wymuszającego okup i umożliwia tym atakom dostosowanie się do środowiska, do którego są przeznaczone. Przerwanie linku do infrastruktury dowodzenia i kontroli zatrzymuje postęp ataku do następnego etapu.
-
-#### <a name="detecting-and-remediating-cobaltstrike-public-preview"></a>Wykrywanie i korygowanie aplikacji CobaltStrike (publiczna wersja zapoznawcza)
-
-Jedną z najczęstszych platform po eksploatacji stosowanych w atakach ransomware obsługiwanych przez człowieka jest CobaltStrike. Zespoły analizy zagrożeń w firmie Microsoft śledzą _taktykę, techniki i procedury_ (TTP) w wielu grupach działań, które wdrażają oprogramowanie wymuszające okup w celu identyfikowania wzorców zachowań, które mogą służyć do obrony przed określonymi strategiami i wektorami zagrożeń używanymi przez złośliwe podmioty. Te grupy działań ransomware wszystkie, w pewnym momencie w cyklu życia ataku, obejmują wdrożenie CobaltStrike Beacon na komputerze ofiary, aby umożliwić praktyczną aktywność klawiatury.
-
-CobaltStrike umożliwia dostosowanie wielu aspektów ataku, od możliwości hostowania wielu odbiorników reagujących na różne protokoły, po sposób, w jaki główny składnik po stronie klienta (Beacon) powinien wykonywać iniekcję kodu i uruchamiać zadania po eksploatacji. Gdy usługa Microsoft Defender wykryje cobaltStrike, może inteligentnie znaleźć i zebrać kluczowe wskaźniki naruszenia zabezpieczeń (IoC). Po przechwyceniu te wskaźniki są współużytkowane w stosie produktów firmy Microsoft w celu wykrywania i ochrony.
-
-Wykrywanie poleceń i kontroli w usłudze Defender for Endpoint nie jest ograniczone do aplikacji CobaltStrike. Usługa Defender for Endpoint może przechwytywać kluczowe IoCs wielu rodzin złośliwego oprogramowania. Wskaźniki są współużytkowane w stosie ochrony firmy Microsoft, aby chronić klientów i ostrzegać ich, jeśli dojdzie do naruszenia zabezpieczeń.
-
-Blokowanie komunikacji poleceń i kontroli może poważnie utrudnić ukierunkowany atak, dając zespołowi ds. zabezpieczeń czas na znalezienie początkowych wektorów wejścia i zamknięcie ich przed kolejną próbą ataku.
-
-<!-- Hide {this intro with no subsequent list items}
-[For additional details about Microsoft Defender's command and control detection, see **ADD LINK TO BLOG**.]
--->
 
 ## <a name="smartscreen-unblock"></a>Odblokuj filtr SmartScreen
 

@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie łącznika do archiwizowania danych InvestEdge w Microsoft 365
+title: Konfigurowanie łącznika do archiwizowania danych InvestEdge na platformie Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -11,25 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Dowiedz się, jak skonfigurować i użyć łącznika InvestEdge DataParser 17a-4 do importowania i archiwizowania danych InvestEdge w Microsoft 365.
-ms.openlocfilehash: db6135acc0b498c7f3985e058eb90f83d5cf1cc0
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Dowiedz się, jak skonfigurować i użyć łącznika InvestEdge DataParser 17a-4 do importowania i archiwizowania danych InvestEdge na platformie Microsoft 365.
+ms.openlocfilehash: 09c0e83ff7e81af6a05a4a60f1ae3efb540bc2d9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318409"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640703"
 ---
 # <a name="set-up-a-connector-to-archive-investedge-data"></a>Konfigurowanie łącznika do archiwizowania danych InvestEdge
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Użyj [narzędzia InvestEdge DataParser](https://www.17a-4.com/investedge-dataparser/) firmy 17a-4 LLC, aby zaimportować i zarchiwizować dane z aplikacji InvestEdge do skrzynek pocztowych użytkowników w organizacji platformy Microsoft 365. Program DataParser zawiera łącznik InvestEdge skonfigurowany do przechwytywania elementów ze źródła danych innej firmy i importowania tych elementów do platformy Microsoft 365. Łącznik InvestEdge DataParser konwertuje dane InvestEdge na format wiadomości e-mail, a następnie importuje je do skrzynek pocztowych użytkowników na platformie Microsoft 365.
 
-Użyj [narzędzia InvestEdge DataParser](https://www.17a-4.com/investedge-dataparser/) z firmy 17a-4 LLC, aby zaimportować i zarchiwizować dane z aplikacji InvestEdge do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Program DataParser zawiera łącznik InvestEdge skonfigurowany do przechwytywania elementów ze źródła danych innej firmy i importowania tych elementów do Microsoft 365. Łącznik InvestEdge DataParser konwertuje dane InvestEdge na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w Microsoft 365.
-
-Po zapisaniu danych InvestEdge w skrzynkach pocztowych użytkowników można zastosować funkcje Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania oraz zgodność z komunikacją. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika InvestEdge może pomóc organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
+Po zapisaniu danych InvestEdge w skrzynkach pocztowych użytkowników można zastosować funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania oraz zgodność z komunikacją. Importowanie i archiwizowanie danych w usłudze Microsoft 365 przy użyciu łącznika InvestEdge może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
 ## <a name="overview-of-archiving-investedge-data"></a>Omówienie archiwizacji danych InvestEdge
 
-W poniższym omówieniu wyjaśniono proces korzystania z łącznika danych do archiwizowania danych InvestEdge w Microsoft 365.
+W poniższym omówieniu wyjaśniono proces korzystania z łącznika danych do archiwizowania danych InvestEdge na platformie Microsoft 365.
 
 ![Przepływ pracy archiwizacji dla danych InvestEdge z zakresu 17a-4.](../media/InvestEdgeDataParserConnectorWorkflow.png)
 
@@ -37,7 +35,7 @@ W poniższym omówieniu wyjaśniono proces korzystania z łącznika danych do ar
 
 2. W regularnych odstępach czasu elementy InvestEdge są zbierane przez użytkownika DataParser. Usługa DataParser konwertuje również zawartość wiadomości na format wiadomości e-mail.
 
-3. Łącznik InvestEdge DataParser utworzony w portal zgodności Microsoft Purview łączy się z aplikacją DataParser i przesyła komunikaty do bezpiecznej lokalizacji Storage platformy Azure w chmurze firmy Microsoft.
+3. Łącznik InvestEdge DataParser utworzony w portal zgodności Microsoft Purview łączy się z aplikacją DataParser i przesyła komunikaty do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft.
 
 4. Podfolder w folderze Skrzynka odbiorcza o nazwie **InvestEdge DataParser** jest tworzony w skrzynkach pocztowych użytkownika, a elementy InvestEdge są importowane do tego folderu. Łącznik określa skrzynkę pocztową do zaimportowania elementów przy użyciu wartości właściwości *Poczta e-mail* . Każdy element InvestEdge zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika.
 
@@ -45,15 +43,15 @@ W poniższym omówieniu wyjaśniono proces korzystania z łącznika danych do ar
 
 - Utwórz konto DataParser dla łączników firmy Microsoft. W tym celu skontaktuj się z [17a-4 LLC](https://www.17a-4.com/contact/). Musisz zalogować się do tego konta podczas tworzenia łącznika w kroku 1.
 
-- Użytkownik, który utworzy łącznik InvestEdge DataParser w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który utworzy łącznik InvestEdge DataParser w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę łącznika danych Administracja. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę Administracja łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych 17a-4 jest dostępny w środowiskach GCC w chmurze Microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
+- Ten łącznik danych 17a-4 jest dostępny w środowiskach GCC w chmurze microsoft 365 us government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą platformy Microsoft 365 i w związku z tym nie są objęte zobowiązaniami microsoft purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
 ## <a name="step-1-set-up-a-investedge-dataparser-connector"></a>Krok 1. Konfigurowanie łącznika InvestEdge DataParser
 
 Pierwszym krokiem jest dostęp do strony Łączniki danych w portalu zgodności i utworzenie łącznika 17a-4 dla danych InvestEdge.
 
-1. Przejdź do obszaru <https://compliance.microsoft.com> , a następnie kliknij pozycję **Łączniki** >  **danychInwestuj daneParser**.
+1. Przejdź do pozycji <https://compliance.microsoft.com> , a następnie kliknij pozycję **Łączniki** >  danych **InvestEdge DataParser**.
 
 2. Na stronie Opis produktu **InvestEdge DataParser** kliknij pozycję **Dodaj łącznik**.
 
@@ -69,7 +67,7 @@ Współpracuj z pomocą techniczną 17a-4, aby skonfigurować łącznik InvestEd
 
 ## <a name="step-3-map-users"></a>Krok 3. Mapowanie użytkowników
 
-Łącznik InvestEdge DataParser automatycznie mapuje użytkowników na Microsoft 365 adresy e-mail przed zaimportowaniem danych do Microsoft 365.
+Łącznik InvestEdge DataParser automatycznie mapuje użytkowników na ich adresy e-mail platformy Microsoft 365 przed zaimportowaniem danych na platformę Microsoft 365.
 
 ## <a name="step-4-monitor-the-investedge-dataparser-connector"></a>Krok 4. Monitorowanie łącznika InvestEdge DataParser
 

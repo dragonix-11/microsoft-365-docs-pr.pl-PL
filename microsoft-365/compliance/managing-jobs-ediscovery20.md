@@ -15,27 +15,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Zadania zbierania elektronicznych materiałów dowodowych (Premium) ułatwiają śledzenie stanu długotrwałych procesów związanych z wykonywaniem różnych zadań zbierania elektronicznych materiałów dowodowych (Premium).
-ms.openlocfilehash: a87bb2a3bd90ff915392ae38c7355f3ad24f8061
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 9be48325e3103e8f4e349c32cc559db36e42a05e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043193"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639737"
 ---
 # <a name="manage-jobs-in-ediscovery-premium"></a>Zarządzanie zadaniami w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Oto lista zadań (które są zazwyczaj długotrwałymi procesami), które są śledzone na karcie **Zadania** sprawy w usłudze Microsoft Purview eDiscovery (Premium). Te zadania są wyzwalane przez akcje użytkownika podczas korzystania z przypadków i zarządzania nimi.
+Oto lista zadań (które są zazwyczaj długotrwałymi procesami), które są śledzone na karcie **Zadania** przypadku w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium). Te zadania są wyzwalane przez akcje użytkownika podczas korzystania z przypadków i zarządzania nimi.
 
 |Typ zadania|Opis|
 |---|---|
-|Dodawanie danych do zestawu przeglądów|Użytkownik dodaje kolekcję do zestawu przeglądów. To zadanie składa się z dwóch podrzędnych zadań: <ul><li>**Eksportuj** — zostanie wygenerowana lista elementów w kolekcji.</li><li>**Pozyskiwanie & Indeksowanie** — elementy w kolekcji zgodne z zapytaniem wyszukiwania są kopiowane do lokalizacji Storage platformy Azure (w procesie nazywanym *pozyskiwaniem*), a następnie te elementy w lokalizacji Storage platformy Azure są ponownie indeksowane. Ten nowy indeks jest używany podczas wykonywania zapytań i analizowania elementów w zestawie danych.</li><ul> <p> Aby uzyskać więcej informacji, zobacz [Dodawanie wyników wyszukiwania do zestawu przeglądów](add-data-to-review-set.md).|
+|Dodawanie danych do zestawu przeglądów|Użytkownik dodaje kolekcję do zestawu przeglądów. To zadanie składa się z dwóch podrzędnych zadań: <ul><li>**Eksportuj** — zostanie wygenerowana lista elementów w kolekcji.</li><li>**Pozyskiwanie & Indeksowanie** — elementy w kolekcji zgodne z zapytaniem wyszukiwania są kopiowane do lokalizacji usługi Azure Storage (w procesie nazywanym *pozyskiwaniem*), a następnie te elementy w lokalizacji usługi Azure Storage są ponownie indeksowane. Ten nowy indeks jest używany podczas wykonywania zapytań i analizowania elementów w zestawie danych.</li><ul> <p> Aby uzyskać więcej informacji, zobacz [Dodawanie wyników wyszukiwania do zestawu przeglądów](add-data-to-review-set.md).|
 |Dodawanie danych do innego zestawu przeglądów|Użytkownik dodaje dokumenty z jednego zestawu przeglądów do innego zestawu przeglądów w tym samym przypadku. Aby uzyskać więcej informacji, zobacz [Dodawanie danych do zestawu przeglądów z innego zestawu przeglądów](add-data-to-review-set-from-another-review-set.md).|
-|Dodawanie danych innych niż Microsoft 365 do zestawu przeglądów|Użytkownik przekazuje dane inne niż Microsoft 365 do zestawu przeglądów. Dane są również indeksowane podczas tego procesu. Na przykład pliki z lokalnego serwera plików lub komputera klienckiego są przekazywane do zestawu przeglądów. Aby uzyskać więcej informacji, zobacz [Ładowanie danych innych niż Microsoft 365 do zestawu przeglądów](load-non-office-365-data-into-a-review-set.md).|
+|Dodawanie danych innych niż Microsoft 365 do zestawu przeglądów|Użytkownik przekazuje dane spoza platformy Microsoft 365 do zestawu przeglądów. Dane są również indeksowane podczas tego procesu. Na przykład pliki z lokalnego serwera plików lub komputera klienckiego są przekazywane do zestawu przeglądów. Aby uzyskać więcej informacji, zobacz [Ładowanie danych innych niż microsoft 365 do zestawu przeglądów](load-non-office-365-data-into-a-review-set.md).|
 |Dodawanie skorygowanych danych do zestawu przeglądów|Dane z błędami przetwarzania są korygowane i ładowane z powrotem do zestawu przeglądów. Więcej informacji można znaleźć w następujących artykułach: <ul><li>[Korygowanie błędów podczas przetwarzania danych](error-remediation-when-processing-data-in-advanced-ediscovery.md)</li><li>[Korygowanie błędu pojedynczego elementu](single-item-error-remediation.md)</li></ul>|
 |Porównywanie zestawów obciążeń|Użytkownik analizuje różnice między różnymi zestawami obciążeń w zestawie przeglądów. Zestaw obciążenia to wystąpienie dodawania danych do zestawu przeglądów. Jeśli na przykład dodasz wyniki dwóch różnych wyszukiwań do tego samego zestawu przeglądów, każde z nich będzie reprezentować zestaw obciążenia.|
-|Rekonstrukcja konwersacji|Gdy użytkownik dodaje wyniki wyszukiwania do zestawu przeglądów konwersacji, konwersacje wiadomości błyskawicznych (*nazywane również konwersacjami wątkowymi) w usługach* takich jak Microsoft Teams są rekonstruowane w pliku PDF. To zadanie jest również wyzwalane, gdy użytkownik kliknie pozycję **Akcja > Tworzenie plików PDF konwersacji w zestawie przeglądów** . Aby uzyskać więcej informacji, zobacz [Przeglądanie konwersacji w usłudze eDiscovery (Premium)](conversation-review-sets.md).
+|Rekonstrukcja konwersacji|Gdy użytkownik dodaje wyniki wyszukiwania do zestawu przeglądów konwersacji, konwersacje wiadomości błyskawicznych ( *nazywane również konwersacjami wątkowymi) w usługach* takich jak Microsoft Teams są rekonstruowane w pliku PDF. To zadanie jest również wyzwalane, gdy użytkownik kliknie pozycję **Akcja > Tworzenie plików PDF konwersacji w zestawie przeglądów** . Aby uzyskać więcej informacji, zobacz [Przeglądanie konwersacji w usłudze eDiscovery (Premium)](conversation-review-sets.md).
 |Konwertowanie zredagowanych dokumentów na format PDF|Gdy użytkownik adnotuje dokument w zestawie przeglądów i zredaguje jego część, może przekonwertować zredagowany dokument na plik PDF. Dzięki temu zredagowana część nie będzie widoczna, jeśli dokument zostanie wyeksportowany do prezentacji. Aby uzyskać więcej informacji, zobacz [Wyświetlanie dokumentów w zestawie przeglądów](view-documents-in-review-set.md).|
 |Szacowanie wyników wyszukiwania|Gdy użytkownik utworzy i uruchomi lub ponownie uruchomi kolekcję roboczą, narzędzie wyszukiwania wyszukuje w indeksie elementy zgodne z zapytaniem wyszukiwania i przygotowuje oszacowanie zawierające liczbę i całkowity rozmiar wszystkich elementów w wyszukiwaniu oraz liczbę wyszukiwanych źródeł danych.  Aby uzyskać więcej informacji, zobacz [Zbieranie danych dla przypadku](collecting-data-for-ediscovery.md).|
 |Przygotowywanie danych do eksportu|Użytkownik eksportuje dokumenty z zestawu przeglądów. Po zakończeniu procesu eksportowania mogą pobrać wyeksportowane dane na komputer lokalny. Aby uzyskać więcej informacji, zobacz [Eksportowanie danych przypadków](exporting-data-ediscover20.md).|

@@ -13,16 +13,14 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 043ee6cac3a7aa7408d949b4455fd90f7f6a66d0
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: d117ba643ceb15cc867e0688675b56caa3d302f7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810927"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637290"
 ---
 # <a name="plan-for-insider-risk-management"></a>Zaplanuj zarządzanie ryzykiem wewnętrznym
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Przed rozpoczęciem [zarządzania ryzykiem wewnętrznym](insider-risk-management.md) w organizacji istnieją ważne działania związane z planowaniem i zagadnienia, które powinny zostać poddane przeglądowi przez zespoły ds. technologii informatycznych i zarządzania zgodnością. Dokładne zrozumienie i planowanie wdrożenia w następujących obszarach pomoże zapewnić bezproblemowe wdrożenie i korzystanie z funkcji zarządzania ryzykiem wewnętrznym i jest zgodne z najlepszymi rozwiązaniami dla rozwiązania. 
 
@@ -74,28 +72,28 @@ Podczas pracy z zarządzaniem ryzykiem wewnętrznym wybierzesz spośród tych op
 
 Członkowie następujących ról mogą przypisywać użytkowników do grup ról zarządzania ryzykiem wewnętrznym i mieć te same uprawnienia rozwiązania dołączone do grupy ról *Administracja zarządzania ryzykiem wewnętrznym*:
 
-- *administrator globalny* Azure Active Directory
-- *administrator zgodności* Azure Active Directory
+- *Administrator globalny* usługi Azure Active Directory
+- *Administrator zgodności* usługi Azure Active Directory
 - *zarządzanie organizacją* portal zgodności Microsoft Purview
 - *administrator zgodności* portal zgodności Microsoft Purview
 
 ## <a name="understand-requirements-and-dependencies"></a>Omówienie wymagań i zależności
 
-W zależności od tego, jak planujesz zaimplementować zasady zarządzania ryzykiem wewnętrznym, musisz mieć odpowiednie Microsoft 365 subskrypcje licencjonowania oraz poznać i zaplanować niektóre wymagania wstępne rozwiązania.
+W zależności od tego, jak planujesz implementować zasady zarządzania ryzykiem wewnętrznym, musisz mieć odpowiednie subskrypcje licencjonowania platformy Microsoft 365 oraz poznać i zaplanować niektóre wymagania wstępne rozwiązania.
 
-**Licencjonowania:** Zarządzanie ryzykiem wewnętrznym jest dostępne w ramach szerokiego wyboru subskrypcji licencjonowania Microsoft 365. Aby uzyskać szczegółowe informacje, zobacz artykuł [Wprowadzenie do zarządzania ryzykiem wewnętrznym](insider-risk-management-configure.md#subscriptions-and-licensing) .
+**Licencjonowania:** Zarządzanie ryzykiem wewnętrznym jest dostępne w ramach szerokiego wyboru subskrypcji licencjonowania platformy Microsoft 365. Aby uzyskać szczegółowe informacje, zobacz artykuł [Wprowadzenie do zarządzania ryzykiem wewnętrznym](insider-risk-management-configure.md#subscriptions-and-licensing) .
 
 > [!IMPORTANT]
 > Zarządzanie ryzykiem wewnętrznym jest obecnie dostępne w dzierżawach hostowanych w regionach geograficznych i krajach obsługiwanych przez zależności usługi platformy Azure. Aby sprawdzić, czy zarządzanie ryzykiem wewnętrznym jest obsługiwane w organizacji, zobacz [Dostępność zależności platformy Azure według kraju/regionu](/troubleshoot/azure/general/dependency-availability-by-country).
 
-Jeśli nie masz istniejącego planu Microsoft 365 Enterprise E5 i chcesz wypróbować zarządzanie ryzykiem wewnętrznym, możesz [dodać Microsoft 365](/office365/admin/try-or-buy-microsoft-365) do istniejącej subskrypcji lub [utworzyć konto próbne](https://www.microsoft.com/microsoft-365/enterprise) Microsoft 365 Enterprise E5.
+Jeśli nie masz istniejącego planu Microsoft 365 Enterprise E5 i chcesz wypróbować zarządzanie ryzykiem wewnętrznym, możesz dodać platformę [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) do istniejącej subskrypcji lub [utworzyć konto próbne](https://www.microsoft.com/microsoft-365/enterprise) Microsoft 365 Enterprise E5.
 
 **Wymagania szablonu zasad:** W zależności od wybranego szablonu zasad istnieją wymagania, które należy zrozumieć i zaplanować przed skonfigurowaniem zarządzania ryzykiem wewnętrznym w organizacji:
 
-- W przypadku korzystania z szablonu **Kradzież danych przez odchodzących użytkowników** należy skonfigurować łącznik Microsoft 365 HR, aby okresowo importować informacje o rezygnacji i dacie zakończenia dla użytkowników w organizacji. Zapoznaj się [z artykułem Importowanie danych za pomocą łącznika HR,](import-hr-data.md) aby uzyskać szczegółowe wskazówki dotyczące konfigurowania łącznika Microsoft 365 HR dla organizacji.
+- W przypadku korzystania z szablonu **Kradzież danych przez odchodzących użytkowników** należy skonfigurować łącznik usługi Microsoft 365 HR, aby okresowo importować informacje o rezygnacji i dacie zakończenia dla użytkowników w organizacji. Zapoznaj się [z artykułem Importowanie danych za pomocą łącznika HR,](import-hr-data.md) aby uzyskać szczegółowe wskazówki dotyczące konfigurowania łącznika usługi Microsoft 365 HR dla organizacji.
 - W przypadku korzystania z **szablonów wycieków danych** należy skonfigurować co najmniej jedną zasadę Ochrona przed utratą danych w Microsoft Purview (DLP) w celu zdefiniowania poufnych informacji w organizacji i otrzymywania alertów o ryzyku wewnętrznym dla alertów zasad DLP o wysokiej ważności. Zapoznaj się z [artykułem Tworzenie, testowanie i dostrajanie zasad DLP,](create-test-tune-dlp-policy.md) aby uzyskać szczegółowe wskazówki dotyczące konfigurowania zasad DLP dla organizacji.
 - W przypadku korzystania z szablonów **naruszeń zasad zabezpieczeń** należy włączyć Ochrona punktu końcowego w usłudze Microsoft Defender integracji zarządzania ryzykiem wewnętrznym w usłudze Defender Security Center, aby importować alerty naruszenia zabezpieczeń. Aby uzyskać szczegółowe wskazówki dotyczące włączania integracji usługi Defender for Endpoint z zarządzaniem ryzykiem wewnętrznym, zobacz [Konfigurowanie zaawansowanych funkcji w Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/advanced-features).
-- W przypadku korzystania z **niezadowolonych szablonów użytkowników** należy skonfigurować łącznik Microsoft 365 HR, aby okresowo importować informacje o stanie wydajności lub degradacji dla użytkowników w organizacji. Zapoznaj się [z artykułem Importowanie danych za pomocą łącznika HR,](import-hr-data.md) aby uzyskać szczegółowe wskazówki dotyczące konfigurowania łącznika Microsoft 365 HR dla organizacji.
+- W przypadku korzystania z **niezadowolonych szablonów użytkowników** należy skonfigurować łącznik usługi Microsoft 365 HR, aby okresowo importować informacje o stanie wydajności lub degradacji dla użytkowników w organizacji. Zapoznaj się [z artykułem Importowanie danych za pomocą łącznika HR,](import-hr-data.md) aby uzyskać szczegółowe wskazówki dotyczące konfigurowania łącznika usługi Microsoft 365 HR dla organizacji.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Testowanie z niewielką grupą użytkowników w środowisku produkcyjnym
 
@@ -115,9 +113,9 @@ Udostępnij dokumentację dotyczącą zarządzania ryzykiem wewnętrznym uczestn
 - [Przeglądanie danych sprawy za pomocą eksploratora zawartości ryzyka związanego z informacjami poufnymi](insider-risk-management-content-explorer.md)
 - [Twórz szablony powiadomień o ryzyku wewnętrznym](insider-risk-management-notices.md)
 
-## <a name="ready-to-get-started"></a>Chcesz rozpocząć pracę?
+## <a name="ready-to-get-started"></a>Chcesz rozpocząć?
 
 Chcesz skonfigurować zarządzanie ryzykiem wewnętrznym dla swojej organizacji? Zapoznaj się z następującymi artykułami:
 
-- [Wprowadzenie z ustawieniami zarządzania ryzykiem wewnętrznym](insider-risk-management-settings.md) w celu skonfigurowania ustawień zasad globalnych.
-- [Wprowadzenie z zarządzaniem ryzykiem wewnętrznym](insider-risk-management-configure.md) w celu skonfigurowania wymagań wstępnych, utworzenia zasad i rozpoczęcia otrzymywania alertów.
+- [Wprowadzenie do ustawień zarządzania ryzykiem wewnętrznym](insider-risk-management-settings.md) w celu skonfigurowania ustawień zasad globalnych.
+- [Wprowadzenie do zarządzania ryzykiem wewnętrznym](insider-risk-management-configure.md) w celu skonfigurowania wymagań wstępnych, utworzenia zasad i rozpoczęcia otrzymywania alertów.

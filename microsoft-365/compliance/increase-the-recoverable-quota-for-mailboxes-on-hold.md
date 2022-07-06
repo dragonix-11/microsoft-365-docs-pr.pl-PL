@@ -15,19 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
-description: Włącz skrzynkę pocztową archiwum i włącz automatyczne rozszerzanie archiwizacji, aby zwiększyć rozmiar folderu Elementy możliwe do odzyskania dla skrzynki pocztowej w Microsoft 365.
-ms.openlocfilehash: d426afffb1002e1187adafc794d5340d730cc7e7
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: Włącz skrzynkę pocztową archiwum i włącz automatyczne rozszerzanie archiwizacji, aby zwiększyć rozmiar folderu Elementy możliwe do odzyskania dla skrzynki pocztowej na platformie Microsoft 365.
+ms.openlocfilehash: cd5a051ec97d292ca03179fc8b530eb311033dbc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044143"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640055"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Zwiększ limit przydziału elementów odzyskiwalnych dla archiwum skrzynek pocztowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Domyślne zasady przechowywania Exchange o nazwie *Domyślne zasady MRM*, które są automatycznie stosowane do nowych skrzynek pocztowych w Exchange Online zawiera tag przechowywania o nazwie Elementy do odzyskania 14 dni przenieść do archiwum. Ten tag przechowywania przenosi elementy z folderu Elementy możliwe do odzyskania w podstawowej skrzynce pocztowej użytkownika do folderu Elementy możliwe do odzyskania w skrzynce pocztowej archiwum użytkownika po upływie 14-dniowego okresu przechowywania elementu. Wiadomości e-mail w folderze Usuwania będą zachowywane na podstawie parametru **RetainDeletedItemsFor** i zostaną przeniesione do innych folderów w możliwych do odzyskania usuniętych elementach, a następnie do archiwizacji skrzynki pocztowej. Aby tak się stało, należy włączyć archiwum skrzynki pocztowej użytkownika. Jeśli skrzynka pocztowa archiwum nie jest włączona, nie jest podejmowana żadna akcja, co oznacza, że elementy w folderze Elementy możliwe do odzyskania dla skrzynki pocztowej wstrzymanej nie są przenoszone do skrzynki pocztowej archiwum po upływie 14-dniowego okresu przechowywania. Ponieważ nic nie jest usuwane ze skrzynki pocztowej wstrzymanej, możliwe jest przekroczenie limitu przydziału magazynu dla folderu Elementy możliwe do odzyskania, zwłaszcza jeśli skrzynka pocztowa archiwum użytkownika nie jest włączona.
+Domyślne zasady przechowywania programu Exchange o nazwie *Domyślne zasady MRM*, które są automatycznie stosowane do nowych skrzynek pocztowych w Exchange Online zawierają tag przechowywania o nazwie Odzyskiwanie elementów 14 dni przenieść do archiwum. Ten tag przechowywania przenosi elementy z folderu Elementy możliwe do odzyskania w podstawowej skrzynce pocztowej użytkownika do folderu Elementy możliwe do odzyskania w skrzynce pocztowej archiwum użytkownika po upływie 14-dniowego okresu przechowywania elementu. Wiadomości e-mail w folderze Usuwania będą zachowywane na podstawie parametru **RetainDeletedItemsFor** i zostaną przeniesione do innych folderów w możliwych do odzyskania usuniętych elementach, a następnie do archiwizacji skrzynki pocztowej. Aby tak się stało, należy włączyć archiwum skrzynki pocztowej użytkownika. Jeśli skrzynka pocztowa archiwum nie jest włączona, nie jest podejmowana żadna akcja, co oznacza, że elementy w folderze Elementy możliwe do odzyskania dla skrzynki pocztowej wstrzymanej nie są przenoszone do skrzynki pocztowej archiwum po upływie 14-dniowego okresu przechowywania. Ponieważ nic nie jest usuwane ze skrzynki pocztowej wstrzymanej, możliwe jest przekroczenie limitu przydziału magazynu dla folderu Elementy możliwe do odzyskania, zwłaszcza jeśli skrzynka pocztowa archiwum użytkownika nie jest włączona.
 
 Aby zmniejszyć prawdopodobieństwo przekroczenia tego limitu, limit przydziału magazynu dla folderu Elementy możliwe do odzyskania zostanie automatycznie zwiększony z 30 GB do 100 GB po umieszczeniu blokady w skrzynce pocztowej w Exchange Online. Jeśli skrzynka pocztowa archiwum jest włączona, limit przydziału magazynu dla folderu Elementy możliwe do odzyskania w skrzynce pocztowej archiwum również zostanie zwiększony z 30 GB do 100 GB. Jeśli funkcja automatycznego rozszerzania archiwizacji w Exchange Online jest włączona, łączny limit przydziału magazynu dla skrzynki pocztowej archiwum użytkownika, w tym folderu Elementy możliwe do odzyskania, wynosi 1,5 TB.
 
@@ -48,23 +46,23 @@ Gdy limit przydziału magazynu dla folderu Elementy możliwe do odzyskania w pod
     > [!NOTE]
     > Po włączeniu archiwum dla skrzynki pocztowej, która jest bliska przekroczenia limitu przydziału magazynu dla folderu Elementy możliwe do odzyskania, możesz uruchomić Asystenta folderów zarządzanych, aby ręcznie wyzwolić asystenta w celu przetworzenia skrzynki pocztowej, aby wygasłe elementy zostały przeniesione do folderu Elementy możliwe do odzyskania w skrzynce pocztowej archiwum. Aby uzyskać instrukcje [, zobacz Krok 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) . Należy pamiętać, że inne elementy w skrzynce pocztowej użytkownika mogą zostać przeniesione do nowej skrzynki pocztowej archiwum. Rozważ poinformowanie użytkownika, że może się to zdarzyć po włączeniu archiwum skrzynki pocztowej.
 
-- **Utwórz niestandardowe zasady przechowywania Exchange dla skrzynek pocztowych zablokowanych.** Oprócz włączenia skrzynki pocztowej archiwum i automatycznego rozszerzania archiwizacji skrzynek pocztowych w blokadzie postępowania sądowego lub In-Place blokadzie, warto również utworzyć niestandardowe zasady przechowywania Exchange dla skrzynek pocztowych wstrzymanych. Dzięki temu można zastosować zasady przechowywania do skrzynek pocztowych w stanie wstrzymania, które różnią się od domyślnych zasad MRM stosowanych do skrzynek pocztowych, które nie są zawieszone, i umożliwia stosowanie tagów przechowywania przeznaczonych dla skrzynek pocztowych zablokowanych. Obejmuje to utworzenie nowego tagu przechowywania dla folderu Elementy możliwe do odzyskania.
+- **Utwórz niestandardowe zasady przechowywania programu Exchange dla skrzynek pocztowych zablokowanych.** Oprócz włączenia skrzynki pocztowej archiwum i automatycznego rozszerzania archiwizacji skrzynek pocztowych w blokadzie postępowania sądowego lub In-Place blokadzie, warto również utworzyć niestandardowe zasady przechowywania programu Exchange dla skrzynek pocztowych wstrzymanych. Dzięki temu można zastosować zasady przechowywania do skrzynek pocztowych w stanie wstrzymania, które różnią się od domyślnych zasad MRM stosowanych do skrzynek pocztowych, które nie są zawieszone, i umożliwia stosowanie tagów przechowywania przeznaczonych dla skrzynek pocztowych zablokowanych. Obejmuje to utworzenie nowego tagu przechowywania dla folderu Elementy możliwe do odzyskania.
 
-W pozostałej części tego tematu opisano procedury krok po kroku umożliwiające utworzenie niestandardowych zasad przechowywania Exchange dla skrzynek pocztowych wstrzymanych.
+W pozostałej części tego tematu opisano procedury krok po kroku w celu utworzenia niestandardowych zasad przechowywania programu Exchange dla skrzynek pocztowych wstrzymanych.
 
 [Krok 1. Tworzenie niestandardowego tagu przechowywania dla folderu Elementy możliwe do odzyskania](#step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder)
 
-[Krok 2. Tworzenie nowych zasad przechowywania Exchange dla skrzynek pocztowych zablokowanych](#step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold)
+[Krok 2. Tworzenie nowych zasad przechowywania programu Exchange dla skrzynek pocztowych zablokowanych](#step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold)
 
-[Krok 3. Stosowanie nowych zasad przechowywania Exchange do skrzynek pocztowych zablokowanych](#step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold)
+[Krok 3. Stosowanie nowych zasad przechowywania programu Exchange do skrzynek pocztowych zablokowanych](#step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold)
 
 [(Opcjonalnie) Krok 4. Uruchamianie asystenta folderów zarządzanych w celu zastosowania nowych ustawień przechowywania](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings)
 
 ## <a name="step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder"></a>Krok 1. Tworzenie niestandardowego tagu przechowywania dla folderu Elementy możliwe do odzyskania
 
-Pierwszym krokiem jest utworzenie niestandardowego tagu przechowywania (nazywanego tagiem zasad przechowywania lub RPT) dla folderu Elementy możliwe do odzyskania. Jak wyjaśniono wcześniej, ten RPT przenosi elementy z folderu Elementy do odzyskania w podstawowej skrzynce pocztowej użytkownika do folderu Elementy możliwe do odzyskania w skrzynce pocztowej archiwum użytkownika. Aby utworzyć RPT dla folderu Elementy do odzyskania, należy użyć programu PowerShell. Nie można użyć centrum administracyjnego Exchange (EAC).
+Pierwszym krokiem jest utworzenie niestandardowego tagu przechowywania (nazywanego tagiem zasad przechowywania lub RPT) dla folderu Elementy możliwe do odzyskania. Jak wyjaśniono wcześniej, ten RPT przenosi elementy z folderu Elementy do odzyskania w podstawowej skrzynce pocztowej użytkownika do folderu Elementy możliwe do odzyskania w skrzynce pocztowej archiwum użytkownika. Aby utworzyć RPT dla folderu Elementy do odzyskania, należy użyć programu PowerShell. Nie można użyć centrum administracyjnego programu Exchange (EAC).
 
-1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Połącz się z usługą Exchange Online w programie PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Uruchom następujące polecenie, aby utworzyć nowy RPT dla folderu Elementy możliwe do odzyskania:
 
@@ -81,7 +79,7 @@ Pierwszym krokiem jest utworzenie niestandardowego tagu przechowywania (nazywane
     > [!TIP]
     > Zalecamy, aby okres przechowywania (zdefiniowany przez parametr  _AgeLimitForRetention_ ) dla elementów możliwych do odzyskania RPT był taki sam jak usunięty okres przechowywania elementów dla skrzynek pocztowych, do których zostanie zastosowany RPT. Dzięki temu użytkownikowi cały usunięty okres przechowywania elementów może odzyskać usunięte elementy przed przeniesieniem ich do archiwum skrzynki pocztowej. W poprzednim przykładzie okres przechowywania został ustawiony na 30 dni na podstawie założenia, że okres przechowywania usuniętych elementów dla skrzynek pocztowych wynosi również 30 dni. Skrzynka pocztowa Exchange Online jest domyślnie skonfigurowana do przechowywania usuniętych elementów przez 14 dni. Można jednak zmienić to ustawienie na maksymalnie 30 dni. Aby uzyskać więcej informacji, zobacz [Zmienianie okresu przechowywania usuniętego elementu dla skrzynki pocztowej w Exchange Online](https://www.microsoft.com/?ref=go).
 
-## <a name="step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold"></a>Krok 2. Tworzenie nowych zasad przechowywania Exchange dla skrzynek pocztowych zablokowanych
+## <a name="step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold"></a>Krok 2. Tworzenie nowych zasad przechowywania programu Exchange dla skrzynek pocztowych zablokowanych
 
 Następnym krokiem jest utworzenie nowych zasad przechowywania i dodanie do nich tagów przechowywania, w tym RPT elementów możliwych do odzyskania utworzonych w kroku 1. Te nowe zasady zostaną zastosowane do skrzynek pocztowych wstrzymanych w następnym kroku.
 
@@ -131,7 +129,7 @@ Na przykład następujące polecenie tworzy zasady przechowywania i połączone 
 New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks "Recoverable Items 30 days for mailboxes on hold","1 Month Delete","1 Week Delete","1 Year Delete","5 Year Delete","6 Month Delete","Default 2 year move to archive","Junk Email","Never Delete","Personal 1 year move to archive","Personal 5 year move to archive"
 ```
 
-## <a name="step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold"></a>Krok 3. Stosowanie nowych zasad przechowywania Exchange do skrzynek pocztowych zablokowanych
+## <a name="step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold"></a>Krok 3. Stosowanie nowych zasad przechowywania programu Exchange do skrzynek pocztowych zablokowanych
 
 Ostatnim krokiem jest zastosowanie nowych zasad przechowywania utworzonych w kroku 2 do skrzynek pocztowych zablokowanych w organizacji. Możesz użyć eac lub Exchange Online programu PowerShell, aby zastosować zasady przechowywania do jednej skrzynki pocztowej lub do wielu skrzynek pocztowych.
 
@@ -159,7 +157,7 @@ Możesz również użyć umowy EAC, aby zastosować zasady przechowywania do wie
 
 ### <a name="use-exchange-online-powershell-to-apply-the-new-retention-policy"></a>Stosowanie nowych zasad przechowywania przy użyciu Exchange Online programu PowerShell
 
-Za pomocą programu Exchange Online programu PowerShell można zastosować nowe zasady przechowywania do pojedynczej skrzynki pocztowej. Ale prawdziwą siłą programu PowerShell jest to, że można go używać do szybkiego identyfikowania wszystkich skrzynek pocztowych w organizacji, które znajdują się w blokadzie postępowania sądowego lub In-Place blokadzie, a następnie zastosować nowe zasady przechowywania do wszystkich skrzynek pocztowych wstrzymanych w jednym poleceniu. Oto kilka przykładów użycia Exchange programu PowerShell do stosowania zasad przechowywania do co najmniej jednej skrzynki pocztowej. Wszystkie przykłady dotyczą zasad przechowywania utworzonych w kroku 2.
+Za pomocą programu Exchange Online programu PowerShell można zastosować nowe zasady przechowywania do pojedynczej skrzynki pocztowej. Ale prawdziwą siłą programu PowerShell jest to, że można go używać do szybkiego identyfikowania wszystkich skrzynek pocztowych w organizacji, które znajdują się w blokadzie postępowania sądowego lub In-Place blokadzie, a następnie zastosować nowe zasady przechowywania do wszystkich skrzynek pocztowych wstrzymanych w jednym poleceniu. Oto kilka przykładów użycia programu Exchange PowerShell w celu zastosowania zasad przechowywania do co najmniej jednej skrzynki pocztowej. Wszystkie przykłady dotyczą zasad przechowywania utworzonych w kroku 2.
 
 W tym przykładzie nowe zasady przechowywania są stosowane do skrzynki pocztowej firmy Pilar Pinilla.
 
@@ -205,7 +203,7 @@ Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | F
 
 ## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>(Opcjonalnie) Krok 4. Uruchamianie asystenta folderów zarządzanych w celu zastosowania nowych ustawień przechowywania
 
-Po zastosowaniu nowych zasad przechowywania Exchange do skrzynek pocztowych w stanie wstrzymania może upłynąć do 7 dni w Exchange Online, aby asystent folderów zarządzanych przetworzyć te skrzynki pocztowe przy użyciu ustawień w nowych zasadach przechowywania. Zamiast czekać na uruchomienie Asystenta folderów zarządzanych, możesz użyć polecenia cmdlet **Start-ManagedFolderAssistant** , aby ręcznie wyzwolić asystenta w celu przetworzenia skrzynek pocztowych, do których zastosowano nowe zasady przechowywania.
+Po zastosowaniu nowych zasad przechowywania programu Exchange do skrzynek pocztowych w stanie wstrzymania przetwarzanie tych skrzynek pocztowych przy użyciu ustawień w nowych zasadach przechowywania może potrwać do 7 dni, Exchange Online asystenta folderów zarządzanych. Zamiast czekać na uruchomienie Asystenta folderów zarządzanych, możesz użyć polecenia cmdlet **Start-ManagedFolderAssistant** , aby ręcznie wyzwolić asystenta w celu przetworzenia skrzynek pocztowych, do których zastosowano nowe zasady przechowywania.
 
 Uruchom następujące polecenie, aby uruchomić asystenta folderów zarządzanych dla skrzynki pocztowej Pilar Pinilla.
 
@@ -227,4 +225,4 @@ $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 
 - Po włączeniu archiwum skrzynki pocztowej użytkownika rozważ poinformowanie użytkownika, że inne elementy w jego skrzynce pocztowej (nie tylko elementy w folderze Elementy możliwe do odzyskania) mogą zostać przeniesione do skrzynki pocztowej archiwum. Wynika to z faktu, że domyślne zasady MRM przypisane do Exchange Online skrzynek pocztowych zawierają tag przechowywania (o nazwie Domyślne 2 lata przenieść do archiwum), który przenosi elementy do skrzynki pocztowej archiwum dwa lata po dacie dostarczenia elementu do skrzynki pocztowej lub utworzonego przez użytkownika. Aby uzyskać więcej informacji, zobacz [Domyślne zasady przechowywania w Exchange Online](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
 
-- Po włączeniu archiwum skrzynki pocztowej użytkownika możesz również poinformować użytkownika, że może odzyskać usunięte elementy w folderze Elementy możliwe do odzyskania w skrzynce pocztowej archiwum. Mogą to zrobić w Outlook, wybierając folder **Elementy usunięte** w skrzynce pocztowej archiwum, a następnie klikając pozycję **Odzyskaj usunięte elementy z serwera** na karcie **Narzędzia** główne. Aby uzyskać więcej informacji na temat odzyskiwania usuniętych elementów, zobacz [Odzyskiwanie usuniętych elementów w Outlook, aby uzyskać Windows](https://go.microsoft.com/fwlink/p/?LinkId=624829).
+- Po włączeniu archiwum skrzynki pocztowej użytkownika możesz również poinformować użytkownika, że może odzyskać usunięte elementy w folderze Elementy możliwe do odzyskania w skrzynce pocztowej archiwum. Mogą to zrobić w programie Outlook, wybierając folder **Elementy usunięte** w skrzynce pocztowej archiwum, a następnie klikając pozycję **Odzyskaj usunięte elementy z serwera** na karcie **Narzędzia** główne. Aby uzyskać więcej informacji na temat odzyskiwania usuniętych elementów, zobacz [Odzyskiwanie usuniętych elementów w programie Outlook dla systemu Windows](https://go.microsoft.com/fwlink/p/?LinkId=624829).

@@ -15,21 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Możesz zmienić domyślny rozmiar plików PST pobranych na komputer podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: 135c83f734e0687c8d477ab434d0aa539224f39a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e2387f403854561c9906f252ad39be740c62ae19
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100836"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638791"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Zmienianie rozmiaru plików PST podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-W przypadku korzystania z narzędzia eDiscovery Export do eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych z różnych narzędzi microsoft eDiscovery domyślny rozmiar pliku PST, który można wyeksportować, wynosi 10 GB. Jeśli chcesz zmienić ten rozmiar domyślny, możesz edytować rejestr Windows na komputerze używanym do eksportowania wyników wyszukiwania. Jednym z powodów, aby to zrobić, jest to, aby plik PST mógł zmieścić się na nośniku wymiennym, takim dvd, dysk kompaktowy lub dysk USB. 
+W przypadku korzystania z narzędzia eDiscovery Export do eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych z różnych narzędzi microsoft eDiscovery domyślny rozmiar pliku PST, który można wyeksportować, wynosi 10 GB. Jeśli chcesz zmienić ten rozmiar domyślny, możesz edytować rejestr systemu Windows na komputerze używanym do eksportowania wyników wyszukiwania. Jednym z powodów, aby to zrobić, jest to, aby plik PST mógł zmieścić się na nośniku wymiennym, takim dvd, dysk kompaktowy lub dysk USB. 
   
 > [!NOTE]
-> Narzędzie eksportu zbierania elektronicznych materiałów dowodowych służy do eksportowania wyników wyszukiwania w przypadku korzystania z narzędzia do wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview.
+> Narzędzie eksportu zbierania elektronicznych materiałów dowodowych służy do eksportowania wyników wyszukiwania podczas korzystania z narzędzia wyszukiwania zawartości w portal zgodności Microsoft Purview.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Tworzenie ustawienia rejestru w celu zmiany rozmiaru plików PST podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych
 

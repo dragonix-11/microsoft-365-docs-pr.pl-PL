@@ -20,16 +20,14 @@ ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak wyeliminować zduplikowane wyniki wyszukiwania zbierania elektronicznych materiałów dowodowych, aby wyeksportować tylko jedną kopię wiadomości e-mail.
-ms.openlocfilehash: 4456ecfb4684562d8ddf7da21c463859f2d9bec2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6a0d4e2b52c6f32b3142414a761a2447805cd58a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091010"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640659"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Usuwanie duplikowania w wynikach wyszukiwania zbierania elektronicznych materiałów dowodowych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W tym artykule opisano sposób działania de-duplikowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych i objaśniono ograniczenia algorytmu de-duplikacji.
   
@@ -43,17 +41,17 @@ Narzędzia zbierania elektronicznych materiałów dowodowych używają kombinacj
 
 - **ConversationTopic** — ta właściwość określa temat wątku konwersacji komunikatu. Wartość właściwości **ConversationTopic** to ciąg opisujący ogólny temat konwersacji. Konwersacja składa się z początkowej wiadomości i wszystkich wiadomości wysłanych w odpowiedzi na początkową wiadomość. Komunikaty w tej samej konwersacji mają tę samą wartość dla właściwości **ConversationTopic** . Wartość tej właściwości to zazwyczaj wiersz tematu z początkowego komunikatu, który zduplikował konwersację. 
 
-- **BodyTagInfo** — jest to wewnętrzna właściwość magazynu Exchange. Wartość tej właściwości jest obliczana przez sprawdzenie różnych atrybutów w treści komunikatu. Ta właściwość służy do identyfikowania różnic w treści komunikatów. 
+- **BodyTagInfo** — jest to wewnętrzna właściwość magazynu exchange. Wartość tej właściwości jest obliczana przez sprawdzenie różnych atrybutów w treści komunikatu. Ta właściwość służy do identyfikowania różnic w treści komunikatów. 
 
 Podczas procesu eksportowania zbierania elektronicznych materiałów dowodowych te trzy właściwości są porównywane dla każdego komunikatu zgodnego z kryteriami wyszukiwania. Jeśli te właściwości są identyczne dla dwóch (lub większej liczby) komunikatów, te komunikaty są określane jako duplikaty, a wynik jest taki, że tylko jedna kopia komunikatu zostanie wyeksportowana, jeśli zostanie włączona deduplikacja. Wyeksportowany komunikat jest nazywany "elementem źródłowym". Informacje o zduplikowanych komunikatach są zawarte w **raportachResults.csv** i **Manifest.xml** dołączonych do wyeksportowanych wyników wyszukiwania. W pliku **Results.csv** zduplikowany komunikat jest identyfikowany przez wartość w kolumnie **Duplikuj do elementu** . Wartość w tej kolumnie jest zgodna z wartością w kolumnie **Tożsamość elementu** dla wyeksportowanego komunikatu. 
   
-Poniższa grafika pokazuje sposób wyświetlania zduplikowanych komunikatów w **Results.csv** i **Manifest.xml** raportów eksportowanych z wynikami wyszukiwania. Te raporty nie zawierają wcześniej opisanych właściwości poczty e-mail, które są używane w algorytmie de-duplikowania. Zamiast tego raporty zawierają **właściwość Item Identity** przypisaną do elementów przez magazyn Exchange. 
+Poniższa grafika pokazuje sposób wyświetlania zduplikowanych komunikatów w **Results.csv** i **Manifest.xml** raportów eksportowanych z wynikami wyszukiwania. Te raporty nie zawierają wcześniej opisanych właściwości poczty e-mail, które są używane w algorytmie de-duplikowania. Zamiast tego raporty zawierają **właściwość Item Identity** przypisaną do elementów przez magazyn programu Exchange. 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>raport Results.csv (wyświetlany w Excel)
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv raport (wyświetlany w programie Excel)
   
 ![Wyświetlanie informacji o zduplikowanych elementach w raporcie Results.csv.](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>raport Manifest.xml (wyświetlany w Excel)
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml raport (wyświetlany w programie Excel)
   
 ![Wyświetlanie informacji o zduplikowanych elementach w raporcie Manifest.xml.](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
@@ -63,7 +61,7 @@ Ponadto inne właściwości z zduplikowanych komunikatów są uwzględniane w ra
 
 Istnieją pewne znane ograniczenia algorytmu cofania duplikowania, które mogą powodować oznaczanie unikatowych elementów jako duplikatów. Ważne jest, aby zrozumieć te ograniczenia, aby można było zdecydować, czy korzystać z opcjonalnej funkcji de-duplikowania.
   
-Istnieje jedna sytuacja, w której funkcja de-duplikowania może błędnie zidentyfikować komunikat jako duplikat i nie wyeksportować go (ale nadal przytoczyć go jako duplikat w raportach eksportu). Są to komunikaty, które użytkownik edytuje, ale nie wysyła. Załóżmy na przykład, że użytkownik wybiera komunikat w Outlook, kopiuje zawartość wiadomości, a następnie wkleja ją w nowej wiadomości. Następnie użytkownik zmienia jedną z kopii, usuwając lub dodając załącznik lub zmieniając wiersz tematu lub samą treść. Jeśli te dwa komunikaty są zgodne z zapytaniem wyszukiwania zbierania elektronicznych materiałów dowodowych, tylko jeden z komunikatów zostanie wyeksportowany, jeśli po wyeksportowaniu wyników wyszukiwania zostanie włączona deduplikacja. Mimo że oryginalna wiadomość lub skopiowana wiadomość została zmieniona, żadne ze zmienionych komunikatów nie zostało wysłane i dlatego wartości właściwości **InternetMessageId**, **ConversationTopic** i **BodyTagInfo** nie zostały zaktualizowane. Jednak jak wyjaśniono wcześniej, oba komunikaty zostaną wyświetlone w raportach eksportu 
+Istnieje jedna sytuacja, w której funkcja de-duplikowania może błędnie zidentyfikować komunikat jako duplikat i nie wyeksportować go (ale nadal przytoczyć go jako duplikat w raportach eksportu). Są to komunikaty, które użytkownik edytuje, ale nie wysyła. Załóżmy na przykład, że użytkownik wybiera komunikat w programie Outlook, kopiuje zawartość wiadomości, a następnie wkleja ją w nowej wiadomości. Następnie użytkownik zmienia jedną z kopii, usuwając lub dodając załącznik lub zmieniając wiersz tematu lub samą treść. Jeśli te dwa komunikaty są zgodne z zapytaniem wyszukiwania zbierania elektronicznych materiałów dowodowych, tylko jeden z komunikatów zostanie wyeksportowany, jeśli po wyeksportowaniu wyników wyszukiwania zostanie włączona deduplikacja. Mimo że oryginalna wiadomość lub skopiowana wiadomość została zmieniona, żadne ze zmienionych komunikatów nie zostało wysłane i dlatego wartości właściwości **InternetMessageId**, **ConversationTopic** i **BodyTagInfo** nie zostały zaktualizowane. Jednak jak wyjaśniono wcześniej, oba komunikaty zostaną wyświetlone w raportach eksportu 
   
 Unikatowe wiadomości mogą być również oznaczane jako duplikaty, gdy włączono funkcję ochrony strony kopiowania na zapis, tak jak w przypadku skrzynki pocztowej, która znajduje się w blokadzie postępowania sądowego lub In-Place blokadzie. Funkcja kopiowania przy zapisie kopiuje oryginalny komunikat (i zapisuje go w folderze wersje folderu Elementy możliwe do odzyskania użytkownika) przed zapisaniem poprawki oryginalnego elementu. W takim przypadku poprawiona kopia i oryginalny komunikat (w folderze Elementy możliwe do odzyskania) można uznać za zduplikowane komunikaty, dlatego tylko jeden z nich zostanie wyeksportowany.
   

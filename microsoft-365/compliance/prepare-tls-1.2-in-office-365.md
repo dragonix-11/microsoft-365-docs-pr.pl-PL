@@ -13,16 +13,14 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 584bf2b27be9c33399a9158038853dac195e3146
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 9edbbb463d04447ee4babcd66b4d6e320663209a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044230"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639759"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Przygotowanie do protokołu TLS 1.2 w usłudze Office 365 i usłudze Office 365 GCC
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="summary"></a>Podsumowanie
 
@@ -32,7 +30,7 @@ W celu zapewnienia najwyższej klasy szyfrowania naszym klientom, firma Microsof
 
 Aby uzyskać informacje dotyczące usuwania zależności TLS 1.0 i 1.1, zobacz następujący oficjalny dokument: [Rozwiązywanie problemu TLS 1.0](https://www.microsoft.com/download/details.aspx?id=55266).
 
-Po uaktualnieniu do protokołu TLS 1.2 upewnij się, że używane zestawy szyfrowania są obsługiwane przez usługę Azure Front Door. Microsoft 365 i Azure Front Door mają niewielkie różnice w obsłudze zestawu szyfrowania. Aby uzyskać szczegółowe informacje, zobacz [Jakie są bieżące zestawy szyfrowania obsługiwane przez usługę Azure Front Door?](/azure/frontdoor/concept-end-to-end-tls#supported-cipher-suites).
+Po uaktualnieniu do protokołu TLS 1.2 upewnij się, że używane zestawy szyfrowania są obsługiwane przez usługę Azure Front Door. Rozwiązania Microsoft 365 i Azure Front Door mają niewielkie różnice w obsłudze zestawu szyfrowania. Aby uzyskać szczegółowe informacje, zobacz [Jakie są bieżące zestawy szyfrowania obsługiwane przez usługę Azure Front Door?](/azure/frontdoor/concept-end-to-end-tls#supported-cipher-suites).
 
 ## <a name="more-information"></a>Więcej informacji
 
@@ -43,7 +41,7 @@ Zalecamy, aby wszystkie kombinacje typu klient-serwer i przeglądarka-serwer kor
   > [!NOTE]
   > W przypadku przepływu poczty przychodzącej SMTP po wycofaniu protokołu TLS 1.0 i 1.1 będziemy akceptować tylko połączenie TLS 1.2. Będziemy jednak nadal akceptować połączenie SMTP, które jest niezaszyfrowane bez żadnego protokołu TLS. Chociaż nie zalecamy transmisji wiadomości e-mail bez szyfrowania.
 
-Aby korzystać z protokołu TLS 1.2, należy zaktualizować aplikacje wywołujące interfejsy API Microsoft 365 za pośrednictwem protokołu TLS 1.0 lub TLS 1.1. Wartość domyślna platformy .NET 4.5 to TLS 1.1. Aby zaktualizować konfigurację platformy .NET, zobacz [Jak włączyć protokół Transport Layer Security (TLS) 1.2 na klientach](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
+Aby korzystać z protokołu TLS 1.2, należy zaktualizować aplikacje, które wywołują interfejsy API platformy Microsoft 365 za pośrednictwem protokołu TLS 1.0 lub TLS 1.1. Wartość domyślna platformy .NET 4.5 to TLS 1.1. Aby zaktualizować konfigurację platformy .NET, zobacz [Jak włączyć protokół Transport Layer Security (TLS) 1.2 na klientach](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
 Następujący klienci nie są w stanie korzystać z TLS 1.2. Zaktualizuj klientów, aby zapewnić ciągły dostęp do usługi.
 
@@ -77,7 +75,7 @@ Jeśli korzystasz z infrastruktury lokalnej w scenariuszach hybrydowych lub usł
 Poniższe zasoby zawierają wskazówki pomagające w zapewnieniu, że klienci korzystają z TLS 1.2 lub nowszej wersji i wyłączeniu protokołu TLS 1.0 i 1.1.
 
 - Jeśli masz klientów z systemem Windows 7, którzy łączą się z usługą Office 365, upewnij się, że protokół TLS 1.2 jest domyślnym protokołem zabezpieczeń w usłudze WinHTTP w systemie Windows. Aby uzyskać więcej informacji, zobacz [KB 3140245 – Aktualizacja, aby włączyć protokół TLS 1.1 i TLS 1.2 jako domyślne protokoły zabezpieczeń w WinHTTP w systemie Windows](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in).
-- [Zestawy szyfrowania TLS obsługiwane przez Office 365](/microsoft-365/compliance/technical-reference-details-about-encryption#tls-cipher-suites-supported-by-office-365)
+- [Mechanizmy szyfrowania TLS obsługiwane przez usługę Office 365](/microsoft-365/compliance/technical-reference-details-about-encryption#tls-cipher-suites-supported-by-office-365)
 - Aby zareagować na słabe użycie protokołu TLS, usuwając zależności TLS 1.0 i 1.1, zobacz [Wsparcie  protokołu TLS 1.2 w Microsoft](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/).
 - [Nowe funkcje usług IIS](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) ułatwiają znajdowanie klientów w systemie [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) i [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334), którzy łączą się z usługą za pomocą słabych protokołów zabezpieczeń.
 - Uzyskaj więcej informacji na temat [sposobu rozwiązania problemu protokołu TLS 1.0](https://www.microsoft.com/download/details.aspx?id=55266).

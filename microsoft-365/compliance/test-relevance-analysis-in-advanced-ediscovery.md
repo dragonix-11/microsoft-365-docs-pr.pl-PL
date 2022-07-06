@@ -1,5 +1,5 @@
 ---
-title: Analiza istotności testu w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
+title: Testowanie analizy istotności w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,19 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
-description: Dowiedz się, jak używać karty Test po obliczeniu usługi Batch w usłudze eDiscovery (Premium) do testowania, porównywania i weryfikowania ogólnej jakości przetwarzania.
-ms.openlocfilehash: 0b3d6c70bdfef4dec8e8a5d08d4e72f80d6fec77
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak używać karty Test po obliczeniach usługi Batch w usłudze eDiscovery (Premium) do testowania, porównywania i weryfikowania ogólnej jakości przetwarzania.
+ms.openlocfilehash: 5c1fabf677dd305fb91d77e94af0e18304280d45
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095471"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637048"
 ---
-# <a name="test-relevance-analysis-in-ediscovery-premium"></a>Analiza istotności testu w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="test-relevance-analysis-in-ediscovery-premium"></a>Testowanie analizy istotności w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
   
-Karta Test w usłudze Microsoft Purview eDiscovery (Premium) umożliwia testowanie, porównywanie i weryfikowanie ogólnej jakości przetwarzania. Te testy są wykonywane po obliczeniu usługi Batch. Oznaczając pliki w kolekcji, ekspert dokonuje ostatecznego osądu, czy każdy otagowany plik ma znaczenie dla sprawy.
+Karta Test w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) umożliwia testowanie, porównywanie i weryfikowanie ogólnej jakości przetwarzania. Te testy są wykonywane po obliczeniu usługi Batch. Oznaczając pliki w kolekcji, ekspert dokonuje ostatecznego osądu, czy każdy otagowany plik ma znaczenie dla sprawy.
   
 W scenariuszach z pojedynczym i wieloma problemami testy są zwykle wykonywane dla każdego problemu. Wyniki można wyświetlić po każdym teście, a wyniki testu można ponownie wykonać za pomocą określonych przykładowych plików testowych.
   

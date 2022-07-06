@@ -1,5 +1,5 @@
 ---
-title: W jaki sposób zawartość jest identyfikowana na przykład w celu zalecenia w zakresie zarządzania danymi
+title: Jak jest identyfikowana zawartość dla zaleceń dotyczących ładu danych
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -17,50 +17,50 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Portal Microsoft 365 Defender i Centrum zgodności platformy Microsoft 365 zawierają zalecenia dotyczące zarządzania danymi oparte na bieżącej konfiguracji Twojej organizacji i umożliwiają konfigurowanie wszystkich danych kilkoma kliknięciami. Niektóre z tych zaleceń wykryły określoną zawartość w organizacji, a następnie podały zalecane kroki zarządzania zawartością. Na przykład zalecenie może wykryć elementy, które zawierają treści o krytycznym znaczeniu dla firmy (takie jak uprawnienia klienta lub informacje o prawach klienta), a następnie pozwolić na automatyczne zastosowanie etykiety przechowywania do tych elementów w celu zapewnienia, że będą one klasyfikowane i zachowywane zgodnie z potrzebami. Ten temat zawiera listę wyświetlonych zaleceń dotyczących zarządzania danymi oraz opis wykrywanych zawartości w celu wyzwalania poszczególnych z nich.
-ms.openlocfilehash: cddd73fdd0c21605549450968db182883ab7e6ad
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+description: Portal Microsoft 365 Defender i portal zgodności Microsoft Purview udostępniają zalecenia dotyczące zarządzania danymi na podstawie bieżącej konfiguracji organizacji i umożliwiają konfigurowanie elementów za pomocą kilku kliknięć. Niektóre z tych zaleceń wykrywają określoną zawartość w organizacji, a następnie zapewniają zalecane kroki zarządzania tą zawartością. Na przykład zalecenie może wykryć elementy zawierające zawartość o znaczeniu krytycznym dla działania firmy (na przykład uprawnienia adwokata klienta lub informacje NDA), a następnie umożliwić automatyczne stosowanie etykiety przechowywania do tych elementów, aby upewnić się, że są one klasyfikowane i przechowywane zgodnie z potrzebami. W tym temacie wymieniono zalecenia dotyczące ładu danych, które mogą być widoczne, i opisano, jaka zawartość jest wykrywana w celu wyzwolenia każdej z nich.
+ms.openlocfilehash: 27fcc5dd07695be355fc15ba2145ffa5540673ca
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63006171"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637312"
 ---
-# <a name="how-content-is-identified-for-data-governance-recommendations"></a>W jaki sposób zawartość jest identyfikowana na przykład w celu zalecenia w zakresie zarządzania danymi
+# <a name="how-content-is-identified-for-data-governance-recommendations"></a>Jak jest identyfikowana zawartość dla zaleceń dotyczących ładu danych
 
-Portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender i</a> Centrum zgodności platformy Microsoft 365 zawierają zalecenia dotyczące <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a> zarządzania danymi oparte na bieżącej konfiguracji Twojej organizacji i umożliwiają konfigurowanie wszystkich konfiguracji za pomocą kilku kliknięć. Niektóre z tych zaleceń wykryły określoną zawartość w organizacji, a następnie podały zalecane kroki zarządzania zawartością. Na przykład zalecenie może wykryć elementy, które zawierają treści o krytycznym znaczeniu dla firmy (takie jak uprawnienia klienta lub informacje o prawach klienta), a następnie pozwolić na automatyczne zastosowanie etykiety przechowywania do tych elementów w celu zapewnienia, że będą one klasyfikowane i zachowywane zgodnie z potrzebami.
+Portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> i <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a> udostępniają zalecenia dotyczące zarządzania danymi na podstawie bieżącej konfiguracji organizacji i umożliwiają konfigurowanie elementów za pomocą kilku kliknięć. Niektóre z tych zaleceń wykrywają określoną zawartość w organizacji, a następnie zapewniają zalecane kroki zarządzania tą zawartością. Na przykład zalecenie może wykryć elementy zawierające zawartość o znaczeniu krytycznym dla działania firmy (na przykład uprawnienia adwokata klienta lub informacje NDA), a następnie umożliwić automatyczne stosowanie etykiety przechowywania do tych elementów, aby upewnić się, że są one klasyfikowane i przechowywane zgodnie z potrzebami.
 
-Ten temat zawiera listę wyświetlonych zaleceń dotyczących zarządzania danymi oraz opis wykrywanych zawartości w celu wyzwalania poszczególnych z nich.
+W tym temacie wymieniono zalecenia dotyczące ładu danych, które mogą być widoczne, i opisano, jaka zawartość jest wykrywana w celu wyzwolenia każdej z nich.
 
-## <a name="clean-up-voicemail"></a>Oczyszczanie poczty głosowej
+## <a name="clean-up-voicemail"></a>Czyszczenie poczty głosowej
 
-To zalecenie pojawia się, gdy wiadomości e-mail zidentyfikowane jako "poczta głosowa" są wykrywane w skrzynkach pocztowych użytkowników. Dowiedz się więcej o [właściwościach wiadomości w programie Exchange](/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
+To zalecenie jest wyświetlane w przypadku wykrycia wiadomości e-mail zidentyfikowanych jako typ wiadomości "poczta głosowa" w skrzynkach pocztowych użytkowników. Dowiedz się więcej o [właściwościach komunikatów w programie Exchange](/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
 
-## <a name="label-attorney-client-privilege-content"></a>Etykieta zawartości z uprawnieniami klienta
+## <a name="label-attorney-client-privilege-content"></a>Etykieta zawartości uprawnień adwokackiego klienta
 
-To zalecenie jest wyświetlane, gdy zostanie spełnione którekolwiek z poniższych kryteriów.
+To zalecenie jest wyświetlane po spełnieniu jednego z następujących kryteriów.
 
-- Dowolna kombinacja tych słów kluczowych jest wykrywana w treści wiadomości e-mail:
-  - ACP
-  - Uprawnienie klienta obsługi klienta obsługi klienta
-  - Attorney-Client uprawnień
-  - Attorney-Client z uprawnieniami
+- Każda kombinacja tych słów kluczowych jest wykrywana w treści wiadomości e-mail:
+  - AKP
+  - Uprawnienie klienta adwokackiego
+  - uprawnienie Attorney-Client
+  - Attorney-Client uprzywilejowane
 
-- Dowolna kombinacja tych słów kluczowych jest wykrywana w SharePoint lub OneDrive plikach:
-  - ACP
-  - Uprawnienie klienta obsługi klienta prawni*
-  - Uprawnienie AC
+- Każda kombinacja tych słów kluczowych jest wykrywana w plikach programu SharePoint lub OneDrive:
+  - AKP
+  - Uprawnienie klienta adwokata*
+  - Uprawnienie ac
 
 ## <a name="retain-audio-files"></a>Zachowywanie plików audio
 
-To zalecenie pojawia się, gdy dowolny z poniższych typów plików zostanie wykryty w SharePoint lub OneDrive.
+To zalecenie jest wyświetlane, gdy w programie SharePoint lub OneDrive zostanie wykryty dowolny z następujących typów plików.
 
 - .MP3
 - . WMA
 - . WAV
 - . RA
-- . Pamięć RAM
-- RM
-- . MID
+- . PAMIĘCI RAM
+- .RM
+- . POŁOWIE
 - . OGG
 - . AIFF
 - . PCM
@@ -68,15 +68,15 @@ To zalecenie pojawia się, gdy dowolny z poniższych typów plików zostanie wyk
 - . FLAC
 - . ALAC
 
-## <a name="retain-cad-files"></a>Zachowywanie plików programu CAD
+## <a name="retain-cad-files"></a>Zachowywanie plików CAD
 
-To zalecenie pojawia się, gdy dowolny z poniższych typów plików zostanie wykryty w SharePoint lub OneDrive.
+To zalecenie jest wyświetlane, gdy w programie SharePoint lub OneDrive zostanie wykryty dowolny z następujących typów plików.
 
-- 3DXML
+- .3DXML
 - . ACIS
-- . ARC
+- . ŁUKU
 - . ASM
-- CAT*
+- .CAT*
 - . CGR
 - . DW*
 - . DX*
@@ -90,13 +90,13 @@ To zalecenie pojawia się, gdy dowolny z poniższych typów plików zostanie wyk
 - . NEU
 - . PAR
 - . PKG
-- . ChRL
+- . CHRL
 - . PRT
 - . PSM
 - . PWD
 - . SLD*
 - . KROK
-- . STL (Czas wygaśnięcia)
+- . STL
 - . STP
 - . U3D
 - . UNV
@@ -109,7 +109,7 @@ To zalecenie pojawia się, gdy dowolny z poniższych typów plików zostanie wyk
 
 ## <a name="retain-image-files"></a>Zachowywanie plików obrazów
 
-To zalecenie pojawia się, gdy dowolny z poniższych typów plików zostanie wykryty w SharePoint lub OneDrive.
+To zalecenie jest wyświetlane, gdy w programie SharePoint lub OneDrive zostanie wykryty dowolny z następujących typów plików.
 
 - . JPEG
 - .GIF
@@ -129,32 +129,32 @@ To zalecenie pojawia się, gdy dowolny z poniższych typów plików zostanie wyk
 
 ## <a name="retain-nda-content"></a>Zachowywanie zawartości NDA
 
-To zalecenie jest wyświetlane, gdy zostanie spełnione którekolwiek z poniższych kryteriów.
+To zalecenie jest wyświetlane po spełnieniu jednego z następujących kryteriów.
 
-- Dowolna kombinacja tych słów kluczowych jest wykrywana w treści wiadomości e-mail:
+- Każda kombinacja tych słów kluczowych jest wykrywana w treści wiadomości e-mail:
   - NDA
-  - "Umowa o nieu ujawnianiu informacji"
-  - "Umowa o nieu ujawnianiu informacji"
+  - "Umowa o zachowaniu poufności"
+  - "Umowa o zachowaniu poufności"
 
-- Dowolna kombinacja tych słów kluczowych jest wykrywana w .PDF lub .DOC w SharePoint lub OneDrive:
+- Każda kombinacja tych słów kluczowych jest wykrywana w plikach .PDF lub .DOC w programie SharePoint lub OneDrive:
   - NDA
-  - Umowa o nieu ujawnianiu informacji
+  - Umowa o zachowaniu poufności
 
-## <a name="retain-software-development-files"></a>Zachowywanie plików tworzenia oprogramowania
+## <a name="retain-software-development-files"></a>Przechowywanie plików programistycznych
 
-To zalecenie pojawia się, gdy dowolny z poniższych typów plików zostanie wykryty w SharePoint lub OneDrive.
+To zalecenie jest wyświetlane, gdy w programie SharePoint lub OneDrive zostanie wykryty dowolny z następujących typów plików.
 
 - . ASAX
 - . ASM
 - . ASP*
 - .BAT
 - .CONFIG
-- CS
+- .CS
 - . CSS
 - . DISCO
 - .HTM*
 - . INC
-- . JAR
+- . JAD
 - . JAVA
 - .JS*
 - . LIB
@@ -175,7 +175,7 @@ To zalecenie pojawia się, gdy dowolny z poniższych typów plików zostanie wyk
 
 ## <a name="retain-video-files"></a>Zachowywanie plików wideo
 
-To zalecenie pojawia się, gdy dowolny z poniższych typów plików zostanie wykryty w SharePoint lub OneDrive.
+To zalecenie jest wyświetlane, gdy w programie SharePoint lub OneDrive zostanie wykryty dowolny z następujących typów plików.
 
 - . AVCHD
 - .AVI

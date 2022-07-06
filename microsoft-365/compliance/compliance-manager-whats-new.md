@@ -1,5 +1,5 @@
 ---
-title: Co nowego w menedżerze zgodności Microsoft Purview
+title: Co nowego w programie Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,20 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, co nowego w narzędziu Compliance Manger i co ma nadejść. Przeczytaj o zaktualizowanych ocenach, nowych szablonach oceny, nowych akcjach i nie tylko.
-ms.openlocfilehash: cf817b28c6d375e92e7aabdb1f57ea632c6f1a28
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+ms.openlocfilehash: aab0ccefd6f139212e8e045eacd458e22f498f9b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692744"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638712"
 ---
-# <a name="whats-new-in-microsoft-purview-compliance-manager"></a>Co nowego w menedżerze zgodności Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="whats-new-in-microsoft-purview-compliance-manager"></a>Co nowego w programie Microsoft Purview Compliance Manager
 
 **W tym artykule:** Dowiedz się więcej o najnowszych aktualizacjach w Menedżerze zgodności.
 
-## <a name="may-2022"></a>Maj 2022 r.
+## <a name="may-2022"></a>Maj 2022
 
 Menedżer zgodności opublikował następujące nowe szablony oceny:
 
@@ -38,7 +36,7 @@ Europa, Bliski Wschód i Afryka (EMEA)
 - Katar National Information Assurance (NIA)
 - Prawo o ochronie prywatności danych ze Zjednoczonych Emiratów Arabskich
 
-Klienci usług Us Government Community (GCC) Moderate, GCC High i Department of Defense (DoD) powinni zobaczyć te szablony dostępne w ciągu najbliższych kilku tygodni.
+Klienci z us Government Community (GCC) Moderate, GCC High i Department of Defense (DoD) powinni zobaczyć te szablony dostępne w ciągu najbliższych kilku tygodni.
 
 Wyświetl [pełną listę szablonów oceny](compliance-manager-templates-list.md).
 
@@ -64,7 +62,7 @@ Wyświetl [pełną listę szablonów oceny](compliance-manager-templates-list.md
 
 ### <a name="continuous-compliance-assessment-of-improvement-actions"></a>Ciągła ocena zgodności akcji poprawy
 
-Dodajemy automatyczne testowanie i generowanie dowodów dla ponad 35 akcji poprawy w Menedżerze zgodności, które nie były wcześniej objęte bezpiecznym wynikiem. Dzięki ciągłej ocenie zgodności możesz otrzymywać aktualizacje dotyczące tego, które z tych akcji ulepszania zostały wykonane, jeśli są one istotne dla ocen zgodności i masz licencję na dostęp do odpowiednich rozwiązań. Ciągła ocena zgodności zapewnia również użytkownikom wgląd w logikę oceniania twoich akcji poprawy oraz zapewnia wgląd i dowody na to, dlaczego otrzymano określony wynik. Ta funkcja współdziała z istniejącymi integracjami z Microsoft 365 Wskaźnik bezpieczeństwa, a wszystkie wcześniej skonfigurowane zautomatyzowane akcje będą nadal działać zgodnie z rzeczywistym użyciem. Dowiedz się więcej o [ustawieniach testowania automatycznego](compliance-manager-setup.md#set-up-automated-testing).
+Dodajemy automatyczne testowanie i generowanie dowodów dla ponad 35 akcji poprawy w Menedżerze zgodności, które nie były wcześniej objęte bezpiecznym wynikiem. Dzięki ciągłej ocenie zgodności możesz otrzymywać aktualizacje dotyczące tego, które z tych akcji ulepszania zostały wykonane, jeśli są one istotne dla ocen zgodności i masz licencję na dostęp do odpowiednich rozwiązań. Ciągła ocena zgodności zapewnia również użytkownikom wgląd w logikę oceniania twoich akcji poprawy oraz zapewnia wgląd i dowody na to, dlaczego otrzymano określony wynik. Ta funkcja współdziała z istniejącymi integracjami z usługą Microsoft 365 Secure Score, a wszystkie wcześniej skonfigurowane zautomatyzowane akcje będą nadal działać w takim stanie, w jakim są. Dowiedz się więcej o [ustawieniach testowania automatycznego](compliance-manager-setup.md#set-up-automated-testing).
 
 ## <a name="february-2022"></a>Luty 2022 r.
 
@@ -121,11 +119,11 @@ Opublikowaliśmy nowe szablony oceny, w tym:
 
 ### <a name="integration-with-microsoft-priva"></a>Integracja z Microsoft Priva
 
-Menedżer zgodności może teraz pracować ramię w ramię z Microsoft Priva, rozwiązaniem, które może pomóc w zabezpieczeniu danych osobowych przechowywanych przez organizację w Microsoft 365. Priva oferuje narzędzia ułatwiające wizualizowanie i zrozumienie danych, implementowanie zasad w celu zarządzania kluczowymi scenariuszami ryzyka i obsługi żądań praw podmiotów. Jeśli podejmujesz kroki w Priva w celu ochrony przechowywanych danych osobowych, może to przyczynić się do oceny prywatności w Menedżerze zgodności i może pomóc w poprawie oceny zgodności. Aby zobaczyć, w jaki sposób Priva i inne rozwiązania przyczyniają się do oceny, i dowiedzieć się więcej o potencjalnych możliwościach dalszych ulepszeń, zobacz kartę **Rozwiązania** w Menedżerze zgodności. Więcej szczegółów na temat Priva można również znaleźć w [artykule Dowiedz się więcej o Microsoft Priva](/privacy/priva).
+Menedżer zgodności może teraz pracować ramię w ramię z Microsoft Priva, rozwiązaniem, które może pomóc w zabezpieczeniu danych osobowych przechowywanych przez organizację na platformie Microsoft 365. Priva oferuje narzędzia ułatwiające wizualizowanie i zrozumienie danych, implementowanie zasad w celu zarządzania kluczowymi scenariuszami ryzyka i obsługi żądań praw podmiotów. Jeśli podejmujesz kroki w priva w celu ochrony przechowywanych danych osobowych, może to przyczynić się do oceny prywatności w Menedżerze zgodności i może pomóc w poprawie oceny zgodności. Aby zobaczyć, jak priva i inne rozwiązania przyczyniają się do oceny, i dowiedzieć się więcej o potencjalnych możliwościach dalszych ulepszeń, zobacz kartę **Rozwiązania** w Menedżerze zgodności. Więcej szczegółów na temat privy można również znaleźć w [artykule Dowiedz się więcej o Microsoft Priva](/privacy/priva).
 
 ## <a name="july-2021"></a>Lipiec 2021
 
-Dodaliśmy możliwość tworzenia ocen dla produktów innych niż Microsoft 365, w oparciu o nowe uniwersalne wersje naszych szablonów. Aby dowiedzieć się więcej, zacznij od [pracy z szablonami oceny](compliance-manager-templates.md).
+Dodaliśmy możliwość tworzenia ocen dla produktów innych niż Microsoft 365 w oparciu o nowe uniwersalne wersje naszych szablonów. Aby dowiedzieć się więcej, zacznij od [pracy z szablonami oceny](compliance-manager-templates.md).
 
 ## <a name="may-2021"></a>Maj 2021
 
@@ -133,7 +131,7 @@ Dodaliśmy możliwość tworzenia ocen dla produktów innych niż Microsoft 365,
 
 Opublikowaliśmy 75 nowych szablonów oceny, w tym:
 - Australia Privacy Act
-- Cis Microsoft 365 Foundation Levels 1 i 2
+- CIS Microsoft 365 Foundation Levels 1 i 2
 - Niemcy — Wymagania nadzorcze w zakresie IT w instytucjach finansowych (BAIT)
 - ustawa o Sarbanes-Oxley
 - Republika Południowej Afryki — promocja ustawy o dostępie do informacji
@@ -144,7 +142,7 @@ Zapoznaj się z pełną listą [szablonów oceny](compliance-manager-templates-l
 
 ### <a name="support-for-us-government-dod-customers"></a>Pomoc techniczna dla klientów usługi DoD dla instytucji rządowych USA
 
-Menedżer zgodności jest teraz dostępny dla klientów us Government DoD, oprócz klientów z Community us Government (GCC) Moderate i GCC High.
+Menedżer zgodności jest teraz dostępny dla klientów usługi DoD dla instytucji rządowych USA, a także dla klientów z regionów Us Government Community (GCC) Moderate i GCC High.
 
 ## <a name="march-2021"></a>Marzec 2021 r.
 

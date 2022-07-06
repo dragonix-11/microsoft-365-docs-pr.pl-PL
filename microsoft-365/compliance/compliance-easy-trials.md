@@ -14,28 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej na temat wersji próbnej rozwiązań Microsoft Purview i sposobu tworzenia konta.
-ms.openlocfilehash: 425c9c3aecd4df38a53a5b6bee818f466f167a27
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: dd223402153048b0d7f452b202804e6bf1853b97
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185132"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640121"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Informacje o wersji próbnej rozwiązań Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Rozwiązania usługi Microsoft Purview pomagają chronić organizację przed zagrożeniami wewnętrznymi wynikającymi z niewłaściwych uprawnień do plików i wiadomości e-mail oraz pomagają organizacji spełnić wymagania prawne i wewnętrzne.
 
-rozwiązania Microsoft Purview pomagają chronić organizację przed zagrożeniami wewnętrznymi wynikającymi z niewłaściwych uprawnień do plików i wiadomości e-mail oraz pomagają organizacji spełnić wymagania prawne i wewnętrzne.
-
-Wersja próbna rozwiązań Microsoft Purview jest najprostszym sposobem wypróbowania wszystkich możliwości Microsoft Purview rozwiązań, a jego skonfigurowanie zajmuje tylko kilka minut. Po zakończeniu konfiguracji wersji próbnej wszystkie funkcje pakietu licencji microsoft E5 są dostępne do użycia przez maksymalnie 90 dni.
+Wersja próbna rozwiązań Microsoft Purview to najprostszy sposób wypróbowania wszystkich możliwości rozwiązań Microsoft Purview, a jego skonfigurowanie zajmuje tylko kilka minut. Po zakończeniu konfiguracji wersji próbnej wszystkie funkcje pakietu licencji microsoft E5 są dostępne do użycia przez maksymalnie 90 dni.
 
 ## <a name="terms-and-conditions"></a>Warunki i postanowienia
 
-Zapoznaj się z [warunkami dotyczącymi](/legal/microsoft-365/microsoft-365-trial) wersji próbnych Microsoft 365.
+Zapoznaj się z [warunkami i postanowieniami](/legal/microsoft-365/microsoft-365-trial) dotyczącymi wersji próbnych platformy Microsoft 365.
 
 ## <a name="eligibility"></a>Kwalifikowalności
 
-Microsoft 365 E3 i Office 365 E3 klienci, którzy nie mają jeszcze pakietu licencji microsoft E5, kwalifikują się do wersji próbnej rozwiązań Usługi Purview. Wersja próbna nie jest dostępna dla klientów Microsoft 365 Government.
+Microsoft 365 E3 i Office 365 E3 klienci, którzy nie mają jeszcze pakietu licencji microsoft E5, kwalifikują się do wersji próbnej rozwiązań Usługi Purview. Wersja próbna nie jest dostępna dla klientów platformy Microsoft 365 Government.
 
 ## <a name="licensing"></a>Licencjonowanie
 
@@ -47,16 +45,17 @@ Aby zarejestrować się w wersji próbnej lub zakończyć próbę, użytkownicy 
 - Administrator rozliczeń
 - Administrator zgodności
 - Administrator globalny
+- Administrator danych zgodności
 
 Szczegółowe informacje na temat ról można znaleźć w artykule [Informacje o rolach administratora](../admin/add-users/about-admin-roles.md).
 
 ## <a name="how-to-sign-up-for-the-trial"></a>Jak zarejestrować się w wersji próbnej
 
-Odwiedź [centrum wersji próbnych Microsoft 365](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef), aby zarejestrować się w wersji próbnej. Możesz również wykonać poniższe kroki:
+Odwiedź [centrum wersji próbnych platformy Microsoft 365](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef) , aby zarejestrować się w wersji próbnej. Możesz również wykonać poniższe kroki:
 
-1. W [portal zgodności Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=2077149) wybierz pozycję **Wersje próbne** na lewym pasku nawigacyjnym, aby przejść do centrum Microsoft 365 trials.
-2. W obszarze **Wersje próbne zgodności** znajdź kartę **rozwiązania Microsoft Purview** i wybierz pozycję **Wypróbuj teraz**.
-3. W okienku wysuwu **wersji próbnej rozwiązania Microsoft Purview solutions** przejrzyj informacje o tym, co jest uwzględnione i czego można oczekiwać po rozpoczęciu wersji próbnej, a następnie wybierz pozycję **Rozpocznij wersję próbną.**
+1. W [portal zgodności Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=2077149) wybierz pozycję **Wersje próbne** na lewym pasku nawigacyjnym, aby przejść do centrum wersji próbnych platformy Microsoft 365.
+2. W obszarze **Wersje próbne zgodności** znajdź kartę **Rozwiązania usługi Microsoft Purview** i wybierz pozycję **Wypróbuj teraz**.
+3. W okienku **wysuwanej wersji próbnej rozwiązań Microsoft Purview** przejrzyj informacje o tym, co jest uwzględnione i czego można oczekiwać po rozpoczęciu wersji próbnej, a następnie wybierz pozycję **Rozpocznij wersję próbną.**
 
 Twoja wersja próbna będzie obowiązywać natychmiast przez 90 dni. Wyświetlenie wszystkich rozwiązań usługi Purview w lewym obszarze nawigacji może potrwać do dwóch godzin. Wyloguj się i zaloguj się ponownie, aby wyświetlić aktualizacje.
 
@@ -70,7 +69,7 @@ Skorzystaj z naszego [podręcznika wersji próbnej](compliance-easy-trials-compl
 
 #### <a name="finding-support"></a>Znajdowanie pomocy technicznej
 
-Organizacje mogą używać FastTrack do obsługi wdrażania w wersji próbnej, jeśli dzierżawa ma co najmniej 150 licencji. Uzyskaj więcej [informacji na temat FastTrack](/fasttrack/introduction).
+Organizacje mogą używać rozwiązania FastTrack do obsługi wdrażania w wersji próbnej, jeśli dzierżawa ma co najmniej 150 licencji. Uzyskaj więcej [szczegółów na temat rozwiązania FastTrack](/fasttrack/introduction).
 
 #### <a name="extending-the-trial"></a>Rozszerzanie wersji próbnej
 
@@ -78,7 +77,7 @@ Okres próbny można przedłużyć w ciągu ostatnich 15 dni od okresu próbnego
 
 #### <a name="ending-the-trial"></a>Zakończenie wersji próbnej
 
-Administratorzy mogą wyłączyć wersję próbną w dowolnym momencie, przechodząc do karty **próbnej rozwiązań Purview** w centrum Microsoft 365 trials (zobacz [Jak zarejestrować się w wersji próbnej](#how-to-sign-up-for-the-trial)) i wybierając pozycję **Zakończ wersję próbną**.
+Administratorzy mogą wyłączyć wersję próbną w dowolnym momencie, przechodząc do karty **próbnej rozwiązań Purview** w centrum wersji próbnej platformy Microsoft 365 (zobacz [Jak zarejestrować się w wersji próbnej](#how-to-sign-up-for-the-trial)) i wybierając pozycję **Zakończ wersję próbną**.
 
 Jeśli zdecydujesz się nie uaktualniać do rozwiązań na poziomie E5, o ile nie określono inaczej dla rozwiązania, dane próbne zostaną zachowane przez okres czasu, zwykle 180 dni, zanim zostaną trwale usunięte. Do tego czasu możesz nadal uzyskiwać dostęp do danych zebranych podczas okresu próbnego.
 
@@ -96,7 +95,7 @@ Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? We
 
 - **Menedżer zgodności**
 
-  Microsoft Purview Compliance Manager może pomóc w całej procesie zapewniania zgodności, od tworzenia spisu zagrożeń związanych z ochroną danych po zarządzanie złożonością wdrażania mechanizmów kontroli, aktualizowanie przepisów i certyfikatów oraz raportowanie do audytorów. Dowiedz się więcej o [Menedżerze zgodności](compliance-manager.md)
+  Program Microsoft Purview Compliance Manager może pomóc w całej procesie zapewniania zgodności, od tworzenia spisu zagrożeń związanych z ochroną danych po zarządzanie złożonością wdrażania mechanizmów kontroli, aktualizowanie przepisów i certyfikatów oraz raportowanie do audytorów. Dowiedz się więcej o [Menedżerze zgodności](compliance-manager.md)
 
 - **Zarządzanie cyklem życia danych**
 
@@ -104,12 +103,12 @@ Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? We
 
 - **Zapobieganie utracie danych**
 
-  Ochrona przed utratą danych w Microsoft Purview (DLP) ułatwia kontrolowanie udostępniania i używania poufnych informacji na urządzeniach, aplikacjach i usługach. Dzięki próbom można rozszerzyć zakres zasad DLP na Teams i urządzenia, chronić jeszcze bardziej wrażliwą zawartość przy użyciu klasyfikatorów z możliwością trenowania i dokładnego dopasowania danych (EDM) oraz szybko rozpocząć pracę z zalecanymi zasadami DLP.  [Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md)
+  Ochrona przed utratą danych w Microsoft Purview (DLP) ułatwia kontrolowanie udostępniania i używania poufnych informacji na urządzeniach, aplikacjach i usługach. Dzięki próbom można rozszerzyć zakres zasad DLP na aplikacje Teams i urządzenia, chronić jeszcze bardziej wrażliwą zawartość przy użyciu klasyfikatorów z możliwością trenowania i dokładnego dopasowania danych (EDM) oraz szybko rozpocząć pracę z zalecanymi zasadami DLP.  [Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md)
 
    Po zakończeniu okresu próbnego:
 
   - Istniejące zasady pozostaną włączone, chyba że zostaną wyłączone.
-  - Nie będzie już można edytować ani dodawać lokalizacji Teams lub Urządzeń w istniejących lub nowych zasadach.
+  - Nie będzie już można edytować ani dodawać lokalizacji usługi Teams lub Urządzeń w istniejących lub nowych zasadach.
 
 - **Zbierania elektronicznych materiałów dowodowych**
 
@@ -119,7 +118,7 @@ Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? We
 
   Zaimplementuj Microsoft Purview Information Protection z [etykietami poufności](sensitivity-labels.md), aby ułatwić odnajdywanie, klasyfikowanie i ochronę poufnych treści wszędzie tam, gdzie się znajduje lub podróżuje. Dzięki próbom można polecić użytkownikom stosowanie etykiet poufności do swoich wiadomości e-mail i dokumentów, odnajdywanie i automatyczne etykietowanie poufnej zawartości, korzystanie z klasyfikatorów opartych na uczeniu maszynowym oraz szybkie rozpoczęcie pracy z zalecanymi etykietami i zasadami.
 
-  Wersja próbna Information Protection zapewnia etykiety domyślne, automatyczne etykietowanie dokumentów i wiadomości e-mail oraz zapobieganie utracie danych w celu ochrony numerów kart kredytowych udostępnianych w Teams i urządzeniach. Domyślne zasady, które utworzymy dla Ciebie, umożliwiają szybkie uruchomienie, ale można je w pełni dostosować zgodnie z potrzebami.
+  Wersja próbna Information Protection zapewnia etykiety domyślne, automatyczne etykietowanie dokumentów i wiadomości e-mail oraz zapobieganie utracie danych w celu ochrony numerów kart kredytowych udostępnianych w usłudze Teams i urządzeniach. Domyślne zasady, które utworzymy dla Ciebie, umożliwiają szybkie uruchomienie, ale można je w pełni dostosować zgodnie z potrzebami.
 
     Po zakończeniu okresu próbnego:
 
@@ -133,7 +132,7 @@ Zastanawiasz się, czego możesz doświadczyć w bezpłatnej wersji próbnej? We
 
 - **Zarządzanie ryzykiem wewnętrznym**
 
-  Korzystaj ze sztucznej inteligencji, aby ułatwić szybkie identyfikowanie, klasyfikowanie i korygowanie ryzyka wewnętrznego. Korzystając z dzienników z usług Microsoft 365 i Azure, można zdefiniować zasady, które monitorują sygnały ryzyka, a następnie podejmować działania korygujące, takie jak promowanie edukacji użytkowników lub inicjowanie badania. Dowiedz się więcej o [zarządzaniu ryzykiem wewnętrznym](insider-risk-management-solution-overview.md)
+  Korzystaj ze sztucznej inteligencji, aby ułatwić szybkie identyfikowanie, klasyfikowanie i korygowanie ryzyka wewnętrznego. Korzystając z dzienników z platformy Microsoft 365 i usług platformy Azure, można zdefiniować zasady, które monitorują sygnały ryzyka, a następnie podejmować działania korygujące, takie jak promowanie edukacji użytkowników lub inicjowanie badania. Dowiedz się więcej o [zarządzaniu ryzykiem wewnętrznym](insider-risk-management-solution-overview.md)
 
 <!--
 - **privacy management**

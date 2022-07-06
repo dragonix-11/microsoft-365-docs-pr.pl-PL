@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratorzy mogą dowiedzieć się, jak tworzyć strony logowania i zarządzać nimi w przypadku symulowanych ataków wyłudzania informacji w planie Ochrona usługi Office 365 w usłudze Microsoft Defender 2.
 ms.technology: mdo
-ms.openlocfilehash: 5ecbdddfff4d528c1af8e20cf4d3831d3250eacc
-ms.sourcegitcommit: 03543c27c33427ac7f11af4c04fff35a181a2524
+ms.openlocfilehash: 7057f443675cb0715a41f78c80feb69cdc75d22c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66609290"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640310"
 ---
 # <a name="login-pages-in-attack-simulation-training"></a>Strony logowania w szkoleniu z symulacji ataków
 
@@ -73,7 +73,7 @@ Niestandardowe strony logowania można tworzyć w następujących lokalizacjach:
    Kliknij pozycję ![Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Utwórz nową,** aby uruchomić kreatora tworzenia strony logowania użytkownika końcowego.
 
    > [!NOTE]
-   > Ikona ![Utwórz nową.](../../media/m365-cc-sc-create-icon.png) **Tworzenie nowych** jest również dostępne podczas kroku wyboru ładunku podczas tworzenia symulacji. Aby uzyskać więcej informacji, zobacz [Simulate a phishing attack with Attack simulation training in Ochrona usługi Office 365 w usłudze Defender (Symulowanie ataku wyłudzania informacji przy użyciu trenowania symulacji ataków w Ochrona usługi Office 365 w usłudze Defender](attack-simulation-training.md)).
+   > ![Utwórz nową ikonę.](../../media/m365-cc-sc-create-icon.png) **Tworzenie nowego** jest również dostępne podczas kroku wyboru ładunku podczas tworzenia symulacji lub automatyzacji symulacji. Aby uzyskać więcej informacji, zobacz [Tworzenie symulacji: Wybieranie ładunku i strony logowania](attack-simulation-training.md#select-a-payload-and-login-page) oraz [Tworzenie automatyzacji symulacji: wybieranie ładunku i strony logowania](attack-simulation-training-simulation-automations.md#select-a-payload-and-login-page).
    >
    > W dowolnym momencie kreatora tworzenia można kliknąć przycisk **Zapisz i zamknąć** , aby zapisać postęp i kontynuować konfigurowanie strony logowania później. Możesz wybrać miejsce, w którym zostało przerwane, wybierając stronę logowania na karcie **Strony logowania dzierżawy** na **stronach logowania**, a następnie klikając ikonę ![Edytuj.](../../media/m365-cc-sc-edit-icon.png) **Edytuj**. Częściowo ukończona strona logowania będzie mieć wartość **Stan** **— wersja robocza**.
 

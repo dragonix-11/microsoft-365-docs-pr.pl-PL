@@ -19,16 +19,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Eksplorator zawartości umożliwia natywne wyświetlanie elementów oznaczonych etykietami.
-ms.openlocfilehash: fdc67df9819054eedbe84ce647d77177039cd4a8
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: ca3fc3deb542af582f2c38457bbd460c1241b5ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623284"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637356"
 ---
 # <a name="get-started-with-content-explorer"></a>Wprowadzenie do eksploratora zawartości
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Eksplorator zawartości umożliwia natywne wyświetlanie elementów podsumowanych na stronie przeglądu.
 
@@ -40,7 +38,7 @@ Aby zapoznać się z wymaganiami dotyczącymi licencjonowania, zobacz [Informati
 
 Aby uzyskać dostęp do karty eksploratora zawartości, konto musi mieć przypisane członkostwo w dowolnej z tych ról lub grup ról. 
 
-**Microsoft 365 grupy ról**
+**Grupy ról platformy Microsoft 365**
 
 - Administrator globalny
 - Administrator zgodności
@@ -78,7 +76,7 @@ W wersji zapoznawczej dostępne są role i grupy ról, które można przetestowa
 
 Oto lista odpowiednich ról w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Role w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- administrator Information Protection
+- Information Protection Administracja
 - analityk Information Protection
 - badacz Information Protection
 - czytelnik Information Protection
@@ -97,13 +95,13 @@ Eksplorator zawartości pokazuje bieżącą migawkę elementów, które mają et
 
 ### <a name="sensitive-information-types"></a>Typy informacji poufnych
 
-[Zasady DLP](dlp-learn-about-dlp.md) mogą pomóc w ochronie informacji poufnych, które są definiowane jako **typ informacji poufnych**. Microsoft 365 zawiera [definicje wielu typowych typów informacji poufnych](sensitive-information-type-entity-definitions.md) z wielu różnych regionów, które są gotowe do użycia. Na przykład numer karty kredytowej, numery kont bankowych, krajowe numery identyfikatorów i Windows numerów usług Live ID.
+[Zasady DLP](dlp-learn-about-dlp.md) mogą pomóc w ochronie informacji poufnych, które są definiowane jako **typ informacji poufnych**. Platforma Microsoft 365 zawiera [definicje wielu typowych typów informacji poufnych](sensitive-information-type-entity-definitions.md) z wielu różnych regionów, które są gotowe do użycia. Na przykład numer karty kredytowej, numery kont bankowych, krajowe numery identyfikatorów i numery usług Windows Live ID.
 
 ### <a name="sensitivity-labels"></a>Etykiety wrażliwości
 
 [Etykieta poufności](sensitivity-labels.md) to po prostu tag, który wskazuje wartość elementu dla organizacji. Można go zastosować ręcznie lub automatycznie. Po zastosowaniu etykieta zostanie osadzona w dokumencie i będzie podążać za dokumentem wszędzie tam, gdzie się pojawi. Etykieta poufności umożliwia różne zachowania ochronne, takie jak obowiązkowe znakowanie wodne lub szyfrowanie.
 
-Etykiety poufności muszą być włączone dla plików znajdujących się w SharePoint i OneDrive, aby odpowiednie dane były wyświetlane na stronie klasyfikacji danych. Aby uzyskać więcej informacji, zobacz [Włączanie etykiet poufności dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Etykiety poufności muszą być włączone dla plików w programach SharePoint i OneDrive, aby odpowiednie dane były wyświetlane na stronie klasyfikacji danych. Aby uzyskać więcej informacji, zobacz [Włączanie etykiet poufności dla plików pakietu Office w programach SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ### <a name="retention-labels"></a>Etykiety przechowywania
 
@@ -111,7 +109,7 @@ Etykiety poufności muszą być włączone dla plików znajdujących się w Shar
 
 ### <a name="how-to-use-content-explorer"></a>Jak używać eksploratora zawartości
 
-1. Otwórz **eksploratora** **portal zgodności Microsoft Purview**  >  **DataContent** > .
+1. Otwórz **eksploratora zawartości** **klasyfikacji** >  **portal zgodności Microsoft Purview**  >  Data.
 2. Jeśli znasz nazwę etykiety lub typ informacji poufnych, możesz wpisać ją w polu filtru.
 3. Alternatywnie możesz wyszukać element, rozszerzając typ etykiety i wybierając etykietę z listy.
 4. Wybierz lokalizację w obszarze **Wszystkie lokalizacje** i przejdź do szczegółów struktury folderów dla elementu.
@@ -128,15 +126,15 @@ Etykiety poufności muszą być włączone dla plików znajdujących się w Shar
 
 ### <a name="filter"></a>Filtrowanie
 
-Podczas przechodzenia do szczegółów lokalizacji, takiej jak folder Exchange lub Teams, lub witryny SharePoint lub OneDrive, zostanie **wyświetlone narzędzie Filtr**.
+Po przejściu do szczegółów lokalizacji, takiej jak folder programu Exchange lub Teams, witryny programu SharePoint lub usługi OneDrive, zostanie **wyświetlone narzędzie filtru** .
 
 ![narzędzie wyszukiwania eksploratora zawartości.](../media/data_classification_search_tool.png)
 
 Zakres narzędzia wyszukiwania jest wyświetlany w okienku **Wszystkie lokalizacje** , a zakres wyszukiwania zależy od wybranej lokalizacji. 
 
-Gdy **wybraną** lokalizacją jest Exchange lub **Teams**, możesz wyszukać pełny adres e-mail skrzynki pocztowej, na przykład `user@domainname.com`.
+Gdy wybraną lokalizacją jest **program Exchange** lub **Teams** , możesz wyszukać pełny adres e-mail skrzynki pocztowej, na przykład `user@domainname.com`.
 
-Po **wybraniu lokalizacji SharePoint** lub **OneDrive** narzędzie wyszukiwania będzie wyświetlane podczas przechodzenia do szczegółów nazw witryn, folderów i plików. 
+Po wybraniu lokalizacji **programu SharePoint** lub **OneDrive** narzędzie wyszukiwania będzie wyświetlane podczas przechodzenia do szczegółów nazw witryn, folderów i plików. 
 
 Możesz wyszukać następujące pozycje:
 

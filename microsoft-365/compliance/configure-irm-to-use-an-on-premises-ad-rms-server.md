@@ -15,39 +15,37 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: Dowiedz się, jak skonfigurować usługę Information Rights Management (IRM) w Exchange Online do korzystania z serwera usługi Active Directory Rights Management Service (AD RMS).
+description: Dowiedz się, jak skonfigurować zarządzanie prawami do informacji (IRM) w Exchange Online do korzystania z serwera usługi Active Directory Rights Management (AD RMS).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dac33407a9a45da59d0b3a766ab8a695a0f5a076
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5bd4a104d4cceedbdb82c1ff2baac0b547b74fbe
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018146"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637510"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Konfiguruj usługę IRM do korzystania z lokalnego serwera usług AD RMS
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Do użytku z wdrożeniami lokalnymi usługa Zarządzanie prawami do informacji (IRM) w Exchange Online korzysta z usług Active Directory Rights Management Services (AD RMS), technologii ochrony informacji w systemie Windows Server 2008 lub nowszym. Ochrona za pomocą usługi IRM jest stosowana do poczty e-mail przez zastosowanie szablonu zasad praw usług AD RMS do wiadomości e-mail. Prawa są dołączane do samego komunikatu, aby ochrona odbywała się w trybie online i offline oraz wewnątrz i na zewnątrz zapory organizacji.
 
-Do użytku z wdrożeniami lokalnymi usługa Information Rights Management (IRM) w Exchange Online używa Usługi Active Directory Rights Management (AD RMS), technologii ochrony informacji w programie Windows Server 2008 lub nowszym. Ochrona za pomocą usługi IRM jest stosowana do poczty e-mail przez zastosowanie szablonu zasad praw usług AD RMS do wiadomości e-mail. Prawa są dołączane do samego komunikatu, aby ochrona odbywała się w trybie online i offline oraz wewnątrz i na zewnątrz zapory organizacji.
+W tym temacie pokazano, jak skonfigurować usługę IRM do korzystania z serwera usług AD RMS. Aby uzyskać informacje o korzystaniu z Szyfrowanie wiadomości w Microsoft Purview z usługami Azure Active Directory i Azure Rights Management, zobacz [Często zadawane pytania dotyczące szyfrowania komunikatów](./ome-faq.yml).
 
-W tym temacie pokazano, jak skonfigurować usługę IRM do korzystania z serwera usług AD RMS. Aby uzyskać informacje na temat korzystania z usługi Microsoft Purview Message Encryption z usługami Azure Active Directory i Azure Rights Management, zobacz [Często zadawane pytania dotyczące szyfrowania komunikatów](./ome-faq.yml).
-
-Aby dowiedzieć się więcej na temat usługi IRM w Exchange Online, zobacz [Information Rights Management in Exchange Online (Informacje Rights Management w Exchange Online](information-rights-management-in-exchange-online.md)).
+Aby dowiedzieć się więcej na temat usługi IRM w Exchange Online, zobacz [Zarządzanie prawami do informacji w Exchange Online](information-rights-management-in-exchange-online.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
 - Szacowany czas wykonania tego zadania: 30 minut
 
-- Do wykonania tych procedur musisz mieć przypisane uprawnienia. Aby zobaczyć, jakich uprawnień potrzebujesz, zobacz wpis "Informacje Rights Management" w [temacie Zasady obsługi komunikatów i uprawnienia zgodności](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions).
+- Do wykonania tych procedur musisz mieć przypisane uprawnienia. Aby zobaczyć, jakich uprawnień potrzebujesz, zobacz wpis "Zarządzanie prawami do informacji" w [temacie Zasady obsługi komunikatów i uprawnienia zgodności](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions) .
 
-- Serwer usług AD RMS musi działać Windows Server 2008 lub nowszym. Aby uzyskać szczegółowe informacje o sposobie wdrażania usług AD RMS, zobacz [Instalowanie klastra usług AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11)).
+- Na serwerze usług AD RMS musi działać system Windows Server 2008 lub nowszy. Aby uzyskać szczegółowe informacje o sposobie wdrażania usług AD RMS, zobacz [Instalowanie klastra usług AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11)).
 
-- Aby uzyskać szczegółowe informacje na temat sposobu instalowania i konfigurowania Windows PowerShell i nawiązywania połączenia z usługą, zobacz [Połączenie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Aby uzyskać szczegółowe informacje na temat sposobu instalowania i konfigurowania Windows PowerShell i nawiązywania połączenia z usługą, zobacz [Nawiązywanie połączenia z Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Aby uzyskać informacje o skrótach klawiaturowych, które mogą mieć zastosowanie do procedur w tym temacie, zobacz [Skróty klawiaturowe centrum administracyjnego Exchange w Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Aby uzyskać informacje o skrótach klawiaturowych, które mogą mieć zastosowanie do procedur w tym temacie, zobacz [Skróty klawiaturowe centrum administracyjnego programu Exchange w Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Masz problemy? Poproś o pomoc na forach Exchange. Odwiedź fora pod adresem [Exchange Server,Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=60612) lub [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).[](https://go.microsoft.com/fwlink/p/?linkId=267542)
+> Masz problemy? Poproś o pomoc na forach programu Exchange. Odwiedź fora pod adresem [Exchange Server,Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=60612) lub [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).[](https://go.microsoft.com/fwlink/p/?linkId=267542)
 
 ## <a name="how-do-you-do-this"></a>Jak to zrobić?
 <a name="sectionSection1"> </a>
@@ -64,7 +62,7 @@ Pierwszym krokiem jest wyeksportowanie zaufanej domeny publikowania (TPD) z loka
 
 Po zaimportowaniu dysku TPD jest on przechowywany i chroniony w Exchange Online.
 
-1. Otwórz konsolę Usługi Active Directory Rights Management, a następnie rozwiń klaster usług AD RMS.
+1. Otwórz konsolę usług Active Directory Rights Management Services, a następnie rozwiń klaster usług AD RMS.
 
 2. W drzewie konsoli rozwiń węzeł **Zasady zaufania**, a następnie kliknij pozycję **Zaufane domeny publikowania**.
 
@@ -76,7 +74,7 @@ Po zaimportowaniu dysku TPD jest on przechowywany i chroniony w Exchange Online.
 
 6. W polach **Hasło** i **Potwierdź hasło** wpisz silne hasło, które będzie używane do szyfrowania zaufanego pliku domeny publikowania. Musisz określić to hasło podczas importowania dysku TPD do organizacji poczty e-mail opartej na chmurze.
 
-### <a name="step-2-use-the-exchange-management-shell-to-import-the-tpd-to-exchange-online"></a>Krok 2. Zaimportuj identyfikator TPD do Exchange Online za pomocą powłoki zarządzania Exchange
+### <a name="step-2-use-the-exchange-management-shell-to-import-the-tpd-to-exchange-online"></a>Krok 2. Zaimportuj identyfikator TPD do Exchange Online za pomocą powłoki zarządzania programu Exchange
 
 Po wyeksportowaniu dysku TPD do pliku XML należy go zaimportować, aby Exchange Online. Po zaimportowaniu TPD importowane są również szablony usług AD RMS organizacji. Po zaimportowaniu pierwszego dysku TPD staje się on domyślnym identyfikatorem TPD dla organizacji opartej na chmurze. W przypadku importowania innego TPD można użyć **przełącznika domyślnego** , aby ustawić domyślny identyfikator TPD, który jest dostępny dla użytkowników.
 
@@ -86,7 +84,7 @@ Aby zaimportować TPD, uruchom następujące polecenie w programie Exchange Onli
 Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('<path to exported TPD file>')) -Name "<name of TPD>" -ExtranetLicensingUrl <URL> -IntranetLicensingUrl <URL>
 ```
 
-Wartości parametrów _ExtranetLicensingUrl_ i _IntranetLicensingUrl_ można uzyskać w konsoli Usługi Active Directory Rights Management. Wybierz klaster usług AD RMS w drzewie konsoli. Adresy URL licencjonowania są wyświetlane w okienku wyników. Te adresy URL są używane przez klientów poczty e-mail, gdy zawartość musi zostać odszyfrowana, a Exchange Online musi określić, którego dysku TPD użyć.
+Wartości parametrów _ExtranetLicensingUrl_ i _IntranetLicensingUrl_ można uzyskać w konsoli usług Active Directory Rights Management Services. Wybierz klaster usług AD RMS w drzewie konsoli. Adresy URL licencjonowania są wyświetlane w okienku wyników. Te adresy URL są używane przez klientów poczty e-mail, gdy zawartość musi zostać odszyfrowana, a Exchange Online musi określić, którego dysku TPD użyć.
 
 Po uruchomieniu tego polecenia zostanie wyświetlony monit o podanie hasła. Wprowadź hasło określone podczas eksportowania dysku TPD z serwera usług AD RMS.
 
@@ -102,7 +100,7 @@ Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz [Import-R
 
 Aby sprawdzić, czy usługa TPD została pomyślnie zaimportowana, uruchom polecenie cmdlet **Get-RMSTrustedPublishingDomain**, aby pobrać identyfikatory TPD w organizacji Exchange Online. Aby uzyskać szczegółowe informacje, zobacz przykłady w [temacie Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain).
 
-### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Krok 3. Dystrybuowanie szablonu zasad praw usług AD RMS przy użyciu powłoki zarządzania Exchange
+### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Krok 3. Dystrybuowanie szablonu zasad praw usług AD RMS przy użyciu powłoki zarządzania programu Exchange
 
 Po zaimportowaniu dysku TPD należy upewnić się, że szablon zasad praw usług AD RMS jest rozproszony. Szablon rozproszony jest widoczny dla użytkowników Outlook w sieci Web (wcześniej znanych jako Outlook Web App), którzy mogą następnie stosować szablony do wiadomości e-mail.
 
@@ -147,7 +145,7 @@ Możesz utworzyć dodatkowe szablony zasad praw usług AD RMS na serwerze usług
 
 Aby sprawdzić, czy pomyślnie rozproszono szablon zasad praw usług AD RMS, uruchom polecenie cmdlet **Get-RMSTemplate** , aby sprawdzić właściwości szablonu. Aby uzyskać szczegółowe informacje, zobacz przykłady w [temacie Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate).
 
-### <a name="step-4-use-the-exchange-management-shell-to-enable-irm"></a>Krok 4. Włączanie usługi IRM przy użyciu powłoki zarządzania Exchange
+### <a name="step-4-use-the-exchange-management-shell-to-enable-irm"></a>Krok 4. Włączanie usługi IRM za pomocą powłoki zarządzania programu Exchange
 
 Po zaimportowaniu dysku TPD i dystrybucji szablonu zasad praw usług AD RMS uruchom następujące polecenie, aby włączyć usługę IRM dla organizacji poczty e-mail opartej na chmurze.
 

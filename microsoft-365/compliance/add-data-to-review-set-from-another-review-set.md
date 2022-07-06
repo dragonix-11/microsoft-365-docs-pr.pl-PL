@@ -15,20 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się, jak wybierać dokumenty z jednego zestawu przeglądów i pracować z nimi indywidualnie w innym zestawie w przypadku zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium).
+description: Dowiedz się, jak wybierać dokumenty z jednego zestawu przeglądów i pracować z nimi indywidualnie w innym zestawie w przypadku Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium).
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 599af9e2060497738076cd702e9e3dd31f5db06d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4fc1548903ebea3a42d1612c8e9c74be32bbe0ba
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094146"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640969"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Dodawanie danych do zestawu przeglądów z innego zestawu przeglądów
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W niektórych przypadkach może być konieczne wybranie dokumentów z jednego zestawu przeglądów i praca z nimi indywidualnie w innym zestawie przeglądów. Jest to szczególnie przydatne, jeśli zawartość została ubita w zestawie przeglądów i chcesz uruchomić analizę na podzbiorze danych.
 

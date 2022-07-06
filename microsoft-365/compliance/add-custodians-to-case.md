@@ -15,20 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się, jak używać wbudowanego narzędzia do zarządzania opiekunami w Microsoft Purview eDiscovery (Premium) do koordynowania przepływów pracy i identyfikowania odpowiednich źródeł danych w danym przypadku.
+description: Dowiedz się, jak używać wbudowanego narzędzia do zarządzania opiekunami w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) do koordynowania przepływów pracy i identyfikowania odpowiednich źródeł danych w danym przypadku.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59caac668972968ae3eada2d52d4a5fff8abeae0
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 4e7734e886651cb0169d5823a23790761791eb4e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416117"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640991"
 ---
 # <a name="add-custodians-to-an-ediscovery-premium-case"></a>Dodawanie opiekunów do sprawy zbierania elektronicznych materiałów dowodowych (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Użyj wbudowanego narzędzia do zarządzania opiekunami w Microsoft Purview eDiscovery (Premium), aby koordynować przepływy pracy związane z zarządzaniem opiekunami i identyfikowaniem odpowiednich źródeł danych opieki skojarzonych ze sprawą. Po dodaniu opiekuna system może automatycznie identyfikować i umieszczać blokady w skrzynce pocztowej Exchange i koncie OneDrive dla Firm. Podczas procesu odnajdywania badania możesz również zidentyfikować inne źródła danych (takie jak skrzynki pocztowe, witryny lub Teams), do których administrator uzyskiwał dostęp lub do których się przyczynił. W takiej sytuacji możesz użyć narzędzia do zarządzania opiekunem, aby skojarzyć te źródła danych, który będzie określonym opiekunem. Po dodaniu opiekunów do sprawy i skojarzeniu z nimi innego źródła danych można szybko zachować dane i przeszukać dane powiernicze.
+Użyj wbudowanego narzędzia do zarządzania opiekunami w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium), aby koordynować przepływy pracy związane z zarządzaniem opiekunami i identyfikowaniem odpowiednich źródeł danych opieki skojarzonych ze sprawą. Po dodaniu opiekuna system może automatycznie identyfikować i umieszczać blokady w skrzynce pocztowej programu Exchange i koncie OneDrive dla Firm. Podczas procesu odnajdywania badania możesz również zidentyfikować inne źródła danych (takie jak skrzynki pocztowe, witryny lub aplikacje Teams), do których administrator uzyskiwał dostęp lub do których się przyczynił. W takiej sytuacji możesz użyć narzędzia do zarządzania opiekunem, aby skojarzyć te źródła danych, który będzie określonym opiekunem. Po dodaniu opiekunów do sprawy i skojarzeniu z nimi innego źródła danych można szybko zachować dane i przeszukać dane powiernicze.
 
 Możesz dodawać opiekunów i zarządzać nimi w sprawach zbierania elektronicznych materiałów dowodowych (Premium) w czterech krokach:
 
@@ -48,44 +46,44 @@ Aby dodać opiekunów do sprawy, musisz być członkiem grupy ról menedżera zb
 
 1. Przejdź do strony [https://compliance.microsoft.com](https://compliance.microsoft.com) i zaloguj się przy użyciu konta użytkownika, do których przypisano odpowiednie uprawnienia zbierania elektronicznych materiałów dowodowych.
 
-2. W okienku nawigacji po lewej stronie portal zgodności Microsoft Purview wybierz pozycję **eDiscoveryeDiscovery** >  **(Premium)** i wybierz kartę [**Sprawy**](https://go.microsoft.com/fwlink/p/?linkid=2173764).
+2. W okienku nawigacji po lewej stronie portal zgodności Microsoft Purview wybierz pozycję **eDiscovery** > **eDiscovery (Premium)** i wybierz kartę [**Sprawy**](https://go.microsoft.com/fwlink/p/?linkid=2173764).
 
 3. Wybierz przypadek, do których chcesz dodać opiekunów.
 
-4. Wybierz kartę **Źródła danych**, a następnie wybierz pozycję **Dodaj źródło** >  **danychDodaj nowych opiekunów**.
+4. Wybierz kartę **Źródła danych**, a następnie wybierz pozycję **Dodaj źródło** >  danych **Dodaj nowych opiekunów**.
 
-5. Dodaj co najmniej jednego użytkownika w organizacji jako opiekunów do sprawy, wpisując pierwszą część nazwiska lub aliasu osoby. Po znalezieniu właściwej osoby wybierz jej imię i nazwisko, aby dodać ją do listy.
+5. Dodaj co najmniej jednego użytkownika w organizacji jako opiekunów do sprawy, wpisując pierwszą część nazwiska lub aliasu osoby. Przeszukiwane są zarówno aktywni, jak i nieaktywni użytkownicy. Po znalezieniu właściwej osoby wybierz jej imię i nazwisko, aby dodać ją do listy. 
 
 ## <a name="step-2-choose-custodian-data-locations"></a>Krok 2. Wybieranie lokalizacji danych opiekuna
 
-Po wybraniu opiekunów system automatycznie próbuje zidentyfikować i zweryfikować tych użytkowników i ich źródła danych. Po dodaniu opiekunów do listy narzędzie automatycznie zawiera podstawową skrzynkę pocztową i konto OneDrive dla każdego opiekuna. Możesz wybrać, aby nie uwzględniać tych źródeł danych podczas dodawania opiekunów do sprawy.
+Po wybraniu opiekunów system automatycznie próbuje zidentyfikować i zweryfikować tych użytkowników i ich źródła danych. Po dodaniu opiekunów do listy narzędzie automatycznie zawiera podstawową skrzynkę pocztową i konto usługi OneDrive dla każdego aktywnego użytkownika, który został dodany jako opiekun. Jeśli użytkownik jest nieaktywny, narzędzie będzie identyfikować tylko podstawową skrzynkę pocztową. Możesz wybrać, aby nie uwzględniać tych źródeł danych podczas dodawania opiekunów do sprawy.
 
-Oprócz skrzynki pocztowej i konta OneDrive opiekuna można również skojarzyć inne lokalizacje danych z opiekunem, takie jak witryna SharePoint lub zespół firmy Microsoft, do których należy opiekun. Dzięki temu można zachowywać, zbierać, analizować i przeglądać zawartość w innych źródłach danych skojarzonych z opiekunami sprawy.
+Oprócz skrzynki pocztowej opiekuna i konta usługi OneDrive możesz również skojarzyć inne lokalizacje danych z opiekunem, takie jak witryna programu SharePoint lub zespół firmy Microsoft, do których należy opiekun. Dzięki temu można zachowywać, zbierać, analizować i przeglądać zawartość w innych źródłach danych skojarzonych z opiekunami sprawy.
 
-Aby usunąć zaznaczenie podstawowej skrzynki pocztowej i konta OneDrive dla opiekuna:
+Aby usunąć zaznaczenie podstawowej skrzynki pocztowej i konta usługi OneDrive dla opiekuna:
 
 1. Rozwiń opiekuna, aby wyświetlić podstawowe lokalizacje danych, które zostały automatycznie skojarzone z każdym opiekunem.
 
-2. Wybierz pozycję **Wyczyść** obok **pozycji Skrzynka pocztowa** lub **OneDrive**, aby usunąć skrzynkę pocztową lub konto OneDrive opiekuna z skojarzenia jako lokalizacji danych dla tego opiekuna.
+2. Wybierz pozycję **Wyczyść** obok **pozycji Skrzynka pocztowa** lub **OneDrive** , aby usunąć skrzynkę pocztową opiekuna lub konto usługi OneDrive z skojarzenia jako lokalizacji danych dla tego opiekuna.
 
    ![Skonfiguruj lokalizacje do skojarzenia z opiekunem.](../media/ConfigureCustodianLocations.png)
 
-Aby skojarzyć inne skrzynki pocztowe, witryny, Teams lub grupy Yammer z określonym opiekunem:
+Aby skojarzyć inne skrzynki pocztowe, witryny, zespoły lub grupy usługi Yammer z określonym opiekunem:
 
 1. Rozwiń opiekuna, aby wyświetlić następujące usługi, aby skojarzyć lokalizacje danych z opiekunem. Kliknij pozycję **Edytuj** obok usługi, aby dodać lokalizację danych.
 
-   - **Exchange**: użyj polecenia , aby skojarzyć inne skrzynki pocztowe z opiekunem. Wpisz w polu wyszukiwania nazwę lub alias (co najmniej trzy znaki) skrzynek pocztowych użytkownika lub grup dystrybucyjnych. Wybierz skrzynki pocztowe, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**.
+   - **Exchange**: Służy do kojarzenia innych skrzynek pocztowych z opiekunem. Wpisz w polu wyszukiwania nazwę lub alias (co najmniej trzy znaki) skrzynek pocztowych użytkownika lub grup dystrybucyjnych. Wybierz skrzynki pocztowe, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**.
 
-   - **SharePoint**: Służy do kojarzenia witryn SharePoint z opiekunem. Wybierz witrynę na liście lub wyszukaj witrynę, wpisując adres URL w polu wyszukiwania. Wybierz witryny, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**.
+   - **SharePoint**: służy do kojarzenia witryn programu SharePoint z opiekunem. Wybierz witrynę na liście lub wyszukaj witrynę, wpisując adres URL w polu wyszukiwania. Wybierz witryny, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**. Jeśli użytkownik jest nieaktywny, jego witryna usługi OneDrive będzie musiała zostać dodana jako dodatkowa lokalizacja programu SharePoint tutaj. 
 
-   - **Teams**: służy do przypisywania Microsoft Teams opiekun jest obecnie członkiem. Wybierz zespoły, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**. Po dodaniu zespołu system automatycznie identyfikuje i lokalizuje skrzynkę pocztową SharePoint lokacji i grupy skojarzoną z tym zespołem i przypisuje je do opiekuna.
+   - **Teams**: służy do przypisywania usługi Microsoft Teams, do którego obecnie należy opiekun. Wybierz zespoły, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**. Po dodaniu zespołu system automatycznie identyfikuje i lokalizuje skrzynkę pocztową witryny programu SharePoint i grupy skojarzone z tym zespołem i przypisuje je do opiekuna.
 
-   - **Yammer**: użyj polecenia , aby przypisać grupy Yammer, do których obecnie należy opiekun. Wybierz grupy, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**. Po dodaniu zespołu system automatycznie identyfikuje i lokalizuje skrzynkę pocztową SharePoint lokacji i grupy skojarzonej z tą grupą i przypisuje je do opiekuna.
+   - **Yammer**: użyj polecenia , aby przypisać grupy usługi Yammer, do których obecnie należy opiekun. Wybierz grupy, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**. Po dodaniu zespołu system automatycznie identyfikuje i lokalizuje skrzynkę pocztową witryny programu SharePoint i grupy skojarzone z tą grupą i przypisuje je do opiekuna.
 
    > [!NOTE]
-   > Możesz użyć **selektorów lokalizacji Exchange** i **SharePoint**, aby skojarzyć dowolną skrzynkę pocztową lub witrynę w organizacji z opiekunem. , Obejmuje to skojarzenie skrzynki pocztowej i witryny dla zespołu firmy Microsoft lub grupy Yammer, do których opiekun nie jest członkiem. W tym celu należy dodać zarówno skrzynkę pocztową, jak i witrynę skojarzoną z każdym zespołem lub grupą Yammer.
+   > Selektory lokalizacji **programu Exchange** i **programu SharePoint** umożliwiają skojarzenie dowolnej skrzynki pocztowej lub witryny w organizacji z opiekunem. , Obejmuje to kojarzenie skrzynki pocztowej i witryny dla grupy Microsoft Team lub Yammer, do których nie należy opiekun. W tym celu należy dodać zarówno skrzynkę pocztową, jak i witrynę skojarzoną z każdym zespołem lub grupą usługi Yammer.
 
-2. Możesz wyświetlić całkowitą liczbę skrzynek pocztowych, witryn, Teams i grup Yammer przypisanych do każdego opiekuna, rozszerzając każdego opiekuna w tabeli. Po sfinalizowaniu przypisanych lokalizacji danych dla każdego opiekuna te skojarzenia będą utrzymywane i używane podczas etapów zbierania, przetwarzania i przeglądania w przepływie pracy zbierania elektronicznych materiałów dowodowych (Premium).
+2. Możesz wyświetlić całkowitą liczbę skrzynek pocztowych, witryn, grup Teams i Yammer przypisanych do każdego opiekuna, rozszerzając każdego opiekuna w tabeli. Po sfinalizowaniu przypisanych lokalizacji danych dla każdego opiekuna te skojarzenia będą utrzymywane i używane podczas etapów zbierania, przetwarzania i przeglądania w przepływie pracy zbierania elektronicznych materiałów dowodowych (Premium).
 
 3. Po dodaniu opiekunów i skonfigurowaniu ich lokalizacji danych kliknij przycisk **Dalej** , aby przejść do strony **Ustawienia blokady** .  
 

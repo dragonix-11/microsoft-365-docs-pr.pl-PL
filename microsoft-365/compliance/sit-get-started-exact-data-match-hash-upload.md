@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Skrót i przekaż tabelę źródła informacji poufnych, aby uzyskać dokładne dane zgodne z typami informacji poufnych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3c45c618caad24084ee9c85410be886863dd733
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: dd484f10cf8dad76132ed2a68a34f87b253e76b3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437640"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641301"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Utwórz skrót i przekaż tabelę źródła informacji poufnych dla dokładnych typów informacji poufnych opartych na dopasowaniu danych 
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W tym artykule przedstawiono sposób tworzenia skrótów i przekazywania tabeli źródła informacji poufnych.
 
@@ -40,15 +38,15 @@ W tej fazie:
 
 Mieszanie i przekazywanie można wykonać przy użyciu jednego komputera lub oddzielić krok skrótu od kroku przekazywania w celu zwiększenia bezpieczeństwa.
 
-Jeśli chcesz utworzyć skrót i przekazać dane z jednego komputera, musisz to zrobić z komputera, który może bezpośrednio połączyć się z dzierżawą Microsoft 365. Wymaga to, aby plik tabeli źródłowej informacji poufnych w postaci zwykłego tekstu był na tym komputerze na potrzeby tworzenia skrótów.
+Jeśli chcesz utworzyć skrót i przekazać dane z jednego komputera, musisz to zrobić z komputera, który może bezpośrednio nawiązać połączenie z dzierżawą platformy Microsoft 365. Wymaga to, aby plik tabeli źródłowej informacji poufnych w postaci zwykłego tekstu był na tym komputerze na potrzeby tworzenia skrótów.
 
-Jeśli nie chcesz uwidoczniać pliku tabeli źródłowej informacji poufnych w postaci zwykłego tekstu na komputerze z dostępem bezpośrednim, możesz użyć skrótu na komputerze znajdującym się w bezpiecznej lokalizacji, a następnie skopiować plik skrótu i plik soli na komputer, który może bezpośrednio połączyć się z dzierżawą Microsoft 365 w celu przekazania. W scenariuszu rozdzielania skrótu i przekazywania potrzebny jest agent EDMUploadAgent na obu komputerach.
+Jeśli nie chcesz uwidaczniać pliku tabeli źródłowej informacji poufnych w postaci zwykłego tekstu na komputerze z dostępem bezpośrednim, możesz użyć skrótu na komputerze znajdującym się w bezpiecznej lokalizacji, a następnie skopiować plik skrótu i plik soli na komputer, który może bezpośrednio połączyć się z dzierżawą usługi Microsoft 365 w celu przekazania. W scenariuszu rozdzielania skrótu i przekazywania potrzebny jest agent EDMUploadAgent na obu komputerach.
 
 > [!IMPORTANT]
 > Jeśli do utworzenia pliku schematu użyto kreatora dokładnego dopasowania danych i typów informacji poufnych, ***musisz*** pobrać schemat dla tej procedury, jeśli jeszcze tego nie zrobiono. Zobacz [Eksport pliku schematu EDM w formacie XML](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format).
 
 > [!NOTE]
-> Jeśli Twoja organizacja skonfigurowała [klucz klienta dla Microsoft 365 na poziomie dzierżawy](customer-key-overview.md), dokładne dopasowanie danych automatycznie użyje jej funkcji szyfrowania. Jest to dostępne tylko dla dzierżaw licencjonowanych E5 w chmurze komercyjnej.
+> Jeśli Twoja organizacja skonfigurowała [klucz klienta dla platformy Microsoft 365 na poziomie dzierżawy](customer-key-overview.md), dokładne dopasowanie danych automatycznie użyje jej funkcji szyfrowania. Jest to dostępne tylko dla dzierżaw licencjonowanych E5 w chmurze komercyjnej.
 
 ### <a name="best-practices"></a>Najważniejsze wskazówki
 
@@ -75,7 +73,7 @@ Jeśli narzędzie wskazuje niezgodność liczby kolumn, może to być spowodowan
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
-- konto służbowe dla Microsoft 365, które zostanie dodane do grupy zabezpieczeń **EDMDataUploaders\_**
+- konto służbowe platformy Microsoft 365, które zostanie dodane do grupy zabezpieczeń **EDM\_DataUploaders**
 - maszyna Windows 10 lub Windows Server 2016 z platformą .NET w wersji 4.6.2 <!--4.7.2 un comment this around 9/29-->do uruchamiania EDMUploadAgent
 - katalog na maszynie przekazywania dla:
   - [Agent przekazywania EDM](#links-to-edm-upload-agent-by-subscription-type)
@@ -85,16 +83,16 @@ Jeśli narzędzie wskazuje niezgodność liczby kolumn, może to być spowodowan
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Konfigurowanie grupy zabezpieczeń i konta użytkownika
 
-1. Jako administrator globalny przejdź do centrum administracyjnego przy użyciu odpowiedniego [linku dla subskrypcji](sit-get-started-exact-data-match-based-sits-overview.md#portal-links-for-your-subscription) i [utwórz grupę zabezpieczeń](/office365/admin/email/create-edit-or-delete-a-security-group) o nazwie **EDMDataUploaders\_**.
+1. Jako administrator globalny przejdź do centrum administracyjnego przy użyciu odpowiedniego [linku dla subskrypcji](sit-get-started-exact-data-match-based-sits-overview.md#portal-links-for-your-subscription) i [utwórz grupę zabezpieczeń](/office365/admin/email/create-edit-or-delete-a-security-group) o nazwie **EDM\_DataUploaders**.
 
-2. Dodaj co najmniej jednego użytkownika do grupy zabezpieczeń **EDMDataUploaders\_**. (Ci użytkownicy będą zarządzać bazą danych informacji poufnych).
+2. Dodaj co najmniej jednego użytkownika do grupy zabezpieczeń **EDM\_DataUploaders** . (Ci użytkownicy będą zarządzać bazą danych informacji poufnych).
 
 ### <a name="hash-and-upload-from-one-computer"></a>Skrót i przekazywanie z jednego komputera
 
-Ten komputer musi mieć bezpośredni dostęp do dzierżawy Microsoft 365.
+Ten komputer musi mieć bezpośredni dostęp do dzierżawy usługi Microsoft 365.
 
 > [!NOTE]
-> Przed rozpoczęciem tej procedury upewnij się, że jesteś członkiem grupy zabezpieczeń **EDMDataUploaders\_**.
+> Przed rozpoczęciem tej procedury upewnij się, że jesteś członkiem grupy zabezpieczeń **EDM\_DataUploaders** .
 
 > [!TIP]
 >Opcjonalnie możesz uruchomić walidację pliku tabeli źródła informacji poufnych, aby sprawdzić, czy występują błędy przed przekazaniem, uruchamiając polecenie:
@@ -127,7 +125,7 @@ Ten komputer musi mieć bezpośredni dostęp do dzierżawy Microsoft 365.
    > [!IMPORTANT]
    > Należy uruchomić **narzędzie EdmUploadAgent** z folderu, w którym jest zainstalowany, i wskazać pełną ścieżkę do plików danych.
 
-4. Zaloguj się przy użyciu konta służbowego, aby uzyskać Microsoft 365 dodane do grupy zabezpieczeń EDM_DataUploaders. Informacje o dzierżawie są wyodrębniane z konta użytkownika w celu nawiązania połączenia.
+4. Zaloguj się przy użyciu konta służbowego platformy Microsoft 365, które zostało dodane do grupy zabezpieczeń EDM_DataUploaders. Informacje o dzierżawie są wyodrębniane z konta użytkownika w celu nawiązania połączenia.
 
    OPCJONALNIE: Jeśli do utworzenia schematu użyto kreatora dokładnego dopasowania danych i typów informacji poufnych, ***musisz*** go pobrać do użycia w tych procedurach, jeśli jeszcze tego nie zrobiono. Uruchom to polecenie w oknie wiersza polecenia:
 
@@ -204,9 +202,9 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    > [!IMPORTANT]
    > Należy uruchomić **narzędzie EdmUploadAgent** z folderu, w którym jest zainstalowany, i wskazać pełną ścieżkę do plików danych.
 
-4. Zaloguj się przy użyciu konta służbowego, aby uzyskać Microsoft 365 dodane do grupy zabezpieczeń EDM_DataUploaders. Informacje o dzierżawie są wyodrębniane z konta użytkownika w celu nawiązania połączenia.
+4. Zaloguj się przy użyciu konta służbowego platformy Microsoft 365, które zostało dodane do grupy zabezpieczeń EDM_DataUploaders. Informacje o dzierżawie są wyodrębniane z konta użytkownika w celu nawiązania połączenia.
 
-5. Aby przekazać dane skrótu, uruchom następujące polecenie w wierszu polecenia Windows:
+5. Aby przekazać dane skrótu, uruchom następujące polecenie w wierszu polecenia systemu Windows:
 
    ```dos
    EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\ /ColumnSeparator ["{Tab}"|"|"]
@@ -226,7 +224,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
    Zostanie wyświetlona lista magazynów danych i czas ich ostatniej aktualizacji.
 
-7. Jeśli chcesz wyświetlić wszystkie dane przekazane do określonego magazynu, uruchom następujące polecenie w wierszu polecenia Windows, aby wyświetlić listę wszystkich magazynów danych i czasu ich aktualizacji:
+7. Jeśli chcesz wyświetlić wszystkie dane przekazane do określonego magazynu, uruchom następujące polecenie w wierszu polecenia systemu Windows, aby wyświetlić listę wszystkich magazynów danych i czasu ich aktualizacji:
 
    ```dos
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>

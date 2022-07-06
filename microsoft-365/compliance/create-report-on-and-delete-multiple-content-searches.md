@@ -19,24 +19,22 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Dowiedz się, jak zautomatyzować zadania wyszukiwania zawartości, takie jak tworzenie wyszukiwań i uruchamianie raportów przy użyciu programu PowerShell & zgodności z zabezpieczeniami.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50d0a66957e4bdca1e39cb42c837aa0f992bad98
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: be456c737188f02cfad245d4a1dc4661f2c611a5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018080"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638593"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Tworzenie, raportowanie i usuwanie wielu wyszukiwań zawartości
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  Szybkie tworzenie i raportowanie wyszukiwań odnajdywania jest często ważnym krokiem w procesie zbierania elektronicznych materiałów dowodowych i badań, gdy próbujesz dowiedzieć się więcej o danych bazowych oraz o bogactwie i jakości wyszukiwań. Aby to zrobić, program PowerShell security & Compliance oferuje zestaw poleceń cmdlet do automatyzacji czasochłonnych zadań wyszukiwania zawartości. Te skrypty umożliwiają szybkie i łatwe tworzenie wielu wyszukiwań, a następnie uruchamianie raportów o szacowanych wynikach wyszukiwania, które mogą pomóc w określeniu danej ilości danych. Możesz również użyć skryptów, aby utworzyć różne wersje wyszukiwań, aby porównać wyniki, które każdy z nich generuje. Te skrypty mogą pomóc w szybkim i wydajnym identyfikowaniu i usuwaniu danych.
 
 ## <a name="before-you-create-a-content-search"></a>Przed utworzeniem wyszukiwania zawartości
 
-- Aby uruchomić skrypty opisane w tym temacie, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview.
+- Aby uruchomić skrypty opisane w tym temacie, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview.
 
-- Aby zebrać listę adresów URL witryn OneDrive dla Firm w organizacji, które można dodać do pliku CSV w kroku 1, zobacz [Tworzenie listy wszystkich OneDrive lokalizacji w organizacji](/onedrive/list-onedrive-urls).
+- Aby zebrać listę adresów URL witryn OneDrive dla Firm w organizacji, które można dodać do pliku CSV w kroku 1, zobacz [Tworzenie listy wszystkich lokalizacji usługi OneDrive w organizacji](/onedrive/list-onedrive-urls).
 
 - Pamiętaj, aby zapisać wszystkie pliki utworzone w tym temacie w tym samym folderze. Ułatwi to uruchamianie skryptów.
 
@@ -62,7 +60,7 @@ Plik wartości rozdzielanej przecinkami (CSV) utworzony w tym kroku zawiera wier
 
    Pierwszy wiersz pliku lub wiersz nagłówka zawiera listę parametrów, które będą używane przez polecenie cmdlet **New-ComplianceSearch** (w skrypcie w kroku 3) w celu utworzenia nowego wyszukiwania zawartości. Każda nazwa parametru jest oddzielona przecinkiem. Upewnij się, że w wierszu nagłówka nie ma żadnych spacji. Każdy wiersz w wierszu nagłówka reprezentuje wartości parametrów dla każdego wyszukiwania. Pamiętaj, aby zastąpić dane zastępcze w pliku CSV rzeczywistymi danymi.
 
-2. Otwórz plik .txt w Excel, a następnie użyj informacji w poniższej tabeli, aby edytować plik z informacjami dla każdego wyszukiwania.
+2. Otwórz plik .txt w programie Excel, a następnie użyj informacji w poniższej tabeli, aby edytować plik z informacjami dla każdego wyszukiwania.
 
    ****
 
@@ -71,15 +69,15 @@ Plik wartości rozdzielanej przecinkami (CSV) utworzony w tym kroku zawiera wier
    |`ExchangeLocation`|Adres SMTP skrzynki pocztowej użytkownika.|
    |`SharePointLocation`|Adres URL witryny OneDrive dla Firm użytkownika lub adres URL dowolnej witryny w organizacji. Aby uzyskać adres URL witryny OneDrive dla Firm, użyj następującego formatu: ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. Na przykład  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|
    |`ContentMatchQuery`|Zapytanie wyszukiwania dla wyszukiwania. Aby uzyskać więcej informacji na temat tworzenia zapytania wyszukiwania, zobacz [Zapytania słów kluczowych i warunki wyszukiwania dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md).|
-   |`StartDate`|W przypadku wiadomości e-mail data odebrania wiadomości lub po jej odebraniu przez adresata lub wysłaniu przez nadawcę. W przypadku dokumentów w witrynach SharePoint lub OneDrive dla Firm data ostatniej modyfikacji dokumentu lub po jej zakończeniu.|
-   |`EndDate`|W przypadku wiadomości e-mail data wysłania wiadomości lub przed jej wysłaniem przez użytkownika. W przypadku dokumentów w witrynach SharePoint lub OneDrive dla Firm data ostatniej modyfikacji dokumentu lub przed tym dokumentem.|
+   |`StartDate`|W przypadku wiadomości e-mail data odebrania wiadomości lub po jej odebraniu przez adresata lub wysłaniu przez nadawcę. W przypadku dokumentów w witrynach programu SharePoint lub OneDrive dla Firm data ostatniej modyfikacji dokumentu lub po tej dacie.|
+   |`EndDate`|W przypadku wiadomości e-mail data wysłania wiadomości lub przed jej wysłaniem przez użytkownika. W przypadku dokumentów w witrynach programu SharePoint lub OneDrive dla Firm data ostatniej modyfikacji dokumentu lub przed nimi.|
    |
 
-3. Zapisz plik Excel jako plik CSV w folderze na komputerze lokalnym. Skrypt utworzony w kroku 3 użyje informacji zawartych w tym pliku CSV do utworzenia wyszukiwań.
+3. Zapisz plik programu Excel jako plik CSV w folderze na komputerze lokalnym. Skrypt utworzony w kroku 3 użyje informacji zawartych w tym pliku CSV do utworzenia wyszukiwań.
 
-## <a name="step-2-connect-to-security--compliance-powershell"></a>Krok 2. Połączenie do programu PowerShell zgodności & zabezpieczeń
+## <a name="step-2-connect-to-security--compliance-powershell"></a>Krok 2. Nawiązywanie połączenia z programem PowerShell & zabezpieczeń
 
-Następnym krokiem jest nawiązanie połączenia z programem PowerShell security & Compliance dla organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do programu PowerShell security & Compliance](/powershell/exchange/connect-to-scc-powershell).
+Następnym krokiem jest nawiązanie połączenia z programem PowerShell security & Compliance dla organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Connect to Security & Compliance PowerShell (Łączenie z programem PowerShell & zgodności z zabezpieczeniami](/powershell/exchange/connect-to-scc-powershell)).
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Krok 3. Uruchamianie skryptu w celu utworzenia i rozpoczęcia wyszukiwania
 

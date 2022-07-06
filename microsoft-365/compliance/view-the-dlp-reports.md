@@ -19,18 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Użyj raportów DLP w Office 365, aby wyświetlić liczbę dopasowań, przesłoń lub wyników fałszywie dodatnich zasad DLP i sprawdzić, czy są one trendy w górę lub w dół w czasie.
-ms.openlocfilehash: b264a0e0b76397be99d7586ac793dac501b6672e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 6f60aefaa1548e3c3aed2ca1643de42f412cf5cf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011633"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641103"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Wyświetlanie raportów dotyczących zapobiegania utracie danych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Po utworzeniu zasad ochrony przed utratą danych (DLP) w usłudze Microsoft Purview należy sprawdzić, czy działają one zgodnie z oczekiwaniami i pomagają zachować zgodność. Raporty DLP w portalu zgodności usługi Microsoft Purview umożliwiają szybkie wyświetlanie następujących elementów:
+Po utworzeniu zasad ochrony przed utratą danych (DLP) w usłudze Microsoft Purview należy sprawdzić, czy działają one zgodnie z oczekiwaniami i pomagają zachować zgodność. Dzięki raportom DLP w portal zgodności Microsoft Purview możesz szybko wyświetlić następujące elementy:
 
 - **Dopasowania zasad DLP** Ten raport przedstawia liczbę dopasowań zasad DLP w czasie. Raport można filtrować według daty, lokalizacji, zasad lub akcji. Ten raport umożliwia:
 
@@ -62,7 +60,7 @@ Po utworzeniu zasad ochrony przed utratą danych (DLP) w usłudze Microsoft Purv
 
 Wszystkie raporty DLP mogą wyświetlać dane z ostatniego czteromiesięcznego okresu. Wyświetlenie najnowszych danych w raportach może potrwać do 24 godzin.
 
-Te raporty można znaleźć na **pulpicie nawigacyjnym** **raportów** \> portalu \> zgodności usługi Microsoft Purview.
+Te raporty można znaleźć na **pulpicie** **nawigacyjnym raportów** \> portal zgodności Microsoft Purview\>.
 
 ![Zasady DLP są zgodne z raportem.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
 
@@ -82,17 +80,17 @@ Raporty mogą wyświetlać szczegółowe informacje i zalecenia, w których moż
 
 Aby wyświetlić raporty DLP w Centrum zgodności & zabezpieczeń, musisz mieć przypisane następujące elementy:
 
-- Rola **Czytelnik zabezpieczeń** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie organizacjami i Czytelnik zabezpieczeń w centrum administracyjnym Exchange.
+- **Rola Czytelnik zabezpieczeń** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym programu Exchange</a>. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie organizacjami i Czytelnik zabezpieczeń w centrum administracyjnym programu Exchange.
 
 - **Wyświetl tylko rolę DLP Compliance Management** w Centrum zgodności & zabezpieczeń. Domyślnie ta rola jest przypisywana do grup ról Administrator zgodności, Zarządzanie organizacją, Administrator zabezpieczeń i Czytelnik zabezpieczeń w Centrum zgodności & zabezpieczeń.
 
-- **Rola Adresaci tylko do wyświetlania** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie zgodnością, Zarządzanie organizacją i View-Only Zarządzanie organizacją w centrum administracyjnym Exchange.
+- **Rola Adresaci tylko do wyświetlania** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym programu Exchange</a>. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie zgodnością, Zarządzanie organizacją i View-Only Zarządzanie organizacją w centrum administracyjnym programu Exchange.
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Znajdowanie poleceń cmdlet dla raportów DLP
 
 Aby użyć poleceń cmdlet raportowania DLP, wykonaj następujące kroki:
 
-1. [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell)
+1. [Nawiązywanie połączenia z programem PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell)
 
 2. Użyj następujących poleceń cmdlet:
 
@@ -100,9 +98,9 @@ Aby użyć poleceń cmdlet raportowania DLP, wykonaj następujące kroki:
    - [Get-DlpDetectionsRaport](/powershell/module/exchange/get-dlpdetectionsreport)
    - [Get-DlpSiDetectionsRaport](/powershell/module/exchange/get-dlpsidetectionsreport)
 
-Jednak raporty DLP wymagają ściągania danych z różnych Microsoft 365, w tym Exchange Online. Z tego powodu następujące polecenia cmdlet dla raportów DLP są dostępne w programie Exchange Online powershell. Aby użyć poleceń cmdlet dla tych raportów DLP, wykonaj następujące kroki:
+Jednak raporty DLP wymagają ściągania danych z całej platformy Microsoft 365, w tym Exchange Online. Z tego powodu następujące polecenia cmdlet dla raportów DLP są dostępne w programie Exchange Online powershell. Aby użyć poleceń cmdlet dla tych raportów DLP, wykonaj następujące kroki:
 
-1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Połącz się z usługą Exchange Online w programie PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Użyj następujących poleceń cmdlet:
 

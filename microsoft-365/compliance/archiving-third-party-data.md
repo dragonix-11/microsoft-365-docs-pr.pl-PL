@@ -1,5 +1,5 @@
 ---
-title: Importowanie i archiwizowanie danych innych firm w Microsoft 365 przy użyciu łączników danych
+title: Importowanie i archiwizowanie danych innych firm na platformie Microsoft 365 przy użyciu łączników danych
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -20,27 +20,25 @@ search.appverid:
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak importować i archiwizować dane innych firm z platform mediów społecznościowych, platform wiadomości błyskawicznych i platform współpracy dokumentów w celu Microsoft 365 skrzynek pocztowych.
-ms.openlocfilehash: 75a1136c38c0b893babd1cd349dbe34aa9bbf8cd
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak importować i archiwizować dane innych firm z platform mediów społecznościowych, platform wiadomości błyskawicznych i platform współpracy dokumentów do skrzynek pocztowych platformy Microsoft 365.
+ms.openlocfilehash: b27d45577b98c1eef0f3dab11412f048adff6bcd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093575"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637554"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>Dowiedz się więcej o łącznikach dla danych innych firm
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Platforma Microsoft 365 umożliwia administratorom używanie łączników danych do importowania i archiwizowania danych innych firm z platform mediów społecznościowych, platform wiadomości błyskawicznych i platform współpracy dokumentów do skrzynek pocztowych w organizacji platformy Microsoft 365. Jedną z głównych zalet importowania i archiwizowania danych innych firm w usłudze Microsoft 365 jest zastosowanie różnych rozwiązań usługi Microsoft Purview do danych po ich zaimportowaniu. Dzięki temu możesz upewnić się, że dane organizacji spoza firmy Microsoft są zgodne z przepisami i standardami, które mają wpływ na organizację.
 
-Microsoft 365 umożliwia administratorom używanie łączników danych do importowania i archiwizowania danych innych firm z platform mediów społecznościowych, platform wiadomości błyskawicznych i platform współpracy dokumentów do skrzynek pocztowych w organizacji Microsoft 365. Jedną z głównych zalet importowania i archiwizowania danych innych firm w Microsoft 365 jest zastosowanie różnych rozwiązań usługi Microsoft Purview do danych po ich zaimportowaniu. Dzięki temu możesz upewnić się, że dane organizacji spoza firmy Microsoft są zgodne z przepisami i standardami, które mają wpływ na organizację.
-
-Obejrzyj ten interaktywny przewodnik pokazujący sposób tworzenia łączników danych do importowania i archiwizowania danych innych firm oraz przykłady stosowania rozwiązań zgodności do danych po ich zaimportowaniu do Microsoft 365.
+Obejrzyj ten interaktywny przewodnik pokazujący sposób tworzenia łączników danych do importowania i archiwizowania danych innych firm oraz przykłady stosowania rozwiązań zgodności do danych po ich zaimportowaniu na platformę Microsoft 365.
 
 > [!VIDEO https://mslearn.cloudguides.com/guides/Archive%20data%20from%20non-Microsoft%20sources%20in%20Microsoft%20365]
 
 ## <a name="third-party-data-connectors"></a>Łączniki danych innych firm
 
-Portal zgodności usługi Microsoft Purview udostępnia natywne łączniki danych innych firm od firmy Microsoft do importowania danych z różnych źródeł danych, takich jak LinkedIn, Instant Bloomberg i Twitter oraz łączniki danych, które obsługują rozwiązanie do zarządzania ryzykiem wewnętrznym. Oprócz tych łączników danych firma Microsoft współpracuje z następującymi partnerami, aby udostępnić o wiele więcej łączników danych trzeciej części w portalu zgodności. Twoja organizacja współpracuje z tymi partnerami w celu skonfigurowania usługi archiwizacji przed utworzeniem odpowiedniego łącznika danych w portalu zgodności.
+Portal zgodności Microsoft Purview udostępnia natywne łączniki danych innych firm od firmy Microsoft do importowania danych z różnych źródeł danych, takich jak LinkedIn, Instant Bloomberg i Twitter oraz łączniki danych, które obsługują rozwiązanie do zarządzania ryzykiem wewnętrznym. Oprócz tych łączników danych firma Microsoft współpracuje z następującymi partnerami, aby udostępnić o wiele więcej łączników danych trzeciej części w portalu zgodności. Twoja organizacja współpracuje z tymi partnerami w celu skonfigurowania usługi archiwizacji przed utworzeniem odpowiedniego łącznika danych w portalu zgodności.
 
 - [Veritas](#veritas-data-connectors)
 
@@ -50,11 +48,11 @@ Portal zgodności usługi Microsoft Purview udostępnia natywne łączniki danyc
 
 - [CellTrust](#celltrust-data-connectors)
 
-Dane innych firm wymienione w następnych sekcjach (z wyjątkiem danych hr i fizycznych danych nieprawidłowych zabezpieczeń używanych w rozwiązaniu do zarządzania ryzykiem Microsoft 365 niejawnych testerów) są importowane do skrzynek pocztowych użytkowników. Rozwiązania usługi Microsoft Purview obsługujące dane innych firm są stosowane do skrzynki pocztowej użytkownika, w której są przechowywane dane.
+Dane innych firm wymienione w następnych sekcjach (z wyjątkiem danych hr i fizycznych danych nieprawidłowego działania używanych w rozwiązaniu do zarządzania ryzykiem niejawnych testerów platformy Microsoft 365) są importowane do skrzynek pocztowych użytkowników. Rozwiązania usługi Microsoft Purview obsługujące dane innych firm są stosowane do skrzynki pocztowej użytkownika, w której są przechowywane dane.
 
 ### <a name="microsoft-data-connectors"></a>Łączniki danych firmy Microsoft
 
-Poniższa tabela zawiera listę natywnych łączników danych innych firm dostępnych w portalu zgodności. Tabela zawiera również podsumowanie rozwiązań zgodności, które można zastosować po zaimportowaniu i zarchiwizowaniu danych innych firm w Microsoft 365. Zobacz [sekcję Omówienie rozwiązań zgodności, które obsługują dane innych firm](#overview-of-compliance-solutions-that-support-third-party-data) , aby uzyskać bardziej szczegółowy opis każdego rozwiązania zgodności i sposobu obsługi danych innych firm.
+Poniższa tabela zawiera listę natywnych łączników danych innych firm dostępnych w portalu zgodności. Tabela zawiera również podsumowanie rozwiązań zgodności, które można zastosować po zaimportowaniu i zarchiwizowaniu danych innych firm na platformie Microsoft 365. Zobacz [sekcję Omówienie rozwiązań zgodności, które obsługują dane innych firm](#overview-of-compliance-solutions-that-support-third-party-data) , aby uzyskać bardziej szczegółowy opis każdego rozwiązania zgodności i sposobu obsługi danych innych firm.
 
 Kliknij link w kolumnie **Dane innych firm** , aby przejść do instrukcji krok po kroku dotyczących tworzenia łącznika dla tego typu danych.
 
@@ -75,9 +73,9 @@ Kliknij link w kolumnie **Dane innych firm** , aby przejść do instrukcji krok 
 
 ### <a name="veritas-data-connectors"></a>Łączniki danych Veritas
 
-Tabela w tej sekcji zawiera listę łączników danych innych firm dostępnych we współpracy z platformą Veritas. Tabela zawiera również podsumowanie rozwiązań zgodności, które można zastosować do danych innych firm po zaimportowaniu i zarchiwizowaniu ich w Microsoft 365. Zobacz [sekcję Omówienie rozwiązań zgodności, które obsługują dane innych firm](#overview-of-compliance-solutions-that-support-third-party-data) , aby uzyskać bardziej szczegółowy opis każdego rozwiązania zgodności i sposobu obsługi danych innych firm.
+Tabela w tej sekcji zawiera listę łączników danych innych firm dostępnych we współpracy z platformą Veritas. Tabela zawiera również podsumowanie rozwiązań zgodności, które można zastosować do danych innych firm po zaimportowaniu i zarchiwizowaniu ich na platformie Microsoft 365. Zobacz [sekcję Omówienie rozwiązań zgodności, które obsługują dane innych firm](#overview-of-compliance-solutions-that-support-third-party-data) , aby uzyskać bardziej szczegółowy opis każdego rozwiązania zgodności i sposobu obsługi danych innych firm.
 
-Zanim będzie można archiwizować dane innych firm w Microsoft 365, musisz współpracować z usługą Veritas, aby skonfigurować ich usługę archiwizacji (o nazwie *Merge1*) dla swojej organizacji. Aby uzyskać więcej informacji, kliknij link w kolumnie **Danych innych firm** , aby przejść do instrukcji krok po kroku dotyczących tworzenia łącznika dla tego typu danych.
+Aby zarchiwizować dane innych firm na platformie Microsoft 365, musisz współpracować z usługą Veritas, aby skonfigurować ich usługę archiwizacji (o nazwie *Merge1*) dla swojej organizacji. Aby uzyskać więcej informacji, kliknij link w kolumnie **Danych innych firm** , aby przejść do instrukcji krok po kroku dotyczących tworzenia łącznika dla tego typu danych.
 
 |Dane innych firm  |Wstrzymanie postępowania sądowego|Zbierania elektronicznych materiałów dowodowych  |Ustawienia przechowywania  |Zarządzanie rekordami  |Zgodność w komunikacji  |Zarządzanie ryzykiem wewnętrznym  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -114,18 +112,18 @@ Zanim będzie można archiwizować dane innych firm w Microsoft 365, musisz wsp�
 
 ### <a name="telemessage-data-connectors"></a>Łączniki danych TeleMessage
 
-Tabela w tej sekcji zawiera listę łączników danych innych firm dostępnych we współpracy z usługą TeleMessage. Tabela zawiera również podsumowanie rozwiązań zgodności, które można zastosować do danych innych firm po zaimportowaniu i zarchiwizowaniu ich w Microsoft 365. Zobacz [sekcję Omówienie rozwiązań zgodności, które obsługują dane innych firm](#overview-of-compliance-solutions-that-support-third-party-data) , aby uzyskać bardziej szczegółowy opis każdego rozwiązania zgodności i sposobu obsługi danych innych firm.
+Tabela w tej sekcji zawiera listę łączników danych innych firm dostępnych we współpracy z usługą TeleMessage. Tabela zawiera również podsumowanie rozwiązań zgodności, które można zastosować do danych innych firm po zaimportowaniu i zarchiwizowaniu ich na platformie Microsoft 365. Zobacz [sekcję Omówienie rozwiązań zgodności, które obsługują dane innych firm](#overview-of-compliance-solutions-that-support-third-party-data) , aby uzyskać bardziej szczegółowy opis każdego rozwiązania zgodności i sposobu obsługi danych innych firm.
 
-Aby można było zarchiwizować dane innych firm w Microsoft 365, musisz współpracować z usługą TeleMessage, aby skonfigurować ich usługę archiwizacji dla organizacji. Aby uzyskać więcej informacji, kliknij link w kolumnie **Danych innych firm** , aby przejść do instrukcji krok po kroku dotyczących tworzenia łącznika dla tego typu danych.
+Aby można było zarchiwizować dane innych firm na platformie Microsoft 365, musisz współpracować z usługą TeleMessage, aby skonfigurować ich usługę archiwizacji dla organizacji. Aby uzyskać więcej informacji, kliknij link w kolumnie **Danych innych firm** , aby przejść do instrukcji krok po kroku dotyczących tworzenia łącznika dla tego typu danych.
 
-Łączniki danych telemessage są również dostępne w środowiskach GCC w chmurze Microsoft 365 US Government. Aby uzyskać więcej informacji, zobacz sekcję [Łączniki danych w chmurze dla instytucji rządowych USA](#data-connectors-in-the-us-government-cloud) w tym artykule.
+Łączniki danych telemessage są również dostępne w środowiskach GCC w chmurze microsoft 365 us government. Aby uzyskać więcej informacji, zobacz sekcję [Łączniki danych w chmurze dla instytucji rządowych USA](#data-connectors-in-the-us-government-cloud) w tym artykule.
 
 |Dane innych firm  |Wstrzymanie postępowania sądowego|Zbierania elektronicznych materiałów dowodowych  |Ustawienia przechowywania  |Zarządzanie rekordami  |Zgodność w komunikacji  |Zarządzanie ryzykiem wewnętrznym  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Android](archive-android-archiver-data.md)     |![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)||
 |[AT&T Network](archive-att-network-archiver-data.md)     |![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)||
 |[Sieć dzwonów](archive-bell-network-data.md)     |![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)||
-|[numer Enterprise](archive-enterprise-number-data.md)     |![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)||
+|[Numer przedsiębiorstwa](archive-enterprise-number-data.md)     |![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)||
 |[Sieć O2](archive-o2-network-data.md)     |![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)||
 |[Rogers Network](archive-rogers-network-archiver-data.md)|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)||
 |[Sygnału](archive-signal-archiver-data.md)|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)||
@@ -138,9 +136,9 @@ Aby można było zarchiwizować dane innych firm w Microsoft 365, musisz współ
 
 ### <a name="17a-4-data-connectors"></a>Łączniki danych 17a-4
 
-Tabela w tej sekcji zawiera listę łączników danych innych firm dostępnych we współpracy z firmą 17a-4 LLC. Tabela zawiera również podsumowanie rozwiązań zgodności, które można zastosować do danych innych firm po zaimportowaniu i zarchiwizowaniu ich w Microsoft 365. Zobacz [sekcję Omówienie rozwiązań zgodności, które obsługują dane innych firm](#overview-of-compliance-solutions-that-support-third-party-data) , aby uzyskać bardziej szczegółowy opis każdego rozwiązania zgodności i sposobu obsługi danych innych firm.
+Tabela w tej sekcji zawiera listę łączników danych innych firm dostępnych we współpracy z firmą 17a-4 LLC. Tabela zawiera również podsumowanie rozwiązań zgodności, które można zastosować do danych innych firm po zaimportowaniu i zarchiwizowaniu ich na platformie Microsoft 365. Zobacz [sekcję Omówienie rozwiązań zgodności, które obsługują dane innych firm](#overview-of-compliance-solutions-that-support-third-party-data) , aby uzyskać bardziej szczegółowy opis każdego rozwiązania zgodności i sposobu obsługi danych innych firm.
 
-Zanim będzie można archiwizować dane innych firm w Microsoft 365, musisz współpracować z firmą 17a-4 LLC, aby skonfigurować ich usługę archiwizacji (o nazwie *DataParser*) dla swojej organizacji. Aby uzyskać więcej informacji, kliknij link w kolumnie **Danych innych firm** , aby przejść do instrukcji krok po kroku dotyczących tworzenia łącznika dla tego typu danych.
+Przed zarchiwizowaniem danych innych firm na platformie Microsoft 365 musisz współpracować z firmą 17a-4 LLC, aby skonfigurować ich usługę archiwizacji (o nazwie *DataParser*) dla swojej organizacji. Aby uzyskać więcej informacji, kliknij link w kolumnie **Danych innych firm** , aby przejść do instrukcji krok po kroku dotyczących tworzenia łącznika dla tego typu danych.
 
 Łączniki danych 17a-4 są również dostępne w środowiskach GCC w chmurze Microsoft 365 US Government. Aby uzyskać więcej informacji, zobacz sekcję [Łączniki danych w chmurze dla instytucji rządowych USA](#data-connectors-in-the-us-government-cloud) w tym artykule.
 
@@ -168,16 +166,16 @@ Zanim będzie można archiwizować dane innych firm w Microsoft 365, musisz wsp�
 
 ### <a name="celltrust-data-connectors"></a>Łączniki danych CellTrust
 
-Tabela w tej sekcji zawiera listę łącznika danych innej firmy dostępnego we współpracy z usługą CellTrust. Tabela zawiera również podsumowanie rozwiązań zgodności, które można zastosować do danych innych firm po zaimportowaniu i zarchiwizowaniu ich w Microsoft 365. Zobacz [sekcję Omówienie rozwiązań zgodności, które obsługują dane innych firm](#overview-of-compliance-solutions-that-support-third-party-data) , aby uzyskać bardziej szczegółowy opis każdego rozwiązania zgodności i sposobu obsługi danych innych firm.
+Tabela w tej sekcji zawiera listę łącznika danych innej firmy dostępnego we współpracy z usługą CellTrust. Tabela zawiera również podsumowanie rozwiązań zgodności, które można zastosować do danych innych firm po zaimportowaniu i zarchiwizowaniu ich na platformie Microsoft 365. Zobacz [sekcję Omówienie rozwiązań zgodności, które obsługują dane innych firm](#overview-of-compliance-solutions-that-support-third-party-data) , aby uzyskać bardziej szczegółowy opis każdego rozwiązania zgodności i sposobu obsługi danych innych firm.
 
-Przed zarchiwizowaniem danych innych firm w Microsoft 365 musisz współpracować z aplikacją CellTrust, aby skonfigurować ich usługę archiwizacji (o nazwie *CellTrust SL2*) dla swojej organizacji. Aby uzyskać więcej informacji, kliknij link w kolumnie **Danych innych firm** , aby przejść do instrukcji krok po kroku dotyczących tworzenia łącznika CellTrust SL2.
+Aby można było zarchiwizować dane innych firm na platformie Microsoft 365, musisz współpracować z aplikacją CellTrust, aby skonfigurować ich usługę archiwizacji (o nazwie *CellTrust SL2*) dla swojej organizacji. Aby uzyskać więcej informacji, kliknij link w kolumnie **Danych innych firm** , aby przejść do instrukcji krok po kroku dotyczących tworzenia łącznika CellTrust SL2.
 
 |Dane innych firm  |Wstrzymanie postępowania sądowego|Zbierania elektronicznych materiałów dowodowych  |Ustawienia przechowywania  |Zarządzanie rekordami  |Zgodność w komunikacji  |Zarządzanie ryzykiem wewnętrznym  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[CellTrust SL2](archive-data-from-celltrustsl2.md)     |![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)||
 ||||||||
 
-Łącznik danych CellTrust SL2 jest również dostępny w środowiskach GCC w chmurze Microsoft 365 US Government. Aby uzyskać więcej informacji, zobacz sekcję [Łączniki danych w chmurze dla instytucji rządowych USA](#data-connectors-in-the-us-government-cloud) w tym artykule.
+Łącznik danych CellTrust SL2 jest również dostępny w środowiskach GCC w chmurze microsoft 365 US Government. Aby uzyskać więcej informacji, zobacz sekcję [Łączniki danych w chmurze dla instytucji rządowych USA](#data-connectors-in-the-us-government-cloud) w tym artykule.
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Omówienie rozwiązań zgodności, które obsługują dane innych firm
 
@@ -189,7 +187,7 @@ Aby zachować dane innych firm, należy [wstrzymać postępowanie sądowe](creat
 
 ### <a name="ediscovery"></a>Zbierania elektronicznych materiałów dowodowych
 
-Trzy podstawowe narzędzia zbierania elektronicznych elektronicznych materiałów dowodowych w Microsoft 365 to wyszukiwanie zawartości, microsoft Purview eDiscovery (Standard) i microsoft Purview eDiscovery (Premium).
+Trzy podstawowe narzędzia zbierania elektronicznych materiałów dowodowych w usłudze Microsoft 365 to wyszukiwanie zawartości, Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Standard) i Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium).
 
 - **[Wyszukiwanie zawartości](content-search.md).** Za pomocą narzędzia do wyszukiwania zawartości można wyszukiwać skrzynki pocztowe w poszukiwaniu zaimportowanych danych innych firm. Możesz użyć zapytań wyszukiwania i warunków, aby zawęzić wyniki wyszukiwania i wyeksportować wyniki wyszukiwania.
 
@@ -205,7 +203,7 @@ Zasady [przechowywania](retention.md) można zastosować do skrzynek pocztowych 
 
 ### <a name="records-management"></a>Zarządzanie rekordami
 
-Funkcja [zarządzania rekordami](records-management.md) w Microsoft 365 umożliwia deklarowanie danych innych firm jako rekordu. Można to zrobić ręcznie przez użytkowników, którzy stosują etykietę przechowywania, która oznacza dane innych firm w skrzynce pocztowej jako rekord. Możesz też automatycznie stosować etykiety przechowywania, identyfikując poufne informacje, słowa kluczowe lub typy zawartości w danych innych firm.
+Funkcja [zarządzania rekordami](records-management.md) w usłudze Microsoft 365 umożliwia deklarowanie danych innych firm jako rekordu. Można to zrobić ręcznie przez użytkowników, którzy stosują etykietę przechowywania, która oznacza dane innych firm w skrzynce pocztowej jako rekord. Możesz też automatycznie stosować etykiety przechowywania, identyfikując poufne informacje, słowa kluczowe lub typy zawartości w danych innych firm.
 
 ### <a name="communication-compliance"></a>Zgodność w komunikacji
 
@@ -217,7 +215,7 @@ Sygnały z danych innych firm, takie jak selektywne dane kadrowe, mogą być uż
 
 ## <a name="using-ediscovery-tools-to-search-for-third-party-data"></a>Wyszukiwanie danych innych firm przy użyciu narzędzi zbierania elektronicznych materiałów dowodowych
 
-Po użyciu łączników danych do importowania i archiwizowania danych innych firm w skrzynkach pocztowych użytkowników można wyszukiwać dane innych firm za pomocą narzędzi Microsoft 365 do zbierania elektronicznych materiałów dowodowych. Narzędzia zbierania elektronicznych materiałów dowodowych umożliwiają również tworzenie blokad opartych na zapytaniach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych (Standard) i eDiscovery (Premium) w celu zachowania danych innych firm. Aby uzyskać więcej informacji na temat narzędzi zbierania elektronicznych materiałów dowodowych, zobacz rozwiązania zbierania [elektronicznych materiałów dowodowych w Microsoft 365](ediscovery.md).
+Po użyciu łączników danych do importowania i archiwizowania danych innych firm w skrzynkach pocztowych użytkowników możesz użyć narzędzi zbierania elektronicznych materiałów dowodowych platformy Microsoft 365 do wyszukiwania danych innych firm. Narzędzia zbierania elektronicznych materiałów dowodowych umożliwiają również tworzenie blokad opartych na zapytaniach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych (Standard) i zbierania elektronicznych materiałów dowodowych (Premium) w celu zachowania danych innych firm. Aby uzyskać więcej informacji na temat narzędzi zbierania elektronicznych materiałów dowodowych, zobacz Rozwiązania zbierania [elektronicznych materiałów dowodowych na platformie Microsoft 365](ediscovery.md).
 
 Aby wyszukać (lub wstrzymać) dowolny typ danych innych firm zaimportowanych do skrzynek pocztowych użytkownika przy użyciu łącznika danych, możesz użyć następującego zapytania wyszukiwania. Pamiętaj, aby zakres wyszukiwania do skrzynek pocztowych użytkownika.
 
@@ -271,7 +269,7 @@ Niektóre łączniki danych są dostępne w chmurze dla instytucji rządowych US
 
 ### <a name="veritas-data-connectors-in-the-us-government-cloud-preview"></a>Łączniki danych Veritas w chmurze dla instytucji rządowych USA (wersja zapoznawcza)
 
-|Łącznik danych  |GCC  |GCC wysoki  |DoD  |
+|Łącznik danych  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |CellTrust| Tak | Nie | Nie |
 |Cisco Jabber w witrynie MS SQL| Tak | Nie | Nie |
@@ -306,7 +304,7 @@ Niektóre łączniki danych są dostępne w chmurze dla instytucji rządowych US
 
 ### <a name="telemessage-data-connectors-in-the-us-government-cloud"></a>Łączniki danych telemessage w chmurze dla instytucji rządowych USA
 
-|Łącznik danych  |GCC  |GCC wysoki  |DoD  |
+|Łącznik danych  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |Archiwizator systemu Android | Tak | Nie | Nie |
 |Archiwizator sieci AT&T SMS/MMS | Tak | Nie | Nie |
@@ -324,7 +322,7 @@ Niektóre łączniki danych są dostępne w chmurze dla instytucji rządowych US
 
 ### <a name="17a-4-data-connectors-in-the-us-government-cloud"></a>Łączniki danych 17a-4 w chmurze dla instytucji rządowych USA
 
-|Łącznik danych  |GCC  |GCC wysoki  |DoD  |
+|Łącznik danych  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |BlackBerry DataParser | Tak | Nie | Nie |
 |Bloomberg DataParser  | Tak | Nie | Nie |
@@ -348,13 +346,13 @@ Niektóre łączniki danych są dostępne w chmurze dla instytucji rządowych US
 
 ### <a name="celltrust-data-connectors-in-the-us-government-cloud"></a>Łączniki danych CellTrust w chmurze dla instytucji rządowych USA
 
-|Łącznik danych  |GCC  |GCC wysoki  |DoD  |
+|Łącznik danych  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |CellTrust SL2 | Tak | Nie | Nie |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Praca z partnerem firmy Microsoft w celu archiwizacji danych innych firm
 
-Inną opcją importowania i archiwizowania danych innych firm jest współpraca organizacji z partnerem firmy Microsoft. Jeśli typ danych innej firmy nie jest obsługiwany przez łączniki danych dostępne w Centrum zgodności firmy Microsoft, możesz współpracować z partnerem, który może udostępnić łącznik niestandardowy, który będzie regularnie konfigurowany do wyodrębniania elementów ze źródła danych innej firmy, a następnie łączyć się z chmurą firmy Microsoft za pomocą interfejsu API innej firmy i importować te elementy do Microsoft 365. Łącznik partnera konwertuje również zawartość elementu ze źródła danych innej firmy na wiadomość e-mail, a następnie importuje ją do skrzynki pocztowej w Microsoft 365.
+Inną opcją importowania i archiwizowania danych innych firm jest współpraca organizacji z partnerem firmy Microsoft. Jeśli typ danych innej firmy nie jest obsługiwany przez łączniki danych dostępne w Centrum zgodności firmy Microsoft, możesz współpracować z partnerem, który może zapewnić łącznik niestandardowy, który będzie regularnie konfigurowany do wyodrębniania elementów ze źródła danych innych firm, a następnie nawiązywania połączenia z chmurą firmy Microsoft za pomocą interfejsu API innej firmy i importowania tych elementów do platformy Microsoft 365. Łącznik partnera konwertuje również zawartość elementu ze źródła danych innej firmy na wiadomość e-mail, a następnie importuje ją do skrzynki pocztowej na platformie Microsoft 365.
 
-Aby uzyskać listę partnerów, z którą możesz pracować, oraz proces krok po kroku dla tej metody, zobacz [Praca z partnerem w celu archiwizacji danych innych firm w Microsoft 365](work-with-partner-to-archive-third-party-data.md).
+Aby zapoznać się z listą partnerów, z którą możesz pracować, oraz procesem krok po kroku dla tej metody, zobacz [Praca z partnerem w celu archiwizowania danych innych firm na platformie Microsoft 365](work-with-partner-to-archive-third-party-data.md).

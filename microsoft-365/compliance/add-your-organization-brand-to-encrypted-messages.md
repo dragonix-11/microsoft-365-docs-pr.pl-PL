@@ -23,16 +23,14 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak Office 365 administratorzy globalni mogą stosować znakowanie organizacji do zaszyfrowanych wiadomości e-mail & zawartości portalu szyfrowania.
-ms.openlocfilehash: fb0525b112137bf57007b4188bc461abbb0c3f27
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bf6f3b9de64185778be7eeb4da6cc8e537f0305a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016861"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637026"
 ---
-# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Dodawanie marki organizacji do Microsoft 365 zaszyfrowanych wiadomości szyfrowania komunikatów biznesowych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Dodawanie marki organizacji do wiadomości zaszyfrowanych zaszyfrowanych za pomocą szyfrowania komunikatów usługi Microsoft 365 dla firm
 
 Możesz zastosować znakowanie firmowe, aby dostosować wygląd wiadomości e-mail organizacji i portalu szyfrowania. Aby rozpocząć pracę, musisz zastosować uprawnienia administratora globalnego do konta służbowego. Po uzyskaniu tych uprawnień użyj poleceń cmdlet Get-OMEConfiguration i Set-OMEConfiguration w programie Exchange Online PowerShell, aby dostosować te części zaszyfrowanych wiadomości e-mail:
 
@@ -53,7 +51,7 @@ Jeśli chcesz uzyskać większą kontrolę, użyj zaawansowanego szyfrowania kom
 - Czy chcesz zezwolić na odwoływanie wiadomości e-mail
 - Czy chcesz, aby wiadomości e-mail wysyłane do adresatów zewnętrznych wygasały po określonej liczbie dni.
 
-Po utworzeniu szablonów można je zastosować do zaszyfrowanych wiadomości e-mail przy użyciu Exchange reguł przepływu poczty. Jeśli masz zaawansowane szyfrowanie komunikatów usługi Microsoft Purview, możesz odwołać wszystkie wiadomości e-mail oznaczone marką przy użyciu tych szablonów.
+Po utworzeniu szablonów można zastosować je do zaszyfrowanych wiadomości e-mail przy użyciu reguł przepływu poczty programu Exchange. Jeśli masz zaawansowane szyfrowanie komunikatów usługi Microsoft Purview, możesz odwołać wszystkie wiadomości e-mail oznaczone marką przy użyciu tych szablonów.
 
 ## <a name="work-with-ome-branding-templates"></a>Praca z szablonami znakowania OME
 
@@ -67,7 +65,7 @@ W szablonie znakowania można zmodyfikować kilka funkcji. Szablon domyślny mo�
 
 Użyj Exchange Online programu PowerShell, aby modyfikować jeden szablon znakowania jednocześnie. Jeśli masz zaawansowane szyfrowanie komunikatów, możesz również tworzyć, modyfikować i usuwać szablony niestandardowe.
 
-1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, połącz się z programem Exchange Online programu PowerShell. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, połącz się z programem Exchange Online programu PowerShell. Aby uzyskać instrukcje, zobacz [Connect to Exchange Online PowerShell (Nawiązywanie połączenia z programem PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)).
 
 2. Użyj polecenia cmdlet Set-OMEConfiguration zgodnie z opisem w temacie [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration) lub skorzystaj z poniższej grafiki i tabeli, aby uzyskać wskazówki.
 
@@ -92,7 +90,7 @@ Jeśli masz zaawansowane szyfrowanie komunikatów usługi Microsoft Purview, mo�
 
 Aby utworzyć nowy szablon znakowania niestandardowego:
 
-1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, połącz się z programem Exchange Online programu PowerShell. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, połącz się z programem Exchange Online programu PowerShell. Aby uzyskać instrukcje, zobacz [Connect to Exchange Online PowerShell (Nawiązywanie połączenia z programem PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)).
 
 2. Użyj polecenia cmdlet [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) , aby utworzyć nowy szablon.
 
@@ -110,7 +108,7 @@ Aby utworzyć nowy szablon znakowania niestandardowego:
 
 Aby usunąć wszystkie modyfikacje z szablonu domyślnego, w tym dostosowania marki itd., wykonaj następujące kroki:
 
-1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, połącz się z programem Exchange Online programu PowerShell. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, połącz się z programem Exchange Online programu PowerShell. Aby uzyskać instrukcje, zobacz [Connect to Exchange Online PowerShell (Nawiązywanie połączenia z programem PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)).
 
 2. Użyj polecenia cmdlet **Set-OMEConfiguration** zgodnie z opisem w temacie [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration). Aby usunąć dostosowania markowe organizacji z wartości DisclaimerText, EmailText i PortalText, ustaw wartość na pusty ciąg . `""` Dla wszystkich wartości obrazu, takich jak Logo, ustaw wartość na `"$null"`.
 
@@ -130,7 +128,7 @@ Możesz usuwać lub usuwać tylko utworzone szablony znakowania. Nie można usun
 
 Aby usunąć niestandardowy szablon znakowania:
 
-1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, połącz się z programem Exchange Online programu PowerShell. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Korzystając z konta służbowego z uprawnieniami administratora globalnego w organizacji, połącz się z programem Exchange Online programu PowerShell. Aby uzyskać instrukcje, zobacz [Connect to Exchange Online PowerShell (Nawiązywanie połączenia z programem PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)).
 
 2. Użyj polecenia cmdlet **Remove-OMEConfiguration** w następujący sposób:
 
@@ -146,25 +144,25 @@ Aby usunąć niestandardowy szablon znakowania:
 
    Aby uzyskać więcej informacji, zobacz [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration).
 
-## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Tworzenie reguły przepływu poczty Exchange, która stosuje niestandardowe znakowanie do zaszyfrowanych wiadomości e-mail
+## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Tworzenie reguły przepływu poczty programu Exchange, która stosuje znakowanie niestandardowe do zaszyfrowanych wiadomości e-mail
 
 > [!IMPORTANT]
 > Aplikacje innych firm, które skanują i modyfikują pocztę, mogą uniemożliwić poprawne stosowanie znakowania OME.
 
-Po zmodyfikowaniu szablonu domyślnego lub utworzeniu nowych szablonów znakowania można utworzyć Exchange reguł przepływu poczty, aby zastosować znakowanie niestandardowe na podstawie określonych warunków. Co najważniejsze, wiadomość e-mail musi być szyfrowana. Taka reguła będzie stosować znakowanie niestandardowe w następujących scenariuszach:
+Po zmodyfikowaniu szablonu domyślnego lub utworzeniu nowych szablonów znakowania można utworzyć reguły przepływu poczty programu Exchange w celu zastosowania niestandardowego znakowania na podstawie określonych warunków. Co najważniejsze, wiadomość e-mail musi być szyfrowana. Taka reguła będzie stosować znakowanie niestandardowe w następujących scenariuszach:
 
-- Jeśli wiadomość e-mail została ręcznie zaszyfrowana przez użytkownika końcowego przy użyciu Outlook lub Outlook w sieci Web, wcześniej Outlook Web App
-- Jeśli wiadomość e-mail została automatycznie zaszyfrowana za pomocą reguły przepływu poczty Exchange lub zasad ochrony przed utratą danych w usłudze Microsoft Purview
+- Jeśli wiadomość e-mail została ręcznie zaszyfrowana przez użytkownika końcowego przy użyciu programu Outlook lub Outlook w sieci Web, wcześniej Outlook Web App
+- Jeśli wiadomość e-mail została automatycznie zaszyfrowana przez regułę przepływu poczty programu Exchange lub zasady Ochrona przed utratą danych w Microsoft Purview
 
-Aby upewnić się, że usługa Microsoft Purview Message Encryption stosuje niestandardowe znakowanie, skonfiguruj regułę przepływu poczty w celu szyfrowania wiadomości e-mail. Priorytet reguły szyfrowania powinien być wyższy niż reguła znakowania, aby reguła szyfrowania była przetwarzana jako pierwsza. Domyślnie jeśli utworzysz regułę szyfrowania przed regułą znakowania, reguła szyfrowania będzie miała wyższy priorytet. Aby uzyskać informacje na temat tworzenia reguły przepływu poczty Exchange, która stosuje szyfrowanie, zobacz [Definiowanie reguł przepływu poczty w celu szyfrowania wiadomości e-mail w Office 365](define-mail-flow-rules-to-encrypt-email.md). Aby uzyskać informacje na temat ustawiania priorytetu reguły przepływu poczty, zobacz [Zarządzanie regułami przepływu poczty](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
+Aby upewnić się, że Szyfrowanie wiadomości w Microsoft Purview stosuje znakowanie niestandardowe, skonfiguruj regułę przepływu poczty w celu szyfrowania wiadomości e-mail. Priorytet reguły szyfrowania powinien być wyższy niż reguła znakowania, aby reguła szyfrowania była przetwarzana jako pierwsza. Domyślnie jeśli utworzysz regułę szyfrowania przed regułą znakowania, reguła szyfrowania będzie miała wyższy priorytet. Aby uzyskać informacje na temat tworzenia reguły przepływu poczty programu Exchange, która stosuje szyfrowanie, zobacz [Definiowanie reguł przepływu poczty w celu szyfrowania wiadomości e-mail w Office 365](define-mail-flow-rules-to-encrypt-email.md). Aby uzyskać informacje na temat ustawiania priorytetu reguły przepływu poczty, zobacz [Zarządzanie regułami przepływu poczty](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
 
 1. W przeglądarce internetowej przy użyciu konta służbowego, któremu przyznano uprawnienia administratora globalnego, [zaloguj się do Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Wybierz kafelek **Administrator** .
+2. Wybierz kafelek **Administracja**.
 
-3. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> wybierz pozycję **Centra** \> administracyjne <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> wybierz pozycję **Administracja centers** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
-4. W usłudze EAC przejdź do pozycji **Reguły** **przepływu poczty** \> i wybierz pozycję **Nowa** ![ikona.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Utwórz nową regułę**. Aby uzyskać więcej informacji na temat korzystania z usługi EAC, zobacz [centrum administracyjne Exchange w Exchange Online](/exchange/exchange-admin-center).
+4. W usłudze EAC przejdź do pozycji **Reguły** **przepływu poczty** \> i wybierz pozycję **Nowa** ![ikona.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Utwórz nową regułę**. Aby uzyskać więcej informacji na temat korzystania z usługi EAC, zobacz [Centrum administracyjne programu Exchange w Exchange Online](/exchange/exchange-admin-center).
 
 5. W **polu Nazwa** wpisz nazwę reguły, taką jak Branding dla działu sprzedaży.
 
@@ -176,7 +174,7 @@ Aby upewnić się, że usługa Microsoft Purview Message Encryption stosuje nies
 
 7. Jeśli zdefiniowano już regułę przepływu poczty w celu zastosowania szyfrowania, pomiń ten krok. W przeciwnym razie, aby skonfigurować regułę przepływu poczty w celu zastosowania szyfrowania **, wybierz** pozycję **Modyfikuj zabezpieczenia komunikatów**, a następnie wybierz pozycję **Zastosuj Office 365 szyfrowanie wiadomości i ochronę praw**. Wybierz szablon usługi RMS z listy, a następnie wybierz pozycję **Dodaj akcję**.
 
-   Lista szablonów zawiera szablony domyślne i opcje oraz wszelkie utworzone szablony niestandardowe. Jeśli lista jest pusta, upewnij się, że skonfigurowano szyfrowanie komunikatów usługi Microsoft Purview. Aby uzyskać instrukcje, zobacz [Konfigurowanie szyfrowania komunikatów usługi Microsoft Purview](set-up-new-message-encryption-capabilities.md). Aby uzyskać informacje o szablonach domyślnych, zobacz [Konfigurowanie szablonów platformy Azure Information Protection i zarządzanie nimi](/information-protection/deploy-use/configure-policy-templates). Aby uzyskać informacje o opcji **Nie przesyłaj dalej** , zobacz [Nie przesyłaj dalej dla wiadomości e-mail](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Aby uzyskać informacje o opcji **tylko do szyfrowania** , zobacz [Opcja Tylko szyfrowanie dla wiadomości e-mail](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   Lista szablonów zawiera szablony domyślne i opcje oraz wszelkie utworzone szablony niestandardowe. Jeśli lista jest pusta, upewnij się, że skonfigurowano Szyfrowanie wiadomości w Microsoft Purview. Aby uzyskać instrukcje, zobacz [Konfigurowanie Szyfrowanie wiadomości w Microsoft Purview](set-up-new-message-encryption-capabilities.md). Aby uzyskać informacje o szablonach domyślnych, zobacz [Konfigurowanie szablonów platformy Azure Information Protection i zarządzanie nimi](/information-protection/deploy-use/configure-policy-templates). Aby uzyskać informacje o opcji **Nie przesyłaj dalej** , zobacz [Nie przesyłaj dalej dla wiadomości e-mail](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Aby uzyskać informacje o opcji **tylko do szyfrowania** , zobacz [Opcja Tylko szyfrowanie dla wiadomości e-mail](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
 8. W **obszarze Wykonaj następujące** czynności wybierz pozycję **Modyfikuj zabezpieczenia komunikatów** \> **Zastosuj znakowanie niestandardowe do komunikatów OME**. Następnie z listy rozwijanej wybierz szablon znakowania.
 

@@ -14,23 +14,21 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-description: Administratorzy mogą skonfigurować łącznik danych do importowania danych z fizycznego systemu rozwiązywania problemów organizacji w celu Microsoft 365. Dzięki temu można użyć tych danych w zasadach zarządzania ryzykiem wewnętrznym, aby ułatwić wykrywanie dostępu do budynków fizycznych przez określonych użytkowników, które mogą wskazywać na możliwe wewnętrzne zagrożenie dla organizacji.
-ms.openlocfilehash: 41fd7f1214b231668b56e9326055ad736dcd387e
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: Administratorzy mogą skonfigurować łącznik danych w celu importowania danych z fizycznego systemu rozwiązywania problemów organizacji na platformę Microsoft 365. Dzięki temu można użyć tych danych w zasadach zarządzania ryzykiem wewnętrznym, aby ułatwić wykrywanie dostępu do budynków fizycznych przez określonych użytkowników, które mogą wskazywać na możliwe wewnętrzne zagrożenie dla organizacji.
+ms.openlocfilehash: 90e0a421397683fe05161b27b1743354713de516
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044021"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641433"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Konfigurowanie łącznika w celu importowania fizycznych danych powodujących błędy (wersja zapoznawcza)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Łącznik danych można skonfigurować w portalu zgodności usługi Microsoft Purview w celu zaimportowania fizycznych danych powodujących awarie, takich jak nieprzetworzone fizyczne zdarzenia dostępu pracownika lub wszelkie alarmy dostępu fizycznego generowane przez zły system organizacji. Przykładami fizycznych punktów dostępu jest wejście do budynku lub wejście do serwerowni lub centrum danych. Dane fizyczne mogą być używane przez [rozwiązanie Microsoft 365 zarządzania ryzykiem wewnętrznym](insider-risk-management.md), aby chronić organizację przed złośliwą aktywnością lub kradzieżą danych w organizacji.
+Łącznik danych można skonfigurować w portal zgodności Microsoft Purview w celu zaimportowania fizycznych danych, takich jak nieprzetworzone zdarzenia dostępu fizycznego pracownika lub alarmy dostępu fizycznego generowane przez system złych zabezpieczeń organizacji. Przykładami fizycznych punktów dostępu jest wejście do budynku lub wejście do serwerowni lub centrum danych. Dane fizyczne mogą być używane przez [rozwiązanie do zarządzania ryzykiem wewnętrznym](insider-risk-management.md) platformy Microsoft 365, aby chronić organizację przed złośliwym działaniem lub kradzieżą danych w organizacji.
 
 Konfigurowanie fizycznego łącznika powodującego błędy składa się z następujących zadań:
 
-- Tworzenie aplikacji w Azure Active Directory (Azure AD) w celu uzyskania dostępu do punktu końcowego interfejsu API, który akceptuje ładunek JSON zawierający fizyczne dane powodujące nieprawidłowe kondycję.
+- Tworzenie aplikacji w usłudze Azure Active Directory (Azure AD) w celu uzyskania dostępu do punktu końcowego interfejsu API akceptującego ładunek JSON zawierający fizyczne dane powodujące błędy.
 
 - Tworzenie ładunku JSON przy użyciu schematu zdefiniowanego przez fizyczny łącznik danych nieprawidłowego tworzenia.
 
@@ -42,20 +40,20 @@ Konfigurowanie fizycznego łącznika powodującego błędy składa się z nastę
 
 ## <a name="before-you-set-up-the-connector"></a>Przed skonfigurowaniem łącznika
 
-- Użytkownikowi, który tworzy fizyczny łącznik powodujący awarie w kroku 3, należy przypisać rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownikowi, który tworzy fizyczny łącznik powodujący awarie w kroku 3, należy przypisać rolę Administracja łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w portalu zgodności. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę Administracja łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w portal zgodności Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
    > [!NOTE]
-   > Rola administratora łącznika danych nie jest obecnie obsługiwana w środowiskach US Government GCC High i DoD. W związku z tym użytkownik, który tworzy łącznik hr w środowiskach GCC High i DoD, musi mieć przypisaną rolę eksportu importu skrzynki pocztowej w Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę Import eksportu skrzynki pocztowej można dodać do grupy ról Zarządzanie organizacją w Exchange Online. Możesz też utworzyć nową grupę ról, przypisać rolę Importuj eksport skrzynki pocztowej, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) lub [Modyfikowanie grup ról](/Exchange/permissions-exo/role-groups#modify-role-groups) w artykule "Zarządzanie grupami ról w Exchange Online".
+   > Rola Administracja łącznika danych nie jest obecnie obsługiwana w środowiskach US Government GCC High i DoD. W związku z tym użytkownik, który tworzy łącznik hr w środowiskach GCC High i DoD, musi mieć przypisaną rolę eksportu importu skrzynki pocztowej w Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę Import eksportu skrzynki pocztowej można dodać do grupy ról Zarządzanie organizacją w Exchange Online. Możesz też utworzyć nową grupę ról, przypisać rolę Importuj eksport skrzynki pocztowej, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) lub [Modyfikowanie grup ról](/Exchange/permissions-exo/role-groups#modify-role-groups) w artykule "Zarządzanie grupami ról w Exchange Online".
 
 - Musisz określić sposób pobierania lub eksportowania danych z fizycznego systemu złego działania organizacji (codziennie) i utworzyć plik JSON opisany w kroku 2. Skrypt uruchamiany w kroku 4 spowoduje wypchnięcie danych w pliku JSON do punktu końcowego interfejsu API.
 
 - Przykładowy skrypt uruchamiany w kroku 4 wypycha fizyczne nieprawidłowe dane z pliku JSON do interfejsu API łącznika, dzięki czemu mogą być używane przez rozwiązanie do zarządzania ryzykiem wewnętrznym. Ten przykładowy skrypt nie jest obsługiwany w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowy skrypt jest dostarczany jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowego skryptu i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
-- Ten łącznik jest dostępny w środowiskach GCC w chmurze Microsoft 365 US Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i dlatego nie są objęte zobowiązaniami dotyczącymi usługi Microsoft Purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
+- Ten łącznik jest dostępny w środowiskach GCC w chmurze microsoft 365 us government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą platformy Microsoft 365 i w związku z tym nie są objęte zobowiązaniami microsoft purview i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>Krok 1. Tworzenie aplikacji w Azure Active Directory
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Krok 1. Tworzenie aplikacji w usłudze Azure Active Directory
 
-Pierwszym krokiem jest utworzenie i zarejestrowanie nowej aplikacji w Azure Active Directory (Azure AD). Aplikacja będzie odpowiadać fizycznemu łącznikowi, który zostanie utworzony w kroku 3. Utworzenie tej aplikacji umożliwi Azure AD uwierzytelnienie żądania wypychania ładunku JSON zawierającego fizyczne dane powodujące nieprawidłowe zabezpieczenia. Podczas tworzenia tej aplikacji Azure AD zapisz następujące informacje. Te wartości będą używane w kolejnych krokach.
+Pierwszym krokiem jest utworzenie i zarejestrowanie nowej aplikacji w usłudze Azure Active Directory (Azure AD). Aplikacja będzie odpowiadać fizycznemu łącznikowi, który zostanie utworzony w kroku 3. Utworzenie tej aplikacji umożliwi Azure AD uwierzytelnienie żądania wypychania ładunku JSON zawierającego fizyczne dane powodujące nieprawidłowe zabezpieczenia. Podczas tworzenia tej aplikacji Azure AD zapisz następujące informacje. Te wartości będą używane w kolejnych krokach.
 
 - Azure AD identyfikator aplikacji (nazywany również *identyfikatorem aplikacji* lub *identyfikatorem klienta*)
 
@@ -172,12 +170,12 @@ Następnym krokiem jest utworzenie fizycznego łącznika powodującego niezgodno
 
 Następnym krokiem konfigurowania fizycznego łącznika do rozwiązywania problemów jest uruchomienie skryptu, który wypchnie fizyczne dane powodujące nieprawidłowe działanie w pliku JSON (utworzonym w kroku 2) do punktu końcowego interfejsu API utworzonego w kroku 1. Udostępniamy przykładowy skrypt dla Twojego odwołania i możesz go użyć lub utworzyć własny skrypt do publikowania pliku JSON w punkcie końcowym interfejsu API.
 
-Po uruchomieniu skryptu plik JSON zawierający fizyczne dane powodujące nieprawidłowe działanie zostanie wypchnięty do organizacji Microsoft 365, do której można uzyskać dostęp za pomocą rozwiązania do zarządzania ryzykiem wewnętrznym. Zalecamy codzienne publikowanie fizycznych danych powodujących złe kondycje. Można to zrobić, automatyzując proces generowania pliku JSON codziennie z fizycznego systemu badging, a następnie planując skrypt do wypychania danych.
+Po uruchomieniu skryptu plik JSON zawierający fizyczne nieprawidłowe dane zostanie wypchnięty do organizacji platformy Microsoft 365, do której można uzyskać dostęp za pomocą rozwiązania do zarządzania ryzykiem wewnętrznym. Zalecamy codzienne publikowanie fizycznych danych powodujących złe kondycje. Można to zrobić, automatyzując proces generowania pliku JSON codziennie z fizycznego systemu badging, a następnie planując skrypt do wypychania danych.
 
 > [!NOTE]
 > Maksymalna liczba rekordów w pliku JSON, które mogą być przetwarzane przez interfejs API, wynosi 50 000 rekordów.
 
-1. Przejdź do [tej witryny GitHub](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1), aby uzyskać dostęp do przykładowego skryptu.
+1. Przejdź do [tej witryny usługi GitHub](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1) , aby uzyskać dostęp do przykładowego skryptu.
 
 2. Kliknij przycisk **Nieprzetworzone** , aby wyświetlić skrypt w widoku tekstowym
 
@@ -199,8 +197,8 @@ Po uruchomieniu skryptu plik JSON zawierający fizyczne dane powodujące niepraw
 
    |Parametr|Opis|
    |---|---|
-   |tenantId|Jest to identyfikator organizacji Microsoft 365 uzyskany w kroku 1. Identyfikator tenantId organizacji można również uzyskać w bloku **Przegląd** w centrum administracyjnym Azure AD. Służy to do identyfikowania organizacji.|
-   |Appid|Jest to identyfikator aplikacji Azure AD dla aplikacji utworzonej w Azure AD w kroku 1. Jest to używane przez Azure AD do uwierzytelniania, gdy skrypt próbuje uzyskać dostęp do organizacji Microsoft 365.|
+   |tenantId|Jest to identyfikator organizacji platformy Microsoft 365 uzyskany w kroku 1. Identyfikator tenantId organizacji można również uzyskać w bloku **Przegląd** w centrum administracyjnym Azure AD. Służy to do identyfikowania organizacji.|
+   |Appid|Jest to identyfikator aplikacji Azure AD dla aplikacji utworzonej w Azure AD w kroku 1. Jest to używane przez Azure AD do uwierzytelniania, gdy skrypt próbuje uzyskać dostęp do organizacji platformy Microsoft 365.|
    |appSecret|Jest to Azure AD wpis tajny aplikacji dla aplikacji utworzonej w Azure AD w kroku 1. Jest to również używane do uwierzytelniania.|
    |Jobid|Jest to identyfikator zadania fizycznego łącznika powodującego błędy, który został utworzony w kroku 3. Służy to do kojarzenia fizycznych danych, które są wypychane do chmury firmy Microsoft, z fizycznym łącznikiem powodującym błędy.|
    |JsonFilePath|Jest to ścieżka pliku na komputerze lokalnym (ta, której używasz do uruchamiania skryptu) dla pliku JSON utworzonego w kroku 2. Ten plik musi być zgodny ze schematem przykładowym opisanym w kroku 3.|
@@ -241,9 +239,9 @@ Jeśli skrypt nie został uruchomiony w kroku 4, w obszarze **Ostatni import** z
 
 Aby upewnić się, że najnowsze fizyczne dane z organizacji są dostępne dla narzędzi takich jak rozwiązanie do zarządzania ryzykiem wewnętrznym, zalecamy zaplanowanie automatycznego uruchamiania skryptu cyklicznie, na przykład raz dziennie. Wymaga to również zaktualizowania fizycznych danych błędnych do pliku JSON zgodnie z podobnym (jeśli nie tym samym) harmonogramem, tak aby zawierała najnowsze informacje o pracownikach opuszczających organizację. Celem jest przekazanie najbardziej aktualnych fizycznych danych powodujących błędy w zabezpieczeniach, aby fizyczny łącznik do rozwiązywania problemów mógł udostępnić je rozwiązaniu do zarządzania ryzykiem wewnętrznym.
 
-Możesz użyć aplikacji Harmonogram zadań w Windows, aby codziennie automatycznie uruchamiać skrypt.
+Aplikacja Harmonogram zadań w systemie Windows umożliwia automatyczne uruchamianie skryptu każdego dnia.
 
-1. Na komputerze lokalnym kliknij przycisk **Windows Start**, a następnie wpisz **Harmonogram zadań**.
+1. Na komputerze lokalnym kliknij przycisk **Start** systemu Windows, a następnie wpisz **Harmonogram zadań**.
 
 2. Kliknij aplikację **Harmonogram zadań** , aby ją otworzyć.
 
@@ -259,7 +257,7 @@ Możesz użyć aplikacji Harmonogram zadań w Windows, aby codziennie automatycz
 
 6. Wybierz kartę **Wyzwalacze** , kliknij pozycję **Nowy**, a następnie wykonaj następujące czynności:
 
-   1. W **obszarze Ustawienia** wybierz opcję **Codziennie**, a następnie wybierz datę i godzinę, aby uruchomić skrypt po raz pierwszy. Skrypt będzie uruchamiany codziennie o tej samej określonej godzinie.
+   1. W obszarze **Ustawienia** wybierz opcję **Codziennie** , a następnie wybierz datę i godzinę, aby uruchomić skrypt po raz pierwszy. Skrypt będzie uruchamiany codziennie o tej samej określonej godzinie.
 
    2. W obszarze **Ustawienia zaawansowane** upewnij się, że **zaznaczono** pole wyboru Włączone.
 

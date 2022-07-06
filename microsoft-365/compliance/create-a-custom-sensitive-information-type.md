@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak tworzyć, modyfikować, usuwać i testować niestandardowe typy informacji poufnych w Centrum zgodności.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d93259cfe76419e253c450c4cd5ed7f03f3b85c
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 733e043ed92e601812046dd5e50405ee28ee33da
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753523"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638615"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>Tworzenie niestandardowych typów informacji poufnych w Centrum zgodności
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Jeśli wstępnie skonfigurowane typy informacji poufnych nie spełniają Twoich potrzeb, możesz utworzyć własne niestandardowe typy informacji poufnych, które zostały w pełni zdefiniowane, lub skopiować jeden ze wstępnie skonfigurowanych typów i zmodyfikować je.
 
@@ -41,7 +39,7 @@ Istnieją dwa sposoby tworzenia nowego typu informacji poufnych:
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
 - Należy znać typy informacji poufnych i ich skład. Zobacz [Informacje o typach informacji poufnych](sensitive-information-type-learn-about.md). Kluczowe znaczenie ma zrozumienie ról:
-  - [wyrażenia regularne](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/) — Microsoft 365 typów informacji poufnych używa aparatu Boost.RegEx 5.1.3
+  - [wyrażenia regularne](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/) — typy informacji poufnych platformy Microsoft 365 używają aparatu Boost.RegEx 5.1.3
   - listy słów kluczowych — możesz utworzyć własne, definiując typ informacji poufnych lub wybierając istniejące listy słów kluczowych
   - [słownik słów kluczowych](create-a-keyword-dictionary.md)
   - [Funkcje typu informacji poufnych](sit-functions.md)
@@ -83,7 +81,7 @@ Ta procedura umożliwia utworzenie w pełni zdefiniowanego nowego typu informacj
 12. Sprawdź ustawienie i wybierz pozycję **Prześlij**.
 
     > [!IMPORTANT]
-    > Microsoft 365 używa przeszukiwarki do identyfikowania i klasyfikowania poufnych informacji w witrynach SharePoint Online i OneDrive dla Firm. Aby zidentyfikować nowy niestandardowy typ informacji poufnych w istniejącej zawartości, zawartość musi zostać ponownie przeszukana. Zawartość jest przeszukiwana zgodnie z harmonogramem, ale można ręcznie ponownie przeszukać zawartość zbioru witryn, listy lub biblioteki. Aby uzyskać więcej informacji, zobacz [Ręczne przeszukiwanie żądań i ponowne indeksowanie witryny, biblioteki lub listy](/sharepoint/crawl-site-content).
+    > Platforma Microsoft 365 używa przeszukiwarki do identyfikowania i klasyfikowania poufnych informacji w usłudze SharePoint Online i witrynach OneDrive dla Firm. Aby zidentyfikować nowy niestandardowy typ informacji poufnych w istniejącej zawartości, zawartość musi zostać ponownie przeszukana. Zawartość jest przeszukiwana zgodnie z harmonogramem, ale można ręcznie ponownie przeszukać zawartość zbioru witryn, listy lub biblioteki. Aby uzyskać więcej informacji, zobacz [Ręczne przeszukiwanie żądań i ponowne indeksowanie witryny, biblioteki lub listy](/sharepoint/crawl-site-content).
 
 13. Na stronie **Klasyfikacja danych** zostaną wyświetlone wszystkie typy informacji poufnych. Wybierz **pozycję Odśwież,** a następnie wyszukaj lub użyj narzędzia wyszukiwania, aby znaleźć utworzony typ informacji poufnych.
 
@@ -106,7 +104,7 @@ Ta procedura umożliwia utworzenie nowego typu informacji poufnych opartego na i
 
 Można również tworzyć niestandardowe typy informacji poufnych przy użyciu programu PowerShell i funkcji dokładnego dopasowania danych. Aby dowiedzieć się więcej o tych metodach, zobacz:
 
-- [Tworzenie niestandardowego typu informacji poufnych w programie Microsoft Purview programu PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Tworzenie niestandardowego typu informacji poufnych w programie Microsoft Purview PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Dowiedz się więcej o dokładnych typach informacji poufnych opartych na dopasowaniu danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 1. W Centrum zgodności przejdź do **pozycji Typy informacji poufnych** **klasyfikacji** \> danych i wybierz typ informacji poufnych, który chcesz skopiować.
@@ -189,7 +187,7 @@ Aby zeskanowany element spełniał kryteria reguły, liczba unikatowych wystąpi
 Jeśli na przykład chcesz, aby reguła wyzwalała dopasowanie, gdy w jednym elemencie znajduje się co najmniej 500 unikatowych wystąpień interfejsu SIT, ustaw wartość **minimalną** na `500` , a **wartość maksymalną** na `Any`.
 
 > [!NOTE]
-> Microsoft 365 Information Protection obsługuje języki podwójnego zestawu znaków bajtowych dla:
+> Usługa Microsoft 365 Information Protection obsługuje języki podwójnego zestawu znaków bajtów dla:
 >
 > - Chiński (uproszczony)
 > - Chiński (tradycyjny)

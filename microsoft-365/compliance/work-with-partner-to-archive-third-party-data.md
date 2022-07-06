@@ -17,21 +17,19 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak skonfigurować łącznik niestandardowy do importowania danych innych firm ze źródeł danych, takich jak Salesforce Chatter, Yahoo Messenger lub Yammer.
-ms.openlocfilehash: 02c0d8a61668a0d3dd3e663c1cb4915be15d9a08
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 7b66c16da344a0254ecbc704311c6de5fe92c232
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015523"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637822"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Współpraca z partnerem w celu archiwizowania danych innych firm
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Możesz współpracować z partnerem firmy Microsoft, aby zaimportować i zarchiwizować dane ze źródła danych innej firmy, aby Microsoft 365. Partner może zapewnić łącznik niestandardowy, który jest skonfigurowany do wyodrębniania elementów ze źródła danych innych firm (regularnie), a następnie importowania tych elementów. Łącznik partnera konwertuje zawartość elementu ze źródła danych na format wiadomości e-mail, a następnie przechowuje elementy w skrzynkach pocztowych. Po zaimportowaniu danych innych firm można zastosować do tych danych funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, In-Place archiwizowanie, inspekcja i zasady przechowywania Microsoft 365.
+Możesz współpracować z partnerem firmy Microsoft, aby zaimportować i zarchiwizować dane ze źródła danych innej firmy na platformę Microsoft 365. Partner może zapewnić łącznik niestandardowy, który jest skonfigurowany do wyodrębniania elementów ze źródła danych innych firm (regularnie), a następnie importowania tych elementów. Łącznik partnera konwertuje zawartość elementu ze źródła danych na format wiadomości e-mail, a następnie przechowuje elementy w skrzynkach pocztowych. Po zaimportowaniu danych innych firm można zastosować do tych danych funkcje usługi Microsoft Purview, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, In-Place archiwizowanie, inspekcja i zasady przechowywania usługi Microsoft 365.
 
 > [!IMPORTANT]
-> Rozwiązania [do zgodności z komunikacją](communication-compliance.md) w Microsoft 365 nie można zastosować do danych innych firm zaimportowanych przez łączniki partnerów wymienione w tym artykule.
+> Rozwiązania [do zgodności z komunikacją](communication-compliance.md) w usłudze Microsoft 365 nie można zastosować do danych innych firm zaimportowanych przez łączniki partnerów wymienione w tym artykule.
 
 Oto omówienie procesu i czynności niezbędnych do współpracy z partnerem firmy Microsoft w celu zaimportowania danych innych firm.
 
@@ -43,7 +41,7 @@ Oto omówienie procesu i czynności niezbędnych do współpracy z partnerem fir
 
 [Krok 4. Podawanie partnerowi informacji](#step-4-provide-your-partner-with-information)
 
-[Krok 5. Rejestrowanie łącznika danych innej firmy w Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
+[Krok 5. Rejestrowanie łącznika danych innej firmy w usłudze Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
 
 ## <a name="how-the-third-party-data-import-process-works"></a>Jak działa proces importowania danych innych firm
 
@@ -51,23 +49,23 @@ Poniższa ilustracja i opis wyjaśniają, jak działa proces importowania danych
 
 ![Jak działa proces importowania danych innych firm.](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
 
-1. Klient współpracuje z wybranym partnerem, aby skonfigurować łącznik, który wyodrębni elementy ze źródła danych innej firmy, a następnie zaimportuje te elementy do Microsoft 365.
+1. Klient współpracuje z wybranym partnerem, aby skonfigurować łącznik, który wyodrębni elementy ze źródła danych innej firmy, a następnie zaimportuje te elementy do platformy Microsoft 365.
 
 2. Łącznik partnera łączy się ze źródłami danych innych firm za pośrednictwem interfejsu API innej firmy (zgodnie z harmonogramem lub zgodnie z konfiguracją) i wyodrębnia elementy ze źródła danych. Łącznik partnera konwertuje zawartość elementu na format wiadomości e-mail. Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać opis schematu formatu wiadomości.
 
-3. Łącznik partnerski łączy się z usługą platformy Azure w Microsoft 365 przy użyciu usługi Exchange Web Service (EWS) za pośrednictwem dobrze znanego punktu końcowego.
+3. Łącznik partnerski łączy się z usługą platformy Azure na platformie Microsoft 365 przy użyciu usługi sieci Web programu Exchange (EWS) za pośrednictwem dobrze znanego punktu końcowego.
 
 4. Elementy są importowane do skrzynki pocztowej określonego użytkownika lub do skrzynki pocztowej danych "catch-all" innej firmy. To, czy element jest importowany do określonej skrzynki pocztowej użytkownika, czy do skrzynki pocztowej danych innej firmy, jest oparte na następujących kryteriach:
 
-   1. **Elementy, które mają identyfikator użytkownika odpowiadający kontu użytkownika:** Jeśli łącznik partnera może mapować identyfikator użytkownika elementu w źródle danych innej firmy na określony identyfikator użytkownika w Microsoft 365, element jest kopiowany do folderu **Przeczyszczanie** w folderze Elementy możliwe do odzyskania użytkownika. Użytkownicy nie mogą uzyskać dostępu do elementów w folderze Przeczyszczanie. Można jednak użyć narzędzi zbierania elektronicznych materiałów dowodowych do wyszukiwania elementów w folderze Przeczyszczanie.
+   1. **Elementy, które mają identyfikator użytkownika odpowiadający kontu użytkownika:** Jeśli łącznik partnera może mapować identyfikator użytkownika elementu w źródle danych innej firmy na określony identyfikator użytkownika w usłudze Microsoft 365, element jest kopiowany do folderu **Przeczyszczanie** w folderze Elementy możliwe do odzyskania użytkownika. Użytkownicy nie mogą uzyskać dostępu do elementów w folderze Przeczyszczanie. Można jednak użyć narzędzi zbierania elektronicznych materiałów dowodowych do wyszukiwania elementów w folderze Przeczyszczanie.
 
    1. **Elementy, które nie mają identyfikatora użytkownika odpowiadającego kontu użytkownika:** Jeśli łącznik partnera nie może zamapować identyfikatora użytkownika elementu na określony identyfikator użytkownika, element zostanie skopiowany do folderu **Skrzynka odbiorcza** skrzynki pocztowej danych innej firmy. Importowanie elementów do skrzynki odbiorczej umożliwia Tobie lub innej osobie w organizacji zalogowanie się do skrzynki pocztowej innej firmy w celu wyświetlenia tych elementów i zarządzania nimi oraz sprawdzenie, czy w konfiguracji łącznika partnera należy wprowadzić jakiekolwiek zmiany.
 
 ## <a name="step-1-find-a-third-party-data-partner"></a>Krok 1. Znajdowanie partnera danych innej firmy
 
-Kluczowym składnikiem archiwizacji danych innych firm w Microsoft 365 jest znalezienie i współpraca z partnerem firmy Microsoft, który specjalizuje się w przechwytywaniu danych ze źródła danych innych firm i importowaniu ich do Microsoft 365. Po zaimportowaniu danych można je archiwizować i zachowywać wraz z innymi danymi firmy Microsoft organizacji, takimi jak poczta e-mail z Exchange i dokumentów z SharePoint i OneDrive dla Firm. Partner tworzy łącznik, który wyodrębnia dane ze źródeł danych innych firm (takich jak BlackBerry, Facebook, Google+, Thomson Reuters, Twitter i YouTube) i przekazuje te dane do interfejsu API Microsoft 365, który importuje elementy do Exchange skrzynek pocztowych jako wiadomości e-mail.
+Kluczowym składnikiem archiwizacji danych innych firm na platformie Microsoft 365 jest znalezienie i współpraca z partnerem firmy Microsoft, który specjalizuje się w przechwytywaniu danych ze źródła danych innych firm i importowaniu ich na platformę Microsoft 365. Po zaimportowaniu danych można je zarchiwizować i zachować wraz z innymi danymi firmy Microsoft organizacji, takimi jak poczta e-mail z programu Exchange i dokumenty z programu SharePoint i OneDrive dla Firm. Partner tworzy łącznik, który wyodrębnia dane ze źródeł danych innych firm w organizacji (takich jak BlackBerry, Facebook, Google+, Thomson Reuters, Twitter i YouTube) i przekazuje te dane do interfejsu API platformy Microsoft 365, który importuje elementy do skrzynek pocztowych programu Exchange jako wiadomości e-mail.
 
-W poniższych sekcjach wymieniono partnerów firmy Microsoft (i obsługiwane przez nich źródła danych innych firm), którzy uczestniczą w programie archiwizacji danych innych firm w Microsoft 365.
+W poniższych sekcjach wymieniono partnerów firmy Microsoft (i obsługiwane przez nich źródła danych innych firm), którzy uczestniczą w programie archiwizacji danych innych firm na platformie Microsoft 365.
 
 [17a-4 LLC](#17a-4-llc)
 
@@ -87,7 +85,7 @@ W poniższych sekcjach wymieniono partnerów firmy Microsoft (i obsługiwane prz
 
 - Blackberry
 
-- Bloomberg Data Strumienie
+- Bloomberg Data Streams
 
 - Cisco Jabber
 
@@ -99,7 +97,7 @@ W poniższych sekcjach wymieniono partnerów firmy Microsoft (i obsługiwane prz
 
 - LivePerson
 
-- MessageLabs Data Strumienie
+- Strumienie danych MessageLabs
 
 - Opentext
 
@@ -117,7 +115,7 @@ W poniższych sekcjach wymieniono partnerów firmy Microsoft (i obsługiwane prz
 
 - Skype dla firm Online (Lync Online)
 
-- bazy danych SQL
+- Bazy danych SQL
 
 - Squawker
 
@@ -287,13 +285,13 @@ W poniższych sekcjach wymieniono partnerów firmy Microsoft (i obsługiwane prz
 
 - Rejestrowanie współpracy w czasie rzeczywistym
 
-- Połączenie bezpośredni
+- Bezpośrednie łączenie
 
 - Facebook
 
 - FactSet
 
-- FastTrack
+- Fasttrack
 
 - Gnutella
 
@@ -367,9 +365,9 @@ W poniższych sekcjach wymieniono partnerów firmy Microsoft (i obsługiwane prz
 
 - NEONetwork
 
-- Microsoft 365 dedykowany program Lync
+- Dedykowany program Microsoft 365 Lync
 
-- Microsoft 365 udostępnionej wiadomości błyskawicznej
+- Udostępniona aplikacja błyskawiczna platformy Microsoft 365
 
 - Pinterest
 
@@ -469,22 +467,22 @@ W poniższych sekcjach wymieniono partnerów firmy Microsoft (i obsługiwane prz
 
 - TwistedPair Radio
 
-- ekran komputera stacjonarnego Windows
+- Ekran komputera z systemem Windows Desktop
 
-## <a name="step-2-create-and-configure-a-third-party-data-mailbox-in-microsoft-365"></a>Krok 2. Tworzenie i konfigurowanie skrzynki pocztowej danych innej firmy w Microsoft 365
+## <a name="step-2-create-and-configure-a-third-party-data-mailbox-in-microsoft-365"></a>Krok 2. Tworzenie i konfigurowanie skrzynki pocztowej danych innej firmy na platformie Microsoft 365
 
-Poniżej przedstawiono kroki tworzenia i konfigurowania skrzynki pocztowej danych innych firm na potrzeby importowania danych do Microsoft 365. Jak wyjaśniono wcześniej, elementy są importowane do tej skrzynki pocztowej, jeśli łącznik partnera nie może zamapować identyfikatora użytkownika elementu na konto użytkownika.
+Poniżej przedstawiono kroki tworzenia i konfigurowania skrzynki pocztowej danych innych firm na potrzeby importowania danych na platformę Microsoft 365. Jak wyjaśniono wcześniej, elementy są importowane do tej skrzynki pocztowej, jeśli łącznik partnera nie może zamapować identyfikatora użytkownika elementu na konto użytkownika.
 
 ### <a name="complete-these-tasks-in-the-microsoft-365-admin-center"></a>Wykonaj te zadania w Centrum administracyjne platformy Microsoft 365
 
-1. Utwórz konto użytkownika i przypisz mu licencję Exchange Online Plan 2. Zobacz [Dodawanie użytkowników do Microsoft 365](../admin/add-users/add-users.md). Licencja planu 2 jest wymagana do umieszczenia skrzynki pocztowej w blokadzie postępowania sądowego lub włączenia archiwum skrzynki pocztowej z limitem przydziału magazynu do 1,5 TB.
+1. Utwórz konto użytkownika i przypisz mu licencję Exchange Online plan 2. Zobacz [Dodawanie użytkowników do platformy Microsoft 365](../admin/add-users/add-users.md). Licencja planu 2 jest wymagana do umieszczenia skrzynki pocztowej w blokadzie postępowania sądowego lub włączenia archiwum skrzynki pocztowej z limitem przydziału magazynu do 1,5 TB.
 
-2. Dodaj konto użytkownika skrzynki pocztowej danych innej firmy do roli administratora **Exchange administratora** w Microsoft 365. Zobacz [Przypisywanie ról administratora w Microsoft 365](../admin/add-users/assign-admin-roles.md).
+2. Dodaj konto użytkownika dla skrzynki pocztowej danych innej firmy do roli **administratora programu Exchange** w usłudze Microsoft 365; Zobacz [Przypisywanie ról administratora w usłudze Microsoft 365](../admin/add-users/assign-admin-roles.md).
 
     > [!TIP]
     > Zapisz poświadczenia dla tego konta użytkownika. Należy je udostępnić partnerowi zgodnie z opisem w kroku 4.
 
-### <a name="complete-these-tasks-in-the-exchange-admin-center"></a>Wykonaj te zadania w centrum administracyjnym Exchange
+### <a name="complete-these-tasks-in-the-exchange-admin-center"></a>Wykonaj te zadania w centrum administracyjnym programu Exchange
 
 1. Ukryj skrzynkę pocztową danych innych firm przed książką adresową i innymi listami adresów w organizacji; Zobacz [Zarządzanie skrzynkami pocztowymi użytkowników](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes). Alternatywnie możesz uruchomić następujące polecenie [Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
@@ -492,13 +490,13 @@ Poniżej przedstawiono kroki tworzenia i konfigurowania skrzynki pocztowej danyc
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
     ```
 
-2. Przypisz **uprawnienie FullAccess** do skrzynki pocztowej danych innych firm, aby administratorzy lub funkcjonariusze zgodności mogli otworzyć skrzynkę pocztową danych innej firmy w kliencie stacjonarnym Outlook. Zobacz [Zarządzanie uprawnieniami adresatów](https://go.microsoft.com/fwlink/p/?LinkId=692104).
+2. Przypisz **uprawnienie FullAccess** do skrzynki pocztowej danych innej firmy, aby administratorzy lub funkcjonariusze zgodności mogli otworzyć skrzynkę pocztową danych innej firmy w kliencie klasycznym programu Outlook; Zobacz [Zarządzanie uprawnieniami adresatów](https://go.microsoft.com/fwlink/p/?LinkId=692104).
 
 3. Włącz następujące funkcje związane ze zgodnością dla skrzynki pocztowej danych innych firm:
 
     - Włącz skrzynkę pocztową archiwum; Zobacz [Włączanie archiwalnych skrzynek pocztowych](enable-archive-mailboxes.md) i [Włączanie automatycznego rozszerzania archiwizacji](enable-autoexpanding-archiving.md). Dzięki temu można zwolnić miejsce do magazynowania w podstawowej skrzynce pocztowej, konfigurując zasady archiwum, które przenosi elementy danych innych firm do skrzynki pocztowej archiwum. Zapewnia to maksymalnie 1,5 TB miejsca do magazynowania danych innych firm.
 
-    - Umieść skrzynkę pocztową danych innych firm w blokadzie postępowania sądowego. Można również zastosować zasady przechowywania Microsoft 365 w centrum zabezpieczeń i zgodności. Umieszczenie tej skrzynki pocztowej w blokadzie zachowuje elementy danych innych firm (na czas nieokreślony lub przez określony czas) i uniemożliwia ich przeczyszczanie ze skrzynki pocztowej. Zobacz jeden z następujących tematów:
+    - Umieść skrzynkę pocztową danych innych firm w blokadzie postępowania sądowego. Zasady przechowywania usługi Microsoft 365 można również zastosować w centrum zabezpieczeń i zgodności. Umieszczenie tej skrzynki pocztowej w blokadzie zachowuje elementy danych innych firm (na czas nieokreślony lub przez określony czas) i uniemożliwia ich przeczyszczanie ze skrzynki pocztowej. Zobacz jeden z następujących tematów:
 
       - [Umieszczanie skrzynki pocztowej w blokadzie postępowania sądowego](./create-a-litigation-hold.md)
 
@@ -508,11 +506,11 @@ Poniżej przedstawiono kroki tworzenia i konfigurowania skrzynki pocztowej danyc
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>Krok 3. Konfigurowanie skrzynek pocztowych użytkowników dla danych innych firm
 
-Następnym krokiem jest skonfigurowanie skrzynek pocztowych użytkowników w celu obsługi danych innych firm. Wykonaj te zadania przy użyciu <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a> lub przy użyciu odpowiednich poleceń cmdlet.
+Następnym krokiem jest skonfigurowanie skrzynek pocztowych użytkowników w celu obsługi danych innych firm. Wykonaj te zadania przy użyciu <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego programu Exchange</a> lub przy użyciu odpowiednich poleceń cmdlet.
 
 1. Włącz skrzynkę pocztową archiwum dla każdego użytkownika; Zobacz [Włączanie archiwalnych skrzynek pocztowych](enable-archive-mailboxes.md) i [Włączanie automatycznego rozszerzania archiwizacji](enable-autoexpanding-archiving.md).
 
-2. Umieść skrzynki pocztowe użytkowników w blokadzie postępowania sądowego lub zastosuj zasady przechowywania Microsoft 365; zobacz jeden z następujących tematów:
+2. Umieść skrzynki pocztowe użytkowników w blokadzie postępowania sądowego lub zastosuj zasady przechowywania platformy Microsoft 365; zobacz jeden z następujących tematów:
 
     - [Umieszczanie skrzynki pocztowej w blokadzie postępowania sądowego](./create-a-litigation-hold.md)
 
@@ -524,19 +522,19 @@ Następnym krokiem jest skonfigurowanie skrzynek pocztowych użytkowników w cel
 
 Ostatnim krokiem jest dostarczenie partnerowi następujących informacji, aby mógł skonfigurować łącznik w celu nawiązania połączenia z organizacją w celu zaimportowania danych do skrzynek pocztowych użytkowników i do skrzynki pocztowej danych innych firm.
 
-- Punkt końcowy używany do nawiązywania połączenia z usługą platformy Azure w Microsoft 365:
+- Punkt końcowy używany do nawiązywania połączenia z usługą platformy Azure na platformie Microsoft 365:
 
     ```http
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
-- Poświadczenia logowania (Microsoft 365 identyfikator użytkownika i hasło) skrzynki pocztowej danych innej firmy utworzonej w kroku 2. Te poświadczenia są wymagane, aby łącznik partnera mógł uzyskiwać dostęp do elementów i importować je do skrzynek pocztowych użytkowników i do skrzynki pocztowej danych innych firm.
+- Poświadczenia logowania (identyfikator użytkownika platformy Microsoft 365 i hasło) skrzynki pocztowej danych innej firmy utworzone w kroku 2. Te poświadczenia są wymagane, aby łącznik partnera mógł uzyskiwać dostęp do elementów i importować je do skrzynek pocztowych użytkowników i do skrzynki pocztowej danych innych firm.
 
-## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>Krok 5. Rejestrowanie łącznika danych innej firmy w Azure Active Directory
+## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>Krok 5. Rejestrowanie łącznika danych innej firmy w usłudze Azure Active Directory
 
-Od 30 września 2018 r. usługa platformy Azure w Microsoft 365 zacznie używać nowoczesnego uwierzytelniania w Exchange Online do uwierzytelniania łączników danych innych firm, które próbują nawiązać połączenie z organizacją w celu zaimportowania danych. Przyczyną tej zmiany jest to, że nowoczesne uwierzytelnianie zapewnia większe bezpieczeństwo niż bieżąca metoda oparta na liście dozwolonych łączników innych firm, które używają wcześniej opisanego punktu końcowego do nawiązywania połączenia z usługą platformy Azure.
+Od 30 września 2018 r. usługa platformy Azure na platformie Microsoft 365 zacznie używać nowoczesnego uwierzytelniania w Exchange Online do uwierzytelniania łączników danych innych firm, które próbują nawiązać połączenie z organizacją w celu zaimportowania danych. Przyczyną tej zmiany jest to, że nowoczesne uwierzytelnianie zapewnia większe bezpieczeństwo niż bieżąca metoda oparta na liście dozwolonych łączników innych firm, które używają wcześniej opisanego punktu końcowego do nawiązywania połączenia z usługą platformy Azure.
 
-Aby umożliwić łącznikowi danych innej firmy nawiązywanie połączenia z Microsoft 365 przy użyciu nowej nowoczesnej metody uwierzytelniania, administrator w organizacji musi wyrazić zgodę na zarejestrowanie łącznika jako zaufanej aplikacji usługi w Azure Active Directory. Odbywa się to przez zaakceptowanie żądania uprawnień, aby umożliwić łącznikowi dostęp do danych organizacji w Azure Active Directory. Po zaakceptowaniu tego żądania łącznik danych innej firmy jest dodawany jako aplikacja dla przedsiębiorstw do Azure Active Directory i reprezentowany jako jednostka usługi. Aby uzyskać więcej informacji na temat procesu wyrażania zgody, zobacz  [Zgoda administratora dzierżawy](/skype-sdk/trusted-application-api/docs/tenantadminconsent).
+Aby umożliwić łącznikowi danych innej firmy łączenie się z usługą Microsoft 365 przy użyciu nowej nowoczesnej metody uwierzytelniania, administrator w organizacji musi wyrazić zgodę na zarejestrowanie łącznika jako zaufanej aplikacji usługi w usłudze Azure Active Directory. Odbywa się to przez zaakceptowanie żądania uprawnień umożliwiającego łącznikowi dostęp do danych organizacji w usłudze Azure Active Directory. Po zaakceptowaniu tego żądania łącznik danych innej firmy jest dodawany jako aplikacja dla przedsiębiorstw do usługi Azure Active Directory i reprezentowany jako jednostka usługi. Aby uzyskać więcej informacji na temat procesu wyrażania zgody, zobacz [Tenant Administracja Consent (Dzierżawa Administracja Zgoda](/skype-sdk/trusted-application-api/docs/tenantadminconsent)).
 
 Poniżej przedstawiono kroki uzyskiwania dostępu do łącznika i akceptowania żądania zarejestrowania łącznika:
 
@@ -548,24 +546,24 @@ Poniżej przedstawiono kroki uzyskiwania dostępu do łącznika i akceptowania �
 
 2. Kliknij pozycję **Zaakceptuj**.
 
-Po zaakceptowaniu żądania zostanie wyświetlony [Azure Portal](https://portal.azure.com). Aby wyświetlić listę aplikacji dla organizacji, kliknij pozycję **Azure Active Directory** >  **Enterprise aplikacje**. Łącznik danych Microsoft 365 innej firmy znajduje się w bloku **aplikacji Enterprise**.
+Po zaakceptowaniu żądania zostanie wyświetlony [Azure Portal](https://portal.azure.com). Aby wyświetlić listę aplikacji dla organizacji, kliknij pozycję **Aplikacje dla przedsiębiorstw** **usługi Azure Active Directory** > . Łącznik danych innej firmy platformy Microsoft 365 znajduje się w bloku **Aplikacje dla przedsiębiorstw** .
 
 > [!IMPORTANT]
-> Po 30 września 2018 r. dane innych firm nie będą już importowane do skrzynek pocztowych w organizacji, jeśli nie zarejestrujesz łącznika danych innej firmy w Azure Active Directory. Należy pamiętać, że istniejące łączniki danych innych firm (utworzone przed 30 września 2018 r.) również muszą zostać zarejestrowane w Azure Active Directory, wykonując procedurę opisaną w kroku 5.
+> Po 30 września 2018 r. dane innych firm nie będą już importowane do skrzynek pocztowych w organizacji, jeśli nie zarejestrujesz łącznika danych innej firmy w usłudze Azure Active Directory. Należy pamiętać, że istniejące łączniki danych innych firm (utworzone przed 30 września 2018 r.) muszą być również zarejestrowane w usłudze Azure Active Directory, wykonując procedurę opisaną w kroku 5.
 
 ### <a name="revoking-consent-for-a-third-party-data-connector"></a>Odwoływanie zgody dla łącznika danych innej firmy
 
-Po wyrażeniu zgody organizacji na żądanie uprawnień w celu zarejestrowania łącznika danych innej firmy w Azure Active Directory organizacja może w dowolnym momencie odwołać tę zgodę. Jednak odwołanie zgody dla łącznika oznacza, że dane ze źródła danych innej firmy nie będą już importowane do Microsoft 365.
+Po wyrażeniu zgody organizacji na żądanie uprawnień w celu zarejestrowania łącznika danych innej firmy w usłudze Azure Active Directory organizacja może odwołać tę zgodę w dowolnym momencie. Jednak odwołanie zgody dla łącznika oznacza, że dane ze źródła danych innej firmy nie będą już importowane do platformy Microsoft 365.
 
-Aby odwołać zgodę na łącznik danych innej firmy, możesz usunąć aplikację (usuwając odpowiednią jednostkę usługi) z Azure Active Directory przy użyciu bloku **aplikacji Enterprise** w Azure Portal lub przy użyciu polecenia [Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal) w Microsoft 365 Powershell. Możesz również użyć polecenia cmdlet [Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) w programie Azure Active Directory programu PowerShell.
+Aby odwołać zgodę dla łącznika danych innej firmy, możesz usunąć aplikację (usuwając odpowiednią jednostkę usługi) z usługi Azure Active Directory przy użyciu bloku **Aplikacje dla przedsiębiorstw** w Azure Portal lub przy użyciu polecenia [Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal) w programie Microsoft 365 PowerShell. Możesz również użyć polecenia cmdlet [Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) w programie Azure Active Directory PowerShell.
 
 ## <a name="more-information"></a>Więcej informacji
 
-- Jak wyjaśniono wcześniej, elementy ze źródeł danych innych firm są importowane do Exchange skrzynek pocztowych jako wiadomości e-mail. Łącznik partnera importuje element przy użyciu schematu wymaganego przez interfejs API Microsoft 365. W poniższej tabeli opisano właściwości wiadomości elementu ze źródła danych innej firmy po jego zaimportowaniu do skrzynki pocztowej Exchange jako wiadomość e-mail. Tabela wskazuje również, czy właściwość komunikatu jest obowiązkowa. Właściwości obowiązkowe muszą być wypełnione. Jeśli w elemencie brakuje właściwości obowiązkowej, nie zostanie on zaimportowany do Microsoft 365. Proces importowania zwraca komunikat o błędzie wyjaśniający, dlaczego element nie został zaimportowany i której właściwości brakuje.
+- Jak wyjaśniono wcześniej, elementy ze źródeł danych innych firm są importowane do skrzynek pocztowych programu Exchange jako wiadomości e-mail. Łącznik partnera importuje element przy użyciu schematu wymaganego przez interfejs API platformy Microsoft 365. W poniższej tabeli opisano właściwości wiadomości elementu ze źródła danych innej firmy po jego zaimportowaniu do skrzynki pocztowej programu Exchange jako wiadomość e-mail. Tabela wskazuje również, czy właściwość komunikatu jest obowiązkowa. Właściwości obowiązkowe muszą być wypełnione. Jeśli w elemencie brakuje właściwości obowiązkowej, nie zostanie on zaimportowany do platformy Microsoft 365. Proces importowania zwraca komunikat o błędzie wyjaśniający, dlaczego element nie został zaimportowany i której właściwości brakuje.
 
   |Właściwość message|Obowiązkowe?|Opis|Przykładowa wartość|
   |---|---|---|---|
-  |**Z**|Tak|Użytkownik, który pierwotnie utworzył lub wysłał element w źródle danych innej firmy. Łącznik partnera próbuje zamapować identyfikator użytkownika z elementu źródłowego (na przykład dojścia twitterowego) na konto użytkownika dla wszystkich uczestników (użytkowników w polach OD i DO). Kopia wiadomości zostanie zaimportowana do skrzynki pocztowej każdego uczestnika. Jeśli żaden z uczestników z elementu nie może zostać zamapowany na konto użytkownika, element zostanie zaimportowany do skrzynki pocztowej archiwizacji innej firmy w Microsoft 365.  <br/> <br/> Uczestnik zidentyfikowany jako nadawca elementu musi mieć aktywną skrzynkę pocztową w organizacji, do którą jest importowany element. Jeśli nadawca nie ma aktywnej skrzynki pocztowej, zwracany jest następujący błąd:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`|`bob@contoso.com`|
+  |**Z**|Tak|Użytkownik, który pierwotnie utworzył lub wysłał element w źródle danych innej firmy. Łącznik partnera próbuje zamapować identyfikator użytkownika z elementu źródłowego (na przykład dojścia twitterowego) na konto użytkownika dla wszystkich uczestników (użytkowników w polach OD i DO). Kopia wiadomości zostanie zaimportowana do skrzynki pocztowej każdego uczestnika. Jeśli żaden z uczestników z tego elementu nie może zostać zamapowany na konto użytkownika, element zostanie zaimportowany do skrzynki pocztowej archiwizacji innej firmy na platformie Microsoft 365.  <br/> <br/> Uczestnik zidentyfikowany jako nadawca elementu musi mieć aktywną skrzynkę pocztową w organizacji, do którą jest importowany element. Jeśli nadawca nie ma aktywnej skrzynki pocztowej, zwracany jest następujący błąd:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`|`bob@contoso.com`|
   |**DO**|Tak|Użytkownik, który otrzymał element, jeśli ma zastosowanie do elementu w źródle danych.|`bob@contoso.com`|
   |**TEMAT**|Nie|Temat z elementu źródłowego.|`"Mega deals with Contoso coming your way! #ContosoHolidayDeals"`|
   |**DATA**|Tak|Data utworzenia lub opublikowania elementu w źródle danych klienta. Na przykład ta data, kiedy wiadomość w serwisie Twitter została opublikowana na Twitterze.|`01 NOV 2015`|
@@ -573,7 +571,7 @@ Aby odwołać zgodę na łącznik danych innej firmy, możesz usunąć aplikacj�
   |**ZAŁĄCZNIK**|Nie|Jeśli element w źródle danych (na przykład tweet w usłudze Twitter lub konwersacja w wiadomościach błyskawicznych) ma dołączony plik lub dołącz obrazy, partner connect najpierw podejmie próbę uwzględnienia załączników we właściwości **BODY** . Jeśli nie jest to możliwe, zostanie on dodany do właściwości ** ZAŁĄCZNIK **. Inne przykłady załączników obejmują polubienia w serwisie Facebook, metadane ze źródła zawartości oraz odpowiedzi na wiadomość lub wpis.|`image.gif`|
   |**MESSAGECLASS**|Tak|Jest to właściwość wielowartościowa, która jest tworzona i wypełniana przez łącznik partnera. Format tej właściwości to  `IPM.NOTE.Source.Event`. (Ta właściwość musi zaczynać się od  `IPM.NOTE`. Ten format jest podobny do formatu  `IPM.NOTE.X` klasy message). Ta właściwość zawiera następujące informacje:  <br/><br/>`Source`: wskazuje źródło danych innej firmy; na przykład Twitter, Facebook lub BlackBerry.  <br/> <br/>  `Event`: wskazuje typ działania, które zostało wykonane w źródle danych innej firmy, które wygenerowało elementy; na przykład tweet w serwisie Twitter lub wpis w serwisie Facebook. Zdarzenia są specyficzne dla źródła danych.  <br/> <br/>  Jednym z celów tej właściwości jest filtrowanie określonych elementów na podstawie źródła danych, z którego pochodzi element, lub na podstawie typu zdarzenia. Na przykład w wyszukiwaniu zbierania elektronicznych materiałów dowodowych można utworzyć zapytanie wyszukiwania, aby znaleźć wszystkie tweety, które zostały opublikowane przez określonego użytkownika.|`IPM.NOTE.Twitter.Tweet`|
 
-- Po pomyślnym zaimportowaniu elementów do skrzynek pocztowych w Microsoft 365 unikatowy identyfikator jest zwracany do obiektu wywołującego w ramach odpowiedzi HTTP. Ten identyfikator o nazwie  `x-IngestionCorrelationID`, może być używany do kolejnych celów rozwiązywania problemów przez partnerów w celu kompleksowego śledzenia elementów. Zaleca się, aby partnerzy przechwycili te informacje i zarejestrowali je odpowiednio na końcu. Oto przykład odpowiedzi HTTP pokazującej ten identyfikator:
+- Po pomyślnym zaimportowaniu elementów do skrzynek pocztowych w usłudze Microsoft 365 unikatowy identyfikator jest zwracany do obiektu wywołującego w ramach odpowiedzi HTTP. Ten identyfikator o nazwie  `x-IngestionCorrelationID`, może być używany do kolejnych celów rozwiązywania problemów przez partnerów w celu kompleksowego śledzenia elementów. Zaleca się, aby partnerzy przechwycili te informacje i zarejestrowali je odpowiednio na końcu. Oto przykład odpowiedzi HTTP pokazującej ten identyfikator:
 
     ```http
     HTTP/1.1 200 OK
@@ -591,7 +589,7 @@ Aby odwołać zgodę na łącznik danych innej firmy, możesz usunąć aplikacj�
 
   - **`itemclass:ipm.externaldata.<third-party data type>`**: użyj tej pary właściwości-wartości, aby wyszukać tylko określony typ danych innych firm. Na przykład aby wyszukać tylko dane serwisu Facebook zawierające słowo "contoso" we właściwości Podmiot, należy użyć zapytania  `itemclass:ipm.externaldata.Facebook* AND subject:contoso`słowa kluczowego .
 
-  Aby uzyskać pełną listę wartości używanych dla typów danych innych firm dla `itemclass` właściwości, zobacz [Używanie wyszukiwania zawartości do wyszukiwania danych innych firm, które zostały zaimportowane do Microsoft 365](use-content-search-to-search-third-party-data-that-was-imported.md).
+  Aby uzyskać pełną listę wartości używanych dla typów danych innych firm dla  `itemclass` właściwości, zobacz [Używanie wyszukiwania zawartości do wyszukiwania danych innych firm, które zostały zaimportowane do platformy Microsoft 365](use-content-search-to-search-third-party-data-that-was-imported.md).
 
    Aby uzyskać więcej informacji na temat korzystania z wyszukiwania zawartości i tworzenia zapytań wyszukiwania słów kluczowych, zobacz:
 

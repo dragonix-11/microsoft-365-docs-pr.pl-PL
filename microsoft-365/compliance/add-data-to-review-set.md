@@ -18,28 +18,26 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak dodać wyniki wyszukiwania lub przykłady tych wyników wyszukiwania do zestawu przeglądu przypadków zbierania elektronicznych materiałów dowodowych (Premium).
-ms.openlocfilehash: cda1a7fcf33a5fc1b299fd2d66f7241ab1cef229
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 48371521edef225b63b6b06170dc422881122034
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100968"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640947"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Dodawanie wyników wyszukiwania do zestawu przeglądów
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Gdy wyniki wyszukiwania są zadowalające i możesz je przejrzeć i przeanalizować, możesz dodać je do zestawu przeglądów w tym przypadku. Kopiowanie oryginalnych danych do zestawu przeglądów ułatwia również proces przeglądania i analizy, udostępniając zaawansowane narzędzia analityczne, takie jak wykrywanie motywów, wykrywanie niemal duplikatów i identyfikacja wątków poczty e-mail. Możesz również dodać dane ze źródeł danych innych niż Microsoft 365 do zestawu przeglądów, aby można było przeglądać te dane oprócz danych zbieranych z Microsoft 365.
+Gdy wyniki wyszukiwania są zadowalające i możesz je przejrzeć i przeanalizować, możesz dodać je do zestawu przeglądów w tym przypadku. Kopiowanie oryginalnych danych do zestawu przeglądów ułatwia również proces przeglądania i analizy, udostępniając zaawansowane narzędzia analityczne, takie jak wykrywanie motywów, wykrywanie niemal duplikatów i identyfikacja wątków poczty e-mail. Możesz również dodać dane ze źródeł danych innych niż microsoft 365 do zestawu przeglądów, aby można było przeglądać te dane oprócz danych zbieranych z platformy Microsoft 365.
 
 Po dodaniu wyników wyszukiwania do zestawu przeglądów (zestawy przeglądów w przypadku są wymienione na karcie **Zestawy przeglądów** ) występują następujące rzeczy:
 
 - Wyszukiwanie zostanie uruchomione ponownie. Oznacza to, że rzeczywiste wyniki wyszukiwania skopiowane do zestawu przeglądów mogą być inne niż szacowane wyniki, które zostały zwrócone podczas ostatniego uruchomienia wyszukiwania.
 
-- Wszystkie elementy w wynikach wyszukiwania są kopiowane z oryginalnego źródła danych w usługach na żywo i kopiowane do bezpiecznej lokalizacji Storage platformy Azure w chmurze firmy Microsoft.
+- Wszystkie elementy w wynikach wyszukiwania są kopiowane z oryginalnego źródła danych w usługach na żywo i kopiowane do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft.
 
 - Wszystkie elementy (w tym zawartość i metadane) są ponownie indeksowane, aby wszystkie dane w zestawie przeglądów były w pełni przeszukiwane podczas przeglądania danych sprawy. Ponowne indeksowanie danych powoduje dokładne i szybkie wyszukiwanie podczas przeszukiwania danych w zestawie przeglądów podczas badania sprawy.
 
-- Plik zaszyfrowany za pomocą [technologii szyfrowania firmy Microsoft](encryption.md) i dołączony do wiadomości e-mail zwracanej w wynikach wyszukiwania jest odszyfrowywany po dodaniu wiadomości e-mail i dołączonego pliku do zestawu przeglądów. Odszyfrowany plik można przeglądać i wykonywać zapytania w zestawie przeglądów. Musisz mieć przypisaną rolę odszyfrowywania usługi RMS, aby dodać odszyfrowane załączniki wiadomości e-mail do zestawu przeglądów. Aby uzyskać więcej informacji, zobacz [Decryption in Microsoft Purview eDiscovery tools (Odszyfrowywanie w narzędziach zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview](ediscovery-decryption.md)).
+- Plik zaszyfrowany za pomocą [technologii szyfrowania firmy Microsoft](encryption.md) i dołączony do wiadomości e-mail zwracanej w wynikach wyszukiwania jest odszyfrowywany po dodaniu wiadomości e-mail i dołączonego pliku do zestawu przeglądów. Odszyfrowany plik można przeglądać i wykonywać zapytania w zestawie przeglądów. Musisz mieć przypisaną rolę odszyfrowywania usługi RMS, aby dodać odszyfrowane załączniki wiadomości e-mail do zestawu przeglądów. Aby uzyskać więcej informacji, zobacz [Odszyfrowywanie w narzędziach Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview](ediscovery-decryption.md).
 
 Aby dodać dane do zestawu przeglądów, kliknij wyszukiwanie na karcie **Wyszukiwania** , a następnie kliknij pozycję **Dodaj wyniki, aby przejrzeć zestaw** na stronie wysuwanej.
 
@@ -47,17 +45,17 @@ Możesz dodać do istniejącego zestawu przeglądów lub utworzyć nowy zestaw p
 
 ![Wybierz zestaw przeglądów i skonfiguruj opcje kolekcji.](../media/AeD_AddToReviewSet.png)
 
-Dodawanie danych do zestawu przeglądów jest długotrwałym procesem. Ten proces obejmuje zbieranie elementów z oryginalnych źródeł danych w Microsoft 365 (na przykład ze skrzynek pocztowych i witryn), kopiowanie ich do lokalizacji Storage platformy Azure (ten proces kopiowania jest również nazywany *pozyskiwaniem*), a następnie ponowne indeksowanie elementów. Postęp można śledzić na karcie **Zadania** lub na karcie **Wyszukiwania** , monitorując stan w kolumnie **Dodano dane, aby przejrzeć ustawioną** kolumnę. Po zakończeniu przetwarzania zestawu przeglądów kliknij kartę **Zestawy przeglądów** w tym przypadku, a następnie kliknij zestaw przeglądów, aby rozpocząć proces filtrowania, przeglądania, tagowania i eksportowania danych w zestawie przeglądów.
+Dodawanie danych do zestawu przeglądów jest długotrwałym procesem. Ten proces obejmuje zbieranie elementów z oryginalnych źródeł danych w usłudze Microsoft 365 (na przykład ze skrzynek pocztowych i witryn), kopiowanie ich do lokalizacji usługi Azure Storage (ten proces kopiowania jest również nazywany *pozyskiwaniem*), a następnie ponowne rozpakowywanie elementów. Postęp można śledzić na karcie **Zadania** lub na karcie **Wyszukiwania** , monitorując stan w kolumnie **Dodano dane, aby przejrzeć ustawioną** kolumnę. Po zakończeniu przetwarzania zestawu przeglądów kliknij kartę **Zestawy przeglądów** w tym przypadku, a następnie kliknij zestaw przeglądów, aby rozpocząć proces filtrowania, przeglądania, tagowania i eksportowania danych w zestawie przeglądów.
 
 ## <a name="define-options-to-scope-your-collection-for-review"></a>Definiowanie opcji zakresu kolekcji do przeglądu
 
 Po dodaniu zawartości wyszukiwania do istniejącego lub nowego zestawu przeglądów dostępne są następujące opcje zbierania zawartości do przeglądu:
 
-- **Dołącz wersje z SharePoint (beta)**: użyj tej opcji, aby włączyć kolekcję wszystkich wersji dokumentu SharePoint zgodnie z limitami wersji i parametrami wyszukiwania kolekcji. Wybranie tej opcji znacznie zwiększy rozmiar elementów dodanych do zestawu przeglądów.
+- **Dołącz wersje z programu SharePoint (beta)**: użyj tej opcji, aby włączyć kolekcję wszystkich wersji dokumentu programu SharePoint zgodnie z limitami wersji i parametrami wyszukiwania kolekcji. Wybranie tej opcji znacznie zwiększy rozmiar elementów dodanych do zestawu przeglądów.
 
 - **Opcje pobierania konwersacji**: elementy dodane do zestawu przeglądów są włączone dla konwersacji wątkowych, aby ułatwić przeglądanie zawartości w kontekście konwersacji tam iz powrotem. Aby uzyskać więcej informacji, zobacz [Przeglądanie konwersacji w usłudze eDiscovery (Premium)](conversation-review-sets.md).
 
-- **Włącz pobieranie dla nowoczesnych załączników**: użyj tej opcji, aby uwzględnić nowoczesne załączniki lub połączone pliki w kolekcji w celu dalszego przeglądu. Aby uzyskać więcej informacji na temat właściwości z możliwością wyszukiwania związanych z nowoczesnymi załącznikami, zobacz [Pola metadanych dokumentu w obszarze eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md).
+- **Włącz pobieranie dla nowoczesnych załączników**: użyj tej opcji, aby uwzględnić nowoczesne załączniki lub połączone pliki w kolekcji w celu dalszego przeglądu. Aby uzyskać więcej informacji na temat właściwości możliwych do wyszukania związanych z nowoczesnymi załącznikami, zobacz [Pola metadanych dokumentu w usłudze eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ## <a name="add-a-sample-to-a-review-set"></a>Dodawanie przykładu do zestawu przeglądów
 
@@ -73,6 +71,6 @@ Po wybraniu i skonfigurowaniu jednej z poprzednich opcji wybierz zestaw przeglą
 
 ## <a name="optical-character-recognition"></a>Optyczne rozpoznawanie znaków
 
-Po dodaniu wyników wyszukiwania do zestawu przeglądów funkcja optycznego rozpoznawania znaków (OCR) w funkcji eDiscovery (Premium) automatycznie wyodrębnia tekst z obrazów i zawiera tekst obrazu z danymi dodanymi do zestawu przeglądów. Wyodrębniony tekst można wyświetlić w przeglądarce Tekst wybranego pliku obrazu w zestawie przeglądów. Dzięki temu można przeprowadzać dalsze przeglądy i analizy tekstu na obrazach. Funkcja OCR jest obsługiwana w przypadku luźnych plików, załączników wiadomości e-mail i obrazów osadzonych. Aby uzyskać listę formatów plików obrazów obsługiwanych w usłudze OCR, zobacz [Obsługiwane typy plików w funkcji zbierania elektronicznych materiałów dowodowych (Premium)](supported-filetypes-ediscovery20.md#image).
+Po dodaniu wyników wyszukiwania do zestawu przeglądów funkcja optycznego rozpoznawania znaków (OCR) w funkcji eDiscovery (Premium) automatycznie wyodrębnia tekst z obrazów i zawiera tekst obrazu z danymi dodanymi do zestawu przeglądów. Wyodrębniony tekst można wyświetlić w przeglądarce Tekst wybranego pliku obrazu w zestawie przeglądów. Dzięki temu można przeprowadzać dalsze przeglądy i analizy tekstu na obrazach. Funkcja OCR jest obsługiwana w przypadku luźnych plików, załączników wiadomości e-mail i obrazów osadzonych. Aby zapoznać się z listą formatów plików obrazów obsługiwanych w usłudze OCR, zobacz [Obsługiwane typy plików w usłudze eDiscovery (Premium)](supported-filetypes-ediscovery20.md#image).
 
 Musisz włączyć funkcję OCR dla każdego przypadku utworzonego w środowisku eDiscovery (Premium). Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wyszukiwania i analizy](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

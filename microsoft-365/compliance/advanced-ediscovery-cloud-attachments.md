@@ -15,17 +15,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Kolekcje w usłudze Microsoft Purview eDiscovery (Premium) umożliwiają zbieranie załączników w chmurze do przeglądu w badaniu lub przypadku.
-ms.openlocfilehash: 4af28744525db52f446bf6d5f1b5de2121111050
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+description: Kolekcje w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) umożliwiają zbieranie załączników w chmurze do przeglądu w badaniu lub przypadku.
+ms.openlocfilehash: e59b4720613572763b300517c0b603493ab5a9de
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893212"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636948"
 ---
-# <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium"></a>Zbieranie załączników w chmurze w usłudze Microsoft Purview eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium"></a>Zbieranie załączników w chmurze w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium)
 
 Załączniki w chmurze to linki do dokumentów, które są zwykle przechowywane w witrynie programu SharePoint i usłudze OneDrive. Dlatego zamiast dołączać rzeczywistą kopię dokumentu w wiadomości e-mail lub konwersacji na czacie w usłudze Teams, możesz udostępnić link do pliku. Załączniki w chmurze to skuteczny sposób udostępniania dokumentów i współpracy z innymi osobami w organizacji. Jednak załączniki w chmurze stanowią wyzwanie podczas przepływu pracy zbierania elektronicznych materiałów dowodowych, ponieważ tylko link załącznika w chmurze, a nie rzeczywista zawartość w dokumencie udostępnionym, są zwracane w wyszukiwaniu zbierania elektronicznych materiałów dowodowych. Aby sprostać temu wyzwaniu, usługa eDiscovery (Premium) oferuje dwa rozwiązania do zbierania załączników w chmurze:  
 

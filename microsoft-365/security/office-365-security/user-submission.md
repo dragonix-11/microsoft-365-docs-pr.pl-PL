@@ -18,12 +18,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować skrzynkę pocztową do zbierania wiadomości e-mail dotyczących spamu i wyłudzania informacji zgłaszanych przez użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a4a46225b911c3272baa66772a0cf9ab63f1a1da
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: c4faa6ce80a885ecea864cc2fa51be29553c4a3d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607592"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636430"
 ---
 # <a name="user-reported-message-settings"></a>Ustawienia wiadomości zgłoszonych przez użytkownika
 
@@ -51,9 +51,9 @@ Poniższe artykuły umożliwiają skonfigurowanie wymaganych wymagań wstępnych
 
 - [Zidentyfikuj niestandardową skrzynkę pocztową jako skrzynkę pocztową SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
-- [Tworzenie zasad ochrony przed złośliwym oprogramowaniem](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) dla niestandardowej skrzynki pocztowej, w której
-  - Automatyczne przeczyszczanie o wartości zero godzin (ZAP) dla złośliwego oprogramowania jest wyłączone (nie wybrano sekcji **Ustawienia ochrony** > **Włączanie automatycznego przeczyszczania z zerową godziną dla złośliwego oprogramowania** ).
-  - Wspólna opcja filtru załączników jest wyłączona (sekcja **Ustawienia ochrony** > Nie wybrano opcji **Włącz wspólny filtr załączników** ).
+- [Utwórz zasady ochrony przed złośliwym oprogramowaniem](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies) dla niestandardowej skrzynki pocztowej z następującymi ustawieniami:
+  - Automatyczne przeczyszczanie o wartości zero godzin (ZAP) dla złośliwego oprogramowania jest wyłączone (nie wybrano sekcji \>**Ustawienia ochrony** **Włącz automatyczne przeczyszczanie automatyczne w godzinach zerowych dla złośliwego oprogramowania**).
+  - Opcja filtru wspólnego załącznika jest wyłączona (nie wybrano sekcji \>**Ustawienia ochrony** **Włącz wspólny filtr załączników**).
 
 Jeśli masz Ochrona usługi Office 365 w usłudze Microsoft Defender, należy również skonfigurować następujące ustawienia, aby nasze zaawansowane filtrowanie nie miało wpływu na zgłoszone komunikaty:
 

@@ -19,33 +19,31 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: Jak włączyć lub wyłączyć funkcję wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview, aby włączyć lub wyłączyć możliwość przeszukiwania dziennika inspekcji przez administratorów.
-ms.openlocfilehash: 3602a35169670b61a124cda40c9ab50b481571d8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Jak włączyć lub wyłączyć funkcję wyszukiwania dziennika inspekcji w portal zgodności Microsoft Purview, aby włączyć lub wyłączyć możliwość przeszukiwania dziennika inspekcji przez administratorów.
+ms.openlocfilehash: 7a757b07796f2b25fc6269a41d51f27e696e77cd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078872"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640275"
 ---
 # <a name="turn-auditing-on-or-off"></a>Włącz lub wyłącz inspekcję
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Rejestrowanie inspekcji zostanie domyślnie włączone dla platformy Microsoft 365 i Office 365 organizacji przedsiębiorstwa. Jednak podczas konfigurowania nowej organizacji platformy Microsoft 365 lub Office 365 należy zweryfikować stan inspekcji organizacji. Aby uzyskać instrukcje, zobacz [sekcję Weryfikowanie stanu inspekcji organizacji](#verify-the-auditing-status-for-your-organization) w tym artykule. 
 
-Rejestrowanie inspekcji zostanie domyślnie włączone dla organizacji Microsoft 365 i Office 365 przedsiębiorstw. Jednak podczas konfigurowania nowej organizacji Microsoft 365 lub Office 365 należy zweryfikować stan inspekcji organizacji. Aby uzyskać instrukcje, zobacz [sekcję Weryfikowanie stanu inspekcji organizacji](#verify-the-auditing-status-for-your-organization) w tym artykule. 
-
-Gdy inspekcja w portalu zgodności usługi Microsoft Purview jest włączona, aktywność użytkownika i administratora w organizacji jest rejestrowana w dzienniku inspekcji i przechowywana przez 90 dni i do jednego roku w zależności od licencji przypisanej do użytkowników. Jednak organizacja może mieć powody, dla których nie chce rejestrować i zachowywać danych dziennika inspekcji. W takich przypadkach administrator globalny może zdecydować o wyłączeniu inspekcji w Microsoft 365.
+Po włączeniu inspekcji w portal zgodności Microsoft Purview aktywność użytkownika i administratora w organizacji jest rejestrowana w dzienniku inspekcji i przechowywana przez 90 dni i do jednego roku w zależności od licencji przypisanej do użytkowników. Jednak organizacja może mieć powody, dla których nie chce rejestrować i zachowywać danych dziennika inspekcji. W takich przypadkach administrator globalny może zdecydować o wyłączeniu inspekcji na platformie Microsoft 365.
 
 > [!IMPORTANT]
-> Jeśli wyłączysz inspekcję w Microsoft 365, nie możesz użyć interfejsu API działania zarządzania Office 365 ani usługi Microsoft Sentinel, aby uzyskać dostęp do danych inspekcji dla organizacji. Wyłączenie inspekcji przez wykonanie kroków opisanych w tym artykule oznacza, że żadne wyniki nie zostaną zwrócone podczas przeszukiwania dziennika inspekcji przy użyciu portalu zgodności lub po uruchomieniu polecenia cmdlet **Search-UnifiedAuditLog** w programie Exchange Online programu PowerShell. Oznacza to również, że dzienniki inspekcji nie będą dostępne za pośrednictwem interfejsu API działania zarządzania Office 365 ani usługi Microsoft Sentinel.
+> Jeśli wyłączysz inspekcję na platformie Microsoft 365, nie możesz użyć interfejsu API działania zarządzania Office 365 ani usługi Microsoft Sentinel, aby uzyskać dostęp do danych inspekcji dla organizacji. Wyłączenie inspekcji przez wykonanie kroków opisanych w tym artykule oznacza, że żadne wyniki nie zostaną zwrócone podczas przeszukiwania dziennika inspekcji przy użyciu portalu zgodności lub po uruchomieniu polecenia cmdlet **Search-UnifiedAuditLog** w programie Exchange Online programu PowerShell. Oznacza to również, że dzienniki inspekcji nie będą dostępne za pośrednictwem interfejsu API działania zarządzania Office 365 ani usługi Microsoft Sentinel.
   
 ## <a name="before-you-turn-auditing-on-or-off"></a>Przed włączeniem lub wyłączeniem inspekcji
 
-- Musisz mieć przypisaną rolę Dzienniki inspekcji w Exchange Online, aby włączyć lub wyłączyć inspekcję w organizacji Microsoft 365. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie **Uprawnienia** w centrum administracyjnym Exchange. Administratorzy globalni w Microsoft 365 są członkami grupy ról Zarządzanie organizacją w Exchange Online.
+- Musisz mieć przypisaną rolę Dzienniki inspekcji w Exchange Online, aby włączyć lub wyłączyć inspekcję w organizacji platformy Microsoft 365. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie **Uprawnienia** w Centrum administracyjnym programu Exchange. Administratorzy globalni w usłudze Microsoft 365 są członkami grupy ról Zarządzanie organizacją w Exchange Online.
 
     > [!NOTE]
     > Użytkownicy muszą mieć przypisane uprawnienia w Exchange Online, aby włączyć lub wyłączyć inspekcję. Jeśli przypiszesz użytkownikom rolę Dzienniki inspekcji na stronie **Uprawnienia** w portalu zgodności, nie będą oni mogli włączać ani wyłączać inspekcji. Dzieje się tak, ponieważ podstawowe polecenie cmdlet jest Exchange Online poleceniem cmdlet programu PowerShell.
 
-- Aby uzyskać instrukcje krok po kroku dotyczące przeszukiwania dziennika inspekcji, zobacz [Przeszukiwanie dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md). Aby uzyskać więcej informacji na temat interfejsu API działania zarządzania Microsoft 365, zobacz [Wprowadzenie z interfejsami API zarządzania Microsoft 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
+- Aby uzyskać instrukcje krok po kroku dotyczące przeszukiwania dziennika inspekcji, zobacz [Przeszukiwanie dziennika inspekcji](search-the-audit-log-in-security-and-compliance.md). Aby uzyskać więcej informacji na temat interfejsu API działania zarządzania platformy Microsoft 365, zobacz [Wprowadzenie do interfejsów API zarządzania platformy Microsoft 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 ## <a name="verify-the-auditing-status-for-your-organization"></a>Weryfikowanie stanu inspekcji organizacji
 
@@ -80,7 +78,7 @@ Jeśli inspekcja nie jest włączona dla organizacji, możesz ją włączyć w p
 
 ### <a name="use-powershell-to-turn-on-auditing"></a>Włączanie inspekcji przy użyciu programu PowerShell
 
-1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połącz się z usługą Exchange Online w programie PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Uruchom następujące polecenie programu PowerShell, aby włączyć inspekcję.
 
@@ -94,7 +92,7 @@ Jeśli inspekcja nie jest włączona dla organizacji, możesz ją włączyć w p
 
 Aby wyłączyć inspekcję, należy użyć Exchange Online programu PowerShell.
   
-1. [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Połącz się z usługą Exchange Online w programie PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Uruchom następujące polecenie programu PowerShell, aby wyłączyć inspekcję.
 
@@ -118,9 +116,9 @@ Aby wyłączyć inspekcję, należy użyć Exchange Online programu PowerShell.
 
 ## <a name="audit-records-when-auditing-status-is-changed"></a>Inspekcja rekordów po zmianie stanu inspekcji
 
-Zmiany stanu inspekcji w organizacji są poddawane inspekcji. Oznacza to, że rekordy inspekcji są rejestrowane, gdy inspekcja jest włączona lub wyłączona. Możesz wyszukać te rekordy inspekcji w dzienniku inspekcji administratora Exchange.
+Zmiany stanu inspekcji w organizacji są poddawane inspekcji. Oznacza to, że rekordy inspekcji są rejestrowane, gdy inspekcja jest włączona lub wyłączona. Możesz wyszukać te rekordy inspekcji w dzienniku inspekcji administratora programu Exchange.
 
-Aby przeszukać dziennik inspekcji administratora Exchange w poszukiwaniu rekordów inspekcji generowanych podczas włączania lub wyłączania inspekcji, uruchom następujące polecenie w [programie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+Aby przeszukać dziennik inspekcji administratora programu Exchange pod kątem rekordów inspekcji generowanych podczas włączania lub wyłączania inspekcji, uruchom następujące polecenie w [programie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLogIngestionEnabled
@@ -140,4 +138,4 @@ Wartość `Confirm` właściwości *CmdletParameters* wskazuje, że ujednolicone
 
 Wartość parametru `Confirm` nie jest uwzględniana we właściwości *CmdletParameters* . Oznacza to, że ujednolicone rejestrowanie inspekcji zostało wyłączone przez uruchomienie polecenia **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** .
 
-Aby uzyskać więcej informacji na temat przeszukiwania dziennika inspekcji Exchange administratora, zobacz [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).
+Aby uzyskać więcej informacji na temat przeszukiwania dziennika inspekcji administratora programu Exchange, zobacz [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).

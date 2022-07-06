@@ -16,16 +16,14 @@ search.appverid:
 ms.assetid: ''
 description: Podczas badania możesz użyć przycisku Ponów próbę, aby rozwiązać problemy z wyszukiwaniem zawartości z błędami lokalizacji zawartości.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5345b346e8c66f6983d67081839248e4c66be7d8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c524be95ac72f44e58b03958694d26c52a401e40
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090434"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638174"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Ponów próbę wyszukiwania zawartości, aby rozwiązać problem z błędem lokalizacji zawartości
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W przypadku wyszukiwania zawartości w centrum zabezpieczeń i zgodności do wyszukiwania dużej liczby skrzynek pocztowych mogą wystąpić błędy wyszukiwania podobne do błędu:
 
@@ -54,7 +52,7 @@ Ponowne uruchomienie wyszukiwania często powoduje podobne błędy na różnych 
 
 Spowoduje to ponowienie próby wyszukiwania tylko dla skrzynek pocztowych, które nie powiodły się. Po ponowieniu próby wyszukiwania pozostałe wyniki, które zostały pomyślnie zwrócone, zostaną zachowane.
 
-## <a name="tips-to-avoid-content-location-errors"></a>Wskazówki, aby uniknąć błędów lokalizacji zawartości
+## <a name="tips-to-avoid-content-location-errors"></a>Porady dotyczące unikania błędów lokalizacji zawartości
 
 Poniżej przedstawiono dodatkowe przyczyny błędów lokalizacji zawartości i kilka wskazówek, które pomogą Ci uniknąć ich przeszukiwania dużej liczby skrzynek pocztowych.
 
