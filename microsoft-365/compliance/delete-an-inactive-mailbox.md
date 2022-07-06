@@ -17,28 +17,26 @@ search.appverid:
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
-description: Jeśli nie musisz już zachowywać zawartości nieaktywnej skrzynki pocztowej Microsoft 365, możesz trwale usunąć nieaktywną skrzynkę pocztową.
-ms.openlocfilehash: 1f45e5ce3aca79e4f5abbc13442876ecbb22e90c
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Jeśli nie musisz już zachowywać zawartości nieaktywnej skrzynki pocztowej platformy Microsoft 365, możesz trwale usunąć nieaktywną skrzynkę pocztową.
+ms.openlocfilehash: a8bdd0cb98d744b6c64f651b7b7bb1754ff4f12e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017947"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634494"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Usuń nieaktywną skrzynkę pocztową
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Nieaktywna skrzynka pocztowa służy do zachowania poczty e-mail byłego pracownika po opuszczeniu organizacji. Jeśli nie musisz już zachowywać zawartości nieaktywnej skrzynki pocztowej, możesz trwale usunąć nieaktywną skrzynkę pocztową, usuwając blokadę. Istnieje również możliwość umieszczenia wielu blokad w nieaktywnej skrzynce pocztowej. Na przykład nieaktywna skrzynka pocztowa może zostać umieszczona w blokadzie postępowania sądowego i na co najmniej jednej In-Place blokad. Ponadto do nieaktywnej skrzynki pocztowej można zastosować przechowywanie Microsoft 365. Aby je usunąć, musisz usunąć wszystkie zasady przechowywania i przechowywania z nieaktywnej skrzynki pocztowej. Po usunięciu zasad przechowywania i przechowywania nieaktywna skrzynka pocztowa jest oznaczona do usunięcia i jest trwale usuwana po jej przetworzeniu.
+Nieaktywna skrzynka pocztowa służy do zachowania poczty e-mail byłego pracownika po opuszczeniu organizacji. Jeśli nie musisz już zachowywać zawartości nieaktywnej skrzynki pocztowej, możesz trwale usunąć nieaktywną skrzynkę pocztową, usuwając blokadę. Istnieje również możliwość umieszczenia wielu blokad w nieaktywnej skrzynce pocztowej. Na przykład nieaktywna skrzynka pocztowa może zostać umieszczona w blokadzie postępowania sądowego i na co najmniej jednej In-Place blokad. Ponadto przechowywanie usługi Microsoft 365 może być stosowane do nieaktywnej skrzynki pocztowej. Aby je usunąć, musisz usunąć wszystkie zasady przechowywania i przechowywania z nieaktywnej skrzynki pocztowej. Po usunięciu zasad przechowywania i przechowywania nieaktywna skrzynka pocztowa jest oznaczona do usunięcia i jest trwale usuwana po jej przetworzeniu.
   
 > [!IMPORTANT]
-> Ponieważ nadal inwestujemy w różne sposoby zachowania zawartości skrzynki pocztowej, ogłaszamy wycofanie In-Place Holds w centrum administracyjnym Exchange. Oznacza to, że należy użyć zasad archiwizacji i przechowywania sporów, aby utworzyć nieaktywną skrzynkę pocztową. Od 1 lipca 2020 r. nie będzie można tworzyć nowych blokad In-Place w Exchange Online. Nadal jednak będziesz mieć możliwość zmiany czasu przechowywania In-Place wstrzymania umieszczonego w nieaktywnej skrzynce pocztowej. Jednak od 1 października 2020 r. nie będzie można zmienić czasu trwania blokady. Usunięcie nieaktywnej skrzynki pocztowej będzie możliwe tylko przez usunięcie In-Place Blokada. Istniejące nieaktywne skrzynki pocztowe znajdujące się w In-Place Blokada będą nadal zachowywane do momentu usunięcia blokady. Aby uzyskać więcej informacji na temat wycofania In-Place Holds, zobacz [Wycofywanie starszych narzędzi zbierania elektronicznych materiałów dowodowych](legacy-ediscovery-retirement.md).
+> Ponieważ nadal inwestujemy w różne sposoby zachowania zawartości skrzynki pocztowej, ogłaszamy wycofanie In-Place Holds w centrum administracyjnym programu Exchange. Oznacza to, że należy użyć zasad archiwizacji i przechowywania sporów, aby utworzyć nieaktywną skrzynkę pocztową. Od 1 lipca 2020 r. nie będzie można tworzyć nowych blokad In-Place w Exchange Online. Nadal jednak będziesz mieć możliwość zmiany czasu przechowywania In-Place wstrzymania umieszczonego w nieaktywnej skrzynce pocztowej. Jednak od 1 października 2020 r. nie będzie można zmienić czasu trwania blokady. Usunięcie nieaktywnej skrzynki pocztowej będzie możliwe tylko przez usunięcie In-Place Blokada. Istniejące nieaktywne skrzynki pocztowe znajdujące się w In-Place Blokada będą nadal zachowywane do momentu usunięcia blokady. Aby uzyskać więcej informacji na temat wycofania In-Place Holds, zobacz [Wycofywanie starszych narzędzi zbierania elektronicznych materiałów dowodowych](legacy-ediscovery-retirement.md).
   
 Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać opis tego, co dzieje się po usunięciu blokad z nieaktywnej skrzynki pocztowej.
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>Przed usunięciem nieaktywnej skrzynki pocztowej
 
-- Aby usunąć blokady z nieaktywnej skrzynki pocztowej, należy użyć Exchange Online programu PowerShell. Tych procedur nie można użyć centrum administracyjnego Exchange (EAC) ani portalu zgodności usługi Microsoft Purview. Aby uzyskać instrukcje krok po kroku dotyczące używania Exchange Online programu PowerShell, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Aby usunąć blokady z nieaktywnej skrzynki pocztowej, należy użyć Exchange Online programu PowerShell. Nie można użyć centrum administracyjnego programu Exchange (EAC) ani portal zgodności Microsoft Purview dla tych procedur. Aby uzyskać instrukcje krok po kroku dotyczące korzystania z programu Exchange Online programu PowerShell, zobacz [Nawiązywanie połączenia z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Zawartość nieaktywnej skrzynki pocztowej można skopiować do innej skrzynki pocztowej przed usunięciem blokady i usunięciem nieaktywnej skrzynki pocztowej. Aby uzyskać szczegółowe informacje, zobacz [Przywracanie nieaktywnej skrzynki pocztowej w Office 365](restore-an-inactive-mailbox.md).
 
@@ -50,7 +48,7 @@ Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać opis tego,
 
 Jak wspomniano wcześniej, zasady wstrzymania postępowania sądowego, In-Place blokady lub przechowywania mogą być umieszczane w nieaktywnej skrzynce pocztowej. Pierwszym krokiem jest zidentyfikowanie blokad w nieaktywnej skrzynce pocztowej.
   
-[Połączenie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), a następnie uruchom następujące polecenie, aby wyświetlić informacje o blokadzie dla wszystkich nieaktywnych skrzynek pocztowych w organizacji.
+[Połącz się z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), a następnie uruchom następujące polecenie, aby wyświetlić informacje o blokadzie dla wszystkich nieaktywnych skrzynek pocztowych w organizacji.
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
@@ -90,11 +88,11 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 ```
 
 > [!TIP]
-> Najlepszym sposobem identyfikacji nieaktywnej skrzynki pocztowej jest użycie jej wartości identyfikatora GUID distinguished name lub Exchange. Użycie jednej z tych wartości pomaga zapobiec przypadkowemu określeniu niewłaściwej skrzynki pocztowej. 
+> Najlepszym sposobem identyfikacji nieaktywnej skrzynki pocztowej jest użycie jej wartości Distinguished Name lub Exchange GUID. Użycie jednej z tych wartości pomaga zapobiec przypadkowemu określeniu niewłaściwej skrzynki pocztowej. 
   
 ### <a name="remove-an-inactive-mailbox-from-a-retention-policy"></a>Usuwanie nieaktywnej skrzynki pocztowej z zasad przechowywania
 
-Procedura usuwania nieaktywnej skrzynki pocztowej z zasad przechowywania Microsoft 365 zależy od tego, czy zasady przechowywania przypisane do nieaktywnej skrzynki pocztowej są jawne w całej organizacji:
+Procedura usuwania nieaktywnej skrzynki pocztowej z zasad przechowywania platformy Microsoft 365 zależy od tego, czy zasady przechowywania przypisane do nieaktywnej skrzynki pocztowej są jawne w całej organizacji:
 
 - Zasady przechowywania w całej organizacji przypisane do wszystkich skrzynek pocztowych w organizacji. Użyj polecenia cmdlet **Get-OrganizationConfig** w programie Exchange Online programu PowerShell, aby uzyskać informacje o zasadach przechowywania w całej organizacji.
 

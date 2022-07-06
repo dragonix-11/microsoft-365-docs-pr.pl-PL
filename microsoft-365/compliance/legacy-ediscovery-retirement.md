@@ -13,26 +13,24 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-description: In-Place eDiscovery i In-Place Hold (oraz odpowiednie polecenia cmdlet programu PowerShell) w Exchange Online zostaną wycofane w pierwszej połowie 2020 r. Polecenie cmdlet Search-Mailbox i microsoft Purview eDiscovery (Premium) w wersji 1.0 są również wycofywane w tym samym okresie.
-ms.openlocfilehash: 36883f7edae391ff3461d5d6c135112a4f058671
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: In-Place eDiscovery i In-Place Hold (oraz odpowiednie polecenia cmdlet programu PowerShell) w Exchange Online zostaną wycofane w pierwszej połowie 2020 r. Polecenia cmdlet Search-Mailbox i Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) w wersji 1.0 są również wycofywane w tym samym okresie.
+ms.openlocfilehash: 630d72c75f318e6d4f9e68b01c61d5069958a0a1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012291"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636078"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Wycofanie starszych narzędzi zbierania elektronicznych materiałów dowodowych
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!IMPORTANT]
-> Funkcjonalność starszych narzędzi zbierania elektronicznych materiałów dowodowych opisanych w tym artykule została usunięta z usługi Microsoft 365 lub nadal jest dostępna, ale nie jest już obsługiwana. Wszystkie funkcje, które są nadal dostępne, mogą zostać usunięte bez powiadomienia. Jeśli nadal używasz żadnego z tych starszych narzędzi, rozważ migrację do narzędzi zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview lub jednej z alternatyw opisanych w tym artykule.
+> Funkcje starszych narzędzi zbierania elektronicznych materiałów dowodowych opisanych w tym artykule zostały usunięte z usługi Microsoft 365 lub są nadal dostępne, ale nie są już obsługiwane. Wszystkie funkcje, które są nadal dostępne, mogą zostać usunięte bez powiadomienia. Jeśli nadal używasz żadnego z tych starszych narzędzi, rozważ migrację do narzędzi zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview lub jednej z alternatyw opisanych w tym artykule.
 
-Przez lata firma Microsoft udostępniała narzędzia zbierania elektronicznych materiałów dowodowych, które umożliwiają wyszukiwanie, wyświetlanie podglądu i eksportowanie zawartości wiadomości e-mail z Exchange Online. Jednak te narzędzia nie oferują już skutecznego sposobu wyszukiwania zawartości bez Exchange w innych usługach Microsoft 365, takich jak SharePoint Online i Grupy Microsoft 365. Aby rozwiązać ten problem, firma Microsoft oferuje inne narzędzia zbierania elektronicznych materiałów dowodowych, które ułatwiają wyszukiwanie szerokiej gamy zawartości Microsoft 365. Ciężko pracowaliśmy nad uwzględnieniem najbardziej aktualnych i zaawansowanych funkcji zbierania elektronicznych materiałów dowodowych w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności</a>. Dzięki temu organizacje mogą odpowiadać na żądania prawne, wewnętrzne i inne żądania dokumentów dotyczące zawartości w wielu usługach Microsoft 365, w tym Exchange Online.
+Przez lata firma Microsoft udostępniała narzędzia zbierania elektronicznych materiałów dowodowych, które umożliwiają wyszukiwanie, wyświetlanie podglądu i eksportowanie zawartości wiadomości e-mail z Exchange Online. Jednak te narzędzia nie oferują już skutecznego sposobu wyszukiwania zawartości spoza programu Exchange w innych usługach platformy Microsoft 365, takich jak SharePoint Online i Grupy Microsoft 365. Aby rozwiązać ten problem, firma Microsoft oferuje inne narzędzia zbierania elektronicznych materiałów dowodowych, które ułatwiają wyszukiwanie szerokiej gamy zawartości platformy Microsoft 365. Ciężko pracowaliśmy nad uwzględnieniem najbardziej aktualnych i zaawansowanych funkcji zbierania elektronicznych materiałów dowodowych w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności</a>. Dzięki temu organizacje mogą odpowiadać na żądania prawne, wewnętrzne i inne żądania dokumentów dotyczące zawartości w wielu usługach platformy Microsoft 365, w tym w Exchange Online.
 
-W wyniku tej nowej i ulepszonej funkcji zbierania elektronicznych materiałów dowodowych w portalu zgodności wycofujemy następujące funkcje i funkcje związane zbierania elektronicznych materiałów dowodowych związane z wyszukiwaniem zawartości wiadomości e-mail w Exchange Online i Microsoft 365:
+W wyniku tej nowej i ulepszonej funkcji zbierania elektronicznych materiałów dowodowych w portalu zgodności wycofujemy następujące funkcje i funkcje związane zbierania elektronicznych materiałów dowodowych związane z wyszukiwaniem zawartości wiadomości e-mail w Exchange Online i na platformie Microsoft 365:
 
-- [Miejscowe zbieranie elektronicznych materiałów dowodowych](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) i [in-Place Holds](/exchange/security-and-compliance/create-or-remove-in-place-holds) w centrum administracyjnym Exchange.
+- [Miejscowe zbieranie elektronicznych materiałów dowodowych](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) i [in-Place Holds](/exchange/security-and-compliance/create-or-remove-in-place-holds) w centrum administracyjnym programu Exchange.
 
 - Polecenia cmdlet programu PowerShell Exchange Online obsługujące In-Place eDiscovery i In-Place Holds (te polecenia cmdlet są wspólnie identyfikowane jako polecenia cmdlet **-MailboxSearch*). Obejmuje to następujące polecenia cmdlet:
 
@@ -49,7 +47,7 @@ W wyniku tej nowej i ulepszonej funkcji zbierania elektronicznych materiałów d
 
 - Polecenie cmdlet [Search-Mailbox](/powershell/module/exchange/search-mailbox) w programie Exchange Online programu PowerShell.
 
-- Następujące operacje w interfejsie API usług sieci Web Exchange:
+- Następujące operacje w interfejsie API usług Exchange Web Services:
 
    - [GetSearchableMailboxes](/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
 
@@ -59,18 +57,18 @@ W wyniku tej nowej i ulepszonej funkcji zbierania elektronicznych materiałów d
 
    - [GetHoldOnMailboxes](/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
-- [Microsoft Purview eDiscovery (Premium) v1.0](./overview-ediscovery-20.md), czyli pierwsza wersja zbierania elektronicznych materiałów dowodowych (Premium), do której uzyskuje się dostęp za pośrednictwem sprawy zbierania elektronicznych materiałów dowodowych usługi Microsoft Purview (Standard) w portalu zgodności. Wycofanie z funkcji zbierania elektronicznych materiałów dowodowych (Premium) w wersji 1.0 nie ma wpływu na możliwość tworzenia przypadków zbierania elektronicznych materiałów dowodowych (standardowych) i zarządzania nimi.
+- [Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) w wersji 1.0](./overview-ediscovery-20.md), która jest pierwszą wersją zbierania elektronicznych materiałów dowodowych (Premium), do której uzyskuje się dostęp za pośrednictwem Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview  (Standardowa) w portalu zgodności. Wycofanie z zbierania elektronicznych materiałów dowodowych (Premium) w wersji 1.0 nie ma wpływu na możliwość tworzenia spraw zbierania elektronicznych materiałów dowodowych (Standard) i zarządzania nimi.
 
 > [!NOTE]
-> Wycofywana funkcja zbierania elektronicznych materiałów dowodowych ma zastosowanie tylko do opartych na chmurze wersji Microsoft 365 i Office 365. Funkcje zbierania elektronicznych materiałów dowodowych w lokalnych wersjach Exchange i SharePoint będą nadal obsługiwane do odwołania.
+> Wycofywana funkcja zbierania elektronicznych materiałów dowodowych ma zastosowanie tylko do opartych na chmurze wersji platformy Microsoft 365 i Office 365. Funkcje zbierania elektronicznych materiałów dowodowych w lokalnych wersjach programu Exchange i programu SharePoint będą nadal obsługiwane do odwołania.
 
 Poniższe sekcje w tym artykule zawierają wskazówki dotyczące wycofywania każdej funkcji. Te informacje obejmują osie czasu i narzędzia alternatywne, których można użyć zamiast wycofanego narzędzia.
 
-## <a name="in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center"></a>In-Place eDiscovery i In-Place Holds w centrum administracyjnym Exchange 
+## <a name="in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center"></a>In-Place eDiscovery i In-Place Holds w centrum administracyjnym programu Exchange 
 
-Zgodnie z pierwotnym ogłoszeniem z 1 lipca 2017 r. funkcja In-Place eDiscovery & Hold w centrum administracyjnym Exchange (EAC) jest wycofywana. Strona In-Place eDiscovery & Holds w usłudze EAC umożliwia wyszukiwanie, archiwizowanie i eksportowanie zawartości z Exchange Online. In-Place zbierania elektronicznych materiałów dowodowych umożliwia również kopiowanie wyników wyszukiwania do skrzynki pocztowej odnajdywania, aby ty lub inni menedżerowie zbierania elektronicznych materiałów dowodowych mogli przeglądać zawartość i udostępniać je na potrzeby żądań prawnych, regulacyjnych i publicznych.
+Zgodnie z pierwotnym ogłoszeniem z 1 lipca 2017 r. funkcja In-Place eDiscovery & Hold w centrum administracyjnym programu Exchange (EAC) jest wycofywana. Strona In-Place eDiscovery & Holds w usłudze EAC umożliwia wyszukiwanie, archiwizowanie i eksportowanie zawartości z Exchange Online. In-Place zbierania elektronicznych materiałów dowodowych umożliwia również kopiowanie wyników wyszukiwania do skrzynki pocztowej odnajdywania, aby ty lub inni menedżerowie zbierania elektronicznych materiałów dowodowych mogli przeglądać zawartość i udostępniać je na potrzeby żądań prawnych, regulacyjnych i publicznych.
 
-Ponieważ wszystkie te możliwości (z wyjątkiem kopiowania wyników wyszukiwania do skrzynki pocztowej odnajdywania) są teraz dostępne w narzędziach wyszukiwania zawartości, zbierania elektronicznych materiałów dowodowych i zbierania elektronicznych materiałów dowodowych (Premium) w [portalu zgodności](./microsoft-365-compliance-center.md) (z ulepszoną funkcjonalnością, niezawodnością i obsługą szerokiej gamy usług Microsoft 365), zalecamy jak najszybsze rozpoczęcie korzystania z tych narzędzi. Aby ułatwić przejście do innych narzędzi zbierania elektronicznych materiałów dowodowych, poniższa tabela zawiera listę narzędzi, których można użyć zamiast In-Place eDiscovery i In-Place Hold.
+Ponieważ wszystkie te możliwości (z wyjątkiem kopiowania wyników wyszukiwania do skrzynki pocztowej odnajdywania) są teraz dostępne w wyszukiwaniu zawartości, narzędziach zbierania elektronicznych materiałów dowodowych i zbierania elektronicznych materiałów dowodowych (Premium) w [portalu zgodności](./microsoft-365-compliance-center.md) (z ulepszonymi funkcjami, niezawodnością i obsługą szerokiej gamy usług Platformy Microsoft 365), zalecamy jak najszybsze rozpoczęcie korzystania z tych narzędzi. Aby ułatwić przejście do innych narzędzi zbierania elektronicznych materiałów dowodowych, poniższa tabela zawiera listę narzędzi, których można użyć zamiast In-Place eDiscovery i In-Place Hold.
 
 ### <a name="scope-of-affected-organizations"></a>Zakres organizacji, których dotyczy problem
 
@@ -78,7 +76,7 @@ Ponieważ wszystkie te możliwości (z wyjątkiem kopiowania wyników wyszukiwan
 
 - organizacje Office 365 i Microsoft 365 Education
 
-- Office 365 i Microsoft 365 organizacji rządowych; obejmuje to GCC, GCC High i DoD
+- organizacje Office 365 i Microsoft 365 Government; obejmuje to GCC, GCC High i DoD
 
 - Office 365 Niemcy
 
@@ -113,7 +111,7 @@ W poniższej tabeli opisano inne narzędzia, których można użyć do zastąpie
 <p>Większa niezawodność wyszukiwania, eksportowania i umieszczania zawartości w zawieszeniu</p>
 </li>
 <li>
-<p>Wyszukiwanie zawartości w Exchange Online, SharePoint Online, OneDrive dla Firm, Skype dla firm, Microsoft Teams, grupach Yammer, Grupy Microsoft 365 i innej zawartości przechowywanej w aplikacjach Office 365</p></li></ul>
+<p>Wyszukiwanie zawartości w usługach Exchange Online, SharePoint Online, OneDrive dla Firm, Skype dla firm, Microsoft Teams, Yammer Groups, Grupy Microsoft 365 i innej zawartości przechowywanej w aplikacjach Office 365</p></li></ul>
 </td>
 </tr>
 <tr class="even">
@@ -131,15 +129,15 @@ W poniższej tabeli opisano inne narzędzia, których można użyć do zastąpie
 </tr>
 <tr class="odd">
 <td>Kopiowanie wyników wyszukiwania wiadomości e-mail do skrzynki pocztowej odnajdywania w celu sprawdzenia</td><td>Zestawy przeglądów w systemie zbierania elektronicznych materiałów dowodowych (Premium) w wersji 2.0</td>
-<td><p>Przeglądanie zawartości w Microsoft 365 nigdy nie było łatwiejsze. Zestawy przeglądów mają wiele doskonałych możliwości, które ułatwiają skrócenie czasu i ilości danych potrzebnych do przeglądu, w tym:</p>
+<td><p>Przeglądanie zawartości w usłudze Microsoft 365 nigdy nie było łatwiejsze. Zestawy przeglądów mają wiele doskonałych możliwości, które ułatwiają skrócenie czasu i ilości danych potrzebnych do przeglądu, w tym:</p>
 <ul>
 <li><p>Wykonywanie szybkich zapytań wyszukiwania i filtrowanie zawartości w zestawie przeglądów</p></li>
 <li><p>Analizowanie zawartości w zestawie przeglądów; obejmuje to wątki wiadomości e-mail, wykrywanie niemal duplikatów, analizę motywów i kodowanie predykcyjne</p></li>
 <li><p>Taguj dokumenty w zestawie do przeglądu</p></li>
 <li><p>Tagowanie sugestii ułatwiających identyfikację zawartości uprawnień klienta adwokata</p></li></ul>
-<p>Aby uzyskać więcej informacji, zobacz <a href="/microsoft-365/compliance/overview-ediscovery-20">Omówienie rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365</a>.</p>
+<p>Aby uzyskać więcej informacji, zobacz <a href="/microsoft-365/compliance/overview-ediscovery-20">Omówienie rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) na platformie Microsoft 365</a>.</p>
 <p>
-<p>Możesz też wyeksportować wyniki wyszukiwania do plików PST, a następnie użyć usługi Microsoft 365 Import do zaimportowania pst do skrzynki pocztowej odnajdywania. Aby uzyskać instrukcje krok po kroku, zobacz <a href="/microsoft-365/compliance/use-network-upload-to-import-pst-files">Używanie przekazywania sieci do importowania plików PST do Office 365</a>.
+<p>Możesz też wyeksportować wyniki wyszukiwania do plików PST, a następnie zaimportować punkty PST do skrzynki pocztowej odnajdywania za pomocą usługi Import platformy Microsoft 365. Aby uzyskać instrukcje krok po kroku, zobacz <a href="/microsoft-365/compliance/use-network-upload-to-import-pst-files">Używanie przekazywania sieci do importowania plików PST do Office 365</a>.
 </tr>
 <tr class=even>
   <td>Kopiowanie wiadomości z jednej skrzynki pocztowej do innej skrzynki pocztowej</td>
@@ -165,13 +163,13 @@ Obecnie istnieją dwa sposoby replikacji tej funkcji. Pierwszym z nich jest uży
 
 Portal zgodności używa również [granic zgodności](set-up-compliance-boundaries.md) do kontrolowania lokalizacji zawartości, które może przeszukiwać menedżer zbierania elektronicznych materiałów dowodowych. Granice zgodności są przydatne w jednostkach rządowych, które muszą pozostać w granicach agencji lub w korporacjach wielonarodowych wymaganych do poszanowania zarządców geograficznych.
 
-**Jak mogę przenieść bieżące wyszukiwania i blokady do portalu zgodności usługi Microsoft Purview?**
+**Jak mogę przenieść bieżące wyszukiwania i blokady do portal zgodności Microsoft Purview?**
 
 Za pomocą programu PowerShell można migrować In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych i blokad z usługi EAC. Aby uzyskać [instrukcje, zobacz Migrate searches and holds from the EAC to the compliance portal (Migrowanie wyszukiwań i blokad z eac do portalu zgodności](./migrate-legacy-ediscovery-searches-and-holds.md)).
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*-MailboxSearch polecenia cmdlet
 
-Zgodnie z pierwotnym zawiadomieniem ogłoszonym 1 lipca 2017 r. w centrum administracyjnym Exchange funkcje In-Place eDiscovery & Hold i odpowiednie **\*polecenia cmdlet -MailboxSearch** są wycofywane. Te polecenia cmdlet zapewniają użytkownikom możliwość wyszukiwania, przechowywania i eksportowania zawartości skrzynki pocztowej na potrzeby żądań prawnych, regulacyjnych i publicznych.
+Zgodnie z pierwotnym powiadomieniem ogłoszonym 1 lipca 2017 r. w centrum administracyjnym programu Exchange funkcje In-Place eDiscovery & Hold i odpowiednie **\*polecenia cmdlet -MailboxSearch** są wycofywane. Te polecenia cmdlet zapewniają użytkownikom możliwość wyszukiwania, przechowywania i eksportowania zawartości skrzynki pocztowej na potrzeby żądań prawnych, regulacyjnych i publicznych.
 
 Ponieważ te możliwości są teraz dostępne w [<span class="underline">portalu zgodności</span>](./microsoft-365-compliance-center.md) i programie PowerShell Office 365 Security & Compliance z lepszą wydajnością i skalowalnością, należy użyć tych ulepszonych poleceń cmdlet. Te polecenia cmdlet obejmują [<span class="underline">\*-ComplianceCase</span>](/powershell/module/exchange/get-compliancecase), [<span class="underline">\*-ComplianceSearch</span>](/powershell/module/exchange/get-compliancesearch), [<span class="underline">\*-CaseHoldPolicy</span>](/powershell/module/exchange/get-caseholdpolicy), [<span class="underline">\*-CaseHoldRule</span>](/powershell/module/exchange/get-caseholdrule) i [<span class="underline">\*-ComplianceSearchAction</span>](/powershell/module/exchange/get-compliancesearchaction).
 
@@ -181,7 +179,7 @@ Ponieważ te możliwości są teraz dostępne w [<span class="underline">portalu
 
 - organizacje Office 365 i Microsoft 365 Education
 
-- Office 365 i Microsoft 365 organizacji rządowych; obejmuje to GCC, GCC High i DoD
+- organizacje Office 365 i Microsoft 365 Government; obejmuje to GCC, GCC High i DoD
 
 - Office 365 Niemcy
 
@@ -226,7 +224,7 @@ W poniższej tabeli opisano inne narzędzia, których można użyć do zastąpie
 <tr class="odd">
 <td>Kopiowanie wyników wyszukiwania do skrzynki pocztowej odnajdywania</td>
 <td>Brak</td>
-<td>Nie ma bezpośredniego zastąpienia tej funkcji, ponieważ nie zapewnia ona dostępu do wszystkich usług Microsoft 365. Aby uzyskać alternatywne rozwiązania, zobacz poniższe często zadawane pytania.</td>
+<td>Nie ma bezpośredniego zastąpienia tej funkcji, ponieważ nie zapewnia ona dostępu do wszystkich usług platformy Microsoft 365. Aby uzyskać alternatywne rozwiązania, zobacz poniższe często zadawane pytania.</td>
 </tr>
   <tr class=even>
   <td>Kopiowanie wiadomości z jednej skrzynki pocztowej do innej skrzynki pocztowej</td>
@@ -242,11 +240,11 @@ W poniższej tabeli opisano inne narzędzia, których można użyć do zastąpie
 
 **Usługa Copy Search służy do eksportowania wiadomości e-mail lub wiadomości błyskawicznych do celów innych zbierania elektronicznych materiałów dowodowych i dochodzeń prawnych. Jakie inne opcje mamy po wycofaniu tych poleceń cmdlet?**
 
-[<span class="underline">Interfejsy API Graph firmy Microsoft</span>](https://developer.microsoft.com/en-us/graph) udostępniają szereg metod wyodrębniania danych na potrzeby analizy i innych celów, które są znacznie bardziej odporne i skalowalne niż przy użyciu **\*poleceń cmdlet -MailboxSearch**.
+[<span class="underline">Interfejsy API programu Microsoft Graph</span>](https://developer.microsoft.com/en-us/graph) udostępniają szereg metod wyodrębniania danych na potrzeby analizy i innych celów, które są znacznie bardziej odporne i skalowalne niż przy użyciu **\*poleceń cmdlet -MailboxSearch**.
 
 **Jak mogę przeprowadzić migrację wyszukiwań i blokad do portalu zgodności?**
 
-Istnieje możliwość migracji In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych i archiwizacji z centrum administracyjnego Exchange przy użyciu skryptu programu PowerShell. Aby uzyskać więcej informacji, zobacz [Migrate legacy eDiscovery searches and holds to the compliance portal (Migrowanie starszych wyszukiwań elektronicznych zbierania elektronicznych materiałów dowodowych i archiwizacji do portalu zgodności](migrate-legacy-eDiscovery-searches-and-holds.md)).
+Istnieje możliwość migracji In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych i archiwizacji z centrum administracyjnego programu Exchange przy użyciu skryptu programu PowerShell. Aby uzyskać więcej informacji, zobacz [Migrate legacy eDiscovery searches and holds to the compliance portal (Migrowanie starszych wyszukiwań elektronicznych zbierania elektronicznych materiałów dowodowych i archiwizacji do portalu zgodności](migrate-legacy-eDiscovery-searches-and-holds.md)).
 
 **Czy po wycofaniu poleceń cmdlet nadal będę mógł usuwać lub pobierać wyszukiwania?**
 
@@ -254,7 +252,7 @@ Tak, mimo że usuwamy możliwość tworzenia i modyfikowania wyszukiwań, nadal 
 
 ## <a name="search-mailbox-cmdlet"></a>polecenie cmdlet Search-Mailbox
 
-Polecenie cmdlet **Search-Mailbox** w programie Exchange Online programu PowerShell jest wycofywane zgodnie z pierwotnym ogłoszeniem w ostrzeżeniu w danych wyjściowych polecenia cmdlet rozpoczynających się w 2018 r. Polecenie cmdlet **Search-Mailbox** było pierwotnie używane do przeszukiwania skrzynki pocztowej użytkownika i przeczyszczania złośliwej zawartości. Zalecamy rozpoczęcie korzystania z poleceń cmdlet **New-ComplianceSearch** i **New-ComplianceSearchAction** w programie Office 365 Security & Compliance programu PowerShell w celu wyszukiwania i przeczyszczania zawartości. W przypadku wbudowanego środowiska zabezpieczeń [<span class="underline">funkcje zabezpieczeń Microsoft 365</span>](../security/index.yml) zapewniają niezawodną ochronę przed zagrożeniami w przypadku poczty e-mail i wielu innych usługi firmy Microsoft.
+Polecenie cmdlet **Search-Mailbox** w programie Exchange Online programu PowerShell jest wycofywane zgodnie z pierwotnym ogłoszeniem w ostrzeżeniu w danych wyjściowych polecenia cmdlet rozpoczynających się w 2018 r. Polecenie cmdlet **Search-Mailbox** było pierwotnie używane do przeszukiwania skrzynki pocztowej użytkownika i przeczyszczania złośliwej zawartości. Zalecamy rozpoczęcie korzystania z poleceń cmdlet **New-ComplianceSearch** i **New-ComplianceSearchAction** w programie Office 365 Security & Compliance programu PowerShell w celu wyszukiwania i przeczyszczania zawartości. W przypadku wbudowanego środowiska zabezpieczeń [<span class="underline">funkcje zabezpieczeń platformy Microsoft 365</span>](../security/index.yml) zapewniają niezawodną ochronę przed zagrożeniami w przypadku poczty e-mail i wielu innych usług firmy Microsoft.
 
 ### <a name="scope-of-affected-organizations"></a>Zakres organizacji, których dotyczy problem
 
@@ -262,7 +260,7 @@ Polecenie cmdlet **Search-Mailbox** w programie Exchange Online programu PowerSh
 
 - organizacje Office 365 i Microsoft 365 Education
 
-- Office 365 i Microsoft 365 organizacji rządowych; obejmuje to GCC, GCC High i DoD
+- organizacje Office 365 i Microsoft 365 Government; obejmuje to GCC, GCC High i DoD
 
 - Office 365 Niemcy
 
@@ -301,7 +299,7 @@ W poniższej tabeli opisano inne narzędzia, których można użyć do zastąpie
 <tr class="even">
 <td>Kopiowanie wyników wyszukiwania do skrzynki pocztowej odnajdywania</td>
 <td> </td>
-<td>Nie ma bezpośredniego zastąpienia tej funkcji, ponieważ nie zapewnia ona dostępu do wszystkich usług Microsoft 365. Zapoznaj się z często zadawanymi pytaniami w sekcji <strong>*-MailboxSearch cmdlets (Polecenia cmdlet *-MailboxSearch</strong> ) , aby uzyskać alternatywne rozwiązania. </td>
+<td>Nie ma bezpośredniego zastąpienia tej funkcji, ponieważ nie zapewnia ona dostępu do wszystkich usług platformy Microsoft 365. Zapoznaj się z często zadawanymi pytaniami w sekcji <strong>*-MailboxSearch cmdlets (Polecenia cmdlet *-MailboxSearch</strong> ) , aby uzyskać alternatywne rozwiązania. </td>
 </tr>
 <tr class=odd>
   <td>Kopiowanie wiadomości z jednej skrzynki pocztowej do innej skrzynki pocztowej</td>
@@ -319,14 +317,14 @@ W poniższej tabeli opisano inne narzędzia, których można użyć do zastąpie
 <tr class="odd"> 
 <td>Przeczyszczanie wiadomości ze skrzynki pocztowej</td>
 <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Przypisywanie uprawnień do skrzynki pocztowej</a></td>
-<td>Aby przeczyścić wiadomości ze skrzynki pocztowej, przypisz uprawnienia administratora w celu uzyskania dostępu do skrzynki pocztowej pracownika. Komunikaty można usuwać i odtwarzać zgodnie z potrzebami, korzystając z wbudowanych funkcji wyszukiwania i wyświetlania w Outlook.</td>
+<td>Aby przeczyścić wiadomości ze skrzynki pocztowej, przypisz uprawnienia administratora w celu uzyskania dostępu do skrzynki pocztowej pracownika. Komunikaty można usuwać i odtwarzać zgodnie z potrzebami, korzystając z wbudowanych funkcji wyszukiwania i wyświetlania w programie Outlook.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="exchange-web-services-api-operations"></a>Exchange operacje interfejsu API usług sieci Web
+## <a name="exchange-web-services-api-operations"></a>Operacje interfejsu API usług sieci Web programu Exchange
 
-Te operacje w interfejsie API usług sieci Web Exchange są używane przez funkcję In-Place eDiscovery & Holds w centrum administracyjnym Exchange i odpowiednie **\*polecenia cmdlet -MailboxSearch** w programie Exchange Online programu PowerShell. Zostaną one również wycofane w ramach wycofywania innych starszych narzędzi zbierania elektronicznych materiałów dowodowych.
+Te operacje w interfejsie API usług sieci Web programu Exchange są używane przez funkcję In-Place eDiscovery & Holds w centrum administracyjnym programu Exchange oraz odpowiednie **\*polecenia cmdlet -MailboxSearch** w programie Exchange Online programu PowerShell. Zostaną one również wycofane w ramach wycofywania innych starszych narzędzi zbierania elektronicznych materiałów dowodowych.
 
 ### <a name="scope-of-affected-organizations"></a>Zakres organizacji, których dotyczy problem
 
@@ -334,7 +332,7 @@ Te operacje w interfejsie API usług sieci Web Exchange są używane przez funkc
 
 - organizacje Office 365 i Microsoft 365 Education
 
-- Office 365 i Microsoft 365 organizacji rządowych; obejmuje to GCC, GCC High i DoD
+- organizacje Office 365 i Microsoft 365 Government; obejmuje to GCC, GCC High i DoD
 
 - Office 365 Niemcy
 
@@ -344,21 +342,21 @@ Te operacje w interfejsie API usług sieci Web Exchange są używane przez funkc
 
 ## <a name="ediscovery-premium-v10"></a>eDiscovery (Premium) v1.0
 
-eDiscovery (Premium) v1.0, czyli wersja eDiscovery (Premium) dostępna w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa), klikając pozycję **Przełącz się do eDiscovery (Premium)**, jest wycofywana. Jego funkcjonalność została zastąpiona nowym [rozwiązaniem zbierania elektronicznych materiałów dowodowych (Premium)](./ediscovery.md) w portalu zgodności.
+eDiscovery (Premium) w wersji 1.0, czyli wersja eDiscovery (Premium) dostępna w przypadku zbierania elektronicznych materiałów dowodowych (Standardowa), klikając pozycję **Przełącz się do zbierania elektronicznych materiałów dowodowych (Premium)**, jest wycofywana. Jego funkcjonalność została zastąpiona nowym [rozwiązaniem zbierania elektronicznych materiałów dowodowych (Premium)](./ediscovery.md) w portalu zgodności.
 
 Aby ustalić, czy organizacja korzysta z funkcji zbierania elektronicznych materiałów dowodowych (Premium) w wersji 1.0:
 
 1. Przejdź do portalu zgodności, wybierz pozycję **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a> i otwórz przypadek zbierania elektronicznych materiałów dowodowych (Standard).
 
-1. Jeśli zostanie **wyświetlony przycisk Przełącz do zbierania elektronicznych materiałów dowodowych (Premium**), kliknięcie go spowoduje przejście do wersji 1.0 zbierania elektronicznych materiałów dowodowych (Premium), która jest wycofywana. Nie będzie to miało wpływu na możliwość tworzenia przypadków zbierania elektronicznych materiałów dowodowych (standard) i zarządzania nimi. Wycofywana jest tylko możliwość dodawania i analizowania danych przypadków w systemie zbierania elektronicznych materiałów dowodowych (Premium) w wersji 1.0 (przez **kliknięcie pozycji Przełącz do zbierania elektronicznych materiałów dowodowych (Premium)**).
+1. Jeśli zostanie **wyświetlony przycisk Przełącz do zbierania elektronicznych materiałów dowodowych (Premium), kliknięcie** go spowoduje przejście do wersji 1.0 zbierania elektronicznych materiałów dowodowych (Premium), która jest wycofywana. Nie będzie to miało wpływu na możliwość tworzenia przypadków zbierania elektronicznych materiałów dowodowych (standard) i zarządzania nimi. Wycofywana jest tylko możliwość dodawania i analizowania danych przypadków w systemie zbierania elektronicznych materiałów dowodowych (Premium) w wersji 1.0 (klikając pozycję **Przełącz do zbierania elektronicznych materiałów dowodowych (Premium).**
 
-Nowe rozwiązanie zbierania elektronicznych materiałów dowodowych (Premium) w Microsoft 365 (znane również jako *eDiscovery (Premium) w wersji 2.0*) zapewnia wszystkie możliwości oryginalnego rozwiązania, ale teraz obejmuje oparte na opiekunach podejście do identyfikowania zawartości w innych Microsoft 365  usługi, zbieranie tej zawartości, a następnie dodawanie jej do zestawu przeglądów, w którym recenzenci mogą korzystać z funkcji szybkiego wyszukiwania, tagowania i analizy, aby pomóc w usuwaniu odpowiednich dokumentów. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) obejmuje teraz ulepszone przetwarzanie i natywnych osób przeglądających zarówno dla typów plików firmy Microsoft, jak i innych firm. Pełna lista typów plików znajduje się [tutaj](./supported-filetypes-ediscovery20.md), a obsługiwane pola metadanych znajdują [się tutaj](./document-metadata-fields-in-advanced-ediscovery.md). Ponadto nowe rozwiązanie do zbierania elektronicznych materiałów dowodowych (Premium) zapewnia zaawansowaną funkcję zarządzania, która umożliwia stosowanie blokad do zawartości w różnych usługach, powiadamianie użytkowników o blokadach i śledzenie odpowiedzi opiekuna, a wszystko to w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
+Nowe rozwiązanie zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft 365 (znane również jako *eDiscovery (Premium) w wersji 2.0*) zapewnia wszystkie możliwości oryginalnego rozwiązania, ale teraz obejmuje oparte na opiekunach podejście do identyfikowania zawartości w innych usługach platformy Microsoft 365, zbierania tej zawartości, a następnie dodawania jej do zestawu przeglądów, w którym recenzenci mogą korzystać z szybkich zapytań wyszukiwania,  tagowanie i funkcje analityczne ułatwiające usuwanie odpowiednich dokumentów. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) obejmuje teraz ulepszone przetwarzanie i natywne osoby przeglądające zarówno dla typów plików firmy Microsoft, jak i innych firm. Pełna lista typów plików jest [dostępna tutaj](./supported-filetypes-ediscovery20.md) , a obsługiwane pola metadanych znajdują [się tutaj](./document-metadata-fields-in-advanced-ediscovery.md). Ponadto nowe rozwiązanie zbierania elektronicznych materiałów dowodowych (Premium) zapewnia zaawansowaną funkcję zarządzania blokadami, która pozwala stosować blokady do zawartości w różnych usługach, powiadamiać użytkowników o blokadach i śledzić odpowiedzi opiekunów, a wszystko to w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 
-Aby uzyskać dostęp do funkcji zbierania elektronicznych materiałów dowodowych (Premium) w wersji 2.0:
+Aby uzyskać dostęp do zbierania elektronicznych materiałów dowodowych (Premium) w wersji 2.0:
 
 Przejdź do portalu zgodności, wybierz pozycję **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a> i otwórz przypadek zbierania elektronicznych materiałów dowodowych (Standard).
 
-W tej chwili zalecamy rozpoczęcie przenoszenia przepływu pracy zbierania elektronicznych materiałów dowodowych do nowej funkcji zbierania elektronicznych materiałów dowodowych (Premium). W razie potrzeby możesz zarchiwizować przypadki zbierania elektronicznych materiałów dowodowych (Premium) 1.0, eksportując zawartość i przechowując ją w trybie offline. Mimo że w istniejących przypadkach do 31 grudnia 2020 r. będziesz mieć dostęp do usługi eDiscovery (Premium) w wersji 1.0, pomoc techniczna firmy Microsoft nie zapewni wsparcia po 1 października 2020 r. Aby uzyskać więcej informacji, zobacz następującą oś czasu.
+W tej chwili zalecamy rozpoczęcie przenoszenia przepływu pracy zbierania elektronicznych materiałów dowodowych do nowej funkcji zbierania elektronicznych materiałów dowodowych (Premium). W razie potrzeby możesz zarchiwizować przypadki zbierania elektronicznych materiałów dowodowych (Premium) 1.0, eksportując zawartość i przechowując ją w trybie offline. Mimo że nadal będziesz mieć dostęp do zbierania elektronicznych materiałów dowodowych (Premium) w wersji 1.0 w istniejących przypadkach do 31 grudnia 2020 r., pomoc techniczna firmy Microsoft nie zapewni wsparcia po 1 października 2020 r. Aby uzyskać więcej informacji, zobacz następującą oś czasu.
 
 ### <a name="scope-of-affected-organizations"></a>Zakres organizacji, których dotyczy problem
 
@@ -366,7 +364,7 @@ W tej chwili zalecamy rozpoczęcie przenoszenia przepływu pracy zbierania elekt
 
 - organizacje Office 365 i Microsoft 365 Education
 
-- Office 365 i Microsoft 365 organizacji rządowych; obejmuje to GCC, GCC High i DoD
+- organizacje Office 365 i Microsoft 365 Government; obejmuje to GCC, GCC High i DoD
 
 - Office 365 Niemcy
 
@@ -380,4 +378,4 @@ W tej chwili zalecamy rozpoczęcie przenoszenia przepływu pracy zbierania elekt
 
 ### <a name="alternative-tools"></a>Narzędzia alternatywne
 
-[Rozwiązanie zbierania elektronicznych materiałów dowodowych (Premium)](./overview-ediscovery-20.md) w portalu zgodności.
+[Rozwiązanie eDiscovery (Premium)](./overview-ediscovery-20.md) w portalu zgodności.

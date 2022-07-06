@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 description: Podręcznik wersji próbnej rozwiązań Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 981f4d619eeef380625d6de8194e9cb0c42e2011
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 2b84a3e5636edad78a9d221a0d088b84392cf49e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530285"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633790"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Podręcznik wersji próbnej: rozwiązania Usługi Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Witamy w podręczniku wersji próbnej rozwiązań Microsoft Purview. Ten podręcznik pomoże Ci w maksymalnym użyciu 90-dniowej bezpłatnej wersji próbnej, pomagając odkryć niezawodne i kompleksowe możliwości usługi Microsoft Purview i produktów zabezpieczających.
 

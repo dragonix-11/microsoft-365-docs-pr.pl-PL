@@ -10,9 +10,6 @@ ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
@@ -24,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak Microsoft 365 Business Premium pomaga Firmie w zapewnianiu produktywności i bezpieczeństwa.
-ms.openlocfilehash: 851abcfc2e7d6b55c4c6d201132dabafc56a898e
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: c8620bd687e297151fd6ccabac7f8d01a66457ad
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574161"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631755"
 ---
-# <a name="how-microsoft-365-security-recommendations-affect-your-users"></a>Jak zalecenia dotyczące zabezpieczeń platformy Microsoft 365 wpływają na użytkowników
+# <a name="how-microsoft-365-business-premium-helps-your-business"></a>Jak Microsoft 365 Business Premium pomaga Twojej firmie
 
-Microsoft 365 Business Premium to ekonomiczne rozwiązanie, które umożliwia małym i średnim firmom bardziej wydajną i bezpieczną pracę niż wcześniej. W tym artykule opisano, w jaki sposób Microsoft 365 Business Premium może pomóc Twojej firmie i zawiera następujące sekcje:
+Microsoft 365 Business Premium to ekonomiczne rozwiązanie, które umożliwia małym i średnim firmom bardziej wydajną i bezpieczną pracę niż wcześniej. W tym artykule opisano, w jaki sposób Microsoft 365 Business Premium mogą pomóc Twojej firmie lub kampanii. Ten artykuł zawiera następujące sekcje:
 
 - [Wideo: 5 najważniejszych korzyści z Microsoft 365 Business Premium](#video-top-5-benefits-of-microsoft-365-business-premium)
 - [Wydajność i zaawansowane funkcje zabezpieczeń](#productivity-and-security) , które umożliwiają bezpieczniejsze prowadzenie firmy, na różnych urządzeniach i z niemal dowolnego miejsca
@@ -90,3 +87,5 @@ Nasz przewodnik po zagrożeniach cyfrowych opisuje różne rodzaje zagrożeń i 
 1. Uzyskaj [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) lub [microsoft 365 dla kampanii](get-microsoft-365-campaigns.md).
 
 2. [Rozpocznij proces instalacji](m365bp-setup-overview.md).
+
+3. [Podbij bezpieczeństwo](m365bp-security-overview.md).

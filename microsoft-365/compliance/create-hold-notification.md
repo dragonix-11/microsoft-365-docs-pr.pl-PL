@@ -17,18 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Użyj narzędzia Communications w sprawie zbierania elektronicznych materiałów dowodowych (Premium), aby wysyłać, zbierać i śledzić powiadomienia o blokadzie prawnej.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 21090274f385d6a3354852134764a1f53a311f10
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e97630c75c05412e22afa17daaa1897f8627adf1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094995"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634682"
 ---
 # <a name="create-a-legal-hold-notice"></a>Tworzenie powiadomienia o blokadzie prawnej
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Korzystając z komunikacji z opiekunem zbierania elektronicznych materiałów dowodowych (Premium), organizacje mogą zarządzać przepływem pracy podczas komunikowania się z opiekunami. Za pośrednictwem narzędzia Do komunikacji zespoły prawne mogą systematycznie wysyłać, zbierać i śledzić powiadomienia o blokadzie prawnej. Elastyczny proces tworzenia umożliwia również zespołom dostosowywanie przepływu pracy powiadomień o blokadzie i zawartości w powiadomieniach wysyłanych do opiekunów.
+Korzystając z komunikacji z opiekunami zbierania elektronicznych materiałów dowodowych (Premium), organizacje mogą zarządzać przepływem pracy podczas komunikowania się z opiekunami. Za pośrednictwem narzędzia Do komunikacji zespoły prawne mogą systematycznie wysyłać, zbierać i śledzić powiadomienia o blokadzie prawnej. Elastyczny proces tworzenia umożliwia również zespołom dostosowywanie przepływu pracy powiadomień o blokadzie i zawartości w powiadomieniach wysyłanych do opiekunów.
 
 ![Strona komunikacji.](../media/CommunicationPage.PNG)
 
@@ -40,7 +38,7 @@ Pierwszym krokiem jest określenie odpowiednich szczegółów dotyczących prawn
 
 ![Strona komunikacji nazw.](../media/NameCommunication.PNG)
 
-1. W portalu zgodności usługi Microsoft Purview przejdź do obszaru **eDiscovery > Advanced** , aby wyświetlić listę przypadków w organizacji.
+1. W portal zgodności Microsoft Purview przejdź do obszaru **eDiscovery > Advanced**, aby wyświetlić listę przypadków w organizacji.
 
 2. Wybierz przypadek, kliknij kartę **Komunikacja** , a następnie kliknij pozycję **Nowa komunikacja**.
 

@@ -16,18 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Użyj przepływu pracy komunikacji w usłudze eDiscovery (Premium), aby śledzić stan powiadomień o blokadzie prawnej oraz w razie potrzeby aktualizować je i ponownie je przesyłać.
-ms.openlocfilehash: 95417d54f7a84439b0321e31f0d6c0f2236af047
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 161628061d27c17e9e606cb7f88fbbe52d22be8f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093970"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632250"
 ---
 # <a name="manage-hold-notifications"></a>Zarządzaj powiadomieniami o archiwum
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Po zainicjowaniu przepływu pracy powiadomień o blokadzie prawnej możesz użyć przepływu pracy komunikacji w usłudze Microsoft Purview eDiscovery (Premium) do śledzenia stanu komunikacji. Karta Komunikacja zawiera listę wszystkich powiadomień w przypadku zbierania elektronicznych materiałów dowodowych (Premium). Możesz zobaczyć szczegóły, takie jak liczba opiekunów, którzy zostali przypisani lub potwierdzili powiadomienie.
+Po zainicjowaniu przepływu pracy powiadomień o blokadzie prawnej możesz użyć przepływu pracy komunikacji w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) do śledzenia stanu komunikacji. Karta Komunikacja zawiera listę wszystkich powiadomień w przypadku zbierania elektronicznych materiałów dowodowych (Premium). Możesz zobaczyć szczegóły, takie jak liczba opiekunów, którzy zostali przypisani lub potwierdzili powiadomienie.
 
 ## <a name="monitor-acknowledgments"></a>Monitorowanie potwierdzenia
 
@@ -47,7 +45,7 @@ Czasami opiekunowie tracą śledzenie wiadomości e-mail w codziennej pracy. W p
 
 Aby ponownie wysłać powiadomienie o blokadzie do opiekuna:
 
-1. W obszarze eDiscovery (Premium) wybierz przypadek, a następnie kliknij kartę **Komunikacja**.
+1. W obszarze eDiscovery (Premium) wybierz przypadek, a następnie kliknij kartę **Komunikacja** .
 
 2. Wybierz komunikację, aby wyświetlić stronę wysuwaną **komunikację opiekuna** .
 
@@ -68,7 +66,7 @@ W miarę postępów sprawy opiekunowie mogą być zobowiązani do zachowania dod
 
 Aby zaktualizować zawartość początkowego powiadomienia o wstrzymaniu:
 
-1. W obszarze eDiscovery (Premium) wybierz przypadek, a następnie kliknij kartę **Komunikacja**.
+1. W obszarze eDiscovery (Premium) wybierz przypadek, a następnie kliknij kartę **Komunikacja** .
 
 2. Wybierz powiadomienie o blokadzie, które chcesz zaktualizować, a następnie kliknij pozycję **Edytuj** na stronie **wysuwanej komunikacji kustosz** .
 

@@ -15,19 +15,17 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak usługa Microsoft Purview eDiscovery (Premium) w Microsoft 365 obsługuje języki chiński, japoński i koreański (CJK), które używają zestawu znaków dwubajtowych.
-ms.openlocfilehash: e6399136713ff7be4b3c065de05b587a3f942b01
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) na platformie Microsoft 365 obsługuje języki chiński, japoński i koreański (CJK), które używają zestawu znaków dwu bajtowych.
+ms.openlocfilehash: a16f1f63deee7cbc77b105c9c49431a8eeda0e71
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095911"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636210"
 ---
 # <a name="cjk-language-support-for-ediscovery-premium"></a>Obsługa języka CJK dla eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Usługa Microsoft Purview eDiscovery (Premium) obsługuje języki zestawu znaków dwubajtowych (obejmują one uproszczone języki chiński, chiński tradycyjny, japoński i koreański, które są łącznie znane jako języki *CJK*) dla następujących zaawansowanych scenariuszy w zestawie przeglądów:
+Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) obsługuje języki dwu bajtowego zestawu znaków (obejmują one uproszczony chiński, chiński tradycyjny, japoński i koreański, które są łącznie znane jako języki *CJK*) dla następujących zaawansowanych scenariuszy w zestawie przeglądów:
 
 - Podczas [wykonywania zapytań dotyczących danych w zestawie przeglądów](review-set-search.md).
 
@@ -39,7 +37,7 @@ Usługa Microsoft Purview eDiscovery (Premium) obsługuje języki zestawu znakó
 
 **Jak mogę utworzyć wyszukiwanie w celu zbierania elementów zawierających znaki CJK?**
 
-Znaków CJK można używać do [wyszukiwania słów kluczowych](building-search-queries.md#keyword-searches), [zapytań słów kluczowych i warunków wyszukiwania](keyword-queries-and-search-conditions.md) podczas wyszukiwania zawartości w środowisku zbierania elektronicznych materiałów dowodowych (Premium). Wyszukiwanie znaków CJK jest również obsługiwane podczas wyszukiwania zawartości w usługach Microsoft Purview eDiscovery (Standard) i Content Search.
+Znaków CJK można używać do [wyszukiwania słów kluczowych](building-search-queries.md#keyword-searches), [zapytań słów kluczowych i warunków wyszukiwania](keyword-queries-and-search-conditions.md) podczas wyszukiwania zawartości w środowisku zbierania elektronicznych materiałów dowodowych (Premium). Wyszukiwanie znaków CJK jest również obsługiwane podczas wyszukiwania zawartości w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (standard) i wyszukiwania zawartości.
 
 Zapewniamy obsługę zestawu CJK dla wszystkich [operatorów wyszukiwania](keyword-queries-and-search-conditions.md#search-operators) i [warunków wyszukiwania](keyword-queries-and-search-conditions.md#search-conditions), w tym operatorów logicznych **ORAZ**, **OR**, **NOT** i **NEAR**.
 
@@ -49,7 +47,7 @@ Jeśli masz pewność, że lokalizacje zawartości lub elementy zawierają znaki
 
 Zależy to od scenariusza wyszukiwania.
 
-- Podczas [wykonywania zapytań dotyczących danych w zestawie przeglądów](review-set-search.md) zbierania elektronicznych materiałów dowodowych (Premium) można wyszukiwać wiele języków.
+- Podczas [wykonywania zapytań dotyczących danych w zestawie przeglądów](review-set-search.md) w usłudze eDiscovery (Premium) można wyszukiwać wiele języków.
 
 - Podczas [tworzenia wyszukiwania w celu zbierania danych](create-draft-collection.md) utwórz oddzielne kolekcje dla każdego docelowego języka. Jeśli na przykład wyszukujesz dokument zawierający zarówno język chiński, jak i koreański, wybierz pozycję Chiński dla pierwszej kolekcji i wybierz pozycję Koreański dla drugiej kolekcji.
 

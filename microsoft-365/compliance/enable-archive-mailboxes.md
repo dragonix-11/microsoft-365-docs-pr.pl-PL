@@ -1,5 +1,5 @@
 ---
-title: Włączanie archiwalnych skrzynek pocztowych dla Microsoft 365
+title: Włączanie archiwalnych skrzynek pocztowych dla platformy Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -23,24 +23,22 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Dowiedz się, jak włączyć lub wyłączyć archiwalne skrzynki pocztowe, aby obsługiwać wymagania dotyczące przechowywania komunikatów, zbierania elektronicznych materiałów dowodowych i przechowywania wiadomości w organizacji.
-ms.openlocfilehash: f95da36b48389bba2bd640825071dbff5c6ddb3d
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 0fef0db0af845a0e3e03f7747775eb41591002a3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772429"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635540"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>Włączanie archiwalnych skrzynek pocztowych w portal zgodności Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Archiwizowanie w Microsoft 365 (nazywane również *archiwizowaniem w miejscu*) zapewnia użytkownikom więcej miejsca do magazynowania skrzynki pocztowej. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o archiwalnych skrzynkach pocztowych](archive-mailboxes.md).
+Archiwizowanie w usłudze Microsoft 365 ( *nazywane również archiwizowaniem w miejscu*) zapewnia użytkownikom więcej miejsca do magazynowania skrzynki pocztowej. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o archiwalnych skrzynkach pocztowych](archive-mailboxes.md).
 
 Informacje zawarte w tym artykule umożliwiają włączanie lub wyłączanie archiwum skrzynki pocztowej w portal zgodności Microsoft Purview lub przy użyciu programu PowerShell. Dowiedz się również, jak uruchomić automatyczne sprawdzanie diagnostyczne w archiwum skrzynki pocztowej użytkownika w celu zidentyfikowania wszelkich problemów i sugerowanych rozwiązań.
 
 ## <a name="get-the-necessary-permissions"></a>Uzyskiwanie niezbędnych uprawnień
 
-Musisz mieć przypisaną rolę Adresaci poczty w Exchange Online, aby włączyć lub wyłączyć archiwalne skrzynki pocztowe. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie adresatami i Zarządzanie organizacją na stronie **Uprawnienia** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. 
+Musisz mieć przypisaną rolę Adresaci poczty w Exchange Online, aby włączyć lub wyłączyć archiwalne skrzynki pocztowe. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie adresatami i Zarządzanie organizacją na stronie **Uprawnienia** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centrum administracyjnym programu Exchange</a>. 
 
 Jeśli nie widzisz strony **Archiwum** w portal zgodności Microsoft Purview, poproś administratora o przypisanie Ci niezbędnych uprawnień.
 
@@ -77,7 +75,7 @@ Domyślne zasady archiwum przypisane do skrzynek pocztowych użytkowników przen
 
 Do włączania archiwalnych skrzynek pocztowych można również użyć programu Exchange Online PowerShell. Głównym powodem korzystania z programu PowerShell jest szybkie włączenie archiwum skrzynki pocztowej dla wszystkich użytkowników w organizacji.
 
-Pierwszym krokiem jest nawiązanie połączenia z programem Exchange Online programu PowerShell. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Pierwszym krokiem jest nawiązanie połączenia z programem Exchange Online programu PowerShell. Aby uzyskać instrukcje, zobacz [Connect to Exchange Online PowerShell (Nawiązywanie połączenia z programem PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)).
 
 Po nawiązaniu połączenia z Exchange Online możesz uruchomić polecenia w poniższych sekcjach, aby włączyć lub wyłączyć archiwalne skrzynki pocztowe.
 
@@ -123,11 +121,11 @@ Aby uruchomić test diagnostyczny, kliknij przycisk poniżej.
 W Centrum administracyjne platformy Microsoft 365 zostanie otwarta strona wysuwana. Wprowadź adres e-mail skrzynki pocztowej, którą chcesz sprawdzić, i kliknij pozycję **Uruchom testy**.
 
 > [!NOTE]
-> Aby użyć sprawdzania diagnostycznego skrzynki pocztowej archiwum, musisz być administratorem globalnym Microsoft 365. Ponadto ta funkcja nie jest dostępna w chmurach Microsoft 365 government, Microsoft 365 obsługiwanych przez firmę 21Vianet lub Microsoft 365 Niemczech.
+> Aby używać sprawdzania diagnostycznego skrzynki pocztowej archiwum, musisz być administratorem globalnym platformy Microsoft 365. Ponadto ta funkcja nie jest dostępna w chmurach platformy Microsoft 365 Dla instytucji rządowych, na platformie Microsoft 365 obsługiwanej przez firmę 21Vianet lub na platformie Microsoft 365 w Niemczech.
 
 ## <a name="instructions-for-end-users"></a>Instrukcje dla użytkowników końcowych
 
-Wyjaśnij użytkownikom, jak działa ich archiwum skrzynki pocztowej i jak mogą z nią korzystać w Outlook na Windows, macOS i w Internecie. Najbardziej efektywna dokumentacja zostanie dostosowana dla Twojej organizacji. Aby uzyskać podstawowe instrukcje, zobacz [Zarządzanie magazynem poczty e-mail przy użyciu skrzynek pocztowych archiwum online](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
+Wyjaśnij użytkownikom, jak działa ich archiwum skrzynki pocztowej i jak mogą z nią korzystać w programie Outlook w systemie Windows, macOS i Internecie. Najbardziej efektywna dokumentacja zostanie dostosowana dla Twojej organizacji. Aby uzyskać podstawowe instrukcje, zobacz [Zarządzanie magazynem poczty e-mail przy użyciu skrzynek pocztowych archiwum online](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ## <a name="next-steps"></a>Następne kroki
 

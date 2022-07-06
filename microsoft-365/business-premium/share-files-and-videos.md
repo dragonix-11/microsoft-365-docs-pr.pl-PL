@@ -10,30 +10,22 @@ ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: ''
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Udostępnianie plików i filmów wideo w ramach kampanii w usługach Microsoft Teams i SharePoint. Usługa Microsoft 365 Business Premium obejmuje usługę Teams, która jest doskonałym sposobem bezpiecznego udostępniania plików i filmów wideo.
-ms.openlocfilehash: 666b9b6bfaeecb39445f1c9b9056ca87d0e9a20c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: a09edb2ae1865bbc9e574bc8c28dd6388f442a98
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489541"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634880"
 ---
 # <a name="share-files-and-videos-in-a-safe-environment"></a>Udostępnianie plików i filmów wideo w bezpiecznym środowisku
-
 
 Kolejną rzeczą, na którą należy zwrócić uwagę, jest zapewnienie wszystkim członkom organizacji kontroli, kto może wyświetlać i edytować pliki, oraz że są one przechowywane w bezpiecznej lokalizacji z odpowiednimi uprawnieniami. Microsoft 365 Business Premium użytkownicy mogą używać usługi Microsoft Teams do przechowywania plików, a następnie udostępniać pliki wewnątrz lub na zewnątrz firmy, ćwiczyć lub prowadzić kampanię. Możesz również wysłać link programu SharePoint. Wysłanie linku zamiast załącznika wiadomości e-mail oznacza, że wiesz, kto wyświetla i modyfikuje pliki, i nie można ich wyświetlać ani modyfikować bez uprawnień.
 

@@ -13,16 +13,14 @@ ms.collection:
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: eaaa98233a839f41c008052ab91c5c0f45f8eb13
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a84b8e712de53b0abae81a05bbe1b2bef3237beb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014185"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635310"
 ---
 # <a name="manage-information-barriers-policies"></a>Zarządzanie zasadami barier informacyjnych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po [zdefiniowaniu zasad barier informacyjnych](information-barriers-policies.md) może być konieczne wprowadzenie zmian w tych zasadach lub segmentach użytkowników w ramach [rozwiązywania problemów](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) lub regularnej konserwacji.
 
@@ -30,7 +28,7 @@ Po [zdefiniowaniu zasad barier informacyjnych](information-barriers-policies.md)
 
 |**Akcja**|**Opis**|
 |:---------|:--------------|
-| [Edytowanie atrybutów konta użytkownika](#edit-user-account-attributes) | Wypełnij atrybuty w Azure Active Directory, które mogą służyć do definiowania segmentów. <br> Edytuj atrybuty konta użytkownika, gdy użytkownicy nie są uwzględniane w segmentach, w których powinni być, aby zmienić segmenty, w których znajdują się użytkownicy, lub zdefiniować segmenty przy użyciu różnych atrybutów. |
+| [Edytowanie atrybutów konta użytkownika](#edit-user-account-attributes) | Wypełnij atrybuty w usłudze Azure Active Directory, których można użyć do definiowania segmentów. <br> Edytuj atrybuty konta użytkownika, gdy użytkownicy nie są uwzględniane w segmentach, w których powinni być, aby zmienić segmenty, w których znajdują się użytkownicy, lub zdefiniować segmenty przy użyciu różnych atrybutów. |
 | [Edytowanie segmentu](#edit-a-segment) | Edytuj segmenty, gdy chcesz zmienić sposób definiowania segmentu. <br> Na przykład możesz mieć pierwotnie zdefiniowane segmenty przy użyciu *działu* , a teraz chcesz użyć innego atrybutu, takiego jak *MemberOf*. |
 | [Edytowanie zasad](#edit-a-policy) | Edytuj zasady barier informacyjnych, gdy chcesz zmienić sposób działania zasad.<br> Na przykład zamiast blokować komunikację między dwoma segmentami, możesz zdecydować, że chcesz zezwolić na komunikację tylko między niektórymi segmentami. |
 | [Ustawianie stanu nieaktywnych zasad](#set-a-policy-to-inactive-status) |Ustaw zasady na stan nieaktywny, jeśli chcesz wprowadzić zmiany w zasadach lub jeśli nie chcesz, aby zasady obowiązywać. |
@@ -58,7 +56,7 @@ Ta procedura służy do edytowania atrybutów używanych do segmentowania użytk
 
 3. Edytuj co najmniej jedno konto użytkownika, aby uwzględnić wartości atrybutu wybranego w poprzednim kroku. Aby wykonać tę akcję, użyj jednej z następujących procedur:
 
-    - Aby edytować pojedyncze konto, zobacz [Dodawanie lub aktualizowanie informacji o profilu użytkownika przy użyciu Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+    - Aby edytować pojedyncze konto, zobacz [Dodawanie lub aktualizowanie informacji o profilu użytkownika przy użyciu usługi Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
     - Aby edytować wiele kont (lub edytować pojedyncze konto przy użyciu programu PowerShell), zobacz [Konfigurowanie właściwości konta użytkownika za pomocą Office 365 programu PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
 
@@ -265,8 +263,8 @@ Po rozpoczęciu stosowania zasad barier informacyjnych, jeśli chcesz zatrzymać
 
 - [Omówienie barier informacyjnych](information-barriers.md)
 - [Definiowanie zasad dla barier informacyjnych](information-barriers-policies.md)
-- [Dowiedz się więcej o barierach informacyjnych w Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Dowiedz się więcej o barierach informacyjnych w usłudze Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Dowiedz się więcej o barierach informacyjnych w usłudze SharePoint Online](/sharepoint/information-barriers)
-- [Dowiedz się więcej o barierach informacyjnych w OneDrive](/onedrive/information-barriers)
+- [Dowiedz się więcej o barierach informacyjnych w usłudze OneDrive](/onedrive/information-barriers)
 - [Atrybuty zasad IB](information-barriers-attributes.md)
 - [Rozwiązywanie problemów z barierami informacyjnymi](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)

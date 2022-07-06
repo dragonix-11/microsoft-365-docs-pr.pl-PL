@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie inspekcji (standardowej) w Microsoft 365
+title: Konfigurowanie inspekcji (standardowej) na platformie Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -20,18 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano sposób konfigurowania inspekcji (Standardowa), aby można było rozpocząć wyszukiwanie działań inspekcji wykonywanych przez użytkowników i administratorów w organizacji.
-ms.openlocfilehash: d9f685bd0438faa785f070b6b03707cda0184305
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 17f9e24f4c3159186011d3faefbd8796f51cc5ce
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091704"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632206"
 ---
-# <a name="set-up-microsoft-purview-audit-standard"></a>Konfigurowanie inspekcji usługi Microsoft Purview (standardowa)
+# <a name="set-up-microsoft-purview-audit-standard"></a>Konfigurowanie Inspekcja w Microsoft Purview (standardowa)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Usługa Microsoft Purview Audit (Standard) w Microsoft 365 umożliwia wyszukiwanie rekordów inspekcji dla działań wykonywanych w różnych usługach Microsoft 365 przez użytkowników i administratorów. Ponieważ inspekcja (standardowa) jest domyślnie włączona dla większości organizacji Microsoft 365 i Office 365, należy wykonać tylko kilka czynności, zanim ty i inne osoby w organizacji będą mogły przeszukiwać dziennik inspekcji.
+Inspekcja w Microsoft Purview (Standardowa) w usłudze Microsoft 365 umożliwia wyszukiwanie rekordów inspekcji działań wykonywanych w różnych usługach platformy Microsoft 365 przez użytkowników i administratorów. Ponieważ inspekcja (Standardowa) jest domyślnie włączona dla większości organizacji platformy Microsoft 365 i Office 365, należy wykonać tylko kilka czynności, zanim ty i inne osoby w organizacji będą mogły przeszukiwać dziennik inspekcji.
 
 W tym artykule omówiono następujące kroki niezbędne do skonfigurowania inspekcji (Standardowa).
 
@@ -39,7 +37,7 @@ W tym artykule omówiono następujące kroki niezbędne do skonfigurowania inspe
 
 Te kroki obejmują zapewnienie odpowiednich subskrypcji organizacyjnych i licencjonowania użytkowników wymaganych do generowania i zachowywania rekordów inspekcji oraz przypisywania uprawnień członkom zespołu operacji zabezpieczeń, działów IT, zgodności i zespołów prawnych, aby umożliwić przeszukiwanie dziennika inspekcji.
 
-Aby uzyskać więcej informacji, zobacz [Audit (Standard) in Microsoft 365 (Inspekcja (Standardowa) w Microsoft 365](auditing-solutions-overview.md#audit-standard).
+Aby uzyskać więcej informacji, zobacz [Audit (Standard) in Microsoft 365 (Inspekcja (Standardowa) na platformie Microsoft 365](auditing-solutions-overview.md#audit-standard).
 
 ## <a name="step-1-verify-organization-subscription-and-user-licensing"></a>Krok 1. Weryfikowanie subskrypcji organizacji i licencjonowania użytkowników
 
@@ -47,19 +45,19 @@ Licencjonowanie inspekcji (Standardowa) wymaga odpowiedniej subskrypcji organiza
 
 Gdy inspekcja działania jest wykonywana przez użytkownika lub administratora, rekord inspekcji jest generowany i przechowywany w dzienniku inspekcji organizacji. W obszarze Inspekcja (Standardowa) rekordy inspekcji są przechowywane i przeszukiwane w dzienniku inspekcji przez 90 dni.
 
-Aby uzyskać listę wymagań dotyczących subskrypcji i licencjonowania dla usługi Audit (Standard), zobacz [Auditing solutions in Microsoft 365 (Rozwiązania inspekcji w Microsoft 365](auditing-solutions-overview.md#licensing-requirements)).
+Aby uzyskać listę wymagań dotyczących subskrypcji i licencjonowania dla usługi Audit (Standard), zobacz [Auditing solutions in Microsoft 365 (Rozwiązania do inspekcji na platformie Microsoft 365](auditing-solutions-overview.md#licensing-requirements)).
 
 ## <a name="step-2-assign-permissions-to-search-the-audit-log"></a>Krok 2. Przypisywanie uprawnień do przeszukiwania dziennika inspekcji
 
-Administratorzy i członkowie zespołów badawczych muszą mieć przypisaną rolę View-Only Dzienniki inspekcji lub Dzienniki inspekcji w Exchange Online, aby przeszukać dziennik inspekcji. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie **Uprawnienia** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. Administratorzy globalni w Office 365 i Microsoft 365 są automatycznie dodawani jako członkowie grupy ról Zarządzanie organizacją w Exchange Online. Aby umożliwić użytkownikowi przeszukiwanie dziennika inspekcji z minimalnym poziomem uprawnień, możesz utworzyć niestandardową grupę ról w Exchange Online, dodać rolę View-Only Dzienniki inspekcji lub Dzienniki inspekcji, a następnie dodać użytkownika jako członka nowej grupy ról. Aby uzyskać więcej informacji, zobacz [Zarządzanie grupami ról w Exchange Online](/Exchange/permissions-exo/role-groups).
+Administratorzy i członkowie zespołów badawczych muszą mieć przypisaną rolę View-Only Dzienniki inspekcji lub Dzienniki inspekcji w Exchange Online, aby przeszukać dziennik inspekcji. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie **Uprawnienia** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centrum administracyjnym programu Exchange</a>. Administratorzy globalni w Office 365 i microsoft 365 są automatycznie dodawani jako członkowie grupy ról Zarządzanie organizacją w Exchange Online. Aby umożliwić użytkownikowi przeszukiwanie dziennika inspekcji z minimalnym poziomem uprawnień, możesz utworzyć niestandardową grupę ról w Exchange Online, dodać rolę View-Only Dzienniki inspekcji lub Dzienniki inspekcji, a następnie dodać użytkownika jako członka nowej grupy ról. Aby uzyskać więcej informacji, zobacz [Zarządzanie grupami ról w Exchange Online](/Exchange/permissions-exo/role-groups).
 
-Poniższy zrzut ekranu przedstawia dwie role związane z inspekcją przypisane do grupy ról Zarządzanie organizacją w centrum administracyjnym Exchange.
+Poniższy zrzut ekranu przedstawia dwie role związane z inspekcją przypisane do grupy ról Zarządzanie organizacją w Centrum administracyjnym programu Exchange.
 
 ![Inspekcja ról przypisanych do grupy ról w Exchange Online.](../media/EACAuditRoles.png)
 
 ## <a name="step-3-search-the-audit-log"></a>Krok 3. Przeszukiwanie dziennika inspekcji
 
-Teraz możesz już przeszukiwać dziennik inspekcji w portalu zgodności usługi Microsoft Purview.
+Teraz możesz już przeszukać dziennik inspekcji w portal zgodności Microsoft Purview.
 
 1. Przejdź do strony <https://compliance.microsoft.com> i zaloguj się przy użyciu konta, do których przypisano odpowiednie uprawnienia inspekcji.
 

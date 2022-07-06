@@ -1,5 +1,5 @@
 ---
-title: Dołączanie urządzeń Windows 10 lub Windows 11 do Microsoft 365 omówienie
+title: Dołączanie urządzeń Windows 10 lub Windows 11 do platformy Microsoft 365 — omówienie
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,30 +18,28 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Dołączanie urządzeń Windows 10 i Windows 11 do Microsoft 365
-ms.openlocfilehash: 876bd3f2d825fc1b698d3c7b9a76b1c7f115aedf
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+description: Dołączanie urządzeń Windows 10 i Windows 11 do platformy Microsoft 365
+ms.openlocfilehash: 630a159327dc5ce177caf819b21e77ec40929866
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187904"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635584"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Omówienie dołączania urządzeń z systemami Windows 10 i Windows 11 do platformy Microsoft 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dotyczy:**
 
 - [Ochrona przed utratą danych punktu końcowego (DLP)](./endpoint-dlp-learn-about.md)
 - [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md)
 
-Ochrona przed utratą danych punktu końcowego (Endpoint DLP) i zarządzanie ryzykiem wewnętrznym wymagają dołączenia Windows 10 Windows i Windows 11 urządzeń do usługi, aby mogły wysyłać dane monitorowania do usług.
+Ochrona przed utratą danych punktu końcowego (Endpoint DLP) i zarządzanie ryzykiem wewnętrznym wymagają dołączenia Windows 10 urządzeń z systemem Windows i Windows 11 do usługi, aby mogły wysyłać dane monitorowania do usług.
  
 Punkt końcowy DLP umożliwia monitorowanie urządzeń Windows 10 lub Windows 11 oraz wykrywanie, kiedy są używane i udostępniane elementy poufne. Zapewnia to widoczność i kontrolę, której potrzebujesz, aby upewnić się, że są one prawidłowo używane i chronione oraz aby zapobiec ryzykownemu zachowaniu, które może je naruszyć. Aby uzyskać więcej informacji na temat wszystkich ofert DLP firmy Microsoft, zobacz [Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md). Aby dowiedzieć się więcej na temat ochrony przed [utratą danych punktu końcowego, zobacz Dowiedz się więcej o zapobieganiu utracie danych punktu końcowego](endpoint-dlp-learn-about.md).
 
-Zarządzanie ryzykiem wewnętrznym korzysta z pełnego zakresu wskaźników usług i innych firm, aby ułatwić szybkie identyfikowanie, klasyfikowanie i działanie na ryzykownych działaniach użytkowników. Dzięki użyciu dzienników z Microsoft 365 i firmy Microsoft Graph zarządzanie ryzykiem wewnętrznym umożliwia definiowanie określonych zasad w celu identyfikowania wskaźników ryzyka i podejmowania działań w celu ograniczenia tych zagrożeń. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o zarządzaniu ryzykiem wewnętrznym](insider-risk-management.md).
+Zarządzanie ryzykiem wewnętrznym korzysta z pełnego zakresu wskaźników usług i innych firm, aby ułatwić szybkie identyfikowanie, klasyfikowanie i działanie na ryzykownych działaniach użytkowników. Dzięki użyciu dzienników z platformy Microsoft 365 i programu Microsoft Graph zarządzanie ryzykiem wewnętrznym umożliwia definiowanie określonych zasad w celu identyfikowania wskaźników ryzyka i podejmowania działań w celu ograniczenia tych zagrożeń. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o zarządzaniu ryzykiem wewnętrznym](insider-risk-management.md).
 
-Dołączanie urządzenia jest współużytkowane w Microsoft 365 i Ochrona punktu końcowego w usłudze Microsoft Defender (MDE). Jeśli urządzenia zostały już dołączone do rozwiązania MDE, zostaną one wyświetlone na liście urządzeń zarządzanych i nie są wymagane żadne dalsze kroki w celu dołączenia tych konkretnych urządzeń. Dołączanie urządzeń w Centrum zgodności również dołącza je do rozwiązania MDE.
+Dołączanie urządzeń jest współużytkowane przez platformę Microsoft 365 i Ochrona punktu końcowego w usłudze Microsoft Defender (MDE). Jeśli urządzenia zostały już dołączone do rozwiązania MDE, zostaną one wyświetlone na liście urządzeń zarządzanych i nie są wymagane żadne dalsze kroki w celu dołączenia tych konkretnych urządzeń. Dołączanie urządzeń w Centrum zgodności również dołącza je do rozwiązania MDE.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -74,9 +72,9 @@ Jeśli chcesz włączyć/wyłączyć monitorowanie urządzenia przy użyciu kont
 - Administrator globalny
 - Administrator zgodności
 
-### <a name="prepare-your-windows-devices"></a>Przygotowywanie urządzeń Windows
+### <a name="prepare-your-windows-devices"></a>Przygotowywanie urządzeń z systemem Windows
 
-Upewnij się, że urządzenia Windows, które należy dołączyć, spełniają te wymagania.
+Upewnij się, że urządzenia z systemem Windows, które należy dołączyć, spełniają te wymagania.
 
 1. Musi być uruchomiony Windows 10 kompilacji x64 1809 lub nowszej lub Windows 11.
 
@@ -85,7 +83,7 @@ Upewnij się, że urządzenia Windows, które należy dołączyć, spełniają t
    > [!NOTE]
    > Żaden ze składników Zabezpieczenia Windows nie musi być aktywny, ale należy włączyć [ochronę w czasie rzeczywistym i monitor zachowania](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)).
 
-3. Następujące Windows Aktualizacje dla Windows 10 są instalowane dla urządzeń, które będą monitorowane.
+3. Następujące Aktualizacje systemu Windows dla Windows 10 są instalowane dla urządzeń, które będą monitorowane.
 
    > [!NOTE]
    > Te aktualizacje nie są wymaganiem wstępnym do dołączenia urządzenia, ale zawierają poprawki ważnych problemów, dlatego należy zainstalować je przed użyciem produktu.
@@ -100,16 +98,16 @@ Upewnij się, że urządzenia Windows, które należy dołączyć, spełniają t
    - [Sprzężone z hybrydową usługą Azure](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
    - [Zarejestrowano usługę AAD](/azure/active-directory/user-help/user-help-register-device-on-network)
 
-5. Jest zainstalowana i aktualna obsługiwana wersja Microsoft Office. Aby zapewnić najbardziej niezawodną ochronę i środowisko użytkownika, upewnij się, że zainstalowano Aplikacje Microsoft 365 wersji 16.0.14701.0 lub nowszej.
+5. Jest zainstalowana i aktualna obsługiwana wersja pakietu Microsoft Office. Aby zapewnić najbardziej niezawodną ochronę i środowisko użytkownika, upewnij się, że zainstalowano Aplikacje Microsoft 365 wersji 16.0.14701.0 lub nowszej.
 > [!NOTE]
    > - Jeśli używasz Office 365 — KB 4577063 jest wymagane.
-   > - Jeśli korzystasz z miesięcznego kanału Enterprise Aplikacje Microsoft 365 wersji 2004-2008, musisz zaktualizować go do wersji 2009 lub nowszej. Zobacz [Update history for Aplikacje Microsoft 365 (listed by date) for current versions (Historia aktualizacji dla Aplikacje Microsoft 365 (wymienione według daty)](/officeupdates/update-history-microsoft365-apps-by-date) dla bieżących wersji. Aby dowiedzieć się więcej na temat znanego problemu, zobacz sekcję [Office Suite dotyczącą informacji o wersji bieżących wersji kanału w 2020 r](/officeupdates/current-channel#version-2010-october-27).
+   > - Jeśli korzystasz z miesięcznego kanału enterprise Aplikacje Microsoft 365 wersji 2004-2008, musisz zaktualizować go do wersji 2009 lub nowszej. Zobacz [Update history for Aplikacje Microsoft 365 (listed by date) for current versions (Historia aktualizacji dla Aplikacje Microsoft 365 (wymienione według daty)](/officeupdates/update-history-microsoft365-apps-by-date) dla bieżących wersji. Aby dowiedzieć się więcej na temat znanego problemu, zobacz sekcję Office Suite [dotyczącą informacji o wersji dla bieżących wersji kanału w 2020 roku](/officeupdates/current-channel#version-2010-october-27).
 
 6. Jeśli masz punkty końcowe, które używają serwera proxy urządzenia do nawiązywania połączenia z Internetem, postępuj zgodnie z procedurami opisanymi w [temacie Konfigurowanie ustawień serwera proxy urządzenia i połączenia internetowego dla Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
 
 ## <a name="onboarding-windows-10-or-windows-11-devices"></a>Dołączanie urządzeń Windows 10 lub Windows 11
 
-Aby można było monitorować i chronić poufne elementy na urządzeniu, należy włączyć monitorowanie urządzeń i dołączać do nich punkty końcowe. Obie te akcje są wykonywane w portalu zgodności usługi Microsoft Purview.
+Aby można było monitorować i chronić poufne elementy na urządzeniu, należy włączyć monitorowanie urządzeń i dołączać do nich punkty końcowe. Obie te akcje są wykonywane w portal zgodności Microsoft Purview.
 
 Jeśli chcesz dołączyć urządzenia, które nie zostały jeszcze dołączone, pobierzesz odpowiedni skrypt i wdrożysz go na tych urządzeniach. Postępuj zgodnie z poniższymi procedurami dołączania urządzenia.
 
@@ -117,12 +115,12 @@ Jeśli masz już urządzenia dołączone do [Ochrona punktu końcowego w usłudz
 
 W tym scenariuszu wdrażania dołączesz urządzenia Windows 10 lub Windows 11, które nie zostały jeszcze dołączone.
 
-1. Otwórz [portal zgodności usługi Microsoft Purview](https://compliance.microsoft.com). Wybierz **pozycję Ustawienia** >  **Nie można monitorować urządzenia**.
+1. Otwórz [portal zgodności Microsoft Purview](https://compliance.microsoft.com). Wybierz pozycję **Ustawienia** > **Włącz monitorowanie urządzenia**.
 
    > [!NOTE]
    > Włączenie dołączania urządzenia zwykle trwa około 60 sekund, ale przed rozpoczęciem angażowania się w pomoc techniczną firmy Microsoft poczekaj do 30 minut.
 
-2. Otwórz stronę Ustawienia Centrum zgodności i wybierz pozycję **Włącz Windows monitorowanie urządzenia**.
+2. Otwórz stronę Ustawienia Centrum zgodności i wybierz pozycję **Włącz monitorowanie urządzeń z systemem Windows**.
 
 3. Wybierz pozycję **Zarządzanie urządzeniami** , aby otworzyć listę **Urządzenia** . 
 
@@ -138,7 +136,7 @@ W tym scenariuszu wdrażania dołączesz urządzenia Windows 10 lub Windows 11, 
 Temat | Opis
 :---|:---
 [Dołączanie urządzeń Windows 10 lub 11 przy użyciu zasady grupy](device-onboarding-gp.md) | Użyj zasady grupy, aby wdrożyć pakiet konfiguracji na urządzeniach.
-[Dołączanie Windows 10 lub 11 urządzeń przy użyciu Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | Do wdrożenia pakietu konfiguracji na urządzeniach można użyć Microsoft Endpoint Configuration Manager (current branch) w wersji 1606 lub Microsoft Endpoint Configuration Manager (current branch) w wersji 1602 lub starszej.
+[Dołączanie urządzeń Windows 10 lub 11 przy użyciu programu Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | Do wdrożenia pakietu konfiguracji na urządzeniach można użyć programu Microsoft Endpoint Configuration Manager (current branch) w wersji 1606 lub Microsoft Endpoint Configuration Manager (current branch) w wersji 1602 lub starszej.
 [Dołączanie urządzeń Windows 10 lub 11 przy użyciu narzędzi mobile Zarządzanie urządzeniami](device-onboarding-mdm.md) | Użyj narzędzi Zarządzanie urządzeniami mobile lub Microsoft Intune, aby wdrożyć pakiet konfiguracji na urządzeniu.
 [Dołączanie Windows 10 lub 11 urządzeń przy użyciu skryptu lokalnego](device-onboarding-script.md) | Dowiedz się, jak używać skryptu lokalnego do wdrażania pakietu konfiguracji w punktach końcowych.
 [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)](device-onboarding-vdi.md) | Dowiedz się, jak skonfigurować urządzenia VDI przy użyciu pakietu konfiguracji.
@@ -150,9 +148,9 @@ Temat | Opis
 - [Korzystanie z ochrony przed utratą danych punktu końcowego](endpoint-dlp-using.md)
 - [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
 - [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md)
-- [Wprowadzenie za pomocą Eksploratora działań](data-classification-activity-explorer.md)
+- [Wprowadzenie do Eksploratora działań](data-classification-activity-explorer.md)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/)
 - [Narzędzia i metody dołączania maszyn Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
-- [subskrypcja Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
+- [Subskrypcja platformy Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [urządzenia przyłączone Azure AD](/azure/active-directory/devices/concept-azure-ad-join)
-- [Pobierz nową Microsoft Edge na podstawie Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
+- [Pobierz nową przeglądarkę Microsoft Edge na podstawie Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

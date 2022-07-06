@@ -1,5 +1,5 @@
 ---
-title: lista szablonów programu Microsoft Purview Compliance Manager
+title: Lista szablonów programu Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,17 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Purview Compliance Manager udostępnia szablony do kompilowania ocen, które są zgodne z krajowymi, regionalnymi i branżowymi przepisami, standardami i przepisami prawa.
-ms.openlocfilehash: 1ee28bc4ef79e6565086ba087055b8e00a0fe034
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+description: Program Microsoft Purview Compliance Manager udostępnia szablony do kompilowania ocen, które są zgodne z krajowymi, regionalnymi i branżowymi przepisami, standardami i przepisami prawa.
+ms.openlocfilehash: bfac79126f167b6ec8faaacb0134f97aaea0fe4d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692788"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631210"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista szablonów Menedżera zgodności
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **W tym artykule:** Wyświetl pełną listę **szablonów** dostępnych do tworzenia ocen w menedżerze zgodności.
 
@@ -35,7 +33,7 @@ ms.locfileid: "65692788"
 
 ## <a name="overview"></a>Omówienie
 
-[Microsoft Purview Compliance Manager](compliance-manager.md) udostępnia kompleksowy zestaw szablonów do tworzenia ocen. Te szablony mogą pomóc twojej organizacji w spełnieniu krajowych, regionalnych i branżowych wymagań regulujących zbieranie i wykorzystywanie danych.
+[Program Microsoft Purview Compliance Manager](compliance-manager.md) udostępnia kompleksowy zestaw szablonów do tworzenia ocen. Te szablony mogą pomóc twojej organizacji w spełnieniu krajowych, regionalnych i branżowych wymagań regulujących zbieranie i wykorzystywanie danych.
 
 Szablony są dodawane do Menedżera zgodności w miarę wdrażania nowych przepisów. Menedżer zgodności aktualizuje również swoje szablony po zmianie podstawowych przepisów ustawowych lub wykonawczych. Dowiedz się więcej na temat [przeglądania i akceptowania aktualizacji](compliance-manager-assessments.md#accept-updates-to-assessments).
 
@@ -43,7 +41,7 @@ Szablony są dodawane do Menedżera zgodności w miarę wdrażania nowych przepi
 
 Poniżej znajduje się pełna lista szablonów w Menedżerze zgodności. Nazwy szablonów są zgodne ze skojarzoną regulacją lub certyfikatem. Jeśli są dostępne, linki w poniższych nazwach szablonów prowadzą do powiązanej dokumentacji dotyczącej tego standardu, regulacji lub prawa.
 
-Każdy szablon (z wyjątkiem domyślnego szablonu [punktu odniesienia usługi Microsoft Data Protection](compliance-manager-assessments.md#data-protection-baseline-default-assessment)) jest dostępny w co najmniej jednej wersji przeznaczonej do użytku z określonym produktem, takim jak Microsoft 365, wraz z uniwersalną wersją, która umożliwia ocenę innych wybranych produktów. Aby dowiedzieć się więcej na temat opcji szablonu, zobacz [Dowiedz się więcej o szablonach oceny](compliance-manager-templates.md).
+Każdy szablon (z wyjątkiem domyślnego szablonu [punktu odniesienia usługi Microsoft Data Protection](compliance-manager-assessments.md#data-protection-baseline-default-assessment) ) jest dostępny w co najmniej jednej wersji przeznaczonej do użytku z określonym produktem, takim jak Microsoft 365, wraz z uniwersalną wersją, która umożliwia ocenę innych wybranych produktów. Aby dowiedzieć się więcej na temat opcji szablonu, zobacz [Dowiedz się więcej o szablonach oceny](compliance-manager-templates.md).
 
 Możesz również wybrać poszczególne szablony w Menedżerze zgodności, aby wyświetlić więcej informacji na ich temat, w tym opis regulacji i właściwości szablonu. Przeczytaj sekcję **Informacje** , aby uzyskać podsumowanie.
 
@@ -72,7 +70,7 @@ Co najmniej jeden z poniższych szablonów jest uwzględniony w ramach umowy lic
 - NIST 800-53 Revs. 4 i 5
 
 > [!NOTE]
-> W przypadku klientów Community (GCC) moderate, GCC High i Department of Defense (DoD) dla klientów: oprócz szablonów wymienionych powyżej uwzględniono szablony certyfikatów cmmc (Cybersecurity Maturity Model Certification) od 1 do 5.
+> W przypadku klientów z regionów Us Government Community (GCC) Moderate, GCC High i Department of Defense (DoD): oprócz szablonów wymienionych powyżej uwzględniono szablony certyfikacji modelu dojrzałości do cyberbezpieczeństwa (CMMC) od 1 do 5.
 
 ## <a name="preview-templates"></a>Szablony w wersji zapoznawczej
 
@@ -89,7 +87,7 @@ Szablony wymienione poniżej są obecnie dostępne w wersji zapoznawczej. Tworze
 - ISO 27018:2019 dla platformy Azure (wersja zapoznawcza)
 - ISO 27018:2019 dla usługi Dynamics 365 (wersja zapoznawcza)
 
-## <a name="premium-templates"></a>szablony Premium
+## <a name="premium-templates"></a>Szablony w warstwie Premium
 
 Szablony wymienione poniżej mogą zostać zakupione przez Organizację.
 
@@ -140,7 +138,7 @@ Szablony wymienione poniżej mogą zostać zakupione przez Organizację.
 - Prywatność przepisów dotyczących informacji finansowych i zdrowotnych konsumentów, NAIC MDL-672, Q2 2017  
 - Zmiany zasad należytego zarządzania ryzykiem operacyjnym (Basel III Ops Risks)  
 - Standaryzowany kwestionariusz zbierania informacji (SIG)  
-- [Exchange oceny zabezpieczeń zaufanych informacji](/compliance/regulatory/offering-tisax-germany)
+- [Wymiana oceny zabezpieczeń zaufanych informacji](/compliance/regulatory/offering-tisax-germany)
 
 ### <a name="us-government"></a>Instytucje rządowe USA
 
@@ -376,7 +374,7 @@ Szablony wymienione poniżej mogą zostać zakupione przez Organizację.
 - EudraLex — zasady regulujące produkty lecznicze w Unii Europejskiej  
 - Europejska Agencja Bezpieczeństwa Sieci i Informacji (ENISA) — Cloud Computing Information Assurance Framework  
 - Finlandia — ustawa o ochronie danych  
-- Fińskie kryteria oceny bezpieczeństwa informacji usług w chmurze
+- Fińskie kryteria oceny bezpieczeństwa informacji Cloud Services
 - Francja — ustawa o ochronie danych  
 - Gruzja Ustawy o ochronie danych osobowych  
 - Niemcy — tekst z adnotacjami minimalnych wymagań dotyczących zarządzania ryzykiem  
@@ -440,7 +438,7 @@ Szablony wymienione poniżej mogą zostać zakupione przez Organizację.
 
 - Kanada — naruszenie przepisów dotyczących zabezpieczeń  
 - Kanada — Kolumbia Brytyjska — Prywatność informacji & Bezpieczeństwo — FOIPPA  
-- [Kanada - Office nadzorcy instytucji finansowych Cyber Security Self-Assessment Guide](/compliance/regulatory/offering-osfi-canada)  
+- [Kanada - Office of the Superintendent of Financial Institutions Cyber Security Self-Assessment Guide](/compliance/regulatory/offering-osfi-canada)  
 - Kanada — Personal Health Information Protection Act (PHIPA) 2020  
 - Kanada — ustawa o Information Protection osobistych i dokumentach elektronicznych (PIPEDA)  
 - Kanada — chronione B

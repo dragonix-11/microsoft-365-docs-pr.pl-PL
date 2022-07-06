@@ -1,5 +1,5 @@
 ---
-title: Nowy format przypadku w funkcji zbierania elektronicznych materiałów dowodowych (Premium)
+title: Nowy format przypadku w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,18 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj nowego formatu przypadku zbierania elektronicznych materiałów dowodowych (Premium), aby dodać więcej elementów do przeglądania zestawów i korzystać z innych zwiększonych limitów i nowych funkcji.
-ms.openlocfilehash: 50713ea585655b441d624a70cf0986245566b8bf
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bbbd736dd91125313bbdae8733408ce69163eeb1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098675"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634858"
 ---
-# <a name="use-the-new-case-format-in-ediscovery-premium"></a>Użyj nowego formatu przypadku w funkcji zbierania elektronicznych materiałów dowodowych (Premium)
+# <a name="use-the-new-case-format-in-ediscovery-premium"></a>Użyj nowego formatu przypadku w usłudze eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Więcej organizacji korzysta z rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview na potrzeby krytycznych procesów zbierania elektronicznych materiałów dowodowych. Obejmuje to odpowiadanie na żądania regulacyjne, dochodzenia i spory sądowe. W miarę wzrostu użycia zbierania elektronicznych materiałów dowodowych (Premium) typowym wymaganiem klienta jest zwiększenie łącznej ilości zawartości, którą można zarządzać w jednym przypadku zbierania elektronicznych materiałów dowodowych (Premium). Aby ułatwić uwzględnienie znacznego wzrostu rozmiaru przypadku, zarówno w przypadku całkowitego woluminu danych, jak i całkowitej liczby elementów, możesz teraz wybrać nowy format przypadku podczas tworzenia sprawy zbierania elektronicznych materiałów dowodowych (Premium).  
+Więcej organizacji korzysta z rozwiązania eDiscovery (Premium) w usłudze Microsoft Purview na potrzeby krytycznych procesów zbierania elektronicznych materiałów dowodowych. Obejmuje to odpowiadanie na żądania regulacyjne, dochodzenia i spory sądowe. W miarę wzrostu użycia zbierania elektronicznych materiałów dowodowych (Premium) typowym wymaganiem klienta jest zwiększenie łącznej ilości zawartości, którą można zarządzać w jednym przypadku zbierania elektronicznych materiałów dowodowych (Premium). Aby ułatwić uwzględnienie znacznego wzrostu rozmiaru przypadku, zarówno w przypadku całkowitego woluminu danych, jak i całkowitej liczby elementów, możesz teraz wybrać nowy format przypadku podczas tworzenia sprawy zbierania elektronicznych materiałów dowodowych (Premium).  
 
 ## <a name="create-a-case"></a>Tworzenie sprawy
 
@@ -35,9 +33,9 @@ Aby utworzyć przypadek zbierania elektronicznych materiałów dowodowych (Premi
 
 1. Przejdź do i <https://compliance.microsoft.com> zaloguj się.
 
-2. W okienku nawigacji po lewej stronie portalu zgodności usługi Microsoft Purview kliknij pozycję **eDiscovery > Advanced**.
+2. W okienku nawigacji po lewej stronie portal zgodności Microsoft Purview kliknij pozycję **eDiscovery > Advanced**.
 
-3. Na stronie **eDiscovery (Premium)** kliknij kartę **Przypadki**, a następnie kliknij **pozycję Utwórz przypadek**.
+3. Na stronie **eDiscovery (Premium)** kliknij kartę **Przypadki** , a następnie kliknij **pozycję Utwórz przypadek**.
 
    Zostanie wyświetlona strona Wysuwane **nowe przypadki zbierania elektronicznych** materiałów dowodowych. Sekcja **Format przypadku** zawiera opcję utworzenia sprawy przy użyciu nowego formatu.
 
@@ -53,9 +51,9 @@ Oto lista innych korzyści z dużych przypadków w przepływie pracy zbierania e
 
 - **Kolekcja**: w nowym formacie przypadku można zebrać maksymalnie 1 TB danych dla jednej kolekcji.
 
-   W każdym przypadku ustawienia kolekcji domyślnie będą zbierać załączniki w chmurze oraz kontekstowe Teams i zawartość Yammer. Te ustawienia pomagają zebrać pełny obraz komunikacji cyfrowej w ramach badania. W przypadku konwersacji kontekstowych Teams i Yammer nowy format przypadku konwertuje migawki oparte na czasie 1:1, 1: N i Konwersacje kanału na transkrypcje HTML, aby ułatwić zapewnienie kontekstu konwersacji i zmniejszenie całkowitej liczby elementów generowanych przez zawartość opartą na czatach.  
+   W każdym przypadku ustawienia kolekcji domyślnie będą zbierać załączniki w chmurze oraz kontekstową zawartość aplikacji Teams i Yammer. Te ustawienia pomagają zebrać pełny obraz komunikacji cyfrowej w ramach badania. W przypadku konwersacji kontekstowych usługi Teams i Yammer nowy format przypadku konwertuje migawki oparte na czasie 1:1, 1: N i Konwersacje kanału na transkrypcje HTML, aby ułatwić zapewnienie kontekstu konwersacji i zmniejszenie całkowitej liczby elementów generowanych przez zawartość opartą na czatach.  
 
-- **Przegląd**: Każdy zestaw przeglądów będzie obsługiwać do 1 TB zawartości przed rozszerzeniem. Dodatkowe metadane będą dostępne dla filtrów i zapytań, w tym nazwy zespołu, nazwy kanału i nazwy konwersacji dla zawartości Teams. Każda transkrypcja będzie zawierać zawartość opartą na czasie dla elementu odpowiadającego przed i po nim. W przypadku konwersacji w kanale wpis główny i wszystkie odpowiedzi zostaną zebrane w celu odpowiadania zawartości. Aby uzyskać więcej informacji, zobacz [przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości w Microsoft Teams (wersja zapoznawcza)](teams-workflow-in-advanced-ediscovery.md)
+- **Przegląd**: Każdy zestaw przeglądów będzie obsługiwać do 1 TB zawartości przed rozszerzeniem. Dodatkowe metadane będą dostępne dla filtrów i zapytań, w tym nazwy zespołu, nazwy kanału i nazwy konwersacji dla zawartości usługi Teams. Każda transkrypcja będzie zawierać zawartość opartą na czasie dla elementu odpowiadającego przed i po nim. W przypadku konwersacji w kanale wpis główny i wszystkie odpowiedzi zostaną zebrane w celu odpowiadania zawartości. Aby uzyskać więcej informacji, zobacz [przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości w usłudze Microsoft Teams (wersja zapoznawcza)](teams-workflow-in-advanced-ediscovery.md)
 
 - **Eksportowanie**: duże zestawy zawartości można eksportować w jednym zadaniu eksportowania. Nowy format przypadku umożliwia eksportowanie 5 milionów dokumentów lub 500 GB, w zależności od tego, która z tych wartości jest mniejsza w zadaniu eksportu.
 
@@ -75,4 +73,4 @@ Filtry zestawu przeglądów umożliwiają filtrowanie według rodzaju komunikatu
 
 **Czy podczas eksportowania transkrypcji konwersacji czatu plik ładowania będzie zawierać wszystkie rozwinięte metadane i pojedynczy element dla każdej transkrypcji?**
 
-Wszystkie metadane konwersacji są osadzone w pliku transkrypcji HTML.  Wiele typowych pól jest dostępnych w pliku ładowania. Aby uzyskać więcej informacji na temat wyeksportowanych metadanych, zobacz [Document metadata fields in eDiscovery (Premium) (Pola metadanych dokumentu w dziedzinie zbierania elektronicznych materiałów dowodowych (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md)).
+Wszystkie metadane konwersacji są osadzone w pliku transkrypcji HTML.  Wiele typowych pól jest dostępnych w pliku ładowania. Aby uzyskać więcej informacji na temat wyeksportowanych metadanych, zobacz [Document metadata fields in eDiscovery (Premium) (Pola metadanych dokumentu w usłudze eDiscovery (Premium)).](document-metadata-fields-in-Advanced-eDiscovery.md)

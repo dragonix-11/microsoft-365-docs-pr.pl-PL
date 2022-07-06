@@ -16,16 +16,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: cb8471ffea418ac47921777a0ee9594fa73fe4ac
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 5e5b0aa9efb5d00602bba39ca18ef582cf34271a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930224"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632646"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Szybkie zadania umożliwiające rozpoczęcie pracy ze zgodnością w usłudze Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Jeśli dopiero zaczynasz pracę w usłudze Microsoft Purview i zastanawiasz się, od czego zacząć, ten artykuł zawiera wskazówki dotyczące podstaw i priorytetyzuje ważne zadania związane z zgodnością. Ten artykuł pomoże Ci szybko rozpocząć pracę z zarządzaniem danymi i ich monitorowaniem, ochroną informacji oraz minimalizowaniem ryzyka związanego z wewnętrznymi informacjami.
 
@@ -35,7 +33,7 @@ Po wykonaniu tych podstawowych zadań dotyczących zgodności rozważ rozszerzen
 
 ## <a name="task-1-configure-compliance-permissions"></a>Zadanie 1. Konfigurowanie uprawnień zgodności
 
-Ważne jest, aby zarządzać tym, kto w organizacji ma dostęp do portalu zgodności usługi Microsoft Purview, aby wyświetlać zawartość i wykonywać zadania zarządzania. Platforma Microsoft 365 udostępnia role administracyjne specyficzne dla zgodności i korzystania z narzędzi dostępnych w portalu zgodności usługi Microsoft Purview.
+Ważne jest, aby zarządzać tym, kto w organizacji ma dostęp do portal zgodności Microsoft Purview, aby wyświetlać zawartość i wykonywać zadania zarządzania. Platforma Microsoft 365 udostępnia role administracyjne specyficzne dla zgodności i korzystania z narzędzi zawartych w portal zgodności Microsoft Purview.
 
 Zacznij od przypisania uprawnień zgodności do osób w organizacji, aby mogły wykonywać te zadania i aby uniemożliwić nieautoryzowanym osobom dostęp do obszarów spoza ich obowiązków. Przed rozpoczęciem konfigurowania i implementowania rozwiązań zgodności dołączonych do platformy Microsoft 365 należy upewnić się, że przypisano odpowiednie osoby do **administratora danych zgodności** i **administratora zgodności** . Musisz również przypisać użytkowników do roli czytelnika globalnego usługi Azure Active Directory, aby wyświetlić dane w Menedżerze zgodności.
 
@@ -52,7 +50,7 @@ Aby uzyskać szczegółowe wskazówki dotyczące rozpoczynania pracy z Menedżer
 > [!IMPORTANT]
 > Zabezpieczenia i zgodność są ściśle zintegrowane w większości organizacji. Ważne jest, aby twoja organizacja zajmuje się podstawowymi obszarami zabezpieczeń, ochrony przed zagrożeniami oraz zarządzania tożsamościami i dostępem, aby ułatwić zapewnienie dogłębnego podejścia do zabezpieczeń i zgodności.
 >
-> Sprawdź wskaźnik [bezpieczeństwa platformy Microsoft 365](/microsoft-365/security/defender/microsoft-secure-score) w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu usługi Microsoft 365 Defender</a> i wykonaj zadania opisane w następujących artykułach:
+> Sprawdź wskaźnik [bezpieczeństwa platformy Microsoft 365](/microsoft-365/security/defender/microsoft-secure-score) w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a> i wykonaj zadania opisane w następujących artykułach:
 >
 > - [Plan bezpieczeństwa — najważniejsze priorytety dla pierwszych 30 dni, 90 dni i nie tylko](/microsoft-365/security/office-365-security/security-roadmap)
 > - [12 najważniejszych zadań dla zespołów zabezpieczeń do obsługi pracy z domu](/microsoft-365/security/top-security-tasks-for-remote-work)
@@ -152,7 +150,7 @@ Aby uzyskać szczegółowe wskazówki dotyczące definiowania niestandardowych t
 
 ### <a name="prevent-data-loss"></a>Zapobieganie utracie danych
 
-[Zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview](/microsoft-365/compliance/dlp-learn-about-dlp) umożliwiają identyfikowanie, monitorowanie i automatyczne ochronę poufnych informacji w organizacji platformy Microsoft 365. Użyj zasad DLP, aby identyfikować poufne elementy w usługach firmy Microsoft, zapobiegać przypadkowemu udostępnianiu poufnych elementów i pomagać użytkownikom dowiedzieć się, jak zachować zgodność bez przerywania przepływu pracy.
+[zasady Ochrona przed utratą danych w Microsoft Purview (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) umożliwiają identyfikowanie, monitorowanie i automatyczne ochronę poufnych informacji w organizacji platformy Microsoft 365. Użyj zasad DLP, aby identyfikować poufne elementy w usługach firmy Microsoft, zapobiegać przypadkowemu udostępnianiu poufnych elementów i pomagać użytkownikom dowiedzieć się, jak zachować zgodność bez przerywania przepływu pracy.
 
 Aby uzyskać szczegółowe wskazówki dotyczące konfigurowania zasad DLP, [utwórz, przetestuj i dostosuj zasady DLP](/microsoft-365/compliance/create-test-tune-dlp-policy). Aby uzyskać informacje o licencjonowaniu zarządzania utratą danych, zobacz [Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 

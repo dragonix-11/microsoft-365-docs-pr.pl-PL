@@ -1,5 +1,5 @@
 ---
-title: Praca z komunikacją w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
+title: Praca z komunikacją w usłudze eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,18 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: eDiscovery (Premium) ułatwia zarządzanie przepływem pracy powiadomień o blokadzie prawnej wokół powiadamiania opiekunów w dochodzeniach prawnych.
-ms.openlocfilehash: 59acf9dd561b46a7e7b970ffcd2c4c505f0b5a1c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 371ede05fc1d17caf8ec8a449dab2f386ac53628
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097739"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635222"
 ---
-# <a name="work-with-communications-in-ediscovery-premium"></a>Praca z komunikacją w zakresie zbierania elektronicznych materiałów dowodowych (Premium)
+# <a name="work-with-communications-in-ediscovery-premium"></a>Praca z komunikacją w usłudze eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Usługa Microsoft Purview eDiscovery (Premium) umożliwia działom prawnym uproszczenie procesów dotyczących śledzenia i rozpowszechniania powiadomień prawnych dotyczących blokad. Narzędzie do komunikacji opiekuna umożliwia działom prawnym zarządzanie całym procesem archiwizacji prawnej i automatyzowanie go, od początkowych powiadomień, po przypomnienia i eskalacje — wszystko w jednej lokalizacji.
+Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) umożliwia działom prawnym uproszczenie procesów dotyczących śledzenia i rozpowszechniania powiadomień o blokadzie prawnej. Narzędzie do komunikacji opiekuna umożliwia działom prawnym zarządzanie całym procesem archiwizacji prawnej i automatyzowanie go, od początkowych powiadomień, po przypomnienia i eskalacje — wszystko w jednej lokalizacji.
 
 ## <a name="what-is-a-legal-hold-notification"></a>Co to jest prawne powiadomienie o blokadzie?
 

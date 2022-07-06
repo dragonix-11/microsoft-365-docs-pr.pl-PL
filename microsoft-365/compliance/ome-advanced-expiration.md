@@ -17,16 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: Zaawansowane szyfrowanie wiadomości usługi Microsoft Purview umożliwia rozszerzenie zabezpieczeń poczty e-mail przez ustawienie daty wygaśnięcia wiadomości e-mail za pośrednictwem niestandardowego szablonu markowego.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 78855ae8906367293b69406ba74246619b5af465
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b93aad4f217f956561b686b1415c64456a4360db
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015567"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635156"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>Ustaw datę wygaśnięcia wiadomości e-mail zaszyfrowanych przy użyciu zaawansowanego szyfrowania wiadomości usługi Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Zaawansowane szyfrowanie komunikatów w usłudze Microsoft Purview jest zawarte w [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (cennik pracowników organizacji non-profit), Office 365 Enterprise E5 (cennik personelu organizacji non-profit) i Office 365 Education A5. dodatek Zgodność platformy Microsoft 365 E5 SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik personelu organizacji non-profit) lub dodatek Office 365 Advanced Compliance SKU dla Microsoft 365 E3, Microsoft 365 E3 (cennik personelu organizacji non-profit) lub jednostki SKU Office 365.
 
@@ -44,7 +42,7 @@ Dzięki zaawansowanemu szyfrowaniu komunikatów usługi Microsoft Purview za ka�
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Tworzenie niestandardowego szablonu znakowania w celu wymuszenia wygaśnięcia poczty przy użyciu programu PowerShell
 
-1. [Połączenie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) przy użyciu konta z uprawnieniami administratora globalnego w organizacji.
+1. [Połącz się z Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) przy użyciu konta z uprawnieniami administratora globalnego w organizacji.
 
 2. Uruchom polecenie cmdlet New-OMEConfiguration.
 

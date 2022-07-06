@@ -16,23 +16,21 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: Zapoznaj się z zaleceniami dotyczącymi konfigurowania trenowania istotności w usłudze eDiscovery (Premium), aby oceniać pliki według ich istotności i generować wyniki analityczne.
-ms.openlocfilehash: be9347468ef39fd5d6ae254ff4eb662a795f4f0b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6c6d1b88f9cbb92d44a040f1f060b860252df263
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098521"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635244"
 ---
 # <a name="manage-relevance-setup-in-ediscovery-premium-classic"></a>Zarządzanie konfiguracją istotności w usłudze eDiscovery (Premium) (wersja klasyczna)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!NOTE]
-> Usługa Microsoft Purview eDiscovery (Premium) wymaga Office 365 E3 z dodatkiem Zaawansowana zgodność lub subskrypcją E5 dla organizacji. Jeśli nie masz tego planu i chcesz spróbować zbierania elektronicznych materiałów dowodowych (Premium), możesz [utworzyć konto próbne Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) wymaga Office 365 E3 z dodatkiem Zaawansowana zgodność lub subskrypcją E5 dla organizacji. Jeśli nie masz tego planu i chcesz wypróbować funkcję zbierania elektronicznych materiałów dowodowych (Premium), możesz [utworzyć konto próbne Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
- Technologia eDiscovery (Premium) Relevance wykorzystuje specjalistyczne oprogramowanie do oceniania plików według ich istotności. Istotność zbierania elektronicznych materiałów dowodowych (Premium) może być używana do wczesnej oceny przypadków (ECA), uboju i przeglądu przykładów plików. 
+ Technologia eDiscovery (Premium) Relevance wykorzystuje specjalistyczne oprogramowanie do oceniania plików według ich istotności. Istotność zbierania elektronicznych materiałów dowodowych (Premium) może być używana na potrzeby wczesnej oceny przypadków (ECA), uboju i przeglądu przykładów plików. 
   
- Funkcja zbierania elektronicznych materiałów dowodowych (Premium) obejmuje składniki do trenowania istotności i tagowania plików istotnych dla danego przypadku. Funkcja eDiscovery (Premium) uczy się z wytrenowanych przykładów odpowiednich i nieistotnych plików w celu zapewnienia wyników istotności dla każdego pliku i generuje wyniki analityczne, które mogą być używane podczas procesu przeglądu plików i po nich. 
+ Funkcja zbierania elektronicznych materiałów dowodowych (Premium) zawiera składniki do trenowania istotności i tagowania plików istotnych dla danego przypadku. Funkcja eDiscovery (Premium) uczy się z wytrenowanych przykładów odpowiednich i nieistotnych plików w celu zapewnienia wyników istotności dla każdego pliku i generuje wyniki analityczne, które mogą być używane podczas procesu przeglądu plików i po nich. 
   
 ## <a name="guidelines-for-setting-up-relevance-training"></a>Wytyczne dotyczące konfigurowania trenowania istotności
 
@@ -46,17 +44,17 @@ ms.locfileid: "65098521"
   
   - Określ, czy każda grupa plików jest istotna tylko dla określonego problemu.
 
-  - Jeśli problem jest zdefiniowany zbyt ogólnie, zbierania elektronicznych materiałów dowodowych (Premium) może przynieść zbyt wiele plików, które nie są istotne. Jeśli problem jest zdefiniowany zbyt wąsko, proces trenowania istotności może zająć więcej czasu. 
+  - Jeśli problem jest zdefiniowany zbyt ogólnie, funkcja zbierania elektronicznych materiałów dowodowych (Premium) może przynieść zbyt wiele plików, które nie są istotne. Jeśli problem jest zdefiniowany zbyt wąsko, proces trenowania istotności może zająć więcej czasu. 
 
   - Podczas każdego cyklu trenowania istotności funkcja eDiscovery (Premium) koncentruje się na pojedynczym aktywnym problemie, a wyniki przykładu pośredniego są odpowiednio wyświetlane.
 
   - W scenariuszu z wieloma problemami tryb próbkowania umożliwia uwzględnienie wyboru problemów w przetwarzaniu. Problemy zdefiniowane jako "wyłączone" nie są obsługiwane, dopóki ich tryb próbkowania nie zostanie zmieniony. Problem może być "bezczynny" lub "włączony" tylko dla jednego eksperta.
 
-  - eDiscovery (Premium) może służyć do generowania plików uprawnień kandydata. Skonfiguruj osobny problem dla uprawnień. Jeśli to możliwe, najpierw wytrenuj i ubite, aby uzyskać istotność, a następnie wytrenuj tylko dla zestawu ubitego (przeładuj zestaw ubity jako osobny przypadek). 
+  - Do generowania plików uprawnień kandydata można użyć zbierania elektronicznych materiałów dowodowych (Premium). Skonfiguruj osobny problem dla uprawnień. Jeśli to możliwe, najpierw wytrenuj i ubite, aby uzyskać istotność, a następnie wytrenuj tylko dla zestawu ubitego (przeładuj zestaw ubity jako osobny przypadek). 
 
   - Obliczenia usługi Batch można wykonać tylko wtedy, gdy nie ma otwartych przykładów (po kliknięciu pozycji Obliczenia usługi Batch zostanie wyświetlona lista użytkowników z otwartymi przykładami). Aby "zamknąć" przykłady innych użytkowników (powinno to być wykonywane tylko wtedy, gdy ci użytkownicy nie tagują tych przykładów), administrator może użyć narzędzia "Modyfikuj istotność" z opcją "Przykład wszyscy użytkownicy".
 
-- **Metadane**: wykrywanie elektroniczne (Premium) koncentruje się na zawartości. Nie uwzględnia metadanych jako części kryteriów istotności.
+- **Metadane**: funkcja zbierania elektronicznych materiałów dowodowych (Premium) koncentruje się na zawartości. Nie uwzględnia metadanych jako części kryteriów istotności.
 
 - **Bogactwo**: jeśli wartość richness dla problemu jest mniejsza niż 3% po ocenie, rozważ rozstawienie szkolenia istotności ze znanymi odpowiednimi i nieistotnymi plikami.
 
@@ -64,7 +62,7 @@ ms.locfileid: "65098521"
 
 ## <a name="setting-up-case-issues"></a>Konfigurowanie problemów ze sprawami
 
-Parametry opisane w tej sekcji są dostępne w **konfiguracji istotności** \> zbierania elektronicznych materiałów dowodowych (Premium).
+Parametry opisane w tej sekcji są dostępne w **konfiguracji Istotność** **istotności** \> zbierania elektronicznych materiałów dowodowych (Premium).
   
 - Problemy muszą być przypisane do użytkownika, który będzie szkolił pliki.
 

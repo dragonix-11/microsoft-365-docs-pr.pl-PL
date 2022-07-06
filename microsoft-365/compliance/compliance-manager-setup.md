@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Ustaw uprawnienia i role użytkownika programu Microsoft Purview Compliance Manager oraz skonfiguruj automatyczne testowanie akcji. Zarządzanie historią użytkowników i filtrowanie widoku pulpitu nawigacyjnego.
-ms.openlocfilehash: 76126f9a13716e3ebf48309f8129de6ede4d11e9
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 1053ff60416a80d88e29e8a8f4bc9ac3fdfc133b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574052"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634770"
 ---
 # <a name="get-started-with-compliance-manager"></a>Wprowadzenie do Menedżera zgodności
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **W tym artykule:** Ten artykuł ułatwia skonfigurowanie Menedżera zgodności. Dowiedz się, jak **uzyskać dostęp** do Menedżera zgodności, **ustawić role i uprawnienia oraz** skonfigurować **automatyczne testowanie akcji poprawy**. Zapoznaj **się z pulpitem nawigacyjnym programu Compliance Manager** i zapoznaj się ze stronami głównymi: stroną akcji poprawy, stroną rozwiązań, stroną ocen i stroną szablonów oceny.
 

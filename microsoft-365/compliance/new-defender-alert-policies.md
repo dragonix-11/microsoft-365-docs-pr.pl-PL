@@ -19,16 +19,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Udostępniamy nowe zasady alertów dla Ochrona usługi Office 365 w usłudze Microsoft Defender. Wycofujemy również dwie istniejące zasady alertów, które zostały zastąpione przez nowe.
-ms.openlocfilehash: c883a352bad5af918d605bd8fa95112a7df07bd3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0f9a8b74febe3ea59d022baceff7c15c3ee2e5d1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098003"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634011"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nowe zasady alertów w Ochrona usługi Office 365 w usłudze Microsoft Defender
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Ochrona usługi Office 365 w usłudze Microsoft Defender wprowadza nowe i ulepszone zasady alertów związane z wykrywaniem po dostarczeniu. Obejmuje to ulepszenia podręczników automatycznego badania & odpowiedzi (AIR) skojarzonych z nimi. Ponadto modyfikujemy klasyfikację ważności dla sześciu domyślnych zasad alertów, aby lepiej dopasować alerty generowane przez te zasady do ich wpływu na organizację.
 
@@ -54,11 +52,11 @@ W poniższej tabeli określono domyślne zasady alertów, których klasyfikacje 
 |Alert|Identyfikator zasad alertu|Stara ważność|Nowa ważność|
 |---|---|---|---|
 |**Podejrzane działania w zakresie przesyłania dalej wiadomości e-mail**|BFD48F06-0865-41A6-85FF-ADB746423EBF|Średni|High (Wysoki)|
-|**Wiadomość e-mail zgłoszona przez użytkownika jako złośliwe oprogramowanie lub phish**|B26A5770-0C38-434A-9380-3A3C2C27BBB3|Informacyjne|Niskie|
+|**Wiadomość e-mail zgłoszona przez użytkownika jako złośliwe oprogramowanie lub phish**|B26A5770-0C38-434A-9380-3A3C2C27BBB3|Informacyjny|Niskie|
 |**Nietypowy wzrost liczby wiadomości e-mail zgłoszonych jako phish**|A00D8C62-9320-4EEA-A7E5-966B9AC09558|High (Wysoki)|Średni|
-|**Ukończono przesyłanie przez administratora**|AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41|Niskie|Informacyjne|
-|**Tworzenie reguły przekazywania/przekierowania**|D59A8FD4-1272-41EE-9408-86F7BCF72479|Niskie|Informacyjne|
-|**Rozpoczęto lub wyeksportowano wyszukiwanie zbierania elektronicznych materiałów dowodowych**|6FDC5710-3998-47F0-AFBB-57CEFD7378A|Meduim|Informacyjne|
+|**Administracja ukończono przesyłanie wyników**|AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41|Niskie|Informacyjny|
+|**Tworzenie reguły przekazywania/przekierowania**|D59A8FD4-1272-41EE-9408-86F7BCF72479|Niskie|Informacyjny|
+|**Rozpoczęto lub wyeksportowano wyszukiwanie zbierania elektronicznych materiałów dowodowych**|6FDC5710-3998-47F0-AFBB-57CEFD7378A|Meduim|Informacyjny|
 
 ## <a name="when-will-these-changes-happen"></a>Kiedy nastąpią te zmiany
 
@@ -99,7 +97,7 @@ Nowe alerty rozpoczną wyzwalanie i wyzwalanie badań AIR w organizacji w termin
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>Co należy zrobić, aby przygotować się na te zmiany
 
-Sposób, w jaki organizacja korzysta z tych alertów, określi, co należy zrobić, aby się przygotować. Jeśli alerty zostały zoperatyzowane i są używane lub używane za pośrednictwem interfejsu API, powiadomienia e-mail z alertem lub <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a> lub <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>, musisz zmodyfikować przepływy pracy.
+Sposób, w jaki organizacja korzysta z tych alertów, określi, co należy zrobić, aby się przygotować. Jeśli alerty zostały zoperatyzowane i są używane lub używane za pośrednictwem interfejsu API, powiadomienia e-mail z alertem lub w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a> lub <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>, musisz zmodyfikować przepływy pracy.
 
 **Jeśli te alerty nie zostały zoperatyzowane, możesz wykonać jedną z następujących czynności:**
 

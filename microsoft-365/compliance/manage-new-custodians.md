@@ -17,18 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak wyświetlać szczegóły, edytować i zbiorczo edytować listę opiekunów w przypadku zbierania elektronicznych materiałów dowodowych (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ea05e2f0b19c23b236f7b64eb3a425fdb29cc39
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: baffcb9d601d95d4be78cf47fcbc3037daff86c8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077950"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634033"
 ---
 # <a name="manage-custodians-in-an-ediscovery-premium-case"></a>Zarządzanie opiekunami w sprawie zbierania elektronicznych materiałów dowodowych (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Strona **Opiekunowie** na karcie **Źródła danych** w sprawie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) zawiera listę wszystkich opiekunów, którzy zostali dodani do sprawy. Po dodaniu opiekunów do sprawy szczegóły dotyczące każdego opiekuna są automatycznie pobierane z Azure Active Directory i są widoczne w eDiscovery (Premium).
+Strona **Opiekunowie** na karcie **Źródła danych** w sprawie Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) zawiera listę wszystkich opiekunów, którzy zostali dodani do sprawy. Po dodaniu opiekunów do sprawy szczegóły dotyczące każdego opiekuna są automatycznie zbierane z usługi Azure Active Directory i są widoczne w obszarze eDiscovery (Premium).
 
 ## <a name="view-custodian-details"></a>Wyświetlanie szczegółów opiekuna
 
@@ -58,7 +56,7 @@ Aby wyświetlić szczegóły dotyczące opiekuna, kliknij opiekuna z listy na ka
 
   ![Lokalizacje danych opiekuna i przechowują informacje.](../media/CustodianHoldDetails.PNG)
 
-  - **Miejsca opieki**. Pokazuje liczbę i typ źródeł danych (skrzynki pocztowe, witryny i Teams), które są skojarzone z opiekunem i są częścią sprawy.
+  - **Miejsca opieki**. Pokazuje liczbę i typ źródeł danych (skrzynki pocztowe, witryny i aplikacje Teams), które są skojarzone z opiekunem i są częścią sprawy.
 
     - Każda lokalizacja danych pokazuje stan wstrzymania. Możliwe wartości stanu blokady: **Wstrzymane**, **Nie wstrzymane** i **W toku**.
 
@@ -70,7 +68,7 @@ W miarę rozwoju twojej sprawy możesz odkryć, że mogą istnieć dodatkowe źr
 
 Aby zaktualizować źródła danych skojarzone z opiekunem:
 
-1. Przejdź do **obszaru eDiscovery > eDiscovery (Premium)** i otwórz sprawę.
+1. Przejdź do  **obszaru eDiscovery > eDiscovery (Premium)** i otwórz sprawę.
   
 2. Kliknij kartę **Źródła danych** .
   
@@ -78,26 +76,26 @@ Aby zaktualizować źródła danych skojarzone z opiekunem:
 
     ![Edytuj źródła danych.](../media/EditCustodianDataSource.PNG)
   
-4. Aby dodać lub usunąć podstawową skrzynkę pocztową i konto OneDrive dla opiekuna:
+4. Aby dodać lub usunąć podstawową skrzynkę pocztową i konto usługi OneDrive dla opiekuna:
 
     - Rozwiń opiekuna, aby wyświetlić podstawowe lokalizacje danych, które były wcześniej skojarzone z opiekunem.
 
-    - Kliknij pozycję **Edytuj** obok **pozycji Skrzynka pocztowa** lub **OneDrive**, aby dodać skrzynkę pocztową lub lokalizację OneDrive opiekuna.
+    - Kliknij pozycję **Edytuj** obok **pozycji Skrzynka pocztowa** lub **OneDrive** , aby dodać skrzynkę pocztową opiekuna lub lokalizację usługi OneDrive.
 
-    - Wybierz pozycję **Wyczyść** obok **pozycji Skrzynka pocztowa** lub **OneDrive**, aby usunąć skrzynkę pocztową lub konto OneDrive opiekuna z skojarzenia jako lokalizacji danych dla tego opiekuna.
+    - Wybierz pozycję **Wyczyść** obok **pozycji Skrzynka pocztowa** lub **OneDrive** , aby usunąć skrzynkę pocztową opiekuna lub konto usługi OneDrive z skojarzenia jako lokalizacji danych dla tego opiekuna.
 
-5. Aby dodać lub usunąć inne skrzynki pocztowe, witryny, Teams lub grupy Yammer do określonego opiekuna, kliknij przycisk **Edytuj** obok usługi, aby dodać lokalizację danych.
+5. Aby dodać lub usunąć inne skrzynki pocztowe, witryny, zespoły lub grupy usługi Yammer do określonego opiekuna, kliknij pozycję **Edytuj** obok usługi, aby dodać lokalizację danych.
 
-   - **Exchange**: użyj polecenia , aby skojarzyć inne skrzynki pocztowe z opiekunem. Wpisz w polu wyszukiwania nazwę lub alias (co najmniej trzy znaki) skrzynek pocztowych użytkownika lub grup dystrybucyjnych. Wybierz skrzynki pocztowe, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**.
+   - **Exchange**: Służy do kojarzenia innych skrzynek pocztowych z opiekunem. Wpisz w polu wyszukiwania nazwę lub alias (co najmniej trzy znaki) skrzynek pocztowych użytkownika lub grup dystrybucyjnych. Wybierz skrzynki pocztowe, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**.
 
-   - **SharePoint**: Służy do kojarzenia witryn SharePoint z opiekunem. Wybierz witrynę na liście lub wyszukaj witrynę, wpisując adres URL w polu wyszukiwania. Wybierz witryny, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**.
+   - **SharePoint**: służy do kojarzenia witryn programu SharePoint z opiekunem. Wybierz witrynę na liście lub wyszukaj witrynę, wpisując adres URL w polu wyszukiwania. Wybierz witryny, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**.
 
-   - **Teams**: służy do przypisywania Microsoft Teams opiekun jest obecnie członkiem. Wybierz zespoły, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**. Po dodaniu zespołu system automatycznie identyfikuje i lokalizuje skrzynkę pocztową SharePoint lokacji i grupy skojarzoną z tym zespołem i przypisuje je do opiekuna.
+   - **Teams**: służy do przypisywania usługi Microsoft Teams, do którego obecnie należy opiekun. Wybierz zespoły, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**. Po dodaniu zespołu system automatycznie identyfikuje i lokalizuje skrzynkę pocztową witryny programu SharePoint i grupy skojarzone z tym zespołem i przypisuje je do opiekuna.
 
-   - **Yammer**: użyj polecenia , aby przypisać grupy Yammer, do których obecnie należy opiekun. Wybierz grupy, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**. Po dodaniu zespołu system automatycznie identyfikuje i lokalizuje skrzynkę pocztową SharePoint lokacji i grupy skojarzonej z tą grupą i przypisuje je do opiekuna.
+   - **Yammer**: użyj polecenia , aby przypisać grupy usługi Yammer, do których obecnie należy opiekun. Wybierz grupy, które mają zostać przypisane do opiekuna, a następnie kliknij przycisk **Dodaj**. Po dodaniu zespołu system automatycznie identyfikuje i lokalizuje skrzynkę pocztową witryny programu SharePoint i grupy skojarzone z tą grupą i przypisuje je do opiekuna.
 
    > [!NOTE]
-   > Możesz użyć selektorów lokalizacji **Exchange** i **SharePoint**, aby skojarzyć każdą skrzynkę pocztową lub witrynę w organizacji, w tym zespoły lub grupy Yammer, których opiekun nie jest członkiem, z opiekunem. W tym celu należy dodać zarówno skrzynkę pocztową, jak i witrynę skojarzoną z każdym zespołem lub grupą Yammer.
+   > Możesz użyć selektorów lokalizacji **programu Exchange** i **programu SharePoint** , aby skojarzyć dowolną skrzynkę pocztową lub witrynę w organizacji, w tym zespoły lub grupy usługi Yammer, których opiekun nie jest członkiem, z opiekunem. W tym celu należy dodać zarówno skrzynkę pocztową, jak i witrynę skojarzoną z każdym zespołem lub grupą usługi Yammer.
 
 6. Po edytowaniu lokalizacji danych dla opiekuna kliknij przycisk **Dalej** , aby przejść do strony **Ustawienia blokady** .  
 
@@ -105,13 +103,13 @@ Aby zaktualizować źródła danych skojarzone z opiekunem:
 
 ## <a name="reindex-custodian-data"></a>Dane reaseksuj opiekuna
 
-W większości przepływów pracy zbierania elektronicznych materiałów dowodowych na potrzeby dochodzeń prawnych podzbiór danych opiekuna jest przeszukiwany po dodaniu opiekuna do sprawy prawnej. Z powodu bardzo dużych rozmiarów plików lub możliwego uszkodzenia danych niektóre elementy w źródłach danych skojarzonych z opiekunem mogą być częściowo indeksowane. Korzystając z [zaawansowanej możliwości indeksowania](indexing-custodian-data.md) w funkcji zbierania elektronicznych materiałów dowodowych (Premium), większość częściowo indeksowanych elementów może być automatycznie korygowana przez ponowne indeksowanie tych elementów na żądanie.
+W większości przepływów pracy zbierania elektronicznych materiałów dowodowych na potrzeby dochodzeń prawnych podzbiór danych opiekuna jest przeszukiwany po dodaniu opiekuna do sprawy prawnej. Z powodu bardzo dużych rozmiarów plików lub możliwego uszkodzenia danych niektóre elementy w źródłach danych skojarzonych z opiekunem mogą być częściowo indeksowane. Korzystając z [zaawansowanej możliwości indeksowania](indexing-custodian-data.md) w środowisku zbierania elektronicznych materiałów dowodowych (Premium), większość częściowo indeksowanych elementów można automatycznie korygować przez ponowne indeksowanie tych elementów na żądanie.
 
 Po dodaniu opiekuna do sprawy dane znajdujące się w źródłach danych skojarzonych z opiekunem są automatycznie ponownie indeksowane (przez zaawansowany proces indeksowania). Oznacza to, że możesz pozostawić dane w miejscu zamiast pobierać i korygować je, a następnie przeszukiwać w trybie offline). Jednak w trakcie cyklu życia sprawy prawnej nowe źródła danych mogą być skojarzone z opiekunem. W takim przypadku możesz ponownie przeanalizować dane opiekuna, uruchamiając zaawansowany proces indeksowania, aby skorygować wszystkie częściowo indeksowane elementy i zaktualizować indeks danych opiekuna.
 
 Aby wyzwolić proces ponownego indeksowania w celu rozwiązania częściowo zaindeksowanych elementów:
 
-1. Przejdź do **obszaru eDiscovery > eDiscovery (Premium)** i otwórz sprawę.
+1. Przejdź do  **obszaru eDiscovery > eDiscovery (Premium)** i otwórz sprawę.
 
 2. Kliknij kartę **Źródła** .
 
@@ -137,7 +135,7 @@ Jeśli zwolnisz opiekuna po opublikowaniu powiadomienia o wstrzymaniu, powiadomi
 
 Aby zwolnić opiekuna:
 
-1. Przejdź do **obszaru eDiscovery > eDiscovery (Premium)** i otwórz sprawę.
+1. Przejdź do  **obszaru eDiscovery > eDiscovery (Premium)** i otwórz sprawę.
 
 2. Kliknij kartę **Źródła** .
 
@@ -145,7 +143,7 @@ Aby zwolnić opiekuna:
 
 4. Na wysuwanej stronie kliknij pozycję **Zwolnij opiekuna**.
 
-   Zostanie wyświetlona strona ostrzegawcza wyjaśniająca, że jeśli blokada zostanie umieszczona w źródle danych skojarzonym z opiekunem, blokada zostanie usunięta, a wszelkie inne blokady skojarzone z innym przypadkiem zbierania elektronicznych materiałów dowodowych (Premium) będą nadal stosowane. Obejmuje to inne typy funkcji zachowania i przechowywania (takich jak zasady przechowywania Microsoft 365).
+   Zostanie wyświetlona strona ostrzegawcza wyjaśniająca, że jeśli blokada zostanie umieszczona w źródle danych skojarzonym z opiekunem, blokada zostanie usunięta, a wszelkie inne blokady skojarzone z innym przypadkiem zbierania elektronicznych materiałów dowodowych (Premium) nadal będą miały zastosowanie. Obejmuje to inne typy funkcji zachowania i przechowywania (na przykład zasady przechowywania platformy Microsoft 365).
 
 5. Kliknij przycisk **Tak** , aby potwierdzić, że chcesz zwolnić opiekuna. 
 

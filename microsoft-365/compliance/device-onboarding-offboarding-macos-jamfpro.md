@@ -14,18 +14,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Dowiedz się, jak dołączać i dołączać urządzenia z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu narzędzia JAMF Pro
-ms.openlocfilehash: bf15868b865afa80146df2b16199caf360a55ce2
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: a4f6928098525cf04c2e752b8c6d467800f270da
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953432"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635628"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu narzędzia JAMF Pro
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Za pomocą narzędzia JAMF Pro można dołączyć urządzenia z systemem macOS do rozwiązań usługi Microsoft Purview, takich jak ochrona przed utratą danych punktów końcowych.
+Za pomocą narzędzia JAMF Pro można dołączyć urządzenia z systemem macOS do rozwiązań usługi Microsoft Purview, takich jak ochrona przed utratą danych punktu końcowego.
 
 > [!IMPORTANT]
 > Użyj tej procedury, jeśli ***na*** urządzeniach z systemem macOS nie wdrożono Ochrona punktu końcowego w usłudze Microsoft Defender (MDE)
@@ -37,10 +35,10 @@ Za pomocą narzędzia JAMF Pro można dołączyć urządzenia z systemem macOS d
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Upewnij się, że [urządzenia z systemem macOS są zarządzane za pośrednictwem narzędzia JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) i są skojarzone z tożsamością (nazwa UPN przyłączona do usługi Azure AD) za pośrednictwem Połączenie jamf lub Intune.
+- Upewnij się, że [urządzenia z systemem macOS są zarządzane za pośrednictwem narzędzia JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) i są skojarzone z tożsamością (Azure AD połączoną nazwą UPN) za pośrednictwem narzędzia JAMF Connect lub Intune.
 - Instalowanie przeglądarki v95+ Edge na urządzeniach z systemem macOS
 
-## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Dołączanie urządzeń do rozwiązań usługi Microsoft Purview przy użyciu Pro JAMF
+## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Dołączanie urządzeń do rozwiązań usługi Microsoft Purview przy użyciu narzędzia JAMF Pro
 
 1. Te pliki będą potrzebne do tej procedury.
 
@@ -69,7 +67,7 @@ Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procese
 
 ### <a name="get-the-device-onboarding-package"></a>Pobieranie pakietu dołączania urządzenia
 
-1. W **centrum zgodności** otwórz **Ustawienia** >  **Device Onboarding** i wybierz pozycję **Dołączanie**.
+1. W **Centrum zgodności** otwórz **pozycję Ustawienia** > **Dołączanie urządzenia** i wybierz pozycję **Dołączanie**.
 
 1. W obszarze **Wybierz system operacyjny, aby rozpocząć proces dołączania** wybierz system **macOS**
 
@@ -79,16 +77,16 @@ Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procese
 
 1. Wyodrębnij zawartość pakietu dołączania urządzenia. W folderze JAMF powinien zostać wyświetlony plik *DeviceComplainceOnboarding.plist* .
 
-### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>Tworzenie profilu konfiguracji Pro JAMF dla pakietu dołączania
+### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>Tworzenie profilu konfiguracji narzędzia JAMF Pro dla pakietu dołączania
 
-1. Utwórz nowy profil konfiguracji w Pro JAMF. Zapoznaj się z [przewodnikiem administratorów Pro JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Użyj następujących wartości:
+1. Utwórz nowy profil konfiguracji w narzędziu JAMF Pro. Zapoznaj się z [przewodnikiem administratorów jamf pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Użyj następujących wartości:
     - Nazwa: `MDATP onboarding for macOS`
     - Opis: `MDATP EDR onboarding for macOS`
     - Kategorii: `none`
     - Metoda dystrybucji: `install automatically`
     - Poziom: `computer level`
 
-2. W konsoli Pro JAMF > **Ustawienia niestandardowe & aplikacji** wybierz pozycję **Przekaż**, a następnie **dodaj**. Użyj tej wartości:
+2. W konsoli JAMF Pro > **Application & Ustawienia niestandardowe** wybierz pozycję **Przekaż** , a następnie **dodaj**. Użyj tej wartości:
     - Domena preferencji: `com.microsoft.wdav.atp`
 
 3. Wybierz **pozycję Przekaż** i wybierz plik dołączania **DeviceComplianceOnboarding.plist**.
@@ -106,17 +104,17 @@ Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procese
 > [!IMPORTANT]
 > Jako wartości Domeny preferencji należy użyć pliku ***com.microsoft.wdav** _. Ochrona punktu końcowego w usłudze Microsoft Defender używa tej nazwy i _ *_com.microsoft.wdav.ext_** do załadowania ustawień zarządzanych.
 
-1. Utwórz nowy profil konfiguracji w Pro JAMF. Zapoznaj się z [przewodnikiem administratorów Pro JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Użyj następujących wartości:
+1. Utwórz nowy profil konfiguracji w narzędziu JAMF Pro. Zapoznaj się z [przewodnikiem administratorów jamf pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Użyj następujących wartości:
     - Nazwa: `MDATP MDAV configuration settings`
     - Opis: pozostaw to puste
     - Kategorii: `none`
     - Metoda dystrybucji: `install automatically`
     - Poziom: `computer level`
 
-1. Na karcie **Application & Custom Ustawienia** wybierz pozycję **Aplikacje zewnętrzne**, wybierz pozycję **Dodaj** i wybierz pozycję **Schemat niestandardowy** dla domeny preferencji. Użyj tej wartości:
+1. Na karcie **Ustawienia niestandardowe & aplikacji** wybierz pozycję **Aplikacje zewnętrzne**, wybierz pozycję **Dodaj** i wybierz pozycję **Schemat niestandardowy** dla domeny preferencji. Użyj tej wartości:
     - Domena preferencji: `com.microsoft.wdav`
 
-1. Wybierz **pozycję Dodaj schemat** i **Upload**, aby przekazać plik *schema.json*.
+1. Wybierz **pozycję Dodaj schemat** i **Przekaż** , aby przekazać plik *schema.json* .
 
 1. Wybierz pozycję **Zapisz**.
 
@@ -134,16 +132,16 @@ Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procese
 
 ### <a name="create-and-deploy-a-configuration-profile-for-microsoft-autoupdate-mau"></a>Tworzenie i wdrażanie profilu konfiguracji dla usługi Microsoft AutoUpdate (MAU)
 
-1. Utwórz plik konfiguracji jamf Pro przy użyciu **pliku com.microsoft.autoupdate2.plist**. Zapoznaj się z [przewodnikiem administratorów Pro JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Użyj następujących wartości:
+1. Utwórz plik konfiguracji JAMF Pro przy użyciu **pliku com.microsoft.autoupdate2.plist**. Zapoznaj się z [przewodnikiem administratorów jamf pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Użyj następujących wartości:
     - Nazwa: `MDATP MDAV MAU settings`
     - Opis: `Microsoft AutoUPdate settings for MDATP for macOS`
     - Kategorii: `none`
     - Metoda dystrybucji: `install automatically`
     - Poziom: `computer level`
 
-1. W **obszarze & niestandardowe Ustawienia** wybierz **pozycję Upload** i **Dodaj**.
+1. W **obszarze Ustawienia niestandardowe & aplikacji** wybierz pozycję **Przekaż** i **dodaj**.
 
-1. W **obszarze Preferencje wprowadź domenę**`com.microsoft.autoupdate2`, a następnie wybierz **pozycję Upload**.
+1. W **obszarze Preferencje wprowadź domenę**`com.microsoft.autoupdate2`, a następnie wybierz pozycję **Przekaż**.
 
 1. Wybierz plik **com.microsoft.autoupdate2.plist** .
 
@@ -161,11 +159,11 @@ Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procese
 
 1. Użyj pliku **fulldisk.mobileconfig** .
 
-1. Upload plik **fulldisk.mobileconfig** do pliku JAMF. Zapoznaj się [z tematem Wdrażanie niestandardowych profilów konfiguracji przy użyciu Pro JAMF](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+1. Przekaż plik **fulldisk.mobileconfig** do narzędzia JAMF. Zapoznaj się [z tematem Wdrażanie niestandardowych profilów konfiguracji przy użyciu narzędzia JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
 ### <a name="create-and-deploy-a-configuration-profile-for-system-extensions"></a>Tworzenie i wdrażanie profilu konfiguracji dla rozszerzeń systemu
 
-1. Utwórz plik konfiguracji jamf Pro przy użyciu procedur w [przewodniku jamf Pro administratorów](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Użyj następujących wartości:
+1. Utwórz plik konfiguracji JAMF Pro, korzystając z przewodnika po procedurach w [przewodniku administratorów jamf pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Użyj następujących wartości:
     - Nazwa: `MDATP MDAV System Extensions`
     - Opis: `MDATP system extensions`
     - Kategorii: `none`
@@ -188,19 +186,19 @@ Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procese
 
 ### <a name="configure-network-extension"></a>Konfigurowanie rozszerzenia sieci
 
-1. Użyj pliku **netfilter.mobileconfig** pobranego z GitHub.
+1. Użyj pliku **netfilter.mobileconfig**  pobranego z usługi GitHub.
 
-2. Upload do narzędzia JAMF zgodnie z opisem w temacie [Wdrażanie niestandardowych profilów konfiguracji przy użyciu narzędzia Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+2. Przekaż do narzędzia JAMF zgodnie z opisem w [temacie Wdrażanie niestandardowych profilów konfiguracji przy użyciu narzędzia Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="grant-accessibility-access-to-dlp"></a>Udzielanie dostępu ułatwień dostępu do usługi DLP
 
-1. Użyj pliku **accessibility.mobileconfig** pobranego z GitHub.
+1. Użyj pliku **accessibility.mobileconfig** pobranego z usługi GitHub.
 
-2. Upload do narzędzia JAMF zgodnie z opisem w temacie [Wdrażanie niestandardowych profilów konfiguracji przy użyciu narzędzia Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+2. Przekaż do narzędzia JAMF zgodnie z opisem w [temacie Wdrażanie niestandardowych profilów konfiguracji przy użyciu narzędzia Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="get-the-installation-package"></a>Pobieranie pakietu instalacyjnego
 
-1. W **centrum zgodności** otwórz **Ustawienia** >  **Device Onboarding** i wybierz pozycję **Dołączanie**.
+1. W **Centrum zgodności** otwórz **pozycję Ustawienia** > **Dołączanie urządzenia** i wybierz pozycję **Dołączanie**.
 
 1. W obszarze **Wybierz system operacyjny, aby rozpocząć proces dołączania** wybierz system **macOS**
 
@@ -212,7 +210,7 @@ Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procese
 
 1. Przejdź do miejsca, w którym zapisano `wdav.pkg` plik.
 
-1. Otwórz pulpit nawigacyjny Pro JAMF.
+1. Otwórz pulpit nawigacyjny NARZĘDZIA JAMF Pro.
 
 1. Wybierz komputer i kliknij koło zębate u góry, a następnie wybierz pozycję **Zarządzanie komputerem**.
 
@@ -227,7 +225,7 @@ Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procese
     - **Karta Opcje**: pozostaw wartości domyślne
     - **Karta Ograniczenia**: pozostaw wartości domyślne
 
-1. Wybierz pozycję **Zapisz**. Spowoduje to przekazanie pakietu do Pro JAMF.
+1. Wybierz pozycję **Zapisz**. Spowoduje to przekazanie pakietu do narzędzia JAMF Pro.
 
 1. Otwórz stronę **Zasady** .
 
@@ -240,7 +238,7 @@ Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procese
 
 1. Wybierz pozycję **Zapisz**.
 
-1. Wybierz **pozycję** **PakietyKonfiguruj** > .
+1. Wybierz **pozycję Skonfiguruj pakiety** > .
 
 1. Wybierz pozycję **Add** (Dodaj).
 
@@ -260,7 +258,7 @@ Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procese
 
 1. Uruchom ponownie urządzenie z systemem macOS.
 
-1. Otwórz **pozycję Preferencje** **systemoweProfile** > .
+1. Otwórz **profile** **preferencji systemowych** > .
 
 1. Powinny zostać wyświetlone następujące elementy:
     - Accessiblity
@@ -272,10 +270,10 @@ Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procese
     - Filtr sieciowy
     - Profil rozszerzenia systemu
 
-## <a name="offboard-macos-devices-using-jamf-pro"></a>Odłączanie urządzeń z systemem macOS przy użyciu Pro JAMF
+## <a name="offboard-macos-devices-using-jamf-pro"></a>Odłączanie urządzeń z systemem macOS przy użyciu narzędzia JAMF Pro
 
 1. Odinstaluj aplikację (jeśli nie używasz rozwiązania MDE)
-    1. Zobacz JAMF Pro Docs - Package Deployment — [JAMF Pro administratorów guideJamf](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) Pro Administrator's Guide (Przewodnik administratora Pro JAMF)
+    1. Zobacz JAMF Pro Docs - Package Deployment - [JAMF Pro administratorów guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro Administrator's Guide
 
 1. Uruchom ponownie urządzenie z systemem macOS — niektóre aplikacje mogą utracić funkcjonalność drukowania do momentu ich ponownego uruchomienia
 

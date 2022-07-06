@@ -15,21 +15,19 @@ search.appverid:
 - MET150
 description: Dowiedz się, w jaki sposób menedżer zgodności usługi Microsoft Purview oblicza spersonalizowany wynik na podstawie akcji podjętych w celu rozwiązania ryzyka i poprawy stanu zgodności.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 07a168bd32e73502380260db748fd145648c69ae
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a33cbe9c4ea5b12ab0fec40068ba7dcd2f561e4e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971181"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635682"
 ---
 # <a name="compliance-score-calculation"></a>Obliczanie wskaźnika zgodności
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **W tym artykule:** Dowiedz się, jak Menedżer zgodności oblicza ocenę zgodności dla twojej organizacji. W tym artykule wyjaśniono, jak **interpretować wynik**, co obejmuje **ocena punktu odniesienia ochrony danych** , **ciągłe monitorowanie** oraz **jak różne typy akcji są zarządzane i oceniane**.
 
 > [!IMPORTANT]
-> Rekomendacje programu Compliance Manager nie powinny być interpretowane jako gwarancja zgodności. Do Ciebie należy ocena i weryfikowanie skuteczności kontroli klientów w danym środowisku regulacyjnym. Te usługi podlegają warunkom i postanowień [w Warunkach produktu](https://go.microsoft.com/fwlink/?linkid=2108910). Zobacz również [Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zabezpieczeń i zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> Zalecenia menedżera zgodności nie powinny być interpretowane jako gwarancja zgodności. Do Ciebie należy ocena i weryfikowanie skuteczności kontroli klientów w danym środowisku regulacyjnym. Te usługi podlegają warunkom i postanowień [w Warunkach produktu](https://go.microsoft.com/fwlink/?linkid=2108910). Zobacz również [wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zabezpieczeń i zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="how-to-read-your-compliance-score"></a>Jak odczytać wynik zgodności
 
@@ -47,21 +45,21 @@ Wartość wyniku jest przypisywana na trzech poziomach:
 
 Ogólny wynik zgodności jest obliczany przy użyciu wyników akcji, gdzie każda akcja firmy Microsoft jest liczona raz, każda zarządzana akcja techniczna jest liczona raz, a każda akcja nietechnii, którą zarządzasz, jest liczona raz na grupę. Ta logika ma na celu zapewnienie najdokładniejszej analizy sposobu implementowania i testowania akcji w organizacji. Można zauważyć, że może to spowodować, że ogólny wynik zgodności będzie się różnić od średniej wyników oceny. Przeczytaj więcej poniżej na temat [sposobu oceniania akcji](#action-types-and-points).
 
-## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Wynik początkowy na podstawie punktu odniesienia ochrony danych Microsoft 365
+## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Wynik początkowy na podstawie punktu odniesienia ochrony danych platformy Microsoft 365
   
-Menedżer zgodności zapewnia wstępny wynik na podstawie punktu odniesienia Microsoft 365 ochrony danych. Ten punkt odniesienia to zestaw mechanizmów kontroli, które obejmują kluczowe przepisy i standardy dotyczące ochrony danych i ogólnego ładu danych. Ten punkt odniesienia czerpie przede wszystkim z NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) i ISO (Międzynarodowa Organizacja Standaryzacji), a także z FedRAMP (Federal Risk and Authorization Management Program) i RODO (ogólne rozporządzenie o ochronie danych Unii Europejskiej).
+Menedżer zgodności zapewnia wstępny wynik na podstawie punktu odniesienia ochrony danych platformy Microsoft 365. Ten punkt odniesienia to zestaw mechanizmów kontroli, które obejmują kluczowe przepisy i standardy dotyczące ochrony danych i ogólnego ładu danych. Ten punkt odniesienia czerpie przede wszystkim z NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) i ISO (Międzynarodowa Organizacja Standaryzacji), a także z FedRAMP (Federal Risk and Authorization Management Program) i RODO (ogólne rozporządzenie o ochronie danych Unii Europejskiej).
 
-Początkowy wynik jest obliczany zgodnie z domyślną oceną punktu odniesienia ochrony danych udostępnioną wszystkim organizacjom. Podczas pierwszej wizyty Menedżer zgodności już zbiera sygnały z Microsoft 365 rozwiązań. Na pierwszy rzut oka zobaczysz, jak twoja organizacja działa w stosunku do kluczowych standardów i przepisów dotyczących ochrony danych, a także zobaczysz sugerowane działania ulepszeń do podjęcia.
+Początkowy wynik jest obliczany zgodnie z domyślną oceną punktu odniesienia ochrony danych udostępnioną wszystkim organizacjom. Podczas pierwszej wizyty Menedżer zgodności zbiera już sygnały z rozwiązań platformy Microsoft 365. Na pierwszy rzut oka zobaczysz, jak twoja organizacja działa w stosunku do kluczowych standardów i przepisów dotyczących ochrony danych, a także zobaczysz sugerowane działania ulepszeń do podjęcia.
 
 Ponieważ każda organizacja ma określone potrzeby, menedżer zgodności polega na skonfigurowaniu ocen i zarządzaniu nimi, aby pomóc zminimalizować i ograniczyć ryzyko tak kompleksowo, jak to możliwe.
 
 ## <a name="how-compliance-manager-continuously-assesses-controls"></a>Jak Menedżer zgodności stale ocenia mechanizmy kontroli
 
-Menedżer zgodności automatycznie identyfikuje ustawienia w środowisku Microsoft 365, które pomagają określić, kiedy niektóre konfiguracje spełniają wymagania implementacji akcji poprawy. Menedżer zgodności wykrywa sygnały z innych rozwiązań zgodności, które mogły zostać wdrożone, w tym zarządzania cyklem życia danych, ochrony informacji, zgodności z komunikacją i zarządzania ryzykiem wewnętrznym, a także wykorzystuje monitorowanie wskaźnika bezpieczeństwa firmy Microsoft w ramach uzupełniających akcji poprawy.
+Menedżer zgodności automatycznie identyfikuje ustawienia w środowisku platformy Microsoft 365, które pomagają określić, kiedy niektóre konfiguracje spełniają wymagania implementacji akcji poprawy. Menedżer zgodności wykrywa sygnały z innych rozwiązań zgodności, które mogły zostać wdrożone, w tym zarządzania cyklem życia danych, ochrony informacji, zgodności z komunikacją i zarządzania ryzykiem wewnętrznym, a także wykorzystuje monitorowanie wskaźnika bezpieczeństwa firmy Microsoft w ramach uzupełniających akcji poprawy.
 
 Stan akcji zostanie zaktualizowany na pulpicie nawigacyjnym w ciągu 24 godzin od zmiany. Po wykonaniu zalecenia w celu zaimplementowania kontrolki stan kontrolki będzie zwykle aktualizowany następnego dnia.
 
-Jeśli na przykład włączysz uwierzytelnianie wieloskładnikowe (MFA) w portalu usługi Azure AD, menedżer zgodności wykryje to ustawienie i odzwierciedli je w szczegółach rozwiązania dostępu do kontroli. Z drugiej strony, jeśli nie włączono uwierzytelniania wieloskładnikowego, menedżer zgodności sygnalizuje to jako zalecaną akcję.
+Jeśli na przykład włączysz uwierzytelnianie wieloskładnikowe (MFA) w portalu Azure AD, menedżer zgodności wykryje to ustawienie i odzwierciedli je w szczegółach rozwiązania dostępu do kontroli. Z drugiej strony, jeśli nie włączono uwierzytelniania wieloskładnikowego, menedżer zgodności sygnalizuje to jako zalecaną akcję.
 
 Dowiedz się więcej na temat [wskaźnika bezpieczeństwa i jego działania](../security/defender/microsoft-secure-score.md).
   

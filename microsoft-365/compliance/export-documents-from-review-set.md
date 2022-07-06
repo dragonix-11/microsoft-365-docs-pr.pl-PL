@@ -15,32 +15,30 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się, jak wybierać i eksportować zawartość z zestawu przeglądów zbierania elektronicznych materiałów dowodowych (Premium) dla prezentacji lub przeglądów zewnętrznych.
+description: Dowiedz się, jak wybierać i eksportować zawartość z zestawu przeglądów zbierania elektronicznych materiałów dowodowych (Premium) na potrzeby prezentacji lub przeglądów zewnętrznych.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a2cc2b5f528c7573c255e05cea4b512416711462
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 249990915cb012ca71a40ef074d8a1f5044b8d6e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096969"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635354"
 ---
 # <a name="export-documents-from-a-review-set-in-ediscovery-premium"></a>Eksportowanie dokumentów z zestawu przeglądów w usłudze eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Eksportowanie umożliwia użytkownikom dostosowywanie zawartości dołączonej do pakietu pobierania podczas eksportowania dokumentu z zestawu przeglądów w usłudze eDiscovery (Premium).
 
 Aby wyeksportować dokumenty z zestawu przeglądów:
 
-1. W portalu zgodności usługi Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), wybierz kartę **Zestawy przeglądów**, a następnie wybierz zestaw przeglądów, który chcesz wyeksportować.
+1. W portal zgodności Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), wybierz kartę **Zestawy przeglądów**, a następnie wybierz zestaw przeglądów, który chcesz wyeksportować.
 
-2. W zestawie przeglądów kliknij pozycję **ActionExport** > .
+2. W zestawie przeglądów kliknij pozycję **Eksport akcji** > .
 
    Narzędzie Eksportuj wyświetla stronę wysuwaną z ustawieniami umożliwiającymi skonfigurowanie eksportu. Niektóre opcje są wybierane domyślnie, ale można je zmienić. Opisy opcji eksportu, które można skonfigurować, można znaleźć w poniższej sekcji.
 
    ![Opcje konfiguracji eksportowania elementów z zestawu przeglądów.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-3. Po skonfigurowaniu eksportu kliknij pozycję **Eksportuj** , aby rozpocząć proces eksportowania. W zależności od opcji wybranej w sekcji **Opcje wyjściowe** możesz uzyskać dostęp do plików eksportu, pobierając je bezpośrednio lub na koncie usługi Azure Storage organizacji.
+3. Po skonfigurowaniu eksportu kliknij pozycję **Eksportuj** , aby rozpocząć proces eksportowania. W zależności od opcji wybranej w sekcji **Opcje danych wyjściowych** możesz uzyskać dostęp do plików eksportu przez bezpośrednie pobranie lub na koncie usługi Azure Storage w organizacji.
 
 > [!NOTE]
 > Zadania eksportu są zachowywane przez całe życie sprawy. Należy jednak pobrać zawartość z zadania eksportu w ciągu 30 dni od zakończenia zadania eksportu.
@@ -69,7 +67,7 @@ Użyj następujących opcji, aby skonfigurować eksport. Nie wszystkie opcje są
   
   - Skondensowana struktura katalogów: pliki są eksportowane i uwzględniane w pobieraniu.
   
-  - Skondensowana struktura katalogów wyeksportowana do konta usługi Azure Storage: pliki są eksportowane na konto usługi Azure Storage organizacji. Aby skorzystać z tej opcji, musisz podać adres URL kontenera na koncie usługi Azure Storage w celu wyeksportowania plików. Musisz również podać token sygnatury dostępu współdzielonego dla konta usługi Azure Storage. Aby uzyskać więcej informacji, zobacz [Eksportowanie dokumentów w przeglądzie ustawionym na konto usługi Azure Storage](download-export-jobs.md).
+  - Skondensowana struktura katalogów wyeksportowana na konto usługi Azure Storage: pliki są eksportowane na konto usługi Azure Storage w organizacji. W przypadku tej opcji musisz podać adres URL kontenera na koncie usługi Azure Storage, aby wyeksportować pliki. Musisz również podać token sygnatury dostępu współdzielonego dla konta usługi Azure Storage. Aby uzyskać więcej informacji, zobacz [Eksportowanie dokumentów w przeglądzie ustawionym na konto usługi Azure Storage](download-export-jobs.md).
 
 - **Obejmują**
   
@@ -95,16 +93,16 @@ Jeśli wybierzesz tę opcję eksportu, wyeksportowana zawartość zostanie zorga
   
   - Ostrzeżenia i błędy x z.csv: ten plik zawiera informacje o błędach napotkanych podczas próby wyeksportowania z zestawu przeglądów.
   
-  - Exchange: ten folder zawiera całą zawartość z Exchange przechowywaną w plikach PST. Zredagowanych plików PDF nie można dołączyć do tej opcji. Jeśli załącznik zostanie wybrany w zestawie przeglądów, nadrzędna wiadomość e-mail zostanie wyeksportowana z dołączonym załącznikiem.
+  - Exchange: ten folder zawiera całą zawartość z programu Exchange przechowywaną w plikach PST. Zredagowanych plików PDF nie można dołączyć do tej opcji. Jeśli załącznik zostanie wybrany w zestawie przeglądów, nadrzędna wiadomość e-mail zostanie wyeksportowana z dołączonym załącznikiem.
   
-    Folder Exchange może również zawierać podfolder o nazwie mailboxname_loosefiles.zip, który zawiera następujące elementy:
+    Folder Programu Exchange może również zawierać podfolder o nazwie mailboxname_loosefiles.zip, który zawiera następujące elementy:
 
     - Komunikaty chronione przez usługę Information Rights Management (IRM), które zostały zdekodowane.
     - Komunikaty korygowane przez błąd.
     - Nowoczesne załączniki lub linki przywoływane w komunikatach.
-    - Zaszyfrowane elementy (które nie są uwzględnione w plikach PST w folderze Exchange).
+    - Zaszyfrowane elementy (które nie są uwzględnione w plikach PST w folderze programu Exchange).
   
-  - SharePoint: ten folder zawiera całą zawartość natywną z SharePoint w natywnym formacie pliku. Zredagowanych plików PDF nie można dołączyć do tej opcji.
+  - SharePoint: ten folder zawiera całą zawartość natywną z programu SharePoint w natywnym formacie pliku. Zredagowanych plików PDF nie można dołączyć do tej opcji.
 
 ### <a name="condensed-directory-structure"></a>Skondensowana struktura katalogów
 

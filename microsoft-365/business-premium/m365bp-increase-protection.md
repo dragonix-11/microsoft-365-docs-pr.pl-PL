@@ -25,20 +25,20 @@ search.appverid:
 - BCS160
 - MET150
 description: Uzyskaj pomoc dotyczącą zwiększania poziomu ochrony w Microsoft 365 Business Premium
-ms.openlocfilehash: 7917fa7e0530724c201db8b118ea2adedc7c3a62
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: b5d1c7c241be8e61c7f1dcb3ccd08f9c3a0e93af
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573852"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631942"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Zwiększanie ochrony przed zagrożeniami dla Microsoft 365 Business Premium
 
-W tym celu zwiększysz ochronę przed zagrożeniami za pomocą Microsoft 365 Business Premium. Ochrona firmy przed wyłudzaniem informacji, złośliwym oprogramowaniem i innymi zagrożeniami ma kluczowe znaczenie. Ten cel obejmuje następujące informacje:
+W tym celu zwiększysz ochronę przed zagrożeniami za pomocą Microsoft 365 Business Premium. Ochrona firmy przed wyłudzaniem informacji, złośliwym oprogramowaniem i innymi zagrożeniami ma kluczowe znaczenie. Ten artykuł zawiera informacje o:
 
 - [Ustawienia wstępne zasad zabezpieczeń](#review-and-apply-preset-security-policies) , które mogą zaoszczędzić dużo czasu podczas konfiguracji i konfiguracji.
-- [Niestandardowe zasady zabezpieczeń](#create-custom-security-policies) , które można zdefiniować zgodnie z potrzebami biznesowymi
-- Jak [dostosować ustawienia udostępniania plików i folderów programu SharePoint oraz usługi OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
+- [Niestandardowe zasady zabezpieczeń](#create-custom-security-policies) , które można zdefiniować zgodnie z potrzebami biznesowymi.
+- [Jak dostosować ustawienia udostępniania plików i folderów programu SharePoint oraz usługi OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [Zasady alertów](#review-your-alert-policies) , które monitorują określone pliki i sposób ich użycia.
 
 ## <a name="review-and-apply-preset-security-policies"></a>Przeglądanie i stosowanie wstępnie ustawionych zasad zabezpieczeń

@@ -15,29 +15,27 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
-description: Administratorzy mogą skonfigurować natywny łącznik do importowania i archiwizowania stron biznesowych serwisu Facebook w celu Microsoft 365. Po zaimportowaniu tych danych do Microsoft 365 możesz użyć funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać zarządzaniem danymi w serwisie Facebook organizacji.
-ms.openlocfilehash: b3f3770b4e3cf8415111ebdd1881905ae21f4739
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Administratorzy mogą skonfigurować natywny łącznik do importowania i archiwizowania stron biznesowych usługi Facebook na platformie Microsoft 365. Po zaimportowaniu tych danych do platformy Microsoft 365 możesz użyć funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania, aby zarządzać zarządzaniem danymi organizacji w serwisie Facebook.
+ms.openlocfilehash: 0b2d37859941cc0e1ae5c49fad6fd72312cc03cf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098873"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632558"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Wdrażanie łącznika w celu archiwizacji danych stron biznesowych usługi Facebook
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Ten artykuł zawiera krok po kroku proces wdrażania łącznika, który używa usługi Office 365 Import do importowania danych ze stron biznesowych serwisu Facebook na platformę Microsoft 365. Aby zapoznać się z ogólnym omówieniem tego procesu i listą wymagań wstępnych wymaganych do wdrożenia łącznika usługi Facebook, zobacz [Konfigurowanie łącznika w celu archiwizowania danych serwisu Facebook](archive-facebook-data-with-sample-connector.md).
 
-Ten artykuł zawiera krok po kroku proces wdrażania łącznika, który używa usługi Office 365 Import do importowania danych ze stron biznesowych serwisu Facebook do Microsoft 365. Aby zapoznać się z ogólnym omówieniem tego procesu i listą wymagań wstępnych wymaganych do wdrożenia łącznika usługi Facebook, zobacz [Konfigurowanie łącznika w celu archiwizowania danych serwisu Facebook](archive-facebook-data-with-sample-connector.md).
-
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>Krok 1. Tworzenie aplikacji w Azure Active Directory
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>Krok 1. Tworzenie aplikacji w usłudze Azure Active Directory
 
 1. Przejdź do strony <https://portal.azure.com> i zaloguj się przy użyciu poświadczeń konta administratora globalnego.
 
-    ![Tworzenie aplikacji w AAD.](../media/FBCimage1.png)
+    ![Tworzenie aplikacji w usłudze AAD.](../media/FBCimage1.png)
 
 2. W okienku nawigacji po lewej stronie kliknij pozycję **Azure Active Directory**.
 
-    ![Kliknij Azure Active Directory.](../media/FBCimage2.png)
+    ![Kliknij pozycję Azure Active Directory.](../media/FBCimage2.png)
 
 3. W okienku nawigacji po lewej stronie kliknij pozycję **Rejestracje aplikacji (wersja zapoznawcza),** a następnie kliknij pozycję **Nowa rejestracja**.
 
@@ -63,17 +61,17 @@ Ten artykuł zawiera krok po kroku proces wdrażania łącznika, który używa u
 
     ![Wpisz wpis tajny, a następnie wybierz okres wygaśnięcia.](../media/FBCimage8.png)
 
-9. Skopiuj wartość wpisu tajnego i zapisz ją w pliku tekstowym lub innej lokalizacji magazynu. Jest to AAD wpis tajny aplikacji używany w kolejnych krokach.
+9. Skopiuj wartość wpisu tajnego i zapisz ją w pliku tekstowym lub innej lokalizacji magazynu. Jest to wpis tajny aplikacji usługi AAD, którego użyjesz w kolejnych krokach.
 
    ![Skopiuj wartość wpisu tajnego i zapisz go.](../media/FBCimage9.png)
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Krok 2. Wdrażanie usługi internetowej łącznika z GitHub na koncie platformy Azure
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Krok 2. Wdrażanie usługi internetowej łącznika z usługi GitHub na koncie platformy Azure
 
-1. Przejdź do [tej witryny GitHub](https://github.com/microsoft/m365-sample-connector-csharp-aspnet) i kliknij pozycję **Wdróż na platformie Azure**.
+1. Przejdź do [tej witryny usługi GitHub](https://github.com/microsoft/m365-sample-connector-csharp-aspnet) i kliknij pozycję **Wdróż na platformie Azure**.
 
     ![Kliknij pozycję Wdróż na platformie Azure.](../media/FBCGithubApp.png)
 
-2. Po kliknięciu **przycisku Wdróż na platformie Azure** nastąpi przekierowanie do Azure Portal przy użyciu niestandardowej strony szablonu. Wypełnij szczegóły **podstawowe** i **Ustawienia**, a następnie kliknij przycisk **Kup**.
+2. Po kliknięciu **przycisku Wdróż na platformie Azure** nastąpi przekierowanie do Azure Portal przy użyciu niestandardowej strony szablonu. Wypełnij szczegóły **Podstawowe** i **Ustawienia** , a następnie kliknij przycisk **Kup**.
 
    - **Subskrypcji:** Wybierz subskrypcję platformy Azure, w ramach którą chcesz wdrożyć usługę internetową łącznika stron biznesowych w serwisie Facebook.
 
@@ -83,7 +81,7 @@ Ten artykuł zawiera krok po kroku proces wdrażania łącznika, który używa u
 
    - **Nazwa aplikacji internetowej:** Podaj unikatową nazwę aplikacji internetowej łącznika. Nazwa musi mieć długość od 3 do 18 znaków. Ta nazwa jest używana do tworzenia adresu URL usługi Azure App Service. Jeśli na przykład podasz nazwę aplikacji internetowej **fbconnector** , adres URL usługi Azure App Service zostanie **fbconnector.azurewebsites.net**.
 
-   - **tenantId:** Identyfikator dzierżawy organizacji Microsoft 365 skopiowany po utworzeniu aplikacji łącznika Facebook w Azure Active Directory w kroku 1.
+   - **tenantId:** Identyfikator dzierżawy organizacji platformy Microsoft 365 skopiowany po utworzeniu aplikacji łącznika Facebook w usłudze Azure Active Directory w kroku 1.
 
    - **Klucz APISecretKey:** Dowolną wartość można wpisać jako wpis tajny. Służy do uzyskiwania dostępu do aplikacji internetowej łącznika w kroku 5.
 
@@ -91,7 +89,7 @@ Ten artykuł zawiera krok po kroku proces wdrażania łącznika, który używa u
 
 3. Po pomyślnym wdrożeniu strona będzie wyglądać podobnie do poniższego zrzutu ekranu:
 
-   ![Kliknij Storage, a następnie kliknij pozycję Storage konto.](../media/FBCimage13.png)
+   ![Kliknij pozycję Magazyn, a następnie kliknij pozycję Konto magazynu.](../media/FBCimage13.png)
 
 ## <a name="step-3-register-the-facebook-app"></a>Krok 3. Rejestrowanie aplikacji Facebook
 
@@ -119,7 +117,7 @@ Ten artykuł zawiera krok po kroku proces wdrażania łącznika, który używa u
 
    ![Ukończ sekcję Szybki start.](../media/FBCimage30.png)
 
-7. W okienku nawigacji po lewej stronie w obszarze **Logowanie do serwisu Facebook** kliknij pozycję **Ustawienia** i dodaj identyfikator URI przekierowania OAuth w polu **Prawidłowe identyfikatory URI przekierowania OAuth**. Użyj formatu **\<connectorserviceuri>/Views/FacebookOAuth**, gdzie wartość connectorserviceuri to adres URL usługi Azure App Service dla twojej organizacji, na przykład `https://fbconnector.azurewebsites.net`.
+7. W okienku nawigacji po lewej stronie w obszarze **Logowanie do serwisu Facebook** kliknij pozycję **Ustawienia** i dodaj identyfikator URI przekierowania OAuth w polu **Prawidłowe identyfikatory URI przekierowania OAuth** . Użyj formatu **\<connectorserviceuri>/Views/FacebookOAuth**, gdzie wartość connectorserviceuri to adres URL usługi Azure App Service dla twojej organizacji, na przykład `https://fbconnector.azurewebsites.net`.
 
    ![Dodaj identyfikator URI przekierowania OAuth do pola Prawidłowe identyfikatory URI przekierowania OAuth.](../media/FBCimage31.png)
 
@@ -171,7 +169,7 @@ Ten artykuł zawiera krok po kroku proces wdrażania łącznika, który używa u
 
    ![Kliknij pozycję Konfiguruj, aby wyświetlić stronę logowania.](../media/FBCimage42.png)
 
-3. W polu Identyfikator dzierżawy wpisz lub wklej identyfikator dzierżawy (uzyskany w kroku 2). W polu hasła wpisz lub wklej klucz APISecretKey (uzyskany w kroku 2), a następnie kliknij pozycję **Ustaw konfigurację Ustawienia**, aby wyświetlić stronę szczegółów konfiguracji.
+3. W polu Identyfikator dzierżawy wpisz lub wklej identyfikator dzierżawy (uzyskany w kroku 2). W polu hasła wpisz lub wklej klucz APISecretKey (uzyskany w kroku 2), a następnie kliknij pozycję **Ustaw ustawienia konfiguracji** , aby wyświetlić stronę szczegółów konfiguracji.
 
     ![Zaloguj się przy użyciu identyfikatora dzierżawy i hasła, a następnie przejdź do strony szczegółów konfiguracji.](../media/FBCimage43.png)
 
@@ -183,15 +181,15 @@ Ten artykuł zawiera krok po kroku proces wdrażania łącznika, który używa u
 
    - **Elementy webhook serwisu Facebook weryfikują token:** Token weryfikacji utworzony w kroku 3.
 
-   - **AAD identyfikator aplikacji:** identyfikator aplikacji dla aplikacji Azure Active Directory utworzonej w kroku 1.
+   - **Identyfikator aplikacji usługi AAD:** Identyfikator aplikacji dla aplikacji usługi Azure Active Directory utworzony w kroku 1.
 
-   - **AAD wpis tajny aplikacji:** wartość klucza tajnego APISecretKey utworzonego w kroku 1.
+   - **Wpis tajny aplikacji usługi AAD:** Wartość klucza tajnego APISecretKey utworzonego w kroku 1.
 
 5. Kliknij **przycisk Zapisz** , aby zapisać ustawienia łącznika.
 
 ## <a name="step-5-set-up-a-facebook-connector-in-the-compliance-portal"></a>Krok 5. Konfigurowanie łącznika usługi Facebook w portalu zgodności
 
-1. Przejdź do portalu zgodności usługi Microsoft Purview, a następnie wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Łączniki danych**</a.
+1. Przejdź do portal zgodności Microsoft Purview, a następnie wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Łączniki danych**</a.
 
 2. Na stronie **Łączniki danych** w obszarze **Strony biznesowe serwisu Facebook** kliknij pozycję **Wyświetl**.
 
@@ -209,11 +207,11 @@ Ten artykuł zawiera krok po kroku proces wdrażania łącznika, który używa u
 
    - W polu **Hasło** wpisz lub wklej wartość klucza APISecretKey, który został dodany w kroku 2.
 
-   - W **polu identyfikatora aplikacja systemu Azure** wpisz lub wklej wartość identyfikatora aplikacji (klienta) nazywanego również identyfikatorem aplikacji AAD utworzonym w kroku 1.
+   - W **polu identyfikatora aplikacja systemu Azure** wpisz lub wklej wartość identyfikatora aplikacji (klienta) nazywanego również identyfikatorem aplikacji usługi AAD utworzonym w kroku 1.
 
 6. Po pomyślnym zweryfikowaniu połączenia kliknij przycisk **Dalej**.
 
-7. Na stronie **Autoryzowanie Microsoft 365 importowania danych** ponownie wpisz lub wklej ciąg APISecretKey, a następnie kliknij pozycję **Zaloguj aplikację internetową**.
+7. Na stronie **Autoryzowanie platformy Microsoft 365 do importowania danych** wpisz lub wklej ponownie klucz APISecretKey, a następnie kliknij pozycję **Zaloguj się w aplikacji internetowej**.
 
 8. Na stronie **Konfigurowanie aplikacji łącznika Facebooka** kliknij pozycję **Zaloguj się przy użyciu serwisu Facebook** i zaloguj się przy użyciu poświadczeń konta dla stron biznesowych Facebook w organizacji. Upewnij się, że konto facebookowe, na które zalogowano się, ma przypisaną rolę administratora dla stron biznesowych Facebook w organizacji.
 
@@ -227,7 +225,7 @@ Ten artykuł zawiera krok po kroku proces wdrażania łącznika, który używa u
 
 11. Na stronie **Ustaw filtry** możesz zastosować filtr, aby początkowo importować elementy o określonym wieku. Wybierz wiek, a następnie kliknij przycisk **Dalej**.
 
-12. Na stronie **Wybieranie lokalizacji magazynu** wpisz adres e-mail Microsoft 365 skrzynki pocztowej, do których zostaną zaimportowane elementy serwisu Facebook, a następnie kliknij przycisk **Dalej**.
+12. Na stronie **Wybieranie lokalizacji magazynu** wpisz adres e-mail skrzynki pocztowej platformy Microsoft 365, do którą zostaną zaimportowane elementy serwisu Facebook, a następnie kliknij przycisk **Dalej**.
 
 13. Kliknij **przycisk Dalej** , aby przejrzeć ustawienia łącznika, a następnie kliknij przycisk **Zakończ** , aby ukończyć konfigurację łącznika.
 

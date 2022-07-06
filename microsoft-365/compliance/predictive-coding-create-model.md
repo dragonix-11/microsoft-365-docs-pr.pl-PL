@@ -13,19 +13,17 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Dowiedz się, jak utworzyć model kodowania predykcyjnego w usłudze eDiscovery (Premium). Jest to pierwszy krok w zakresie korzystania z funkcji uczenia maszynowego w usłudze eDiscovery (Premium), aby ułatwić zidentyfikowanie odpowiedniej i nieistotnej zawartości w zestawie przeglądów.
-ms.openlocfilehash: 4542ffbf8be3c7a5c0193f3c0372e3c19e91f02e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak utworzyć model kodowania predykcyjnego w usłudze eDiscovery (Premium). Jest to pierwszy krok w zakresie korzystania z możliwości uczenia maszynowego w środowisku eDiscovery (Premium), który ułatwia zidentyfikowanie odpowiedniej i nieistotnej zawartości w zestawie przeglądów.
+ms.openlocfilehash: 1105ff05d323ded2297a92d7b12b44a78c35b11f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099658"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635748"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Tworzenie modelu kodowania predykcyjnego (wersja zapoznawcza)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Pierwszym krokiem w zakresie korzystania z funkcji uczenia maszynowego w kodowaniu predykcyjnym w dziedzinie zbierania elektronicznych materiałów dowodowych (Premium) jest utworzenie modelu kodowania predykcyjnego. Po utworzeniu modelu można go wytrenować, identyfikując odpowiednią i nieistotną zawartość w zestawie przeglądów.
+Pierwszym krokiem w zakresie korzystania z możliwości uczenia maszynowego w kodowaniu predykcyjnym w środowisku eDiscovery (Premium) jest utworzenie modelu kodowania predykcyjnego. Po utworzeniu modelu można go wytrenować, identyfikując odpowiednią i nieistotną zawartość w zestawie przeglądów.
 
 Aby przejrzeć przepływ pracy kodowania predykcyjnego, zobacz [Learn about predictive coding in eDiscovery (Premium) (Informacje o kodowaniu predykcyjnym w usłudze eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
 
@@ -39,9 +37,9 @@ Aby przejrzeć przepływ pracy kodowania predykcyjnego, zobacz [Learn about pred
 
 ## <a name="create-a-model"></a>Tworzenie modelu
 
-1. W portalu zgodności usługi Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), a następnie wybierz kartę **Zestawy przeglądów**.
+1. W portal zgodności Microsoft Purview otwórz przypadek zbierania elektronicznych materiałów dowodowych (Premium), a następnie wybierz kartę **Zestawy przeglądów**.
 
-2. Otwórz zestaw przeglądów, a następnie kliknij pozycję **AnalizaZarządzanie** >  **kodowaniem predykcyjnym (wersja zapoznawcza).**
+2. Otwórz zestaw przeglądów, a następnie kliknij pozycję **Analiza** > **Zarządzaj kodowaniem predykcyjnym (wersja zapoznawcza).**
 
    ![Kliknij menu rozwijane Analizuj w zestawie przeglądów, aby przejść do strony Kodowanie predykcyjne.](..\media\ManagePredictiveCoding.png)
 

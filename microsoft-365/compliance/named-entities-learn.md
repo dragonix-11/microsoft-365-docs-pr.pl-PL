@@ -1,5 +1,5 @@
 ---
-title: Dowiedz się więcej o nazwanych jednostkach
+title: Dowiedz się więcej o nazywanych obiektach
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,28 +16,26 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Dowiedz się, jak nazwane jednostki ułatwiają wykrywanie poufnych elementów zawierających nazwiska osób, adresy fizyczne i terminy medyczne za pośrednictwem zasad ochrony przed utratą danych
-ms.openlocfilehash: 6c20932216953d64abe4515b529bba66b2561647
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 013d2453190c692eeb3ae9a0dfd48437bded1f0c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973206"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633504"
 ---
-# <a name="learn-about-named-entities"></a>Dowiedz się więcej o nazwanych jednostkach
+# <a name="learn-about-named-entities"></a>Dowiedz się więcej o nazywanych obiektach
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-*Nazwane jednostki* to [poufne typy informacji](sensitive-information-type-learn-about.md) (SIT). Są to złożone słowniki i klasyfikatory oparte na wzorcach, których można użyć do wykrywania nazwisk osób, adresów fizycznych oraz warunków medycznych. Można je wyświetlić w **portalu zgodności usługi Microsoft Purview > Klasyfikacja danych > typy informacji poufnych**. Poniżej znajduje się częściowa lista miejsc, w których można używać interfejsów SIC:
+*Nazwane jednostki* to [poufne typy informacji](sensitive-information-type-learn-about.md) (SIT). Są to złożone słowniki i klasyfikatory oparte na wzorcach, których można użyć do wykrywania nazwisk osób, adresów fizycznych oraz warunków medycznych. Można je zobaczyć w **typach portal zgodności Microsoft Purview > Klasyfikacja danych > Informacje poufne**. Poniżej znajduje się częściowa lista miejsc, w których można używać interfejsów SIC:
 
 
-- [Zasady ochrony przed utratą danych (DLP) w usłudze Microsoft Purview](dlp-learn-about-dlp.md) 
+- [zasady Ochrona przed utratą danych w Microsoft Purview (DLP)](dlp-learn-about-dlp.md) 
 - [Etykiety wrażliwości](sensitivity-labels.md)
 - [Zarządzanie ryzykiem wewnętrznym](insider-risk-management-solution-overview.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Purview Information Protection](apply-sensitivity-label-automatically.md)
 - [Zarządzanie cyklem życia danych](information-governance.md)
 - [Zarządzanie rekordami](records-management.md)
-- [Microsoft Purview eDiscovery](ediscovery.md)
+- [Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview](ediscovery.md)
 - [Microsoft Priva](/privacy/priva/priva-overview.md)
 - [Dokładne dane pasują do typów informacji poufnych](sit-learn-about-exact-data-match-based-sits.md)
 
@@ -68,7 +66,7 @@ Oto kilka przykładów nazwanych jednostek SIC. Wszystkie z nich można znaleź�
 
 ## <a name="examples-of-enhanced-dlp-policies"></a>Przykłady rozszerzonych zasad DLP
 
-Oto kilka przykładów rozszerzonych zasad DLP, które używają nazwanych jednostek SIC. Wszystkie 10 z nich można znaleźć w **portalu zgodności usługi Microsoft Purview > Zapobieganie utracie danych > tworzenie zasad**. Ulepszonych szablonów można używać w programie DLP i automatycznym etykietowaniu.
+Oto kilka przykładów rozszerzonych zasad DLP, które używają nazwanych jednostek SIC. Wszystkie 10 z nich można znaleźć w **zasadach portal zgodności Microsoft Purview > Ochrona przed utratą danych > Tworzenie**. Ulepszonych szablonów można używać w programie DLP i automatycznym etykietowaniu.
 
 |Kategoria zasad  |Szablon  |Opis  |
 |---------|---------|---------|
@@ -79,7 +77,7 @@ Oto kilka przykładów rozszerzonych zasad DLP, które używają nazwanych jedno
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Używanie nazwanych jednostek w zasadach ochrony przed utratą danych](named-entities-use.md)
+- [Używaj nazwanych obiektów w zasadach zapobiegania utracie danych](named-entities-use.md)
 
 
 ## <a name="for-further-information"></a>Aby uzyskać więcej informacji

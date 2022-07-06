@@ -17,20 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Plan plików zapewnia zaawansowane możliwości zarządzania etykietami przechowywania.
-ms.openlocfilehash: 67844e521aeec2257440aea34a79f0b96333f7f9
-ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
+ms.openlocfilehash: 4257f7306767f1ede04edfc949419b1ab7477d8b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65889372"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635376"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Tworzenie etykiet przechowywania i zarządzanie nimi przy użyciu planu plików
 
 >*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Mimo że można tworzyć etykiety przechowywania i zarządzać nimi z **poziomu zarządzania cyklem życia danych** w portalu zgodności usługi Microsoft Purview, plan plików z **zarządzania rekordami** ma dodatkowe możliwości zarządzania:
+Mimo że w portal zgodności Microsoft Purview można tworzyć etykiety przechowywania i zarządzać nimi na podstawie **zarządzania cyklem życia danych**, plan plików z **zarządzania rekordami** ma dodatkowe możliwości zarządzania:
 
 - Etykiety przechowywania można tworzyć zbiorczo, importując odpowiednie informacje z arkusza kalkulacyjnego.
 
@@ -51,7 +49,7 @@ Aby uzyskać dostęp do planu plików, musisz mieć jedną z następujących ró
 - Menedżer przechowywania
 - Menedżer przechowywania tylko do wyświetlania
 
-W [portalu zgodności usługi Microsoft Purview](https://compliance.microsoft.com/) przejdź do **obszaru Plan plików** **zarządzania rekordami** >  **rozwiązań** > :
+W [portal zgodności Microsoft Purview](https://compliance.microsoft.com/) przejdź do **obszaru Plan plików** **zarządzania rekordami** >  **rozwiązań** > :
 
 ![Strona planów plików](../media/compliance-file-plan.png). 
 
@@ -59,7 +57,7 @@ Jeśli **zarządzanie rekordami** nie jest wyświetlane w okienku nawigacji, naj
 
 ## <a name="navigating-your-file-plan"></a>Nawigowanie po planie plików
 
-Jeśli etykiety przechowywania zostały już utworzone w ramach **zarządzania cyklem życia danych** w portalu zgodności usługi Microsoft Purview, etykiety te są automatycznie wyświetlane w planie plików. 
+Jeśli w portal zgodności Microsoft Purview utworzono już etykiety przechowywania z **zarządzania cyklem życia danych**, etykiety te są automatycznie wyświetlane w planie plików. 
 
 Podobnie jeśli teraz utworzysz etykiety przechowywania w planie plików, będą one również dostępne w **ramach zarządzania cyklem życia danych** , jeśli etykiety nie są skonfigurowane do oznaczania zawartości jako rekordu.
 
@@ -203,11 +201,11 @@ Poniższe informacje ułatwiają wypełnienie pobranego szablonu w celu zaimport
 |Właściwość|Wpisać|Wymagany|Prawidłowe wartości|
 |:-----|:-----|:-----|:-----|
 |LabelName|Ciąg|Tak|Ta właściwość określa nazwę etykiety przechowywania i musi być unikatowa w dzierżawie. Obsługiwane znaki do importowania: a-z, A-Z, 0-9, łącznik (-) i znak spacji.|
-|Komentowanie|Ciąg|Nie|Ta właściwość służy do dodawania opisu etykiety przechowywania dla administratorów. Ten opis jest wyświetlany tylko administratorom, którzy zarządzają etykietą przechowywania w portalu zgodności usługi Microsoft Purview.|
+|Komentowanie|Ciąg|Nie|Ta właściwość służy do dodawania opisu etykiety przechowywania dla administratorów. Ten opis jest wyświetlany tylko administratorom, którzy zarządzają etykietą przechowywania w portal zgodności Microsoft Purview.|
 |Uwagi|Ciąg|Nie|Ta właściwość służy do dodawania opisu etykiety przechowywania dla użytkowników. Ten opis jest wyświetlany, gdy użytkownicy najeżdżą kursorem na etykietę w aplikacjach takich jak Outlook, SharePoint i OneDrive. Jeśli pozostawisz tę właściwość pustą, zostanie wyświetlony domyślny opis, który objaśnia ustawienia przechowywania etykiety. |
 |IsRecordLabel|Ciąg|Nie, chyba że **przepis** ma **wartość TRUE**|Ta właściwość określa, czy etykieta oznacza zawartość jako rekord. Prawidłowe wartości to: </br>**PRAWDA**: Etykieta oznacza element jako rekord i w rezultacie nie można usunąć elementu. </br>**FALSE**: Etykieta nie oznacza zawartości jako rekordu. Jest to wartość domyślna. </br> </br> Zależności grupy: Po określeniu tej właściwości należy również określić właściwości RetentionAction, RetentionDuration i RetentionType.|
 |RetentionAction|Ciąg|Nie, o ile nie określono **wartości RetentionDuration**, **RetentionType** lub **ReviewerEmail**|Ta właściwość określa akcję, jaką należy wykonać po wygaśnięciu wartości określonej przez właściwość RetentionDuration (jeśli określono). Prawidłowe wartości to: </br>**Usuń**: Elementy starsze niż wartość określona przez właściwość RetentionDuration są usuwane.</br>**Zachowaj: Zachowaj** elementy przez czas określony przez właściwość RetentionDuration, a następnie nie rób nic po upływie okresu trwania. </br>**KeepAndDelete**: Zachowaj elementy przez czas określony przez właściwość RetentionDuration, a następnie usuń je po upływie okresu trwania. </br> </br> Zależności grupy: po określeniu tej właściwości należy również określić właściwości RetentionDuration i RetentionType. |
-|PrzechowywanieDuration|Ciąg|Nie, o ile nie określono **parametru RetentionAction** lub **RetentionType**|Ta właściwość określa liczbę dni przechowywania zawartości. Prawidłowe wartości to: </br>**Nieograniczone**: elementy będą zachowywane przez czas nieokreślony. </br>**_n_*: dodatnia liczba całkowita w dniach; na przykład **365**. Maksymalna obsługiwana liczba to 24 855, czyli 68 lat. Jeśli potrzebujesz więcej czasu niż to maksimum, zamiast tego użyj opcji Nieograniczone.</br> </br> Zależności grupy: po określeniu tej właściwości należy również określić właściwości RetentionAction i RetentionType.
+|PrzechowywanieDuration|Ciąg|Nie, o ile nie określono **parametru RetentionAction** lub **RetentionType**|Ta właściwość określa liczbę dni przechowywania zawartości. Prawidłowe wartości to: </br>**Nieograniczone**: elementy będą zachowywane przez czas nieokreślony. </br>**_n_*: dodatnia liczba całkowita w dniach; na przykład **365**. Maksymalna obsługiwana liczba to 36 525, czyli 100 lat. Jeśli potrzebujesz więcej czasu niż to maksimum, zamiast tego użyj opcji Nieograniczone.</br> </br> Zależności grupy: po określeniu tej właściwości należy również określić właściwości RetentionAction i RetentionType.
 |Typ przechowywania|Ciąg|Nie, chyba że określono **parametr RetentionAction** lub **RetentionDuration**|Ta właściwość określa, czy czas przechowywania (jeśli został określony) jest obliczany na podstawie daty utworzenia zawartości, daty zdarzenia, daty etykiety lub daty ostatniej modyfikacji. Prawidłowe wartości to: </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModyfikacjaAgeInDays** </br> </br> Zależności grupy: po określeniu tej właściwości należy również określić właściwości RetentionAction i RetentionDuraction.|
 |ReviewerEmail|SmtpAddress|Nie|Gdy ta właściwość zostanie określona, przegląd dyspozycji zostanie wyzwolony po upływie czasu przechowywania. Ta właściwość określa adres e-mail recenzenta w dzierżawie dla akcji **przechowywania KeepAndDelete** . </br> </br> Możesz dołączyć adres e-mail poszczególnych użytkowników, grup dystrybucyjnych lub grup zabezpieczeń w dzierżawie. Określ wiele adresów e-mail, oddzielając je średnikami. </br> </br> Zależności grupy: Po określeniu tej właściwości należy również określić **właściwości RetentionAction** (musi to być **KeepAndDelete**), **RetentionDuration** i **RetentionType** .|
 |Identyfikator odwołania|Ciąg|Nie|Ta właściwość określa wartość wyświetlaną w deskryptorze planu pliku **identyfikatora odwołania** , której można użyć jako unikatowej wartości dla organizacji.| 

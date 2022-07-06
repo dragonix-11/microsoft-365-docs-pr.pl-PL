@@ -15,20 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się więcej o narzędziach dostępnych do organizowania zestawów dokumentów podczas analizowania przypadku zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview.
+description: Dowiedz się więcej o narzędziach dostępnych do organizowania zestawów dokumentów podczas analizowania przypadku Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: af34a790881cad2af5d278cf187b963f0aa58146
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 822c21c05b865bdf1208f7679eaff9ea35b10a9e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099834"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634836"
 ---
 # <a name="analyze-data-in-a-review-set-in-ediscovery-premium"></a>Analizowanie danych w zestawie przeglądów w usłudze eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Gdy liczba zebranych dokumentów jest duża, przeglądanie ich wszystkich może być trudne. Usługa Microsoft Purview eDiscovery (Premium) udostępnia szereg narzędzi do analizowania dokumentów w celu zmniejszenia ilości dokumentów, które mają być przeglądane bez utraty informacji, oraz ułatwia organizowanie dokumentów w spójny sposób. Aby dowiedzieć się więcej o tych możliwościach, zobacz:
+Gdy liczba zebranych dokumentów jest duża, przeglądanie ich wszystkich może być trudne. Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) udostępnia szereg narzędzi do analizowania dokumentów w celu zmniejszenia ilości dokumentów, które mają być przeglądane bez utraty informacji, oraz ułatwia organizowanie dokumentów w spójny sposób. Aby dowiedzieć się więcej o tych możliwościach, zobacz:
 
 - [Wykrywanie niepełnych duplikatów](near-duplicate-detection-in-advanced-ediscovery.md)
 
@@ -44,7 +42,7 @@ Aby analizować dane w zestawie przeglądów:
 
 2. Otwórz zestaw przeglądów, który chcesz przeanalizować.
 
-3. Kliknij pozycję **AnalizaNieuchomienie dokumentu & analizy poczty e-mail**. > 
+3. Kliknij pozycję **Analiza** > **Uruchom dokument & analizy poczty e-mail**.
 
    ![Wybierz pozycję Uruchom dokument & analizy poczty e-mail z listy rozwijanej Analiza](..\media\RunAnalytics1.png)
 
@@ -72,12 +70,12 @@ Na poniższej liście opisano wynik zapytania filtru pod względem zawartości w
 
 - **Dokumenty i inne**. Filtruje zduplikowane dokumenty. Wyświetlane są tylko dokumenty unikatowe w zestawie przeglądów.
 
-- **Teams konwersacje**. Wyświetlane są wszystkie konwersacje Teams (i Yammer) w zestawie przeglądów.
+- **Rozmowy w usłudze Teams**. Wyświetlane są wszystkie konwersacje usługi Teams (i Yammer) w zestawie przeglądów.
 
-Aby uzyskać więcej informacji na temat typów inkluzywnych i unikatowości dokumentów, zobacz [Wątek wiadomości e-mail w funkcji zbierania elektronicznych materiałów dowodowych (Premium)](email-threading-in-advanced-ediscovery.md).
+Aby uzyskać więcej informacji na temat typów inkluzywnych i unikatowości dokumentów, zobacz [Wątek wiadomości e-mail w usłudze eDiscovery (Premium)](email-threading-in-advanced-ediscovery.md).
 
 > [!NOTE]
-> W publicznej wersji zapoznawczej [nowego formatu przypadku](advanced-ediscovery-new-case-format.md) w funkcji zbierania elektronicznych materiałów dowodowych (Premium) zapytanie filtru **For Review** nie zwróciło Teams ani Yammer konwersacji dla zestawów przeglądów (w przypadkach, w których jest używany format dużych przypadków) utworzonych przed 4 listopada 2021 r. Ten problem został rozwiązany. Oznacza to, że jeśli ponownie zastosujesz zapytanie **For Review** do zestawu przeglądów w przypadku, który używa formatu dużego przypadku, może zostać wyświetlonych więcej elementów zgodnych z zapytaniem filtru, ponieważ uwzględniono wszystkie konwersacje Teams lub Yammer.
+> W publicznej wersji zapoznawczej [nowego formatu przypadku](advanced-ediscovery-new-case-format.md) w usłudze eDiscovery (Premium) zapytanie filtru **For Review** nie zwróciło konwersacji usługi Teams ani Yammer dla zestawów przeglądów (w przypadkach, w których jest używany format dużych przypadków) utworzonych przed 4 listopada 2021 r. Ten problem został rozwiązany. Oznacza to, że jeśli ponownie zastosujesz zapytanie **For Review** do zestawu przeglądów w przypadku, w którym jest używany format dużych przypadków, może zostać wyświetlonych więcej elementów zgodnych z zapytaniem filtru, ponieważ uwzględniono wszystkie konwersacje usługi Teams lub Yammer.
 
 ## <a name="analytics-report"></a>Raport analizy
 
@@ -85,7 +83,7 @@ Aby wyświetlić raport analizy dla zestawu przeglądów:
 
 1. Otwórz zestaw przeglądów.
 
-2. Kliknij pozycję **AnalizaJak** >  **raporty**.
+2. Kliknij pozycję **Analiza** > **Pokaż raporty**.
 
 Raport **analizy** zawiera siedem składników analizy:
 

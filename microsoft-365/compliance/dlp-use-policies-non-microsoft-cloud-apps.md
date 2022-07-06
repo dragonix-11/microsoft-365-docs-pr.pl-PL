@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z zasad ochrony przed utratą danych dla aplikacji w chmurze innych niż firmy Microsoft
+title: Używanie zasad DLP dla aplikacji w chmurze innych niż Microsoft
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,82 +19,66 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Dowiedz się, jak używać zasad dlp dla aplikacji w chmurze innych niż firmy Microsoft.
-ms.openlocfilehash: b374f9b85d41b6dd6a5281e17347dffd414361da
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+description: Dowiedz się, jak używać zasad dlp dla aplikacji w chmurze innych niż Microsoft.
+ms.openlocfilehash: a50849b53819a7c5872c3ec8cb279ffa8d14e27f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63005248"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634410"
 ---
-# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Korzystanie z zasad ochrony przed utratą danych dla aplikacji w chmurze innych niż firmy Microsoft
+# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Używanie zasad ochrony przed utratą danych dla aplikacji w chmurze innych niż Microsoft
 
-Zasady ochrony przed utratą danych (DLP) dla aplikacji w chmurze innych niż firmy Microsoft są częścią pakietu funkcji ochrony przed utratą danych firmy Microsoft 365. Korzystając z tych funkcji, możesz odnajdować i chronić poufne elementy w Microsoft 365 usługach firmy Microsoft. Aby uzyskać więcej informacji na temat wszystkich usług firmy Microsoft w zakresie ochrony przed utratą danych, zobacz [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md).
-
-Zasady DLP mogą być stosowane do aplikacji w chmurze innych niż firmy Microsoft w celu monitorowania i wykrywania, gdy poufne elementy są używane i udostępniane za pośrednictwem aplikacji w chmurze innych niż firmy Microsoft. Zasady te zapewniają widoczność i kontrolę nad prawidłowym używaniem i ochroną oraz pomagają zapobiec ryzykownych zachowaniom, które mogłyby je naruszyć.
+Możesz określić zakres zasad DLP, aby Microsoft Defender for Cloud Apps do monitorowania, wykrywania i wykonywania akcji, gdy elementy poufne są używane i udostępniane za pośrednictwem aplikacji w chmurze innych niż Microsoft.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-### <a name="skusubscriptions-licensing"></a>Licencjonowanie subskrypcji/licencji na subskrypcje sKU
+### <a name="skusubscriptions-licensing"></a>Licencjonowanie jednostek SKU/subskrypcji
 
-Przed rozpoczęciem używania zasad DLP w aplikacjach w chmurze innych niż firma Microsoft potwierdź swoją [Microsoft 365 subskrypcję](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) i dodatki. Aby uzyskać dostęp do tej funkcji i korzystać z nich, musisz mieć jedną z tych subskrypcji lub dodatków:
+Przed rozpoczęciem korzystania z zasad DLP potwierdź [subskrypcję platformy Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) i wszelkie dodatki. Aby uzyskać dostęp do tej funkcji i korzystać z niej, musisz mieć jedną z następujących subskrypcji lub dodatków:
 
 - Microsoft 365 E5
 - Zgodność platformy Microsoft 365 E5
 - Zabezpieczenia platformy Microsoft 365 E5
 
 ### <a name="permissions"></a>Uprawnienia
-Użytkownik, który tworzy zasady DLP, powinien:
+Użytkownik, który tworzy zasady DLP, powinien mieć następujące uprawnienia:
 
 - Administrator globalny
-- Administrator zgodności: przypisywanie w usłudze Azure AD
-- Administrator danych zgodności: przypisywanie w usłudze Azure AD
+- Administrator zgodności: przypisywanie w Azure AD
+- Administrator danych zgodności: przypisywanie w Azure AD
 
-### <a name="prepare-your-defender-for-cloud-apps-environment"></a>Przygotowywanie środowiska usługi Defender dla aplikacji w chmurze
+### <a name="prepare-your-defender-for-cloud-apps-environment"></a>Przygotowywanie środowiska usługi Defender for Cloud Apps
 
-Zasady DLP dla aplikacji w chmurze innych niż firmy Microsoft korzystają z funkcji DLP aplikacji w chmurze usługi Defender. Aby z niego korzystać, należy przygotować środowisko usługi Defender dla aplikacji w chmurze. Aby uzyskać instrukcje, [zobacz Ustawianie natychmiastowego wglądu, ochrony i akcji zarządzania dla aplikacji](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
+Przed skonfigurowaniem zasad DLP o zakresie Microsoft Defender for Cloud Apps należy przygotować środowisko usługi Defender for Cloud Apps. Aby uzyskać instrukcje, zobacz [Szybki start: rozpoczynanie pracy z Microsoft Defender for Cloud Apps](/defender-cloud-apps/get-started).
 
-### <a name="connect-a-non-microsoft-cloud-app"></a>Połączenie aplikację w chmurze firmy Microsoft
+### <a name="connect-a-non-microsoft-cloud-app"></a>Łączenie aplikacji w chmurze innej niż Microsoft
 
-Aby używać zasad DLP do konkretnej aplikacji w chmurze innych niż firmy Microsoft, aplikacja musi być połączona z usługą Defender for Cloud Apps. Aby uzyskać informacje, zobacz:
+Aby korzystać z zasad DLP, które są ograniczone do określonej aplikacji w chmurze innej niż Microsoft, aplikacja musi być połączona z usługą Defender for Cloud Apps. Aby uzyskać informacje, zobacz:
 
-- [Połączenie Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
-- [Połączenie Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [Połączenie G-Workspace](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
-- [Połączenie Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
-- [Połączenie Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
+- [Connect Box](/defender-cloud-apps/connect-box)
+- [Łączenie z usługą Dropbox](/defender-cloud-apps/connect-dropbox)
+- [Łączenie z obszarem roboczym Google](/defender-cloud-apps/connect-google-workspace)
+- [Łączenie z usługą Salesforce](/defender-cloud-apps/connect-salesforce)
+- [Łączenie aplikacji Cisco Webex](/defender-cloud-apps/connect-webex)
 
-Po połączeniu aplikacji w chmurze z usługą Defender dla aplikacji w chmurze możesz utworzyć dla nich Microsoft 365 DLP.
+Po połączeniu aplikacji w chmurze z usługą Defender for Cloud Apps można utworzyć dla nich zasady DLP.
 
-> [!NOTE]
-> Za pomocą programu Microsoft Defender dla aplikacji w chmurze można również tworzyć zasady DLP dla aplikacji w chmurze firmy Microsoft. Jednak zalecane jest używanie funkcji ochrony przed Microsoft 365 do tworzenia zasad DLP i zarządzania nimi w aplikacjach firmy Microsoft w chmurze.
+## <a name="create-a-dlp-policy-scoped-to-a-non-microsoft-cloud-app"></a>Tworzenie zasad DLP o zakresie aplikacji w chmurze spoza firmy Microsoft
 
-## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>Tworzenie zasad DLP dla aplikacji w chmurze innych niż firmy Microsoft
+Zapoznaj się [z artykułem Tworzenie, testowanie i dostrajanie zasad DLP](create-test-tune-dlp-policy.md) dla procedur tworzenia zasad DLP. Należy pamiętać o tych kwestiach podczas konfigurowania zasad.
 
-Po wybraniu lokalizacji zasad DLP włącz lokalizację programu **Microsoft Defender dla aplikacji w** chmurze.
+- Wybierz opcję włącz **lokalizację Microsoft Defender for Cloud Apps**.
+- Aby wybrać określoną aplikację lub wystąpienie, wybierz pozycję **Wybierz wystąpienie**. Jeśli nie wybierzesz wystąpienia, zasady będą ograniczone do wszystkich połączonych aplikacji w dzierżawie Microsoft Defender for Cloud Apps.
+- Możesz wybrać jedną z wielu **akcji** do wymuszenia w aplikacjach innych firm. Aby ograniczyć aplikacje innych firm, wybierz pozycję **Ogranicz aplikacje innych firm,** a następnie wybierz określone akcje.
 
-- Aby wybrać konkretną aplikację lub wystąpienie, wybierz **pozycję Wybierz wystąpienie**.
-- Jeśli nie wybierzesz wystąpienia, zasady będą używane wszystkie połączone aplikacje w dzierżawie usługi Microsoft Defender dla aplikacji w chmurze.
-
-   ![Lokalizacje do zastosowania zasad.](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
-
-   ![Box-US i Box-General.](../media/2-dlp-non-microsoft-cloud-app-box.png)
-
-Możesz wybrać różne akcje dla każdej obsługiwanej aplikacji w chmurze innych niż firmy Microsoft. Dla każdej aplikacji istnieją różne możliwe akcje (w zależności od interfejsu API aplikacji w chmurze).
-
-![Utwórz regułę.](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
-
-Podczas tworzenia reguły w zasadach DLP możesz wybrać akcję dla aplikacji w chmurze innych niż firmy Microsoft. Aby ograniczyć aplikacje innych firm, wybierz **pozycję Ogranicz aplikacje innych firm**.
-
-![Ograniczanie aplikacji innych firm.](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
+![lista akcji do wymuszenia w połączonych aplikacjach w chmurze](../media/dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
 > [!NOTE]
-> Zasady DLP stosowane do aplikacji innych niż firmy Microsoft używają programu Microsoft Defender dla aplikacji w chmurze. Po utworzeniu zasad DLP dla aplikacji innych niż firmy Microsoft te same zasady zostaną automatycznie utworzone w usłudze Microsoft Defender dla aplikacji w chmurze.
-
-Aby uzyskać informacje na temat tworzenia i konfigurowania zasad DLP, zobacz [Tworzenie testowania i dostosowywanie zasad DLP](./create-test-tune-dlp-policy.md).
+> Podczas tworzenia zasad DLP o zakresie Microsoft Defender for Cloud Apps te same zasady zostaną automatycznie utworzone w Microsoft Defender for Cloud Apps.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Tworzenie i dostosowywanie zasad DLP](./create-test-tune-dlp-policy.md)
+- [Tworzenie testu i dostrajanie zasad DLP](./create-test-tune-dlp-policy.md)
 - [Wprowadzenie do domyślnych zasad DLP](./get-started-with-the-default-dlp-policy.md)
-- [Tworzenie zasad DLP na podstawie szablonu](./create-a-dlp-policy-from-a-template.md)
+- [Twórz zasady DLP na podstawie szablonu](./create-a-dlp-policy-from-a-template.md)

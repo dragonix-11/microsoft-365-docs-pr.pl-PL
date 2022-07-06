@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie do barier informacyjnych
-description: Dowiedz się, jak rozpocząć pracę z barierami informacyjnymi w Microsoft Purview.
+description: Dowiedz się, jak rozpocząć pracę z barierami informacyjnymi w usłudze Microsoft Purview.
 keywords: Microsoft 365, Microsoft Purview, zgodność, bariery informacyjne
 ms.author: robmazz
 author: robmazz
@@ -16,16 +16,14 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74da3ee1c2b3339a66ff205989dd978fdd00a530
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: fde4db2d646ccb9c7535096ec001c0371e78da8f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396250"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632272"
 ---
 # <a name="get-started-with-information-barriers"></a>Wprowadzenie do barier informacyjnych
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W tym artykule opisano sposób konfigurowania zasad barier informacyjnych (IB) w organizacji. Jest zaangażowanych kilka kroków, dlatego przed rozpoczęciem konfigurowania zasad IB upewnij się, że przejrzyj cały proces.
 
@@ -38,7 +36,7 @@ Aby uzyskać więcej informacji na temat scenariuszy i funkcji IB, zobacz [Dowie
 
 ## <a name="required-subscriptions-and-permissions"></a>Wymagane subskrypcje i uprawnienia
 
-Przed rozpoczęciem pracy z usługą IB należy potwierdzić subskrypcję Microsoft 365 i wszelkie dodatki. Aby uzyskać dostęp do usługi IB i korzystać z niej, organizacja musi mieć jedną z następujących subskrypcji lub dodatków:
+Przed rozpoczęciem pracy z usługą IB należy potwierdzić subskrypcję platformy Microsoft 365 i wszelkie dodatki. Aby uzyskać dostęp do usługi IB i korzystać z niej, organizacja musi mieć jedną z następujących subskrypcji lub dodatków:
 
 - subskrypcja Microsoft 365 E5/A5 (wersja płatna lub próbna)
 - subskrypcja Office 365 E5/A5/A3/A1 (wersja płatna lub próbna)
@@ -46,11 +44,11 @@ Przed rozpoczęciem pracy z usługą IB należy potwierdzić subskrypcję Micros
 - subskrypcja Microsoft 365 E3/A3/A1 + dodatek zgodności Microsoft 365 E5/A5
 - subskrypcja Microsoft 365 E3/A3/A1 + dodatek Microsoft 365 E5/A5 Insider Risk Management
 
-Aby uzyskać więcej informacji, zobacz [Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Aby uzyskać więcej informacji, zobacz [Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 Aby [zarządzać zasadami IB](information-barriers-policies.md), musisz mieć przypisaną jedną z następujących ról:
 
-- administrator globalny Microsoft 365
+- Administrator globalny platformy Microsoft 365
 - administrator globalny Office 365
 - Administrator zgodności
 - Zarządzanie zgodnością IB
@@ -61,7 +59,7 @@ Aby dowiedzieć się więcej na temat ról i uprawnień, zobacz [Uprawnienia w c
 
 Podczas konfigurowania usługi IB będziesz pracować z kilkoma obiektami i pojęciami.
 
-- **Atrybuty konta użytkownika** są definiowane w Azure Active Directory (lub Exchange Online). Te atrybuty mogą obejmować dział, stanowisko, lokalizację, nazwę zespołu i inne szczegóły profilu zadania. Przypiszesz użytkowników lub grupy do segmentów z tymi atrybutami.
+- **Atrybuty konta użytkownika** są definiowane w usłudze Azure Active Directory (lub Exchange Online). Te atrybuty mogą obejmować dział, stanowisko, lokalizację, nazwę zespołu i inne szczegóły profilu zadania. Przypiszesz użytkowników lub grupy do segmentów z tymi atrybutami.
 - **Segmenty to zestawy** grup lub użytkowników, które są zdefiniowane w portalu zgodności lub przy użyciu programu PowerShell używającego wybranych atrybutów grupy lub konta użytkownika. Aby uzyskać szczegółowe informacje, zobacz [listę obsługiwanych atrybutów IB](information-barriers-attributes.md) .
 - **Zasady IB** określają limity lub ograniczenia komunikacji. Podczas definiowania zasad IB wybierasz spośród dwóch rodzajów zasad:
   - *Zasady blokowe* uniemożliwiają komunikację jednego segmentu z innym segmentem.
@@ -71,43 +69,43 @@ Podczas konfigurowania usługi IB będziesz pracować z kilkoma obiektami i poj�
     > W przypadku zasad *zezwalania* grupy i użytkownicy spoza IB nie będą widoczni dla użytkowników uwzględnionych w segmentach IB i zasadach. Jeśli potrzebujesz grup i użytkowników innych niż IB, aby byli widoczni dla użytkowników uwzględnionych w segmentach i zasadach IB, musisz użyć zasad *blokowych* .
 
 - **Aplikacja zasad** jest wykonywana po zdefiniowaniu wszystkich zasad IB i możesz je zastosować w organizacji.
-- **Widoczność użytkowników i grup innych niż IB**. Użytkownicy i grupy inne niż IB są użytkownikami i grupami wykluczonymi z segmentów i zasad IB. W zależności od typu zasad IB (blokuj lub zezwalaj) zachowanie tych użytkowników i grupy będzie się różnić w Microsoft Teams, SharePoint, OneDrive i na globalnej liście adresów. W przypadku użytkowników zdefiniowanych w *zasadach zezwalania* grupy inne niż IB i użytkownicy nie będą widoczni dla użytkowników uwzględnionych w segmentach IB i zasadach. W przypadku użytkowników zdefiniowanych w zasadach *blokowych* grupy inne niż IB i użytkownicy będą widoczni dla użytkowników uwzględnionych w segmentach IB i zasadach.
+- **Widoczność użytkowników i grup innych niż IB**. Użytkownicy i grupy inne niż IB są użytkownikami i grupami wykluczonymi z segmentów i zasad IB. W zależności od typu zasad IB (blokuj lub zezwalaj) zachowanie tych użytkowników i grup będzie się różnić w usłudze Microsoft Teams, SharePoint, OneDrive i na globalnej liście adresów. W przypadku użytkowników zdefiniowanych w *zasadach zezwalania* grupy inne niż IB i użytkownicy nie będą widoczni dla użytkowników uwzględnionych w segmentach IB i zasadach. W przypadku użytkowników zdefiniowanych w zasadach *blokowych* grupy inne niż IB i użytkownicy będą widoczni dla użytkowników uwzględnionych w segmentach IB i zasadach.
 - **Obsługa grup**. Tylko nowoczesne grupy są obecnie obsługiwane na listach IB, a listy dystrybucyjne/grupy zabezpieczeń są traktowane jako grupy inne niż grupy IB.
-- **Ukryte/wyłączone konta użytkowników**. W przypadku kont ukrytych/wyłączonych w organizacji parametr *HiddenFromAddressListEnabled jest automatycznie ustawiany* na *wartość True* , gdy konta użytkowników są ukryte lub wyłączone. W organizacjach z obsługą IB te konta nie mogą komunikować się ze wszystkimi innymi kontami użytkowników. W Microsoft Teams wszystkie czaty, w tym te konta, są zablokowane lub użytkownicy są automatycznie usuwane z konwersacji.
+- **Ukryte/wyłączone konta użytkowników**. W przypadku kont ukrytych/wyłączonych w organizacji parametr *HiddenFromAddressListEnabled jest automatycznie ustawiany* na *wartość True* , gdy konta użytkowników są ukryte lub wyłączone. W organizacjach z obsługą IB te konta nie mogą komunikować się ze wszystkimi innymi kontami użytkowników. W usłudze Microsoft Teams wszystkie czaty, w tym te konta, są zablokowane lub użytkownicy są automatycznie usuwane z konwersacji.
 
 ## <a name="configuration-overview"></a>Omówienie konfiguracji 
 
 | **Kroki** | **Co się dzieje** |
 |:------|:----------------|
-| **Krok 1**. [Upewnij się, że zostały spełnione wymagania wstępne](#step-1-make-sure-prerequisites-are-met) | — Sprawdź, czy masz wymagane subskrypcje i uprawnienia <br/>— Sprawdź, czy katalog zawiera dane dotyczące segmentowania użytkowników<br/>— Włącz [wyszukiwanie według nazwy dla Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>— Upewnij się, że rejestrowanie inspekcji jest włączone<br/>- Upewnij się, że nie obowiązują żadne zasady Exchange książki adresowej <br/>— Udzielanie zgody administratora na Microsoft Teams (kroki są uwzględnione) |
+| **Krok 1**. [Upewnij się, że zostały spełnione wymagania wstępne](#step-1-make-sure-prerequisites-are-met) | — Sprawdź, czy masz wymagane subskrypcje i uprawnienia <br/>— Sprawdź, czy katalog zawiera dane dotyczące segmentowania użytkowników<br/>— [Włączanie wyszukiwania według nazwy dla usługi Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>— Upewnij się, że rejestrowanie inspekcji jest włączone<br/>— Upewnij się, że nie obowiązują żadne zasady książki adresowej programu Exchange <br/>— Udzielanie zgody administratora dla usługi Microsoft Teams (kroki są uwzględnione) |
 | **Krok 2**. [Segmentuj użytkowników w organizacji](#step-2-segment-users-in-your-organization) | — Określanie, jakie zasady są potrzebne<br/>— Tworzenie listy segmentów do zdefiniowania<br/>— Określanie atrybutów do użycia<br/>— Definiowanie segmentów pod względem filtrów zasad |
 | **Krok 3**. [Tworzenie zasad barier informacyjnych](#step-3-create-ib-policies) | — Tworzenie zasad (nie są jeszcze stosowane)<br/>- Wybierz jeden z dwóch rodzajów (blokuj lub zezwalaj) |
 | **Krok 4**. [Stosowanie zasad barier informacyjnych](#step-4-apply-ib-policies) | — Ustawianie stanu aktywnego zasad<br/>— Uruchamianie aplikacji zasad<br/>— Wyświetlanie stanu zasad |
-| **Krok 5**. [Konfiguracja barier informacyjnych na SharePoint i OneDrive (opcjonalnie)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | — Konfigurowanie protokołu IB dla SharePoint i OneDrive |
+| **Krok 5**. [Konfiguracja barier informacyjnych w programach SharePoint i OneDrive (opcjonalnie)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | — Konfigurowanie usługi IB dla programu SharePoint i usługi OneDrive |
 | **Krok 6**. [Tryby barier informacyjnych (opcjonalnie)](#step-6-information-barriers-modes) | - Zaktualizuj tryby IB, jeśli ma to zastosowanie |
 
 ## <a name="step-1-make-sure-prerequisites-are-met"></a>Krok 1. Upewnij się, że zostały spełnione wymagania wstępne
 
 Oprócz wymaganych subskrypcji i uprawnień przed skonfigurowaniem usługi IB upewnij się, że spełnione są następujące wymagania:
 
-- **Dane katalogu**: upewnij się, że struktura organizacji jest odzwierciedlona w danych katalogu. Aby wykonać tę akcję, upewnij się, że atrybuty konta użytkownika (takie jak członkostwo w grupie, nazwa działu itp.) są poprawnie wypełniane w Azure Active Directory (lub Exchange Online). Aby dowiedzieć się więcej, zobacz następujące zasoby:
+- **Dane katalogu**: upewnij się, że struktura organizacji jest odzwierciedlona w danych katalogu. Aby wykonać tę akcję, upewnij się, że atrybuty konta użytkownika (takie jak członkostwo w grupie, nazwa działu itp.) są poprawnie wypełniane w usłudze Azure Active Directory (lub Exchange Online). Aby dowiedzieć się więcej, zobacz następujące zasoby:
   - [Atrybuty zasad barier informacyjnych](information-barriers-attributes.md)
-  - [Dodawanie lub aktualizowanie informacji o profilu użytkownika przy użyciu Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+  - [Dodawanie lub aktualizowanie informacji o profilu użytkownika przy użyciu usługi Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Konfigurowanie właściwości konta użytkownika za pomocą programu Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
-- **Wyszukiwanie w katalogu o określonym zakresie**: przed zdefiniowaniem pierwszych zasad IB organizacji należy [włączyć wyszukiwanie katalogów o określonym zakresie w Microsoft Teams](/MicrosoftTeams/teams-scoped-directory-search). Odczekaj co najmniej 24 godziny po włączeniu wyszukiwania w katalogu o określonym zakresie, zanim skonfigurujesz lub zdefiniujesz zasady IB.
+- **Wyszukiwanie w katalogu o określonym zakresie**: przed zdefiniowaniem pierwszych zasad IB organizacji należy [włączyć wyszukiwanie katalogów o określonym zakresie w usłudze Microsoft Teams](/MicrosoftTeams/teams-scoped-directory-search). Odczekaj co najmniej 24 godziny po włączeniu wyszukiwania w katalogu o określonym zakresie, zanim skonfigurujesz lub zdefiniujesz zasady IB.
 
-- **Sprawdź, czy rejestrowanie inspekcji jest włączone**: aby wyszukać stan aplikacji zasad IB, należy włączyć rejestrowanie inspekcji. Inspekcja jest domyślnie włączona dla organizacji Microsoft 365. Niektóre organizacje mogły wyłączyć inspekcję z określonych powodów. Jeśli inspekcja jest wyłączona dla Twojej organizacji, może to być spowodowane tym, że inny administrator wyłączył tę inspekcję. Zalecamy potwierdzenie, że podczas wykonywania tego kroku można ponownie włączyć inspekcję. Aby uzyskać więcej informacji, zobacz [Włączanie lub wyłączanie wyszukiwania dziennika inspekcji](turn-audit-log-search-on-or-off.md).
+- **Sprawdź, czy rejestrowanie inspekcji jest włączone**: aby wyszukać stan aplikacji zasad IB, należy włączyć rejestrowanie inspekcji. Inspekcja jest domyślnie włączona dla organizacji platformy Microsoft 365. Niektóre organizacje mogły wyłączyć inspekcję z określonych powodów. Jeśli inspekcja jest wyłączona dla Twojej organizacji, może to być spowodowane tym, że inny administrator wyłączył tę inspekcję. Zalecamy potwierdzenie, że podczas wykonywania tego kroku można ponownie włączyć inspekcję. Aby uzyskać więcej informacji, zobacz [Włączanie lub wyłączanie wyszukiwania dziennika inspekcji](turn-audit-log-search-on-or-off.md).
 
 - **Usuń istniejące zasady Exchange Online książki adresowej**: przed zdefiniowaniem i zastosowaniem zasad IB musisz usunąć wszystkie istniejące zasady Exchange Online książki adresowej w organizacji. Zasady IB są oparte na zasadach książki adresowej, a istniejące zasady abp nie są zgodne z usługami ABP utworzonymi przez IB. Aby usunąć istniejące zasady książki adresowej, zobacz [Usuwanie zasad książki adresowej w Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Aby uzyskać więcej informacji na temat zasad IB i Exchange Online, zobacz [Bariery informacyjne i Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
 
-- **Zarządzanie przy użyciu programu PowerShell (opcjonalnie)**: segmenty i zasady IB można definiować i zarządzać nimi w programie PowerShell Office 365 Security & Compliance. Chociaż w tym artykule przedstawiono kilka przykładów, musisz zapoznać się z poleceniami cmdlet i parametrami programu PowerShell, jeśli zdecydujesz się na konfigurowanie segmentów i zasad IB oraz zarządzanie nimi za pomocą programu PowerShell. Jeśli wybierzesz tę opcję konfiguracji, będziesz również potrzebować modułu Azure Active Directory programu PowerShell.
-  - [Połączenie do programu PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell)
-  - [Instalowanie programu Azure Active Directory PowerShell dla Graph](/powershell/azure/active-directory/install-adv2)
+- **Zarządzanie przy użyciu programu PowerShell (opcjonalnie)**: segmenty i zasady IB można definiować i zarządzać nimi w programie PowerShell Office 365 Security & Compliance. Chociaż w tym artykule przedstawiono kilka przykładów, musisz zapoznać się z poleceniami cmdlet i parametrami programu PowerShell, jeśli zdecydujesz się na konfigurowanie segmentów i zasad IB oraz zarządzanie nimi za pomocą programu PowerShell. Jeśli wybierzesz tę opcję konfiguracji, potrzebny będzie również moduł Azure Active Directory PowerShell.
+  - [Nawiązywanie połączenia z programem PowerShell zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell)
+  - [Instalowanie programu PowerShell dla programu Graph w usłudze Azure Active Directory](/powershell/azure/active-directory/install-adv2)
 
-- **Zgoda administratora dla usługi IB w Microsoft Teams**: gdy obowiązują zasady IB, mogą usuwać użytkowników niezgodnych z IB z grup (na przykład Teams kanałów opartych na grupach). Ta konfiguracja pomaga zapewnić zgodność organizacji z zasadami i przepisami. Użyj poniższej procedury, aby umożliwić działanie zasad IB zgodnie z oczekiwaniami w Microsoft Teams.
+- **Administracja zgody dla usługi IB w usłudze Microsoft Teams**: gdy zasady IB są w miejscu, mogą usuwać użytkowników niezgodnych z IB z grup (na przykład kanałów usługi Teams, które są oparte na grupach). Ta konfiguracja pomaga zapewnić zgodność organizacji z zasadami i przepisami. Użyj poniższej procedury, aby umożliwić działanie zasad IB zgodnie z oczekiwaniami w usłudze Microsoft Teams.
 
-   1. Wymagania wstępne: [zainstaluj Azure Active Directory programu PowerShell dla Graph](/powershell/azure/active-directory/install-adv2).
+   1. Wymagania wstępne: [instalowanie programu Azure Active Directory PowerShell dla programu Graph](/powershell/azure/active-directory/install-adv2).
 
    2. Uruchom następujące polecenia cmdlet programu PowerShell:
 
@@ -154,14 +152,14 @@ Oprócz początkowej listy zasad utwórz listę segmentów dla swojej organizacj
 Określ atrybuty w danych katalogu organizacji, których użyjesz do definiowania segmentów. Możesz użyć *działu*, *elementu członkowskiego* lub dowolnego z obsługiwanych atrybutów IB. Upewnij się, że masz wartości w atrybutze wybranym dla użytkowników. Aby uzyskać więcej informacji, zobacz [obsługiwane atrybuty dla IB](information-barriers-attributes.md).
 
 > [!IMPORTANT]
-> **Przed przejściem do następnej sekcji upewnij się, że dane katalogu zawierają wartości atrybutów, których można użyć do definiowania segmentów**. Jeśli dane katalogu nie mają wartości atrybutów, których chcesz użyć, konta użytkowników muszą zostać zaktualizowane w celu uwzględnienia tych informacji przed kontynuowaniem konfigurowania usługi IB. Aby uzyskać pomoc w tej kwestii, zobacz następujące zasoby:<br/>- [Konfigurowanie właściwości konta użytkownika za pomocą programu Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Dodawanie lub aktualizowanie informacji o profilu użytkownika przy użyciu Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Przed przejściem do następnej sekcji upewnij się, że dane katalogu zawierają wartości atrybutów, których można użyć do definiowania segmentów**. Jeśli dane katalogu nie mają wartości atrybutów, których chcesz użyć, konta użytkowników muszą zostać zaktualizowane w celu uwzględnienia tych informacji przed kontynuowaniem konfigurowania usługi IB. Aby uzyskać pomoc w tej kwestii, zobacz następujące zasoby:<br/>- [Konfigurowanie właściwości konta użytkownika za pomocą programu Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Dodawanie lub aktualizowanie informacji o profilu użytkownika przy użyciu usługi Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-the-compliance-portal"></a>Definiowanie segmentów przy użyciu portalu zgodności
 
 Aby zdefiniować segmenty w portalu zgodności, wykonaj następujące kroki:
 
 1. Zaloguj się do [portalu zgodności](https://compliance.microsoft.com) przy użyciu poświadczeń dla konta administratora w organizacji.
-2. W portalu zgodności wybierz pozycję **Bariery** >  **informacyjneSegmenty**.
+2. W portalu zgodności wybierz pozycję **Bariery informacyjne Segmenty** > .
 3. Na stronie **Segmenty** wybierz pozycję **Nowy segment** , aby utworzyć i skonfigurować nowy segment.
 4. Na stronie **Nazwa** wprowadź nazwę segmentu. Nie można zmienić nazwy segmentu po jego utworzeniu.
 5. Wybierz pozycję **Dalej**.
@@ -247,7 +245,7 @@ Załóżmy na przykład, że chcesz zablokować komunikację między segmentem A
 Aby zdefiniować zasady w portalu zgodności, wykonaj następujące kroki:
 
 1. Zaloguj się do [portalu zgodności](https://compliance.microsoft.com) przy użyciu poświadczeń dla konta administratora w organizacji.
-2. W portalu zgodności wybierz pozycję **Bariery** >  **informacyjneZasady**.
+2. W portalu zgodności wybierz pozycję **Bariery** >  informacyjne **Zasady**.
 3. Na stronie **Zasady** wybierz pozycję **Utwórz zasady** , aby utworzyć i skonfigurować nowe zasady IB.
 4. Na stronie **Nazwa** wprowadź nazwę zasad, a następnie wybierz pozycję **Dalej**.
 5. Na stronie **Przypisany segment** wybierz pozycję **Wybierz segment**. Użyj pola wyszukiwania, aby wyszukać segment według nazwy lub przewiń, aby wybrać segment z wyświetlonej listy. Wybierz pozycję **Dodaj** , aby dodać wybrany segment do zasad. Możesz wybrać tylko jeden segment.
@@ -294,7 +292,7 @@ Jeśli chcesz zezwolić segmentowi na komunikowanie się tylko z jednym innym se
 Aby zdefiniować zasady w portalu zgodności, wykonaj następujące kroki:
 
 1. Zaloguj się do [portalu zgodności](https://compliance.microsoft.com) przy użyciu poświadczeń dla konta administratora w organizacji.
-2. W portalu zgodności wybierz pozycję **Bariery** >  **informacyjneZasady**.
+2. W portalu zgodności wybierz pozycję **Bariery** >  informacyjne **Zasady**.
 3. Na stronie **Zasady** wybierz pozycję **Utwórz zasady** , aby utworzyć i skonfigurować nowe zasady IB.
 4. Na stronie **Nazwa** wprowadź nazwę zasad, a następnie wybierz pozycję **Dalej**.
 5. Na stronie **Przypisany segment** wybierz pozycję **Wybierz segment**. Użyj pola wyszukiwania, aby wyszukać segment według nazwy lub przewiń, aby wybrać segment z wyświetlonej listy. Wybierz pozycję **Dodaj** , aby dodać wybrany segment do zasad. Możesz wybrać tylko jeden segment.
@@ -341,7 +339,7 @@ Zasady IB nie są stosowane, dopóki nie ustawisz ich na stan aktywny i nie zast
 Aby zastosować zasady w portalu zgodności, wykonaj następujące kroki:
 
 1. Zaloguj się do [portalu zgodności](https://compliance.microsoft.com) przy użyciu poświadczeń dla konta administratora w organizacji.
-2. W portalu zgodności wybierz pozycję **Bariery informacyjneZasady** >  **aplikacji**.
+2. W portalu zgodności wybierz pozycję **Bariery** >  informacyjne **Aplikacja zasad**.
 3. Na stronie **Aplikacja zasady** wybierz pozycję **Zastosuj wszystkie zasady** , aby zastosować wszystkie zasady IB w organizacji.
 
     >[!NOTE]
@@ -388,30 +386,30 @@ Dostępne są zasoby ułatwiające zarządzanie zasadami IB.
 - Aby edytować, zatrzymać lub usunąć zasady IB, zobacz [Zarządzanie zasadami barier informacyjnych](information-barriers-edit-segments-policies.md).
 - Jeśli coś pójdzie nie tak z usługą IB, zobacz [Rozwiązywanie problemów z barierami informacyjnymi](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting).
 
-## <a name="step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive"></a>Krok 5. Konfiguracja barier informacyjnych na SharePoint i OneDrive
+## <a name="step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive"></a>Krok 5. Konfiguracja barier informacyjnych w programach SharePoint i OneDrive
 
-Jeśli konfigurujesz protokół IB dla SharePoint i OneDrive, musisz włączyć usługę IB w tych usługach. Jeśli konfigurujesz protokół IB pod kątem Microsoft Teams, musisz również włączyć funkcję IB w tych usługach. Po utworzeniu zespołu w zespole Microsoft Teams witryna SharePoint jest automatycznie tworzona i skojarzona z Microsoft Teams dla środowiska plików. Zasady IB nie są domyślnie przestrzegane w tej nowej witrynie SharePoint i plikach.
+Jeśli konfigurujesz protokół IB dla programu SharePoint i usługi OneDrive, musisz włączyć usługę IB w tych usługach. Jeśli konfigurujesz usługę IB dla usługi Microsoft Teams, musisz również włączyć funkcję IB w tych usługach. Po utworzeniu zespołu w zespole usługi Microsoft Teams witryna programu SharePoint jest automatycznie tworzona i skojarzona z usługą Microsoft Teams na potrzeby obsługi plików. Zasady IB nie są domyślnie przestrzegane w tej nowej witrynie programu SharePoint i plikach.
 
-Aby włączyć funkcję IB w SharePoint i OneDrive, postępuj zgodnie ze wskazówkami i [krokami w artykule Korzystanie z barier informacyjnych z SharePoint](/sharepoint/information-barriers).
+Aby włączyć funkcję IB w programach SharePoint i OneDrive, postępuj zgodnie ze wskazówkami i krokami w artykule [Korzystanie z barier informacyjnych w programie SharePoint](/sharepoint/information-barriers) .
 
 ## <a name="step-6-information-barriers-modes"></a>Krok 6. Tryby barier informacyjnych
 
-Tryby mogą pomóc wzmocnić dostęp, udostępnianie i członkostwo w zasobie Microsoft 365 w oparciu o tryb IB zasobu. Tryby są obsługiwane w lokacjach Grupy Microsoft 365, Microsoft Teams, OneDrive i SharePoint i są automatycznie włączane w nowej lub istniejącej konfiguracji IB.
+Tryby mogą pomóc wzmocnić dostęp, udostępnianie i członkostwo w zasobie platformy Microsoft 365 w oparciu o tryb IB zasobu. Tryby są obsługiwane w witrynach Grupy Microsoft 365, Microsoft Teams, OneDrive i SharePoint i są automatycznie włączane w nowej lub istniejącej konfiguracji IB.
 
-Następujące tryby IB są obsługiwane w zasobach Microsoft 365:
+Następujące tryby IB są obsługiwane w zasobach platformy Microsoft 365:
 
 | **Tryb** | **Opis** | **Przykład** |
 |:-----|:------------|:--------|
-| **Otwórz** | Nie ma żadnych zasad IB ani segmentów skojarzonych z zasobem Microsoft 365. Każdy może zostać zaproszony do udziału w zasobie. | Witryna zespołu utworzona na potrzeby imprezy piknikowej dla Twojej organizacji. |
-| **Moderowany przez właściciela (wersja zapoznawcza)** | Zasady IB zasobu Microsoft 365 są określane na podstawie zasad IB właściciela zasobu. Właściciele zasobów mogą zapraszać dowolnego użytkownika do zasobu na podstawie zasad IB. Ten tryb jest przydatny, gdy firma chce zezwolić na współpracę między niezgodnych użytkowników segmentu, które są moderowane przez właściciela. Tylko właściciel zasobu może dodawać nowych członków według zasad IB. | Wirtualny przedstawiciel działu kadr chce współpracować z wirtualnymi przedstawicielami ds. sprzedaży i badań. Nowa witryna SharePoint, która jest ustawiona z *moderem właściciela* trybu IB, aby dodać użytkowników segmentu Sprzedaż i badania do tej samej witryny. Właściciel jest odpowiedzialny za zapewnienie, że do zasobu zostaną dodane odpowiednie elementy członkowskie. |
-| **Niejawne** | Zasady IB lub segmenty zasobu Microsoft 365 są dziedziczone z zasad IB elementów członkowskich zasobów. Właściciel może dodawać członków, o ile są one zgodne z istniejącymi członkami zasobu. Ten tryb jest domyślnym trybem IB dla Microsoft Teams. | Użytkownik segmentu Sales tworzy zespół Microsoft Teams do współpracy z innymi zgodnymi segmentami w organizacji. |
-| **Jawne** | Zasady IB zasobu Microsoft 365 są według segmentów skojarzonych z zasobem. Właściciel zasobu lub administrator SharePoint może zarządzać segmentami zasobu.  | Witryna utworzona tylko dla członków segmentu Sales w celu współpracy przez skojarzenie segmentu Sales z witryną.   |
+| **Otwórz** | Nie ma żadnych zasad ani segmentów IB skojarzonych z zasobem platformy Microsoft 365. Każdy może zostać zaproszony do udziału w zasobie. | Witryna zespołu utworzona na potrzeby imprezy piknikowej dla Twojej organizacji. |
+| **Moderowany przez właściciela (wersja zapoznawcza)** | Zasady IB zasobu platformy Microsoft 365 są określane na podstawie zasad IB właściciela zasobu. Właściciele zasobów mogą zapraszać dowolnego użytkownika do zasobu na podstawie zasad IB. Ten tryb jest przydatny, gdy firma chce zezwolić na współpracę między niezgodnych użytkowników segmentu, które są moderowane przez właściciela. Tylko właściciel zasobu może dodawać nowych członków według zasad IB. | Wirtualny przedstawiciel działu kadr chce współpracować z wirtualnymi przedstawicielami ds. sprzedaży i badań. Nowa witryna programu SharePoint ustawiona z *moderowanym właścicielem* trybu IB w celu dodania użytkowników segmentu Sales i Research do tej samej witryny. Właściciel jest odpowiedzialny za zapewnienie, że do zasobu zostaną dodane odpowiednie elementy członkowskie. |
+| **Niejawne** | Zasady IB lub segmenty zasobu platformy Microsoft 365 są dziedziczone z zasad IB elementów członkowskich zasobów. Właściciel może dodawać członków, o ile są one zgodne z istniejącymi członkami zasobu. Ten tryb jest domyślnym trybem IB dla usługi Microsoft Teams. | Użytkownik segmentu Sales tworzy zespół usługi Microsoft Teams do współpracy z innymi zgodnymi segmentami w organizacji. |
+| **Jawne** | Zasady IB zasobu platformy Microsoft 365 dotyczą segmentów skojarzonych z zasobem. Właściciel zasobu lub administrator programu SharePoint może zarządzać segmentami zasobu.  | Witryna utworzona tylko dla członków segmentu Sales w celu współpracy przez skojarzenie segmentu Sales z witryną.   |
 
 Aby uzyskać więcej informacji na temat trybów IB i sposobu ich konfigurowania w usługach, zobacz następujące artykuły:
 
-- [Tryby i Microsoft Teams barier informacyjnych](/microsoftteams/information-barriers-in-teams)
-- [Tryby i OneDrive barier informacyjnych](/onedrive/information-barriers)
-- [Tryby i SharePoint barier informacyjnych](/sharepoint/information-barriers)
+- [Tryby barier informacyjnych i microsoft teams](/microsoftteams/information-barriers-in-teams)
+- [Tryby barier informacyjnych i usługa OneDrive](/onedrive/information-barriers)
+- [Tryby barier informacyjnych i sharepoint](/sharepoint/information-barriers)
 
 ## <a name="example-scenario-contosos-departments-segments-and-policies"></a>Przykładowy scenariusz: działy, segmenty i zasady firmy Contoso
 
@@ -439,7 +437,7 @@ W tym scenariuszu nie trzeba definiować zasad IB dla *kadr* lub *marketingu*.
 
 ### <a name="contosos-defined-segments"></a>Zdefiniowane segmenty firmy Contoso
 
-Firma Contoso użyje atrybutu Dział w Azure Active Directory, aby zdefiniować segmenty w następujący sposób:
+Firma Contoso użyje atrybutu Dział w usłudze Azure Active Directory, aby zdefiniować segmenty w następujący sposób:
 
 | Department | Definicja segmentu |
 |:-------------|:---------------------|
@@ -468,6 +466,6 @@ Po zakończeniu polecenia cmdlet firma Contoso jest zgodna z wymaganiami branżo
 ## <a name="resources"></a>Zasoby
 
 - [Dowiedz się więcej o barierach informacyjnych](information-barriers.md)
-- [Dowiedz się więcej o barierach informacyjnych w Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Dowiedz się więcej o barierach informacyjnych w usłudze Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Dowiedz się więcej o barierach informacyjnych w usłudze SharePoint Online](/sharepoint/information-barriers)
-- [Dowiedz się więcej o barierach informacyjnych w OneDrive](/onedrive/information-barriers)
+- [Dowiedz się więcej o barierach informacyjnych w usłudze OneDrive](/onedrive/information-barriers)

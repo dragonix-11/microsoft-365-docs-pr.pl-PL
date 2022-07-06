@@ -1,5 +1,5 @@
 ---
-title: Dołączanie Windows 10 i Windows 11 urządzeń przy użyciu skryptu lokalnego
+title: Dołączanie urządzeń z systemami Windows 10 i Windows 11 przy użyciu skryptu lokalnego
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,106 +14,106 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Użyj skryptu lokalnego, aby wdrożyć pakiet konfiguracji na urządzeniach, aby zostały one wdrożone w usłudze.
-ms.openlocfilehash: 14412e782cffd597786a4d2c322fe2b8fc20e5ca
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+description: Użyj skryptu lokalnego, aby wdrożyć pakiet konfiguracji na urządzeniach, aby były one dołączane do usługi.
+ms.openlocfilehash: 840573794b447162f917fed162bb1f869585286e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "62999371"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634428"
 ---
-# <a name="onboard-windows-10-and-windows-11-devices-using-a-local-script"></a>Dołączanie Windows 10 i Windows 11 urządzeń przy użyciu skryptu lokalnego
+# <a name="onboard-windows-10-and-windows-11-devices-using-a-local-script"></a>Dołączanie urządzeń z systemami Windows 10 i Windows 11 przy użyciu skryptu lokalnego
 
 **Dotyczy:**
 
-- [Microsoft 365 punktu końcowego ochrony przed utratą danych (DLP)](./endpoint-dlp-learn-about.md)
-- [Zarządzanie ryzykiem w niejawnym programie testów](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Ochrona przed utratą danych punktu końcowego (DLP)](./endpoint-dlp-learn-about.md)
+- [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md)
 
-Możesz także ręcznie włączyć poszczególne urządzenia, aby Microsoft 365. Warto to zrobić w pierwszej kolejności podczas testowania usługi przed zatwierdzeniem do korzystania ze wszystkich urządzeń w Twojej sieci.
+Możesz również ręcznie dołączyć poszczególne urządzenia do platformy Microsoft 365. Możesz to zrobić najpierw podczas testowania usługi przed zatwierdzeniem dołączenia wszystkich urządzeń w sieci.
 
 > [!IMPORTANT]
-> Ten skrypt został zoptymalizowany pod kątem używania na maksymalnie 10 urządzeniach.
+> Ten skrypt został zoptymalizowany pod kątem użycia na maksymalnie 10 urządzeniach.
 >
-> Aby wdrażać w skali, użyj [innych opcji wdrażania](device-onboarding-overview.md). Na przykład skrypt dołączania można wdrożyć na ponad 10 urządzeniach produkcyjnych, używając skryptu dostępnego na urządzeniach Windows 10 przy użyciu [zasady grupy](device-onboarding-gp.md).
+> Aby wdrożyć na dużą skalę, użyj [innych opcji wdrażania](device-onboarding-overview.md). Na przykład skrypt dołączania można wdrożyć na ponad 10 urządzeniach w środowisku produkcyjnym przy użyciu skryptu dostępnego w obszarze [Dołączanie urządzeń Windows 10 przy użyciu zasady grupy](device-onboarding-gp.md).
 
-## <a name="onboard-devices"></a>Urządzenia wyniesiene na urządzeniach w
+## <a name="onboard-devices"></a>Dołączanie urządzeń
  
-1. Pobierz pakiet konfiguracyjnych .zip (*DeviceComplianceOnboardingPackage.zip*) z [Centrum zgodności firmy Microsoft](https://compliance.microsoft.com)
+1. Pobieranie pakietu konfiguracji .zip pakietu (*DeviceComplianceOnboardingPackage.zip*) z [portal zgodności Microsoft Purview](https://compliance.microsoft.com)
 
-2. W okienku nawigacji wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Ustawienia**</a> >  **Wniezienie urządzenia**.
+2. W okienku nawigacji wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Ustawienia**</a> > **Dołączanie urządzenia**.
 
 3. W polu **Metoda wdrażania** wybierz pozycję **Skrypt lokalny**.
 
-4. Kliknij **pozycję Pobierz pakiet** i zapisz .zip pliku.
+4. Kliknij **pozycję Pobierz pakiet** i zapisz plik .zip.
   
-5. Wyodrębnij zawartość pakietu konfiguracyjne do lokalizacji na urządzeniu, które chcesz wdobyć (na przykład do pulpitu). Plik powinien mieć nazwę *DeviceOnboardingScript.cmd*.
+5. Wyodrębnij zawartość pakietu konfiguracji do lokalizacji na urządzeniu, które chcesz dołączyć (na przykład Pulpit). Powinien istnieć plik o nazwie *DeviceOnboardingScript.cmd*.
 
 6. Otwórz wiersz polecenia z podwyższonym poziomem uprawnień na urządzeniu i uruchom skrypt:
 
-7. Przejdź do **przycisku Start** i wpisz **cmd**.
+7. Przejdź do **pozycji Start** i wpisz **cmd**.
 
-8. Kliknij prawym przyciskiem myszy **pozycję Wiersz polecenia i** wybierz **pozycję Uruchom jako administrator**.
+8. Kliknij prawym **przyciskiem myszy wiersz polecenia** i wybierz pozycję **Uruchom jako administrator**.
 
-    ![Okno menu Start z punktem Uruchom jako administrator.](../media/dlp-run-as-admin.png)
+    ![Menu Start okna wskazujące polecenie Uruchom jako administrator.](../media/dlp-run-as-admin.png)
 
-9. Wpisz lokalizację pliku skryptu. Jeśli plik został skopiowany na pulpit, wpisz: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
+9. Wpisz lokalizację pliku skryptu. Jeśli plik został skopiowany do pulpitu, wpisz: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
 10. Naciśnij klawisz **Enter** lub kliknij przycisk **OK**.
 
-Aby uzyskać informacje na temat ręcznego sprawdzania, czy urządzenie jest zgodne, i poprawnie raportuje dane czujnika, zobacz Rozwiązywanie problemów z dołączaniem do usługi [Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding).
+Aby uzyskać informacje na temat ręcznego sprawdzania zgodności urządzenia i prawidłowego raportowania danych czujników, zobacz [Rozwiązywanie problemów z dołączaniem zaawansowanej ochrony przed zagrożeniami](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) w usłudze Microsoft Defender.
 
-## <a name="offboard-devices-using-a-local-script"></a>Urządzenia wye korzystające ze skryptu lokalnego
+## <a name="offboard-devices-using-a-local-script"></a>Odłączanie urządzeń przy użyciu skryptu lokalnego
 
-Ze względów bezpieczeństwa pakiet używany na urządzeniach offboardowych wygaśnie po 30 dniach od daty jego pobrania. Pakiety wynoszące wygasłe wysłane do urządzenia zostaną odrzucone. Podczas pobierania pakietu wynegocjowego zostaniesz o nim powiadomiony(-a) o dacie wygaśnięcia pakietów, a także w nazwie pakietu.
+Ze względów bezpieczeństwa pakiet używany do odłączenia urządzeń wygaśnie 30 dni po pobraniu. Wygasłe pakiety odłączania wysyłane do urządzenia zostaną odrzucone. Podczas pobierania pakietu odłączania otrzymasz powiadomienie o dacie wygaśnięcia pakietów i zostanie on również uwzględniony w nazwie pakietu.
 
 > [!NOTE]
-> Zasad wnoszeń i wynoszeń nie można wdrażać jednocześnie na tym samym urządzeniu, w przeciwnym razie spowoduje to nieprzewidywalne błędy.
+> Zasady dołączania i odłączania nie mogą być wdrażane na tym samym urządzeniu w tym samym czasie, w przeciwnym razie spowoduje to nieprzewidywalne kolizje.
 
-1. Pobierz pakiet wywęszania z <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a>.
+1. Pobierz pakiet odłączania z <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>.
 
-2. W okienku nawigacji wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Ustawienia**</a> >  **Wyszczanie urządzenia**.
+2. W okienku nawigacji wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Ustawienia**</a> > **Odłączanie urządzenia**.
 
 3. W polu **Metoda wdrażania** wybierz pozycję **Skrypt lokalny**.
 
-4. Kliknij **pozycję Pobierz pakiet** i zapisz .zip pliku.
+4. Kliknij **pozycję Pobierz pakiet** i zapisz plik .zip.
 
-5. Wyodrębnianie zawartości pliku .zip do udostępnionej lokalizacji tylko do odczytu, do której mogą uzyskiwać dostęp urządzenia. Plik powinien mieć nazwę *: DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+5. Wyodrębnij zawartość pliku .zip do udostępnionej lokalizacji tylko do odczytu, do których mogą uzyskiwać dostęp urządzenia. Powinien istnieć plik o nazwie *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 6. Otwórz wiersz polecenia z podwyższonym poziomem uprawnień na urządzeniu i uruchom skrypt:
 
-7. Przejdź do **przycisku Start** i wpisz **cmd**.
+7. Przejdź do **pozycji Start** i wpisz **cmd**.
 
-8. Kliknij prawym przyciskiem myszy **pozycję Wiersz polecenia i** wybierz **pozycję Uruchom jako administrator**.
+8. Kliknij prawym **przyciskiem myszy wiersz polecenia** i wybierz pozycję **Uruchom jako administrator**.
 
-    ![Okno menu Start z punktem Uruchom jako administrator.](../media/dlp-run-as-admin.png)
+    ![Menu Start okna wskazujące polecenie Uruchom jako administrator.](../media/dlp-run-as-admin.png)
 
 9. Wpisz lokalizację pliku skryptu. Jeśli plik został skopiowany na pulpit, wpisz: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
 10. Naciśnij klawisz **Enter** lub kliknij przycisk **OK**.
 
 > [!IMPORTANT]
-> Wynosze powoduje, że urządzenie przestaje wysyłać dane czujnika do portalu.
+> Odłączanie powoduje, że urządzenie przestaje wysyłać dane czujnika do portalu.
 
 ## <a name="monitor-device-configuration"></a>Monitorowanie konfiguracji urządzenia
 
-Aby sprawdzić, czy skrypt został pomyślnie ukończony i czy agent jest uruchomiony, możesz wykonać różne kroki weryfikacji opisane w te sposób: [Rozwiązywanie problemów z dołączaniem]((/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding).
+Możesz wykonać różne kroki weryfikacji w sekcji [Rozwiązywanie problemów z dołączaniem]((/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding), aby sprawdzić, czy skrypt został ukończony pomyślnie, a agent jest uruchomiony.
 
-Monitorowanie można również monitorować bezpośrednio w portalu lub przy użyciu różnych narzędzi wdrożeniowych.
+Monitorowanie można również przeprowadzić bezpośrednio w portalu lub przy użyciu różnych narzędzi wdrażania.
 
-### <a name="monitor-devices-using-the-portal"></a>Monitorowanie urządzeń za pomocą portalu
+### <a name="monitor-devices-using-the-portal"></a>Monitorowanie urządzeń przy użyciu portalu
 
-1. Przejdź do [Microsoft 365 zgodności](https://compliance.microsoft.com).
+1. Przejdź do [portal zgodności Microsoft Purview](https://compliance.microsoft.com).
 
-2. Wybierz **Ustawienia** >  **Device onboardingDevices** > .
+2. Wybierz pozycję **Ustawienia** > **Urządzenia dołączania** > **urządzeń**.
 
-1. Przejdź do Centrum zgodności platformy Microsoft 365 i wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Ustawienia**</a> >  **Device onboardingDevices** > .
+1. Przejdź do portal zgodności Microsoft Purview i wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Ustawienia**</a> > **Urządzenia dołączające** > **urządzenia**.
 
 1. Sprawdź, czy urządzenia są wyświetlane.
 
 ## <a name="related-topics"></a>Tematy pokrewne
-- [Urządzenia Windows 10 i Windows 11 urządzeń korzystających z zasady grupy](device-onboarding-gp.md)
-- [Urządzenia Windows 10 i Windows 11 urządzeń używających Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
-- [Dołączanie Windows 10 i Windows 11 urządzeń za pomocą narzędzi do zarządzania urządzeniami przenośnymi](device-onboarding-mdm.md)
-- [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI, Non-persistent Virtual Desktop Infrastructure)](device-onboarding-vdi.md)
-- [Uruchamianie testu wykrywania na nowo w urządzeniu z uruchomionym programem Microsoft Defender dla punktu końcowego](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Rozwiązywanie problemów z dołączaniem do zaawansowanej ochrony przed zagrożeniami w u programie Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Dołączanie urządzeń Windows 10 i Windows 11 przy użyciu zasady grupy](device-onboarding-gp.md)
+- [Dołączanie urządzeń Windows 10 i Windows 11 przy użyciu programu Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [Dołączanie urządzeń z systemami Windows 10 i Windows 11 przy użyciu narzędzi do zarządzania urządzeniami przenośnymi](device-onboarding-mdm.md)
+- [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)](device-onboarding-vdi.md)
+- [Uruchamianie testu wykrywania na nowo dołączonym urządzeniu Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Rozwiązywanie problemów z dołączaniem zaawansowanej ochrony przed zagrożeniami w usłudze Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

@@ -1,5 +1,5 @@
 ---
-title: Formatowanie danych szablonu oceny w aplikacji Excel Menedżera zgodności firmy Microsoft
+title: Formatowanie danych szablonu oceny w programie Excel dla programu Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,90 +17,90 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak pracować z danymi Excel szablonów ocen w menedżerze zgodności firmy Microsoft.
-ms.openlocfilehash: 755716e67589b2f002fcaec7458f502ff945c318
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak pracować z danymi programu Excel na potrzeby szablonów oceny w programie Microsoft Purview Compliance Manager.
+ms.openlocfilehash: 6c94d79fec8ff59419854c34755a7402f841cfe8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320581"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631232"
 ---
-# <a name="format-assessment-template-data-in-excel-for-microsoft-compliance-manager"></a>Formatowanie danych szablonu oceny w aplikacji Excel Menedżera zgodności firmy Microsoft
+# <a name="format-assessment-template-data-in-excel-for-microsoft-purview-compliance-manager"></a>Formatowanie danych szablonu oceny w programie Excel dla programu Microsoft Purview Compliance Manager
 
-Podczas [tworzenia](compliance-manager-templates-create.md), [modyfikowania](compliance-manager-templates-modify.md) lub rozszerzania szablonów ocen w Menedżerze zgodności będziesz pracować z Excel kalkulacyjnymi, które używają określonego formatu i schematu.[](compliance-manager-templates-extend.md) Aby pliki zostały poprawnie zaimportowane, muszą być one poprawnie zaimportowane.
+Podczas [tworzenia](compliance-manager-templates-create.md), [modyfikowania](compliance-manager-templates-modify.md) lub [rozszerzania](compliance-manager-templates-extend.md) szablonów oceny w Menedżerze zgodności będziesz pracować z arkuszami kalkulacyjnymi programu Excel, które używają określonego formatu i schematu. Aby pliki zostały prawidłowo zaimportowane, należy przestrzegać tych specyfikacji.
 
 ## <a name="download-example-spreadsheet"></a>Pobierz przykładowy arkusz kalkulacyjny
 
-Aby wyświetlić przykładowy arkusz kalkulacyjny, [pobierz plik przykładowy](https://go.microsoft.com/fwlink/?linkid=2124865). Możesz go użyć w celu utworzenia własnego pliku.
+Aby wyświetlić przykładowy arkusz kalkulacyjny, [pobierz przykładowy plik](https://go.microsoft.com/fwlink/?linkid=2124865). Można go użyć do odwołania do utworzenia własnego pliku.
 
-Jeśli zamierzasz zmodyfikować istniejący szablon, zacznij od wyświetlenia szczegółów szablonu w Menedżerze zgodności i pobrania jego Excel pliku.
+Jeśli planujesz zmodyfikować istniejący szablon, zacznij od wyświetlenia szczegółów szablonu w Menedżerze zgodności i pobrania pliku programu Excel.
 
 ## <a name="spreadsheet-format"></a>Format arkusza kalkulacyjnego
 
-Arkusz Excel zawiera cztery karty, z których trzy są wymagane:
+Arkusz kalkulacyjny programu Excel zawiera cztery karty, z których trzy są wymagane:
 
 1. [Szablon](#template-tab) (wymagany)
-2. [ControlFamily](#controlfamily-tab) (wymagany)
+2. [ControlFamily](#controlfamily-tab) (wymagane)
 3. [Akcje](#actions-tab) (wymagane)
 4. [Wymiary](#dimensions-tab) (opcjonalnie)
 
-Podczas wypełniania arkusza kalkulacyjnego danymi szablonu arkusz kalkulacyjny musi zawierać karty w kolejności podanej **powyżej**, w przeciwnym razie dane nie będą pomyślnie zaimportowane do szablonu.
+Podczas wypełniania arkusza kalkulacyjnego danymi szablonu arkusz **kalkulacyjny musi zawierać karty w powyższej kolejności, w** przeciwnym razie dane nie zostaną pomyślnie zaimportowane do szablonu.
 
 ### <a name="template-tab"></a>Karta Szablon
 
-Karta **Szablon** jest wymagana. Informacje na tej karcie zawierają metadane dotyczące szablonu. Istnieją cztery kolumny wymagane. Kolumny muszą zachować kolejność w arkuszu Excel zgodnie z poniższymi instrukcjami. Możesz dodać własną kolumnę **po tych** czterech kolumnach, aby zapewnić własne wymiary. W takim przypadku dodaj je do **karty** Wymiary.
+Karta **Szablon** jest wymagana. Informacje na tej karcie zawierają metadane dotyczące szablonu. Istnieją cztery wymagane kolumny. Kolumny muszą zachować kolejność w arkuszu programu Excel zgodnie z poniższą listą. Możesz dodać własną kolumnę **po** czterech kolumnach, aby zapewnić własne wymiary. Jeśli to zrobisz, dodaj je do karty **Wymiary** .
 
-- **tytuł**: jest to tytuł szablonu, który musi być unikatowy. Nie można jej udostępnić innym szablonom w Menedżerze zgodności, w tym Własnym szablonom ani szablonowi Menedżera zgodności.
+- **title**: jest to tytuł szablonu, który musi być unikatowy. Nie może udostępnić nazwy innemu szablonowi w Menedżerze zgodności, w tym własnym szablonom lub szablonowi menedżera zgodności.
 
-- **produkt**: jest to wymiar wymagany. Schowaj produkt skojarzony z szablonem.
+- **produkt**: jest to wymagany wymiar. Wyświetl listę produktów skojarzonych z szablonem.
 
-- **certyfikacja**: jest to rozporządzenie, z których korzystasz w szablonie.
+- **certyfikacja**: jest to rozporządzenie używane dla szablonu.
 
-- **inScopeServices**: Są to usługi w obrębie produktu, których adresy do oceny (na przykład jeśli wymieniono usługę Office 365 jako produkt, Microsoft Teams może to być usługa w zakresie). Możesz wyświetlić listę wielu usług oddzielonych dwoma średnikami.
+- **inScopeServices**: są to usługi w ramach produktu, które są adresowane przez tę ocenę (na przykład jeśli wymieniono Office 365 jako produkt, usługa Microsoft Teams może być usługą w zakresie). Możesz wyświetlić listę wielu usług rozdzielonych dwoma średnikami.
 
 > [!NOTE]
-> Po zaimportowaniu arkusza kalkulacyjnego  w celu  utworzenia lub dostosowania szablonu nie będzie można edytować danych wstawianych w komórkach produktu i komórek certyfikacji. Ponadto grupa nie może zawierać dwóch ocen, które mają taką samą **kombinację produktu i certyfikacji** . Możesz mieć wiele szablonów z taką samą kombinacją produktu/certyfikacji.
+> Danych wstawionych do komórek **produktu** i **certyfikacji** nie można edytować po zaimportowaniu arkusza kalkulacyjnego w celu utworzenia lub dostosowania szablonu. Ponadto grupa nie może zawierać dwóch ocen, które mają tę samą kombinację **produktu/certyfikacji** . Możesz mieć wiele szablonów z tą samą kombinacją produktu/certyfikacji.
 
-### <a name="controlfamily-tab"></a>ControlFamily tab
+### <a name="controlfamily-tab"></a>Karta ControlFamily
 
-**Wymagana jest karta ControlFamily**.  Na tej karcie są wymagane kolumny, które muszą być zgodne z kolejnością podaną w przykładowym arkuszu kalkulacyjnym:
+Karta **ControlFamily** jest wymagana.  Wymagane kolumny na tej karcie, które muszą być zgodne z kolejnością określoną w przykładowym arkuszu kalkulacyjnym, to:
 
-- **nazwa_** kontrolki: jest to nazwa kontrolki na podstawie certyfikatu, standardu lub przepisów, które zwykle są pewnego rodzaju identyfikatorami. Nazwy kontrolek muszą być unikatowe w szablonie. W arkuszu kalkulacyjnym nie można mieć wielu kontrolek o takiej samej nazwie.
+- **controlName**: jest to nazwa kontrolki z certyfikacji, standardu lub regulacji, która jest zazwyczaj pewnego typu identyfikatorem. Nazwy kontrolek muszą być unikatowe w szablonie. W arkuszu kalkulacyjnym nie można mieć wielu kontrolek o tej samej nazwie.
 
-- **controlFamily**: Podaj wyraz lub frazę kontrolkiFamily, która identyfikuje grupę kontrolek. KontrolkaFamily nie musi być unikatowa; może być wymieniony w arkuszu kalkulacyjnym więcej niż raz. Ta sama kontrolkaFamily może być również wymieniona w wielu szablonach, chociaż nie mają żadnej relacji między sobą. Każda kontrolkaFamily musi zostać zamapowana na co najmniej jedną kontrolkę.
+- **controlFamily**: podaj wyraz lub frazę dla kontrolkiFamily, która identyfikuje szeroką grupę kontrolek. Element controlFamily nie musi być unikatowy; Można go wyświetlić więcej niż raz w arkuszu kalkulacyjnym. Tę samą kontrolkęFamily można również wyświetlić w wielu szablonach, chociaż nie mają one ze sobą żadnego związku. Każda kontrolkaFamilia musi być zamapowana na co najmniej jedną kontrolkę.
 
-- **controlTitle**: Podaj tytuł kontrolki. Nazwa kontrolki jest kodem referencyjnym, jednak tytuł jest tekstem sformatowanym zazwyczaj w przepisy.
+- **controlTitle**: podaj tytuł kontrolki. Podczas gdy controlName jest kodem referencyjnym, tytuł jest formatem tekstu sformatowanego, zwykle widocznym w przepisach.
 
-- **controlDescription**: Podaj opis kontrolki.
+- **controlDescription**: podaj opis kontrolki.
 
-- **controlActionTitle**: To pole odnosi kontrolkę do jednej lub większej liczby akcji wymienionych przez jej actionTitle. Możesz dodać wiele akcji, oddzielając je dwoma średnikami bez odstępów między nimi. Każda kontrolka, która zostanie wyświetlona na liście, musi zawierać co najmniej jedną istniejącą akcję,  która może zostać zdefiniowana na karcie Akcje tego samego arkusza kalkulacyjnego, zostać utworzona w innym szablonie lub utworzona przez firmę Microsoft. Różne kontrolki mogą odwoływać się do tej samej akcji.
+- **controlActionTitle**: to pole wiąże kontrolkę z co najmniej jedną akcją wymienioną przez element actionTitle. Możesz dodać wiele akcji, oddzielając je dwoma średnikami bez odstępu między nimi. Każda lista formantów musi zawierać co najmniej jedną istniejącą akcję, a akcję można zdefiniować na karcie **Akcje** tego samego arkusza kalkulacyjnego, znajdować się w innym szablonie lub zostać utworzona przez firmę Microsoft. Różne kontrolki mogą odwoływać się do tej samej akcji.
 
 ### <a name="actions-tab"></a>Karta Akcje
 
-Karta **Akcje** jest wymagana.  Oznacza on działania ulepszeń zarządzane przez Twoją organizację, a nie działania firmy Microsoft, które już istnieją w Menedżerze zgodności. Kolumny wymagane dla tej karty, które muszą być zgodne z kolejnością podaną w przykładowym arkuszu kalkulacyjnym, są następujące:
+Karta **Akcje** jest wymagana.  Określa on akcje poprawy zarządzane przez organizację, a nie działania firmy Microsoft, które już istnieją w Menedżerze zgodności. Wymagane kolumny dla tej karty, które muszą być zgodne z kolejnością określoną w przykładowym arkuszu kalkulacyjnym, to:
 
-- **actionTitle**: To jest tytuł akcji i jest wymagane pole. Zapewniany tytuł musi być unikatowy. **Ważne**: jeśli odwołujesz się do akcji, która już istnieje (na przykład w innym szablonie), i zmodyfikujesz dowolny z jej elementów w kolejnych kolumnach, zmiany te będą propagowane do tej samej akcji w innych szablonach.
+- **actionTitle**: jest to tytuł akcji i jest to pole wymagane. Podany tytuł musi być unikatowy. **Ważne**: jeśli odwołujesz się do akcji, która już istnieje (na przykład w innym szablonie) i zmodyfikujesz dowolny z jej elementów w kolejnych kolumnach, zmiany te zostaną propagowane do tej samej akcji w innych szablonach.
 
-- **implementationType (Typ** implementacji): W tym wymaganym polu wpisz jeden z trzech następujących typów implementacji: 
-  1) **Operacyjne** — działania wykonywane przez osoby i procesy w celu ochrony poufności, integralności oraz dostępności systemów organizacyjnych, zasobów, danych i pracowników (na przykład: informacje i szkolenia dotyczące bezpieczeństwa).      
-  2) **Techniczne** — działania zakończone przy użyciu technologii i mechanizmów zawartych w sprzęcie, oprogramowaniu lub składnikach oprogramowania układowego systemu informacyjnego w celu ochrony poufności, integralności oraz dostępności systemów i danych organizacyjnych (na przykład: uwierzytelnianie wieloskładnikowe).
-  3) **Dokumentacja** — działania wdrażane w ramach udokumentowanych zasad i procedur ustanawiania i definiowania kontrolek wymaganych do ochrony poufności, integralności oraz dostępności systemów organizacyjnych, zasobów, danych i pracowników (na przykład: zasad zabezpieczeń informacji).
+- **implementationType**: W tym wymaganym polu wpisz jeden z następujących trzech typów implementacji: 
+  1) **Operacje** — akcje implementowane przez osoby i procesy w celu ochrony poufności, integralności i dostępności systemów organizacyjnych, zasobów, danych i personelu (na przykład: świadomość zabezpieczeń i szkolenia).      
+  2) **Techniczne** — akcje wykonywane przy użyciu technologii i mechanizmów zawartych w składnikach sprzętu, oprogramowania lub oprogramowania układowego systemu informacyjnego w celu ochrony poufności, integralności i dostępności systemów organizacyjnych i danych (na przykład: uwierzytelnianie wieloskładnikowe).
+  3) **Dokumentacja** — akcje implementowane za pomocą udokumentowanych zasad i procedur ustanawiających i definiujących mechanizmy kontroli wymagane do ochrony poufności, integralności i dostępności systemów organizacyjnych, zasobów, danych i personelu (na przykład: zasady zabezpieczeń informacji).
 
-- **actionScore**: W tym wymaganym polu podaj wartość wyniku liczbowego akcji. Wartość musi być liczbą całościową z zakresu od 1 do 99. Nie może mieć wartości 0, null ani pustej. Im wyższa liczba, tym większa wartość w celu poprawy poziomu zgodności z przepisami. Na poniższym obrazie przedstawiono, jak steruje wyniki Menedżera zgodności:
+- **actionScore**: w tym wymaganym polu podaj wartość wyniku liczbowego dla akcji. Wartość musi być liczbą całkowitą w zakresie od 1 do 99; Nie może to być wartość 0, null ani pusta. Im wyższa liczba, tym większa jej wartość w kierunku poprawy stanu zgodności. Na poniższej ilustracji pokazano, jak menedżer zgodności ocenia kontrolki:
 
-  ![Menedżer zgodności kontroluje wartości punktowe.](../media/compliance-score-action-scoring.png "Menedżer zgodności kontroluje wartości punktowe")
+  ![Menedżer zgodności kontroluje wartości punktów.](../media/compliance-score-action-scoring.png "Menedżer zgodności kontroluje wartości punktów")
 
-- **actionDescriptionTitle**: Jest to tytuł opisu i jest wymagany. Ten tytuł opisu pozwala na korzystanie z tej samej akcji w wielu szablonach i naniesienie innego opisu w każdym szablonie.  To pole ułatwia wyjaśnienie, do jakiego szablonu odwołuje się opis. W większości przypadków w tym polu można umieścić nazwę szablonu, który tworzysz.
+- **actionDescriptionTitle**: jest to tytuł opisu i jest wymagany. Ten tytuł opisu umożliwia wykonanie tej samej akcji w wielu szablonach i wyświetlenie innego opisu w każdym szablonie.  To pole ułatwia wyjaśnienie szablonu, do którego odwołuje się opis. W większości przypadków można umieścić nazwę szablonu, który tworzysz w tym polu.
 
-- **actionDescription**: Podaj opis akcji. Możesz zastosować formatowanie, takie jak pogrubienie tekstu i hiperlinki. To jest pole wymagane.
+- **actionDescription**: podaj opis akcji. Można zastosować formatowanie, takie jak pogrubiony tekst i hiperlinki. Jest to pole wymagane.
 
-- **cel wymiar-akcja**: to pole opcjonalne. W przypadku jego dojęć nagłówek musi zawierać prefiks "wymiar-". Wszelkie wymiary, które uwzględnisz w tym miejscu, będą używane jako filtry w Menedżerze zgodności i będą widoczne na stronie szczegółów akcji udoskonalania w Menedżerze zgodności.
+- **dimension-Action Purpose**: jest to pole opcjonalne. Jeśli ją uwzględnisz, nagłówek musi zawierać prefiks "dimension-". Wszystkie wymiary uwzględnione w tym miejscu będą używane jako filtry w Menedżerze zgodności i wyświetlane na stronie szczegółów akcji poprawy w Menedżerze zgodności.
 
 ### <a name="dimensions-tab"></a>Karta Wymiary
 
-Karta **Wymiary jest** opcjonalna. Jeśli jednak odwołujesz się do wymiaru w innym miejscu, musisz go tutaj określić, jeśli nie istnieje w szablonie, który został już utworzony lub w szablonie firmy Microsoft. Kolumny dla tej karty są wymienione poniżej:
+Karta **Wymiary** jest opcjonalna. Jeśli jednak odwołujesz się do wymiaru w innym miejscu, musisz określić go tutaj, jeśli nie istnieje on w utworzonym szablonie lub w szablonie firmy Microsoft. Poniżej wymieniono kolumny dla tej karty:
 
-- **dimensionKey**: list as "product", "certifications", "action purpose" (Cel akcji)
-- **dimensionValue**: examples: Office 365, HIPPA, Preventative, Detective
+- **dimensionKey**: lista "product", "certifications", "action purpose"
+- **dimensionValue**: przykłady: Office 365, HIPPA, Profilaktyczne, Detektyw
 
-Podczas eksportowania istniejącego szablonu eksportowany arkusz kalkulacyjny będzie **zawierał kartę** Wymiary, która zawiera listę wszystkich wymiarów używanych w szablonie.
+Podczas eksportowania istniejącego szablonu wyeksportowany arkusz kalkulacyjny będzie miał kartę **Wymiary** , która zawiera listę wszystkich wymiarów używanych w szablonie.

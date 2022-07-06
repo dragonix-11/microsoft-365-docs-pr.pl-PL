@@ -18,19 +18,17 @@ ms.custom: admindeeplinkDEFENDER
 search.appverid:
 - MOE150
 - MET150
-description: Klasyfikator Microsoft 365 to narzędzie, które można wytrenować w celu rozpoznawania różnych typów zawartości, udostępniając przykłady do obejrzenia. W tym artykule przedstawiono sposób tworzenia i trenowania klasyfikatora niestandardowego oraz sposobu ich ponownego trenowania w celu zwiększenia dokładności.
-ms.openlocfilehash: d3a7639ed31dc42688cffbffb151049659a41660
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+description: Klasyfikator platformy Microsoft 365 to narzędzie, które można wytrenować w celu rozpoznawania różnych typów zawartości, udostępniając przykłady do obejrzenia. W tym artykule przedstawiono sposób tworzenia i trenowania klasyfikatora niestandardowego oraz sposobu ich ponownego trenowania w celu zwiększenia dokładności.
+ms.openlocfilehash: ff23f24145cee1b694f96e933919dddf779dfd9a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173192"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631386"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Wprowadzenie do klasyfikatorów z możliwością szkolenia
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Klasyfikator Microsoft 365 trainable to narzędzie, które można wytrenować w celu rozpoznawania różnych typów zawartości, dając mu przykłady do obejrzenia. Po wytrenowaniu można go używać do identyfikowania elementów do stosowania etykiet poufności Office, zasad zgodności komunikacji i zasad etykiet przechowywania.
+Klasyfikator trenowalny platformy Microsoft 365 to narzędzie, które można wytrenować w celu rozpoznawania różnych typów zawartości, udostępniając przykłady do obejrzenia. Po wytrenowaniu można go używać do identyfikowania elementów do stosowania etykiet poufności pakietu Office, zasad zgodności komunikacji i zasad etykiet przechowywania.
 
 Najpierw utworzenie niestandardowego klasyfikatora trenowalnego polega na nadaniu mu próbek, które są wybierane przez człowieka i pozytywnie pasują do kategorii. Następnie, po przetworzeniu tych, można przetestować zdolność klasyfikatorów do przewidywania, dając mu mieszankę pozytywnych i negatywnych próbek. W tym artykule pokazano, jak utworzyć i wytrenować klasyfikator niestandardowy oraz jak zwiększyć wydajność niestandardowych klasyfikatorów trenowalnych i wstępnie wytrenowanych klasyfikatorów w okresie ich istnienia poprzez ponowne trenowanie.
 
@@ -60,7 +58,7 @@ Konta z tymi uprawnieniami będą potrzebne do używania klasyfikatorów w nast�
 
 - Scenariusz zasad przechowywania etykiet: Role zarządzania rekordami i zarządzania przechowywaniem 
 - Scenariusz zasad etykiet poufności: Administrator zabezpieczeń, Administrator zgodności, Administrator danych zgodności
-- Scenariusz zasad zgodności komunikacji: Administrator zarządzania ryzykiem wewnętrznym, administrator przeglądu nadzoru 
+- Scenariusz zasad zgodności z komunikacją: Administracja zarządzania ryzykiem wewnętrznym, administrator przeglądu nadzoru 
 
 > [!IMPORTANT]
 > Domyślnie tylko użytkownik tworzący klasyfikator niestandardowy może trenować i przeglądać przewidywania dokonane przez ten klasyfikator.
@@ -76,7 +74,7 @@ Ta oś czasu odzwierciedla przykładowe wdrożenie klasyfikatorów z możliwośc
 ![trainable-classifier-timeline.](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
-> Zgoda jest wymagana po raz pierwszy dla klasyfikatorów z możliwością trenowania. Ukończenie oceny bazowej zawartości organizacji trwa dwanaście dni, Microsoft 365. Skontaktuj się z administratorem globalnym, aby rozpocząć proces zgody.
+> Zgoda jest wymagana po raz pierwszy dla klasyfikatorów z możliwością trenowania. Ukończenie podstawowej oceny zawartości organizacji trwa dwanaście dni, a platforma Microsoft 365. Skontaktuj się z administratorem globalnym, aby rozpocząć proces zgody.
 
 ### <a name="overall-workflow"></a>Ogólny przepływ pracy
 
@@ -98,17 +96,17 @@ Gdy klasyfikator trenowalny przetworzy wystarczająco dużo pozytywnych przykła
 
 ## <a name="how-to-create-a-trainable-classifier"></a>Jak utworzyć klasyfikator trenowalny
 
-1. Zbierz od 50 do 500 elementów zawartości inicjowania. Muszą to być tylko przykłady, które silnie reprezentują typ zawartości, którą klasyfikator trainable ma pozytywnie zidentyfikować jako będącą w kategorii klasyfikacji. Zobacz [Domyślne rozszerzenia nazw plików przeszukanych i analizowane typy plików w programie SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) dla obsługiwanych typów plików.
+1. Zbierz od 50 do 500 elementów zawartości inicjowania. Muszą to być tylko przykłady, które silnie reprezentują typ zawartości, którą klasyfikator trainable ma pozytywnie zidentyfikować jako będącą w kategorii klasyfikacji. Zobacz [Domyślne rozszerzenia nazw przeszukanych plików i analizowane typy plików w programie SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) dla obsługiwanych typów plików.
 
    > [!IMPORTANT]
    > Upewnij się, że elementy w zestawie inicjowania są **silnymi** przykładami kategorii. Klasyfikator trainable początkowo tworzy swój model w oparciu o to, z czym go inicjujesz. Klasyfikator zakłada, że wszystkie próbki nasion są silnymi wynikami dodatnimi i nie ma możliwości poznania, czy próbka jest słabym lub negatywnym dopasowaniem do kategorii.
 
-2. Umieść zawartość inicjowania w folderze SharePoint Online przeznaczonym tylko do przechowywania *zawartości inicjującej*. Zanotuj adres URL witryny, biblioteki i folderu.
+2. Umieść zawartość inicjowania w folderze usługi SharePoint Online przeznaczonym tylko do przechowywania *zawartości inicjującej*. Zanotuj adres URL witryny, biblioteki i folderu.
 
    > [!TIP]
    > Jeśli utworzysz nową lokację i folder dla danych inicjatora, przed utworzeniem klasyfikatora trainable, który będzie używać tych danych inicjacyjnych, zaczekaj co najmniej godzinę na indeksowanie tej lokalizacji.
 
-3. Zaloguj się do portalu zgodności usługi Microsoft Purview z dostępem administratora zgodności lub administratora zabezpieczeń i otwórz <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności usługi Microsoft Purview</a> lub <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal</a> >  Microsoft 365 Defender **Klasyfikacja danych**.
+3. Zaloguj się do portal zgodności Microsoft Purview z dostępem administratora zgodności lub administratora zabezpieczeń i otwórz <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a> lub <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalu</a> > **Klasyfikacja danych**.
 
 4. Wybierz kartę **Trainable classifiers (Klasyfikatory z możliwością trenowania** ).
 
@@ -116,7 +114,7 @@ Gdy klasyfikator trenowalny przetworzy wystarczająco dużo pozytywnych przykła
 
 6. Wypełnij odpowiednie wartości dla `Name` pól i `Description` kategorii elementów, które chcesz zidentyfikować w tym klasyfikatorze trenowalnym.
 
-7. Wybierz adres URL witryny, biblioteki i folderu usługi SharePoint Online dla witryny zawartości inicjowania z kroku 2. Wybierz pozycję `Add`.
+7. Wybierz witrynę, bibliotekę i adres URL folderu usługi SharePoint Online dla witryny zawartości inicjowania z kroku 2. Wybierz pozycję `Add`.
 
 8. Przejrzyj ustawienia i wybierz pozycję `Create trainable classifier`.
 
@@ -127,16 +125,16 @@ Gdy klasyfikator trenowalny przetworzy wystarczająco dużo pozytywnych przykła
     > [!div class="mx-imgBorder"]
     > ![klasyfikator trainable gotowy do testowania.](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. Zbierz co najmniej 200 testowych elementów zawartości (maksymalnie 10 000), aby uzyskać najlepsze wyniki. Powinny to być mieszanka elementów, które są silne pozytywy, silne negatywy i niektóre, które są nieco mniej oczywiste w ich naturze. Zobacz [Domyślne rozszerzenia nazw plików przeszukanych i analizowane typy plików w programie SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) dla obsługiwanych typów plików.
+11. Zbierz co najmniej 200 testowych elementów zawartości (maksymalnie 10 000), aby uzyskać najlepsze wyniki. Powinny to być mieszanka elementów, które są silne pozytywy, silne negatywy i niektóre, które są nieco mniej oczywiste w ich naturze. Zobacz [Domyślne rozszerzenia nazw przeszukanych plików i analizowane typy plików w programie SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) dla obsługiwanych typów plików.
 
-12. Umieść zawartość testową w folderze SharePoint Online przeznaczonym tylko do przechowywania *zawartości testowej*. Zanotuj adres URL witryny, biblioteki i folderu usługi SharePoint Online.
+12. Umieść zawartość testową w folderze usługi SharePoint Online przeznaczonym tylko do przechowywania *zawartości testowej*. Zanotuj adres URL witryny, biblioteki i folderu usługi SharePoint Online.
 
     > [!TIP]
     > Jeśli utworzysz nową lokację i folder dla danych testowych, przed utworzeniem klasyfikatora trainable, który będzie używać tych danych inicjacyjnych, zaczekaj co najmniej godzinę na indeksowanie tej lokalizacji.
 
 13. Wybierz pozycję `Add items to test`.
 
-14. Wybierz adres URL witryny, biblioteki i folderu usługi SharePoint Online dla witryny zawartości testowej z kroku 12. Wybierz pozycję `Add`.
+14. Wybierz witrynę, bibliotekę i adres URL folderu usługi SharePoint Online dla witryny zawartości testowej z kroku 12. Wybierz pozycję `Add`.
 
 15. Zakończ pracę kreatora, wybierając pozycję `Done`. Przetwarzanie plików testowych przez klasyfikator trainable potrwa do godziny.
 
@@ -147,7 +145,7 @@ Gdy klasyfikator trenowalny przetworzy wystarczająco dużo pozytywnych przykła
 
 17. Wybierz `Tested items to review` kartę, aby przejrzeć elementy.
 
-18. Microsoft 365 będzie prezentować 30 elementów jednocześnie. Przejrzyj je i w `We predict this item is "Relevant". Do you agree?` polu wybierz albo `Yes` lub `No` `Not sure, skip to next item`. Dokładność modelu jest automatycznie aktualizowana po każdym 30 elementach.
+18. Platforma Microsoft 365 będzie prezentować 30 elementów jednocześnie. Przejrzyj je i w `We predict this item is "Relevant". Do you agree?` polu wybierz albo `Yes` lub `No` `Not sure, skip to next item`. Dokładność modelu jest automatycznie aktualizowana po każdym 30 elementach.
 
     > [!div class="mx-imgBorder"]
     > ![przejrzyj pole elementów.](../media/classifier-trainable-review-detail.png)
@@ -159,4 +157,4 @@ Gdy klasyfikator trenowalny przetworzy wystarczająco dużo pozytywnych przykła
 
 20. Opublikuj klasyfikator.
 
-21. Po opublikowaniu klasyfikator będzie dostępny jako warunek [w Office automatycznego etykietowania za pomocą etykiet poufności](apply-sensitivity-label-automatically.md), [zasad automatycznego stosowania etykiet przechowywania na podstawie warunku](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) i [zgodności z komunikacją](communication-compliance.md).
+21. Po opublikowaniu klasyfikator będzie dostępny jako warunek automatycznego [etykietowania pakietu Office z etykietami poufności](apply-sensitivity-label-automatically.md), [automatycznie zastosuj zasady etykiet przechowywania na podstawie warunku](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) i [zgodności z komunikacją](communication-compliance.md).

@@ -16,26 +16,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
-description: Dowiedz się więcej na temat automatycznego rozszerzania archiwizacji, które zapewnia dodatkowy magazyn archiwum dla skrzynek pocztowych usługi Exchange Online.
-ms.openlocfilehash: fc3e40e72ad287e7d7e696557422420cccbd4ee1
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+description: Dowiedz się więcej na temat automatycznego rozszerzania archiwizacji, które zapewnia dodatkowy magazyn archiwum dla Exchange Online skrzynek pocztowych.
+ms.openlocfilehash: d039e63310ed7db92f2e625f8bbdd0ff4d0c97cf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922444"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632690"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>Dowiedz się więcej na temat automatycznego rozszerzania archiwizacji
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-W usłudze Office 365 archiwalne skrzynki pocztowe zapewniają użytkownikom dodatkowe miejsce do magazynowania skrzynki pocztowej. Po włączeniu archiwum skrzynki pocztowej użytkownika dostępna jest maksymalnie 100 GB dodatkowego magazynu. W przeszłości, gdy osiągnięto limit przydziału magazynu 100 GB, organizacje musiały skontaktować się z firmą Microsoft w celu zażądania dodatkowego miejsca do magazynowania dla archiwum skrzynki pocztowej. Tak już nie jest.
+W Office 365 archiwalne skrzynki pocztowe zapewniają użytkownikom dodatkowe miejsce do magazynowania skrzynki pocztowej. Po włączeniu archiwum skrzynki pocztowej użytkownika dostępna jest maksymalnie 100 GB dodatkowego magazynu. W przeszłości, gdy osiągnięto limit przydziału magazynu 100 GB, organizacje musiały skontaktować się z firmą Microsoft w celu zażądania dodatkowego miejsca do magazynowania dla archiwum skrzynki pocztowej. Tak już nie jest.
 
 Funkcja archiwizacji w usłudze Microsoft 365 (nazywana *automatycznym rozszerzaniem archiwizacji*) zapewnia do 1,5 TB dodatkowego magazynu w archiwalnych skrzynkach pocztowych. Po osiągnięciu limitu przydziału magazynu w skrzynce pocztowej archiwum platforma Microsoft 365 automatycznie (i przyrostowo) zwiększa rozmiar archiwum, dopóki skrzynka pocztowa archiwum nie osiągnie 1,5 TB.
 
 Aby uzyskać instrukcje krok po kroku dotyczące włączania automatycznego rozszerzania archiwizacji, zobacz [Włączanie automatycznego rozszerzania archiwizacji](enable-autoexpanding-archiving.md).
 
 > [!NOTE]
-> Automatyczne rozszerzanie archiwizacji obsługuje również udostępnione skrzynki pocztowe. Aby włączyć archiwum udostępnionej skrzynki pocztowej, wymagana jest licencja planu 2 usługi Exchange Online lub licencja planu 1 usługi Exchange Online z licencją archiwizacji usługi Exchange Online.
+> Automatyczne rozszerzanie archiwizacji obsługuje również udostępnione skrzynki pocztowe. Aby włączyć archiwum udostępnionej skrzynki pocztowej, wymagana jest licencja Exchange Online Plan 2 lub licencja Exchange Online Plan 1 z licencją Exchange Online — archiwum.
 
 ## <a name="how-auto-expanding-archiving-works"></a>Jak działa automatyczne rozszerzanie archiwizacji
 
@@ -62,7 +60,7 @@ Aby efektywnie korzystać z automatycznego rozszerzania magazynu archiwum, folde
 
 - **yyyy** to rok, w który odebrano komunikaty w folderze.
 
-- **mmm dd, rrrr h_m** to data i godzina utworzenia podfolderu przez usługę Office 365 w formacie UTC na podstawie strefy czasowej użytkownika i ustawień regionalnych w programie Outlook.
+- **mmm dd, rrrr h_m** to data i godzina utworzenia podfolderu przez Office 365 w formacie UTC na podstawie strefy czasowej użytkownika i ustawień regionalnych w programie Outlook.
 
 Poniższe zrzuty ekranu pokazują listę folderów przed i po przeniesieniu komunikatów do automatycznie rozwiniętej archiwum.
 
@@ -81,9 +79,9 @@ Poniższe zrzuty ekranu pokazują listę folderów przed i po przeniesieniu komu
 
 Aby uzyskać dostęp do komunikatów przechowywanych w automatycznie rozwiniętym archiwum, użytkownicy muszą użyć jednego z następujących klientów programu Outlook:
 
-- Outlook w ramach aplikacji Microsoft 365 dla przedsiębiorstw (wcześniej o nazwie Office 365 ProPlus)
+- Program Outlook w ramach Aplikacje Microsoft 365 dla przedsiębiorstw (wcześniej o nazwie Office 365 ProPlus)
 
-- Program Outlook w ramach usługi Microsoft 365 Apps dla firm (wcześniej o nazwie Office 365 Business)
+- Program Outlook w ramach Aplikacje Microsoft 365 dla firm (wcześniej o nazwie Office 365 Business)
 
 - Outlook 2016 lub Outlook 2019 dla systemu Windows
 
@@ -91,7 +89,7 @@ Aby uzyskać dostęp do komunikatów przechowywanych w automatycznie rozwinięty
 
 - Outlook 2016 lub Outlook 2019 dla komputerów Mac
 
-Poniżej przedstawiono kilka kwestii, które należy wziąć pod uwagę podczas korzystania z programu Outlook lub programu Outlook w Internecie w celu uzyskania dostępu do komunikatów przechowywanych w automatycznie rozwiniętym archiwum.
+Poniżej przedstawiono kilka kwestii, które należy wziąć pod uwagę podczas korzystania z programu Outlook lub Outlook w sieci Web w celu uzyskania dostępu do komunikatów przechowywanych w automatycznie rozwiniętym archiwum.
 
 - Dostęp do dowolnego folderu w archiwum skrzynki pocztowej, w tym te, które zostały przeniesione do obszaru magazynu automatycznie rozwinięte.
 
@@ -101,9 +99,9 @@ Poniżej przedstawiono kilka kwestii, które należy wziąć pod uwagę podczas 
 
 - Wyszukiwanie automatycznie rozwiniętej archiwizacji jest dostępne w programie Outlook dla sieci Web (OWA). Podobnie jak w przypadku archiwum online, można wyszukiwać elementy, które zostały przeniesione do dodatkowego obszaru magazynowania. Po wybraniu archiwum jako zakresu wyszukiwania w usłudze OWA zostaną przeszukane wszystkie archiwa (w tym automatycznie rozwinięte archiwa) i odpowiadające im podfoldery. Należy pamiętać, że wyszukiwanie nie jest obsługiwane w przypadku funkcji automatycznie rozwiniętego archiwum w sytuacji archiwum tylko w chmurze (podstawowa skrzynka pocztowa nadal jest lokalna).
 
-- Automatyczne rozszerzone wyszukiwanie archiwum jest dostępne w programie Outlook dla systemu Windows w kanale Monthly Enterprise Channel. Dzięki tej aktualizacji dostępny jest zakres Bieżąca skrzynka pocztowa, dzięki czemu można przeszukiwać automatycznie rozwinięte archiwum. Należy pamiętać, że wyszukiwanie nie jest obsługiwane w przypadku funkcji automatycznie rozwiniętego archiwum w sytuacji archiwum tylko w chmurze (podstawowa skrzynka pocztowa nadal jest lokalna). Aby uzyskać więcej informacji na temat tej i innych funkcji pomocy technicznej usługi Microsoft Search, zobacz [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search (Jak program Outlook dla systemu Windows połączony z usługą Exchange Online korzysta z usługi Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)). 
+- Automatyczne rozszerzone wyszukiwanie archiwum jest dostępne w programie Outlook dla systemu Windows w kanale Monthly Enterprise Channel. Dzięki tej aktualizacji dostępny jest zakres Bieżąca skrzynka pocztowa, dzięki czemu można przeszukiwać automatycznie rozwinięte archiwum. Należy pamiętać, że wyszukiwanie nie jest obsługiwane w przypadku funkcji automatycznie rozwiniętego archiwum w sytuacji archiwum tylko w chmurze (podstawowa skrzynka pocztowa nadal jest lokalna). Aby uzyskać więcej informacji na temat tej i innych funkcji pomocy technicznej usługi Microsoft Search, zobacz [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search (Jak program Outlook dla systemu Windows połączony z Exchange Online korzysta z usługi Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)). 
 
-- Liczba elementów w programie Outlook i liczbach odczytu/nieprzeczytanych (w programach Outlook i Outlook w Internecie) w automatycznie rozwiniętym archiwum może być nieprawidłowa.
+- Liczba elementów w programie Outlook i liczbach odczytu/nieprzeczytanych (w programie Outlook i Outlook w sieci Web) w automatycznie rozwiniętym archiwum może nie być dokładna.
 
 ## <a name="auto-expanding-archiving-and-other-compliance-features"></a>Automatyczne rozszerzanie archiwizacji i innych funkcji zgodności
 
@@ -111,11 +109,11 @@ W tej sekcji opisano funkcje między automatycznym rozszerzaniem archiwizacji a 
 
 - **Zbierania elektronicznych materiałów dowodowych:** Podczas korzystania z narzędzia zbierania elektronicznych materiałów dowodowych, takiego jak wyszukiwanie zawartości lub In-Place zbierania elektronicznych materiałów dowodowych, przeszukiwane są również dodatkowe obszary magazynowania w automatycznie rozwiniętym archiwum.
 
-- **Przechowywania:** Po wstrzymaniu skrzynki pocztowej przy użyciu narzędzi, takich jak blokada postępowania sądowego w usłudze Exchange Online lub zasady przechowywania i przechowywania spraw zbierania elektronicznych materiałów dowodowych w portalu zgodności usługi Microsoft Purview, zawartość znajdująca się w automatycznie rozwiniętym archiwum jest również zawieszana.
+- **Przechowywania:** Po wstrzymaniu skrzynki pocztowej przy użyciu narzędzi, takich jak blokada postępowania sądowego w Exchange Online lub zasady przechowywania i przechowywania spraw zbierania elektronicznych materiałów dowodowych w portal zgodności Microsoft Purview, zawartość znajdująca się w automatycznie rozwiniętym archiwum jest również zawieszana.
 
-- **Zarządzanie rekordami obsługi komunikatów (MRM):** Jeśli używasz zasad usuwania mrm w usłudze Exchange Online, aby trwale usunąć wygasłe elementy skrzynki pocztowej, wygasłe elementy znajdujące się w automatycznie rozwiniętym archiwum również zostaną usunięte.
+- **Zarządzanie rekordami obsługi komunikatów (MRM):** Jeśli używasz zasad usuwania mrm w Exchange Online, aby trwale usunąć wygasłe elementy skrzynki pocztowej, wygasłe elementy znajdujące się w automatycznie rozwiniętym archiwum również zostaną usunięte.
 
-- **Usługa importu:** Usługa Import usługi Office 365 umożliwia importowanie plików PST do automatycznie rozwiniętej archiwum użytkownika. Do archiwum skrzynki pocztowej użytkownika można zaimportować do 100 GB danych z plików PST.
+- **Usługa importu:** Usługa Office 365 Import umożliwia importowanie plików PST do automatycznie rozwiniętej archiwum użytkownika. Do archiwum skrzynki pocztowej użytkownika można zaimportować do 100 GB danych z plików PST.
 
 ## <a name="next-steps"></a>Następne kroki
 

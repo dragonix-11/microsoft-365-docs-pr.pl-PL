@@ -15,16 +15,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Omówienie procesu planowania zapobiegania utracie danych
-ms.openlocfilehash: 68e2b3145521433dd8e0f602b8edb571c45ed9df
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: afda017b2cc627876134888a83f70e9464aba2c8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953454"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634450"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Planowanie zapobiegania utracie danych (DLP)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Każda organizacja będzie inaczej planować i implementować zapobieganie utracie danych, ponieważ potrzeby biznesowe, cele, zasoby i sytuacja każdej organizacji są dla nich unikatowe. Istnieją jednak elementy, które są wspólne dla wszystkich pomyślnych implementacji DLP. W tym artykule przedstawiono najlepsze rozwiązania, które są używane przez organizacje w planowaniu DLP.
 
@@ -34,17 +32,17 @@ Wiele organizacji decyduje się na wdrożenie DLP w celu zachowania zgodności z
 
 Organizacje mogą rozpocząć swoją podróż DLP:
 
-- z poziomu platformy, na przykład chcesz chronić informacje w Teams wiadomościach czatu i kanału lub na urządzeniach Windows 10
+- z poziomu platformy, na przykład chcesz chronić informacje w wiadomościach na czacie i kanale w usłudze Teams lub na urządzeniach Windows 10
 - znajomość informacji poufnych, które chcą nadać priorytet ochronie, na przykład dokumentacji służby zdrowia, i przejście bezpośrednio do definiowania zasad ich ochrony
 - nie wiedząc, czym są ich poufne informacje, gdzie to jest i kto robi to, co z nim zrobić, aby zacząć od odkrycia i kategoryzacji i przyjąć bardziej metodyczne podejście
 - nie wiedząc, czym są ich poufne informacje, gdzie są lub kto z nimi robi, ale przejdą od razu do definiowania zasad i wykorzystywania tych wyników jako miejsca początkowego, a następnie uściślają swoją politykę stamtąd
-- wiedząc, że muszą zaimplementować pełny stos Information Protection usługi Microsoft Purview i dlatego zamierzają przyjąć długoterminowe, metodyczne podejście
+- wiedząc, że muszą wdrożyć pełny stos Microsoft Purview Information Protection i dlatego zamierzają przyjąć długoterminowe, metodyczne podejście
 
 To tylko kilka przykładów sposobu, w jaki klienci mogą podejść do DLP i nie ma znaczenia, od czego zaczynasz, DLP jest wystarczająco elastyczna, aby pomieścić różne rodzaje podróży ochrony informacji od początku do w pełni zrealizowanej strategii zapobiegania utracie danych. 
 
 ## <a name="overview-of-planning-process"></a>Omówienie procesu planowania
 
-Informacje [o zapobieganiu utracie danych w usłudze Microsoft Purview](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) wprowadzają trzy różne aspekty [procesu planowania DLP](dlp-learn-about-dlp.md#plan-for-dlp). Więcej szczegółów znajdziesz tutaj na temat elementów, które są wspólne dla wszystkich planów DLP.
+Artykuł [Dowiedz się więcej o Ochrona przed utratą danych w Microsoft Purview](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) wprowadza trzy różne aspekty [procesu planowania DLP](dlp-learn-about-dlp.md#plan-for-dlp). Więcej szczegółów znajdziesz tutaj na temat elementów, które są wspólne dla wszystkich planów DLP.
 
 ### <a name="identify-stakeholders"></a>Identyfikowanie uczestników projektu
 
@@ -142,15 +140,15 @@ Gdy twoja organizacja wie, gdzie znajduje się pod względem wymagań w zakresie
 
 Elementy zawierające informacje poufne organizacji są używane codziennie w trakcie prowadzenia działalności. Musisz wiedzieć, gdzie mogą wystąpić wystąpienia tych poufnych informacji i w jakich procesach biznesowych są one używane. Ułatwi to wybranie odpowiednich lokalizacji do zastosowania zasad DLP. Zasady DLP są stosowane do lokalizacji:
 
-- Exchange e-mail
-- witryny SharePoint
-- konta OneDrive
-- Teams wiadomości czatu i kanału
+- Poczta e-mail programu Exchange
+- Witryny programu SharePoint
+- Konta usługi OneDrive
+- Wiadomości na czacie i kanale w usłudze Teams
 - urządzenia Windows 10
 - Microsoft Defender for Cloud Apps
 - Repozytoria lokalne
 
-**Przykład** Audytorzy wewnętrzni organizacji śledzą zestaw numerów kart kredytowych. Przechowują arkusz kalkulacyjny w bezpiecznej witrynie SharePoint. Kilku pracowników tworzy kopie i zapisuje je w swojej pracy OneDrive dla Firm lokacji, która jest synchronizowana z urządzeniem Windows 10. Jeden z nich wkleja listę 14 z nich w wiadomości e-mail i próbuje wysłać ją do zewnętrznych audytorów w celu przeglądu. Zasady należy zastosować do bezpiecznej witryny SharePoint, wszystkich audytorów wewnętrznych OneDrive dla Firm kont, urządzeń Windows 10 i Exchange poczty e-mail.
+**Przykład** Audytorzy wewnętrzni organizacji śledzą zestaw numerów kart kredytowych. Przechowują arkusz kalkulacyjny w bezpiecznej witrynie programu SharePoint. Kilku pracowników tworzy kopie i zapisuje je w swojej pracy OneDrive dla Firm lokacji, która jest synchronizowana z urządzeniem Windows 10. Jeden z nich wkleja listę 14 z nich w wiadomości e-mail i próbuje wysłać ją do zewnętrznych audytorów w celu przeglądu. Chcesz zastosować zasady do bezpiecznej witryny programu SharePoint, wszystkich audytorów wewnętrznych OneDrive dla Firm kont, ich urządzeń Windows 10 i poczty e-mail programu Exchange.
 
 ##### <a name="what-is-your-organizations-tolerance-for-leakage"></a>Jaka jest tolerancja organizacji na wycieki?
 
@@ -162,9 +160,9 @@ Różne grupy w organizacji mogą mieć różne poglądy na temat dopuszczalnego
 
 Aby można było monitorować niektóre lokalizacje DLP, należy spełnić wymagania wstępne. Zobacz sekcję **Przed rozpoczęciem** :
 
-- [Wprowadzenie z lokalnym skanerem zapobiegania utracie danych (wersja zapoznawcza)](dlp-on-premises-scanner-get-started.md#before-you-begin)
+- [Wprowadzenie do lokalnego skanera zapobiegania utracie danych (wersja zapoznawcza)](dlp-on-premises-scanner-get-started.md#before-you-begin)
 - [Wprowadzenie do ochrony przed utratą danych punktu końcowego](endpoint-dlp-getting-started.md#before-you-begin)
-- [Wprowadzenie z rozszerzeniem zgodności firmy Microsoft](dlp-chrome-get-started.md#before-you-begin)
+- [Wprowadzenie do rozszerzenia zgodności firmy Microsoft](dlp-chrome-get-started.md#before-you-begin)
 - [Używanie zasad ochrony przed utratą danych dla aplikacji w chmurze innych niż Microsoft (wersja zapoznawcza)](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
 
 #### <a name="policy-deployment"></a>Wdrażanie zasad
@@ -173,9 +171,9 @@ Podczas tworzenia zasad DLP należy rozważyć stopniowe wprowadzanie ich w celu
   
 Jeśli tworzysz zasady DLP o dużym potencjalnym wpływie, zalecamy wykonanie następującej sekwencji:
   
-1. **Rozpocznij w trybie testowym bez Wskazówki zasad**, a następnie użyj raportów DLP i wszelkich raportów o zdarzeniach, aby ocenić wpływ. Raporty DLP umożliwiają wyświetlanie liczby, lokalizacji, typu i ważności dopasowań zasad. Na podstawie wyników można dostosować zasady zgodnie z potrzebami. W trybie testowym zasady DLP nie będą miały wpływu na produktywność osób pracujących w organizacji. Ponadto użyj tego etapu, aby przetestować przepływ pracy na potrzeby przeglądu zdarzeń DLP i korygowania problemów.
+1. **Rozpocznij w trybie testowym bez wskazówek dotyczących zasad** , a następnie użyj raportów DLP i wszelkich raportów o zdarzeniach, aby ocenić wpływ. Raporty DLP umożliwiają wyświetlanie liczby, lokalizacji, typu i ważności dopasowań zasad. Na podstawie wyników można dostosować zasady zgodnie z potrzebami. W trybie testowym zasady DLP nie będą miały wpływu na produktywność osób pracujących w organizacji. Ponadto użyj tego etapu, aby przetestować przepływ pracy na potrzeby przeglądu zdarzeń DLP i korygowania problemów.
     
-2. **Przejdź do trybu testowego z powiadomieniami i Wskazówki zasad**, aby zacząć uczyć użytkowników o zasadach zgodności i przygotowywać ich do stosowania zasad. Warto mieć link do strony zasad organizacji, który zawiera więcej szczegółów na temat zasad w poradę zasad. Na tym etapie można również poprosić użytkowników o zgłaszanie wyników fałszywie dodatnich, aby umożliwić dalsze uściślanie zasad. Przejdź do tego etapu, gdy masz pewność, że wyniki aplikacji zasad są zgodne z tym, co mają na myśli osoby biorące udział w projekcie. 
+2. **Przejdź do trybu testowego z powiadomieniami i wskazówkami dotyczącymi zasad** , aby zacząć uczyć użytkowników o zasadach zgodności i przygotowywać ich do stosowania zasad. Warto mieć link do strony zasad organizacji, który zawiera więcej szczegółów na temat zasad w poradę zasad. Na tym etapie można również poprosić użytkowników o zgłaszanie wyników fałszywie dodatnich, aby umożliwić dalsze uściślanie zasad. Przejdź do tego etapu, gdy masz pewność, że wyniki aplikacji zasad są zgodne z tym, co mają na myśli osoby biorące udział w projekcie. 
     
 3. **Rozpocznij pełne wymuszanie zasad** , aby akcje w regułach były stosowane i zawartość była chroniona. Kontynuuj monitorowanie raportów DLP i wszelkich raportów lub powiadomień o zdarzeniach, aby upewnić się, że wyniki są tym, co zamierzasz. 
 
@@ -201,9 +199,9 @@ Przepisy, przepisy i standardy branżowe, które mogą podlegać organizacji, zm
 
 |Opis potrzeb biznesowych klientów  | Podejście  |
 |---------|---------|
-|**Contoso Bank** jest w branży wysoce regulowanej i ma wiele różnych rodzajów poufnych elementów w wielu różnych lokalizacjach. </br> - wie, które typy informacji poufnych mają najwyższy priorytet. </br> — musi zminimalizować zakłócenia biznesowe w miarę wdrażania zasad. </br> — ma zasoby IT i może zatrudniać ekspertów, którzy mogą pomagać w planowaniu, projektowaniu </br> — ma umowę pomocy technicznej premier z firmą Microsoft| - Poświęć trochę czasu, aby zrozumieć, jakie przepisy muszą przestrzegać i w jaki sposób będą przestrzegane. </br> -Poświęć trochę czasu, aby zrozumieć lepszą wartość razem stosu Information Protection Microsoft Purview </br> - Opracowywanie schematu etykietowania poufności dla elementów o priorytetach i stosowanie </br> - Angażowanie właścicieli procesów biznesowych </br>- Projektowanie/kodowanie zasad, wdrażanie w trybie testowym, szkolenie użytkowników </br>- powtórz|
-|**TailSpin Toys** nie wie, co ma i gdzie jest, i ma niewielką lub żadną głębokość zasobów. Intensywnie korzystają z Teams, OneDrive dla Firm i Exchange.     |— Zacznij od prostych zasad dotyczących lokalizacji o priorytetach. </br>- Monitorowanie tego, co zostanie zidentyfikowane </br>- Odpowiednio zastosuj etykiety poufności </br>— Uściślaj zasady, trenuj użytkowników       |
-|**Fabrikam** to mały startup, który chce chronić swoją własność intelektualną i musi działać szybko. Są gotowi poświęcić niektóre zasoby, ale nie mogą sobie pozwolić na zatrudnianie zewnętrznych ekspertów. </br>— Wszystkie elementy poufne znajdują się w Microsoft 365 OneDrive dla Firm/SharePoint </br>- Wdrażanie OneDrive dla Firm i SharePoint jest powolne, pracownicy/ w tle IT używać DropBox i dysk Google do udostępniania / przechowywania elementów </br>- Pracownicy cenią sobie szybkość pracy nad dziedziną ochrony danych </br>- Klient splurged i kupił wszystkich 18 pracowników nowych urządzeń Windows 10     |— Skorzystaj z domyślnych zasad DLP w Teams </br>— Domyślnie używaj ustawień ograniczonych dla elementów SharePoint </br>— Wdrażanie zasad, które uniemożliwiają udostępnianie zewnętrzne </br>— Wdrażanie zasad w lokalizacjach o priorytetach </br>— Wdrażanie zasad na urządzeniach Windows 10 </br>— Blokuj przekazywanie do magazynu w chmurze bez OneDrive dla Firm      |
+|**Contoso Bank** jest w branży wysoce regulowanej i ma wiele różnych rodzajów poufnych elementów w wielu różnych lokalizacjach. </br> - wie, które typy informacji poufnych mają najwyższy priorytet. </br> — musi zminimalizować zakłócenia biznesowe w miarę wdrażania zasad. </br> — ma zasoby IT i może zatrudniać ekspertów, którzy mogą pomagać w planowaniu, projektowaniu </br> — ma umowę pomocy technicznej premier z firmą Microsoft| - Poświęć trochę czasu, aby zrozumieć, jakie przepisy muszą przestrzegać i w jaki sposób będą przestrzegane. </br> -Poświęć trochę czasu, aby zrozumieć lepszą wartość stosu Microsoft Purview Information Protection razem </br> - Opracowywanie schematu etykietowania poufności dla elementów o priorytetach i stosowanie </br> - Angażowanie właścicieli procesów biznesowych </br>- Projektowanie/kodowanie zasad, wdrażanie w trybie testowym, szkolenie użytkowników </br>- powtórz|
+|**TailSpin Toys** nie wie, co ma i gdzie jest, i ma niewielką lub żadną głębokość zasobów. Intensywnie korzystają z usług Teams, OneDrive dla Firm i Exchange.     |— Zacznij od prostych zasad dotyczących lokalizacji o priorytetach. </br>- Monitorowanie tego, co zostanie zidentyfikowane </br>- Odpowiednio zastosuj etykiety poufności </br>— Uściślaj zasady, trenuj użytkowników       |
+|**Fabrikam** to mały startup, który chce chronić swoją własność intelektualną i musi działać szybko. Są gotowi poświęcić niektóre zasoby, ale nie mogą sobie pozwolić na zatrudnianie zewnętrznych ekspertów. </br>— Elementy poufne znajdują się w usłudze Microsoft 365 OneDrive dla Firm/SharePoint </br>- Wdrażanie OneDrive dla Firm i SharePoint jest powolne, pracownicy / cień IT używać DropBox i dysk Google do udostępniania / przechowywania elementów </br>- Pracownicy cenią sobie szybkość pracy nad dziedziną ochrony danych </br>- Klient splurged i kupił wszystkich 18 pracowników nowych urządzeń Windows 10     |— Korzystanie z domyślnych zasad DLP w usłudze Teams </br>— Domyślnie używaj ustawień ograniczonych dla elementów programu SharePoint </br>— Wdrażanie zasad, które uniemożliwiają udostępnianie zewnętrzne </br>— Wdrażanie zasad w lokalizacjach o priorytetach </br>— Wdrażanie zasad na urządzeniach Windows 10 </br>— Blokuj przekazywanie do magazynu w chmurze bez OneDrive dla Firm      |
 
 <!--
 

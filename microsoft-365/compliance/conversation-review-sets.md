@@ -1,5 +1,5 @@
 ---
-title: Przeglądanie konwersacji w usłudze eDiscovery (Premium)
+title: Przeglądanie konwersacji w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,22 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dowiedz się więcej o funkcji rekonstrukcji konwersacji w usłudze Microsoft Purview eDiscovery (Premium) (nazywanej wątkami konwersacji), aby odtworzyć, przejrzeć i wyeksportować rozmowy na czacie w grupach Microsoft Teams i Yammer.
+description: Dowiedz się więcej na temat funkcji rekonstrukcji konwersacji w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) (nazywanej wątkami konwersacji), aby zrekonstruować, przejrzeć i wyeksportować konwersacje na czacie w grupach Microsoft Teams i Yammer.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 075424bc6db144e86406b10ce9a4f4d28c1b937f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 43b9bccd06ab9ca5ac94f48efa40b1c06707dde5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097079"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634792"
 ---
 # <a name="conversation-threading-in-ediscovery-premium"></a>Wątkowość konwersacji w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Wiadomości błyskawiczne to wygodny sposób zadawania pytań, dzielenia się pomysłami lub szybkiej komunikacji między dużymi odbiorcami. Ponieważ platformy wiadomości błyskawicznych, takie jak microsoft teams i grupy yammer, stają się podstawą współpracy w przedsiębiorstwie, organizacje muszą ocenić, w jaki sposób przepływ pracy zbierania elektronicznych elektronicznych materiałów dowodowych obsługuje te nowe formy komunikacji i współpracy.
 
-Wiadomości błyskawiczne to wygodny sposób zadawania pytań, dzielenia się pomysłami lub szybkiej komunikacji między dużymi odbiorcami. Ponieważ platformy wiadomości błyskawicznych, takie jak Microsoft Teams i grupy Yammer, stają się podstawą współpracy w przedsiębiorstwie, organizacje muszą ocenić, w jaki sposób przepływ pracy zbierania elektronicznych elektronicznych materiałów dowodowych obsługuje te nowe formy komunikacji i współpracy.
-
-Funkcja rekonstrukcji konwersacji w usłudze Microsoft Purview eDiscovery (Premium) została zaprojektowana w celu ułatwienia identyfikowania zawartości kontekstowej i tworzenia odrębnych widoków konwersacji. Ta funkcja umożliwia wydajne i szybkie przeglądanie pełnych konwersacji wiadomości błyskawicznych (*nazywanych również konwersacjami wątkowymi*), które są generowane na platformach takich jak Microsoft Teams.
+Funkcja rekonstrukcji konwersacji w Zbieranie elektronicznych materiałów dowodowych w Microsoft Purview (Premium) została zaprojektowana, aby ułatwić identyfikowanie zawartości kontekstowej i tworzenie odrębnych widoków konwersacji. Ta funkcja umożliwia wydajne i szybkie przeglądanie pełnych konwersacji wiadomości błyskawicznych ( *nazywanych również konwersacjami wątkowymi*), które są generowane na platformach takich jak Microsoft Teams.
 
 W przypadku rekonstrukcji konwersacji można używać wbudowanych możliwości do rekonstruowania, przeglądania i eksportowania konwersacji wątkowych. Użyj rekonstrukcji konwersacji zbierania elektronicznych materiałów dowodowych (Premium), aby:
 
@@ -48,11 +46,11 @@ Poniżej przedstawiono kilka definicji ułatwiających rozpoczęcie korzystania 
 
 - **Wiadomości:** Reprezentują najmniejszą jednostkę konwersacji. Komunikaty mogą różnić się rozmiarem, strukturą i metadanymi.
 
-- **Konwersacji:** Reprezentuje grupowanie co najmniej jednego komunikatu. W różnych aplikacjach konwersacje mogą być reprezentowane na różne sposoby. W niektórych aplikacjach istnieje jawna akcja, która wynika z odpowiedzi na istniejącą wiadomość. Konwersacje są tworzone jawnie w wyniku tej akcji użytkownika. Na przykład poniżej przedstawiono zrzut ekranu konwersacji kanału w Microsoft Teams.
+- **Konwersacji:** Reprezentuje grupowanie co najmniej jednego komunikatu. W różnych aplikacjach konwersacje mogą być reprezentowane na różne sposoby. W niektórych aplikacjach istnieje jawna akcja, która wynika z odpowiedzi na istniejącą wiadomość. Konwersacje są tworzone jawnie w wyniku tej akcji użytkownika. Na przykład poniżej przedstawiono zrzut ekranu konwersacji kanału w usłudze Microsoft Teams.
 
-   ![Microsoft Teams konwersacji kanału.](../media/threadedchat.png)
+   ![Konwersacja w kanale usługi Microsoft Teams.](../media/threadedchat.png)
 
-   W innych aplikacjach (takich jak wiadomości czatu grupowego w Teams) nie istnieje formalny łańcuch odpowiedzi, a zamiast tego komunikaty są wyświetlane jako "płaska rzeka wiadomości" w jednym wątku. W aplikacjach tego typu konwersacje są wywnioskowane z grupy komunikatów, które występują w określonym czasie. To "grupowanie nietrwałe" komunikatów (w przeciwieństwie do łańcucha odpowiedzi) reprezentuje konwersację "tam iz powrotem" dotyczącą konkretnego tematu.
+   W innych aplikacjach (takich jak wiadomości czatu grupowego w usłudze Teams) nie ma formalnego łańcucha odpowiedzi, a zamiast tego komunikaty są wyświetlane jako "płaska rzeka wiadomości" w jednym wątku. W aplikacjach tego typu konwersacje są wywnioskowane z grupy komunikatów, które występują w określonym czasie. To "grupowanie nietrwałe" komunikatów (w przeciwieństwie do łańcucha odpowiedzi) reprezentuje konwersację "tam iz powrotem" dotyczącą konkretnego tematu.
 
 ## <a name="step-1-create-a-draft-collection"></a>Krok 1. Tworzenie kolekcji roboczej
 
@@ -110,7 +108,7 @@ W szczególności możesz wyeksportować całe konwersacje rozmów w jednym plik
 
 ## <a name="more-information"></a>Więcej informacji
 
-Aby dowiedzieć się więcej na temat przeglądania danych przypadków w usłudze eDiscovery (Premium), zobacz następujące artykuły:
+Aby dowiedzieć się więcej na temat przeglądania danych przypadków w środowisku zbierania elektronicznych materiałów dowodowych (Premium), zobacz następujące artykuły:
 
 - [Wykonuj zapytania i filtruj zawartość w zestawie do przeglądu](review-set-search.md)
 - [Taguj dokumenty w zestawie do przeglądu](tagging-documents.md)

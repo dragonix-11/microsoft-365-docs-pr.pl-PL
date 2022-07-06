@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ochrona urządzeń niezarządzanych lub przynieś własne urządzenia (BYOD) przed cyberatakami za pomocą Microsoft 365 Business Premium. Jak skonfigurować cyberbezpieczeństwo dla komputerów z systemem Windows i komputerów Mac.
-ms.openlocfilehash: 32f491e1a124bacf50f0efa553f6b141c08409b9
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5a1239f84e801c6327eb18c1049e410cc0859bdb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489129"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631777"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Ochrona niezarządzanych komputerów z systemem Windows i komputerów Mac w Microsoft 365 Business Premium
 
@@ -40,38 +40,48 @@ Ten cel koncentruje się na tworzeniu ochrony dla wszelkich niezarządzanych kom
 
 Niezwykle ważne jest, aby zapewnić, aby użytkownicy pierwszej linii postępowali zgodnie z tymi wytycznymi, aby minimalne możliwości zabezpieczeń były konfigurowane na wszystkich urządzeniach BYOD.
 
-## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
+## <a name="windows-10-or-11"></a>[Windows 10 lub 11](#tab/Windows10-11)
 
-**Włączanie szyfrowania urządzenia**<p>
+## <a name="windows-10-or-11"></a>Windows 10 lub 11
+
+### <a name="turn-on-device-encryption"></a>Włączanie szyfrowania urządzenia
+
 Szyfrowanie urządzenia jest dostępne na wielu urządzeniach z systemem Windows i pomaga chronić dane przez ich szyfrowanie. Jeśli włączysz szyfrowanie urządzenia, tylko autoryzowane osoby będą mogły uzyskać dostęp do urządzenia i danych. Aby uzyskać instrukcje [, zobacz Włączanie szyfrowania urządzeń](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) .
 
  Jeśli szyfrowanie urządzenia nie jest dostępne na urządzeniu, możesz włączyć standardowe [szyfrowanie BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption). (BitLocker nie jest dostępna w wersji Windows 10 Home). 
 
-**Ochrona urządzenia za pomocą Zabezpieczenia Windows**<p>
-Jeśli masz Windows 10, uzyskasz najnowszą ochronę antywirusową za pomocą Zabezpieczenia Windows. Po pierwszym uruchomieniu Windows 10 Zabezpieczenia Windows jest włączony i aktywnie pomaga chronić komputer, skanując pod kątem złośliwego oprogramowania (złośliwego oprogramowania), wirusów i zagrożeń bezpieczeństwa. Zabezpieczenia Windows używa ochrony w czasie rzeczywistym do skanowania wszystkiego, co pobierasz lub uruchamiasz na komputerze.
+### <a name="protect-your-device-with-windows-security"></a>Ochrona urządzenia za pomocą Zabezpieczenia Windows
+
+Jeśli masz Windows 10 lub 11, otrzymasz najnowszą ochronę antywirusową z Zabezpieczenia Windows. Po pierwszym uruchomieniu Windows 10 Zabezpieczenia Windows jest włączony i aktywnie pomaga chronić komputer, skanując pod kątem złośliwego oprogramowania (złośliwego oprogramowania), wirusów i zagrożeń bezpieczeństwa. Zabezpieczenia Windows używa ochrony w czasie rzeczywistym do skanowania wszystkiego, co pobierasz lub uruchamiasz na komputerze.
 
 Windows Update pobiera aktualizacje dla Zabezpieczenia Windows automatycznie, aby zapewnić bezpieczeństwo komputera i chronić go przed zagrożeniami.
 
 Jeśli masz starszą wersję systemu Windows i używasz programu Microsoft Security Essentials, dobrym pomysłem jest przejście do Zabezpieczenia Windows. Aby uzyskać więcej informacji, zobacz [pomoc w ochronie urządzenia za pomocą Zabezpieczenia Windows](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
 
-**Włączanie zapory systemu Windows**<p>
-Zawsze należy uruchomić zaporę systemu Windows, nawet jeśli włączono inną zaporę. Wyłączenie zapory systemu Windows może sprawić, że urządzenie (i sieć, jeśli je masz) będą bardziej narażone na nieautoryzowany dostęp. Aby uzyskać instrukcje [, zobacz Włączanie lub wyłączanie zapory systemu Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) .
+### <a name="turn-on-windows-defender-firewall"></a>Włącz Zapora Windows Defender
+
+Zawsze należy uruchamiać Zapora Windows Defender, nawet jeśli włączono inną zaporę. Wyłączenie Zapora Windows Defender może sprawić, że urządzenie (i sieć, jeśli je masz) będą bardziej narażone na nieautoryzowany dostęp. Aby uzyskać instrukcje [, zobacz Włączanie lub wyłączanie zapory systemu Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) .
 
 ## <a name="next-mission"></a>Następna misja
 
 Dobra, misja zakończona! Teraz pracujemy nad [zabezpieczeniem systemu poczty e-mail](m365bp-protect-email-overview.md) przed wyłudzaniem informacji i innymi atakami.
 
-## <a name="mac"></a>[Mac](#tab/Mac)
+## <a name="macos"></a>[macOS](#tab/macOS)
 
-**Szyfrowanie dysku mac przy użyciu programu FileVault**<p>
+## <a name="macos"></a>macOS
+
+### <a name="use-filevault-to-encrypt-your-mac-disk"></a>Szyfrowanie dysku mac przy użyciu programu FileVault
+
 Szyfrowanie dysków chroni dane w przypadku utraty lub kradzieży urządzeń. Szyfrowanie pełnego dysku w usłudze FileVault pomaga zapobiegać nieautoryzowanemu dostępowi do informacji na dysku startowym. Aby uzyskać instrukcje [, zobacz używanie programu FileVault do szyfrowania dysku startowego na komputerze Mac](https://support.apple.com/HT204837) .
 
-**Ochrona komputera Mac przed złośliwym oprogramowaniem**<p>
+### <a name="protect-your-mac-from-malware"></a>Ochrona komputera Mac przed złośliwym oprogramowaniem
+
 Firma Microsoft zaleca zainstalowanie i użycie niezawodnego oprogramowania antywirusowego na komputerze Mac. Zobacz następujący artykuł, aby uzyskać listę opcji: [Najlepszy program antywirusowy dla komputerów Mac 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
 Możesz również zmniejszyć ryzyko złośliwego oprogramowania przy użyciu oprogramowania tylko z wiarygodnych źródeł. Ustawienia w obszarze Preferencje ochrony prywatności & zabezpieczeń umożliwiają określenie źródeł oprogramowania zainstalowanego na komputerze Mac. Aby uzyskać więcej informacji, zobacz [ochrona komputera Mac przed złośliwym oprogramowaniem](https://support.apple.com/kb/PH25087).
 
-**Włączanie ochrony zapory**<p>
+### <a name="turn-on-firewall-protection"></a>Włączanie ochrony zapory
+
 Użyj ustawień zapory, aby chronić komputer Mac przed niepożądanym kontaktem zainicjowanym przez inne komputery po nawiązaniu połączenia z Internetem lub siecią. Bez tej ochrony komputer Mac może być bardziej narażony na nieautoryzowany dostęp. Aby uzyskać instrukcje [, zobacz temat zapory aplikacji](https://support.apple.com/HT201642) .
 
 ## <a name="next-mission"></a>Następna misja

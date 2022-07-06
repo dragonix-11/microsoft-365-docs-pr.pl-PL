@@ -16,17 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Twórz oceny w programie Microsoft Purview Compliance Manager, aby ułatwić spełnienie wymagań dotyczących przepisów i certyfikatów, które są ważne dla Organizacji.
-ms.openlocfilehash: cb2d90bf8dfbdcb2ec2ca534d1659a19d27998bc
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+description: Twórz oceny w programie Microsoft Purview Compliance Manager, aby ułatwić spełnienie wymagań dotyczących przepisów i certyfikatów, które są ważne dla Twojej organizacji.
+ms.openlocfilehash: 6eeb77e1e5d6adea3489764626910e63ce443a2d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115746"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633570"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Tworzenie ocen i zarządzanie nimi w menedżerze zgodności
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **W tym artykule:** Dowiedz się, jak dostosować Menedżera zgodności dla organizacji, tworząc **oceny** i zarządzając nimi. W tym artykule przedstawiono sposób tworzenia ocen, organizowania ich w **grupy**, pracy z **kontrolkami**, akceptowania aktualizacji i eksportowania **raportów** oceny.
 
@@ -41,9 +39,9 @@ Wszystkie oceny są wymienione na karcie oceny w Menedżerze zgodności. Dowiedz
 
 ## <a name="data-protection-baseline-default-assessment"></a>Domyślna ocena punktu odniesienia ochrony danych
 
-Aby rozpocząć pracę, firma Microsoft udostępnia **domyślną** ocenę w Menedżerze zgodności dla **punktu odniesienia Microsoft 365 ochrony danych**. Ta ocena bazowa obejmuje zestaw mechanizmów kontroli kluczowych przepisów i standardów dotyczących ochrony danych i ogólnego ładu danych. Ten punkt odniesienia czerpie przede wszystkim z NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) i ISO (Międzynarodowa Organizacja Standaryzacji), a także z FedRAMP (Federal Risk and Authorization Management Program) i RODO (ogólne rozporządzenie o ochronie danych Unii Europejskiej).
+Aby rozpocząć pracę, firma Microsoft udostępnia **domyślną** ocenę w Menedżerze zgodności dla **punktu odniesienia ochrony danych platformy Microsoft 365**. Ta ocena bazowa obejmuje zestaw mechanizmów kontroli kluczowych przepisów i standardów dotyczących ochrony danych i ogólnego ładu danych. Ten punkt odniesienia czerpie przede wszystkim z NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) i ISO (Międzynarodowa Organizacja Standaryzacji), a także z FedRAMP (Federal Risk and Authorization Management Program) i RODO (ogólne rozporządzenie o ochronie danych Unii Europejskiej).
 
-Ta ocena służy do obliczania początkowego wyniku zgodności przy pierwszym wystąpieniu menedżera zgodności przed skonfigurowaniem innych ocen. Menedżer zgodności zbiera początkowe sygnały z rozwiązań Microsoft 365. Na pierwszy rzut oka zobaczysz, jak twoja organizacja działa w stosunku do kluczowych standardów i przepisów dotyczących ochrony danych, a także zobaczysz sugerowane działania ulepszeń do podjęcia.
+Ta ocena służy do obliczania początkowego wyniku zgodności przy pierwszym wystąpieniu menedżera zgodności przed skonfigurowaniem innych ocen. Menedżer zgodności zbiera początkowe sygnały z rozwiązań platformy Microsoft 365. Na pierwszy rzut oka zobaczysz, jak twoja organizacja działa w stosunku do kluczowych standardów i przepisów dotyczących ochrony danych, a także zobaczysz sugerowane działania ulepszeń do podjęcia.
 
 Menedżer zgodności staje się bardziej pomocny podczas tworzenia własnych ocen i zarządzania nimi w celu spełnienia konkretnych potrzeb organizacji.
 
@@ -81,7 +79,7 @@ Grupę można utworzyć podczas tworzenia nowej oceny. Nie można tworzyć grup 
 
 Szablony oceny zawierają zalecenia dotyczące kontroli i akcji dla ocen na podstawie certyfikatów dla różnych przepisów i standardów dotyczących prywatności. Twoja organizacja zaczyna od co najmniej jednego i prawdopodobnie większej **liczby dostępnych** szablonów do użycia, w zależności od umowy licencyjnej. Twoja organizacja może również zakupić dodatkowe szablony **premium** .
 
-Każdy szablon istnieje w dwóch wersjach: jeden do użytku z Microsoft 365 (lub innymi produktami firmy Microsoft w miarę dostępności) i uniwersalną wersją, którą można dostosować do oceny innych używanych produktów. Możesz wybrać odpowiedni typ szablonu dla produktu, który chcesz ocenić.
+Każdy szablon istnieje w dwóch wersjach: jeden do użytku z platformą Microsoft 365 (lub innymi produktami firmy Microsoft, jako dostępny) i uniwersalną wersją, którą można dostosować do oceny innych używanych produktów. Możesz wybrać odpowiedni typ szablonu dla produktu, który chcesz ocenić.
 
 Więcej szczegółów na temat szablonów można znaleźć w [temacie Dowiedz się więcej o szablonach oceny w menedżerze zgodności](compliance-manager-templates.md).
 
@@ -115,7 +113,7 @@ Aby utworzyć co najmniej jedną ocenę na podstawie naszych zaleceń, wybierz p
 
 4. **Produkt, nazwa i grupa:** Ustaw te właściwości, aby zidentyfikować ocenę, wybierz produkt, który będzie oceniany, i przypisz go do grupy.
 
-    - **Produkt**: wybierz produkt, do których ma zostać zastosowana ocena. Jeśli używasz szablonu firmy Microsoft, takiego jak przeznaczony dla Microsoft 365, to pole zostanie wypełnione, aby wskazać odpowiedni produkt i nie można go zmienić. Jeśli używasz szablonu uniwersalnego, wybierz, czy tworzysz tę ocenę dla nowego produktu, czy dla produktu niestandardowego, który został już zdefiniowany w Menedżerze zgodności. Jeśli wybierzesz nowy produkt, wprowadź jego nazwę. Należy pamiętać, że nie można wybrać wstępnie zdefiniowanego produktu firmy Microsoft podczas korzystania z szablonu uniwersalnego.
+    - **Produkt**: wybierz produkt, do których ma zostać zastosowana ocena. Jeśli używasz szablonu firmy Microsoft, takiego jak przeznaczony dla platformy Microsoft 365, to pole zostanie wypełnione, aby wskazać odpowiedni produkt i nie można go zmienić. Jeśli używasz szablonu uniwersalnego, wybierz, czy tworzysz tę ocenę dla nowego produktu, czy dla produktu niestandardowego, który został już zdefiniowany w Menedżerze zgodności. Jeśli wybierzesz nowy produkt, wprowadź jego nazwę. Należy pamiętać, że nie można wybrać wstępnie zdefiniowanego produktu firmy Microsoft podczas korzystania z szablonu uniwersalnego.
     - **Nazwa oceny**: wprowadź nazwę oceny w polu **Nazwa oceny** . Nazwy ocen muszą być unikatowe w grupach. Jeśli nazwa oceny jest zgodna z nazwą innej oceny w danej grupie, zostanie wyświetlony błąd z prośbą o utworzenie innej nazwy.
     - **Grupa**: Przypisz ocenę do grupy. Możesz wykonać jedną z następujących czynności:
         - Wybierz pozycję **Użyj istniejącej grupy** , aby przypisać ją do już utworzonej grupy. Lub
@@ -183,7 +181,7 @@ Dowiedz się więcej na temat [sposobu śledzenia i śledzenia akcji ulepszeń o
 
 Gdy aktualizacja jest dostępna dla oceny, zobaczysz powiadomienie i będziesz mieć możliwość zaakceptowania aktualizacji lub odroczenia jej na później.
 
-Aktualizacje są dostępne dla ocen na podstawie szablonów firmy Microsoft, takich jak te przeznaczone do użycia z Microsoft 365. Jeśli Twoja organizacja używa szablonów uniwersalnych do oceny innych produktów, dziedziczenie może nie być obsługiwane. Aby uzyskać więcej informacji, zobacz [Rozszerzanie szablonów oceny](compliance-manager-templates-extend.md).
+Aktualizacje są dostępne dla ocen opartych na szablonach firmy Microsoft, takich jak te przeznaczone do użycia z platformą Microsoft 365. Jeśli Twoja organizacja używa szablonów uniwersalnych do oceny innych produktów, dziedziczenie może nie być obsługiwane. Aby uzyskać więcej informacji, zobacz [Rozszerzanie szablonów oceny](compliance-manager-templates-extend.md).
 
 ### <a name="what-causes-an-update"></a>Co powoduje aktualizację
 
@@ -194,7 +192,7 @@ Jeśli firma Microsoft zaktualizuje rozszerzony szablon programu Compliance Mana
 Utworzone niestandardowe oceny nie otrzymują żadnych aktualizacji szablonu od firmy Microsoft. Oceny niestandardowe mogą otrzymywać aktualizacje akcji poprawy, ale wszelkie aktualizacje firmy Microsoft umożliwiające kontrolowanie mapowania między ocenami i akcjami poprawy nie mają zastosowania do szablonów niestandardowych.
 
 > [!NOTE]
-> Aktualizacje ocen mają zastosowanie tylko na poziomie grupy. Jeśli masz dwie oceny utworzone na podstawie tego samego szablonu, który istnieje w dwóch różnych grupach, każda ocena będzie mieć oczekujące powiadomienie o aktualizacji i musisz zaakceptować aktualizację każdej oceny w odpowiedniej grupie indywidualnie.
+> Aktualizacje do ocen mają zastosowanie tylko na poziomie grupy. Jeśli masz dwie oceny utworzone na podstawie tego samego szablonu, który istnieje w dwóch różnych grupach, każda ocena będzie mieć oczekujące powiadomienie o aktualizacji i musisz zaakceptować aktualizację każdej oceny w odpowiedniej grupie indywidualnie.
 
 #### <a name="where-youll-see-assessment-update-notifications"></a>Gdzie zostaną wyświetlone powiadomienia o aktualizacji oceny
 
@@ -214,7 +212,7 @@ Po wybraniu pozycji **Przejrzyj aktualizację** na stronie szczegółów oceny p
 - Przegląd objaśniający aktualizację
 - Szczegółowe informacje o zmianach, w tym wpływ na wynik zgodności, postęp w ukończeniu oceny oraz określoną liczbę zmian w akcjach poprawy i kontrolkach.
 
-Wybranie linku **Zaktualizowany szablon** spowoduje pobranie pliku Excel zawierającego dane sterujące dla wersji szablonu z oczekującymi aktualizacjami. Wybranie linku **Bieżący szablon** powoduje pobranie pliku istniejącego szablonu bez zmian.
+Wybranie linku **Zaktualizowany szablon** spowoduje pobranie pliku programu Excel zawierającego dane sterujące dla wersji szablonu z oczekującymi aktualizacjami. Wybranie linku **Bieżący szablon** powoduje pobranie pliku istniejącego szablonu bez zmian.
 
 Aby zaakceptować aktualizację i wprowadzić zmiany w ocenie, wybierz pozycję **Zaakceptuj aktualizację**. Zaakceptowane zmiany są trwałe.
 
@@ -230,7 +228,7 @@ Jeśli jesteś w trakcie oceny, możesz upewnić się, że zakończono nad nią 
 
 ## <a name="export-an-assessment-report"></a>Eksportowanie raportu oceny
 
-Ocenę można wyeksportować do pliku Excel dla osób biorących udział w projekcie zgodności w organizacji lub zewnętrznych audytorów i regulatorów. Na stronie szczegółów oceny wybierz przycisk **Generuj raport** w górnej części strony, który tworzy plik Excel, który można zapisać i udostępnić.
+Ocenę można wyeksportować do pliku programu Excel dla osób biorących udział w projekcie zgodności w organizacji lub zewnętrznych audytorów i organów regulacyjnych. Na stronie szczegółów oceny wybierz przycisk **Generuj raport** w górnej części strony, który tworzy plik programu Excel, który można zapisać i udostępnić.
 
 Raport jest migawką oceny na dzień i godzinę eksportu. Zawiera szczegółowe informacje dotyczące kontrolek zarządzanych zarówno przez Ciebie, jak i firmę Microsoft, w tym stan implementacji, datę testu i wyniki testu.
 

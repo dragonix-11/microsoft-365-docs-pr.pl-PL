@@ -16,17 +16,16 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9d16cb82354bcb44e817de3207cb49de66dbf91
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 2b960141b8f6da710b7ef3cbbf812ac0f00f1ce5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873055"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634076"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Ręczne wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Dotyczy:**
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
@@ -34,17 +33,16 @@ ms.locfileid: "65873055"
 
 > Chcesz poznać usługę ochrony punktu końcowego w usłudze Microsoft Defender? [Utwórz konto, aby skorzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-
 W tym artykule opisano sposób ręcznego wdrażania Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux. Pomyślne wdrożenie wymaga wykonania wszystkich następujących zadań:
 
-  - [Wymagania wstępne i wymagania systemowe](#prerequisites-and-system-requirements)
-  - [Konfigurowanie repozytorium oprogramowania systemu Linux](#configure-the-linux-software-repository)
-    - [RHEL i warianty (CentOS, Fedora, Oracle Linux i Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
-    - [SLES i warianty](#sles-and-variants)
-    - [Systemy Ubuntu i Debian](#ubuntu-and-debian-systems)
-  - [Instalacja aplikacji](#application-installation)
-  - [Pobieranie pakietu dołączania](#download-the-onboarding-package)
-  - [Konfiguracja klienta](#client-configuration)
+- [Wymagania wstępne i wymagania systemowe](#prerequisites-and-system-requirements)
+- [Konfigurowanie repozytorium oprogramowania systemu Linux](#configure-the-linux-software-repository)
+  - [RHEL i warianty (CentOS, Fedora, Oracle Linux i Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
+  - [SLES i warianty](#sles-and-variants)
+  - [Systemy Ubuntu i Debian](#ubuntu-and-debian-systems)
+- [Instalacja aplikacji](#application-installation)
+- [Pobieranie pakietu dołączania](#download-the-onboarding-package)
+- [Konfiguracja klienta](#client-configuration)
 
 ## <a name="prerequisites-and-system-requirements"></a>Wymagania wstępne i wymagania systemowe
 
@@ -77,20 +75,16 @@ Aby zapoznać się z nowymi funkcjami i przekazać wczesną opinię, zaleca się
 
     Skorzystaj z poniższej tabeli, aby ułatwić ci znalezienie pakietu:
 
-    <br>
-
-    ****
-
     |Wersja & dystrybucji|Pakiet|
     |---|---|
     |Dla RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
-    |Dla RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
-    <!--|Dla RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
+    |Dla RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2|</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
     |Dla fedory 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |Dla fedory 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
-    W następujących poleceniach zastąp ciąg *[version]* i *[channel]* zidentyfikowanymi informacjami:
+    <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
 
+    W następujących poleceniach zastąp ciąg *[version]* i *[channel]* zidentyfikowanymi informacjami:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
@@ -300,7 +294,7 @@ Pobierz pakiet dołączania z portalu Microsoft 365 Defender.
 > [!IMPORTANT]
 > Jeśli ten krok zostanie pominięty, każde wykonane polecenie wyświetli komunikat ostrzegawczy wskazujący, że produkt jest nielicencjonowany. `mdatp health` Również polecenie zwraca wartość `false`.
 
-1. W portalu Microsoft 365 Defender przejdź do **obszaru Ustawienia > Punkty końcowe > Zarządzanie urządzeniami > dołączanie**.
+1. W portalu Microsoft 365 Defender przejdź do pozycji **Ustawienia > Punkty końcowe > Zarządzanie urządzeniami > dołączanie**.
 2. W pierwszym menu rozwijanym wybierz pozycję **Linux Server** jako system operacyjny. W drugim menu rozwijanym wybierz pozycję **Skrypt lokalny** jako metodę wdrażania.
 3. Wybierz pozycję **Pobierz pakiet dołączania**. Zapisz plik jako WindowsDefenderATPOnboardingPackage.zip.
 
@@ -341,7 +335,7 @@ Pobierz pakiet dołączania z portalu Microsoft 365 Defender.
 
     > [!NOTE]
     > Aby uruchomić to polecenie, musisz mieć `python`  lub `python3` zainstalować na urządzeniu w zależności od wersji i disto. W razie potrzeby zobacz [Instrukcje krok po kroku dotyczące instalowania języka Python w systemie Linux](https://opensource.com/article/20/4/install-python-linux).
-    
+
     Jeśli używasz systemu RHEL 8.x lub Ubuntu 20.04 lub nowszego, musisz użyć polecenia `python3`.
 
     ```bash
@@ -349,11 +343,11 @@ Pobierz pakiet dołączania z portalu Microsoft 365 Defender.
     ```
 
     W pozostałych dystrybucjach i wersjach należy użyć polecenia `python`.
-    
+
     ```bash
     sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
-    
+
 3. Sprawdź, czy urządzenie jest teraz skojarzone z Twoją organizacją i zgłosi prawidłowy identyfikator organizacji:
 
     ```bash
@@ -382,9 +376,9 @@ Pobierz pakiet dołączania z portalu Microsoft 365 Defender.
         ```bash
         mdatp health --field real_time_protection_enabled
         ```
-        
+
       Jeśli nie jest włączona, wykonaj następujące polecenie:
-      
+
        ```bash
         mdatp config real-time-protection --value enabled
         ```
@@ -401,7 +395,7 @@ Pobierz pakiet dołączania z portalu Microsoft 365 Defender.
         mdatp threat list
         ```
 
-6. Uruchom test wykrywania EDR i symuluj wykrywanie, aby sprawdzić, czy urządzenie jest prawidłowo dołączone i raportuje do usługi. Wykonaj następujące kroki na nowo dołączonym urządzeniu:
+6. Uruchom test wykrywania EDR i zasymuluj wykrywanie, aby sprawdzić, czy urządzenie jest prawidłowo dołączone i jest raportowane do usługi. Wykonaj następujące kroki na nowo dołączonym urządzeniu:
 
     - Sprawdź, czy dołączony serwer z systemem Linux jest wyświetlany w Microsoft 365 Defender. Jeśli jest to pierwsze dołączenie maszyny, jej wyświetlenie może potrwać do 20 minut.
 

@@ -16,19 +16,17 @@ search.appverid:
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
-description: Edytuj rejestr Windows na komputerze lokalnym, aby wyłączyć raporty podczas eksportowania wyników wyszukiwania zawartości z portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: 3f44c30b2fe3459e44f2d1c5a2d372e57774eeb2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Edytuj rejestr systemu Windows na komputerze lokalnym, aby wyłączyć raporty podczas eksportowania wyników wyszukiwania zawartości z portal zgodności Microsoft Purview.
+ms.openlocfilehash: 55a5405d516b0bf3daaca5970a25794b468a5119
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094973"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636188"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Wyłączanie raportów podczas eksportowania wyników wyszukiwania zawartości
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-W przypadku korzystania z narzędzia eDiscovery Export w celu wyeksportowania wyników wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview narzędzie automatycznie tworzy i eksportuje dwa raporty zawierające dodatkowe informacje o wyeksportowanej zawartości. Te raporty to plik Results.csv i plik Manifest.xml (zobacz sekcję [Często zadawane pytania dotyczące wyłączania raportów eksportu](#frequently-asked-questions-about-disabling-export-reports) w tym temacie, aby uzyskać szczegółowe opisy tych raportów). Ponieważ te pliki mogą być bardzo duże, możesz przyspieszyć czas pobierania i zaoszczędzić miejsce na dysku, uniemożliwiając eksportowanie tych plików. Można to zrobić, zmieniając rejestr Windows na komputerze używanym do eksportowania wyników wyszukiwania. Jeśli chcesz uwzględnić raporty w późniejszym czasie, możesz edytować ustawienie rejestru. 
+W przypadku korzystania z narzędzia eDiscovery Export do eksportowania wyników wyszukiwania zawartości w portal zgodności Microsoft Purview narzędzie automatycznie tworzy i eksportuje dwa raporty zawierające dodatkowe informacje o wyeksportowanej zawartości. Te raporty to plik Results.csv i plik Manifest.xml (zobacz sekcję [Często zadawane pytania dotyczące wyłączania raportów eksportu](#frequently-asked-questions-about-disabling-export-reports) w tym temacie, aby uzyskać szczegółowe opisy tych raportów). Ponieważ te pliki mogą być bardzo duże, możesz przyspieszyć czas pobierania i zaoszczędzić miejsce na dysku, uniemożliwiając eksportowanie tych plików. Można to zrobić, zmieniając rejestr systemu Windows na komputerze używanym do eksportowania wyników wyszukiwania. Jeśli chcesz uwzględnić raporty w późniejszym czasie, możesz edytować ustawienie rejestru. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Tworzenie ustawień rejestru w celu wyłączenia raportów eksportu
 
@@ -40,7 +38,7 @@ Wykonaj poniższą procedurę na komputerze, którego użyjesz do wyeksportowani
     
     - **Results.csv**
     
-      Zapisz następujący tekst w pliku rejestru Windows przy użyciu sufiksu nazwy pliku reg, na przykład DisableResultsCsv.reg.
+      Zapisz następujący tekst w pliku rejestru systemu Windows przy użyciu sufiksu nazwy pliku reg; na przykład DisableResultsCsv.reg.
     
       ```text
       Windows Registry Editor Version 5.00
@@ -49,7 +47,7 @@ Wykonaj poniższą procedurę na komputerze, którego użyjesz do wyeksportowani
 
     - **Manifest.xml**
     
-      Zapisz następujący tekst w pliku rejestru Windows przy użyciu sufiksu nazwy pliku reg, na przykład DisableManifestXml.reg.
+      Zapisz następujący tekst w pliku rejestru systemu Windows przy użyciu sufiksu nazwy pliku reg; na przykład DisableManifestXml.reg.
     
       ```text
       Windows Registry Editor Version 5.00
@@ -74,7 +72,7 @@ Jeśli wyłączysz Results.csv i Manifest.xml raporty, tworząc pliki reg w popr
     
     - **Results.csv**
     
-        Otwórz plik DisableResultsCsv.reg w Notatnik, zmień wartość `False` na `True`, a następnie zapisz plik. Na przykład po edytowaniu pliku wygląda on następująco:
+        Otwórz plik DisableResultsCsv.reg w Notatniku, zmień wartość  `False` na  `True`, a następnie zapisz plik. Na przykład po edytowaniu pliku wygląda on następująco:
     
         ```text
         Windows Registry Editor Version 5.00
@@ -83,7 +81,7 @@ Jeśli wyłączysz Results.csv i Manifest.xml raporty, tworząc pliki reg w popr
 
     - **Manifest.xml**
     
-        Otwórz plik DisableManifestXml.reg w Notatnik, zmień wartość `False` na `True`, a następnie zapisz plik. Na przykład po edytowaniu pliku wygląda on następująco:
+        Otwórz plik DisableManifestXml.reg w Notatniku, zmień wartość  `False` na  `True`, a następnie zapisz plik. Na przykład po edytowaniu pliku wygląda on następująco:
     
       ```text
       Windows Registry Editor Version 5.00
@@ -104,7 +102,7 @@ Jeśli wyłączysz Results.csv i Manifest.xml raporty, tworząc pliki reg w popr
   
 Pliki Results.csv i Manifest.xml zawierają dodatkowe informacje o wyeksportowanej zawartości.
   
-- **Results.csv** Dokument Excel zawierający informacje o każdym elemencie, który jest pobierany w wyniku wyszukiwania. W przypadku poczty e-mail dziennik wyników zawiera informacje o każdej wiadomości, w tym: 
+- **Results.csv** Dokument programu Excel zawierający informacje o każdym elemencie, który jest pobierany w wyniku wyszukiwania. W przypadku poczty e-mail dziennik wyników zawiera informacje o każdej wiadomości, w tym: 
     
   - Lokalizacja wiadomości w źródłowej skrzynce pocztowej (w tym, czy wiadomość znajduje się w podstawowej, czy archiwum skrzynki pocztowej).
     
@@ -116,7 +114,7 @@ Pliki Results.csv i Manifest.xml zawierają dodatkowe informacje o wyeksportowan
     
   - Czy komunikat jest zduplikowanym komunikatem, jeśli włączono anulowanie duplikowania podczas eksportowania wyników wyszukiwania. Zduplikowane komunikaty będą miały wartość w kolumnie **Element nadrzędny** , która identyfikuje komunikat jako duplikat. Wartość w kolumnie **Parent ItemId** jest taka sama jak wartość w kolumnie **DocumentId elementu** w wyeksportowanym komunikacie. 
     
-    W przypadku dokumentów z witryn SharePoint i OneDrive dla Firm dziennik wyników zawiera informacje o każdym dokumencie, w tym:
+    W przypadku dokumentów z programu SharePoint i witryn OneDrive dla Firm dziennik wyników zawiera informacje o poszczególnych dokumentach, w tym:
     
   - Adres URL dokumentu.
     

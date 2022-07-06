@@ -18,33 +18,31 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Użyj skryptu programu PowerShell, który uruchamia polecenie cmdlet Search-UnifiedAuditLog w Exchange Online, aby przeszukać dziennik inspekcji. Ten skrypt jest zoptymalizowany pod kątem zwracania dużego zestawu rekordów inspekcji przy każdym uruchomieniu. Skrypt eksportuje te rekordy do pliku CSV, który można wyświetlić lub przekształcić przy użyciu Power Query w Excel.
-ms.openlocfilehash: 8799f1a4ddf2ef7dd536ccb3e6e70a4b731b4cd6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Użyj skryptu programu PowerShell, który uruchamia polecenie cmdlet Search-UnifiedAuditLog w Exchange Online, aby przeszukać dziennik inspekcji. Ten skrypt jest zoptymalizowany pod kątem zwracania dużego zestawu rekordów inspekcji przy każdym uruchomieniu. Skrypt eksportuje te rekordy do pliku CSV, który można wyświetlać lub przekształcać przy użyciu Power Query w programie Excel.
+ms.openlocfilehash: 0c1d8d6ab8f6a2c8a0dc6a1c858a164c2f4ff494
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100858"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632844"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Przeszukaj dziennik inspekcji za pomocą skryptu programu PowerShell
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Bezpieczeństwo, zgodność i inspekcja stały się priorytetem dla administratorów IT w dzisiejszym świecie. Microsoft 365 ma kilka wbudowanych funkcji ułatwiających organizacjom zarządzanie zabezpieczeniami, zgodnością i inspekcją. W szczególności ujednolicone rejestrowanie inspekcji może pomóc w badaniu zdarzeń zabezpieczeń i problemów ze zgodnością. Dzienniki inspekcji można pobrać przy użyciu następujących metod:
+Bezpieczeństwo, zgodność i inspekcja stały się priorytetem dla administratorów IT w dzisiejszym świecie. Platforma Microsoft 365 oferuje kilka wbudowanych funkcji ułatwiających organizacjom zarządzanie zabezpieczeniami, zgodnością i inspekcją. W szczególności ujednolicone rejestrowanie inspekcji może pomóc w badaniu zdarzeń zabezpieczeń i problemów ze zgodnością. Dzienniki inspekcji można pobrać przy użyciu następujących metod:
 
 - [Interfejs API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-reference)
 
-- [Narzędzie do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w portalu zgodności usługi Microsoft Purview
+- [Narzędzie do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w portal zgodności Microsoft Purview
 
 - Polecenie cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) w programie Exchange Online programu PowerShell
 
 Jeśli musisz regularnie pobierać dzienniki inspekcji, rozważ rozwiązanie, które korzysta z interfejsu API działania zarządzania Office 365, ponieważ może zapewnić dużym organizacjom skalowalność i wydajność w celu ciągłego pobierania milionów rekordów inspekcji. Użycie narzędzia do wyszukiwania dzienników inspekcji w portalu zgodności to dobry sposób na szybkie znalezienie rekordów inspekcji dla określonych operacji występujących w krótszym zakresie czasu. Używanie dłuższych zakresów czasu w narzędziu do wyszukiwania dzienników inspekcji, szczególnie w przypadku dużych organizacji, może zwrócić zbyt wiele rekordów, aby łatwo zarządzać nimi lub eksportować.
 
-W sytuacjach, w których konieczne jest ręczne pobranie danych inspekcji dla określonego badania lub zdarzenia, szczególnie w przypadku dłuższych zakresów dat w większych organizacjach, najlepszym rozwiązaniem może być użycie polecenia cmdlet **Search-UnifiedAuditLog** . Ten artykuł zawiera skrypt programu PowerShell, który używa polecenia cmdlet, które może pobrać 50 000 rekordów inspekcji (za każdym razem, gdy uruchamiasz polecenie cmdlet), a następnie eksportować je do pliku CSV, który można sformatować przy użyciu Power Query w Excel, aby ułatwić przegląd. Użycie skryptu w tym artykule minimalizuje również prawdopodobieństwo przekroczenia limitu czasu przeszukiwania dużych dzienników inspekcji w usłudze.
+W sytuacjach, w których konieczne jest ręczne pobranie danych inspekcji dla określonego badania lub zdarzenia, szczególnie w przypadku dłuższych zakresów dat w większych organizacjach, najlepszym rozwiązaniem może być użycie polecenia cmdlet **Search-UnifiedAuditLog** . Ten artykuł zawiera skrypt programu PowerShell, który używa polecenia cmdlet, które może pobrać 50 000 rekordów inspekcji (za każdym razem, gdy uruchamiasz polecenie cmdlet), a następnie eksportować je do pliku CSV, który można sformatować przy użyciu Power Query w programie Excel, aby ułatwić przegląd. Użycie skryptu w tym artykule minimalizuje również prawdopodobieństwo przekroczenia limitu czasu przeszukiwania dużych dzienników inspekcji w usłudze.
 
 ## <a name="before-you-run-the-script"></a>Przed uruchomieniem skryptu
 
-- Rejestrowanie inspekcji musi być włączone, aby organizacja pomyślnie używała skryptu do zwracania rekordów inspekcji. Rejestrowanie inspekcji jest domyślnie włączone dla organizacji Microsoft 365 i Office 365 przedsiębiorstw. Aby sprawdzić, czy wyszukiwanie dzienników inspekcji jest włączone dla Twojej organizacji, możesz uruchomić następujące polecenie w programie Exchange Online programie PowerShell:
+- Rejestrowanie inspekcji musi być włączone, aby organizacja pomyślnie używała skryptu do zwracania rekordów inspekcji. Rejestrowanie inspekcji jest domyślnie włączone dla platformy Microsoft 365 i Office 365 organizacji przedsiębiorstwa. Aby sprawdzić, czy wyszukiwanie dzienników inspekcji jest włączone dla Twojej organizacji, możesz uruchomić następujące polecenie w programie Exchange Online programie PowerShell:
 
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
@@ -52,15 +50,15 @@ W sytuacjach, w których konieczne jest ręczne pobranie danych inspekcji dla ok
 
   Wartość `True` właściwości **UnifiedAuditLogIngestionEnabled** wskazuje, że wyszukiwanie dziennika inspekcji jest włączone.
 
-- Aby pomyślnie uruchomić skrypt, musisz mieć przypisaną rolę dzienników inspekcji lub dzienników inspekcji View-Only w Exchange Online. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie Uprawnienia w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. Aby uzyskać więcej informacji, zobacz sekcję "Wymagania dotyczące przeszukiwania dziennika inspekcji" w [temacie Wyszukaj dziennik inspekcji w centrum zgodności](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log).
+- Aby pomyślnie uruchomić skrypt, musisz mieć przypisaną rolę dzienników inspekcji lub dzienników inspekcji View-Only w Exchange Online. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie Uprawnienia w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centrum administracyjnym programu Exchange</a>. Aby uzyskać więcej informacji, zobacz sekcję "Wymagania dotyczące przeszukiwania dziennika inspekcji" w [temacie Wyszukaj dziennik inspekcji w centrum zgodności](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log).
 
 - Wykonanie skryptu może zająć dużo czasu. Czas trwania zależy od zakresu dat i rozmiaru interwału konfigurowanego przez skrypt do pobierania rekordów inspekcji. Większe zakresy dat i mniejsze interwały spowodują długi czas trwania. Zobacz tabelę w kroku 2, aby uzyskać więcej informacji na temat zakresu dat i interwałów.
 
 - Przykładowy skrypt podany w tym artykule nie jest obsługiwany w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowy skrypt jest dostarczany jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowego skryptu i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptu nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowego skryptu lub dokumentacji lub niemożności korzystania z niego,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
-## <a name="step-1-connect-to-exchange-online-powershell"></a>Krok 1. Połączenie do Exchange Online programu PowerShell
+## <a name="step-1-connect-to-exchange-online-powershell"></a>Krok 1. Nawiązywanie połączenia z programem Exchange Online PowerShell
 
-Pierwszym krokiem jest nawiązanie połączenia z programem Exchange Online programu PowerShell. Możesz nawiązać połączenie przy użyciu nowoczesnego uwierzytelniania lub uwierzytelniania wieloskładnikowego (MFA). Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Pierwszym krokiem jest nawiązanie połączenia z programem Exchange Online programu PowerShell. Możesz nawiązać połączenie przy użyciu nowoczesnego uwierzytelniania lub uwierzytelniania wieloskładnikowego (MFA). Aby uzyskać instrukcje krok po kroku, zobacz [Connect to Exchange Online PowerShell (Nawiązywanie połączenia z programem PowerShell).](/powershell/exchange/connect-to-exchange-online-powershell)
 
 ## <a name="step-2-modify-and-run-the-script-to-retrieve-audit-records"></a>Krok 2. Modyfikowanie i uruchamianie skryptu w celu pobrania rekordów inspekcji
 
@@ -176,4 +174,4 @@ Skrypt wyświetla komunikaty postępu podczas jego działania. Po zakończeniu d
 
 ## <a name="step-3-format-and-view-the-audit-records"></a>Krok 3. Formatowanie i wyświetlanie rekordów inspekcji
 
-Po uruchomieniu skryptu i wyeksportowaniu rekordów inspekcji do pliku CSV możesz sformatować plik CSV, aby ułatwić przeglądanie i analizowanie rekordów inspekcji. Jednym ze sposobów jest Power Query funkcji przekształcania JSON w Excel, aby podzielić każdą właściwość w obiekcie JSON w kolumnie **AuditData** na własną kolumnę. Aby uzyskać instrukcje krok po kroku, zobacz "Krok 2: Formatowanie wyeksportowanego dziennika inspekcji przy użyciu Edytor Power Query" w temacie [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
+Po uruchomieniu skryptu i wyeksportowaniu rekordów inspekcji do pliku CSV możesz sformatować plik CSV, aby ułatwić przeglądanie i analizowanie rekordów inspekcji. Jednym ze sposobów jest Power Query funkcji przekształcania JSON w programie Excel w celu podzielenia każdej właściwości w obiekcie JSON w kolumnie **AuditData** na własną kolumnę. Aby uzyskać instrukcje krok po kroku, zobacz "Krok 2: Formatowanie wyeksportowanego dziennika inspekcji przy użyciu Edytor Power Query" w temacie [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).

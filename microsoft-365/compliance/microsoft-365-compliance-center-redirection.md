@@ -1,5 +1,5 @@
 ---
-title: Przekierowywanie użytkowników z centrum zabezpieczeń i zgodności Office 365 do portalu zgodności usługi Microsoft Purview
+title: Przekierowanie użytkowników z centrum zabezpieczeń i zgodności Office 365 do portal zgodności Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,27 +9,25 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Dowiedz się więcej na temat automatycznego przekierowywania użytkowników z użytkowników Office 365 Security and Compliance Center do portalu zgodności usługi Microsoft Purview.
+description: Dowiedz się więcej o automatycznym przekierowywaniu użytkowników z Office 365 Security and Compliance Center do portal zgodności Microsoft Purview.
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b88c5f5915944c813f5c803e3526f1bf42040159
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: e1c079eda89033dee05eae9b9059521d625b2f5c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243013"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635792"
 ---
-# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-purview-compliance-portal"></a>Przekierowywanie użytkowników z centrum zabezpieczeń i zgodności Office 365 do portalu zgodności usługi Microsoft Purview
+# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-purview-compliance-portal"></a>Przekierowanie użytkowników z centrum zabezpieczeń i zgodności Office 365 do portal zgodności Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-W tym artykule wyjaśniono, jak działa automatyczne przekierowanie dla użytkowników uzyskujących dostęp do rozwiązań zgodności z centrum Office 365 Security and Compliance Center (protection.office.com) do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a>.
+W tym artykule wyjaśniono, jak działa automatyczne przekierowanie dla użytkowników uzyskujących dostęp do rozwiązań zgodności z centrum Office 365 Security and Compliance Center (protection.office.com) do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal zgodności Microsoft Purview</a>.
 
 ## <a name="what-to-expect"></a>Czego się spodziewać
 
 Automatyczne przekierowanie jest domyślnie włączone dla wszystkich użytkowników uzyskujących dostęp do rozwiązań związanych ze zgodnością w Office 365 Zabezpieczenia i zgodność (protection.office.com):
 
-- [Zbieranie elektronicznych materiałów dowodowych (wersja Premium)](overview-ediscovery-20.md)
+- [Zbieranie elektronicznych materiałów dowodowych (warstwa Premium)](overview-ediscovery-20.md)
 - [Zgodność w komunikacji](communication-compliance.md)
 - [Wyszukiwanie zawartości](search-for-content.md)
 - [Zbieranie elektronicznych materiałów dowodowych (wersja standardowa)](get-started-core-ediscovery.md)
@@ -45,4 +43,4 @@ Ta funkcja i skojarzone kontrolki nie umożliwiają automatycznego przekierowywa
 
 ## <a name="related-information"></a>Informacje pokrewne
 
-- [Omówienie portalu zgodności usługi Microsoft Purview](/microsoft-365/compliance/microsoft-365-compliance-center)
+- [omówienie portal zgodności Microsoft Purview](/microsoft-365/compliance/microsoft-365-compliance-center)

@@ -18,18 +18,16 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Informacje o maksymalnej liczbie zasad i elementów na zasady dotyczące zasad przechowywania i zasad etykiet przechowywania
-ms.openlocfilehash: a0246fef2ae72dd2b0b176f82bb42559d405eaa5
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: fba8d0385831b4f05bbf0a967072d64eead5644a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754041"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633416"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limity zasad przechowywania i zasad etykiet przechowywania
 
->*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Wskazówki dotyczące licencjonowania platformy Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Jeśli używasz [zasad przechowywania i zasad etykiet przechowywania](retention.md#retention-policies-and-retention-labels) do automatycznego przechowywania lub usuwania danych dla organizacji, należy pamiętać o pewnych maksymalnych liczbach.
 
@@ -41,9 +39,9 @@ Maksymalnie 1000 etykiet przechowywania jest obsługiwanych dla każdej dzierża
 
 Jedna dzierżawa może mieć maksymalnie 10 000 zasad (dowolna konfiguracja). Ta maksymalna liczba obejmuje różne zasady przechowywania i inne zasady zgodności, takie jak zasady DLP, bariery informacyjne, blokady zbierania elektronicznych materiałów dowodowych, blokady sporów sądowych, blokady In-Place i etykiety poufności. Jednak ta maksymalna wartość wyklucza:
 
-- Zasady automatycznego etykietowania dla SharePoint i OneDrive, chyba że są przeznaczone dla załączników w chmurze.
-- Opublikowane zasady etykiet dla SharePoint i OneDrive, które są tylko do usuwania, a nie tylko do zachowania, lub zachowują, a następnie usuwają.
-- Exchange zasady przechowywania z [zarządzania rekordami obsługi komunikatów (MRM).](/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
+- Zasady automatycznego etykietowania dla programu SharePoint i usługi OneDrive, chyba że dotyczą załączników w chmurze.
+- Opublikowane zasady etykiet dla programu SharePoint i usługi OneDrive, które usuwają tylko, a nie zachowują tylko lub zachowują, a następnie usuwają.
+- Zasady przechowywania programu Exchange z [zarządzania rekordami obsługi komunikatów (MRM).](/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
 W ramach tego limitu 10 000 zasad istnieją również pewne limity maksymalnej liczby zasad przechowywania na obciążenie:
 
@@ -53,9 +51,9 @@ W ramach tego limitu 10 000 zasad istnieją również pewne limity maksymalnej l
 - SharePoint lub OneDrive (określone lokalizacje uwzględnione lub wykluczone): 2600
 
 > [!NOTE]
-> Te maksymalne liczby dla Exchange i SharePoint nie są wyłączne dla przechowywania, ale są współużytkowane z innymi typami zasad blokady, które obejmują blokady zbierania elektronicznych materiałów dowodowych, blokady sporów sądowych i blokady In-Place.
+> Te maksymalne liczby dla programów Exchange i SharePoint nie są wyłączne dla przechowywania, ale są współużytkowane z innymi typami zasad blokady, które obejmują blokady zbierania elektronicznych materiałów dowodowych, blokady sporów sądowych i blokady In-Place.
 
-Mimo że zasady przechowywania dla Microsoft Teams i Yammer używają skrzynek pocztowych do przechowywania danych do celów przechowywania, maksymalna liczba zasad dla Exchange Online wyklucza zasady przechowywania dla Teams i Yammer.
+Mimo że zasady przechowywania aplikacji Microsoft Teams i Yammer używają skrzynek pocztowych do przechowywania danych do celów przechowywania, maksymalna liczba zasad dla Exchange Online wyklucza zasady przechowywania dla usług Teams i Yammer.
 
 ## <a name="maximums-for-adaptive-policy-scopes"></a>Maksymalne wartości dla zakresów zasad adaptacyjnych
 
@@ -73,18 +71,18 @@ Grupowanie atrybutów lub właściwości w grupie nie jest obsługiwane. Oznacza
 > [!IMPORTANT]
 > Dotyczy tylko wtedy, gdy używasz [zakresów zasad statycznych, a nie zakresów zasad adaptacyjnych](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
-Jeśli używasz zakresów statycznych i opcjonalnej konfiguracji do uwzględniania lub wykluczania określonych użytkowników, określonych grup Microsoft 365 lub określonych lokacji, istnieją pewne limity dla poszczególnych zasad, o których należy pamiętać.
+Jeśli używasz zakresów statycznych i opcjonalnej konfiguracji do uwzględniania lub wykluczania określonych użytkowników, określonych grup platformy Microsoft 365 lub określonych witryn, istnieją pewne limity dla poszczególnych zasad, o których należy pamiętać.
 
 Maksymalna liczba elementów na zasady przechowywania zakresów statycznych:
 
-- Exchange skrzynki pocztowe: 1000
+- Skrzynki pocztowe programu Exchange: 1000
 - Grupy Microsoft 365: 1000
-- Teams komunikatów kanału: 1000
-- Teams czaty: 1000
-- Yammer komunikaty społeczności: 1000
-- Yammer komunikaty użytkowników: 1000
-- witryny SharePoint: 100
-- konta OneDrive: 100
+- Komunikaty kanału usługi Teams: 1000
+- Czaty w usłudze Teams: 1000
+- Komunikaty społeczności usługi Yammer: 1000
+- Komunikaty użytkowników usługi Yammer: 1000
+- Witryny programu SharePoint: 100
+- Konta usługi OneDrive: 100
 
 Skype dla firm musi być ograniczony do określonych użytkowników, a maksymalna liczba obsługiwanych zasad wynosi 1000.
 
@@ -96,23 +94,23 @@ Jednak wiele zasad powoduje wyższe koszty administracyjne. Rozważ użycie zakr
 
 Poniższe przykłady dotyczą zakresów statycznych i zapewniają pewne rozwiązania projektowe, gdy nie można określić tylko lokalizacji dla zasad przechowywania i muszą uwzględniać maksymalną liczbę elementów udokumentowanych w poprzedniej sekcji.
 
-Exchange przykład:
+Przykład programu Exchange:
 
 - **Wymaganie**: W organizacji, która ma ponad 40 000 skrzynek pocztowych użytkowników, większość użytkowników musi przechowywać pocztę e-mail przez siedem lat, ale podzestaw zidentyfikowanych użytkowników (425) musi przechowywać pocztę e-mail tylko przez pięć lat.
 
-- **Rozwiązanie**: utwórz jedną zasadę przechowywania dla Exchange poczty e-mail z okresem przechowywania wynoszącym 7 lat i wykluczaj podzestaw użytkowników. Następnie utwórz drugie zasady przechowywania dla Exchange wiadomości e-mail z okresem przechowywania wynoszącym 5 lat i uwzględnij podzestaw użytkowników.
+- **Rozwiązanie**: utwórz jedną zasadę przechowywania dla poczty e-mail programu Exchange z okresem przechowywania wynoszącym 7 lat i wykluczaj podzestaw użytkowników. Następnie utwórz drugie zasady przechowywania dla poczty e-mail programu Exchange z okresem przechowywania wynoszącym 5 lat i uwzględnij podzestaw użytkowników.
 
     W obu przypadkach liczba uwzględniona i wykluczona jest poniżej maksymalnej liczby określonych skrzynek pocztowych dla jednej zasady, a podzbiór użytkowników musi zostać jawnie wykluczony z pierwszych zasad, ponieważ ma [dłuższy okres przechowywania](retention.md#the-principles-of-retention-or-what-takes-precedence) niż drugie zasady. Jeśli podzbiór użytkowników wymagał dłuższych zasad przechowywania, nie trzeba wykluczać ich z pierwszych zasad.
 
     Dzięki temu rozwiązaniu, jeśli ktoś nowy dołączy do organizacji, ich skrzynka pocztowa zostanie automatycznie uwzględniona w pierwszych zasadach od 7 lat i nie będzie mieć wpływu na maksymalną liczbę obsługiwanych numerów. Jednak nowi użytkownicy, którzy wymagają 5-letniego okresu przechowywania, dodają numery dołączania i wykluczania, a ten limit zostanie osiągnięty na poziomie 1000.
 
-SharePoint przykład:
+Przykład programu SharePoint:
 
-- **Wymaganie**: Organizacja ma kilka tysięcy witryn SharePoint, ale tylko 2000 witryn wymaga okresu przechowywania wynoszącego 10 lat, a 8000 witryn wymaga okresu przechowywania wynoszącego cztery lata.
+- **Wymaganie**: Organizacja ma kilka tysięcy witryn programu SharePoint, ale tylko 2000 witryn wymaga okresu przechowywania wynoszącego 10 lat, a 8000 witryn wymaga okresu przechowywania wynoszącego cztery lata.
 
-- **Rozwiązanie**: Utwórz 20 zasad przechowywania dla SharePoint z okresem przechowywania wynoszącym 10 lat, który obejmuje 100 określonych lokacji, i utwórz 80 zasad przechowywania dla SharePoint z okresem przechowywania wynoszącym 4 lata, który obejmuje 100 określonych lokacji.
+- **Rozwiązanie**: Utwórz 20 zasad przechowywania dla programu SharePoint z okresem przechowywania wynoszącym 10 lat, który obejmuje 100 określonych witryn, i utwórz 80 zasad przechowywania dla programu SharePoint z okresem przechowywania wynoszącym 4 lata, który obejmuje 100 określonych witryn.
 
-    Ponieważ nie musisz zachowywać wszystkich SharePoint witryn, musisz utworzyć zasady przechowywania określające określone lokacje. Ponieważ zasady przechowywania nie obsługują więcej niż 100 określonych lokacji, należy utworzyć wiele zasad dla dwóch okresów przechowywania. Te zasady przechowywania mają maksymalną liczbę uwzględnionych lokacji, więc następna nowa lokacja, która wymaga zachowania, wymagałaby nowych zasad przechowywania, niezależnie od okresu przechowywania.
+    Ponieważ nie musisz zachowywać wszystkich witryn programu SharePoint, musisz utworzyć zasady przechowywania określające określone witryny. Ponieważ zasady przechowywania nie obsługują więcej niż 100 określonych lokacji, należy utworzyć wiele zasad dla dwóch okresów przechowywania. Te zasady przechowywania mają maksymalną liczbę uwzględnionych lokacji, więc następna nowa lokacja, która wymaga zachowania, wymagałaby nowych zasad przechowywania, niezależnie od okresu przechowywania.
 
 ## <a name="maximum-number-of-items-for-disposition"></a>Maksymalna liczba elementów do dyspozycji
 

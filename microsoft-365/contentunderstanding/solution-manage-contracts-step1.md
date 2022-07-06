@@ -11,13 +11,13 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Dowiedz się, jak używać SharePoint Syntex do identyfikowania plików kontraktów i wyodrębniania danych przy użyciu rozwiązania Microsoft 365.
-ms.openlocfilehash: 7d2874260ce7a307aa42c67ba571104ed4c4da87
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+description: Dowiedz się, jak używać SharePoint Syntex do identyfikowania plików kontraktów i wyodrębniania danych przy użyciu rozwiązania platformy Microsoft 365.
+ms.openlocfilehash: 2d9967cc432cb4d75bebbc67b7b9b0a812baa031
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368094"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631986"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Krok nr 1. Używanie SharePoint Syntex do identyfikowania plików kontraktów i wyodrębniania danych
 
@@ -35,7 +35,7 @@ Modele interpretacji dokumentów używają technologii optycznego rozpoznawania 
 
 3. W modelu można [utworzyć wyodrębniacz](create-an-extractor.md) do ściągania określonych fragmentów danych z każdego kontraktu. Na przykład dla każdej umowy najbardziej interesuje Cię informacja o tym, kim jest klient, nazwa wykonawcy i całkowity koszt.
 
-4. Po pomyślnym utworzeniu modelu [zastosuj go do biblioteki dokumentów SharePoint](apply-a-model.md). Podczas przekazywania dokumentów do biblioteki dokumentów model interpretacji dokumentów będzie uruchamiany i będzie identyfikować i klasyfikować wszystkie pliki zgodne z typem zawartości kontraktów zdefiniowanym w modelu. Wszystkie pliki sklasyfikowane jako kontrakty będą wyświetlane w widoku biblioteki niestandardowej. Pliki będą również wyświetlać wartości z każdego kontraktu zdefiniowanego w wyodrębniaczu.
+4. Po pomyślnym utworzeniu modelu [zastosuj go do biblioteki dokumentów programu SharePoint](apply-a-model.md). Podczas przekazywania dokumentów do biblioteki dokumentów model interpretacji dokumentów będzie uruchamiany i będzie identyfikować i klasyfikować wszystkie pliki zgodne z typem zawartości kontraktów zdefiniowanym w modelu. Wszystkie pliki sklasyfikowane jako kontrakty będą wyświetlane w widoku biblioteki niestandardowej. Pliki będą również wyświetlać wartości z każdego kontraktu zdefiniowanego w wyodrębniaczu.
 
    ![Kontrakty w bibliotece dokumentów.](../media/content-understanding/doc-lib-solution.png)
 
@@ -65,7 +65,7 @@ Pierwszym krokiem jest utworzenie modelu kontraktu.
 
 Musisz dodać co najmniej pięć przykładowych plików, które są dokumentami kontraktów, oraz jeden przykładowy plik, który nie jest dokumentem kontraktu (na przykład instrukcja pracy). 
 
-1. Na stronie **Modele > Kontrakt** w obszarze **Akcje** >  **kluczyDodaj przykładowe pliki** wybierz pozycję **Dodaj pliki**.
+1. Na stronie **Modele > Kontrakt** w obszarze **Akcje kluczy** > **Dodaj przykładowe pliki** wybierz pozycję **Dodaj pliki**.
 
    ![Zrzut ekranu przedstawiający stronę Kontrakty z wyróżnioną opcją Dodaj przykładowe pliki.](../media/content-understanding/key-actions-add-example-files.png)
 
@@ -73,7 +73,7 @@ Musisz dodać co najmniej pięć przykładowych plików, które są dokumentami 
 
 #### <a name="label-the-files-as-positive-or-negative-examples"></a>Oznaczanie plików jako pozytywnych lub negatywnych przykładów
 
-1. Na stronie **Modele > Kontrakt** w obszarze **Akcje** >  **kluczyKlasyzowanie plików i uruchamianie trenowania** wybierz pozycję **Train classifier (Trenowanie klasyfikatora**).
+1. Na stronie **Models > Contract (Modele > Kontrakt** ) w obszarze **Akcje kluczy** > **Klasyfikowanie plików i uruchamianie trenowania** wybierz pozycję **Train classifier (Trenowanie klasyfikatora**).
 
    ![Zrzut ekranu przedstawiający stronę Kontrakty z wyróżnioną opcją klasyfikowania plików i uruchamiania trenowania.](../media/content-understanding/key-actions-classify-files.png)
 
@@ -117,7 +117,7 @@ Model kontraktu można przetestować na przykładowych plikach, których wcześn
 
 ### <a name="create-and-train-an-extractor"></a>Tworzenie i trenowanie ekstraktora
 
-1. Na stronie **Modele > Kontrakt** w obszarze **Akcje** >  **kluczyUtwórz i wytrenuj wyodrębniacze** wybierz pozycję **Utwórz wyodrębniacz**.
+1. Na stronie **Modele > Kontrakt** w obszarze **Akcje kluczy** > **Utwórz i wytrenuj wyodrębniacze** wybierz pozycję **Utwórz wyodrębniacz**.
 
    ![Zrzut ekranu przedstawiający stronę Kontrakty z wyróżnioną opcją Tworzenie i trenowanie wyodrębniaczy.](../media/content-understanding/key-actions-create-extractors.png)
 
@@ -149,7 +149,7 @@ Możesz utworzyć wyjaśnienie, które zawiera wskazówkę dotyczącą samego fo
 - 14 października 2019 r.
 - Poniedziałek, 14 października 2019 r.
 
-Aby ułatwić identyfikację *daty rozpoczęcia kontraktu*, możesz utworzyć wyjaśnienie wzorca.
+Aby ułatwić identyfikację *daty rozpoczęcia kontraktu*, możesz utworzyć wyjaśnienie.
 
 1. W sekcji **Wyjaśnienia** wybierz pozycję **Nowy** , a następnie pozycję **Puste**.
 
@@ -157,7 +157,7 @@ Aby ułatwić identyfikację *daty rozpoczęcia kontraktu*, możesz utworzyć wy
 
     a. W polu **Nazwa** wpisz nazwę wyjaśnienia (na przykład *Date*).
 
-    b. W polu **Typ wyjaśnienia** wybierz pozycję **Lista wzorców**.
+    b. W polu **Typ wyjaśnienia** wybierz pozycję **Lista fraz**.
 
     c. W polu **Wartość** podaj odmianę daty wyświetlaną w przykładowych plikach. Jeśli na przykład masz formaty dat, które są wyświetlane jako 0/00/0000, wprowadź wszelkie odmiany wyświetlane w dokumentach, takie jak:
 
@@ -180,13 +180,13 @@ Model kontraktu można przetestować na przykładowych plikach, których wcześn
 
 ### <a name="apply-your-model-to-a-document-library"></a>Stosowanie modelu do biblioteki dokumentów
 
-Aby zastosować model do biblioteki dokumentów SharePoint:
+Aby zastosować model do biblioteki dokumentów programu SharePoint:
 
-1. Na stronie **Models > Contract (Modele > kontraktu**) w obszarze **Akcje kluczyAplikuj** >  model do bibliotek wybierz pozycję **Zastosuj model**.
+1. Na stronie **Modele > Kontrakt** w obszarze **Akcje kluczy** > **Zastosuj model do bibliotek** wybierz pozycję **Zastosuj model**.
 
    ![Zrzut ekranu przedstawiający stronę Kontrakty z wyróżnioną opcją Zastosuj model do bibliotek.](../media/content-understanding/key-actions-apply-model.png)
 
-2. Na panelu **Dodawanie kontraktu** wybierz witrynę SharePoint zawierającą bibliotekę dokumentów, do których chcesz zastosować model. Jeśli witryna nie jest wyświetlana na liście, użyj pola wyszukiwania, aby ją znaleźć. Wybierz opcję **Dodaj**.
+2. Na panelu **Dodawanie kontraktu** wybierz witrynę programu SharePoint zawierającą bibliotekę dokumentów, do których chcesz zastosować model. Jeśli witryna nie jest wyświetlana na liście, użyj pola wyszukiwania, aby ją znaleźć. Wybierz opcję **Dodaj**.
 
     > [!NOTE]
     > Musisz mieć uprawnienia *Do zarządzania listą* lub *Uprawnienia do edycji* do biblioteki dokumentów, do których stosujesz model.
@@ -197,11 +197,11 @@ Aby zastosować model do biblioteki dokumentów SharePoint:
 
 5. Wybierz pozycję **Dodaj** , aby zastosować model do biblioteki.
 
-6. Na stronie **Model > Contract** w sekcji **Biblioteki z tym modelem** zostanie wyświetlony adres URL witryny SharePoint.
+6. Na stronie **Modele > Kontrakt** w sekcji **Biblioteki z tym modelem** zostanie wyświetlony adres URL witryny programu SharePoint.
 
     ![Zrzut ekranu strony głównej Kontrakt przedstawiający sekcję Biblioteki z tym modelem.](../media/content-understanding/contract-libraries-with-this-model.png)
 
-7. W **obszarze ustawień Ustawienia** >  **Library**:
+7. W obszarze **Ustawienia** > **ustawienia biblioteki**:
 
    - Dodaj kolumnę o nazwie **Status** i wybierz pozycję **Wybór** jako typ kolumny.
    - Zastosuj wartości **W przeglądzie**, **Zatwierdzone** i **Odrzucone** .
@@ -210,4 +210,4 @@ Po zastosowaniu modelu do biblioteki dokumentów możesz rozpocząć przekazywan
 
 ## <a name="next-step"></a>Następny krok
 
-[Krok 2. Tworzenie kanału zarządzania kontraktami przy użyciu Microsoft Teams](solution-manage-contracts-step2.md)
+[Krok 2. Tworzenie kanału zarządzania kontraktami przy użyciu usługi Microsoft Teams](solution-manage-contracts-step2.md)

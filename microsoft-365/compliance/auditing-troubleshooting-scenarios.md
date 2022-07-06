@@ -18,17 +18,15 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Dowiedz się, jak używać narzędzia do wyszukiwania dzienników inspekcji Microsoft 365, aby pomóc w rozwiązywaniu typowych problemów z pomocą techniczną dla kont e-mail.
-ms.openlocfilehash: 57d8cfd1cbb07300b7cd69fb78ff6a0b33b302f5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dowiedz się, jak używać narzędzia do wyszukiwania dzienników inspekcji platformy Microsoft 365, aby pomóc w rozwiązywaniu typowych problemów z pomocą techniczną dla kont e-mail.
+ms.openlocfilehash: d97e8e074c2d0e14bb75fd46a512cacb6827047a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097189"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633856"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Przeszukaj dziennik inspekcji, aby zbadać typowe problemy z pomocą techniczną
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W tym artykule opisano, jak używać narzędzia do wyszukiwania dzienników inspekcji, aby ułatwić badanie typowych problemów z pomocą techniczną. Obejmuje to korzystanie z dziennika inspekcji w celu:
 
@@ -42,11 +40,11 @@ W tym artykule opisano, jak używać narzędzia do wyszukiwania dzienników insp
 
 ## <a name="using-the-audit-log-search-tool"></a>Korzystanie z narzędzia do wyszukiwania dzienników inspekcji
 
-Każdy ze scenariuszy rozwiązywania problemów opisanych w tym artykule jest oparty na użyciu narzędzia do wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview. W tej sekcji wymieniono uprawnienia wymagane do przeszukiwania dziennika inspekcji i opisano kroki uzyskiwania dostępu do przeszukiwania dzienników inspekcji i uruchamiania ich. W każdej sekcji scenariusza wyjaśniono, jak skonfigurować zapytanie wyszukiwania dziennika inspekcji i czego szukać w szczegółowych informacjach w rekordach inspekcji zgodnych z kryteriami wyszukiwania.
+Każdy ze scenariuszy rozwiązywania problemów opisanych w tym artykule jest oparty na użyciu narzędzia do wyszukiwania dzienników inspekcji w portal zgodności Microsoft Purview. W tej sekcji wymieniono uprawnienia wymagane do przeszukiwania dziennika inspekcji i opisano kroki uzyskiwania dostępu do przeszukiwania dzienników inspekcji i uruchamiania ich. W każdej sekcji scenariusza wyjaśniono, jak skonfigurować zapytanie wyszukiwania dziennika inspekcji i czego szukać w szczegółowych informacjach w rekordach inspekcji zgodnych z kryteriami wyszukiwania.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Uprawnienia wymagane do korzystania z narzędzia do wyszukiwania dzienników inspekcji
 
-Aby przeszukać dziennik inspekcji, musisz mieć przypisaną rolę dzienników inspekcji lub dzienników inspekcji View-Only w Exchange Online. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie **Uprawnienia** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. Administratorzy globalni w Office 365 i Microsoft 365 są automatycznie dodawani jako członkowie grupy ról Zarządzanie organizacją w Exchange Online. Aby uzyskać więcej informacji, zobacz [Zarządzanie grupami ról w Exchange Online](/Exchange/permissions-exo/role-groups).
+Aby przeszukać dziennik inspekcji, musisz mieć przypisaną rolę dzienników inspekcji lub dzienników inspekcji View-Only w Exchange Online. Domyślnie te role są przypisywane do grup ról Zarządzanie zgodnością i Zarządzanie organizacją na stronie **Uprawnienia** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centrum administracyjnym programu Exchange</a>. Administratorzy globalni w Office 365 i microsoft 365 są automatycznie dodawani jako członkowie grupy ról Zarządzanie organizacją w Exchange Online. Aby uzyskać więcej informacji, zobacz [Zarządzanie grupami ról w Exchange Online](/Exchange/permissions-exo/role-groups).
 
 ### <a name="running-audit-log-searches"></a>Uruchamianie przeszukiwania dzienników inspekcji
 
@@ -84,10 +82,10 @@ Adres IP odpowiadający działaniu wykonywanemu przez dowolnego użytkownika jes
 
 Oto jak skonfigurować zapytanie wyszukiwania dziennika inspekcji dla tego scenariusza:
 
-**Działania:** Jeśli dotyczy to Twojego przypadku, wybierz określone działanie do wyszukania. Aby rozwiązać problemy z kontami, których zabezpieczenia zostały naruszone, rozważ wybranie działania **Użytkownik zalogowany do skrzynki pocztowej w** obszarze **Exchange działań skrzynki pocztowej**. Spowoduje to zwrócenie rekordów inspekcji pokazujących adres IP, który był używany podczas logowania się do skrzynki pocztowej. W przeciwnym razie pozostaw to pole puste, aby zwrócić rekordy inspekcji dla wszystkich działań. 
+**Działania:** Jeśli dotyczy to Twojego przypadku, wybierz określone działanie do wyszukania. Aby rozwiązać problemy z kontami, których zabezpieczenia zostały naruszone, rozważ wybranie działania **Użytkownik zalogowany do skrzynki pocztowej w** obszarze **Działania skrzynki pocztowej programu Exchange**. Spowoduje to zwrócenie rekordów inspekcji pokazujących adres IP, który był używany podczas logowania się do skrzynki pocztowej. W przeciwnym razie pozostaw to pole puste, aby zwrócić rekordy inspekcji dla wszystkich działań. 
 
 > [!TIP]
-> Pozostawienie tego pola pustego spowoduje **zwrócenie działań UserLoggedIn**, które są działaniem Azure Active Directory wskazującym, że ktoś zalogował się do konta użytkownika. Użyj filtrowania w wynikach wyszukiwania, aby wyświetlić **rekordy inspekcji UserLoggedIn** .
+> Pozostawienie tego pola pustego spowoduje **zwrócenie działań UserLoggedIn** , które są działaniem usługi Azure Active Directory wskazującym, że ktoś zalogował się do konta użytkownika. Użyj filtrowania w wynikach wyszukiwania, aby wyświetlić **rekordy inspekcji UserLoggedIn** .
 
 **Data rozpoczęcia** i **data zakończenia:** wybierz zakres dat, który ma zastosowanie do badania.
 
@@ -143,7 +141,7 @@ Domyślnie rejestrowane akcje skrzynki pocztowej obejmują akcje skrzynki poczto
 
 Oto jak skonfigurować zapytanie wyszukiwania dziennika inspekcji dla tego scenariusza:
 
-**Działania:** W obszarze **Exchange działań skrzynki pocztowej** wybierz jedno lub oba z następujących działań:
+**Działania:** W obszarze **Działania skrzynki pocztowej programu Exchange** wybierz jedno lub oba z następujących działań:
 
 - **Usunięte komunikaty z folderu Elementy usunięte:** To działanie odpowiada akcji inspekcji skrzynki pocztowej **SoftDelete** . To działanie jest również rejestrowane, gdy użytkownik trwale usunie element, wybierając go i naciskając **klawisze Shift+Delete**. Po trwałym usunięciu elementu użytkownik może go odzyskać do momentu wygaśnięcia okresu przechowywania usuniętego elementu.
 
@@ -179,15 +177,15 @@ Jak wyjaśniono wcześniej, administratorzy mogą być w stanie odzyskać usuni�
 Gdy użytkownicy tworzą regułę skrzynki odbiorczej dla swojej skrzynki pocztowej Exchange Online, odpowiedni rekord inspekcji jest zapisywany w dzienniku inspekcji. Aby uzyskać więcej informacji na temat reguł skrzynki odbiorczej, zobacz:
 
 - [Używanie reguł skrzynki odbiorczej w Outlook w sieci Web](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
-- [Zarządzanie wiadomościami e-mail w Outlook przy użyciu reguł](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
+- [Zarządzanie wiadomościami e-mail w programie Outlook przy użyciu reguł](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
 
 Oto jak skonfigurować zapytanie wyszukiwania dziennika inspekcji dla tego scenariusza:
 
-**Działania:** W obszarze **Exchange działań skrzynki pocztowej** wybierz jedno lub oba z następujących działań:
+**Działania:** W obszarze **Działania skrzynki pocztowej programu Exchange** wybierz jedno lub oba z następujących działań:
 
-- **New-InboxRule Utwórz nową regułę skrzynki odbiorczej z Outlook Web App**. To działanie zwraca rekordy inspekcji podczas tworzenia reguł skrzynki odbiorczej przy użyciu Outlook aplikacji internetowej lub Exchange Online programu PowerShell.
+- **New-InboxRule Utwórz nową regułę skrzynki odbiorczej z Outlook Web App**. To działanie zwraca rekordy inspekcji podczas tworzenia reguł skrzynki odbiorczej przy użyciu aplikacji internetowej outlook lub Exchange Online programu PowerShell.
 
-- **Zaktualizowano reguły skrzynki odbiorczej z klienta Outlook**. To działanie zwraca rekordy inspekcji, gdy reguły skrzynki odbiorczej są tworzone, modyfikowane lub usuwane przy użyciu klienta klasycznego Outlook.
+- **Zaktualizowano reguły skrzynki odbiorczej z klienta programu Outlook**. To działanie zwraca rekordy inspekcji, gdy reguły skrzynki odbiorczej są tworzone, modyfikowane lub usuwane przy użyciu klienta klasycznego programu Outlook.
 
 **Data rozpoczęcia** i **data zakończenia:** wybierz zakres dat, który ma zastosowanie do badania.
 
@@ -209,36 +207,36 @@ d. Pole **UserId** wskazuje użytkownika, który utworzył regułę skrzynki odb
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Zbadaj, dlaczego użytkownik spoza organizacji pomyślnie się zalogował
 
-Podczas przeglądania rekordów inspekcji w dzienniku inspekcji mogą zostać wyświetlone rekordy wskazujące, że użytkownik zewnętrzny został uwierzytelniony przez Azure Active Directory i pomyślnie zalogowany w organizacji. Na przykład administrator w contoso.onmicrosoft.com może zobaczyć rekord inspekcji pokazujący, że użytkownik z innej organizacji (na przykład fabrikam.onmicrosoft.com) pomyślnie zalogował się do contoso.onmicrosoft.com. Podobnie mogą zostać wyświetlone rekordy inspekcji wskazujące użytkowników z kontem Microsoft (MSA), takimi jak Outlook.com lub Live.com, pomyślnie zalogowanych w organizacji. W takich sytuacjach inspekcja działania jest **zalogowana przez użytkownika**. 
+Podczas przeglądania rekordów inspekcji w dzienniku inspekcji mogą zostać wyświetlone rekordy wskazujące, że użytkownik zewnętrzny został uwierzytelniony przez usługę Azure Active Directory i pomyślnie zalogowany w organizacji. Na przykład administrator w contoso.onmicrosoft.com może zobaczyć rekord inspekcji pokazujący, że użytkownik z innej organizacji (na przykład fabrikam.onmicrosoft.com) pomyślnie zalogował się do contoso.onmicrosoft.com. Podobnie mogą zostać wyświetlone rekordy inspekcji wskazujące użytkowników z kontem Microsoft (MSA), takimi jak Outlook.com lub Live.com, pomyślnie zalogowanych w organizacji. W takich sytuacjach inspekcja działania jest **zalogowana przez użytkownika**. 
 
-Takie działanie jest celowe. Azure Active Directory (Azure AD), usługa katalogowa, zezwala na *uwierzytelnianie* przekazywane, gdy użytkownik zewnętrzny próbuje uzyskać dostęp do witryny SharePoint lub lokalizacji OneDrive w organizacji. Gdy użytkownik zewnętrzny spróbuje to zrobić, zostanie wyświetlony monit o wprowadzenie poświadczeń. Usługa Azure AD używa poświadczeń do uwierzytelnienia użytkownika, co oznacza, że tylko usługa Azure AD sprawdza, czy użytkownik jest tym, kim się podaje. Wskazanie pomyślnego logowania w rekordzie inspekcji jest wynikiem uwierzytelnienia użytkownika przez usługę Azure AD. Pomyślne zalogowanie nie oznacza, że użytkownik mógł uzyskać dostęp do jakichkolwiek zasobów lub wykonać inne akcje w organizacji. Wskazuje tylko, że użytkownik został uwierzytelniony przez usługę Azure AD. Aby użytkownik przekazujący mógł uzyskać dostęp do SharePoint lub OneDrive zasobów, użytkownik w organizacji musiałby jawnie udostępnić zasób użytkownikowi zewnętrznemu, wysyłając mu zaproszenie do udostępniania lub link do udostępniania anonimowego. 
+Takie działanie jest celowe. Usługa Azure Active Directory (Azure AD), usługa katalogowa, umożliwia *uwierzytelnianie przekazywane*, gdy użytkownik zewnętrzny próbuje uzyskać dostęp do witryny programu SharePoint lub lokalizacji usługi OneDrive w organizacji. Gdy użytkownik zewnętrzny spróbuje to zrobić, zostanie wyświetlony monit o wprowadzenie poświadczeń. Azure AD używa poświadczeń do uwierzytelnienia użytkownika, co oznacza, że tylko Azure AD sprawdza, czy użytkownik jest tym, kim jest. Wskazanie pomyślnego logowania w rekordzie inspekcji jest wynikiem Azure AD uwierzytelnienia użytkownika. Pomyślne zalogowanie nie oznacza, że użytkownik mógł uzyskać dostęp do jakichkolwiek zasobów lub wykonać inne akcje w organizacji. Wskazuje tylko, że użytkownik został uwierzytelniony przez Azure AD. Aby użytkownik przekazujący mógł uzyskać dostęp do zasobów programu SharePoint lub OneDrive, użytkownik w organizacji musiałby jawnie udostępnić zasób użytkownikowi zewnętrznemu, wysyłając mu zaproszenie do udostępniania lub link do udostępniania anonimowego. 
 
 > [!NOTE]
-> Usługa Azure AD zezwala na uwierzytelnianie przekazywane tylko w *przypadku aplikacji innych firm*, takich jak SharePoint Online i OneDrive dla Firm. Nie jest to dozwolone w przypadku innych aplikacji innych firm.
+> Azure AD zezwala na uwierzytelnianie przekazywane tylko dla *aplikacji innych firm*, takich jak SharePoint Online i OneDrive dla Firm. Nie jest to dozwolone w przypadku innych aplikacji innych firm.
 
 Oto przykład i opisy odpowiednich właściwości w rekordzie inspekcji dla zdarzenia **zalogowanego przez użytkownika** , które jest wynikiem uwierzytelniania przekazywanego. Wybierz rekord inspekcji, aby wyświetlić stronę wysuwaną **Szczegóły** , a następnie wybierz pozycję **Więcej informacji**.
 
 ![Przykład rekordu inspekcji pomyślnego uwierzytelniania z przekazywaniem.](../media/PassThroughAuth1.png)
 
-   a. To pole wskazuje, że użytkownik, który próbował uzyskać dostęp do zasobu w organizacji, nie został znaleziony w usłudze Azure AD organizacji.
+   a. To pole wskazuje, że użytkownik, który próbował uzyskać dostęp do zasobu w organizacji, nie został znaleziony w Azure AD organizacji.
 
    b. To pole wyświetla nazwę UPN użytkownika zewnętrznego, który próbował uzyskać dostęp do zasobu w organizacji. Ten identyfikator użytkownika jest również identyfikowany we właściwościach **User** i **UserId** w rekordzie inspekcji.
 
-   c. Właściwość **ApplicationId** identyfikuje aplikację, która wyzwoliła żądanie logowania. Wartość 000000003-0000-0ff1-ce00-00000000000000 wyświetlana we właściwości ApplicationId w tym rekordzie inspekcji wskazuje SharePoint Online. OneDrive dla Firm ma również ten sam identyfikator ApplicationId.
+   c. Właściwość **ApplicationId** identyfikuje aplikację, która wyzwoliła żądanie logowania. Wartość 000000003-0000-0ff1-ce00-00000000000000 wyświetlana we właściwości ApplicationId w tym rekordzie inspekcji wskazuje usługę SharePoint Online. OneDrive dla Firm ma również ten sam identyfikator ApplicationId.
 
-   d. Oznacza to, że uwierzytelnianie przekazywane zakończyło się pomyślnie. Innymi słowy, użytkownik został pomyślnie uwierzytelniony przez usługę Azure AD. 
+   d. Oznacza to, że uwierzytelnianie przekazywane zakończyło się pomyślnie. Innymi słowy, użytkownik został pomyślnie uwierzytelniony przez Azure AD. 
 
-   e. Wartość **RecordType** **15** wskazuje, że inspekcja działania (UserLoggedIn) jest zdarzeniem logowania usługi Secure Token Service (STS) w usłudze Azure AD.
+   e. Wartość **RecordType** **wynosząca 15** wskazuje, że inspekcja działania (UserLoggedIn) jest zdarzeniem logowania usługi Secure Token Service (STS) w Azure AD.
 
-Aby uzyskać więcej informacji na temat innych właściwości wyświetlanych w rekordzie inspekcji UserLoggedIn, zobacz informacje o schemacie dotyczącym usługi Azure AD w [schemacie interfejsu API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema).
+Aby uzyskać więcej informacji na temat innych właściwości wyświetlanych w rekordzie inspekcji UserLoggedIn, zobacz informacje dotyczące schematu Azure AD w [schemacie interfejsu API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema).
 
 Poniżej przedstawiono dwa przykładowe scenariusze, które spowodowałyby **pomyślne zalogowanie użytkownika do** działania inspekcji z powodu uwierzytelniania przekazywanego: 
 
   - Użytkownik z kontem Microsoft (takim jak SaraD@outlook.com) próbował uzyskać dostęp do dokumentu na koncie OneDrive dla Firm w fourthcoffee.onmicrosoft.com i nie ma odpowiedniego konta użytkownika-gościa dla SaraD@outlook.com w fourthcoffee.onmicrosoft.com.
 
-  - Użytkownik z kontem służbowym w organizacji (na przykład pilarp@fabrikam.onmicrosoft.com) próbował uzyskać dostęp do witryny SharePoint w contoso.onmicrosoft.com i nie ma odpowiedniego konta użytkownika-gościa dla pilarp@fabrikam.com w contoso.onmicrosoft.com.
+  - Użytkownik z kontem służbowym w organizacji (na przykład pilarp@fabrikam.onmicrosoft.com) próbował uzyskać dostęp do witryny programu SharePoint w contoso.onmicrosoft.com i nie ma odpowiedniego konta użytkownika-gościa dla pilarp@fabrikam.com w contoso.onmicrosoft.com.
 
-### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Wskazówki do badania pomyślnych logowań wynikających z uwierzytelniania przekazywanego
+### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Porady dotyczące badania pomyślnych logowań wynikających z uwierzytelniania przekazywanego
 
 - Wyszukaj w dzienniku inspekcji działania wykonywane przez użytkownika zewnętrznego zidentyfikowanego w rekordzie inspekcji **Zalogowany użytkownik** . Wpisz nazwę UPN użytkownika zewnętrznego w polu **Użytkownicy** i użyj zakresu dat, jeśli jest to istotne dla danego scenariusza. Możesz na przykład utworzyć wyszukiwanie przy użyciu następujących kryteriów wyszukiwania:
 
@@ -246,9 +244,9 @@ Poniżej przedstawiono dwa przykładowe scenariusze, które spowodowałyby **pom
 
     Oprócz działań **zalogowanych przez użytkownika** mogą zostać zwrócone inne rekordy inspekcji, takie jak te, które wskazują, że użytkownik w organizacji udostępnił zasoby użytkownikowi zewnętrznemu oraz czy użytkownik zewnętrzny uzyskiwał dostęp, modyfikował lub pobierał dokument, który został mu udostępniony.
 
-- Wyszukaj SharePoint działania udostępniania, które wskazywałyby, że plik został udostępniony użytkownikowi zewnętrznemu zidentyfikowanego przez **użytkownika zalogowanego w** rekordzie inspekcji. Aby uzyskać więcej informacji, zobacz [Używanie inspekcji udostępniania w dzienniku inspekcji](use-sharing-auditing.md).
+- Wyszukaj działania udostępniania programu SharePoint, które wskazywałyby, że plik został udostępniony użytkownikowi zewnętrznemu zidentyfikowanego przez **użytkownika zalogowanego w** rekordzie inspekcji. Aby uzyskać więcej informacji, zobacz [Używanie inspekcji udostępniania w dzienniku inspekcji](use-sharing-auditing.md).
 
-- Wyeksportuj wyniki wyszukiwania dziennika inspekcji, które zawierają rekordy istotne dla badania, dzięki czemu możesz użyć Excel do wyszukiwania innych działań związanych z użytkownikiem zewnętrznym. Aby uzyskać więcej informacji, zobacz  [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md).
+- Wyeksportuj wyniki wyszukiwania dzienników inspekcji zawierające rekordy istotne dla badania, aby można było wyszukiwać inne działania związane z użytkownikiem zewnętrznym za pomocą programu Excel. Aby uzyskać więcej informacji, zobacz  [Eksportowanie, konfigurowanie i wyświetlanie rekordów dziennika inspekcji](export-view-audit-log-records.md).
 
 ## <a name="search-for-mailbox-activities-performed-by-users-with-non-e5-licenses"></a>Wyszukiwanie działań skrzynki pocztowej wykonywanych przez użytkowników z licencjami innych niż E5
 

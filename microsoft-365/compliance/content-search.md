@@ -1,5 +1,5 @@
 ---
-title: Tworzenie i uruchamianie wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview
+title: Tworzenie i uruchamianie wyszukiwania zawartości w portal zgodności Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -20,29 +20,27 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: Użyj narzędzia content search eDiscovery w centrum zgodności, aby wyszukać zawartość w różnych usługach Microsoft 365.
-ms.openlocfilehash: 90b1ce142b5d629be86ba058071af906485e765f
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+description: Użyj narzędzia Content search eDiscovery w centrum zgodności, aby wyszukać zawartość w różnych usługach Platformy Microsoft 365.
+ms.openlocfilehash: 3c5e4191c34db9d31ce54494f2677e75f3cae3bf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231721"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632624"
 ---
 # <a name="create-a-content-search"></a>Tworzenie wyszukiwania zawartości
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Za pomocą narzędzia Do zbierania elektronicznych materiałów dowodowych wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview można wyszukiwać zawartość w miejscu, taką jak wiadomości e-mail, dokumenty i konwersacje dotyczące wiadomości błyskawicznych w organizacji. Użyj tego narzędzia, aby wyszukać zawartość w tych chmurowych źródłach danych Microsoft 365:
+Za pomocą narzędzia Do zbierania elektronicznych materiałów dowodowych wyszukiwania zawartości w portal zgodności Microsoft Purview można wyszukiwać zawartość w miejscu, taką jak wiadomości e-mail, dokumenty i konwersacje dotyczące wiadomości błyskawicznych w organizacji. Użyj tego narzędzia, aby wyszukać zawartość w tych chmurowych źródłach danych platformy Microsoft 365:
   
 - skrzynki pocztowe Exchange Online
 
-- witryny SharePoint Online i konta OneDrive dla Firm
+- Witryny usługi SharePoint Online i konta OneDrive dla Firm
 
 - Microsoft Teams
 
 - Grupy Microsoft 365
 
-- grupy Yammer
+- Grupy usługi Yammer
 
 Po uruchomieniu wyszukiwania na stronie wysuwanej wyszukiwania zostanie wyświetlona liczba lokalizacji zawartości i szacowana liczba wyników wyszukiwania. Możesz szybko wyświetlić statystyki, takie jak lokalizacje zawartości, które mają najwięcej elementów zgodnych z zapytaniem wyszukiwania. Po uruchomieniu wyszukiwania można wyświetlić podgląd wyników lub wyeksportować je na komputer lokalny.
 
@@ -50,9 +48,9 @@ Po uruchomieniu wyszukiwania na stronie wysuwanej wyszukiwania zostanie wyświet
 
 - Aby uzyskać dostęp do narzędzia do wyszukiwania zawartości w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności</a> (aby uruchamiać wyszukiwania i wyświetlać podgląd wyników i eksportować wyniki), administrator, oficer zgodności lub menedżer zbierania elektronicznych materiałów dowodowych musi być członkiem grupy ról Menedżera zbierania elektronicznych materiałów dowodowych w portalu zgodności. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
 
-- W Exchange wdrożeniu hybrydowym nie można używać narzędzia do wyszukiwania zawartości do wyszukiwania wiadomości e-mail w lokalnych skrzynkach pocztowych. Za pomocą tego narzędzia można wyszukiwać tylko skrzynki pocztowe oparte na chmurze.
+- We wdrożeniu hybrydowym programu Exchange nie można używać narzędzia do wyszukiwania zawartości do wyszukiwania wiadomości e-mail w lokalnych skrzynkach pocztowych. Za pomocą tego narzędzia można wyszukiwać tylko skrzynki pocztowe oparte na chmurze.
 
-- W Exchange wdrożenia hybrydowego można wyszukiwać Teams danych czatu w lokalnych skrzynkach pocztowych. Aby uzyskać więcej informacji, zobacz [Teams dane czatu dla użytkowników lokalnych](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users?view=o365-worldwide).
+- We wdrożeniu hybrydowym programu Exchange możesz wyszukiwać dane czatu usługi Teams w lokalnych skrzynkach pocztowych. Aby uzyskać więcej informacji, zobacz [Dane czatu w usłudze Teams dla użytkowników lokalnych](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
 ## <a name="create-and-run-a-search"></a>Tworzenie i uruchamianie wyszukiwania
   
@@ -68,13 +66,13 @@ Po uruchomieniu wyszukiwania na stronie wysuwanej wyszukiwania zostanie wyświet
 
     ![Wybierz lokalizacje zawartości, które mają zostać wstrzymane.](../media/ContentSearchLocations.png)
   
-   1. **Exchange skrzynki pocztowe**: ustaw przełącznik **na Włączone**, a następnie kliknij pozycję **Wybierz użytkowników, grupy lub zespoły,** aby określić skrzynki pocztowe, które mają zostać wstrzymane. Użyj pola wyszukiwania, aby znaleźć skrzynki pocztowe użytkowników i grupy dystrybucyjne. Możesz również wyszukać skrzynkę pocztową skojarzoną z zespołem firmy Microsoft (w poszukiwaniu wiadomości kanału), grupę Office 365 i grupę Yammer. Aby uzyskać więcej informacji na temat danych aplikacji przechowywanych w skrzynkach pocztowych, zobacz [Zawartość przechowywana w skrzynkach pocztowych na potrzeby zbierania elektronicznych materiałów dowodowych](what-is-stored-in-exo-mailbox.md).
+   1. **Skrzynki pocztowe programu Exchange**: ustaw przełącznik **na Włączone** , a następnie kliknij pozycję **Wybierz użytkowników, grupy lub zespoły,** aby określić skrzynki pocztowe, które mają zostać wstrzymane. Użyj pola wyszukiwania, aby znaleźć skrzynki pocztowe użytkowników i grupy dystrybucyjne. Możesz również wyszukać skrzynkę pocztową skojarzoną z zespołem firmy Microsoft (w poszukiwaniu wiadomości kanału), grupę Office 365 i grupę usługi Yammer. Aby uzyskać więcej informacji na temat danych aplikacji przechowywanych w skrzynkach pocztowych, zobacz [Zawartość przechowywana w skrzynkach pocztowych na potrzeby zbierania elektronicznych materiałów dowodowych](what-is-stored-in-exo-mailbox.md).
 
-   2. **SharePoint witryn**: ustaw przełącznik **na Wł**., a następnie kliknij pozycję **Wybierz witryny**, aby określić, SharePoint witryny i konta OneDrive, które mają zostać wstrzymane. Wpisz adres URL każdej witryny, która ma zostać wstrzymana. Możesz również dodać adres URL witryny SharePoint dla zespołu firmy Microsoft, grupy Office 365 lub grupy Yammer.
+   2. **Witryny programu SharePoint**: ustaw przełącznik **na Wł.,** a następnie kliknij pozycję **Wybierz witryny** , aby określić witryny programu SharePoint i konta usługi OneDrive, które mają zostać wstrzymane. Wpisz adres URL każdej witryny, która ma zostać wstrzymana. Możesz również dodać adres URL witryny programu SharePoint dla zespołu firmy Microsoft, grupy Office 365 lub grupy usługi Yammer.
   
-   3. **Exchange folderów publicznych**: ustaw przełącznik **na Wł**., aby wstrzymać wszystkie foldery publiczne w organizacji Exchange Online. Nie można wybrać określonych folderów publicznych do wstrzymania. Pozostaw przełącznik wyłączony, jeśli nie chcesz wstrzymać folderów publicznych.
+   3. **Foldery publiczne programu Exchange**: ustaw przełącznik **na Włączone**, aby wstrzymać wszystkie foldery publiczne w organizacji Exchange Online. Nie można wybrać określonych folderów publicznych do wstrzymania. Pozostaw przełącznik wyłączony, jeśli nie chcesz wstrzymać folderów publicznych.
   
-   4. Zaznacz to pole wyboru, aby wyszukać zawartość Teams dla użytkowników lokalnych. Jeśli na przykład przeszukasz wszystkie Exchange skrzynki pocztowe w organizacji i to pole wyboru zostanie zaznaczone, magazyn oparty na chmurze używany do przechowywania Teams danych czatu dla użytkowników lokalnych zostanie uwzględniony w zakresie wyszukiwania. Aby uzyskać więcej informacji, zobacz [Wyszukiwanie Teams danych czatu dla użytkowników lokalnych](search-cloud-based-mailboxes-for-on-premises-users.md).
+   4. Zaznacz to pole wyboru, aby wyszukać zawartość usługi Teams dla użytkowników lokalnych. Jeśli na przykład przeszukasz wszystkie skrzynki pocztowe programu Exchange w organizacji i to pole wyboru zostanie zaznaczone, magazyn w chmurze używany do przechowywania danych czatu usługi Teams dla użytkowników lokalnych zostanie uwzględniony w zakresie wyszukiwania. Aby uzyskać więcej informacji, zobacz [Wyszukiwanie danych czatu w usłudze Teams dla użytkowników lokalnych](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 6. Na stronie **Definiowanie warunków wyszukiwania** wpisz zapytanie słowa kluczowego i w razie potrzeby dodaj warunki do zapytania wyszukiwania.
 
@@ -109,4 +107,4 @@ Oto lista kolejnych kroków do wykonania po utworzeniu i uruchomieniu wyszukiwan
 
 ## <a name="more-information"></a>Więcej informacji
 
-Aby uzyskać więcej informacji na temat wyszukiwania zawartości, takich jak wyszukiwanie zawartości w różnych usługach Microsoft 365, zobacz [Dokumentacja funkcji wyszukiwania zawartości](content-search-reference.md).
+Aby uzyskać więcej informacji na temat wyszukiwania zawartości, takich jak wyszukiwanie zawartości w różnych usługach Platformy Microsoft 365, zobacz [Dokumentacja funkcji wyszukiwania zawartości](content-search-reference.md).
